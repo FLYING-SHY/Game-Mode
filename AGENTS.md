@@ -18,8 +18,8 @@ CoH3FowTool —— Company of Heroes 3 本地显示工具（GUI + 授权）。.N
 
 ## 构建
 
-- 开发构建：`pwsh -File .\build.ps1` → `bin\Release\net9.0-windows\CoH3FowTool.exe`
-- 发布构建（Obfuscar 2.2.50 混淆 + 单文件）：`pwsh -File .\build.ps1 -Publish -PublicConfiguration <config.json>` → `publish-gui\CoH3FowTool.exe`，构建证据写入 `artifacts\gui-build\<stamp>\build-report.json`
+- 开发构建：`powershell -NoProfile -ExecutionPolicy Bypass -File .\build.ps1` → `bin\Release\net9.0-windows\CoH3FowTool.exe`（本机未安装 `pwsh`，Windows PowerShell 5.1 可直接跑）
+- 发布构建（Obfuscar 2.2.50 混淆 + 单文件）：`powershell -NoProfile -ExecutionPolicy Bypass -File .\build.ps1 -Publish -PublicConfiguration <config.json>` → `publish-gui\CoH3FowTool.exe`，构建证据写入 `artifacts\gui-build\<stamp>\build-report.json`
 - `licensing/` 有独立的 `Directory.Build.props` 与自有 `.gitignore`
 
 ## 注意事项

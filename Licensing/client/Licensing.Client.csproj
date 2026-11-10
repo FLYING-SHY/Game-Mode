@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Licensing.Client</AssemblyName>
+    <RootNamespace>Licensing</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Licensing.Server" />
+    <InternalsVisibleTo Include="Licensing.Tests" />
+  </ItemGroup>
+</Project>

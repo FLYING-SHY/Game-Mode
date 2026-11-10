@@ -1,0 +1,24 @@
+<Project>
+  <!-- Replace only our two assemblies after the SDK has computed bundle inputs.
+       The normal build outputs and the verified 2.0 publish directory stay intact. -->
+  <Target Name="UseProtectedClientAssemblies" AfterTargets="PrepareForBundle"
+          Condition="'$(PublishSingleFile)' == 'true' and '$(ProtectedAssemblyDirectory)' != ''">
+    <Error Condition="!Exists('$(ProtectedAssemblyDirectory)\CoH3FowTool.dll')"
+           Text="Protected main assembly is missing." />
+    <Error Condition="!Exists('$(ProtectedAssemblyDirectory)\Licensing.Client.dll')"
+           Text="Protected licensing assembly is missing." />
+    <ItemGroup>
+      <_OriginalClientAssembly Include="@(FilesToBundle)"
+          Condition="'%(FilesToBundle.Filename)%(FilesToBundle.Extension)' == 'CoH3FowTool.dll' or '%(FilesToBundle.Filename)%(FilesToBundle.Extension)' == 'Licensing.Client.dll'" />
+    </ItemGroup>
+    <Error Condition="'@(_OriginalClientAssembly->Count())' != '2'"
+           Text="Expected exactly two client assemblies in the bundle inputs." />
+    <ItemGroup>
+      <FilesToBundle Remove="@(_OriginalClientAssembly)" />
+      <FilesToBundle Include="@(_OriginalClientAssembly->'$(ProtectedAssemblyDirectory)\%(Filename)%(Extension)')">
+        <RelativePath>%(Filename)%(Extension)</RelativePath>
+      </FilesToBundle>
+    </ItemGroup>
+    <Message Importance="high" Text="Bundling protected client assemblies from $(ProtectedAssemblyDirectory)" />
+  </Target>
+</Project>

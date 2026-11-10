@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="csrf-token" content="__CSRF__"><title>授权管理</title>
+<link rel="stylesheet" href="/admin/app.css"><script src="/admin/app.js" defer></script>
+</head>
+<body><main>
+<header><div><p class="eyebrow">LICENSING / OWNER CONSOLE</p><h1>授权管理</h1></div><button id="logout" class="secondary">退出登录</button></header>
+<section><h2>发放授权码</h2><p>授权码仅在本次生成后完整显示。永久许可签发后无远程撤回；限时许可从首次成功激活开始计时。</p>
+<form id="issue"><label>产品<select id="product"></select></label>
+<label>授权类型<select id="kind"><option value="permanent">永久授权</option><option value="timed">限时授权</option></select></label>
+<label id="days-label" hidden>使用天数<input id="days" type="number" min="1" max="36500" value="30"></label><button>生成授权码</button></form>
+<div id="issued" role="status" hidden><p>请保存并发给用户：</p><output id="new-code"></output><button id="copy" class="secondary">复制授权码</button></div></section>
+<section><div class="section-title"><h2>兑换与设备记录</h2><button id="refresh" class="secondary">刷新</button></div>
+<p>设备显示 SHA256 标识，未上传原始 MachineGuid。停用在限时客户端下次启动联网校验时生效。</p>
+<div class="table-wrap"><table><thead><tr><th>产品</th><th>码尾 / 类型</th><th>设备</th><th>首次激活 UTC</th><th>到期 UTC</th><th>状态 / 操作</th></tr></thead><tbody id="rows"></tbody></table></div>
+</section><p id="message" role="status" aria-live="polite"></p>
+</main></body></html>

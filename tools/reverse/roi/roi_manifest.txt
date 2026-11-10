@@ -1,0 +1,6 @@
+cheatgate	C:\Users\21642\Documents\deepseek-harness\default-workspace\CoH3FowTool\tools\reverse\roi\cheatgate.bin	654	0x000000014216B350	0x000000014216B390	0x0216B390	0x0216B3DE
+docommand	C:\Users\21642\Documents\deepseek-harness\default-workspace\CoH3FowTool\tools\reverse\roi\docommand.bin	14855	0x00000001421F56D0	0x00000001421F5710	0x021F5710	0x021F88D7
+revealall	C:\Users\21642\Documents\deepseek-harness\default-workspace\CoH3FowTool\tools\reverse\roi\revealall.bin	1995	0x000000014350C58C	0x000000014350C5CC	0x0350C5CC	0x0350C757
+telemetry	C:\Users\21642\Documents\deepseek-harness\default-workspace\CoH3FowTool\tools\reverse\roi\telemetry.bin	4319	0x00000001437D928C	0x00000001437D92CC	0x037D92CC	0x037D936B
+statlog	C:\Users\21642\Documents\deepseek-harness\default-workspace\CoH3FowTool\tools\reverse\roi\statlog.bin	2066	0x000000014379867C	0x00000001437986BC	0x037986BC	0x0379888E
+statlog2	C:\Users\21642\Documents\deepseek-harness\default-workspace\CoH3FowTool\tools\reverse\roi\statlog2.bin	1923	0x00000001437A6B38	0x00000001437A6B78	0x037A6B78	0x037A6CBB

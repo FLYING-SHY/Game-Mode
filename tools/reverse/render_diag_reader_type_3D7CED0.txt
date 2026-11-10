@@ -1,0 +1,5 @@
+source=G:\SteamLibrary\steamapps\common\Company of Heroes 3\RelicCoH3.exe
+sha256=21edb5c05c33e89fb5f9d88a3fc6738817abd80e0366f648b18ade999cc975ca
+base=0x140000000
+mode=type
+vftable=03D7CED0 COL=05038DA0 TD=06018548 sig=1 self=5038DA0 offset=0 name=.?AVFXMarkerUpdate@?A0x701f61a5@@

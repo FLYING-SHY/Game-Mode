@@ -1,0 +1,10 @@
+.cache/
+**/bin/
+**/obj/
+.local/
+.env
+*.db
+*.db-shm
+*.db-wal
+*.lic
+*.private.pem

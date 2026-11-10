@@ -1,0 +1,66 @@
+AntiCheatWorldService: source sha256=21edb5c05c33e89fb5f9d88a3fc6738817abd80e0366f648b18ade999cc975ca
+TypeDescriptor=0x604a890
+vtable=0x3d7d298 slots=16 references=[{'instruction_rva': '0x4b39a4', 'instruction': 'lea eax, [rip + 0x38c98ee]', 'function_begin': '0x4b3980', 'function_end': '0x4b3a32'}, {'instruction_rva': '0x4b39a3', 'instruction': 'lea rax, [rip + 0x38c98ee]', 'function_begin': '0x4b3980', 'function_end': '0x4b3a32'}]
+
+METHOD 0x4b6280 [0x4b6280,0x4b62b5) size=53 calls=['0x22ba700', '0x4b6970'] strings=[]
+004b6280  48895c2408               mov qword ptr [rsp + 8], rbx
+004b6285  57                       push rdi
+004b6286  4883ec20                 sub rsp, 0x20
+004b628a  8bfa                     mov edi, edx
+004b628c  488bd9                   mov rbx, rcx
+004b628f  e8dc060000               call 0x1404b6970
+004b6294  40f6c701                 test dil, 1
+004b6298  740d                     je 0x1404b62a7
+004b629a  ba68050000               mov edx, 0x568
+004b629f  488bcb                   mov rcx, rbx
+004b62a2  e85944e001               call 0x1422ba700
+004b62a7  488bc3                   mov rax, rbx
+004b62aa  488b5c2430               mov rbx, qword ptr [rsp + 0x30]
+004b62af  4883c420                 add rsp, 0x20
+004b62b3  5f                       pop rdi
+004b62b4  c3                       ret 
+
+METHOD 0x17c630 [0x17c630,0x17c633) size=3 calls=[] strings=[]
+0017c630  c20000                   ret 0
+
+METHOD 0x14c5110 [0x14c5110,0x14c5122) size=18 calls=[] strings=[]
+014c5110  8b02                     mov eax, dword ptr [rdx]
+014c5112  898158050000             mov dword ptr [rcx + 0x558], eax
+014c5118  8b4204                   mov eax, dword ptr [rdx + 4]
+014c511b  89815c050000             mov dword ptr [rcx + 0x55c], eax
+014c5121  c3                       ret 
+
+METHOD 0x1513860 [0x1513860,0x1513867) size=7 calls=[] strings=[]
+01513860  889164050000             mov byte ptr [rcx + 0x564], dl
+01513866  c3                       ret 
+
+METHOD 0xceed80 [0xceed80,0xceeddb) size=91 calls=[] strings=[]
+00ceed80  4053                     push rbx
+00ceed82  56                       push rsi
+00ceed83  57                       push rdi
+00ceed84  4154                     push r12
+00ceed86  4883ec28                 sub rsp, 0x28
+00ceed8a  65488b042558000000       mov rax, qword ptr gs:[0x58]
+00ceed93  4c8d2566704905           lea r12, [rip + 0x5497066]
+00ceed9a  be40000000               mov esi, 0x40
+00ceed9f  488bd9                   mov rbx, rcx
+00ceeda2  480330                   add rsi, qword ptr [rax]
+00ceeda5  8b06                     mov eax, dword ptr [rsi]
+00ceeda7  498b14c4                 mov rdx, qword ptr [r12 + rax*8]
+00ceedab  8b051bd11105             mov eax, dword ptr [rip + 0x511d11b]
+00ceedb1  8b7c1044                 mov edi, dword ptr [rax + rdx + 0x44]
+00ceedb5  3bb960050000             cmp edi, dword ptr [rcx + 0x560]
+00ceedbb  7f0a                     jg 0x140ceedc7
+00ceedbd  4883c428                 add rsp, 0x28
+00ceedc1  415c                     pop r12
+00ceedc3  5f                       pop rdi
+00ceedc4  5e                       pop rsi
+00ceedc5  5b                       pop rbx
+00ceedc6  c3                       ret 
+00ceedc7  89b960050000             mov dword ptr [rcx + 0x560], edi
+00ceedcd  81ff80000000             cmp edi, 0x80
+00ceedd3  72e8                     jb 0x140ceedbd
+00ceedd5  8b05f1d01105             mov eax, dword ptr [rip + 0x511d0f1]
+
+METHOD 0x7fc300 [0x7fc300,0x7fc305) size=5 calls=['0x7fc3e0'] strings=[]
+007fc300  e9db000000               jmp 0x1407fc3e0

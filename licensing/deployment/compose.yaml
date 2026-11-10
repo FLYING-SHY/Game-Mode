@@ -1,0 +1,41 @@
+name: coh3-licensing-local
+x-keygen: &keygen
+  image: keygen/api@sha256:4a5550da52bb2ee9b37ba245ddfe5c3809e062efe802c5354510dfe4217e0102
+  env_file: ../.local/keygen.env
+  depends_on:
+    postgres:
+      condition: service_healthy
+    redis:
+      condition: service_healthy
+services:
+  postgres:
+    image: postgres:17.5
+    env_file: ../.local/postgres.env
+    volumes: ["postgres:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U keygen -d keygen"]
+      interval: 3s
+      timeout: 3s
+      retries: 30
+  redis:
+    image: redis:7.4.1
+    volumes: ["redis:/data"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 3s
+      timeout: 3s
+      retries: 30
+  setup:
+    <<: *keygen
+    profiles: ["tools"]
+    command: ["setup"]
+  web:
+    <<: *keygen
+    command: ["web"]
+    ports: ["127.0.0.1:47830:3000"]
+  worker:
+    <<: *keygen
+    command: ["worker"]
+volumes:
+  postgres:
+  redis:

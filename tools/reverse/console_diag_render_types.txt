@@ -1,0 +1,86 @@
+﻿REF target=0x06B02CC0 ins=0x004994E0 file=0x00498AE0 fn=(4821792, 4822326, 90473852) 48 8b 0d d9 97 66 06 mov rcx, qword ptr [rip + 0x66697d9]
+REF target=0x06B02CC0 ins=0x004994E1 file=0x00498AE1 fn=(4821792, 4822326, 90473852) 8b 0d d9 97 66 06 mov ecx, dword ptr [rip + 0x66697d9]
+REF target=0x06B02CC0 ins=0x006A7DD6 file=0x006A73D6 fn=(6978960, 6979811, 90823572) 48 8b 05 e3 ae 45 06 mov rax, qword ptr [rip + 0x645aee3]
+REF target=0x06B02CC0 ins=0x006A7DD7 file=0x006A73D7 fn=(6978960, 6979811, 90823572) 8b 05 e3 ae 45 06 mov eax, dword ptr [rip + 0x645aee3]
+REF target=0x06B02CC0 ins=0x007CF858 file=0x007CEE58 fn=(8189472, 8190120, 91032344) 48 8b 3d 61 34 33 06 mov rdi, qword ptr [rip + 0x6333461]
+REF target=0x06B02CC0 ins=0x007CF859 file=0x007CEE59 fn=(8189472, 8190120, 91032344) 8b 3d 61 34 33 06 mov edi, dword ptr [rip + 0x6333461]
+REF target=0x06B02CC0 ins=0x009ED8BF file=0x009ECEBF fn=(10410144, 10410338, 89947288) 48 8b 0d fa 53 11 06 mov rcx, qword ptr [rip + 0x61153fa]
+REF target=0x06B02CC0 ins=0x009ED8C0 file=0x009ECEC0 fn=(10410144, 10410338, 89947288) 8b 0d fa 53 11 06 mov ecx, dword ptr [rip + 0x61153fa]
+REF target=0x06B02CC0 ins=0x009ED8DE file=0x009ECEDE fn=(10410144, 10410338, 89947288) 48 89 3d db 53 11 06 mov qword ptr [rip + 0x61153db], rdi
+REF target=0x06B02CC0 ins=0x009ED8DF file=0x009ECEDF fn=(10410144, 10410338, 89947288) 89 3d db 53 11 06 mov dword ptr [rip + 0x61153db], edi
+REF target=0x06B02CC0 ins=0x00C962F0 file=0x00C958F0 fn=(13198048, 13198098, 89947288) 48 8b 0d c9 c9 e6 05 mov rcx, qword ptr [rip + 0x5e6c9c9]
+REF target=0x06B02CC0 ins=0x00C962F1 file=0x00C958F1 fn=(13198048, 13198098, 89947288) 8b 0d c9 c9 e6 05 mov ecx, dword ptr [rip + 0x5e6c9c9]
+REF target=0x06B02CC0 ins=0x00C964FD file=0x00C95AFD fn=(13198496, 13198853, 91951352) 48 8b 0d bc c7 e6 05 mov rcx, qword ptr [rip + 0x5e6c7bc]
+REF target=0x06B02CC0 ins=0x00C964FE file=0x00C95AFE fn=(13198496, 13198853, 91951352) 8b 0d bc c7 e6 05 mov ecx, dword ptr [rip + 0x5e6c7bc]
+REF target=0x06B02CC0 ins=0x00C96527 file=0x00C95B27 fn=(13198496, 13198853, 91951352) 48 8b 0d 92 c7 e6 05 mov rcx, qword ptr [rip + 0x5e6c792]
+REF target=0x06B02CC0 ins=0x00C96528 file=0x00C95B28 fn=(13198496, 13198853, 91951352) 8b 0d 92 c7 e6 05 mov ecx, dword ptr [rip + 0x5e6c792]
+REF target=0x06B02CC0 ins=0x0128F87D file=0x0128EE7D fn=(19462240, 19462309, 89947300) 48 89 05 3c 34 87 05 mov qword ptr [rip + 0x587343c], rax
+REF target=0x06B02CC0 ins=0x0128F87E file=0x0128EE7E fn=(19462240, 19462309, 89947300) 89 05 3c 34 87 05 mov dword ptr [rip + 0x587343c], eax
+REF target=0x06B02CC0 ins=0x0128F864 file=0x0128EE64 fn=(19462240, 19462309, 89947300) 48 83 3d 54 34 87 05 00 cmp qword ptr [rip + 0x5873454], 0
+REF target=0x06B02CC0 ins=0x0128F865 file=0x0128EE65 fn=(19462240, 19462309, 89947300) 83 3d 54 34 87 05 00 cmp dword ptr [rip + 0x5873454], 0
+REF target=0x06B02CC0 ins=0x026C7766 file=0x026C6D66 fn=(40661366, 40663352, 90027696) 48 8b 0d 53 b5 43 04 mov rcx, qword ptr [rip + 0x443b553]
+REF target=0x06B02CC0 ins=0x026C7767 file=0x026C6D67 fn=(40661366, 40663352, 90027696) 8b 0d 53 b5 43 04 mov ecx, dword ptr [rip + 0x443b553]
+REF target=0x06B02CC0 ins=0x026C7E56 file=0x026C7456 fn=(40663388, 40665459, 90027736) 48 8b 0d 63 ae 43 04 mov rcx, qword ptr [rip + 0x443ae63]
+REF target=0x06B02CC0 ins=0x026C7E57 file=0x026C7457 fn=(40663388, 40665459, 90027736) 8b 0d 63 ae 43 04 mov ecx, dword ptr [rip + 0x443ae63]
+REF target=0x06B02CC0 ins=0x0290EFEF file=0x0290E5EF fn=(43053026, 43053384, 91951464) 48 8b 0d ca 3c 1f 04 mov rcx, qword ptr [rip + 0x41f3cca]
+REF target=0x06B02CC0 ins=0x0290EFF0 file=0x0290E5F0 fn=(43053026, 43053384, 91951464) 8b 0d ca 3c 1f 04 mov ecx, dword ptr [rip + 0x41f3cca]
+REF target=0x06B02CC0 ins=0x0290F118 file=0x0290E718 fn=(43053026, 43053384, 91951464) 48 8b 05 a1 3b 1f 04 mov rax, qword ptr [rip + 0x41f3ba1]
+REF target=0x06B02CC0 ins=0x0290F119 file=0x0290E719 fn=(43053026, 43053384, 91951464) 8b 05 a1 3b 1f 04 mov eax, dword ptr [rip + 0x41f3ba1]
+REF target=0x06B02CC0 ins=0x0290F136 file=0x0290E736 fn=(43053026, 43053384, 91951464) 48 8b 0d 83 3b 1f 04 mov rcx, qword ptr [rip + 0x41f3b83]
+REF target=0x06B02CC0 ins=0x0290F137 file=0x0290E737 fn=(43053026, 43053384, 91951464) 8b 0d 83 3b 1f 04 mov ecx, dword ptr [rip + 0x41f3b83]
+REF target=0x06B02CC0 ins=0x03913A3D file=0x0391303D fn=(59848568, 59849387, 96017744) 48 8b 0d 7c f2 1e 03 mov rcx, qword ptr [rip + 0x31ef27c]
+REF target=0x06B02CC0 ins=0x03913A3E file=0x0391303E fn=(59848568, 59849387, 96017744) 8b 0d 7c f2 1e 03 mov ecx, dword ptr [rip + 0x31ef27c]
+TOTAL verified refs 32
+DIS RVA=0x004B1D50 file=0x004B1350 span=0x000000B0 pdata=(4922704, 4923509, 90488804)
+0x004B1D50 file=0x004B1350 48 89 5c 24 10                   mov      qword ptr [rsp + 0x10], rbx
+0x004B1D55 file=0x004B1355 48 89 6c 24 18                   mov      qword ptr [rsp + 0x18], rbp
+0x004B1D5A file=0x004B135A 48 89 74 24 20                   mov      qword ptr [rsp + 0x20], rsi
+0x004B1D5F file=0x004B135F 57                               push     rdi
+0x004B1D60 file=0x004B1360 48 83 ec 40                      sub      rsp, 0x40
+0x004B1D64 file=0x004B1364 48 8b f1                         mov      rsi, rcx
+0x004B1D67 file=0x004B1367 48 89 4c 24 30                   mov      qword ptr [rsp + 0x30], rcx
+0x004B1D6C file=0x004B136C 33 ed                            xor      ebp, ebp
+0x004B1D6E file=0x004B136E 48 89 29                         mov      qword ptr [rcx], rbp
+0x004B1D71 file=0x004B1371 48 89 69 08                      mov      qword ptr [rcx + 8], rbp
+0x004B1D75 file=0x004B1375 48 89 69 10                      mov      qword ptr [rcx + 0x10], rbp
+0x004B1D79 file=0x004B1379 48 89 69 18                      mov      qword ptr [rcx + 0x18], rbp
+0x004B1D7D file=0x004B137D 48 89 69 20                      mov      qword ptr [rcx + 0x20], rbp
+0x004B1D81 file=0x004B1381 48 89 69 28                      mov      qword ptr [rcx + 0x28], rbp
+0x004B1D85 file=0x004B1385 48 89 69 30                      mov      qword ptr [rcx + 0x30], rbp
+0x004B1D89 file=0x004B1389 48 89 69 38                      mov      qword ptr [rcx + 0x38], rbp
+0x004B1D8D file=0x004B138D 48 89 69 40                      mov      qword ptr [rcx + 0x40], rbp
+0x004B1D91 file=0x004B1391 48 89 69 48                      mov      qword ptr [rcx + 0x48], rbp
+0x004B1D95 file=0x004B1395 48 89 69 50                      mov      qword ptr [rcx + 0x50], rbp
+0x004B1D99 file=0x004B1399 48 89 69 58                      mov      qword ptr [rcx + 0x58], rbp
+0x004B1D9D file=0x004B139D 48 89 69 60                      mov      qword ptr [rcx + 0x60], rbp
+0x004B1DA1 file=0x004B13A1 48 89 69 68                      mov      qword ptr [rcx + 0x68], rbp
+0x004B1DA5 file=0x004B13A5 48 89 69 70                      mov      qword ptr [rcx + 0x70], rbp
+0x004B1DA9 file=0x004B13A9 48 89 69 78                      mov      qword ptr [rcx + 0x78], rbp
+0x004B1DAD file=0x004B13AD 48 89 a9 80 00 00 00             mov      qword ptr [rcx + 0x80], rbp
+0x004B1DB4 file=0x004B13B4 48 89 a9 88 00 00 00             mov      qword ptr [rcx + 0x88], rbp
+0x004B1DBB file=0x004B13BB 48 89 a9 90 00 00 00             mov      qword ptr [rcx + 0x90], rbp
+0x004B1DC2 file=0x004B13C2 48 89 a9 98 00 00 00             mov      qword ptr [rcx + 0x98], rbp
+0x004B1DC9 file=0x004B13C9 48 89 a9 a0 00 00 00             mov      qword ptr [rcx + 0xa0], rbp
+0x004B1DD0 file=0x004B13D0 48 89 a9 a8 00 00 00             mov      qword ptr [rcx + 0xa8], rbp
+0x004B1DD7 file=0x004B13D7 48 89 a9 b0 00 00 00             mov      qword ptr [rcx + 0xb0], rbp
+0x004B1DDE file=0x004B13DE 48 89 a9 b8 00 00 00             mov      qword ptr [rcx + 0xb8], rbp
+0x004B1DE5 file=0x004B13E5 48 89 a9 c0 00 00 00             mov      qword ptr [rcx + 0xc0], rbp
+0x004B1DEC file=0x004B13EC c7 81 c8 00 00 00 00 00 40 40    mov      dword ptr [rcx + 0xc8], 0x40400000
+0x004B1DF6 file=0x004B13F6 c7 81 cc 00 00 00 00 00 80 3f    mov      dword ptr [rcx + 0xcc], 0x3f800000
+DIS RVA=0x00C96610 file=0x00C95C10 span=0x00000040 pdata=(13198864, 13198928, 90751892)
+0x00C96610 file=0x00C95C10 88 54 24 10                      mov      byte ptr [rsp + 0x10], dl
+0x00C96614 file=0x00C95C14 53                               push     rbx
+0x00C96615 file=0x00C95C15 48 83 ec 30                      sub      rsp, 0x30
+0x00C96619 file=0x00C95C19 48 8b 05 f8 f8 4e 05             mov      rax, qword ptr [rip + 0x54ef8f8] => RVA=0x06185F18
+0x00C96620 file=0x00C95C20 4c 8d 44 24 48                   lea      r8, [rsp + 0x48]
+0x00C96625 file=0x00C95C25 48 8b d9                         mov      rbx, rcx
+0x00C96628 file=0x00C95C28 48 8b 0d 51 fb 4e 05             mov      rcx, qword ptr [rip + 0x54efb51] => RVA=0x06186180
+0x00C9662F file=0x00C95C2F 48 8b 50 50                      mov      rdx, qword ptr [rax + 0x50]
+0x00C96633 file=0x00C95C33 48 89 54 24 20                   mov      qword ptr [rsp + 0x20], rdx
+0x00C96638 file=0x00C95C38 48 8d 54 24 20                   lea      rdx, [rsp + 0x20]
+0x00C9663D file=0x00C95C3D e8 1e 01 00 00                   call     0x140c96760
+0x00C96642 file=0x00C95C42 0f b6 44 24 48                   movzx    eax, byte ptr [rsp + 0x48]
+0x00C96647 file=0x00C95C47 88 43 40                         mov      byte ptr [rbx + 0x40], al
+0x00C9664A file=0x00C95C4A 48 83 c4 30                      add      rsp, 0x30
+0x00C9664E file=0x00C95C4E 5b                               pop      rbx
+0x00C9664F file=0x00C95C4F c3                               ret      

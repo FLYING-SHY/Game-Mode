@@ -1,0 +1,232 @@
+﻿DIS RVA=0x0290EFE2 file=0x0290E5E2 span=0x00000166 pdata=(43053026, 43053384, 91951464)
+0x0290EFE2 file=0x0290E5E2 b8 01 00 00 00                   mov      eax, 1
+0x0290EFE7 file=0x0290E5E7 86 86 28 01 00 00                xchg     byte ptr [rsi + 0x128], al
+0x0290EFED file=0x0290E5ED b2 01                            mov      dl, 1
+0x0290EFEF file=0x0290E5EF 48 8b 0d ca 3c 1f 04             mov      rcx, qword ptr [rip + 0x41f3cca] => RVA=0x06B02CC0
+0x0290EFF6 file=0x0290E5F6 e8 15 76 38 fe                   call     0x140c96610
+0x0290EFFB file=0x0290E5FB 48 8d 86 30 01 00 00             lea      rax, [rsi + 0x130]
+0x0290F002 file=0x0290E602 33 c9                            xor      ecx, ecx
+0x0290F004 file=0x0290E604 86 48 10                         xchg     byte ptr [rax + 0x10], cl
+0x0290F007 file=0x0290E607 48 8d 0d 5a 89 b0 02             lea      rcx, [rip + 0x2b0895a] => RVA=0x05417968
+0x0290F00E file=0x0290E60E 48 89 4d a0                      mov      qword ptr [rbp - 0x60], rcx
+0x0290F012 file=0x0290E612 48 89 45 a8                      mov      qword ptr [rbp - 0x58], rax
+0x0290F016 file=0x0290E616 48 8d 45 a0                      lea      rax, [rbp - 0x60]
+0x0290F01A file=0x0290E61A 48 89 45 d8                      mov      qword ptr [rbp - 0x28], rax
+0x0290F01E file=0x0290E61E 65 48 8b 04 25 58 00 00 00       mov      rax, qword ptr gs:[0x58]
+0x0290F027 file=0x0290E627 48 8b 10                         mov      rdx, qword ptr [rax]
+0x0290F02A file=0x0290E62A 48 8d 05 17 78 c4 02             lea      rax, [rip + 0x2c47817] => RVA=0x05556848
+0x0290F031 file=0x0290E631 48 89 44 24 20                   mov      qword ptr [rsp + 0x20], rax
+0x0290F036 file=0x0290E636 49 8b 46 08                      mov      rax, qword ptr [r14 + 8]
+0x0290F03A file=0x0290E63A 48 89 44 24 28                   mov      qword ptr [rsp + 0x28], rax
+0x0290F03F file=0x0290E63F b8 8c 00 00 00                   mov      eax, 0x8c
+0x0290F044 file=0x0290E644 8b 0c 10                         mov      ecx, dword ptr [rax + rdx]
+0x0290F047 file=0x0290E647 89 4c 24 30                      mov      dword ptr [rsp + 0x30], ecx
+0x0290F04B file=0x0290E64B b8 40 00 00 00                   mov      eax, 0x40
+0x0290F050 file=0x0290E650 8b 0c 10                         mov      ecx, dword ptr [rax + rdx]
+0x0290F053 file=0x0290E653 89 4c 24 34                      mov      dword ptr [rsp + 0x34], ecx
+0x0290F057 file=0x0290E657 48 8d 44 24 20                   lea      rax, [rsp + 0x20]
+0x0290F05C file=0x0290E65C 48 89 44 24 58                   mov      qword ptr [rsp + 0x58], rax
+0x0290F061 file=0x0290E661 41 b9 3f 00 00 00                mov      r9d, 0x3f
+0x0290F067 file=0x0290E667 4c 8d 05 7a 77 c4 02             lea      r8, [rip + 0x2c4777a] => RVA=0x055567E8 b'FOWTextureUpdateRevealExplored'
+0x0290F06E file=0x0290E66E ba 40 00 00 00                   mov      edx, 0x40
+0x0290F073 file=0x0290E673 48 8d 4c 24 60                   lea      rcx, [rsp + 0x60]
+0x0290F078 file=0x0290E678 ff 15 ba 71 44 01                call     qword ptr [rip + 0x14471ba] => RVA=0x03D56238
+0x0290F07E file=0x0290E67E 4c 8d 45 a0                      lea      r8, [rbp - 0x60]
+0x0290F082 file=0x0290E682 48 8d 54 24 20                   lea      rdx, [rsp + 0x20]
+0x0290F087 file=0x0290E687 48 8d 4c 24 60                   lea      rcx, [rsp + 0x60]
+0x0290F08C file=0x0290E68C e8 1f 42 8e fd                   call     0x1401f32b0
+0x0290F091 file=0x0290E691 90                               nop      
+0x0290F092 file=0x0290E692 48 8d 4c 24 20                   lea      rcx, [rsp + 0x20]
+0x0290F097 file=0x0290E697 e8 04 6e 8e fd                   call     0x1401f5ea0
+0x0290F09C file=0x0290E69C 90                               nop      
+0x0290F09D file=0x0290E69D 48 8b 4d d8                      mov      rcx, qword ptr [rbp - 0x28]
+0x0290F0A1 file=0x0290E6A1 48 85 c9                         test     rcx, rcx
+0x0290F0A4 file=0x0290E6A4 0f 84 37 75 38 fe                je       0x140c965e1
+0x0290F0AA file=0x0290E6AA 48 8b 01                         mov      rax, qword ptr [rcx]
+0x0290F0AD file=0x0290E6AD 4c 8b 40 20                      mov      r8, qword ptr [rax + 0x20]
+0x0290F0B1 file=0x0290E6B1 48 8d 45 a0                      lea      rax, [rbp - 0x60]
+0x0290F0B5 file=0x0290E6B5 48 3b c8                         cmp      rcx, rax
+0x0290F0B8 file=0x0290E6B8 0f 95 c2                         setne    dl
+0x0290F0BB file=0x0290E6BB 48 8d 05 6e 73 aa fd             lea      rax, [rip - 0x2558c92] => RVA=0x003B6430
+0x0290F0C2 file=0x0290E6C2 4c 3b c0                         cmp      r8, rax
+0x0290F0C5 file=0x0290E6C5 75 18                            jne      0x14290f0df
+0x0290F0C7 file=0x0290E6C7 84 d2                            test     dl, dl
+0x0290F0C9 file=0x0290E6C9 0f 84 12 75 38 fe                je       0x140c965e1
+0x0290F0CF file=0x0290E6CF ba 38 00 00 00                   mov      edx, 0x38
+0x0290F0D4 file=0x0290E6D4 e8 87 77 aa fd                   call     0x1403b6860
+0x0290F0D9 file=0x0290E6D9 90                               nop      
+0x0290F0DA file=0x0290E6DA e9 02 75 38 fe                   jmp      0x140c965e1
+0x0290F0DF file=0x0290E6DF 48 8d 05 1a 17 9e fd             lea      rax, [rip - 0x261e8e6] => RVA=0x002F0800
+0x0290F0E6 file=0x0290E6E6 4c 3b c0                         cmp      r8, rax
+0x0290F0E9 file=0x0290E6E9 74 15                            je       0x14290f100
+0x0290F0EB file=0x0290E6EB 48 8d 05 8e 45 8e fd             lea      rax, [rip - 0x271ba72] => RVA=0x001F3680
+0x0290F0F2 file=0x0290E6F2 4c 3b c0                         cmp      r8, rax
+0x0290F0F5 file=0x0290E6F5 74 09                            je       0x14290f100
+0x0290F0F7 file=0x0290E6F7 41 ff d0                         call     r8
+0x0290F0FA file=0x0290E6FA 90                               nop      
+0x0290F0FB file=0x0290E6FB e9 e1 74 38 fe                   jmp      0x140c965e1
+0x0290F100 file=0x0290E700 84 d2                            test     dl, dl
+0x0290F102 file=0x0290E702 0f 84 d9 74 38 fe                je       0x140c965e1
+0x0290F108 file=0x0290E708 ba 10 00 00 00                   mov      edx, 0x10
+0x0290F10D file=0x0290E70D e8 4e 77 aa fd                   call     0x1403b6860
+0x0290F112 file=0x0290E712 90                               nop      
+0x0290F113 file=0x0290E713 e9 c9 74 38 fe                   jmp      0x140c965e1
+0x0290F118 file=0x0290E718 48 8b 05 a1 3b 1f 04             mov      rax, qword ptr [rip + 0x41f3ba1] => RVA=0x06B02CC0
+0x0290F11F file=0x0290E71F 80 78 40 00                      cmp      byte ptr [rax + 0x40], 0
+0x0290F123 file=0x0290E723 0f 84 b8 74 38 fe                je       0x140c965e1
+0x0290F129 file=0x0290E729 b8 01 00 00 00                   mov      eax, 1
+0x0290F12E file=0x0290E72E 86 86 28 01 00 00                xchg     byte ptr [rsi + 0x128], al
+0x0290F134 file=0x0290E734 33 d2                            xor      edx, edx
+0x0290F136 file=0x0290E736 48 8b 0d 83 3b 1f 04             mov      rcx, qword ptr [rip + 0x41f3b83] => RVA=0x06B02CC0
+0x0290F13D file=0x0290E73D e8 ce 74 38 fe                   call     0x140c96610
+0x0290F142 file=0x0290E742 90                               nop      
+0x0290F143 file=0x0290E743 e9 99 74 38 fe                   jmp      0x140c965e1
+DIS RVA=0x0290EFE2 file=0x0290E5E2 span=0x00000166 pdata=(43053026, 43053384, 91951464)
+0x0290EFE2 file=0x0290E5E2 b8 01 00 00 00                   mov      eax, 1
+0x0290EFE7 file=0x0290E5E7 86 86 28 01 00 00                xchg     byte ptr [rsi + 0x128], al
+0x0290EFED file=0x0290E5ED b2 01                            mov      dl, 1
+0x0290EFEF file=0x0290E5EF 48 8b 0d ca 3c 1f 04             mov      rcx, qword ptr [rip + 0x41f3cca] => RVA=0x06B02CC0
+0x0290EFF6 file=0x0290E5F6 e8 15 76 38 fe                   call     0x140c96610
+0x0290EFFB file=0x0290E5FB 48 8d 86 30 01 00 00             lea      rax, [rsi + 0x130]
+0x0290F002 file=0x0290E602 33 c9                            xor      ecx, ecx
+0x0290F004 file=0x0290E604 86 48 10                         xchg     byte ptr [rax + 0x10], cl
+0x0290F007 file=0x0290E607 48 8d 0d 5a 89 b0 02             lea      rcx, [rip + 0x2b0895a] => RVA=0x05417968
+0x0290F00E file=0x0290E60E 48 89 4d a0                      mov      qword ptr [rbp - 0x60], rcx
+0x0290F012 file=0x0290E612 48 89 45 a8                      mov      qword ptr [rbp - 0x58], rax
+0x0290F016 file=0x0290E616 48 8d 45 a0                      lea      rax, [rbp - 0x60]
+0x0290F01A file=0x0290E61A 48 89 45 d8                      mov      qword ptr [rbp - 0x28], rax
+0x0290F01E file=0x0290E61E 65 48 8b 04 25 58 00 00 00       mov      rax, qword ptr gs:[0x58]
+0x0290F027 file=0x0290E627 48 8b 10                         mov      rdx, qword ptr [rax]
+0x0290F02A file=0x0290E62A 48 8d 05 17 78 c4 02             lea      rax, [rip + 0x2c47817] => RVA=0x05556848
+0x0290F031 file=0x0290E631 48 89 44 24 20                   mov      qword ptr [rsp + 0x20], rax
+0x0290F036 file=0x0290E636 49 8b 46 08                      mov      rax, qword ptr [r14 + 8]
+0x0290F03A file=0x0290E63A 48 89 44 24 28                   mov      qword ptr [rsp + 0x28], rax
+0x0290F03F file=0x0290E63F b8 8c 00 00 00                   mov      eax, 0x8c
+0x0290F044 file=0x0290E644 8b 0c 10                         mov      ecx, dword ptr [rax + rdx]
+0x0290F047 file=0x0290E647 89 4c 24 30                      mov      dword ptr [rsp + 0x30], ecx
+0x0290F04B file=0x0290E64B b8 40 00 00 00                   mov      eax, 0x40
+0x0290F050 file=0x0290E650 8b 0c 10                         mov      ecx, dword ptr [rax + rdx]
+0x0290F053 file=0x0290E653 89 4c 24 34                      mov      dword ptr [rsp + 0x34], ecx
+0x0290F057 file=0x0290E657 48 8d 44 24 20                   lea      rax, [rsp + 0x20]
+0x0290F05C file=0x0290E65C 48 89 44 24 58                   mov      qword ptr [rsp + 0x58], rax
+0x0290F061 file=0x0290E661 41 b9 3f 00 00 00                mov      r9d, 0x3f
+0x0290F067 file=0x0290E667 4c 8d 05 7a 77 c4 02             lea      r8, [rip + 0x2c4777a] => RVA=0x055567E8 b'FOWTextureUpdateRevealExplored'
+0x0290F06E file=0x0290E66E ba 40 00 00 00                   mov      edx, 0x40
+0x0290F073 file=0x0290E673 48 8d 4c 24 60                   lea      rcx, [rsp + 0x60]
+0x0290F078 file=0x0290E678 ff 15 ba 71 44 01                call     qword ptr [rip + 0x14471ba] => RVA=0x03D56238
+0x0290F07E file=0x0290E67E 4c 8d 45 a0                      lea      r8, [rbp - 0x60]
+0x0290F082 file=0x0290E682 48 8d 54 24 20                   lea      rdx, [rsp + 0x20]
+0x0290F087 file=0x0290E687 48 8d 4c 24 60                   lea      rcx, [rsp + 0x60]
+0x0290F08C file=0x0290E68C e8 1f 42 8e fd                   call     0x1401f32b0
+0x0290F091 file=0x0290E691 90                               nop      
+0x0290F092 file=0x0290E692 48 8d 4c 24 20                   lea      rcx, [rsp + 0x20]
+0x0290F097 file=0x0290E697 e8 04 6e 8e fd                   call     0x1401f5ea0
+0x0290F09C file=0x0290E69C 90                               nop      
+0x0290F09D file=0x0290E69D 48 8b 4d d8                      mov      rcx, qword ptr [rbp - 0x28]
+0x0290F0A1 file=0x0290E6A1 48 85 c9                         test     rcx, rcx
+0x0290F0A4 file=0x0290E6A4 0f 84 37 75 38 fe                je       0x140c965e1
+0x0290F0AA file=0x0290E6AA 48 8b 01                         mov      rax, qword ptr [rcx]
+0x0290F0AD file=0x0290E6AD 4c 8b 40 20                      mov      r8, qword ptr [rax + 0x20]
+0x0290F0B1 file=0x0290E6B1 48 8d 45 a0                      lea      rax, [rbp - 0x60]
+0x0290F0B5 file=0x0290E6B5 48 3b c8                         cmp      rcx, rax
+0x0290F0B8 file=0x0290E6B8 0f 95 c2                         setne    dl
+0x0290F0BB file=0x0290E6BB 48 8d 05 6e 73 aa fd             lea      rax, [rip - 0x2558c92] => RVA=0x003B6430
+0x0290F0C2 file=0x0290E6C2 4c 3b c0                         cmp      r8, rax
+0x0290F0C5 file=0x0290E6C5 75 18                            jne      0x14290f0df
+0x0290F0C7 file=0x0290E6C7 84 d2                            test     dl, dl
+0x0290F0C9 file=0x0290E6C9 0f 84 12 75 38 fe                je       0x140c965e1
+0x0290F0CF file=0x0290E6CF ba 38 00 00 00                   mov      edx, 0x38
+0x0290F0D4 file=0x0290E6D4 e8 87 77 aa fd                   call     0x1403b6860
+0x0290F0D9 file=0x0290E6D9 90                               nop      
+0x0290F0DA file=0x0290E6DA e9 02 75 38 fe                   jmp      0x140c965e1
+0x0290F0DF file=0x0290E6DF 48 8d 05 1a 17 9e fd             lea      rax, [rip - 0x261e8e6] => RVA=0x002F0800
+0x0290F0E6 file=0x0290E6E6 4c 3b c0                         cmp      r8, rax
+0x0290F0E9 file=0x0290E6E9 74 15                            je       0x14290f100
+0x0290F0EB file=0x0290E6EB 48 8d 05 8e 45 8e fd             lea      rax, [rip - 0x271ba72] => RVA=0x001F3680
+0x0290F0F2 file=0x0290E6F2 4c 3b c0                         cmp      r8, rax
+0x0290F0F5 file=0x0290E6F5 74 09                            je       0x14290f100
+0x0290F0F7 file=0x0290E6F7 41 ff d0                         call     r8
+0x0290F0FA file=0x0290E6FA 90                               nop      
+0x0290F0FB file=0x0290E6FB e9 e1 74 38 fe                   jmp      0x140c965e1
+0x0290F100 file=0x0290E700 84 d2                            test     dl, dl
+0x0290F102 file=0x0290E702 0f 84 d9 74 38 fe                je       0x140c965e1
+0x0290F108 file=0x0290E708 ba 10 00 00 00                   mov      edx, 0x10
+0x0290F10D file=0x0290E70D e8 4e 77 aa fd                   call     0x1403b6860
+0x0290F112 file=0x0290E712 90                               nop      
+0x0290F113 file=0x0290E713 e9 c9 74 38 fe                   jmp      0x140c965e1
+0x0290F118 file=0x0290E718 48 8b 05 a1 3b 1f 04             mov      rax, qword ptr [rip + 0x41f3ba1] => RVA=0x06B02CC0
+0x0290F11F file=0x0290E71F 80 78 40 00                      cmp      byte ptr [rax + 0x40], 0
+0x0290F123 file=0x0290E723 0f 84 b8 74 38 fe                je       0x140c965e1
+0x0290F129 file=0x0290E729 b8 01 00 00 00                   mov      eax, 1
+0x0290F12E file=0x0290E72E 86 86 28 01 00 00                xchg     byte ptr [rsi + 0x128], al
+0x0290F134 file=0x0290E734 33 d2                            xor      edx, edx
+0x0290F136 file=0x0290E736 48 8b 0d 83 3b 1f 04             mov      rcx, qword ptr [rip + 0x41f3b83] => RVA=0x06B02CC0
+0x0290F13D file=0x0290E73D e8 ce 74 38 fe                   call     0x140c96610
+0x0290F142 file=0x0290E742 90                               nop      
+0x0290F143 file=0x0290E743 e9 99 74 38 fe                   jmp      0x140c965e1
+DIS RVA=0x001E97F0 file=0x001E8DF0 span=0x0000005D pdata=(2004976, 2005069, 90026232)
+0x001E97F0 file=0x001E8DF0 48 89 54 24 10                   mov      qword ptr [rsp + 0x10], rdx
+0x001E97F5 file=0x001E8DF5 53                               push     rbx
+0x001E97F6 file=0x001E8DF6 48 83 ec 50                      sub      rsp, 0x50
+0x001E97FA file=0x001E8DFA 48 8b d9                         mov      rbx, rcx
+0x001E97FD file=0x001E8DFD 85 d2                            test     edx, edx
+0x001E97FF file=0x001E8DFF 74 41                            je       0x1401e9842
+0x001E9801 file=0x001E8E01 80 79 19 00                      cmp      byte ptr [rcx + 0x19], 0
+0x001E9805 file=0x001E8E05 75 3f                            jne      0x1401e9846
+0x001E9807 file=0x001E8E07 0f b6 44 24 30                   movzx    eax, byte ptr [rsp + 0x30]
+0x001E980C file=0x001E8E0C 4c 8d 4c 24 68                   lea      r9, [rsp + 0x68]
+0x001E9811 file=0x001E8E11 4c 8b 43 08                      mov      r8, qword ptr [rbx + 8]
+0x001E9815 file=0x001E8E15 48 8d 4c 24 38                   lea      rcx, [rsp + 0x38]
+0x001E981A file=0x001E8E1A 48 8b 13                         mov      rdx, qword ptr [rbx]
+0x001E981D file=0x001E8E1D 88 44 24 20                      mov      byte ptr [rsp + 0x20], al
+0x001E9821 file=0x001E8E21 e8 2a 00 00 00                   call     0x1401e9850
+0x001E9826 file=0x001E8E26 48 8b 44 24 38                   mov      rax, qword ptr [rsp + 0x38]
+0x001E982B file=0x001E8E2B 48 3b 44 24 40                   cmp      rax, qword ptr [rsp + 0x40]
+0x001E9830 file=0x001E8E30 74 10                            je       0x1401e9842
+0x001E9832 file=0x001E8E32 48 3b 43 08                      cmp      rax, qword ptr [rbx + 8]
+0x001E9836 file=0x001E8E36 74 0a                            je       0x1401e9842
+0x001E9838 file=0x001E8E38 48 83 c0 08                      add      rax, 8
+0x001E983C file=0x001E8E3C 48 83 c4 50                      add      rsp, 0x50
+0x001E9840 file=0x001E8E40 5b                               pop      rbx
+0x001E9841 file=0x001E8E41 c3                               ret      
+0x001E9842 file=0x001E8E42 33 c0                            xor      eax, eax
+0x001E9844 file=0x001E8E44 eb f6                            jmp      0x1401e983c
+0x001E9846 file=0x001E8E46 e8 a1 6b 56 03                   call     0x1437503ec
+0x001E984B file=0x001E8E4B eb ba                            jmp      0x1401e9807
+DIS RVA=0x001EA840 file=0x001E9E40 span=0x00000060 pdata=(2009152, 2009248, 89947436)
+0x001EA840 file=0x001E9E40 40 53                            push     rbx
+0x001EA842 file=0x001E9E42 48 83 ec 20                      sub      rsp, 0x20
+0x001EA846 file=0x001E9E46 44 0f b7 59 6a                   movzx    r11d, word ptr [rcx + 0x6a]
+0x001EA84B file=0x001E9E4B 4c 8b c9                         mov      r9, rcx
+0x001EA84E file=0x001E9E4E 66 45 85 db                      test     r11w, r11w
+0x001EA852 file=0x001E9E52 7f 3a                            jg       0x1401ea88e
+0x001EA854 file=0x001E9E54 80 79 69 00                      cmp      byte ptr [rcx + 0x69], 0
+0x001EA858 file=0x001E9E58 75 34                            jne      0x1401ea88e
+0x001EA85A file=0x001E9E5A 32 db                            xor      bl, bl
+0x001EA85C file=0x001E9E5C 0f b6 49 69                      movzx    ecx, byte ptr [rcx + 0x69]
+0x001EA860 file=0x001E9E60 41 f6 d8                         neg      r8b
+0x001EA863 file=0x001E9E63 41 0f b6 c0                      movzx    eax, r8b
+0x001EA867 file=0x001E9E67 0a c2                            or       al, dl
+0x001EA869 file=0x001E9E69 f6 d0                            not      al
+0x001EA86B file=0x001E9E6B 22 c1                            and      al, cl
+0x001EA86D file=0x001E9E6D 0a ca                            or       cl, dl
+0x001EA86F file=0x001E9E6F 41 22 c8                         and      cl, r8b
+0x001EA872 file=0x001E9E72 0a c1                            or       al, cl
+0x001EA874 file=0x001E9E74 41 88 41 69                      mov      byte ptr [r9 + 0x69], al
+0x001EA878 file=0x001E9E78 66 45 85 db                      test     r11w, r11w
+0x001EA87C file=0x001E9E7C 7f 14                            jg       0x1401ea892
+0x001EA87E file=0x001E9E7E 84 c0                            test     al, al
+0x001EA880 file=0x001E9E80 75 10                            jne      0x1401ea892
+0x001EA882 file=0x001E9E82 32 d2                            xor      dl, dl
+0x001EA884 file=0x001E9E84 3a da                            cmp      bl, dl
+0x001EA886 file=0x001E9E86 75 0e                            jne      0x1401ea896
+0x001EA888 file=0x001E9E88 48 83 c4 20                      add      rsp, 0x20
+0x001EA88C file=0x001E9E8C 5b                               pop      rbx
+0x001EA88D file=0x001E9E8D c3                               ret      
+0x001EA88E file=0x001E9E8E b3 01                            mov      bl, 1
+0x001EA890 file=0x001E9E90 eb ca                            jmp      0x1401ea85c
+0x001EA892 file=0x001E9E92 b2 01                            mov      dl, 1
+0x001EA894 file=0x001E9E94 eb ee                            jmp      0x1401ea884
+0x001EA896 file=0x001E9E96 49 8b c9                         mov      rcx, r9
+0x001EA899 file=0x001E9E99 e8 62 c8 27 00                   call     0x140467100
+0x001EA89E file=0x001E9E9E eb e8                            jmp      0x1401ea888

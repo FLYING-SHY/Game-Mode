@@ -1,0 +1,296 @@
+﻿IMM target=0x5FF018D0C7448E70 ins=0x0028AFD5 file=0x0028A5D5 fn=(2666416, 2666534, 90146280) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x002E7174 file=0x002E6774 fn=(3043264, 3043859, 90198304) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x006EC127 file=0x006EB727 fn=(7258372, 7258541, 90872996) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x007CE3D4 file=0x007CD9D4 fn=(8184784, 8184822, 89947300) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x00900A17 file=0x00900017 fn=(9439712, 9439825, 91241780) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x012370BF file=0x012366BF fn=(19099824, 19099890, 90874768) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x0132E357 file=0x0132D957 fn=(20112192, 20112486, 93179852) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x01377FAD file=0x013775AD fn=(20414368, 20414494, 89947288) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x013BA2B3 file=0x013B98B3 fn=(20685424, 20685628, 93291504) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x0140D3BA file=0x0140C9BA fn=(21025696, 21025874, 93372676) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x026FC06E file=0x026FB66E fn=(40878020, 40878340, 90198388) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x032515FD file=0x03250BFD fn=(52762096, 52762303, 89955448) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x032518BB file=0x03250EBB fn=(52762640, 52763223, 95446308) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x03437C70 file=0x03437270 fn=(54754296, 54754504, 89951464) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x03528E85 file=0x03528485 fn=(55742024, 55742166, 89948516) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x0352951D file=0x03528B1D fn=(55743716, 55743853, 89947300) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x0364E583 file=0x0364DB83 fn=(56943932, 56944141, 89995536) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x0364E641 file=0x0364DC41 fn=(56944144, 56944272, 89955448) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x0364E699 file=0x0364DC99 fn=(56944272, 56944382, 89947436) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x0364E709 file=0x0364DD09 fn=(56944384, 56944499, 89947436) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x0364E7DE file=0x0364DDDE fn=(56944548, 56944868, 95739424) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x0364E8F9 file=0x0364DEF9 fn=(56944880, 56944986, 89947436) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x0364E965 file=0x0364DF65 fn=(56944988, 56945103, 89947436) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x0364E9E0 file=0x0364DFE0 fn=(56945104, 56945234, 90026672) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x0364EA7D file=0x0364E07D fn=(56945236, 56945498, 95739360) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x0364EBAD file=0x0364E1AD fn=(56945512, 56945708, 89995536) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x0364EC8A file=0x0364E28A fn=(56945708, 56945986, 95739708) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x0364EDB3 file=0x0364E3B3 fn=(56945988, 56946526, 95739580) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x0364EFDC file=0x0364E5DC fn=(56946540, 56946897, 95739660) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x0364F13D file=0x0364E73D fn=(56946900, 56947362, 95739496) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x0364F320 file=0x0364E920 fn=(56947376, 56947733, 95739660) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x0364F42F file=0x0364EA2F fn=(56947736, 56947910, 95739340) 40 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x0364F430 file=0x0364EA30 fn=(56947736, 56947910, 95739340) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x0364F573 file=0x0364EB73 fn=(56948012, 56948217, 89995536) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x0364F641 file=0x0364EC41 fn=(56948220, 56948420, 89995536) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x0364F70D file=0x0364ED0D fn=(56948420, 56948638, 95521012) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x0364F7AD file=0x0364EDAD fn=(56948640, 56948771, 89947288) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+IMM target=0x5FF018D0C7448E70 ins=0x0364F828 file=0x0364EE28 fn=(56948772, 56948856, 89947300) 48 b8 70 8e 44 c7 d0 18 f0 5f movabs rax, 0x5ff018d0c7448e70
+TOTAL immediate candidates 38
+DIS RVA=0x006EC2E0 file=0x006EB8E0 span=0x00000100 pdata=None
+0x006EC2E0 file=0x006EB8E0 65 48 8b 04 25 58 00 00 00       mov      rax, qword ptr gs:[0x58]
+0x006EC2E9 file=0x006EB8E9 45 33 c9                         xor      r9d, r9d
+0x006EC2EC file=0x006EB8EC 41 b8 40 00 00 00                mov      r8d, 0x40
+0x006EC2F2 file=0x006EB8F2 48 8b 10                         mov      rdx, qword ptr [rax]
+0x006EC2F5 file=0x006EB8F5 41 8b 04 10                      mov      eax, dword ptr [r8 + rdx]
+0x006EC2F9 file=0x006EB8F9 4c 8d 05 00 9b a9 05             lea      r8, [rip + 0x5a99b00] => RVA=0x06185E00
+0x006EC300 file=0x006EB900 4d 8b 04 c0                      mov      r8, qword ptr [r8 + rax*8]
+0x006EC304 file=0x006EB904 8b 05 c2 fb 71 05                mov      eax, dword ptr [rip + 0x571fbc2] => RVA=0x05E0BECC
+0x006EC30A file=0x006EB90A 42 8b 84 00 fc 00 00 00          mov      eax, dword ptr [rax + r8 + 0xfc]
+0x006EC312 file=0x006EB912 46 8b 54 00 10                   mov      r10d, dword ptr [rax + r8 + 0x10]
+0x006EC317 file=0x006EB917 4d 85 d2                         test     r10, r10
+0x006EC31A file=0x006EB91A 74 23                            je       0x1406ec33f
+0x006EC31C file=0x006EB91C 42 8b 44 00 0c                   mov      eax, dword ptr [rax + r8 + 0xc]
+0x006EC321 file=0x006EB921 8b 11                            mov      edx, dword ptr [rcx]
+0x006EC323 file=0x006EB923 49 03 c0                         add      rax, r8
+0x006EC326 file=0x006EB926 8b 08                            mov      ecx, dword ptr [rax]
+0x006EC328 file=0x006EB928 42 3b 54 01 08                   cmp      edx, dword ptr [rcx + r8 + 8]
+0x006EC32D file=0x006EB92D 75 04                            jne      0x1406ec333
+0x006EC32F file=0x006EB92F 49 8b c1                         mov      rax, r9
+0x006EC332 file=0x006EB932 c3                               ret      
+0x006EC333 file=0x006EB933 49 ff c1                         inc      r9
+0x006EC336 file=0x006EB936 48 83 c0 04                      add      rax, 4
+0x006EC33A file=0x006EB93A 4d 3b ca                         cmp      r9, r10
+0x006EC33D file=0x006EB93D 72 e7                            jb       0x1406ec326
+0x006EC33F file=0x006EB93F 48 c7 c0 ff ff ff ff             mov      rax, 0xffffffffffffffff
+0x006EC346 file=0x006EB946 c3                               ret      
+0x006EC347 file=0x006EB947 cc                               int3     
+0x006EC348 file=0x006EB948 cc                               int3     
+0x006EC349 file=0x006EB949 cc                               int3     
+0x006EC34A file=0x006EB94A cc                               int3     
+0x006EC34B file=0x006EB94B cc                               int3     
+0x006EC34C file=0x006EB94C cc                               int3     
+0x006EC34D file=0x006EB94D cc                               int3     
+0x006EC34E file=0x006EB94E cc                               int3     
+0x006EC34F file=0x006EB94F cc                               int3     
+0x006EC350 file=0x006EB950 48 89 5c 24 08                   mov      qword ptr [rsp + 8], rbx
+0x006EC355 file=0x006EB955 48 89 74 24 10                   mov      qword ptr [rsp + 0x10], rsi
+0x006EC35A file=0x006EB95A 48 89 7c 24 18                   mov      qword ptr [rsp + 0x18], rdi
+0x006EC35F file=0x006EB95F 4c 89 74 24 20                   mov      qword ptr [rsp + 0x20], r14
+0x006EC364 file=0x006EB964 41 57                            push     r15
+0x006EC366 file=0x006EB966 48 83 ec 40                      sub      rsp, 0x40
+0x006EC36A file=0x006EB96A 49 8b d9                         mov      rbx, r9
+0x006EC36D file=0x006EB96D 49 8b f8                         mov      rdi, r8
+0x006EC370 file=0x006EB970 4c 8b f2                         mov      r14, rdx
+0x006EC373 file=0x006EB973 4c 8b f9                         mov      r15, rcx
+0x006EC376 file=0x006EB976 e8 65 00 00 00                   call     0x1406ec3e0
+0x006EC37B file=0x006EB97B 41 8b 77 08                      mov      esi, dword ptr [r15 + 8]
+0x006EC37F file=0x006EB97F 48 8d 4c 24 20                   lea      rcx, [rsp + 0x20]
+0x006EC384 file=0x006EB984 4c 8b 54 24 70                   mov      r10, qword ptr [rsp + 0x70]
+0x006EC389 file=0x006EB989 48 8b d7                         mov      rdx, rdi
+0x006EC38C file=0x006EB98C f3 0f 10 0b                      movss    xmm1, dword ptr [rbx]
+0x006EC390 file=0x006EB990 48 c1 e6 05                      shl      rsi, 5
+0x006EC394 file=0x006EB994 49 03 37                         add      rsi, qword ptr [r15]
+0x006EC397 file=0x006EB997 45 8b 1a                         mov      r11d, dword ptr [r10]
+0x006EC39A file=0x006EB99A e8 41 5b 13 00                   call     0x140821ee0
+0x006EC39F file=0x006EB99F 45 8b 06                         mov      r8d, dword ptr [r14]
+0x006EC3A2 file=0x006EB9A2 48 8d 54 24 20                   lea      rdx, [rsp + 0x20]
+0x006EC3A7 file=0x006EB9A7 48 8b ce                         mov      rcx, rsi
+0x006EC3AA file=0x006EB9AA e8 31 5b 13 00                   call     0x140821ee0
+0x006EC3AF file=0x006EB9AF 48 8b 5c 24 50                   mov      rbx, qword ptr [rsp + 0x50]
+0x006EC3B4 file=0x006EB9B4 48 8b c6                         mov      rax, rsi
+0x006EC3B7 file=0x006EB9B7 48 8b 7c 24 60                   mov      rdi, qword ptr [rsp + 0x60]
+0x006EC3BC file=0x006EB9BC 4c 8b 74 24 68                   mov      r14, qword ptr [rsp + 0x68]
+0x006EC3C1 file=0x006EB9C1 f3 0f 11 4e 14                   movss    dword ptr [rsi + 0x14], xmm1
+0x006EC3C6 file=0x006EB9C6 44 89 46 18                      mov      dword ptr [rsi + 0x18], r8d
+0x006EC3CA file=0x006EB9CA 44 89 5e 1c                      mov      dword ptr [rsi + 0x1c], r11d
+0x006EC3CE file=0x006EB9CE 48 8b 74 24 58                   mov      rsi, qword ptr [rsp + 0x58]
+0x006EC3D3 file=0x006EB9D3 41 ff 47 08                      inc      dword ptr [r15 + 8]
+0x006EC3D7 file=0x006EB9D7 48 83 c4 40                      add      rsp, 0x40
+0x006EC3DB file=0x006EB9DB 41 5f                            pop      r15
+0x006EC3DD file=0x006EB9DD c3                               ret      
+0x006EC3DE file=0x006EB9DE cc                               int3     
+0x006EC3DF file=0x006EB9DF cc                               int3     
+STR file=0x03D75EF0 rva=0x03D76CF0 always_revealed_in_fow
+STR file=0x03D761C0 rva=0x03D76FC0 FogOfWar
+STR file=0x03D81338 rva=0x03D82138 reveal_self_attacker_time_use
+STR file=0x03D813D8 rva=0x03D821D8 reveal_self_attacker_time
+STR file=0x03D81418 rva=0x03D82218 reveal_defender_time_use
+STR file=0x03D81450 rva=0x03D82250 reveal_defender_time
+STR file=0x03D98FE0 rva=0x03D99DE0 basic_fog_of_war_module
+STR file=0x03DA3348 rva=0x03DA4148 m_forceRevealAllUnblockedAreas
+STR file=0x03DA3380 rva=0x03DA4180 BasicFogOfWarModule
+STR file=0x03E07190 rva=0x03E07F90 FOW_RevealAll
+STR file=0x03E071B0 rva=0x03E07FB0 FOW_RevealArea
+STR file=0x03E071C0 rva=0x03E07FC0 FOW_UIRevealAll
+STR file=0x03E071D0 rva=0x03E07FD0 FOW_UnRevealAll
+STR file=0x03E071E0 rva=0x03E07FE0 FOW_RevealSquad
+STR file=0x03E07208 rva=0x03E08008 FOW_RevealEntity
+STR file=0x03E07220 rva=0x03E08020 FOW_UnRevealArea
+STR file=0x03E07238 rva=0x03E08038 FOW_UIUnRevealAll
+STR file=0x03E07250 rva=0x03E08050 FOW_PlayerRevealAll
+STR file=0x03E07280 rva=0x03E08080 FOW_PlayerRevealArea
+STR file=0x03E07298 rva=0x03E08098 FOW_PlayerUnRevealAll
+STR file=0x03E072B0 rva=0x03E080B0 FOW_UnRevealTerritory
+STR file=0x03E072E0 rva=0x03E080E0 FOW_PlayerUnRevealArea
+STR file=0x03E072F8 rva=0x03E080F8 FOW_UIRevealAllEntities
+STR file=0x03E07310 rva=0x03E08110 FOW_PlayerUnRevealSGroup
+STR file=0x03E07330 rva=0x03E08130 FOW_UIUnRevealAllEntities
+STR file=0x03E07350 rva=0x03E08150 FOW_UIUnRevealAll_Transition
+STR file=0x03E07370 rva=0x03E08170 FOW_ForceRevealAllUnblockedAreas
+STR file=0x03E07398 rva=0x03E08198 FOW_UndoForceRevealAllUnblockedAreas
+STR file=0x03E073F0 rva=0x03E081F0 FOW_PlayerRevealSGroup
+STR file=0x03E07420 rva=0x03E08220 FOW_RevealTerritory
+STR file=0x03E07450 rva=0x03E08250 FOW_RevealSGroup
+STR file=0x03E07480 rva=0x03E08280 FOW_RevealEGroup
+STR file=0x03E074C8 rva=0x03E082C8 FOW_PlayerRevealEntity
+STR file=0x03E12440 rva=0x03E13240 WARNING:  Object [%s] is set to be always revealed in FOW (Entity Blueprint Ext) while it is also set to ghost (UIExt). These two settings are in conflict! Setting 'ghost' to false!
+STR file=0x03E13690 rva=0x03E14490 FogOfWar::EndFogOfWarFrame
+STR file=0x03E2EAC0 rva=0x03E2F8C0 aisettings_detect_squads_in_fog_of_war
+STR file=0x03E2EFE0 rva=0x03E2FDE0 aisettings_pathing_detects_opponents_fog_of_war
+STR file=0x03E2F040 rva=0x03E2FE40 aisettings_pathing_detects_squads_in_fog_of_war
+STR file=0x03E39DD8 rva=0x03E3ABD8 reveal_for_decryption
+STR file=0x03E4E520 rva=0x03E4F320 reveal_to_all_on_death
+STR file=0x03E54510 rva=0x03E55310 fog_of_war
+STR file=0x03E5C5D0 rva=0x03E5D3D0 camouflage_detection_respects_fog_of_war_vision
+STR file=0x03E5C650 rva=0x03E5D450 reveal_area_on_death_radius
+STR file=0x03E5C690 rva=0x03E5D490 reveal_area_on_death_time
+STR file=0x03E5CD48 rva=0x03E5DB48 reveal_center_when_outside_is_visible
+STR file=0x03E61D20 rva=0x03E62B20 reveal_self_on_attack
+STR file=0x03E61E40 rva=0x03E62C40 reveal_target_on_hit
+STR file=0x03E6E190 rva=0x03E6EF90 chain_revealer
+STR file=0x03EA4EF0 rva=0x03EA5CF0 revealed
+STR file=0x03EA8300 rva=0x03EA9100 death_reveal_time
+STR file=0x03EA8318 rva=0x03EA9118 defender_reveal_time
+STR file=0x03EA8330 rva=0x03EA9130 attacker_reveal_time
+STR file=0x03EA8360 rva=0x03EA9160 projectile_reveal_time
+STR file=0x03EE3EC8 rva=0x03EE4CC8 GE_PlayerDebugFogOfWar
+STR file=0x03EE4D68 rva=0x03EE5B68 PCMD_CheatRevealAll
+STR file=0x03EE6478 rva=0x03EE7278 GE_PlayerCheat
+STR file=0x03EF2A40 rva=0x03EF3840 cheat_revealall
+STR file=0x03EF5140 rva=0x03EF5F40 attacker_fow_area_reveal_radius
+STR file=0x03EF5A60 rva=0x03EF6860 territory_FOW_reveal_type
+STR file=0x03EF7830 rva=0x03EF8630 pathing_detects_opponents_fog_of_war
+STR file=0x03EF7858 rva=0x03EF8658 pathing_detects_squads_in_fog_of_war
+STR file=0x03EF7FB8 rva=0x03EF8DB8 detect_squads_in_fog_of_war
+STR file=0x03EFC840 rva=0x03EFD640 FogOfWarWorldService
+STR file=0x03EFF548 rva=0x03F00348 Reveal
+STR file=0x0454E51F rva=0x0454F31F personsGolden Affairsgrammarformingdestroyidea ofcase ofoldest this is.src = cartoonregistrCommonsMuslimsWhat isin manymarkingrevealsIndeed,equally/show_aoutdoorescape(Austriageneticsystem,In the sittingHe alsoIslandsAcademy
+STR file=0x0456208A rva=0x04562E8A beginning of the revealed that thetelevision series" rel="nofollow"> target="_blank">claiming that thehttp%3A%2F%2Fwww.manifestations ofPrime Minister ofinfluenced by theclass="clearfix">/div>
+STR file=0x04786890 rva=0x04787690 FogOfWarTemporalBlendEnabled
+STR file=0x047873D8 rva=0x047881D8 FogOfWarGraphicsSystem
+STR file=0x047A4340 rva=0x047A5140 FogOfWarSightExploredSum
+STR file=0x047A4360 rva=0x047A5160 FogOfWarTerrainBlockersSum
+STR file=0x047A7B30 rva=0x047A8930 squad_revealed_on_minimap
+STR file=0x047A87C0 rva=0x047A95C0 MOD -- (CHEAT) player %d revealed fow
+STR file=0x047FB948 rva=0x047FC748 UIE_EnemyReveal
+STR file=0x047FE440 rva=0x047FF240 Resources\FogOfWarTexture
+STR file=0x0480C258 rva=0x0480D058 LineRevealTransitionEffect
+STR file=0x0480C548 rva=0x0480D348 CircleRevealTransitionEffect
+STR file=0x0480C568 rva=0x0480D368 CloudRevealTransitionEffect
+STR file=0x04EEFA60 rva=0x04EF0860 nodes of this terrain type being revealed won't contribute to a candidate position's score
+STR file=0x04EEFB80 rva=0x04EF0980 Find positions such that casting recon would reveal an area that is tangent to the front line and has the highest possible overlap with enemy territory
+STR file=0x04F1CD40 rva=0x04F1DB40 m_revealEntityProvider_optionalNonSelf
+STR file=0x04F1E440 rva=0x04F1F240 enemy_reveal
+STR file=0x04F20E38 rva=0x04F21C38 Reset the target's camouflage reveal timer
+STR file=0x04F20E68 rva=0x04F21C68 StateTree::Track_ResetCamouflageRevealTimer
+STR file=0x04F20EC0 rva=0x04F21CC0 Reset this target's camouflage reveal timer.
+STR file=0x04F26930 rva=0x04F27730 StateTree::Task_RevealArea
+STR file=0x04F2CE48 rva=0x04F2DC48 StateTree::EntityTask_RevealEntity
+STR file=0x04F2D410 rva=0x04F2E210 StateTree::Track<StateTree::EntityTask_RevealEntity>
+STR file=0x04F316A8 rva=0x04F324A8 Reveals an area in FOW
+STR file=0x04F316C0 rva=0x04F324C0 m_allPlayerReveal
+STR file=0x04F316E8 rva=0x04F324E8 m_revealCenterProvider
+STR file=0x04F31700 rva=0x04F32500 StateTree::Track_RevealArea
+STR file=0x04F31740 rva=0x04F32540 Use the track duration for reveal duration. When false remove reveal area when track ends
+STR file=0x04F317A0 rva=0x04F325A0 AllPlayerReveal
+STR file=0x04F317D0 rva=0x04F325D0 Create new reveal area even if in same position as an existing one.
+STR file=0x04F31818 rva=0x04F32618 RevealCenterProvider
+STR file=0x04F31830 rva=0x04F32630 The center of the area to be revealed
+STR file=0x04F31868 rva=0x04F32668 The player who sees the revealed fog of war
+STR file=0x04F386F0 rva=0x04F394F0 Enable camouflage on the squad's entities. The track will end if any squad entity gets revealed. All entities in the squad become uncamouflaged when the track ends.
+STR file=0x04F3C6E0 rva=0x04F3D4E0 Reveal the entity to players that match this condition group.
+STR file=0x04F3C71E rva=0x04F3D51E Set it to null to reveal the entity to all players.
+STR file=0x04F3C758 rva=0x04F3D558 RevealEntityProvider_optionalNonSelf
+STR file=0x04F3C780 rva=0x04F3D580 The entity to be revealed
+STR file=0x04F3CCC0 rva=0x04F3DAC0 Reveals an entity
+STR file=0x04F3CCD8 rva=0x04F3DAD8 m_revealSquad
+STR file=0x04F3CD00 rva=0x04F3DB00 StateTree::EntityTrack_RevealEntity
+STR file=0x04F3CD28 rva=0x04F3DB28 m_revealEntityProvider
+STR file=0x04F3CD40 rva=0x04F3DB40 RevealSquad
+STR file=0x04F3CD50 rva=0x04F3DB50 If the entity is in a squad, reveal the whole squad
+STR file=0x04F5A4E0 rva=0x04F5B2E0 m_alwaysVisibleInFogOfWar
+STR file=0x04F5A588 rva=0x04F5B388 AlwaysVisibleInFogOfWar
+STR file=0x04F5A5A0 rva=0x04F5B3A0 True => Apply the deform even if the context owner entity is hidden in the FoW. False => Hide the deform until the context owner entity is revealed by the player.
+STR file=0x04F5EFC8 rva=0x04F5FDC8 RevealOnDeath
+STR file=0x04F68410 rva=0x04F69210 StateTree::Task_ResetCamouflageRevealTimer
+STR file=0x04F69598 rva=0x04F6A398 StateTree::Track<StateTree::Task_ResetCamouflageRevealTimer>
+STR file=0x04F6D5A0 rva=0x04F6E3A0 StateTree::Track<StateTree::Task_RevealArea>
+STR file=0x04F7AF70 rva=0x04F7BD70 m_revealDecrypt
+STR file=0x04F7CEB0 rva=0x04F7DCB0 RevealDecrypt
+STR file=0x04F7CEC0 rva=0x04F7DCC0 ,RevealWithDecryption
+STR file=0x04F7F550 rva=0x04F80350 Scans a conic area with a weapon, revealing other squads/entities within.
+STR file=0x04FCBD90 rva=0x04FCCB90 m_fogOfWar
+STR file=0x054F2888 rva=0x054F3688 StateTree::Task_RevealArea::OnEnd
+STR file=0x054F28B0 rva=0x054F36B0 StateTree::Task_RevealArea::OnBegin
+STR file=0x054F66E0 rva=0x054F74E0 StateTree::EntityTask_RevealEntity::OnBegin
+STR file=0x054F6710 rva=0x054F7510 StateTree::EntityTask_RevealEntity::OnEnd
+STR file=0x054F7470 rva=0x054F8270 ForceReveal
+STR file=0x054F74D0 rva=0x054F82D0 Camo: TicksToConceal(%d) TimeSinceReveal(%d) TimeSinceLastShot(%d) Multiplier(%.2f)
+STR file=0x054FC8D0 rva=0x054FD6D0 RevealTarget
+STR file=0x054FC8E0 rva=0x054FD6E0 RevealAreaCount
+STR file=0x054FC8F0 rva=0x054FD6F0 RevealAreaForPlayer%u
+STR file=0x054FC908 rva=0x054FD708 RevealRadius
+STR file=0x054FC930 rva=0x054FD730 UnrevealEntities
+STR file=0x054FC948 rva=0x054FD748 RevealEntities
+STR file=0x054FC9E0 rva=0x054FD7E0 FogOfWarSightExplored
+STR file=0x054FCA08 rva=0x054FD808 FogOfWarTerrainBlockers
+STR file=0x054FCFD0 rva=0x054FDDD0 revealDecrypt
+STR file=0x05519E08 rva=0x0551AC08 objective_revealed
+STR file=0x055559E8 rva=0x055567E8 FOWTextureUpdateRevealExplored
+STR file=0x0555EAE0 rva=0x0555F8E0 time_spent_on_FOW_reveal_explored
+STR file=0x0555EB48 rva=0x0555F948 time_spent_on_FOW_reveal_all
+STR file=0x05EAA600 rva=0x05EAB400 .?AVICallable@?$RelicDelegate@VStdTraits@@$$A6AXAEBVGameEvent_PlayerCheat@@@Z@@
+STR file=0x05EAA660 rva=0x05EAB460 .?AV?$Callable@V?$ConstMemberFunctionInvoker@PEAVGameEventHandler@UI@Relic@@V123@XAEBVGameEvent_PlayerCheat@@@@@?$RelicDelegate@VStdTraits@@$$A6AXAEBVGameEvent_PlayerCheat@@@Z@@
+STR file=0x05EB1F10 rva=0x05EB2D10 .?AVICallable@?$RelicDelegate@VStdTraits@@$$A6AXAEBVGameEvent_PlayerDebugFogOfWar@@@Z@@
+STR file=0x05EB1F80 rva=0x05EB2D80 .?AV?$Callable@V?$MemberFunctionInvoker@PEAVStatLoggingInternal@@V1@XAEBVGameEvent_PlayerDebugFogOfWar@@@@@?$RelicDelegate@VStdTraits@@$$A6AXAEBVGameEvent_PlayerDebugFogOfWar@@@Z@@
+STR file=0x05EB4A90 rva=0x05EB5890 .?AV?$Callable@V?$MemberFunctionInvoker@PEAVStatLoggingInternal@@V1@XAEBVGameEvent_PlayerCheat@@@@@?$RelicDelegate@VStdTraits@@$$A6AXAEBVGameEvent_PlayerCheat@@@Z@@
+STR file=0x05F30B00 rva=0x05F31900 .?AVFogOfWarGraphicsSystem@gr@@
+STR file=0x05F82320 rva=0x05F83120 .?AV?$FsaVectorAdapterTypedAllocator@URevealPair@CamouflageExt@@$0CA@UDefaultFixedSizeAllocatorPolicy@?$EnvTraits@$04@@@@
+STR file=0x05F8B690 rva=0x05F8C490 .?AVBasicFogOfWarModule@@
+STR file=0x05F8B6C0 rva=0x05F8C4C0 .?AVModulePropertyBag@BasicFogOfWarModule@@
+STR file=0x05F8B700 rva=0x05F8C500 .?AV?$PropertyBagTemplate@VModulePropertyBag@BasicFogOfWarModule@@$0DMAAAA@$0A@@@
+STR file=0x05F8B770 rva=0x05F8C570 .?AV?$PropertyBagTemplateSimulation@VModulePropertyBag@BasicFogOfWarModule@@$0DM@$0A@@@
+STR file=0x05F8B7D8 rva=0x05F8C5D8 .?AVBasicFogOfWarModuleRegistrar@@
+STR file=0x05F8B810 rva=0x05F8C610 .?AV?$ISimWorldModuleBag@VModulePropertyBag@BasicFogOfWarModule@@@@
+STR file=0x05F8B870 rva=0x05F8C670 .?AV?$_Func_base@XAEAVChunky@@AEAURevealEntityRecord@EntityVisibilityModule@@@std@@
+STR file=0x05F8B8E0 rva=0x05F8C6E0 .?AV?$_Func_impl_no_alloc@V<lambda_9145f438eeb40b16deaea867eaa2e621>@@XAEAVChunky@@AEBURevealEntityRecord@EntityVisibilityModule@@@std@@
+STR file=0x05F8B980 rva=0x05F8C780 .?AV?$_Func_impl_no_alloc@V<lambda_28c79ba1ac499b923199e29fb6f4babd>@@XAEAVChunky@@AEAURevealEntityRecord@EntityVisibilityModule@@@std@@
+STR file=0x05F8BA60 rva=0x05F8C860 .?AV?$_Func_base@XAEAVChunky@@AEBURevealEntityRecord@EntityVisibilityModule@@@std@@
+STR file=0x05F97020 rva=0x05F97E20 .?AVGameEvent_PlayerCheat@@
+STR file=0x05FAAFF0 rva=0x05FABDF0 .?AV?$PropertyBagFactory@VFogOfWarInfo@Tuning@@@@
+STR file=0x05FAB040 rva=0x05FABE40 .?AV?$PropertyBagFactoryWrapper@VFogOfWarInfo@Tuning@@@@
+STR file=0x05FB02B0 rva=0x05FB10B0 .?AV?$PropertyBagFactory@VModulePropertyBag@BasicFogOfWarModule@@@@
+STR file=0x05FB0310 rva=0x05FB1110 .?AV?$PropertyBagFactoryWrapper@VModulePropertyBag@BasicFogOfWarModule@@@@
+STR file=0x05FBE038 rva=0x05FBEE38 .?AVFogOfWarInfo@Tuning@@
+STR file=0x05FBE070 rva=0x05FBEE70 .?AV?$PropertyBagTemplateSimulation@VFogOfWarInfo@Tuning@@$0DC@$00@@
+STR file=0x05FBE8B0 rva=0x05FBF6B0 .?AV?$PropertyBagTemplate@VFogOfWarInfo@Tuning@@$0DCAAAA@$00@@
+STR file=0x05FEF560 rva=0x05FF0360 .?AV?$Task@VEntityTrack_RevealEntity@StateTree@@@StateTree@@
+STR file=0x05FEF5B0 rva=0x05FF03B0 .?AVEntityTask_RevealEntity@StateTree@@
+STR file=0x05FEF5F0 rva=0x05FF03F0 .?AV?$Track@VEntityTask_RevealEntity@StateTree@@@StateTree@@
+STR file=0x05FEF640 rva=0x05FF0440 .?AVEntityTrack_RevealEntity@StateTree@@
+STR file=0x05FFB6F0 rva=0x05FFC4F0 .?AV?$Task@VTrack_RevealArea@StateTree@@@StateTree@@
+STR file=0x05FFC748 rva=0x05FFD548 .?AVTask_RevealArea@StateTree@@
+STR file=0x05FFC780 rva=0x05FFD580 .?AV?$Track@VTask_RevealArea@StateTree@@@StateTree@@
+STR file=0x05FFC7C8 rva=0x05FFD5C8 .?AVTrack_RevealArea@StateTree@@
+STR file=0x06000D50 rva=0x06001B50 .?AV?$Track@VTask_ResetCamouflageRevealTimer@StateTree@@@StateTree@@
+STR file=0x06000DB0 rva=0x06001BB0 .?AVTrack_ResetCamouflageRevealTimer@StateTree@@
+STR file=0x06001170 rva=0x06001F70 .?AV?$Task@VTrack_ResetCamouflageRevealTimer@StateTree@@@StateTree@@
+STR file=0x060011D0 rva=0x06001FD0 .?AVTask_ResetCamouflageRevealTimer@StateTree@@
+STR file=0x060208B0 rva=0x060216B0 .?AVGameEvent_PlayerDebugFogOfWar@@
+STR file=0x06049B80 rva=0x0604A980 .?AVFogOfWarWorldService@@
+STR file=0x0608C710 rva=0x0608D510 .?AV?$GameEventCallbackContainer@VStdTraits@@VGameEvent_PlayerCheat@@@EventQueue@@
+STR file=0x0609CE70 rva=0x0609DC70 .?AV?$GameEventCallbackContainer@VStdTraits@@VGameEvent_PlayerDebugFogOfWar@@@EventQueue@@
+STR file=0x060FC6E8 rva=0x060FD4E8 .?AVLineRevealTransitionEffect@WPFGUI@@
+STR file=0x060FC840 rva=0x060FD640 .?AVCloudRevealTransitionEffect@WPFGUI@@
+STR file=0x060FC880 rva=0x060FD680 .?AVCircleRevealTransitionEffect@WPFGUI@@

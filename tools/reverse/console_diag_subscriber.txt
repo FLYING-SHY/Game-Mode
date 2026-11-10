@@ -1,0 +1,285 @@
+﻿REF target=0x011E3950 ins=0x004F0F90 file=0x004F0590 fn=(5178496, 5182515, 90536408) e8 bb 29 cf 00 call 0x1411e3950
+REF target=0x011E3950 ins=0x010349B5 file=0x01033FB5 fn=(16991184, 16998132, 92586772) e8 96 ef 1a 00 call 0x1411e3950
+TOTAL verified refs 2
+STR file=0x03D94F20 rva=0x03D95D20 Option_cheats
+STR file=0x03DA5340 rva=0x03DA6140 m_cheats
+STR file=0x03DC46D8 rva=0x03DC54D8 nocheats
+STR file=0x03DC46E8 rva=0x03DC54E8 CheatMenu
+STR file=0x03E92C58 rva=0x03E93A58 CheatMenu_IsEnabled
+STR file=0x03E92C88 rva=0x03E93A88 CheatMenu_Enable
+STR file=0x03E92CD0 rva=0x03E93AD0 CheatMenu_RemoveRunEveryUpdateScarStringByID
+STR file=0x03E92D18 rva=0x03E93B18 CheatMenu_AddRunEveryUpdateScarString
+STR file=0x03E92D40 rva=0x03E93B40 cheat_resource
+STR file=0x03EE0D40 rva=0x03EE1B40 Squad_CreateAndSpawnTowardENVCheat
+STR file=0x03EE15C8 rva=0x03EE23C8 Squad_CreateAndSpawnTowardCheat
+STR file=0x03EE2828 rva=0x03EE3628 Squad_CreateTowardENVCheat
+STR file=0x03EE3A00 rva=0x03EE4800 Squad_CreateTowardCheat
+STR file=0x03EE3FE8 rva=0x03EE4DE8 PCMD_CheatIgnoreCosts
+STR file=0x03EE4CD8 rva=0x03EE5AD8 PCMD_CheatBuildTime
+STR file=0x03EE4D68 rva=0x03EE5B68 PCMD_CheatRevealAll
+STR file=0x03EE4E40 rva=0x03EE5C40 PCMD_CheatResources
+STR file=0x03EE6478 rva=0x03EE7278 GE_PlayerCheat
+STR file=0x03EF1A58 rva=0x03EF2858 used_cheats
+STR file=0x03EF2740 rva=0x03EF3540 cheat_resourcesFocusPlayer
+STR file=0x03EF2998 rva=0x03EF3798 cheat_ignorecosts
+STR file=0x03EF2A10 rva=0x03EF3810 cheat_buildtime
+STR file=0x03EF2A20 rva=0x03EF3820 cheat_resources
+STR file=0x03EF2A40 rva=0x03EF3840 cheat_revealall
+STR file=0x03EF2A70 rva=0x03EF3870 cheat_killself
+STR file=0x03EFC468 rva=0x03EFD268 AntiCheatWorldService
+STR file=0x047A87C0 rva=0x047A95C0 MOD -- (CHEAT) player %d revealed fow
+STR file=0x047A87E8 rva=0x047A95E8 MOD -- (CHEAT) player %d restored normal build times
+STR file=0x047A8820 rva=0x047A9620 MOD -- (CHEAT) player %d reduced build times to 1
+STR file=0x047A8860 rva=0x047A9660 MOD -- (CHEAT) player %d turned off cheat ignore costs (and recharge)
+STR file=0x047A88B0 rva=0x047A96B0 MOD -- (CHEAT) player %d turned on cheat ignore costs (and recharge)
+STR file=0x047A8F70 rva=0x047A9D70 SimWorld::DoCommand - (sender %u) trying to run a cheat command (%s) from an untrusted source
+STR file=0x047F7DC8 rva=0x047F8BC8 data:dev/cheatmenu.lua
+STR file=0x047F8CC0 rva=0x047F9AC0 Cheat Menu
+STR file=0x047FA178 rva=0x047FAF78 CheatMenu_DoItemLeft
+STR file=0x047FA190 rva=0x047FAF90 CheatMenu_DoItemRight
+STR file=0x047FA1A8 rva=0x047FAFA8 CheatMenu_PreviousMenu
+STR file=0x047FA1C0 rva=0x047FAFC0 CheatMenu_ReloadFromFile
+STR file=0x047FA1E0 rva=0x047FAFE0 CheatMenu_NextItem
+STR file=0x047FA1F8 rva=0x047FAFF8 CheatMenu_PreviousItem
+STR file=0x047FA210 rva=0x047FB010 CheatMenu_DoItemAction
+STR file=0x047FA228 rva=0x047FB028 CheatMenu_ToggleDebugHotkeyStatusDisplay
+STR file=0x047FA278 rva=0x047FB078 CheatMenu_ReloadFromContext
+STR file=0x047FA298 rva=0x047FB098 CheatMenu_ClearSearch
+STR file=0x047FA2B0 rva=0x047FB0B0 CheatMenu_ToggleSearch
+STR file=0x047FA2E8 rva=0x047FB0E8 CheatMenu_Toggle
+STR file=0x047FA340 rva=0x047FB140 LuaCheatMenu: error running boolean set-function '%s'
+STR file=0x047FA378 rva=0x047FB178 LuaCheatMenu: error running float set-function '%s'
+STR file=0x047FA3C0 rva=0x047FB1C0 LuaCheatMenu - Can't find file '%s'
+STR file=0x047FA410 rva=0x047FB210 cheatmenu
+STR file=0x047FAC68 rva=0x047FBA68 Scar_DebugCheatMenuExecute
+STR file=0x04EC1530 rva=0x04EC2330 ILuaDomainLibraryRegisterer;CheatMenu
+STR file=0x04F52D30 rva=0x04F53B30 Which type of cost to provide.  WARNING: Modified / charged ability cost will be affected by cost and recharge cheat!
+STR file=0x04F81330 rva=0x04F82130 Only send this message to the debug channel specified. You can turn channels on and off in the cheat menu under Debug Text Channels. You can add new channels in the AE using the debug_text_channel enum. Use blank to indicate that the text shouldn't be filtered. -debug_kickers is required, but you don't need to specify a channel in the argument.
+STR file=0x04FE5708 rva=0x04FE6508 MATCH_PLAYER_CHEATED
+STR file=0x05543FF0 rva=0x05544DF0 Failed to execute command because no instance to LuaCheatMenu was found.
+STR file=0x055557F8 rva=0x055565F8 CmdCheatKillSelf %u
+STR file=0x0555B358 rva=0x0555C158 LuaCheatMenu: error running float get-function '%s'
+STR file=0x0555B410 rva=0x0555C210 g_cheat_value_that_nobody_will_ever_use
+STR file=0x0555B438 rva=0x0555C238 An error occurred executing a cheat:
+STR file=0x05EAA600 rva=0x05EAB400 .?AVICallable@?$RelicDelegate@VStdTraits@@$$A6AXAEBVGameEvent_PlayerCheat@@@Z@@
+STR file=0x05EAA660 rva=0x05EAB460 .?AV?$Callable@V?$ConstMemberFunctionInvoker@PEAVGameEventHandler@UI@Relic@@V123@XAEBVGameEvent_PlayerCheat@@@@@?$RelicDelegate@VStdTraits@@$$A6AXAEBVGameEvent_PlayerCheat@@@Z@@
+STR file=0x05EB4A90 rva=0x05EB5890 .?AV?$Callable@V?$MemberFunctionInvoker@PEAVStatLoggingInternal@@V1@XAEBVGameEvent_PlayerCheat@@@@@?$RelicDelegate@VStdTraits@@$$A6AXAEBVGameEvent_PlayerCheat@@@Z@@
+STR file=0x05F97020 rva=0x05F97E20 .?AVGameEvent_PlayerCheat@@
+STR file=0x06049AA0 rva=0x0604A8A0 .?AVAntiCheatWorldService@@
+STR file=0x0608BE80 rva=0x0608CC80 .?AVGameCheats@UI@Relic@@
+STR file=0x0608BEB0 rva=0x0608CCB0 .?AV?$ObjInternal@UFunctor@?1???$BindFunc@VGameCheats@UI@Relic@@XIM@LuaBinding@@YA?AV?$unique_ptr@VObj@LuaBinding@@U?$default_delete@VObj@LuaBinding@@@std@@@std@@PEAVLuaConfig@@PEBDPEAVGameCheats@UI@Relic@@P8678@EAAXIM@Z@Z@XIM@LuaBinding@@
+STR file=0x0608BFB0 rva=0x0608CDB0 .?AV?$ObjInternal@UFunctor@?1???$BindFunc@VGameCheats@UI@Relic@@X$$V@LuaBinding@@YA?AV?$unique_ptr@VObj@LuaBinding@@U?$default_delete@VObj@LuaBinding@@@std@@@std@@PEAVLuaConfig@@PEBDPEAVGameCheats@UI@Relic@@P8678@EAAXXZ@Z@X$$V@LuaBinding@@
+STR file=0x0608C0B0 rva=0x0608CEB0 .?AV?$ObjInternal@UFunctor@?1???$BindFunc@VGameCheats@UI@Relic@@XM@LuaBinding@@YA?AV?$unique_ptr@VObj@LuaBinding@@U?$default_delete@VObj@LuaBinding@@@std@@@std@@PEAVLuaConfig@@PEBDPEAVGameCheats@UI@Relic@@P8678@EAAXM@Z@Z@XM@LuaBinding@@
+STR file=0x0608C710 rva=0x0608D510 .?AV?$GameEventCallbackContainer@VStdTraits@@VGameEvent_PlayerCheat@@@EventQueue@@
+STR file=0x06091C20 rva=0x06092A20 .?AVLoader@?1??LoaderCheatMenu@GameObjLoader@@YA?AV?$unique_ptr@VEntry@InitList@@U?$default_delete@VEntry@InitList@@@std@@@std@@XZ@
+STR file=0x06094250 rva=0x06095050 .?AVLuaCheatMenu@@
+STR file=0x06094280 rva=0x06095080 .?AV?$ObjInternal@UFunctor@?1???$BindFunc@VLuaCheatMenu@@_N$$V@LuaBinding@@YA?AV?$unique_ptr@VObj@LuaBinding@@U?$default_delete@VObj@LuaBinding@@@std@@@std@@PEAVLuaConfig@@PEBDPEBVLuaCheatMenu@@P86@EBA_NXZ@Z@_N$$V@LuaBinding@@
+STR file=0x06094380 rva=0x06095180 .?AV?$ObjInternal@UFunctor@?1???$BindFunc@VLuaCheatMenu@@X$$V@LuaBinding@@YA?AV?$unique_ptr@VObj@LuaBinding@@U?$default_delete@VObj@LuaBinding@@@std@@@std@@PEAVLuaConfig@@PEBDPEAVLuaCheatMenu@@P86@EAAXXZ@Z@X$$V@LuaBinding@@
+STR file=0x06094610 rva=0x06095410 .?AV?$ObjInternal@UFunctor@?1???$BindFunc@VLuaCheatMenu@@IPEBD@LuaBinding@@YA?AV?$unique_ptr@VObj@LuaBinding@@U?$default_delete@VObj@LuaBinding@@@std@@@std@@PEAVLuaConfig@@PEBDPEAVLuaCheatMenu@@P86@EAAI1@Z@Z@IPEBD@LuaBinding@@
+STR file=0x06094710 rva=0x06095510 .?AV?$ObjInternal@UFunctor@?1???$BindFunc@VLuaCheatMenu@@X_N@LuaBinding@@YA?AV?$unique_ptr@VObj@LuaBinding@@U?$default_delete@VObj@LuaBinding@@@std@@@std@@PEAVLuaConfig@@PEBDPEAVLuaCheatMenu@@P86@EAAX_N@Z@Z@X_N@LuaBinding@@
+STR file=0x06094800 rva=0x06095600 .?AV?$ObjInternal@UFunctor@?1???$BindFunc@VLuaCheatMenu@@XI@LuaBinding@@YA?AV?$unique_ptr@VObj@LuaBinding@@U?$default_delete@VObj@LuaBinding@@@std@@@std@@PEAVLuaConfig@@PEBDPEAVLuaCheatMenu@@P86@EAAXI@Z@Z@XI@LuaBinding@@
+DIS RVA=0x00131520 file=0x00130B20 span=0x00000180 pdata=(1226064, 1255077, 95814932)
+0x00131520 file=0x00130B20 00 48 c7                         add      byte ptr [rax - 0x39], cl
+0x00131523 file=0x00130B23 85 cc                            test     esp, ecx
+0x00131525 file=0x00130B25 2c 00                            sub      al, 0
+0x00131527 file=0x00130B27 00 74 0b 00                      add      byte ptr [rbx + rcx], dh
+0x0013152B file=0x00130B2B 00 c7                            add      bh, al
+0x0013152D file=0x00130B2D 85 d4                            test     esp, edx
+0x0013152F file=0x00130B2F 2c 00                            sub      al, 0
+0x00131531 file=0x00130B31 00 01                            add      byte ptr [rcx], al
+0x00131533 file=0x00130B33 00 00                            add      byte ptr [rax], al
+0x00131535 file=0x00130B35 00 c7                            add      bh, al
+0x00131537 file=0x00130B37 85 d8                            test     eax, ebx
+0x00131539 file=0x00130B39 2c 00                            sub      al, 0
+0x0013153B file=0x00130B3B 00 5b 00                         add      byte ptr [rbx], bl
+0x0013153E file=0x00130B3E 00 00                            add      byte ptr [rax], al
+0x00131540 file=0x00130B40 c7 85 dc 2c 00 00 e0 0b 00 00    mov      dword ptr [rbp + 0x2cdc], 0xbe0
+0x0013154A file=0x00130B4A 48 c7 85 e0 2c 00 00 01 00 00 00 mov      qword ptr [rbp + 0x2ce0], 1
+0x00131555 file=0x00130B55 c7 85 e8 2c 00 00 5b 00 00 00    mov      dword ptr [rbp + 0x2ce8], 0x5b
+0x0013155F file=0x00130B5F c7 85 ec 2c 00 00 9a 0a 00 00    mov      dword ptr [rbp + 0x2cec], 0xa9a
+0x00131569 file=0x00130B69 c7 85 f0 2c 00 00 01 00 00 00    mov      dword ptr [rbp + 0x2cf0], 1
+0x00131573 file=0x00130B73 c7 85 f4 2c 00 00 01 00 00 00    mov      dword ptr [rbp + 0x2cf4], 1
+0x0013157D file=0x00130B7D c7 85 f8 2c 00 00 5b 00 00 00    mov      dword ptr [rbp + 0x2cf8], 0x5b
+0x00131587 file=0x00130B87 c7 85 fc 2c 00 00 06 0b 00 00    mov      dword ptr [rbp + 0x2cfc], 0xb06
+0x00131591 file=0x00130B91 48 c7 85 00 2d 00 00 02 00 00 00 mov      qword ptr [rbp + 0x2d00], 2
+0x0013159C file=0x00130B9C c7 85 08 2d 00 00 5b 00 00 00    mov      dword ptr [rbp + 0x2d08], 0x5b
+0x001315A6 file=0x00130BA6 c7 85 0c 2d 00 00 26 0d 00 00    mov      dword ptr [rbp + 0x2d0c], 0xd26
+0x001315B0 file=0x00130BB0 c7 85 10 2d 00 00 02 00 00 00    mov      dword ptr [rbp + 0x2d10], 2
+0x001315BA file=0x00130BBA c7 85 14 2d 00 00 01 00 00 00    mov      dword ptr [rbp + 0x2d14], 1
+0x001315C4 file=0x00130BC4 c7 85 18 2d 00 00 5b 00 00 00    mov      dword ptr [rbp + 0x2d18], 0x5b
+0x001315CE file=0x00130BCE c7 85 1c 2d 00 00 92 0d 00 00    mov      dword ptr [rbp + 0x2d1c], 0xd92
+0x001315D8 file=0x00130BD8 48 c7 85 20 2d 00 00 03 00 00 00 mov      qword ptr [rbp + 0x2d20], 3
+0x001315E3 file=0x00130BE3 c7 85 28 2d 00 00 5b 00 00 00    mov      dword ptr [rbp + 0x2d28], 0x5b
+0x001315ED file=0x00130BED c7 85 2c 2d 00 00 4e 0c 00 00    mov      dword ptr [rbp + 0x2d2c], 0xc4e
+0x001315F7 file=0x00130BF7 c7 85 30 2d 00 00 03 00 00 00    mov      dword ptr [rbp + 0x2d30], 3
+0x00131601 file=0x00130C01 c7 85 34 2d 00 00 01 00 00 00    mov      dword ptr [rbp + 0x2d34], 1
+0x0013160B file=0x00130C0B c7 85 38 2d 00 00 5b 00 00 00    mov      dword ptr [rbp + 0x2d38], 0x5b
+0x00131615 file=0x00130C15 48 c7 85 3c 2d 00 00 ba 0c 00 00 mov      qword ptr [rbp + 0x2d3c], 0xcba
+0x00131620 file=0x00130C20 89 9d 44 2d 00 00                mov      dword ptr [rbp + 0x2d44], ebx
+0x00131626 file=0x00130C26 c7 85 48 2d 00 00 5c 00 00 00    mov      dword ptr [rbp + 0x2d48], 0x5c
+0x00131630 file=0x00130C30 48 c7 85 4c 2d 00 00 75 0b 00 00 mov      qword ptr [rbp + 0x2d4c], 0xb75
+0x0013163B file=0x00130C3B c7 85 54 2d 00 00 01 00 00 00    mov      dword ptr [rbp + 0x2d54], 1
+0x00131645 file=0x00130C45 c7 85 58 2d 00 00 5c 00 00 00    mov      dword ptr [rbp + 0x2d58], 0x5c
+0x0013164F file=0x00130C4F c7 85 5c 2d 00 00 e1 0b 00 00    mov      dword ptr [rbp + 0x2d5c], 0xbe1
+0x00131659 file=0x00130C59 48 c7 85 60 2d 00 00 01 00 00 00 mov      qword ptr [rbp + 0x2d60], 1
+0x00131664 file=0x00130C64 c7 85 68 2d 00 00 5c 00 00 00    mov      dword ptr [rbp + 0x2d68], 0x5c
+0x0013166E file=0x00130C6E c7 85 6c 2d 00 00 9b 0a 00 00    mov      dword ptr [rbp + 0x2d6c], 0xa9b
+0x00131678 file=0x00130C78 c7 85 70 2d 00 00 01 00 00 00    mov      dword ptr [rbp + 0x2d70], 1
+0x00131682 file=0x00130C82 c7 85 74 2d 00 00 01 00 00 00    mov      dword ptr [rbp + 0x2d74], 1
+0x0013168C file=0x00130C8C c7 85 78 2d 00 00 5c 00 00 00    mov      dword ptr [rbp + 0x2d78], 0x5c
+0x00131696 file=0x00130C96 c7 85 7c 2d 00 00 07 0b 00 00    mov      dword ptr [rbp + 0x2d7c], 0xb07
+DIS RVA=0x00E07ED0 file=0x00E074D0 span=0x00000260 pdata=(14711984, 14713503, 92217692)
+0x00E07ED0 file=0x00E074D0 25 00 90 4c 8b                   and      eax, 0x8b4c9000
+0x00E07ED5 file=0x00E074D5 c0 48 8b d3                      ror      byte ptr [rax - 0x75], 0xd3
+0x00E07ED9 file=0x00E074D9 48 8b cf                         mov      rcx, rdi
+0x00E07EDC file=0x00E074DC e8 ff d7 d5 ff                   call     0x140b656e0
+0x00E07EE1 file=0x00E074E1 90                               nop      
+0x00E07EE2 file=0x00E074E2 48 8b 75 20                      mov      rsi, qword ptr [rbp + 0x20]
+0x00E07EE6 file=0x00E074E6 48 85 f6                         test     rsi, rsi
+0x00E07EE9 file=0x00E074E9 0f 85 b3 95 b5 01                jne      0x1429614a2
+0x00E07EEF file=0x00E074EF 4c 8d 0d 72 6c 84 02             lea      r9, [rip + 0x2846c72] => RVA=0x0364EB68
+0x00E07EF6 file=0x00E074F6 4c 8d 05 93 00 00 03             lea      r8, [rip + 0x3000093] => RVA=0x03E07F90 b'FOW_RevealAll'
+0x00E07EFD file=0x00E074FD 48 8b d3                         mov      rdx, rbx
+0x00E07F00 file=0x00E07500 48 8d 4d 20                      lea      rcx, [rbp + 0x20]
+0x00E07F04 file=0x00E07504 e8 67 f9 e2 ff                   call     0x140c37870
+0x00E07F09 file=0x00E07509 90                               nop      
+0x00E07F0A file=0x00E0750A 4c 8b c0                         mov      r8, rax
+0x00E07F0D file=0x00E0750D 48 8b d3                         mov      rdx, rbx
+0x00E07F10 file=0x00E07510 48 8b cf                         mov      rcx, rdi
+0x00E07F13 file=0x00E07513 e8 c8 d7 d5 ff                   call     0x140b656e0
+0x00E07F18 file=0x00E07518 90                               nop      
+0x00E07F19 file=0x00E07519 48 8b 75 20                      mov      rsi, qword ptr [rbp + 0x20]
+0x00E07F1D file=0x00E0751D 48 85 f6                         test     rsi, rsi
+0x00E07F20 file=0x00E07520 0f 85 9c 95 b5 01                jne      0x1429614c2
+0x00E07F26 file=0x00E07526 4c 8d 0d cf 76 84 02             lea      r9, [rip + 0x28476cf] => RVA=0x0364F5FC
+0x00E07F2D file=0x00E0752D 4c 8d 05 9c 00 00 03             lea      r8, [rip + 0x300009c] => RVA=0x03E07FD0 b'FOW_UnRevealAll'
+0x00E07F34 file=0x00E07534 48 8b d3                         mov      rdx, rbx
+0x00E07F37 file=0x00E07537 48 8d 4d 20                      lea      rcx, [rbp + 0x20]
+0x00E07F3B file=0x00E0753B e8 30 f9 e2 ff                   call     0x140c37870
+0x00E07F40 file=0x00E07540 90                               nop      
+0x00E07F41 file=0x00E07541 4c 8b c0                         mov      r8, rax
+0x00E07F44 file=0x00E07544 48 8b d3                         mov      rdx, rbx
+0x00E07F47 file=0x00E07547 48 8b cf                         mov      rcx, rdi
+0x00E07F4A file=0x00E0754A e8 91 d7 d5 ff                   call     0x140b656e0
+0x00E07F4F file=0x00E0754F 90                               nop      
+0x00E07F50 file=0x00E07550 48 8b 75 20                      mov      rsi, qword ptr [rbp + 0x20]
+0x00E07F54 file=0x00E07554 48 85 f6                         test     rsi, rsi
+0x00E07F57 file=0x00E07557 0f 85 85 95 b5 01                jne      0x1429614e2
+0x00E07F5D file=0x00E0755D 4c 8d 0d 9c 67 84 02             lea      r9, [rip + 0x284679c] => RVA=0x0364E700
+0x00E07F64 file=0x00E07564 4c 8d 05 e5 00 00 03             lea      r8, [rip + 0x30000e5] => RVA=0x03E08050 b'FOW_PlayerRevealAll'
+0x00E07F6B file=0x00E0756B 48 8b d3                         mov      rdx, rbx
+0x00E07F6E file=0x00E0756E 48 8d 4d 20                      lea      rcx, [rbp + 0x20]
+0x00E07F72 file=0x00E07572 e8 29 03 00 00                   call     0x140e082a0
+0x00E07F77 file=0x00E07577 90                               nop      
+0x00E07F78 file=0x00E07578 4c 8b c0                         mov      r8, rax
+0x00E07F7B file=0x00E0757B 48 8b d3                         mov      rdx, rbx
+0x00E07F7E file=0x00E0757E 48 8b cf                         mov      rcx, rdi
+0x00E07F81 file=0x00E07581 e8 5a d7 d5 ff                   call     0x140b656e0
+0x00E07F86 file=0x00E07586 90                               nop      
+0x00E07F87 file=0x00E07587 48 8b 75 20                      mov      rsi, qword ptr [rbp + 0x20]
+0x00E07F8B file=0x00E0758B 48 85 f6                         test     rsi, rsi
+0x00E07F8E file=0x00E0758E 0f 85 6e 95 b5 01                jne      0x142961502
+0x00E07F94 file=0x00E07594 4c 8d 0d c1 69 84 02             lea      r9, [rip + 0x28469c1] => RVA=0x0364E95C
+0x00E07F9B file=0x00E0759B 4c 8d 05 f6 00 00 03             lea      r8, [rip + 0x30000f6] => RVA=0x03E08098 b'FOW_PlayerUnRevealAll'
+0x00E07FA2 file=0x00E075A2 48 8b d3                         mov      rdx, rbx
+0x00E07FA5 file=0x00E075A5 48 8d 4d 20                      lea      rcx, [rbp + 0x20]
+0x00E07FA9 file=0x00E075A9 e8 f2 02 00 00                   call     0x140e082a0
+0x00E07FAE file=0x00E075AE 90                               nop      
+0x00E07FAF file=0x00E075AF 4c 8b c0                         mov      r8, rax
+0x00E07FB2 file=0x00E075B2 48 8b d3                         mov      rdx, rbx
+0x00E07FB5 file=0x00E075B5 48 8b cf                         mov      rcx, rdi
+0x00E07FB8 file=0x00E075B8 e8 23 d7 d5 ff                   call     0x140b656e0
+0x00E07FBD file=0x00E075BD 90                               nop      
+0x00E07FBE file=0x00E075BE 48 8b 75 20                      mov      rsi, qword ptr [rbp + 0x20]
+0x00E07FC2 file=0x00E075C2 48 85 f6                         test     rsi, rsi
+0x00E07FC5 file=0x00E075C5 0f 85 57 95 b5 01                jne      0x142961522
+0x00E07FCB file=0x00E075CB 4c 8d 0d 6a 65 84 02             lea      r9, [rip + 0x284656a] => RVA=0x0364E53C
+0x00E07FD2 file=0x00E075D2 4c 8d 05 c7 ff ff 02             lea      r8, [rip + 0x2ffffc7] => RVA=0x03E07FA0 b'FOW_ExploreAll'
+0x00E07FD9 file=0x00E075D9 48 8b d3                         mov      rdx, rbx
+0x00E07FDC file=0x00E075DC 48 8d 4d 20                      lea      rcx, [rbp + 0x20]
+0x00E07FE0 file=0x00E075E0 e8 8b f8 e2 ff                   call     0x140c37870
+0x00E07FE5 file=0x00E075E5 90                               nop      
+0x00E07FE6 file=0x00E075E6 4c 8b c0                         mov      r8, rax
+0x00E07FE9 file=0x00E075E9 48 8b d3                         mov      rdx, rbx
+0x00E07FEC file=0x00E075EC 48 8b cf                         mov      rcx, rdi
+0x00E07FEF file=0x00E075EF e8 ec d6 d5 ff                   call     0x140b656e0
+0x00E07FF4 file=0x00E075F4 90                               nop      
+0x00E07FF5 file=0x00E075F5 48 8b 75 20                      mov      rsi, qword ptr [rbp + 0x20]
+0x00E07FF9 file=0x00E075F9 48 85 f6                         test     rsi, rsi
+0x00E07FFC file=0x00E075FC 0f 85 40 95 b5 01                jne      0x142961542
+0x00E08002 file=0x00E07602 4c 8d 0d 23 75 84 02             lea      r9, [rip + 0x2847523] => RVA=0x0364F52C
+0x00E08009 file=0x00E07609 4c 8d 05 e0 ff ff 02             lea      r8, [rip + 0x2ffffe0] => RVA=0x03E07FF0 b'FOW_UnExploreAll'
+0x00E08010 file=0x00E07610 48 8b d3                         mov      rdx, rbx
+0x00E08013 file=0x00E07613 48 8d 4d 20                      lea      rcx, [rbp + 0x20]
+0x00E08017 file=0x00E07617 e8 54 f8 e2 ff                   call     0x140c37870
+0x00E0801C file=0x00E0761C 90                               nop      
+0x00E0801D file=0x00E0761D 4c 8b c0                         mov      r8, rax
+0x00E08020 file=0x00E07620 48 8b d3                         mov      rdx, rbx
+0x00E08023 file=0x00E07623 48 8b cf                         mov      rcx, rdi
+0x00E08026 file=0x00E07626 e8 b5 d6 d5 ff                   call     0x140b656e0
+0x00E0802B file=0x00E0762B 90                               nop      
+0x00E0802C file=0x00E0762C 48 8b 75 20                      mov      rsi, qword ptr [rbp + 0x20]
+0x00E08030 file=0x00E07630 48 85 f6                         test     rsi, rsi
+0x00E08033 file=0x00E07633 0f 85 29 95 b5 01                jne      0x142961562
+0x00E08039 file=0x00E07639 4c 8d 0d 50 66 84 02             lea      r9, [rip + 0x2846650] => RVA=0x0364E690
+0x00E08040 file=0x00E07640 4c 8d 05 21 00 00 03             lea      r8, [rip + 0x3000021] => RVA=0x03E08068 b'FOW_PlayerExploreAll'
+0x00E08047 file=0x00E07647 48 8b d3                         mov      rdx, rbx
+0x00E0804A file=0x00E0764A 48 8d 4d 20                      lea      rcx, [rbp + 0x20]
+0x00E0804E file=0x00E0764E e8 4d 02 00 00                   call     0x140e082a0
+0x00E08053 file=0x00E07653 90                               nop      
+0x00E08054 file=0x00E07654 4c 8b c0                         mov      r8, rax
+0x00E08057 file=0x00E07657 48 8b d3                         mov      rdx, rbx
+0x00E0805A file=0x00E0765A 48 8b cf                         mov      rcx, rdi
+0x00E0805D file=0x00E0765D e8 7e d6 d5 ff                   call     0x140b656e0
+0x00E08062 file=0x00E07662 90                               nop      
+0x00E08063 file=0x00E07663 48 8b 75 20                      mov      rsi, qword ptr [rbp + 0x20]
+0x00E08067 file=0x00E07667 48 85 f6                         test     rsi, rsi
+0x00E0806A file=0x00E0766A 0f 85 12 95 b5 01                jne      0x142961582
+0x00E08070 file=0x00E07670 4c 8d 0d 79 68 84 02             lea      r9, [rip + 0x2846879] => RVA=0x0364E8F0
+0x00E08077 file=0x00E07677 4c 8d 05 4a 00 00 03             lea      r8, [rip + 0x300004a] => RVA=0x03E080C8 b'FOW_PlayerUnExploreAll'
+0x00E0807E file=0x00E0767E 48 8b d3                         mov      rdx, rbx
+0x00E08081 file=0x00E07681 48 8d 4d 20                      lea      rcx, [rbp + 0x20]
+0x00E08085 file=0x00E07685 e8 16 02 00 00                   call     0x140e082a0
+0x00E0808A file=0x00E0768A 90                               nop      
+0x00E0808B file=0x00E0768B 4c 8b c0                         mov      r8, rax
+0x00E0808E file=0x00E0768E 48 8b d3                         mov      rdx, rbx
+0x00E08091 file=0x00E07691 48 8b cf                         mov      rcx, rdi
+0x00E08094 file=0x00E07694 e8 47 d6 d5 ff                   call     0x140b656e0
+0x00E08099 file=0x00E07699 90                               nop      
+0x00E0809A file=0x00E0769A 48 8b 75 20                      mov      rsi, qword ptr [rbp + 0x20]
+0x00E0809E file=0x00E0769E 48 85 f6                         test     rsi, rsi
+0x00E080A1 file=0x00E076A1 0f 85 fb 94 b5 01                jne      0x1429615a2
+0x00E080A7 file=0x00E076A7 4c 8d 0d 1a 74 84 02             lea      r9, [rip + 0x284741a] => RVA=0x0364F4C8
+0x00E080AE file=0x00E076AE 4c 8d 05 0b ff ff 02             lea      r8, [rip + 0x2ffff0b] => RVA=0x03E07FC0 b'FOW_UIRevealAll'
+0x00E080B5 file=0x00E076B5 48 8b d3                         mov      rdx, rbx
+0x00E080B8 file=0x00E076B8 48 8d 4d 20                      lea      rcx, [rbp + 0x20]
+0x00E080BC file=0x00E076BC e8 af f7 e2 ff                   call     0x140c37870
+0x00E080C1 file=0x00E076C1 90                               nop      
+0x00E080C2 file=0x00E076C2 4c 8b c0                         mov      r8, rax
+0x00E080C5 file=0x00E076C5 48 8b d3                         mov      rdx, rbx
+0x00E080C8 file=0x00E076C8 48 8b cf                         mov      rcx, rdi
+0x00E080CB file=0x00E076CB e8 10 d6 d5 ff                   call     0x140b656e0
+0x00E080D0 file=0x00E076D0 90                               nop      
+0x00E080D1 file=0x00E076D1 48 8b 75 20                      mov      rsi, qword ptr [rbp + 0x20]
+0x00E080D5 file=0x00E076D5 48 85 f6                         test     rsi, rsi
+0x00E080D8 file=0x00E076D8 0f 85 e4 94 b5 01                jne      0x1429615c2
+0x00E080DE file=0x00E076DE 4c 8d 0d eb e1 e8 ff             lea      r9, [rip - 0x171e15] => RVA=0x00C962D0
+0x00E080E5 file=0x00E076E5 4c 8d 05 4c ff ff 02             lea      r8, [rip + 0x2ffff4c] => RVA=0x03E08038 b'FOW_UIUnRevealAll'
+0x00E080EC file=0x00E076EC 48 8b d3                         mov      rdx, rbx
+0x00E080EF file=0x00E076EF 48 8d 4d 20                      lea      rcx, [rbp + 0x20]
+0x00E080F3 file=0x00E076F3 e8 78 f7 e2 ff                   call     0x140c37870
+0x00E080F8 file=0x00E076F8 90                               nop      
+0x00E080F9 file=0x00E076F9 4c 8b c0                         mov      r8, rax
+0x00E080FC file=0x00E076FC 48 8b d3                         mov      rdx, rbx
+0x00E080FF file=0x00E076FF 48 8b cf                         mov      rcx, rdi
+0x00E08102 file=0x00E07702 e8 d9 d5 d5 ff                   call     0x140b656e0
+0x00E08107 file=0x00E07707 90                               nop      
+0x00E08108 file=0x00E07708 48 8b 75 20                      mov      rsi, qword ptr [rbp + 0x20]
+0x00E0810C file=0x00E0770C 48 85 f6                         test     rsi, rsi
+0x00E0810F file=0x00E0770F 0f 85 cd 94 b5 01                jne      0x1429615e2
+0x00E08115 file=0x00E07715 4c 8d 0d f0 73 84 02             lea      r9, [rip + 0x28473f0] => RVA=0x0364F50C
+0x00E0811C file=0x00E0771C 4c 8d 05 d5 ff ff 02             lea      r8, [rip + 0x2ffffd5] => RVA=0x03E080F8 b'FOW_UIRevealAllEntities'
+0x00E08123 file=0x00E07723 48 8b d3                         mov      rdx, rbx
+0x00E08126 file=0x00E07726 48 8d 4d 20                      lea      rcx, [rbp + 0x20]
+0x00E0812A file=0x00E0772A e8 41 f7 e2 ff                   call     0x140c37870
+0x00E0812F file=0x00E0772F 90                               nop      

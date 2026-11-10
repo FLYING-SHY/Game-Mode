@@ -1,0 +1,167 @@
+{
+  "source": "G:\\SteamLibrary\\steamapps\\common\\Company of Heroes 3\\RelicCoH3.exe",
+  "size": 108388536,
+  "sha256": "21edb5c05c33e89fb5f9d88a3fc6738817abd80e0366f648b18ade999cc975ca",
+  "preferred_image_base": "0x140000000",
+  "process_access_performed_by_this_script": false,
+  "six_display_gates": [
+    {
+      "rva": "0x1874e8",
+      "preferred_va": "0x1401874e8",
+      "raw_offset": "0x186ae8",
+      "original": "74 09",
+      "tested_parent_replacement": "90 90",
+      "role": "UI visibility query",
+      "function_begin_rva": "0x187460",
+      "window_rva": "0x1874e1",
+      "window_original": "e8 ba 0f 00 00 84 c0 74 09 80 3d af 13 90 06 00 75 78 48 8d 4f 2c e8 d4 6e 3e 00 48"
+    },
+    {
+      "rva": "0x187ef0",
+      "preferred_va": "0x140187ef0",
+      "raw_offset": "0x1874f0",
+      "original": "74 09",
+      "tested_parent_replacement": "90 90",
+      "role": "UI reveal-all getter consumed each frame by FOWTextureUpdate",
+      "function_begin_rva": "0x187ee0",
+      "window_rva": "0x187ee9",
+      "window_original": "e8 b2 05 00 00 84 c0 74 09 80 bb f8 00 00 00 00 75 08 32 c0 48 83 c4 20 5b c3 b0 01"
+    },
+    {
+      "rva": "0x187f42",
+      "preferred_va": "0x140187f42",
+      "raw_offset": "0x187542",
+      "original": "74 0d",
+      "tested_parent_replacement": "90 90",
+      "role": "UI visibility query",
+      "function_begin_rva": "0x187f10",
+      "window_rva": "0x187f3b",
+      "window_original": "e8 60 05 00 00 84 c0 74 0d 80 3d 55 09 90 06 00 0f 85 80 02 00 00 48 8b 5e 38 81 7b"
+    },
+    {
+      "rva": "0x1882e3",
+      "preferred_va": "0x1401882e3",
+      "raw_offset": "0x1878e3",
+      "original": "74 0d",
+      "tested_parent_replacement": "90 90",
+      "role": "UI visibility query",
+      "function_begin_rva": "0x1882a0",
+      "window_rva": "0x1882dc",
+      "window_original": "e8 bf 01 00 00 84 c0 74 0d 80 3d b4 05 90 06 00 0f 85 aa 51 4a 02 e8 a9 01 00 00 84"
+    },
+    {
+      "rva": "0x189e26",
+      "preferred_va": "0x140189e26",
+      "raw_offset": "0x189426",
+      "original": "74 09",
+      "tested_parent_replacement": "90 90",
+      "role": "UI visibility query",
+      "function_begin_rva": "0x189c30",
+      "window_rva": "0x189e1f",
+      "window_original": "e8 7c e6 ff ff 84 c0 74 09 80 3d 71 ea 8f 06 00 75 76 e8 6a e6 ff ff 84 c0 74 09 80"
+    },
+    {
+      "rva": "0x1e9701",
+      "preferred_va": "0x1401e9701",
+      "raw_offset": "0x1e8d01",
+      "original": "74 0d",
+      "tested_parent_replacement": "90 90",
+      "role": "Local entity visibility cache to display mask",
+      "function_begin_rva": "0x1e96e0",
+      "window_rva": "0x1e96fa",
+      "window_original": "e8 a1 ed f9 ff 84 c0 74 0d 80 3d 97 f1 89 06 00 0f 85 d2 d6 4d 02 40 32 ff 48 8d 4e"
+    }
+  ],
+  "console": {
+    "manager_slot_rva": "0x6ba4430",
+    "vector_begin_offset": "0x0",
+    "vector_end_offset": "0x8",
+    "element_stride": 8,
+    "console_vtable_rva": "0x3e3a5c8",
+    "opened_byte_offset": "0x10",
+    "drawing_byte_offset": "0x11",
+    "animation_float_offset": "0x18",
+    "opened_getter_rva": "0x14f6680",
+    "opened_getter_original": "0f b6 41 10 c3",
+    "type_getter_rva": "0x14f9170",
+    "type_getter_original": "b8 4c 53 4e 43 c3",
+    "open_functor_rva": "0x14e0550",
+    "open_functor_original": "48 8b 41 08 c6 40 08 01 48 8b 41 08 c6 40 09 01 c3",
+    "global_mode_tag": "0x474c5541",
+    "scar_mode_tag": "0x53434152",
+    "scar_gate_rva": "0xb40b10",
+    "scar_gate_original": "80 b8 40 01 00 00 00 0f 84 1d 01 00 00"
+  },
+  "local_display_state": {
+    "ui_object_rva": "0x6a887a8",
+    "ui_all_byte_rva": "0x6a888a0",
+    "ui_entities_byte_rva": "0x6a888a1",
+    "manager_slot_rva": "0x6b02cc0",
+    "manager_alloc_size": "0x48",
+    "manager_enabled_byte_offset": "0x40",
+    "manager_all_byte_offset": "0x41",
+    "manager_constructor_rva": "0x128f860",
+    "manager_constructor_original": "48 83 ec 28 48 83 3d 54 34 87 05 00 75 33 b9 48 00 00 00 e8 30 b1 02 01 48 89 44 24 30 48 89 05 3c 34 87 05 48 c7 40 30 20 00 00 00 48 c7 40 38 20 00 00 00 66 c7 40 40 01 00 b0 01 48 83 c4 28 c3 32 c0 eb f7",
+    "manager_init_qword_offsets": {
+      "0x30": 32,
+      "0x38": 32
+    },
+    "manager_has_proven_vtable": false,
+    "render_root_slot_rva": "0x6185f18",
+    "render_data_pointer_offset": "0x50",
+    "render_data_enabled_byte_offset": "0x5e8",
+    "render_data_all_byte_offset": "0x5e9",
+    "render_data_alloc_size": "0x648",
+    "render_data_allocation_site_rva": "0x4b32b3",
+    "render_data_allocation_original": "b9 48 06 00 00",
+    "render_data_publish_site_rva": "0x4b32e5",
+    "render_data_publish_original": "48 89 46 50",
+    "render_data_constructor_rva": "0x4b1d50",
+    "render_data_prefix_zero_original": "33 ed 48 89 29 48 89 69 08",
+    "render_data_bool_init_rva": "0x4b1f73",
+    "render_data_bool_init_original": "66 c7 86 e8 05 00 00 01 00",
+    "render_data_has_proven_vtable": false,
+    "render_task_rva": "0x1045700",
+    "render_task_original": "48 8b 11 0f b6 41 08 88 82 e9 05 00 00 c3",
+    "tick_function_rva": "0xc964a0",
+    "ui_getter_rva": "0x187ee0",
+    "queued_setter_rva": "0xc96650",
+    "manager_bool_write_rva": "0xc96685",
+    "manager_bool_write_original": "40 86 7b 41"
+  },
+  "entity_formula": "revealWanted = context1884A0() && UI_A1; visible = (flags & 4) != 0 && (((flags & 0x10) != 0) || revealWanted); setterArg3 = ((flags & 2) != 0 || visible) ? 0 : 1; call1EA840(displayEntity, 2, setterArg3)",
+  "rea_proofs": {
+    "tick_rw": {
+      "json": "C:\\Users\\21642\\Documents\\deepseek-harness\\default-workspace\\CoH3FowTool\\tools\\reverse\\console_diag_tick_rw_rea.json",
+      "evidence_id": "ev_06b7774bb36f36c57d9af98883ef2b3255aa5aa8521b6e1ec9a436eb603619ea",
+      "is_error": false
+    },
+    "entity_rw": {
+      "json": "C:\\Users\\21642\\Documents\\deepseek-harness\\default-workspace\\CoH3FowTool\\tools\\reverse\\console_diag_entity_rw_rea.json",
+      "evidence_id": "ev_af2945758d0b957e75dcf762564561e8397b9a2a3dfbf25e3f7c8b0f13323c44",
+      "is_error": false
+    },
+    "context_rw": {
+      "json": "C:\\Users\\21642\\Documents\\deepseek-harness\\default-workspace\\CoH3FowTool\\tools\\reverse\\console_diag_context_rw_rea.json",
+      "evidence_id": "ev_c1abcdb3748aade46d2f697717ef405c28743ecae491110346d08c1953eedc09",
+      "is_error": false
+    },
+    "simcase": {
+      "json": "C:\\Users\\21642\\Documents\\deepseek-harness\\default-workspace\\CoH3FowTool\\tools\\reverse\\console_diag_simcase_rea.json",
+      "evidence_id": "ev_0567ece848c60fcd70010c1516cc3edae286e7025829f7406c165eae2b90a077",
+      "is_error": false
+    },
+    "foweffect": {
+      "json": "C:\\Users\\21642\\Documents\\deepseek-harness\\default-workspace\\CoH3FowTool\\tools\\reverse\\console_diag_foweffect_rea.json",
+      "evidence_id": "ev_00b48b74ba1d42828be20b211d121e5dc9f2381244794d98fe90954fdf0d8682",
+      "is_error": false
+    }
+  },
+  "limits": [
+    "No game process input, reads, writes or injections performed by this child/script.",
+    "Patch replacements are parent-tested descriptors only; this script does not apply them.",
+    "D and manager are data structures with no vtable assignment in the reviewed constructors; pointer shape checks are not RTTI identity proof.",
+    "UI visibility queries may also be consumed by other local UI functions; not an exhaustive caller-side-effect audit.",
+    "Parent runtime results are separate evidence; no independent child gameplay validation."
+  ]
+}

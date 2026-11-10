@@ -1,0 +1,53 @@
+﻿=== .?AVBufferedEntity@@ ===
+  name file 0x5F6D0E0 | TypeDescriptor rva 0x5F6DED0 | COL rva 0x5063550 | vftable rva 0x3D75FB0
+    [ 0] rva 0x2828D0
+    [ 1] rva 0x329C8C0
+    [ 2] rva 0x710280
+    [ 3] rva 0x5063578
+    [ 4] rva 0x329C810
+    [ 5] rva 0x22BDD6D
+    [ 6] rva 0x2483100
+    [ 7] rva 0x5010A30
+    [ 8] rva 0x1189310
+    [ 9] rva 0xD05AA0
+    [10] rva 0x14E4C70
+    [11] rva 0x5010350
+    [12] rva 0x4CCD90
+    [13] rva 0x28FEC0
+    [14] rva 0x14E4C70
+    [15] rva 0x5010620
+=== .?AVEntity@@ ===
+  name file 0x5F70548 | TypeDescriptor rva 0x5F71338 | COL rva 0x5062678 | vftable rva 0x3D90090
+    [ 0] rva 0x6C6130
+    [ 1] rva 0x8189D0
+    [ 2] rva 0x6C39A0
+    [ 3] rva 0xE584D0
+    [ 4] rva 0x818360
+    [ 5] rva 0x818A60
+    [ 6] rva 0x14FDFD0
+    [ 7] rva 0x32EB7CC
+    [ 8] rva 0x4CCE90
+    [ 9] rva 0x5062C40
+    [10] rva 0x32C6690
+    [11] rva 0x22BDD6D
+    [12] rva 0x22BDD6D
+    [13] rva 0x22BDD6D
+    [14] rva 0x14F30D0
+    [15] rva 0x14F30D0
+  name file 0x5F70548 | TypeDescriptor rva 0x5F71338 | COL rva 0x50626A0 | vftable rva 0x3D90120
+    [ 0] rva 0x24E27EC
+    [ 1] rva 0xD03100
+    [ 2] rva 0x482570
+    [ 3] rva 0xD8C430
+    [ 4] rva 0x14F30D0
+    [ 5] rva 0x14F30D0
+    [ 6] rva 0x3FF050
+    [ 7] rva 0x502A5E8
+    [ 8] rva 0x1513390
+    [ 9] rva 0x1513390
+    [10] rva 0x6C7890
+    [11] rva 0x15133C0
+    [12] rva 0x15133A0
+    [13] rva 0x14E6470
+    [14] rva 0x50709D0
+    [15] rva 0x14F7910

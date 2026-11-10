@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <AssemblyName>CoH3.Licensing.Server</AssemblyName>
+    <RootNamespace>CoH3.Licensing.Server</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="admin.html;admin.js;admin.css" />
+    <ProjectReference Include="../client/CoH3.Licensing.Client.csproj" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.17" />
+  </ItemGroup>
+</Project>

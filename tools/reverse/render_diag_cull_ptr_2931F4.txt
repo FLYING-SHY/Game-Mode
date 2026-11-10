@@ -1,0 +1,13 @@
+source=G:\SteamLibrary\steamapps\common\Company of Heroes 3\RelicCoH3.exe
+sha256=21edb5c05c33e89fb5f9d88a3fc6738817abd80e0366f648b18ade999cc975ca
+base=140000000
+text_RVA=1000 raw=600 size=3D52C00
+mode=ptr
+
+TARGET 2931F4
+
+TARGET 2937B0
+
+TARGET 38E5660
+
+TARGET 7FB4B0

@@ -1,0 +1,1450 @@
+source=G:\SteamLibrary\steamapps\common\Company of Heroes 3\RelicCoH3.exe
+sha256=21edb5c05c33e89fb5f9d88a3fc6738817abd80e0366f648b18ade999cc975ca
+base=140000000
+text_RVA=1000 raw=600 size=3D52C00
+mode=scan
+raw_qualified_reads=561 pairs=72
+
+PAIR word=1EA846 byte=1EA854 reg=rcx pdata=['0x1ea840', '0x1ea8a0'] aligned=True
+001EA846 raw=001E9E46 44 0f b7 59 6a                     movzx r11d, word ptr [rcx + 0x6a]
+001EA854 raw=001E9E54 80 79 69 00                        cmp byte ptr [rcx + 0x69], 0
+001EA840 raw=001E9E40 40 53                              push rbx
+001EA842 raw=001E9E42 48 83 ec 20                        sub rsp, 0x20
+001EA846 raw=001E9E46 44 0f b7 59 6a                     movzx r11d, word ptr [rcx + 0x6a]
+001EA84B raw=001E9E4B 4c 8b c9                           mov r9, rcx
+001EA84E raw=001E9E4E 66 45 85 db                        test r11w, r11w
+001EA852 raw=001E9E52 7f 3a                              jg 0x1401ea88e
+001EA854 raw=001E9E54 80 79 69 00                        cmp byte ptr [rcx + 0x69], 0
+001EA858 raw=001E9E58 75 34                              jne 0x1401ea88e
+001EA85A raw=001E9E5A 32 db                              xor bl, bl
+001EA85C raw=001E9E5C 0f b6 49 69                        movzx ecx, byte ptr [rcx + 0x69]
+001EA860 raw=001E9E60 41 f6 d8                           neg r8b
+001EA863 raw=001E9E63 41 0f b6 c0                        movzx eax, r8b
+001EA867 raw=001E9E67 0a c2                              or al, dl
+001EA869 raw=001E9E69 f6 d0                              not al
+001EA86B raw=001E9E6B 22 c1                              and al, cl
+001EA86D raw=001E9E6D 0a ca                              or cl, dl
+001EA86F raw=001E9E6F 41 22 c8                           and cl, r8b
+001EA872 raw=001E9E72 0a c1                              or al, cl
+001EA874 raw=001E9E74 41 88 41 69                        mov byte ptr [r9 + 0x69], al
+001EA878 raw=001E9E78 66 45 85 db                        test r11w, r11w
+001EA87C raw=001E9E7C 7f 14                              jg 0x1401ea892
+001EA87E raw=001E9E7E 84 c0                              test al, al
+001EA880 raw=001E9E80 75 10                              jne 0x1401ea892
+001EA882 raw=001E9E82 32 d2                              xor dl, dl
+001EA884 raw=001E9E84 3a da                              cmp bl, dl
+001EA886 raw=001E9E86 75 0e                              jne 0x1401ea896
+001EA888 raw=001E9E88 48 83 c4 20                        add rsp, 0x20
+001EA88C raw=001E9E8C 5b                                 pop rbx
+001EA88D raw=001E9E8D c3                                 ret 
+001EA88E raw=001E9E8E b3 01                              mov bl, 1
+001EA890 raw=001E9E90 eb ca                              jmp 0x1401ea85c
+001EA892 raw=001E9E92 b2 01                              mov dl, 1
+001EA894 raw=001E9E94 eb ee                              jmp 0x1401ea884
+
+PAIR word=1EA846 byte=1EA85C reg=rcx pdata=['0x1ea840', '0x1ea8a0'] aligned=True
+001EA846 raw=001E9E46 44 0f b7 59 6a                     movzx r11d, word ptr [rcx + 0x6a]
+001EA85C raw=001E9E5C 0f b6 49 69                        movzx ecx, byte ptr [rcx + 0x69]
+001EA840 raw=001E9E40 40 53                              push rbx
+001EA842 raw=001E9E42 48 83 ec 20                        sub rsp, 0x20
+001EA846 raw=001E9E46 44 0f b7 59 6a                     movzx r11d, word ptr [rcx + 0x6a]
+001EA84B raw=001E9E4B 4c 8b c9                           mov r9, rcx
+001EA84E raw=001E9E4E 66 45 85 db                        test r11w, r11w
+001EA852 raw=001E9E52 7f 3a                              jg 0x1401ea88e
+001EA854 raw=001E9E54 80 79 69 00                        cmp byte ptr [rcx + 0x69], 0
+001EA858 raw=001E9E58 75 34                              jne 0x1401ea88e
+001EA85A raw=001E9E5A 32 db                              xor bl, bl
+001EA85C raw=001E9E5C 0f b6 49 69                        movzx ecx, byte ptr [rcx + 0x69]
+001EA860 raw=001E9E60 41 f6 d8                           neg r8b
+001EA863 raw=001E9E63 41 0f b6 c0                        movzx eax, r8b
+001EA867 raw=001E9E67 0a c2                              or al, dl
+001EA869 raw=001E9E69 f6 d0                              not al
+001EA86B raw=001E9E6B 22 c1                              and al, cl
+001EA86D raw=001E9E6D 0a ca                              or cl, dl
+001EA86F raw=001E9E6F 41 22 c8                           and cl, r8b
+001EA872 raw=001E9E72 0a c1                              or al, cl
+001EA874 raw=001E9E74 41 88 41 69                        mov byte ptr [r9 + 0x69], al
+001EA878 raw=001E9E78 66 45 85 db                        test r11w, r11w
+001EA87C raw=001E9E7C 7f 14                              jg 0x1401ea892
+001EA87E raw=001E9E7E 84 c0                              test al, al
+001EA880 raw=001E9E80 75 10                              jne 0x1401ea892
+001EA882 raw=001E9E82 32 d2                              xor dl, dl
+001EA884 raw=001E9E84 3a da                              cmp bl, dl
+001EA886 raw=001E9E86 75 0e                              jne 0x1401ea896
+001EA888 raw=001E9E88 48 83 c4 20                        add rsp, 0x20
+001EA88C raw=001E9E8C 5b                                 pop rbx
+001EA88D raw=001E9E8D c3                                 ret 
+001EA88E raw=001E9E8E b3 01                              mov bl, 1
+001EA890 raw=001E9E90 eb ca                              jmp 0x1401ea85c
+001EA892 raw=001E9E92 b2 01                              mov dl, 1
+001EA894 raw=001E9E94 eb ee                              jmp 0x1401ea884
+001EA896 raw=001E9E96 49 8b c9                           mov rcx, r9
+001EA899 raw=001E9E99 e8 62 c8 27 00                     call 0x140467100
+
+PAIR word=1EA847 byte=1EA854 reg=rcx pdata=['0x1ea840', '0x1ea8a0'] aligned=False
+001EA847 raw=001E9E47 0f b7 59 6a                        movzx ebx, word ptr [rcx + 0x6a]
+001EA854 raw=001E9E54 80 79 69 00                        cmp byte ptr [rcx + 0x69], 0
+
+PAIR word=1EA847 byte=1EA85C reg=rcx pdata=['0x1ea840', '0x1ea8a0'] aligned=False
+001EA847 raw=001E9E47 0f b7 59 6a                        movzx ebx, word ptr [rcx + 0x6a]
+001EA85C raw=001E9E5C 0f b6 49 69                        movzx ecx, byte ptr [rcx + 0x69]
+
+PAIR word=1F47A3 byte=1F47AE reg=rdx pdata=['0x1f4710', '0x1f4977'] aligned=True
+001F47A3 raw=001F3DA3 66 83 7a 6a 00                     cmp word ptr [rdx + 0x6a], 0
+001F47AE raw=001F3DAE 80 7a 69 00                        cmp byte ptr [rdx + 0x69], 0
+001F477B raw=001F3D7B 48 8d 0c 89                        lea rcx, [rcx + rcx*4]
+001F477F raw=001F3D7F 48 8b 40 60                        mov rax, qword ptr [rax + 0x60]
+001F4783 raw=001F3D83 48 8b 14 c8                        mov rdx, qword ptr [rax + rcx*8]
+001F4787 raw=001F3D87 48 89 55 b8                        mov qword ptr [rbp - 0x48], rdx
+001F478B raw=001F3D8B 0f 10 05 ee 85 47 04               movups xmm0, xmmword ptr [rip + 0x44785ee]
+001F4792 raw=001F3D92 0f 11 45 a0                        movups xmmword ptr [rbp - 0x60], xmm0
+001F4796 raw=001F3D96 f2 0f 10 0d f2 85 47 04            movsd xmm1, qword ptr [rip + 0x44785f2]
+001F479E raw=001F3D9E f2 0f 11 4d b0                     movsd qword ptr [rbp - 0x50], xmm1
+001F47A3 raw=001F3DA3 66 83 7a 6a 00                     cmp word ptr [rdx + 0x6a], 0
+001F47A8 raw=001F3DA8 0f 8f a0 00 00 00                  jg 0x1401f484e
+001F47AE raw=001F3DAE 80 7a 69 00                        cmp byte ptr [rdx + 0x69], 0
+001F47B2 raw=001F3DB2 0f 85 96 00 00 00                  jne 0x1401f484e
+001F47B8 raw=001F3DB8 4c 89 45 c0                        mov qword ptr [rbp - 0x40], r8
+001F47BC raw=001F3DBC 4c 89 4d c8                        mov qword ptr [rbp - 0x38], r9
+001F47C0 raw=001F3DC0 48 c7 45 d0 03 00 00 00            mov qword ptr [rbp - 0x30], 3
+001F47C8 raw=001F3DC8 48 c7 45 d8 00 00 00 00            mov qword ptr [rbp - 0x28], 0
+001F47D0 raw=001F3DD0 48 8d 42 30                        lea rax, [rdx + 0x30]
+001F47D4 raw=001F3DD4 48 89 45 e0                        mov qword ptr [rbp - 0x20], rax
+001F47D8 raw=001F3DD8 48 c7 45 e8 ff ff ff ff            mov qword ptr [rbp - 0x18], 0xffffffffffffffff
+001F47E0 raw=001F3DE0 48 8d 4d c0                        lea rcx, [rbp - 0x40]
+001F47E4 raw=001F3DE4 e8 e7 01 00 00                     call 0x1401f49d0
+001F47E9 raw=001F3DE9 48 8b 45 e0                        mov rax, qword ptr [rbp - 0x20]
+001F47ED raw=001F3DED 48 8b 10                           mov rdx, qword ptr [rax]
+
+PAIR word=1F4980 byte=1F4987 reg=rcx pdata=None aligned=None
+001F4980 raw=001F3F80 66 83 79 6a 00                     cmp word ptr [rcx + 0x6a], 0
+001F4987 raw=001F3F87 80 79 69 00                        cmp byte ptr [rcx + 0x69], 0
+
+PAIR word=2915BF byte=2915CA reg=rdi pdata=['0x291360', '0x291ada'] aligned=True
+002915BF raw=00290BBF 66 83 7f 6a 00                     cmp word ptr [rdi + 0x6a], 0
+002915CA raw=00290BCA 80 7f 69 00                        cmp byte ptr [rdi + 0x69], 0
+0029159B raw=00290B9B 0f 1f 44 00 00                     nop dword ptr [rax + rax]
+002915A0 raw=00290BA0 49 3b 9e 88 00 00 00               cmp rbx, qword ptr [r14 + 0x88]
+002915A7 raw=00290BA7 0f 83 5c 01 00 00                  jae 0x140291709
+002915AD raw=00290BAD 49 8b 06                           mov rax, qword ptr [r14]
+002915B0 raw=00290BB0 48 8b 3c d8                        mov rdi, qword ptr [rax + rbx*8]
+002915B4 raw=00290BB4 48 83 7f 10 00                     cmp qword ptr [rdi + 0x10], 0
+002915B9 raw=00290BB9 0f 85 f8 00 00 00                  jne 0x1402916b7
+002915BF raw=00290BBF 66 83 7f 6a 00                     cmp word ptr [rdi + 0x6a], 0
+002915C4 raw=00290BC4 0f 8f ed 00 00 00                  jg 0x1402916b7
+002915CA raw=00290BCA 80 7f 69 00                        cmp byte ptr [rdi + 0x69], 0
+002915CE raw=00290BCE 0f 85 e3 00 00 00                  jne 0x1402916b7
+002915D4 raw=00290BD4 4d 8b 47 38                        mov r8, qword ptr [r15 + 0x38]
+002915D8 raw=00290BD8 48 63 4f 64                        movsxd rcx, dword ptr [rdi + 0x64]
+002915DC raw=00290BDC 49 8b 40 08                        mov rax, qword ptr [r8 + 8]
+002915E0 raw=00290BE0 48 63 0c 88                        movsxd rcx, dword ptr [rax + rcx*4]
+002915E4 raw=00290BE4 48 8d 14 89                        lea rdx, [rcx + rcx*4]
+002915E8 raw=00290BE8 49 8b 40 60                        mov rax, qword ptr [r8 + 0x60]
+002915EC raw=00290BEC 4c 8d 04 d0                        lea r8, [rax + rdx*8]
+002915F0 raw=00290BF0 49 8d 40 10                        lea rax, [r8 + 0x10]
+002915F4 raw=00290BF4 41 0f 28 ef                        movaps xmm5, xmm15
+002915F8 raw=00290BF8 0f 28 e0                           movaps xmm4, xmm0
+002915FB raw=00290BFB 33 d2                              xor edx, edx
+002915FD raw=00290BFD 48 8d 48 0c                        lea rcx, [rax + 0xc]
+00291601 raw=00290C01 4c 8b c8                           mov r9, rax
+00291604 raw=00290C04 49 f7 d9                           neg r9
+00291607 raw=00290C07 4c 8b 5c 24 68                     mov r11, qword ptr [rsp + 0x68]
+
+PAIR word=2917B6 byte=2917C2 reg=r15 pdata=['0x291360', '0x291ada'] aligned=True
+002917B6 raw=00290DB6 66 41 83 7f 6a 00                  cmp word ptr [r15 + 0x6a], 0
+002917C2 raw=00290DC2 41 80 7f 69 00                     cmp byte ptr [r15 + 0x69], 0
+00291792 raw=00290D92 f3 44 0f 10 44 24 78               movss xmm8, dword ptr [rsp + 0x78]
+00291799 raw=00290D99 0f 1f 80 00 00 00 00               nop dword ptr [rax]
+002917A0 raw=00290DA0 49 3b 9c 24 88 00 00 00            cmp rbx, qword ptr [r12 + 0x88]
+002917A8 raw=00290DA8 0f 83 ac 02 00 00                  jae 0x140291a5a
+002917AE raw=00290DAE 49 8b 04 24                        mov rax, qword ptr [r12]
+002917B2 raw=00290DB2 4c 8b 3c d8                        mov r15, qword ptr [rax + rbx*8]
+002917B6 raw=00290DB6 66 41 83 7f 6a 00                  cmp word ptr [r15 + 0x6a], 0
+002917BC raw=00290DBC 0f 8f e5 01 00 00                  jg 0x1402919a7
+002917C2 raw=00290DC2 41 80 7f 69 00                     cmp byte ptr [r15 + 0x69], 0
+002917C7 raw=00290DC7 0f 85 da 01 00 00                  jne 0x1402919a7
+002917CD raw=00290DCD 4d 8b 45 38                        mov r8, qword ptr [r13 + 0x38]
+002917D1 raw=00290DD1 49 63 4f 64                        movsxd rcx, dword ptr [r15 + 0x64]
+002917D5 raw=00290DD5 49 8b 40 08                        mov rax, qword ptr [r8 + 8]
+002917D9 raw=00290DD9 48 63 0c 88                        movsxd rcx, dword ptr [rax + rcx*4]
+002917DD raw=00290DDD 48 8d 14 89                        lea rdx, [rcx + rcx*4]
+002917E1 raw=00290DE1 49 8b 40 60                        mov rax, qword ptr [r8 + 0x60]
+002917E5 raw=00290DE5 4c 8d 04 d0                        lea r8, [rax + rdx*8]
+002917E9 raw=00290DE9 41 0f 28 ef                        movaps xmm5, xmm15
+002917ED raw=00290DED 0f 28 e0                           movaps xmm4, xmm0
+002917F0 raw=00290DF0 33 c9                              xor ecx, ecx
+002917F2 raw=00290DF2 49 8d 50 10                        lea rdx, [r8 + 0x10]
+002917F6 raw=00290DF6 48 2b d6                           sub rdx, rsi
+002917F9 raw=00290DF9 48 8d 04 31                        lea rax, [rcx + rsi]
+002917FD raw=00290DFD f3 0f 10 18                        movss xmm3, dword ptr [rax]
+00291801 raw=00290E01 f3 0f 10 48 0c                     movss xmm1, dword ptr [rax + 0xc]
+
+PAIR word=4669E6 byte=4669EF reg=rbx pdata=['0x4669b0', '0x466a18'] aligned=True
+004669E6 raw=00465FE6 0f b7 53 6a                        movzx edx, word ptr [rbx + 0x6a]
+004669EF raw=00465FEF 80 7b 69 00                        cmp byte ptr [rbx + 0x69], 0
+004669BE raw=00465FBE 48 8b fa                           mov rdi, rdx
+004669C1 raw=00465FC1 48 8b d9                           mov rbx, rcx
+004669C4 raw=00465FC4 48 89 54 24 30                     mov qword ptr [rsp + 0x30], rdx
+004669C9 raw=00465FC9 48 83 c1 18                        add rcx, 0x18
+004669CD raw=00465FCD 48 8d 54 24 30                     lea rdx, [rsp + 0x30]
+004669D2 raw=00465FD2 e8 f9 1d 06 00                     call 0x1404c87d0
+004669D7 raw=00465FD7 48 8d 8b 20 01 00 00               lea rcx, [rbx + 0x120]
+004669DE raw=00465FDE 48 8b d7                           mov rdx, rdi
+004669E1 raw=00465FE1 e8 4a 60 02 00                     call 0x14048ca30
+004669E6 raw=00465FE6 0f b7 53 6a                        movzx edx, word ptr [rbx + 0x6a]
+004669EA raw=00465FEA 66 85 d2                           test dx, dx
+004669ED raw=00465FED 7f 25                              jg 0x140466a14
+004669EF raw=00465FEF 80 7b 69 00                        cmp byte ptr [rbx + 0x69], 0
+004669F3 raw=00465FF3 75 1f                              jne 0x140466a14
+004669F5 raw=00465FF5 32 c0                              xor al, al
+004669F7 raw=00465FF7 33 c9                              xor ecx, ecx
+004669F9 raw=00465FF9 66 ff c2                           inc dx
+004669FC raw=00465FFC 84 c0                              test al, al
+004669FE raw=00465FFE 66 0f 44 d1                        cmove dx, cx
+00466A02 raw=00466002 48 8b cf                           mov rcx, rdi
+00466A05 raw=00466005 48 8b 5c 24 38                     mov rbx, qword ptr [rsp + 0x38]
+00466A0A raw=0046600A 48 83 c4 20                        add rsp, 0x20
+00466A0E raw=0046600E 5f                                 pop rdi
+00466A0F raw=0046600F e9 bc 03 00 00                     jmp 0x140466dd0
+00466A14 raw=00466014 b0 01                              mov al, 1
+00466A16 raw=00466016 eb df                              jmp 0x1404669f7
+
+PAIR word=466DD4 byte=466DDB reg=rcx pdata=['0x466dd0', '0x466e0f'] aligned=True
+00466DD4 raw=004663D4 66 83 79 6a 00                     cmp word ptr [rcx + 0x6a], 0
+00466DDB raw=004663DB 80 79 69 00                        cmp byte ptr [rcx + 0x69], 0
+00466DD0 raw=004663D0 48 83 ec 28                        sub rsp, 0x28
+00466DD4 raw=004663D4 66 83 79 6a 00                     cmp word ptr [rcx + 0x6a], 0
+00466DD9 raw=004663D9 7f 2b                              jg 0x140466e06
+00466DDB raw=004663DB 80 79 69 00                        cmp byte ptr [rcx + 0x69], 0
+00466DDF raw=004663DF 75 25                              jne 0x140466e06
+00466DE1 raw=004663E1 45 32 c0                           xor r8b, r8b
+00466DE4 raw=004663E4 66 89 51 6a                        mov word ptr [rcx + 0x6a], dx
+00466DE8 raw=004663E8 66 85 d2                           test dx, dx
+00466DEB raw=004663EB 7f 1e                              jg 0x140466e0b
+00466DED raw=004663ED 80 79 69 00                        cmp byte ptr [rcx + 0x69], 0
+00466DF1 raw=004663F1 75 18                              jne 0x140466e0b
+00466DF3 raw=004663F3 32 d2                              xor dl, dl
+00466DF5 raw=004663F5 44 3a c2                           cmp r8b, dl
+00466DF8 raw=004663F8 75 05                              jne 0x140466dff
+00466DFA raw=004663FA 48 83 c4 28                        add rsp, 0x28
+00466DFE raw=004663FE c3                                 ret 
+00466DFF raw=004663FF e8 fc 02 00 00                     call 0x140467100
+00466E04 raw=00466404 eb f4                              jmp 0x140466dfa
+00466E06 raw=00466406 41 b0 01                           mov r8b, 1
+00466E09 raw=00466409 eb d9                              jmp 0x140466de4
+00466E0B raw=0046640B b2 01                              mov dl, 1
+00466E0D raw=0046640D eb e6                              jmp 0x140466df5
+
+PAIR word=466DD4 byte=466DED reg=rcx pdata=['0x466dd0', '0x466e0f'] aligned=True
+00466DD4 raw=004663D4 66 83 79 6a 00                     cmp word ptr [rcx + 0x6a], 0
+00466DED raw=004663ED 80 79 69 00                        cmp byte ptr [rcx + 0x69], 0
+00466DD0 raw=004663D0 48 83 ec 28                        sub rsp, 0x28
+00466DD4 raw=004663D4 66 83 79 6a 00                     cmp word ptr [rcx + 0x6a], 0
+00466DD9 raw=004663D9 7f 2b                              jg 0x140466e06
+00466DDB raw=004663DB 80 79 69 00                        cmp byte ptr [rcx + 0x69], 0
+00466DDF raw=004663DF 75 25                              jne 0x140466e06
+00466DE1 raw=004663E1 45 32 c0                           xor r8b, r8b
+00466DE4 raw=004663E4 66 89 51 6a                        mov word ptr [rcx + 0x6a], dx
+00466DE8 raw=004663E8 66 85 d2                           test dx, dx
+00466DEB raw=004663EB 7f 1e                              jg 0x140466e0b
+00466DED raw=004663ED 80 79 69 00                        cmp byte ptr [rcx + 0x69], 0
+00466DF1 raw=004663F1 75 18                              jne 0x140466e0b
+00466DF3 raw=004663F3 32 d2                              xor dl, dl
+00466DF5 raw=004663F5 44 3a c2                           cmp r8b, dl
+00466DF8 raw=004663F8 75 05                              jne 0x140466dff
+00466DFA raw=004663FA 48 83 c4 28                        add rsp, 0x28
+00466DFE raw=004663FE c3                                 ret 
+00466DFF raw=004663FF e8 fc 02 00 00                     call 0x140467100
+00466E04 raw=00466404 eb f4                              jmp 0x140466dfa
+00466E06 raw=00466406 41 b0 01                           mov r8b, 1
+00466E09 raw=00466409 eb d9                              jmp 0x140466de4
+00466E0B raw=0046640B b2 01                              mov dl, 1
+00466E0D raw=0046640D eb e6                              jmp 0x140466df5
+
+PAIR word=47207A byte=472083 reg=r9 pdata=['0x471ec0', '0x472c0b'] aligned=False
+0047207A raw=0047167A f2 66 41 83 79 6a 00               cmp word ptr [r9 + 0x6a], 0
+00472083 raw=00471683 41 80 79 69 00                     cmp byte ptr [r9 + 0x69], 0
+
+PAIR word=47207B byte=472083 reg=r9 pdata=['0x471ec0', '0x472c0b'] aligned=True
+0047207B raw=0047167B 66 41 83 79 6a 00                  cmp word ptr [r9 + 0x6a], 0
+00472083 raw=00471683 41 80 79 69 00                     cmp byte ptr [r9 + 0x69], 0
+00472056 raw=00471656 48 8b 42 18                        mov rax, qword ptr [rdx + 0x18]
+0047205A raw=0047165A 48 63 04 88                        movsxd rax, dword ptr [rax + rcx*4]
+0047205E raw=0047165E 4c 8b c0                           mov r8, rax
+00472061 raw=00471661 49 c1 e8 05                        shr r8, 5
+00472065 raw=00471665 48 8b 52 70                        mov rdx, qword ptr [rdx + 0x70]
+00472069 raw=00471669 24 1f                              and al, 0x1f
+0047206B raw=0047166B 0f b6 c8                           movzx ecx, al
+0047206E raw=0047166E 42 8b 04 82                        mov eax, dword ptr [rdx + r8*4]
+00472072 raw=00471672 0f a3 c8                           bt eax, ecx
+00472075 raw=00471675 73 04                              jae 0x14047207b
+00472077 raw=00471677 41 0f 28 f2                        movaps xmm6, xmm10
+0047207B raw=0047167B 66 41 83 79 6a 00                  cmp word ptr [r9 + 0x6a], 0
+00472081 raw=00471681 7f 07                              jg 0x14047208a
+00472083 raw=00471683 41 80 79 69 00                     cmp byte ptr [r9 + 0x69], 0
+00472088 raw=00471688 74 31                              je 0x1404720bb
+0047208A raw=0047168A 45 0f 28 c2                        movaps xmm8, xmm10
+0047208E raw=0047168E f3 0f 10 46 40                     movss xmm0, dword ptr [rsi + 0x40]
+00472093 raw=00471693 f3 0f 11 44 24 68                  movss dword ptr [rsp + 0x68], xmm0
+00472099 raw=00471699 f3 0f 10 4e 48                     movss xmm1, dword ptr [rsi + 0x48]
+0047209E raw=0047169E f3 0f 11 4c 24 6c                  movss dword ptr [rsp + 0x6c], xmm1
+004720A4 raw=004716A4 48 8d 54 24 68                     lea rdx, [rsp + 0x68]
+004720A9 raw=004716A9 48 8b 4c 24 58                     mov rcx, qword ptr [rsp + 0x58]
+004720AE raw=004716AE e8 bd 80 e1 ff                     call 0x14028a170
+004720B3 raw=004716B3 84 c0                              test al, al
+004720B5 raw=004716B5 75 04                              jne 0x1404720bb
+004720B7 raw=004716B7 41 0f 28 fa                        movaps xmm7, xmm10
+004720BB raw=004716BB 0f 2e 76 4c                        ucomiss xmm6, dword ptr [rsi + 0x4c]
+004720BF raw=004716BF 0f 84 46 02 00 00                  je 0x14047230b
+
+PAIR word=48C281 byte=48C28C reg=rcx pdata=['0x48c170', '0x48c480'] aligned=True
+0048C281 raw=0048B881 66 83 79 6a 00                     cmp word ptr [rcx + 0x6a], 0
+0048C28C raw=0048B88C 80 79 69 00                        cmp byte ptr [rcx + 0x69], 0
+0048C25F raw=0048B85F 74 9c                              je 0x14048c1fd
+0048C261 raw=0048B861 49 63 4b 08                        movsxd rcx, dword ptr [r11 + 8]
+0048C265 raw=0048B865 48 8b 06                           mov rax, qword ptr [rsi]
+0048C268 raw=0048B868 48 63 0c 88                        movsxd rcx, dword ptr [rax + rcx*4]
+0048C26C raw=0048B86C 48 69 c1 b0 00 00 00               imul rax, rcx, 0xb0
+0048C273 raw=0048B873 83 7c 10 0c 00                     cmp dword ptr [rax + rdx + 0xc], 0
+0048C278 raw=0048B878 7d 83                              jge 0x14048c1fd
+0048C27A raw=0048B87A 49 8b 03                           mov rax, qword ptr [r11]
+0048C27D raw=0048B87D 48 8b 48 08                        mov rcx, qword ptr [rax + 8]
+0048C281 raw=0048B881 66 83 79 6a 00                     cmp word ptr [rcx + 0x6a], 0
+0048C286 raw=0048B886 0f 8f 71 ff ff ff                  jg 0x14048c1fd
+0048C28C raw=0048B88C 80 79 69 00                        cmp byte ptr [rcx + 0x69], 0
+0048C290 raw=0048B890 0f 85 67 ff ff ff                  jne 0x14048c1fd
+0048C296 raw=0048B896 f3 41 0f 10 6b 54                  movss xmm5, dword ptr [r11 + 0x54]
+0048C29C raw=0048B89C 44 0f 28 c5                        movaps xmm8, xmm5
+0048C2A0 raw=0048B8A0 f3 45 0f 5c 43 48                  subss xmm8, dword ptr [r11 + 0x48]
+0048C2A6 raw=0048B8A6 f3 41 0f 10 5b 50                  movss xmm3, dword ptr [r11 + 0x50]
+0048C2AC raw=0048B8AC 0f 28 f3                           movaps xmm6, xmm3
+0048C2AF raw=0048B8AF f3 41 0f 5c 73 44                  subss xmm6, dword ptr [r11 + 0x44]
+0048C2B5 raw=0048B8B5 f3 41 0f 10 4b 4c                  movss xmm1, dword ptr [r11 + 0x4c]
+0048C2BB raw=0048B8BB 0f 28 f9                           movaps xmm7, xmm1
+0048C2BE raw=0048B8BE f3 41 0f 5c 7b 40                  subss xmm7, dword ptr [r11 + 0x40]
+0048C2C4 raw=0048B8C4 f3 41 0f 58 4b 40                  addss xmm1, dword ptr [r11 + 0x40]
+0048C2CA raw=0048B8CA f3 41 0f 59 c9                     mulss xmm1, xmm9
+
+PAIR word=4A96BC byte=4A96C4 reg=r9 pdata=['0x4a9690', '0x4a971c'] aligned=True
+004A96BC raw=004A8CBC 66 41 83 79 6a 00                  cmp word ptr [r9 + 0x6a], 0
+004A96C4 raw=004A8CC4 41 80 79 69 00                     cmp byte ptr [r9 + 0x69], 0
+004A9696 raw=004A8C96 48 8b d9                           mov rbx, rcx
+004A9699 raw=004A8C99 48 81 c1 50 01 00 00               add rcx, 0x150
+004A96A0 raw=004A8CA0 e8 fb 2a 03 00                     call 0x1404dc1a0
+004A96A5 raw=004A8CA5 84 c0                              test al, al
+004A96A7 raw=004A8CA7 75 52                              jne 0x1404a96fb
+004A96A9 raw=004A8CA9 4c 8b 4b 08                        mov r9, qword ptr [rbx + 8]
+004A96AD raw=004A8CAD 49 8b 41 58                        mov rax, qword ptr [r9 + 0x58]
+004A96B1 raw=004A8CB1 48 8b 48 48                        mov rcx, qword ptr [rax + 0x48]
+004A96B5 raw=004A8CB5 48 89 8b 10 01 00 00               mov qword ptr [rbx + 0x110], rcx
+004A96BC raw=004A8CBC 66 41 83 79 6a 00                  cmp word ptr [r9 + 0x6a], 0
+004A96C2 raw=004A8CC2 7f 3b                              jg 0x1404a96ff
+004A96C4 raw=004A8CC4 41 80 79 69 00                     cmp byte ptr [r9 + 0x69], 0
+004A96C9 raw=004A8CC9 75 34                              jne 0x1404a96ff
+004A96CB raw=004A8CCB b0 01                              mov al, 1
+004A96CD raw=004A8CCD 4d 8b c8                           mov r9, r8
+004A96D0 raw=004A8CD0 88 44 24 20                        mov byte ptr [rsp + 0x20], al
+004A96D4 raw=004A8CD4 4c 8b c2                           mov r8, rdx
+004A96D7 raw=004A8CD7 48 8d 8b c0 00 00 00               lea rcx, [rbx + 0xc0]
+004A96DE raw=004A8CDE 48 8b d3                           mov rdx, rbx
+004A96E1 raw=004A8CE1 e8 ea fe ff ff                     call 0x1404a95d0
+004A96E6 raw=004A8CE6 84 c0                              test al, al
+004A96E8 raw=004A8CE8 74 11                              je 0x1404a96fb
+004A96EA raw=004A8CEA 80 bb 3b 01 00 00 00               cmp byte ptr [rbx + 0x13b], 0
+004A96F1 raw=004A8CF1 75 10                              jne 0x1404a9703
+004A96F3 raw=004A8CF3 b0 01                              mov al, 1
+004A96F5 raw=004A8CF5 48 83 c4 30                        add rsp, 0x30
+004A96F9 raw=004A8CF9 5b                                 pop rbx
+004A96FA raw=004A8CFA c3                                 ret 
+004A96FB raw=004A8CFB 32 c0                              xor al, al
+004A96FD raw=004A8CFD eb f6                              jmp 0x1404a96f5
+004A96FF raw=004A8CFF 32 c0                              xor al, al
+004A9701 raw=004A8D01 eb ca                              jmp 0x1404a96cd
+004A9703 raw=004A8D03 48 8b 43 08                        mov rax, qword ptr [rbx + 8]
+
+PAIR word=4AB189 byte=4AB194 reg=rax pdata=['0x4ab030', '0x4ab366'] aligned=True
+004AB189 raw=004AA789 66 83 78 6a 00                     cmp word ptr [rax + 0x6a], 0
+004AB194 raw=004AA794 80 78 69 00                        cmp byte ptr [rax + 0x69], 0
+004AB164 raw=004AA764 48 8d 55 c8                        lea rdx, [rbp - 0x38]
+004AB168 raw=004AA768 48 8b cb                           mov rcx, rbx
+004AB16B raw=004AA76B e8 30 fe ff ff                     call 0x1404aafa0
+004AB170 raw=004AA770 8b 10                              mov edx, dword ptr [rax]
+004AB172 raw=004AA772 48 8d 05 67 02 a5 00               lea rax, [rip + 0xa50267]
+004AB179 raw=004AA779 4c 3b c0                           cmp r8, rax
+004AB17C raw=004AA77C 0f 85 2a 01 00 00                  jne 0x1404ab2ac
+004AB182 raw=004AA782 48 8b 83 e0 00 00 00               mov rax, qword ptr [rbx + 0xe0]
+004AB189 raw=004AA789 66 83 78 6a 00                     cmp word ptr [rax + 0x6a], 0
+004AB18E raw=004AA78E 0f 8f 10 01 00 00                  jg 0x1404ab2a4
+004AB194 raw=004AA794 80 78 69 00                        cmp byte ptr [rax + 0x69], 0
+004AB198 raw=004AA798 0f 85 06 01 00 00                  jne 0x1404ab2a4
+004AB19E raw=004AA79E 40 b7 01                           mov dil, 1
+004AB1A1 raw=004AA7A1 0f b6 4d e0                        movzx ecx, byte ptr [rbp - 0x20]
+004AB1A5 raw=004AA7A5 88 4c 24 60                        mov byte ptr [rsp + 0x60], cl
+004AB1A9 raw=004AA7A9 0f b6 4d e1                        movzx ecx, byte ptr [rbp - 0x1f]
+004AB1AD raw=004AA7AD 88 4c 24 61                        mov byte ptr [rsp + 0x61], cl
+004AB1B1 raw=004AA7B1 f3 0f 10 45 e4                     movss xmm0, dword ptr [rbp - 0x1c]
+004AB1B6 raw=004AA7B6 f3 0f 11 44 24 64                  movss dword ptr [rsp + 0x64], xmm0
+004AB1BC raw=004AA7BC 0f b6 4d e8                        movzx ecx, byte ptr [rbp - 0x18]
+004AB1C0 raw=004AA7C0 88 4c 24 68                        mov byte ptr [rsp + 0x68], cl
+004AB1C4 raw=004AA7C4 f3 0f 10 45 ec                     movss xmm0, dword ptr [rbp - 0x14]
+004AB1C9 raw=004AA7C9 f3 0f 11 44 24 6c                  movss dword ptr [rsp + 0x6c], xmm0
+004AB1CF raw=004AA7CF 48 8b 4d f0                        mov rcx, qword ptr [rbp - 0x10]
+004AB1D3 raw=004AA7D3 48 89 4c 24 70                     mov qword ptr [rsp + 0x70], rcx
+
+PAIR word=56289D byte=5628A7 reg=rcx pdata=['0x562870', '0x562a27'] aligned=True
+0056289D raw=00561E9D 66 39 59 6a                        cmp word ptr [rcx + 0x6a], bx
+005628A7 raw=00561EA7 38 59 69                           cmp byte ptr [rcx + 0x69], bl
+00562877 raw=00561E77 55                                 push rbp
+00562878 raw=00561E78 56                                 push rsi
+00562879 raw=00561E79 57                                 push rdi
+0056287A raw=00561E7A 48 83 ec 60                        sub rsp, 0x60
+0056287E raw=00561E7E 48 8b fa                           mov rdi, rdx
+00562881 raw=00561E81 48 8b f1                           mov rsi, rcx
+00562884 raw=00561E84 0f 10 05 f5 a4 10 04               movups xmm0, xmmword ptr [rip + 0x410a4f5]
+0056288B raw=00561E8B 0f 11 02                           movups xmmword ptr [rdx], xmm0
+0056288E raw=00561E8E f2 0f 10 05 fa a4 10 04            movsd xmm0, qword ptr [rip + 0x410a4fa]
+00562896 raw=00561E96 f2 0f 11 42 10                     movsd qword ptr [rdx + 0x10], xmm0
+0056289B raw=00561E9B 33 db                              xor ebx, ebx
+0056289D raw=00561E9D 66 39 59 6a                        cmp word ptr [rcx + 0x6a], bx
+005628A1 raw=00561EA1 0f 8f 94 00 00 00                  jg 0x14056293b
+005628A7 raw=00561EA7 38 59 69                           cmp byte ptr [rcx + 0x69], bl
+005628AA raw=00561EAA 0f 85 8b 00 00 00                  jne 0x14056293b
+005628B0 raw=00561EB0 48 b8 db ae 53 f9 44 a2 07 5b      movabs rax, 0x5b07a244f953aedb
+005628BA raw=00561EBA 49 89 43 a8                        mov qword ptr [r11 - 0x58], rax
+005628BE raw=00561EBE 48 8d 05 4b 1a 0d 04               lea rax, [rip + 0x40d1a4b]
+005628C5 raw=00561EC5 49 89 43 b0                        mov qword ptr [r11 - 0x50], rax
+005628C9 raw=00561EC9 49 c7 43 b8 03 00 00 00            mov qword ptr [r11 - 0x48], 3
+005628D1 raw=00561ED1 49 89 5b c0                        mov qword ptr [r11 - 0x40], rbx
+005628D5 raw=00561ED5 48 8d 41 30                        lea rax, [rcx + 0x30]
+005628D9 raw=00561ED9 49 89 43 c8                        mov qword ptr [r11 - 0x38], rax
+005628DD raw=00561EDD 49 c7 43 d0 ff ff ff ff            mov qword ptr [r11 - 0x30], 0xffffffffffffffff
+005628E5 raw=00561EE5 48 8d 4c 24 20                     lea rcx, [rsp + 0x20]
+
+PAIR word=5CD5FE byte=5CD605 reg=rax pdata=['0x5cd3b0', '0x5cdf6e'] aligned=True
+005CD5FE raw=005CCBFE 66 83 78 6a 00                     cmp word ptr [rax + 0x6a], 0
+005CD605 raw=005CCC05 80 78 69 00                        cmp byte ptr [rax + 0x69], 0
+005CD5D6 raw=005CCBD6 0f 84 82 00 00 00                  je 0x1405cd65e
+005CD5DC raw=005CCBDC 48 8b 05 35 89 bb 05               mov rax, qword ptr [rip + 0x5bb8935]
+005CD5E3 raw=005CCBE3 48 8b 88 a8 00 00 00               mov rcx, qword ptr [rax + 0xa8]
+005CD5EA raw=005CCBEA 49 8b 96 88 00 00 00               mov rdx, qword ptr [r14 + 0x88]
+005CD5F1 raw=005CCBF1 48 8b 09                           mov rcx, qword ptr [rcx]
+005CD5F4 raw=005CCBF4 e8 d7 d4 00 00                     call 0x1405daad0
+005CD5F9 raw=005CCBF9 48 85 c0                           test rax, rax
+005CD5FC raw=005CCBFC 74 60                              je 0x1405cd65e
+005CD5FE raw=005CCBFE 66 83 78 6a 00                     cmp word ptr [rax + 0x6a], 0
+005CD603 raw=005CCC03 7f 59                              jg 0x1405cd65e
+005CD605 raw=005CCC05 80 78 69 00                        cmp byte ptr [rax + 0x69], 0
+005CD609 raw=005CCC09 75 53                              jne 0x1405cd65e
+005CD60B raw=005CCC0B 48 8b d3                           mov rdx, rbx
+005CD60E raw=005CCC0E 48 8b ce                           mov rcx, rsi
+005CD611 raw=005CCC11 e8 ea b9 53 00                     call 0x140b09000
+005CD616 raw=005CCC16 4c 8b d8                           mov r11, rax
+005CD619 raw=005CCC19 c6 00 01                           mov byte ptr [rax], 1
+005CD61C raw=005CCC1C 49 8b ce                           mov rcx, r14
+005CD61F raw=005CCC1F e8 dc af 02 00                     call 0x1405f8600
+005CD624 raw=005CCC24 b9 08 00 00 00                     mov ecx, 8
+005CD629 raw=005CCC29 84 c0                              test al, al
+005CD62B raw=005CCC2B 0f 85 f1 fd 1c 02                  jne 0x14279d422
+005CD631 raw=005CCC31 41 88 04 0b                        mov byte ptr [r11 + rcx], al
+005CD635 raw=005CCC35 48 8d 54 24 68                     lea rdx, [rsp + 0x68]
+005CD63A raw=005CCC3A 48 8b ce                           mov rcx, rsi
+005CD63D raw=005CCC3D e8 2e 09 00 00                     call 0x1405cdf70
+005CD642 raw=005CCC42 48 8b d0                           mov rdx, rax
+005CD645 raw=005CCC45 41 b8 02 00 00 00                  mov r8d, 2
+
+PAIR word=5CDC01 byte=5CDC08 reg=rax pdata=['0x5cd3b0', '0x5cdf6e'] aligned=False
+005CDC01 raw=005CD201 45 66 83 78 6a 00                  cmp word ptr [rax + 0x6a], 0
+005CDC08 raw=005CD208 3e 80 78 69 00                     cmp byte ptr ds:[rax + 0x69], 0
+
+PAIR word=5CDC01 byte=5CDC09 reg=rax pdata=['0x5cd3b0', '0x5cdf6e'] aligned=False
+005CDC01 raw=005CD201 45 66 83 78 6a 00                  cmp word ptr [rax + 0x6a], 0
+005CDC09 raw=005CD209 80 78 69 00                        cmp byte ptr [rax + 0x69], 0
+
+PAIR word=5CDC02 byte=5CDC08 reg=rax pdata=['0x5cd3b0', '0x5cdf6e'] aligned=False
+005CDC02 raw=005CD202 66 83 78 6a 00                     cmp word ptr [rax + 0x6a], 0
+005CDC08 raw=005CD208 3e 80 78 69 00                     cmp byte ptr ds:[rax + 0x69], 0
+
+PAIR word=5CDC02 byte=5CDC09 reg=rax pdata=['0x5cd3b0', '0x5cdf6e'] aligned=True
+005CDC02 raw=005CD202 66 83 78 6a 00                     cmp word ptr [rax + 0x6a], 0
+005CDC09 raw=005CD209 80 78 69 00                        cmp byte ptr [rax + 0x69], 0
+005CDBDB raw=005CD1DB 48 85 c0                           test rax, rax
+005CDBDE raw=005CD1DE 74 67                              je 0x1405cdc47
+005CDBE0 raw=005CD1E0 48 8b 05 31 83 bb 05               mov rax, qword ptr [rip + 0x5bb8331]
+005CDBE7 raw=005CD1E7 48 8b 88 a8 00 00 00               mov rcx, qword ptr [rax + 0xa8]
+005CDBEE raw=005CD1EE 49 8b 97 88 00 00 00               mov rdx, qword ptr [r15 + 0x88]
+005CDBF5 raw=005CD1F5 48 8b 09                           mov rcx, qword ptr [rcx]
+005CDBF8 raw=005CD1F8 e8 d3 ce 00 00                     call 0x1405daad0
+005CDBFD raw=005CD1FD 48 85 c0                           test rax, rax
+005CDC00 raw=005CD200 74 45                              je 0x1405cdc47
+005CDC02 raw=005CD202 66 83 78 6a 00                     cmp word ptr [rax + 0x6a], 0
+005CDC07 raw=005CD207 7f 3e                              jg 0x1405cdc47
+005CDC09 raw=005CD209 80 78 69 00                        cmp byte ptr [rax + 0x69], 0
+005CDC0D raw=005CD20D 75 38                              jne 0x1405cdc47
+005CDC0F raw=005CD20F 48 8b d3                           mov rdx, rbx
+005CDC12 raw=005CD212 48 8b ce                           mov rcx, rsi
+005CDC15 raw=005CD215 e8 e6 b3 53 00                     call 0x140b09000
+005CDC1A raw=005CD21A 4c 8b e0                           mov r12, rax
+005CDC1D raw=005CD21D 80 38 01                           cmp byte ptr [rax], 1
+005CDC20 raw=005CD220 0f 85 db 00 00 00                  jne 0x1405cdd01
+005CDC26 raw=005CD226 c6 00 00                           mov byte ptr [rax], 0
+005CDC29 raw=005CD229 48 8d 54 24 60                     lea rdx, [rsp + 0x60]
+005CDC2E raw=005CD22E 48 8b ce                           mov rcx, rsi
+005CDC31 raw=005CD231 e8 3a 03 00 00                     call 0x1405cdf70
+005CDC36 raw=005CD236 48 8b d0                           mov rdx, rax
+005CDC39 raw=005CD239 41 b8 04 00 00 00                  mov r8d, 4
+005CDC3F raw=005CD23F 49 8b cf                           mov rcx, r15
+005CDC42 raw=005CD242 e8 09 09 00 00                     call 0x1405ce550
+005CDC47 raw=005CD247 48 83 c3 08                        add rbx, 8
+
+PAIR word=5D97B9 byte=5D97C4 reg=rax pdata=['0x5d9770', '0x5d9974'] aligned=True
+005D97B9 raw=005D8DB9 66 83 78 6a 00                     cmp word ptr [rax + 0x6a], 0
+005D97C4 raw=005D8DC4 80 78 69 00                        cmp byte ptr [rax + 0x69], 0
+005D9792 raw=005D8D92 85 d2                              test edx, edx
+005D9794 raw=005D8D94 0f 84 9a 01 00 00                  je 0x1405d9934
+005D979A raw=005D8D9A 48 8b 05 77 c7 ba 05               mov rax, qword ptr [rip + 0x5bac777]
+005D97A1 raw=005D8DA1 48 8b 88 a8 00 00 00               mov rcx, qword ptr [rax + 0xa8]
+005D97A8 raw=005D8DA8 48 8b 09                           mov rcx, qword ptr [rcx]
+005D97AB raw=005D8DAB e8 20 13 00 00                     call 0x1405daad0
+005D97B0 raw=005D8DB0 48 85 c0                           test rax, rax
+005D97B3 raw=005D8DB3 0f 84 7f 01 00 00                  je 0x1405d9938
+005D97B9 raw=005D8DB9 66 83 78 6a 00                     cmp word ptr [rax + 0x6a], 0
+005D97BE raw=005D8DBE 0f 8f 74 01 00 00                  jg 0x1405d9938
+005D97C4 raw=005D8DC4 80 78 69 00                        cmp byte ptr [rax + 0x69], 0
+005D97C8 raw=005D8DC8 0f 85 6a 01 00 00                  jne 0x1405d9938
+005D97CE raw=005D8DCE 45 32 f6                           xor r14b, r14b
+005D97D1 raw=005D8DD1 33 db                              xor ebx, ebx
+005D97D3 raw=005D8DD3 41 bc 40 00 00 00                  mov r12d, 0x40
+005D97D9 raw=005D8DD9 48 8d 56 08                        lea rdx, [rsi + 8]
+005D97DD raw=005D8DDD 4c 8d 3d 1c 68 a2 ff               lea r15, [rip - 0x5d97e4]
+005D97E4 raw=005D8DE4 39 1a                              cmp dword ptr [rdx], ebx
+005D97E6 raw=005D8DE6 0f 84 54 01 00 00                  je 0x1405d9940
+005D97EC raw=005D8DEC 65 48 8b 04 25 58 00 00 00         mov rax, qword ptr gs:[0x58]
+005D97F5 raw=005D8DF5 48 8b 08                           mov rcx, qword ptr [rax]
+005D97F8 raw=005D8DF8 41 8b 04 0c                        mov eax, dword ptr [r12 + rcx]
+005D97FC raw=005D8DFC 4d 8b 84 c7 00 5e 18 06            mov r8, qword ptr [r15 + rax*8 + 0x6185e00]
+005D9804 raw=005D8E04 8b 05 c2 26 83 05                  mov eax, dword ptr [rip + 0x58326c2]
+
+PAIR word=5DAA76 byte=5DAA7D reg=rax pdata=['0x5da9f0', '0x5daac6'] aligned=True
+005DAA76 raw=005DA076 66 83 78 6a 00                     cmp word ptr [rax + 0x6a], 0
+005DAA7D raw=005DA07D 80 78 69 00                        cmp byte ptr [rax + 0x69], 0
+005DAA51 raw=005DA051 e8 0a db ba ff                     call 0x140188560
+005DAA56 raw=005DA056 48 85 c0                           test rax, rax
+005DAA59 raw=005DA059 0f 85 d5 5f 1c 02                  jne 0x1427a0a34
+005DAA5F raw=005DA05F 32 c0                              xor al, al
+005DAA61 raw=005DA061 48 8b 5c 24 40                     mov rbx, qword ptr [rsp + 0x40]
+005DAA66 raw=005DA066 0f 28 74 24 20                     movaps xmm6, xmmword ptr [rsp + 0x20]
+005DAA6B raw=005DA06B 48 83 c4 30                        add rsp, 0x30
+005DAA6F raw=005DA06F 5f                                 pop rdi
+005DAA70 raw=005DA070 c3                                 ret 
+005DAA71 raw=005DA071 48 85 c0                           test rax, rax
+005DAA74 raw=005DA074 74 3f                              je 0x1405daab5
+005DAA76 raw=005DA076 66 83 78 6a 00                     cmp word ptr [rax + 0x6a], 0
+005DAA7B raw=005DA07B 7f 38                              jg 0x1405daab5
+005DAA7D raw=005DA07D 80 78 69 00                        cmp byte ptr [rax + 0x69], 0
+005DAA81 raw=005DA081 75 32                              jne 0x1405daab5
+005DAA83 raw=005DA083 48 8b 40 48                        mov rax, qword ptr [rax + 0x48]
+005DAA87 raw=005DA087 0f 10 88 a0 00 00 00               movups xmm1, xmmword ptr [rax + 0xa0]
+005DAA8E raw=005DA08E f3 0f 11 0b                        movss dword ptr [rbx], xmm1
+005DAA92 raw=005DA092 0f 28 c1                           movaps xmm0, xmm1
+005DAA95 raw=005DA095 0f c6 c1 55                        shufps xmm0, xmm1, 0x55
+005DAA99 raw=005DA099 0f c6 c9 aa                        shufps xmm1, xmm1, 0xaa
+005DAA9D raw=005DA09D f3 0f 11 43 04                     movss dword ptr [rbx + 4], xmm0
+005DAAA2 raw=005DA0A2 f3 0f 11 4b 08                     movss dword ptr [rbx + 8], xmm1
+005DAAA7 raw=005DA0A7 f3 0f 58 73 04                     addss xmm6, dword ptr [rbx + 4]
+005DAAAC raw=005DA0AC b0 01                              mov al, 1
+005DAAAE raw=005DA0AE f3 0f 11 73 04                     movss dword ptr [rbx + 4], xmm6
+005DAAB3 raw=005DA0B3 eb ac                              jmp 0x1405daa61
+005DAAB5 raw=005DA0B5 f2 0f 10 47 2c                     movsd xmm0, qword ptr [rdi + 0x2c]
+005DAABA raw=005DA0BA f2 0f 11 03                        movsd qword ptr [rbx], xmm0
+
+PAIR word=6D9B5A byte=6D9B65 reg=rbp pdata=['0x6d9a40', '0x6d9c55'] aligned=True
+006D9B5A raw=006D915A 66 83 7d 6a 00                     cmp word ptr [rbp + 0x6a], 0
+006D9B65 raw=006D9165 80 7d 69 00                        cmp byte ptr [rbp + 0x69], 0
+006D9B33 raw=006D9133 0f 5b c0                           cvtdq2ps xmm0, xmm0
+006D9B36 raw=006D9136 f3 0f 58 46 4c                     addss xmm0, dword ptr [rsi + 0x4c]
+006D9B3B raw=006D913B 0f 2f c8                           comiss xmm1, xmm0
+006D9B3E raw=006D913E 0f 87 e3 00 00 00                  ja 0x1406d9c27
+006D9B44 raw=006D9144 8b 46 60                           mov eax, dword ptr [rsi + 0x60]
+006D9B47 raw=006D9147 39 46 58                           cmp dword ptr [rsi + 0x58], eax
+006D9B4A raw=006D914A 0f 87 d7 00 00 00                  ja 0x1406d9c27
+006D9B50 raw=006D9150 80 7e 54 00                        cmp byte ptr [rsi + 0x54], 0
+006D9B54 raw=006D9154 0f 84 cd 00 00 00                  je 0x1406d9c27
+006D9B5A raw=006D915A 66 83 7d 6a 00                     cmp word ptr [rbp + 0x6a], 0
+006D9B5F raw=006D915F 0f 8f c2 00 00 00                  jg 0x1406d9c27
+006D9B65 raw=006D9165 80 7d 69 00                        cmp byte ptr [rbp + 0x69], 0
+006D9B69 raw=006D9169 0f 85 b8 00 00 00                  jne 0x1406d9c27
+006D9B6F raw=006D916F 4c 8b c3                           mov r8, rbx
+006D9B72 raw=006D9172 48 8b d5                           mov rdx, rbp
+006D9B75 raw=006D9175 48 8b ce                           mov rcx, rsi
+006D9B78 raw=006D9178 e8 13 01 00 00                     call 0x1406d9c90
+006D9B7D raw=006D917D 48 8b d0                           mov rdx, rax
+006D9B80 raw=006D9180 48 8b 84 24 f8 00 00 00            mov rax, qword ptr [rsp + 0xf8]
+006D9B88 raw=006D9188 48 85 d2                           test rdx, rdx
+006D9B8B raw=006D918B 0f 85 aa 00 00 00                  jne 0x1406d9c3b
+006D9B91 raw=006D9191 4c 89 7c 24 50                     mov qword ptr [rsp + 0x50], r15
+006D9B96 raw=006D9196 f3 0f 10 84 24 08 01 00 00         movss xmm0, dword ptr [rsp + 0x108]
+006D9B9F raw=006D919F f3 0f 11 44 24 48                  movss dword ptr [rsp + 0x48], xmm0
+006D9BA5 raw=006D91A5 48 89 44 24 38                     mov qword ptr [rsp + 0x38], rax
+
+PAIR word=7FBA0E byte=7FBA15 reg=rax pdata=['0x7fb850', '0x7fbabb'] aligned=True
+007FBA0E raw=007FB00E 66 83 78 6a 00                     cmp word ptr [rax + 0x6a], 0
+007FBA15 raw=007FB015 80 78 69 00                        cmp byte ptr [rax + 0x69], 0
+007FB9EB raw=007FAFEB 48 8b cb                           mov rcx, rbx
+007FB9EE raw=007FAFEE e8 ad 89 99 ff                     call 0x1401943a0
+007FB9F3 raw=007FAFF3 49 8b 8f a8 00 00 00               mov rcx, qword ptr [r15 + 0xa8]
+007FB9FA raw=007FAFFA 48 8b 90 88 00 00 00               mov rdx, qword ptr [rax + 0x88]
+007FBA01 raw=007FB001 48 8b 09                           mov rcx, qword ptr [rcx]
+007FBA04 raw=007FB004 e8 c7 f0 dd ff                     call 0x1405daad0
+007FBA09 raw=007FB009 48 85 c0                           test rax, rax
+007FBA0C raw=007FB00C 74 0d                              je 0x1407fba1b
+007FBA0E raw=007FB00E 66 83 78 6a 00                     cmp word ptr [rax + 0x6a], 0
+007FBA13 raw=007FB013 7f 41                              jg 0x1407fba56
+007FBA15 raw=007FB015 80 78 69 00                        cmp byte ptr [rax + 0x69], 0
+007FBA19 raw=007FB019 75 3b                              jne 0x1407fba56
+007FBA1B raw=007FB01B 48 8d 4c 24 30                     lea rcx, [rsp + 0x30]
+007FBA20 raw=007FB020 e8 9b b3 a4 ff                     call 0x140246dc0
+007FBA25 raw=007FB025 90                                 nop 
+007FBA26 raw=007FB026 48 8d 4c 24 48                     lea rcx, [rsp + 0x48]
+007FBA2B raw=007FB02B e8 40 1d af ff                     call 0x1402ed770
+007FBA30 raw=007FB030 48 8b 4c 24 60                     mov rcx, qword ptr [rsp + 0x60]
+007FBA35 raw=007FB035 48 33 cc                           xor rcx, rsp
+007FBA38 raw=007FB038 e8 a3 ec ab 01                     call 0x1422ba6e0
+007FBA3D raw=007FB03D 4c 8d 5c 24 70                     lea r11, [rsp + 0x70]
+007FBA42 raw=007FB042 49 8b 5b 38                        mov rbx, qword ptr [r11 + 0x38]
+007FBA46 raw=007FB046 49 8b 6b 40                        mov rbp, qword ptr [r11 + 0x40]
+007FBA4A raw=007FB04A 49 8b e3                           mov rsp, r11
+007FBA4D raw=007FB04D 41 5f                              pop r15
+007FBA4F raw=007FB04F 41 5e                              pop r14
+007FBA51 raw=007FB051 41 5c                              pop r12
+007FBA53 raw=007FB053 5f                                 pop rdi
+007FBA54 raw=007FB054 5e                                 pop rsi
+007FBA55 raw=007FB055 c3                                 ret 
+
+PAIR word=7FBA8B byte=7FBA92 reg=rax pdata=['0x7fb850', '0x7fbabb'] aligned=True
+007FBA8B raw=007FB08B 66 83 78 6a 00                     cmp word ptr [rax + 0x6a], 0
+007FBA92 raw=007FB092 80 78 69 00                        cmp byte ptr [rax + 0x69], 0
+007FBA63 raw=007FB063 48 8b cd                           mov rcx, rbp
+007FBA66 raw=007FB066 e8 75 3f b9 ff                     call 0x14038f9e0
+007FBA6B raw=007FB06B 48 85 c0                           test rax, rax
+007FBA6E raw=007FB06E 74 28                              je 0x1407fba98
+007FBA70 raw=007FB070 49 8b 8f a8 00 00 00               mov rcx, qword ptr [r15 + 0xa8]
+007FBA77 raw=007FB077 48 8b 90 88 00 00 00               mov rdx, qword ptr [rax + 0x88]
+007FBA7E raw=007FB07E 48 8b 09                           mov rcx, qword ptr [rcx]
+007FBA81 raw=007FB081 e8 4a f0 dd ff                     call 0x1405daad0
+007FBA86 raw=007FB086 48 85 c0                           test rax, rax
+007FBA89 raw=007FB089 74 0d                              je 0x1407fba98
+007FBA8B raw=007FB08B 66 83 78 6a 00                     cmp word ptr [rax + 0x6a], 0
+007FBA90 raw=007FB090 7f 15                              jg 0x1407fbaa7
+007FBA92 raw=007FB092 80 78 69 00                        cmp byte ptr [rax + 0x69], 0
+007FBA96 raw=007FB096 75 0f                              jne 0x1407fbaa7
+007FBA98 raw=007FB098 48 83 c3 08                        add rbx, 8
+007FBA9C raw=007FB09C 48 3b df                           cmp rbx, rdi
+007FBA9F raw=007FB09F 0f 84 7a fe ff ff                  je 0x1407fb91f
+007FBAA5 raw=007FB0A5 eb b9                              jmp 0x1407fba60
+007FBAA7 raw=007FB0A7 49 8b ce                           mov rcx, r14
+007FBAAA raw=007FB0AA e8 a1 4f bf 00                     call 0x1413f0a50
+007FBAAF raw=007FB0AF e9 72 ff ff ff                     jmp 0x1407fba26
+007FBAB4 raw=007FB0B4 33 ff                              xor edi, edi
+007FBAB6 raw=007FB0B6 e9 84 fe ff ff                     jmp 0x1407fb93f
+
+PAIR word=C8A519 byte=C8A524 reg=rax pdata=['0xc8a2a0', '0xc8aba8'] aligned=True
+00C8A519 raw=00C89B19 66 83 78 6a 00                     cmp word ptr [rax + 0x6a], 0
+00C8A524 raw=00C89B24 80 78 69 00                        cmp byte ptr [rax + 0x69], 0
+00C8A4F4 raw=00C89AF4 48 8d 55 f0                        lea rdx, [rbp - 0x10]
+00C8A4F8 raw=00C89AF8 48 8b ce                           mov rcx, rsi
+00C8A4FB raw=00C89AFB e8 a0 0a 82 ff                     call 0x1404aafa0
+00C8A500 raw=00C89B00 8b 10                              mov edx, dword ptr [rax]
+00C8A502 raw=00C89B02 48 8d 05 d7 0e 27 00               lea rax, [rip + 0x270ed7]
+00C8A509 raw=00C89B09 4c 3b c0                           cmp r8, rax
+00C8A50C raw=00C89B0C 0f 85 2a 05 00 00                  jne 0x140c8aa3c
+00C8A512 raw=00C89B12 48 8b 86 e0 00 00 00               mov rax, qword ptr [rsi + 0xe0]
+00C8A519 raw=00C89B19 66 83 78 6a 00                     cmp word ptr [rax + 0x6a], 0
+00C8A51E raw=00C89B1E 0f 8f 70 05 00 00                  jg 0x140c8aa94
+00C8A524 raw=00C89B24 80 78 69 00                        cmp byte ptr [rax + 0x69], 0
+00C8A528 raw=00C89B28 0f 85 66 05 00 00                  jne 0x140c8aa94
+00C8A52E raw=00C89B2E b0 01                              mov al, 1
+00C8A530 raw=00C89B30 88 44 24 50                        mov byte ptr [rsp + 0x50], al
+00C8A534 raw=00C89B34 88 44 24 60                        mov byte ptr [rsp + 0x60], al
+00C8A538 raw=00C89B38 b9 24 00 00 00                     mov ecx, 0x24
+00C8A53D raw=00C89B3D ba 20 00 00 00                     mov edx, 0x20
+00C8A542 raw=00C89B42 84 c0                              test al, al
+00C8A544 raw=00C89B44 0f 45 ca                           cmovne ecx, edx
+00C8A547 raw=00C89B47 8b d9                              mov ebx, ecx
+00C8A549 raw=00C89B49 45 84 ed                           test r13b, r13b
+00C8A54C raw=00C89B4C 74 0a                              je 0x140c8a558
+00C8A54E raw=00C89B4E 83 7c 24 68 02                     cmp dword ptr [rsp + 0x68], 2
+00C8A553 raw=00C89B53 75 03                              jne 0x140c8a558
+00C8A555 raw=00C89B55 83 cb 10                           or ebx, 0x10
+00C8A558 raw=00C89B58 48 8d 4f 28                        lea rcx, [rdi + 0x28]
+00C8A55C raw=00C89B5C e8 df 37 52 ff                     call 0x1401add40
+00C8A561 raw=00C89B61 48 89 45 00                        mov qword ptr [rbp], rax
+
+PAIR word=CEEF4F byte=CEEF56 reg=rax pdata=['0xceee4e', '0xceefea'] aligned=True
+00CEEF4F raw=00CEE54F 66 44 39 70 6a                     cmp word ptr [rax + 0x6a], r14w
+00CEEF56 raw=00CEE556 44 38 70 69                        cmp byte ptr [rax + 0x69], r14b
+00CEEF27 raw=00CEE527 e8 74 54 4a ff                     call 0x1401943a0
+00CEEF2C raw=00CEE52C 49 8b 4d 08                        mov rcx, qword ptr [r13 + 8]
+00CEEF30 raw=00CEE530 48 8b 90 88 00 00 00               mov rdx, qword ptr [rax + 0x88]
+00CEEF37 raw=00CEE537 48 8b 89 a8 00 00 00               mov rcx, qword ptr [rcx + 0xa8]
+00CEEF3E raw=00CEE53E 48 8b 09                           mov rcx, qword ptr [rcx]
+00CEEF41 raw=00CEE541 e8 8a bb 8e ff                     call 0x1405daad0
+00CEEF46 raw=00CEE546 48 85 c0                           test rax, rax
+00CEEF49 raw=00CEE549 74 48                              je 0x140ceef93
+00CEEF4B raw=00CEE54B 66 41 ff c7                        inc r15w
+00CEEF4F raw=00CEE54F 66 44 39 70 6a                     cmp word ptr [rax + 0x6a], r14w
+00CEEF54 raw=00CEE554 7f 3d                              jg 0x140ceef93
+00CEEF56 raw=00CEE556 44 38 70 69                        cmp byte ptr [rax + 0x69], r14b
+00CEEF5A raw=00CEE55A 75 37                              jne 0x140ceef93
+00CEEF5C raw=00CEE55C 4c 63 40 60                        movsxd r8, dword ptr [rax + 0x60]
+00CEEF60 raw=00CEE560 66 41 ff c4                        inc r12w
+00CEEF64 raw=00CEE564 41 83 f8 ff                        cmp r8d, -1
+00CEEF68 raw=00CEE568 74 29                              je 0x140ceef93
+00CEEF6A raw=00CEE56A 48 8b 48 58                        mov rcx, qword ptr [rax + 0x58]
+00CEEF6E raw=00CEE56E 48 8b 51 40                        mov rdx, qword ptr [rcx + 0x40]
+00CEEF72 raw=00CEE572 48 8b 42 18                        mov rax, qword ptr [rdx + 0x18]
+00CEEF76 raw=00CEE576 48 8b 52 70                        mov rdx, qword ptr [rdx + 0x70]
+00CEEF7A raw=00CEE57A 4a 63 04 80                        movsxd rax, dword ptr [rax + r8*4]
+00CEEF7E raw=00CEE57E 4c 8b c0                           mov r8, rax
+00CEEF81 raw=00CEE581 24 1f                              and al, 0x1f
+00CEEF83 raw=00CEE583 49 c1 e8 05                        shr r8, 5
+00CEEF87 raw=00CEE587 0f b6 c8                           movzx ecx, al
+00CEEF8A raw=00CEE58A 42 8b 04 82                        mov eax, dword ptr [rdx + r8*4]
+00CEEF8E raw=00CEE58E 0f a3 c8                           bt eax, ecx
+00CEEF91 raw=00CEE591 72 20                              jb 0x140ceefb3
+00CEEF93 raw=00CEE593 48 83 c3 04                        add rbx, 4
+
+PAIR word=CEEF4F byte=CEEF57 reg=rax pdata=['0xceee4e', '0xceefea'] aligned=False
+00CEEF4F raw=00CEE54F 66 44 39 70 6a                     cmp word ptr [rax + 0x6a], r14w
+00CEEF57 raw=00CEE557 38 70 69                           cmp byte ptr [rax + 0x69], dh
+
+PAIR word=EFB3E7 byte=EFB3EE reg=rax pdata=None aligned=None
+00EFB3E7 raw=00EFA9E7 66 83 78 6a 00                     cmp word ptr [rax + 0x6a], 0
+00EFB3EE raw=00EFA9EE 80 78 69 00                        cmp byte ptr [rax + 0x69], 0
+
+PAIR word=10E0903 byte=10E090E reg=rax pdata=['0x10e08c0', '0x10e0950'] aligned=True
+010E0903 raw=010DFF03 66 83 78 6a 00                     cmp word ptr [rax + 0x6a], 0
+010E090E raw=010DFF0E 80 78 69 00                        cmp byte ptr [rax + 0x69], 0
+010E08DE raw=010DFEDE 48 8b 72 08                        mov rsi, qword ptr [rdx + 8]
+010E08E2 raw=010DFEE2 48 8b f9                           mov rdi, rcx
+010E08E5 raw=010DFEE5 48 8b 06                           mov rax, qword ptr [rsi]
+010E08E8 raw=010DFEE8 4c 8b 40 50                        mov r8, qword ptr [rax + 0x50]
+010E08EC raw=010DFEEC 48 8d 05 ed aa e1 ff               lea rax, [rip - 0x1e5513]
+010E08F3 raw=010DFEF3 4c 3b c0                           cmp r8, rax
+010E08F6 raw=010DFEF6 0f 85 22 02 00 00                  jne 0x1410e0b1e
+010E08FC raw=010DFEFC 48 8b 86 e0 00 00 00               mov rax, qword ptr [rsi + 0xe0]
+010E0903 raw=010DFF03 66 83 78 6a 00                     cmp word ptr [rax + 0x6a], 0
+010E0908 raw=010DFF08 0f 8f b5 02 00 00                  jg 0x1410e0bc3
+010E090E raw=010DFF0E 80 78 69 00                        cmp byte ptr [rax + 0x69], 0
+010E0912 raw=010DFF12 0f 85 ab 02 00 00                  jne 0x1410e0bc3
+010E0918 raw=010DFF18 b0 01                              mov al, 1
+010E091A raw=010DFF1A 84 c0                              test al, al
+010E091C raw=010DFF1C 0f 84 d5 01 00 00                  je 0x1410e0af7
+010E0922 raw=010DFF22 0f 57 c0                           xorps xmm0, xmm0
+010E0925 raw=010DFF25 0f 2f 47 28                        comiss xmm0, dword ptr [rdi + 0x28]
+010E0929 raw=010DFF29 0f 83 ac 02 00 00                  jae 0x1410e0bdb
+010E092F raw=010DFF2F 0f 2f 47 38                        comiss xmm0, dword ptr [rdi + 0x38]
+010E0933 raw=010DFF33 0f 83 a2 02 00 00                  jae 0x1410e0bdb
+010E0939 raw=010DFF39 0f 2f 47 3c                        comiss xmm0, dword ptr [rdi + 0x3c]
+010E093D raw=010DFF3D 0f 83 98 02 00 00                  jae 0x1410e0bdb
+010E0943 raw=010DFF43 0f 2f 47 40                        comiss xmm0, dword ptr [rdi + 0x40]
+010E0947 raw=010DFF47 0f 83 8e 02 00 00                  jae 0x1410e0bdb
+010E094D raw=010DFF4D 48 8b 06                           mov rax, qword ptr [rsi]
+
+PAIR word=1912415 byte=1912434 reg=r9 pdata=['0x191237a', '0x19124ab'] aligned=True
+01912415 raw=01911A15 41 0f b7 49 6a                     movzx ecx, word ptr [r9 + 0x6a]
+01912434 raw=01911A34 41 0f b6 49 69                     movzx ecx, byte ptr [r9 + 0x69]
+019123EE raw=019119EE 83 fb ff                           cmp ebx, -1
+019123F1 raw=019119F1 0f 84 9d 00 00 00                  je 0x141912494
+019123F7 raw=019119F7 66 0f 1f 84 00 00 00 00 00         nop word ptr [rax + rax]
+01912400 raw=01911A00 8b c3                              mov eax, ebx
+01912402 raw=01911A02 4c 69 c8 b0 00 00 00               imul r9, rax, 0xb0
+01912409 raw=01911A09 4c 03 cd                           add r9, rbp
+0191240C raw=01911A0C 41 8b 41 74                        mov eax, dword ptr [r9 + 0x74]
+01912410 raw=01911A10 83 c0 01                           add eax, 1
+01912413 raw=01911A13 74 52                              je 0x141912467
+01912415 raw=01911A15 41 0f b7 49 6a                     movzx ecx, word ptr [r9 + 0x6a]
+0191241A raw=01911A1A 48 8b 87 00 0b 00 00               mov rax, qword ptr [rdi + 0xb00]
+01912421 raw=01911A21 8b d1                              mov edx, ecx
+01912423 raw=01911A23 48 c1 ea 05                        shr rdx, 5
+01912427 raw=01911A27 83 e1 1f                           and ecx, 0x1f
+0191242A raw=01911A2A 8b 14 90                           mov edx, dword ptr [rax + rdx*4]
+0191242D raw=01911A2D d3 ea                              shr edx, cl
+0191242F raw=01911A2F f6 c2 01                           test dl, 1
+01912432 raw=01911A32 75 23                              jne 0x141912457
+01912434 raw=01911A34 41 0f b6 49 69                     movzx ecx, byte ptr [r9 + 0x69]
+01912439 raw=01911A39 48 8b 87 18 0b 00 00               mov rax, qword ptr [rdi + 0xb18]
+01912440 raw=01911A40 44 8b c1                           mov r8d, ecx
+01912443 raw=01911A43 49 c1 e8 05                        shr r8, 5
+01912447 raw=01911A47 83 e1 1f                           and ecx, 0x1f
+0191244A raw=01911A4A 46 8b 04 80                        mov r8d, dword ptr [rax + r8*4]
+0191244E raw=01911A4E 41 d3 e8                           shr r8d, cl
+01912451 raw=01911A51 41 f6 c0 01                        test r8b, 1
+01912455 raw=01911A55 74 10                              je 0x141912467
+01912457 raw=01911A57 41 8b 51 70                        mov edx, dword ptr [r9 + 0x70]
+0191245B raw=01911A5B 48 8d 4f 18                        lea rcx, [rdi + 0x18]
+0191245F raw=01911A5F 45 33 c0                           xor r8d, r8d
+01912462 raw=01911A62 e8 09 25 08 00                     call 0x141994970
+01912467 raw=01911A67 8d 43 01                           lea eax, [rbx + 1]
+0191246A raw=01911A6A 8b d8                              mov ebx, eax
+0191246C raw=01911A6C 3b c6                              cmp eax, esi
+0191246E raw=01911A6E 73 24                              jae 0x141912494
+01912470 raw=01911A70 8b c3                              mov eax, ebx
+01912472 raw=01911A72 48 69 c8 b0 00 00 00               imul rcx, rax, 0xb0
+
+PAIR word=1912416 byte=1912435 reg=rcx pdata=['0x191237a', '0x19124ab'] aligned=False
+01912416 raw=01911A16 0f b7 49 6a                        movzx ecx, word ptr [rcx + 0x6a]
+01912435 raw=01911A35 0f b6 49 69                        movzx ecx, byte ptr [rcx + 0x69]
+
+PAIR word=19A266D byte=19A2699 reg=r13 pdata=['0x19a2530', '0x19a278b'] aligned=True
+019A266D raw=019A1C6D 41 0f b7 45 6a                     movzx eax, word ptr [r13 + 0x6a]
+019A2699 raw=019A1C99 41 0f b6 5d 69                     movzx ebx, byte ptr [r13 + 0x69]
+019A264B raw=019A1C4B 48 8b d0                           mov rdx, rax
+019A264E raw=019A1C4E 48 85 f6                           test rsi, rsi
+019A2651 raw=019A1C51 75 0e                              jne 0x1419a2661
+019A2653 raw=019A1C53 41 0f b7 4c 24 6a                  movzx ecx, word ptr [r12 + 0x6a]
+019A2659 raw=019A1C59 48 6b f1 70                        imul rsi, rcx, 0x70
+019A265D raw=019A1C5D 48 03 70 48                        add rsi, qword ptr [rax + 0x48]
+019A2661 raw=019A1C61 48 8b bd 98 00 00 00               mov rdi, qword ptr [rbp + 0x98]
+019A2668 raw=019A1C68 48 85 ff                           test rdi, rdi
+019A266B raw=019A1C6B 75 0d                              jne 0x1419a267a
+019A266D raw=019A1C6D 41 0f b7 45 6a                     movzx eax, word ptr [r13 + 0x6a]
+019A2672 raw=019A1C72 48 6b f8 70                        imul rdi, rax, 0x70
+019A2676 raw=019A1C76 48 03 7a 48                        add rdi, qword ptr [rdx + 0x48]
+019A267A raw=019A1C7A 41 8b 45 44                        mov eax, dword ptr [r13 + 0x44]
+019A267E raw=019A1C7E 41 0b 44 24 44                     or eax, dword ptr [r12 + 0x44]
+019A2683 raw=019A1C83 48 85 f6                           test rsi, rsi
+019A2686 raw=019A1C86 74 05                              je 0x1419a268d
+019A2688 raw=019A1C88 8b 4e 2c                           mov ecx, dword ptr [rsi + 0x2c]
+019A268B raw=019A1C8B eb 03                              jmp 0x1419a2690
+019A268D raw=019A1C8D 41 8b cf                           mov ecx, r15d
+019A2690 raw=019A1C90 48 85 ff                           test rdi, rdi
+019A2693 raw=019A1C93 74 04                              je 0x1419a2699
+019A2695 raw=019A1C95 44 8b 7f 2c                        mov r15d, dword ptr [rdi + 0x2c]
+019A2699 raw=019A1C99 41 0f b6 5d 69                     movzx ebx, byte ptr [r13 + 0x69]
+019A269E raw=019A1C9E 44 0b f9                           or r15d, ecx
+019A26A1 raw=019A1CA1 48 8b 4d 70                        mov rcx, qword ptr [rbp + 0x70]
+019A26A5 raw=019A1CA5 44 0b f8                           or r15d, eax
+019A26A8 raw=019A1CA8 48 8b 01                           mov rax, qword ptr [rcx]
+019A26AB raw=019A1CAB ff 50 38                           call qword ptr [rax + 0x38]
+019A26AE raw=019A1CAE 48 89 45 08                        mov qword ptr [rbp + 8], rax
+019A26B2 raw=019A1CB2 48 8d 04 5b                        lea rax, [rbx + rbx*2]
+019A26B6 raw=019A1CB6 41 0f b6 5c 24 69                  movzx ebx, byte ptr [r12 + 0x69]
+019A26BC raw=019A1CBC 48 c1 e0 04                        shl rax, 4
+019A26C0 raw=019A1CC0 48 89 45 00                        mov qword ptr [rbp], rax
+019A26C4 raw=019A1CC4 48 8b 45 70                        mov rax, qword ptr [rbp + 0x70]
+019A26C8 raw=019A1CC8 48 8b c8                           mov rcx, rax
+019A26CB raw=019A1CCB 48 8b 10                           mov rdx, qword ptr [rax]
+019A26CE raw=019A1CCE ff 52 38                           call qword ptr [rdx + 0x38]
+019A26D1 raw=019A1CD1 48 8b 55 00                        mov rdx, qword ptr [rbp]
+019A26D5 raw=019A1CD5 4c 8d 04 5b                        lea r8, [rbx + rbx*2]
+019A26D9 raw=019A1CD9 4c 8b 4d 08                        mov r9, qword ptr [rbp + 8]
+
+PAIR word=19A266E byte=19A269A reg=rbp pdata=['0x19a2530', '0x19a278b'] aligned=False
+019A266E raw=019A1C6E 0f b7 45 6a                        movzx eax, word ptr [rbp + 0x6a]
+019A269A raw=019A1C9A 0f b6 5d 69                        movzx ebx, byte ptr [rbp + 0x69]
+
+PAIR word=19DF046 byte=19DF029 reg=rbp pdata=['0x19def50', '0x19df18e'] aligned=False
+019DF046 raw=019DE646 48 48 0f b7 45 6a                  movzx rax, word ptr [rbp + 0x6a]
+019DF029 raw=019DE629 48 0f b6 45 69                     movzx rax, byte ptr [rbp + 0x69]
+
+PAIR word=19DF046 byte=19DF02A reg=rbp pdata=['0x19def50', '0x19df18e'] aligned=False
+019DF046 raw=019DE646 48 48 0f b7 45 6a                  movzx rax, word ptr [rbp + 0x6a]
+019DF02A raw=019DE62A 0f b6 45 69                        movzx eax, byte ptr [rbp + 0x69]
+
+PAIR word=19DF047 byte=19DF029 reg=rbp pdata=['0x19def50', '0x19df18e'] aligned=False
+019DF047 raw=019DE647 48 0f b7 45 6a                     movzx rax, word ptr [rbp + 0x6a]
+019DF029 raw=019DE629 48 0f b6 45 69                     movzx rax, byte ptr [rbp + 0x69]
+
+PAIR word=19DF047 byte=19DF02A reg=rbp pdata=['0x19def50', '0x19df18e'] aligned=False
+019DF047 raw=019DE647 48 0f b7 45 6a                     movzx rax, word ptr [rbp + 0x6a]
+019DF02A raw=019DE62A 0f b6 45 69                        movzx eax, byte ptr [rbp + 0x69]
+
+PAIR word=19DF048 byte=19DF029 reg=rbp pdata=['0x19def50', '0x19df18e'] aligned=False
+019DF048 raw=019DE648 0f b7 45 6a                        movzx eax, word ptr [rbp + 0x6a]
+019DF029 raw=019DE629 48 0f b6 45 69                     movzx rax, byte ptr [rbp + 0x69]
+
+PAIR word=19DF048 byte=19DF02A reg=rbp pdata=['0x19def50', '0x19df18e'] aligned=True
+019DF048 raw=019DE648 0f b7 45 6a                        movzx eax, word ptr [rbp + 0x6a]
+019DF02A raw=019DE62A 0f b6 45 69                        movzx eax, byte ptr [rbp + 0x69]
+019DF004 raw=019DE604 41 89 49 04                        mov dword ptr [r9 + 4], ecx
+019DF008 raw=019DE608 49 8b 46 38                        mov rax, qword ptr [r14 + 0x38]
+019DF00C raw=019DE60C 8b 48 70                           mov ecx, dword ptr [rax + 0x70]
+019DF00F raw=019DE60F 41 89 09                           mov dword ptr [r9], ecx
+019DF012 raw=019DE612 41 0f b6 46 28                     movzx eax, byte ptr [r14 + 0x28]
+019DF017 raw=019DE617 41 88 41 0e                        mov byte ptr [r9 + 0xe], al
+019DF01B raw=019DE61B 49 8b 6e 30                        mov rbp, qword ptr [r14 + 0x30]
+019DF01F raw=019DE61F 49 8b 76 38                        mov rsi, qword ptr [r14 + 0x38]
+019DF023 raw=019DE623 49 8b 16                           mov rdx, qword ptr [r14]
+019DF026 raw=019DE626 4d 8b 7e 48                        mov r15, qword ptr [r14 + 0x48]
+019DF02A raw=019DE62A 0f b6 45 69                        movzx eax, byte ptr [rbp + 0x69]
+019DF02E raw=019DE62E 4c 8d 04 40                        lea r8, [rax + rax*2]
+019DF032 raw=019DE632 0f b6 46 69                        movzx eax, byte ptr [rsi + 0x69]
+019DF036 raw=019DE636 4d 03 c0                           add r8, r8
+019DF039 raw=019DE639 4c 8d 14 40                        lea r10, [rax + rax*2]
+019DF03D raw=019DE63D 49 8b 46 08                        mov rax, qword ptr [r14 + 8]
+019DF041 raw=019DE641 4d 03 d2                           add r10, r10
+019DF044 raw=019DE644 48 8b 48 48                        mov rcx, qword ptr [rax + 0x48]
+019DF048 raw=019DE648 0f b7 45 6a                        movzx eax, word ptr [rbp + 0x6a]
+019DF04C raw=019DE64C 48 6b f8 70                        imul rdi, rax, 0x70
+019DF050 raw=019DE650 0f b7 46 6a                        movzx eax, word ptr [rsi + 0x6a]
+019DF054 raw=019DE654 4c 6b d8 70                        imul r11, rax, 0x70
+019DF058 raw=019DE658 42 8b 44 d2 38                     mov eax, dword ptr [rdx + r10*8 + 0x38]
+019DF05D raw=019DE65D 48 03 f9                           add rdi, rcx
+019DF060 raw=019DE660 4c 03 d9                           add r11, rcx
+019DF063 raw=019DE663 49 8b 4e 40                        mov rcx, qword ptr [r14 + 0x40]
+019DF067 raw=019DE667 4d 8b 76 18                        mov r14, qword ptr [r14 + 0x18]
+019DF06B raw=019DE66B 42 39 44 c2 38                     cmp dword ptr [rdx + r8*8 + 0x38], eax
+019DF070 raw=019DE670 7c 0c                              jl 0x1419df07e
+019DF072 raw=019DE672 42 8b 44 d2 3c                     mov eax, dword ptr [rdx + r10*8 + 0x3c]
+019DF077 raw=019DE677 42 23 44 c2 40                     and eax, dword ptr [rdx + r8*8 + 0x40]
+019DF07C raw=019DE67C eb 0a                              jmp 0x1419df088
+019DF07E raw=019DE67E 42 8b 44 d2 40                     mov eax, dword ptr [rdx + r10*8 + 0x40]
+019DF083 raw=019DE683 42 23 44 c2 3c                     and eax, dword ptr [rdx + r8*8 + 0x3c]
+019DF088 raw=019DE688 0f b7 49 18                        movzx ecx, word ptr [rcx + 0x18]
+
+PAIR word=19DF050 byte=19DF031 reg=rsi pdata=['0x19def50', '0x19df18e'] aligned=False
+019DF050 raw=019DE650 0f b7 46 6a                        movzx eax, word ptr [rsi + 0x6a]
+019DF031 raw=019DE631 40 0f b6 46 69                     movzx eax, byte ptr [rsi + 0x69]
+
+PAIR word=19DF050 byte=19DF032 reg=rsi pdata=['0x19def50', '0x19df18e'] aligned=True
+019DF050 raw=019DE650 0f b7 46 6a                        movzx eax, word ptr [rsi + 0x6a]
+019DF032 raw=019DE632 0f b6 46 69                        movzx eax, byte ptr [rsi + 0x69]
+019DF00C raw=019DE60C 8b 48 70                           mov ecx, dword ptr [rax + 0x70]
+019DF00F raw=019DE60F 41 89 09                           mov dword ptr [r9], ecx
+019DF012 raw=019DE612 41 0f b6 46 28                     movzx eax, byte ptr [r14 + 0x28]
+019DF017 raw=019DE617 41 88 41 0e                        mov byte ptr [r9 + 0xe], al
+019DF01B raw=019DE61B 49 8b 6e 30                        mov rbp, qword ptr [r14 + 0x30]
+019DF01F raw=019DE61F 49 8b 76 38                        mov rsi, qword ptr [r14 + 0x38]
+019DF023 raw=019DE623 49 8b 16                           mov rdx, qword ptr [r14]
+019DF026 raw=019DE626 4d 8b 7e 48                        mov r15, qword ptr [r14 + 0x48]
+019DF02A raw=019DE62A 0f b6 45 69                        movzx eax, byte ptr [rbp + 0x69]
+019DF02E raw=019DE62E 4c 8d 04 40                        lea r8, [rax + rax*2]
+019DF032 raw=019DE632 0f b6 46 69                        movzx eax, byte ptr [rsi + 0x69]
+019DF036 raw=019DE636 4d 03 c0                           add r8, r8
+019DF039 raw=019DE639 4c 8d 14 40                        lea r10, [rax + rax*2]
+019DF03D raw=019DE63D 49 8b 46 08                        mov rax, qword ptr [r14 + 8]
+019DF041 raw=019DE641 4d 03 d2                           add r10, r10
+019DF044 raw=019DE644 48 8b 48 48                        mov rcx, qword ptr [rax + 0x48]
+019DF048 raw=019DE648 0f b7 45 6a                        movzx eax, word ptr [rbp + 0x6a]
+019DF04C raw=019DE64C 48 6b f8 70                        imul rdi, rax, 0x70
+019DF050 raw=019DE650 0f b7 46 6a                        movzx eax, word ptr [rsi + 0x6a]
+019DF054 raw=019DE654 4c 6b d8 70                        imul r11, rax, 0x70
+019DF058 raw=019DE658 42 8b 44 d2 38                     mov eax, dword ptr [rdx + r10*8 + 0x38]
+019DF05D raw=019DE65D 48 03 f9                           add rdi, rcx
+019DF060 raw=019DE660 4c 03 d9                           add r11, rcx
+019DF063 raw=019DE663 49 8b 4e 40                        mov rcx, qword ptr [r14 + 0x40]
+019DF067 raw=019DE667 4d 8b 76 18                        mov r14, qword ptr [r14 + 0x18]
+019DF06B raw=019DE66B 42 39 44 c2 38                     cmp dword ptr [rdx + r8*8 + 0x38], eax
+019DF070 raw=019DE670 7c 0c                              jl 0x1419df07e
+019DF072 raw=019DE672 42 8b 44 d2 3c                     mov eax, dword ptr [rdx + r10*8 + 0x3c]
+019DF077 raw=019DE677 42 23 44 c2 40                     and eax, dword ptr [rdx + r8*8 + 0x40]
+019DF07C raw=019DE67C eb 0a                              jmp 0x1419df088
+019DF07E raw=019DE67E 42 8b 44 d2 40                     mov eax, dword ptr [rdx + r10*8 + 0x40]
+019DF083 raw=019DE683 42 23 44 c2 3c                     and eax, dword ptr [rdx + r8*8 + 0x3c]
+019DF088 raw=019DE688 0f b7 49 18                        movzx ecx, word ptr [rcx + 0x18]
+019DF08C raw=019DE68C 44 8b c0                           mov r8d, eax
+019DF08F raw=019DE68F 66 41 0b 4f 18                     or cx, word ptr [r15 + 0x18]
+
+PAIR word=19DF2DD byte=19DF2B9 reg=rbp pdata=['0x19df190', '0x19df425'] aligned=False
+019DF2DD raw=019DE8DD 48 48 0f b7 45 6a                  movzx rax, word ptr [rbp + 0x6a]
+019DF2B9 raw=019DE8B9 0f b6 45 69                        movzx eax, byte ptr [rbp + 0x69]
+
+PAIR word=19DF2DE byte=19DF2B9 reg=rbp pdata=['0x19df190', '0x19df425'] aligned=False
+019DF2DE raw=019DE8DE 48 0f b7 45 6a                     movzx rax, word ptr [rbp + 0x6a]
+019DF2B9 raw=019DE8B9 0f b6 45 69                        movzx eax, byte ptr [rbp + 0x69]
+
+PAIR word=19DF2DF byte=19DF2B9 reg=rbp pdata=['0x19df190', '0x19df425'] aligned=True
+019DF2DF raw=019DE8DF 0f b7 45 6a                        movzx eax, word ptr [rbp + 0x6a]
+019DF2B9 raw=019DE8B9 0f b6 45 69                        movzx eax, byte ptr [rbp + 0x69]
+019DF291 raw=019DE891 66 0f 70 c8 00                     pshufd xmm1, xmm0, 0
+019DF296 raw=019DE896 0f 57 d1                           xorps xmm2, xmm1
+019DF299 raw=019DE899 0f 11 52 40                        movups xmmword ptr [rdx + 0x40], xmm2
+019DF29D raw=019DE89D 48 89 4a 20                        mov qword ptr [rdx + 0x20], rcx
+019DF2A1 raw=019DE8A1 89 4a 2c                           mov dword ptr [rdx + 0x2c], ecx
+019DF2A4 raw=019DE8A4 88 4a 18                           mov byte ptr [rdx + 0x18], cl
+019DF2A7 raw=019DE8A7 89 4a 10                           mov dword ptr [rdx + 0x10], ecx
+019DF2AA raw=019DE8AA 8b 45 70                           mov eax, dword ptr [rbp + 0x70]
+019DF2AD raw=019DE8AD 89 42 04                           mov dword ptr [rdx + 4], eax
+019DF2B0 raw=019DE8B0 41 8b 47 70                        mov eax, dword ptr [r15 + 0x70]
+019DF2B4 raw=019DE8B4 88 5a 0e                           mov byte ptr [rdx + 0xe], bl
+019DF2B7 raw=019DE8B7 89 02                              mov dword ptr [rdx], eax
+019DF2B9 raw=019DE8B9 0f b6 45 69                        movzx eax, byte ptr [rbp + 0x69]
+019DF2BD raw=019DE8BD 4d 8b 06                           mov r8, qword ptr [r14]
+019DF2C0 raw=019DE8C0 49 8b 7e 18                        mov rdi, qword ptr [r14 + 0x18]
+019DF2C4 raw=019DE8C4 4c 8d 0c 40                        lea r9, [rax + rax*2]
+019DF2C8 raw=019DE8C8 41 0f b6 47 69                     movzx eax, byte ptr [r15 + 0x69]
+019DF2CD raw=019DE8CD 4d 03 c9                           add r9, r9
+019DF2D0 raw=019DE8D0 4c 8d 14 40                        lea r10, [rax + rax*2]
+019DF2D4 raw=019DE8D4 49 8b 46 08                        mov rax, qword ptr [r14 + 8]
+019DF2D8 raw=019DE8D8 4d 03 d2                           add r10, r10
+019DF2DB raw=019DE8DB 48 8b 48 48                        mov rcx, qword ptr [rax + 0x48]
+019DF2DF raw=019DE8DF 0f b7 45 6a                        movzx eax, word ptr [rbp + 0x6a]
+019DF2E3 raw=019DE8E3 48 6b d8 70                        imul rbx, rax, 0x70
+019DF2E7 raw=019DE8E7 41 0f b7 47 6a                     movzx eax, word ptr [r15 + 0x6a]
+019DF2EC raw=019DE8EC 4c 6b d8 70                        imul r11, rax, 0x70
+019DF2F0 raw=019DE8F0 43 8b 44 d0 38                     mov eax, dword ptr [r8 + r10*8 + 0x38]
+019DF2F5 raw=019DE8F5 48 03 d9                           add rbx, rcx
+019DF2F8 raw=019DE8F8 4c 03 d9                           add r11, rcx
+019DF2FB raw=019DE8FB 43 39 44 c8 38                     cmp dword ptr [r8 + r9*8 + 0x38], eax
+019DF300 raw=019DE900 7c 0c                              jl 0x1419df30e
+019DF302 raw=019DE902 43 8b 44 d0 3c                     mov eax, dword ptr [r8 + r10*8 + 0x3c]
+019DF307 raw=019DE907 43 23 44 c8 40                     and eax, dword ptr [r8 + r9*8 + 0x40]
+019DF30C raw=019DE90C eb 0a                              jmp 0x1419df318
+019DF30E raw=019DE90E 43 8b 44 d0 40                     mov eax, dword ptr [r8 + r10*8 + 0x40]
+019DF313 raw=019DE913 43 23 44 c8 3c                     and eax, dword ptr [r8 + r9*8 + 0x3c]
+019DF318 raw=019DE918 41 0f b7 4d 18                     movzx ecx, word ptr [r13 + 0x18]
+019DF31D raw=019DE91D 44 8b c8                           mov r9d, eax
+
+PAIR word=19DF2E7 byte=19DF2C7 reg=r15 pdata=['0x19df190', '0x19df425'] aligned=False
+019DF2E7 raw=019DE8E7 41 0f b7 47 6a                     movzx eax, word ptr [r15 + 0x6a]
+019DF2C7 raw=019DE8C7 40 41 0f b6 47 69                  movzx eax, byte ptr [r15 + 0x69]
+
+PAIR word=19DF2E7 byte=19DF2C8 reg=r15 pdata=['0x19df190', '0x19df425'] aligned=True
+019DF2E7 raw=019DE8E7 41 0f b7 47 6a                     movzx eax, word ptr [r15 + 0x6a]
+019DF2C8 raw=019DE8C8 41 0f b6 47 69                     movzx eax, byte ptr [r15 + 0x69]
+019DF2A1 raw=019DE8A1 89 4a 2c                           mov dword ptr [rdx + 0x2c], ecx
+019DF2A4 raw=019DE8A4 88 4a 18                           mov byte ptr [rdx + 0x18], cl
+019DF2A7 raw=019DE8A7 89 4a 10                           mov dword ptr [rdx + 0x10], ecx
+019DF2AA raw=019DE8AA 8b 45 70                           mov eax, dword ptr [rbp + 0x70]
+019DF2AD raw=019DE8AD 89 42 04                           mov dword ptr [rdx + 4], eax
+019DF2B0 raw=019DE8B0 41 8b 47 70                        mov eax, dword ptr [r15 + 0x70]
+019DF2B4 raw=019DE8B4 88 5a 0e                           mov byte ptr [rdx + 0xe], bl
+019DF2B7 raw=019DE8B7 89 02                              mov dword ptr [rdx], eax
+019DF2B9 raw=019DE8B9 0f b6 45 69                        movzx eax, byte ptr [rbp + 0x69]
+019DF2BD raw=019DE8BD 4d 8b 06                           mov r8, qword ptr [r14]
+019DF2C0 raw=019DE8C0 49 8b 7e 18                        mov rdi, qword ptr [r14 + 0x18]
+019DF2C4 raw=019DE8C4 4c 8d 0c 40                        lea r9, [rax + rax*2]
+019DF2C8 raw=019DE8C8 41 0f b6 47 69                     movzx eax, byte ptr [r15 + 0x69]
+019DF2CD raw=019DE8CD 4d 03 c9                           add r9, r9
+019DF2D0 raw=019DE8D0 4c 8d 14 40                        lea r10, [rax + rax*2]
+019DF2D4 raw=019DE8D4 49 8b 46 08                        mov rax, qword ptr [r14 + 8]
+019DF2D8 raw=019DE8D8 4d 03 d2                           add r10, r10
+019DF2DB raw=019DE8DB 48 8b 48 48                        mov rcx, qword ptr [rax + 0x48]
+019DF2DF raw=019DE8DF 0f b7 45 6a                        movzx eax, word ptr [rbp + 0x6a]
+019DF2E3 raw=019DE8E3 48 6b d8 70                        imul rbx, rax, 0x70
+019DF2E7 raw=019DE8E7 41 0f b7 47 6a                     movzx eax, word ptr [r15 + 0x6a]
+019DF2EC raw=019DE8EC 4c 6b d8 70                        imul r11, rax, 0x70
+019DF2F0 raw=019DE8F0 43 8b 44 d0 38                     mov eax, dword ptr [r8 + r10*8 + 0x38]
+019DF2F5 raw=019DE8F5 48 03 d9                           add rbx, rcx
+019DF2F8 raw=019DE8F8 4c 03 d9                           add r11, rcx
+019DF2FB raw=019DE8FB 43 39 44 c8 38                     cmp dword ptr [r8 + r9*8 + 0x38], eax
+019DF300 raw=019DE900 7c 0c                              jl 0x1419df30e
+019DF302 raw=019DE902 43 8b 44 d0 3c                     mov eax, dword ptr [r8 + r10*8 + 0x3c]
+019DF307 raw=019DE907 43 23 44 c8 40                     and eax, dword ptr [r8 + r9*8 + 0x40]
+019DF30C raw=019DE90C eb 0a                              jmp 0x1419df318
+019DF30E raw=019DE90E 43 8b 44 d0 40                     mov eax, dword ptr [r8 + r10*8 + 0x40]
+019DF313 raw=019DE913 43 23 44 c8 3c                     and eax, dword ptr [r8 + r9*8 + 0x3c]
+019DF318 raw=019DE918 41 0f b7 4d 18                     movzx ecx, word ptr [r13 + 0x18]
+019DF31D raw=019DE91D 44 8b c8                           mov r9d, eax
+019DF320 raw=019DE920 66 41 0b 4c 24 18                  or cx, word ptr [r12 + 0x18]
+019DF326 raw=019DE926 66 83 e1 10                        and cx, 0x10
+
+PAIR word=19DF2E8 byte=19DF2C9 reg=rdi pdata=['0x19df190', '0x19df425'] aligned=False
+019DF2E8 raw=019DE8E8 0f b7 47 6a                        movzx eax, word ptr [rdi + 0x6a]
+019DF2C9 raw=019DE8C9 0f b6 47 69                        movzx eax, byte ptr [rdi + 0x69]
+
+PAIR word=19DF759 byte=19DF73B reg=r9 pdata=['0x19df710', '0x19df8fa'] aligned=False
+019DF759 raw=019DED59 48 48 41 0f b7 41 6a               movzx eax, word ptr [r9 + 0x6a]
+019DF73B raw=019DED3B 41 0f b6 41 69                     movzx eax, byte ptr [r9 + 0x69]
+
+PAIR word=19DF75A byte=19DF73B reg=r9 pdata=['0x19df710', '0x19df8fa'] aligned=False
+019DF75A raw=019DED5A 48 41 0f b7 41 6a                  movzx eax, word ptr [r9 + 0x6a]
+019DF73B raw=019DED3B 41 0f b6 41 69                     movzx eax, byte ptr [r9 + 0x69]
+
+PAIR word=19DF75B byte=19DF73B reg=r9 pdata=['0x19df710', '0x19df8fa'] aligned=True
+019DF75B raw=019DED5B 41 0f b7 41 6a                     movzx eax, word ptr [r9 + 0x6a]
+019DF73B raw=019DED3B 41 0f b6 41 69                     movzx eax, byte ptr [r9 + 0x69]
+019DF715 raw=019DED15 48 89 6c 24 18                     mov qword ptr [rsp + 0x18], rbp
+019DF71A raw=019DED1A 48 89 74 24 20                     mov qword ptr [rsp + 0x20], rsi
+019DF71F raw=019DED1F 57                                 push rdi
+019DF720 raw=019DED20 41 54                              push r12
+019DF722 raw=019DED22 41 56                              push r14
+019DF724 raw=019DED24 41 57                              push r15
+019DF726 raw=019DED26 4c 8b 4a 30                        mov r9, qword ptr [rdx + 0x30]
+019DF72A raw=019DED2A 4c 8b d1                           mov r10, rcx
+019DF72D raw=019DED2D 4c 8b 42 38                        mov r8, qword ptr [rdx + 0x38]
+019DF731 raw=019DED31 4c 8b 1a                           mov r11, qword ptr [rdx]
+019DF734 raw=019DED34 0f 28 05 85 ab 22 04               movaps xmm0, xmmword ptr [rip + 0x422ab85]
+019DF73B raw=019DED3B 41 0f b6 41 69                     movzx eax, byte ptr [r9 + 0x69]
+019DF740 raw=019DED40 48 8d 1c 40                        lea rbx, [rax + rax*2]
+019DF744 raw=019DED44 41 0f b6 40 69                     movzx eax, byte ptr [r8 + 0x69]
+019DF749 raw=019DED49 48 03 db                           add rbx, rbx
+019DF74C raw=019DED4C 48 8d 3c 40                        lea rdi, [rax + rax*2]
+019DF750 raw=019DED50 48 8b 42 08                        mov rax, qword ptr [rdx + 8]
+019DF754 raw=019DED54 48 03 ff                           add rdi, rdi
+019DF757 raw=019DED57 48 8b 48 48                        mov rcx, qword ptr [rax + 0x48]
+019DF75B raw=019DED5B 41 0f b7 41 6a                     movzx eax, word ptr [r9 + 0x6a]
+019DF760 raw=019DED60 48 6b f0 70                        imul rsi, rax, 0x70
+019DF764 raw=019DED64 41 0f b7 40 6a                     movzx eax, word ptr [r8 + 0x6a]
+019DF769 raw=019DED69 41 0f 11 02                        movups xmmword ptr [r10], xmm0
+019DF76D raw=019DED6D 48 03 f1                           add rsi, rcx
+019DF770 raw=019DED70 41 0f 11 42 10                     movups xmmword ptr [r10 + 0x10], xmm0
+019DF775 raw=019DED75 41 c7 42 08 02 02 00 00            mov dword ptr [r10 + 8], 0x202
+019DF77D raw=019DED7D 41 c6 42 0f 08                     mov byte ptr [r10 + 0xf], 8
+019DF782 raw=019DED82 4c 6b c8 70                        imul r9, rax, 0x70
+019DF786 raw=019DED86 33 c0                              xor eax, eax
+019DF788 raw=019DED88 66 41 89 42 0c                     mov word ptr [r10 + 0xc], ax
+019DF78D raw=019DED8D 4c 03 c9                           add r9, rcx
+019DF790 raw=019DED90 41 89 42 10                        mov dword ptr [r10 + 0x10], eax
+019DF794 raw=019DED94 41 c6 42 14 41                     mov byte ptr [r10 + 0x14], 0x41
+019DF799 raw=019DED99 66 41 c7 42 18 7f 7f               mov word ptr [r10 + 0x18], 0x7f7f
+
+PAIR word=19DF75C byte=19DF73C reg=rcx pdata=['0x19df710', '0x19df8fa'] aligned=False
+019DF75C raw=019DED5C 0f b7 41 6a                        movzx eax, word ptr [rcx + 0x6a]
+019DF73C raw=019DED3C 0f b6 41 69                        movzx eax, byte ptr [rcx + 0x69]
+
+PAIR word=19DF764 byte=19DF743 reg=r8 pdata=['0x19df710', '0x19df8fa'] aligned=False
+019DF764 raw=019DED64 41 0f b7 40 6a                     movzx eax, word ptr [r8 + 0x6a]
+019DF743 raw=019DED43 40 41 0f b6 40 69                  movzx eax, byte ptr [r8 + 0x69]
+
+PAIR word=19DF764 byte=19DF744 reg=r8 pdata=['0x19df710', '0x19df8fa'] aligned=True
+019DF764 raw=019DED64 41 0f b7 40 6a                     movzx eax, word ptr [r8 + 0x6a]
+019DF744 raw=019DED44 41 0f b6 40 69                     movzx eax, byte ptr [r8 + 0x69]
+019DF71F raw=019DED1F 57                                 push rdi
+019DF720 raw=019DED20 41 54                              push r12
+019DF722 raw=019DED22 41 56                              push r14
+019DF724 raw=019DED24 41 57                              push r15
+019DF726 raw=019DED26 4c 8b 4a 30                        mov r9, qword ptr [rdx + 0x30]
+019DF72A raw=019DED2A 4c 8b d1                           mov r10, rcx
+019DF72D raw=019DED2D 4c 8b 42 38                        mov r8, qword ptr [rdx + 0x38]
+019DF731 raw=019DED31 4c 8b 1a                           mov r11, qword ptr [rdx]
+019DF734 raw=019DED34 0f 28 05 85 ab 22 04               movaps xmm0, xmmword ptr [rip + 0x422ab85]
+019DF73B raw=019DED3B 41 0f b6 41 69                     movzx eax, byte ptr [r9 + 0x69]
+019DF740 raw=019DED40 48 8d 1c 40                        lea rbx, [rax + rax*2]
+019DF744 raw=019DED44 41 0f b6 40 69                     movzx eax, byte ptr [r8 + 0x69]
+019DF749 raw=019DED49 48 03 db                           add rbx, rbx
+019DF74C raw=019DED4C 48 8d 3c 40                        lea rdi, [rax + rax*2]
+019DF750 raw=019DED50 48 8b 42 08                        mov rax, qword ptr [rdx + 8]
+019DF754 raw=019DED54 48 03 ff                           add rdi, rdi
+019DF757 raw=019DED57 48 8b 48 48                        mov rcx, qword ptr [rax + 0x48]
+019DF75B raw=019DED5B 41 0f b7 41 6a                     movzx eax, word ptr [r9 + 0x6a]
+019DF760 raw=019DED60 48 6b f0 70                        imul rsi, rax, 0x70
+019DF764 raw=019DED64 41 0f b7 40 6a                     movzx eax, word ptr [r8 + 0x6a]
+019DF769 raw=019DED69 41 0f 11 02                        movups xmmword ptr [r10], xmm0
+019DF76D raw=019DED6D 48 03 f1                           add rsi, rcx
+019DF770 raw=019DED70 41 0f 11 42 10                     movups xmmword ptr [r10 + 0x10], xmm0
+019DF775 raw=019DED75 41 c7 42 08 02 02 00 00            mov dword ptr [r10 + 8], 0x202
+019DF77D raw=019DED7D 41 c6 42 0f 08                     mov byte ptr [r10 + 0xf], 8
+019DF782 raw=019DED82 4c 6b c8 70                        imul r9, rax, 0x70
+019DF786 raw=019DED86 33 c0                              xor eax, eax
+019DF788 raw=019DED88 66 41 89 42 0c                     mov word ptr [r10 + 0xc], ax
+019DF78D raw=019DED8D 4c 03 c9                           add r9, rcx
+019DF790 raw=019DED90 41 89 42 10                        mov dword ptr [r10 + 0x10], eax
+019DF794 raw=019DED94 41 c6 42 14 41                     mov byte ptr [r10 + 0x14], 0x41
+019DF799 raw=019DED99 66 41 c7 42 18 7f 7f               mov word ptr [r10 + 0x18], 0x7f7f
+019DF7A0 raw=019DEDA0 41 c6 42 1a 7f                     mov byte ptr [r10 + 0x1a], 0x7f
+
+PAIR word=19DF765 byte=19DF745 reg=rax pdata=['0x19df710', '0x19df8fa'] aligned=False
+019DF765 raw=019DED65 0f b7 40 6a                        movzx eax, word ptr [rax + 0x6a]
+019DF745 raw=019DED45 0f b6 40 69                        movzx eax, byte ptr [rax + 0x69]
+
+PAIR word=19DFBD2 byte=19DFBB4 reg=r14 pdata=['0x19dfb00', '0x19dfd1d'] aligned=False
+019DFBD2 raw=019DF1D2 48 48 41 0f b7 46 6a               movzx eax, word ptr [r14 + 0x6a]
+019DFBB4 raw=019DF1B4 48 41 0f b6 46 69                  movzx eax, byte ptr [r14 + 0x69]
+
+PAIR word=19DFBD2 byte=19DFBB5 reg=r14 pdata=['0x19dfb00', '0x19dfd1d'] aligned=False
+019DFBD2 raw=019DF1D2 48 48 41 0f b7 46 6a               movzx eax, word ptr [r14 + 0x6a]
+019DFBB5 raw=019DF1B5 41 0f b6 46 69                     movzx eax, byte ptr [r14 + 0x69]
+
+PAIR word=19DFBD3 byte=19DFBB4 reg=r14 pdata=['0x19dfb00', '0x19dfd1d'] aligned=False
+019DFBD3 raw=019DF1D3 48 41 0f b7 46 6a                  movzx eax, word ptr [r14 + 0x6a]
+019DFBB4 raw=019DF1B4 48 41 0f b6 46 69                  movzx eax, byte ptr [r14 + 0x69]
+
+PAIR word=19DFBD3 byte=19DFBB5 reg=r14 pdata=['0x19dfb00', '0x19dfd1d'] aligned=False
+019DFBD3 raw=019DF1D3 48 41 0f b7 46 6a                  movzx eax, word ptr [r14 + 0x6a]
+019DFBB5 raw=019DF1B5 41 0f b6 46 69                     movzx eax, byte ptr [r14 + 0x69]
+
+PAIR word=19DFBD4 byte=19DFBB4 reg=r14 pdata=['0x19dfb00', '0x19dfd1d'] aligned=False
+019DFBD4 raw=019DF1D4 41 0f b7 46 6a                     movzx eax, word ptr [r14 + 0x6a]
+019DFBB4 raw=019DF1B4 48 41 0f b6 46 69                  movzx eax, byte ptr [r14 + 0x69]
+
+PAIR word=19DFBD4 byte=19DFBB5 reg=r14 pdata=['0x19dfb00', '0x19dfd1d'] aligned=True
+019DFBD4 raw=019DF1D4 41 0f b7 46 6a                     movzx eax, word ptr [r14 + 0x6a]
+019DFBB5 raw=019DF1B5 41 0f b6 46 69                     movzx eax, byte ptr [r14 + 0x69]
+019DFB90 raw=019DF190 8b 48 70                           mov ecx, dword ptr [rax + 0x70]
+019DFB93 raw=019DF193 41 89 09                           mov dword ptr [r9], ecx
+019DFB96 raw=019DF196 49 89 51 20                        mov qword ptr [r9 + 0x20], rdx
+019DFB9A raw=019DF19A 41 89 51 2c                        mov dword ptr [r9 + 0x2c], edx
+019DFB9E raw=019DF19E 0f b6 47 28                        movzx eax, byte ptr [rdi + 0x28]
+019DFBA2 raw=019DF1A2 41 88 41 0e                        mov byte ptr [r9 + 0xe], al
+019DFBA6 raw=019DF1A6 4c 8b 77 30                        mov r14, qword ptr [rdi + 0x30]
+019DFBAA raw=019DF1AA 48 8b 6f 38                        mov rbp, qword ptr [rdi + 0x38]
+019DFBAE raw=019DF1AE 48 8b 17                           mov rdx, qword ptr [rdi]
+019DFBB1 raw=019DF1B1 4c 8b 7f 48                        mov r15, qword ptr [rdi + 0x48]
+019DFBB5 raw=019DF1B5 41 0f b6 46 69                     movzx eax, byte ptr [r14 + 0x69]
+019DFBBA raw=019DF1BA 4c 8d 04 40                        lea r8, [rax + rax*2]
+019DFBBE raw=019DF1BE 0f b6 45 69                        movzx eax, byte ptr [rbp + 0x69]
+019DFBC2 raw=019DF1C2 4d 03 c0                           add r8, r8
+019DFBC5 raw=019DF1C5 4c 8d 14 40                        lea r10, [rax + rax*2]
+019DFBC9 raw=019DF1C9 48 8b 47 08                        mov rax, qword ptr [rdi + 8]
+019DFBCD raw=019DF1CD 4d 03 d2                           add r10, r10
+019DFBD0 raw=019DF1D0 48 8b 48 48                        mov rcx, qword ptr [rax + 0x48]
+019DFBD4 raw=019DF1D4 41 0f b7 46 6a                     movzx eax, word ptr [r14 + 0x6a]
+019DFBD9 raw=019DF1D9 48 6b f0 70                        imul rsi, rax, 0x70
+019DFBDD raw=019DF1DD 0f b7 45 6a                        movzx eax, word ptr [rbp + 0x6a]
+019DFBE1 raw=019DF1E1 4c 6b d8 70                        imul r11, rax, 0x70
+019DFBE5 raw=019DF1E5 42 8b 44 d2 38                     mov eax, dword ptr [rdx + r10*8 + 0x38]
+019DFBEA raw=019DF1EA 48 03 f1                           add rsi, rcx
+019DFBED raw=019DF1ED 4c 03 d9                           add r11, rcx
+019DFBF0 raw=019DF1F0 48 8b 4f 40                        mov rcx, qword ptr [rdi + 0x40]
+019DFBF4 raw=019DF1F4 48 8b 7f 18                        mov rdi, qword ptr [rdi + 0x18]
+019DFBF8 raw=019DF1F8 42 39 44 c2 38                     cmp dword ptr [rdx + r8*8 + 0x38], eax
+019DFBFD raw=019DF1FD 7c 0c                              jl 0x1419dfc0b
+019DFBFF raw=019DF1FF 42 8b 44 d2 3c                     mov eax, dword ptr [rdx + r10*8 + 0x3c]
+019DFC04 raw=019DF204 42 23 44 c2 40                     and eax, dword ptr [rdx + r8*8 + 0x40]
+019DFC09 raw=019DF209 eb 0a                              jmp 0x1419dfc15
+019DFC0B raw=019DF20B 42 8b 44 d2 40                     mov eax, dword ptr [rdx + r10*8 + 0x40]
+019DFC10 raw=019DF210 42 23 44 c2 3c                     and eax, dword ptr [rdx + r8*8 + 0x3c]
+
+PAIR word=19DFBD5 byte=19DFBB6 reg=rsi pdata=['0x19dfb00', '0x19dfd1d'] aligned=False
+019DFBD5 raw=019DF1D5 0f b7 46 6a                        movzx eax, word ptr [rsi + 0x6a]
+019DFBB6 raw=019DF1B6 0f b6 46 69                        movzx eax, byte ptr [rsi + 0x69]
+
+PAIR word=19DFBDD byte=19DFBBD reg=rbp pdata=['0x19dfb00', '0x19dfd1d'] aligned=False
+019DFBDD raw=019DF1DD 0f b7 45 6a                        movzx eax, word ptr [rbp + 0x6a]
+019DFBBD raw=019DF1BD 40 0f b6 45 69                     movzx eax, byte ptr [rbp + 0x69]
+
+PAIR word=19DFBDD byte=19DFBBE reg=rbp pdata=['0x19dfb00', '0x19dfd1d'] aligned=True
+019DFBDD raw=019DF1DD 0f b7 45 6a                        movzx eax, word ptr [rbp + 0x6a]
+019DFBBE raw=019DF1BE 0f b6 45 69                        movzx eax, byte ptr [rbp + 0x69]
+019DFB96 raw=019DF196 49 89 51 20                        mov qword ptr [r9 + 0x20], rdx
+019DFB9A raw=019DF19A 41 89 51 2c                        mov dword ptr [r9 + 0x2c], edx
+019DFB9E raw=019DF19E 0f b6 47 28                        movzx eax, byte ptr [rdi + 0x28]
+019DFBA2 raw=019DF1A2 41 88 41 0e                        mov byte ptr [r9 + 0xe], al
+019DFBA6 raw=019DF1A6 4c 8b 77 30                        mov r14, qword ptr [rdi + 0x30]
+019DFBAA raw=019DF1AA 48 8b 6f 38                        mov rbp, qword ptr [rdi + 0x38]
+019DFBAE raw=019DF1AE 48 8b 17                           mov rdx, qword ptr [rdi]
+019DFBB1 raw=019DF1B1 4c 8b 7f 48                        mov r15, qword ptr [rdi + 0x48]
+019DFBB5 raw=019DF1B5 41 0f b6 46 69                     movzx eax, byte ptr [r14 + 0x69]
+019DFBBA raw=019DF1BA 4c 8d 04 40                        lea r8, [rax + rax*2]
+019DFBBE raw=019DF1BE 0f b6 45 69                        movzx eax, byte ptr [rbp + 0x69]
+019DFBC2 raw=019DF1C2 4d 03 c0                           add r8, r8
+019DFBC5 raw=019DF1C5 4c 8d 14 40                        lea r10, [rax + rax*2]
+019DFBC9 raw=019DF1C9 48 8b 47 08                        mov rax, qword ptr [rdi + 8]
+019DFBCD raw=019DF1CD 4d 03 d2                           add r10, r10
+019DFBD0 raw=019DF1D0 48 8b 48 48                        mov rcx, qword ptr [rax + 0x48]
+019DFBD4 raw=019DF1D4 41 0f b7 46 6a                     movzx eax, word ptr [r14 + 0x6a]
+019DFBD9 raw=019DF1D9 48 6b f0 70                        imul rsi, rax, 0x70
+019DFBDD raw=019DF1DD 0f b7 45 6a                        movzx eax, word ptr [rbp + 0x6a]
+019DFBE1 raw=019DF1E1 4c 6b d8 70                        imul r11, rax, 0x70
+019DFBE5 raw=019DF1E5 42 8b 44 d2 38                     mov eax, dword ptr [rdx + r10*8 + 0x38]
+019DFBEA raw=019DF1EA 48 03 f1                           add rsi, rcx
+019DFBED raw=019DF1ED 4c 03 d9                           add r11, rcx
+019DFBF0 raw=019DF1F0 48 8b 4f 40                        mov rcx, qword ptr [rdi + 0x40]
+019DFBF4 raw=019DF1F4 48 8b 7f 18                        mov rdi, qword ptr [rdi + 0x18]
+019DFBF8 raw=019DF1F8 42 39 44 c2 38                     cmp dword ptr [rdx + r8*8 + 0x38], eax
+019DFBFD raw=019DF1FD 7c 0c                              jl 0x1419dfc0b
+019DFBFF raw=019DF1FF 42 8b 44 d2 3c                     mov eax, dword ptr [rdx + r10*8 + 0x3c]
+019DFC04 raw=019DF204 42 23 44 c2 40                     and eax, dword ptr [rdx + r8*8 + 0x40]
+019DFC09 raw=019DF209 eb 0a                              jmp 0x1419dfc15
+019DFC0B raw=019DF20B 42 8b 44 d2 40                     mov eax, dword ptr [rdx + r10*8 + 0x40]
+019DFC10 raw=019DF210 42 23 44 c2 3c                     and eax, dword ptr [rdx + r8*8 + 0x3c]
+019DFC15 raw=019DF215 0f b7 49 18                        movzx ecx, word ptr [rcx + 0x18]
+019DFC19 raw=019DF219 44 8b c0                           mov r8d, eax
+019DFC1C raw=019DF21C 66 41 0b 4f 18                     or cx, word ptr [r15 + 0x18]
+
+PAIR word=290B66E byte=290B676 reg=r13 pdata=['0x290b08a', '0x290b6b5'] aligned=True
+0290B66E raw=0290AC6E 66 41 83 7d 6a 00                  cmp word ptr [r13 + 0x6a], 0
+0290B676 raw=0290AC76 41 80 7d 69 00                     cmp byte ptr [r13 + 0x69], 0
+0290B648 raw=0290AC48 90                                 nop 
+0290B649 raw=0290AC49 e9 97 bf 37 fe                     jmp 0x140c875e5
+0290B64E raw=0290AC4E ba 01 00 00 00                     mov edx, 1
+0290B653 raw=0290AC53 e8 18 d8 37 fe                     call 0x140c88e70
+0290B658 raw=0290AC58 90                                 nop 
+0290B659 raw=0290AC59 e9 87 bf 37 fe                     jmp 0x140c875e5
+0290B65E raw=0290AC5E 48 8d 55 78                        lea rdx, [rbp + 0x78]
+0290B662 raw=0290AC62 49 8b cc                           mov rcx, r12
+0290B665 raw=0290AC65 41 ff d0                           call r8
+0290B668 raw=0290AC68 90                                 nop 
+0290B669 raw=0290AC69 e9 7c bf 37 fe                     jmp 0x140c875ea
+0290B66E raw=0290AC6E 66 41 83 7d 6a 00                  cmp word ptr [r13 + 0x6a], 0
+0290B674 raw=0290AC74 7f 0b                              jg 0x14290b681
+0290B676 raw=0290AC76 41 80 7d 69 00                     cmp byte ptr [r13 + 0x69], 0
+0290B67B raw=0290AC7B 75 04                              jne 0x14290b681
+0290B67D raw=0290AC7D 32 d2                              xor dl, dl
+0290B67F raw=0290AC7F eb 02                              jmp 0x14290b683
+0290B681 raw=0290AC81 b2 01                              mov dl, 1
+0290B683 raw=0290AC83 48 8b cf                           mov rcx, rdi
+0290B686 raw=0290AC86 e8 d5 b0 a6 fe                     call 0x141376760
+0290B68B raw=0290AC8B 90                                 nop 
+0290B68C raw=0290AC8C e9 ac c0 37 fe                     jmp 0x140c8773d
+0290B691 raw=0290AC91 66 41 83 7d 6a 00                  cmp word ptr [r13 + 0x6a], 0
+0290B697 raw=0290AC97 7f 0b                              jg 0x14290b6a4
+0290B699 raw=0290AC99 41 80 7d 69 00                     cmp byte ptr [r13 + 0x69], 0
+0290B69E raw=0290AC9E 75 04                              jne 0x14290b6a4
+0290B6A0 raw=0290ACA0 32 d2                              xor dl, dl
+0290B6A2 raw=0290ACA2 eb 02                              jmp 0x14290b6a6
+0290B6A4 raw=0290ACA4 b2 01                              mov dl, 1
+0290B6A6 raw=0290ACA6 48 8b cf                           mov rcx, rdi
+0290B6A9 raw=0290ACA9 e8 e2 8f 93 fe                     call 0x141244690
+0290B6AE raw=0290ACAE 90                                 nop 
+0290B6AF raw=0290ACAF e9 89 c0 37 fe                     jmp 0x140c8773d
+0290B6B4 raw=0290ACB4 cc                                 int3 
+
+PAIR word=290B66E byte=290B699 reg=r13 pdata=['0x290b08a', '0x290b6b5'] aligned=True
+0290B66E raw=0290AC6E 66 41 83 7d 6a 00                  cmp word ptr [r13 + 0x6a], 0
+0290B699 raw=0290AC99 41 80 7d 69 00                     cmp byte ptr [r13 + 0x69], 0
+0290B648 raw=0290AC48 90                                 nop 
+0290B649 raw=0290AC49 e9 97 bf 37 fe                     jmp 0x140c875e5
+0290B64E raw=0290AC4E ba 01 00 00 00                     mov edx, 1
+0290B653 raw=0290AC53 e8 18 d8 37 fe                     call 0x140c88e70
+0290B658 raw=0290AC58 90                                 nop 
+0290B659 raw=0290AC59 e9 87 bf 37 fe                     jmp 0x140c875e5
+0290B65E raw=0290AC5E 48 8d 55 78                        lea rdx, [rbp + 0x78]
+0290B662 raw=0290AC62 49 8b cc                           mov rcx, r12
+0290B665 raw=0290AC65 41 ff d0                           call r8
+0290B668 raw=0290AC68 90                                 nop 
+0290B669 raw=0290AC69 e9 7c bf 37 fe                     jmp 0x140c875ea
+0290B66E raw=0290AC6E 66 41 83 7d 6a 00                  cmp word ptr [r13 + 0x6a], 0
+0290B674 raw=0290AC74 7f 0b                              jg 0x14290b681
+0290B676 raw=0290AC76 41 80 7d 69 00                     cmp byte ptr [r13 + 0x69], 0
+0290B67B raw=0290AC7B 75 04                              jne 0x14290b681
+0290B67D raw=0290AC7D 32 d2                              xor dl, dl
+0290B67F raw=0290AC7F eb 02                              jmp 0x14290b683
+0290B681 raw=0290AC81 b2 01                              mov dl, 1
+0290B683 raw=0290AC83 48 8b cf                           mov rcx, rdi
+0290B686 raw=0290AC86 e8 d5 b0 a6 fe                     call 0x141376760
+0290B68B raw=0290AC8B 90                                 nop 
+0290B68C raw=0290AC8C e9 ac c0 37 fe                     jmp 0x140c8773d
+0290B691 raw=0290AC91 66 41 83 7d 6a 00                  cmp word ptr [r13 + 0x6a], 0
+0290B697 raw=0290AC97 7f 0b                              jg 0x14290b6a4
+0290B699 raw=0290AC99 41 80 7d 69 00                     cmp byte ptr [r13 + 0x69], 0
+0290B69E raw=0290AC9E 75 04                              jne 0x14290b6a4
+0290B6A0 raw=0290ACA0 32 d2                              xor dl, dl
+0290B6A2 raw=0290ACA2 eb 02                              jmp 0x14290b6a6
+0290B6A4 raw=0290ACA4 b2 01                              mov dl, 1
+0290B6A6 raw=0290ACA6 48 8b cf                           mov rcx, rdi
+0290B6A9 raw=0290ACA9 e8 e2 8f 93 fe                     call 0x141244690
+0290B6AE raw=0290ACAE 90                                 nop 
+0290B6AF raw=0290ACAF e9 89 c0 37 fe                     jmp 0x140c8773d
+0290B6B4 raw=0290ACB4 cc                                 int3 
+
+PAIR word=290B691 byte=290B676 reg=r13 pdata=['0x290b08a', '0x290b6b5'] aligned=True
+0290B691 raw=0290AC91 66 41 83 7d 6a 00                  cmp word ptr [r13 + 0x6a], 0
+0290B676 raw=0290AC76 41 80 7d 69 00                     cmp byte ptr [r13 + 0x69], 0
+0290B64E raw=0290AC4E ba 01 00 00 00                     mov edx, 1
+0290B653 raw=0290AC53 e8 18 d8 37 fe                     call 0x140c88e70
+0290B658 raw=0290AC58 90                                 nop 
+0290B659 raw=0290AC59 e9 87 bf 37 fe                     jmp 0x140c875e5
+0290B65E raw=0290AC5E 48 8d 55 78                        lea rdx, [rbp + 0x78]
+0290B662 raw=0290AC62 49 8b cc                           mov rcx, r12
+0290B665 raw=0290AC65 41 ff d0                           call r8
+0290B668 raw=0290AC68 90                                 nop 
+0290B669 raw=0290AC69 e9 7c bf 37 fe                     jmp 0x140c875ea
+0290B66E raw=0290AC6E 66 41 83 7d 6a 00                  cmp word ptr [r13 + 0x6a], 0
+0290B674 raw=0290AC74 7f 0b                              jg 0x14290b681
+0290B676 raw=0290AC76 41 80 7d 69 00                     cmp byte ptr [r13 + 0x69], 0
+0290B67B raw=0290AC7B 75 04                              jne 0x14290b681
+0290B67D raw=0290AC7D 32 d2                              xor dl, dl
+0290B67F raw=0290AC7F eb 02                              jmp 0x14290b683
+0290B681 raw=0290AC81 b2 01                              mov dl, 1
+0290B683 raw=0290AC83 48 8b cf                           mov rcx, rdi
+0290B686 raw=0290AC86 e8 d5 b0 a6 fe                     call 0x141376760
+0290B68B raw=0290AC8B 90                                 nop 
+0290B68C raw=0290AC8C e9 ac c0 37 fe                     jmp 0x140c8773d
+0290B691 raw=0290AC91 66 41 83 7d 6a 00                  cmp word ptr [r13 + 0x6a], 0
+0290B697 raw=0290AC97 7f 0b                              jg 0x14290b6a4
+0290B699 raw=0290AC99 41 80 7d 69 00                     cmp byte ptr [r13 + 0x69], 0
+0290B69E raw=0290AC9E 75 04                              jne 0x14290b6a4
+0290B6A0 raw=0290ACA0 32 d2                              xor dl, dl
+0290B6A2 raw=0290ACA2 eb 02                              jmp 0x14290b6a6
+0290B6A4 raw=0290ACA4 b2 01                              mov dl, 1
+0290B6A6 raw=0290ACA6 48 8b cf                           mov rcx, rdi
+0290B6A9 raw=0290ACA9 e8 e2 8f 93 fe                     call 0x141244690
+0290B6AE raw=0290ACAE 90                                 nop 
+0290B6AF raw=0290ACAF e9 89 c0 37 fe                     jmp 0x140c8773d
+0290B6B4 raw=0290ACB4 cc                                 int3 
+
+PAIR word=290B691 byte=290B699 reg=r13 pdata=['0x290b08a', '0x290b6b5'] aligned=True
+0290B691 raw=0290AC91 66 41 83 7d 6a 00                  cmp word ptr [r13 + 0x6a], 0
+0290B699 raw=0290AC99 41 80 7d 69 00                     cmp byte ptr [r13 + 0x69], 0
+0290B669 raw=0290AC69 e9 7c bf 37 fe                     jmp 0x140c875ea
+0290B66E raw=0290AC6E 66 41 83 7d 6a 00                  cmp word ptr [r13 + 0x6a], 0
+0290B674 raw=0290AC74 7f 0b                              jg 0x14290b681
+0290B676 raw=0290AC76 41 80 7d 69 00                     cmp byte ptr [r13 + 0x69], 0
+0290B67B raw=0290AC7B 75 04                              jne 0x14290b681
+0290B67D raw=0290AC7D 32 d2                              xor dl, dl
+0290B67F raw=0290AC7F eb 02                              jmp 0x14290b683
+0290B681 raw=0290AC81 b2 01                              mov dl, 1
+0290B683 raw=0290AC83 48 8b cf                           mov rcx, rdi
+0290B686 raw=0290AC86 e8 d5 b0 a6 fe                     call 0x141376760
+0290B68B raw=0290AC8B 90                                 nop 
+0290B68C raw=0290AC8C e9 ac c0 37 fe                     jmp 0x140c8773d
+0290B691 raw=0290AC91 66 41 83 7d 6a 00                  cmp word ptr [r13 + 0x6a], 0
+0290B697 raw=0290AC97 7f 0b                              jg 0x14290b6a4
+0290B699 raw=0290AC99 41 80 7d 69 00                     cmp byte ptr [r13 + 0x69], 0
+0290B69E raw=0290AC9E 75 04                              jne 0x14290b6a4
+0290B6A0 raw=0290ACA0 32 d2                              xor dl, dl
+0290B6A2 raw=0290ACA2 eb 02                              jmp 0x14290b6a6
+0290B6A4 raw=0290ACA4 b2 01                              mov dl, 1
+0290B6A6 raw=0290ACA6 48 8b cf                           mov rcx, rdi
+0290B6A9 raw=0290ACA9 e8 e2 8f 93 fe                     call 0x141244690
+0290B6AE raw=0290ACAE 90                                 nop 
+0290B6AF raw=0290ACAF e9 89 c0 37 fe                     jmp 0x140c8773d
+0290B6B4 raw=0290ACB4 cc                                 int3 
+
+PAIR word=3735F26 byte=3735F2C reg=rdi pdata=['0x3735b10', '0x373640a'] aligned=True
+03735F26 raw=03735526 66 39 5f 6a                        cmp word ptr [rdi + 0x6a], bx
+03735F2C raw=0373552C 38 5f 69                           cmp byte ptr [rdi + 0x69], bl
+03735EFF raw=037354FF f3 0f 7f 4d e8                     movdqu xmmword ptr [rbp - 0x18], xmm1
+03735F04 raw=03735504 48 89 5d f8                        mov qword ptr [rbp - 8], rbx
+03735F08 raw=03735508 4d 2b c1                           sub r8, r9
+03735F0B raw=0373550B 49 c1 f8 04                        sar r8, 4
+03735F0F raw=0373550F 48 8b 55 d8                        mov rdx, qword ptr [rbp - 0x28]
+03735F13 raw=03735513 49 2b d2                           sub rdx, r10
+03735F16 raw=03735516 48 c1 fa 04                        sar rdx, 4
+03735F1A raw=0373551A 49 03 d0                           add rdx, r8
+03735F1D raw=0373551D 48 8d 4d e8                        lea rcx, [rbp - 0x18]
+03735F21 raw=03735521 e8 3a 4d a8 fc                     call 0x1401bac60
+03735F26 raw=03735526 66 39 5f 6a                        cmp word ptr [rdi + 0x6a], bx
+03735F2A raw=0373552A 7f 08                              jg 0x143735f34
+03735F2C raw=0373552C 38 5f 69                           cmp byte ptr [rdi + 0x69], bl
+03735F2F raw=0373552F 44 8a e3                           mov r12b, bl
+03735F32 raw=03735532 74 03                              je 0x143735f37
+03735F34 raw=03735534 41 b4 01                           mov r12b, 1
+03735F37 raw=03735537 48 8b cf                           mov rcx, rdi
+03735F3A raw=0373553A e8 b1 0e 7e fd                     call 0x140f16df0
+03735F3F raw=0373553F 88 44 24 30                        mov byte ptr [rsp + 0x30], al
+03735F43 raw=03735543 48 8b 4d c0                        mov rcx, qword ptr [rbp - 0x40]
+03735F47 raw=03735547 48 39 4d b8                        cmp qword ptr [rbp - 0x48], rcx
+03735F4B raw=0373554B 0f 84 d3 00 00 00                  je 0x143736024
+03735F51 raw=03735551 4c 8b fb                           mov r15, rbx
+03735F54 raw=03735554 48 2b 4d b8                        sub rcx, qword ptr [rbp - 0x48]
+03735F58 raw=03735558 48 c1 f9 04                        sar rcx, 4
+03735F5C raw=0373555C 48 85 c9                           test rcx, rcx
+03735F5F raw=0373555F 0f 84 bf 00 00 00                  je 0x143736024
+03735F65 raw=03735565 4c 8b f3                           mov r14, rbx
+03735F68 raw=03735568 40 8a f0                           mov sil, al
+03735F6B raw=0373556B 48 ba ed 57 ee ff b7 74 1b 95      movabs rdx, 0x951b74b7ffee57ed
+
+PAIR word=374BCCA byte=374BCD0 reg=rax pdata=['0x374bab8', '0x374bf55'] aligned=True
+0374BCCA raw=0374B2CA 66 39 58 6a                        cmp word ptr [rax + 0x6a], bx
+0374BCD0 raw=0374B2D0 38 58 69                           cmp byte ptr [rax + 0x69], bl
+0374BCA3 raw=0374B2A3 e8 f8 86 a4 fc                     call 0x1401943a0
+0374BCA8 raw=0374B2A8 49 8b 4e 08                        mov rcx, qword ptr [r14 + 8]
+0374BCAC raw=0374B2AC 4c 8b e8                           mov r13, rax
+0374BCAF raw=0374B2AF 48 8b 90 88 00 00 00               mov rdx, qword ptr [rax + 0x88]
+0374BCB6 raw=0374B2B6 48 8b 89 a8 00 00 00               mov rcx, qword ptr [rcx + 0xa8]
+0374BCBD raw=0374B2BD 48 8b 09                           mov rcx, qword ptr [rcx]
+0374BCC0 raw=0374B2C0 e8 0b ee e8 fc                     call 0x1405daad0
+0374BCC5 raw=0374B2C5 48 85 c0                           test rax, rax
+0374BCC8 raw=0374B2C8 74 5a                              je 0x14374bd24
+0374BCCA raw=0374B2CA 66 39 58 6a                        cmp word ptr [rax + 0x6a], bx
+0374BCCE raw=0374B2CE 7f 54                              jg 0x14374bd24
+0374BCD0 raw=0374B2D0 38 58 69                           cmp byte ptr [rax + 0x69], bl
+0374BCD3 raw=0374B2D3 75 4f                              jne 0x14374bd24
+0374BCD5 raw=0374B2D5 49 8b d5                           mov rdx, r13
+0374BCD8 raw=0374B2D8 49 8b cf                           mov rcx, r15
+0374BCDB raw=0374B2DB 41 ff c4                           inc r12d
+0374BCDE raw=0374B2DE e8 cd 03 00 00                     call 0x14374c0b0
+0374BCE3 raw=0374B2E3 84 c0                              test al, al
+0374BCE5 raw=0374B2E5 75 3d                              jne 0x14374bd24
+0374BCE7 raw=0374B2E7 49 8b 86 58 05 00 00               mov rax, qword ptr [r14 + 0x558]
+0374BCEE raw=0374B2EE 49 8d 8e 40 05 00 00               lea rcx, [r14 + 0x540]
+0374BCF5 raw=0374B2F5 48 8b 51 08                        mov rdx, qword ptr [rcx + 8]
+0374BCF9 raw=0374B2F9 48 89 45 0f                        mov qword ptr [rbp + 0xf], rax
+0374BCFD raw=0374B2FD c7 45 17 00 08 00 00               mov dword ptr [rbp + 0x17], 0x800
+0374BD04 raw=0374B304 48 3b 51 10                        cmp rdx, qword ptr [rcx + 0x10]
+0374BD08 raw=0374B308 74 11                              je 0x14374bd1b
+0374BD0A raw=0374B30A 48 89 02                           mov qword ptr [rdx], rax
+0374BD0D raw=0374B30D c7 42 08 00 08 00 00               mov dword ptr [rdx + 8], 0x800

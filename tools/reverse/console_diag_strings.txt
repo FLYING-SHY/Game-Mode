@@ -1,0 +1,60 @@
+STR file=0x03D7BFA0 rva=0x03D7CDA0 consolehistory_%d_%d_%d
+STR file=0x03D7BFF0 rva=0x03D7CDF0 consolehistory_%d_count
+STR file=0x03D7CC98 rva=0x03D7DA98 consoleKey
+STR file=0x03D7CCA8 rva=0x03D7DAA8 consoleFont
+STR file=0x03D97D38 rva=0x03D98B38 dev_mode
+STR file=0x03DB4760 rva=0x03DB5560 RelicConsole
+STR file=0x03E0E810 rva=0x03E0F610 SendConsoleCommand
+STR file=0x03EF3758 rva=0x03EF4558 Monaco, Lucida Console
+STR file=0x03F1C950 rva=0x03F1D750 C:\Perforce\Anvil\consoleport\engine\source\foreign\Bifrost\CPP\intermediate\ExternalProjects\src\protobuf-src\src\google\protobuf\stubs\common.cc
+STR file=0x03F1CD70 rva=0x03F1DB70 C:\Perforce\Anvil\consoleport\engine\source\foreign\Bifrost\CPP\intermediate\ExternalProjects\src\protobuf-src\src\google\protobuf\generated_message_util.cc
+STR file=0x03F1CEB0 rva=0x03F1DCB0 C:\Perforce\Anvil\consoleport\engine\source\foreign\Bifrost\CPP\intermediate\ExternalProjects\src\protobuf-src\src\google\protobuf\message_lite.cc
+STR file=0x03F1CFE0 rva=0x03F1DDE0 C:\Perforce\Anvil\consoleport\engine\source\foreign\Bifrost\CPP\intermediate\ExternalProjects\src\protobuf-src\src\google\protobuf\arena.cc
+STR file=0x03F1D0D0 rva=0x03F1DED0 C:\Perforce\Anvil\consoleport\engine\source\foreign\Bifrost\CPP\intermediate\ExternalProjects\src\protobuf-src\src\google/protobuf/parse_context.h
+STR file=0x03F1D210 rva=0x03F1E010 C:\Perforce\Anvil\consoleport\engine\source\foreign\Bifrost\CPP\intermediate\ExternalProjects\src\protobuf-src\src\google\protobuf\repeated_field.cc
+STR file=0x03F1D3E0 rva=0x03F1E1E0 C:\Perforce\Anvil\consoleport\engine\source\foreign\Bifrost\CPP\intermediate\ExternalProjects\src\protobuf-src\src\google\protobuf\wire_format_lite.cc
+STR file=0x03F1E9A0 rva=0x03F1F7A0 C:\Perforce\Anvil\consoleport\engine\source\foreign\Bifrost\CPP\Serializer\Protobuf\Source\BaseBifrostMessage.pb.cc
+STR file=0x03F1EC20 rva=0x03F1FA20 C:\Perforce\Anvil\consoleport\engine\source\foreign\Bifrost\CPP\Serializer\Protobuf\Source\BifrostBuiltInHooks.pb.cc
+STR file=0x0454DB1D rva=0x0454E91D paymenttroubleconceptcompareparentsplayersregionsmonitor ''The winningexploreadaptedGalleryproduceabilityenhancecareers). The collectSearch ancientexistedfooter handlerprintedconsoleEasternexportswindowsChannelillegalneutralsuggest_headersigning.html">settledwesterncausing-webkitclaimedJusticechaptervictimsThomas mozillapromisepartieseditionoutside:false,hundredOlympic_buttonauthorsreachedchronicdemandssecondsprotectadoptedprepareneithergreatlygreateroverallimprovecommandspecialsearch.worshipfundingthoughthighestinsteadutilityquarterCulturetestingclearlyexposedBrowserliberal} catchProjectexamp
+STR file=0x0459C190 rva=0x0459CF90 compiler: cl /Zi /Fdossl_static.pdb /MT /Zl /Gs0 /GF /Gy /W3 /wd4090 /nologo /Od -DL_ENDIAN -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_IA32_SSE2 -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_MONT5 -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DRC4_ASM -DMD5_ASM -DAESNI_ASM -DVPAES_ASM -DGHASH_ASM -DECP_NISTZ256_ASM -DX25519_ASM -DPOLY1305_ASM -DOPENSSL_NO_UI_CONSOLE -DOPENSSL_NO_CAPIENG
+STR file=0x045C5130 rva=0x045C5F30 close_console
+STR file=0x045C5140 rva=0x045C5F40 echo_console
+STR file=0x045C5188 rva=0x045C5F88 noecho_console
+STR file=0x045C5198 rva=0x045C5F98 open_console
+STR file=0x047CFF50 rva=0x047D0D50 LuaConfig does not support group access, did you paste lua code in the wrong console?
+STR file=0x047EEE48 rva=0x047EFC48 GAME -- Missing 'consoleFont' from application config file.
+STR file=0x047EF700 rva=0x047F0500 GAME -- Missing 'consoleKey' from application config file.
+STR file=0x047F29C0 rva=0x047F37C0 Debug Console
+STR file=0x047F8558 rva=0x047F9358 consoleKey_SCAR
+STR file=0x047F8570 rva=0x047F9370 GAME -- Missing 'consoleKey_SCAR' from application config file.
+STR file=0x047FA258 rva=0x047FB058 prioritize_debug_hotkeys
+STR file=0x047FA320 rva=0x047FB120 hide_debug_hotkey_status
+STR file=0x047FAC88 rva=0x047FBA88 Scar_DebugConsoleExecute
+STR file=0x04FB0FB8 rva=0x04FB1DB8 Settings to apply on this console.
+STR file=0x04FB0FE0 rva=0x04FB1DE0 SystemSpecConfiguration::ConsoleConfiguration
+STR file=0x054B9278 rva=0x054BA078 Lucida Console
+STR file=0x054BF100 rva=0x054BFF00 Console
+STR file=0x054C1DF0 rva=0x054C2BF0 Here we append ".." each time Tab is pressed. See 'Examples>Console' for a more meaningful demonstration of using this callback.
+STR file=0x054C1E80 rva=0x054C2C80 Here we replace and select text each time Up/Down are pressed. See 'Examples>Console' for a more meaningful demonstration of using this callback.
+STR file=0x054CC738 rva=0x054CD538 Close Console
+STR file=0x054CC750 rva=0x054CD550 This example implements a console with basic coloring, completion (TAB key) and history (Up/Down keys). A more elaborate implementation may want to store entries along with extra data such as timestamp, emitter, etc.
+STR file=0x054CC830 rva=0x054CD630 Examples/Console
+STR file=0x054CC9F0 rva=0x054CD7F0 Example: Console
+STR file=0x055478E0 rva=0x055486E0 Relic.BifrostGameHooks.GeneratedProto.SendConsoleCommandRequest
+STR file=0x0554A770 rva=0x0554B570 Relic.BifrostGameHooks.GeneratedProto.SendConsoleCommandRequest.command
+STR file=0x05EA24F0 rva=0x05EA32F0 .?AVSendConsoleCommandRequest@GeneratedProto@BifrostGameHooks@Relic@@
+STR file=0x05F2F2A8 rva=0x05F300A8 .?AVConsoleIOPort@Plat@@
+STR file=0x05F34210 rva=0x05F35010 .?AV?$_Func_base@_NAEBUMode@Console@@@std@@
+STR file=0x05F34410 rva=0x05F35210 .?AV?$_Func_impl_no_alloc@V<lambda_28eace903f4e57f9f02f397c5dc0c056>@@_NAEBUMode@Console@@@std@@
+STR file=0x05F346C0 rva=0x05F354C0 .?AV?$_Func_impl_no_alloc@V<lambda_80629923447cc6d4b6b7595b7b8a00fb>@@_NAEBUMode@Console@@@std@@
+STR file=0x05F34740 rva=0x05F35540 .?AV?$ObjInternal@UFunctor@?1???$BindFunc@VConsoleLogging@@XPEBDPEBD@LuaBinding@@YA?AV?$unique_ptr@VObj@LuaBinding@@U?$default_delete@VObj@LuaBinding@@@std@@@std@@PEAVLuaConfig@@PEBDPEAVConsoleLogging@@P86@EAAX11@Z@Z@XPEBDPEBD@LuaBinding@@
+STR file=0x05F34840 rva=0x05F35640 .?AV?$ObjInternal@UFunctor@?1???$BindFunc@VConsoleLogging@@XPEBDM@LuaBinding@@YA?AV?$unique_ptr@VObj@LuaBinding@@U?$default_delete@VObj@LuaBinding@@@std@@@std@@PEAVLuaConfig@@PEBDPEAVConsoleLogging@@P86@EAAX1M@Z@Z@XPEBDM@LuaBinding@@
+STR file=0x05F34940 rva=0x05F35740 .?AV?$ObjInternal@UFunctor@?1???$BindFunc@VConsoleLogging@@XPEBD@LuaBinding@@YA?AV?$unique_ptr@VObj@LuaBinding@@U?$default_delete@VObj@LuaBinding@@@std@@@std@@PEAVLuaConfig@@PEBDPEAVConsoleLogging@@P86@EAAX1@Z@Z@XPEBD@LuaBinding@@
+STR file=0x05F3AA50 rva=0x05F3B850 .?AVGameConsoleProvider@Providers@Services@LuaDomain@@
+STR file=0x05F3ACA0 rva=0x05F3BAA0 .?AV?$ObjInternal@UFunctor@?1???$BindFunc@VDomainConsoleMode@GameConsoleProvider@Providers@Services@LuaDomain@@XPEBD@LuaBinding@@YA?AV?$unique_ptr@VObj@LuaBinding@@U?$default_delete@VObj@LuaBinding@@@std@@@std@@PEAVLuaConfig@@PEBDPEAVDomainConsoleMode@GameConsoleProvider@Providers@Services@LuaDomain@@P86789LuaDomain@@EAAX1@Z@Z@XPEBD@LuaBinding@@
+STR file=0x05F3AE10 rva=0x05F3BC10 .?AV?$DomainServiceProvider@VConsoleService@Services@LuaDomain@@@Service@LuaDomain@@
+STR file=0x05F3AEF0 rva=0x05F3BCF0 .?AV?$ObjInternal@UFunctor@?1???$BindFunc@VDomainConsoleMode@GameConsoleProvider@Providers@Services@LuaDomain@@X$$V@LuaBinding@@YA?AV?$unique_ptr@VObj@LuaBinding@@U?$default_delete@VObj@LuaBinding@@@std@@@std@@PEAVLuaConfig@@PEBDPEAVDomainConsoleMode@GameConsoleProvider@Providers@Services@LuaDomain@@P86789LuaDomain@@EAAXXZ@Z@X$$V@LuaBinding@@
+STR file=0x06046DB0 rva=0x06047BB0 .?AVRenderInterface@Console@@
+STR file=0x06046DE0 rva=0x06047BE0 .?AVConsoleRenderer@@
+STR file=0x06079F70 rva=0x0607AD70 .?AVInitializer@?1??InitConsole@AppInit@@YA?AV?$unique_ptr@VEntry@InitList@@U?$default_delete@VEntry@InitList@@@std@@@std@@XZ@
+STR file=0x0607AD40 rva=0x0607BB40 .?AV?$DeferredDomainServiceProvider@VConsoleService@Services@LuaDomain@@@Providers@Service@LuaDomain@@

@@ -1,0 +1,159 @@
+{
+  "sealedSha256": "636206fdd6dc6eeda979d5c3d1fc21432e6aaffbbbad899299a835e28ce1ce6b",
+  "currentSha256": "ee58a7d2b5e2e711ca9b0c511a95f9ef59f29138ff8319c86828b00e7d2bf50c",
+  "sealedBytes": 1221120,
+  "currentBytes": 1221120,
+  "differingBytes": 3682,
+  "diffRangesCount": 2445,
+  "diffRangesFirst12": [
+    [
+      1062428,
+      1062428
+    ],
+    [
+      1062470,
+      1062471
+    ],
+    [
+      1062482,
+      1062482
+    ],
+    [
+      1062620,
+      1062621
+    ],
+    [
+      1062626,
+      1062627
+    ],
+    [
+      1062638,
+      1062638
+    ],
+    [
+      1062656,
+      1062656
+    ],
+    [
+      1062674,
+      1062674
+    ],
+    [
+      1062698,
+      1062698
+    ],
+    [
+      1062710,
+      1062710
+    ],
+    [
+      1062746,
+      1062746
+    ],
+    [
+      1062758,
+      1062758
+    ]
+  ],
+  "explanation": "Same size (1221120B); 3682 bytes differ, clustered in the Obfuscar string-hiding blob region. Un-obfuscated rebuild input hash A2BD412924CE669666AFC4FCAA68B96FA5A6AE29B2BF6A32D89EF1466F20EF10 equals the sealed InputSha256, proving sources are unchanged and C# compilation is deterministic. Obfuscar string encryption uses per-run random parameters, so regenerated protected output differs byte-wise while remaining semantically equivalent. The sealed tested release (636206FDD6DC6EEDA979D5C3D1FC21432E6AAFFBBBAD899299A835E28CE1CE6B) was restored to delivery/client as the canonical customer binary; Client.zip itself was never modified.",
+  "segments": [
+    {
+      "range": [
+        1062428,
+        1062428
+      ],
+      "sealedPreview": "b'e#{D- ==!=9O&-8- =p\"- -C-'",
+      "currentPreview": "b'e#{D- ==!=9O&-8- =p\"- -C-'"
+    },
+    {
+      "range": [
+        1062470,
+        1062471
+      ],
+      "sealedPreview": "b'9O&-8- =p\"- -C-9:-9%1I3%1I%1I'",
+      "currentPreview": "b'9O&-8- =p\"- -C-9:-9%1I3%1I%1I'"
+    },
+    {
+      "range": [
+        1062482,
+        1062482
+      ],
+      "sealedPreview": "b'- =p\"- -C-9:-9%1I3%1I%1I)1I)1I'",
+      "currentPreview": "b'- =p\"- -C-9:-9%1I3%1I%1I)1I)1I'"
+    },
+    {
+      "range": [
+        1062620,
+        1062621
+      ],
+      "sealedPreview": "b\"-q-M--'5y#99('=94-R<I9\"",
+      "currentPreview": "b\"-q-M--'5y99('=94-R<$9\""
+    },
+    {
+      "range": [
+        1062626,
+        1062627
+      ],
+      "sealedPreview": "b\"M--'5y#99('=94-R<I9\"",
+      "currentPreview": "b\"M--'5y99('=94-R<$9\""
+    },
+    {
+      "range": [
+        1062638,
+        1062638
+      ],
+      "sealedPreview": "b\"-'5y#99('=94-R<I9<aA9\"",
+      "currentPreview": "b\"-'5y99('=94-R<$9<aA9\""
+    },
+    {
+      "range": [
+        1062656,
+        1062656
+      ],
+      "sealedPreview": "b\"#99('=94-R<I9<aA9.-/O&?\"",
+      "currentPreview": "b\"99('=94-R<$9<aA9.-/O&?\""
+    },
+    {
+      "range": [
+        1062674,
+        1062674
+      ],
+      "sealedPreview": "b'=94-R<I9<aA9.-/O&?92E-'",
+      "currentPreview": "b'=94-R<$9<aA9.-/O&?i92 -'"
+    },
+    {
+      "range": [
+        1062698,
+        1062698
+      ],
+      "sealedPreview": "b'9<aA9.-/O&?92E-24-4vOcE9'",
+      "currentPreview": "b'9<aA9.-/O&?i92 -24-4vOcE9'"
+    },
+    {
+      "range": [
+        1062710,
+        1062710
+      ],
+      "sealedPreview": "b'aA9.-/O&?92E-24-4vOcE91O-'",
+      "currentPreview": "b'aA9.-/O&?i92 -24-4vOcE91*-'"
+    },
+    {
+      "range": [
+        1062746,
+        1062746
+      ],
+      "sealedPreview": "b'E-24-4vOcE91O-7W7791I3R<,A7-'",
+      "currentPreview": "b' -24-4vOcE91*-727791I3R<,A-'"
+    },
+    {
+      "range": [
+        1062758,
+        1062758
+      ],
+      "sealedPreview": "b'4-4vOcE91O-7W7791I3R<,A7-;p&@-'",
+      "currentPreview": "b'4-4vOcE91*-727791I3R<,A-;p&@-'"
+    }
+  ],
+  "unobfuscatedRebuildSha256": "A2BD412924CE669666AFC4FCAA68B96FA5A6AE29B2BF6A32D89EF1466F20EF10",
+  "sealedReleaseRestored": true
+}

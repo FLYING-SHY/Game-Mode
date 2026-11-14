@@ -1,0 +1,1310 @@
+﻿[
+    {
+        "Tree":  "client",
+        "RelativePath":  "app.config",
+        "Sha256":  "B74BBD2C0B7A8E05E660743A617BAE085AE12A7325DE46D57BC8486295BF9417",
+        "Bytes":  496
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "app.ico",
+        "Sha256":  "F7886678E2502DF503F4365DD72F1C19A49A08482016CD42A8110185B9F96788",
+        "Bytes":  22043
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "app.manifest",
+        "Sha256":  "C0085EB467D2FC9C9F395047E057183B3CD1503A4087D0DB565161C13527A76F",
+        "Bytes":  490
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3.Audio.NAudio.dll",
+        "Sha256":  "BC4BACC3B8B28D898F1671B79F216CCA439F95EB60CD32D3E3ECAFBECAC42780",
+        "Bytes":  513536
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3.BarrageCatalogue.tsv",
+        "Sha256":  "00A9421799B4CDB41DB9F539995D2CAF7156B9004267F2EED38E5B24DAE8D01C",
+        "Bytes":  15909
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3.InterfaceIcon",
+        "Sha256":  "F7886678E2502DF503F4365DD72F1C19A49A08482016CD42A8110185B9F96788",
+        "Bytes":  22043
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "copy-hotkey.txt",
+        "Sha256":  "54F2A9BA6BA1FED408915BD9F30FF7F565903AAEE907968FCD41208226702B81",
+        "Bytes":  7
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "names-zh-hans.tsv",
+        "Sha256":  "0C64AC4CEE984CE73940238D016D38740D71EFD98A91F09CAAB96DD70D7997FF",
+        "Bytes":  135724
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "NAudio-LICENSE.txt",
+        "Sha256":  "969099139B48A788A96B4ABCE64EFD8ED160D3C167BF94AF7DCB09389BFE7F79",
+        "Bytes":  2633
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "先看这里.txt",
+        "Sha256":  "54A00C1665D55EF38F7D2F6819873055742F55835F183D358FB1F78568975200",
+        "Bytes":  442
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "天穹之眼-v0.60.8.csproj",
+        "Sha256":  "E3F56A23C09AEF446093567492B7085DF80123961AC7ED1B094BCBB24C89C08E",
+        "Bytes":  2132
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "软件使用说明.html",
+        "Sha256":  "62B6FFDDF025C06F357C41BEE2D5741AB0F3D68FC2BDEDD0834AE97E2D9785F2",
+        "Bytes":  3179
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "软件使用说明.txt",
+        "Sha256":  "398B5793B43F1529EFE9904F2E432558B858DBF669311C98B077C8B48B1BA26E",
+        "Bytes":  2913
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\Action46.cs",
+        "Sha256":  "567D792ADAE50F575DAD5BFC79946CD01C993D7CD7C843A8F47D6052EEB05C02",
+        "Bytes":  2725
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ActivationForm60.cs",
+        "Sha256":  "9D6D24AB701414EB2E9A332E14351A9F504884B99E1B61232B5DCB7375CD455F",
+        "Bytes":  4659
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\Adaptation58.cs",
+        "Sha256":  "D8F7076CCEAD85C5CF7448A621EDDB5DAD316DEF96F8BBA84F09BF637448CB88",
+        "Bytes":  590
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\AirCast.cs",
+        "Sha256":  "5A3B3877A15841FFB100E75BECB673B54344024A76828168BA7B27F323F73131",
+        "Bytes":  307
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\AirCastTracker.cs",
+        "Sha256":  "9FB99CF20BF74747A02FD9162314CFEEBC8ACAB58B7313D2B7E2F5A9488F59E8",
+        "Bytes":  3433
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\AirCatalogue.cs",
+        "Sha256":  "704E7035DD4F812A8AD731953A9B4B05D3114C2DFA71AD5DA139E0064448FECE",
+        "Bytes":  3053
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\AirDefinition.cs",
+        "Sha256":  "53AD21386FA2BB363D720139CD0D2BA9D54B84C57B6A2496987803B99CA2777C",
+        "Bytes":  298
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\AirDrawing.cs",
+        "Sha256":  "591E8383A35641FE77CC16870798024D58EFA9D8CE5F29997F839F5489496205",
+        "Bytes":  6721
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\AirLogic.cs",
+        "Sha256":  "47BC0536AD81189776B2C2CE34B2741B945ACBC0D300D19A4ED9A65880839C5D",
+        "Bytes":  5604
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\AirOverlayHost.cs",
+        "Sha256":  "3CCA9BA8325101E3541F91B12B6F1C7387E58849BB5E4BC23361CC45614290E6",
+        "Bytes":  3437
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\AirOverlayWindow.cs",
+        "Sha256":  "83BF3CA2312FF2AF4CC6220A5093A5CF3876EBBCDF47A89160A511DB6D71C267",
+        "Bytes":  10770
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\AirPlane.cs",
+        "Sha256":  "13B664246F40EE3D1971FD676962DD1721CB188C2C810844EEE1EC0DD03134A8",
+        "Bytes":  286
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\AirPreferences.cs",
+        "Sha256":  "257FB0380E0EAB8BE17F9F41CD941156CEB803155B3AE4874706A55EBE6D055B",
+        "Bytes":  2075
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\AirRender42.cs",
+        "Sha256":  "6B7A65E34011E9F30D8204EB58C3892F24ACA5C6F091DC47AEC68DD87E9D3610",
+        "Bytes":  5360
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\AirSettingsForm.cs",
+        "Sha256":  "5BA0F05673E27F3A59CB769255AD88F64D219AA3FEC2E448742677B1AECA1A81",
+        "Bytes":  3500
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\AirZone.cs",
+        "Sha256":  "814C5B210BA5EF901D122655F0F6D8341BA15D234E07E3D884AE4E8AD62B1430",
+        "Bytes":  458
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\AlertKind.cs",
+        "Sha256":  "A6302972A5016768A021C0C76CEB514BB692E3466486DC345790099555CAE410",
+        "Bytes":  191
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\AlertSounds.cs",
+        "Sha256":  "EE46B35328B7DC0257596C3D3AF2E8B70FF5F785FA2E9DDC701EB7122079AF1D",
+        "Bytes":  4424
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\AlertTests.cs",
+        "Sha256":  "B5BFB23536D886C5D5592F5B01F1326002F5A654D6B86A52540AB61483445F78",
+        "Bytes":  4174
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\AlertTracker.cs",
+        "Sha256":  "E52BD942F980913230268D74FB7E1AE24C50CDA0F1A9E29DA95418AD717DE337",
+        "Bytes":  4835
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\AlphaSurface.cs",
+        "Sha256":  "0DFA2290BE711196960DE65C766FF72C03A306CDC8939A1F24D9D6A3ABED966A",
+        "Bytes":  3577
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ArmourPlayersForm.cs",
+        "Sha256":  "F07A80B933B34D4D921FCDF444B2245FA25C78A025A121FA68A81B7BD8D4C375",
+        "Bytes":  4100
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ArmourProductionTracker.cs",
+        "Sha256":  "8848941F28E1328A1F147ECF889EF95B34B85FF12F26DCC0D61C98E817269CCC",
+        "Bytes":  1444
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ArmourUnits.cs",
+        "Sha256":  "9F480B3E5A59C2905903667D8BF49AC947FF65773E45A7FCEDE07F420F219B71",
+        "Bytes":  1261
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ArtilleryState.cs",
+        "Sha256":  "7C0D7C3EA8F2812AF414210F4ECB537C2D9113F06789EA2F4F71A8ADEF00AEAC",
+        "Bytes":  1622
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\AttackCatalogue67.cs",
+        "Sha256":  "9C527D5EAD8895D001BC970650135097EB5EE741D434D628D37A6F441DD4B83B",
+        "Bytes":  1845
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\AudioClip.cs",
+        "Sha256":  "13932DD801FA5153A73D5C93A335ABE8CF4AB7026348791B4BB242E006BF6B30",
+        "Bytes":  3356
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\AudioDependency.cs",
+        "Sha256":  "B4473951D25872190EA31409A497345DA4E569C743FA961250A62DF864C10574",
+        "Bytes":  788
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\BarrageCatalogue.cs",
+        "Sha256":  "880FF4697199938B0883AC851904DBEA16127A4C4E7D19DA2916D3339B8EBE88",
+        "Bytes":  1630
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\BarrageDisplayTracker.cs",
+        "Sha256":  "CC4302BEA57F2CD37594040FB560E5C61746F1D87899D8C52D0DD6656CC154E0",
+        "Bytes":  1447
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\BarrageLogic.cs",
+        "Sha256":  "0434C9EBC08A7AF328D301099A03E0CB2EA542AEBFA7B35CB8A71A912C89D0B7",
+        "Bytes":  1675
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\BarrageRecord.cs",
+        "Sha256":  "A4D3BB8DD637F15AA417A7EAD87F65609A33D3CEA06A80A11C5626A4B5A4FF1D",
+        "Bytes":  329
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\BuildingNames.cs",
+        "Sha256":  "A8CF39B48B76AFBE411252788F695D79283357044B6E3FDF2CE12F12CCC866EF",
+        "Bytes":  1603
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ByteMemory45.cs",
+        "Sha256":  "21B18985C62049B8077966FC703BEDB65B37D554110CA1C1871E786DB2456B09",
+        "Bytes":  300
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ChineseNames.cs",
+        "Sha256":  "F7BD59E582FEE42815EBCD739CB3C2465AF8E24BD55ECF861468FA6AC3394710",
+        "Bytes":  3229
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ColourBytes.cs",
+        "Sha256":  "318394E4F02DC7B7FC2EF41B959CE2B24477BCCBF0E0373F0D53D737A9AA08AB",
+        "Bytes":  233
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ControlsProgram.cs",
+        "Sha256":  "C39E8FB897D22A29A02EE75D55DF2DA983E3E9DA47E25ED7126D66E23524D956",
+        "Bytes":  840
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\DefaultSounds61.cs",
+        "Sha256":  "0A14BBF75B4CC3BA81DB1569E51E875171BD33398CE6A5E3E0324681F9DF7A14",
+        "Bytes":  844
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\DeviceSerial69.cs",
+        "Sha256":  "908A281466E8EA67BDA20EF5C3BC493563976816ADEBE4CFB8A13E6CD77D0871",
+        "Bytes":  2657
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\DirectionData.cs",
+        "Sha256":  "E0FE2BC09A8A38123051D6F243A461DFEE239DA00239477905CB66045158B1E6",
+        "Bytes":  404
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\DirectionDrawing.cs",
+        "Sha256":  "08C9F800B8398C86458EECB0887FA474C4C1651176305421D06F2BEA2FDB1FF9",
+        "Bytes":  5079
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\DirectionSettingsForm.cs",
+        "Sha256":  "91AD5067326BDB4407FC5641D676DFE8CE286D8DD3BD5A8DEED828564FDC429E",
+        "Bytes":  4450
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\DirectionStroke.cs",
+        "Sha256":  "173D7A9B74E3CEEF53C10421F5C032D83C09D262343EAD17FDC029BDDF6CE9FE",
+        "Bytes":  282
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\EnemyChoice.cs",
+        "Sha256":  "4194661EBD561E4D79A721B8E4F2EE9F839669B0213AF48C9B81469C845642FE",
+        "Bytes":  248
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\EnemyOverlayWindow.cs",
+        "Sha256":  "E291BF4FC4CDA169BE8DAEFBABD59FF6E8E44CC3EC038B3A8A5C75A3B443F8FA",
+        "Bytes":  5113
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\EnemySelection.cs",
+        "Sha256":  "7D0D8FDCDEC3C84281509FF9E6E293167B6C98DA08D4D6ADB1C05BC75F7E9B42",
+        "Bytes":  868
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ExtrasChecks52.cs",
+        "Sha256":  "B48D3D0FB6665AB43F4160804EF42D4750936B094BAF71DE86C4F413BA72D3AC",
+        "Bytes":  4749
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\FeatureChecks50.cs",
+        "Sha256":  "C76BB788AFAD193B6D1C1544ABEAF2F57984857707DD2ECE16FB5ADAC885A30D",
+        "Bytes":  2273
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\FlankLogic47.cs",
+        "Sha256":  "5746AFACB5A549A3B4B841FCF110FEA544D6367546ED9721B2C4FF591C0504E8",
+        "Bytes":  2810
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\FlankMapDrawing55.cs",
+        "Sha256":  "0BA0EACE9B5B721EA106D01452E7A40C3867E2A69E9BA74778555B6A8D0F0E78",
+        "Bytes":  1287
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\FlankMapRange55.cs",
+        "Sha256":  "096DD90FED882E021FEEA5B11FC5C222EB25F0B33C179E648863CDAC695C70F5",
+        "Bytes":  211
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\FlankOverlay47.cs",
+        "Sha256":  "AEFD7151FAB824B2B5282E6145A1F01A79855FBC5A2F5C8DCA84E4AFF6A91BFF",
+        "Bytes":  1764
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\FlankRangeDrawing52.cs",
+        "Sha256":  "272D58DAE79C7BDF3B8D8C1168DC10C38F87B6D363C360A9F63B4F77A5BFF0FB",
+        "Bytes":  1194
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\FlankResult47.cs",
+        "Sha256":  "3FE13BC0805FFD5EA4AA900F76D6D6B177E66CA4A342806A30B529288B449082",
+        "Bytes":  334
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\FlankTests47.cs",
+        "Sha256":  "D0F64E05BC1C412DC8598D46D5730C7EC78FF0C4A235D474A9DF8428D7A62F79",
+        "Bytes":  2013
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\Fold46.cs",
+        "Sha256":  "83CA82DCE880B0ABD39AE83CCAAE56BADF1BAF18C79CF75F8181C725E10AE8BD",
+        "Bytes":  1966
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\GameAlert.cs",
+        "Sha256":  "50DD27FC2D9A4B584E6715ADC7AE72C69680CC35BD8C789D6673954C6DF10037",
+        "Bytes":  117
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\GameIdentity60.cs",
+        "Sha256":  "677FF63B025DD04DB059FFED9967686D41E22DD4B347E9E5F3A04CD9A9A7C166",
+        "Bytes":  281
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\GameIdentityProvider60.cs",
+        "Sha256":  "90973D7407B39B7F66699F479FA988AFB8BC0D61E170B757B1DA8A945758A603",
+        "Bytes":  4412
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\GameVersion45.cs",
+        "Sha256":  "D7C68CCDDFA985B57107CFB28258ECB38D6054EDAA5F4D3DC50530ED465151E7",
+        "Bytes":  1373
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\GrenadeUpgrade.cs",
+        "Sha256":  "6A80659F1360A8C578F07D00E22FCF1A69544F6777867B1CB159934733F338C1",
+        "Bytes":  1286
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\HazardKind.cs",
+        "Sha256":  "2E84D3D4659D96D0B24A3C0B45A520AA25DCC05770464C0C4C812CE178E7CD33",
+        "Bytes":  684
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\IGameIdentityProvider60.cs",
+        "Sha256":  "AFA56659BEA9B252B26DD1B49A46303273CF2921C91A6257F19E5624B47C2103",
+        "Bytes":  104
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ILicenseApi60.cs",
+        "Sha256":  "639D85BF1BBB4F2A34A0E092B35BA3D449058F927E94E3B086413A597C9714C5",
+        "Bytes":  309
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\InfoChecks49.cs",
+        "Sha256":  "3C2F03257E3742AD272DF04A136D55D18C59FAC85C5BEFF5BCAB718E47499B71",
+        "Bytes":  2373
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\Infrastructure49.cs",
+        "Sha256":  "A4547C4DA88F30BC2E363B96924C8216FB67A817257A3C4DDC4325A02BD3D0C8",
+        "Bytes":  940
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\InputChecks53.cs",
+        "Sha256":  "1101368E8F79610B4B0E1CE4A3B997BDB12EB1387FEEA91C1ABF824564947CC5",
+        "Bytes":  1716
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\Interface45.cs",
+        "Sha256":  "70168ED48135E6AD87713F90FD43A7DF7BE42C7BA068197D352BDB7CB4A313AC",
+        "Bytes":  1455
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\InterfaceChecks59.cs",
+        "Sha256":  "5213FC83D4E606AC97DAE247BCDDB43A10320BA4C2EA37AFB91BD1FA7BBDD5FF",
+        "Bytes":  5521
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\Kwk38Upgrade.cs",
+        "Sha256":  "1E56617E2213D1928F2129FE2DB6BD97D075A625341036328002759047932E8B",
+        "Bytes":  920
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\LicenseApi60.cs",
+        "Sha256":  "30D693FD1AECACD75BE9595528846EC108BF35E6DC8AC744170136E604D6BAD8",
+        "Bytes":  2743
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\LicenseApplication60.cs",
+        "Sha256":  "D8D5A38BB7655B39670DDB83B072E76D84654BAE05793ABEB7E9482AACC657C9",
+        "Bytes":  5243
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\LicenseArray60.cs",
+        "Sha256":  "241109F4B9D99185E597D4E03551402C685921EC413244BAB63182C433854CDC",
+        "Bytes":  264
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\LicenseClock60.cs",
+        "Sha256":  "22FC771F70ECEC015330152553D33700DC49CCCBE962903B3E0F1091A41EAAF4",
+        "Bytes":  264
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\LicenseConfiguration60.cs",
+        "Sha256":  "3DB42F12CF9CF7998F360A4586B73AD7B4ED5E6B53E7998D83E12FB75CF0DBCB",
+        "Bytes":  1049
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\LicenseCoordinator60.cs",
+        "Sha256":  "3ECCE41BC57DD20008EE7BE70983978D57A0A5F02149332597BAB5E4A1B8E865",
+        "Bytes":  14575
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\LicenseCredentials60.cs",
+        "Sha256":  "9A80BCBADFED133267AF758047DA67E9CE63204B6FD000D2F6B45F5164CBC795",
+        "Bytes":  200
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\LicenseDevice60.cs",
+        "Sha256":  "2C1A4F167E03334D4549A91926667CC5C2A9654F418A68C8CEDD36F7758C4A22",
+        "Bytes":  890
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\LicenseGate60.cs",
+        "Sha256":  "2D7468DD3C124CAE6ACCD5676596CA8C9C912FC068CB539D50F574409E37222C",
+        "Bytes":  1678
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\LicenseLease60.cs",
+        "Sha256":  "8051A25380DADA229727F831F1A795C5D110AAC851F1EBC29C8878A2C3C32331",
+        "Bytes":  186
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\LicenseNotice60.cs",
+        "Sha256":  "E12D036F395B218BBD65147F3217F85989A19D522CA1A2C2FCF44BC5EA947744",
+        "Bytes":  1507
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\LicenseReply60.cs",
+        "Sha256":  "5D123D9515C908E11B4506804E3C55A15F58957003ABD937D58DC02A6A7B4DB6",
+        "Bytes":  786
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\LicenseStore60.cs",
+        "Sha256":  "CF02E06ACA1F5B650ADD3D7628B51075A2B7332EEDEE7D0A6588462D618C4A8D",
+        "Bytes":  2295
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\LicenseVersion60.cs",
+        "Sha256":  "C9F945CECF32DA55F2C0AC08432B015445BAFC92358A634D19B8AF96D36402B7",
+        "Bytes":  938
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\LicenseView60.cs",
+        "Sha256":  "0784BC694127F4D7BF6A3ECF05BD5F69401A7674DA4CF2FA0BF1DDA1AA358BEB",
+        "Bytes":  339
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\LocalAccountLog59.cs",
+        "Sha256":  "1F6FFEA90BFEC08DC1DB3604C041A6F070E06D48183D208DD729956A51C8EDB8",
+        "Bytes":  3254
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\LocalIdentityChecks59.cs",
+        "Sha256":  "BECE398194B9A52F8BE42034AA0B23C50177AC469C8756A66100DE81827FF0D8",
+        "Bytes":  5469
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\LocalPlayerAccount59.cs",
+        "Sha256":  "D9C1753F50D8280EA191A7F820C2F84B0E49BF6582B95F4FD07686CC6C730D5A",
+        "Bytes":  276
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\Loiter49.cs",
+        "Sha256":  "369765D924B36C298959CAFFABA85291FD3F90BCBE6167C3E7E576C4127F7165",
+        "Bytes":  1983
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\LoiterState49.cs",
+        "Sha256":  "4B729ACC05CD0AFC147EA41C91939F624BE9C3D542DD9310E873766DE6FF7DEA",
+        "Bytes":  209
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\LoiterWeaponCatalogue49.cs",
+        "Sha256":  "9D7B3E047D7301F3C1F49D046EEF77DB4B4E880ECE10899B40D34ADE44BD982C",
+        "Bytes":  1153
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\MapUnitLabels52.cs",
+        "Sha256":  "F05227B5F88E20AD53E0B18B5812986A53E7DEC15D1A3FB9954756A9BB7D597C",
+        "Bytes":  1301
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\MarkerDrawCommand.cs",
+        "Sha256":  "1330018527DD3CF0CDABA510F1F806B63BDCC91555E29A9E477418997DEFCEEB",
+        "Bytes":  153
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\MarkerReadContext.cs",
+        "Sha256":  "BF777F7A02831F5E36738EB421D36F35A05C17E08B4E5320A66F68E6FE05188E",
+        "Bytes":  240
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\MarkerScene.cs",
+        "Sha256":  "E712FE32FB412730C5C0AEA480A152CAE856C9AF75E3C4449295635F91E7DC9E",
+        "Bytes":  307
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\MarkerSpriteCache.cs",
+        "Sha256":  "74799D673A8AC72ED87259BA557FCD30EAACA96E8810DDC3EF98F5A568A3D3B9",
+        "Bytes":  4954
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\MineCamera.cs",
+        "Sha256":  "C66A698D3BE27F0B2C31CBC652E145F550771C10276DDF0F12976D880FCC3A9B",
+        "Bytes":  1130
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\MineOverlayWindow.cs",
+        "Sha256":  "45BA866B276997954EC9B71EA92D5C6CF99C8A4DC989043B8E3447EAD45D97D2",
+        "Bytes":  6588
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\MineRecord.cs",
+        "Sha256":  "2B768B82546E7EC136308E4305B1115418F9126BEFD488DAC05051C43B4A521B",
+        "Bytes":  231
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\MiniHintCache52.cs",
+        "Sha256":  "B6FB43246B95102536F782F881C5613AAB9CE11F2A135C2C52085B10DFCDB13E",
+        "Bytes":  577
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\MinimapAffine.cs",
+        "Sha256":  "D573FB5B8093E8B55496DEE673073B55F7FC804E80D3905AB1EC8570981BDAF2",
+        "Bytes":  3580
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\MinimapBarrageDrawing.cs",
+        "Sha256":  "20D7BEAE216AE2D7367C169BA8C9C6DDD1C63665375803C236FD347CCC9260ED",
+        "Bytes":  1408
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\MinimapFrame.cs",
+        "Sha256":  "918C56DF8C28D4EB83223B06092FC3E71C2F8B87D9AF20CFBAB227E2E094B2EE",
+        "Bytes":  1980
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\MinimapMarkerDrawing.cs",
+        "Sha256":  "FB087CFE85560F0F000B03C8EDDB0FE8D2DBBD3D36D920606FC12EB8935CB993",
+        "Bytes":  1837
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\MinimapMarkerWindow.cs",
+        "Sha256":  "5488E18630B78F54747E3D6904C889B7AD15BA567F57CBC2E5EB733C52635953",
+        "Bytes":  8229
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\MinimapMovementDrawing.cs",
+        "Sha256":  "8D9F8C042FD24414D7849A6F570A5B621DD0A02CF92AB7D665D1C37AB7FDBA0C",
+        "Bytes":  2057
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\MinimapMovementGuide.cs",
+        "Sha256":  "3CF93D56BD4FA6D439E9DC714FE8A3D3618E2EC14D41590E55BFF79002C85F72",
+        "Bytes":  224
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\MinimapPreferences.cs",
+        "Sha256":  "17BD110A8C465DC1FFA4A18FC371453DB5292CEBC6D49AA813FC41F62F0E14D0",
+        "Bytes":  2858
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\MinimapRetiredControl.cs",
+        "Sha256":  "A971F2894ED3344F9E75C9620DF1357C959AF5C2213339C2137B0DC284A1A9C7",
+        "Bytes":  183
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\MinimapSettingsForm.cs",
+        "Sha256":  "D4987A65BCAECD631651C2FE23CC315D3642DC2F6AC939C49BB412B24A867861",
+        "Bytes":  7670
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\MiniScanProgress44.cs",
+        "Sha256":  "EB7C39351CB39F063BD289EED6452802AE70CD6729B30303C714FA959ADEF4A7",
+        "Bytes":  908
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\Module46.cs",
+        "Sha256":  "D5DAE5C34E8EE3A387A0EE1F3C106C7D8C8E7FCFA49E080D69E16D74D20B9912",
+        "Bytes":  2842
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\MortarChecks49.cs",
+        "Sha256":  "D4F6D3A14B88E3793E270925D183BC061E0F43C0A155C3E20D955AA5CDDF61C5",
+        "Bytes":  1645
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\MovementData.cs",
+        "Sha256":  "78636D82A400B1316764F8985758F128DD93ADD7027ECCBF3567F22935F36339",
+        "Bytes":  129
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\MovementDrawing.cs",
+        "Sha256":  "32289572C97507EF02A3564B38D2BE0FE75A4B633E35F884CB621BA51E5218C7",
+        "Bytes":  7553
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\MovementLabelLayout.cs",
+        "Sha256":  "2C7141D96A361052B7C95E7BB7B4BC023B4E4FACCE36EAAB251D7BD2D2C2AB7B",
+        "Bytes":  1408
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\MovementLogic.cs",
+        "Sha256":  "D30AED3F2EE1BE29629413B1E1A831FAB4FF51C167AE0A869E770FF263F332BE",
+        "Bytes":  947
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\MovementSettingsForm.cs",
+        "Sha256":  "E3C73166F5B1EE4E7D0B7E882F0A701DC7CA603E39FA42ADE8478A18ADCAFC16",
+        "Bytes":  2824
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\NameTableChecks57.cs",
+        "Sha256":  "AEAAB0734AC0D5EFDC8BD795B99EFE1D98B4FA2170677AB9E0876D1F7CC6DE17",
+        "Bytes":  50042
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\Native.cs",
+        "Sha256":  "6852CACDC064C9E54DED39D3B7BACAB476AA7DD29EDC5B6D2EC1F6DE1DBE21BA",
+        "Bytes":  1688
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\NumberSpan.cs",
+        "Sha256":  "9676B5D07084382461F29A0EEC579E30493C1C195C6BB52043B694BCF1044CF4",
+        "Bytes":  173
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\OverlayDiagnostics55.cs",
+        "Sha256":  "37992281A7D521FC5A5953BEAB0636F41FB195FFD06A7A65ACF5CCF5E896FDDD",
+        "Bytes":  645
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\OverlayDrawing.cs",
+        "Sha256":  "175EDA8224E7847B3C01D7D771A83DD5AAEAF5878C4CBB21307195D7E404901C",
+        "Bytes":  2391
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\OverlayPreferences.cs",
+        "Sha256":  "AEEACAF0575FB207267B096E603590398558F4B8E449ED900EF88E98B55A085B",
+        "Bytes":  5390
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\OverlayProgram.cs",
+        "Sha256":  "233F602C047323A01DA9ED88B572400688F2E248E570DFA51291B20CF4978AB7",
+        "Bytes":  8868
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\OverlaySettingsForm.cs",
+        "Sha256":  "F609EFFF4115599541E0369CB5DD64B50B196DD6A54FC3FFB9496B33C0489BDE",
+        "Bytes":  66763
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\OverlayText.cs",
+        "Sha256":  "144DB7854191F81E3E77AE7883E1C71950ECC92461AD0EA1680DF0183072F0B3",
+        "Bytes":  4347
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\PaintChecks48.cs",
+        "Sha256":  "18F0C86E4075F446D90DCCAD34F5586A92E181510FC0AD6D9782456CA534DF6F",
+        "Bytes":  2510
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\Palette46.cs",
+        "Sha256":  "9F9F3340062BF4111FB56E34C6B330E61105C3F3F20283DBC0E8264407EFF9DA",
+        "Bytes":  1133
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\PlayerColour76.cs",
+        "Sha256":  "4A473E85D148EC6840FE6927C5F30AAD27D28F58B031DAF22816F790896E4AE7",
+        "Bytes":  390
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\PlayerInfoForm.cs",
+        "Sha256":  "1959560E207FC8024FF4D5614C54FC26CD85BD7E1A3CB74B3C59E3E8ABCAF4EB",
+        "Bytes":  6705
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\PlayerInfoProgram.cs",
+        "Sha256":  "4B8ADD2A47945ABAD30810E537DC50E4BFC634A5C9B00ADC93894613F8C7EC95",
+        "Bytes":  2255
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\PlayerInfoReader.cs",
+        "Sha256":  "4D93D6765EA4925D20F83653E5B912F73B2597CC952625AC62CDC68297C803B9",
+        "Bytes":  101482
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\PlayerInfoRow.cs",
+        "Sha256":  "DE7B6A73ED05537C330BD7AECF50AE7855AE9AF5BEA209A40AFDF384DCB08064",
+        "Bytes":  1556
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\PrecisionFrameClock.cs",
+        "Sha256":  "3BACCDD6E8169C25355E578654D04996A351E3822501A31A95256BE4A8D4752B",
+        "Bytes":  4247
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\Preview45.cs",
+        "Sha256":  "72CFD1C08C24AFA8552B6A5DC190F5158EBF41B5D316C0098FDE303106F361C6",
+        "Bytes":  959
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ProcHandle.cs",
+        "Sha256":  "57D7AF83D58C420B39B134EF5C22AF649E6918341A7AB8027D4909C8CEE11CC1",
+        "Bytes":  291
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ProductionJob.cs",
+        "Sha256":  "7D9DC6CE83868FC2B9A05CF3746B7B454885F4525E05F8FC0A19007CFFAF567A",
+        "Bytes":  825
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ProductionText.cs",
+        "Sha256":  "43987DC6FEC1B61A3122A1A600BEFE229C55855688B5593C407184F228B19E5B",
+        "Bytes":  560
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ProjectileDrawing.cs",
+        "Sha256":  "AF627C102BBA0AE659FE066DC1018F45E888C7BA6EC3DC2BD6D3A850D3A5FB2F",
+        "Bytes":  3073
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ProjectileImpact.cs",
+        "Sha256":  "3265E95B7FEC589BD39309EF8A7664BBD63FC9B13AE8BE2A1C9BBBE80AC9A6E4",
+        "Bytes":  423
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ProjectileLogic.cs",
+        "Sha256":  "E88F0A981556C7F8FE4C423C3A0D309F9F70ABB15ACC5E3A4808E547A2C4F119",
+        "Bytes":  3005
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ProjectilePipeline65.cs",
+        "Sha256":  "25B33083EF091B5C4B870A8D6C6C139F2C3CBE956C3A089482E46328665FA152",
+        "Bytes":  299
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ProjectilePlayer.cs",
+        "Sha256":  "AA2456518E73B529B2B764CB7EFBE281036BD7898E5DCEE5231837BEB8C0F289",
+        "Bytes":  198
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ProjectilePreferences.cs",
+        "Sha256":  "EA8CD45F827D05080487D7B74ABC266B9FA08BB42897F8288434536A85B17048",
+        "Bytes":  2759
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ProjectileSequenceTracker.cs",
+        "Sha256":  "7EF6DB1E760D251A8B7F40AA0A7CCD814005D7152057FC5206396E92EA49AB5E",
+        "Bytes":  1502
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ProjectileSettingsForm.cs",
+        "Sha256":  "9875140EB8F6562ABC91B04B2576C01D8A9BF1AF7D95EEF5E1C50785563C2B50",
+        "Bytes":  2927
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ProjectileSprite.cs",
+        "Sha256":  "4AF07B93FE24372CC86FA48DC1577F68C9A610D6F750E6AC85D95EC9F6770096",
+        "Bytes":  149
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ProjectileSpriteCache.cs",
+        "Sha256":  "02E274E63DECD55D71A1D365D5C6DCC2286BB1B711595BE2C34BE5E5F8BDEE68",
+        "Bytes":  3518
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\QqAccounts72.cs",
+        "Sha256":  "2DC325A2AD2958D48C5DBDB555109DE82F75152697C6DEC465738E23DDD462B9",
+        "Bytes":  2156
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\RangeChecks50.cs",
+        "Sha256":  "D4DE0C4E18C0B8C6DA007917840B6F7CC10D5E65FE4817FA61EA11F7A8273630",
+        "Bytes":  2337
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ReadRecovery55.cs",
+        "Sha256":  "1939BA21654A4F8187CB8B99C12C00F0862EFB3DD644416C1F6ADB2AC9312EAE",
+        "Bytes":  497
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\RecoveryChecks55.cs",
+        "Sha256":  "A222AE57C8F6502D651F06475B4F61A85E92649B37EDD9DF0C2B4E1FD12800DB",
+        "Bytes":  3891
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ResourceClock.cs",
+        "Sha256":  "15CB4B62336C09FB9F540866C84412F5F97A601D4F02982BFDBF3083A281FB77",
+        "Bytes":  231
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ResourceColourForm.cs",
+        "Sha256":  "7D6C543906925EE685F96E11D789C9A0ED8F7EC371BD64C4BDBB8E643EF86B6A",
+        "Bytes":  6419
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ResourceColourRule.cs",
+        "Sha256":  "27000DFA9DCF259B282C254B59A4D5F89AAC74B7C040A686A4BDE0E296C35494",
+        "Bytes":  2348
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ResourceColours.cs",
+        "Sha256":  "AB3A4F577F7A23075FC6A887D0DAE0E9B2DC44737EBAE8D82BD9D968D0106F74",
+        "Bytes":  1632
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\ResourceLineDrawing.cs",
+        "Sha256":  "4C3CA260F1201AA4183D01050BE80F55F72CA3F1A323A8A9796E8BF207257879",
+        "Bytes":  4046
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\SoundSettingsForm.cs",
+        "Sha256":  "1B42EFA6D98506938A3BB9F2AF02D963AD4B237F33D8F2F36E5BC4361233A537",
+        "Bytes":  3476
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\SquadMarker.cs",
+        "Sha256":  "6C0506B2874F11E7578E9003D02C04BCF358E3D2F525B535368FC85BF000F07F",
+        "Bytes":  419
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\SquadMarkerDrawing.cs",
+        "Sha256":  "737BED52F1BBDEE18962475066C3993212A6F606453EB1AC253E68F3D6ABF231",
+        "Bytes":  1458
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\SquadMarkerHost.cs",
+        "Sha256":  "2858B9BECCF6D49704B15795F4BAC63CBC16FFA1791B20748352B9690DDE3786",
+        "Bytes":  5120
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\SquadMarkerLogic.cs",
+        "Sha256":  "44BB6781EB442DBE00D805EDF173EB68B180EDD74281A3997B7FE331A4E88A67",
+        "Bytes":  2076
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\SquadMarkerMember.cs",
+        "Sha256":  "5B6FF392FA17E4394858AEB4B1AB9A30A031829C6244024E2852BE98C6394B27",
+        "Bytes":  178
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\SquadMarkerPreferences.cs",
+        "Sha256":  "AA76FD45879BBA59DA73171F7E73AF83BFE874C49DDEF0056C08BD9B817662C4",
+        "Bytes":  8032
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\SquadMarkerSettingsForm.cs",
+        "Sha256":  "63961715281224AFA9C9C2F0055CC4BDC21BA8E943796A4D5AD9828BC5AEE786",
+        "Bytes":  6069
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\SquadMarkerSource.cs",
+        "Sha256":  "EC1DEC39BBBFD8534E67784A9BF845E918ED63BC85C9CFA6B24BEB22EBE0CEC6",
+        "Bytes":  368
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\SquadMarkerWindow.cs",
+        "Sha256":  "7685A91DC528B7ADC923B509991EB56C38C01036D836ED8640CC8FDBFD113ED8",
+        "Bytes":  17087
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\Stack46.cs",
+        "Sha256":  "18509D73D559CA80B054FEC471082F280D0818CB697771D4D8054462CD789248",
+        "Bytes":  2317
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\SteamAccounts71.cs",
+        "Sha256":  "1F7894421E7218169516925CE7AEA9839B5583C6FFC4180811CAF3F0FFA45F80",
+        "Bytes":  8527
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\Stepper46.cs",
+        "Sha256":  "928FDFEFD2863AF6D83AE4BA0AD13BBBC6C9C2BF4F1CA242076F51329DDBC3FD",
+        "Bytes":  3546
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\SupportCatalogue49.cs",
+        "Sha256":  "2BF9C570658AA44815BB00134557138450D15425EE059317A451E25B0FC5E1CA",
+        "Bytes":  1104
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\SupportCommand49.cs",
+        "Sha256":  "47D7E6FBDBAE03E7890386DE216D53D88D6B1A4E11635714EC680B312FA7ABF6",
+        "Bytes":  295
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\SupportSchedule49.cs",
+        "Sha256":  "F6564ABA558BD8590F36E7DE79CAE88706F3BF79948DCB0DFD31BBB18787089C",
+        "Bytes":  286
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\Surface46.cs",
+        "Sha256":  "8099FE156A19058FFBE6F4E9B78523E798BDFAA83E572DEC395B68200A44FE35",
+        "Bytes":  889
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\TacticalChecks51.cs",
+        "Sha256":  "434FB0A33924C86482A078F4AD0575751F88A9E8BB038EE88D669456744513EF",
+        "Bytes":  4079
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\TacticalMapDrawing51.cs",
+        "Sha256":  "462D76A716E80031C567232432F5FE50EFC34B2BBF1AE6123FF98F1B4F519611",
+        "Bytes":  2495
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\TacticalMapPreferences51.cs",
+        "Sha256":  "928C3268A93E024DDEB775133E4308F2F66F0642B06B489D3AD21C392F175A65",
+        "Bytes":  823
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\TacticalMapState51.cs",
+        "Sha256":  "CD57E01743209C4C64CAFDD7A8746C812BE24F3E19F8C61861C3C347CBC31FF6",
+        "Bytes":  766
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\Toggle46.cs",
+        "Sha256":  "38651309924C08814214DA35A7FE87B2B7D4C25F9660A1B1E4700B1270651045",
+        "Bytes":  3133
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\TrackedBuilding.cs",
+        "Sha256":  "54D8158874FCC3F62DC2F7925008118A115A38C7DA023A9DA1B28B1AACFE9DC4",
+        "Bytes":  142
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\UnitNames.cs",
+        "Sha256":  "0BCB82FDF87DCD0B60D18B18CE9512FB6944E51151425DA03FD49F750B13E0C8",
+        "Bytes":  4661
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\UnitNamesBase.cs",
+        "Sha256":  "32153ACFCCBC984290D1C4257833C655FAEB8F00A9E7CB96E2B4C4DC8575B13D",
+        "Bytes":  66117
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\UpdateNotice74.cs",
+        "Sha256":  "3189C3ADB26338019664F38EF035A208167084E6E09A8BC7C05E19A60E4F61D2",
+        "Bytes":  2783
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "CoH3MemoryTool\\UserUnitNames56.cs",
+        "Sha256":  "1BC919CB27EFC17FBCE2BB45A50C48B9088875F2F78867B14BBF08C1750B5A53",
+        "Bytes":  22968
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "Properties\\AssemblyInfo.cs",
+        "Sha256":  "7BB8A701FF034E476546CE9D9155CE36DD538CFDDF4B91F5491CACB39A243249",
+        "Bytes":  430
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "Skyeye.QqProbe\\Finding.cs",
+        "Sha256":  "47A836F556454720203BA0F4ACA49492759A99E557A6EF9FC327887EE090B6A8",
+        "Bytes":  368
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "Skyeye.QqProbe\\Probe.cs",
+        "Sha256":  "F204429529D9841B5A8E8058C9816C61EB8CE84A4028808ACBCFACD76BBEA866",
+        "Bytes":  8486
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "Skyeye.QqProbe\\ProbeResult.cs",
+        "Sha256":  "FD9A6EF5198B87586E2665E8AC20102A3460BD83FF86574C107CDF771E86DBA9",
+        "Bytes":  1595
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "sounds\\北非海军照明弹来了.mp3",
+        "Sha256":  "F650FDB40AD6967B8A77AD4C14C53D2E2FB2FF800412877AFC7E3159F2504C0F",
+        "Bytes":  36581
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "sounds\\战斗群.mp3",
+        "Sha256":  "BE60C0055EFDBAE7E21344DD1E7423E4BA74527370462104569D25999E96765D",
+        "Bytes":  38799
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "sounds\\手雷升级.mp3",
+        "Sha256":  "6A7ED4D5735D9DD569E850BD8624F78094FF4B2207DE0F6D2322276CED284960",
+        "Bytes":  37963
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "sounds\\火炮就绪.mp3",
+        "Sha256":  "5E0AAEED3AE3C91350C15C11C8FCE08A059C55E07BC3EE85840ADD41B3CC38D3",
+        "Bytes":  36710
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "sounds\\炮击来袭.mp3",
+        "Sha256":  "C03F7A3F6F6A76F78AC860583D21C8B51965363AFF330689EEBC0318252BEEA9",
+        "Bytes":  39506
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "sounds\\被包抄了.mp3",
+        "Sha256":  "C0C8A04D57F6B05EEE6C43DEAB5CD96AA018B87F6AA708395A0BCE00E7A7263B",
+        "Bytes":  37834
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "sounds\\装甲生产.mp3",
+        "Sha256":  "1D62D9017E19532A26BD18B13DE1116A7ADAF20D110DAC61ED17FDEEDD129EEA",
+        "Bytes":  40471
+    },
+    {
+        "Tree":  "client",
+        "RelativePath":  "sounds\\造本.mp3",
+        "Sha256":  "ED200910E31D7027088C04D9115BB63FDEC7CBCE2E69B602E5BD3BDDE0E7C37C",
+        "Bytes":  35038
+    },
+    {
+        "Tree":  "server",
+        "RelativePath":  "admin.css",
+        "Sha256":  "3ACE864904BF6E82ED9A05737FACE2732328FA3AC675E30F93E3435797BBF42A",
+        "Bytes":  8068
+    },
+    {
+        "Tree":  "server",
+        "RelativePath":  "admin.html",
+        "Sha256":  "F3868B525FA44EB223A70492A869C9B06016BAF375FF4E3048EE8E75AB96B7B4",
+        "Bytes":  6916
+    },
+    {
+        "Tree":  "server",
+        "RelativePath":  "admin.js",
+        "Sha256":  "FAC89FA6E1355B0FF54D405229092943DC3B603BF437350EB186C5EF688EA3A3",
+        "Bytes":  16948
+    },
+    {
+        "Tree":  "server",
+        "RelativePath":  "LicenseService.cs",
+        "Sha256":  "EC144EB33C2675241BAA756B543225EB2CCC5C751FBFED8505937CF4BC2CCA3A",
+        "Bytes":  31589
+    },
+    {
+        "Tree":  "server",
+        "RelativePath":  "Licensing.Server.csproj",
+        "Sha256":  "82804EAF435B96D29CED83882F394EE7D7D64CB8845A88BBCA684EC319823841",
+        "Bytes":  357
+    },
+    {
+        "Tree":  "server",
+        "RelativePath":  "Program.cs",
+        "Sha256":  "BF87C6E376EC2616E36978AF9C85BEE584EC6DAF4AED796BD022D503DC0938FC",
+        "Bytes":  14349
+    },
+    {
+        "Tree":  "server",
+        "RelativePath":  "ProtocolModels.cs",
+        "Sha256":  "F993183D6D5276888CBF465ED1CF23FA8271EBAFAA374EDB28C27F34C80CE6B1",
+        "Bytes":  3769
+    },
+    {
+        "Tree":  "server",
+        "RelativePath":  "ServerOptions.cs",
+        "Sha256":  "B312F87BDC570CA9796EA340FFAB368D2D222F6F8636BE01E321E3551EDD4E93",
+        "Bytes":  3708
+    }
+]

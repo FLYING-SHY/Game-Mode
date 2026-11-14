@@ -1,0 +1,27 @@
+START [4ms] audio
+PASS isolated audio cache
+PASS audio cache reuse
+PASS decoded RIFF/WAVE
+PASS isolated audio cache
+PASS audio cache reuse
+PASS decoded RIFF/WAVE
+PASS isolated audio cache
+PASS audio cache reuse
+PASS decoded RIFF/WAVE
+PASS isolated audio cache
+PASS audio cache reuse
+PASS decoded RIFF/WAVE
+PASS isolated audio cache
+PASS audio cache reuse
+PASS decoded RIFF/WAVE
+PASS isolated audio cache
+PASS audio cache reuse
+PASS decoded RIFF/WAVE
+PASS isolated audio cache
+PASS audio cache reuse
+PASS decoded RIFF/WAVE
+PASS isolated audio cache
+PASS audio cache reuse
+PASS decoded RIFF/WAVE
+PASS all eight embedded-resolver audio fixtures decoded
+PASS [106ms] audio

@@ -1,0 +1,14 @@
+START [4ms] network
+HTTP [102ms] api/v1/activate keys=client_version,code,device_id,game_name,installation_id,request_id,steam_id64
+REPLY [112ms] api/v1/activate state=active
+STATE [113ms] active
+PASS [167ms] real coordinator active gate and license kind
+STATE [28189ms] network_wait
+STATE [33389ms] network_wait
+STATE [38593ms] network_wait
+STATE [43818ms] network_wait
+STATE [48995ms] network_wait
+STATE [54243ms] network_wait
+PASS [59170ms] real 28-second attempt and real 60-second lease expiry without offline permanent grant
+REPLY [59178ms] api/v1/logout state=
+PASS [59181ms] network

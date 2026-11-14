@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>天穹之眼-自有授权版-v0.60.8</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CoH3MemoryTool.ControlsProgram</StartupObject>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net48</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="CoH3MemoryTool\*Checks*.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="CoH3.InterfaceIcon" />
+    <None Remove="names-zh-hans.tsv" />
+    <None Remove="CoH3.BarrageCatalogue.tsv" />
+    <None Remove="CoH3.Audio.NAudio.dll" />
+    <EmbeddedResource Include="CoH3.InterfaceIcon" LogicalName="CoH3.InterfaceIcon" />
+    <EmbeddedResource Include="names-zh-hans.tsv" LogicalName="names-zh-hans.tsv" />
+    <EmbeddedResource Include="CoH3.BarrageCatalogue.tsv" LogicalName="CoH3.BarrageCatalogue.tsv" />
+    <EmbeddedResource Include="CoH3.Audio.NAudio.dll" LogicalName="CoH3.Audio.NAudio.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="sounds\**\*.mp3;*.txt;*.html" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="NAudio">
+      <HintPath>CoH3.Audio.NAudio.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,37 @@
+START [4ms] selfcheck
+PASS 13 canonical LF lines without trailing LF
+PASS RSA3072 SHA256 PKCS1 activation signature
+PASS heartbeat effective Bearer token fallback
+PASS reject altered heartbeat Bearer token
+PASS reject signature for different product
+PASS activation requires response token
+PASS reject altered lease_signature
+PASS reject altered lease_kid
+PASS reject altered server_time
+PASS reject altered lease_until
+PASS reject altered expires_at
+PASS reject altered license_kind
+PASS reject altered session_token
+PASS reject corrupt signature bytes
+PASS reject changed request device_id
+PASS reject changed request steam_id64
+PASS reject changed request installation_id
+PASS reject changed request nonce
+PASS reject wrong RSA key
+PASS reject signature made by wrong key
+PASS empty production pin fails closed
+PASS constructed reply never receives verification marker
+PASS reply fields are immutable snapshots
+PASS real HTTP send fresh lowercase nonce
+PASS real HTTP unsigned active rejected api/v1/activate
+PASS send does not mutate stable request payload
+PASS real HTTP send fresh lowercase nonce
+PASS real HTTP unsigned active rejected api/v1/heartbeat
+PASS send does not mutate stable request payload
+PASS real coordinator rejects unverified active before GateGrant
+PASS [382ms] configuration and same-origin download policy
+PASS [382ms] reference fingerprint fixture and real MachineGuid provider
+PASS [388ms] isolated DPAPI store round-trip
+PASS [390ms] real gate lease limits, identity, revocation and permanent UI formatter
+PASS [390ms] real assembly, embedded resources, exact PInvoke fix and fixed route allowlist
+PASS [390ms] selfcheck

@@ -1,0 +1,8 @@
+﻿{
+    "Arguments":  [
+                      "-licensed"
+                  ],
+    "ExitCode":  101,
+    "CheckedAt":  "2026-11-13T14:37:42.2514914+08:00",
+    "OutputLog":  "licensed-guard.log"
+}

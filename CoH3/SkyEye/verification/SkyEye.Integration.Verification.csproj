@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>12.0</LangVersion>
+    <AssemblyName>SkyEye.Integration.Verification</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\client\天穹之眼-v0.60.8.csproj" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,51 @@
+﻿[
+    {
+        "ExitCode":  0,
+        "Result":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\protected-selfcheck-20261113-144238-873\\result.json",
+        "Name":  "selfcheck",
+        "Mode":  "selfcheck",
+        "Log":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\evidence\\protected-selfcheck-20261113-144238-873.log"
+    },
+    {
+        "ExitCode":  0,
+        "Result":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\protected-ui-20261113-144238-873\\result.json",
+        "Name":  "ui",
+        "Mode":  "ui",
+        "Log":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\evidence\\protected-ui-20261113-144238-873.log"
+    },
+    {
+        "ExitCode":  0,
+        "Result":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\protected-audio-20261113-144238-873\\result.json",
+        "Name":  "audio",
+        "Mode":  "audio",
+        "Log":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\evidence\\protected-audio-20261113-144238-873.log"
+    },
+    {
+        "ExitCode":  0,
+        "Result":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\protected-protocol-permanent-20261113-144238-873\\result.json",
+        "Name":  "protocol-permanent",
+        "Mode":  "protocol",
+        "Log":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\evidence\\protected-protocol-permanent-20261113-144238-873.log"
+    },
+    {
+        "ExitCode":  0,
+        "Result":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\protected-protocol-timed-20261113-144238-873\\result.json",
+        "Name":  "protocol-timed",
+        "Mode":  "protocol",
+        "Log":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\evidence\\protected-protocol-timed-20261113-144238-873.log"
+    },
+    {
+        "ExitCode":  0,
+        "Result":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\protected-coordinator-20261113-144238-873\\result.json",
+        "Name":  "coordinator",
+        "Mode":  "coordinator",
+        "Log":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\evidence\\protected-coordinator-20261113-144238-873.log"
+    },
+    {
+        "ExitCode":  0,
+        "Result":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\protected-network-20261113-144238-873\\result.json",
+        "Name":  "network",
+        "Mode":  "network",
+        "Log":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\evidence\\protected-network-20261113-144238-873.log"
+    }
+]

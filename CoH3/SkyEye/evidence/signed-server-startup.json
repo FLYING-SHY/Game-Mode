@@ -1,0 +1,23 @@
+﻿{
+    "Health":  {
+                   "status":  "ready",
+                   "framework":  "ASP.NET Core",
+                   "mode":  "native-leases"
+               },
+    "Version":  {
+                    "minimum":  "0.60.8",
+                    "latest":  "0.60.8",
+                    "download_url":  "",
+                    "notes":  "",
+                    "connection_info":  0,
+                    "steam_accounts_info":  0,
+                    "qq_accounts_info":  0,
+                    "product_id":  "CoH3FowTool"
+                },
+    "SeparatePort":  47835,
+    "ExistingServiceHealth":  {
+                                  "status":  "ready",
+                                  "framework":  "ASP.NET Core",
+                                  "mode":  "native-leases"
+                              }
+}

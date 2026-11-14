@@ -1,0 +1,60 @@
+﻿{
+    "TrialSHA256":  "6551EB5BF91CBB34D579590E4EA70C04FAC55F1A00BE6AF22EB3B3F348EB7F25",
+    "Cases":  [
+                  {
+                      "Case":  "selfcheck",
+                      "ExitCode":  0,
+                      "ElapsedMs":  390,
+                      "Passed":  true,
+                      "Sandbox":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\reactor-20261113-144411-762-selfcheck"
+                  },
+                  {
+                      "Case":  "ui",
+                      "ExitCode":  0,
+                      "ElapsedMs":  744,
+                      "Passed":  true,
+                      "Sandbox":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\reactor-20261113-144411-762-ui"
+                  },
+                  {
+                      "Case":  "audio",
+                      "ExitCode":  0,
+                      "ElapsedMs":  106,
+                      "Passed":  true,
+                      "Sandbox":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\reactor-20261113-144411-762-audio"
+                  },
+                  {
+                      "Case":  "protocol-permanent",
+                      "ExitCode":  0,
+                      "ElapsedMs":  158,
+                      "Passed":  true,
+                      "Sandbox":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\reactor-online-20261113-144939-131-protocol-permanent"
+                  },
+                  {
+                      "Case":  "protocol-timed",
+                      "ExitCode":  0,
+                      "ElapsedMs":  123,
+                      "Passed":  true,
+                      "Sandbox":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\reactor-online-20261113-144939-131-protocol-timed"
+                  },
+                  {
+                      "Case":  "coordinator",
+                      "ExitCode":  0,
+                      "ElapsedMs":  29882,
+                      "Passed":  true,
+                      "Sandbox":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\reactor-online-20261113-144939-131-coordinator"
+                  },
+                  {
+                      "Case":  "network",
+                      "ExitCode":  0,
+                      "ElapsedMs":  59181,
+                      "Passed":  true,
+                      "Sandbox":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\reactor-online-20261113-144939-131-network"
+                  }
+              ],
+    "Count":  7,
+    "PassedCount":  7,
+    "AllPassed":  true,
+    "OnlineFixtureSecretOccurrences":  0,
+    "OnlineEvidenceFilesScanned":  13,
+    "ProductionLicensed":  false
+}

@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <AssemblyName>Licensing.Server</AssemblyName>
+    <RootNamespace>Licensing.Server</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="admin.html;admin.js;admin.css" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.15" />
+  </ItemGroup>
+</Project>

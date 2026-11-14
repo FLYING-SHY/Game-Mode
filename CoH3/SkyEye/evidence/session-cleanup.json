@@ -1,0 +1,80 @@
+{
+  "checkedAt": "2026-11-13T06:54:57.598320+00:00",
+  "transport": "real HTTP authenticated administrator read-only session query",
+  "passed": true,
+  "checks": [
+    {
+      "fixtureSet": "raw-live-fixtures.json",
+      "case": "protocol-permanent",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "raw-live-fixtures.json",
+      "case": "protocol-timed",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "raw-live-fixtures.json",
+      "case": "coordinator",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "raw-live-fixtures.json",
+      "case": "network",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "protected-live-fixtures.json",
+      "case": "protocol-permanent",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "protected-live-fixtures.json",
+      "case": "protocol-timed",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "protected-live-fixtures.json",
+      "case": "coordinator",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "protected-live-fixtures.json",
+      "case": "network",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "reactor-trial-live-fixtures.json",
+      "case": "protocol-permanent",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "reactor-trial-live-fixtures.json",
+      "case": "protocol-timed",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "reactor-trial-live-fixtures.json",
+      "case": "coordinator",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "reactor-trial-live-fixtures.json",
+      "case": "network",
+      "activeSessions": 0,
+      "passed": true
+    }
+  ],
+  "limitation": "No active session at observation time; protocol finally/logout is additionally evidenced by awaited client execution."
+}

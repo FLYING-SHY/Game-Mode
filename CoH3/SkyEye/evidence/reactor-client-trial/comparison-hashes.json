@@ -1,0 +1,12 @@
+﻿[
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "A2BD412924CE669666AFC4FCAA68B96FA5A6AE29B2BF6A32D89EF1466F20EF10",
+        "Path":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\bin\\Release\\net48\\天穹之眼-自有授权版-v0.60.8.exe"
+    },
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "6551EB5BF91CBB34D579590E4EA70C04FAC55F1A00BE6AF22EB3B3F348EB7F25",
+        "Path":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\tools\\reactor\\trial\\20261113-144033-423-c4bc273d\\天穹之眼-自有授权版-v0.60.8.exe"
+    }
+]

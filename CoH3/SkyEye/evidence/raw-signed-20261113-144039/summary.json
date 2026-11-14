@@ -1,0 +1,61 @@
+{
+    "sandboxTarget":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox",
+    "clientSHA256":  "A2BD412924CE669666AFC4FCAA68B96FA5A6AE29B2BF6A32D89EF1466F20EF10",
+    "privateCopy":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\artifacts\\raw-signed-test\\20261113-144039",
+    "baseUrl":  "http://127.0.0.1:47835/",
+    "sandboxJunction":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\sandbox",
+    "results":  [
+                    {
+                        "exitCode":  0,
+                        "case":  "selfcheck",
+                        "sandbox":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\raw-v2-20261113-144039-selfcheck",
+                        "elapsedMs":  523.42000000000007
+                    },
+                    {
+                        "exitCode":  0,
+                        "case":  "ui",
+                        "sandbox":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\raw-v2-20261113-144039-ui",
+                        "elapsedMs":  798.77
+                    },
+                    {
+                        "exitCode":  0,
+                        "case":  "audio",
+                        "sandbox":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\raw-v2-20261113-144039-audio",
+                        "elapsedMs":  116.4503
+                    },
+                    {
+                        "exitCode":  0,
+                        "case":  "protocol-permanent",
+                        "sandbox":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\raw-v2-20261113-144039-protocol-permanent",
+                        "elapsedMs":  168.01090000000002
+                    },
+                    {
+                        "exitCode":  0,
+                        "case":  "protocol-timed",
+                        "sandbox":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\raw-v2-20261113-144039-protocol-timed",
+                        "elapsedMs":  150.60840000000002
+                    },
+                    {
+                        "exitCode":  0,
+                        "case":  "coordinator",
+                        "sandbox":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\raw-v2-20261113-144039-coordinator",
+                        "elapsedMs":  29975.2127
+                    },
+                    {
+                        "exitCode":  0,
+                        "case":  "network",
+                        "sandbox":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\raw-v2-20261113-144039-network",
+                        "elapsedMs":  59146.7741
+                    }
+                ],
+    "timing":  {
+                   "networkGateClosedObservedMs":  59112,
+                   "heartbeatIntervalMs":  28253,
+                   "coordinatorActivateSendMs":  103,
+                   "coordinatorFirstHeartbeatSendMs":  28356,
+                   "networkLogoutReplyMs":  59117,
+                   "networkElapsedFromActivateSendMs":  59006,
+                   "networkActivateSendMs":  106
+               },
+    "allCardsLoggedOut":  true
+}

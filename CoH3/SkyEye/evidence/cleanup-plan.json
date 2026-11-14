@@ -1,0 +1,2080 @@
+{
+  "createdAt": "2026-11-13T08:33:12.433928+00:00",
+  "workspace": "F:\\WorkSpace\\Game",
+  "applyRequested": true,
+  "preDeletion": {
+    "priorArchivesValid": true,
+    "priorSourceBaselinesValid": true,
+    "priorSourceFiles": 218
+  },
+  "targets": [
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-v0.60.8-Recovered",
+      "reason": "Superseded source and development artifacts",
+      "files": 924,
+      "bytes": 147985574
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-v0.60.8-Recovered.zip",
+      "reason": "Superseded archive or verification sidecar",
+      "files": 1,
+      "bytes": 34582764
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-v0.60.8-Recovered.zip.sha256",
+      "reason": "Superseded archive or verification sidecar",
+      "files": 1,
+      "bytes": 95
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-v0.60.8-Recovered.archive-verification.json",
+      "reason": "Superseded archive or verification sidecar",
+      "files": 1,
+      "bytes": 381
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-Integration",
+      "reason": "Superseded source and development artifacts",
+      "files": 471,
+      "bytes": 43116132
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-Hardened",
+      "reason": "Superseded source and development artifacts",
+      "files": 633,
+      "bytes": 95215105
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-Hardened.archive-verification.json",
+      "reason": "Superseded archive or verification sidecar",
+      "files": 1,
+      "bytes": 480
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-Integration-Delivery.zip",
+      "reason": "Superseded archive or verification sidecar",
+      "files": 1,
+      "bytes": 20316656
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-Integration-Delivery.zip.sha256",
+      "reason": "Superseded archive or verification sidecar",
+      "files": 1,
+      "bytes": 99
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-Integration-Delivery.archive-verification.json",
+      "reason": "Superseded archive or verification sidecar",
+      "files": 1,
+      "bytes": 286
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-Hardened-Client.zip",
+      "reason": "Superseded archive or verification sidecar",
+      "files": 1,
+      "bytes": 750251
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-Hardened-Client.zip.sha256",
+      "reason": "Superseded archive or verification sidecar",
+      "files": 1,
+      "bytes": 94
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-Hardened-Maintenance.zip",
+      "reason": "Superseded archive or verification sidecar",
+      "files": 1,
+      "bytes": 7747632
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-Hardened-Maintenance.zip.sha256",
+      "reason": "Superseded archive or verification sidecar",
+      "files": 1,
+      "bytes": 99
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\artifacts",
+      "reason": "Old CoH3FowTool desktop test images and results",
+      "files": 4,
+      "bytes": 89084
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\client",
+      "reason": "Retired CE/unsigned-lease source; signed V2 source is authoritative",
+      "files": 41,
+      "bytes": 255543
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\server",
+      "reason": "Retired CE/unsigned-lease source; signed V2 source is authoritative",
+      "files": 155,
+      "bytes": 66636216
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\tests",
+      "reason": "Retired CE/unsigned-lease source; signed V2 source is authoritative",
+      "files": 146,
+      "bytes": 66974222
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\docs",
+      "reason": "Retired CE/unsigned-lease source; signed V2 source is authoritative",
+      "files": 1,
+      "bytes": 7418
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\Directory.Build.props",
+      "reason": "Retired CE/unsigned-lease source; signed V2 source is authoritative",
+      "files": 1,
+      "bytes": 349
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\framework-evidence.md",
+      "reason": "Retired CE/unsigned-lease source; signed V2 source is authoritative",
+      "files": 1,
+      "bytes": 5264
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\.dockerignore",
+      "reason": "Retired CE/unsigned-lease source; signed V2 source is authoritative",
+      "files": 1,
+      "bytes": 63
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\deployment\\compose.yaml",
+      "reason": "Retired backend launch/deployment entry point",
+      "files": 1,
+      "bytes": 452
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\deployment\\Dockerfile",
+      "reason": "Retired backend launch/deployment entry point",
+      "files": 1,
+      "bytes": 491
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\deployment\\Initialize-Local.ps1",
+      "reason": "Retired backend launch/deployment entry point",
+      "files": 1,
+      "bytes": 2922
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\deployment\\Start-Local.ps1",
+      "reason": "Retired backend launch/deployment entry point",
+      "files": 1,
+      "bytes": 1347
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\.cache\\backend-compile9",
+      "reason": "Obsolete backend test output, unused package cache or SDK download",
+      "files": 68,
+      "bytes": 35144970
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\.cache\\backend-formaltest9",
+      "reason": "Obsolete backend test output, unused package cache or SDK download",
+      "files": 79,
+      "bytes": 35667860
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\.cache\\backend-net10-runs",
+      "reason": "Obsolete backend test output, unused package cache or SDK download",
+      "files": 4,
+      "bytes": 88661
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\.cache\\backend-selftest",
+      "reason": "Obsolete backend test output, unused package cache or SDK download",
+      "files": 67,
+      "bytes": 35242999
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\.cache\\backend-verify9",
+      "reason": "Obsolete backend test output, unused package cache or SDK download",
+      "files": 68,
+      "bytes": 35149941
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\.cache\\dotnet-cli-home",
+      "reason": "Obsolete backend test output, unused package cache or SDK download",
+      "files": 7,
+      "bytes": 1025
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\.cache\\dotnet-sdk-10.0.404-win-x64-11fd2bc028e446559e5cde5a838c6073.zip",
+      "reason": "Obsolete backend test output, unused package cache or SDK download",
+      "files": 1,
+      "bytes": 156516352
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\.cache\\dotnet-sdk-10.0.404-win-x64.zip",
+      "reason": "Obsolete backend test output, unused package cache or SDK download",
+      "files": 1,
+      "bytes": 235044864
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\.cache\\dotnet-sdk-10.0.404-win-x64.zip.b719c8c571114c169762c3568df8ce0c.complete.zip",
+      "reason": "Obsolete backend test output, unused package cache or SDK download",
+      "files": 1,
+      "bytes": 303618098
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\.cache\\dotnet-sdk-10.0.404-win-x64.zip.b719c8c571114c169762c3568df8ce0c.download",
+      "reason": "Obsolete backend test output, unused package cache or SDK download",
+      "files": 1,
+      "bytes": 68573234
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\.cache\\packages",
+      "reason": "Obsolete backend test output, unused package cache or SDK download",
+      "files": 832,
+      "bytes": 435606526
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\.cache\\verification-runs",
+      "reason": "Obsolete backend test output, unused package cache or SDK download",
+      "files": 4,
+      "bytes": 88660
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\.local\\deployment-validation",
+      "reason": "Private obsolete test fixtures and build evidence",
+      "files": 4,
+      "bytes": 64814
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\.local\\final-build",
+      "reason": "Private obsolete test fixtures and build evidence",
+      "files": 139,
+      "bytes": 62011115
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\.local\\integration-cards",
+      "reason": "Private obsolete test fixtures and build evidence",
+      "files": 16,
+      "bytes": 752
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\.local\\test-runs",
+      "reason": "Private obsolete test fixtures and build evidence",
+      "files": 34,
+      "bytes": 447619
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\.local\\admin-acceptance.png",
+      "reason": "Obsolete local test artifact",
+      "files": 1,
+      "bytes": 35238
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\.local\\browser-permanent-batch-private.png",
+      "reason": "Obsolete local test artifact",
+      "files": 1,
+      "bytes": 39107
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\.local\\latest-integration.log",
+      "reason": "Obsolete local test artifact",
+      "files": 1,
+      "bytes": 50660
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\.local\\prepare-native-leases-20261113-100400.py",
+      "reason": "Obsolete local test artifact",
+      "files": 1,
+      "bytes": 3756
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\.local\\protected-smoke-codes.json",
+      "reason": "Obsolete local test artifact",
+      "files": 1,
+      "bytes": 143
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\.local\\backups",
+      "reason": "Old source/configuration backup; unique private state retained separately",
+      "files": 27,
+      "bytes": 196616
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\tools\\reactor",
+      "reason": "Trial, duplicate unprotected build or regenerable intermediate output",
+      "files": 557,
+      "bytes": 189312944
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\bin\\ReactorTrial",
+      "reason": "Trial, duplicate unprotected build or regenerable intermediate output",
+      "files": 18,
+      "bytes": 1564728
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\artifacts\\raw-signed-test",
+      "reason": "Trial, duplicate unprotected build or regenerable intermediate output",
+      "files": 19,
+      "bytes": 1564978
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\bin",
+      "reason": "Trial, duplicate unprotected build or regenerable intermediate output",
+      "files": 15,
+      "bytes": 1494807
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\obj",
+      "reason": "Trial, duplicate unprotected build or regenerable intermediate output",
+      "files": 13,
+      "bytes": 1194020
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\bin\\Release",
+      "reason": "Trial, duplicate unprotected build or regenerable intermediate output",
+      "files": 18,
+      "bytes": 1564728
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ExtrasChecks52.cs",
+      "reason": "Historical in-client tests explicitly excluded by the current project",
+      "files": 1,
+      "bytes": 4749
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\FeatureChecks50.cs",
+      "reason": "Historical in-client tests explicitly excluded by the current project",
+      "files": 1,
+      "bytes": 2273
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\InfoChecks49.cs",
+      "reason": "Historical in-client tests explicitly excluded by the current project",
+      "files": 1,
+      "bytes": 2373
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\InputChecks53.cs",
+      "reason": "Historical in-client tests explicitly excluded by the current project",
+      "files": 1,
+      "bytes": 1716
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\InterfaceChecks59.cs",
+      "reason": "Historical in-client tests explicitly excluded by the current project",
+      "files": 1,
+      "bytes": 5521
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\LocalIdentityChecks59.cs",
+      "reason": "Historical in-client tests explicitly excluded by the current project",
+      "files": 1,
+      "bytes": 5469
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\MortarChecks49.cs",
+      "reason": "Historical in-client tests explicitly excluded by the current project",
+      "files": 1,
+      "bytes": 1645
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\NameTableChecks57.cs",
+      "reason": "Historical in-client tests explicitly excluded by the current project",
+      "files": 1,
+      "bytes": 50042
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\PaintChecks48.cs",
+      "reason": "Historical in-client tests explicitly excluded by the current project",
+      "files": 1,
+      "bytes": 2510
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\RangeChecks50.cs",
+      "reason": "Historical in-client tests explicitly excluded by the current project",
+      "files": 1,
+      "bytes": 2337
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\RecoveryChecks55.cs",
+      "reason": "Historical in-client tests explicitly excluded by the current project",
+      "files": 1,
+      "bytes": 3891
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\TacticalChecks51.cs",
+      "reason": "Historical in-client tests explicitly excluded by the current project",
+      "files": 1,
+      "bytes": 4079
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\evidence\\release-static-analysis\\ilspy-export",
+      "reason": "Generated decompiler export; measurements and logs retained",
+      "files": 63,
+      "bytes": 2369315
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\20261113-063519-6c45b3ba\\audio-temp\\CoH3AudioCache-v21\\1D62D9017E19532A26BD18B13DE1116A7ADAF20D110DAC61ED17FDEEDD129EEA.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 131374
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\20261113-063519-6c45b3ba\\audio-temp\\CoH3AudioCache-v21\\5E0AAEED3AE3C91350C15C11C8FCE08A059C55E07BC3EE85840ADD41B3CC38D3.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 110638
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\20261113-063519-6c45b3ba\\audio-temp\\CoH3AudioCache-v21\\6A7ED4D5735D9DD569E850BD8624F78094FF4B2207DE0F6D2322276CED284960.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 117550
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\20261113-063519-6c45b3ba\\audio-temp\\CoH3AudioCache-v21\\BE60C0055EFDBAE7E21344DD1E7423E4BA74527370462104569D25999E96765D.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 122158
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\20261113-063519-6c45b3ba\\audio-temp\\CoH3AudioCache-v21\\C03F7A3F6F6A76F78AC860583D21C8B51965363AFF330689EEBC0318252BEEA9.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 124462
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\20261113-063519-6c45b3ba\\audio-temp\\CoH3AudioCache-v21\\C0C8A04D57F6B05EEE6C43DEAB5CD96AA018B87F6AA708395A0BCE00E7A7263B.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 115246
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\20261113-063519-6c45b3ba\\audio-temp\\CoH3AudioCache-v21\\ED200910E31D7027088C04D9115BB63FDEC7CBCE2E69B602E5BD3BDDE0E7C37C.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 101422
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\20261113-063519-6c45b3ba\\audio-temp\\CoH3AudioCache-v21\\F650FDB40AD6967B8A77AD4C14C53D2E2FB2FF800412877AFC7E3159F2504C0F.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 108334
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\protected-audio-20261113-144238-873\\audio-temp\\CoH3AudioCache-v21\\1D62D9017E19532A26BD18B13DE1116A7ADAF20D110DAC61ED17FDEEDD129EEA.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 131374
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\protected-audio-20261113-144238-873\\audio-temp\\CoH3AudioCache-v21\\5E0AAEED3AE3C91350C15C11C8FCE08A059C55E07BC3EE85840ADD41B3CC38D3.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 110638
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\protected-audio-20261113-144238-873\\audio-temp\\CoH3AudioCache-v21\\6A7ED4D5735D9DD569E850BD8624F78094FF4B2207DE0F6D2322276CED284960.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 117550
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\protected-audio-20261113-144238-873\\audio-temp\\CoH3AudioCache-v21\\BE60C0055EFDBAE7E21344DD1E7423E4BA74527370462104569D25999E96765D.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 122158
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\protected-audio-20261113-144238-873\\audio-temp\\CoH3AudioCache-v21\\C03F7A3F6F6A76F78AC860583D21C8B51965363AFF330689EEBC0318252BEEA9.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 124462
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\protected-audio-20261113-144238-873\\audio-temp\\CoH3AudioCache-v21\\C0C8A04D57F6B05EEE6C43DEAB5CD96AA018B87F6AA708395A0BCE00E7A7263B.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 115246
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\protected-audio-20261113-144238-873\\audio-temp\\CoH3AudioCache-v21\\ED200910E31D7027088C04D9115BB63FDEC7CBCE2E69B602E5BD3BDDE0E7C37C.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 101422
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\protected-audio-20261113-144238-873\\audio-temp\\CoH3AudioCache-v21\\F650FDB40AD6967B8A77AD4C14C53D2E2FB2FF800412877AFC7E3159F2504C0F.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 108334
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\raw-v2-20261113-144039-audio\\audio-temp\\CoH3AudioCache-v21\\1D62D9017E19532A26BD18B13DE1116A7ADAF20D110DAC61ED17FDEEDD129EEA.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 131374
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\raw-v2-20261113-144039-audio\\audio-temp\\CoH3AudioCache-v21\\5E0AAEED3AE3C91350C15C11C8FCE08A059C55E07BC3EE85840ADD41B3CC38D3.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 110638
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\raw-v2-20261113-144039-audio\\audio-temp\\CoH3AudioCache-v21\\6A7ED4D5735D9DD569E850BD8624F78094FF4B2207DE0F6D2322276CED284960.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 117550
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\raw-v2-20261113-144039-audio\\audio-temp\\CoH3AudioCache-v21\\BE60C0055EFDBAE7E21344DD1E7423E4BA74527370462104569D25999E96765D.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 122158
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\raw-v2-20261113-144039-audio\\audio-temp\\CoH3AudioCache-v21\\C03F7A3F6F6A76F78AC860583D21C8B51965363AFF330689EEBC0318252BEEA9.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 124462
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\raw-v2-20261113-144039-audio\\audio-temp\\CoH3AudioCache-v21\\C0C8A04D57F6B05EEE6C43DEAB5CD96AA018B87F6AA708395A0BCE00E7A7263B.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 115246
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\raw-v2-20261113-144039-audio\\audio-temp\\CoH3AudioCache-v21\\ED200910E31D7027088C04D9115BB63FDEC7CBCE2E69B602E5BD3BDDE0E7C37C.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 101422
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\raw-v2-20261113-144039-audio\\audio-temp\\CoH3AudioCache-v21\\F650FDB40AD6967B8A77AD4C14C53D2E2FB2FF800412877AFC7E3159F2504C0F.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 108334
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\reactor-20261113-144252-655-audio\\audio-temp\\CoH3AudioCache-v21\\1D62D9017E19532A26BD18B13DE1116A7ADAF20D110DAC61ED17FDEEDD129EEA.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 131374
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\reactor-20261113-144252-655-audio\\audio-temp\\CoH3AudioCache-v21\\5E0AAEED3AE3C91350C15C11C8FCE08A059C55E07BC3EE85840ADD41B3CC38D3.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 110638
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\reactor-20261113-144252-655-audio\\audio-temp\\CoH3AudioCache-v21\\6A7ED4D5735D9DD569E850BD8624F78094FF4B2207DE0F6D2322276CED284960.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 117550
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\reactor-20261113-144252-655-audio\\audio-temp\\CoH3AudioCache-v21\\BE60C0055EFDBAE7E21344DD1E7423E4BA74527370462104569D25999E96765D.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 122158
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\reactor-20261113-144252-655-audio\\audio-temp\\CoH3AudioCache-v21\\C03F7A3F6F6A76F78AC860583D21C8B51965363AFF330689EEBC0318252BEEA9.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 124462
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\reactor-20261113-144252-655-audio\\audio-temp\\CoH3AudioCache-v21\\C0C8A04D57F6B05EEE6C43DEAB5CD96AA018B87F6AA708395A0BCE00E7A7263B.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 115246
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\reactor-20261113-144252-655-audio\\audio-temp\\CoH3AudioCache-v21\\ED200910E31D7027088C04D9115BB63FDEC7CBCE2E69B602E5BD3BDDE0E7C37C.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 101422
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\reactor-20261113-144252-655-audio\\audio-temp\\CoH3AudioCache-v21\\F650FDB40AD6967B8A77AD4C14C53D2E2FB2FF800412877AFC7E3159F2504C0F.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 108334
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\reactor-20261113-144411-762-audio\\audio-temp\\CoH3AudioCache-v21\\1D62D9017E19532A26BD18B13DE1116A7ADAF20D110DAC61ED17FDEEDD129EEA.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 131374
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\reactor-20261113-144411-762-audio\\audio-temp\\CoH3AudioCache-v21\\5E0AAEED3AE3C91350C15C11C8FCE08A059C55E07BC3EE85840ADD41B3CC38D3.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 110638
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\reactor-20261113-144411-762-audio\\audio-temp\\CoH3AudioCache-v21\\6A7ED4D5735D9DD569E850BD8624F78094FF4B2207DE0F6D2322276CED284960.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 117550
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\reactor-20261113-144411-762-audio\\audio-temp\\CoH3AudioCache-v21\\BE60C0055EFDBAE7E21344DD1E7423E4BA74527370462104569D25999E96765D.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 122158
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\reactor-20261113-144411-762-audio\\audio-temp\\CoH3AudioCache-v21\\C03F7A3F6F6A76F78AC860583D21C8B51965363AFF330689EEBC0318252BEEA9.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 124462
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\reactor-20261113-144411-762-audio\\audio-temp\\CoH3AudioCache-v21\\C0C8A04D57F6B05EEE6C43DEAB5CD96AA018B87F6AA708395A0BCE00E7A7263B.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 115246
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\reactor-20261113-144411-762-audio\\audio-temp\\CoH3AudioCache-v21\\ED200910E31D7027088C04D9115BB63FDEC7CBCE2E69B602E5BD3BDDE0E7C37C.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 101422
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\reactor-20261113-144411-762-audio\\audio-temp\\CoH3AudioCache-v21\\F650FDB40AD6967B8A77AD4C14C53D2E2FB2FF800412877AFC7E3159F2504C0F.wav",
+      "reason": "Generated decoded audio; comparison hashes and results retained",
+      "files": 1,
+      "bytes": 108334
+    }
+  ],
+  "candidateFiles": 4506,
+  "candidateBytes": 2091090074,
+  "preserved": [
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\天穹之眼-v0.60.8\\air-diagnostics.log",
+      "bytes": 246,
+      "sha256": "785be2eabd810025c0a8320df03c20d71a0ee77d5b49e44860e301bf6c442ff4"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\天穹之眼-v0.60.8\\air-outline-diagnostics.log",
+      "bytes": 138,
+      "sha256": "dcc6903caac1e21d070060e3d2526f54757081ccf02ce784f6d4af1e3a78c3bb"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\天穹之眼-v0.60.8\\copy-hotkey.txt",
+      "bytes": 7,
+      "sha256": "54f2a9ba6ba1fed408915bd9f30ff7f565903aaee907968fcd41208226702b81"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\天穹之眼-v0.60.8\\minimap-diagnostics.log",
+      "bytes": 73,
+      "sha256": "fd5d63032f5918ec39741ff845dbd41769f5cd753719fa70c97eeb675a07469f"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\天穹之眼-v0.60.8\\NAudio-LICENSE.txt",
+      "bytes": 2633,
+      "sha256": "969099139b48a788a96b4abce64efd8ed160d3c167bf94af7dcb09389bfe7f79"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\天穹之眼-v0.60.8\\overlay-diagnostics.log",
+      "bytes": 366,
+      "sha256": "01590f97be1946e3d1e3991db584676d7ce39a7d451c4442bf3aef844ec42484"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\天穹之眼-v0.60.8\\SHA256SUMS.txt",
+      "bytes": 1262,
+      "sha256": "f55271f8d2d90d446cbdecbf9015d10ae2fd66c082c3494e7a60be9659ba4c66"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\天穹之眼-v0.60.8\\先看这里.txt",
+      "bytes": 442,
+      "sha256": "54a00c1665d55ef38f7d2f6819873055742f55835f183d358fb1f78568975200"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\天穹之眼-v0.60.8\\天穹之眼-v0.60.8.exe",
+      "bytes": 1231360,
+      "sha256": "f89b09c2bff2751c5e7904d3e302b6966abb7c8cc16d56a98be09582aad4e2d0"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\天穹之眼-v0.60.8\\天穹之眼-v0.60.8.exe.config",
+      "bytes": 333,
+      "sha256": "4dec343b1a94780713397dd05613c6628f7ca7e412f6071e03be5cb414adf151"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\天穹之眼-v0.60.8\\软件使用说明.html",
+      "bytes": 3179,
+      "sha256": "62b6ffddf025c06f357c41bee2d5741ab0f3d68fc2bdedd0834ae97e2d9785f2"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\天穹之眼-v0.60.8\\软件使用说明.txt",
+      "bytes": 2913,
+      "sha256": "398b5793b43f1529efe9904f2e432558b858dbf669311c98b077c8b48b1ba26e"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\天穹之眼-v0.60.8\\sounds\\北非海军照明弹来了.mp3",
+      "bytes": 36581,
+      "sha256": "f650fdb40ad6967b8a77ad4c14c53d2e2fb2ff800412877afc7e3159f2504c0f"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\天穹之眼-v0.60.8\\sounds\\战斗群.mp3",
+      "bytes": 38799,
+      "sha256": "be60c0055efdbae7e21344dd1e7423e4ba74527370462104569d25999e96765d"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\天穹之眼-v0.60.8\\sounds\\手雷升级.mp3",
+      "bytes": 37963,
+      "sha256": "6a7ed4d5735d9dd569e850bd8624f78094ff4b2207de0f6d2322276ced284960"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\天穹之眼-v0.60.8\\sounds\\火炮就绪.mp3",
+      "bytes": 36710,
+      "sha256": "5e0aaeed3ae3c91350c15c11c8fce08a059c55e07bc3ee85840add41b3cc38d3"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\天穹之眼-v0.60.8\\sounds\\炮击来袭.mp3",
+      "bytes": 39506,
+      "sha256": "c03f7a3f6f6a76f78ac860583d21c8b51965363aff330689eebc0318252beea9"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\天穹之眼-v0.60.8\\sounds\\被包抄了.mp3",
+      "bytes": 37834,
+      "sha256": "c0c8a04d57f6b05eee6c43deab5cd96aa018b87f6aa708395a0bce00e7a7263b"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\天穹之眼-v0.60.8\\sounds\\装甲生产.mp3",
+      "bytes": 40471,
+      "sha256": "1d62d9017e19532a26bd18b13de1116a7adaf20d110dac61ed17fdeedd129eea"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\天穹之眼-v0.60.8\\sounds\\造本.mp3",
+      "bytes": 35038,
+      "sha256": "ed200910e31d7027088c04d9115bb63fdec7cbce2e69b602e5bd3bdde0e7c37c"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\client\\copy-hotkey.txt",
+      "bytes": 7,
+      "sha256": "54f2a9ba6ba1fed408915bd9f30ff7f565903aaee907968fcd41208226702b81"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\client\\NAudio-LICENSE.txt",
+      "bytes": 2633,
+      "sha256": "969099139b48a788a96b4abce64efd8ed160d3c167bf94af7dcb09389bfe7f79"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\client\\先看这里.txt",
+      "bytes": 442,
+      "sha256": "54a00c1665d55ef38f7d2f6819873055742f55835f183d358fb1f78568975200"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\client\\天穹之眼-自有授权版-v0.60.8.exe",
+      "bytes": 1221120,
+      "sha256": "636206fdd6dc6eeda979d5c3d1fc21432e6aaffbbbad899299a835e28ce1ce6b"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\client\\天穹之眼-自有授权版-v0.60.8.exe.config",
+      "bytes": 523,
+      "sha256": "7284ff6a86098ba10784a05c3da402f0527521e6887256567d1549993d90f627"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\client\\软件使用说明.html",
+      "bytes": 3179,
+      "sha256": "62b6ffddf025c06f357c41bee2d5741ab0f3d68fc2bdedd0834ae97e2d9785f2"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\client\\软件使用说明.txt",
+      "bytes": 2913,
+      "sha256": "398b5793b43f1529efe9904f2e432558b858dbf669311c98b077c8b48b1ba26e"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\client\\sounds\\北非海军照明弹来了.mp3",
+      "bytes": 36581,
+      "sha256": "f650fdb40ad6967b8a77ad4c14c53d2e2fb2ff800412877afc7e3159f2504c0f"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\client\\sounds\\战斗群.mp3",
+      "bytes": 38799,
+      "sha256": "be60c0055efdbae7e21344dd1e7423e4ba74527370462104569d25999e96765d"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\client\\sounds\\手雷升级.mp3",
+      "bytes": 37963,
+      "sha256": "6a7ed4d5735d9dd569e850bd8624f78094ff4b2207de0f6d2322276ced284960"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\client\\sounds\\火炮就绪.mp3",
+      "bytes": 36710,
+      "sha256": "5e0aaeed3ae3c91350c15c11c8fce08a059c55e07bc3ee85840add41b3cc38d3"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\client\\sounds\\炮击来袭.mp3",
+      "bytes": 39506,
+      "sha256": "c03f7a3f6f6a76f78ac860583d21c8b51965363aff330689eebc0318252beea9"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\client\\sounds\\被包抄了.mp3",
+      "bytes": 37834,
+      "sha256": "c0c8a04d57f6b05eee6c43deab5cd96aa018b87f6aa708395a0bce00e7a7263b"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\client\\sounds\\装甲生产.mp3",
+      "bytes": 40471,
+      "sha256": "1d62d9017e19532a26bd18b13de1116a7adaf20d110dac61ed17fdeedd129eea"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\client\\sounds\\造本.mp3",
+      "bytes": 35038,
+      "sha256": "ed200910e31d7027088c04d9115bb63fdec7cbce2e69b602e5bd3bdde0e7c37c"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\Licensing.Server.deps.json",
+      "bytes": 8286,
+      "sha256": "73131342f91d40049c2604953c2fbb314ebb59c21b5e6246762eb4a6f5fc23d4"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\Licensing.Server.dll",
+      "bytes": 161280,
+      "sha256": "d1988dca9734c1aecb1e98ff6a97caeac33de1cee2ced283ed0dc65e4051d84b"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\Licensing.Server.pdb",
+      "bytes": 39996,
+      "sha256": "247125c1c8a4c537db05e76479cfe0e9ca532fd477cac3a73ce5b509156e6289"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\Licensing.Server.runtimeconfig.json",
+      "bytes": 491,
+      "sha256": "41442586a8262bc96a1c80f82f4d9384c03bfd465d221cbf01fb3563170f9e65"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\Licensing.Server.staticwebassets.endpoints.json",
+      "bytes": 53,
+      "sha256": "c1686417e8d5c31bba969f12b6f3d2b35e6609adb5ca42f212261a3a02771aac"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\Microsoft.Data.Sqlite.dll",
+      "bytes": 177504,
+      "sha256": "6db4849bbdfd10a8f675cbd30f188903b9e1c193894c9d30f84bdbc41442e202"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\SQLitePCLRaw.batteries_v2.dll",
+      "bytes": 5120,
+      "sha256": "bc69777001eb4db81c580f62835396f67e74aaa381eef446193a904499d5310b"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\SQLitePCLRaw.core.dll",
+      "bytes": 51200,
+      "sha256": "50c999a1ab2afeacc93bce5ac2948d3bb630d99d23efc3cfcbd8bc11d3426eb7"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\SQLitePCLRaw.provider.e_sqlite3.dll",
+      "bytes": 36864,
+      "sha256": "02ad639f45a26de1919ffbb6696bdb399ad01afc149970a163c3867162f310b3"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\Start-Server.ps1",
+      "bytes": 1649,
+      "sha256": "89b34bf9c9f6841884e636cdabc1cc12c1680107e98c527f4a86cf4afc8e3756"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\web.config",
+      "bytes": 502,
+      "sha256": "a07bddaccba83f490aa4b837705673b6c6329ee63ed57f3be6308b149189b80d"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\deployment\\Caddyfile",
+      "bytes": 74,
+      "sha256": "07139abc63f88de673a219d54f7a0beb76f7a477a1f0302c3f96e296d26f90a8"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\deployment\\Get-DotNet10.ps1",
+      "bytes": 5509,
+      "sha256": "9d841225d20a77315edd94a5a9333ceb7ee9e5b41d7ef29b54dab4f9aef9d1ba"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\deployment\\New-DeploymentConfig.ps1",
+      "bytes": 2415,
+      "sha256": "1ebe5b86ddb65934a93c2c250b6ddb12e5d55963e7c99640e45f694a38e73979"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\runtimes\\browser-wasm\\nativeassets\\net9.0\\e_sqlite3.a",
+      "bytes": 1308854,
+      "sha256": "c64ae8d44dc3e1aa03aca4e79ccc501cbc3a3c490e8e2ea9e369367f68cf0f21"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\runtimes\\linux-arm\\native\\libe_sqlite3.so",
+      "bytes": 982224,
+      "sha256": "43556c2f5075857bf57be1136d556733bdc27195884fbdde127cd976d1c25ad5"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\runtimes\\linux-arm64\\native\\libe_sqlite3.so",
+      "bytes": 1534296,
+      "sha256": "707fff6b18c1f083158e7a543c8d2545d5485f547ffd96db29679a95f52878d5"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\runtimes\\linux-armel\\native\\libe_sqlite3.so",
+      "bytes": 1375344,
+      "sha256": "3f4d9b9ca49bb3f100882e78ba85807398cee19b481bfd4c301a8f5f58d48540"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\runtimes\\linux-mips64\\native\\libe_sqlite3.so",
+      "bytes": 1756544,
+      "sha256": "985884523e512414f3e50aa359f08dad3ce635e99405e7823de9b26a7db38d09"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\runtimes\\linux-musl-arm\\native\\libe_sqlite3.so",
+      "bytes": 1322584,
+      "sha256": "7fec7057d16e8b5ae54fed0c42a0e6b85e40df0d57092ef20cd647a4e1c1e0ed"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\runtimes\\linux-musl-arm64\\native\\libe_sqlite3.so",
+      "bytes": 1450704,
+      "sha256": "530e2f74f259fe04faa4b595336e671fab5eedbb6f4e94dad59494efb7b00c2a"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\runtimes\\linux-musl-riscv64\\native\\libe_sqlite3.so",
+      "bytes": 1015888,
+      "sha256": "d8e54eb7dc52ea0a7df9b78ac6feb85af429e7264613099df478825dea5805d4"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\runtimes\\linux-musl-s390x\\native\\libe_sqlite3.so",
+      "bytes": 1685752,
+      "sha256": "64260c0460ad6efa7dce9263bff7a4b64ad66172ccc580cb09181c845e1a3407"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\runtimes\\linux-musl-x64\\native\\libe_sqlite3.so",
+      "bytes": 1445336,
+      "sha256": "647b7b5886526691aed58e0fcbb56dc1e6dea8b1f9f5390782f0c95269250db1"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\runtimes\\linux-ppc64le\\native\\libe_sqlite3.so",
+      "bytes": 1937408,
+      "sha256": "1ef00b5e3ac63e491f59ecf587680fc52ad844cea62e0a879a1315ef6bd10fc6"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\runtimes\\linux-riscv64\\native\\libe_sqlite3.so",
+      "bytes": 1291896,
+      "sha256": "6b390eecbc6f55c44d9ab8a774f1fe4283dfb33a72e6f29f4e0b173065e7e105"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\runtimes\\linux-s390x\\native\\libe_sqlite3.so",
+      "bytes": 1655776,
+      "sha256": "dfd5ab35f6d61155a3c629d0bceff4d6e0f0f190983f3fb8f681fb34ec08c67e"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\runtimes\\linux-x64\\native\\libe_sqlite3.so",
+      "bytes": 1470784,
+      "sha256": "b0f5c48026fedcf9f05cf31c6fadf9e1e001ca59cd85aa68b8b6814e52c18a07"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\runtimes\\linux-x86\\native\\libe_sqlite3.so",
+      "bytes": 1547984,
+      "sha256": "fe8229e5baeaf21e721cf65626a6b07ec22d9b17d07bd624e7a77927174277f1"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\runtimes\\maccatalyst-arm64\\native\\libe_sqlite3.dylib",
+      "bytes": 1695264,
+      "sha256": "8d63d80bc6caa754679d6fc89fd741a32c156f136c34759cc8fff8cd51468a93"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\runtimes\\maccatalyst-x64\\native\\libe_sqlite3.dylib",
+      "bytes": 1724352,
+      "sha256": "43d27adbc5ba40850bac42a12aea08314a22a43d3ce77cdc7a6cc47ecffb5746"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\runtimes\\osx-arm64\\native\\libe_sqlite3.dylib",
+      "bytes": 1696624,
+      "sha256": "09fe20a6c050912a7944b2f2f2981debe31679f7919f523c87251ae8cf0f2daa"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\runtimes\\osx-x64\\native\\libe_sqlite3.dylib",
+      "bytes": 1724472,
+      "sha256": "02344e1d0bcb5ed447ad9b79ed19e37a590fb1ece3eba1e63efbc35e36e47bdf"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\runtimes\\win-arm64\\native\\e_sqlite3.dll",
+      "bytes": 1814528,
+      "sha256": "4177542756bd94f75b55fb74367e0cf34e66a88ffaf95755489af14c6ca2f792"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\runtimes\\win-x64\\native\\e_sqlite3.dll",
+      "bytes": 1978880,
+      "sha256": "b7385d722c83fb52142a00477a726723745916d22a555711ee89834c1111fb2e"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server\\runtimes\\win-x86\\native\\e_sqlite3.dll",
+      "bytes": 1533952,
+      "sha256": "d13eb819d1353d98c684c88672868bbfcc6a52eb5987bdf2557ec02fabce4ea7"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\app.config",
+      "bytes": 496,
+      "sha256": "de5c6b7c679aa75f2a60dd0dbd4ae47699dc77b46b50fc672453e77bbd1c6184"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\app.ico",
+      "bytes": 22043,
+      "sha256": "f7886678e2502df503f4365dd72f1c19a49a08482016cd42a8110185b9f96788"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\app.manifest",
+      "bytes": 490,
+      "sha256": "c0085eb467d2fc9c9f395047e057183b3cd1503a4087d0db565161c13527a76f"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3.Audio.NAudio.dll",
+      "bytes": 513536,
+      "sha256": "bc4bacc3b8b28d898f1671b79f216cca439f95eb60cd32d3e3ecafbecac42780"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3.BarrageCatalogue.tsv",
+      "bytes": 15909,
+      "sha256": "00a9421799b4cdb41db9f539995d2caf7156b9004267f2eed38e5b24dae8d01c"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3.InterfaceIcon",
+      "bytes": 22043,
+      "sha256": "f7886678e2502df503f4365dd72f1c19a49a08482016cd42a8110185b9f96788"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\copy-hotkey.txt",
+      "bytes": 7,
+      "sha256": "54f2a9ba6ba1fed408915bd9f30ff7f565903aaee907968fcd41208226702b81"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\names-zh-hans.tsv",
+      "bytes": 135724,
+      "sha256": "0c64ac4cee984ce73940238d016d38740d71efd98a91f09caab96dd70d7997ff"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\NAudio-LICENSE.txt",
+      "bytes": 2633,
+      "sha256": "969099139b48a788a96b4abce64efd8ed160d3c167bf94af7dcb09389bfe7f79"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\先看这里.txt",
+      "bytes": 442,
+      "sha256": "54a00c1665d55ef38f7d2f6819873055742f55835f183d358fb1f78568975200"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\天穹之眼-v0.60.8.csproj",
+      "bytes": 2132,
+      "sha256": "e3f56a23c09aef446093567492b7085df80123961ac7ed1b094bcbb24c89c08e"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\软件使用说明.html",
+      "bytes": 3179,
+      "sha256": "62b6ffddf025c06f357c41bee2d5741ab0f3d68fc2bdedd0834ae97e2d9785f2"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\软件使用说明.txt",
+      "bytes": 2913,
+      "sha256": "398b5793b43f1529efe9904f2e432558b858dbf669311c98b077c8b48b1ba26e"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\Action46.cs",
+      "bytes": 2725,
+      "sha256": "567d792adae50f575dad5bfc79946cd01c993d7cd7c843a8f47d6052eeb05c02"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ActivationForm60.cs",
+      "bytes": 4659,
+      "sha256": "9d6d24ab701414eb2e9a332e14351a9f504884b99e1b61232b5dcb7375cd455f"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\Adaptation58.cs",
+      "bytes": 590,
+      "sha256": "d8f7076ccead85c5cf7448a621eddb5dad316def96f8bba84f09bf637448cb88"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\AirCast.cs",
+      "bytes": 307,
+      "sha256": "5a3b3877a15841ffb100e75becb673b54344024a76828168ba7b27f323f73131"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\AirCastTracker.cs",
+      "bytes": 3433,
+      "sha256": "9fb99cf20bf74747a02fd9162314cfeebc8acab58b7313d2b7e2f5a9488f59e8"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\AirCatalogue.cs",
+      "bytes": 3053,
+      "sha256": "704e7035dd4f812a8ad731953a9b4b05d3114c2dfa71ad5da139e0064448fece"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\AirDefinition.cs",
+      "bytes": 298,
+      "sha256": "53ad21386fa2bb363d720139cd0d2ba9d54b84c57b6a2496987803b99ca2777c"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\AirDrawing.cs",
+      "bytes": 6721,
+      "sha256": "591e8383a35641fe77cc16870798024d58efa9d8ce5f29997f839f5489496205"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\AirLogic.cs",
+      "bytes": 5604,
+      "sha256": "47bc0536ad81189776b2c2ce34b2741b945acbc0d300d19a4ed9a65880839c5d"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\AirOverlayHost.cs",
+      "bytes": 3437,
+      "sha256": "3cca9ba8325101e3541f91b12b6f1c7387e58849bb5e4bc23361cc45614290e6"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\AirOverlayWindow.cs",
+      "bytes": 10770,
+      "sha256": "83bf3ca2312ff2af4cc6220a5093a5cf3876ebbcdf47a89160a511db6d71c267"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\AirPlane.cs",
+      "bytes": 286,
+      "sha256": "13b664246f40ee3d1971fd676962dd1721cb188c2c810844eee1ec0dd03134a8"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\AirPreferences.cs",
+      "bytes": 2075,
+      "sha256": "257fb0380e0eab8be17f9f41cd941156ceb803155b3ae4874706a55ebe6d055b"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\AirRender42.cs",
+      "bytes": 5360,
+      "sha256": "6b7a65e34011e9f30d8204eb58c3892f24aca5c6f091dc47aec68dd87e9d3610"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\AirSettingsForm.cs",
+      "bytes": 3500,
+      "sha256": "5ba0f05673e27f3a59cb769255ad88f64d219aa3fec2e448742677b1aeca1a81"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\AirZone.cs",
+      "bytes": 458,
+      "sha256": "814c5b210ba5ef901d122655f0f6d8341ba15d234e07e3d884ae4e8ad62b1430"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\AlertKind.cs",
+      "bytes": 191,
+      "sha256": "a6302972a5016768a021c0c76ceb514bb692e3466486dc345790099555cae410"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\AlertSounds.cs",
+      "bytes": 4424,
+      "sha256": "ee46b35328b7dc0257596c3d3af2e8b70ff5f785fa2e9ddc701eb7122079af1d"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\AlertTests.cs",
+      "bytes": 4174,
+      "sha256": "b5bfb23536d886c5d5592f5b01f1326002f5a654d6b86a52540ab61483445f78"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\AlertTracker.cs",
+      "bytes": 4835,
+      "sha256": "e52bd942f980913230268d74fb7e1ae24c50cda0f1a9e29da95418ad717de337"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\AlphaSurface.cs",
+      "bytes": 3577,
+      "sha256": "0dfa2290be711196960de65c766ff72c03a306cdc8939a1f24d9d6a3abed966a"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ArmourPlayersForm.cs",
+      "bytes": 4100,
+      "sha256": "f07a80b933b34d4d921fcdf444b2245fa25c78a025a121fa68a81b7bd8d4c375"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ArmourProductionTracker.cs",
+      "bytes": 1444,
+      "sha256": "8848941f28e1328a1f147ecf889ef95b34b85ff12f26dcc0d61c98e817269ccc"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ArmourUnits.cs",
+      "bytes": 1261,
+      "sha256": "9f480b3e5a59c2905903667d8bf49ac947ff65773e45a7fcede07f420f219b71"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ArtilleryState.cs",
+      "bytes": 1622,
+      "sha256": "7c0d7c3ea8f2812af414210f4ecb537c2d9113f06789ea2f4f71a8adef00aeac"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\AttackCatalogue67.cs",
+      "bytes": 1845,
+      "sha256": "9c527d5ead8895d001bc970650135097eb5ee741d434d628d37a6f441dd4b83b"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\AudioClip.cs",
+      "bytes": 3356,
+      "sha256": "13932dd801fa5153a73d5c93a335abe8cf4ab7026348791b4bb242e006bf6b30"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\AudioDependency.cs",
+      "bytes": 788,
+      "sha256": "b4473951d25872190ea31409a497345da4e569c743fa961250a62df864c10574"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\BarrageCatalogue.cs",
+      "bytes": 1630,
+      "sha256": "880ff4697199938b0883ac851904dbea16127a4c4e7d19da2916d3339b8ebe88"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\BarrageDisplayTracker.cs",
+      "bytes": 1447,
+      "sha256": "cc4302bea57f2cd37594040fb560e5c61746f1d87899d8c52d0dd6656cc154e0"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\BarrageLogic.cs",
+      "bytes": 1675,
+      "sha256": "0434c9ebc08a7af328d301099a03e0cb2ea542aebfa7b35cb8a71a912c89d0b7"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\BarrageRecord.cs",
+      "bytes": 329,
+      "sha256": "a4d3bb8dd637f15aa417a7ead87f65609a33d3cea06a80a11c5626a4b5a4ff1d"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\BuildingNames.cs",
+      "bytes": 1603,
+      "sha256": "a8cf39b48b76afbe411252788f695d79283357044b6e3fdf2ce12f12ccc866ef"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ByteMemory45.cs",
+      "bytes": 300,
+      "sha256": "21b18985c62049b8077966fc703bedb65b37d554110ca1c1871e786db2456b09"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ChineseNames.cs",
+      "bytes": 3229,
+      "sha256": "f7bd59e582fee42815ebcd739cb3c2465af8e24bd55ecf861468fa6ac3394710"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ColourBytes.cs",
+      "bytes": 233,
+      "sha256": "318394e4f02dc7b7fc2ef41b959ce2b24477bccbf0e0373f0d53d737a9aa08ab"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ControlsProgram.cs",
+      "bytes": 840,
+      "sha256": "c39e8fb897d22a29a02ee75d55df2da983e3e9da47e25ed7126d66e23524d956"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\DefaultSounds61.cs",
+      "bytes": 844,
+      "sha256": "0a14bbf75b4cc3ba81db1569e51e875171bd33398ce6a5e3e0324681f9df7a14"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\DeviceSerial69.cs",
+      "bytes": 2657,
+      "sha256": "908a281466e8ea67bda20ef5c3bc493563976816adebe4cfb8a13e6cd77d0871"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\DirectionData.cs",
+      "bytes": 404,
+      "sha256": "e0fe2bc09a8a38123051d6f243a461dfee239da00239477905cb66045158b1e6"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\DirectionDrawing.cs",
+      "bytes": 5079,
+      "sha256": "08c9f800b8398c86458eecb0887fa474c4c1651176305421d06f2bea2fdb1ff9"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\DirectionSettingsForm.cs",
+      "bytes": 4450,
+      "sha256": "91ad5067326bdb4407fc5641d676dfe8ce286d8dd3bd5a8deed828564fdc429e"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\DirectionStroke.cs",
+      "bytes": 282,
+      "sha256": "173d7a9b74e3ceef53c10421f5c032d83c09d262343ead17fdc029bddf6ce9fe"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\EnemyChoice.cs",
+      "bytes": 248,
+      "sha256": "4194661ebd561e4d79a721b8e4f2ee9f839669b0213af48c9b81469c845642fe"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\EnemyOverlayWindow.cs",
+      "bytes": 5113,
+      "sha256": "e291bf4fc4cda169be8daefbabd59ff6e8e44cc3ec038b3a8a5c75a3b443f8fa"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\EnemySelection.cs",
+      "bytes": 868,
+      "sha256": "7d0d8fdcdec3c84281509ff9e6e293167b6c98da08d4d6adb1c05bc75f7e9b42"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\FlankLogic47.cs",
+      "bytes": 2810,
+      "sha256": "5746afacb5a549a3b4b841fcf110fea544d6367546ed9721b2c4ff591c0504e8"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\FlankMapDrawing55.cs",
+      "bytes": 1287,
+      "sha256": "0ba0eace9b5b721ea106d01452e7a40c3867e2a69e9ba74778555b6a8d0f0e78"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\FlankMapRange55.cs",
+      "bytes": 211,
+      "sha256": "096dd90fed882e021feea5b11fc5c222eb25f0b33c179e648863cdac695c70f5"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\FlankOverlay47.cs",
+      "bytes": 1764,
+      "sha256": "aefd7151fab824b2b5282e6145a1f01a79855fbc5a2f5c8dca84e4aff6a91bff"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\FlankRangeDrawing52.cs",
+      "bytes": 1194,
+      "sha256": "272d58dae79c7bdf3b8d8c1168dc10c38f87b6d363c360a9f63b4f77a5bff0fb"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\FlankResult47.cs",
+      "bytes": 334,
+      "sha256": "3fe13bc0805ffd5ea4aa900f76d6d6b177e66ca4a342806a30b529288b449082"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\FlankTests47.cs",
+      "bytes": 2013,
+      "sha256": "d0f64e05bc1c412dc8598d46d5730c7ec78ff0c4a235d474a9df8428d7a62f79"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\Fold46.cs",
+      "bytes": 1966,
+      "sha256": "83ca82dce880b0abd39ae83ccaae56badf1baf18c79cf75f8181c725e10ae8bd"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\GameAlert.cs",
+      "bytes": 117,
+      "sha256": "50dd27fc2d9a4b584e6715adc7ae72c69680cc35bd8c789d6673954c6df10037"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\GameIdentity60.cs",
+      "bytes": 281,
+      "sha256": "677ff63b025dd04db059ffed9967686d41e22dd4b347e9e5f3a04cd9a9a7c166"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\GameIdentityProvider60.cs",
+      "bytes": 4412,
+      "sha256": "90973d7407b39b7f66699f479fa988afb8bc0d61e170b757b1da8a945758a603"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\GameVersion45.cs",
+      "bytes": 1373,
+      "sha256": "d7c68ccddfa985b57107cfb28258ecb38d6054edaa5f4d3dc50530ed465151e7"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\GrenadeUpgrade.cs",
+      "bytes": 1286,
+      "sha256": "6a80659f1360a8c578f07d00e22fcf1a69544f6777867b1cb159934733f338c1"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\HazardKind.cs",
+      "bytes": 684,
+      "sha256": "2e84d3d4659d96d0b24a3c0b45a520aa25dcc05770464c0c4c812ce178e7cd33"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\IGameIdentityProvider60.cs",
+      "bytes": 104,
+      "sha256": "afa56659bea9b252b26dd1b49a46303273cf2921c91a6257f19e5624b47c2103"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ILicenseApi60.cs",
+      "bytes": 309,
+      "sha256": "639d85bf1bbb4f2a34a0e092b35ba3d449058f927e94e3b086413a597c9714c5"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\Infrastructure49.cs",
+      "bytes": 940,
+      "sha256": "a4547c4da88f30bc2e363b96924c8216fb67a817257a3c4ddc4325a02bd3d0c8"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\Interface45.cs",
+      "bytes": 1455,
+      "sha256": "70168ed48135e6ad87713f90fd43a7df7be42c7ba068197d352bdb7cb4a313ac"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\Kwk38Upgrade.cs",
+      "bytes": 920,
+      "sha256": "1e56617e2213d1928f2129fe2db6bd97d075a625341036328002759047932e8b"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\LeaseSignature60.cs",
+      "bytes": 3703,
+      "sha256": "390084410bb922dbba37931d82ec1f507586dfa7f74b214bbe0cc617bf4701bd"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\LicenseApi60.cs",
+      "bytes": 3206,
+      "sha256": "735cb365d5126800ff4b5c39b40a43db00d148dbd0fbf2c0e20d0c82557b57c6"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\LicenseApplication60.cs",
+      "bytes": 5243,
+      "sha256": "d8d5a38bb7655b39670ddb83b072e76d84654bae05793abeb7e9482aacc657c9"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\LicenseArray60.cs",
+      "bytes": 264,
+      "sha256": "241109f4b9d99185e597d4e03551402c685921ec413244bab63182c433854cdc"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\LicenseClock60.cs",
+      "bytes": 264,
+      "sha256": "22fc771f70ecec015330152553d33700dc49cccbe962903b3e0f1091a41eaaf4"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\LicenseConfiguration60.cs",
+      "bytes": 1049,
+      "sha256": "91cd72057526283835b0dcac631ad5a2a94c432a4fc56409b86583a33fe730d3"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\LicenseCoordinator60.cs",
+      "bytes": 14603,
+      "sha256": "c13221fe0811c59742ce7f651c432270dfea4cd070254906bb4bb59a397311ee"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\LicenseCredentials60.cs",
+      "bytes": 200,
+      "sha256": "9a80bcbadfed133267af758047da67e9ce63204b6fd000d2f6b45f5164cbc795"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\LicenseDevice60.cs",
+      "bytes": 890,
+      "sha256": "2c1a4f167e03334d4549a91926667cc5c2a9654f418a68c8cedd36f7758c4a22"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\LicenseGate60.cs",
+      "bytes": 1678,
+      "sha256": "2d7468dd3c124cae6accd5676596ca8c9c912fc068cb539d50f574409e37222c"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\LicenseLease60.cs",
+      "bytes": 186,
+      "sha256": "8051a25380dada229727f831f1a795c5d110aac851f1ebc29c8878a2c3c32331"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\LicenseNotice60.cs",
+      "bytes": 1507,
+      "sha256": "e12d036f395b218bbd65147f3217f85989a19d522ca1a2c2fcf44bc5ea947744"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\LicenseReply60.cs",
+      "bytes": 1251,
+      "sha256": "fd3e7692bded32cf2b728d89aa1d4d811734f58fcf8582220b58e3d088eaf1b7"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\LicenseStore60.cs",
+      "bytes": 2295,
+      "sha256": "cf02e06aca1f5b650add3d7628b51075a2b7332eedee7d0a6588462d618c4a8d"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\LicenseVersion60.cs",
+      "bytes": 938,
+      "sha256": "c9f945cecf32da55f2c0ac08432b015445bafc92358a634d19b8af96d36402b7"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\LicenseView60.cs",
+      "bytes": 339,
+      "sha256": "0784bc694127f4d7bf6a3ecf05bd5f69401a7674da4cf2fa0bf1dda1aa358beb"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\LocalAccountLog59.cs",
+      "bytes": 3254,
+      "sha256": "1f6ffea90bfec08dc1db3604c041a6f070e06d48183d208dd729956a51c8edb8"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\LocalPlayerAccount59.cs",
+      "bytes": 276,
+      "sha256": "d9c1753f50d8280ea191a7f820c2f84b0e49bf6582b95f4fd07686cc6c730d5a"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\Loiter49.cs",
+      "bytes": 1983,
+      "sha256": "369765d924b36c298959caffaba85291fd3f90bcbe6167c3e7e576c4127f7165"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\LoiterState49.cs",
+      "bytes": 209,
+      "sha256": "4b729acc05cd0afc147ea41c91939f624be9c3d542dd9310e873766de6ff7dea"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\LoiterWeaponCatalogue49.cs",
+      "bytes": 1153,
+      "sha256": "9d7b3e047d7301f3c1f49d046eef77db4b4e880ece10899b40d34ade44bd982c"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\MapUnitLabels52.cs",
+      "bytes": 1301,
+      "sha256": "f05227b5f88e20ad53e0b18b5812986a53e7dec15d1a3fb9954756a9bb7d597c"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\MarkerDrawCommand.cs",
+      "bytes": 153,
+      "sha256": "1330018527dd3cf0cdaba510f1f806b63bdcc91555e29a9e477418997defceeb"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\MarkerReadContext.cs",
+      "bytes": 240,
+      "sha256": "bf777f7a02831f5e36738eb421d36f35a05c17e08b4e5320a66f68e6fe05188e"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\MarkerScene.cs",
+      "bytes": 307,
+      "sha256": "e712fe32fb412730c5c0aea480a152cae856c9af75e3c4449295635f91e7dc9e"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\MarkerSpriteCache.cs",
+      "bytes": 4954,
+      "sha256": "74799d673a8ac72ed87259ba557fcd30eaaca96e8810ddc3ef98f5a568a3d3b9"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\MineCamera.cs",
+      "bytes": 1130,
+      "sha256": "c66a698d3be27f0b2c31cbc652e145f550771c10276ddf0f12976d880fcc3a9b"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\MineOverlayWindow.cs",
+      "bytes": 6588,
+      "sha256": "45ba866b276997954ec9b71ea92d5c6cf99c8a4dc989043b8e3447ead45d97d2"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\MineRecord.cs",
+      "bytes": 231,
+      "sha256": "2b768b82546e7ec136308e4305b1115418f9126befd488dac05051c43b4a521b"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\MiniHintCache52.cs",
+      "bytes": 577,
+      "sha256": "b6fb43246b95102536f782f881c5613aab9ce11f2a135c2c52085b10dfcdb13e"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\MinimapAffine.cs",
+      "bytes": 3580,
+      "sha256": "d573fb5b8093e8b55496dee673073b55f7fc804e80d3905ab1ec8570981bdaf2"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\MinimapBarrageDrawing.cs",
+      "bytes": 1408,
+      "sha256": "20d7beae216ae2d7367c169ba8c9c6ddd1c63665375803c236fd347ccc9260ed"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\MinimapFrame.cs",
+      "bytes": 1980,
+      "sha256": "918c56df8c28d4eb83223b06092fc3e71c2f8b87d9af20cfbab227e2e094b2ee"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\MinimapMarkerDrawing.cs",
+      "bytes": 1837,
+      "sha256": "fb087cfe85560f0f000b03c8eddb0fe8d2dbbd3d36d920606fc12eb8935cb993"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\MinimapMarkerWindow.cs",
+      "bytes": 8229,
+      "sha256": "5488e18630b78f54747e3d6904c889b7ad15ba567f57cbc2e5eb733c52635953"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\MinimapMovementDrawing.cs",
+      "bytes": 2057,
+      "sha256": "8d9f8c042fd24414d7849a6f570a5b621dd0a02cf92ab7d665d1c37ab7fdba0c"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\MinimapMovementGuide.cs",
+      "bytes": 224,
+      "sha256": "3cf93d56bd4fa6d439e9dc714fe8a3d3618e2ec14d41590e55bff79002c85f72"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\MinimapPreferences.cs",
+      "bytes": 2858,
+      "sha256": "17bd110a8c465dc1ffa4a18fc371453db5292cebc6d49aa813fc41f62f0e14d0"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\MinimapRetiredControl.cs",
+      "bytes": 183,
+      "sha256": "a971f2894ed3344f9e75c9620df1357c959af5c2213339c2137b0dc284a1a9c7"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\MinimapSettingsForm.cs",
+      "bytes": 7670,
+      "sha256": "d4987a65bcaecd631651c2fe23cc315d3642dc2f6ac939c49bb412b24a867861"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\MiniScanProgress44.cs",
+      "bytes": 908,
+      "sha256": "eb7c39351cb39f063bd289eed6452802ae70cd6729b30303c714fa959adef4a7"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\Module46.cs",
+      "bytes": 2842,
+      "sha256": "d5dae5c34e8ee3a387a0ee1f3c106c7d8c8e7fcfa49e080d69e16d74d20b9912"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\MovementData.cs",
+      "bytes": 129,
+      "sha256": "78636d82a400b1316764f8985758f128dd93add7027eccbf3567f22935f36339"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\MovementDrawing.cs",
+      "bytes": 7553,
+      "sha256": "32289572c97507ef02a3564b38d2be0fe75a4b633e35f884cb621ba51e5218c7"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\MovementLabelLayout.cs",
+      "bytes": 1408,
+      "sha256": "2c7141d96a361052b7c95e7bb7b4bc023b4e4facce36eaab251d7bd2d2c2ab7b"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\MovementLogic.cs",
+      "bytes": 947,
+      "sha256": "d30aed3f2ee1be29629413b1e1a831fab4ff51c167ae0a869e770ff263f332be"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\MovementSettingsForm.cs",
+      "bytes": 2824,
+      "sha256": "e3c73166f5b1ee4e7d0b7e882f0a701dc7ca603e39fa42ade8478a18adcafc16"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\Native.cs",
+      "bytes": 1688,
+      "sha256": "6852cacdc064c9e54ded39d3b7bacab476aa7dd29edc5b6d2ec1f6de1dbe21ba"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\NumberSpan.cs",
+      "bytes": 173,
+      "sha256": "9676b5d07084382461f29a0eec579e30493c1c195c6bb52043b694bcf1044cf4"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\OverlayDiagnostics55.cs",
+      "bytes": 645,
+      "sha256": "37992281a7d521fc5a5953beab0636f41fb195ffd06a7a65acf5ccf5e896fddd"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\OverlayDrawing.cs",
+      "bytes": 2391,
+      "sha256": "175eda8224e7847b3c01d7d771a83dd5aaeaf5878c4cbb21307195d7e404901c"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\OverlayPreferences.cs",
+      "bytes": 5390,
+      "sha256": "aeeacaf0575fb207267b096e603590398558f4b8e449ed900ef88e98b55a085b"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\OverlayProgram.cs",
+      "bytes": 8868,
+      "sha256": "233f602c047323a01da9ed88b572400688f2e248e570dfa51291b20cf4978ab7"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\OverlaySettingsForm.cs",
+      "bytes": 66763,
+      "sha256": "f609efff4115599541e0369cb5dd64b50b196dd6a54fc3ffb9496b33c0489bde"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\OverlayText.cs",
+      "bytes": 4347,
+      "sha256": "144db7854191f81e3e77ae7883e1c71950ecc92461ad0ea1680df0183072f0b3"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\Palette46.cs",
+      "bytes": 1133,
+      "sha256": "9f9f3340062bf4111fb56e34c6b330e61105c3f3f20283dbc0e8264407eff9da"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\PinnedLeaseKey60.cs",
+      "bytes": 785,
+      "sha256": "25b5d66ede23c23f60be071a8850c09b0ab63b4d1de95f89517d53026d8519da"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\PlayerColour76.cs",
+      "bytes": 390,
+      "sha256": "4a473e85d148ec6840fe6927c5f30aad27d28f58b031daf22816f790896e4ae7"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\PlayerInfoForm.cs",
+      "bytes": 6705,
+      "sha256": "1959560e207fc8024ff4d5614c54fc26cd85bd7e1a3cb74b3c59e3e8abcaf4eb"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\PlayerInfoProgram.cs",
+      "bytes": 2255,
+      "sha256": "4b8add2a47945abad30810e537dc50e4bfc634a5c9b00adc93894613f8c7ec95"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\PlayerInfoReader.cs",
+      "bytes": 101482,
+      "sha256": "4d93d6765ea4925d20f83653e5b912f73b2597cc952625ac62cdc68297c803b9"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\PlayerInfoRow.cs",
+      "bytes": 1556,
+      "sha256": "de7b6a73ed05537c330bd7aecf50ae7855ae9af5bea209a40afdf384dcb08064"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\PrecisionFrameClock.cs",
+      "bytes": 4247,
+      "sha256": "3baccdd6e8169c25355e578654d04996a351e3822501a31a95256be4a8d4752b"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\Preview45.cs",
+      "bytes": 959,
+      "sha256": "72cfd1c08c24afa8552b6a5dc190f5158ebf41b5d316c0098fde303106f361c6"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ProcHandle.cs",
+      "bytes": 291,
+      "sha256": "57d7af83d58c420b39b134ef5c22af649e6918341a7ab8027d4909c8cee11cc1"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ProductionJob.cs",
+      "bytes": 825,
+      "sha256": "7d9dc6ce83868fc2b9a05cf3746b7b454885f4525e05f8fc0a19007cffaf567a"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ProductionText.cs",
+      "bytes": 560,
+      "sha256": "43987dc6fec1b61a3122a1a600befe229c55855688b5593c407184f228b19e5b"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ProjectileDrawing.cs",
+      "bytes": 3073,
+      "sha256": "af627c102bba0ae659fe066dc1018f45e888c7ba6ec3dc2bd6d3a850d3a5fb2f"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ProjectileImpact.cs",
+      "bytes": 423,
+      "sha256": "3265e95b7fec589bd39309ef8a7664bbd63fc9b13ae8be2a1c9bbbe80ac9a6e4"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ProjectileLogic.cs",
+      "bytes": 3005,
+      "sha256": "e88f0a981556c7f8fe4c423c3a0d309f9f70abb15acc5e3a4808e547a2c4f119"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ProjectilePipeline65.cs",
+      "bytes": 299,
+      "sha256": "25b33083ef091b5c4b870a8d6c6c139f2c3cbe956c3a089482e46328665fa152"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ProjectilePlayer.cs",
+      "bytes": 198,
+      "sha256": "aa2456518e73b529b2b764cb7efbe281036bd7898e5dcee5231837beb8c0f289"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ProjectilePreferences.cs",
+      "bytes": 2759,
+      "sha256": "ea8cd45f827d05080487d7b74abc266b9fa08bb42897f8288434536a85b17048"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ProjectileSequenceTracker.cs",
+      "bytes": 1502,
+      "sha256": "7ef6db1e760d251a8b7f40aa0a7ccd814005d7152057fc5206396e92ea49ab5e"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ProjectileSettingsForm.cs",
+      "bytes": 2927,
+      "sha256": "9875140eb8f6562abc91b04b2576c01d8a9bf1af7d95eef5e1c50785563c2b50"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ProjectileSprite.cs",
+      "bytes": 149,
+      "sha256": "4af07b93fe24372cc86fa48dc1577f68c9a610d6f750e6ac85d95ec9f6770096"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ProjectileSpriteCache.cs",
+      "bytes": 3518,
+      "sha256": "02e274e63decd55d71a1d365d5c6dcc2286bb1b711595be2c34be5e5f8bdee68"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\QqAccounts72.cs",
+      "bytes": 2156,
+      "sha256": "2dc325a2ad2958d48c5dbdb555109de82f75152697c6dec465738e23ddd462b9"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ReadRecovery55.cs",
+      "bytes": 497,
+      "sha256": "1939ba21654a4f8187cb8b99c12c00f0862efb3dd644416c1f6adb2ac9312eae"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ResourceClock.cs",
+      "bytes": 231,
+      "sha256": "15cb4b62336c09fb9f540866c84412f5f97a601d4f02982bfdbf3083a281fb77"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ResourceColourForm.cs",
+      "bytes": 6419,
+      "sha256": "7d6c543906925ee685f96e11d789c9a0ed8f7ec371bd64c4bdbb8e643ef86b6a"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ResourceColourRule.cs",
+      "bytes": 2348,
+      "sha256": "27000dfa9dcf259b282c254b59a4d5f89aac74b7c040a686a4bde0e296c35494"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ResourceColours.cs",
+      "bytes": 1632,
+      "sha256": "ab3a4f577f7a23075fc6a887d0dae0e9b2dc44737ebae8d82bd9d968d0106f74"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\ResourceLineDrawing.cs",
+      "bytes": 4046,
+      "sha256": "4c3ca260f1201aa4183d01050be80f55f72ca3f1a323a8a9796e8bf207257879"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\SoundSettingsForm.cs",
+      "bytes": 3476,
+      "sha256": "1b42efa6d98506938a3bb9f2af02d963ad4b237f33d8f2f36e5bc4361233a537"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\SquadMarker.cs",
+      "bytes": 419,
+      "sha256": "6c0506b2874f11e7578e9003d02c04bcf358e3d2f525b535368fc85bf000f07f"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\SquadMarkerDrawing.cs",
+      "bytes": 1458,
+      "sha256": "737bed52f1bbdee18962475066c3993212a6f606453eb1ac253e68f3d6abf231"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\SquadMarkerHost.cs",
+      "bytes": 5120,
+      "sha256": "2858b9beccf6d49704b15795f4bac63cbc16ffa1791b20748352b9690dde3786"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\SquadMarkerLogic.cs",
+      "bytes": 2076,
+      "sha256": "44bb6781eb442dbe00d805edf173eb68b180edd74281a3997b7fe331a4e88a67"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\SquadMarkerMember.cs",
+      "bytes": 178,
+      "sha256": "5b6ff392fa17e4394858aeb4b1ab9a30a031829c6244024e2852be98c6394b27"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\SquadMarkerPreferences.cs",
+      "bytes": 8032,
+      "sha256": "aa76fd45879bba59da73171f7e73af83bfe874c49ddef0056c08bd9b817662c4"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\SquadMarkerSettingsForm.cs",
+      "bytes": 6069,
+      "sha256": "63961715281224afa9c9c2f0055cc4bdc21ba8e943796a4d5ad9828bc5aee786"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\SquadMarkerSource.cs",
+      "bytes": 368,
+      "sha256": "ec1dec39bbbfd8534e67784a9bf845e918ed63bc85c9cfa6b24beb22ebe0cec6"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\SquadMarkerWindow.cs",
+      "bytes": 17087,
+      "sha256": "7685a91dc528b7adc923b509991eb56c38c01036d836ed8640cc8fdbfd113ed8"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\Stack46.cs",
+      "bytes": 2317,
+      "sha256": "18509d73d559ca80b054fec471082f280d0818cb697771d4d8054462cd789248"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\SteamAccounts71.cs",
+      "bytes": 8527,
+      "sha256": "1f7894421e7218169516925ce7aea9839b5583c6ffc4180811caf3f0ffa45f80"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\Stepper46.cs",
+      "bytes": 3546,
+      "sha256": "928fdfefd2863af6d83ae4ba0ad13bbbc6c9c2bf4f1ca242076f51329ddbc3fd"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\SupportCatalogue49.cs",
+      "bytes": 1104,
+      "sha256": "2bf9c570658aa44815bb00134557138450d15425ee059317a451e25b0fc5e1ca"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\SupportCommand49.cs",
+      "bytes": 295,
+      "sha256": "47d7e6fbdbae03e7890386de216d53d88d6b1a4e11635714ec680b312fa7abf6"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\SupportSchedule49.cs",
+      "bytes": 286,
+      "sha256": "f6564aba558bd8590f36e7de79cae88706f3bf79948dcb0dfd31bbb18787089c"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\Surface46.cs",
+      "bytes": 889,
+      "sha256": "8099fe156a19058ffbe6f4e9b78523e798bdfaa83e572dec395b68200a44fe35"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\TacticalMapDrawing51.cs",
+      "bytes": 2495,
+      "sha256": "462d76a716e80031c567232432f5fe50efc34b2bbf1ae6123ff98f1b4f519611"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\TacticalMapPreferences51.cs",
+      "bytes": 823,
+      "sha256": "928c3268a93e024ddeb775133e4308f2f66f0642b06b489d3ad21c392f175a65"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\TacticalMapState51.cs",
+      "bytes": 766,
+      "sha256": "cd57e01743209c4c64cafdd7a8746c812be24f3e19f8c61861c3c347cbc31ff6"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\Toggle46.cs",
+      "bytes": 3133,
+      "sha256": "38651309924c08814214da35a7fe87b2b7d4c25f9660a1b1e4700b1270651045"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\TrackedBuilding.cs",
+      "bytes": 142,
+      "sha256": "54d8158874fcc3f62dc2f7925008118a115a38c7da023a9da1b28b1aacfe9dc4"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\UnitNames.cs",
+      "bytes": 4661,
+      "sha256": "0bcb82fdf87dcd0b60d18b18ce9512fb6944e51151425da03fd49f750b13e0c8"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\UnitNamesBase.cs",
+      "bytes": 66117,
+      "sha256": "32153acfccbc984290d1c4257833c655faeb8f00a9e7cb96e2b4c4dc8575b13d"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\UpdateNotice74.cs",
+      "bytes": 2783,
+      "sha256": "3189c3adb26338019664f38ef035a208167084e6e09a8bc7c05e19a60e4f61d2"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\CoH3MemoryTool\\UserUnitNames56.cs",
+      "bytes": 22968,
+      "sha256": "1bc919cb27efc17fbce2bb45a50c48b9088875f2f78867b14bbf08c1750b5a53"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\Properties\\AssemblyInfo.cs",
+      "bytes": 430,
+      "sha256": "7bb8a701ff034e476546ce9d9155ce36dd538cfddf4b91f5491cacb39a243249"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\Skyeye.QqProbe\\Finding.cs",
+      "bytes": 368,
+      "sha256": "47a836f556454720203ba0f4aca49492759a99e557a6ef9fc327887ee090b6a8"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\Skyeye.QqProbe\\Probe.cs",
+      "bytes": 8486,
+      "sha256": "f204429529d9841b5a8e8058c9816c61eb8ce84a4028808acbcfacd76bbea866"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\Skyeye.QqProbe\\ProbeResult.cs",
+      "bytes": 1595,
+      "sha256": "fd9a6ef5198b87586e2665e8ac20102a3460bd83ff86574c107cdf771e86dba9"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\sounds\\北非海军照明弹来了.mp3",
+      "bytes": 36581,
+      "sha256": "f650fdb40ad6967b8a77ad4c14c53d2e2fb2ff800412877afc7e3159f2504c0f"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\sounds\\战斗群.mp3",
+      "bytes": 38799,
+      "sha256": "be60c0055efdbae7e21344dd1e7423e4ba74527370462104569d25999e96765d"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\sounds\\手雷升级.mp3",
+      "bytes": 37963,
+      "sha256": "6a7ed4d5735d9dd569e850bd8624f78094ff4b2207de0f6d2322276ced284960"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\sounds\\火炮就绪.mp3",
+      "bytes": 36710,
+      "sha256": "5e0aaeed3ae3c91350c15c11c8fce08a059c55e07bc3ee85840add41b3cc38d3"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\sounds\\炮击来袭.mp3",
+      "bytes": 39506,
+      "sha256": "c03f7a3f6f6a76f78ac860583d21c8b51965363aff330689eebc0318252beea9"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\sounds\\被包抄了.mp3",
+      "bytes": 37834,
+      "sha256": "c0c8a04d57f6b05eee6c43deab5cd96aa018b87f6aa708395a0bce00e7a7263b"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\sounds\\装甲生产.mp3",
+      "bytes": 40471,
+      "sha256": "1d62d9017e19532a26bd18b13de1116a7adaf20d110dac61ed17fdeedd129eea"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\sounds\\造本.mp3",
+      "bytes": 35038,
+      "sha256": "ed200910e31d7027088c04d9115bb63fdec7cbce2e69b602e5bd3bdde0e7c37c"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\server\\admin.css",
+      "bytes": 8068,
+      "sha256": "3ace864904bf6e82ed9a05737face2732328fa3ac675e30f93e3435797bbf42a"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\server\\admin.html",
+      "bytes": 6916,
+      "sha256": "f3868b525fa44eb223a70492a869c9b06016baf375ff4e3048ee8e75ab96b7b4"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\server\\admin.js",
+      "bytes": 16948,
+      "sha256": "fac89fa6e1355b0ff54d405229092943dc3b603bf437350eb186c5ef688ea3a3"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\server\\LeaseSigner.cs",
+      "bytes": 4249,
+      "sha256": "c6f84cabd2beed4d9aad276404224f5de44ef9645fb32e5e3c9bb9e8b3aee146"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\server\\LicenseService.cs",
+      "bytes": 32449,
+      "sha256": "35d35c61576c74b83c644cc64d1e83060eb4f0a39c6f3451871e5e6c537b344c"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\server\\Licensing.Server.csproj",
+      "bytes": 357,
+      "sha256": "82804eaf435b96d29ced83882f394ee7d7d64cb8845a88bbca684ec319823841"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\server\\Program.cs",
+      "bytes": 15696,
+      "sha256": "89eea13a975cab14d0b0ed5e6c0ccc36b16ce59125875bed5d31a81cdacf3009"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\server\\ProtocolModels.cs",
+      "bytes": 4189,
+      "sha256": "b88e3cf442f3cb60294c88773cb9b8fc1512cca3f084374683e1db4619fa82ba"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\server\\ServerOptions.cs",
+      "bytes": 3741,
+      "sha256": "6ee544a6b618b4682d151166084de1af27eabb713e99f6325e0059f1c979e54f"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2-Client.zip",
+      "bytes": 754125,
+      "sha256": "cda5e3de4f31067fbc5648ce838d61186490a048665858d3b62820c109309dab"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\.local\\hardening-v2\\server.json",
+      "bytes": 789,
+      "sha256": "cba6f03ebdf5325141119892a719670096d7bf963f5f51f860fecc52cb71d2a2"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\.local\\hardening-v2\\data\\keys\\key-f9d14d1f-4982-447c-832c-50249005aec2.xml",
+      "bytes": 1887,
+      "sha256": "837b0de7c6c79cd13e8ffcac8b2b0ff7277d025356134f8e17c8e1288b2cc202"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\Licensing\\.local\\hardening-v2\\data\\keys\\lease-signing-key.pk8.pem",
+      "bytes": 2483,
+      "sha256": "3ee0cbf4fcae31a2ddc191a0eb1d3a58c5350620017b7c498bc2de9cfe149b33"
+    }
+  ],
+  "privateStatePolicy": "Retain all non-test credential, key, database and configuration files. Current signed state is never a deletion target.",
+  "unrelatedProjectRetained": "F:\\WorkSpace\\Game\\CoH3\\CoH3Minimap"
+}

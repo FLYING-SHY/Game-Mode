@@ -1,0 +1,90 @@
+﻿[
+    {
+        "Name":  "av_libglesv2.dll",
+        "Length":  5426176,
+        "Version":  "2.1.25606 git hash: cb8b4e1307a9",
+        "SHA256":  "9B203E40323B49DAD29546A52B8B67D200BBA8FF4CAB9709A79CEDE23BA847D4",
+        "Signature":  "NotSigned",
+        "Signer":  null
+    },
+    {
+        "Name":  "dotNET_Reactor.Console.exe",
+        "Length":  26648,
+        "Version":  "7.7.1.0",
+        "SHA256":  "1800CEAE60F4A3BD8130F96250917FD42C0239AED6990E4E1551DB148FB98EE8",
+        "Signature":  "Valid",
+        "Signer":  "CN=Eziriz e.K., O=Eziriz e.K., S=Niedersachsen, C=DE"
+    },
+    {
+        "Name":  "dotNET_Reactor.exe",
+        "Length":  99937832,
+        "Version":  "7.7.1.0",
+        "SHA256":  "C1E26B054EBEEF20A55984BAB7A0E15B064E10212AF42C1D2F5077F8681CDA79",
+        "Signature":  "Valid",
+        "Signer":  "CN=Eziriz e.K., O=Eziriz e.K., S=Niedersachsen, C=DE"
+    },
+    {
+        "Name":  "icon.ico",
+        "Length":  55677,
+        "Version":  null,
+        "SHA256":  "D445DE592416EE1EC17DBF3BC71F1C917567925F3EFF7858E540949A1FC7413E",
+        "Signature":  "UnknownError",
+        "Signer":  null
+    },
+    {
+        "Name":  "libHarfBuzzSharp.dll",
+        "Length":  1804872,
+        "Version":  null,
+        "SHA256":  "EB76238C9E8E41D44B5A5B18167C4C5B39CA5DB4277AF5DBE92D730F0FC14A7D",
+        "Signature":  "Valid",
+        "Signer":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+    },
+    {
+        "Name":  "libSkiaSharp.dll",
+        "Length":  9414216,
+        "Version":  null,
+        "SHA256":  "9A0D95E8CAAA852C70D085AF6A40A744242172AD9EA3FD6BC7599875A8A1DBCD",
+        "Signature":  "Valid",
+        "Signer":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+    },
+    {
+        "Name":  "nrcfg.ico",
+        "Length":  68229,
+        "Version":  null,
+        "SHA256":  "8822B49A6CE5353FA2B41930DB8C1799F7F062B3ECFADEEFEC17B0EE2D69C0C7",
+        "Signature":  "UnknownError",
+        "Signer":  null
+    },
+    {
+        "Name":  "reactor.nrcfg",
+        "Length":  130,
+        "Version":  null,
+        "SHA256":  "AC3608A4BA2947EF197BC12F6A6DDA90E2351A6918524B0CF7B4926D47DCB36C",
+        "Signature":  "UnknownError",
+        "Signer":  null
+    },
+    {
+        "Name":  "VS08ReactorAddin.dll",
+        "Length":  136704,
+        "Version":  "1.0.5273.5135",
+        "SHA256":  "1952313F3A5C3B4E7A1269238DC070301C356BFB876471332D6439B6D3EEFD12",
+        "Signature":  "NotSigned",
+        "Signer":  null
+    },
+    {
+        "Name":  "VS13ReactorAddin.dll",
+        "Length":  137728,
+        "Version":  "1.0.5273.5168",
+        "SHA256":  "5E0EFBDA4F047575E7B7CD0EF047BDDC7B05D5225F4A98A7D1AC93E28471E742",
+        "Signature":  "NotSigned",
+        "Signer":  null
+    },
+    {
+        "Name":  "VSReactorAddin.dll",
+        "Length":  99840,
+        "Version":  "1.0.4980.38511",
+        "SHA256":  "A2629E2C3BF06260116BD88B07A8EE4FC8846367C9D8DE53608AD5B4AADEB9DB",
+        "Signature":  "NotSigned",
+        "Signer":  null
+    }
+]

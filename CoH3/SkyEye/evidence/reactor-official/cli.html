@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="turbo-root" content="/help">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.847769143997">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 3.6.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Command Line Parameters – .NET Reactor</title>
+    <meta name="title" content="Command Line Parameters – .NET Reactor">
+    <meta name="description" content="Use command-line parameters to protect assemblies, load a project, and configure protection or licensing from your build process.">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.eziriz.com/help/command_line_parameters/index.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.eziriz.com/help/command_line_parameters/index.html">
+    <meta property="og:title" content="Command Line Parameters – .NET Reactor">
+    <meta property="og:description" content="Use command-line parameters to protect assemblies, load a project, and configure protection or licensing from your build process.">
+    <meta property="og:image" content="https://www.eziriz.com/help/images/command_line_generator_menu.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.eziriz.com/help/command_line_parameters/index.html">
+    <meta property="twitter:title" content="Command Line Parameters – .NET Reactor">
+    <meta property="twitter:description" content="Use command-line parameters to protect assemblies, load a project, and configure protection or licensing from your build process.">
+    <meta property="twitter:image" content="https://www.eziriz.com/help/images/command_line_generator_menu.jpg">
+
+    <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+
+    <link href="../images/reactor.ico" rel="icon">
+    <link href="../resources/css/retype.css?v=3.6.0.847769143997" rel="stylesheet">
+
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.6.0.847769143997" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/search.js?v=3.6.0.847769143997" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.6.0.847769143997" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.6.0.847769143997" defer></script>
+
+    <style id="reactor-sidebar-icon-opacity">
+    aside.sidebar li > div > a > span:first-child > svg {
+        opacity: 0.50;
+    }
+    </style>
+
+</head>
+<body>
+    <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+        <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+    
+        <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+            <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
+                <!-- Mobile menu button skeleton -->
+                <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+                <div v-cloak id="docs-sidebar-toggle"></div>
+        
+                <!-- Logo -->
+                <div class="flex items-center justify-between h-full py-2 md:w-75">
+                    <div class="flex items-center px-2 md:px-6">
+                        <a id="docs-site-logo" href="../index.html" class="flex items-center leading-snug text-xl">
+                            <span class="w-10 mr-2 grow-0 shrink-0 overflow-hidden">
+                                <img class="max-h-10 dark:hidden md:inline-block" src="../images/logo.svg">
+                                <img class="max-h-10 hidden dark:inline-block" src="../images/logo_white.svg">
+                            </span>
+                            <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">.NET  Reactor</span>
+                        </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
+                    </div>
+        
+                    <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+                </div>
+        
+                <div class="flex justify-between md:grow">
+                    <!-- Top Nav -->
+                    <nav class="hidden md:flex">
+                        <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                            
+                        </ul>
+                    </nav>
+        
+                    <!-- Header Right Skeleton -->
+                    <div v-cloak class="flex justify-end grow skeleton">
+        
+                        <!-- Search input mock -->
+                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                            </div>
+                            <input class="w-full h-10 placeholder-gray-400 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 dark:placeholder-dark-400" style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search">
+                        </div>
+        
+                        <!-- Mobile search button -->
+                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                        </div>
+        
+                        <!-- Dark mode switch placeholder -->
+                        <div class="w-10 h-10 lg:ml-2"></div>
+        
+                        <!-- History button -->
+                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                        </div>
+                    </div>
+        
+                    <div v-cloak class="flex justify-end grow">
+                        <div id="docs-mobile-search-button"></div>
+                        <doc-search-desktop></doc-search-desktop>
+        
+                        <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                        <doc-history></doc-history>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <div class="container relative flex bg-white">
+            <!-- Sidebar Skeleton -->
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+            
+                <!-- Render this div, if config.showSidebarFilter is `true` -->
+                <div class="flex items-center h-16 px-6">
+                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter">
+                </div>
+            
+                <div class="pl-6 mt-1 mb-4">
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                </div>
+            
+            </div>
+            
+            <!-- Sidebar component -->
+            <doc-sidebar v-cloak>
+                <template #sidebar-footer>
+                    <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650">
+                    </div>
+                </template>
+            </doc-sidebar>
+    
+            <div class="grow min-w-0 dark:bg-dark-850">
+                <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+                <div class="flex">
+                    <div class="min-w-0 p-4 grow md:px-16">
+                        <main class="relative pb-12 lg:pt-2">
+                            <div class="docs-markdown" id="docs-content">
+                                <!-- Rendered if sidebar right is enabled -->
+                                <div id="docs-sidebar-right-toggle"></div>
+                                <nav class="breadcrumb" aria-label="Breadcrumb">
+                                    <ol role="list">
+                                        <li class="pr-4">
+                                            <a href="../index.html" class="pr-4">
+                                                Welcome
+                                            </a>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                                            </svg>
+                                        </li>
+                                        <li class="pr-4">
+                                            <a href="../command_line_parameters/index.html" class="pr-4">
+                                                Command Line Parameters
+                                            </a>
+                                        </li>
+                                    </ol>
+                                </nav>
+                
+                                <!-- Page content  -->
+<doc-anchor-target id="command-line-parameters" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#command-line-parameters">#</doc-anchor-trigger>
+        <span>Command Line Parameters</span>
+    </h1>
+</doc-anchor-target>
+<p>Use command-line parameters to protect assemblies, load a project, and configure protection or licensing from your build process.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Generate parameters from your project</h5>
+<p>In most cases, you can generate parameters from your current project using <strong>Command-line → Generate Command-line</strong> instead of entering every option manually.</p>
+<p><figure class="content-center">
+    <img src="../images/command_line_generator_menu.jpg" alt="Generate command-line arguments from the current project">
+    <figcaption class="caption">Generate command-line arguments from the current project</figcaption>
+</figure>
+</p>
+        </div>
+    </div>
+</div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-yellow-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
+                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Production builds</h5>
+<p>Use <code v-pre>-licensed</code> to require a licensed full version of .NET Reactor. With a demo version, no files are protected and the command returns <strong>exit code 101</strong>.</p>
+        </div>
+    </div>
+</div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-yellow-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
+                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Code virtualization warnings in command-line builds</h5>
+<p>If a method marked for code virtualization cannot be virtualized safely, command-line protection stops with <strong>exit code 1</strong> by default. The error output includes every skipped method and the corresponding reason, even without <code v-pre>-verbose</code>.</p>
+<p>Use <code v-pre>-allow_virtualization_warnings</code> only if the build may succeed while those methods remain unvirtualized. The GUI continues to treat these messages as non-fatal warnings.</p>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="reference-overview">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#reference-overview">#</doc-anchor-trigger>
+        <span>Reference overview</span>
+    </h2>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Area</th>
+<th>Includes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><doc-anchor-trigger to="#general-arguments">General arguments</doc-anchor-trigger></td>
+<td>Input, project, logging, keys, and output.</td>
+</tr>
+<tr>
+<td><doc-anchor-trigger to="#1-general-settings">General settings</doc-anchor-trigger></td>
+<td>Application behavior, certificates, and assembly handling.</td>
+</tr>
+<tr>
+<td><doc-anchor-trigger to="#2-protection-settings">Protection settings</doc-anchor-trigger></td>
+<td>Code protection, renaming, resources, and integrity checks.</td>
+</tr>
+<tr>
+<td><doc-anchor-trigger to="#3-lock-settings">Lock settings</doc-anchor-trigger></td>
+<td>Evaluation limits, license files, and expiration behavior.</td>
+</tr>
+<tr>
+<td><doc-anchor-trigger to="#4-dialog-settings">Dialog settings</doc-anchor-trigger></td>
+<td>Dialog implementation, caption, and colors.</td>
+</tr>
+<tr>
+<td><doc-anchor-trigger to="#example-combinations">Example combinations</doc-anchor-trigger></td>
+<td>Complete command invocations.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Values in square brackets describe the argument to supply. <code v-pre>{default}</code> marks the documented default. Use the listed values rather than entering the placeholder text.</p>
+<doc-anchor-target id="general-arguments">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#general-arguments">#</doc-anchor-trigger>
+        <span>General Arguments</span>
+    </h2>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Parameter and value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>-file</code> <code v-pre>[file]</code></td>
+<td>Filename of the main assembly.</td>
+</tr>
+<tr>
+<td><code v-pre>-icon</code> <code v-pre>[file]</code></td>
+<td>If you want to use a different icon for an application you need to set the path for the icon here.</td>
+</tr>
+<tr>
+<td><code v-pre>-licensed</code></td>
+<td><strong>Recommended for production builds.</strong> Ensures that protection is performed only when .NET Reactor is running as a licensed full version. If a demo version is detected, no files are protected and .NET Reactor returns <strong>exit code 101</strong>.</td>
+</tr>
+<tr>
+<td><code v-pre>-logfile</code> <code v-pre>[file]</code></td>
+<td>Writes all important events (successful protection and error messages) into the specified file.</td>
+</tr>
+<tr>
+<td><code v-pre>-masterkey</code> <code v-pre>[text]</code></td>
+<td>Master Key (used ONLY for Lock settings).</td>
+</tr>
+<tr>
+<td><code v-pre>-masterkeyfile</code> <code v-pre>[file]</code></td>
+<td>Path to a Master Key file (used ONLY for Lock settings).</td>
+</tr>
+<tr>
+<td><code v-pre>-embed</code> <code v-pre>[1\|0]</code></td>
+<td>Embed assemblies.<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-merge</code> <code v-pre>[1\|0]</code></td>
+<td>Merge assemblies.<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-mono</code> <code v-pre>[1\|0]</code></td>
+<td>Enable this option if your assembly targets Mono.<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-project</code> <code v-pre>[file]</code></td>
+<td>Path to a .NET Reactor project file (contains the Master Key as well).</td>
+</tr>
+<tr>
+<td><code v-pre>-q[uiet]</code></td>
+<td>Specifies quiet mode and suppresses the display of success messages</td>
+</tr>
+<tr>
+<td><code v-pre>-verbose</code></td>
+<td>Shows every skipped method and its reason for non-fatal code virtualization warnings. When such a warning is treated as an error, all details are shown automatically without this option. The alias <code v-pre>--verbose</code> is also accepted.</td>
+</tr>
+<tr>
+<td><code v-pre>-allow_virtualization_warnings</code></td>
+<td>Allows command-line protection to succeed when marked methods cannot be virtualized safely. The affected methods remain unvirtualized and the warning is still displayed. Without this option, the warning stops protection with exit code 1. The alias <code v-pre>--allow-virtualization-warnings</code> is also accepted.</td>
+</tr>
+<tr>
+<td><code v-pre>-files</code> <code v-pre>[lib;lib]</code></td>
+<td>Please define additional files here. If &#x27;-embed 1&#x27; or &#x27;-merge 1&#x27; is set, the additional files are embedded into your application or they are directly merged with the main assembly. In case neither &#x27;-embed 1&#x27; nor &#x27;-merge 1&#x27; is set the Additional Files (*.dll and *.exe files only) are protected separately.<br/>[library ; library] for example &quot;C:\lib1.dll;C:\lib2.dll;C:\lib3.dll&quot;</td>
+</tr>
+<tr>
+<td><code v-pre>-target_runtime</code> <code v-pre>[auto\|dotnet\|mono\|browser-wasm]</code></td>
+<td>Selects the runtime that executes the protected assembly.<br/>[auto] = Detect/select automatically <code v-pre>{default}</code><br/>[dotnet] = .NET or .NET Framework<br/>[mono] = Mono<br/>[browser-wasm] = Browser WebAssembly</td>
+</tr>
+<tr>
+<td><code v-pre>-snkeypair</code> <code v-pre>[file]</code></td>
+<td>Strong Name Key Pair file (.snk/.pfx)</td>
+</tr>
+<tr>
+<td><code v-pre>-snpassword</code> <code v-pre>[text]</code></td>
+<td>Strong Name Key Pair file password</td>
+</tr>
+<tr>
+<td><code v-pre>-targetfile</code> <code v-pre>[file]</code></td>
+<td>Target File should be left blank, unless you want to specify the location of the protected output.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="1-general-settings">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1-general-settings">#</doc-anchor-trigger>
+        <span>1. General Settings</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="application-behavior">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#application-behavior">#</doc-anchor-trigger>
+        <span>Application behavior</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable" autoselect="">
+<thead>
+<tr>
+<th>Parameter and value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>-exception_handling</code> <code v-pre>[1\|0]</code></td>
+<td>If you don&#x27;t want your protected application to catch exceptions automatically, set this option to False(&quot;0&quot;).<br/>[1] = Enable <code v-pre>{default}</code><br/>[0] = Disable</td>
+</tr>
+<tr>
+<td><code v-pre>-compression</code> <code v-pre>[1\|0]</code></td>
+<td>If set to True(&quot;1&quot;), .NET Reactor will compress your .exe file and embedded files saving space on disk and bandwidth if you provide your code for internet download.<br/>[1] = Enable <code v-pre>{default}</code><br/>[0] = Disable</td>
+</tr>
+<tr>
+<td><code v-pre>-showloadingscreen</code> <code v-pre>[1\|0]</code></td>
+<td>Enable/Disable the LoadingScreen<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-visualstyles</code> <code v-pre>[1\|0]</code></td>
+<td>If you wish to use visual styles (which are a feature of Windows Xp and Windows Vista), you will need to set this option to True. If set to false, any attempt in your assembly to enable visual styles will be ineffective.<br/>[1] = Enable <br/>[0] = Disable </td>
+</tr>
+<tr>
+<td><code v-pre>-admin</code> <code v-pre>[1\|0]</code></td>
+<td>If your software requires administrator privileges under Windows Vista/7 you need to set this option to true. In this case a consent dialog is shown in Windows Vista/7.<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="digital-certificate">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#digital-certificate">#</doc-anchor-trigger>
+        <span>Digital certificate</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Parameter and value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>-pvkfile</code> <code v-pre>[file]</code></td>
+<td>Private Key File.</td>
+</tr>
+<tr>
+<td><code v-pre>-pvkpassword</code> <code v-pre>[text]</code></td>
+<td>Private Key File Password.</td>
+</tr>
+<tr>
+<td><code v-pre>-spcfile</code> <code v-pre>[file]</code></td>
+<td>Software Publisher Certificate File.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="custom-signing-tool">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#custom-signing-tool">#</doc-anchor-trigger>
+        <span>Custom signing tool</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Parameter and value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>-custom_signing_tool_enabled</code> <code v-pre>[1\|0]</code></td>
+<td>Enables an external code-signing executable. When enabled, it takes precedence over the built-in and Azure signing providers.<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-custom_signing_tool</code> <code v-pre>[file]</code></td>
+<td>Path or command name of the signing executable, for example <code v-pre>signtool.exe</code>. Relative paths are resolved from the project or working directory; command names are also searched on <code v-pre>PATH</code>.</td>
+</tr>
+<tr>
+<td><code v-pre>-custom_signing_arguments</code> <code v-pre>[text]</code></td>
+<td>Arguments passed to the signing executable. The <code v-pre>{file}</code> placeholder is required and is replaced with the full path of each output file.</td>
+</tr>
+<tr>
+<td><code v-pre>-custom_signing_working_directory</code> <code v-pre>[directory]</code></td>
+<td>Optional working directory for the signing process. If omitted, the project directory or output directory is used.</td>
+</tr>
+<tr>
+<td><code v-pre>-custom_signing_timeout</code> <code v-pre>[seconds]</code></td>
+<td>Positive timeout in seconds for each signing process. The default is <code v-pre>120</code>.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="assemblies-signing-and-output">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#assemblies-signing-and-output">#</doc-anchor-trigger>
+        <span>Assemblies, signing, and output</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Parameter and value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>-merge</code> <code v-pre>[1\|0]</code></td>
+<td>Merge Assemblies<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-embed</code> <code v-pre>[1\|0]</code></td>
+<td>Embed Assemblies<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-snkeypair</code> <code v-pre>[file]</code></td>
+<td>Strong Name Key Pair file (.snk/.pfx)</td>
+</tr>
+<tr>
+<td><code v-pre>-snpassword</code> <code v-pre>[text]</code></td>
+<td>Strong Name Key Pair file password</td>
+</tr>
+<tr>
+<td><code v-pre>-targetfile</code> <code v-pre>[file]</code></td>
+<td>.NET Reactor creates a new file containing your protected assembly. This field allows you to specify the path and name of that file. If left blank, .NET Reactor will write the new file to a default location.</td>
+</tr>
+<tr>
+<td><code v-pre>-extract_embedded_to_disk</code> <code v-pre>[1\|0]</code></td>
+<td>Controls how embedded assemblies are loaded. When enabled, they are always extracted to a temporary directory and loaded from disk. Otherwise they are loaded from memory first and extracted only when required.<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-mark_assembly_as_protected</code> <code v-pre>[1\|0]</code></td>
+<td>Adds a hidden marker that prevents accidental re-protection. The marker contains no product name and does not explicitly identify the assembly as protected with .NET Reactor.<br/>[1] = Enable <code v-pre>{default}</code><br/>[0] = Disable</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="2-protection-settings">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2-protection-settings">#</doc-anchor-trigger>
+        <span>2. Protection Settings</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="integrity-and-decompilation">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#integrity-and-decompilation">#</doc-anchor-trigger>
+        <span>Integrity and decompilation</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Parameter and value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>-antitamp</code> <code v-pre>[1\|0]</code></td>
+<td>This option prevents your protected assembly from being tampered by hacker tools.<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-antistrong</code> <code v-pre>[1\|0]</code></td>
+<td>This option enables anti Strong Name removal techniques which prevents your protected assembly from being tampered by hacker tools. Warning, this option can impact the runtime performance of your protected assembly!<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-suppressildasm</code> <code v-pre>[1\|0]</code></td>
+<td>Enable this option to suppress disassembly to IL using the ildasm.exe tool. Even if this option it set to FALSE your source code is still secure!<br/>[1] = Enable <code v-pre>{default}</code><br/>[0] = Disable</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="code-protection">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#code-protection">#</doc-anchor-trigger>
+        <span>Code protection</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Parameter and value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>-control_flow_obfuscation</code> <code v-pre>[1\|0]</code></td>
+<td>Enable &quot;Control Flow Obfuscation&quot; to mangle program flow, making it extremely difficult for humans to follow the program logic. Most decompiler are unable to decompile control flow obfuscated methods.<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-control_flow_engine</code> <code v-pre>[massive\|classic]</code></td>
+<td>Selects the Control Flow Obfuscation engine.<br/>[massive] = MassiveLocal <code v-pre>{default}</code><br/>[classic] = Legacy Classic engine</td>
+</tr>
+<tr>
+<td><code v-pre>-control_flow_startup_boost</code> <code v-pre>[1\|0]</code></td>
+<td>Improves startup performance for control-flow-obfuscated code. General runtime performance may suffer.<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-flow_level</code> <code v-pre>[1/2/3/4/5/6/7/8/9]</code></td>
+<td>This option enables you to control the level of Control Flow Obfuscation. While &quot;1&quot; represents the lowest level of Control Flow Obfuscation, &quot;9&quot; <code v-pre>{default}</code> represents the strongest level.</td>
+</tr>
+<tr>
+<td><code v-pre>-aot_trim_safe</code> <code v-pre>[1\|0]</code></td>
+<td>Enables AOT- and trimming-compatible paths across supported protection modules. These compatibility paths provide slightly weaker protection. When disabled, normal paths are used unless compatibility is detected automatically.<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-virtualization_aot_trim_safe</code> <code v-pre>[1\|0]</code></td>
+<td>Legacy compatibility option for Code Virtualization only. New configurations should use <code v-pre>-aot_trim_safe</code> instead.<br/>[1] = Enable for Code Virtualization<br/>[0] = Use normal Code Virtualization mode <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-virtualization_protect_other_features</code> <code v-pre>[1\|0]</code></td>
+<td>Controls whether Code Virtualization is also applied to internal code used by other protection features. Disabling this option may improve application startup performance. Methods explicitly selected for Code Virtualization are unaffected.<br/>[1] = Virtualize internal protection helpers <code v-pre>{default}</code><br/>[0] = Do not virtualize internal protection helpers</td>
+</tr>
+<tr>
+<td><code v-pre>-nativeexe</code> <code v-pre>[1\|0]</code></td>
+<td>.NET Reactor is able to generate a native x86 EXE file stub for your application. This way it is not possible to directly open your protected application in a decompiler. The decompiler recognizes your protected application as a native EXE file.<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-necrobit</code> <code v-pre>[1\|0]</code></td>
+<td>Enable this option to use NecroBit protection. NecroBit can be used with both Application and Library protection mode. In Library protection mode an additional file will be created.<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-necrobit_comp</code> <code v-pre>[1\|0]</code></td>
+<td>If you have problems with reflection on NecroBit protected libraries you should enable this option.<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-prejit</code> <code v-pre>[1\|0]</code></td>
+<td>In combination with the Native EXE File feature and NecroBit, .NET Reactor is able to convert managed methods into REAL x86 native code. Only methods which doesn&#x27;t affect the runtime and platform behavior (mostly small methods like property getters/setters...) are converted into native code. By nature this feature has an built-in protection against assembly modification.<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="obfuscation-and-public-types">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#obfuscation-and-public-types">#</doc-anchor-trigger>
+        <span>Obfuscation and public types</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Parameter and value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>-mapping_file</code> <code v-pre>[1\|0]</code></td>
+<td>Enable Mapping file to create a file which cross reference unobfuscated names with obfuscated ones, which is used by the Stack Trace Deobfuscator.<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-obfuscation</code> <code v-pre>[1\|0]</code></td>
+<td>Enable this to obfuscate all non public class and member names.<br/>[1] = Enable <code v-pre>{default}</code><br/>[0] = Disable</td>
+</tr>
+<tr>
+<td><code v-pre>-incremental_obfuscation</code> <code v-pre>[1\|0]</code></td>
+<td>If you want .NET Reactor always to generate the same obfuscation strings for your type and member names, you need to enable this option.<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-obfuscate_public_types</code> <code v-pre>[1\|0]</code></td>
+<td>Enable this to obfuscate all type and member names in an assembly.<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-unprintable_characters</code> <code v-pre>[1\|0]</code></td>
+<td>Unprintable characters uses unprintable strings to obfuscate type and member names, but cannot be used if your assembly must run as safe code.<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-internalization</code> <code v-pre>[1\|0]</code></td>
+<td>If enabled, .NET Reactor will convert all public types of an application into internal ones. This way the accessibility of types and members is reduced.<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-internalization_filter</code> <code v-pre>[text]</code></td>
+<td>Define types you want to keep public or make internal.<br/>Example:<br/>-internalization_filter &quot;[internal]<em>;[public][MyAssembly]MyNamespace.</em>;[internal][MyAssembly]MyNamespace2.MyType&quot;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="renaming-exclusions">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#renaming-exclusions">#</doc-anchor-trigger>
+        <span>Renaming exclusions</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Parameter and value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>-exclude_enums</code> <code v-pre>[1\|0]</code></td>
+<td>Exclusions - Enums<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-exclude_events</code> <code v-pre>[1\|0]</code></td>
+<td>Exclusions - Events<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-exclude_fields</code> <code v-pre>[1\|0]</code></td>
+<td>Exclusions - Fields<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-exclude_methods</code> <code v-pre>[1\|0]</code></td>
+<td>Exclusions - Methods<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-exclude_properties</code> <code v-pre>[1\|0]</code></td>
+<td>Exclusions - Properties<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-exclude_types</code> <code v-pre>[1\|0]</code></td>
+<td>Exclusions - Types<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-exclude_serializable_types</code> <code v-pre>[1\|0]</code></td>
+<td>Disable this option to prevent serializable types from obfuscation.<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-regularexpressions</code> <code v-pre>[text]</code></td>
+<td>Exclusions - Regular Expressions</td>
+</tr>
+<tr>
+<td><code v-pre>-append_rules</code> <code v-pre>[raw rules]</code></td>
+<td>Appends semicolon-separated Advanced Rules after loading a project without removing the rules already present in that project.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="resources-and-strings">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#resources-and-strings">#</doc-anchor-trigger>
+        <span>Resources and strings</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Parameter and value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>-resourceencryption</code> <code v-pre>[1\|0]</code></td>
+<td>Enable this option to compress and encrypt embedded resources.<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-resourcecompression</code> <code v-pre>[value]</code></td>
+<td>Choose a compression method. &#x27;Fastest&#x27; offers poor compression but it is very quick. &#x27;MaxCompression&#x27; offers best protection but it is the slowest compression method. &#x27;NoCompression&#x27; doesn&#x27;t apply compression at all.<br/>[nocompression] = No compression will be applied<br/>[fastest] = Offers poor compression but it is very quick<br/>[fast]<br/>[normal] <code v-pre>{default}</code><br/>[good]<br/>[max] = Offers best protection but it is the slowest compression method<br/>Example:<br/>-resourcecompression good</td>
+</tr>
+<tr>
+<td><code v-pre>-stringencryption</code> <code v-pre>[1\|0]</code></td>
+<td>String Encryption disguises internalized text, making it all the more difficult to decipher the interaction of your CIL.<br/>[1] = Enable <code v-pre>{default}</code><br/>[0] = Disable</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="3-lock-settings">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#3-lock-settings">#</doc-anchor-trigger>
+        <span>3. Lock Settings</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="combining-locks">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#combining-locks">#</doc-anchor-trigger>
+        <span>Combining locks</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Parameter and value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>-licensing_behaviour</code> <code v-pre>[1\|0]</code></td>
+<td>When set to True(&quot;1&quot;)  causes the expiration of the assembly only when all other enabled locks have expired. When set to False the assembly expires when any one of the locks expires.<br/>[1] = Enable <code v-pre>{default}</code><br/>[0] = Disable</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="evaluation-period">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#evaluation-period">#</doc-anchor-trigger>
+        <span>Evaluation period</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Parameter and value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>-evaluationenable</code> <code v-pre>[1\|0]</code></td>
+<td>The Evaluation period lock enables the creation of trial versions of your application, limiting the use of your trial in a variety of ways(Trial or Runtime).<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-evaluationtype</code> <code v-pre>[trial \| runtime]</code></td>
+<td>Choose between Trial and Runtime<br/>[trial] = Trial <code v-pre>{default}</code><br/>[runtime] = Runtime</td>
+</tr>
+<tr>
+<td><code v-pre>-time</code> <code v-pre>[number]</code></td>
+<td>Specify the number of days or minutes for the evaluation period.</td>
+</tr>
+<tr>
+<td><code v-pre>-showevaluationperiodscreen</code> <code v-pre>[0\|1]</code></td>
+<td>Enable this to show a message screen when evaluation period is expired.</td>
+</tr>
+<tr>
+<td><code v-pre>-evaluationmessage</code> <code v-pre>[text]</code></td>
+<td>Evaluation period expired message.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="expiration-date">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#expiration-date">#</doc-anchor-trigger>
+        <span>Expiration date</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Parameter and value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>-expirationdate_enable</code> <code v-pre>[1\|0]</code></td>
+<td>The Expiration Date lock allows you to specify the exact date on which your application should expire.<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-expirationdate</code> <code v-pre>[y/m/d]</code></td>
+<td>Choose a day. Your inbuilt license will be valid up to this day. After this day your customer will need a new license file.[year/month/day] for example &#x27;2023/1/15&#x27;</td>
+</tr>
+<tr>
+<td><code v-pre>-showexpirationdatescreen</code> <code v-pre>[1\|0]</code></td>
+<td>Specifies whether a dialog box should be displayed to the user when the Expiration Date is reached.</td>
+</tr>
+<tr>
+<td><code v-pre>-expirationdatemessage</code> <code v-pre>[text]</code></td>
+<td>Message</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="number-of-uses">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#number-of-uses">#</doc-anchor-trigger>
+        <span>Number of uses</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Parameter and value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>-number_of_uses_enable</code> <code v-pre>[1\|0]</code></td>
+<td>This lock, if enabled, causes your application to expire after the specified number of uses.<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-number_of_uses</code> <code v-pre>[number]</code></td>
+<td>Specify the number of times the user can run your application before it expires.</td>
+</tr>
+<tr>
+<td><code v-pre>-showenumberofusesscreen</code> <code v-pre>[1\|0]</code></td>
+<td>Specifies whether a dialog box should be displayed to the user when your application has been used the specified number of times.<br/>[1] = Enable <code v-pre>{default}</code><br/>[0] = Disable</td>
+</tr>
+<tr>
+<td><code v-pre>-expirationdatemessage</code> <code v-pre>[text]</code></td>
+<td>Message</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="license-files-and-loading">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#license-files-and-loading">#</doc-anchor-trigger>
+        <span>License files and loading</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Parameter and value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>-shownotfoundscreen</code> <code v-pre>[1\|0]</code></td>
+<td>Enable/Disable Screen<br/>[1] = Enable <code v-pre>{default}</code><br/>[0] = Disable</td>
+</tr>
+<tr>
+<td><code v-pre>-invalidlicensemessage</code> <code v-pre>[text]</code></td>
+<td>The text of the message which is issued when a license file is not found (if &quot;Run Without License&quot; is set to false), is found but is corrupt or otherwise invalid.</td>
+</tr>
+<tr>
+<td><code v-pre>-run_without_licensefile</code> <code v-pre>[1\|0]</code></td>
+<td>Set to false(0) to require a valid license for operation. If true, enabled Inbuilt Locks are honored. If a valid license file is found the Inbuilt Locks settings are overriden with the license file settings.<br/>[1] = Enable <code v-pre>{default}</code><br/>[0] = Disable</td>
+</tr>
+<tr>
+<td><code v-pre>-staticlicensefilename</code> <code v-pre>[filename]</code></td>
+<td>Specifies a license file name or extension (*.myextension). Leave blank to allow .NET Reactor to determine a *.license file name from your assembly name. To avoid conflicts with optional methods of extending license behavior, binary .NET Reactor licenses do not use the .LIC extension reserved to .NET license classes.</td>
+</tr>
+<tr>
+<td><code v-pre>-v3mode</code> <code v-pre>[1\|0]</code></td>
+<td>.NET Reactor v3.x uses a new encryption technique which is not backward compatible with previous versions of .NET Reactor. Set this option to True to use .NET Reactor v3 license encryption technique, or False to use the V2.x compatible encryption method.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="concurrent-instances">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#concurrent-instances">#</doc-anchor-trigger>
+        <span>Concurrent instances</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Parameter and value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>-number_of_instances_enable</code> <code v-pre>[1\|0]</code></td>
+<td>The max number of instances lock allows you to specify the maximum number of copies of your application the user is allowed to start at the same time. Please note that exceeding the specified number of instances does NOT cause your application to expire.<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-number_of_instances</code> <code v-pre>[number]</code></td>
+<td>The maximum number of instances.</td>
+</tr>
+<tr>
+<td><code v-pre>-numberofinstancesscreen</code> <code v-pre>[1\|0]</code></td>
+<td>Specifies whether a dialog box should be displayed to the user when they attempt to run more than the specified number of instances of your application.<br/>[1] = Enable <code v-pre>{default}</code><br/>[0] = Disable</td>
+</tr>
+<tr>
+<td><code v-pre>-numberofinstancesmessage</code> <code v-pre>[text]</code></td>
+<td>Message</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="nag-screen">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#nag-screen">#</doc-anchor-trigger>
+        <span>Nag screen</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Parameter and value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>-shownagscreen</code> <code v-pre>[1\|0]</code></td>
+<td>Enable/Disable NagScreen<br/>[1] = Enable<br/>[0] = Disable <code v-pre>{default}</code></td>
+</tr>
+<tr>
+<td><code v-pre>-nagmessage</code> <code v-pre>[text]</code></td>
+<td>Here you can set the message for the nag screen.</td>
+</tr>
+<tr>
+<td><code v-pre>-xdays</code> <code v-pre>[number]</code></td>
+<td>.NET Reactor can either display the nag screen every time the application is started (in which case set the value of this option to -1<code v-pre>{default}</code>), or a specified number of days before the end of the Evaluation Period or Expiry Date.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="actions-after-expiration">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#actions-after-expiration">#</doc-anchor-trigger>
+        <span>Actions after expiration</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Parameter and value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>-run_another_process</code> <code v-pre>[text]</code></td>
+<td>Opens or launches another application, file, or web site upon expiration. Usually used to send evaluation users to a web page.</td>
+</tr>
+<tr>
+<td><code v-pre>-shutdown_process</code> <code v-pre>[1\|0]</code></td>
+<td>Terminates the running process upon expiration.<br/>[1] = Enable <code v-pre>{default}</code><br/>[0] = Disable</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="4-dialog-settings">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#4-dialog-settings">#</doc-anchor-trigger>
+        <span>4. Dialog Settings</span>
+    </h2>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Parameter and value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>-dialogbox_interface</code> <code v-pre>[file]</code></td>
+<td>Uses a customizable dialog box you may build with the SDK. Please set the FullName of your Dialog Box here(e.g. MyNamespace.MyDialogBox). Please check the SDK for more information.</td>
+</tr>
+<tr>
+<td><code v-pre>-messagecaption</code> <code v-pre>[text]</code></td>
+<td>This is the title of all message forms which can be shown.</td>
+</tr>
+<tr>
+<td><code v-pre>-gradcolorbegin</code> <code v-pre>[r/g/b]</code></td>
+<td>Gradient Color of the message windows.<code v-pre>&lt;red/green/blue&gt;</code> for example &#x27;212/15/128&#x27;</td>
+</tr>
+<tr>
+<td><code v-pre>-gradcolorend</code> <code v-pre>[r/g/b]</code></td>
+<td>Gradient Color of the message windows.<code v-pre>&lt;red/green/blue&gt;</code> for example &#x27;212/15/128&#x27;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="example-combinations">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#example-combinations">#</doc-anchor-trigger>
+        <span>Example Combinations</span>
+    </h2>
+</doc-anchor-target>
+<p>The following commands demonstrate the original combinations for assemblies, projects, keys, and trial settings.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-batch"><code v-pre class="language-batch">dotNET_Reactor.Console.exe -file &quot;c:\testapp.exe&quot;
+
+dotNET_Reactor.Console.exe -file &quot;c:\testlib.dll&quot; -licensed
+
+dotNET_Reactor.Console.exe -project &quot;c:\projx.nrproj&quot;
+
+dotNET_Reactor.Console.exe -project &quot;c:\projx.nrproj&quot; -masterkeyfile &quot;c:\masterkey.mkey&quot;
+
+dotNET_Reactor.Console.exe -file &quot;c:\testapp.exe&quot; -project &quot;c:\projx.nrproj&quot;
+
+dotNET_Reactor.Console.exe -file &quot;c:\testapp.exe&quot; -project &quot;c:\projx.nrproj&quot; -q -licensed
+
+dotNET_Reactor.Console.exe -file &quot;c:\testapp.exe&quot; -evaluationenable 1 -evaluationtype trial -time 14
+
+dotNET_Reactor.Console.exe -file &quot;c:\testapp.exe&quot; -showloadingscreen 0</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="related-topics">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#related-topics">#</doc-anchor-trigger>
+        <span>Related topics</span>
+    </h2>
+</doc-anchor-target>
+<p><a href="../tools/build_integration_manager/index.html">Build Integration Manager</a> · <a href="../user-interface/mainpanel/index.html#settings">Main panel settings</a></p>
+
+                                
+                                <!-- Required only on API pages -->
+                                <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
+                            </div>
+                            <footer class="clear-both">
+                            
+                                <nav class="flex mt-14">
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../support-and-contact/contact/index.html">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                                                <span class="block mt-1">Contact</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                            
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../license_agreement/index.html">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                                                <span class="block mt-1">License Agreement</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </footer>
+                        </main>
+                
+                        <div class="border-t dark:border-dark-650 pt-6 mb-8">
+                            <footer class="flex flex-wrap items-center justify-between">
+                                <div>
+                                    <ul class="flex flex-wrap items-center text-sm">
+                                    </ul>
+                                </div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright Eziriz. All rights reserved.</p></div>
+                            </footer>
+                        </div>
+                    </div>
+                
+                    <!-- Rendered if sidebar right is enabled -->
+                    <!-- Sidebar right skeleton-->
+                    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:transform-none sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
+                        <div class="pl-5">
+                            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                        </div>
+                    </div>
+                
+                    <!-- User should be able to hide sidebar right -->
+                    <doc-sidebar-right v-cloak></doc-sidebar-right>
+                </div>
+
+            </div>
+        </div>
+    
+        <doc-search-mobile></doc-search-mobile>
+        <doc-back-to-top></doc-back-to-top>
+    </div>
+
+
+    <div id="docs-overlay-target"></div>
+
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Command Line Parameters", level: 1, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+</body>
+</html>

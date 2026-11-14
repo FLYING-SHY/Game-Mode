@@ -1,0 +1,2558 @@
+﻿[
+    {
+        "Kind":  "raw",
+        "EvidenceId":  "ev_642892150fde533011d0f422711f82217ae59e3726b1181fcb60c596ecf902ec",
+        "SHA256":  "a2bd412924ce669666afc4fcaa68b96fa5a6ae29b2bf6a32d89ef1466f20ef10",
+        "Type":  "CoH3MemoryTool.LeaseSignature60",
+        "Method":  "Verify",
+        "ILSize":  699,
+        "Instructions":  290,
+        "ILSHA256":  "df00d9a9946f784a3e689e97b027f18f7d7c132b254b871ba6e5bb8083a8b14e",
+        "Signature":  {
+                          "raw_length":  9,
+                          "raw_sha256":  "9ba57ffd1e233a7cb3ac28de313689f104d392878a1e0b8e8aee02131ecc5a5d",
+                          "resolved_sha256":  "cbd4172ae6bad08ac725570e0250510a5443fd2bd5223e464b280369cf14b4ff",
+                          "kind":  "method",
+                          "parse_status":  "decoded",
+                          "calling_convention":  "default has-this",
+                          "generic_parameter_count":  null,
+                          "parameter_count":  4,
+                          "return_type":  "bool",
+                          "parameter_types":  [
+                                                  "class:340",
+                                                  "string",
+                                                  "string",
+                                                  "string"
+                                              ],
+                          "field_type":  null,
+                          "issue":  null
+                      },
+        "Body":  {
+                     "status":  "present",
+                     "header_format":  "fat",
+                     "rva":  51888,
+                     "file_offset":  44208,
+                     "max_stack":  6,
+                     "init_locals":  true,
+                     "local_var_sig_token":  "0x11000070",
+                     "il_size":  699,
+                     "il_sha256":  "df00d9a9946f784a3e689e97b027f18f7d7c132b254b871ba6e5bb8083a8b14e",
+                     "normalized_il_sha256":  "4808e1cbe85442e4e35b5d4d908bba83afdd49d5f47abeb31d312d7530903b57",
+                     "instruction_count":  290,
+                     "decoded_instruction_count":  290,
+                     "truncated_instructions":  0,
+                     "opcode_counts":  {
+                                           "ldarg.1":  6,
+                                           "callvirt":  14,
+                                           "ldstr":  18,
+                                           "call":  21,
+                                           "brtrue.s":  9,
+                                           "ldarg.s":  4,
+                                           "dup":  19,
+                                           "pop":  4,
+                                           "brfalse.s":  10,
+                                           "ldc.i4.0":  16,
+                                           "stloc.s":  17,
+                                           "leave":  6,
+                                           "ldarg.2":  1,
+                                           "stloc.0":  1,
+                                           "ldarg.3":  1,
+                                           "stloc.1":  1,
+                                           "ldloc.0":  4,
+                                           "ldlen":  4,
+                                           "conv.i4":  3,
+                                           "ldc.i4":  3,
+                                           "bne.un.s":  1,
+                                           "ldelem.u1":  1,
+                                           "and":  1,
+                                           "ldloc.1":  2,
+                                           "ldc.i4.s":  6,
+                                           "stloc.2":  2,
+                                           "ldloc.2":  3,
+                                           "ldarg.0":  7,
+                                           "ldfld":  7,
+                                           "stloc.3":  1,
+                                           "ldloc.3":  3,
+                                           "ldc.i4.3":  3,
+                                           "newarr":  3,
+                                           "stelem.ref":  17,
+                                           "ldc.i4.1":  5,
+                                           "ldc.i4.2":  3,
+                                           "br.s":  3,
+                                           "ldloc.s":  26,
+                                           "ldelem.ref":  4,
+                                           "ldc.i4.4":  2,
+                                           "ldloca.s":  5,
+                                           "add":  1,
+                                           "blt.s":  1,
+                                           "ldc.i4.5":  1,
+                                           "ldc.i4.6":  1,
+                                           "ldc.i4.7":  1,
+                                           "ldc.i4.8":  1,
+                                           "beq.s":  1,
+                                           "newobj":  1,
+                                           "initobj":  1,
+                                           "stfld":  2,
+                                           "leave.s":  2,
+                                           "endfinally":  1,
+                                           "isinst":  4,
+                                           "ldnull":  1,
+                                           "cgt.un":  2,
+                                           "endfilter":  1,
+                                           "ret":  1
+                                       },
+                     "anchors":  [
+                                     {
+                                         "il_offset":  0,
+                                         "opcode":  "ldarg.1",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  1,
+                                         "opcode":  "callvirt",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0600016b"
+                                     },
+                                     {
+                                         "il_offset":  6,
+                                         "opcode":  "ldstr",
+                                         "operand_kind":  "string",
+                                         "operand":  "0x70003b4c"
+                                     },
+                                     {
+                                         "il_offset":  11,
+                                         "opcode":  "call",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a00015e"
+                                     },
+                                     {
+                                         "il_offset":  16,
+                                         "opcode":  "brtrue.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "61"
+                                     },
+                                     {
+                                         "il_offset":  18,
+                                         "opcode":  "ldarg.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "4"
+                                     },
+                                     {
+                                         "il_offset":  20,
+                                         "opcode":  "dup",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  21,
+                                         "opcode":  "brtrue.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "29"
+                                     },
+                                     {
+                                         "il_offset":  23,
+                                         "opcode":  "pop",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  24,
+                                         "opcode":  "ldstr",
+                                         "operand_kind":  "string",
+                                         "operand":  "0x7000008d"
+                                     },
+                                     {
+                                         "il_offset":  29,
+                                         "opcode":  "ldstr",
+                                         "operand_kind":  "string",
+                                         "operand":  "0x70003b5a"
+                                     },
+                                     {
+                                         "il_offset":  34,
+                                         "opcode":  "call",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a0002e3"
+                                     },
+                                     {
+                                         "il_offset":  39,
+                                         "opcode":  "brfalse.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "61"
+                                     },
+                                     {
+                                         "il_offset":  41,
+                                         "opcode":  "ldarg.1",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  42,
+                                         "opcode":  "ldstr",
+                                         "operand_kind":  "string",
+                                         "operand":  "0x70003b7c"
+                                     },
+                                     {
+                                         "il_offset":  47,
+                                         "opcode":  "callvirt",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x06000170"
+                                     },
+                                     {
+                                         "il_offset":  52,
+                                         "opcode":  "ldarg.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "4"
+                                     },
+                                     {
+                                         "il_offset":  54,
+                                         "opcode":  "call",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a00015e"
+                                     },
+                                     {
+                                         "il_offset":  59,
+                                         "opcode":  "brfalse.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "69"
+                                     },
+                                     {
+                                         "il_offset":  61,
+                                         "opcode":  "ldc.i4.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  62,
+                                         "opcode":  "stloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "8"
+                                     },
+                                     {
+                                         "il_offset":  64,
+                                         "opcode":  "leave",
+                                         "operand_kind":  "branch",
+                                         "operand":  "696"
+                                     },
+                                     {
+                                         "il_offset":  69,
+                                         "opcode":  "ldarg.2",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  70,
+                                         "opcode":  "call",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a0002e8"
+                                     },
+                                     {
+                                         "il_offset":  75,
+                                         "opcode":  "stloc.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  76,
+                                         "opcode":  "ldarg.3",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  77,
+                                         "opcode":  "call",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a0002e8"
+                                     },
+                                     {
+                                         "il_offset":  82,
+                                         "opcode":  "stloc.1",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  83,
+                                         "opcode":  "ldloc.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  84,
+                                         "opcode":  "ldlen",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  85,
+                                         "opcode":  "conv.i4",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  86,
+                                         "opcode":  "ldc.i4",
+                                         "operand_kind":  "constant",
+                                         "operand":  "384"
+                                     },
+                                     {
+                                         "il_offset":  91,
+                                         "opcode":  "bne.un.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "131"
+                                     },
+                                     {
+                                         "il_offset":  93,
+                                         "opcode":  "ldloc.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  94,
+                                         "opcode":  "ldc.i4.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  95,
+                                         "opcode":  "ldelem.u1",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  96,
+                                         "opcode":  "ldc.i4",
+                                         "operand_kind":  "constant",
+                                         "operand":  "128"
+                                     },
+                                     {
+                                         "il_offset":  101,
+                                         "opcode":  "and",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  102,
+                                         "opcode":  "brfalse.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "131"
+                                     },
+                                     {
+                                         "il_offset":  104,
+                                         "opcode":  "ldloc.1",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  105,
+                                         "opcode":  "ldlen",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  106,
+                                         "opcode":  "brfalse.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "131"
+                                     },
+                                     {
+                                         "il_offset":  108,
+                                         "opcode":  "ldloc.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  109,
+                                         "opcode":  "call",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x06000136"
+                                     },
+                                     {
+                                         "il_offset":  114,
+                                         "opcode":  "ldc.i4.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  115,
+                                         "opcode":  "ldc.i4.s",
+                                         "operand_kind":  "constant",
+                                         "operand":  "16"
+                                     },
+                                     {
+                                         "il_offset":  117,
+                                         "opcode":  "callvirt",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a000041"
+                                     },
+                                     {
+                                         "il_offset":  122,
+                                         "opcode":  "ldarg.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "4"
+                                     },
+                                     {
+                                         "il_offset":  124,
+                                         "opcode":  "call",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a00015e"
+                                     },
+                                     {
+                                         "il_offset":  129,
+                                         "opcode":  "brfalse.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "139"
+                                     },
+                                     {
+                                         "il_offset":  131,
+                                         "opcode":  "ldc.i4.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  132,
+                                         "opcode":  "stloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "8"
+                                     },
+                                     {
+                                         "il_offset":  134,
+                                         "opcode":  "leave",
+                                         "operand_kind":  "branch",
+                                         "operand":  "696"
+                                     },
+                                     {
+                                         "il_offset":  139,
+                                         "opcode":  "ldarg.1",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  140,
+                                         "opcode":  "ldstr",
+                                         "operand_kind":  "string",
+                                         "operand":  "0x70003b90"
+                                     },
+                                     {
+                                         "il_offset":  145,
+                                         "opcode":  "callvirt",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x06000170"
+                                     },
+                                     {
+                                         "il_offset":  150,
+                                         "opcode":  "stloc.2",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  151,
+                                         "opcode":  "ldloc.2",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  152,
+                                         "opcode":  "callvirt",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a000032"
+                                     },
+                                     {
+                                         "il_offset":  157,
+                                         "opcode":  "brtrue.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "174"
+                                     },
+                                     {
+                                         "il_offset":  159,
+                                         "opcode":  "ldarg.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  160,
+                                         "opcode":  "ldfld",
+                                         "operand_kind":  "field",
+                                         "operand":  "0x04000105"
+                                     },
+                                     {
+                                         "il_offset":  165,
+                                         "opcode":  "brtrue.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "174"
+                                     },
+                                     {
+                                         "il_offset":  167,
+                                         "opcode":  "ldarg.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  168,
+                                         "opcode":  "ldfld",
+                                         "operand_kind":  "field",
+                                         "operand":  "0x04000104"
+                                     },
+                                     {
+                                         "il_offset":  173,
+                                         "opcode":  "stloc.2",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  174,
+                                         "opcode":  "ldloc.2",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  175,
+                                         "opcode":  "dup",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  176,
+                                         "opcode":  "brtrue.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "184"
+                                     },
+                                     {
+                                         "il_offset":  178,
+                                         "opcode":  "pop",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  179,
+                                         "opcode":  "ldstr",
+                                         "operand_kind":  "string",
+                                         "operand":  "0x7000008d"
+                                     },
+                                     {
+                                         "il_offset":  184,
+                                         "opcode":  "ldstr",
+                                         "operand_kind":  "string",
+                                         "operand":  "0x70003bac"
+                                     },
+                                     {
+                                         "il_offset":  189,
+                                         "opcode":  "call",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a0002e3"
+                                     },
+                                     {
+                                         "il_offset":  194,
+                                         "opcode":  "brtrue.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "204"
+                                     },
+                                     {
+                                         "il_offset":  196,
+                                         "opcode":  "ldc.i4.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  197,
+                                         "opcode":  "stloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "8"
+                                     },
+                                     {
+                                         "il_offset":  199,
+                                         "opcode":  "leave",
+                                         "operand_kind":  "branch",
+                                         "operand":  "696"
+                                     },
+                                     {
+                                         "il_offset":  204,
+                                         "opcode":  "ldarg.1",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  205,
+                                         "opcode":  "ldstr",
+                                         "operand_kind":  "string",
+                                         "operand":  "0x70003bd4"
+                                     },
+                                     {
+                                         "il_offset":  210,
+                                         "opcode":  "callvirt",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x06000170"
+                                     },
+                                     {
+                                         "il_offset":  215,
+                                         "opcode":  "stloc.3",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  216,
+                                         "opcode":  "ldloc.3",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  217,
+                                         "opcode":  "ldstr",
+                                         "operand_kind":  "string",
+                                         "operand":  "0x70003bee"
+                                     },
+                                     {
+                                         "il_offset":  222,
+                                         "opcode":  "call",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a00015e"
+                                     },
+                                     {
+                                         "il_offset":  227,
+                                         "opcode":  "brfalse.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "250"
+                                     },
+                                     {
+                                         "il_offset":  229,
+                                         "opcode":  "ldloc.3",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  230,
+                                         "opcode":  "ldstr",
+                                         "operand_kind":  "string",
+                                         "operand":  "0x70003c02"
+                                     },
+                                     {
+                                         "il_offset":  235,
+                                         "opcode":  "call",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a00015e"
+                                     },
+                                     {
+                                         "il_offset":  240,
+                                         "opcode":  "brfalse.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "250"
+                                     },
+                                     {
+                                         "il_offset":  242,
+                                         "opcode":  "ldc.i4.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  243,
+                                         "opcode":  "stloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "8"
+                                     },
+                                     {
+                                         "il_offset":  245,
+                                         "opcode":  "leave",
+                                         "operand_kind":  "branch",
+                                         "operand":  "696"
+                                     },
+                                     {
+                                         "il_offset":  250,
+                                         "opcode":  "ldc.i4.3",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  251,
+                                         "opcode":  "newarr",
+                                         "operand_kind":  "type",
+                                         "operand":  "0x010000c1"
+                                     },
+                                     {
+                                         "il_offset":  256,
+                                         "opcode":  "stloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "4"
+                                     },
+                                     {
+                                         "il_offset":  258,
+                                         "opcode":  "ldc.i4.3",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  259,
+                                         "opcode":  "newarr",
+                                         "operand_kind":  "type",
+                                         "operand":  "0x010000c1"
+                                     },
+                                     {
+                                         "il_offset":  264,
+                                         "opcode":  "dup",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  265,
+                                         "opcode":  "ldc.i4.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  266,
+                                         "opcode":  "ldstr",
+                                         "operand_kind":  "string",
+                                         "operand":  "0x70003c0e"
+                                     },
+                                     {
+                                         "il_offset":  271,
+                                         "opcode":  "stelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  272,
+                                         "opcode":  "dup",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  273,
+                                         "opcode":  "ldc.i4.1",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  274,
+                                         "opcode":  "ldstr",
+                                         "operand_kind":  "string",
+                                         "operand":  "0x70003c26"
+                                     },
+                                     {
+                                         "il_offset":  279,
+                                         "opcode":  "stelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  280,
+                                         "opcode":  "dup",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  281,
+                                         "opcode":  "ldc.i4.2",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  282,
+                                         "opcode":  "ldstr",
+                                         "operand_kind":  "string",
+                                         "operand":  "0x70003c3e"
+                                     },
+                                     {
+                                         "il_offset":  287,
+                                         "opcode":  "stelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  288,
+                                         "opcode":  "stloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "5"
+                                     },
+                                     {
+                                         "il_offset":  290,
+                                         "opcode":  "ldc.i4.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  291,
+                                         "opcode":  "stloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "9"
+                                     },
+                                     {
+                                         "il_offset":  293,
+                                         "opcode":  "br.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "367"
+                                     },
+                                     {
+                                         "il_offset":  295,
+                                         "opcode":  "ldarg.1",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  296,
+                                         "opcode":  "ldloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "5"
+                                     },
+                                     {
+                                         "il_offset":  298,
+                                         "opcode":  "ldloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "9"
+                                     },
+                                     {
+                                         "il_offset":  300,
+                                         "opcode":  "ldelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  301,
+                                         "opcode":  "callvirt",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x06000170"
+                                     },
+                                     {
+                                         "il_offset":  306,
+                                         "opcode":  "stloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "10"
+                                     },
+                                     {
+                                         "il_offset":  308,
+                                         "opcode":  "ldloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "10"
+                                     },
+                                     {
+                                         "il_offset":  310,
+                                         "opcode":  "ldc.i4.4",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  311,
+                                         "opcode":  "call",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a00016e"
+                                     },
+                                     {
+                                         "il_offset":  316,
+                                         "opcode":  "ldloca.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "11"
+                                     },
+                                     {
+                                         "il_offset":  318,
+                                         "opcode":  "call",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a0002e9"
+                                     },
+                                     {
+                                         "il_offset":  323,
+                                         "opcode":  "brfalse.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "346"
+                                     },
+                                     {
+                                         "il_offset":  325,
+                                         "opcode":  "ldloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "10"
+                                     },
+                                     {
+                                         "il_offset":  327,
+                                         "opcode":  "ldloca.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "11"
+                                     },
+                                     {
+                                         "il_offset":  329,
+                                         "opcode":  "call",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a00016e"
+                                     },
+                                     {
+                                         "il_offset":  334,
+                                         "opcode":  "call",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a0002ea"
+                                     },
+                                     {
+                                         "il_offset":  339,
+                                         "opcode":  "call",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a00015e"
+                                     },
+                                     {
+                                         "il_offset":  344,
+                                         "opcode":  "brfalse.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "354"
+                                     },
+                                     {
+                                         "il_offset":  346,
+                                         "opcode":  "ldc.i4.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  347,
+                                         "opcode":  "stloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "8"
+                                     },
+                                     {
+                                         "il_offset":  349,
+                                         "opcode":  "leave",
+                                         "operand_kind":  "branch",
+                                         "operand":  "696"
+                                     },
+                                     {
+                                         "il_offset":  354,
+                                         "opcode":  "ldloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "4"
+                                     },
+                                     {
+                                         "il_offset":  356,
+                                         "opcode":  "ldloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "9"
+                                     },
+                                     {
+                                         "il_offset":  358,
+                                         "opcode":  "ldloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "10"
+                                     },
+                                     {
+                                         "il_offset":  360,
+                                         "opcode":  "stelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  361,
+                                         "opcode":  "ldloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "9"
+                                     },
+                                     {
+                                         "il_offset":  363,
+                                         "opcode":  "ldc.i4.1",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  364,
+                                         "opcode":  "add",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  365,
+                                         "opcode":  "stloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "9"
+                                     },
+                                     {
+                                         "il_offset":  367,
+                                         "opcode":  "ldloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "9"
+                                     },
+                                     {
+                                         "il_offset":  369,
+                                         "opcode":  "ldloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "5"
+                                     },
+                                     {
+                                         "il_offset":  371,
+                                         "opcode":  "ldlen",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  372,
+                                         "opcode":  "conv.i4",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  373,
+                                         "opcode":  "blt.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "295"
+                                     },
+                                     {
+                                         "il_offset":  375,
+                                         "opcode":  "ldstr",
+                                         "operand_kind":  "string",
+                                         "operand":  "0x70003c54"
+                                     },
+                                     {
+                                         "il_offset":  380,
+                                         "opcode":  "ldc.i4.s",
+                                         "operand_kind":  "constant",
+                                         "operand":  "13"
+                                     },
+                                     {
+                                         "il_offset":  382,
+                                         "opcode":  "newarr",
+                                         "operand_kind":  "type",
+                                         "operand":  "0x010000c1"
+                                     },
+                                     {
+                                         "il_offset":  387,
+                                         "opcode":  "dup",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  388,
+                                         "opcode":  "ldc.i4.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  389,
+                                         "opcode":  "ldstr",
+                                         "operand_kind":  "string",
+                                         "operand":  "0x70003c58"
+                                     },
+                                     {
+                                         "il_offset":  394,
+                                         "opcode":  "stelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  395,
+                                         "opcode":  "dup",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  396,
+                                         "opcode":  "ldc.i4.1",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  397,
+                                         "opcode":  "ldarg.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  398,
+                                         "opcode":  "ldfld",
+                                         "operand_kind":  "field",
+                                         "operand":  "0x040000ff"
+                                     },
+                                     {
+                                         "il_offset":  403,
+                                         "opcode":  "stelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  404,
+                                         "opcode":  "dup",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  405,
+                                         "opcode":  "ldc.i4.2",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  406,
+                                         "opcode":  "ldstr",
+                                         "operand_kind":  "string",
+                                         "operand":  "0x70003b4c"
+                                     },
+                                     {
+                                         "il_offset":  411,
+                                         "opcode":  "stelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  412,
+                                         "opcode":  "dup",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  413,
+                                         "opcode":  "ldc.i4.3",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  414,
+                                         "opcode":  "ldarg.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  415,
+                                         "opcode":  "ldfld",
+                                         "operand_kind":  "field",
+                                         "operand":  "0x04000100"
+                                     },
+                                     {
+                                         "il_offset":  420,
+                                         "opcode":  "stelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  421,
+                                         "opcode":  "dup",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  422,
+                                         "opcode":  "ldc.i4.4",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  423,
+                                         "opcode":  "ldarg.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  424,
+                                         "opcode":  "ldfld",
+                                         "operand_kind":  "field",
+                                         "operand":  "0x04000101"
+                                     },
+                                     {
+                                         "il_offset":  429,
+                                         "opcode":  "stelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  430,
+                                         "opcode":  "dup",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  431,
+                                         "opcode":  "ldc.i4.5",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  432,
+                                         "opcode":  "ldarg.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  433,
+                                         "opcode":  "ldfld",
+                                         "operand_kind":  "field",
+                                         "operand":  "0x04000102"
+                                     },
+                                     {
+                                         "il_offset":  438,
+                                         "opcode":  "stelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  439,
+                                         "opcode":  "dup",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  440,
+                                         "opcode":  "ldc.i4.6",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  441,
+                                         "opcode":  "ldarg.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  442,
+                                         "opcode":  "ldfld",
+                                         "operand_kind":  "field",
+                                         "operand":  "0x04000103"
+                                     },
+                                     {
+                                         "il_offset":  447,
+                                         "opcode":  "stelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  448,
+                                         "opcode":  "dup",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  449,
+                                         "opcode":  "ldc.i4.7",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  450,
+                                         "opcode":  "call",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a000266"
+                                     },
+                                     {
+                                         "il_offset":  455,
+                                         "opcode":  "ldloc.2",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  456,
+                                         "opcode":  "callvirt",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a0002eb"
+                                     },
+                                     {
+                                         "il_offset":  461,
+                                         "opcode":  "call",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x06000136"
+                                     },
+                                     {
+                                         "il_offset":  466,
+                                         "opcode":  "stelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  467,
+                                         "opcode":  "dup",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  468,
+                                         "opcode":  "ldc.i4.8",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  469,
+                                         "opcode":  "ldloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "4"
+                                     },
+                                     {
+                                         "il_offset":  471,
+                                         "opcode":  "ldc.i4.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  472,
+                                         "opcode":  "ldelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  473,
+                                         "opcode":  "stelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  474,
+                                         "opcode":  "dup",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  475,
+                                         "opcode":  "ldc.i4.s",
+                                         "operand_kind":  "constant",
+                                         "operand":  "9"
+                                     },
+                                     {
+                                         "il_offset":  477,
+                                         "opcode":  "ldloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "4"
+                                     },
+                                     {
+                                         "il_offset":  479,
+                                         "opcode":  "ldc.i4.1",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  480,
+                                         "opcode":  "ldelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  481,
+                                         "opcode":  "stelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  482,
+                                         "opcode":  "dup",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  483,
+                                         "opcode":  "ldc.i4.s",
+                                         "operand_kind":  "constant",
+                                         "operand":  "10"
+                                     },
+                                     {
+                                         "il_offset":  485,
+                                         "opcode":  "ldloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "4"
+                                     },
+                                     {
+                                         "il_offset":  487,
+                                         "opcode":  "ldc.i4.2",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  488,
+                                         "opcode":  "ldelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  489,
+                                         "opcode":  "stelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  490,
+                                         "opcode":  "dup",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  491,
+                                         "opcode":  "ldc.i4.s",
+                                         "operand_kind":  "constant",
+                                         "operand":  "11"
+                                     },
+                                     {
+                                         "il_offset":  493,
+                                         "opcode":  "ldloc.3",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  494,
+                                         "opcode":  "stelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  495,
+                                         "opcode":  "dup",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  496,
+                                         "opcode":  "ldc.i4.s",
+                                         "operand_kind":  "constant",
+                                         "operand":  "12"
+                                     },
+                                     {
+                                         "il_offset":  498,
+                                         "opcode":  "ldarg.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "4"
+                                     },
+                                     {
+                                         "il_offset":  500,
+                                         "opcode":  "stelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  501,
+                                         "opcode":  "call",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a0002ec"
+                                     },
+                                     {
+                                         "il_offset":  506,
+                                         "opcode":  "stloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "6"
+                                     },
+                                     {
+                                         "il_offset":  508,
+                                         "opcode":  "ldarg.1",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  509,
+                                         "opcode":  "ldstr",
+                                         "operand_kind":  "string",
+                                         "operand":  "0x70003c78"
+                                     },
+                                     {
+                                         "il_offset":  514,
+                                         "opcode":  "callvirt",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x06000170"
+                                     },
+                                     {
+                                         "il_offset":  519,
+                                         "opcode":  "call",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a0002e8"
+                                     },
+                                     {
+                                         "il_offset":  524,
+                                         "opcode":  "stloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "7"
+                                     },
+                                     {
+                                         "il_offset":  526,
+                                         "opcode":  "ldloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "7"
+                                     },
+                                     {
+                                         "il_offset":  528,
+                                         "opcode":  "ldlen",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  529,
+                                         "opcode":  "conv.i4",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  530,
+                                         "opcode":  "ldc.i4",
+                                         "operand_kind":  "constant",
+                                         "operand":  "384"
+                                     },
+                                     {
+                                         "il_offset":  535,
+                                         "opcode":  "beq.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "545"
+                                     },
+                                     {
+                                         "il_offset":  537,
+                                         "opcode":  "ldc.i4.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  538,
+                                         "opcode":  "stloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "8"
+                                     },
+                                     {
+                                         "il_offset":  540,
+                                         "opcode":  "leave",
+                                         "operand_kind":  "branch",
+                                         "operand":  "696"
+                                     },
+                                     {
+                                         "il_offset":  545,
+                                         "opcode":  "newobj",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a0002ed"
+                                     },
+                                     {
+                                         "il_offset":  550,
+                                         "opcode":  "stloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "12"
+                                     },
+                                     {
+                                         "il_offset":  552,
+                                         "opcode":  "ldloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "12"
+                                     },
+                                     {
+                                         "il_offset":  554,
+                                         "opcode":  "ldc.i4.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  555,
+                                         "opcode":  "callvirt",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a0002ee"
+                                     },
+                                     {
+                                         "il_offset":  560,
+                                         "opcode":  "ldloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "12"
+                                     },
+                                     {
+                                         "il_offset":  562,
+                                         "opcode":  "ldloca.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "13"
+                                     },
+                                     {
+                                         "il_offset":  564,
+                                         "opcode":  "initobj",
+                                         "operand_kind":  "type",
+                                         "operand":  "0x01000081"
+                                     },
+                                     {
+                                         "il_offset":  570,
+                                         "opcode":  "ldloca.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "13"
+                                     },
+                                     {
+                                         "il_offset":  572,
+                                         "opcode":  "ldloc.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  573,
+                                         "opcode":  "stfld",
+                                         "operand_kind":  "field",
+                                         "operand":  "0x0a0002ef"
+                                     },
+                                     {
+                                         "il_offset":  578,
+                                         "opcode":  "ldloca.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "13"
+                                     },
+                                     {
+                                         "il_offset":  580,
+                                         "opcode":  "ldloc.1",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  581,
+                                         "opcode":  "stfld",
+                                         "operand_kind":  "field",
+                                         "operand":  "0x0a0002f0"
+                                     },
+                                     {
+                                         "il_offset":  586,
+                                         "opcode":  "ldloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "13"
+                                     },
+                                     {
+                                         "il_offset":  588,
+                                         "opcode":  "callvirt",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a0002f1"
+                                     },
+                                     {
+                                         "il_offset":  593,
+                                         "opcode":  "ldloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "12"
+                                     },
+                                     {
+                                         "il_offset":  595,
+                                         "opcode":  "call",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a000266"
+                                     },
+                                     {
+                                         "il_offset":  600,
+                                         "opcode":  "ldloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "6"
+                                     },
+                                     {
+                                         "il_offset":  602,
+                                         "opcode":  "callvirt",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a0002eb"
+                                     },
+                                     {
+                                         "il_offset":  607,
+                                         "opcode":  "ldstr",
+                                         "operand_kind":  "string",
+                                         "operand":  "0x70003c98"
+                                     },
+                                     {
+                                         "il_offset":  612,
+                                         "opcode":  "call",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a0002f2"
+                                     },
+                                     {
+                                         "il_offset":  617,
+                                         "opcode":  "ldloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "7"
+                                     },
+                                     {
+                                         "il_offset":  619,
+                                         "opcode":  "callvirt",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a0002f3"
+                                     },
+                                     {
+                                         "il_offset":  624,
+                                         "opcode":  "stloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "8"
+                                     },
+                                     {
+                                         "il_offset":  626,
+                                         "opcode":  "leave.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "696"
+                                     },
+                                     {
+                                         "il_offset":  628,
+                                         "opcode":  "ldloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "12"
+                                     },
+                                     {
+                                         "il_offset":  630,
+                                         "opcode":  "brfalse.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "639"
+                                     },
+                                     {
+                                         "il_offset":  632,
+                                         "opcode":  "ldloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "12"
+                                     },
+                                     {
+                                         "il_offset":  634,
+                                         "opcode":  "callvirt",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a000018"
+                                     },
+                                     {
+                                         "il_offset":  639,
+                                         "opcode":  "endfinally",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  640,
+                                         "opcode":  "isinst",
+                                         "operand_kind":  "type",
+                                         "operand":  "0x01000020"
+                                     },
+                                     {
+                                         "il_offset":  645,
+                                         "opcode":  "dup",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  646,
+                                         "opcode":  "brtrue.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "652"
+                                     },
+                                     {
+                                         "il_offset":  648,
+                                         "opcode":  "pop",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  649,
+                                         "opcode":  "ldc.i4.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  650,
+                                         "opcode":  "br.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "688"
+                                     },
+                                     {
+                                         "il_offset":  652,
+                                         "opcode":  "stloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "14"
+                                     },
+                                     {
+                                         "il_offset":  654,
+                                         "opcode":  "ldloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "14"
+                                     },
+                                     {
+                                         "il_offset":  656,
+                                         "opcode":  "isinst",
+                                         "operand_kind":  "type",
+                                         "operand":  "0x01000138"
+                                     },
+                                     {
+                                         "il_offset":  661,
+                                         "opcode":  "brtrue.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "684"
+                                     },
+                                     {
+                                         "il_offset":  663,
+                                         "opcode":  "ldloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "14"
+                                     },
+                                     {
+                                         "il_offset":  665,
+                                         "opcode":  "isinst",
+                                         "operand_kind":  "type",
+                                         "operand":  "0x01000093"
+                                     },
+                                     {
+                                         "il_offset":  670,
+                                         "opcode":  "brtrue.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "684"
+                                     },
+                                     {
+                                         "il_offset":  672,
+                                         "opcode":  "ldloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "14"
+                                     },
+                                     {
+                                         "il_offset":  674,
+                                         "opcode":  "isinst",
+                                         "operand_kind":  "type",
+                                         "operand":  "0x0100009a"
+                                     },
+                                     {
+                                         "il_offset":  679,
+                                         "opcode":  "ldnull",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  680,
+                                         "opcode":  "cgt.un",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  682,
+                                         "opcode":  "br.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "685"
+                                     },
+                                     {
+                                         "il_offset":  684,
+                                         "opcode":  "ldc.i4.1",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  685,
+                                         "opcode":  "ldc.i4.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  686,
+                                         "opcode":  "cgt.un",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  688,
+                                         "opcode":  "endfilter",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  690,
+                                         "opcode":  "pop",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  691,
+                                         "opcode":  "ldc.i4.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  692,
+                                         "opcode":  "stloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "8"
+                                     },
+                                     {
+                                         "il_offset":  694,
+                                         "opcode":  "leave.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "696"
+                                     },
+                                     {
+                                         "il_offset":  696,
+                                         "opcode":  "ldloc.s",
+                                         "operand_kind":  "variable",
+                                         "operand":  "8"
+                                     },
+                                     {
+                                         "il_offset":  698,
+                                         "opcode":  "ret",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     }
+                                 ],
+                     "exception_regions":  [
+                                               {
+                                                   "flags":  2,
+                                                   "try_offset":  552,
+                                                   "try_length":  76,
+                                                   "handler_offset":  628,
+                                                   "handler_length":  12,
+                                                   "class_token":  null,
+                                                   "class_type":  null,
+                                                   "class_type_name_sha256":  null,
+                                                   "class_type_identity_resolved":  null,
+                                                   "filter_offset":  null
+                                               },
+                                               {
+                                                   "flags":  1,
+                                                   "try_offset":  0,
+                                                   "try_length":  640,
+                                                   "handler_offset":  690,
+                                                   "handler_length":  6,
+                                                   "class_token":  null,
+                                                   "class_type":  null,
+                                                   "class_type_name_sha256":  null,
+                                                   "class_type_identity_resolved":  null,
+                                                   "filter_offset":  640
+                                               }
+                                           ],
+                     "issue":  null
+                 }
+    },
+    {
+        "Kind":  "raw",
+        "EvidenceId":  "ev_642892150fde533011d0f422711f82217ae59e3726b1181fcb60c596ecf902ec",
+        "SHA256":  "a2bd412924ce669666afc4fcaa68b96fa5a6ae29b2bf6a32d89ef1466f20ef10",
+        "Type":  "CoH3MemoryTool.LicenseReply60",
+        "Method":  "VerifyActive",
+        "ILSize":  46,
+        "Instructions":  16,
+        "ILSHA256":  "bc049e35a7ab400f4affc99e3220fc4d1b124a7409907ed101ebdd589c088a81",
+        "Signature":  {
+                          "raw_length":  6,
+                          "raw_sha256":  "5959acd68daab8336c665146aeb7d5b46241f35701aec77dcbf5b3d24c20ba46",
+                          "resolved_sha256":  "c24d3280b2f33a7d7efa4b37c1511eb44e4a136a8a9541133bf067e1109c6ec2",
+                          "kind":  "method",
+                          "parse_status":  "decoded",
+                          "calling_convention":  "default has-this",
+                          "generic_parameter_count":  null,
+                          "parameter_count":  1,
+                          "return_type":  "void",
+                          "parameter_types":  [
+                                                  "class:292"
+                                              ],
+                          "field_type":  null,
+                          "issue":  null
+                      },
+        "Body":  {
+                     "status":  "present",
+                     "header_format":  "tiny",
+                     "rva":  57546,
+                     "file_offset":  49866,
+                     "max_stack":  8,
+                     "init_locals":  false,
+                     "local_var_sig_token":  null,
+                     "il_size":  46,
+                     "il_sha256":  "bc049e35a7ab400f4affc99e3220fc4d1b124a7409907ed101ebdd589c088a81",
+                     "normalized_il_sha256":  "642c65d1b643a5ffcaca0c2b09ff114e876e742325d9ff81eef63142d68cfcea",
+                     "instruction_count":  16,
+                     "decoded_instruction_count":  16,
+                     "truncated_instructions":  0,
+                     "opcode_counts":  {
+                                           "ldarg.1":  2,
+                                           "brfalse.s":  1,
+                                           "ldarg.0":  2,
+                                           "ldstr":  4,
+                                           "callvirt":  1,
+                                           "brtrue.s":  1,
+                                           "newobj":  1,
+                                           "throw":  1,
+                                           "ldc.i4.1":  1,
+                                           "call":  1,
+                                           "ret":  1
+                                       },
+                     "anchors":  [
+                                     {
+                                         "il_offset":  0,
+                                         "opcode":  "ldarg.1",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  1,
+                                         "opcode":  "brfalse.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "27"
+                                     },
+                                     {
+                                         "il_offset":  3,
+                                         "opcode":  "ldarg.1",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  4,
+                                         "opcode":  "ldarg.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  5,
+                                         "opcode":  "ldstr",
+                                         "operand_kind":  "string",
+                                         "operand":  "0x70003f62"
+                                     },
+                                     {
+                                         "il_offset":  10,
+                                         "opcode":  "ldstr",
+                                         "operand_kind":  "string",
+                                         "operand":  "0x70004365"
+                                     },
+                                     {
+                                         "il_offset":  15,
+                                         "opcode":  "ldstr",
+                                         "operand_kind":  "string",
+                                         "operand":  "0x7000436f"
+                                     },
+                                     {
+                                         "il_offset":  20,
+                                         "opcode":  "callvirt",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x06000138"
+                                     },
+                                     {
+                                         "il_offset":  25,
+                                         "opcode":  "brtrue.s",
+                                         "operand_kind":  "branch",
+                                         "operand":  "38"
+                                     },
+                                     {
+                                         "il_offset":  27,
+                                         "opcode":  "ldstr",
+                                         "operand_kind":  "string",
+                                         "operand":  "0x70004391"
+                                     },
+                                     {
+                                         "il_offset":  32,
+                                         "opcode":  "newobj",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0a000335"
+                                     },
+                                     {
+                                         "il_offset":  37,
+                                         "opcode":  "throw",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  38,
+                                         "opcode":  "ldarg.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  39,
+                                         "opcode":  "ldc.i4.1",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  40,
+                                         "opcode":  "call",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x0600016d"
+                                     },
+                                     {
+                                         "il_offset":  45,
+                                         "opcode":  "ret",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     }
+                                 ],
+                     "exception_regions":  [
+
+                                           ],
+                     "issue":  null
+                 }
+    },
+    {
+        "Kind":  "trial",
+        "EvidenceId":  "ev_38afd8b35515936bd662faaf00095b6351af2099ec0569ced2e35fc8d35b5061",
+        "SHA256":  "6551eb5bf91cbb34d579590e4ea70c04fac55f1a00be6af22eb3b3f348eb7f25",
+        "Type":  "CoH3MemoryTool.LeaseSignature60",
+        "Method":  "Verify",
+        "ILSize":  147,
+        "Instructions":  39,
+        "ILSHA256":  "d68e3b3a33f069232b6bff5c265589ae15282d87d531f0b5fd90bf71010c6c41",
+        "Signature":  {
+                          "raw_length":  9,
+                          "raw_sha256":  "fe1fcfd99df0f45e0cff45e4b6a5e5e40f619b39db0911e96a434cbacaa2ae74",
+                          "resolved_sha256":  "cbd4172ae6bad08ac725570e0250510a5443fd2bd5223e464b280369cf14b4ff",
+                          "kind":  "method",
+                          "parse_status":  "decoded",
+                          "calling_convention":  "default has-this",
+                          "generic_parameter_count":  null,
+                          "parameter_count":  4,
+                          "return_type":  "bool",
+                          "parameter_types":  [
+                                                  "class:576",
+                                                  "string",
+                                                  "string",
+                                                  "string"
+                                              ],
+                          "field_type":  null,
+                          "issue":  null
+                      },
+        "Body":  {
+                     "status":  "present",
+                     "header_format":  "fat",
+                     "rva":  69360,
+                     "file_offset":  61680,
+                     "max_stack":  17,
+                     "init_locals":  true,
+                     "local_var_sig_token":  "0x11000079",
+                     "il_size":  147,
+                     "il_sha256":  "d68e3b3a33f069232b6bff5c265589ae15282d87d531f0b5fd90bf71010c6c41",
+                     "normalized_il_sha256":  "3ad8deadcc4481d2a65e50e1df25dc22e1579fae133032953bad51f1c2ce6c74",
+                     "instruction_count":  39,
+                     "decoded_instruction_count":  39,
+                     "truncated_instructions":  0,
+                     "opcode_counts":  {
+                                           "call":  2,
+                                           "ldc.i4":  8,
+                                           "newarr":  2,
+                                           "stloc":  3,
+                                           "ldloc":  9,
+                                           "ldarg.0":  1,
+                                           "stelem.ref":  5,
+                                           "ldarg":  4,
+                                           "box":  1,
+                                           "leave":  1,
+                                           "endfinally":  1,
+                                           "unbox.any":  1,
+                                           "ret":  1
+                                       },
+                     "anchors":  [
+                                     {
+                                         "il_offset":  0,
+                                         "opcode":  "call",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x060006a8"
+                                     },
+                                     {
+                                         "il_offset":  5,
+                                         "opcode":  "ldc.i4",
+                                         "operand_kind":  "constant",
+                                         "operand":  "5"
+                                     },
+                                     {
+                                         "il_offset":  10,
+                                         "opcode":  "newarr",
+                                         "operand_kind":  "type",
+                                         "operand":  "0x01000010"
+                                     },
+                                     {
+                                         "il_offset":  15,
+                                         "opcode":  "stloc",
+                                         "operand_kind":  "variable",
+                                         "operand":  "0"
+                                     },
+                                     {
+                                         "il_offset":  19,
+                                         "opcode":  "ldloc",
+                                         "operand_kind":  "variable",
+                                         "operand":  "0"
+                                     },
+                                     {
+                                         "il_offset":  23,
+                                         "opcode":  "ldc.i4",
+                                         "operand_kind":  "constant",
+                                         "operand":  "0"
+                                     },
+                                     {
+                                         "il_offset":  28,
+                                         "opcode":  "ldarg.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  29,
+                                         "opcode":  "stelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  30,
+                                         "opcode":  "ldloc",
+                                         "operand_kind":  "variable",
+                                         "operand":  "0"
+                                     },
+                                     {
+                                         "il_offset":  34,
+                                         "opcode":  "ldc.i4",
+                                         "operand_kind":  "constant",
+                                         "operand":  "1"
+                                     },
+                                     {
+                                         "il_offset":  39,
+                                         "opcode":  "ldarg",
+                                         "operand_kind":  "variable",
+                                         "operand":  "1"
+                                     },
+                                     {
+                                         "il_offset":  43,
+                                         "opcode":  "stelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  44,
+                                         "opcode":  "ldloc",
+                                         "operand_kind":  "variable",
+                                         "operand":  "0"
+                                     },
+                                     {
+                                         "il_offset":  48,
+                                         "opcode":  "ldc.i4",
+                                         "operand_kind":  "constant",
+                                         "operand":  "2"
+                                     },
+                                     {
+                                         "il_offset":  53,
+                                         "opcode":  "ldarg",
+                                         "operand_kind":  "variable",
+                                         "operand":  "2"
+                                     },
+                                     {
+                                         "il_offset":  57,
+                                         "opcode":  "stelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  58,
+                                         "opcode":  "ldloc",
+                                         "operand_kind":  "variable",
+                                         "operand":  "0"
+                                     },
+                                     {
+                                         "il_offset":  62,
+                                         "opcode":  "ldc.i4",
+                                         "operand_kind":  "constant",
+                                         "operand":  "3"
+                                     },
+                                     {
+                                         "il_offset":  67,
+                                         "opcode":  "ldarg",
+                                         "operand_kind":  "variable",
+                                         "operand":  "3"
+                                     },
+                                     {
+                                         "il_offset":  71,
+                                         "opcode":  "stelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  72,
+                                         "opcode":  "ldloc",
+                                         "operand_kind":  "variable",
+                                         "operand":  "0"
+                                     },
+                                     {
+                                         "il_offset":  76,
+                                         "opcode":  "ldc.i4",
+                                         "operand_kind":  "constant",
+                                         "operand":  "4"
+                                     },
+                                     {
+                                         "il_offset":  81,
+                                         "opcode":  "ldarg",
+                                         "operand_kind":  "variable",
+                                         "operand":  "4"
+                                     },
+                                     {
+                                         "il_offset":  85,
+                                         "opcode":  "stelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  86,
+                                         "opcode":  "ldc.i4",
+                                         "operand_kind":  "constant",
+                                         "operand":  "5"
+                                     },
+                                     {
+                                         "il_offset":  91,
+                                         "opcode":  "newarr",
+                                         "operand_kind":  "type",
+                                         "operand":  "0x01000004"
+                                     },
+                                     {
+                                         "il_offset":  96,
+                                         "opcode":  "stloc",
+                                         "operand_kind":  "variable",
+                                         "operand":  "1"
+                                     },
+                                     {
+                                         "il_offset":  100,
+                                         "opcode":  "ldc.i4",
+                                         "operand_kind":  "constant",
+                                         "operand":  "150"
+                                     },
+                                     {
+                                         "il_offset":  105,
+                                         "opcode":  "ldloc",
+                                         "operand_kind":  "variable",
+                                         "operand":  "0"
+                                     },
+                                     {
+                                         "il_offset":  109,
+                                         "opcode":  "ldloc",
+                                         "operand_kind":  "variable",
+                                         "operand":  "1"
+                                     },
+                                     {
+                                         "il_offset":  113,
+                                         "opcode":  "ldloc",
+                                         "operand_kind":  "variable",
+                                         "operand":  "3"
+                                     },
+                                     {
+                                         "il_offset":  117,
+                                         "opcode":  "box",
+                                         "operand_kind":  "type",
+                                         "operand":  "0x01000005"
+                                     },
+                                     {
+                                         "il_offset":  122,
+                                         "opcode":  "call",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x06000926"
+                                     },
+                                     {
+                                         "il_offset":  127,
+                                         "opcode":  "stloc",
+                                         "operand_kind":  "variable",
+                                         "operand":  "2"
+                                     },
+                                     {
+                                         "il_offset":  131,
+                                         "opcode":  "leave",
+                                         "operand_kind":  "branch",
+                                         "operand":  "137"
+                                     },
+                                     {
+                                         "il_offset":  136,
+                                         "opcode":  "endfinally",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  137,
+                                         "opcode":  "ldloc",
+                                         "operand_kind":  "variable",
+                                         "operand":  "2"
+                                     },
+                                     {
+                                         "il_offset":  141,
+                                         "opcode":  "unbox.any",
+                                         "operand_kind":  "type",
+                                         "operand":  "0x01000005"
+                                     },
+                                     {
+                                         "il_offset":  146,
+                                         "opcode":  "ret",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     }
+                                 ],
+                     "exception_regions":  [
+                                               {
+                                                   "flags":  2,
+                                                   "try_offset":  100,
+                                                   "try_length":  36,
+                                                   "handler_offset":  136,
+                                                   "handler_length":  1,
+                                                   "class_token":  null,
+                                                   "class_type":  null,
+                                                   "class_type_name_sha256":  null,
+                                                   "class_type_identity_resolved":  null,
+                                                   "filter_offset":  null
+                                               }
+                                           ],
+                     "issue":  null
+                 }
+    },
+    {
+        "Kind":  "trial",
+        "EvidenceId":  "ev_38afd8b35515936bd662faaf00095b6351af2099ec0569ced2e35fc8d35b5061",
+        "SHA256":  "6551eb5bf91cbb34d579590e4ea70c04fac55f1a00be6af22eb3b3f348eb7f25",
+        "Type":  "CoH3MemoryTool.LicenseReply60",
+        "Method":  "VerifyActive",
+        "ILSize":  85,
+        "Instructions":  24,
+        "ILSHA256":  "467f4aee14c8f0f73b4bb5469632aa2c0070dd41929602e09d16db5526c7d5b9",
+        "Signature":  {
+                          "raw_length":  6,
+                          "raw_sha256":  "99223ebe463beb33dfabd12369597213cfb4e203a8dc01ff4e1accc9400e1093",
+                          "resolved_sha256":  "c24d3280b2f33a7d7efa4b37c1511eb44e4a136a8a9541133bf067e1109c6ec2",
+                          "kind":  "method",
+                          "parse_status":  "decoded",
+                          "calling_convention":  "default has-this",
+                          "generic_parameter_count":  null,
+                          "parameter_count":  1,
+                          "return_type":  "void",
+                          "parameter_types":  [
+                                                  "class:496"
+                                              ],
+                          "field_type":  null,
+                          "issue":  null
+                      },
+        "Body":  {
+                     "status":  "present",
+                     "header_format":  "fat",
+                     "rva":  77092,
+                     "file_offset":  69412,
+                     "max_stack":  17,
+                     "init_locals":  true,
+                     "local_var_sig_token":  "0x11000092",
+                     "il_size":  85,
+                     "il_sha256":  "467f4aee14c8f0f73b4bb5469632aa2c0070dd41929602e09d16db5526c7d5b9",
+                     "normalized_il_sha256":  "2b52d704020fa723072a1f908e287e0cc1cd50734ae41cf6a4ee70c1c1f56784",
+                     "instruction_count":  24,
+                     "decoded_instruction_count":  24,
+                     "truncated_instructions":  0,
+                     "opcode_counts":  {
+                                           "call":  2,
+                                           "ldc.i4":  5,
+                                           "newarr":  2,
+                                           "stloc":  2,
+                                           "ldloc":  4,
+                                           "ldarg.0":  1,
+                                           "stelem.ref":  2,
+                                           "ldarg":  1,
+                                           "ldnull":  1,
+                                           "pop":  1,
+                                           "leave":  1,
+                                           "endfinally":  1,
+                                           "ret":  1
+                                       },
+                     "anchors":  [
+                                     {
+                                         "il_offset":  0,
+                                         "opcode":  "call",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x060006a8"
+                                     },
+                                     {
+                                         "il_offset":  5,
+                                         "opcode":  "ldc.i4",
+                                         "operand_kind":  "constant",
+                                         "operand":  "2"
+                                     },
+                                     {
+                                         "il_offset":  10,
+                                         "opcode":  "newarr",
+                                         "operand_kind":  "type",
+                                         "operand":  "0x01000010"
+                                     },
+                                     {
+                                         "il_offset":  15,
+                                         "opcode":  "stloc",
+                                         "operand_kind":  "variable",
+                                         "operand":  "0"
+                                     },
+                                     {
+                                         "il_offset":  19,
+                                         "opcode":  "ldloc",
+                                         "operand_kind":  "variable",
+                                         "operand":  "0"
+                                     },
+                                     {
+                                         "il_offset":  23,
+                                         "opcode":  "ldc.i4",
+                                         "operand_kind":  "constant",
+                                         "operand":  "0"
+                                     },
+                                     {
+                                         "il_offset":  28,
+                                         "opcode":  "ldarg.0",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  29,
+                                         "opcode":  "stelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  30,
+                                         "opcode":  "ldloc",
+                                         "operand_kind":  "variable",
+                                         "operand":  "0"
+                                     },
+                                     {
+                                         "il_offset":  34,
+                                         "opcode":  "ldc.i4",
+                                         "operand_kind":  "constant",
+                                         "operand":  "1"
+                                     },
+                                     {
+                                         "il_offset":  39,
+                                         "opcode":  "ldarg",
+                                         "operand_kind":  "variable",
+                                         "operand":  "1"
+                                     },
+                                     {
+                                         "il_offset":  43,
+                                         "opcode":  "stelem.ref",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  44,
+                                         "opcode":  "ldc.i4",
+                                         "operand_kind":  "constant",
+                                         "operand":  "2"
+                                     },
+                                     {
+                                         "il_offset":  49,
+                                         "opcode":  "newarr",
+                                         "operand_kind":  "type",
+                                         "operand":  "0x01000004"
+                                     },
+                                     {
+                                         "il_offset":  54,
+                                         "opcode":  "stloc",
+                                         "operand_kind":  "variable",
+                                         "operand":  "1"
+                                     },
+                                     {
+                                         "il_offset":  58,
+                                         "opcode":  "ldc.i4",
+                                         "operand_kind":  "constant",
+                                         "operand":  "116"
+                                     },
+                                     {
+                                         "il_offset":  63,
+                                         "opcode":  "ldloc",
+                                         "operand_kind":  "variable",
+                                         "operand":  "0"
+                                     },
+                                     {
+                                         "il_offset":  67,
+                                         "opcode":  "ldloc",
+                                         "operand_kind":  "variable",
+                                         "operand":  "1"
+                                     },
+                                     {
+                                         "il_offset":  71,
+                                         "opcode":  "ldnull",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  72,
+                                         "opcode":  "call",
+                                         "operand_kind":  "method",
+                                         "operand":  "0x06000926"
+                                     },
+                                     {
+                                         "il_offset":  77,
+                                         "opcode":  "pop",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  78,
+                                         "opcode":  "leave",
+                                         "operand_kind":  "branch",
+                                         "operand":  "84"
+                                     },
+                                     {
+                                         "il_offset":  83,
+                                         "opcode":  "endfinally",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     },
+                                     {
+                                         "il_offset":  84,
+                                         "opcode":  "ret",
+                                         "operand_kind":  "none",
+                                         "operand":  null
+                                     }
+                                 ],
+                     "exception_regions":  [
+                                               {
+                                                   "flags":  2,
+                                                   "try_offset":  58,
+                                                   "try_length":  25,
+                                                   "handler_offset":  83,
+                                                   "handler_length":  1,
+                                                   "class_token":  null,
+                                                   "class_type":  null,
+                                                   "class_type_name_sha256":  null,
+                                                   "class_type_identity_resolved":  null,
+                                                   "filter_offset":  null
+                                               }
+                                           ],
+                     "issue":  null
+                 }
+    }
+]

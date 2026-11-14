@@ -1,0 +1,72 @@
+{
+  "issuedAt": "2026-11-13T06:48:16.210570+00:00",
+  "baseUrl": "http://127.0.0.1:47835/",
+  "transport": "real HTTP administrator login + CSRF + issue API",
+  "containsCompleteCodes": false,
+  "fixtures": [
+    {
+      "name": "protocol-permanent",
+      "id": "ca3a0f25cc2543639e45846f9190c271",
+      "codeSuffix": "50C36A6B",
+      "kind": "permanent",
+      "durationSeconds": null,
+      "codeFile": "F:\\WorkSpace\\Game\\Licensing\\.local\\hardening-v2\\cards-reactor-trial\\protocol-permanent.txt"
+    },
+    {
+      "name": "protocol-timed",
+      "id": "82c185a6c9e64f8caed74fe1d8076d00",
+      "codeSuffix": "BC0806E4",
+      "kind": "timed",
+      "durationSeconds": 3600,
+      "codeFile": "F:\\WorkSpace\\Game\\Licensing\\.local\\hardening-v2\\cards-reactor-trial\\protocol-timed.txt"
+    },
+    {
+      "name": "coordinator",
+      "id": "ecefd4d74d664269b3e5e8b6c7666911",
+      "codeSuffix": "1A24095F",
+      "kind": "permanent",
+      "durationSeconds": null,
+      "codeFile": "F:\\WorkSpace\\Game\\Licensing\\.local\\hardening-v2\\cards-reactor-trial\\coordinator.txt"
+    },
+    {
+      "name": "network",
+      "id": "463f8619d6644defa180e140867f2105",
+      "codeSuffix": "E16C541A",
+      "kind": "permanent",
+      "durationSeconds": null,
+      "codeFile": "F:\\WorkSpace\\Game\\Licensing\\.local\\hardening-v2\\cards-reactor-trial\\network.txt"
+    },
+    {
+      "name": "observe-kick",
+      "id": "649ee9fe3b334097bb741687057fc3ed",
+      "codeSuffix": "BB5198F4",
+      "kind": "permanent",
+      "durationSeconds": null,
+      "codeFile": "F:\\WorkSpace\\Game\\Licensing\\.local\\hardening-v2\\cards-reactor-trial\\observe-kick.txt"
+    },
+    {
+      "name": "observe-block",
+      "id": "b2e02bbfab624eae93ae2545b87b5088",
+      "codeSuffix": "BE448C33",
+      "kind": "permanent",
+      "durationSeconds": null,
+      "codeFile": "F:\\WorkSpace\\Game\\Licensing\\.local\\hardening-v2\\cards-reactor-trial\\observe-block.txt"
+    },
+    {
+      "name": "observe-unbind",
+      "id": "5dbf1e91660f493480658c3e5a48d466",
+      "codeSuffix": "7C353C59",
+      "kind": "timed",
+      "durationSeconds": 3600,
+      "codeFile": "F:\\WorkSpace\\Game\\Licensing\\.local\\hardening-v2\\cards-reactor-trial\\observe-unbind.txt"
+    },
+    {
+      "name": "observe-expiry",
+      "id": "4d192e50d6be43b1baa6ba8ac2c668c4",
+      "codeSuffix": "BFF95620",
+      "kind": "timed",
+      "durationSeconds": 8,
+      "codeFile": "F:\\WorkSpace\\Game\\Licensing\\.local\\hardening-v2\\cards-reactor-trial\\observe-expiry.txt"
+    }
+  ]
+}

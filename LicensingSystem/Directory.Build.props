@@ -1,0 +1,10 @@
+<Project>
+  <PropertyGroup Condition="'$(MSBuildProjectName)' == 'Licensing.Server' Or '$(MSBuildProjectName)' == 'Licensing.Tests'">
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <RestorePackagesPath>$(MSBuildThisFileDirectory).cache/packages</RestorePackagesPath>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+</Project>

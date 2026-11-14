@@ -1,65 +1,59 @@
 # Game-Mode
 
-单仓库，两条产品线：
+## 当前布局（2026-11-13 重构后：授权系统独立 + 一个游戏一个目录）
 
-- `CoH3FowTool/` — Company of Heroes 3 本地显示工具（GUI + 授权接入）。.NET 9 / `net9.0-windows` / WinForms / x64。
-- `Licensing/` — **通用授权系统**（所有游戏修改器共用）。.NET 9 / ASP.NET Core Minimal API / SQLite + Keygen CE。
+- `LicensingSystem/`：通用授权系统本体（所有游戏修改器共用），按 ProductId 隔离多产品。
+  - `server/`：net10.0 / ASP.NET Core / SQLite 的在线授权服务与管理后台源码。
+  - `server-tests/`：引用同树 server 的隔离后端测试（`Build.ps1 -VerifyServer` 共 120 项）。
+  - `deployment/`：Get-DotNet10.ps1、New-DeploymentConfig.ps1、Caddyfile。
+  - `.cache/dotnet-10/`：必要的 .NET SDK 10 安装（含安装证明），不能按普通下载缓存删除；`.cache/packages/` 为 server/server-tests 的 NuGet 还原目标（`Directory.Build.props` 指定），保留离线构建所需内容。
+  - `.local/hardening-v2/`：当前私有配置、数据库、签名私钥和 Data Protection keyring。
+  - `.local/` 内其他非测试授权数据/密钥与 retained-private-state：历史私有数据，保留原有用途，不进入交付包。
+  - `Build.ps1` / `Start-Server.ps1` / `Initialize-Signing.ps1` / `Publish-Server.ps1`：授权系统入口。
+  - `delivery/server/`：服务端发布目录（Server.zip 打包根）。
+- `CoH3/SkyEye/`：天穹之眼当前唯一维护源码与发布工程（授权接入编译内嵌于客户端）。
+  - `client/`：net48 / x64 / WinForms 客户端，包含签名租约验签、公钥 pin（`PinnedLeaseKey60.cs`）与运行资源。
+  - `verification/`：引用同树 client 的客户端验证工程；受保护验证器在 `bin/Protected/net48`。
+  - `delivery/client/`：当前可分发客户目录。
+  - `tools/obfuscar/`、`tools/ilspy/`：当前保护及测量工具。Reactor 试用工具和 EXE 已清理，仅保留实验记录与可配置脚本。
+  - `evidence/`、`reports/`、`artifacts/`：当前版本的测试记录、报告和私有开发映射。
+  - `Build.ps1`（客户端+验证工程）/ `Build-Protected.ps1` / `Verify-Protected.ps1` / `Finalize.py` / `Summarize-Validation.py` 等为游戏侧入口。
+- `CoH3/天穹之眼-v0.60.8/`：原始发布文件。保持原样，不作为开发输出目录。
+- `CoH3/CoH3Minimap/`：独立小地图项目，未修改。
+- `docs/agents/`：Agent 工作流配置。
 
-远程仓库：`git@github.com:FLYING-SHY/Game-Mode.git`
+旧 CoH3FowTool、SkyEye-v0.60.8-Recovered、SkyEye-Integration、SkyEye-Hardened 的代码及旧交付包已清理；`Licensing/` 已更名 `LicensingSystem/`，`SkyEye-HardenedV2` 已更名 `CoH3/SkyEye`。不应从 Git 恢复旧名来补最新版依赖；确需旧记录时先查清理清单、重构清单及 Git 历史。
 
-## 项目结构
+## 新增一个游戏
 
+新建 `CoH3/<游戏名>/`（客户端 + 授权接入内嵌编译 + 该游戏交付产物），并在授权系统注册对应 ProductId（授权码哈希空间 `{productId}|code-v1|`、设备指纹前缀 `{productId}|device-v1|`）。授权系统不引入具体游戏耦合。
+
+## 构建与验证
+
+从仓库根目录运行：
+
+```powershell
+& .\LicensingSystem\Build.ps1 -VerifyServer          # 服务端 + 120 测试
+& .\CoH3\SkyEye\Build.ps1                            # 客户端 + 验证工程
+& .\CoH3\SkyEye\Build-Protected.ps1 -SelfCheck       # 混淆保护 + 自检
+& .\CoH3\SkyEye\Verify-Protected.ps1 -LocalOnly      # 三组离线回归
+& .\LicensingSystem\Publish-Server.ps1 -NoBuild      # 复现服务端发布目录
 ```
-CoH3FowTool/            # 产品：CoH3 战争先锋修改器
-  src/                  # 主程序源码。CoH3FowTool.csproj 显式编译 src\*.cs 与 src\Gui\*.cs
-    Program.cs 命令行入口、DesktopApplication.cs 控制台宿主、RuntimeState.cs 运行时状态
-    Gui/MainForm.cs、Gui/GuiContracts.cs — WinForms 界面
-    PatchCatalog.cs 六处显示补丁目录、ProcessMemory.cs 进程内存读写、PeImage.cs PE 解析
-    GameInput.cs 输入、FowDisplay.cs 显示状态、SteamLaunchOptions.cs 启动参数
-  tests/                # Desktop、ProtectedClient 两个测试项目
-  tools/                # 逆向与打包工具：reverse/（Python 静态/动态分析脚本与报告）、bundlereader、input-test、sigprobe
-  build/                # 混淆与产物校验：ProtectAssemblies.ps1、ProtectedBundle.targets（由 csproj 导入）、Verify-Bundle.ps1、verify_bundle.py
-  docs/                 # 产品级设计文档：licensing-gui-spec.md
-Licensing/              # 通用授权系统（被所有修改器复用）
-  client/               # 客户端 SDK：namespace Licensing；程序集 Licensing.Client
-  server/               # 授权服务端 + 管理后台（admin.html/js/css）：程序集 Licensing.Server
-  tests/                # 真实 Keygen CE 集成测试：程序集 Licensing.Tests
-  deployment/           # 本地编排：compose.yaml、Initialize-Local.ps1、Start-Local.ps1
-  docs/                 # 授权系统设计文档：licensing-models-research.md
-docs/agents/            # Agent 工作流配置（issue tracker / triage / domain）
-```
 
-## 授权系统的多产品模型
+联机七组回归：`Verify-Protected.ps1 -PrivateCodeDirectory <私有码目录>`（先经 `scripts/prepare_live_cards.py` 签发隔离卡）。脚本使用 `LicensingSystem/.cache/dotnet-10/dotnet.exe`；Windows 客户端构建还需本机 .NET Framework 4.8 引用程序集。
 
-- 每个游戏修改器在授权系统里有一个 **产品 id**（`ProductId`），默认 `CoH3FowTool`（`Licensing/client/ProductIds.cs`）。
-- 产品 id 决定三件事：**授权码哈希空间**（`{productId}|code-v1|`）、**设备指纹前缀**（`{productId}|device-v1|`）、**Keygen 策略**（每产品 permanent/timed 两条 policy）。
-- 服务端配置 `Licensing/.local/server.json` 用 `Products[]` 声明产品目录，`DefaultProductId` 指定默认产品；旧版单产品配置（顶层 `PermanentPolicyId`/`TimedPolicyId`）仍然兼容读取。
-- 客户端把 `ProductId` 放进激活/校验请求体，并写进签名证书的 `product` metadata（旧的 `coh3App`/`coh3Kind` 键继续兼容）。
-- 新增一个修改器 = 在 `server.json` 增加一条 `Products` 项 + 在 Keygen 建对应 product/policy，客户端侧只需设置 `LicenseClientOptions.ProductId`。
+默认签名服务端口为 `47835`。现有客户端与当前签名私钥配对；更换私钥必须重新 pin（`LicensingSystem/Initialize-Signing.ps1 -PinFile`）、构建、保护并分发客户端。不要更改业务 ProductId 或恢复旧的无签名响应降级。
 
-## 构建
+## 文件与发布约束
 
-- 修改器开发构建：`powershell -NoProfile -ExecutionPolicy Bypass -File .\CoH3FowTool\build.ps1` → `CoH3FowTool\bin\Release\net9.0-windows\CoH3FowTool.exe`（本机未安装 `pwsh`，Windows PowerShell 5.1 可直接跑）
-- 修改器发布构建（Obfuscar 2.2.50 混淆 + 单文件）：`powershell -NoProfile -ExecutionPolicy Bypass -File .\CoH3FowTool\build.ps1 -Publish -PublicConfiguration <config.json>` → `CoH3FowTool\publish-gui\CoH3FowTool.exe`，构建证据写入 `CoH3FowTool\artifacts\gui-build\<stamp>\build-report.json`
-- 授权系统：`dotnet build .\Licensing\tests\Licensing.Tests.csproj -c Release`；本地编排用 `.\Licensing\deployment\Initialize-Local.ps1` + `.\Licensing\deployment\Start-Local.ps1`
-- `Licensing/` 有独立的 `Directory.Build.props` 与自有 `.gitignore`
+- 不提交或推送，除非用户明确要求。
+- 保持 `.local` 中令牌、卡密、数据库、签名私钥和 Data Protection keyring 私密；发布包不得包含这些内容。
+- 客户包不放源码、开发映射、验证器或 PDB；维护包含开发映射（含 LicensingSystem 授权源码），仅供维护者。
+- `CoH3/SkyEye/Finalize.py --refresh` 仅在存在已验证的清理清单与重构清单时刷新当前包；客户 ZIP 须保持逐项一致。
+- 文本采用 UTF-8；Windows PowerShell 5.1 可执行项目脚本。
+- 原版与独立小地图项目不作为天穹之眼构建/清理的输出目标。
+- REA 完整环境位于 `F:\WorkSpace\REA`；Windows capture-process 有已记录的 capability_unavailable，静态工具成功不等于动态测量成功。
 
-## 注意事项
+## 工作流
 
-- `bin/ obj/ dist/ publish/ publish-gui/ artifacts/ Licensing/.local/ Licensing/.cache/ tools/**/out-*/ tools/reverse/*.png` 不入库（见 `.gitignore`）
-- `README.md` / `README-2.0.md` 为 UTF-8 无 BOM；GBK 代码页控制台直接读取会乱码
-- 授权系统独立演进：修改 `Licensing/` 时不得引入具体游戏的产品耦合，产品维度只经由 `ProductId` 表达
-
-## Agent skills
-
-### Issue tracker
-
-Issues are tracked in GitHub Issues for `FLYING-SHY/Game-Mode` (all operations via the `gh` CLI). See `docs/agents/issue-tracker.md`.
-
-### Triage labels
-
-The five canonical triage roles use the default label strings `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`. See `docs/agents/triage-labels.md`.
-
-### Domain docs
-
-Single-context layout: one `GLOSSARY.md` and `docs/adr/` at the repo root. See `docs/agents/domain.md`.
+Issues 使用 GitHub `FLYING-SHY/Game-Mode`，经 gh CLI 操作，见 `docs/agents/issue-tracker.md`。五种 triage 标签为 needs-triage、needs-info、ready-for-agent、ready-for-human、wontfix，见 `docs/agents/triage-labels.md`。领域模型使用根 GLOSSARY.md 与 docs/adr/，见 `docs/agents/domain.md`。

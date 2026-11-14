@@ -1,0 +1,5 @@
+﻿{
+    "status":  "ready",
+    "framework":  "ASP.NET Core",
+    "mode":  "native-leases"
+}

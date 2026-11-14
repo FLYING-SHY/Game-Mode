@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf-token" content="__CSRF__">
+  <title>授权管理</title>
+  <link rel="stylesheet" href="/admin/app.css">
+  <script src="/admin/app.js" defer></script>
+</head>
+<body>
+<main>
+  <header class="page-header">
+    <div><h1>授权管理</h1><p id="product-name">卡密、设备绑定与在线会话</p></div>
+    <div class="header-actions"><button id="refresh" class="secondary" type="button">刷新</button><button id="logout" class="quiet" type="button">退出登录</button></div>
+  </header>
+  <div class="summary" aria-label="授权统计">
+    <span>全部 <strong id="stat-total">0</strong></span><span>待激活 <strong id="stat-unused">0</strong></span>
+    <span>有效 <strong id="stat-active">0</strong></span><span>已过期 <strong id="stat-expired">0</strong></span>
+    <span>已停用 <strong id="stat-suspended">0</strong></span><span>在线 <strong id="stat-online">0</strong></span>
+  </div>
+  <section class="issue-section" aria-labelledby="issue-heading">
+    <div class="section-title"><h2 id="issue-heading">批量发码</h2><p>限时卡从首次成功激活起算；永久卡同样需要在线续租。</p></div>
+    <form id="issue">
+      <label>授权类型<select id="kind" name="kind"><option value="timed">限时卡</option><option value="permanent">永久卡</option></select></label>
+      <div id="duration-fields" class="field-pair">
+        <label>使用时长<input id="duration" type="number" min="1" max="36500" step="1" value="30" required></label>
+        <label>单位<select id="duration-unit"><option value="86400">天</option><option value="3600">小时</option></select></label>
+      </div>
+      <label>数量<input id="quantity" type="number" min="1" max="500" step="1" value="1" required></label>
+      <label class="note-field">备注<input id="note" type="text" maxlength="200" placeholder="例如：订单号或发放用途"></label>
+      <button id="issue-button" type="submit">生成卡密</button>
+    </form>
+    <div id="issued" class="issued-result" hidden>
+      <div class="section-title"><h3 id="issued-title">本次生成</h3><div class="button-group"><button id="copy-issued" class="secondary" type="button">复制这批卡密</button><button id="export-issued" class="secondary" type="button">导出这批卡密</button><button id="close-issued" class="quiet" type="button">收起</button></div></div>
+      <textarea id="issued-codes" readonly rows="4" aria-label="本次生成的完整卡密"></textarea>
+      <p>完整卡密也可在下方记录中查看、复制和重新导出。</p>
+    </div>
+  </section>
+  <p id="message" role="status" aria-live="polite"></p>
+  <section class="records-section" aria-labelledby="records-heading">
+    <h2 id="records-heading" class="visually-hidden">授权记录</h2>
+    <div class="view-tabs" role="tablist" aria-label="记录类型">
+      <button id="tab-codes" type="button" role="tab" aria-selected="true" aria-controls="panel-codes" data-view="codes">卡密记录</button>
+      <button id="tab-sessions" type="button" role="tab" aria-selected="false" aria-controls="panel-sessions" data-view="sessions" tabindex="-1">在线会话</button>
+      <button id="tab-audit" type="button" role="tab" aria-selected="false" aria-controls="panel-audit" data-view="audit" tabindex="-1">操作记录</button>
+    </div>
+    <div id="panel-codes" role="tabpanel" aria-labelledby="tab-codes">
+      <form id="filter" class="filter-bar"><label class="search-field"><span class="visually-hidden">搜索卡密</span><input id="search" type="search" maxlength="200" placeholder="搜索完整码、尾号或备注"></label>
+        <label><span class="visually-hidden">卡密状态</span><select id="status"><option value="">全部状态</option><option value="unused">待激活</option><option value="active">有效</option><option value="expired">已过期</option><option value="suspended">已停用</option></select></label>
+        <button type="submit" class="secondary">查询</button><button id="export-all" type="button" class="secondary export-button">导出筛选结果</button>
+      </form>
+      <div class="table-wrap"><table class="codes-table"><thead><tr><th>完整卡密 / 类型</th><th>有效期限</th><th>设备与会话</th><th>备注</th><th>状态</th><th>管理操作</th></tr></thead><tbody id="rows"></tbody></table></div>
+      <div class="pagination"><span id="codes-count">尚未加载</span><div class="button-group"><button id="prev-page" class="quiet" type="button">上一页</button><span id="page-number">1</span><button id="next-page" class="quiet" type="button">下一页</button></div></div>
+    </div>
+    <div id="panel-sessions" role="tabpanel" aria-labelledby="tab-sessions" hidden>
+      <div class="filter-bar"><label class="check-label"><input id="active-only" type="checkbox" checked>仅显示有效会话</label><p>正常登出立即释放；异常退出在最后一次租约到期后释放。</p></div>
+      <div class="table-wrap"><table><thead><tr><th>卡密尾号</th><th>设备 / 安装标识</th><th>当前游戏身份</th><th>最近心跳</th><th>租约截止</th><th>状态 / 操作</th></tr></thead><tbody id="session-rows"></tbody></table></div>
+    </div>
+    <div id="panel-audit" role="tabpanel" aria-labelledby="tab-audit" hidden>
+      <p class="panel-note">记录发码、停用、续期、解绑和会话撤销等管理操作。</p>
+      <div class="table-wrap"><table><thead><tr><th>时间</th><th>操作</th><th>卡密记录</th><th>说明</th></tr></thead><tbody id="audit-rows"></tbody></table></div>
+      <div class="pagination"><span id="audit-count">尚未加载</span><div class="button-group"><button id="audit-prev" class="quiet" type="button">上一页</button><span id="audit-page">1</span><button id="audit-next" class="quiet" type="button">下一页</button></div></div>
+    </div>
+  </section>
+  <p class="page-footnote">时间按当前浏览器时区显示。设备仅显示哈希标识；停用或踢线通过客户端心跳与短租约生效。</p>
+</main>
+<dialog id="renew-dialog" aria-labelledby="renew-heading">
+  <form id="renew-form"><h2 id="renew-heading">延长限时授权</h2><p id="renew-code"></p><p>已过期从现在起延长，仍有效则从原到期时间延长；设备绑定保持不变。</p>
+    <div class="field-pair"><label>增加时长<input id="renew-duration" type="number" min="1" max="36500" step="1" value="30" required></label><label>单位<select id="renew-unit"><option value="86400">天</option><option value="3600">小时</option></select></label></div>
+    <div class="dialog-actions"><button id="renew-cancel" type="button" class="secondary">取消</button><button type="submit">确认续期</button></div>
+  </form>
+</dialog>
+</body>
+</html>

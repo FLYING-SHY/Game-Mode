@@ -1,0 +1,61 @@
+{
+  "clientSha256": "636206fdd6dc6eeda979d5c3d1fc21432e6aaffbbbad899299a835e28ce1ce6b",
+  "records": [
+    {
+      "operation": "inspect-managed-artifact",
+      "argv": [
+        "F:\\WorkSpace\\REA\\.runtime\\node-v24.22.3-win-x64\\node.exe",
+        "F:\\WorkSpace\\REA\\scripts\\rea.mjs",
+        "inspect-managed-artifact",
+        "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\client\\天穹之眼-自有授权版-v0.60.8.exe",
+        "--json"
+      ],
+      "exitCode": 0,
+      "output": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\evidence\\release-static-analysis\\artifact.json",
+      "sha256": "8da7f1ade49ad80cb49b271dc3757bcc7cbee05acfd76bed3fced280090d0edb",
+      "evidenceId": "ev_38c1a16f3ac442d2dc77845aeadc98f79746fa12e2bb7ddea9a4f7829fa7ef0d",
+      "coverage": {
+        "state": "complete",
+        "issues": []
+      },
+      "counts": {}
+    },
+    {
+      "operation": "inspect-managed-members",
+      "argv": [
+        "F:\\WorkSpace\\REA\\.runtime\\node-v24.22.3-win-x64\\node.exe",
+        "F:\\WorkSpace\\REA\\scripts\\rea.mjs",
+        "inspect-managed-members",
+        "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\client\\天穹之眼-自有授权版-v0.60.8.exe",
+        "--json"
+      ],
+      "exitCode": 0,
+      "output": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\evidence\\release-static-analysis\\members.json",
+      "sha256": "24ae879ff23b59853c4e44dd54ca9408c4fadd1bbb07f51b95cf1958bf3d654e",
+      "evidenceId": "ev_496f00eca32bf808ad61fff014ee41e288a729143818e115b0a65cca27c79b7b",
+      "coverage": {
+        "state": "complete",
+        "issues": []
+      },
+      "counts": {
+        "types": 341,
+        "methods": 4032,
+        "fields": 1399,
+        "member_refs": 1562
+      }
+    },
+    {
+      "operation": "ILSpy project export attempt",
+      "argv": [
+        "F:\\WorkSpace\\Game\\CoH3\\SkyEye-v0.60.8-Recovered\\tools\\ilspy\\ilspycmd.exe",
+        "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\client\\天穹之眼-自有授权版-v0.60.8.exe",
+        "--project",
+        "--outputdir",
+        "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\evidence\\release-static-analysis\\ilspy-export"
+      ],
+      "exitCode": 0,
+      "csharpFiles": 56,
+      "limitation": "Successful decompilation is recorded as such; renaming/string hiding is not prevention of decompilation."
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+ 
+This help shows only a subset (most common options) of the available options. You can easily create the parameters through the .NET Reactor menu item 'Command-line'>'Generate Command-line'.
+ 
+                                                                       ===== General Arguments =====
+                                                                       =============================
+                                                  
+-file [file]                                    : Filename of the main assembly
+-project                                        : Path to a .NET Reactor project file (contains the Master
+                                                  Key as well).
+-q[uiet]                                        : Specifies quiet mode; suppresses the display of success
+                                                  messages
+-verbose                                        : Shows short per-method reasons when code virtualization
+                                                  skips methods.
+-allow_virtualization_warnings                  : Allows command-line protection to succeed when marked
+                                                  methods cannot be virtualized. By default, these warnings
+                                                  stop command-line protection with exit code 1.
+-nodialog                                       : Suppresses the progress windows
+-licensed                                       : In case .NET Reactor is NOT running as full version no
+                                                  files will be protected and .NET Reactor will return the
+                                                  return/exit code 101.
+-logfile                                        : Writes all important events (successful protection and
+                                                  error messages) into the specified file.
+-masterkey [text]                               : Master Key (only required for Lock settings).
+-masterkeyfile [file]                           : Path to a Master Key file (only required for Lock
+                                                  settings).
+-embed [1|0]                                    : Embed assemblies.
+                                                   [1] = Enable
+                                                   [0] = Disable {default}
+-merge [1|0]                                    : Merge assemblies.
+                                                   [1] = Enable
+                                                   [0] = Disable {default}
+-target_runtime [auto|dotnet|mono|browser-wasm] : Select the runtime that executes the protected assembly.
+                                                   [auto] = {default}
+                                                   [dotnet] = .NET / .NET Framework
+                                                   [mono] = Mono
+                                                   [browser-wasm] = Browser WebAssembly
+-mono [1|0]                                     : Legacy Mono compatibility option.
+                                                   [1] = Enable
+                                                   [0] = Select the .NET runtime
+-files [<file>;<file>..]                        : Define additional files here.
+                                                  Example: -files "C:\lib1.dll;C:\lib2.dll;C:\lib3.dll"
+-targetfile [file]                              : Target File should be left blank, unless you want to
+                                                  specify the protected output location.
+-mark_assembly_as_protected [1|0]               : Add a hidden marker that prevents accidental
+                                                  re-protection. The marker contains no product name and
+                                                  does not explicitly identify the assembly as protected
+                                                  with .NET Reactor.
+                                                   [1] = Enable {default}
+                                                   [0] = Disable
+-compression [1|0]                              : If set to True('1'), .NET Reactor will compress your .exe
+                                                  file and embedded files saving space on disk and bandwidth
+                                                  if you provide your code for internet download.
+                                                   [1] = Enable {default}
+                                                   [0] = Disable
+-snkeypair [file]                               : Strong Name Key Pair -> File (.snk/.pfx)
+-snpassword [text]                              : Strong Name Key Pair -> File password
+-pvkfile [file]                                 : Code Signing Certificate -> Private Key File.
+-pvkpassword [text]                             : Code Signing Certificate -> Private Key File Password.
+-spcfile [file]                                 : Code Signing Certificate -> Software Publisher Certificate
+                                                  File.
+-custom_signing_tool_enabled [1|0]              : Enable or disable the custom code signing tool.
+-custom_signing_tool [file]                     : Custom code signing executable or command name.
+-custom_signing_arguments [text]                : Custom signing arguments. The {file} placeholder is
+                                                  required.
+-custom_signing_working_directory [directory]   : Optional working directory for the custom signing tool.
+-custom_signing_timeout [seconds]               : Timeout for each custom signing operation.
+                                                  
+                                                                      ===== Protection Settings =====
+                                                                      ===============================
+                                                  
+-antitamp [1|0]                                 : Anti Tampering
+                                                   [1] = Enable
+                                                   [0] = Disable {default}
+-suppressildasm [1|0]                           : Anti ILDASM
+                                                   [1] = Enable {default}
+                                                   [0] = Disable
+-anti_debug [1|0]                               : Anti Debug
+                                                   [1] = Enable
+                                                   [0] = Disable {default}
+-virtualization [1|0]                           : Code Virtualization
+                                                   [1] = Enable
+                                                   [0] = Disable {default}
+-virtualization_protect_other_features [1|0]    : Protect Other Features with Code Virtualization
+                                                   Controls whether Code Virtualization is also applied to internal code used by other protection features.
+                                                   Disabling this option may improve application startup performance.
+                                                   Methods explicitly selected for Code Virtualization are unaffected.
+                                                   [1] = Virtualize internal protection helpers {default}
+                                                   [0] = Do not virtualize internal protection helpers
+-aot_trim_safe [1|0]                            : AOT/Trimming Safe Mode
+                                                   [1] = Enable AOT- and trimming-compatible protection paths globally (slightly weaker protection)
+                                                   [0] = Use normal protection paths unless automatically detected {default}
+-virtualization_aot_trim_safe [1|0]             : Code Virtualization AOT/Trimming Compatibility
+                                                   Legacy compatibility option; superseded by -aot_trim_safe
+                                                   [1] = Enable for Code Virtualization only
+                                                   [0] = Use the normal Code Virtualization mode {default}
+-control_flow [1|0]                             : Control Flow Obfuscation
+                                                   [1] = Enable
+                                                   [0] = Disable {default}
+-control_flow_engine [massive|classic]          : Control Flow Obfuscation Engine
+                                                   [massive] = MassiveLocal {default}
+                                                   [classic] = Legacy Classic engine
+-control_flow_startup_boost [1|0]               : Control Flow Obfuscation Startup Boost
+                                                   [1] = Enable
+                                                   [0] = Disable {default}
+-flow_level [1..9]                              : Control Flow Obfuscation Level
+-declarative_protection [1|0]                   : Declarative Protection
+                                                   [1] = Enable
+                                                   [0] = Disable {default}
+-stringencryption [1|0]                         : String Encryption
+                                                   [1] = Enable {default}
+                                                   [0] = Disable
+-hide_calls [1|0]                               : Hide Method Calls
+                                                   [1] = Enable
+                                                   [0] = Disable {default}
+-nativeexe [1|0]                                : Native EXE File
+                                                   [1] = Enable
+                                                   [0] = Disable {default}
+-necrobit [1|0]                                 : NecroBit
+                                                   [1] = Enable
+                                                   [0] = Disable {default}
+-necrobit_comp [1|0]                            : NecroBit Reflection Compatibility Mode
+                                                   [1] = Enable
+                                                   [0] = Disable {default}
+-internalization [1|0]                          : Public Types Internalization
+                                                   [1] = Enable
+                                                   [0] = Disable {default}
+-resourceencryption [1|0]                       : Resource Encryption & Compression
+                                                   [1] = Enable
+                                                   [0] = Disable {default}
+-resourcecompression [value]                    : Resource Compression Method
+                                                   [nocompression] = No compression will be applied
+                                                   [fastest] = Offers poor compression but it is very quick
+                                                   [fast]
+                                                   [normal] {default}
+                                                   [good]
+                                                   [max] = Offers best protection but it is the slowest compression method
+                                                  
+                                                                         -- Obfuscation Settings --
+                                                  
+-obfuscation [1|0]                              : Obfuscation
+                                                   [1] = Enable {default}
+                                                   [0] = Disable
+-obfuscate_public_types [1|0]                   : Obfuscate Public Types
+                                                   [1] = Enable
+                                                   [0] = Disable {default}
+-naming [value]                                 : Naming Convention
+                                                   [standard] = Standard {default}
+                                                   [standard_short] = Standard - Short
+                                                   [stealth] = Stealth
+                                                   [strange] = Strange
+                                                   [strange_short] = Strange - Short
+                                                   [incremental] = Incremental
+                                                   [unprintable] = Unprintable
+                                                   [unprintable_short] = Unprintable - Short
+                                                   [unprintable_nolb] = Unprintable Without Line Breaks
+                                                   [unprintable_nolb_short] = Unprintable Without Line Breaks- Short
+                                                   [debug] = Debug
+-mapping_file [1|0]                             : Create Mapping File
+                                                   [1] = Enable
+                                                   [0] = Disable {default}
+                                                  
+                                                                     -- Obfuscation Exclusion Settings --
+                                                  
+-exclude_enums [1|0]                            : Exclusions - Enums
+                                                   [1] = Enable
+                                                   [0] = Disable {default}
+-exclude_events [1|0]                           : Exclusions - Events
+                                                   [1] = Enable
+                                                   [0] = Disable {default}
+-exclude_fields [1|0]                           : Exclusions - Fields
+                                                   [1] = Enable
+                                                   [0] = Disable {default}
+-exclude_methods [1|0]                          : Exclusions - Methods
+                                                   [1] = Enable
+                                                   [0] = Disable {default}
+-exclude_types [1|0]                            : Exclusions - Types
+                                                   [1] = Enable
+                                                   [0] = Disable {default}
+-rules [raw rules]                              : Replace all Advanced Rules loaded from the project.
+-append_rules [raw rules]                       : Append Advanced Rules after loading the project without
+                                                  removing existing rules.
+
+ 
+Example:
+dotNET_Reactor.Console.exe -file "c:\testapp.exe" -control_flow 1 -flow_level 6 -targetfile "C:\Secured\<AssemblyFileName>"
+ 

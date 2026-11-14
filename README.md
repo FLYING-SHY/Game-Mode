@@ -1,61 +1,50 @@
 # Game-Mode
 
-游戏修改器单仓库：**一条通用授权系统 + 多个修改器产品**。
+仓库按「一个授权系统 + 一个游戏一个目录」组织：授权系统代码独立在根目录 `LicensingSystem/`，每个游戏一个目录放各自的客户端、接入与交付产物。2026-11-13 完成旧代码清理与布局重构：恢复阶段、初次授权接入和第一轮加固的旧代码与发布包已删除；授权目录从 `Licensing/` 更名为 `LicensingSystem/`，游戏工程从 `SkyEye-HardenedV2` 更名为 `CoH3/SkyEye`。
 
-| 目录 | 角色 | 技术栈 |
-| --- | --- | --- |
-| [`Licensing/`](<Licensing/>) | **通用授权系统**（所有修改器共用）：授权码发码 / 兑换 / 设备绑定 / 限时到期 / 停用恢复 / 管理后台 / 客户端 SDK | .NET 9、ASP.NET Core Minimal API、SQLite、Keygen CE、RSA 签名 |
-| [`CoH3FowTool/`](<CoH3FowTool/>) | 产品：Company of Heroes 3 本地显示工具（GUI + 授权接入） | .NET 9 / `net9.0-windows` / WinForms / x64 |
-| [`docs/agents/`](<docs/agents/>) | Agent 工作流配置：issue tracker、triage 标签、domain docs 布局 | Markdown |
+| 目录 | 用途 |
+| --- | --- |
+| [原版 v0.60.8](<CoH3/天穹之眼-v0.60.8/>) | 原始发布文件，保持不变 |
+| [SkyEye（天穹之眼最新版）](<CoH3/SkyEye/README.md>) | 客户端源码、授权接入（编译内嵌）、验证工程、构建与交付脚本 |
+| [SkyEye 客户端交付](<CoH3/SkyEye/delivery/client/>) | 签名授权 + Obfuscar 的可运行客户目录 |
+| [LicensingSystem](<LicensingSystem/README.md>) | 通用授权系统：服务端、测试、部署辅助、SDK 与本机私有状态 |
+| [授权服务端交付](<LicensingSystem/delivery/server/>) | ASP.NET Core 10 签名服务发布目录 |
+| [CoH3Minimap](<CoH3/CoH3Minimap/README.md>) | 独立小地图项目，保留其现有内容 |
+| [工作流配置](<docs/agents/>) | Issue、triage 与 domain 工作流 |
 
-远程仓库：`git@github.com:FLYING-SHY/Game-Mode.git`
+## 最新交付包（CoH3 根）
 
-## 授权系统与产品的关系
+- [客户包](<CoH3/SkyEye-HardenedV2-Client.zip>)：客户程序与运行资源。
+- [服务端包](<CoH3/SkyEye-HardenedV2-Server.zip>)：签名服务程序及部署辅助（打包根 `LicensingSystem/delivery/server`）。
+- [维护包](<CoH3/SkyEye-HardenedV2-Maintenance.zip>)：最新版源码（含授权系统）、开发映射、构建脚本与验证记录，仅供维护者保存。
+- [包验证记录](<CoH3/SkyEye-HardenedV2.archive-verification.json>)：当前 ZIP 的哈希和逐项验证结果。
 
-授权系统完全独立于任何具体游戏：服务端、发码后台、客户端 SDK 都在 `Licensing/`，程序集与命名空间为 `Licensing.*`（不含产品前缀）。每个修改器以 **产品 id（`ProductId`）** 接入，彼此的授权码哈希空间、设备指纹空间与 Keygen 策略完全隔离。
+三个包均排除本机管理员令牌、真实卡密、私钥和数据库。维护包不包含 Reactor 试用程序。
 
-```text
-修改器 (CoH3FowTool/…)                     授权系统 (Licensing/…)
-  LicenseClientOptions.ProductId  ──►  POST /api/licenses/activate { code, deviceId, productId }
-  嵌入 productId 的发行配置        ──►  Products[] 产品目录 → Keygen product + permanent/timed policy
-  本地验签（证书 metadata.product）  ◄──  CE 签名的 MACHINE FILE
-```
+## 构建与启动
 
-当前登记产品：`CoH3FowTool`（见 `Licensing/.local/server.json` 的 `Products[]` 与 `Licensing/client/ProductIds.cs`）。
-
-新增一个修改器接入同一套授权系统：
-
-1. Keygen 侧建 product + permanent / timed 两条 policy；
-2. `Licensing/.local/server.json` 增一条 `Products[]` 项（id、显示名、两条 policy id、码前缀）；
-3. 修改器侧设置 `LicenseClientOptions.ProductId` 并在发行配置里带上 `productId`。
-
-## 常用命令
+从仓库根目录执行：
 
 ```powershell
-# 授权系统
-dotnet build .\Licensing\tests\Licensing.Tests.csproj -c Release
-dotnet run --project .\Licensing\tests\Licensing.Tests.csproj -c Release -- .\Licensing\.local\server.json
+# 编译授权服务端与测试，运行全部 120 项隔离测试
+& .\LicensingSystem\Build.ps1 -VerifyServer
 
-# 本地授权后端（需 Docker + 首次 Initialize-Local.ps1 引导 CE）
-& .\Licensing\deployment\Initialize-Local.ps1
-& .\Licensing\deployment\Start-Local.ps1
+# 编译游戏客户端 + 验证工程
+& .\CoH3\SkyEye\Build.ps1
 
-# 修改器
-powershell -NoProfile -ExecutionPolicy Bypass -File .\CoH3FowTool\build.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File .\CoH3FowTool\build.ps1 -Publish -PublicConfiguration ..\Licensing\.local\client-public.json
+# 重新生成受保护客户端并自检
+& .\CoH3\SkyEye\Build-Protected.ps1 -SelfCheck
+
+# 使用现有签名密钥和数据库启动本机授权服务
+& .\LicensingSystem\Start-Server.ps1 -ConfigPath .\LicensingSystem\.local\hardening-v2\server.json
 ```
 
-本机未安装 `pwsh`（PowerShell 7），Windows PowerShell 5.1 可直接运行上述脚本。
+本机管理入口为 `http://127.0.0.1:47835/admin`。旧的 47831 测试服务已停止。SDK 位于 `LicensingSystem/.cache/dotnet-10`；客户端编译还需 .NET Framework 4.8 引用程序集。
 
-## 文档
+部署新机器、配对公钥和备份私有状态，见[SkyEye 说明](<CoH3/SkyEye/README.md>)、[LicensingSystem 说明](<LicensingSystem/README.md>)与[签名协议](<CoH3/SkyEye/signature-contract.md>)。现有客户 EXE 与现有签名私钥配对；更换私钥后须重新固定公钥并构建、分发客户端。新增一个游戏 = 新建一个游戏目录（客户端 + 授权接入内嵌编译）+ 在授权系统注册对应 ProductId。
 
-- [`AGENTS.md`](<AGENTS.md>) — 仓库结构、构建命令、多产品模型、注意事项
-- [`Licensing/README.md`](<Licensing/README.md>) — 授权系统用法、HTTP 接口、客户端 API、多产品模型
-- [`Licensing/framework-evidence.md`](<Licensing/framework-evidence.md>) — 框架选型证据与真实集成检查记录
-- [`CoH3FowTool/README.md`](<CoH3FowTool/README.md>) — CoH3 战争先锋修改器说明与发行流程
-- [`CoH3FowTool/docs/licensing-gui-spec.md`](<CoH3FowTool/docs/licensing-gui-spec.md>) — 修改器 GUI 规格
-- [`Licensing/docs/licensing-models-research.md`](<Licensing/docs/licensing-models-research.md>) — 通用授权模式调研
+## 清理与重构记录
 
-## 不入库内容
+[删除清单](<CoH3/SkyEye/evidence/cleanup-manifest.json>)记录了清理目标、删除前旧基线校验及原版/最新版保留哈希；[重构清单](<CoH3/SkyEye/evidence/refactor-manifest.json>)记录了本次目录移动的前缀映射与校验。原有授权记录、配置和密钥保留在 `LicensingSystem/.local/`；历史备份中独有的私有状态已单独保留，旧源码备份已移除。Git 历史与独立小地图项目保留。
 
-`bin/ obj/ dist/ publish/ publish-gui/ artifacts/`、`Licensing/.local/`（密钥、数据库、令牌）、`Licensing/.cache/`、`tools/**/out-*/`、`tools/reverse/*.png` —— 全部见 `.gitignore`。
+远程仓库：`git@github.com:FLYING-SHY/Game-Mode.git`。清理与重构没有提交或推送。

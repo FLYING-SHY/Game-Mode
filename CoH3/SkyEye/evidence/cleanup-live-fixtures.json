@@ -1,0 +1,72 @@
+{
+  "issuedAt": "2026-11-13T08:34:01.376511+00:00",
+  "baseUrl": "http://127.0.0.1:47835/",
+  "transport": "real HTTP administrator login + CSRF + issue API",
+  "containsCompleteCodes": false,
+  "fixtures": [
+    {
+      "name": "protocol-permanent",
+      "id": "f38c824dc863474b9c843fe8fde73ae3",
+      "codeSuffix": "40F6DCA8",
+      "kind": "permanent",
+      "durationSeconds": null,
+      "codeFile": "F:\\WorkSpace\\Game\\Licensing\\.local\\hardening-v2\\cards-cleanup\\protocol-permanent.txt"
+    },
+    {
+      "name": "protocol-timed",
+      "id": "7f155c79dfdf4558a592c54cc7d248e3",
+      "codeSuffix": "335085BA",
+      "kind": "timed",
+      "durationSeconds": 3600,
+      "codeFile": "F:\\WorkSpace\\Game\\Licensing\\.local\\hardening-v2\\cards-cleanup\\protocol-timed.txt"
+    },
+    {
+      "name": "coordinator",
+      "id": "d2895e7636aa4263a215e8fdd818e6dd",
+      "codeSuffix": "0F6AA6F0",
+      "kind": "permanent",
+      "durationSeconds": null,
+      "codeFile": "F:\\WorkSpace\\Game\\Licensing\\.local\\hardening-v2\\cards-cleanup\\coordinator.txt"
+    },
+    {
+      "name": "network",
+      "id": "08da3cb0cc98408c88a89ecec4a57499",
+      "codeSuffix": "8CD21448",
+      "kind": "permanent",
+      "durationSeconds": null,
+      "codeFile": "F:\\WorkSpace\\Game\\Licensing\\.local\\hardening-v2\\cards-cleanup\\network.txt"
+    },
+    {
+      "name": "observe-kick",
+      "id": "04f924773ec145ecb00701468d7d5d19",
+      "codeSuffix": "947A26C2",
+      "kind": "permanent",
+      "durationSeconds": null,
+      "codeFile": "F:\\WorkSpace\\Game\\Licensing\\.local\\hardening-v2\\cards-cleanup\\observe-kick.txt"
+    },
+    {
+      "name": "observe-block",
+      "id": "7bc0f935ee29400ba9d636d91410b126",
+      "codeSuffix": "33C5AC88",
+      "kind": "permanent",
+      "durationSeconds": null,
+      "codeFile": "F:\\WorkSpace\\Game\\Licensing\\.local\\hardening-v2\\cards-cleanup\\observe-block.txt"
+    },
+    {
+      "name": "observe-unbind",
+      "id": "a1f9eea2e8e146ea9803bfc8e6de574c",
+      "codeSuffix": "1E43158D",
+      "kind": "timed",
+      "durationSeconds": 3600,
+      "codeFile": "F:\\WorkSpace\\Game\\Licensing\\.local\\hardening-v2\\cards-cleanup\\observe-unbind.txt"
+    },
+    {
+      "name": "observe-expiry",
+      "id": "f6cd918ea7f348d7a576db5572409479",
+      "codeSuffix": "D847255C",
+      "kind": "timed",
+      "durationSeconds": 8,
+      "codeFile": "F:\\WorkSpace\\Game\\Licensing\\.local\\hardening-v2\\cards-cleanup\\observe-expiry.txt"
+    }
+  ]
+}

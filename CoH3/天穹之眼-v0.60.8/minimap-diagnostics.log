@@ -1,0 +1,667 @@
+2026-11-12 23:02:29.163 地图定位中 新对局小地图定位中… 
+2026-11-13 20:16:41.741 地图定位中 新对局小地图定位中… 
+2026-11-13 20:16:51.809 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=22f467f0000 batchMB=7 ms=80 
+2026-11-13 20:17:01.878 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=2304a760000 batchMB=6 ms=80 
+2026-11-13 20:17:11.930 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=230533c0000 batchMB=1 ms=82 
+2026-11-13 20:17:22.014 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=23056bb0000 batchMB=1 ms=82 
+2026-11-13 20:17:32.094 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=23059fc0000 batchMB=0 ms=81 
+2026-11-13 20:17:42.153 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=2305d4c0000 batchMB=1 ms=82 
+2026-11-13 20:17:52.237 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=230633e0000 batchMB=9 ms=80 
+2026-11-13 20:18:02.292 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=2307bc20000 batchMB=1 ms=80 
+2026-11-13 20:18:12.350 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=2307efd0000 batchMB=1 ms=82 
+2026-11-13 20:19:25.272 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=23097652000 batchMB=32 ms=43 
+2026-11-13 20:19:35.352 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=230d3a40000 batchMB=16 ms=80 
+2026-11-13 20:19:59.864 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=230f4410000 batchMB=9 ms=80 
+2026-11-13 20:20:55.754 地图定位中 新对局小地图定位中… 
+2026-11-13 20:20:55.870 小地图绘制 单位=6 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:21:05.996 小地图绘制 单位=8 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:21:16.062 小地图绘制 单位=6 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:21:26.133 小地图绘制 单位=5 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:21:36.176 小地图绘制 单位=7 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:21:46.261 小地图绘制 单位=8 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:21:56.331 小地图绘制 单位=10 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:22:06.367 小地图绘制 单位=10 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:22:16.434 小地图绘制 单位=12 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:22:26.507 小地图绘制 单位=12 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:22:36.590 小地图绘制 单位=13 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:22:46.663 小地图绘制 单位=13 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:22:56.748 小地图绘制 单位=13 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:23:06.773 小地图绘制 单位=13 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:23:16.892 小地图绘制 单位=15 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:23:27.008 小地图绘制 单位=15 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:23:37.134 小地图绘制 单位=15 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:23:47.140 小地图绘制 单位=15 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:23:57.269 小地图绘制 单位=16 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:24:07.375 小地图绘制 单位=14 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:24:17.379 小地图绘制 单位=15 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:24:27.429 小地图绘制 单位=15 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:24:37.549 小地图绘制 单位=15 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:24:47.573 小地图绘制 单位=17 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:24:57.623 小地图绘制 单位=17 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:25:07.690 小地图绘制 单位=17 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:25:17.754 小地图绘制 单位=18 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:25:27.873 小地图绘制 单位=18 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:25:38.057 小地图绘制 单位=19 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:25:48.115 小地图绘制 单位=20 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:25:58.118 小地图绘制 单位=20 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:26:08.168 小地图绘制 单位=20 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:26:18.231 小地图绘制 单位=18 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:26:28.284 小地图绘制 单位=17 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:26:38.358 小地图绘制 单位=16 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:26:48.362 小地图绘制 单位=17 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:26:58.384 小地图绘制 单位=16 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:27:08.497 小地图绘制 单位=14 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:27:18.527 小地图绘制 单位=14 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:27:28.641 小地图绘制 单位=15 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:27:38.683 小地图绘制 单位=15 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:27:48.745 小地图绘制 单位=15 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:27:58.851 小地图绘制 单位=15 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:28:08.925 小地图绘制 单位=16 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:28:18.980 小地图绘制 单位=17 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:28:29.058 小地图绘制 单位=17 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:28:39.163 小地图绘制 单位=18 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:28:49.333 小地图绘制 单位=20 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:28:59.461 小地图绘制 单位=21 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:29:09.507 小地图绘制 单位=20 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:29:19.583 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:29:29.691 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:29:39.733 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:29:49.795 小地图绘制 单位=24 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:29:59.820 小地图绘制 单位=24 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:30:09.827 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:30:19.894 小地图绘制 单位=22 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:30:29.957 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:30:40.035 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:30:50.164 小地图绘制 单位=22 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:31:00.248 小地图绘制 单位=22 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:31:10.305 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:31:20.306 小地图绘制 单位=22 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:31:30.368 小地图绘制 单位=24 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:31:40.403 小地图绘制 单位=24 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:31:50.412 小地图绘制 单位=21 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:32:00.554 小地图绘制 单位=22 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:32:10.716 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:32:20.775 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:32:30.848 小地图绘制 单位=24 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:32:40.906 小地图绘制 单位=25 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:32:50.983 小地图绘制 单位=25 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:33:01.077 小地图绘制 单位=26 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:33:11.086 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:33:21.186 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:33:31.263 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:33:41.374 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:33:51.422 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:34:01.487 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:34:11.555 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:34:21.644 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:34:31.712 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:34:41.793 小地图绘制 单位=24 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:34:51.803 小地图绘制 单位=26 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:35:01.857 小地图绘制 单位=26 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:35:11.876 小地图绘制 单位=28 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:35:21.958 小地图绘制 单位=28 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:35:32.076 小地图绘制 单位=28 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:35:42.157 小地图绘制 单位=26 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:35:52.246 小地图绘制 单位=27 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:36:02.324 小地图绘制 单位=26 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:36:12.412 小地图绘制 单位=26 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:36:22.475 小地图绘制 单位=25 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:36:32.626 小地图绘制 单位=26 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:36:42.700 小地图绘制 单位=24 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:36:52.750 小地图绘制 单位=24 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:37:02.854 小地图绘制 单位=25 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:37:12.932 小地图绘制 单位=25 弹幕=1 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:37:23.007 小地图绘制 单位=25 弹幕=1 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:37:33.072 小地图绘制 单位=25 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:37:43.258 小地图绘制 单位=25 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:37:53.277 小地图绘制 单位=25 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:38:03.377 小地图绘制 单位=26 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:38:13.397 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:38:23.497 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:38:33.561 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:38:43.575 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:38:53.633 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:39:03.701 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:39:13.828 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:39:23.867 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:39:33.962 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:39:44.007 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:39:54.096 小地图绘制 单位=23 弹幕=0 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:40:03.887 地图定位中 小地图已离开当前对局界面。 nativeControl=2327439deb0 cursor=23030000000 batchMB=0 ms=20 
+2026-11-13 20:40:13.957 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=231429f0000 batchMB=17 ms=80 
+2026-11-13 20:40:24.018 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=22e34a9b000 batchMB=32 ms=6 
+2026-11-13 20:40:34.081 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=23057e00000 batchMB=24 ms=82 
+2026-11-13 20:40:44.178 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=2307d130000 batchMB=1 ms=80 
+2026-11-13 20:40:54.262 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=23081320000 batchMB=1 ms=80 
+2026-11-13 20:41:45.129 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=230a6c40000 batchMB=32 ms=76 
+2026-11-13 20:41:55.190 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=23124fd5000 batchMB=32 ms=30 
+2026-11-13 20:42:05.244 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=23217400000 batchMB=24 ms=80 
+2026-11-13 20:42:15.317 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=2327a4c0000 batchMB=14 ms=80 
+2026-11-13 20:42:25.343 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=232d4550000 batchMB=8 ms=83 
+2026-11-13 20:42:35.408 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=232d8560000 batchMB=1 ms=82 
+2026-11-13 20:42:45.502 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=232dc660000 batchMB=1 ms=81 
+2026-11-13 20:42:55.561 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=232e0880000 batchMB=1 ms=82 
+2026-11-13 20:43:05.616 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=23303120000 batchMB=14 ms=80 
+2026-11-13 20:43:15.633 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=233426f0000 batchMB=1 ms=82 
+2026-11-13 20:43:25.695 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=23346800000 batchMB=0 ms=80 
+2026-11-13 20:43:35.703 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=2334aa00000 batchMB=1 ms=81 
+2026-11-13 20:43:45.755 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=2334ec90000 batchMB=1 ms=83 
+2026-11-13 20:43:55.820 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=23380bb0000 batchMB=15 ms=80 
+2026-11-13 20:44:05.887 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=22e403f6000 batchMB=32 ms=7 
+2026-11-13 20:44:15.954 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=22ec2560000 batchMB=1 ms=82 
+2026-11-13 20:44:26.006 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=22ecb580000 batchMB=13 ms=80 
+2026-11-13 20:44:36.079 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=22f2ca60000 batchMB=1 ms=81 
+2026-11-13 20:44:46.083 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=22f31020000 batchMB=1 ms=82 
+2026-11-13 20:44:56.138 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=22f4b840000 batchMB=1 ms=82 
+2026-11-13 20:45:06.196 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=22f5c720000 batchMB=1 ms=81 
+2026-11-13 20:45:16.293 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=22f608e0000 batchMB=1 ms=80 
+2026-11-13 20:45:26.356 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=22f96f40000 batchMB=32 ms=9 
+2026-11-13 20:45:36.443 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=22fe0ca0000 batchMB=2 ms=80 
+2026-11-13 20:45:46.548 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=230150b0000 batchMB=13 ms=80 
+2026-11-13 20:45:56.603 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=2308d140000 batchMB=31 ms=80 
+2026-11-13 20:46:06.671 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=2323a510000 batchMB=12 ms=80 
+2026-11-13 20:46:16.733 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=22f5c0b0000 batchMB=21 ms=80 
+2026-11-13 20:46:26.798 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=2305e869000 batchMB=32 ms=72 
+2026-11-13 20:46:36.869 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=230c5580000 batchMB=1 ms=81 
+2026-11-13 20:46:46.956 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=23186020000 batchMB=13 ms=80 
+2026-11-13 20:46:57.016 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=23230030000 batchMB=14 ms=80 
+2026-11-13 20:47:07.070 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=23299a10000 batchMB=14 ms=80 
+2026-11-13 20:47:20.199 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=232fd9c0000 batchMB=10 ms=80 
+2026-11-13 20:47:30.266 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=23343680000 batchMB=1 ms=80 
+2026-11-13 20:47:40.330 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=233475b0000 batchMB=0 ms=80 
+2026-11-13 20:47:50.391 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=2334b430000 batchMB=1 ms=80 
+2026-11-13 20:48:00.447 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=2334f380000 batchMB=1 ms=82 
+2026-11-13 20:48:10.546 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=233859d0000 batchMB=14 ms=80 
+2026-11-13 20:48:20.606 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=22ebd540000 batchMB=1 ms=82 
+2026-11-13 20:48:30.663 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=22ec2fb0000 batchMB=1 ms=82 
+2026-11-13 20:48:40.727 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=22eced10000 batchMB=1 ms=83 
+2026-11-13 20:48:50.804 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=22f2d500000 batchMB=1 ms=80 
+2026-11-13 20:49:00.908 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=22f3e360000 batchMB=12 ms=80 
+2026-11-13 20:49:10.975 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=22f4c2a0000 batchMB=1 ms=81 
+2026-11-13 20:49:21.054 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=22f5cfe0000 batchMB=1 ms=82 
+2026-11-13 20:49:31.140 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=22f60f40000 batchMB=1 ms=82 
+2026-11-13 20:49:41.197 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=22fa0ae0000 batchMB=32 ms=8 
+2026-11-13 20:49:51.259 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=22fe18b0000 batchMB=1 ms=81 
+2026-11-13 20:50:01.322 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=2301f1d0000 batchMB=17 ms=80 
+2026-11-13 20:50:11.389 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=2310c150000 batchMB=17 ms=80 
+2026-11-13 20:50:21.456 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=22e1858d000 batchMB=32 ms=7 
+2026-11-13 20:50:31.513 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=23002ed0000 batchMB=14 ms=80 
+2026-11-13 20:50:41.570 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=23086ff0000 batchMB=12 ms=80 
+2026-11-13 20:50:51.642 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=231189d5000 batchMB=32 ms=9 
+2026-11-13 20:51:01.717 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=2320e620000 batchMB=32 ms=29 
+2026-11-13 20:51:11.772 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=23265925000 batchMB=32 ms=60 
+2026-11-13 20:51:21.873 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=232b91f0000 batchMB=9 ms=80 
+2026-11-13 20:51:31.966 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=23306d80000 batchMB=1 ms=80 
+2026-11-13 20:51:41.970 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=2330ab70000 batchMB=1 ms=80 
+2026-11-13 20:51:52.059 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=2330ea70000 batchMB=1 ms=81 
+2026-11-13 20:52:02.117 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=23312980000 batchMB=1 ms=80 
+2026-11-13 20:52:12.196 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=23340710000 batchMB=1 ms=80 
+2026-11-13 20:52:22.200 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=23344370000 batchMB=1 ms=83 
+2026-11-13 20:52:32.257 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=23348080000 batchMB=1 ms=80 
+2026-11-13 20:52:42.340 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=2334be20000 batchMB=1 ms=82 
+2026-11-13 20:52:52.403 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=2334fc30000 batchMB=1 ms=80 
+2026-11-13 20:53:02.475 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=233a67c0000 batchMB=14 ms=80 
+2026-11-13 20:53:29.710 地图定位中 新对局小地图定位中… 
+2026-11-13 20:53:30.556 小地图绘制 单位=4 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:53:40.626 小地图绘制 单位=5 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:53:50.741 小地图绘制 单位=5 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:54:00.765 小地图绘制 单位=6 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:54:10.813 小地图绘制 单位=7 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:54:20.856 小地图绘制 单位=7 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:54:30.926 小地图绘制 单位=9 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:54:41.036 小地图绘制 单位=10 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:54:51.047 小地图绘制 单位=10 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:55:01.134 小地图绘制 单位=13 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:55:11.219 小地图绘制 单位=13 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:55:21.268 小地图绘制 单位=13 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:55:31.336 小地图绘制 单位=13 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:55:41.344 小地图绘制 单位=15 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:55:51.409 小地图绘制 单位=16 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:56:01.503 小地图绘制 单位=16 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:56:11.600 小地图绘制 单位=16 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:56:21.708 小地图绘制 单位=15 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:56:31.815 小地图绘制 单位=15 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:56:41.956 小地图绘制 单位=17 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:56:52.044 小地图绘制 单位=16 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:57:02.103 小地图绘制 单位=18 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:57:12.115 小地图绘制 单位=19 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:57:22.133 小地图绘制 单位=18 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:57:32.250 小地图绘制 单位=19 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:57:42.319 小地图绘制 单位=22 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:57:52.453 小地图绘制 单位=22 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:58:02.499 小地图绘制 单位=22 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:58:12.526 小地图绘制 单位=23 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:58:22.628 小地图绘制 单位=22 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:58:32.814 小地图绘制 单位=23 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:58:42.844 小地图绘制 单位=23 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:58:52.937 小地图绘制 单位=22 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:59:03.053 小地图绘制 单位=22 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:59:13.127 小地图绘制 单位=22 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:59:23.266 小地图绘制 单位=22 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:59:33.321 小地图绘制 单位=22 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:59:43.373 小地图绘制 单位=21 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 20:59:53.382 小地图绘制 单位=21 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:00:03.426 小地图绘制 单位=21 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:00:13.510 小地图绘制 单位=23 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:00:23.511 小地图绘制 单位=23 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:00:33.541 小地图绘制 单位=24 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:00:43.605 小地图绘制 单位=24 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:00:53.875 小地图绘制 单位=24 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:01:03.909 小地图绘制 单位=24 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:01:13.969 小地图绘制 单位=25 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:01:24.104 小地图绘制 单位=25 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:01:34.194 小地图绘制 单位=25 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:01:44.247 小地图绘制 单位=25 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:01:54.294 小地图绘制 单位=26 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:02:04.333 小地图绘制 单位=28 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:02:14.420 小地图绘制 单位=28 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:02:24.457 小地图绘制 单位=31 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:02:34.590 小地图绘制 单位=31 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:02:38.161 地图定位中 小地图界面属性正在更新。 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:02:38.244 小地图绘制 单位=32 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:02:48.323 小地图绘制 单位=32 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:02:58.409 小地图绘制 单位=32 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:03:08.448 小地图绘制 单位=32 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:03:18.494 小地图绘制 单位=31 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:03:28.545 小地图绘制 单位=31 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:03:38.590 小地图绘制 单位=30 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:03:48.632 小地图绘制 单位=30 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:03:58.691 小地图绘制 单位=31 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:04:08.741 小地图绘制 单位=30 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:04:18.880 小地图绘制 单位=29 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:04:29.035 小地图绘制 单位=31 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:04:39.073 小地图绘制 单位=31 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:04:49.253 小地图绘制 单位=31 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:04:59.377 小地图绘制 单位=31 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:05:09.455 小地图绘制 单位=32 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:05:19.504 小地图绘制 单位=32 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:05:29.587 小地图绘制 单位=32 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:05:39.674 小地图绘制 单位=33 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:05:49.764 小地图绘制 单位=33 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:05:59.800 小地图绘制 单位=33 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:06:09.910 小地图绘制 单位=33 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:06:19.968 小地图绘制 单位=32 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:06:30.001 小地图绘制 单位=31 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:06:40.072 小地图绘制 单位=30 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:06:50.100 小地图绘制 单位=31 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:07:00.306 小地图绘制 单位=31 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:07:10.413 小地图绘制 单位=30 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:07:20.440 小地图绘制 单位=30 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:07:30.455 小地图绘制 单位=30 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:07:40.560 小地图绘制 单位=30 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:07:50.645 小地图绘制 单位=29 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:08:00.735 小地图绘制 单位=28 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:08:10.841 小地图绘制 单位=27 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:08:20.896 小地图绘制 单位=27 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:08:21.526 地图定位中 小地图界面属性正在更新。 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:08:21.641 小地图绘制 单位=26 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:08:31.658 小地图绘制 单位=27 弹幕=1 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:08:41.734 小地图绘制 单位=26 弹幕=1 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:08:51.830 小地图绘制 单位=26 弹幕=1 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:09:01.911 小地图绘制 单位=28 弹幕=0 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:09:11.978 小地图绘制 单位=27 弹幕=1 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:09:18.741 地图定位中 小地图控件已切换。 nativeControl=2326e1cbdd0 cursor=230528a4000 batchMB=0 ms=16 
+2026-11-13 21:09:28.757 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=231a5760000 batchMB=32 ms=50 
+2026-11-13 21:09:47.610 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=231c6efe000 batchMB=32 ms=22 
+2026-11-13 21:09:57.678 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=22e2f2cb000 batchMB=32 ms=13 
+2026-11-13 21:10:07.766 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=2304c7c0000 batchMB=14 ms=80 
+2026-11-13 21:10:17.818 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=230992e0000 batchMB=9 ms=80 
+2026-11-13 21:10:27.925 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=23121d00000 batchMB=17 ms=80 
+2026-11-13 21:10:37.977 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=231ffea0000 batchMB=23 ms=80 
+2026-11-13 21:10:48.003 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=232a39e0000 batchMB=16 ms=80 
+2026-11-13 21:10:58.098 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=2332ade0000 batchMB=13 ms=80 
+2026-11-13 21:11:29.311 地图定位中 新对局小地图定位中… 
+2026-11-13 21:11:29.377 小地图绘制 单位=4 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:11:39.441 小地图绘制 单位=5 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:11:49.522 小地图绘制 单位=7 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:11:59.630 小地图绘制 单位=7 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:12:09.694 小地图绘制 单位=8 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:12:19.718 小地图绘制 单位=8 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:12:29.811 小地图绘制 单位=7 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:12:39.849 小地图绘制 单位=9 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:12:49.922 小地图绘制 单位=11 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:13:00.005 小地图绘制 单位=12 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:13:10.085 小地图绘制 单位=12 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:13:20.157 小地图绘制 单位=12 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:13:30.231 小地图绘制 单位=14 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:13:40.357 小地图绘制 单位=14 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:13:50.390 小地图绘制 单位=14 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:14:00.422 小地图绘制 单位=15 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:14:10.484 小地图绘制 单位=14 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:14:20.530 小地图绘制 单位=14 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:14:30.587 小地图绘制 单位=14 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:14:40.662 小地图绘制 单位=15 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:14:50.745 小地图绘制 单位=15 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:15:00.797 小地图绘制 单位=15 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:15:10.876 小地图绘制 单位=15 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:15:20.929 小地图绘制 单位=15 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:15:30.990 小地图绘制 单位=15 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:15:41.086 小地图绘制 单位=16 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:15:51.127 小地图绘制 单位=17 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:16:01.247 小地图绘制 单位=18 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:16:11.249 小地图绘制 单位=19 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:16:21.378 小地图绘制 单位=19 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:16:31.489 小地图绘制 单位=19 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:16:41.561 小地图绘制 单位=19 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:16:51.628 小地图绘制 单位=19 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:17:01.670 小地图绘制 单位=19 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:17:11.714 小地图绘制 单位=19 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:17:21.760 小地图绘制 单位=19 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:17:31.815 小地图绘制 单位=19 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:17:41.923 小地图绘制 单位=21 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:17:52.008 小地图绘制 单位=21 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:18:02.128 小地图绘制 单位=21 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:18:12.154 小地图绘制 单位=21 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:18:22.216 小地图绘制 单位=20 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:18:32.260 小地图绘制 单位=21 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:18:42.297 小地图绘制 单位=25 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:18:52.367 小地图绘制 单位=25 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:19:02.406 小地图绘制 单位=26 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:19:12.574 小地图绘制 单位=25 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:19:22.647 小地图绘制 单位=24 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:19:32.760 小地图绘制 单位=24 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:19:42.832 小地图绘制 单位=23 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:19:52.936 小地图绘制 单位=23 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:20:02.971 小地图绘制 单位=23 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:20:12.994 小地图绘制 单位=24 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:20:23.025 小地图绘制 单位=23 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:20:33.083 小地图绘制 单位=23 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:20:43.091 小地图绘制 单位=23 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:20:53.145 小地图绘制 单位=23 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:21:03.258 小地图绘制 单位=22 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:21:13.326 小地图绘制 单位=22 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:21:23.403 小地图绘制 单位=22 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:21:33.486 小地图绘制 单位=20 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:21:43.561 小地图绘制 单位=21 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:21:53.614 小地图绘制 单位=21 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:22:03.696 小地图绘制 单位=22 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:22:13.750 小地图绘制 单位=23 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:22:23.874 小地图绘制 单位=24 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:22:34.048 小地图绘制 单位=24 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:22:44.105 小地图绘制 单位=25 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:22:54.146 小地图绘制 单位=25 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:23:04.207 小地图绘制 单位=27 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:23:14.295 小地图绘制 单位=27 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:23:24.340 小地图绘制 单位=28 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:23:34.361 小地图绘制 单位=28 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:23:44.409 小地图绘制 单位=28 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:23:54.503 小地图绘制 单位=28 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:24:04.547 小地图绘制 单位=29 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:24:14.646 小地图绘制 单位=28 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:24:24.710 小地图绘制 单位=28 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:24:34.779 小地图绘制 单位=27 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:24:44.888 小地图绘制 单位=27 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:24:54.998 小地图绘制 单位=27 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:25:05.093 小地图绘制 单位=27 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:25:15.233 小地图绘制 单位=27 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:25:25.262 小地图绘制 单位=26 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:25:35.347 小地图绘制 单位=25 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:25:45.373 小地图绘制 单位=25 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:25:55.465 小地图绘制 单位=25 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:26:05.568 小地图绘制 单位=25 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:26:15.605 小地图绘制 单位=27 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:26:25.677 小地图绘制 单位=26 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:26:35.739 小地图绘制 单位=27 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:26:45.776 小地图绘制 单位=26 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:26:55.950 小地图绘制 单位=26 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:27:05.958 小地图绘制 单位=26 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:27:15.974 小地图绘制 单位=25 弹幕=1 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:27:26.050 小地图绘制 单位=25 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:27:36.142 小地图绘制 单位=25 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:27:46.271 小地图绘制 单位=25 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:27:56.372 小地图绘制 单位=26 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:28:06.452 小地图绘制 单位=26 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:28:16.514 小地图绘制 单位=26 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:28:26.616 小地图绘制 单位=26 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:28:36.629 小地图绘制 单位=26 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:28:46.729 小地图绘制 单位=27 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:28:56.736 小地图绘制 单位=29 弹幕=1 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:29:06.750 小地图绘制 单位=29 弹幕=1 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:29:16.859 小地图绘制 单位=29 弹幕=1 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:29:27.088 小地图绘制 单位=29 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:29:37.130 小地图绘制 单位=29 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:29:47.197 小地图绘制 单位=28 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:29:57.252 小地图绘制 单位=27 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:30:07.297 小地图绘制 单位=27 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:30:17.404 小地图绘制 单位=25 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:30:27.453 小地图绘制 单位=26 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:30:37.607 小地图绘制 单位=25 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:30:47.628 小地图绘制 单位=25 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:30:57.702 小地图绘制 单位=25 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:31:07.745 小地图绘制 单位=24 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:31:17.867 小地图绘制 单位=22 弹幕=1 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:31:27.910 小地图绘制 单位=21 弹幕=1 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:31:37.996 小地图绘制 单位=21 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:31:48.134 小地图绘制 单位=21 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:31:58.221 小地图绘制 单位=23 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:32:08.249 小地图绘制 单位=23 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:32:18.283 小地图绘制 单位=22 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:32:28.378 小地图绘制 单位=22 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:32:38.488 小地图绘制 单位=22 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:32:48.775 小地图绘制 单位=24 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:32:58.785 小地图绘制 单位=26 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:33:08.860 小地图绘制 单位=26 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:33:18.886 小地图绘制 单位=26 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:33:28.964 小地图绘制 单位=27 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:33:39.075 小地图绘制 单位=27 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:33:49.181 小地图绘制 单位=27 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:33:59.377 小地图绘制 单位=28 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:34:09.495 小地图绘制 单位=29 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:34:19.513 小地图绘制 单位=31 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:34:29.538 小地图绘制 单位=30 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:34:39.706 小地图绘制 单位=31 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:34:49.878 小地图绘制 单位=31 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:34:59.976 小地图绘制 单位=31 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:35:10.024 小地图绘制 单位=31 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:35:20.042 小地图绘制 单位=31 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:35:30.151 小地图绘制 单位=31 弹幕=0 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:35:37.984 地图定位中 小地图已离开当前对局界面。 nativeControl=2306ced0ee0 cursor=23030000000 batchMB=0 ms=15 
+2026-11-13 21:35:48.088 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=2308c421000 batchMB=23 ms=80 
+2026-11-13 22:23:40.643 地图定位中 新对局小地图定位中… 
+2026-11-13 22:24:03.279 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=1390c695000 batchMB=32 ms=10 
+2026-11-13 22:24:13.347 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=13b34797000 batchMB=32 ms=58 
+2026-11-13 22:24:23.413 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=13b768c6000 batchMB=32 ms=9 
+2026-11-13 22:24:52.014 地图定位中 新对局小地图定位中… 
+2026-11-13 22:24:52.094 小地图绘制 单位=4 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:25:02.153 小地图绘制 单位=4 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:25:12.174 小地图绘制 单位=4 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:25:22.263 小地图绘制 单位=5 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:25:32.348 小地图绘制 单位=6 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:25:42.369 小地图绘制 单位=9 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:25:52.440 小地图绘制 单位=9 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:26:02.530 小地图绘制 单位=8 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:26:12.588 小地图绘制 单位=11 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:26:22.707 小地图绘制 单位=12 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:26:32.713 小地图绘制 单位=12 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:26:42.760 小地图绘制 单位=13 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:26:52.828 小地图绘制 单位=14 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:27:02.922 小地图绘制 单位=15 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:27:12.995 小地图绘制 单位=16 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:27:23.018 小地图绘制 单位=16 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:27:33.171 小地图绘制 单位=15 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:27:43.266 小地图绘制 单位=15 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:27:53.423 小地图绘制 单位=15 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:28:03.509 小地图绘制 单位=17 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:28:12.309 地图定位中 小地图界面属性正在更新。 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:28:12.457 小地图绘制 单位=18 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:28:22.514 小地图绘制 单位=17 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:28:32.530 小地图绘制 单位=17 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:28:42.563 小地图绘制 单位=18 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:28:52.621 小地图绘制 单位=19 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:29:02.715 小地图绘制 单位=19 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:29:12.777 小地图绘制 单位=19 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:29:22.830 小地图绘制 单位=21 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:29:32.917 小地图绘制 单位=20 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:29:42.961 小地图绘制 单位=20 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:29:53.027 小地图绘制 单位=20 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:30:03.047 小地图绘制 单位=20 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:30:13.108 小地图绘制 单位=18 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:30:23.200 小地图绘制 单位=18 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:30:33.300 小地图绘制 单位=18 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:30:43.332 小地图绘制 单位=19 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:30:53.369 小地图绘制 单位=19 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:31:03.393 小地图绘制 单位=19 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:31:13.404 小地图绘制 单位=20 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:31:23.593 小地图绘制 单位=19 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:31:33.731 小地图绘制 单位=18 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:31:43.800 小地图绘制 单位=19 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:31:53.916 小地图绘制 单位=20 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:32:03.957 小地图绘制 单位=20 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:32:13.963 小地图绘制 单位=19 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:32:24.056 小地图绘制 单位=19 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:32:34.114 小地图绘制 单位=18 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:32:44.212 小地图绘制 单位=18 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:32:54.266 小地图绘制 单位=18 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:33:04.360 小地图绘制 单位=19 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:33:14.438 小地图绘制 单位=20 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:33:24.596 小地图绘制 单位=20 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:33:34.710 小地图绘制 单位=21 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:33:44.762 小地图绘制 单位=21 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:33:54.886 小地图绘制 单位=22 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:34:04.964 小地图绘制 单位=24 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:34:15.037 小地图绘制 单位=25 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:34:25.136 小地图绘制 单位=25 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:34:35.193 小地图绘制 单位=24 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:34:45.289 小地图绘制 单位=23 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:34:55.291 小地图绘制 单位=23 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:35:05.347 小地图绘制 单位=23 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:35:15.349 小地图绘制 单位=23 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:35:25.437 小地图绘制 单位=23 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:35:35.495 小地图绘制 单位=23 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:35:45.558 小地图绘制 单位=26 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:35:55.761 小地图绘制 单位=27 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:36:05.875 小地图绘制 单位=26 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:36:15.931 小地图绘制 单位=27 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:36:26.011 小地图绘制 单位=26 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:36:36.125 小地图绘制 单位=26 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:36:46.204 小地图绘制 单位=26 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:36:56.239 小地图绘制 单位=26 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:37:06.293 小地图绘制 单位=26 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:37:16.386 小地图绘制 单位=25 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:37:26.434 小地图绘制 单位=29 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:37:36.447 小地图绘制 单位=29 弹幕=1 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:37:46.558 小地图绘制 单位=29 弹幕=2 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:37:56.605 小地图绘制 单位=30 弹幕=2 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:38:06.849 小地图绘制 单位=30 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:38:16.881 小地图绘制 单位=30 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:38:26.975 小地图绘制 单位=30 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:38:37.031 小地图绘制 单位=30 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:38:47.047 小地图绘制 单位=30 弹幕=1 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:38:57.060 小地图绘制 单位=30 弹幕=2 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:39:07.084 小地图绘制 单位=31 弹幕=1 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:39:17.113 小地图绘制 单位=31 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:39:27.199 小地图绘制 单位=31 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:39:37.283 小地图绘制 单位=31 弹幕=1 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:39:47.349 小地图绘制 单位=30 弹幕=1 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:39:57.462 小地图绘制 单位=31 弹幕=1 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:40:07.514 小地图绘制 单位=32 弹幕=2 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:40:17.619 小地图绘制 单位=30 弹幕=2 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:40:27.623 小地图绘制 单位=29 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:40:37.821 小地图绘制 单位=30 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:40:47.955 小地图绘制 单位=30 弹幕=1 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:40:57.995 小地图绘制 单位=30 弹幕=1 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:41:08.070 小地图绘制 单位=31 弹幕=1 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:41:18.211 小地图绘制 单位=30 弹幕=2 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:41:28.254 小地图绘制 单位=28 弹幕=2 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:41:38.312 小地图绘制 单位=27 弹幕=3 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:41:48.494 小地图绘制 单位=27 弹幕=1 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:41:58.544 小地图绘制 单位=26 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:42:08.606 小地图绘制 单位=27 弹幕=0 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:42:18.709 小地图绘制 单位=27 弹幕=1 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:42:28.791 小地图绘制 单位=27 弹幕=2 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:42:38.930 小地图绘制 单位=27 弹幕=1 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:42:49.032 小地图绘制 单位=28 弹幕=1 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:42:59.103 小地图绘制 单位=28 弹幕=1 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:43:09.161 小地图绘制 单位=27 弹幕=1 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:43:19.221 小地图绘制 单位=27 弹幕=1 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:43:29.459 小地图绘制 单位=27 弹幕=1 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:43:39.462 小地图绘制 单位=27 弹幕=1 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:43:49.532 小地图绘制 单位=27 弹幕=1 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:43:52.569 地图定位中 小地图控件已切换。 nativeControl=13e2e10a320 cursor=13b2e000000 batchMB=0 ms=17 
+2026-11-13 22:44:02.711 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=13e2611a000 batchMB=32 ms=41 
+2026-11-13 22:44:12.721 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=13d665a9000 batchMB=14 ms=80 
+2026-11-13 22:44:22.780 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=13a342c0000 batchMB=23 ms=80 
+2026-11-13 22:44:32.863 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=13b63b20000 batchMB=14 ms=80 
+2026-11-13 22:44:42.958 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=13be47d0000 batchMB=13 ms=80 
+2026-11-13 22:44:53.044 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=13c16470000 batchMB=1 ms=82 
+2026-11-13 22:45:03.144 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=13c1a4f0000 batchMB=1 ms=81 
+2026-11-13 22:45:13.207 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=13c1eaf0000 batchMB=1 ms=82 
+2026-11-13 22:45:23.297 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=13c22da0000 batchMB=1 ms=81 
+2026-11-13 22:45:33.386 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=13c7a2c0000 batchMB=1 ms=81 
+2026-11-13 22:45:43.454 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=13c7e4d0000 batchMB=1 ms=83 
+2026-11-13 22:45:53.540 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=13c829b0000 batchMB=1 ms=81 
+2026-11-13 22:46:03.565 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=13c86ad0000 batchMB=1 ms=80 
+2026-11-13 22:46:13.638 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=13d4a0c0000 batchMB=8 ms=80 
+2026-11-13 22:46:23.705 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=13db0b00000 batchMB=14 ms=80 
+2026-11-13 22:46:33.760 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=13dfdec0000 batchMB=16 ms=80 
+2026-11-13 22:46:43.840 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=13e6eda0000 batchMB=1 ms=81 
+2026-11-13 22:46:53.899 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=13ecd560000 batchMB=9 ms=80 
+2026-11-13 22:47:03.967 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=1397bb00000 batchMB=32 ms=6 
+2026-11-13 22:47:14.048 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=139bfad0000 batchMB=1 ms=82 
+2026-11-13 22:47:24.101 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=139cbb20000 batchMB=1 ms=80 
+2026-11-13 22:47:34.185 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=13a2a7e0000 batchMB=1 ms=80 
+2026-11-13 22:47:44.261 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=13a44210000 batchMB=1 ms=81 
+2026-11-13 22:47:54.347 地图定位中 小地图定位中（自动继续搜索）… nativeControl=0 cursor=13a4a220000 batchMB=1 ms=80 
+2026-11-13 22:48:23.683 地图定位中 新对局小地图定位中… 
+2026-11-13 22:48:24.611 小地图绘制 单位=3 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:48:34.670 小地图绘制 单位=5 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:48:44.709 小地图绘制 单位=5 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:48:54.811 小地图绘制 单位=4 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:49:04.827 小地图绘制 单位=5 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:49:14.896 小地图绘制 单位=6 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:49:24.973 小地图绘制 单位=7 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:49:35.045 小地图绘制 单位=7 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:49:45.107 小地图绘制 单位=7 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:49:55.174 小地图绘制 单位=8 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:50:05.249 小地图绘制 单位=9 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:50:15.252 小地图绘制 单位=10 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:50:25.337 小地图绘制 单位=11 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:50:35.380 小地图绘制 单位=11 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:50:45.504 小地图绘制 单位=13 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:50:55.522 小地图绘制 单位=14 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:51:05.570 小地图绘制 单位=14 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:51:15.717 小地图绘制 单位=15 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:51:25.756 小地图绘制 单位=16 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:51:35.801 小地图绘制 单位=15 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:51:45.860 小地图绘制 单位=15 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:51:55.920 小地图绘制 单位=15 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:52:06.005 小地图绘制 单位=15 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:52:16.060 小地图绘制 单位=15 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:52:26.130 小地图绘制 单位=15 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:52:36.217 小地图绘制 单位=15 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:52:46.273 小地图绘制 单位=15 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:52:56.339 小地图绘制 单位=15 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:53:06.418 小地图绘制 单位=16 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:53:16.487 小地图绘制 单位=16 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:53:26.559 小地图绘制 单位=18 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:53:36.637 小地图绘制 单位=18 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:53:46.710 小地图绘制 单位=18 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:53:56.823 小地图绘制 单位=18 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:54:06.896 小地图绘制 单位=19 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:54:16.994 小地图绘制 单位=19 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:54:27.010 小地图绘制 单位=22 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:54:37.066 小地图绘制 单位=22 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:54:47.112 小地图绘制 单位=23 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:54:57.168 小地图绘制 单位=24 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:55:07.195 小地图绘制 单位=24 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:55:17.232 小地图绘制 单位=24 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:55:27.266 小地图绘制 单位=23 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:55:37.335 小地图绘制 单位=23 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:55:47.474 小地图绘制 单位=22 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:55:57.524 小地图绘制 单位=23 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:56:07.622 小地图绘制 单位=23 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:56:17.696 小地图绘制 单位=24 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:56:27.724 小地图绘制 单位=24 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:56:37.786 小地图绘制 单位=23 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:56:47.801 小地图绘制 单位=24 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:56:57.895 小地图绘制 单位=24 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:57:08.034 小地图绘制 单位=23 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:57:18.074 小地图绘制 单位=23 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:57:28.142 小地图绘制 单位=23 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:57:38.216 小地图绘制 单位=23 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:57:48.351 小地图绘制 单位=23 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:57:58.468 小地图绘制 单位=23 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:58:08.522 小地图绘制 单位=21 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:58:18.612 小地图绘制 单位=21 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:58:28.738 小地图绘制 单位=21 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 
+2026-11-13 22:58:38.801 小地图绘制 单位=20 弹幕=0 nativeControl=13ad7f637b0 cursor=13b9da6c000 batchMB=0 ms=11 

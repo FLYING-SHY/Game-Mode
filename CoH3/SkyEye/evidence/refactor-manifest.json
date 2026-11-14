@@ -1,0 +1,118 @@
+{
+ "created": "2026-11-13",
+ "reason": "m03410 licensing extracted to standalone project; game dir renamed SkyEye",
+ "game_root": "F:\\WorkSpace\\Game",
+ "moves": [
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2",
+   "to": "F:\\WorkSpace\\Game\\CoH3\\SkyEye",
+   "kind": "dir",
+   "note": "applied in first interrupted run; resumed"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\Licensing\\.local",
+   "to": "F:\\WorkSpace\\Game\\LicensingSystem\\.local",
+   "kind": "dir",
+   "note": "applied in first interrupted run; resumed"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\Licensing\\deployment",
+   "to": "F:\\WorkSpace\\Game\\LicensingSystem\\deployment",
+   "kind": "dir",
+   "note": "applied in first interrupted run; resumed"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\Licensing\\.gitignore",
+   "to": "F:\\WorkSpace\\Game\\LicensingSystem\\.gitignore",
+   "kind": "file",
+   "note": "applied in first interrupted run; resumed"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\Licensing\\README.md",
+   "to": "F:\\WorkSpace\\Game\\LicensingSystem\\README.md",
+   "kind": "file",
+   "note": "applied in first interrupted run; resumed"
+  }
+ ],
+ "prefix_map": [
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\server",
+   "to": "F:\\WorkSpace\\Game\\LicensingSystem\\server"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\server-tests",
+   "to": "F:\\WorkSpace\\Game\\LicensingSystem\\server-tests"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\.cache\\packages",
+   "to": "F:\\WorkSpace\\Game\\LicensingSystem\\.cache\\packages"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\Directory.Build.props",
+   "to": "F:\\WorkSpace\\Game\\LicensingSystem\\Directory.Build.props"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\Start-Server.ps1",
+   "to": "F:\\WorkSpace\\Game\\LicensingSystem\\Start-Server.ps1"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\Initialize-Signing.ps1",
+   "to": "F:\\WorkSpace\\Game\\LicensingSystem\\Initialize-Signing.ps1"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\Publish-Server.ps1",
+   "to": "F:\\WorkSpace\\Game\\LicensingSystem\\Publish-Server.ps1"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\scripts\\Start-PublishedServer.ps1",
+   "to": "F:\\WorkSpace\\Game\\LicensingSystem\\Start-PublishedServer.ps1"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\server",
+   "to": "F:\\WorkSpace\\Game\\LicensingSystem\\delivery\\server"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2",
+   "to": "F:\\WorkSpace\\Game\\CoH3\\SkyEye"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\Licensing",
+   "to": "F:\\WorkSpace\\Game\\LicensingSystem"
+  }
+ ],
+ "verified_counts": {
+  "server": 74,
+  "server-tests": 71,
+  "packages": 82,
+  "delivery-server": 36,
+  "local-private": 62,
+  "deployment": 3
+ },
+ "sdk": {
+  "files": 5578,
+  "bytes": 812144112,
+  "dotnet_version": "10.0.404"
+ },
+ "config_changes": [
+  {
+   "file": "server.json",
+   "replacements": 2,
+   "fields_updated": [
+    "DatabasePath",
+    "KeyDirectory"
+   ]
+  },
+  {
+   "file": "published-server.json",
+   "replacements": 2,
+   "fields_updated": [
+    "DatabasePath",
+    "KeyDirectory"
+   ]
+  }
+ ],
+ "junction_recreated": {
+  "link": "F:\\WorkSpace\\Game\\CoH3\\SkyEye\\sandbox",
+  "target": "F:\\WorkSpace\\Game\\CoH3\\SkyEye\\verification\\sandbox"
+ }
+}

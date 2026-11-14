@@ -1,0 +1,19 @@
+START [4ms] coordinator
+HTTP [106ms] api/v1/activate keys=client_version,code,device_id,game_name,installation_id,request_id,steam_id64
+REPLY [116ms] api/v1/activate state=active
+STATE [116ms] active
+PASS [159ms] real coordinator active gate and license kind
+HTTP [28211ms] api/v1/heartbeat keys=client_version,device_id,installation_id,steam_id64
+REPLY [28218ms] api/v1/heartbeat state=active
+STATE [28218ms] active
+PASS [28242ms] real 28-second heartbeat, mandatory device_id and disabled collection flags
+HTTP [28476ms] api/v1/heartbeat keys=client_version,device_id,installation_id,steam_id64
+REPLY [28482ms] api/v1/heartbeat state=active
+STATE [28482ms] active
+REPLY [29525ms] api/v1/logout state=
+HTTP [29525ms] api/v1/activate keys=client_version,code,device_id,game_name,installation_id,request_id,steam_id64
+REPLY [29531ms] api/v1/activate state=active
+STATE [29531ms] active
+REPLY [29790ms] api/v1/logout state=
+PASS [29879ms] resume revalidation, current-game identity change and pause/logout
+PASS [29881ms] coordinator

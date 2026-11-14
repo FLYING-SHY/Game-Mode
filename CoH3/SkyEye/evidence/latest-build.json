@@ -1,0 +1,10 @@
+{
+  "Run": "20261113-144111-788",
+  "Tool": "Obfuscar.GlobalTool 2.2.50",
+  "InputSha256": "A2BD412924CE669666AFC4FCAA68B96FA5A6AE29B2BF6A32D89EF1466F20EF10",
+  "OutputSha256": "636206FDD6DC6EEDA979D5C3D1FC21432E6AAFFBBBAD899299A835E28CE1CE6B",
+  "Client": "F:\\WorkSpace\\Game\\CoH3\\SkyEye\\delivery\\client\\天穹之眼-自有授权版-v0.60.8.exe",
+  "PrivateMapping": "F:\\WorkSpace\\Game\\CoH3\\SkyEye\\artifacts\\20261113-144111-788\\private-renaming-map.xml",
+  "ProtectedVerifier": "F:\\WorkSpace\\Game\\CoH3\\SkyEye\\verification\\bin\\Protected\\net48\\SkyEye.Integration.Verification.exe",
+  "NoPublicSymbols": true
+}

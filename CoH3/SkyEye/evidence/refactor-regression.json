@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-11-13T15:49:45.795604+00:00",
+  "refactor": "Licensing -> LicensingSystem; SkyEye-HardenedV2 -> CoH3/SkyEye; client authorization stays compiled-in; three archive names and CoH3-root location unchanged",
+  "regression": {
+    "serverTests": "120/120 via LicensingSystem/Build.ps1 -VerifyServer against rebuilt server",
+    "clientSelfCheck": "Build-Protected.ps1 -SelfCheck exit 0; 30 PASS incl. signature contract, HTTP nonce, coordinator marker",
+    "protectedOffline": "Verify-Protected.ps1 -LocalOnly 3/3 exit 0",
+    "protectedOnline": "Verify-Protected.ps1 with fresh cards-refactor 4/4 exit 0 (protocol permanent+timed, coordinator ~29.8s, network real 60s lease expiry + 28.0s heartbeat)"
+  },
+  "binaryDeterminism": {
+    "unobfuscatedRebuildSha256": "A2BD412924CE669666AFC4FCAA68B96FA5A6AE29B2BF6A32D89EF1466F20EF10 (identical to sealed InputSha256)",
+    "obfuscatedOutput": "non-deterministic across runs (Obfuscar per-run string encryption); same size, 3682 bytes differ; sealed tested release 636206FDD6DC6EEDA979D5C3D1FC21432E6AAFFBBBAD899299A835E28CE1CE6B restored to delivery/client; Client.zip untouched cda5e3de4f31067fbc5648ce838d61186490a048665858d3b62820c109309dab",
+    "serverDll": "rebuilt bin differs from sealed publish by 207 metadata bytes (MVID/PDB checksum); 120 tests + 4 online groups ran against rebuilt DLL; delivery republished from tested build"
+  },
+  "intentionalPreservedChanges": [
+    "LicensingSystem/delivery/server/Licensing.Server.dll (republished tested build)",
+    "LicensingSystem/delivery/server/Licensing.Server.pdb (rebuilt)",
+    "LicensingSystem/delivery/server/Start-Server.ps1 (relative SDK path fixed)",
+    "LicensingSystem/.local/hardening-v2/server.json (state path prefix Licensing -> LicensingSystem)"
+  ],
+  "externalOriginalDirNotes": [
+    "CoH3/天穹之眼-v0.60.8 runtime logs air-diagnostics.log / air-outline-diagnostics.log / minimap-diagnostics.log / overlay-diagnostics.log changed after cleanup because the original executable was run and appended its own logs; all original release payload files still match the preserved hashes"
+  ],
+  "archives": {
+    "Client": "unchanged",
+    "Server": "bdfc274ad111e6ca9885f1fa17656511e66c1a8022647ddbe0feef043cd9b8f1",
+    "Maintenance": "97e6d7be363809c65fe6b01e0626244ebe0d3c9dabebc391d69b6161612d189e"
+  },
+  "finalAuditChecks": 36
+}

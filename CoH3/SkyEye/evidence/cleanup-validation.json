@@ -1,0 +1,203 @@
+{
+  "generatedAt": "2026-11-13T08:42:27.890650+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "name": "reviewed cleanup completed",
+      "passed": true
+    },
+    {
+      "name": "all preserved files match their pre-deletion hashes",
+      "passed": true
+    },
+    {
+      "name": "post-cleanup backend real HTTP and SQLite regression",
+      "passed": true
+    },
+    {
+      "name": "post-cleanup seven protected modes returned exit zero",
+      "passed": true
+    },
+    {
+      "name": "every post-cleanup result explicitly passed",
+      "passed": true
+    },
+    {
+      "name": "unprotected rebuild matches the original protection input",
+      "passed": true
+    },
+    {
+      "name": "distributed protected client remains identical",
+      "passed": true
+    },
+    {
+      "name": "published server matches rebuilt server",
+      "passed": true
+    },
+    {
+      "name": "post-cleanup main image size",
+      "passed": true
+    },
+    {
+      "name": "post-cleanup main pixels identical",
+      "passed": true
+    },
+    {
+      "name": "post-cleanup expanded image size",
+      "passed": true
+    },
+    {
+      "name": "post-cleanup expanded pixels identical",
+      "passed": true
+    },
+    {
+      "name": "post-cleanup compact image size",
+      "passed": true
+    },
+    {
+      "name": "post-cleanup compact pixels identical",
+      "passed": true
+    },
+    {
+      "name": "post-cleanup eight decoded audio payloads identical",
+      "passed": true
+    },
+    {
+      "name": "relocated ILSpy and PowerShell scripts validated",
+      "passed": true
+    },
+    {
+      "name": "current Python scripts parse",
+      "passed": true
+    },
+    {
+      "name": "current signing service remains healthy",
+      "passed": true
+    },
+    {
+      "name": "retired service port is closed",
+      "passed": true
+    },
+    {
+      "name": "shared SDK and independent project retained",
+      "passed": true
+    },
+    {
+      "name": "all retired paths remain absent after removing regression outputs",
+      "passed": true
+    },
+    {
+      "name": "protected verifier remains available",
+      "passed": true
+    },
+    {
+      "name": "preserved files still match after regression-output cleanup",
+      "passed": true
+    }
+  ],
+  "serverChecksPassed": 120,
+  "protectedModesPassed": 7,
+  "verificationReport": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\evidence\\protected-verification-20261113-163401-399.json",
+  "serverResultCopy": "evidence/cleanup-server-tests-results.json",
+  "pictures": [
+    {
+      "name": "main",
+      "changedPixels": 0,
+      "size": [
+        1480,
+        950
+      ]
+    },
+    {
+      "name": "expanded",
+      "changedPixels": 0,
+      "size": [
+        1480,
+        950
+      ]
+    },
+    {
+      "name": "compact",
+      "changedPixels": 0,
+      "size": [
+        1180,
+        740
+      ]
+    }
+  ],
+  "identicalDecodedAudioFiles": 8,
+  "retirement": {
+    "targets": 107,
+    "files": 4506,
+    "bytes": 2091090074
+  },
+  "regeneratedOutputsRemoved": [
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\bin",
+      "files": 15,
+      "bytes": 1494807
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\client\\obj",
+      "files": 13,
+      "bytes": 1194020
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\bin\\Release",
+      "files": 18,
+      "bytes": 1564728
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\server-tests\\bin\\Release\\net10.0\\test-runs",
+      "files": 28,
+      "bytes": 370724
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\protected-audio-20261113-163401-399\\audio-temp\\CoH3AudioCache-v21\\1D62D9017E19532A26BD18B13DE1116A7ADAF20D110DAC61ED17FDEEDD129EEA.wav",
+      "files": 1,
+      "bytes": 131374
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\protected-audio-20261113-163401-399\\audio-temp\\CoH3AudioCache-v21\\5E0AAEED3AE3C91350C15C11C8FCE08A059C55E07BC3EE85840ADD41B3CC38D3.wav",
+      "files": 1,
+      "bytes": 110638
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\protected-audio-20261113-163401-399\\audio-temp\\CoH3AudioCache-v21\\6A7ED4D5735D9DD569E850BD8624F78094FF4B2207DE0F6D2322276CED284960.wav",
+      "files": 1,
+      "bytes": 117550
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\protected-audio-20261113-163401-399\\audio-temp\\CoH3AudioCache-v21\\BE60C0055EFDBAE7E21344DD1E7423E4BA74527370462104569D25999E96765D.wav",
+      "files": 1,
+      "bytes": 122158
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\protected-audio-20261113-163401-399\\audio-temp\\CoH3AudioCache-v21\\C03F7A3F6F6A76F78AC860583D21C8B51965363AFF330689EEBC0318252BEEA9.wav",
+      "files": 1,
+      "bytes": 124462
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\protected-audio-20261113-163401-399\\audio-temp\\CoH3AudioCache-v21\\C0C8A04D57F6B05EEE6C43DEAB5CD96AA018B87F6AA708395A0BCE00E7A7263B.wav",
+      "files": 1,
+      "bytes": 115246
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\protected-audio-20261113-163401-399\\audio-temp\\CoH3AudioCache-v21\\ED200910E31D7027088C04D9115BB63FDEC7CBCE2E69B602E5BD3BDDE0E7C37C.wav",
+      "files": 1,
+      "bytes": 101422
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\protected-audio-20261113-163401-399\\audio-temp\\CoH3AudioCache-v21\\F650FDB40AD6967B8A77AD4C14C53D2E2FB2FF800412877AFC7E3159F2504C0F.wav",
+      "files": 1,
+      "bytes": 108334
+    }
+  ],
+  "currentServiceHealth": {
+    "status": "ready",
+    "framework": "ASP.NET Core",
+    "mode": "native-leases"
+  },
+  "legacyPortClosed": true,
+  "customerArchiveSha256": "cda5e3de4f31067fbc5648ce838d61186490a048665858d3b62820c109309dab"
+}

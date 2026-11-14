@@ -1,0 +1,44 @@
+﻿[
+    {
+        "Mode":  "selfcheck",
+        "PID":  35460,
+        "TimeoutMs":  30000,
+        "TimedOut":  false,
+        "ExitCode":  0,
+        "Windows":  [
+
+                    ],
+        "Sandbox":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\reactor-20261113-144411-762-selfcheck",
+        "Stdout":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\evidence\\reactor-client-trial\\selfcheck-stdout.log",
+        "Stderr":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\evidence\\reactor-client-trial\\selfcheck-stderr.log",
+        "Passed":  true
+    },
+    {
+        "Mode":  "ui",
+        "PID":  42064,
+        "TimeoutMs":  30000,
+        "TimedOut":  false,
+        "ExitCode":  0,
+        "Windows":  [
+
+                    ],
+        "Sandbox":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\reactor-20261113-144411-762-ui",
+        "Stdout":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\evidence\\reactor-client-trial\\ui-stdout.log",
+        "Stderr":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\evidence\\reactor-client-trial\\ui-stderr.log",
+        "Passed":  true
+    },
+    {
+        "Mode":  "audio",
+        "PID":  16356,
+        "TimeoutMs":  30000,
+        "TimedOut":  false,
+        "ExitCode":  0,
+        "Windows":  [
+
+                    ],
+        "Sandbox":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\verification\\sandbox\\reactor-20261113-144411-762-audio",
+        "Stdout":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\evidence\\reactor-client-trial\\audio-stdout.log",
+        "Stderr":  "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\evidence\\reactor-client-trial\\audio-stderr.log",
+        "Passed":  true
+    }
+]

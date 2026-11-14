@@ -1,0 +1,416 @@
+{
+  "generatedAt": "2026-11-13T15:50:57.996012+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "name": "derived comparison passed",
+      "passed": true
+    },
+    {
+      "name": "120 server regression checks",
+      "passed": true
+    },
+    {
+      "name": "seven real modes in every variant",
+      "passed": true
+    },
+    {
+      "name": "six pixel comparisons identical",
+      "passed": true
+    },
+    {
+      "name": "eight decoded files identical in both protection variants",
+      "passed": true
+    },
+    {
+      "name": "twelve observed sessions inactive",
+      "passed": true
+    },
+    {
+      "name": "real release window captured and closed",
+      "passed": true
+    },
+    {
+      "name": "ILSpy success acknowledged",
+      "passed": true
+    },
+    {
+      "name": "release executable is tested hash",
+      "passed": true
+    },
+    {
+      "name": "release and trial distinct",
+      "passed": true
+    },
+    {
+      "name": "private mapping available for owner",
+      "passed": true
+    },
+    {
+      "name": "published server is tested build",
+      "passed": true
+    },
+    {
+      "name": "published startup wrapper exists",
+      "passed": true
+    },
+    {
+      "name": "published deployment helpers exist",
+      "passed": true
+    },
+    {
+      "name": "layout refactor applied and mapped",
+      "passed": true
+    },
+    {
+      "name": "client configured for isolated signed server",
+      "passed": true
+    },
+    {
+      "name": "compiled public-key pin valid",
+      "passed": true
+    },
+    {
+      "name": "cleanup verified original retirement baselines",
+      "passed": true
+    },
+    {
+      "name": "all retired paths remain absent",
+      "passed": true
+    },
+    {
+      "name": "original, current source, release and signing material retained",
+      "passed": true
+    },
+    {
+      "name": "intentionally refactored preserved files present",
+      "passed": true
+    },
+    {
+      "name": "republished server matches tested build",
+      "passed": true
+    },
+    {
+      "name": "refactored private config keeps token and relocated state",
+      "passed": true
+    },
+    {
+      "name": "post-cleanup real regression and final directory validation passed",
+      "passed": true
+    },
+    {
+      "name": "post-cleanup pictures, audio and immutable customer archive verified",
+      "passed": true
+    },
+    {
+      "name": "commercial trial explicitly unlicensed",
+      "passed": true
+    },
+    {
+      "name": "private signing key retained outside delivery",
+      "passed": true
+    },
+    {
+      "name": "secret scanner has administrator, card and signing material needles",
+      "passed": true
+    },
+    {
+      "name": "customer bundle contains expected executable",
+      "passed": true
+    },
+    {
+      "name": "customer bundle excludes developer artifacts",
+      "passed": true
+    },
+    {
+      "name": "server bundle excludes local state and symbols",
+      "passed": true
+    },
+    {
+      "name": "maintenance contains source, mapping, report and reproducible wrappers",
+      "passed": true
+    },
+    {
+      "name": "all selected public files contain no retained local secrets",
+      "passed": true
+    },
+    {
+      "name": "report local links resolve",
+      "passed": true
+    },
+    {
+      "name": "portable SDK/config helpers exist",
+      "passed": true
+    },
+    {
+      "name": "portable helpers contain no retained secrets",
+      "passed": true
+    }
+  ],
+  "checkCount": 36,
+  "localLinks": [
+    {
+      "document": "README.md",
+      "link": "<../../LicensingSystem/README.md>",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "link": "<client/>",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "link": "<verification/>",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "link": "<delivery/client/>",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "link": "<../../LicensingSystem/server/>",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "link": "<../../LicensingSystem/server-tests/>",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "link": "<tools/>",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "link": "<scripts/>",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "link": "<evidence/>",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "link": "<reports/>",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "link": "signature-contract.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "link": "reports/protection-validation.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "link": "evidence/cleanup-manifest.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "link": "evidence/refactor-manifest.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../signature-contract.md",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/server-signature-tests/results.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/raw-signed-20261113-144039/summary.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/protected-verification-20261113-144238-873.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/reactor-client-trial/seven-case-summary.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/validation-summary.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/session-cleanup.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/protected-real-entry-lifecycle.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/protected-real-entry.png",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/published-server-health.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/published-protected-protocol.log",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/reactor-client-trial/REPORT.md",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/release-static-analysis/summary.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "signature-cross-review.md",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/final-validation.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/cleanup-manifest.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/cleanup-validation.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/cleanup-server-tests-results.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/protected-verification-20261113-163401-399.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\signature-cross-review.md",
+      "link": "../../../LicensingSystem/server/LeaseSigner.cs#L65",
+      "exists": true
+    },
+    {
+      "document": "reports\\signature-cross-review.md",
+      "link": "../client/CoH3MemoryTool/LeaseSignature60.cs#L48",
+      "exists": true
+    },
+    {
+      "document": "reports\\signature-cross-review.md",
+      "link": "../client/CoH3MemoryTool/LicenseApi60.cs#L45",
+      "exists": true
+    },
+    {
+      "document": "reports\\signature-cross-review.md",
+      "link": "../client/CoH3MemoryTool/LeaseSignature60.cs#L40",
+      "exists": true
+    },
+    {
+      "document": "reports\\signature-cross-review.md",
+      "link": "../../../LicensingSystem/server/LicenseService.cs#L94",
+      "exists": true
+    },
+    {
+      "document": "reports\\signature-cross-review.md",
+      "link": "../client/CoH3MemoryTool/LeaseSignature60.cs#L55",
+      "exists": true
+    },
+    {
+      "document": "reports\\signature-cross-review.md",
+      "link": "../../../LicensingSystem/server/LicenseService.cs#L197",
+      "exists": true
+    },
+    {
+      "document": "reports\\signature-cross-review.md",
+      "link": "../client/CoH3MemoryTool/LicenseReply60.cs#L15",
+      "exists": true
+    },
+    {
+      "document": "reports\\signature-cross-review.md",
+      "link": "../client/CoH3MemoryTool/LicenseCoordinator60.cs#L339",
+      "exists": true
+    },
+    {
+      "document": "reports\\signature-cross-review.md",
+      "link": "../client/CoH3MemoryTool/LicenseGate60.cs#L33",
+      "exists": true
+    },
+    {
+      "document": "reports\\signature-cross-review.md",
+      "link": "../client/CoH3MemoryTool/LicenseCoordinator60.cs#L403",
+      "exists": true
+    },
+    {
+      "document": "reports\\signature-cross-review.md",
+      "link": "../../../LicensingSystem/Initialize-Signing.ps1#L11",
+      "exists": true
+    },
+    {
+      "document": "reports\\signature-cross-review.md",
+      "link": "../Build-Protected.ps1#L10",
+      "exists": true
+    },
+    {
+      "document": "reports\\signature-cross-review.md",
+      "link": "../verification/SkyEye.Integration.Verification.csproj#L10",
+      "exists": true
+    },
+    {
+      "document": "reports\\signature-cross-review.md",
+      "link": "../../../LicensingSystem/server/LeaseSigner.cs#L22",
+      "exists": true
+    },
+    {
+      "document": "reports\\signature-cross-review.md",
+      "link": "../../../LicensingSystem/server/Program.cs#L19",
+      "exists": true
+    },
+    {
+      "document": "reports\\signature-cross-review.md",
+      "link": "../Build-Protected.ps1#L4",
+      "exists": true
+    },
+    {
+      "document": "reports\\signature-cross-review.md",
+      "link": "../evidence/signature-cross-review.json",
+      "exists": true
+    }
+  ],
+  "secretScanner": "Administrator tokens, fixture code values and private PEM payload lines checked in memory; no values saved.",
+  "trialBinaryIncluded": false,
+  "limitations": [
+    "Reactor output is a 14-day demo experiment and excluded from every delivery archive.",
+    "ILSpy still exports release C#; obfuscation raises analysis cost.",
+    "Preview pixels and decoded audio do not prove live-game correctness or audible playback.",
+    "Public deployment, another machine, long sessions and protection patch resistance are not tested."
+  ]
+}

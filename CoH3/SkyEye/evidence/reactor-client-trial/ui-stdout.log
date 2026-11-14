@@ -1,0 +1,14 @@
+START [4ms] ui
+PASS seven modules after renaming
+PASS three stacks after renaming
+PASS numeric controls retained
+PASS single console layout
+PASS seven independent audio selectors
+PASS fold expands after event renaming
+PASS fold collapses after event renaming
+PASS numeric rounding
+PASS numeric upper limit
+PASS numeric lower limit
+PASS compact layout
+PASS preview closes cleanly
+PASS [744ms] ui

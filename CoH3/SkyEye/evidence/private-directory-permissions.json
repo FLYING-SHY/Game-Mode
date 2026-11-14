@@ -1,0 +1,6 @@
+﻿{
+    "PrivateDirectory":  "F:\\WorkSpace\\Game\\Licensing\\.local\\hardening-v2",
+    "InheritanceProtected":  true,
+    "AllowedPrincipals":  "Current user, SYSTEM, built-in Administrators",
+    "ExistingServicesModified":  false
+}

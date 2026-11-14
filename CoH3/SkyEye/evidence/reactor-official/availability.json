@@ -1,0 +1,11 @@
+﻿{
+    "CLI":  "tools/reactor/extracted/{app}/dotNET_Reactor.Console.exe",
+    "HelpExitCode":  0,
+    "LicensedExitCode":  101,
+    "InstallerExecuted":  false,
+    "DownloadedFrom":  "https://www.eziriz.com/download.php?download=dotnet_reactor_setup_7_7_1_0.exe",
+    "UnpackerFrom":  "https://github.com/jrathlev/InnoUnpacker-Windows-GUI/releases/download/ui_2_2_13/innounp-2.zip",
+    "UnpackerSHA256":  "F8E45C9676BEBC7D7570108AB572673B541FCF7A7D3D24A04319AC6B5315B4E8",
+    "UnpackerVersion":  "2.71.3",
+    "CheckedAt":  "2026-11-13T14:35:29.5097574+08:00"
+}

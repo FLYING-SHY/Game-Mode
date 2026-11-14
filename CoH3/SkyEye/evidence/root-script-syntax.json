@@ -1,0 +1,14 @@
+﻿[
+    {
+        "File":  "Build.ps1",
+        "Errors":  0
+    },
+    {
+        "File":  "Start-Server.ps1",
+        "Errors":  0
+    },
+    {
+        "File":  "Initialize-Signing.ps1",
+        "Errors":  0
+    }
+]

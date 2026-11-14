@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="turbo-root" content="/help">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.847769143997">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 3.6.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Declarative Protection</title>
+    <meta name="title" content="Declarative Protection">
+    <meta name="description" content="The .NET Reactor user interface offers various ways to refine the level of protection applied to your application.">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.eziriz.com/help/definitions/declarative_protection/index.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.eziriz.com/help/definitions/declarative_protection/index.html">
+    <meta property="og:title" content="Declarative Protection">
+    <meta property="og:description" content="The .NET Reactor user interface offers various ways to refine the level of protection applied to your application.">
+    <meta property="og:image" content="https://www.eziriz.com/help/images/declarative_protection.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.eziriz.com/help/definitions/declarative_protection/index.html">
+    <meta property="twitter:title" content="Declarative Protection">
+    <meta property="twitter:description" content="The .NET Reactor user interface offers various ways to refine the level of protection applied to your application.">
+    <meta property="twitter:image" content="https://www.eziriz.com/help/images/declarative_protection.png">
+
+    <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+
+    <link href="../../images/reactor.ico" rel="icon">
+    <link href="../../resources/css/retype.css?v=3.6.0.847769143997" rel="stylesheet">
+
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.847769143997" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/search.js?v=3.6.0.847769143997" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.847769143997" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.6.0.847769143997" defer></script>
+
+    <style id="reactor-sidebar-icon-opacity">
+    aside.sidebar li > div > a > span:first-child > svg {
+        opacity: 0.50;
+    }
+    </style>
+
+</head>
+<body>
+    <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+        <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+    
+        <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+            <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
+                <!-- Mobile menu button skeleton -->
+                <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+                <div v-cloak id="docs-sidebar-toggle"></div>
+        
+                <!-- Logo -->
+                <div class="flex items-center justify-between h-full py-2 md:w-75">
+                    <div class="flex items-center px-2 md:px-6">
+                        <a id="docs-site-logo" href="../../index.html" class="flex items-center leading-snug text-xl">
+                            <span class="w-10 mr-2 grow-0 shrink-0 overflow-hidden">
+                                <img class="max-h-10 dark:hidden md:inline-block" src="../../images/logo.svg">
+                                <img class="max-h-10 hidden dark:inline-block" src="../../images/logo_white.svg">
+                            </span>
+                            <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">.NET  Reactor</span>
+                        </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
+                    </div>
+        
+                    <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+                </div>
+        
+                <div class="flex justify-between md:grow">
+                    <!-- Top Nav -->
+                    <nav class="hidden md:flex">
+                        <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                            
+                        </ul>
+                    </nav>
+        
+                    <!-- Header Right Skeleton -->
+                    <div v-cloak class="flex justify-end grow skeleton">
+        
+                        <!-- Search input mock -->
+                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                            </div>
+                            <input class="w-full h-10 placeholder-gray-400 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 dark:placeholder-dark-400" style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search">
+                        </div>
+        
+                        <!-- Mobile search button -->
+                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                        </div>
+        
+                        <!-- Dark mode switch placeholder -->
+                        <div class="w-10 h-10 lg:ml-2"></div>
+        
+                        <!-- History button -->
+                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                        </div>
+                    </div>
+        
+                    <div v-cloak class="flex justify-end grow">
+                        <div id="docs-mobile-search-button"></div>
+                        <doc-search-desktop></doc-search-desktop>
+        
+                        <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                        <doc-history></doc-history>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <div class="container relative flex bg-white">
+            <!-- Sidebar Skeleton -->
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+            
+                <!-- Render this div, if config.showSidebarFilter is `true` -->
+                <div class="flex items-center h-16 px-6">
+                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter">
+                </div>
+            
+                <div class="pl-6 mt-1 mb-4">
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                </div>
+            
+            </div>
+            
+            <!-- Sidebar component -->
+            <doc-sidebar v-cloak>
+                <template #sidebar-footer>
+                    <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650">
+                    </div>
+                </template>
+            </doc-sidebar>
+    
+            <div class="grow min-w-0 dark:bg-dark-850">
+                <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+                <div class="flex">
+                    <div class="min-w-0 p-4 grow md:px-16">
+                        <main class="relative pb-12 lg:pt-2">
+                            <div class="docs-markdown" id="docs-content">
+                                <!-- Rendered if sidebar right is enabled -->
+                                <div id="docs-sidebar-right-toggle"></div>
+                                <nav class="breadcrumb" aria-label="Breadcrumb">
+                                    <ol role="list">
+                                        <li class="pr-4">
+                                            <a href="../../index.html" class="pr-4">
+                                                Welcome
+                                            </a>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                                            </svg>
+                                        </li>
+                                        <li class="pr-4">
+                                            <span class="pr-4">
+                                                Definitions
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                                            </svg>
+                                        </li>
+                                        <li class="pr-4">
+                                            <a href="../../definitions/declarative_protection/index.html" class="pr-4">
+                                                Declarative Protection
+                                            </a>
+                                        </li>
+                                    </ol>
+                                </nav>
+                
+                                <!-- Page content  -->
+<doc-anchor-target id="declarative-protection" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#declarative-protection">#</doc-anchor-trigger>
+        <span>Declarative Protection</span>
+    </h1>
+</doc-anchor-target>
+<p>The .NET Reactor user interface offers various ways to refine the level of protection applied to your application. The Advanced Rules editor allows you to select different inclusion and exclusion options, and you can also control the protection level using the standard .NET <a href="https://docs.microsoft.com/dotnet/api/system.reflection.obfuscationattribute" class="outbound" target="_blank"><span>Obfuscation Attribute</span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Enable Declarative Protection</h5>
+<p>To use the feature selections described below, enable <strong>Declarative Protection</strong> in the settings. The special case without a <code v-pre>Feature</code> value is described separately below.</p>
+        </div>
+    </div>
+</div>
+<p><figure class="content-center">
+    <img src="../../images/declarative_protection.png" alt="Enable Declarative Protection in the protection settings">
+    <figcaption class="caption">Enable Declarative Protection in the protection settings</figcaption>
+</figure>
+</p>
+<p>Once you have enabled this option you can use the attribute to select specific protection features, choose whether to include or exclude those features, and specify the classes and members that should be affected.</p>
+<doc-anchor-target id="selecting-protection-features">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#selecting-protection-features">#</doc-anchor-trigger>
+        <span>Selecting Protection Features</span>
+    </h2>
+</doc-anchor-target>
+<p>Protection features can be selected by assigning values to the attribute <strong>Feature</strong> property.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">[System.Reflection.Obfuscation(Feature = &quot;renaming,controlflow&quot;)]</code></pre>
+</doc-codeblock></div>
+<p>The following values are available:</p>
+<ul>
+<li>&quot;renaming&quot; or &quot;obfuscation&quot;</li>
+<li>&quot;stringencryption&quot;</li>
+<li>&quot;controlflow&quot;</li>
+<li>&quot;necrobit&quot;</li>
+<li>&quot;antitamp&quot;</li>
+<li>&quot;hidemethods&quot;</li>
+<li>&quot;virtualization&quot;</li>
+<li>&quot;virtualizationonetimeintegrity&quot; for one-time integrity virtualization</li>
+<li>&quot;virtualizationrepeatedintegrity&quot; for repeated integrity virtualization</li>
+</ul>
+<p>See <a href="../code_virtualization/index.html#integrity-linked-virtualization">Code Virtualization</a> for the requirements and performance differences between the virtualization variants.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Feature values</h5>
+<p>The values must be entered with quotation marks and are case-insensitive.</p>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="defining-the-behavior">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#defining-the-behavior">#</doc-anchor-trigger>
+        <span>Defining the behavior</span>
+    </h2>
+</doc-anchor-target>
+<p>Use the <strong>Exclude</strong> property to define whether the features should be included or excluded.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">[System.Reflection.Obfuscation(Exclude = true, Feature = &quot;renaming&quot;)]</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">[System.Reflection.Obfuscation(Exclude = false, Feature = &quot;controlflow&quot;)]</code></pre>
+</doc-codeblock></div>
+<ul>
+<li><p>To <strong>include</strong> features, set the Exclude property to <strong>false</strong>.</p>
+</li>
+<li><p>To <strong>exclude</strong> features, set the Exclude property to <strong>true</strong>. The <strong>default</strong> value is true, so explicitly setting the Exclude property is optional if you wish to exclude a feature.</p>
+</li>
+</ul>
+<doc-anchor-target id="placing-the-attribute-and-the-applytomembers-property">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#placing-the-attribute-and-the-applytomembers-property">#</doc-anchor-trigger>
+        <span>Placing the attribute and the &#x27;ApplyToMembers&#x27; property</span>
+    </h2>
+</doc-anchor-target>
+<p>You can place the attribute on top of classes and members (methods, properties, and fields).</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">[System.Reflection.Obfuscation(Exclude = true, Feature = &quot;controlflow&quot;)]
+internal void MyMethod()</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">[System.Reflection.Obfuscation(Exclude = false, Feature = &quot;renaming&quot;, ApplyToMembers = false)]
+public class MyClass</code></pre>
+</doc-codeblock></div>
+<p>The <strong>ApplyToMembers</strong> property has a <strong>default</strong> value of <strong>true</strong>. As it only affects whether class members (methods, properties, fields, and nested classes) are affected, it is only appropriate for attributes decorating a class.</p>
+<p>If you do not want the class members to be affected, set the ApplyToMembers property to <strong>false</strong>.</p>
+<doc-anchor-target id="examples">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#examples">#</doc-anchor-trigger>
+        <span>Examples</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="example-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#example-1">#</doc-anchor-trigger>
+        <span>Example 1</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">[System.Reflection.Obfuscation(Feature = &quot;renaming&quot;)]
+class MyClass
+{
+   class NestedClass
+   {}
+    
+   void MyMethod(){}    
+}</code></pre>
+</doc-codeblock></div>
+<p>MyClass, NestedClass, and MyMethod will <strong>not</strong> be <strong>renamed</strong>.</p>
+<doc-anchor-target id="example-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#example-2">#</doc-anchor-trigger>
+        <span>Example 2</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">[System.Reflection.Obfuscation(Exclude = true, Feature = &quot;renaming&quot;, ApplyToMembers = true)]
+class MyClass
+{
+   class NestedClass
+   {}
+    
+   void MyMethod(){}    
+}</code></pre>
+</doc-codeblock></div>
+<p>This is equivalent to Example 1.</p>
+<doc-anchor-target id="example-3">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#example-3">#</doc-anchor-trigger>
+        <span>Example 3</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">[System.Reflection.Obfuscation(Feature = &quot;renaming&quot;, ApplyToMembers = false)]
+class MyClass
+{
+   class NestedClass
+   {}
+    
+   void MyMethod(){}    
+}</code></pre>
+</doc-codeblock></div>
+<p>Only MyClass is excluded from renaming, but not NestedClass and MyMethod.</p>
+<doc-anchor-target id="example-4">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#example-4">#</doc-anchor-trigger>
+        <span>Example 4</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">[System.Reflection.Obfuscation(Exclude = false, Feature = &quot;renaming,stringencryption&quot;)] // include
+[System.Reflection.Obfuscation(Exclude = true, Feature = &quot;necrobit&quot;)]  // exclude
+class MyClass
+{   
+   int MyField;
+    
+   [System.Reflection.Obfuscation(Exclude = true, Feature = &quot;renaming&quot;)] // exclude
+   void MyMethod(){}   
+   
+   [System.Reflection.Obfuscation(Exclude = false, Feature = &quot;necrobit&quot;)] // include
+   void MyMethod2(){}  
+}</code></pre>
+</doc-codeblock></div>
+<ul>
+<li><p>Only MyField and MyMethod2 will be renamed.</p>
+</li>
+<li><p>String Encryption will be applied to MyMethod and MyMethod2</p>
+</li>
+<li><p>NecroBit will be only applied to MyMethod2.</p>
+</li>
+</ul>
+<doc-anchor-target id="special-case-systemreflectionobfuscation">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#special-case-systemreflectionobfuscation">#</doc-anchor-trigger>
+        <span>Special case: [System.Reflection.Obfuscation()]</span>
+    </h2>
+</doc-anchor-target>
+<p>There is a <strong>special case that works independently from &quot;Declarative Protection&quot;</strong>. If you don&#x27;t set a value for the Feature property, the attribute excludes renaming.</p>
+<doc-anchor-target id="example-5">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#example-5">#</doc-anchor-trigger>
+        <span>Example 5</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">[System.Reflection.Obfuscation(ApplyToMembers = false)]
+class MyClass
+{
+   class NestedClass
+   {}
+    
+   void MyMethod(){}    
+}</code></pre>
+</doc-codeblock></div>
+<p>Only MyClass is excluded from renaming, but not NestedClass and MyMethod.</p>
+<doc-anchor-target id="example-6">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#example-6">#</doc-anchor-trigger>
+        <span>Example 6</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">[System.Reflection.Obfuscation()]
+enum MyEnum
+{
+    A,
+    B,
+    C
+}</code></pre>
+</doc-codeblock></div>
+<p>MyEnum and all fields are excluded from renaming.</p>
+<doc-anchor-target id="example-7">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#example-7">#</doc-anchor-trigger>
+        <span>Example 7</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">enum MyEnum
+{
+    A,
+    [System.Reflection.Obfuscation()]
+    B,
+    C
+}</code></pre>
+</doc-codeblock></div>
+<p>Only the B field is excluded from renaming.</p>
+<doc-anchor-target id="assembly-attributes">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#assembly-attributes">#</doc-anchor-trigger>
+        <span>Assembly Attributes</span>
+    </h2>
+</doc-anchor-target>
+<p>In addition to the standard Obfuscation attribute usage described above, you can define more complex, rule-based configurations via assembly attributes. These rules allow for finer-grained control over protection features and can be combined with filters specifying which classes, interfaces, enums, methods, properties, fields, or events they affect.</p>
+<doc-anchor-target id="disable-licensing-for-an-assembly">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#disable-licensing-for-an-assembly">#</doc-anchor-trigger>
+        <span>Disable licensing for an assembly</span>
+    </h3>
+</doc-anchor-target>
+<p>In an application made up of multiple protected assemblies, each assembly that contains its own licensing lock performs a licensing check when it is loaded. To keep the licensing lock only in the main executable, add the following attribute to the source code of each additional assembly:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">using System.Reflection;
+
+[assembly: Obfuscation(Feature = &quot;NOLICENSING&quot;)]</code></pre>
+</doc-codeblock></div>
+<p>The additional assembly is still protected, but .NET Reactor does not add its own licensing lock to it. This prevents that assembly from displaying a separate licensing dialog or independently affecting counters such as <strong>Number of Uses</strong>. Enable and configure the locks in the main executable so that it performs the application&#x27;s licensing check. For more information, see <a href="../../licensing-system/how_locks_work/index.html#licensing-in-applications-with-multiple-assemblies">Licensing in applications with multiple assemblies</a>.</p>
+<p><code v-pre>NOLICENSING</code> controls licensing-lock injection; it is not one of the member-level protection features used by the rules below. .NET Reactor recognizes this attribute independently, so <strong>Declarative Protection does not need to be enabled</strong> for <code v-pre>NOLICENSING</code> to work.</p>
+<p>These rules are defined in the <code v-pre>Feature</code> property of the <code v-pre>Obfuscation</code> attribute using a special syntax starting with <code v-pre>rule:</code> or <code v-pre>rule regex:</code>.</p>
+<doc-anchor-target id="basic-syntax-for-rules">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#basic-syntax-for-rules">#</doc-anchor-trigger>
+        <span>Basic Syntax for Rules</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">[assembly: Obfuscation(Feature = @&quot;rule: ( ... ) where ( ... ) ( ... ) ( ... )&quot;)]</code></pre>
+</doc-codeblock></div>
+<p>The structure is as follows:</p>
+<doc-anchor-target id="rule-or-rule-regex">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#rule-or-rule-regex">#</doc-anchor-trigger>
+        <span><code v-pre>rule:</code> or <code v-pre>rule regex:</code></span>
+    </h4>
+</doc-anchor-target>
+<ul>
+<li><p><code v-pre>rule:</code> indicates a standard rule set.</p>
+</li>
+<li><p><code v-pre>rule regex:</code> indicates that all defined names (namespaces, types, methods, fields, properties, events) are interpreted as regular expressions.</p>
+</li>
+<li><p><code v-pre>( ... )</code> – The first parentheses block defines which features to enable or disable.</p>
+<ul>
+<li>Prefix <code v-pre>+</code> means enabling/applying a feature.</li>
+<li>Prefix <code v-pre>-</code> means excluding/disabling a feature.</li>
+</ul>
+</li>
+</ul>
+<doc-anchor-target id="available-features">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#available-features">#</doc-anchor-trigger>
+        <span>Available Features</span>
+    </h4>
+</doc-anchor-target>
+<ul>
+<li><code v-pre>-all</code>: Disables all features for the listed filter elements.</li>
+<li><code v-pre>-virtualization / +virtualization</code>: Disables/Enables Code Virtualization for the listed filter elements.</li>
+<li><code v-pre>-controlflow / +controlflow</code>: Disables/Enables Control Flow Obfuscation.</li>
+<li><code v-pre>-hidemethods / +hidemethods</code>: Disables/Enables Hide Method Calls.</li>
+<li><code v-pre>-necrobit / +necrobit</code>: Disables/Enables NecroBit.</li>
+<li><code v-pre>-renaming / +renaming</code>: Disables/Enables Renaming.</li>
+<li><code v-pre>-resourceencryption / +resourceencryption</code>: Disables/Enables Resource Encryption.</li>
+<li><code v-pre>-stringencryption / +stringencryption</code>: Disables/Enables String Encryption.</li>
+</ul>
+<p>Multiple features can be combined and must be comma-separated. For example:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">rule: (-renaming, -necrobit, +stringencryption)</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="where---">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#where---">#</doc-anchor-trigger>
+        <span><code v-pre>where ( ... )</code></span>
+    </h4>
+</doc-anchor-target>
+<p>This section is optional and defines a filter on the types. If omitted, the rule applies to all types. The following values can be used (one per <code v-pre>where(...)</code> clause):</p>
+<ul>
+<li><code v-pre>class</code> – Affects all classes but no enums.</li>
+<li><code v-pre>compiler</code> – Affects all compiler-generated types.</li>
+<li><code v-pre>enum</code> – Affects only enums.</li>
+<li><code v-pre>event</code> – Affects only events.</li>
+<li><code v-pre>interface</code> – Affects only interfaces.</li>
+<li><code v-pre>member_attr</code> – Affects only members that have a special type attribute defined in the next filter.</li>
+<li><code v-pre>type_attr</code> – Affects only types that have a special type attribute defined in the next filter.</li>
+<li><code v-pre>interface_impl</code> – Affects only types that have implemented certain types defined in the next filter.</li>
+<li><code v-pre>public_interface_impl</code> – Affects only types that have implemented certain public types defined in the next filter.</li>
+<li><code v-pre>inherited</code> – Affects only types that are inherited from certain types defined in the next filter.</li>
+<li><code v-pre>inherited_public</code> – Affects only types that are inherited from certain public types defined in the next filter.</li>
+<li><code v-pre>nested_excl</code> – Affects only types containing nested excluded types.</li>
+</ul>
+<doc-anchor-target id="type-and-namespace-filter">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#type-and-namespace-filter">#</doc-anchor-trigger>
+        <span>Type and namespace filter</span>
+    </h4>
+</doc-anchor-target>
+<p>The next filter is again optional. If nothing is defined, it means all types in all namespaces are considered. You can specify a namespace and a list of types within it to restrict which elements the rules apply to:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">(namespace=MyNamespace; types=Type1,Type2)</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="member-filter">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#member-filter">#</doc-anchor-trigger>
+        <span>Member filter</span>
+    </h4>
+</doc-anchor-target>
+<p>The last filter is also optional and further restricts which members are affected. If not set, everything from the previously defined classes is selected. Possible values are:</p>
+<ul>
+<li><code v-pre>-typenames</code> – Typenames will not be renamed.</li>
+<li><code v-pre>-namespaces</code> – Namespaces will not be renamed.</li>
+<li><code v-pre>-methods</code> – No methods will be renamed.</li>
+<li><code v-pre>-fields</code> – No fields will be renamed.</li>
+<li><code v-pre>-properties</code> – No properties will be renamed.</li>
+<li><code v-pre>methods:</code> – A list of multiple methods, comma-separated.</li>
+<li><code v-pre>fields:</code> – A list of multiple fields, comma-separated.</li>
+<li><code v-pre>properties:</code> – A list of multiple properties, comma-separated.</li>
+<li><code v-pre>events:</code> – A list of multiple events, comma-separated.</li>
+</ul>
+<p>For example:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">(-typenames; -namespaces; methods=MyMethod,MyMethod2; properties=MyProperty)</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="using-regex">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#using-regex">#</doc-anchor-trigger>
+        <span>Using Regex</span>
+    </h3>
+</doc-anchor-target>
+<p>When using <code v-pre>rule regex:</code>, any name (namespace, type, method, field, property, event) you specify after <code v-pre>methods=</code>, <code v-pre>fields=</code>, <code v-pre>properties=</code>, <code v-pre>events=</code>, <code v-pre>namespace=</code>, or <code v-pre>types=</code> is treated as a regular expression.</p>
+<doc-anchor-target id="complete-example">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#complete-example">#</doc-anchor-trigger>
+        <span>Complete Example</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">[assembly: Obfuscation(Feature = @&quot;rule: (-renaming,-necrobit,+stringencryption) where (interface_impl) (namespace=MyNamespace; types=Interface1,Interface2) (-typenames; -namespaces; methods=MyMethod,MyMethod2; properties=MyProperty,Prop2)&quot;)]</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="explanation">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#explanation">#</doc-anchor-trigger>
+        <span>Explanation</span>
+    </h4>
+</doc-anchor-target>
+<ul>
+<li><code v-pre>rule: (-renaming,-necrobit,+stringencryption)</code></li>
+</ul>
+<p>Disables Renaming and NecroBit, enables String Encryption.</p>
+<ul>
+<li><code v-pre>where (interface_impl)</code></li>
+</ul>
+<p>Applies this rule only to types that have implemented the defined interfaces in the next filter.</p>
+<ul>
+<li><code v-pre>(namespace=MyNamespace; types=Interface1,Interface2)</code></li>
+</ul>
+<p>Interfaces Interface1 and Interface2 within MyNamespace.</p>
+<ul>
+<li><code v-pre>(-typenames; -namespaces; methods=MyMethod,MyMethod2; properties=MyProperty,MyProperty2)</code></li>
+</ul>
+<p>From the selected types, do not rename the type names or namespaces, but apply these rules specifically to methods named with name MyMethod and MyMethod2 and properties MyProperty and MyProperty2.</p>
+<doc-anchor-target id="further-examples">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#further-examples">#</doc-anchor-trigger>
+        <span>Further examples</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">[assembly: Obfuscation(Feature = @&quot;rule: (-renaming, -hidemethods, +controlflow)&quot;)]
+
+[assembly: Obfuscation(Feature = @&quot;rule regex: (-renaming, +stringencryption) (types=.*Resource)&quot;)]
+
+[assembly: Obfuscation(Feature = @&quot;rule regex: (-hidemethods) (namespace=MyApp.Services; types=Service.*) (methods=Get.*)&quot;)]
+
+[assembly: Obfuscation(Feature = @&quot;rule: (+controlflow) where (inherited_public) (namespace=MyApp.Base; types=BaseClass) (-typenames; -namespaces)&quot;)]
+
+[assembly: Obfuscation(Feature = @&quot;rule: (-renaming) where (enum)&quot;)]</code></pre>
+</doc-codeblock></div>
+<p>All these combined filters allow very fine-grained configuration of the obfuscation process directly from within your code using Obfuscation attributes.</p>
+<doc-anchor-target id="generate-assembly-attributes-visually">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#generate-assembly-attributes-visually">#</doc-anchor-trigger>
+        <span>Generate assembly attributes visually</span>
+    </h2>
+</doc-anchor-target>
+<p>If you prefer to set up rules visually and then generate the corresponding attributes:</p>
+<ol>
+<li><p>In .NET Reactor, go to <strong>2. Protection Settings -&gt; Advanced Rules</strong>.</p>
+</li>
+<li><p>Define or select your rules from the GUI.</p>
+</li>
+<li><p>Right-click on the selected rules and choose <strong>&quot;Generate Assembly Attributes&quot;</strong>.</p>
+</li>
+</ol>
+<p><figure class="content-center">
+    <img src="../../images/rules_attribute.png" alt="Generate assembly attributes from selected protection rules">
+    <figcaption class="caption">Generate assembly attributes from selected protection rules</figcaption>
+</figure>
+</p>
+<doc-anchor-target id="related-topics">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#related-topics">#</doc-anchor-trigger>
+        <span>Related topics</span>
+    </h2>
+</doc-anchor-target>
+<p><a href="../../tools/advanced_rules_editor/index.html">Advanced Rules Editor</a> · <a href="../../troubleshooting/obfuscation_reflection/index.html">Reflection problems</a></p>
+<p><a href="../../troubleshooting/serialization/index.html">JSON serialization</a> · <a href="../../troubleshooting/obfuscation_reflection/index.html#wpf-and-xaml-bindings">WPF protection</a> · <a href="../../howto/protection_settings/index.html">Choosing protection settings</a></p>
+
+                                
+                                <!-- Required only on API pages -->
+                                <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
+                            </div>
+                            <footer class="clear-both">
+                            
+                                <nav class="flex mt-14">
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../definitions/control_flow_obfuscation/index.html">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                                                <span class="block mt-1">Control Flow Obfuscation</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                            
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../definitions/embed_assemblies/index.html">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                                                <span class="block mt-1">Embed Assemblies</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </footer>
+                        </main>
+                
+                        <div class="border-t dark:border-dark-650 pt-6 mb-8">
+                            <footer class="flex flex-wrap items-center justify-between">
+                                <div>
+                                    <ul class="flex flex-wrap items-center text-sm">
+                                    </ul>
+                                </div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright Eziriz. All rights reserved.</p></div>
+                            </footer>
+                        </div>
+                    </div>
+                
+                    <!-- Rendered if sidebar right is enabled -->
+                    <!-- Sidebar right skeleton-->
+                    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:transform-none sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
+                        <div class="pl-5">
+                            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                        </div>
+                    </div>
+                
+                    <!-- User should be able to hide sidebar right -->
+                    <doc-sidebar-right v-cloak></doc-sidebar-right>
+                </div>
+
+            </div>
+        </div>
+    
+        <doc-search-mobile></doc-search-mobile>
+        <doc-back-to-top></doc-back-to-top>
+    </div>
+
+
+    <div id="docs-overlay-target"></div>
+
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Declarative Protection", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+</body>
+</html>

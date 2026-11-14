@@ -7,10 +7,10 @@ publish-gui/
 artifacts/
 
 # ---- Licensing local state & secrets ----
-Licensing/.cache/
-Licensing/.local/
-licensing/.cache/
-licensing/.local/
+LicensingSystem/.cache/
+LicensingSystem/.local/
+licensingsystem/.cache/
+licensingsystem/.local/
 *.db
 *.db-shm
 *.db-wal

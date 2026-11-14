@@ -1,0 +1,6 @@
+START [4ms] protocol
+PASS [97ms] real API activation and lease response
+PASS [107ms] same-request activation idempotency
+PASS [115ms] request conflict, concurrent session, authenticated heartbeat and logout
+PASS [118ms] single-device binding and lifetime preserved across logout/reactivation
+PASS [123ms] protocol

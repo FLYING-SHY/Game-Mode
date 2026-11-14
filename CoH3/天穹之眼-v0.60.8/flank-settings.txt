@@ -1,0 +1,7 @@
+range=1
+rangeWidth=2
+enabled=0
+radius=40
+repeat=15
+key=F9
+sound=

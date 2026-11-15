@@ -8,7 +8,7 @@ if (-not $NoBuild) {
     & $sdk build $project -c Release --nologo
     if ($LASTEXITCODE -ne 0) { throw 'Signed server build failed.' }
 }
-$output = Join-Path $root 'delivery\server'
+$output = Join-Path $root 'output'
 & $sdk publish $project -c Release --no-build --no-restore --self-contained false -p:UseAppHost=false -o $output --nologo
 if ($LASTEXITCODE -ne 0) { throw 'Signed server publish failed.' }
 Copy-Item -LiteralPath (Join-Path $root 'Start-PublishedServer.ps1') -Destination (Join-Path $output 'Start-Server.ps1') -Force

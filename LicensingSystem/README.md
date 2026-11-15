@@ -1,6 +1,6 @@
 # LicensingSystem — 通用授权系统
 
-跨游戏共用的授权服务端与私有状态，按 ProductId 隔离多产品；当前产品为 `CoH3FowTool`。游戏侧的接入代码在各游戏目录内（当前为 [CoH3/SkyEye](<../CoH3/SkyEye/README.md>)，客户端授权模块编译内嵌于游戏程序）。
+跨游戏共用的授权服务端与私有状态，按 ProductId 隔离多产品；当前产品为 `CoH3FowTool`。游戏侧的接入代码在各游戏目录内（当前为 [CoH3/dev/SkyEye](<../CoH3/dev/SkyEye/README.md>)，客户端授权模块编译内嵌于游戏程序）。
 
 ## 目录
 
@@ -30,9 +30,9 @@
 & .\LicensingSystem\Start-Server.ps1 -ConfigPath .\LicensingSystem\.local\hardening-v2\server.json
 ```
 
-管理入口 `http://127.0.0.1:47835/admin`，管理员令牌取自对应私有配置的 `AdminToken`；客户端不持有它。服务端发布包由 [Publish-Server.ps1](<Publish-Server.ps1>) 生成到 [delivery/server/](<delivery/server/>)（供 Server.zip 打包，包含本地化启动 wrapper 与 deployment 辅助脚本）。
+管理入口 `http://127.0.0.1:47835/admin`，管理员令牌取自对应私有配置的 `AdminToken`；客户端不持有它。服务端发布包由 [Publish-Server.ps1](<Publish-Server.ps1>) 生成到 [output/](<output/>)（供 Server.zip 打包，包含本地化启动 wrapper 与 deployment 辅助脚本）。
 
-签名字段、nonce 与规范串以游戏侧[签名契约](<../CoH3/SkyEye/signature-contract.md>)为准。
+签名字段、nonce 与规范串以游戏侧[签名契约](<../CoH3/dev/SkyEye/signature-contract.md>)为准。
 
 ## 新增一个游戏
 

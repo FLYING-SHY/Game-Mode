@@ -1,0 +1,9 @@
+namespace CoH3MemoryTool;
+
+// Generated public-only build pin. Empty values deliberately fail closed.
+internal static class PinnedLeaseKey60
+{
+	internal const string Modulus = "yN6tFcbXVdx1crnUS1aLFZpxc08bUctCwq3xGcNVovzc/Ukrd+DeWBBFWqNEKeYW4tefrV7AEbICYyKVsSJ3v1I3t2r+PAYZ0pHxayWD0yE3zS75uYBrQKqZVuOmSIaYNbNwnMgdCI9D7lx8Qd3sEu3AuPjs11OanWuFb2e6HiydJ7ury9ova2bOR7sC1g5NeF60I1vJHXHRIc0rJdkREB3Io2NiWBJhiO92tzp1VfE1cDK0jdx/yrZ/dL7ZSzEVCooC9rEPE3Onhjn35inQ/RVmqZ8r6rq6zWOO4UCQOvjR+jCnycOZsr/oTA5oycu7AAkHJdDdwCnwuaXKLxpc6XH7OhZFRbUIqfMPaRcJTbWr4TWtwYH8sm1ez5ZgiOu+LcFrHnEf5nOI9j3diYlbeFBEhYCowG7U+D5xXRfhq6pCive/Y0VYFv8HXVFU5BM6tmd1jZpLrbHirkk4ZUAE+63zjqXzcJr3eA7zXDHktCu10wFFL6Y9GKEeFq/X9IjV";
+	internal const string Exponent = "AQAB";
+	internal const string Kid = "8507f94ed17eb438";
+}

@@ -1,0 +1,23 @@
+﻿[
+    {
+        "ExitCode":  0,
+        "Result":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\verification\\sandbox\\protected-selfcheck-20261115-105638-121\\result.json",
+        "Name":  "selfcheck",
+        "Mode":  "selfcheck",
+        "Log":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\protected-selfcheck-20261115-105638-121.log"
+    },
+    {
+        "ExitCode":  0,
+        "Result":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\verification\\sandbox\\protected-ui-20261115-105638-121\\result.json",
+        "Name":  "ui",
+        "Mode":  "ui",
+        "Log":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\protected-ui-20261115-105638-121.log"
+    },
+    {
+        "ExitCode":  0,
+        "Result":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\verification\\sandbox\\protected-audio-20261115-105638-121\\result.json",
+        "Name":  "audio",
+        "Mode":  "audio",
+        "Log":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\protected-audio-20261115-105638-121.log"
+    }
+]

@@ -1,0 +1,62 @@
+﻿{
+    "stamp":  "20261115-091312",
+    "exitToLogin":  true,
+    "activatedWithTestCard":  true,
+    "closedVia":  "graceful",
+    "credentialsRestored":  true,
+    "captures":  [
+                     {
+                         "name":  "01-startup",
+                         "title":  "COH3简易工具",
+                         "width":  824,
+                         "height":  118,
+                         "screenshot":  true,
+                         "texts":  [
+                                       "COH3简易工具",
+                                       "SIMPLE EDITION",
+                                       "● 对局已连接",
+                                       "退出",
+                                       "—",
+                                       "×",
+                                       "顶部玩家信息",
+                                       "主画面标记",
+                                       "小地图标记",
+                                       "参数自动保存",
+                                       "参数自动保存"
+                                   ]
+                     },
+                     {
+                         "name":  "02-back-to-login",
+                         "title":  "COH3简易工具 · 激活",
+                         "width":  416,
+                         "height":  251,
+                         "screenshot":  true,
+                         "texts":  [
+                                       "激活码",
+                                       "COH3-ACB167B550958B472FAAB226FEA98F7C0F6AA6F0",
+                                       "记住激活码",
+                                       "进入"
+                                   ]
+                     },
+                     {
+                         "name":  "03-activated-testcard",
+                         "title":  "COH3简易工具",
+                         "width":  824,
+                         "height":  118,
+                         "screenshot":  true,
+                         "texts":  [
+                                       "COH3简易工具",
+                                       "SIMPLE EDITION",
+                                       "○ 等待对局",
+                                       "退出",
+                                       "—",
+                                       "×",
+                                       "顶部玩家信息",
+                                       "主画面标记",
+                                       "小地图标记",
+                                       "参数自动保存",
+                                       "参数自动保存"
+                                   ]
+                     }
+                 ]
+}

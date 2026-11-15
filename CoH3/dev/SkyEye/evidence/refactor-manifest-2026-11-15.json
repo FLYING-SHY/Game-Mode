@@ -1,0 +1,109 @@
+{
+ "created": "2026-11-15",
+ "reason": "repo layout standardization: per-game original/dev/output; server publish dir renamed to output",
+ "game_root": "F:\\WorkSpace\\Game",
+ "moves": [
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\SkyEye",
+   "to": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye",
+   "kind": "dir",
+   "note": "children moved individually then staged with git add -A; top dir rename was handle-locked"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\COH3SimpleTool",
+   "to": "F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool",
+   "kind": "dir",
+   "note": "untracked tree, plain move; delivery/ children relocated to output first"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\CoH3Minimap",
+   "to": "F:\\WorkSpace\\Game\\CoH3\\dev\\CoH3Minimap",
+   "kind": "dir",
+   "note": "git mv"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\天穹之眼-v0.60.8",
+   "to": "F:\\WorkSpace\\Game\\CoH3\\original\\天穹之眼-v0.60.8",
+   "kind": "dir",
+   "note": "git mv; frozen original area, MANIFEST + readonly protection applied"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\COH3SimpleTool\\delivery",
+   "to": "F:\\WorkSpace\\Game\\CoH3\\output\\COH3SimpleTool",
+   "kind": "dir",
+   "note": "untracked deliverables (protected exe + config + overlay-settings.txt)"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\LicensingSystem\\delivery\\server",
+   "to": "F:\\WorkSpace\\Game\\LicensingSystem\\output",
+   "kind": "dir",
+   "note": "git mv; Publish-Server.ps1 output renamed"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2-Client.zip",
+   "to": "F:\\WorkSpace\\Game\\CoH3\\output\\SkyEye\\SkyEye-HardenedV2-Client.zip",
+   "kind": "file",
+   "note": "git mv"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2-Server.zip",
+   "to": "F:\\WorkSpace\\Game\\CoH3\\output\\SkyEye\\SkyEye-HardenedV2-Server.zip",
+   "kind": "file",
+   "note": "git mv"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2-Maintenance.zip",
+   "to": "F:\\WorkSpace\\Game\\CoH3\\output\\SkyEye\\SkyEye-HardenedV2-Maintenance.zip",
+   "kind": "file",
+   "note": "git mv"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2.archive-verification.json",
+   "to": "F:\\WorkSpace\\Game\\CoH3\\output\\SkyEye\\SkyEye-HardenedV2.archive-verification.json",
+   "kind": "file",
+   "note": "git mv"
+  }
+ ],
+ "prefix_map": [
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\SkyEye",
+   "to": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\COH3SimpleTool\\delivery",
+   "to": "F:\\WorkSpace\\Game\\CoH3\\output\\COH3SimpleTool"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\COH3SimpleTool",
+   "to": "F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\CoH3Minimap",
+   "to": "F:\\WorkSpace\\Game\\CoH3\\dev\\CoH3Minimap"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\天穹之眼-v0.60.8",
+   "to": "F:\\WorkSpace\\Game\\CoH3\\original\\天穹之眼-v0.60.8"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\LicensingSystem\\delivery\\server",
+   "to": "F:\\WorkSpace\\Game\\LicensingSystem\\output"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2-Client.zip",
+   "to": "F:\\WorkSpace\\Game\\CoH3\\output\\SkyEye\\SkyEye-HardenedV2-Client.zip"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2-Server.zip",
+   "to": "F:\\WorkSpace\\Game\\CoH3\\output\\SkyEye\\SkyEye-HardenedV2-Server.zip"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2-Maintenance.zip",
+   "to": "F:\\WorkSpace\\Game\\CoH3\\output\\SkyEye\\SkyEye-HardenedV2-Maintenance.zip"
+  },
+  {
+   "from": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2.archive-verification.json",
+   "to": "F:\\WorkSpace\\Game\\CoH3\\output\\SkyEye\\SkyEye-HardenedV2.archive-verification.json"
+  }
+ ]
+}

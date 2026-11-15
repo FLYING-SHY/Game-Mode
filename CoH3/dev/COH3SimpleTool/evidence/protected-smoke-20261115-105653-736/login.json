@@ -1,0 +1,92 @@
+﻿{
+    "CapturedAt":  "2026-11-15T10:56:56.2031382+08:00",
+    "ProcessId":  3408,
+    "Executable":  "F:\\WorkSpace\\Game\\CoH3\\output\\COH3SimpleTool\\COH3简易工具.exe",
+    "WindowHandle":  1247550,
+    "WindowTitle":  "COH3简易工具 · 激活",
+    "IsVisible":  true,
+    "Width":  416,
+    "Height":  251,
+    "ScreenshotSucceeded":  true,
+    "ScreenshotPath":  "F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\evidence\\protected-smoke-20261115-105653-736\\login.png",
+    "TotalDescendants":  5,
+    "CapturedNodes":  5,
+    "Privacy":  "Edit/password values and long identifiers are omitted from the accessibility export; screenshot remains a local selected-window capture.",
+    "Nodes":  [
+                  {
+                      "Index":  0,
+                      "Name":  "激活码",
+                      "AutomationId":  "264492",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1104,
+                                        "Y":  621,
+                                        "Width":  200,
+                                        "Height":  22
+                                    }
+                  },
+                  {
+                      "Index":  1,
+                      "Name":  "[long identifier omitted]",
+                      "AutomationId":  "199022",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.EDIT.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1110,
+                                        "Y":  655,
+                                        "Width":  340,
+                                        "Height":  21
+                                    }
+                  },
+                  {
+                      "Index":  2,
+                      "Name":  "记住激活码",
+                      "AutomationId":  "134036",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1104,
+                                        "Y":  691,
+                                        "Width":  190,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  3,
+                      "Name":  "进入",
+                      "AutomationId":  "134034",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.BUTTON.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1296,
+                                        "Y":  691,
+                                        "Width":  160,
+                                        "Height":  34
+                                    }
+                  },
+                  {
+                      "Index":  4,
+                      "Name":  "请先启动游戏，并停留在大厅。",
+                      "AutomationId":  "199146",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1104,
+                                        "Y":  739,
+                                        "Width":  352,
+                                        "Height":  48
+                                    }
+                  }
+              ]
+}

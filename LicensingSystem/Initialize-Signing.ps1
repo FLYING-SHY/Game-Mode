@@ -7,7 +7,7 @@ $root = $PSScriptRoot
 $repo = Split-Path -Parent $root
 $sdk = Join-Path $root '.cache\dotnet-10\dotnet.exe'
 $server = Join-Path $root 'server\bin\Release\net10.0\Licensing.Server.dll'
-if (-not $PinFile) { $PinFile = Join-Path $repo 'CoH3\SkyEye\client\CoH3MemoryTool\PinnedLeaseKey60.cs' }
+if (-not $PinFile) { $PinFile = Join-Path $repo 'CoH3\dev\SkyEye\client\CoH3MemoryTool\PinnedLeaseKey60.cs' }
 if (-not (Test-Path -LiteralPath $server)) { throw 'Compile server/Licensing.Server.csproj first.' }
 if (-not (Test-Path -LiteralPath $PinFile)) { throw 'The public-key pin source file is missing.' }
 if (-not (Test-Path -LiteralPath $ConfigPath)) { throw 'Provide an existing private deployment configuration.' }

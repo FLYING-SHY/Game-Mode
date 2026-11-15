@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-11-15T09:20:00+08:00",
+  "product": "COH3简易工具 (COH3SimpleTool)",
+  "baseline": "引擎复制自 CoH3/SkyEye client CoH3MemoryTool（135 文件 + 回补 LocalPlayerAccount59/LocalAccountLog59/MinimapRetiredControl/FlankMapRange55/FlankMapDrawing55），UI 全新黑壳（SimpleProgram/SimpleLicenseApp/BlackLoginForm/ControlBarForm）",
+  "removedFeatures": ["F8复制热键", "F9包抄标记(flank链)", "8MP3声音警报", "NAudio依赖", "六个设置模块", "托盘", "预览区", "QQ/Steam账号采集残留文件"],
+  "fixesDuringLiveRegression": [
+    {
+      "bug": "退出（换码）后控制条未隐藏，导致回归驱动误判已激活",
+      "rootCause": "SimpleLicenseApp.cs ChangeLicense60 处理器缺少 overlay.Hide()",
+      "fix": "ChangeLicense60 delegate 在 login.Show() 前加 overlay.Hide()",
+      "discovered": "audit + 卡状态（e047f47a state=unused 从未激活）与 run2 假阳性 activated=true 矛盾"
+    }
+  ],
+  "build": {
+    "raw": { "result": "passed", "exe": "bin/Release/net48/COH3简易工具.exe", "size": 558080, "errors": 0 },
+    "protected": [
+      { "run": "20261114-235938-723", "inputSha256": "FC348F1EDE6CCBC35587E2482DAE8BFC7DF03FF8D151519890F20F0F4119BAE9", "outputSha256": "E4FDC6DFC6924DFB8E257F124F8AF99C7AFC5F7E7D90E320A4E1431395CC96D4", "supersededBy": "20261115-091654-011" },
+      { "run": "20261115-091654-011", "result": "passed", "tool": "Obfuscar.GlobalTool 2.2.50", "note": "含 ChangeLicense60 Hide 修复", "executable": "delivery/COH3简易工具.exe", "outputSha256": "E9E2E71778955E86323F0CACCCB99218D22579271FB864EE6ECE74498ADDFB48" }
+    ]
+  },
+  "verification": {
+    "loginUiRaw": { "result": "passed", "evidence": "evidence/ui-login-raw/login3.png", "window": "416x251", "checks": { "blackPalette": true, "toggleOnWhite": true, "redErrorLine": true, "noSystemBlue": "仅ClearType子像素边缘" } },
+    "loginUiProtected": { "result": "passed", "evidence": "evidence/protected-smoke-20261114-235938-723/login.png", "pixelDiffVsRaw": 0 },
+    "serviceHealth": { "url": "http://127.0.0.1:47835/health", "status": "ready" }
+  },
+  "liveRegression": {
+    "run": "evidence/live-regression3-20261115-091831",
+    "gameProcess": "RelicCoH3.exe 运行中（用户启动，停大厅）",
+    "results": {
+      "autoLoginWithSavedCredentials": { "result": "passed", "audit": "09:18:32 activate d2895e76（用户卡，DPAPI 凭据共享自动带入）" },
+      "exitHidesControlBar": { "result": "passed", "audit": "09:18:43 logout d2895e76", "check": "EnumWindows 确认无非激活可见窗" },
+      "pasteActivationWithIsolatedTestCard": { "result": "passed", "audit": "09:18:46 activate e047f47a", "card": { "suffix": "DCC199FD", "state": "active→suspended(测试后停用)", "boundDeviceId": "93875388F3…D0E6", "lastSteamId": "76561199509924831（真实游戏身份）", "activeSessionCount": 0 } },
+      "controlBarShownAfterActivation": { "result": "passed", "evidence": "03-activated-testcard.png 824x118" },
+      "togglePersistence": { "result": "passed", "detail": "点击顶部玩家信息开关 → overlay-settings.txt enabled 1→0→1 往返" },
+      "gracefulCloseLogout": { "result": "passed", "audit": "09:18:47 logout e047f47a，进程正常退出（graceful）" }
+    },
+    "allPassed": true
+  },
+  "notes": "凭据文件与 SkyEye 共享（%LocalAppData%/Skyeye/SelfHostedLicensing/credentials.dat，同 DPAPI entropy）；构建脚本用 exe 名发现避免 ps1 编码问题（UTF-8 BOM 必需）；Obfuscar shim 需整目录 .store 结构；回归后测试卡已停用、用户凭据已恢复、无残留会话。对局内实时覆盖效果（● 对局已连接、主画面标记渲染）依赖真实对局，未在本轮验证（游戏停在大厅）。"
+}

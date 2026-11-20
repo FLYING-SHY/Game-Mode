@@ -17,11 +17,9 @@
   - `dev/`：自己开发的一切，一个方向（一条可独立发布的工具线）一个子目录：
     - `dev/SkyEye/`：天穹之眼当前唯一维护源码与发布工程（授权接入编译内嵌于客户端）。`client/`（net48/x64/WinForms，签名租约验签、公钥 pin `PinnedLeaseKey60.cs`）、`verification/`（受保护验证器在 `bin/Protected/net48`）、`delivery/client/`（Finalize.py 的解包打包 staging，dev 内唯一保留的 delivery）、`tools/obfuscar|ilspy`、`evidence/`、`reports/`、`artifacts/`、`Build.ps1` / `Build-Protected.ps1` / `Verify-Protected.ps1` / `Finalize.py` / `Summarize-Validation.py` 等入口。
     - `dev/COH3SimpleTool/`：SkyEye 引擎的极简黑壳版（登录页 + 三开关控制条；无热键/声音/设置面板；ProductId 仍为 `CoH3FowTool`，凭据文件与 SkyEye 共享）。引擎文件复制自 SkyEye 客户端而非引用；入口 `Build-Protected.ps1 -Smoke`，交付直写 `output/COH3SimpleTool/`。
-    - `dev/CoH3Minimap/`：自有小地图项目，休眠中。
   - `output/`：与 dev/ 一一对应的最终交付物（平铺、直接可用；文件名带 -Client/-Maintenance 区分客户/维护包）：
     - `output/SkyEye/`：`SkyEye-HardenedV2-{Client,Server,Maintenance}.zip` + `SkyEye-HardenedV2.archive-verification.json`。
     - `output/COH3SimpleTool/`：受保护 EXE + `.exe.config` + `overlay-settings.txt`。
-    - `output/CoH3Minimap/`：首次出物前留 `.gitkeep`。
 - 历史清理：旧 CoH3FowTool、SkyEye-v0.60.8-Recovered、SkyEye-Integration、SkyEye-Hardened 的代码及旧交付包已清理；`Licensing/` 已更名 `LicensingSystem/`；`SkyEye-HardenedV2` → `CoH3/SkyEye`（2026-11-13）→ `CoH3/dev/SkyEye`（2026-11-15）。不应从 Git 恢复旧名来补最新版依赖；确需旧记录时先查清理清单、重构清单（`CoH3/dev/SkyEye/evidence/`）及 Git 历史。
 
 ## 新增一个游戏
@@ -52,7 +50,7 @@
 - 客户包不放源码、开发映射、验证器或 PDB；维护包含开发映射（含 LicensingSystem 授权源码），仅供维护者。
 - `CoH3/dev/SkyEye/Finalize.py --refresh` 仅在存在已验证的清理清单与重构清单时刷新当前包；客户 ZIP 须保持逐项一致。
 - 文本采用 UTF-8；Windows PowerShell 5.1 可执行项目脚本。
-- `**/original/**` 冻结区永不写入、构建、清理（见上保护栈）；`dev/CoH3Minimap` 休眠项目不作为任何构建/清理目标。
+- `**/original/**` 冻结区永不写入、构建、清理（见上保护栈）。
 - REA 完整环境位于 `F:\WorkSpace\REA`；Windows capture-process 有已记录的 capability_unavailable，静态工具成功不等于动态测量成功。
 
 ## 工作流

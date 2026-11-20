@@ -7,7 +7,6 @@
 | [原版 v0.60.8](<CoH3/original/天穹之眼-v0.60.8/>) | 原始发布文件，冻结区（MANIFEST 校验 + 只读） |
 | [dev/SkyEye（天穹之眼）](<CoH3/dev/SkyEye/README.md>) | 唯一维护源码：客户端、授权接入（编译内嵌）、验证工程、构建/保护/封装脚本与证据 |
 | [dev/COH3简易工具](<CoH3/dev/COH3SimpleTool/README.md>) | SkyEye 引擎的极简黑壳版：登录页 + 三开关控制条，无热键无声音，卡密与 SkyEye 通用 |
-| [dev/CoH3Minimap](<CoH3/dev/CoH3Minimap/README.md>) | 自有小地图项目，休眠中 |
 | [output/SkyEye](<CoH3/output/SkyEye/>) | SkyEye 最终交付：Client / Server / Maintenance ZIP + 包验证记录 |
 | [output/COH3SimpleTool](<CoH3/output/COH3SimpleTool/>) | 简易工具受保护 EXE + .exe.config + overlay-settings.txt |
 | [LicensingSystem](<LicensingSystem/README.md>) | 通用授权系统：服务端、测试、部署辅助、SDK 与本机私有状态 |
@@ -64,7 +63,7 @@
 
 ## 清理与重构记录
 
-[删除清单](<CoH3/dev/SkyEye/evidence/cleanup-manifest.json>)记录了清理目标、删除前旧基线校验及原版/最新版保留哈希；[2026-11-13 重构清单](<CoH3/dev/SkyEye/evidence/refactor-manifest.json>)与[2026-11-15 重构清单](<CoH3/dev/SkyEye/evidence/refactor-manifest-2026-11-15.json>)记录历次目录移动的前缀映射与校验。原有授权记录、配置和密钥保留在 `LicensingSystem/.local/`；历史备份中独有的私有状态已单独保留，旧源码备份已移除。Git 历史与独立小地图项目保留。
+[删除清单](<CoH3/dev/SkyEye/evidence/cleanup-manifest.json>)记录了清理目标、删除前旧基线校验及原版/最新版保留哈希；[2026-11-13 重构清单](<CoH3/dev/SkyEye/evidence/refactor-manifest.json>)与[2026-11-15 重构清单](<CoH3/dev/SkyEye/evidence/refactor-manifest-2026-11-15.json>)记录历次目录移动的前缀映射与校验。原有授权记录、配置和密钥保留在 `LicensingSystem/.local/`；历史备份中独有的私有状态已单独保留，旧源码备份已移除。Git 历史保留（CoH3Minimap 独立小地图项目已于 2026-11-15 整体删除，需要时从 Git 历史找回）。
 
 远程仓库：`git@github.com:FLYING-SHY/Game-Mode.git`。历次清理与重构没有提交或推送。
 

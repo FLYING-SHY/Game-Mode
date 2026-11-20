@@ -1,0 +1,9 @@
+{
+  "status": "not_reported_by_host",
+  "missing_fields": [
+    "total_tokens",
+    "duration_ms",
+    "total_duration_seconds"
+  ],
+  "note": "Fixture subprocess durations are not full agent durations; no estimate substituted."
+}

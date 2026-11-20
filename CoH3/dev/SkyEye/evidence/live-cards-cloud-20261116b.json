@@ -1,0 +1,73 @@
+{
+  "issuedAt": "2026-11-16T07:46:52.717131+00:00",
+  "baseUrl": "https://124.220.147.56/",
+  "transport": "real HTTP administrator login + CSRF + issue API",
+  "containsCompleteCodes": false,
+  "hostAuthorization": "124.220.147.56",
+  "fixtures": [
+    {
+      "name": "protocol-permanent",
+      "id": "940c8be575f34f1283eec1f228d48f07",
+      "codeSuffix": "E458296B",
+      "kind": "permanent",
+      "durationSeconds": null,
+      "codeFile": "LicensingSystem\\.local\\hardening-v2\\cards-cloud-20261116b\\protocol-permanent.txt"
+    },
+    {
+      "name": "protocol-timed",
+      "id": "0498a42adc1d489a80b1fc4360743a17",
+      "codeSuffix": "AA5D6159",
+      "kind": "timed",
+      "durationSeconds": 3600,
+      "codeFile": "LicensingSystem\\.local\\hardening-v2\\cards-cloud-20261116b\\protocol-timed.txt"
+    },
+    {
+      "name": "coordinator",
+      "id": "83274d79eb8c4602a73f8ad4ebc15e6e",
+      "codeSuffix": "ECD2178A",
+      "kind": "permanent",
+      "durationSeconds": null,
+      "codeFile": "LicensingSystem\\.local\\hardening-v2\\cards-cloud-20261116b\\coordinator.txt"
+    },
+    {
+      "name": "network",
+      "id": "bb471e0255f349e3b8b91a48f52fb583",
+      "codeSuffix": "CB5402A0",
+      "kind": "permanent",
+      "durationSeconds": null,
+      "codeFile": "LicensingSystem\\.local\\hardening-v2\\cards-cloud-20261116b\\network.txt"
+    },
+    {
+      "name": "observe-kick",
+      "id": "54ffd9d02a504e4eb1e90e46e15947b5",
+      "codeSuffix": "22210F51",
+      "kind": "permanent",
+      "durationSeconds": null,
+      "codeFile": "LicensingSystem\\.local\\hardening-v2\\cards-cloud-20261116b\\observe-kick.txt"
+    },
+    {
+      "name": "observe-block",
+      "id": "d6f78838d6e740338284212d0580f135",
+      "codeSuffix": "4DD91E38",
+      "kind": "permanent",
+      "durationSeconds": null,
+      "codeFile": "LicensingSystem\\.local\\hardening-v2\\cards-cloud-20261116b\\observe-block.txt"
+    },
+    {
+      "name": "observe-unbind",
+      "id": "58dd6fa08aa2482fa00b7452b4a3de7d",
+      "codeSuffix": "02FA309C",
+      "kind": "timed",
+      "durationSeconds": 3600,
+      "codeFile": "LicensingSystem\\.local\\hardening-v2\\cards-cloud-20261116b\\observe-unbind.txt"
+    },
+    {
+      "name": "observe-expiry",
+      "id": "9a19f7d795e64e99bee47c813a882bcb",
+      "codeSuffix": "73F9FEF7",
+      "kind": "timed",
+      "durationSeconds": 8,
+      "codeFile": "LicensingSystem\\.local\\hardening-v2\\cards-cloud-20261116b\\observe-expiry.txt"
+    }
+  ]
+}

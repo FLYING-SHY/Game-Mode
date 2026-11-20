@@ -21,7 +21,7 @@ internal static class SimpleProgram
 		{
 			if (!createdNew)
 			{
-				MessageBox.Show("COH3简易工具已在运行，请先退出已有窗口。", "COH3简易工具");
+				MessageBox.Show("COH3工具已在运行，请先退出已有窗口。", "COH3工具");
 				return 1;
 			}
 			Application.Run(new SimpleLicenseApp());

@@ -64,10 +64,12 @@ internal static class Program
     {
         SignatureChecks.Run();
         Require(LicenseConfiguration60.ProductId == "CoH3FowTool", "Default product must match the contract.");
-        Require(LicenseVersion60.DownloadAllowed("http://127.0.0.1:47835/download/client.exe"), "Configured loopback download host must be allowed.");
+        Uri configuredServer = LicenseConfiguration60.ServerBaseAddress;
+        string configuredOrigin = new UriBuilder(configuredServer) { UserName = string.Empty, Password = string.Empty }.Uri.GetLeftPart(UriPartial.Path);
+        Require(LicenseVersion60.DownloadAllowed(configuredOrigin + "download/client.exe"), "Configured download host must be allowed.");
         Require(!LicenseVersion60.DownloadAllowed("https://unrelated.example/download/client.exe"), "Unrelated download hosts must be rejected.");
-        Require(!LicenseVersion60.DownloadAllowed("http://127.0.0.1:47832/download/client.exe"), "Different download ports must be rejected.");
-        Require(!LicenseVersion60.DownloadAllowed("http://user@127.0.0.1:47835/file"), "Download userinfo must be rejected.");
+        Require(!LicenseVersion60.DownloadAllowed(new UriBuilder(configuredServer) { Port = configuredServer.Port == 47832 ? 47833 : 47832 }.Uri.GetLeftPart(UriPartial.Path) + "download/client.exe"), "Different download ports must be rejected.");
+        Require(!LicenseVersion60.DownloadAllowed(new UriBuilder(configuredServer) { UserName = "user" }.Uri.GetLeftPart(UriPartial.Path) + "download/client.exe"), "Download userinfo must be rejected.");
         Require(LicenseConfiguration60.ParseServerBaseAddress("https://licensing.example").AbsoluteUri == "https://licensing.example/", "HTTPS base URL normalization failed.");
         foreach (string invalid in new[] { "http://licensing.example/", "file:///tmp/license", "https://user@licensing.example/", "https://licensing.example/?token=x", "https://licensing.example/#x" })
         {

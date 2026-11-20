@@ -1,0 +1,12 @@
+{
+  "eval_id": 2,
+  "eval_name": "native-fixture-transfer",
+  "prompt": "使用给定 fixture_lab.py 与 fixture-lab.md，为离线 native 风格虚拟模块/heap镜像建立可复现的定位与验证结果。运行 create 生成到你自己的 outputs/fixture，研究输入格式并编写一个小型 resolver，从镜像字节扫描指令候选、解码 RIP-relative 目标并走指针链确定字段。不要直接从 manifest 抄 root_rva/field_offset 作为定位算法；manifest可用于最终核对。覆盖两个 build、每build至少两session、排除同值decoy，生成候选 JSON，调用 verify 并保存完整输出，同时运行 self-test。说明哪些属于模型验证、哪些真实进程/游戏测试尚未执行。所有文件只写你的 outputs 目录。",
+  "assertions": [
+    "存在可运行定位脚本，从镜像扫描指令、正确按指令末端加有符号RIP位移求根，而非从答案表取布局。",
+    "候选按两个build分别给出模块相对根、指针链和字段，verify实际通过四session和每session三帧。",
+    "通过受控变化排除两个同起值decoy，定位脚本不硬编码答案字段/链偏移。",
+    "保存真实self-test与verify日志，0/1/多命中及恢复冲突均按预期处理。",
+    "明确这是离线模型且资料公开，未宣称真实进程、真实游戏或盲测验证通过。"
+  ]
+}

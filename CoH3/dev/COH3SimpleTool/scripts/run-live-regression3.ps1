@@ -25,7 +25,7 @@ public static class LiveReg3 {
 [LiveReg3]::SetProcessDPIAware() | Out-Null
 
 $root = 'F:\WorkSpace\Game\CoH3\dev\COH3SimpleTool'
-$exe = 'F:\WorkSpace\Game\CoH3\output\COH3SimpleTool\COH3简易工具.exe'
+$exe = 'F:\WorkSpace\Game\CoH3\output\COH3SimpleTool\COH3工具.exe'
 $stamp = Get-Date -Format 'yyyyMMdd-HHmmss'
 $evid = Join-Path $root ("evidence\live-regression3-" + $stamp)
 New-Item -ItemType Directory -Force -Path $evid | Out-Null

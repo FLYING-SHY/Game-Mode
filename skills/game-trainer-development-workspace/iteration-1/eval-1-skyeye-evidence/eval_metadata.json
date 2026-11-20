@@ -1,0 +1,12 @@
+{
+  "eval_id": 1,
+  "eval_name": "skyeye-evidence",
+  "prompt": "只读分析 CoH3/original/天穹之眼-v0.60.8 与 CoH3/dev/SkyEye/client/CoH3MemoryTool 的现有证据，输出一份可供开发者执行的机制报告。重点回答它怎样定位数据、是否写入游戏或安装补丁、覆盖层如何实现、哪些经验可迁移到其他游戏。至少核查 Native.cs、PlayerInfoReader.cs、SquadMarkerWindow.cs、GameVersion45.cs 及 reports/protection-validation.md。不要运行样本或游戏，不修改原项目，不访问授权私有数据。给出准确出处及验证限制；不要仅列工具名称。",
+  "assertions": [
+    "准确解释OpenProcess 0x410及ReadProcessMemory/VirtualQueryEx，并不把窗口RestoreLayer66称为游戏补丁恢复。",
+    "解释模块相对定位与至少两种结构/读取校验，并给出可复查源码位置。",
+    "说明扫描对象与预算/缓存/epoch机制，而非误称通用AOB或未知初值扫描器。",
+    "解释覆盖层绘制或窗口机制，并区分CoH3特定布局和可迁移工程方法。",
+    "准确说明游戏build哈希机制与存量验证报告未覆盖完整对局的限制，不虚构本轮动态验证。"
+  ]
+}

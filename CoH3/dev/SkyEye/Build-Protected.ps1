@@ -30,6 +30,8 @@ if (-not (Test-Path -LiteralPath $tool)) {
 $inputPath = Join-Path $root 'verification\bin\Release\net48'
 $outputPath = Join-Path $root 'verification\bin\Protected\net48'
 New-Item -ItemType Directory -Path $outputPath -Force | Out-Null
+$runtimeState = @('overlay-settings.txt','minimap-location-cache.txt','minimap-ui-root-cache.txt','alert-sounds.txt')
+Get-ChildItem -LiteralPath $outputPath -Recurse -File -ErrorAction SilentlyContinue | Where-Object { $_.Name -in $runtimeState } | Remove-Item -Force
 $client = Get-ChildItem -LiteralPath (Join-Path $root 'client\bin\Release\net48') -Filter '*.exe' -File | Select-Object -First 1
 $escape = { param($value) [System.Security.SecurityElement]::Escape([string]$value) }
 $inXml = & $escape $inputPath
@@ -81,8 +83,9 @@ Copy-Item -LiteralPath (Join-Path $inputPath 'SkyEye.Integration.Verification.ex
 Copy-Item -LiteralPath (Join-Path $inputPath ($client.Name + '.config')) -Destination $outputPath -Force
 $delivery = Join-Path $root 'delivery\client'
 New-Item -ItemType Directory -Path $delivery -Force | Out-Null
+Get-ChildItem -LiteralPath $delivery -Recurse -File -ErrorAction SilentlyContinue | Where-Object { $_.Name -in $runtimeState } | Remove-Item -Force
 $assetsRoot = Join-Path $root 'client\bin\Release\net48'
-Get-ChildItem -LiteralPath $assetsRoot -Recurse -File | Where-Object { $_.Extension -in @('.config','.mp3','.wav','.txt','.html','.ico') -and $_.Name -notlike '*.log*' } | ForEach-Object {
+Get-ChildItem -LiteralPath $assetsRoot -Recurse -File | Where-Object { $_.Extension -in @('.config','.mp3','.wav','.txt','.html','.ico') -and $_.Name -notlike '*.log*' -and $_.Name -notin $runtimeState } | ForEach-Object {
     $relative = $_.FullName.Substring($assetsRoot.Length).TrimStart('\')
     $target = Join-Path $delivery $relative
     New-Item -ItemType Directory -Path (Split-Path -Parent $target) -Force | Out-Null

@@ -6,6 +6,7 @@ using System.Text;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 using Licensing.Server;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.Data.Sqlite;
 using Microsoft.Extensions.DependencyInjection;
 using ServerProgram = Licensing.Server.Program;
@@ -104,6 +105,28 @@ async Task RefreshCsrf()
     admin.DefaultRequestHeaders.Remove("X-CSRF-TOKEN");
     admin.DefaultRequestHeaders.Add("X-CSRF-TOKEN", WebUtility.HtmlDecode(token));
 }
+JsonElement[] StoredRows(string sql, string? id = null)
+{
+    using var db = new SqliteConnection("Data Source=" + options.DatabasePath + ";Pooling=False");
+    db.Open(); using var command = db.CreateCommand(); command.CommandText = sql;
+    if (id is not null) command.Parameters.AddWithValue("$id", id);
+    using var reader = command.ExecuteReader();
+    var rows = new List<JsonElement>();
+    while (reader.Read())
+    {
+        var row = new Dictionary<string, object?>();
+        for (var i = 0; i < reader.FieldCount; i++) row[reader.GetName(i)] = reader.IsDBNull(i) ? null : reader.GetValue(i);
+        rows.Add(JsonSerializer.SerializeToElement(row));
+    }
+    return rows.ToArray();
+}
+string StoredState(string? id = null) => JsonSerializer.Serialize(new[]
+{
+    StoredRows("SELECT * FROM LicenseCodes" + (id is null ? "" : " WHERE Id=$id") + " ORDER BY Id", id),
+    StoredRows("SELECT * FROM LeaseSessions" + (id is null ? "" : " WHERE CodeId=$id") + " ORDER BY Id", id),
+    StoredRows("SELECT * FROM ActivationRequests" + (id is null ? "" : " WHERE SessionId IN (SELECT Id FROM LeaseSessions WHERE CodeId=$id)") + " ORDER BY RequestId", id),
+    StoredRows("SELECT * FROM AuditEvents" + (id is null ? "" : " WHERE CodeId=$id") + " ORDER BY Id", id)
+});
 
 try
 {
@@ -372,6 +395,264 @@ try
     var invalidPage = await Post($"/api/admin/codes/missing/kick", new { }, authenticated: true, expected: HttpStatusCode.NotFound);
     Assert(Text(invalidPage, "error") == "not_found", "unknown management code returns error object");
 
+    var deleteUnused = await Issue("timed", 90); var deleteUnusedId = Text(deleteUnused, "id");
+    var beforeRejectedDelete = StoredState();
+    using (var unauthorizedDelete = await anonymous.PostAsJsonAsync($"/api/admin/codes/{deleteUnusedId}/delete", new { }))
+        Assert(unauthorizedDelete.StatusCode == HttpStatusCode.Unauthorized && StoredState() == beforeRejectedDelete,
+            "delete requires administrator cookie and preserves storage on rejection");
+    var deleteCsrf = admin.DefaultRequestHeaders.GetValues("X-CSRF-TOKEN").Single();
+    admin.DefaultRequestHeaders.Remove("X-CSRF-TOKEN");
+    try
+    {
+        var rejectedDelete = await Post($"/api/admin/codes/{deleteUnusedId}/delete", new { }, authenticated: true, expected: HttpStatusCode.BadRequest);
+        Assert(Text(rejectedDelete, "error") == "invalid_csrf" && StoredState() == beforeRejectedDelete,
+            "delete requires CSRF with no card session request or audit changes");
+    }
+    finally { admin.DefaultRequestHeaders.Add("X-CSRF-TOKEN", deleteCsrf); }
+    var missingDelete = await Post("/api/admin/codes/delete-missing/delete", new { }, authenticated: true, expected: HttpStatusCode.NotFound);
+    Assert(Text(missingDelete, "error") == "not_found" && StoredState() == beforeRejectedDelete,
+        "missing delete returns not_found without changing storage or audit");
+    var unusedDeleted = await Post($"/api/admin/codes/{deleteUnusedId}/delete", new { }, authenticated: true);
+    Assert(unusedDeleted.GetProperty("ok").GetBoolean() && StoredRows("SELECT * FROM LicenseCodes WHERE Id=$id", deleteUnusedId).Length == 0
+        && (await Get("/api/admin/codes?search=" + deleteUnusedId)).GetProperty("items").GetArrayLength() == 0,
+        "unused card deletion returns ok and removes stored and management rows");
+    var unusedDeleteAudits = StoredRows("SELECT * FROM AuditEvents WHERE Action='delete' AND CodeId=$id", deleteUnusedId);
+    Assert(unusedDeleteAudits.Length == 1, "unused card deletion appends exactly one deletion audit");
+    using (var details = JsonDocument.Parse(Text(unusedDeleteAudits[0], "Details")))
+        Assert(Text(details.RootElement, "codeSuffix") == Text(deleteUnused, "code")[^8..] && Text(details.RootElement, "kind") == "timed"
+            && Number(details.RootElement, "sessionsDeleted") == 0 && Number(details.RootElement, "activationRequestsDeleted") == 0
+            && !details.RootElement.GetRawText().Contains(Text(deleteUnused, "code")), "unused deletion audit records suffix kind and zero child counts without plaintext code");
+
+    var deleteSurvivor = await Issue("permanent"); var deleteSurvivorId = Text(deleteSurvivor, "id");
+    var survivorInput = Activation(Text(deleteSurvivor, "code"), "delete-survivor");
+    var survivorLease = await Post("/api/v1/activate", survivorInput);
+    var deleteCard = await Issue("permanent"); var deleteId = Text(deleteCard, "id"); var deleteCode = Text(deleteCard, "code");
+    var deleteHistoryInput = Activation(deleteCode, "delete-history");
+    var deleteHistoryLease = await Post("/api/v1/activate", deleteHistoryInput);
+    await Post("/api/v1/logout", new { }, Text(deleteHistoryLease, "session_token"));
+    var deleteInput = deleteHistoryInput with { RequestId = "delete-active" };
+    var deleteLease = await Post("/api/v1/activate", deleteInput);
+    var deleteSessions = StoredRows("SELECT * FROM LeaseSessions WHERE CodeId=$id", deleteId);
+    Assert(State(deleteHistoryLease) == "active" && State(deleteLease) == "active" && deleteSessions.Length == 2
+        && deleteSessions.Count(row => row.GetProperty("RevokedAt").ValueKind == JsonValueKind.Null) == 1
+        && StoredRows("SELECT * FROM ActivationRequests WHERE RequestId IN ('delete-history','delete-active')").Length == 2,
+        "deletion fixture contains active and logged-out sessions with replay requests");
+    var survivorBeforeDelete = StoredState(deleteSurvivorId);
+    var auditBeforeDelete = StoredRows("SELECT * FROM AuditEvents ORDER BY Id").Select(row => row.GetRawText()).ToHashSet();
+    var deleted = await Post($"/api/admin/codes/{deleteId}/delete", new { }, authenticated: true);
+    Assert(deleted.GetProperty("ok").GetBoolean() && StoredRows("SELECT * FROM LicenseCodes WHERE Id=$id", deleteId).Length == 0
+        && StoredRows("SELECT * FROM LeaseSessions WHERE CodeId=$id", deleteId).Length == 0
+        && StoredRows("SELECT * FROM ActivationRequests WHERE RequestId IN ('delete-history','delete-active')").Length == 0,
+        "deletion physically removes card active and historical sessions and activation requests");
+    Assert(StoredState(deleteSurvivorId) == survivorBeforeDelete, "deletion leaves another card sessions requests and audit unchanged");
+    var auditAfterDelete = StoredRows("SELECT * FROM AuditEvents ORDER BY Id");
+    var deletionAudits = auditAfterDelete.Where(row => Text(row, "Action") == "delete" && Text(row, "CodeId") == deleteId).ToArray();
+    Assert(deletionAudits.Length == 1 && auditAfterDelete.Length == auditBeforeDelete.Count + 1
+        && auditBeforeDelete.IsSubsetOf(auditAfterDelete.Select(row => row.GetRawText())), "deletion retains every prior audit event and appends one delete event");
+    using (var details = JsonDocument.Parse(Text(deletionAudits[0], "Details")))
+        Assert(details.RootElement.EnumerateObject().Select(property => property.Name).Order().SequenceEqual(
+                new[] { "activationRequestsDeleted", "codeSuffix", "kind", "sessionsDeleted" })
+            && Text(details.RootElement, "codeSuffix") == deleteCode[^8..] && Text(details.RootElement, "kind") == "permanent"
+            && Number(details.RootElement, "sessionsDeleted") == 2 && Number(details.RootElement, "activationRequestsDeleted") == 2
+            && !details.RootElement.GetRawText().Contains(deleteCode), "deletion audit has exact nonsensitive suffix kind and child-count metadata");
+    foreach (var prior in new[] { (Input: deleteHistoryInput, Lease: deleteHistoryLease), (Input: deleteInput, Lease: deleteLease) })
+    {
+        Assert(State(await Post("/api/v1/heartbeat", Heartbeat(prior.Input), Text(prior.Lease, "session_token"))) == "revoked",
+            "deleted card rejects old heartbeat token: " + prior.Input.RequestId);
+        Assert(State(await Post("/api/v1/activate", prior.Input with { Nonce = NewNonce() })) == "revoked",
+            "deleted card rejects original activation request replay: " + prior.Input.RequestId);
+    }
+    Assert(State(await Post("/api/v1/activate", deleteInput with { RequestId = "delete-new", Nonce = NewNonce() })) == "revoked",
+        "deleted card rejects fresh activation");
+    var beforeRepeatedDelete = StoredState();
+    var repeatedDelete = await Post($"/api/admin/codes/{deleteId}/delete", new { }, authenticated: true, expected: HttpStatusCode.NotFound);
+    Assert(Text(repeatedDelete, "error") == "not_found" && StoredState() == beforeRepeatedDelete
+        && StoredRows("SELECT * FROM AuditEvents WHERE Action='delete' AND CodeId=$id", deleteId).Length == 1,
+        "repeated delete returns not_found and retains a single deletion audit");
+    Assert(State(await Post("/api/v1/heartbeat", Heartbeat(survivorInput), Text(survivorLease, "session_token"))) == "active",
+        "another card bearer remains usable after deletion");
+
+    var atomicCard = await Issue("permanent"); var atomicId = Text(atomicCard, "id");
+    var atomicInput = Activation(Text(atomicCard, "code"), "delete-rollback-history");
+    var atomicHistory = await Post("/api/v1/activate", atomicInput);
+    await Post("/api/v1/logout", new { }, Text(atomicHistory, "session_token"));
+    var atomicActive = await Post("/api/v1/activate", atomicInput with { RequestId = "delete-rollback-active" });
+    Assert(State(atomicActive) == "active" && StoredRows("SELECT * FROM LeaseSessions WHERE CodeId=$id", atomicId).Length == 2
+        && StoredRows("SELECT * FROM ActivationRequests WHERE RequestId IN ('delete-rollback-history','delete-rollback-active')").Length == 2,
+        "delete rollback fixture contains two sessions and two activation requests");
+    var beforeAtomicDelete = StoredState();
+    using (var db = new SqliteConnection("Data Source=" + options.DatabasePath + ";Pooling=False"))
+    {
+        db.Open(); using var command = db.CreateCommand();
+        command.CommandText = $"CREATE TRIGGER AbortLicenseDelete BEFORE DELETE ON LicenseCodes WHEN OLD.Id='{atomicId}' BEGIN SELECT RAISE(ABORT,'delete-rollback-fixture'); END;";
+        command.ExecuteNonQuery();
+        try
+        {
+            var failedDelete = await Post($"/api/admin/codes/{atomicId}/delete", new { }, authenticated: true, expected: HttpStatusCode.ServiceUnavailable);
+            Assert(Text(failedDelete, "error") == "storage_unavailable", "delete maps SQLite abort to storage_unavailable");
+            Assert(StoredState() == beforeAtomicDelete, "failed deletion rolls back card sessions requests and every audit event");
+        }
+        finally { command.CommandText = "DROP TRIGGER AbortLicenseDelete"; command.ExecuteNonQuery(); }
+    }
+    var atomicDeleted = await Post($"/api/admin/codes/{atomicId}/delete", new { }, authenticated: true);
+    Assert(atomicDeleted.GetProperty("ok").GetBoolean() && StoredRows("SELECT * FROM LicenseCodes WHERE Id=$id", atomicId).Length == 0
+        && StoredRows("SELECT * FROM LeaseSessions WHERE CodeId=$id", atomicId).Length == 0
+        && StoredRows("SELECT * FROM ActivationRequests WHERE RequestId IN ('delete-rollback-history','delete-rollback-active')").Length == 0
+        && StoredRows("SELECT * FROM AuditEvents WHERE Action='delete' AND CodeId=$id", atomicId).Length == 1,
+        "delete succeeds once abort trigger is removed with no leftover children or duplicate audit");
+
+    var batchSurvivor = await Issue("permanent"); var batchSurvivorId = Text(batchSurvivor, "id");
+    var batchSurvivorInput = Activation(Text(batchSurvivor, "code"), "batch-delete-survivor");
+    var batchSurvivorLease = await Post("/api/v1/activate", batchSurvivorInput);
+    var batchActiveCard = await Issue("permanent"); var batchActiveId = Text(batchActiveCard, "id");
+    var batchHistoryInput = Activation(Text(batchActiveCard, "code"), "batch-delete-history");
+    var batchHistoryLease = await Post("/api/v1/activate", batchHistoryInput);
+    await Post("/api/v1/logout", new { }, Text(batchHistoryLease, "session_token"));
+    var batchActiveInput = batchHistoryInput with { RequestId = "batch-delete-active" };
+    var batchActiveLease = await Post("/api/v1/activate", batchActiveInput);
+    var batchUnusedCard = await Issue("timed", 90); var batchUnusedId = Text(batchUnusedCard, "id");
+    var batchSessions = StoredRows("SELECT * FROM LeaseSessions WHERE CodeId=$id", batchActiveId);
+    Assert(State(batchHistoryLease) == "active" && State(batchActiveLease) == "active" && batchSessions.Length == 2
+        && batchSessions.Count(row => row.GetProperty("RevokedAt").ValueKind == JsonValueKind.Null) == 1
+        && StoredRows("SELECT * FROM ActivationRequests WHERE RequestId IN ('batch-delete-history','batch-delete-active')").Length == 2,
+        "batch deletion fixture contains active and logged-out sessions and both activation requests");
+    Assert(State(batchUnusedCard) == "unused" && StoredRows("SELECT * FROM LeaseSessions WHERE CodeId=$id", batchUnusedId).Length == 0
+        && State(batchSurvivorLease) == "active", "batch deletion fixture includes an unused card and a live unrelated bearer");
+    var beforeRejectedBatchDelete = StoredState();
+    using (var unauthorizedBatchDelete = await anonymous.PostAsJsonAsync("/api/admin/codes/delete-batch", new { ids = new[] { batchActiveId, batchUnusedId } }))
+        Assert(unauthorizedBatchDelete.StatusCode == HttpStatusCode.Unauthorized && StoredState() == beforeRejectedBatchDelete,
+            "batch delete requires administrator cookie without storage changes");
+    var batchDeleteCsrf = admin.DefaultRequestHeaders.GetValues("X-CSRF-TOKEN").Single();
+    admin.DefaultRequestHeaders.Remove("X-CSRF-TOKEN");
+    try
+    {
+        var rejectedBatchDelete = await Post("/api/admin/codes/delete-batch", new { ids = new[] { batchActiveId, batchUnusedId } },
+            authenticated: true, expected: HttpStatusCode.BadRequest);
+        Assert(Text(rejectedBatchDelete, "error") == "invalid_csrf" && StoredState() == beforeRejectedBatchDelete,
+            "batch delete requires CSRF without card session request or audit changes");
+    }
+    finally { admin.DefaultRequestHeaders.Add("X-CSRF-TOKEN", batchDeleteCsrf); }
+    var invalidBatchDeletes = new (object? Body, string Name)[]
+    {
+        (null, "null body"), (new { }, "missing ids"), (new { ids = (string[]?)null }, "null ids"),
+        (new { ids = Array.Empty<string>() }, "empty ids"),
+        (new { ids = new string?[] { batchActiveId, null } }, "null id"),
+        (new { ids = new[] { batchActiveId, "" } }, "empty id"),
+        (new { ids = new[] { batchActiveId, " \t\r\n" } }, "whitespace id"),
+        (new { ids = Enumerable.Repeat(batchActiveId, 201).ToArray() }, "over 200 original ids before deduplication")
+    };
+    foreach (var invalid in invalidBatchDeletes)
+    {
+        var rejected = await Post("/api/admin/codes/delete-batch", invalid.Body!, authenticated: true, expected: HttpStatusCode.BadRequest);
+        Assert(Text(rejected, "error") == "invalid_delete_request" && StoredState() == beforeRejectedBatchDelete,
+            "batch delete rejects invalid input without changes: " + invalid.Name);
+    }
+    var missingBatchDelete = await Post("/api/admin/codes/delete-batch", new { ids = new[] { batchActiveId, "batch-delete-missing", batchUnusedId } },
+        authenticated: true, expected: HttpStatusCode.NotFound);
+    Assert(Text(missingBatchDelete, "error") == "not_found" && StoredState() == beforeRejectedBatchDelete,
+        "batch delete containing a missing id preserves every existing card and all four tables");
+    var batchSurvivorBeforeDelete = StoredState(batchSurvivorId);
+    var batchAuditBeforeDelete = StoredRows("SELECT * FROM AuditEvents ORDER BY Id").Select(row => row.GetRawText()).ToHashSet();
+    var batchIds = Enumerable.Range(0, 200).Select(index => index % 2 == 0 ? batchActiveId : batchUnusedId).ToArray();
+    var batchDeleted = await Post("/api/admin/codes/delete-batch", new { ids = batchIds }, authenticated: true);
+    Assert(batchDeleted.GetProperty("ok").GetBoolean() && Number(batchDeleted, "deletedCount") == 2,
+        "batch delete accepts 200 original ids and counts each duplicate id only once");
+    Assert(new[] { batchActiveId, batchUnusedId }.All(id => StoredRows("SELECT * FROM LicenseCodes WHERE Id=$id", id).Length == 0
+            && StoredRows("SELECT * FROM LeaseSessions WHERE CodeId=$id", id).Length == 0)
+        && StoredRows("SELECT * FROM ActivationRequests WHERE RequestId IN ('batch-delete-history','batch-delete-active')").Length == 0,
+        "batch deletion physically removes all selected cards sessions and activation requests");
+    Assert((await Get("/api/admin/codes?search=" + batchActiveId)).GetProperty("items").GetArrayLength() == 0
+        && (await Get("/api/admin/codes?search=" + batchUnusedId)).GetProperty("items").GetArrayLength() == 0,
+        "batch deleted cards disappear from management queries");
+    Assert(StoredState(batchSurvivorId) == batchSurvivorBeforeDelete,
+        "batch deletion leaves unrelated card session request and audit state unchanged");
+    var batchAuditAfterDelete = StoredRows("SELECT * FROM AuditEvents ORDER BY Id");
+    Assert(batchAuditAfterDelete.Length == batchAuditBeforeDelete.Count + 2
+        && batchAuditBeforeDelete.IsSubsetOf(batchAuditAfterDelete.Select(row => row.GetRawText())),
+        "batch deletion retains every historical audit and appends exactly two events");
+    foreach (var item in new[] { (Card: batchActiveCard, Id: batchActiveId, Children: 2), (Card: batchUnusedCard, Id: batchUnusedId, Children: 0) })
+    {
+        var itemAudits = batchAuditAfterDelete.Where(row => Text(row, "Action") == "delete" && Text(row, "CodeId") == item.Id).ToArray();
+        Assert(itemAudits.Length == 1, "batch deletion writes exactly one audit for each distinct id: " + item.Id);
+        using var details = JsonDocument.Parse(Text(itemAudits[0], "Details"));
+        Assert(details.RootElement.EnumerateObject().Select(property => property.Name).Order().SequenceEqual(
+                new[] { "activationRequestsDeleted", "codeSuffix", "kind", "sessionsDeleted" })
+            && Text(details.RootElement, "codeSuffix") == Text(item.Card, "code")[^8..] && Text(details.RootElement, "kind") == Text(item.Card, "kind")
+            && Number(details.RootElement, "sessionsDeleted") == item.Children && Number(details.RootElement, "activationRequestsDeleted") == item.Children
+            && !details.RootElement.GetRawText().Contains(Text(batchActiveCard, "code")) && !details.RootElement.GetRawText().Contains(Text(batchUnusedCard, "code")),
+            "batch deletion audit has exact nonsensitive metadata and per-card child counts: " + item.Id);
+    }
+    foreach (var prior in new[] { (Input: batchHistoryInput, Lease: batchHistoryLease), (Input: batchActiveInput, Lease: batchActiveLease) })
+    {
+        Assert(State(await Post("/api/v1/heartbeat", Heartbeat(prior.Input), Text(prior.Lease, "session_token"))) == "revoked",
+            "batch deleted card rejects its old bearer: " + prior.Input.RequestId);
+        Assert(State(await Post("/api/v1/activate", prior.Input with { Nonce = NewNonce() })) == "revoked",
+            "batch deleted card rejects original request replay: " + prior.Input.RequestId);
+    }
+    foreach (var item in new[] { (Card: batchActiveCard, Request: "batch-delete-new-active"), (Card: batchUnusedCard, Request: "batch-delete-new-unused") })
+        Assert(State(await Post("/api/v1/activate", Activation(Text(item.Card, "code"), item.Request))) == "revoked",
+            "batch deleted card rejects fresh activation: " + item.Request);
+    Assert(State(await Post("/api/v1/heartbeat", Heartbeat(batchSurvivorInput), Text(batchSurvivorLease, "session_token"))) == "active",
+        "unrelated bearer remains active after successful batch deletion");
+
+    var batchAtomicFirst = await Issue("permanent"); var batchAtomicFirstId = Text(batchAtomicFirst, "id");
+    var batchAtomicHistoryInput = Activation(Text(batchAtomicFirst, "code"), "batch-delete-rollback-history");
+    var batchAtomicHistory = await Post("/api/v1/activate", batchAtomicHistoryInput);
+    await Post("/api/v1/logout", new { }, Text(batchAtomicHistory, "session_token"));
+    var batchAtomicFirstInput = batchAtomicHistoryInput with { RequestId = "batch-delete-rollback-first" };
+    var batchAtomicFirstLease = await Post("/api/v1/activate", batchAtomicFirstInput);
+    var batchAtomicSecond = await Issue("permanent"); var batchAtomicSecondId = Text(batchAtomicSecond, "id");
+    var batchAtomicSecondInput = Activation(Text(batchAtomicSecond, "code"), "batch-delete-rollback-second");
+    var batchAtomicSecondLease = await Post("/api/v1/activate", batchAtomicSecondInput);
+    Assert(State(batchAtomicFirstLease) == "active" && State(batchAtomicSecondLease) == "active"
+        && StoredRows("SELECT * FROM LeaseSessions WHERE CodeId=$id", batchAtomicFirstId).Length == 2
+        && StoredRows("SELECT * FROM LeaseSessions WHERE CodeId=$id", batchAtomicSecondId).Length == 1
+        && StoredRows("SELECT * FROM ActivationRequests WHERE RequestId IN ('batch-delete-rollback-history','batch-delete-rollback-first','batch-delete-rollback-second')").Length == 3,
+        "batch rollback fixture contains two cards with live and historical dependent rows");
+    var beforeAtomicBatchDelete = StoredState();
+    var atomicBatchAuditBefore = StoredRows("SELECT * FROM AuditEvents ORDER BY Id").Select(row => row.GetRawText()).ToHashSet();
+    using (var db = new SqliteConnection("Data Source=" + options.DatabasePath + ";Pooling=False"))
+    {
+        db.Open(); using var command = db.CreateCommand();
+        // Abort the second card only after the first card, its children, and its delete audit have been processed.
+        command.CommandText = $"""
+            CREATE TRIGGER AbortBatchLicenseDelete BEFORE DELETE ON LicenseCodes
+            WHEN OLD.Id='{batchAtomicSecondId}'
+                AND NOT EXISTS(SELECT 1 FROM LicenseCodes WHERE Id='{batchAtomicFirstId}')
+                AND NOT EXISTS(SELECT 1 FROM LeaseSessions WHERE CodeId='{batchAtomicFirstId}')
+                AND NOT EXISTS(SELECT 1 FROM ActivationRequests WHERE RequestId IN ('batch-delete-rollback-history','batch-delete-rollback-first'))
+                AND EXISTS(SELECT 1 FROM AuditEvents WHERE CodeId='{batchAtomicFirstId}' AND Action='delete')
+            BEGIN SELECT RAISE(ABORT,'batch-delete-rollback-fixture'); END;
+            """;
+        command.ExecuteNonQuery();
+        try
+        {
+            var failedBatchDelete = await Post("/api/admin/codes/delete-batch", new { ids = new[] { batchAtomicFirstId, batchAtomicSecondId } },
+                authenticated: true, expected: HttpStatusCode.ServiceUnavailable);
+            Assert(Text(failedBatchDelete, "error") == "storage_unavailable", "batch delete maps a second-card SQLite abort to storage_unavailable");
+            Assert(StoredState() == beforeAtomicBatchDelete,
+                "failed batch rolls back first-card cleanup and audit plus every row in all four tables");
+        }
+        finally { command.CommandText = "DROP TRIGGER AbortBatchLicenseDelete"; command.ExecuteNonQuery(); }
+    }
+    foreach (var prior in new[] { (Input: batchAtomicFirstInput, Lease: batchAtomicFirstLease), (Input: batchAtomicSecondInput, Lease: batchAtomicSecondLease) })
+        Assert(State(await Post("/api/v1/heartbeat", Heartbeat(prior.Input), Text(prior.Lease, "session_token"))) == "active",
+            "failed batch preserves each original live bearer: " + prior.Input.RequestId);
+    var atomicBatchDeleted = await Post("/api/admin/codes/delete-batch", new { ids = new[] { batchAtomicFirstId, batchAtomicSecondId, batchAtomicFirstId } }, authenticated: true);
+    Assert(atomicBatchDeleted.GetProperty("ok").GetBoolean() && Number(atomicBatchDeleted, "deletedCount") == 2
+        && new[] { batchAtomicFirstId, batchAtomicSecondId }.All(id => StoredRows("SELECT * FROM LicenseCodes WHERE Id=$id", id).Length == 0
+            && StoredRows("SELECT * FROM LeaseSessions WHERE CodeId=$id", id).Length == 0
+            && StoredRows("SELECT * FROM AuditEvents WHERE Action='delete' AND CodeId=$id", id).Length == 1)
+        && StoredRows("SELECT * FROM ActivationRequests WHERE RequestId IN ('batch-delete-rollback-history','batch-delete-rollback-first','batch-delete-rollback-second')").Length == 0,
+        "batch retry after trigger removal deletes both cards and children with one audit each");
+    var atomicBatchAuditAfter = StoredRows("SELECT * FROM AuditEvents ORDER BY Id");
+    Assert(atomicBatchAuditAfter.Length == atomicBatchAuditBefore.Count + 2
+        && atomicBatchAuditBefore.IsSubsetOf(atomicBatchAuditAfter.Select(row => row.GetRawText())),
+        "successful batch retry retains old audit rows without leaked rollback events");
+    Assert(StoredState(batchSurvivorId) == batchSurvivorBeforeDelete
+        && State(await Post("/api/v1/heartbeat", Heartbeat(batchSurvivorInput), Text(batchSurvivorLease, "session_token"))) == "active",
+        "batch rollback and retry preserve unrelated storage and its live bearer without advancing the clock");
+
     var rollbackCard = await Issue("permanent");
     var rollbackInput = Activation(Text(rollbackCard, "code"), "clock-heartbeat");
     var rollbackSession = await Post("/api/v1/activate", rollbackInput);
@@ -408,6 +689,122 @@ try
     Assert((await Get("/api/admin/settings")).TryGetProperty("productId", out _), "persistent administrator cookie survives restart");
     Assert((await Post("/api/admin/logout", new { }, authenticated: true)).GetProperty("ok").GetBoolean(), "management logout returns JSON acknowledgement");
     Assert((await admin.GetAsync("/api/admin/settings")).StatusCode == HttpStatusCode.Unauthorized, "management logout clears administrator session");
+
+    // 跨主机迁移的卡密密文：用另一套密钥加密的行不得拖垮整个列表，且可用明文重新加密自愈。
+    var reloginHtml = await admin!.GetStringAsync("/admin/login");
+    var reloginCsrf = WebUtility.HtmlDecode(Regex.Match(reloginHtml, "name=__RequestVerificationToken value=\"([^\"]+)\"").Groups[1].Value);
+    admin.DefaultRequestHeaders.Remove("X-CSRF-TOKEN");
+    var relogin = await admin.PostAsync("/admin/login", new FormUrlEncodedContent(new Dictionary<string, string>
+        { ["token"] = options.AdminToken, ["__RequestVerificationToken"] = reloginCsrf }));
+    Assert(relogin.StatusCode == HttpStatusCode.Redirect, "administrator can sign in again after logout");
+    await RefreshCsrf();
+    var foreignServices = new ServiceCollection();
+    foreignServices.AddDataProtection()
+        .SetApplicationName("Licensing.Native.v1")
+        .PersistKeysToFileSystem(new DirectoryInfo(Path.Combine(root, "foreign-keys")));
+    var foreignProvider = foreignServices.BuildServiceProvider().GetRequiredService<IDataProtectionProvider>();
+    var foreignCode = "COH3-MIGRATED-FIXTURE";
+    var foreignId = "migrated" + Guid.NewGuid().ToString("N")[..12];
+    var mismatchCode = "COH3-MISMATCH-FIXTURE";
+    var mismatchId = "mismatch" + Guid.NewGuid().ToString("N")[..12];
+    void InsertForeign(string id, string code)
+    {
+        using var db = new SqliteConnection("Data Source=" + options.DatabasePath + ";Pooling=False");
+        db.Open(); using var command = db.CreateCommand();
+        command.CommandText = "INSERT INTO LicenseCodes(Id,ProductId,CodeHash,CodeCipher,CodeSuffix,Kind,DurationSeconds,Note,CreatedAt) VALUES($id,$p,$h,$c,$s,'permanent',NULL,'migrated-from-another-host',$t)";
+        command.Parameters.AddWithValue("$id", id);
+        command.Parameters.AddWithValue("$p", options.ProductId);
+        command.Parameters.AddWithValue("$h", Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes(options.ProductId + "|code-v1|" + code))));
+        command.Parameters.AddWithValue("$c", foreignProvider.CreateProtector("Licensing.Native.Code.v1", options.ProductId).Protect(code));
+        command.Parameters.AddWithValue("$s", code[^8..]);
+        command.Parameters.AddWithValue("$t", DateTimeOffset.UtcNow.ToUnixTimeSeconds());
+        command.ExecuteNonQuery();
+    }
+    InsertForeign(foreignId, foreignCode);
+    InsertForeign(mismatchId, mismatchCode);
+    var foreignList = await Get("/api/admin/codes?search=" + Uri.EscapeDataString(foreignId));
+    var foreignItem = foreignList.GetProperty("items")[0];
+    Assert(foreignList.GetProperty("items").GetArrayLength() == 1 && !foreignItem.GetProperty("codeReadable").GetBoolean()
+        && Text(foreignItem, "code") == "", "a row encrypted by another host is listed as unreadable instead of failing the whole page");
+    var migrationConfig = Path.Combine(root, "migration-config.json");
+    await File.WriteAllTextAsync(migrationConfig, JsonSerializer.Serialize(options));
+    var priorMigrationConfig = Environment.GetEnvironmentVariable("LICENSING_SERVER_CONFIG");
+    var plaintextPath = Path.Combine(root, "code-plaintext.json");
+    try
+    {
+        Environment.SetEnvironmentVariable("LICENSING_SERVER_CONFIG", migrationConfig);
+        await ServerProgram.Main(["--export-code-plaintext", plaintextPath]);
+    }
+    finally { Environment.SetEnvironmentVariable("LICENSING_SERVER_CONFIG", priorMigrationConfig); }
+    var exportedCodes = JsonSerializer.Deserialize<List<CodePlaintext>>(await File.ReadAllTextAsync(plaintextPath))!;
+    Assert(exportedCodes.Any(item => item.Id == foreignId && !item.Readable) && exportedCodes.Count(item => item.Readable) > 0,
+        "offline CLI exports plaintext for readable codes and flags rows encrypted by another host");
+    var repairPath = Path.Combine(root, "repair-map.json");
+    await File.WriteAllTextAsync(repairPath, JsonSerializer.Serialize(new Dictionary<string, string> { [foreignId] = foreignCode }));
+    var mismatchPath = Path.Combine(root, "repair-mismatch.json");
+    await File.WriteAllTextAsync(mismatchPath, JsonSerializer.Serialize(new Dictionary<string, string> { [mismatchId] = "COH3-WRONG-PLAINTEXT" }));
+    try
+    {
+        Environment.SetEnvironmentVariable("LICENSING_SERVER_CONFIG", migrationConfig);
+        await ServerProgram.Main(["--reprotect-codes", repairPath]);
+        await ServerProgram.Main(["--reprotect-codes", mismatchPath]);
+    }
+    finally { Environment.SetEnvironmentVariable("LICENSING_SERVER_CONFIG", priorMigrationConfig); }
+    var repairedItem = (await Get("/api/admin/codes?search=" + Uri.EscapeDataString(foreignId))).GetProperty("items")[0];
+    Assert(repairedItem.GetProperty("codeReadable").GetBoolean() && Text(repairedItem, "code") == foreignCode,
+        "re-encrypting a migrated row with the current key restores its plaintext");
+    var mismatchItem = (await Get("/api/admin/codes?search=" + Uri.EscapeDataString(mismatchId))).GetProperty("items")[0];
+    Assert(!mismatchItem.GetProperty("codeReadable").GetBoolean(),
+        "re-encryption refuses a plaintext that does not match the stored hash");
+    var unreadableDeleted = await Post($"/api/admin/codes/{mismatchId}/delete", new { }, authenticated: true);
+    Assert(unreadableDeleted.GetProperty("ok").GetBoolean() && StoredRows("SELECT * FROM LicenseCodes WHERE Id=$id", mismatchId).Length == 0,
+        "unreadable foreign CodeCipher card can be deleted without decrypting it");
+    var unreadableAudits = StoredRows("SELECT * FROM AuditEvents WHERE Action='delete' AND CodeId=$id", mismatchId);
+    Assert(unreadableAudits.Length == 1, "unreadable card deletion appends one audit event");
+    using (var details = JsonDocument.Parse(Text(unreadableAudits[0], "Details")))
+        Assert(Text(details.RootElement, "codeSuffix") == mismatchCode[^8..] && Text(details.RootElement, "kind") == "permanent"
+            && Number(details.RootElement, "sessionsDeleted") == 0 && Number(details.RootElement, "activationRequestsDeleted") == 0
+            && !details.RootElement.GetRawText().Contains(mismatchCode), "unreadable card deletion audit uses stored nonsensitive metadata");
+
+    var batchUnreadableCode = "COH3-BATCH-UNREADABLE-FIXTURE";
+    var batchUnreadableId = "batch-unreadable" + Guid.NewGuid().ToString("N")[..12];
+    InsertForeign(batchUnreadableId, batchUnreadableCode);
+    var batchReadableCard = await Issue("timed", 90); var batchReadableId = Text(batchReadableCard, "id");
+    var batchUnreadableItem = await Card(batchUnreadableId);
+    Assert(!batchUnreadableItem.GetProperty("codeReadable").GetBoolean() && Text(batchUnreadableItem, "code") == "",
+        "batch deletion fixture includes a card encrypted under a foreign protection key");
+    var beforeOrdinalBatchDelete = StoredState();
+    var ordinalBatchDelete = await Post("/api/admin/codes/delete-batch",
+        new { ids = new[] { batchUnreadableId, batchUnreadableId.ToUpperInvariant(), batchReadableId } },
+        authenticated: true, expected: HttpStatusCode.NotFound);
+    Assert(Text(ordinalBatchDelete, "error") == "not_found" && StoredState() == beforeOrdinalBatchDelete,
+        "batch ids use Ordinal case-sensitive deduplication and a missing case variant preserves the entire batch");
+    var repairedBeforeBatchDelete = StoredState(foreignId);
+    var unreadableBatchAuditBefore = StoredRows("SELECT * FROM AuditEvents ORDER BY Id").Select(row => row.GetRawText()).ToHashSet();
+    var unreadableBatchDeleted = await Post("/api/admin/codes/delete-batch",
+        new { ids = new[] { batchUnreadableId, batchReadableId, batchUnreadableId } }, authenticated: true);
+    Assert(unreadableBatchDeleted.GetProperty("ok").GetBoolean() && Number(unreadableBatchDeleted, "deletedCount") == 2
+        && new[] { batchUnreadableId, batchReadableId }.All(id => StoredRows("SELECT * FROM LicenseCodes WHERE Id=$id", id).Length == 0
+            && StoredRows("SELECT * FROM LeaseSessions WHERE CodeId=$id", id).Length == 0),
+        "batch deletion removes mixed readable and unreadable cards without decrypting CodeCipher");
+    var unreadableBatchAuditAfter = StoredRows("SELECT * FROM AuditEvents ORDER BY Id");
+    Assert(unreadableBatchAuditAfter.Length == unreadableBatchAuditBefore.Count + 2
+        && unreadableBatchAuditBefore.IsSubsetOf(unreadableBatchAuditAfter.Select(row => row.GetRawText()))
+        && StoredState(foreignId) == repairedBeforeBatchDelete,
+        "unreadable batch retains all prior audit rows and unrelated repaired-card state");
+    foreach (var item in new[] { (Id: batchUnreadableId, Code: batchUnreadableCode, Kind: "permanent"),
+        (Id: batchReadableId, Code: Text(batchReadableCard, "code"), Kind: "timed") })
+    {
+        var itemAudits = unreadableBatchAuditAfter.Where(row => Text(row, "Action") == "delete" && Text(row, "CodeId") == item.Id).ToArray();
+        Assert(itemAudits.Length == 1, "unreadable mixed batch appends one audit per distinct card: " + item.Id);
+        using var details = JsonDocument.Parse(Text(itemAudits[0], "Details"));
+        Assert(details.RootElement.EnumerateObject().Select(property => property.Name).Order().SequenceEqual(
+                new[] { "activationRequestsDeleted", "codeSuffix", "kind", "sessionsDeleted" })
+            && Text(details.RootElement, "codeSuffix") == item.Code[^8..] && Text(details.RootElement, "kind") == item.Kind
+            && Number(details.RootElement, "sessionsDeleted") == 0 && Number(details.RootElement, "activationRequestsDeleted") == 0
+            && !details.RootElement.GetRawText().Contains(batchUnreadableCode) && !details.RootElement.GetRawText().Contains(Text(batchReadableCard, "code")),
+            "unreadable mixed batch audit uses exact nonsensitive stored metadata: " + item.Id);
+    }
 
     var oldPath = Path.Combine(root, "old-sentinel.db");
     using (var db = new SqliteConnection("Data Source=" + oldPath + ";Pooling=False"))

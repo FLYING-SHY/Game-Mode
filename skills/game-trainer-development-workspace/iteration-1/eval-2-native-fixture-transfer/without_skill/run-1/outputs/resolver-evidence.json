@@ -1,0 +1,413 @@
+{
+  "schema": 1,
+  "sessions": [
+    {
+      "session": "A0",
+      "module_base": 5368709120,
+      "heap_base": 8589934592,
+      "aob": [
+        {
+          "mode": "unique",
+          "hits": [
+            64
+          ],
+          "decoded": [
+            {
+              "hit_rva": 64,
+              "field_displacement": 56,
+              "rip_next": 5368709198,
+              "rip_displacement": 306,
+              "root_address": 5368709504
+            }
+          ],
+          "status": "unique",
+          "accepted": true
+        },
+        {
+          "mode": "zero",
+          "hits": [],
+          "decoded": [],
+          "status": "zero",
+          "accepted": false
+        },
+        {
+          "mode": "multi",
+          "hits": [
+            64,
+            160
+          ],
+          "decoded": [
+            {
+              "hit_rva": 64,
+              "field_displacement": 56,
+              "rip_next": 5368709198,
+              "rip_displacement": 306,
+              "root_address": 5368709504
+            },
+            {
+              "hit_rva": 160,
+              "field_displacement": 56,
+              "rip_next": 5368709294,
+              "rip_displacement": 210,
+              "root_address": 5368709504
+            }
+          ],
+          "status": "multiple",
+          "accepted": false
+        }
+      ],
+      "manager": 8589934848,
+      "initial_value_candidates": [
+        {
+          "address": 8589935672,
+          "values": [
+            100,
+            73,
+            91
+          ],
+          "retained": true
+        },
+        {
+          "address": 8589936128,
+          "values": [
+            100,
+            100,
+            100
+          ],
+          "retained": false
+        },
+        {
+          "address": 8589936160,
+          "values": [
+            100,
+            91,
+            73
+          ],
+          "retained": false
+        }
+      ],
+      "dynamic_candidates": [
+        8589935672
+      ],
+      "chains": [
+        {
+          "pointer_slot": 8589934880,
+          "ptr_offset": 32,
+          "actor": 8589935616,
+          "address": 8589935672,
+          "values": [
+            100,
+            73,
+            91
+          ]
+        }
+      ]
+    },
+    {
+      "session": "A1",
+      "module_base": 5368709120,
+      "heap_base": 8592031744,
+      "aob": [
+        {
+          "mode": "unique",
+          "hits": [
+            64
+          ],
+          "decoded": [
+            {
+              "hit_rva": 64,
+              "field_displacement": 56,
+              "rip_next": 5368709198,
+              "rip_displacement": 306,
+              "root_address": 5368709504
+            }
+          ],
+          "status": "unique",
+          "accepted": true
+        },
+        {
+          "mode": "zero",
+          "hits": [],
+          "decoded": [],
+          "status": "zero",
+          "accepted": false
+        },
+        {
+          "mode": "multi",
+          "hits": [
+            64,
+            160
+          ],
+          "decoded": [
+            {
+              "hit_rva": 64,
+              "field_displacement": 56,
+              "rip_next": 5368709198,
+              "rip_displacement": 306,
+              "root_address": 5368709504
+            },
+            {
+              "hit_rva": 160,
+              "field_displacement": 56,
+              "rip_next": 5368709294,
+              "rip_displacement": 210,
+              "root_address": 5368709504
+            }
+          ],
+          "status": "multiple",
+          "accepted": false
+        }
+      ],
+      "manager": 8592032000,
+      "initial_value_candidates": [
+        {
+          "address": 8592032952,
+          "values": [
+            100,
+            73,
+            91
+          ],
+          "retained": true
+        },
+        {
+          "address": 8592033280,
+          "values": [
+            100,
+            100,
+            100
+          ],
+          "retained": false
+        },
+        {
+          "address": 8592033312,
+          "values": [
+            100,
+            91,
+            73
+          ],
+          "retained": false
+        }
+      ],
+      "dynamic_candidates": [
+        8592032952
+      ],
+      "chains": [
+        {
+          "pointer_slot": 8592032032,
+          "ptr_offset": 32,
+          "actor": 8592032896,
+          "address": 8592032952,
+          "values": [
+            100,
+            73,
+            91
+          ]
+        }
+      ]
+    },
+    {
+      "session": "B0",
+      "module_base": 6442450944,
+      "heap_base": 8606711808,
+      "aob": [
+        {
+          "mode": "unique",
+          "hits": [
+            64
+          ],
+          "decoded": [
+            {
+              "hit_rva": 64,
+              "field_displacement": 88,
+              "rip_next": 6442451022,
+              "rip_displacement": 498,
+              "root_address": 6442451520
+            }
+          ],
+          "status": "unique",
+          "accepted": true
+        },
+        {
+          "mode": "zero",
+          "hits": [],
+          "decoded": [],
+          "status": "zero",
+          "accepted": false
+        },
+        {
+          "mode": "multi",
+          "hits": [
+            64,
+            160
+          ],
+          "decoded": [
+            {
+              "hit_rva": 64,
+              "field_displacement": 88,
+              "rip_next": 6442451022,
+              "rip_displacement": 498,
+              "root_address": 6442451520
+            },
+            {
+              "hit_rva": 160,
+              "field_displacement": 88,
+              "rip_next": 6442451118,
+              "rip_displacement": 402,
+              "root_address": 6442451520
+            }
+          ],
+          "status": "multiple",
+          "accepted": false
+        }
+      ],
+      "manager": 8606712064,
+      "initial_value_candidates": [
+        {
+          "address": 8606712920,
+          "values": [
+            100,
+            73,
+            91
+          ],
+          "retained": true
+        },
+        {
+          "address": 8606713344,
+          "values": [
+            100,
+            100,
+            100
+          ],
+          "retained": false
+        },
+        {
+          "address": 8606713376,
+          "values": [
+            100,
+            91,
+            73
+          ],
+          "retained": false
+        }
+      ],
+      "dynamic_candidates": [
+        8606712920
+      ],
+      "chains": [
+        {
+          "pointer_slot": 8606712112,
+          "ptr_offset": 48,
+          "actor": 8606712832,
+          "address": 8606712920,
+          "values": [
+            100,
+            73,
+            91
+          ]
+        }
+      ]
+    },
+    {
+      "session": "B1",
+      "module_base": 6442450944,
+      "heap_base": 8608808960,
+      "aob": [
+        {
+          "mode": "unique",
+          "hits": [
+            64
+          ],
+          "decoded": [
+            {
+              "hit_rva": 64,
+              "field_displacement": 88,
+              "rip_next": 6442451022,
+              "rip_displacement": 498,
+              "root_address": 6442451520
+            }
+          ],
+          "status": "unique",
+          "accepted": true
+        },
+        {
+          "mode": "zero",
+          "hits": [],
+          "decoded": [],
+          "status": "zero",
+          "accepted": false
+        },
+        {
+          "mode": "multi",
+          "hits": [
+            64,
+            160
+          ],
+          "decoded": [
+            {
+              "hit_rva": 64,
+              "field_displacement": 88,
+              "rip_next": 6442451022,
+              "rip_displacement": 498,
+              "root_address": 6442451520
+            },
+            {
+              "hit_rva": 160,
+              "field_displacement": 88,
+              "rip_next": 6442451118,
+              "rip_displacement": 402,
+              "root_address": 6442451520
+            }
+          ],
+          "status": "multiple",
+          "accepted": false
+        }
+      ],
+      "manager": 8608809216,
+      "initial_value_candidates": [
+        {
+          "address": 8608810200,
+          "values": [
+            100,
+            73,
+            91
+          ],
+          "retained": true
+        },
+        {
+          "address": 8608810496,
+          "values": [
+            100,
+            100,
+            100
+          ],
+          "retained": false
+        },
+        {
+          "address": 8608810528,
+          "values": [
+            100,
+            91,
+            73
+          ],
+          "retained": false
+        }
+      ],
+      "dynamic_candidates": [
+        8608810200
+      ],
+      "chains": [
+        {
+          "pointer_slot": 8608809264,
+          "ptr_offset": 48,
+          "actor": 8608810112,
+          "address": 8608810200,
+          "values": [
+            100,
+            73,
+            91
+          ]
+        }
+      ]
+    }
+  ]
+}

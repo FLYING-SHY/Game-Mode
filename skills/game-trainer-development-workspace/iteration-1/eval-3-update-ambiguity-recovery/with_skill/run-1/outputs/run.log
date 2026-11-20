@@ -1,0 +1,22 @@
+﻿started_utc=2026-11-16T01:15:33.998103+00:00
+python=3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]
+evidence_level=F; model=offline-bytearray; real_game=not_run
+test_build_gate_and_bounded_scan (__main__.RepairTests.test_build_gate_and_bounded_scan) ... ok
+test_normal_repeated_enable_disable_and_exit_cleanup (__main__.RepairTests.test_normal_repeated_enable_disable_and_exit_cleanup) ... ok
+test_old_unique_and_new_multi_choose_semantic_second (__main__.RepairTests.test_old_unique_and_new_multi_choose_semantic_second) ... ok
+test_original_mismatch_cached_semantics_and_partial_rollback (__main__.RepairTests.test_original_mismatch_cached_semantics_and_partial_rollback) ... ok
+test_read_bounds (__main__.RepairTests.test_read_bounds) ... ok
+test_restore_conflict_preserves_other_component (__main__.RepairTests.test_restore_conflict_preserves_other_component) ... ok
+test_rip_outside_region_is_rejected (__main__.RepairTests.test_rip_outside_region_is_rejected) ... ok
+test_signed_rip_and_expected_opcode (__main__.RepairTests.test_signed_rip_and_expected_opcode) ... ok
+test_stale_session_all_identity_dimensions_no_write (__main__.RepairTests.test_stale_session_all_identity_dimensions_no_write) ... ok
+test_unique_still_requires_semantics (__main__.RepairTests.test_unique_still_requires_semantics) ... ok
+test_zero_and_unresolved_multi_stop (__main__.RepairTests.test_zero_and_unresolved_multi_stop) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.003s
+
+OK
+observations=[{"build": "c2231bd4300365ba5ceb14952f0c61e334092356afb815053448fbe1b20069f9", "raw_hits": ["0x120", "0x1a0"], "rejected": [{"hit": "0x120", "reason": "object_owner"}], "valid_hits": ["0x1a0"]}, {"build": "2e36af3b3d913b18644a42245e80a9e46424b6820697ec2ef8518dc84fd71cb3", "raw_hits": ["0x120", "0x1a0"], "rejected": [{"hit": "0x120", "reason": "object_owner"}], "valid_hits": ["0x1a0"]}, {"build": "c0f7dc8b8d8e06175b692f0cd20cbe58a5e498665f07263ede4746f78523c276", "raw_hits": ["0x120"], "rejected": [], "valid_hits": ["0x120"]}, {"build": "c2231bd4300365ba5ceb14952f0c61e334092356afb815053448fbe1b20069f9", "raw_hits": ["0x120", "0x1a0"], "rejected": [{"hit": "0x120", "reason": "object_owner"}], "valid_hits": ["0x1a0"]}, {"build": "c0f7dc8b8d8e06175b692f0cd20cbe58a5e498665f07263ede4746f78523c276", "raw_hits": ["0x120"], "rejected": [], "valid_hits": ["0x120"]}, {"build": "c0f7dc8b8d8e06175b692f0cd20cbe58a5e498665f07263ede4746f78523c276", "raw_hits": ["0x120"], "rejected": [], "valid_hits": ["0x120"]}, {"build": "c0f7dc8b8d8e06175b692f0cd20cbe58a5e498665f07263ede4746f78523c276", "raw_hits": ["0x120"], "rejected": [], "valid_hits": ["0x120"]}, {"build": "c2231bd4300365ba5ceb14952f0c61e334092356afb815053448fbe1b20069f9", "raw_hits": ["0x120", "0x1a0"], "rejected": [{"hit": "0x120", "reason": "object_owner"}], "valid_hits": ["0x1a0"]}, {"preserved": true, "restore_conflict": "cc9090909090"}, {"build": "7cc8b0ede516c4df06c3a646a2346929cc4ebadc96ce9eeb93031eb43111acb0", "raw_hits": ["0x120"], "rejected": [{"hit": "0x120", "reason": "root_region"}], "valid_hits": []}, {"build": "c0f7dc8b8d8e06175b692f0cd20cbe58a5e498665f07263ede4746f78523c276", "raw_hits": ["0x120"], "rejected": [], "valid_hits": ["0x120"]}, {"build": "c0f7dc8b8d8e06175b692f0cd20cbe58a5e498665f07263ede4746f78523c276", "raw_hits": ["0x120"], "rejected": [], "valid_hits": ["0x120"]}, {"build": "c0f7dc8b8d8e06175b692f0cd20cbe58a5e498665f07263ede4746f78523c276", "raw_hits": ["0x120"], "rejected": [], "valid_hits": ["0x120"]}, {"build": "c0f7dc8b8d8e06175b692f0cd20cbe58a5e498665f07263ede4746f78523c276", "raw_hits": ["0x120"], "rejected": [], "valid_hits": ["0x120"]}, {"build": "c0f7dc8b8d8e06175b692f0cd20cbe58a5e498665f07263ede4746f78523c276", "raw_hits": ["0x120"], "rejected": [], "valid_hits": ["0x120"]}, {"build": "c82e1ed9534d0aee2c67f6bca22d837e73c209cb854bb144db1c3b1beaa0153f", "raw_hits": ["0x120"], "rejected": [{"hit": "0x120", "reason": "health_semantics"}], "valid_hits": []}, {"build": "39ffc3e7bcc47b91d4eb723d5025dd461cf87dd28457bb5c56569bee5ae99bdc", "raw_hits": [], "rejected": [], "valid_hits": []}, {"build": "4bee85e1eb5641ccc1811c08fd945a3c1cb75198f54aad95ae0daadbf17dbf27", "raw_hits": ["0x120", "0x1a0"], "rejected": [], "valid_hits": ["0x120", "0x1a0"]}]
+{"tests_run": 11, "failures": 0, "errors": 0, "successful": true}
+exit_code=0

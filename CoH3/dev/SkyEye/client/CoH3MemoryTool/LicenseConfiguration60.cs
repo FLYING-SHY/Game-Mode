@@ -7,7 +7,7 @@ internal static class LicenseConfiguration60
 {
 	public static string ProductId => string.IsNullOrWhiteSpace(ConfigurationManager.AppSettings["LicensingProductId"]) ? "CoH3FowTool" : ConfigurationManager.AppSettings["LicensingProductId"].Trim();
 
-	public static Uri ServerBaseAddress => ParseServerBaseAddress(ConfigurationManager.AppSettings["LicensingServerBaseUrl"] ?? "http://127.0.0.1:47835/");
+	public static Uri ServerBaseAddress => ParseServerBaseAddress(ConfigurationManager.AppSettings["LicensingServerBaseUrl"] ?? "https://124.220.147.56/");
 
 	internal static Uri ParseServerBaseAddress(string value)
 	{

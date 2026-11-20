@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": {
+    "two_builds_two_sessions_decoys": true,
+    "aob_0_1_multiple_rip": true,
+    "normal_enable_disable": true,
+    "restore_conflict": true,
+    "last_byte_boundary": true,
+    "short_read": true,
+    "outside_image": true,
+    "negative_size": true,
+    "stale_session": true,
+    "decoy_rejected": true,
+    "deterministic": true
+  }
+}

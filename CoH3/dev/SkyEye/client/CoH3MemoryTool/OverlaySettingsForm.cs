@@ -2183,8 +2183,14 @@ internal sealed class OverlaySettingsForm : Form
 			}
 			if (connection46 != null)
 			{
-				connection46.Text = (previewOnlyMode ? "◉ 外观预览" : (GameVersion45.Unverified ? "⚠ 版本未验证" : (liveRows ? "● 对局已连接" : "○ 等待对局")));
-				tips46.SetToolTip(connection46, GameVersion45.Unverified ? "当前游戏版本兼容性未验证，允许继续测试；显示异常时请联系卖家适配。" : "");
+				(string label, string detail) = GameVersion45.Status switch
+				{
+					GameVersion45.CheckStatus.FingerprintMismatch => ("⚠ 版本未验证", "游戏主程序指纹与已验证版本不一致。"),
+					GameVersion45.CheckStatus.ReadFailed => ("⚠ 版本读取失败", "读取游戏主程序失败，未能验证版本。"),
+					_ => (liveRows ? "● 对局已连接" : "○ 等待对局", "")
+				};
+				connection46.Text = previewOnlyMode ? "◉ 外观预览" : label;
+				tips46.SetToolTip(connection46, previewOnlyMode ? "" : detail);
 			}
 		}
 		finally

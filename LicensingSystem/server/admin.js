@@ -2,9 +2,9 @@
 
 const csrf = document.querySelector('meta[name="csrf-token"]').content;
 const $ = selector => document.querySelector(selector);
-const state = { view: 'codes', page: 1, pageSize: 25, total: 0, auditPage: 1, auditTotal: 0, issued: [], renewId: null, sessionCodeId: null, codesRequest: 0, sessionsRequest: 0 };
+const state = { view: 'codes', page: 1, pageSize: 25, total: 0, auditPage: 1, auditTotal: 0, issued: [], renewId: null, deleteRecords: [], deleteBatch: false, selected: new Map(), pageRecords: [], sessionCodeId: null, codesRequest: 0, sessionsRequest: 0 };
 const statuses = { unused: '待激活', active: '有效', expired: '已过期', suspended: '已停用', revoked: '已撤销', online: '在线' };
-const actions = { issue: '发放卡密', issue_batch: '批量发码', activate: '首次激活', activation: '激活', suspend: '停用', suspension: '修改停用状态', resume: '恢复', restore: '恢复', renew: '续期', unbind: '解绑设备', kick: '踢下线', logout: '登出', login: '管理员登录' };
+const actions = { issue: '发放卡密', issue_batch: '批量发码', activate: '首次激活', activation: '激活', suspend: '停用', suspension: '修改停用状态', resume: '恢复', restore: '恢复', renew: '续期', unbind: '解绑设备', kick: '踢下线', delete: '删除卡密', logout: '登出', login: '管理员登录' };
 const dateFormatter = new Intl.DateTimeFormat('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23' });
 
 async function api(path, body) {
@@ -107,12 +107,46 @@ async function mutate(record, action, body, element, success) {
     await refresh(); message(success);
   } catch (error) { showError(error); } finally { element.disabled = false; }
 }
+function updateSelection() {
+  const count = state.selected.size;
+  $('#selection-count').textContent = '已选 ' + count + ' 条';
+  $('#delete-selected').disabled = count === 0;
+  const selectPage = $('#select-page');
+  selectPage.disabled = state.pageRecords.length === 0;
+  selectPage.checked = count > 0 && count === state.pageRecords.length;
+  selectPage.indeterminate = count > 0 && count < state.pageRecords.length;
+  for (const checkbox of $('#rows').querySelectorAll('.code-select')) {
+    checkbox.checked = state.selected.has(checkbox.value);
+    checkbox.closest('tr').classList.toggle('is-selected', checkbox.checked);
+  }
+}
+function openDeleteDialog(records, batch = false) {
+  if (!records.length) return;
+  state.deleteRecords = records.slice(); state.deleteBatch = batch;
+  const record = records[0];
+  $('#delete-heading').textContent = batch ? '永久删除 ' + records.length + ' 条卡密' : '永久删除卡密';
+  $('#delete-code').textContent = batch
+    ? '尾号：' + records.slice(0, 5).map(item => item.codeSuffix).join('、') + (records.length > 5 ? '；另 ' + (records.length - 5) + ' 条' : '')
+    : record.codeReadable !== false ? record.code : '卡密尾号：' + record.codeSuffix;
+  $('#delete-note').textContent = batch ? '仅删除当前页已勾选的 ' + records.length + ' 条卡密。' : record.note ? '备注：' + record.note : '无备注';
+  $('#delete-confirm').textContent = batch ? '确认删除 ' + records.length + ' 条' : '确认删除';
+  $('#delete-error').textContent = '';
+  $('#delete-dialog').showModal(); $('#delete-cancel').focus();
+}
 function renderCode(record) {
   const row = node('tr'); row.dataset.id = record.id;
+  const readable = record.codeReadable !== false;
   const codeCell = node('td');
-  codeCell.append(node('code', record.code, 'license-code'));
+  const selection = node('input', undefined, 'code-select'); selection.type = 'checkbox'; selection.value = record.id;
+  selection.setAttribute('aria-label', '选择尾号 ' + record.codeSuffix);
+  selection.addEventListener('change', () => {
+    if (selection.checked) state.selected.set(record.id, record); else state.selected.delete(record.id);
+    updateSelection();
+  });
+  codeCell.append(selection, node('code', readable ? record.code : '（密文不可解）', 'license-code' + (readable ? '' : ' unreadable')));
   const codeMeta = node('div', record.kind === 'permanent' ? '永久卡' : '限时卡 / ' + duration(record.durationSeconds), 'cell-meta');
-  codeMeta.append(button('复制', 'text-button', () => copyText(record.code)));
+  if (readable) codeMeta.append(button('复制', 'text-button', () => copyText(record.code)));
+  else codeMeta.append(node('span', '该密文无法用当前密钥解开，需用明文重新加密后修复。', 'cell-meta'));
   codeCell.append(codeMeta); row.append(codeCell);
   const expiryCell = node('td');
   expiryCell.append(node('div', record.kind === 'permanent' ? '永久' : record.expiresAtUnix ? date(record.expiresAtUnix) : '首次激活后起算'));
@@ -137,6 +171,7 @@ function renderCode(record) {
   unbind.disabled = !record.boundDeviceId; group.append(unbind);
   const kick = button('踢下线', 'small quiet', element => mutate(record, 'kick', {}, element, '有效会话已撤销。'));
   kick.disabled = online === 0; group.append(kick);
+  group.append(button('删除', 'small quiet danger-text', () => openDeleteDialog([record])));
   operations.append(group); row.append(operations);
   return row;
 }
@@ -145,12 +180,15 @@ async function loadCodes() {
   const data = await api('codes?' + query({ ...filters(), page: state.page, pageSize: state.pageSize }));
   if (request !== state.codesRequest) return;
   state.total = Number(data.total || 0);
+  const pages = Math.max(1, Math.ceil(state.total / state.pageSize));
+  if (state.page > pages) { state.page = pages; await loadCodes(); return; }
   const rows = $('#rows'); rows.replaceChildren();
   const items = data.items || [];
+  state.selected.clear(); state.pageRecords = items;
   for (const record of items) rows.append(renderCode(record));
+  updateSelection();
   if (!items.length) emptyRow(rows, 6, state.total ? '本页没有记录，请返回上一页。' : filters().search || filters().status ? '没有匹配的卡密，请调整查询条件。' : '还没有卡密。先在上方生成一批卡密。');
   for (const name of ['total', 'unused', 'active', 'expired', 'suspended', 'online']) $('#stat-' + name).textContent = String(data.stats?.[name] ?? 0);
-  const pages = Math.max(1, Math.ceil(state.total / state.pageSize));
   $('#codes-count').textContent = '找到 ' + state.total + ' 条卡密';
   $('#page-number').textContent = state.page + ' / ' + pages;
   $('#prev-page').disabled = state.page <= 1; $('#next-page').disabled = state.page >= pages;
@@ -247,6 +285,41 @@ $('#renew-form').addEventListener('submit', async event => {
     await api('codes/' + encodeURIComponent(state.renewId) + '/renew', { durationSeconds: Number($('#renew-duration').value) * Number($('#renew-unit').value) });
     $('#renew-dialog').close(); await refresh(); message('授权已续期，设备绑定保持不变。');
   } catch (error) { showError(error); } finally { submit.disabled = false; }
+});
+$('#select-page').addEventListener('change', () => {
+  state.selected.clear();
+  if ($('#select-page').checked) for (const record of state.pageRecords) state.selected.set(record.id, record);
+  updateSelection();
+});
+$('#delete-selected').addEventListener('click', () => openDeleteDialog([...state.selected.values()], true));
+$('#delete-cancel').addEventListener('click', () => $('#delete-dialog').close());
+$('#delete-dialog').addEventListener('cancel', event => {
+  if ($('#delete-confirm').disabled) event.preventDefault();
+});
+$('#delete-dialog').addEventListener('close', () => { state.deleteRecords = []; state.deleteBatch = false; });
+$('#delete-form').addEventListener('submit', async event => {
+  event.preventDefault();
+  const records = state.deleteRecords; const batch = state.deleteBatch;
+  const submit = $('#delete-confirm');
+  if (!records.length || submit.disabled) return;
+  submit.disabled = true; $('#delete-cancel').disabled = true;
+  $('#delete-error').textContent = '';
+  try {
+    if (batch) await api('codes/delete-batch', { ids: records.map(record => record.id) });
+    else await api('codes/' + encodeURIComponent(records[0].id) + '/delete', {});
+    $('#delete-dialog').close();
+    const deleted = new Set(records.map(record => record.id));
+    if (state.issued.some(item => deleted.has(item.id))) {
+      state.issued = state.issued.filter(item => !deleted.has(item.id));
+      $('#issued-codes').value = state.issued.map(item => item.code).join('\n');
+      $('#issued-title').textContent = '本次剩余 ' + state.issued.length + ' 条卡密';
+      $('#issued').hidden = state.issued.length === 0;
+    }
+    await refresh(); message((batch ? '已永久删除 ' + records.length + ' 条卡密' : '卡密已永久删除') + '，关联会话已清理，操作记录已保留。');
+  } catch (error) {
+    if ($('#delete-dialog').open) $('#delete-error').textContent = error.message || String(error);
+    else showError(error);
+  } finally { submit.disabled = false; $('#delete-cancel').disabled = false; }
 });
 $('#refresh').addEventListener('click', async () => {
   const element = $('#refresh'); element.disabled = true;

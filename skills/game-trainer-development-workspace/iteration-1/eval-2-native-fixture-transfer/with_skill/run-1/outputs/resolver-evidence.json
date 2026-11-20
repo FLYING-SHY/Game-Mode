@@ -1,0 +1,434 @@
+{
+  "aob": [
+    {
+      "session": "A0",
+      "mode": "unique",
+      "count": 1,
+      "accepted": true,
+      "decoded": [
+        {
+          "hit_rva": 64,
+          "next_instruction": 5368709198,
+          "signed_rip_displacement": 306,
+          "root_address": 5368709504,
+          "field_displacement": 56
+        }
+      ]
+    },
+    {
+      "session": "A0",
+      "mode": "zero",
+      "count": 0,
+      "accepted": false,
+      "decoded": []
+    },
+    {
+      "session": "A0",
+      "mode": "multi",
+      "count": 2,
+      "accepted": false,
+      "decoded": [
+        {
+          "hit_rva": 64,
+          "next_instruction": 5368709198,
+          "signed_rip_displacement": 306,
+          "root_address": 5368709504,
+          "field_displacement": 56
+        },
+        {
+          "hit_rva": 160,
+          "next_instruction": 5368709294,
+          "signed_rip_displacement": 210,
+          "root_address": 5368709504,
+          "field_displacement": 56
+        }
+      ]
+    },
+    {
+      "session": "A1",
+      "mode": "unique",
+      "count": 1,
+      "accepted": true,
+      "decoded": [
+        {
+          "hit_rva": 64,
+          "next_instruction": 5368709198,
+          "signed_rip_displacement": 306,
+          "root_address": 5368709504,
+          "field_displacement": 56
+        }
+      ]
+    },
+    {
+      "session": "A1",
+      "mode": "zero",
+      "count": 0,
+      "accepted": false,
+      "decoded": []
+    },
+    {
+      "session": "A1",
+      "mode": "multi",
+      "count": 2,
+      "accepted": false,
+      "decoded": [
+        {
+          "hit_rva": 64,
+          "next_instruction": 5368709198,
+          "signed_rip_displacement": 306,
+          "root_address": 5368709504,
+          "field_displacement": 56
+        },
+        {
+          "hit_rva": 160,
+          "next_instruction": 5368709294,
+          "signed_rip_displacement": 210,
+          "root_address": 5368709504,
+          "field_displacement": 56
+        }
+      ]
+    },
+    {
+      "session": "B0",
+      "mode": "unique",
+      "count": 1,
+      "accepted": true,
+      "decoded": [
+        {
+          "hit_rva": 64,
+          "next_instruction": 6442451022,
+          "signed_rip_displacement": 498,
+          "root_address": 6442451520,
+          "field_displacement": 88
+        }
+      ]
+    },
+    {
+      "session": "B0",
+      "mode": "zero",
+      "count": 0,
+      "accepted": false,
+      "decoded": []
+    },
+    {
+      "session": "B0",
+      "mode": "multi",
+      "count": 2,
+      "accepted": false,
+      "decoded": [
+        {
+          "hit_rva": 64,
+          "next_instruction": 6442451022,
+          "signed_rip_displacement": 498,
+          "root_address": 6442451520,
+          "field_displacement": 88
+        },
+        {
+          "hit_rva": 160,
+          "next_instruction": 6442451118,
+          "signed_rip_displacement": 402,
+          "root_address": 6442451520,
+          "field_displacement": 88
+        }
+      ]
+    },
+    {
+      "session": "B1",
+      "mode": "unique",
+      "count": 1,
+      "accepted": true,
+      "decoded": [
+        {
+          "hit_rva": 64,
+          "next_instruction": 6442451022,
+          "signed_rip_displacement": 498,
+          "root_address": 6442451520,
+          "field_displacement": 88
+        }
+      ]
+    },
+    {
+      "session": "B1",
+      "mode": "zero",
+      "count": 0,
+      "accepted": false,
+      "decoded": []
+    },
+    {
+      "session": "B1",
+      "mode": "multi",
+      "count": 2,
+      "accepted": false,
+      "decoded": [
+        {
+          "hit_rva": 64,
+          "next_instruction": 6442451022,
+          "signed_rip_displacement": 498,
+          "root_address": 6442451520,
+          "field_displacement": 88
+        },
+        {
+          "hit_rva": 160,
+          "next_instruction": 6442451118,
+          "signed_rip_displacement": 402,
+          "root_address": 6442451520,
+          "field_displacement": 88
+        }
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "session": "A0",
+      "module_bytes_scanned": 1024,
+      "heap_bytes_per_frame": 2048,
+      "frames": 3,
+      "pointer_scan_start": 8589934848,
+      "pointer_scan_end_exclusive": 8589936633,
+      "initial_same_value_candidates": [
+        {
+          "address": 8589935672,
+          "values": [
+            100,
+            73,
+            91
+          ],
+          "accepted": true
+        },
+        {
+          "address": 8589936128,
+          "values": [
+            100,
+            100,
+            100
+          ],
+          "accepted": false
+        },
+        {
+          "address": 8589936160,
+          "values": [
+            100,
+            91,
+            73
+          ],
+          "accepted": false
+        }
+      ],
+      "structural_candidates": [
+        {
+          "ptr_offset": 32,
+          "pointer_slot": 8589934880,
+          "actor": 8589935616,
+          "field_address": 8589935672,
+          "values": [
+            100,
+            73,
+            91
+          ]
+        }
+      ],
+      "resolution": {
+        "id": "A0",
+        "build": "A",
+        "module_base": 5368709120,
+        "root_rva": 384,
+        "root_address": 5368709504,
+        "manager": 8589934848,
+        "health_offset": 56,
+        "ptr_offsets": [
+          32
+        ],
+        "resolved_address": 8589935672
+      }
+    },
+    {
+      "session": "A1",
+      "module_bytes_scanned": 1024,
+      "heap_bytes_per_frame": 2048,
+      "frames": 3,
+      "pointer_scan_start": 8592032000,
+      "pointer_scan_end_exclusive": 8592033785,
+      "initial_same_value_candidates": [
+        {
+          "address": 8592032952,
+          "values": [
+            100,
+            73,
+            91
+          ],
+          "accepted": true
+        },
+        {
+          "address": 8592033280,
+          "values": [
+            100,
+            100,
+            100
+          ],
+          "accepted": false
+        },
+        {
+          "address": 8592033312,
+          "values": [
+            100,
+            91,
+            73
+          ],
+          "accepted": false
+        }
+      ],
+      "structural_candidates": [
+        {
+          "ptr_offset": 32,
+          "pointer_slot": 8592032032,
+          "actor": 8592032896,
+          "field_address": 8592032952,
+          "values": [
+            100,
+            73,
+            91
+          ]
+        }
+      ],
+      "resolution": {
+        "id": "A1",
+        "build": "A",
+        "module_base": 5368709120,
+        "root_rva": 384,
+        "root_address": 5368709504,
+        "manager": 8592032000,
+        "health_offset": 56,
+        "ptr_offsets": [
+          32
+        ],
+        "resolved_address": 8592032952
+      }
+    },
+    {
+      "session": "B0",
+      "module_bytes_scanned": 1024,
+      "heap_bytes_per_frame": 2048,
+      "frames": 3,
+      "pointer_scan_start": 8606712064,
+      "pointer_scan_end_exclusive": 8606713849,
+      "initial_same_value_candidates": [
+        {
+          "address": 8606712920,
+          "values": [
+            100,
+            73,
+            91
+          ],
+          "accepted": true
+        },
+        {
+          "address": 8606713344,
+          "values": [
+            100,
+            100,
+            100
+          ],
+          "accepted": false
+        },
+        {
+          "address": 8606713376,
+          "values": [
+            100,
+            91,
+            73
+          ],
+          "accepted": false
+        }
+      ],
+      "structural_candidates": [
+        {
+          "ptr_offset": 48,
+          "pointer_slot": 8606712112,
+          "actor": 8606712832,
+          "field_address": 8606712920,
+          "values": [
+            100,
+            73,
+            91
+          ]
+        }
+      ],
+      "resolution": {
+        "id": "B0",
+        "build": "B",
+        "module_base": 6442450944,
+        "root_rva": 576,
+        "root_address": 6442451520,
+        "manager": 8606712064,
+        "health_offset": 88,
+        "ptr_offsets": [
+          48
+        ],
+        "resolved_address": 8606712920
+      }
+    },
+    {
+      "session": "B1",
+      "module_bytes_scanned": 1024,
+      "heap_bytes_per_frame": 2048,
+      "frames": 3,
+      "pointer_scan_start": 8608809216,
+      "pointer_scan_end_exclusive": 8608811001,
+      "initial_same_value_candidates": [
+        {
+          "address": 8608810200,
+          "values": [
+            100,
+            73,
+            91
+          ],
+          "accepted": true
+        },
+        {
+          "address": 8608810496,
+          "values": [
+            100,
+            100,
+            100
+          ],
+          "accepted": false
+        },
+        {
+          "address": 8608810528,
+          "values": [
+            100,
+            91,
+            73
+          ],
+          "accepted": false
+        }
+      ],
+      "structural_candidates": [
+        {
+          "ptr_offset": 48,
+          "pointer_slot": 8608809264,
+          "actor": 8608810112,
+          "field_address": 8608810200,
+          "values": [
+            100,
+            73,
+            91
+          ]
+        }
+      ],
+      "resolution": {
+        "id": "B1",
+        "build": "B",
+        "module_base": 6442450944,
+        "root_rva": 576,
+        "root_address": 6442451520,
+        "manager": 8608809216,
+        "health_offset": 88,
+        "ptr_offsets": [
+          48
+        ],
+        "resolved_address": 8608810200
+      }
+    }
+  ]
+}

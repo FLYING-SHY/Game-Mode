@@ -42,9 +42,12 @@ public sealed record LeaseResponse
 public sealed record IssueRequest(string Kind, long? DurationSeconds = null, int Quantity = 1, string? Note = "");
 public sealed record SuspensionRequest(bool Suspended);
 public sealed record RenewRequest(long DurationSeconds);
+public sealed record BatchDeleteRequest(IReadOnlyList<string>? Ids);
 public sealed record CodeRow(string Id, string Code, string CodeSuffix, string Kind, long? DurationSeconds,
     string Note, long CreatedAtUnix, long? ActivatedAtUnix, long? ExpiresAtUnix, string? BoundDeviceId,
-    string? LastSteamId, string State, int ActiveSessionCount);
+    string? LastSteamId, string State, int ActiveSessionCount, bool CodeReadable = true);
+public sealed record CodePlaintext(string Id, string? Code, string CodeSuffix, string Note, long CreatedAtUnix, bool Readable);
+public sealed record CodeRepairReport(int Repaired, int AlreadyReadable, int Missing, int Mismatched, int Total);
 public sealed record CodeStats(int Total, int Unused, int Active, int Expired, int Suspended, int Online);
 public sealed record CodePage(IReadOnlyList<CodeRow> Items, int Total, int Page, int PageSize, CodeStats Stats);
 public sealed record IssuedCodes(IReadOnlyList<CodeRow> Items, int Count);

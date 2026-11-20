@@ -1,0 +1,26 @@
+﻿[
+    {
+        "type":  "Native",
+        "normalized_text_equal":  true,
+        "source_sha256":  "6852cacdc064c9e54ded39d3b7bacab476aa7dd29edc5b6d2ec1f6de1dbe21ba",
+        "export_sha256":  "6852cacdc064c9e54ded39d3b7bacab476aa7dd29edc5b6d2ec1f6de1dbe21ba"
+    },
+    {
+        "type":  "PlayerInfoReader",
+        "normalized_text_equal":  true,
+        "source_sha256":  "4d93d6765ea4925d20f83653e5b912f73b2597cc952625ac62cdc68297c803b9",
+        "export_sha256":  "4d93d6765ea4925d20f83653e5b912f73b2597cc952625ac62cdc68297c803b9"
+    },
+    {
+        "type":  "SquadMarkerWindow",
+        "normalized_text_equal":  true,
+        "source_sha256":  "7685a91dc528b7adc923b509991eb56c38c01036d836ed8640cc8fdbfd113ed8",
+        "export_sha256":  "7685a91dc528b7adc923b509991eb56c38c01036d836ed8640cc8fdbfd113ed8"
+    },
+    {
+        "type":  "GameVersion45",
+        "normalized_text_equal":  true,
+        "source_sha256":  "d7c68ccddfa985b57107cfb28258ecb38d6054edaa5f4d3dc50530ed465151e7",
+        "export_sha256":  "d7c68ccddfa985b57107cfb28258ecb38d6054edaa5f4d3dc50530ed465151e7"
+    }
+]

@@ -1,0 +1,37 @@
+﻿[
+    {
+        "path":  "F:\\WorkSpace\\Game\\CoH3\\original\\天穹之眼-v0.60.8\\天穹之眼-v0.60.8.exe",
+        "size":  1231360,
+        "sha256":  "F89B09C2BFF2751C5E7904D3E302B6966ABB7C8CC16D56A98BE09582AAD4E2D0"
+    },
+    {
+        "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\Native.cs",
+        "size":  1688,
+        "sha256":  "6852CACDC064C9E54DED39D3B7BACAB476AA7DD29EDC5B6D2EC1F6DE1DBE21BA"
+    },
+    {
+        "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\PlayerInfoReader.cs",
+        "size":  101482,
+        "sha256":  "4D93D6765EA4925D20F83653E5B912F73B2597CC952625AC62CDC68297C803B9"
+    },
+    {
+        "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\SquadMarkerWindow.cs",
+        "size":  17087,
+        "sha256":  "7685A91DC528B7ADC923B509991EB56C38C01036D836ED8640CC8FDBFD113ED8"
+    },
+    {
+        "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\GameVersion45.cs",
+        "size":  1373,
+        "sha256":  "D7C68CCDDFA985B57107CFB28258ECB38D6054EDAA5F4D3DC50530ED465151E7"
+    },
+    {
+        "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\AlphaSurface.cs",
+        "size":  3577,
+        "sha256":  "0DFA2290BE711196960DE65C766FF72C03A306CDC8939A1F24D9D6A3ABED966A"
+    },
+    {
+        "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\reports\\protection-validation.md",
+        "size":  10705,
+        "sha256":  "709971155F7402B2372E7C93C0C1D49C73C83FDBF35B340E407D93B997774C39"
+    }
+]

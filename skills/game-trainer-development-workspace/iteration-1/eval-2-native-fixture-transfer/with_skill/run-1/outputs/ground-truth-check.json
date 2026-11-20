@@ -1,0 +1,22 @@
+{
+  "stage": "after candidate serialization only",
+  "checks": [
+    {
+      "session": "A0",
+      "matches": true
+    },
+    {
+      "session": "A1",
+      "matches": true
+    },
+    {
+      "session": "B0",
+      "matches": true
+    },
+    {
+      "session": "B1",
+      "matches": true
+    }
+  ],
+  "passed": true
+}

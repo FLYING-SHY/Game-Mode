@@ -13,9 +13,17 @@ internal static class GameVersion45
 
 	private static string cacheKey;
 
-	private static int unverified;
+	internal enum CheckStatus
+	{
+		NotChecked,
+		Verified,
+		FingerprintMismatch,
+		ReadFailed
+	}
 
-	public static bool Unverified => Volatile.Read(ref unverified) != 0;
+	private static int checkStatus;
+
+	internal static CheckStatus Status => (CheckStatus)Volatile.Read(ref checkStatus);
 
 	internal static bool MatchesHash(string hash)
 	{
@@ -40,12 +48,12 @@ internal static class GameVersion45
 					using SHA256 sHA = SHA256.Create();
 					hash = BitConverter.ToString(sHA.ComputeHash(inputStream)).Replace("-", "").ToLowerInvariant();
 				}
-				Volatile.Write(ref unverified, (!MatchesHash(hash)) ? 1 : 0);
+				Volatile.Write(ref checkStatus, (int)(MatchesHash(hash) ? CheckStatus.Verified : CheckStatus.FingerprintMismatch));
 				cacheKey = text;
 			}
 			catch
 			{
-				Volatile.Write(ref unverified, 1);
+				Volatile.Write(ref checkStatus, (int)CheckStatus.ReadFailed);
 				cacheKey = null;
 			}
 		}

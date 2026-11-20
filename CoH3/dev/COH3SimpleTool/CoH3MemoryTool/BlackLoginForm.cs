@@ -18,7 +18,7 @@ internal sealed class BlackLoginForm : Form
 
 	public BlackLoginForm(LicenseCredentials60 saved)
 	{
-		Text = "COH3简易工具 · 激活";
+		Text = "COH3工具 · 激活";
 		base.ClientSize = new Size(400, 212);
 		base.MinimumSize = base.Size;
 		base.MaximumSize = base.Size;

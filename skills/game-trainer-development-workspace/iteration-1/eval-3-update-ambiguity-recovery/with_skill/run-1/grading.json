@@ -1,0 +1,54 @@
+{
+  "expectations": [
+    {
+      "text": "交付实际运行的离线测试脚本及真实结果，而非只有测试计划。",
+      "passed": true,
+      "evidence": "实际读取 outputs/offline_repair_test.py 全332行、report.md、transcript.md 与 run.log。脚本323-332行由 unittest 真实发现和执行测试，结果与退出码来自 result；原日志11项通过。grader 使用 Python 3.11.9 -B 经 runpy 的 __main__ 再执行同一脚本，grader-verification.log 记录 Ran 11 tests、0 failures/errors、entrypoint_exit_code=0 与 grader_process_exit_code=0。无真实进程API或外部写入。"
+    },
+    {
+      "text": "0命中停止采用；多候选不直接选首个，使用指令目标/结构语义验证或报告歧义。",
+      "passed": true,
+      "evidence": "resolve() 95-113行扫描所有候选，semantic() 71-83行检查代码上下文、数据区、对齐、指针对象ACTR/owner/health/count，要求有效候选恰好1个。194-207行断言旧版0x120；新版原始0x120/0x1A0中首个因object_owner淘汰，选择第二个；zero报signature_zero、两个语义有效报semantic_ambiguity，两失败分支writes==0。重跑通过且observations记录原始/有效命中及排除原因。"
+    },
+    {
+      "text": "代码正确计算有符号RIP目标并验证预期指令/边界，含可执行断言。",
+      "passed": true,
+      "evidence": "decode_rip() 63-68行验证48 8B 0D、struct.unpack('<i', ...)，按base+hit+7+disp计算并检查uint64范围；Image.read() 48-52行限制读取边界；semantic()验证完整16字节代码区、上下文、8字节root与20字节object边界。217-232行实际断言正位移0x300、负位移0x80、错误opcode及越区root；315-320行断言负RVA、负长度、末端越界和末字节合法读取，重跑通过。属于固定指令模型边界验证，非通用x64解码证明。"
+    },
+    {
+      "text": "会话身份失效有实际测试；正常补丁启用禁用恢复有实际测试。",
+      "passed": true,
+      "evidence": "Session保存pid/start/base/build/epoch，check_session在enable/disable前比较完整身份。244-258行逐项改变五个字段，对开启与关闭均检查stale_session、全镜像不变及writes不增。260-274行在两个不同PID/start/base/epoch合成会话中反复启停、幂等调用并断言完整镜像恢复。独立重跑相应用例通过。"
+    },
+    {
+      "text": "恢复前检查已安装字节，外部改动引发冲突并保留现场，代码与测试一致。",
+      "passed": true,
+      "evidence": "disable() 149-162行先检查session/owned，完整6字节等于PATCH才恢复resolved.original；不等时先进入conflict并抛restore_conflict，未到write。299-313行安装后将首字节改CC，断言异常、全镜像等于冲突快照、writes保持不变、state=conflict及后续enable受阻。重跑日志记录restore_conflict=cc9090909090、preserved=true。不是打印写死passed。"
+    },
+    {
+      "text": "保持build身份检查并列出尚未执行的真实游戏/跨会话验证，不以fixture替代实测结论。",
+      "passed": true,
+      "evidence": "resolve() 96-98行要求approved build、当前镜像SHA256匹配、完整扫描预算；234-242行实际测试unapproved_build、scan_budget_incomplete及image_identity_mismatch。report.md 17行明确locate自动登记仅为fixture分支构造；64-74行将真实build/反汇编/ASLR/新进程/切局/重连/并发等列为not_run，3/57/82行明确F成功与真实G/R未运行。"
+    }
+  ],
+  "summary": {"passed": 6, "failed": 0, "total": 6, "pass_rate": 1.0},
+  "claims": [
+    {"claim": "实际执行11项unittest，结果全部通过。", "type": "factual", "verified": true, "evidence": "原run.log与grader-verification.log均11 tests、0 failures/errors、exit 0；断言和异常检查真实驱动结果。"},
+    {"claim": "仅验证合成bytearray模型，真实游戏与真实跨会话未运行。", "type": "process", "verified": true, "evidence": "脚本完整审查仅标准库、内存Image与自造fixture；report明确G/R not_run；独立重跑未附加进程。"},
+    {"claim": "恢复冲突保留外部改动且不新增写入。", "type": "quality", "verified": true, "evidence": "代码在写入前比较PATCH；test_restore_conflict_preserves_other_component同时比较全镜像与writes，实际重跑通过。"},
+    {"claim": "所有原始交付物在grader重跑中保持不变。", "type": "process", "verified": true, "evidence": "重跑前后outputs全部原文件SHA256字典相等，验证日志记录all original output SHA256 unchanged；仅新增run父目录grading.json与grader-verification.log。"}
+  ],
+  "user_notes_summary": {
+    "uncertainties": ["没有独立user_notes.md。报告已明确真实G/R未运行，fixture是显式构造而非盲测定位。", "固定模式逐字节扫描与已知指令长度，并不证明真实x64任意流的指令起点。"],
+    "needs_review": ["部署时approved build清单须人工审核，不应将fixture用locate()自动批准当前hash直接当生产入口。", "恢复短写的faulted分支存在代码但未有专门执行用例；缓存语义复验仅enable初次安装路径，非已启用幂等路径。"],
+    "workarounds": ["环境无python3.11命令；在本次PowerShell进程中将其设为C:\\Program Files\\Python311\\python.exe别名，再以python3.11 -B运行，并在Python中断言版本3.11。"]
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {"assertion": "代码正确计算有符号RIP目标并验证预期指令/边界，含可执行断言。", "reason": "建议明确区分固定指令模型的缓冲区/目标区域边界与真实指令流的起点边界；新增嵌入另一条指令操作数中的假签名、精确区间端点、目标uint64溢出及截断输入。当前pass只证明模型内要求。"},
+      {"reason": "增加恢复短写/读回失败、compare与write之间改动、取消/模块卸载等故障注入，并断言写次数和完整现场。当前仅安装短写有实际注入，协议也明确真实并发待测。"},
+      {"reason": "增加隐藏或参数化fixture，包含扫描顺序变化、两候选结构都似真但行为不同及独立approved profile。当前显式构造测试足以满足6条，但不能测盲测定位或生产适配正确率。"}
+    ],
+    "overall": "六条均通过，与without_skill同为6/6，无预定赢家。方法完善度更强的证据是逐项会话身份/写计数/对象结构语义/安装短写回滚，而非11与14的用例数比较。分数衡量本轮六条合同，未证明真实游戏有效或全部故障路径完备。"
+  }
+}

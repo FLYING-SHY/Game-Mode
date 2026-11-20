@@ -1,0 +1,100 @@
+{
+  "expectations": [
+    {
+      "text": "存在可运行定位脚本，从镜像扫描指令、正确按指令末端加有符号RIP位移求根，而非从答案表取布局。",
+      "passed": true,
+      "evidence": "outputs/resolver.py:41-45 对manifest显式投影元信息；59-61、72-74用<i解码disp32，并以base+hit+14+disp求root及从字节取得field。126-150最终truth compare发生在候选保存后。 grader-verification.log：直接调用发现函数，候选及evidence与原产物完全一致；内存毒化pointer_root/field_layout/health_address/decoy_addresses/expected_values后发现结果不变。公开AOB、[100,73,91]与编码位置3/10/14是协议输入，不是答案布局。"
+    },
+    {
+      "text": "候选按两个build分别给出模块相对根、指针链和字段，verify实际通过四session和每session三帧。",
+      "passed": true,
+      "evidence": "outputs/candidates.json：A root_rva=384、ptr_offsets=[32]、health_offset=56，sessions=A0/A1；B=576/[48]/88，sessions=B0/B1。outputs/verify.stdout.log 四session全部passed=true，每项三帧均[100,73,91]，地址分别8589935672、8592032952、8606712920、8608810200。grader-verification.log：独立verify重算与原日志一致，24个镜像hash匹配。"
+    },
+    {
+      "text": "通过受控变化排除两个同起值decoy，定位脚本不硬编码答案字段/链偏移。",
+      "passed": true,
+      "evidence": "outputs/resolver.py:78-99逐字节枚举int32目标与manager之后的uint64指针槽，用slot-manager推导链偏移，field从指令解码；未硬编码0x20/0x30/0x38/0x58。 outputs/resolver-evidence.json每个session保留首帧3个100候选，接受[100,73,91]，排除[100,100,100]及[100,91,73]；每session只剩一条支持链。复核重新计算evidence完全相同，毒化答案元信息仍相同。"
+    },
+    {
+      "text": "保存真实self-test与verify日志，0/1/多命中及恢复冲突均按预期处理。",
+      "passed": true,
+      "evidence": "outputs/self-test.stdout.log：passed=true，11/11 checks=true，包括aob_0_1_multiple_rip、restore_conflict、stale_session等；outputs/verify.stdout.log的12项AOB记录按每session unique/zero/multi=1/0/2，只接受unique；patch_model enabled/disabled_restored/restore_conflict/conflict_preserved全true。outputs/execution.json记录create/resolver/verify/self-test四步退出0，四份stderr为空；grader-verification.log独立verify重算一致。self-test是共同工具的oracle驱动回归，恢复冲突只验证bytearray模型，未把它算成resolver自有补丁实现。"
+    },
+    {
+      "text": "明确这是离线模型且资料公开，未宣称真实进程、真实游戏或盲测验证通过。",
+      "passed": true,
+      "evidence": "outputs/report.md:7、48-60与outputs/transcript.md:29 明确公开输入、非隐藏答案盲测、仅离线SIM模型，并列明真实进程/游戏尚未执行；未发现真实游戏或进程验证通过的宣称。"
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "claims": [
+    {
+      "claim": "定位不是复制manifest root/layout或公开文档布局常量",
+      "type": "process",
+      "verified": true,
+      "evidence": "outputs/resolver.py:41-45 对manifest显式投影元信息；59-61、72-74用<i解码disp32，并以base+hit+14+disp求root及从字节取得field。126-150最终truth compare发生在候选保存后。 内存毒化答案字段后独立发现保持原结果。该结论针对程序数据流，不证明作者未受公开材料影响。"
+    },
+    {
+      "claim": "两build四session三帧定位、两种同值decoy排除全部通过",
+      "type": "quality",
+      "verified": true,
+      "evidence": "原始候选/evidence/verify日志一致，grader直接复算三者相同，见grader-verification.log。"
+    },
+    {
+      "claim": "self-test 11项检查通过，verify恢复冲突检查通过",
+      "type": "factual",
+      "verified": true,
+      "evidence": "self-test.stdout.log有11项true；verify.stdout.log patch_model四项true且被独立复算。self-test未重跑，避免超出仅写评分/复核日志的范围。"
+    },
+    {
+      "claim": "本次是公开资料的离线模型验证，未执行真实进程/游戏或真正盲测",
+      "type": "quality",
+      "verified": true,
+      "evidence": "报告明确未作此宣称，现有产物只支持公开确定性离线模型；SIM头、文件读写、bytearray恢复模型不构成真实进程证据。"
+    },
+    {
+      "claim": "本组可观察的实现特点",
+      "type": "factual",
+      "verified": true,
+      "evidence": "逐文件SHA256校验、int32/uint64逐字节扫描；先序列化候选再单独truth compare，报告细分证据等级。"
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [
+      "未见user_notes.md；两组报告自身均明确公开输入非盲测。",
+      "提供的是执行简记及自写运行器日志，原会话完整工具轨迹不在产物中；本次复算独立确认结果，未估造工具次数或总耗时。"
+    ],
+    "needs_review": [
+      "缺少真实进程附加、真实ASLR/重启、内存API、并发与页保护、真实补丁和游戏行为验证。",
+      "现有fixture所有实际RIP位移为正；<i实现正确，复核仅补充负位移编码/扫描/算术检查，并非负位移端到端fixture测试。"
+    ],
+    "workarounds": [
+      "为保留原产物未运行会重写outputs的run_eval.py；只读直接调用发现函数与verify，复核前后outputs文件SHA256不变。"
+    ]
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "存在可运行定位脚本，从镜像扫描指令、正确按指令末端加有符号RIP位移求根，而非从答案表取布局。",
+        "reason": "增加隐藏随机布局、移动签名位置、真实负RIP位移、删除/毒化答案字段及重复运行；当前公开固定材料包含布局和完整解码公式，虽代码数据流合格，但方法泛化与独立发现区分力弱。"
+      },
+      {
+        "assertion": "通过受控变化排除两个同起值decoy，定位脚本不硬编码答案字段/链偏移。",
+        "reason": "加入未对齐字段/指针、负链偏移、多层链与更难decoy以区分逐字节和4/8对齐实现；当前数据二者都通过。"
+      },
+      {
+        "assertion": "保存真实self-test与verify日志，0/1/多命中及恢复冲突均按预期处理。",
+        "reason": "拆分共同工具self-test与提交resolver自身的异常/恢复能力。verify自身扫描素材，patch恢复也是共同工具bytearray模型，11项self-test通过不证明提交者实现相应进程能力。"
+      },
+      {
+        "reason": "另设真实受控测试进程的端到端用例，验证重新启动后的定位、短读/失效session、并发变化、真实补丁恢复冲突；本用例未覆盖真实进程层。"
+      }
+    ],
+    "overall": "两组均实质通过5/5，应如实同分，当前通过率差为0。共同输入公开且确定，非盲测；with_skill的hash校验/逐字节扫描/末尾truth compare为可观察质量差异，现有断言未形成分差。缺少真实进程层，不外推为真实游戏或通用native分析成功。"
+  }
+}

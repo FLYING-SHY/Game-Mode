@@ -1,0 +1,27 @@
+﻿audit keys: ['items', 'total', 'page', 'pageSize']
+audit count: 40
+   {"id": "b23899fbdd804cb79cc87a33ff4f01db", "occurredAtUnix": 1794831881, "action": "issue", "codeId": "4920ec6ca41c40aeb34147d43cc8a019", "details": "{\"kind\":\"timed\",\"durationSeconds\":2592000}"}
+   {"id": "3841219c2d814b9880b54cb8fe73e8cf", "occurredAtUnix": 1794830567, "action": "logout", "codeId": "d2895e7636aa4263a215e8fdd818e6dd", "details": "{}"}
+   {"id": "14106922181a46fc8a91e01111478ee3", "occurredAtUnix": 1794830397, "action": "activate", "codeId": "d2895e7636aa4263a215e8fdd818e6dd", "details": "{}"}
+   {"id": "1a8df69e4e9440778bdf42aab8ccdb8f", "occurredAtUnix": 1794830396, "action": "logout", "codeId": "d2895e7636aa4263a215e8fdd818e6dd", "details": "{}"}
+   {"id": "df0545cbc27f4e859d94d88cf047d652", "occurredAtUnix": 1794830380, "action": "activate", "codeId": "d2895e7636aa4263a215e8fdd818e6dd", "details": "{}"}
+   {"id": "2cc26710b28742ceb89d40ff23f3d1d0", "occurredAtUnix": 1794830109, "action": "logout", "codeId": "d2895e7636aa4263a215e8fdd818e6dd", "details": "{}"}
+   {"id": "9743d6bb75724833818487140a939a36", "occurredAtUnix": 1794829030, "action": "activate", "codeId": "d2895e7636aa4263a215e8fdd818e6dd", "details": "{}"}
+   {"id": "86b7805a3ff74522a5514ef57f55374e", "occurredAtUnix": 1794822533, "action": "logout", "codeId": "ff3945cbf7214e4183d3ac871f90073a", "details": "{}"}
+   {"id": "c55bbe9220924024b95bf611efcf9670", "occurredAtUnix": 1794822474, "action": "activate", "codeId": "ff3945cbf7214e4183d3ac871f90073a", "details": "{}"}
+   {"id": "b9a0669a817b4101ac15ca68c5b1533a", "occurredAtUnix": 1794822472, "action": "logout", "codeId": "e1638ff6b8354fc79a4c4ac69eaffa40", "details": "{}"}
+   {"id": "76f9fb6589514615b829e3eb0ca42cb9", "occurredAtUnix": 1794822472, "action": "logout", "codeId": "e1638ff6b8354fc79a4c4ac69eaffa40", "details": "{}"}
+   {"id": "22ae9a2bf5e04f038d0dd3b892f35098", "occurredAtUnix": 1794822472, "action": "activate", "codeId": "e1638ff6b8354fc79a4c4ac69eaffa40", "details": "{}"}
+   {"id": "ad7a83b6051d441a86393a293829ab5f", "occurredAtUnix": 1794822442, "action": "activate", "codeId": "e1638ff6b8354fc79a4c4ac69eaffa40", "details": "{}"}
+   {"id": "9129dce0524140148026592aceaa6350", "occurredAtUnix": 1794822441, "action": "logout", "codeId": "f277d828320e4775abdef71925cc6910", "details": "{}"}
+   {"id": "587587f07b794cceb27247ace46e5ac9", "occurredAtUnix": 1794822441, "action": "activate", "codeId": "f277d828320e4775abdef71925cc6910", "details": "{}"}
+
+codes raw: {"error": "integrity_error", "message": "��Ȩ��¼������У��ʧ�ܣ�����ϵ����Ա��"}
+
+sessions count: 89
+   {"id": "58fb4afccae348cbac1297a8d8731615", "codeId": "d2895e7636aa4263a215e8fdd818e6dd", "codeSuffix": "0F6AA6F0", "deviceId": "93875388F366372031CDB1AEE211EFC7669BFC7C955DFB0BD0035270CE86D0E6", "inst
+   {"id": "dbaa48566230491086f17e6c9118fb6c", "codeId": "d2895e7636aa4263a215e8fdd818e6dd", "codeSuffix": "0F6AA6F0", "deviceId": "93875388F366372031CDB1AEE211EFC7669BFC7C955DFB0BD0035270CE86D0E6", "inst
+   {"id": "ad22a7170b874d688fd584af9d080ab5", "codeId": "d2895e7636aa4263a215e8fdd818e6dd", "codeSuffix": "0F6AA6F0", "deviceId": "93875388F366372031CDB1AEE211EFC7669BFC7C955DFB0BD0035270CE86D0E6", "inst
+   {"id": "6f93ed406e14424888a59f658ccfbe20", "codeId": "ff3945cbf7214e4183d3ac871f90073a", "codeSuffix": "A8FF749E", "deviceId": "93875388F366372031CDB1AEE211EFC7669BFC7C955DFB0BD0035270CE86D0E6", "inst
+   {"id": "a274a75511d64e3a9fde09f59c12545b", "codeId": "e1638ff6b8354fc79a4c4ac69eaffa40", "codeSuffix": "AD91413A", "deviceId": "93875388F366372031CDB1AEE211EFC7669BFC7C955DFB0BD0035270CE86D0E6", "inst
+   {"id": "566f5e67cb9a4d4d98fb367196be01ee", "codeId": "e1638ff6b8354fc79a4c4ac69eaffa40", "codeSuffix": "AD91413A", "deviceId": "93875388F366372031CDB1AEE211EFC7669BFC7C955DFB0BD0035270CE86D0E6", "inst

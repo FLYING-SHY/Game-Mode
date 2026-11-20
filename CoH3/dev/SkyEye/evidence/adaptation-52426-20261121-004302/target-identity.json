@@ -1,0 +1,19 @@
+﻿{
+    "CapturedAt":  "2026-11-21T00:43:02.9741232+08:00",
+    "Path":  "G:\\SteamLibrary\\steamapps\\common\\Company of Heroes 3\\RelicCoH3.exe",
+    "Length":  108391096,
+    "FileVersion":  "5.1.52426.0",
+    "SHA256":  "8a3445292255d652c8dbe9b53f24328af159c161be89836ba54ef070946dd3ec",
+    "SteamBuildId":  "26741350",
+    "Status":  "unverified",
+    "Scope":  [
+                  "SkyEye",
+                  "COH3SimpleTool"
+              ],
+    "Required":  [
+                     "two maps",
+                     "two new matches",
+                     "one game restart",
+                     "all existing features evidenced"
+                 ]
+}

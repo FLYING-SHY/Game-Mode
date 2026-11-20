@@ -1,0 +1,63 @@
+{
+  "clientSha256": "0793c20d14174687cf4c4be8448c958cc3baf3f7c6629da80343e25cef9810b7",
+  "generatedAt": "2026-11-16T07:35:29.509706+00:00",
+  "tool": "rea@6.8.0 + ilspycmd",
+  "historicalCounts": {
+    "types": 341,
+    "methods": 4032,
+    "fields": 1399,
+    "member_refs": 1562
+  },
+  "records": [
+    {
+      "operation": "inspect-managed-artifact",
+      "argv": [
+        "node",
+        "rea.mjs",
+        "inspect-managed-artifact",
+        "CoH3\\dev\\SkyEye\\delivery\\client\\天穹之眼-自有授权版-v0.60.8.exe",
+        "--json"
+      ],
+      "exitCode": 0,
+      "output": "CoH3\\dev\\SkyEye\\evidence\\release-static-analysis-20261116\\artifact.json",
+      "sha256": "47ffb009c7a3bd4f3ee611cf144cf2d6cbacfcd807a999831731c5889ce056b2",
+      "evidenceId": "ev_5df3c6f4e00661ab86f2b68b0be22be5a5c1d15246038f612d2395e9ab49a712",
+      "coverage": null,
+      "counts": {}
+    },
+    {
+      "operation": "inspect-managed-members",
+      "argv": [
+        "node",
+        "rea.mjs",
+        "inspect-managed-members",
+        "CoH3\\dev\\SkyEye\\delivery\\client\\天穹之眼-自有授权版-v0.60.8.exe",
+        "--json"
+      ],
+      "exitCode": 0,
+      "output": "CoH3\\dev\\SkyEye\\evidence\\release-static-analysis-20261116\\members.json",
+      "sha256": "d9ea103b9466bf13de09a669f75f71a33c1a2a2faa749ea5912e65f27330933a",
+      "evidenceId": "ev_669cd22123ef5356b1e3dbec2d611c0f51be4e1c27d1b076a73bcd66c45447c0",
+      "coverage": null,
+      "counts": {
+        "types": 341,
+        "methods": 4032,
+        "fields": 1399,
+        "member_refs": 1562
+      }
+    },
+    {
+      "operation": "ILSpy project export attempt",
+      "argv": [
+        "ilspycmd.exe",
+        "CoH3\\dev\\SkyEye\\delivery\\client\\天穹之眼-自有授权版-v0.60.8.exe",
+        "--project",
+        "--outputdir",
+        "CoH3\\dev\\SkyEye\\evidence\\release-static-analysis-20261116\\ilspy-export"
+      ],
+      "exitCode": 0,
+      "csharpFiles": 56,
+      "limitation": "Successful decompilation is recorded as such; renaming/string hiding is not prevention of decompilation."
+    }
+  ]
+}

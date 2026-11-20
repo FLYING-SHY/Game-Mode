@@ -1,4 +1,4 @@
-param([switch]$Smoke)
+﻿param([switch]$Smoke)
 $ErrorActionPreference = 'Stop'
 $root = $PSScriptRoot
 $pinSource = [IO.File]::ReadAllText((Join-Path $root 'CoH3MemoryTool\PinnedLeaseKey60.cs'))
@@ -35,8 +35,9 @@ if (-not (Test-Path -LiteralPath $tool)) {
 $inputPath = Join-Path $root 'bin\Release\net48'
 $outputPath = Join-Path $root 'bin\Protected\net48'
 New-Item -ItemType Directory -Path $outputPath -Force | Out-Null
-$exeName = (Get-ChildItem -LiteralPath $inputPath -Filter '*.exe' -File | Select-Object -First 1).Name
-if (-not $exeName) { throw 'No built executable found in ' + $inputPath }
+$project = [xml][IO.File]::ReadAllText((Join-Path $root 'COH3SimpleTool.csproj'))
+$exeName = $project.SelectSingleNode('/Project/PropertyGroup/AssemblyName').InnerText + '.exe'
+if (-not (Test-Path -LiteralPath (Join-Path $inputPath $exeName) -PathType Leaf)) { throw 'Built executable not found: ' + $exeName }
 $escape = { param($value) [System.Security.SecurityElement]::Escape([string]$value) }
 $inXml = & $escape $inputPath
 $outXml = & $escape $outputPath
@@ -77,10 +78,13 @@ try {
     if ($LASTEXITCODE -ne 0) { throw 'Obfuscation failed; no release produced.' }
 } finally { $env:DOTNET_ROOT = $previousRoot }
 Copy-Item -LiteralPath (Join-Path $inputPath ($exeName + '.config')) -Destination $outputPath -Force
+$runtimeState = @('overlay-settings.txt','minimap-location-cache.txt','minimap-ui-root-cache.txt','alert-sounds.txt','air-diagnostics.log','air-outline-diagnostics.log','minimap-diagnostics.log','overlay-diagnostics.log')
 $delivery = Join-Path $repo 'CoH3\output\COH3SimpleTool'
 New-Item -ItemType Directory -Path $delivery -Force | Out-Null
 Copy-Item -LiteralPath (Join-Path $outputPath $exeName) -Destination $delivery -Force
 Copy-Item -LiteralPath (Join-Path $outputPath ($exeName + '.config')) -Destination $delivery -Force
+# Runtime preferences and diagnostics are user state, never part of a delivery.
+Get-ChildItem -LiteralPath $delivery -File -ErrorAction SilentlyContinue | Where-Object { $_.Name -in $runtimeState } | Remove-Item -Force
 $summary = [ordered]@{Run=$stamp;Tool='Obfuscar.GlobalTool 2.2.50';InputSha256=(Get-FileHash -LiteralPath (Join-Path $inputPath $exeName)).Hash;OutputSha256=(Get-FileHash -LiteralPath (Join-Path $delivery $exeName)).Hash;Executable=(Join-Path $delivery $exeName);PrivateMapping=(Join-Path $run 'private-renaming-map.xml');NoPublicSymbols=$true}
 $summary | ConvertTo-Json -Depth 5 | Set-Content -Encoding utf8 (Join-Path $run 'build-summary.json')
 $summary | ConvertTo-Json -Depth 5 | Set-Content -Encoding utf8 (Join-Path $root 'evidence\latest-build.json')
@@ -94,9 +98,13 @@ if ($Smoke) {
         do { Start-Sleep -Milliseconds 500; $p.Refresh() } while ($p.MainWindowHandle -eq [IntPtr]::Zero -and -not $p.HasExited -and (Get-Date) -lt $deadline)
         if ($p.HasExited) { throw ('Protected exe exited during smoke test with code ' + $p.ExitCode + '.') }
         if ($p.MainWindowHandle -eq [IntPtr]::Zero) { throw 'Protected exe produced no main window.' }
+        $expectedTitle = [IO.Path]::GetFileNameWithoutExtension($exeName)
+        if ($p.MainWindowTitle -notin @($expectedTitle, ($expectedTitle + ' · 激活'))) { throw ('Unexpected window title: ' + $p.MainWindowTitle) }
         & $capture -TargetProcessId $p.Id -OutputPrefix (Join-Path $evidence 'login') | Tee-Object -FilePath (Join-Path $evidence 'capture.json')
     } finally {
         if (-not $p.HasExited) { Stop-Process -Id $p.Id -Force }
     }
+    # The smoke run exercises the delivered binary in place; drop the state it produced.
+    Get-ChildItem -LiteralPath $delivery -File -ErrorAction SilentlyContinue | Where-Object { $_.Name -in $runtimeState } | Remove-Item -Force
 }
 Write-Output ('Protected executable: ' + $summary.Executable)

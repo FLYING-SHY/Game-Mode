@@ -1,0 +1,49 @@
+{
+  "expectations": [
+    {
+      "text": "准确解释OpenProcess 0x410及ReadProcessMemory/VirtualQueryEx，并不把窗口RestoreLayer66称为游戏补丁恢复。",
+      "passed": true,
+      "evidence": "outputs/report.md:20-24、46、54-58准确说明1040=0x410=PROCESS_QUERY_INFORMATION|PROCESS_VM_READ、ReadProcessMemory完整读取与VirtualQueryEx区域查询，RestoreLayer66恢复窗口Z序。独立核对Native.cs:25-45、PlayerInfoReader.cs:2311/2350及SquadMarkerWindow.cs:146-163：SetWindowPos(base.Handle, new IntPtr(-1), ...,19u)，未将它解释为游戏补丁恢复；只读结论限定已核查路径。"
+    },
+    {
+      "text": "解释模块相对定位与至少两种结构/读取校验，并给出可复查源码位置。",
+      "passed": true,
+      "evidence": "outputs/report.md:28-40列出image+112918560资源名称表、image+102260400 arena、image+98614988 worldOffset及32位arena相对偏移；给出跨度<=6144且整除48、资源语义名、完整读取字节数、有限浮点、玩家count 1..16及读取前后根/identity复核。独立核对PlayerInfoReader.cs:2355-2446、2697-2799与描述相符，已超过两类校验且出处可复查。"
+    },
+    {
+      "text": "说明扫描对象与预算/缓存/epoch机制，而非误称通用AOB或未知初值扫描器。",
+      "passed": true,
+      "evidence": "outputs/report.md:44-50明确扫描小地图控件类型标记image+65511760，候选须ReadMinimapLayout及位置校验，先树/hint/缓存后区域扫描。列80ms、32MiB请求预算、64KiB块、8字节对齐、64候选/60秒/轮换4个、100/2000ms重试及epoch/token不同职责。独立核对PlayerInfoReader.cs:1539-1814，预算是源码循环检查而非实测硬时限，num2 += num9按请求计数；没有误称通用AOB或未知初值扫描。"
+    },
+    {
+      "text": "解释覆盖层绘制或窗口机制，并区分CoH3特定布局和可迁移工程方法。",
+      "passed": true,
+      "evidence": "outputs/report.md:62-70准确解释独立WinForms无边框/置顶/穿透/不激活、客户区跟随、失效隐藏、主班组窗口OnPaint/GDI；明确AlphaSurface为另一条UpdateLayeredWindow/预乘alpha路线。独立核对SquadMarkerWindow.cs:111-176、600-645及AlphaSurface.cs:84-163。report:85-97将进程身份、校验、预算、epoch/token、绘制生命周期列为可迁移方法，将RVA/vtable/arena/component/矩阵布局/hash列为游戏专属。"
+    },
+    {
+      "text": "准确说明游戏build哈希机制与存量验证报告未覆盖完整对局的限制，不虚构本轮动态验证。",
+      "passed": true,
+      "evidence": "outputs/report.md:12、24区分工具hash与游戏hash，说明路径/长度/mtime缓存SHA256，未知或异常仅Unverified，界面仍允许测试；独立核对GameVersion45.cs:25-49和OverlaySettingsForm.cs:2186-2187。report:74-83、103将120测试/七组/像素音频一致限定为历史报告，实际完整对局/跨会话/长期/第二机未验证；protection-validation.md:54/82直接支持。transcript:3、26记录未启动样本/游戏或构建，没有虚构本轮动态成功。"
+    }
+  ],
+  "summary": {"passed": 5, "failed": 0, "total": 5, "pass_rate": 1.0},
+  "claims": [
+    {"claim": "原版五个类型与当前源码在排除ILSpy通知、统一换行及末尾空白后相等。", "type": "factual", "verified": true, "evidence": "comparison-clean.json五项equalNormalizedWithoutToolNotice=true；grader独立只读重比Native、PlayerInfoReader、SquadMarkerWindow、GameVersion45四项全部true；AlphaSurface已有第五项比较工件。结论范围正确限定为五类，没有扩大到整程序。"},
+    {"claim": "主班组窗口与AlphaSurface属于不同绘制路线。", "type": "factual", "verified": true, "evidence": "SquadMarkerWindow.cs:600-645通过OnPaint中的e.Graphics/DrawImageUnscaled绘制；AlphaSurface.cs:109/123-133使用Format32bppPArgb和UpdateLayeredWindow。报告准确分开两者。"},
+    {"claim": "epoch防旧结果发布，scan token防旧任务清除新任务扫描标志。", "type": "factual", "verified": true, "evidence": "PlayerInfoReader.cs:1775-1791仅miniEpoch==epoch才发布；1807-1814分别按epoch更新diagnostic及按miniActiveScan==token清miniScanning。"},
+    {"claim": "本轮未运行样本或游戏、未修改原项目、未访问授权私有数据。", "type": "process", "verified": true, "evidence": "完整transcript记录只读源码/元数据/哈希、静态ILSpy类型导出及outputs文档写入，没有启动样本/游戏、构建或访问私有授权目录的步骤。此过程判断限于所交执行简记；该文件明确不是逐字完整工具审计日志。"}
+  ],
+  "user_notes_summary": {
+    "uncertainties": ["未提供单独user_notes.md；报告明确原版映射仅五类、其余依赖及动态导入未全审计，真实游戏与跨会话效果均未验证。", "报告与transcript记录token/time未知，不据篇幅或墙钟推造指标。"],
+    "needs_review": ["完整对局、重启/换局、长期及第二机验证仍属后续验证，不是本次静态任务未完成。"],
+    "workarounds": ["首次JSON解析编码失败后显式UTF8重读；初次比较受到ILSpy升级通知污染，保留失败工件并排除通知后重新比较。"]
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {"assertion": "说明扫描对象与预算/缓存/epoch机制，而非误称通用AOB或未知初值扫描器。", "reason": "现断言未要求区分epoch与scan token、请求字节与成功读取量。若需要测量并发机制理解，可显式检查旧任务finally不清新任务标志，以及80ms为检查预算而非已测总耗时保证。"},
+      {"assertion": "解释覆盖层绘制或窗口机制，并区分CoH3特定布局和可迁移工程方法。", "reason": "其中绘制或窗口为宽松择一，未显式检查SquadMarkerWindow.OnPaint/GDI与AlphaSurface/UpdateLayeredWindow的路径归属。可新增归属核验，防将两个都存在的技术名拼接成错误调用链。"},
+      {"reason": "可单独检查原版与维护源码映射证据及范围限制；当前两组均进行了静态原版核对，但现断言本身并未强制这个重要证据桥梁。"}
+    ],
+    "overall": "两组在全部五项均有实质证据，均应5/5。当前断言在本对照样本无区分度，区分力偏弱但并非空洞关键词检查；不能由单对满分推断全局无效或skill无价值。with_skill额外的AlphaSurface映射、epoch/token分离与请求预算细节属于现断言之外的深度差异，不据此扣baseline分或凭报告长度判优。"
+  }
+}

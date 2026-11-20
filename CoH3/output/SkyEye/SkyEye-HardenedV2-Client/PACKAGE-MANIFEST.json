@@ -1,0 +1,81 @@
+{
+  "format": "SkyEye-HardenedV2-Client",
+  "generatedAt": "2026-11-16T08:00:13.037755+00:00",
+  "files": [
+    {
+      "path": "NAudio-LICENSE.txt",
+      "bytes": 2633,
+      "sha256": "969099139b48a788a96b4abce64efd8ed160d3c167bf94af7dcb09389bfe7f79"
+    },
+    {
+      "path": "copy-hotkey.txt",
+      "bytes": 7,
+      "sha256": "54f2a9ba6ba1fed408915bd9f30ff7f565903aaee907968fcd41208226702b81"
+    },
+    {
+      "path": "sounds/北非海军照明弹来了.mp3",
+      "bytes": 36581,
+      "sha256": "f650fdb40ad6967b8a77ad4c14c53d2e2fb2ff800412877afc7e3159f2504c0f"
+    },
+    {
+      "path": "sounds/战斗群.mp3",
+      "bytes": 38799,
+      "sha256": "be60c0055efdbae7e21344dd1e7423e4ba74527370462104569d25999e96765d"
+    },
+    {
+      "path": "sounds/手雷升级.mp3",
+      "bytes": 37963,
+      "sha256": "6a7ed4d5735d9dd569e850bd8624f78094ff4b2207de0f6d2322276ced284960"
+    },
+    {
+      "path": "sounds/火炮就绪.mp3",
+      "bytes": 36710,
+      "sha256": "5e0aaeed3ae3c91350c15c11c8fce08a059c55e07bc3ee85840add41b3cc38d3"
+    },
+    {
+      "path": "sounds/炮击来袭.mp3",
+      "bytes": 39506,
+      "sha256": "c03f7a3f6f6a76f78ac860583d21c8b51965363aff330689eebc0318252beea9"
+    },
+    {
+      "path": "sounds/被包抄了.mp3",
+      "bytes": 37834,
+      "sha256": "c0c8a04d57f6b05eee6c43deab5cd96aa018b87f6aa708395a0bce00e7a7263b"
+    },
+    {
+      "path": "sounds/装甲生产.mp3",
+      "bytes": 40471,
+      "sha256": "1d62d9017e19532a26bd18b13de1116a7adaf20d110dac61ed17fdeedd129eea"
+    },
+    {
+      "path": "sounds/造本.mp3",
+      "bytes": 35038,
+      "sha256": "ed200910e31d7027088c04d9115bb63fdec7cbce2e69b602e5bd3bdde0e7c37c"
+    },
+    {
+      "path": "先看这里.txt",
+      "bytes": 442,
+      "sha256": "54a00c1665d55ef38f7d2f6819873055742f55835f183d358fb1f78568975200"
+    },
+    {
+      "path": "天穹之眼-自有授权版-v0.60.8.exe",
+      "bytes": 1221120,
+      "sha256": "cdca3d5aa5a351201729e713141ce4e5f34701064a0970abdd84bb6f0242ebcf"
+    },
+    {
+      "path": "天穹之眼-自有授权版-v0.60.8.exe.config",
+      "bytes": 523,
+      "sha256": "e3398daf93fe6f36b7d05148848ebc869ba81671256b839b60ad5650db2cde0a"
+    },
+    {
+      "path": "软件使用说明.html",
+      "bytes": 3179,
+      "sha256": "62b6ffddf025c06f357c41bee2d5741ab0f3d68fc2bdedd0834ae97e2d9785f2"
+    },
+    {
+      "path": "软件使用说明.txt",
+      "bytes": 2913,
+      "sha256": "398b5793b43f1529efe9904f2e432558b858dbf669311c98b077c8b48b1ba26e"
+    }
+  ]
+}

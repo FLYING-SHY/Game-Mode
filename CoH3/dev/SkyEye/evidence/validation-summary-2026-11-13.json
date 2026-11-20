@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-11-13T06:59:11.478583+00:00",
+  "passed": true,
+  "serverChecksPassed": 120,
+  "rawPassingModes": 7,
+  "releasePassingModes": 7,
+  "reactorTrialPassingModes": 7,
+  "rawSha256": "A2BD412924CE669666AFC4FCAA68B96FA5A6AE29B2BF6A32D89EF1466F20EF10",
+  "releaseSha256": "636206FDD6DC6EEDA979D5C3D1FC21432E6AAFFBBBAD899299A835E28CE1CE6B",
+  "reactorTrialSha256": "6551EB5BF91CBB34D579590E4EA70C04FAC55F1A00BE6AF22EB3B3F348EB7F25",
+  "pictures": [
+    {
+      "variant": "release",
+      "name": "main",
+      "size": [
+        1480,
+        950
+      ],
+      "changedPixels": 0,
+      "originalSha256": "a93150fffa736fcb081f9b1e01aeecbab22485550cfd1d69ba841c49b961fa56",
+      "comparedSha256": "a93150fffa736fcb081f9b1e01aeecbab22485550cfd1d69ba841c49b961fa56"
+    },
+    {
+      "variant": "release",
+      "name": "expanded",
+      "size": [
+        1480,
+        950
+      ],
+      "changedPixels": 0,
+      "originalSha256": "79c62c2bda8e7239af086be639a2a7687fe13b063864801ae718ca87c94c29b8",
+      "comparedSha256": "79c62c2bda8e7239af086be639a2a7687fe13b063864801ae718ca87c94c29b8"
+    },
+    {
+      "variant": "release",
+      "name": "compact",
+      "size": [
+        1180,
+        740
+      ],
+      "changedPixels": 0,
+      "originalSha256": "e63494668cbb5652d7c0ae0229d00cf0c14a1269082fc4cf742ba9af59ca24dd",
+      "comparedSha256": "e63494668cbb5652d7c0ae0229d00cf0c14a1269082fc4cf742ba9af59ca24dd"
+    },
+    {
+      "variant": "reactorTrial",
+      "name": "main",
+      "size": [
+        1480,
+        950
+      ],
+      "changedPixels": 0,
+      "originalSha256": "a93150fffa736fcb081f9b1e01aeecbab22485550cfd1d69ba841c49b961fa56",
+      "comparedSha256": "a93150fffa736fcb081f9b1e01aeecbab22485550cfd1d69ba841c49b961fa56"
+    },
+    {
+      "variant": "reactorTrial",
+      "name": "expanded",
+      "size": [
+        1480,
+        950
+      ],
+      "changedPixels": 0,
+      "originalSha256": "79c62c2bda8e7239af086be639a2a7687fe13b063864801ae718ca87c94c29b8",
+      "comparedSha256": "79c62c2bda8e7239af086be639a2a7687fe13b063864801ae718ca87c94c29b8"
+    },
+    {
+      "variant": "reactorTrial",
+      "name": "compact",
+      "size": [
+        1180,
+        740
+      ],
+      "changedPixels": 0,
+      "originalSha256": "e63494668cbb5652d7c0ae0229d00cf0c14a1269082fc4cf742ba9af59ca24dd",
+      "comparedSha256": "e63494668cbb5652d7c0ae0229d00cf0c14a1269082fc4cf742ba9af59ca24dd"
+    }
+  ],
+  "audio": [
+    {
+      "variant": "release",
+      "decodedFiles": 8,
+      "payloadsIdentical": true,
+      "audiblePlaybackTested": false
+    },
+    {
+      "variant": "reactorTrial",
+      "decodedFiles": 8,
+      "payloadsIdentical": true,
+      "audiblePlaybackTested": false
+    }
+  ],
+  "sessionCleanupChecks": 12,
+  "realEntry": {
+    "Exe": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\client\\天穹之眼-自有授权版-v0.60.8.exe",
+    "Sha256": "636206FDD6DC6EEDA979D5C3D1FC21432E6AAFFBBBAD899299A835E28CE1CE6B",
+    "Pid": 17512,
+    "Started": "2026-11-13T14:57:03.7592958+08:00",
+    "WindowCaptured": true,
+    "Closed": true
+  },
+  "releaseReaCounts": {
+    "types": 341,
+    "methods": 4032,
+    "fields": 1399,
+    "member_refs": 1562
+  },
+  "releaseIlspyExportExitCode": 0,
+  "releaseIlspyCSharpFiles": 56,
+  "protectedTiming": {
+    "firstHeartbeatHttpMs": 28117,
+    "activationHttpMs": 107,
+    "heartbeatIntervalMs": 28010,
+    "networkGateClosedObservedMs": 59178
+  },
+  "timingSource": "protected-coordinator/network execution logs; elapsed values are wall time since harness startup, except interval subtraction",
+  "limitations": [
+    "Reactor output is a 14-day demo experiment and excluded from every delivery archive.",
+    "ILSpy still exports release C#; obfuscation raises analysis cost.",
+    "Preview pixels and decoded audio do not prove live-game correctness or audible playback.",
+    "Public deployment, another machine, long sessions and protection patch resistance are not tested."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "checks": {
+    "main_under_500_lines": true,
+    "resources_exist": true,
+    "python_source_compiles": true,
+    "utf8_documents": true,
+    "repository_document_links_exist": true,
+    "archive_crc": true,
+    "archive_entrypoint": true,
+    "archive_excludes_evals_and_caches": true,
+    "archive_matches_sources": true
+  },
+  "required_resources": [
+    "assets/investigation-template.md",
+    "references/ecosystem.md",
+    "references/engine-routes.md",
+    "references/engineering.md",
+    "references/fixture-lab.md",
+    "references/skyeye-case-study.md",
+    "scripts/fixture_lab.py"
+  ],
+  "missing_links": [],
+  "archive": {
+    "path": "F:\\WorkSpace\\Game\\skills\\game-trainer-development-workspace\\dist\\game-trainer-development.skill",
+    "sha256": "81a67c8465b0f3121246d146b6f878c32a74c1beb4cc6c46535ae0c6abb90c0d",
+    "files": [
+      "game-trainer-development/README.md",
+      "game-trainer-development/SKILL.md",
+      "game-trainer-development/assets/investigation-template.md",
+      "game-trainer-development/references/ecosystem.md",
+      "game-trainer-development/references/engine-routes.md",
+      "game-trainer-development/references/engineering.md",
+      "game-trainer-development/references/fixture-lab.md",
+      "game-trainer-development/references/skyeye-case-study.md",
+      "game-trainer-development/scripts/fixture_lab.py"
+    ],
+    "size": 34716
+  }
+}

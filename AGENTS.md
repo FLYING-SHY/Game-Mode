@@ -36,7 +36,7 @@
 & .\CoH3\dev\SkyEye\Build-Protected.ps1 -SelfCheck       # 混淆保护 + 自检
 & .\CoH3\dev\SkyEye\Verify-Protected.ps1 -LocalOnly      # 三组离线回归
 & .\LicensingSystem\Publish-Server.ps1 -NoBuild          # 复现服务端发布目录（LicensingSystem/output）
-& .\CoH3\dev\COH3SimpleTool\Build-Protected.ps1 -Smoke   # 简易工具保护版直写 output
+& .\CoH3\dev\COH3SimpleTool\Build-Protected.ps1 -Smoke   # COH3工具保护版直写 output
 ```
 
 联机七组回归：`Verify-Protected.ps1 -PrivateCodeDirectory <私有码目录>`（先经 `scripts/prepare_live_cards.py` 签发隔离卡）。脚本使用 `LicensingSystem/.cache/dotnet-10/dotnet.exe`；Windows 客户端构建还需本机 .NET Framework 4.8 引用程序集。

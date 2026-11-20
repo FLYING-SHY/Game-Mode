@@ -309,6 +309,32 @@ public sealed class LicenseService
 
     public void Kick(string id) => MutateCode(id, "kick", "{}", (db, tx, row, now) => RevokeCode(db, tx, id, "revoked", now));
 
+    public void Delete(string id) => DeleteMany([id]);
+
+    public int DeleteMany(IReadOnlyList<string>? ids)
+    {
+        if (ids is null || ids.Count is < 1 or > 200 || ids.Any(string.IsNullOrWhiteSpace))
+            throw new LicensingException("invalid_delete_request", "请选择 1 至 200 条卡密，且卡密 ID 不得为空。");
+        using var db = Open();
+        using var tx = db.BeginTransaction(deferred: false);
+        var records = ids.Distinct(StringComparer.Ordinal).Select(id =>
+            FindCode(db, tx, "c.Id=$value", id) ?? throw new LicensingException("not_found", "卡密记录不存在，请刷新列表后重新选择。", 404)).ToArray();
+        var now = Now();
+        foreach (var row in records)
+        {
+            var activationRequestsDeleted = Execute(db, tx,
+                "DELETE FROM ActivationRequests WHERE SessionId IN (SELECT Id FROM LeaseSessions WHERE CodeId=$id)", ("$id", row.Id));
+            var sessionsDeleted = Execute(db, tx, "DELETE FROM LeaseSessions WHERE CodeId=$id", ("$id", row.Id));
+            Execute(db, tx, "DELETE FROM LicenseCodes WHERE Id=$id", ("$id", row.Id));
+            Audit(db, tx, "delete", row.Id, JsonSerializer.Serialize(new
+            {
+                codeSuffix = row.CodeSuffix, kind = row.Kind, sessionsDeleted, activationRequestsDeleted
+            }), now);
+        }
+        tx.Commit();
+        return records.Length;
+    }
+
     public IReadOnlyList<SessionRow> Sessions(string? codeId = null, bool activeOnly = true)
     {
         var now = Now();
@@ -385,11 +411,72 @@ public sealed class LicenseService
         while (reader.Read())
         {
             var row = ReadCode(reader);
-            result.Add(new(row.Id, codes.Unprotect(row.CodeCipher), row.CodeSuffix, row.Kind, row.DurationSeconds,
+            var readable = TryUnprotect(row.CodeCipher, out var code);
+            result.Add(new(row.Id, readable ? code! : "", row.CodeSuffix, row.Kind, row.DurationSeconds,
                 row.Note, row.CreatedAt, row.ActivatedAt, row.ExpiresAt, row.BoundDeviceId, row.LastSteamId,
-                CodeState(row, now), reader.GetInt32(12)));
+                CodeState(row, now), reader.GetInt32(12), readable));
         }
         return result;
+    }
+
+    // 卡密密文可能来自另一台主机（例如从 Windows 迁移到 Linux 的历史记录），此时无法用当前密钥解开。
+    // 单行不可解不能让整个列表接口失败，否则管理后台会整体不可用。
+    private bool TryUnprotect(string cipher, out string? code)
+    {
+        try { code = codes.Unprotect(cipher); return true; }
+        catch (CryptographicException) { code = null; return false; }
+        catch (FormatException) { code = null; return false; }
+    }
+
+    /// <summary>导出当前密钥下可解开的卡密明文，用于把密文迁移到另一台主机。</summary>
+    public IReadOnlyList<CodePlaintext> ExportCodePlaintexts()
+    {
+        using var db = Open();
+        using var command = db.CreateCommand();
+        command.CommandText = "SELECT c.Id,c.CodeCipher,c.CodeSuffix,c.Note,c.CreatedAt FROM LicenseCodes c ORDER BY c.CreatedAt,c.Id";
+        using var reader = command.ExecuteReader();
+        var result = new List<CodePlaintext>();
+        while (reader.Read())
+        {
+            var readable = TryUnprotect(reader.GetString(1), out var code);
+            result.Add(new(reader.GetString(0), readable ? code : null, reader.GetString(2), reader.GetString(3),
+                reader.GetInt64(4), readable));
+        }
+        return result;
+    }
+
+    /// <summary>用当前密钥重新加密指定卡密；明文必须与存储的哈希一致，未知或错配的条目会被跳过。</summary>
+    public CodeRepairReport ReprojectCodes(IReadOnlyDictionary<string, string> map)
+    {
+        using var db = Open();
+        using var tx = db.BeginTransaction(deferred: false);
+        int repaired = 0, already = 0, missing = 0, mismatched = 0;
+        foreach (var entry in map)
+        {
+            using var command = db.CreateCommand(); command.Transaction = tx;
+            command.CommandText = "SELECT c.CodeHash,c.CodeCipher FROM LicenseCodes c WHERE c.Id=$id";
+            Add(command, "$id", entry.Key);
+            using var reader = command.ExecuteReader();
+            if (!reader.Read()) { missing++; continue; }
+            var storedHash = reader.GetString(0);
+            var cipher = reader.GetString(1);
+            reader.Close();
+            var normalized = NormalizeCode(entry.Value);
+            if (normalized is null || !string.Equals(CodeHash(normalized), storedHash, StringComparison.Ordinal))
+            {
+                mismatched++;
+                continue;
+            }
+            if (TryUnprotect(cipher, out _)) { already++; continue; }
+            using var update = db.CreateCommand(); update.Transaction = tx;
+            update.CommandText = "UPDATE LicenseCodes SET CodeCipher=$cipher WHERE Id=$id";
+            Add(update, "$cipher", codes.Protect(normalized));
+            Add(update, "$id", entry.Key);
+            update.ExecuteNonQuery();
+            repaired++;
+        }
+        tx.Commit();
+        return new(repaired, already, missing, mismatched, map.Count);
     }
 
     private static IEnumerable<CodeRow> Filter(IEnumerable<CodeRow> rows, string? search, string? status)
@@ -516,11 +603,11 @@ public sealed class LicenseService
         return db;
     }
     private static void Add(SqliteCommand command, string name, object? value) => command.Parameters.AddWithValue(name, value ?? DBNull.Value);
-    private static void Execute(SqliteConnection db, SqliteTransaction tx, string sql, params (string Name, object? Value)[] parameters)
+    private static int Execute(SqliteConnection db, SqliteTransaction tx, string sql, params (string Name, object? Value)[] parameters)
     {
         using var command = db.CreateCommand(); command.Transaction = tx; command.CommandText = sql;
         foreach (var item in parameters) Add(command, item.Name, item.Value);
-        command.ExecuteNonQuery();
+        return command.ExecuteNonQuery();
     }
     private static object? Scalar(SqliteConnection db, SqliteTransaction tx, string sql, params (string Name, object? Value)[] parameters)
     {

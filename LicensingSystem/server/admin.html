@@ -50,6 +50,7 @@
         <label><span class="visually-hidden">卡密状态</span><select id="status"><option value="">全部状态</option><option value="unused">待激活</option><option value="active">有效</option><option value="expired">已过期</option><option value="suspended">已停用</option></select></label>
         <button type="submit" class="secondary">查询</button><button id="export-all" type="button" class="secondary export-button">导出筛选结果</button>
       </form>
+      <div class="bulk-actions"><label class="check-label"><input id="select-page" type="checkbox" disabled>全选当前页</label><span id="selection-count" class="muted" aria-live="polite">已选 0 条</span><button id="delete-selected" type="button" class="secondary danger-text" disabled>批量删除</button><span class="cell-meta">勾选仅对当前页生效，刷新、查询或翻页后清空。</span></div>
       <div class="table-wrap"><table class="codes-table"><thead><tr><th>完整卡密 / 类型</th><th>有效期限</th><th>设备与会话</th><th>备注</th><th>状态</th><th>管理操作</th></tr></thead><tbody id="rows"></tbody></table></div>
       <div class="pagination"><span id="codes-count">尚未加载</span><div class="button-group"><button id="prev-page" class="quiet" type="button">上一页</button><span id="page-number">1</span><button id="next-page" class="quiet" type="button">下一页</button></div></div>
     </div>
@@ -58,7 +59,7 @@
       <div class="table-wrap"><table><thead><tr><th>卡密尾号</th><th>设备 / 安装标识</th><th>当前游戏身份</th><th>最近心跳</th><th>租约截止</th><th>状态 / 操作</th></tr></thead><tbody id="session-rows"></tbody></table></div>
     </div>
     <div id="panel-audit" role="tabpanel" aria-labelledby="tab-audit" hidden>
-      <p class="panel-note">记录发码、停用、续期、解绑和会话撤销等管理操作。</p>
+      <p class="panel-note">记录发码、停用、续期、解绑、删除和会话撤销等管理操作。</p>
       <div class="table-wrap"><table><thead><tr><th>时间</th><th>操作</th><th>卡密记录</th><th>说明</th></tr></thead><tbody id="audit-rows"></tbody></table></div>
       <div class="pagination"><span id="audit-count">尚未加载</span><div class="button-group"><button id="audit-prev" class="quiet" type="button">上一页</button><span id="audit-page">1</span><button id="audit-next" class="quiet" type="button">下一页</button></div></div>
     </div>
@@ -69,6 +70,14 @@
   <form id="renew-form"><h2 id="renew-heading">延长限时授权</h2><p id="renew-code"></p><p>已过期从现在起延长，仍有效则从原到期时间延长；设备绑定保持不变。</p>
     <div class="field-pair"><label>增加时长<input id="renew-duration" type="number" min="1" max="36500" step="1" value="30" required></label><label>单位<select id="renew-unit"><option value="86400">天</option><option value="3600">小时</option></select></label></div>
     <div class="dialog-actions"><button id="renew-cancel" type="button" class="secondary">取消</button><button type="submit">确认续期</button></div>
+  </form>
+</dialog>
+<dialog id="delete-dialog" aria-labelledby="delete-heading" aria-describedby="delete-description">
+  <form id="delete-form"><h2 id="delete-heading">永久删除卡密</h2>
+    <p id="delete-code" class="license-code"></p><p id="delete-note" class="cell-meta"></p>
+    <p id="delete-description">将永久删除所列卡密及关联会话、激活请求，操作记录保留。此操作不可撤销。已连接客户端将在下次心跳或短租约到期后停止授权。</p>
+    <p id="delete-error" class="error-message" role="alert"></p>
+    <div class="dialog-actions"><button id="delete-cancel" type="button" class="secondary">取消</button><button id="delete-confirm" type="submit" class="secondary danger-text">确认删除</button></div>
   </form>
 </dialog>
 </body>

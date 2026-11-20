@@ -1,0 +1,82 @@
+{
+  "checkedAt": "2026-11-16T07:54:23.974145+00:00",
+  "transport": "real HTTPS authenticated administrator read-only session query",
+  "endpoint": "124.220.147.56",
+  "passed": true,
+  "checks": [
+    {
+      "fixtureSet": "raw-live-fixtures.json",
+      "case": "protocol-permanent",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "raw-live-fixtures.json",
+      "case": "protocol-timed",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "raw-live-fixtures.json",
+      "case": "coordinator",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "raw-live-fixtures.json",
+      "case": "network",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "protected-live-fixtures.json",
+      "case": "protocol-permanent",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "protected-live-fixtures.json",
+      "case": "protocol-timed",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "protected-live-fixtures.json",
+      "case": "coordinator",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "protected-live-fixtures.json",
+      "case": "network",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "reactor-trial-live-fixtures.json",
+      "case": "protocol-permanent",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "reactor-trial-live-fixtures.json",
+      "case": "protocol-timed",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "reactor-trial-live-fixtures.json",
+      "case": "coordinator",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "reactor-trial-live-fixtures.json",
+      "case": "network",
+      "activeSessions": 0,
+      "passed": true
+    }
+  ],
+  "globalActiveSessions": 0,
+  "limitation": "No active session at observation time; protocol finally/logout is additionally evidenced by awaited client execution."
+}

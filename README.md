@@ -6,9 +6,9 @@
 | --- | --- |
 | [原版 v0.60.8](<CoH3/original/天穹之眼-v0.60.8/>) | 原始发布文件，冻结区（MANIFEST 校验 + 只读） |
 | [dev/SkyEye（天穹之眼）](<CoH3/dev/SkyEye/README.md>) | 唯一维护源码：客户端、授权接入（编译内嵌）、验证工程、构建/保护/封装脚本与证据 |
-| [dev/COH3简易工具](<CoH3/dev/COH3SimpleTool/README.md>) | SkyEye 引擎的极简黑壳版：登录页 + 三开关控制条，无热键无声音，卡密与 SkyEye 通用 |
+| [dev/COH3工具](<CoH3/dev/COH3SimpleTool/README.md>) | SkyEye 引擎的极简黑壳版：登录页 + 三开关控制条，无热键无声音，卡密与 SkyEye 通用 |
 | [output/SkyEye](<CoH3/output/SkyEye/>) | SkyEye 最终交付：Client / Server / Maintenance ZIP + 包验证记录 |
-| [output/COH3SimpleTool](<CoH3/output/COH3SimpleTool/>) | 简易工具受保护 EXE + .exe.config + overlay-settings.txt |
+| [output/COH3SimpleTool](<CoH3/output/COH3SimpleTool/>) | COH3工具受保护 EXE + .exe.config + overlay-settings.txt |
 | [LicensingSystem](<LicensingSystem/README.md>) | 通用授权系统：服务端、测试、部署辅助、SDK 与本机私有状态 |
 | [授权服务端发布](<LicensingSystem/output/>) | ASP.NET Core 10 签名服务发布目录（Publish-Server.ps1 产出，Server.zip 打包根） |
 | [工作流配置](<docs/agents/>) | Issue、triage 与 domain 工作流 |
@@ -42,14 +42,14 @@
 # 复现服务端发布目录（LicensingSystem/output）
 & .\LicensingSystem\Publish-Server.ps1 -NoBuild
 
-# 构建 COH3简易工具受保护版并冒烟（直写 CoH3/output/COH3SimpleTool）
+# 构建 COH3工具受保护版并冒烟（直写 CoH3/output/COH3SimpleTool）
 & .\CoH3\dev\COH3SimpleTool\Build-Protected.ps1 -Smoke
 
 # 使用现有签名密钥和数据库启动本机授权服务
 & .\LicensingSystem\Start-Server.ps1 -ConfigPath .\LicensingSystem\.local\hardening-v2\server.json
 ```
 
-本机管理入口为 `http://127.0.0.1:47835/admin`。旧的 47831 测试服务已停止。SDK 位于 `LicensingSystem/.cache/dotnet-10`；客户端编译还需 .NET Framework 4.8 引用程序集。
+线上管理入口为 `https://124.220.147.56/admin`（生产实例已部署，2026-11-16 起）；本机管理入口为 `http://127.0.0.1:47835/admin`。旧的 47831 测试服务已停止。SDK 位于 `LicensingSystem/.cache/dotnet-10`；客户端编译还需 .NET Framework 4.8 引用程序集。
 
 部署新机器、配对公钥和备份私有状态，见[SkyEye 说明](<CoH3/dev/SkyEye/README.md>)、[LicensingSystem 说明](<LicensingSystem/README.md>)与[签名协议](<CoH3/dev/SkyEye/signature-contract.md>)。现有客户 EXE 与现有签名私钥配对；更换私钥后须重新固定公钥并构建、分发客户端。
 

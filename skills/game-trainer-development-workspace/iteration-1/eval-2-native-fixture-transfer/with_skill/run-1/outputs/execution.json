@@ -1,0 +1,105 @@
+{
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "executable": "C:\\Program Files\\Python311\\python.exe",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "inputs": [
+    {
+      "path": "F:\\WorkSpace\\Game\\AGENTS.md",
+      "bytes": 6628,
+      "sha256": "8980d84d8b571b6127c7599a8d6bc0d32fb02095ca5303169a6c807433afb08b"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\skills\\game-trainer-development\\scripts\\fixture_lab.py",
+      "bytes": 12113,
+      "sha256": "1a3bd6f1ee7c29c65469f7cc09505170f023b49de233705325ae9295a3aff643"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\skills\\game-trainer-development\\SKILL.md",
+      "bytes": 9290,
+      "sha256": "2b094df2c494d5205948f6fa69e85a95b841d0d080e7737fdde174bd9037fd57"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\skills\\game-trainer-development\\references\\fixture-lab.md",
+      "bytes": 8995,
+      "sha256": "17398bb53b5baed7ff95c0d8542032969345b5c891539b2772a220abcbc4c136"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\skills\\game-trainer-development\\references\\engine-routes.md",
+      "bytes": 10595,
+      "sha256": "4b33c1aa4fad2b314d0c05a8d5b5b574dfc90952e7159ff8d656ffefa63a073e"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\skills\\game-trainer-development-workspace\\iteration-1\\eval-2-native-fixture-transfer\\with_skill\\run-1\\outputs\\resolver.py",
+      "bytes": 7711,
+      "sha256": "f7a1ab86f1a6fa0c186272c22ff3cefc15f5d685a261f97fa0a2b1df987c5f92"
+    }
+  ],
+  "runs": [
+    {
+      "name": "create",
+      "argv": [
+        "C:\\Program Files\\Python311\\python.exe",
+        "F:\\WorkSpace\\Game\\skills\\game-trainer-development\\scripts\\fixture_lab.py",
+        "create",
+        "--output",
+        "F:\\WorkSpace\\Game\\skills\\game-trainer-development-workspace\\iteration-1\\eval-2-native-fixture-transfer\\with_skill\\run-1\\outputs\\fixture"
+      ],
+      "cwd": "F:\\WorkSpace\\Game",
+      "started_utc": "2026-11-16T01:12:52.869777+00:00",
+      "elapsed_seconds_measured": 0.06911029998445883,
+      "exit_code": 0,
+      "stdout": "create.stdout.log",
+      "stderr": "create.stderr.log"
+    },
+    {
+      "name": "resolver",
+      "argv": [
+        "C:\\Program Files\\Python311\\python.exe",
+        "F:\\WorkSpace\\Game\\skills\\game-trainer-development-workspace\\iteration-1\\eval-2-native-fixture-transfer\\with_skill\\run-1\\outputs\\resolver.py",
+        "--directory",
+        "F:\\WorkSpace\\Game\\skills\\game-trainer-development-workspace\\iteration-1\\eval-2-native-fixture-transfer\\with_skill\\run-1\\outputs\\fixture",
+        "--output",
+        "F:\\WorkSpace\\Game\\skills\\game-trainer-development-workspace\\iteration-1\\eval-2-native-fixture-transfer\\with_skill\\run-1\\outputs"
+      ],
+      "cwd": "F:\\WorkSpace\\Game",
+      "started_utc": "2026-11-16T01:12:52.939198+00:00",
+      "elapsed_seconds_measured": 0.07355400000233203,
+      "exit_code": 0,
+      "stdout": "resolver.stdout.log",
+      "stderr": "resolver.stderr.log"
+    },
+    {
+      "name": "verify",
+      "argv": [
+        "C:\\Program Files\\Python311\\python.exe",
+        "F:\\WorkSpace\\Game\\skills\\game-trainer-development\\scripts\\fixture_lab.py",
+        "verify",
+        "--directory",
+        "F:\\WorkSpace\\Game\\skills\\game-trainer-development-workspace\\iteration-1\\eval-2-native-fixture-transfer\\with_skill\\run-1\\outputs\\fixture",
+        "--result",
+        "F:\\WorkSpace\\Game\\skills\\game-trainer-development-workspace\\iteration-1\\eval-2-native-fixture-transfer\\with_skill\\run-1\\outputs\\candidates.json"
+      ],
+      "cwd": "F:\\WorkSpace\\Game",
+      "started_utc": "2026-11-16T01:12:53.013640+00:00",
+      "elapsed_seconds_measured": 0.06272739998530596,
+      "exit_code": 0,
+      "stdout": "verify.stdout.log",
+      "stderr": "verify.stderr.log"
+    },
+    {
+      "name": "self-test",
+      "argv": [
+        "C:\\Program Files\\Python311\\python.exe",
+        "F:\\WorkSpace\\Game\\skills\\game-trainer-development\\scripts\\fixture_lab.py",
+        "self-test"
+      ],
+      "cwd": "F:\\WorkSpace\\Game",
+      "started_utc": "2026-11-16T01:12:53.077962+00:00",
+      "elapsed_seconds_measured": 0.09123939997516572,
+      "exit_code": 0,
+      "stdout": "self-test.stdout.log",
+      "stderr": "self-test.stderr.log"
+    }
+  ],
+  "token_usage": "not exposed; not measured"
+}

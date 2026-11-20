@@ -23,19 +23,60 @@ public static class Program
         {
             if (args.Length != 2) throw new ArgumentException("Usage: --export-lease-public-key OUTPUT_JSON");
             var output = Path.GetFullPath(args[1]);
-            var keyDirectory = Path.GetFullPath(options.KeyDirectory).TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar);
-            if (output.Equals(keyDirectory, StringComparison.OrdinalIgnoreCase)
-                || output.StartsWith(keyDirectory + Path.DirectorySeparatorChar, StringComparison.OrdinalIgnoreCase)
-                || output.Equals(Path.GetFullPath(options.DatabasePath), StringComparison.OrdinalIgnoreCase)
-                || output.Equals(Path.GetFullPath(config), StringComparison.OrdinalIgnoreCase))
-                throw new ArgumentException("Public export must use a separate output path.");
+            EnsureSeparateOutputPath(options, config, output);
             using var signer = new LeaseSigner(options);
             using var stream = new FileStream(output, FileMode.CreateNew, FileAccess.Write, FileShare.None);
             await System.Text.Json.JsonSerializer.SerializeAsync(stream, signer.ExportPublicKey(),
                 new System.Text.Json.JsonSerializerOptions { WriteIndented = true });
             return;
         }
+        if (args.Length > 0 && args[0] == "--export-code-plaintext")
+        {
+            if (args.Length != 2) throw new ArgumentException("Usage: --export-code-plaintext OUTPUT_JSON");
+            var output = Path.GetFullPath(args[1]);
+            EnsureSeparateOutputPath(options, config, output);
+            using var signer = new LeaseSigner(options);
+            var service = new LicenseService(options, CreateProtectionProvider(options), TimeProvider.System, signer);
+            var items = service.ExportCodePlaintexts();
+            using (var stream = new FileStream(output, FileMode.Create, FileAccess.Write, FileShare.None))
+                await System.Text.Json.JsonSerializer.SerializeAsync(stream, items,
+                    new System.Text.Json.JsonSerializerOptions { WriteIndented = true });
+            Console.WriteLine($"exported {items.Count} code(s) to {output}");
+            return;
+        }
+        if (args.Length > 0 && args[0] == "--reprotect-codes")
+        {
+            if (args.Length != 2) throw new ArgumentException("Usage: --reprotect-codes MAP_JSON");
+            var mapPath = Path.GetFullPath(args[1]);
+            var payload = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, string>>(File.ReadAllText(mapPath))
+                ?? throw new ArgumentException("映射文件为空。");
+            using var signer = new LeaseSigner(options);
+            var service = new LicenseService(options, CreateProtectionProvider(options), TimeProvider.System, signer);
+            var report = service.ReprojectCodes(payload);
+            Console.WriteLine($"repaired={report.Repaired} alreadyReadable={report.AlreadyReadable} missing={report.Missing} mismatched={report.Mismatched} total={report.Total}");
+            return;
+        }
         await Build(options, args).RunAsync();
+    }
+
+    private static IDataProtectionProvider CreateProtectionProvider(ServerOptions options)
+    {
+        var services = new ServiceCollection();
+        var protection = services.AddDataProtection()
+            .SetApplicationName("Licensing.Native.v1")
+            .PersistKeysToFileSystem(new DirectoryInfo(Path.GetFullPath(options.KeyDirectory)));
+        if (OperatingSystem.IsWindows()) protection.ProtectKeysWithDpapi();
+        return services.BuildServiceProvider().GetRequiredService<IDataProtectionProvider>();
+    }
+
+    private static void EnsureSeparateOutputPath(ServerOptions options, string config, string output)
+    {
+        var keyDirectory = Path.GetFullPath(options.KeyDirectory).TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar);
+        if (output.Equals(keyDirectory, StringComparison.OrdinalIgnoreCase)
+            || output.StartsWith(keyDirectory + Path.DirectorySeparatorChar, StringComparison.OrdinalIgnoreCase)
+            || output.Equals(Path.GetFullPath(options.DatabasePath), StringComparison.OrdinalIgnoreCase)
+            || output.Equals(Path.GetFullPath(config), StringComparison.OrdinalIgnoreCase))
+            throw new ArgumentException("输出路径必须与密钥目录、数据库和配置文件分离。");
     }
 
     public static WebApplication Build(ServerOptions options, string[]? args = null, TimeProvider? timeProvider = null)
@@ -221,6 +262,10 @@ public static class Program
         { service.Unbind(id); return Results.Json(new { ok = true }); });
         admin.MapPost("/codes/{id}/kick", (string id, LicenseService service) =>
         { service.Kick(id); return Results.Json(new { ok = true }); });
+        admin.MapPost("/codes/{id}/delete", (string id, LicenseService service) =>
+        { service.Delete(id); return Results.Json(new { ok = true }); });
+        admin.MapPost("/codes/delete-batch", (BatchDeleteRequest? request, LicenseService service) =>
+            Results.Json(new { ok = true, deletedCount = service.DeleteMany(request?.Ids) }));
         admin.MapGet("/codes/export", (string? search, string? status, LicenseService service) =>
             Results.File(Encoding.UTF8.GetPreamble().Concat(Encoding.UTF8.GetBytes(service.Export(search, status))).ToArray(),
                 "text/csv; charset=utf-8", "license-codes.csv"));

@@ -43,7 +43,22 @@
 
 更换服务端签名私钥后，必须重新固定公钥、构建、保护并分发客户端。只恢复数据库而丢失签名私钥会使旧客户端验签失败。备份数据库、整个 KeyDirectory 和私有配置；目标服务账户应独占这些目录的访问权限。Windows 本机验证使用当前用户、SYSTEM 和管理员 ACL；Linux 签名私钥设为 0600。跨账户部署需为实际服务账户明确设置权限。
 
-默认客户端配置地址为 `http://127.0.0.1:47835/`；远程部署使用 HTTPS，并配置服务端 AllowedHosts 和实际反向代理来源。旧的 47831 无签名服务不会被此客户端降级接受。正式公网地址、证书、容器和第二台机器需要在相应环境完成验证。
+默认客户端配置地址为 `https://124.220.147.56/`（2026-11-16 起，线上授权服务已部署到该公网地址）；服务端自身仍只监听回环 `http://127.0.0.1:47835`，由 nginx 反代出网。远程部署使用 HTTPS，并配置服务端 AllowedHosts 和实际反向代理来源。旧的 47831 无签名服务不会被此客户端降级接受。
+
+## 线上部署（124.220.147.56）
+
+| 项 | 值 |
+| --- | --- |
+| 公网入口 | `https://124.220.147.56/`（TLS 1.2/1.3，Let's Encrypt shortlived 档位的 IP 证书，IP SAN = 124.220.147.56） |
+| 边缘 | nginx 1.29.8（`/etc/nginx/conf.d/licensing.conf`），80 端口仅做 ACME 校验与 301，其余 443 反代到回环应用 |
+| 应用 | ASP.NET Core 10（`/opt/dotnet`），代码 `/opt/licensing`，systemd 单元 `licensing.service`（账户 `licensing`） |
+| 私有监听 | `http://127.0.0.1:47835`，只绑定回环，公网不可达；`TrustedProxies` 为 `127.0.0.1` 以还原真实客户端 IP |
+| 配置 | `/opt/licensing/server.local.json`（640，属主 `licensing`），`AllowedHosts` 含 `124.220.147.56` |
+| 状态 | `/opt/licensing/data/leases.db`（SQLite/WAL）与 `/opt/licensing/data/keys`（租约签名私钥 + DataProtection 密钥环） |
+| 备份 | `/usr/local/bin/licensing-backup.sh`，每日 03:17 执行，保留 14 份于 `/opt/licensing-backups` |
+| 续期 | acme.sh 3.1.5（`/opt/acme.sh`），cron `52 0,6,12,18 * * *`，短期证书在到期前约 72 小时自动重签 |
+
+部署与恢复细节见服务器上的 `/opt/licensing/DEPLOYMENT.md`。重新生成配置时必须保留原 `AdminToken` 与签名私钥，否则既有卡密与客户端公钥 pin 全部失效；仅用 `New-DeploymentConfig.ps1` 新建配置会得到新的管理员令牌和新的密钥目录。
 
 ## 发布区分
 
@@ -59,6 +74,6 @@
 - `SkyEye-HardenedV2-Server.zip`：签名服务端发布目录（源/打包根在 `LicensingSystem/output`），不含本机私钥、数据库或管理员配置。
 - `SkyEye-HardenedV2-Maintenance.zip`：自己保存的源码（含 LicensingSystem 授权源码）、开发映射、脚本及证据。Reactor Demo EXE 和第三方工具均排除。
 
-本机后台位于 `http://127.0.0.1:47835/admin`，私有配置在 `LicensingSystem/.local/hardening-v2/server.json`。已编译的客户包固定了本机服务的公钥，需要与原签名密钥配对。新环境采用新密钥时，按前述顺序重新 pin、编译、保护后再分发客户包；单独生成新密钥不会自动适配旧客户 EXE。
+本机后台位于 `http://127.0.0.1:47835/admin`，线上后台位于 `https://124.220.147.56/admin`，私有配置在 `LicensingSystem/.local/hardening-v2/server.json`。已编译的客户包固定了本机服务的公钥，需要与原签名密钥配对；线上实例复制了同一把租约签名私钥，因此同一批卡密在两端通用。新环境采用新密钥时，按前述顺序重新 pin、编译、保护后再分发客户包；单独生成新密钥不会自动适配旧客户 EXE。
 
-发布服务使用 `LicensingSystem/output/Start-Server.ps1 -ConfigPath <私有配置>`；维护工程的可复现服务发布为 `LicensingSystem/Publish-Server.ps1 -NoBuild`；`Verify-Protected.ps1` 默认连接 47835，接收独立私有码目录执行七组回归。历史清理记录见 [cleanup-manifest.json](evidence/cleanup-manifest.json)，布局重构记录见 [refactor-manifest.json](evidence/refactor-manifest.json) 与 [refactor-manifest-2026-11-15.json](evidence/refactor-manifest-2026-11-15.json)。清理后可显式执行 `Finalize.py --refresh`，在保留原版、当前源码与客户包的校验通过后，原子刷新服务端和维护包；客户 ZIP 保持逐项一致。
+发布服务使用 `LicensingSystem/output/Start-Server.ps1 -ConfigPath <私有配置>`；维护工程的可复现服务发布为 `LicensingSystem/Publish-Server.ps1 -NoBuild`；`Verify-Protected.ps1` 默认连接 47835，接收独立私有码目录执行七组回归，连线回归用 `-BaseUrl 'https://124.220.147.56/'` 指定线上地址。历史清理记录见 [cleanup-manifest.json](evidence/cleanup-manifest.json)，布局重构记录见 [refactor-manifest.json](evidence/refactor-manifest.json) 与 [refactor-manifest-2026-11-15.json](evidence/refactor-manifest-2026-11-15.json)；本轮公网地址迁移的授权修订记录见 [authorized-revision-2026-11-16.json](evidence/authorized-revision-2026-11-16.json)。清理后可显式执行 `Finalize.py --refresh`，在保留原版、当前源码与客户包的校验通过后，原子刷新服务端和维护包；客户 ZIP 按授权修订重新签发并逐项校验。

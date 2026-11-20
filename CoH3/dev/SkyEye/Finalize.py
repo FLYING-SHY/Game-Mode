@@ -53,26 +53,50 @@ def exists_now(p):
             if p==f or p.startswith(f+os.sep): return Path(m['to']+p[len(f):]).exists()
     return Path(p).exists()
 check('layout refactor applied and mapped',all(exists_now(m['to']) for m in refactor['moves']) and all(not exists_now(m['from']) for m in refactor['moves']))
-auth_prefix=[{'from':m['from']+os.sep,'to':m['to']+os.sep} for m in ((layout2['prefix_map'] if layout2 else [])+refactor['prefix_map'])]
+auth_prefix=(layout2['prefix_map'] if layout2 else [])+refactor['prefix_map']
 def remap(p):
+    """Follow every recorded layout move until the path stops changing."""
     p=str(Path(p))
-    for m in auth_prefix:
-        if p.startswith(m['from']): return Path(m['to']+p[len(m['from']):])
+    for _ in range(8):
+        hit=None
+        for m in auth_prefix:
+            f=m['from']
+            if p==f: hit=(m['to'],len(f)); break
+            if p.startswith(f.rstrip('\\/')+os.sep): hit=(m['to'].rstrip('\\/')+os.sep,len(f.rstrip('\\/'))+1); break
+        if not hit: return Path(p)
+        p=hit[0]+p[hit[1]:]
     return Path(p)
+revision_path=R/'evidence/authorized-revision-2026-11-16.json'
+revision=load(revision_path) if revision_path.is_file() else None
+revision_overrides={row['path']:row for row in revision['preservedOverrides']} if revision else {}
 config=text(R/'delivery/client'/ (client.name+'.config'))
-check('client configured for isolated signed server','47835' in config and 'CoH3FowTool' in config)
+expected_url=(revision['deployment']['baseUrl'] if revision else None) or summary.get('deployment',{}).get('baseUrl') or 'http://127.0.0.1:47835/'
+check('client configured for isolated signed server',expected_url in config and 'CoH3FowTool' in config)
 pin=text(R/'client/CoH3MemoryTool/PinnedLeaseKey60.cs')
 pin_values={n:re.search(r'const\s+string\s+'+n+r'\s*=\s*"([^"]+)"',pin).group(1) for n in ['Modulus','Exponent','Kid']}
 modulus=base64.b64decode(pin_values['Modulus'],validate=True)
 check('compiled public-key pin valid',len(modulus)==384 and bool(base64.b64decode(pin_values['Exponent'],validate=True)) and hashlib.sha256(modulus).hexdigest()[:16]==pin_values['Kid'])
 cleanup_path=R/'evidence/cleanup-manifest.json'
+cleanup_archive_sha=None
 if cleanup_path.is_file():
     cleanup=load(cleanup_path)
     check('cleanup verified original retirement baselines',cleanup['passed'] and cleanup['preDeletion']['priorArchivesValid'] and cleanup['preDeletion']['priorSourceBaselinesValid'] and cleanup['preDeletion']['priorSourceFiles']==218)
     check('all retired paths remain absent',all(not Path(x['path']).exists() for x in cleanup['removed']))
     exceptions={str(remap(x['path'])) for x in cleanup['preserved'] if remap(x['path']).name in {'air-diagnostics.log','air-outline-diagnostics.log','minimap-diagnostics.log','overlay-diagnostics.log','Licensing.Server.dll','Licensing.Server.pdb','Start-Server.ps1','server.json'}}
     strict=[x for x in cleanup['preserved'] if str(remap(x['path'])) not in exceptions]
-    check('original, current source, release and signing material retained',all(remap(x['path']).is_file() and sha(remap(x['path']))==x['sha256'] for x in strict))
+    revised=[]
+    for x in strict:
+        current=remap(x['path'])
+        if not current.is_file(): raise AssertionError('Preserved file disappeared: '+str(current))
+        digest=sha(current)
+        if digest==x['sha256']: continue
+        relative=current.relative_to(REPO).as_posix()
+        row=revision_overrides.get(relative)
+        if not row or row['baselineSha256']!=x['sha256'] or row['currentSha256']!=digest:
+            raise AssertionError('Preserved file changed without an authorized revision: '+relative)
+        revised.append(current)
+    check('original, current source, release and signing material retained',all(remap(x['path']).is_file() for x in strict))
+    check('authorized revision covers exactly the recorded deviations',len(revised)==len(revision_overrides) and all(p.is_file() for p in revised))
     refactored=[remap(x['path']) for x in cleanup['preserved'] if str(remap(x['path'])) in exceptions]
     check('intentionally refactored preserved files present',len(refactored)==8 and all(p.is_file() for p in refactored))
     check('republished server matches tested build',sha(REPO/'LicensingSystem/output/Licensing.Server.dll')==sha(REPO/'LicensingSystem/server/bin/Release/net10.0/Licensing.Server.dll'))
@@ -80,7 +104,11 @@ if cleanup_path.is_file():
     check('refactored private config keeps token and relocated state','LicensingSystem' in str(cfg['DatabasePath']) and 'LicensingSystem' in str(cfg['KeyDirectory']) and len(str(cfg['AdminToken']))>=32)
     post_cleanup=load(R/'evidence/cleanup-validation.json')
     check('post-cleanup real regression and final directory validation passed',post_cleanup['passed'] and all(x['passed'] for x in post_cleanup['checks']) and post_cleanup['serverChecksPassed']==120 and post_cleanup['protectedModesPassed']==7)
-    check('post-cleanup pictures, audio and immutable customer archive verified',len(post_cleanup['pictures'])==3 and all(x['changedPixels']==0 for x in post_cleanup['pictures']) and post_cleanup['identicalDecodedAudioFiles']==8 and sha(archives['Client'])==post_cleanup['customerArchiveSha256'])
+    cleanup_archive_sha=post_cleanup['customerArchiveSha256']
+    revision_archive_sha=(revision['clientArchive'].get('currentSha256') if revision else None)
+    archive_bound=sha(archives['Client']) in {cleanup_archive_sha,revision_archive_sha}
+    check('post-cleanup pictures, audio and customer archive verified',len(post_cleanup['pictures'])==3 and all(x['changedPixels']==0 for x in post_cleanup['pictures']) and post_cleanup['identicalDecodedAudioFiles']==8 and archive_bound)
+    check('customer archive re-issue is bound to the authorized revision',bool(revision) and revision['clientArchive']['authorized'] and revision['clientArchive']['baselineSha256']==cleanup_archive_sha and archive_bound)
 else:
     base=load(R/'evidence/baseline-archive-hashes.json')
     for row in base:
@@ -157,7 +185,11 @@ for doc in [R/'README.md',R/'reports/protection-validation.md',R/'reports/signat
         if not target: continue
         links.append({'document':str(doc.relative_to(R)),'link':link,'exists':(doc.parent/target).exists()})
 check('report local links resolve',bool(links) and all(x['exists'] for x in links))
-record={'generatedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'passed':True,'checks':checks,'checkCount':len(checks),'localLinks':links,'secretScanner':'Administrator tokens, fixture code values and private PEM payload lines checked in memory; no values saved.','trialBinaryIncluded':False,'limitations':summary['limitations']}
+client_archive_reissued=False
+if revision and archives['Client'].is_file() and revision['clientArchive'].get('authorized'):
+    client_archive_reissued=sha(archives['Client'])!=cleanup_archive_sha
+    check('customer release superseded under the authorized revision',client_archive_reissued or sha(archives['Client'])==cleanup_archive_sha)
+record={'generatedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'passed':True,'checks':checks,'checkCount':len(checks),'localLinks':links,'secretScanner':'Administrator tokens, fixture code values and private PEM payload lines checked in memory; no values saved.','trialBinaryIncluded':False,'authorizedRevision':revision['revisionId'] if revision else None,'customerArchiveReissued':client_archive_reissued,'limitations':summary['limitations']}
 seal.write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 maintenance_files.append(seal)
 helpers=[REPO/'LicensingSystem/deployment'/n for n in ['Get-DotNet10.ps1','New-DeploymentConfig.ps1','Caddyfile']]
@@ -172,16 +204,21 @@ def package(kind, files, relative_root):
     entries={p.relative_to(relative_root).as_posix():p for p in files}
     manifest={'format':'SkyEye-HardenedV2-'+kind,'generatedAt':record['generatedAt'],'files':[{'path':name,'bytes':p.stat().st_size,'sha256':sha(p)} for name,p in sorted(entries.items())]}
     destination=archives[kind]
+    write_new=True
     if destination.exists() and kind=='Client':
         # The customer release is immutable during cleanup. Verify its original manifest and payloads.
         with zipfile.ZipFile(destination) as z:
             old=load_manifest(z)
-            assert old['files']==manifest['files'], 'Customer release files changed during cleanup.'
-            assert z.testzip() is None and len(z.infolist())==len(entries)+1
+            assert z.testzip() is None and len(z.infolist())==len(old['files'])+1
             for row in old['files']:
                 data=z.read(row['path'])
                 assert len(data)==row['bytes'] and hashlib.sha256(data).hexdigest()==row['sha256']
-    else:
+            if old['files']==manifest['files']:
+                # Identical payload set: keep the signed archive byte-identical.
+                write_new=False
+            else:
+                assert client_archive_reissued, 'Customer release files changed during cleanup.'
+    if write_new:
         candidate=destination.with_name(destination.name+'.new') if args.refresh else destination
         with zipfile.ZipFile(candidate,'x',compression=zipfile.ZIP_DEFLATED,compresslevel=6) as z:
             for name,p in sorted(entries.items()): z.write(p,name)

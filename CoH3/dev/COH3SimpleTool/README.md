@@ -1,4 +1,4 @@
-# COH3简易工具（SkyEye 简易版）
+# COH3工具
 
 英雄连3 本地信息工具 · 极简黑色界面。引擎复用 `CoH3\dev\SkyEye` 同源内存读取引擎（只读，不写入游戏内存），授权接入 LicensingSystem 自有授权服务（产品 `CoH3FowTool`，与 SkyEye 卡密通用）。
 
@@ -7,7 +7,7 @@
 - 登录页：激活码 + 记住 + 进入（系统标题栏，红字错误行）。
 - 功能页：824x118 悬浮控制条（默认置顶，可拖动）
   - 三个开关：顶部玩家信息 / 主画面标记 / 小地图标记（参数自动保存到 exe 旁 `overlay-settings.txt`）
-  - 连接状态：`○ 等待对局` / `● 对局已连接` / `⚠ 版本未验证`（悬停显示授权到期）
+  - 连接状态：`○ 等待对局` / `● 对局已连接` / `⚠ 版本未验证` / `⚠ 版本读取失败`（悬停显示版本提示详情及授权到期）
   - `退出` 按钮返回登录页换码；`—` 最小化；`×` 关闭并下线
 - 无热键、无声音、无设置面板：启动游戏后自动挂接。
 
@@ -15,7 +15,7 @@
 
 ```
 COH3SimpleTool/
-  COH3SimpleTool.csproj        # AssemblyName=COH3简易工具, net48/x64/WinForms
+  COH3SimpleTool.csproj        # AssemblyName=COH3工具, net48/x64/WinForms
   CoH3MemoryTool/              # 引擎（复制自 SkyEye，黑灰配色改造）
     SimpleProgram.cs           # 入口（单实例互斥）
     SimpleLicenseApp.cs        # 授权状态机（SkyEye LicenseApplication60 同源）
@@ -42,7 +42,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\Build-Protected.ps1 -Smoke
 
 ## 授权与凭据
 
-- 服务端：`LicensingSystem`（默认 `http://127.0.0.1:47835/`，见 app.config）。
+- 服务端：`LicensingSystem`（线上地址 `https://124.220.147.56/`，见 app.config；本机回环仍为 `http://127.0.0.1:47835/`）。
 - 凭据文件与 SkyEye 共享：`%LocalAppData%\Skyeye\SelfHostedLicensing\credentials.dat`（同 DPAPI entropy），SkyEye 记住过的激活码在本工具自动带入。
 - 激活需游戏运行中（读取当前 Steam 身份），与 SkyEye 行为一致。
 

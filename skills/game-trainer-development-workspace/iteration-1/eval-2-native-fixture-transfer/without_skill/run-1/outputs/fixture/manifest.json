@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "model": "offline-simulated-native64",
+  "pointer_size": 8,
+  "byte_order": "little",
+  "pattern": "48 8B 81 ?? ?? ?? ?? 48 8B 0D ?? ?? ?? ?? 48 85 C9",
+  "sessions": [
+    {
+      "id": "A0",
+      "build": "A",
+      "module_base": 5368709120,
+      "heap_base": 8589934592,
+      "module_size": 1024,
+      "heap_size": 2048,
+      "pointer_root": {
+        "rva": 384,
+        "address": 5368709504
+      },
+      "field_layout": {
+        "ptr_offsets": [
+          32
+        ],
+        "health_offset": 56
+      },
+      "health_address": 8589935672,
+      "decoy_addresses": [
+        8589936128,
+        8589936160
+      ],
+      "expected_values": [
+        100,
+        73,
+        91
+      ],
+      "frames": [
+        {
+          "file": "A0.frame0.heap.bin",
+          "sha256": "8b7fe1011540e43467ed5ef76634814355ddfe4e41f3ead562c21e22d80bf684"
+        },
+        {
+          "file": "A0.frame1.heap.bin",
+          "sha256": "daddcddecc86663468c39e362343453f2ffc4ce0ceb4bd3248dc0a464ec5f1e3"
+        },
+        {
+          "file": "A0.frame2.heap.bin",
+          "sha256": "58cdba8174ebba129741ea36caf2bf0c4ea0f52fea78a30b438d26cb608da1c6"
+        }
+      ],
+      "aob": {
+        "unique": {
+          "file": "A0.unique.module.bin",
+          "sha256": "8ade2028964ec766be4cae4d319a2ee12f5cbe33772433de804105b73a59e35e"
+        },
+        "zero": {
+          "file": "A0.zero.module.bin",
+          "sha256": "6ab2a3f2f1fc797c7ed64bb38123ba33283a9d2833572ca6b7e8e948d0305d07"
+        },
+        "multi": {
+          "file": "A0.multi.module.bin",
+          "sha256": "012e3f2b56b9fcc297a37ea9f4ac61bf98308667da02e7acc7e99baf0c6e6c1a"
+        }
+      }
+    },
+    {
+      "id": "A1",
+      "build": "A",
+      "module_base": 5368709120,
+      "heap_base": 8592031744,
+      "module_size": 1024,
+      "heap_size": 2048,
+      "pointer_root": {
+        "rva": 384,
+        "address": 5368709504
+      },
+      "field_layout": {
+        "ptr_offsets": [
+          32
+        ],
+        "health_offset": 56
+      },
+      "health_address": 8592032952,
+      "decoy_addresses": [
+        8592033280,
+        8592033312
+      ],
+      "expected_values": [
+        100,
+        73,
+        91
+      ],
+      "frames": [
+        {
+          "file": "A1.frame0.heap.bin",
+          "sha256": "6072605fe789eb01bc3f9e279b34fd411f2a05f0d08c02e4564f79bcac788ac8"
+        },
+        {
+          "file": "A1.frame1.heap.bin",
+          "sha256": "402f9c6106b891c1fdb1429cd3ed4c0001f47eecd3cd9cebc40a0f9a3cf770cf"
+        },
+        {
+          "file": "A1.frame2.heap.bin",
+          "sha256": "f7f2d934f19973ae291f94949fffc229a96af82f9896e0b38b9d6dc7dfa903f8"
+        }
+      ],
+      "aob": {
+        "unique": {
+          "file": "A1.unique.module.bin",
+          "sha256": "eec470f84b7d8047c77c00f5d1f4d1e7eeac53673e6c478f9903145b73c956de"
+        },
+        "zero": {
+          "file": "A1.zero.module.bin",
+          "sha256": "11fa6833895aaacb1a635a7e32c85fc86250dd8138ceae95b96b5535e53afdd3"
+        },
+        "multi": {
+          "file": "A1.multi.module.bin",
+          "sha256": "b2c3871a9923b582dfbf6587da35ea8415efe59a2eaf6e6918df235a66b39924"
+        }
+      }
+    },
+    {
+      "id": "B0",
+      "build": "B",
+      "module_base": 6442450944,
+      "heap_base": 8606711808,
+      "module_size": 1024,
+      "heap_size": 2048,
+      "pointer_root": {
+        "rva": 576,
+        "address": 6442451520
+      },
+      "field_layout": {
+        "ptr_offsets": [
+          48
+        ],
+        "health_offset": 88
+      },
+      "health_address": 8606712920,
+      "decoy_addresses": [
+        8606713344,
+        8606713376
+      ],
+      "expected_values": [
+        100,
+        73,
+        91
+      ],
+      "frames": [
+        {
+          "file": "B0.frame0.heap.bin",
+          "sha256": "e80ceda43de958739f579d35443c8fa26e92a3bcfe9c6331d39976f201eafbbb"
+        },
+        {
+          "file": "B0.frame1.heap.bin",
+          "sha256": "79697b16abcac5e955c3d40254e93b44dcd68992f91335c536cc0b7016294728"
+        },
+        {
+          "file": "B0.frame2.heap.bin",
+          "sha256": "a7fefaf7a4b21d5c154646d183b24cb46bdec0ce01c1618070333025f89a6a7b"
+        }
+      ],
+      "aob": {
+        "unique": {
+          "file": "B0.unique.module.bin",
+          "sha256": "aef1410409e59945dcd3d48145f32cf48937f2d828a7fa7771eb0f0ef91aa6e0"
+        },
+        "zero": {
+          "file": "B0.zero.module.bin",
+          "sha256": "de378272c180a646b90b1a37b13bfa43e53ca23436f88cd2f9b0e50f19217d9b"
+        },
+        "multi": {
+          "file": "B0.multi.module.bin",
+          "sha256": "f424a88e945631e6795271f2a2a2400fa540d1673c28be6ba1e9e370f32f40dc"
+        }
+      }
+    },
+    {
+      "id": "B1",
+      "build": "B",
+      "module_base": 6442450944,
+      "heap_base": 8608808960,
+      "module_size": 1024,
+      "heap_size": 2048,
+      "pointer_root": {
+        "rva": 576,
+        "address": 6442451520
+      },
+      "field_layout": {
+        "ptr_offsets": [
+          48
+        ],
+        "health_offset": 88
+      },
+      "health_address": 8608810200,
+      "decoy_addresses": [
+        8608810496,
+        8608810528
+      ],
+      "expected_values": [
+        100,
+        73,
+        91
+      ],
+      "frames": [
+        {
+          "file": "B1.frame0.heap.bin",
+          "sha256": "35b03b9b91edefcbf15a8bb4ff3c841ef03d022c51d1dc256845cc3228814c19"
+        },
+        {
+          "file": "B1.frame1.heap.bin",
+          "sha256": "bf3eb2068c8ce018eb33c33cab28b31fa9b068f7256c2b332b950c510ae1f51d"
+        },
+        {
+          "file": "B1.frame2.heap.bin",
+          "sha256": "c99df4af5d31dfaa83671d88ef8c2e6c8a49422a58968f8bf5b066b03b3337ee"
+        }
+      ],
+      "aob": {
+        "unique": {
+          "file": "B1.unique.module.bin",
+          "sha256": "9aed05579172d231677805539b3a17fc82a2af3295515fe1900964ba76fa68bc"
+        },
+        "zero": {
+          "file": "B1.zero.module.bin",
+          "sha256": "e9dbc58e2aeaac1cb65e747ef5814e464f74734d8a8225bed148e0f616849b37"
+        },
+        "multi": {
+          "file": "B1.multi.module.bin",
+          "sha256": "bedc8b644b89d5c33b6a75ede5cb29b01a131f892ee2fcd109b6f1c0255e61b0"
+        }
+      }
+    }
+  ]
+}

@@ -68,7 +68,7 @@ internal sealed class ControlBarForm : Form
 
 	public ControlBarForm()
 	{
-		Text = "COH3简易工具";
+		Text = "COH3工具";
 		base.ClientSize = new Size(824, 118);
 		base.StartPosition = FormStartPosition.CenterScreen;
 		base.FormBorderStyle = FormBorderStyle.None;
@@ -116,20 +116,12 @@ internal sealed class ControlBarForm : Form
 		base.AutoScaleMode = AutoScaleMode.None;
 		Label label = new Label
 		{
-			Text = "COH3简易工具",
+			Text = "COH3工具",
 			Font = Interface45.Font(11f, FontStyle.Bold),
 			ForeColor = Palette46.Ink,
 			Bounds = new Rectangle(14, 10, 170, 26)
 		};
 		base.Controls.Add(label);
-		Label label2 = new Label
-		{
-			Text = "SIMPLE EDITION",
-			Font = Interface45.Font(7.5f),
-			ForeColor = Palette46.Muted,
-			Bounds = new Rectangle(186, 18,120, 18)
-		};
-		base.Controls.Add(label2);
 		connection46 = new Label
 		{
 			Text = "○ 等待对局",
@@ -186,7 +178,6 @@ internal sealed class ControlBarForm : Form
 		};
 		base.MouseDown += value;
 		label.MouseDown += value;
-		label2.MouseDown += value;
 		connection46.MouseDown += value;
 		Paint += delegate(object s, PaintEventArgs e)
 		{
@@ -235,7 +226,7 @@ internal sealed class ControlBarForm : Form
 	public void SetLicenseExpiry60(long unix, string kind = "")
 	{
 		licenseExpiry60 = FormatLicenseExpiry60(unix, kind);
-		tips46.SetToolTip(connection46, licenseExpiry60);
+		UpdateConnection46();
 	}
 
 	internal static string FormatLicenseExpiry60(long unix, string kind)
@@ -486,17 +477,31 @@ internal sealed class ControlBarForm : Form
 					item.Key.Checked = item.Value();
 				}
 			}
-			if (connection46 != null)
-			{
-				connection46.Text = (GameVersion45.Unverified ? "⚠ 版本未验证" : (liveRows ? "● 对局已连接" : "○ 等待对局"));
-				connection46.ForeColor = (liveRows ? Palette46.Ink : Palette46.Muted);
-				tips46.SetToolTip(connection46, licenseExpiry60);
-			}
+			UpdateConnection46();
 		}
 		finally
 		{
 			sync46 = false;
 		}
+	}
+
+	private void UpdateConnection46()
+	{
+		if (connection46 == null)
+		{
+			return;
+		}
+		(string label, string detail) = GameVersion45.Status switch
+		{
+			GameVersion45.CheckStatus.FingerprintMismatch => ("⚠ 版本未验证", "游戏主程序指纹与已验证版本不一致。"),
+			GameVersion45.CheckStatus.ReadFailed => ("⚠ 版本读取失败", "读取游戏主程序失败，未能验证版本。"),
+			_ => (liveRows ? "● 对局已连接" : "○ 等待对局", "")
+		};
+		connection46.Text = label;
+		connection46.ForeColor = (liveRows ? Palette46.Ink : Palette46.Muted);
+		tips46.SetToolTip(connection46, detail.Length != 0 && licenseExpiry60.Length != 0
+			? detail + "\n" + licenseExpiry60
+			: detail + licenseExpiry60);
 	}
 
 	protected override void Dispose(bool disposing)

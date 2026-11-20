@@ -9,7 +9,7 @@
 - [server-tests/](<server-tests/>)
   隔离测试（`Build.ps1 -VerifyServer` 共 120 项；数据库/密钥环使用临时副本）。
 - [deployment/](<deployment/>)
-  部署辅助：[Get-DotNet10.ps1](<deployment/Get-DotNet10.ps1>)（SDK 获取）、[New-DeploymentConfig.ps1](<deployment/New-DeploymentConfig.ps1>)（生成全新私有配置，默认监听 `http://127.0.0.1:47835`）、[Caddyfile](<deployment/Caddyfile>)（域名反代模板）。
+  部署辅助：[Get-DotNet10.ps1](<deployment/Get-DotNet10.ps1>)（SDK 获取）、[New-DeploymentConfig.ps1](<deployment/New-DeploymentConfig.ps1>)（生成全新私有配置，默认监听 `http://127.0.0.1:47835`，可用 `-AllowedHosts` / `-TrustedProxies` 指定公网入口与反代来源）、[Caddyfile](<deployment/Caddyfile>)（域名反代模板；线上实例实际使用 nginx，配置见服务器上的 `/opt/licensing/DEPLOYMENT.md`）。
 - [.cache/](<.cache/>)
   `dotnet-10/`：构建与运行使用的 .NET SDK 10.0.404（含安装校验证明 `dotnet-10-installation.json`）；`packages/`：server / server-tests 的 NuGet 还原目标（`Directory.Build.props` 指定）。两者都是构建必需，不是可随意删除的缓存。
 - [.local/](<.local/>)
@@ -30,7 +30,11 @@
 & .\LicensingSystem\Start-Server.ps1 -ConfigPath .\LicensingSystem\.local\hardening-v2\server.json
 ```
 
-管理入口 `http://127.0.0.1:47835/admin`，管理员令牌取自对应私有配置的 `AdminToken`；客户端不持有它。服务端发布包由 [Publish-Server.ps1](<Publish-Server.ps1>) 生成到 [output/](<output/>)（供 Server.zip 打包，包含本地化启动 wrapper 与 deployment 辅助脚本）。
+管理入口 `http://127.0.0.1:47835/admin`（本机），线上实例为 `https://124.220.147.56/admin`；管理员令牌取自对应私有配置的 `AdminToken`；客户端不持有它。服务端发布包由 [Publish-Server.ps1](<Publish-Server.ps1>) 生成到 [output/](<output/>)（供 Server.zip 打包，包含本地化启动 wrapper 与 deployment 辅助脚本）。
+
+## 线上实例（124.220.147.56）
+
+2026-11-16 起生产授权服务运行在该公网地址：应用只监听回环 `http://127.0.0.1:47835`，nginx 终结 TLS（Let's Encrypt shortlived IP 证书）后反代回环；`AllowedHosts` 含 `124.220.147.56`，`TrustedProxies` 为 `127.0.0.1`。systemd 单元 `licensing.service` 以独立账户 `licensing` 运行 `/opt/dotnet/dotnet /opt/licensing/Licensing.Server.dll`；私有配置 `/opt/licensing/server.local.json`，数据库与密钥目录 `/opt/licensing/data`。`/usr/local/bin/licensing-backup.sh` 每日 03:17 做 SQLite 在线备份并保留 14 份于 `/opt/licensing-backups`；acme.sh 定时续签短期证书。恢复或迁移时必须同时带走 `server.local.json`、`data/leases.db` 与 `data/keys` 中的租约签名私钥，否则旧客户端的公钥 pin 会验签失败。
 
 签名字段、nonce 与规范串以游戏侧[签名契约](<../CoH3/dev/SkyEye/signature-contract.md>)为准。
 

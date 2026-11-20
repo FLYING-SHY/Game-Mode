@@ -1,0 +1,67 @@
+{
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "executable": "C:\\Program Files\\Python311\\python.exe",
+  "runs": [
+    {
+      "step": "create",
+      "command": [
+        "C:\\Program Files\\Python311\\python.exe",
+        "F:\\WorkSpace\\Game\\skills\\game-trainer-development\\scripts\\fixture_lab.py",
+        "create",
+        "--output",
+        "F:\\WorkSpace\\Game\\skills\\game-trainer-development-workspace\\iteration-1\\eval-2-native-fixture-transfer\\without_skill\\run-1\\outputs\\fixture"
+      ],
+      "started_utc": "2026-11-16T01:12:12.172180+00:00",
+      "elapsed_seconds": 0.06790539997746237,
+      "exit_code": 0,
+      "stdout_file": "create.stdout.log",
+      "stderr_file": "create.stderr.log"
+    },
+    {
+      "step": "resolver",
+      "command": [
+        "C:\\Program Files\\Python311\\python.exe",
+        "F:\\WorkSpace\\Game\\skills\\game-trainer-development-workspace\\iteration-1\\eval-2-native-fixture-transfer\\without_skill\\run-1\\outputs\\resolver.py",
+        "--directory",
+        "F:\\WorkSpace\\Game\\skills\\game-trainer-development-workspace\\iteration-1\\eval-2-native-fixture-transfer\\without_skill\\run-1\\outputs\\fixture",
+        "--output",
+        "F:\\WorkSpace\\Game\\skills\\game-trainer-development-workspace\\iteration-1\\eval-2-native-fixture-transfer\\without_skill\\run-1\\outputs"
+      ],
+      "started_utc": "2026-11-16T01:12:12.241721+00:00",
+      "elapsed_seconds": 0.05906449997564778,
+      "exit_code": 0,
+      "stdout_file": "resolver.stdout.log",
+      "stderr_file": "resolver.stderr.log"
+    },
+    {
+      "step": "verify",
+      "command": [
+        "C:\\Program Files\\Python311\\python.exe",
+        "F:\\WorkSpace\\Game\\skills\\game-trainer-development\\scripts\\fixture_lab.py",
+        "verify",
+        "--directory",
+        "F:\\WorkSpace\\Game\\skills\\game-trainer-development-workspace\\iteration-1\\eval-2-native-fixture-transfer\\without_skill\\run-1\\outputs\\fixture",
+        "--result",
+        "F:\\WorkSpace\\Game\\skills\\game-trainer-development-workspace\\iteration-1\\eval-2-native-fixture-transfer\\without_skill\\run-1\\outputs\\candidates.json"
+      ],
+      "started_utc": "2026-11-16T01:12:12.302123+00:00",
+      "elapsed_seconds": 0.06381970000802539,
+      "exit_code": 0,
+      "stdout_file": "verify.stdout.log",
+      "stderr_file": "verify.stderr.log"
+    },
+    {
+      "step": "self-test",
+      "command": [
+        "C:\\Program Files\\Python311\\python.exe",
+        "F:\\WorkSpace\\Game\\skills\\game-trainer-development\\scripts\\fixture_lab.py",
+        "self-test"
+      ],
+      "started_utc": "2026-11-16T01:12:12.367622+00:00",
+      "elapsed_seconds": 0.09115910000400618,
+      "exit_code": 0,
+      "stdout_file": "self-test.stdout.log",
+      "stderr_file": "self-test.stderr.log"
+    }
+  ]
+}

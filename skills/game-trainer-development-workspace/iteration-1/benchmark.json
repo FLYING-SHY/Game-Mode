@@ -1,0 +1,326 @@
+{
+  "metadata": {
+    "skill_name": "game-trainer-development",
+    "skill_path": "F:\\WorkSpace\\Game\\skills\\game-trainer-development",
+    "executor_model": "Host child default; exact model not reported",
+    "analyzer_model": "Host independent graders; exact model not reported",
+    "timestamp": "2026-11-16T01:23:27Z",
+    "evals_run": [
+      1,
+      2,
+      3
+    ],
+    "runs_per_configuration": 1
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5
+      },
+      "expectations": [
+        {
+          "text": "准确解释OpenProcess 0x410及ReadProcessMemory/VirtualQueryEx，并不把窗口RestoreLayer66称为游戏补丁恢复。",
+          "passed": true,
+          "evidence": "outputs/report.md:20-24、46、54-58准确说明1040=0x410=PROCESS_QUERY_INFORMATION|PROCESS_VM_READ、ReadProcessMemory完整读取与VirtualQueryEx区域查询，RestoreLayer66恢复窗口Z序。独立核对Native.cs:25-45、PlayerInfoReader.cs:2311/2350及SquadMarkerWindow.cs:146-163：SetWindowPos(base.Handle, new IntPtr(-1), ...,19u)，未将它解释为游戏补丁恢复；只读结论限定已核查路径。"
+        },
+        {
+          "text": "解释模块相对定位与至少两种结构/读取校验，并给出可复查源码位置。",
+          "passed": true,
+          "evidence": "outputs/report.md:28-40列出image+112918560资源名称表、image+102260400 arena、image+98614988 worldOffset及32位arena相对偏移；给出跨度<=6144且整除48、资源语义名、完整读取字节数、有限浮点、玩家count 1..16及读取前后根/identity复核。独立核对PlayerInfoReader.cs:2355-2446、2697-2799与描述相符，已超过两类校验且出处可复查。"
+        },
+        {
+          "text": "说明扫描对象与预算/缓存/epoch机制，而非误称通用AOB或未知初值扫描器。",
+          "passed": true,
+          "evidence": "outputs/report.md:44-50明确扫描小地图控件类型标记image+65511760，候选须ReadMinimapLayout及位置校验，先树/hint/缓存后区域扫描。列80ms、32MiB请求预算、64KiB块、8字节对齐、64候选/60秒/轮换4个、100/2000ms重试及epoch/token不同职责。独立核对PlayerInfoReader.cs:1539-1814，预算是源码循环检查而非实测硬时限，num2 += num9按请求计数；没有误称通用AOB或未知初值扫描。"
+        },
+        {
+          "text": "解释覆盖层绘制或窗口机制，并区分CoH3特定布局和可迁移工程方法。",
+          "passed": true,
+          "evidence": "outputs/report.md:62-70准确解释独立WinForms无边框/置顶/穿透/不激活、客户区跟随、失效隐藏、主班组窗口OnPaint/GDI；明确AlphaSurface为另一条UpdateLayeredWindow/预乘alpha路线。独立核对SquadMarkerWindow.cs:111-176、600-645及AlphaSurface.cs:84-163。report:85-97将进程身份、校验、预算、epoch/token、绘制生命周期列为可迁移方法，将RVA/vtable/arena/component/矩阵布局/hash列为游戏专属。"
+        },
+        {
+          "text": "准确说明游戏build哈希机制与存量验证报告未覆盖完整对局的限制，不虚构本轮动态验证。",
+          "passed": true,
+          "evidence": "outputs/report.md:12、24区分工具hash与游戏hash，说明路径/长度/mtime缓存SHA256，未知或异常仅Unverified，界面仍允许测试；独立核对GameVersion45.cs:25-49和OverlaySettingsForm.cs:2186-2187。report:74-83、103将120测试/七组/像素音频一致限定为历史报告，实际完整对局/跨会话/长期/第二机未验证；protection-validation.md:54/82直接支持。transcript:3、26记录未启动样本/游戏或构建，没有虚构本轮动态成功。"
+        }
+      ],
+      "notes": [
+        "未提供单独user_notes.md；报告明确原版映射仅五类、其余依赖及动态导入未全审计，真实游戏与跨会话效果均未验证。",
+        "报告与transcript记录token/time未知，不据篇幅或墙钟推造指标。",
+        "完整对局、重启/换局、长期及第二机验证仍属后续验证，不是本次静态任务未完成。",
+        "首次JSON解析编码失败后显式UTF8重读；初次比较受到ILSpy升级通知污染，保留失败工件并排除通知后重新比较。"
+      ]
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5
+      },
+      "expectations": [
+        {
+          "text": "存在可运行定位脚本，从镜像扫描指令、正确按指令末端加有符号RIP位移求根，而非从答案表取布局。",
+          "passed": true,
+          "evidence": "outputs/resolver.py:41-45 对manifest显式投影元信息；59-61、72-74用<i解码disp32，并以base+hit+14+disp求root及从字节取得field。126-150最终truth compare发生在候选保存后。 grader-verification.log：直接调用发现函数，候选及evidence与原产物完全一致；内存毒化pointer_root/field_layout/health_address/decoy_addresses/expected_values后发现结果不变。公开AOB、[100,73,91]与编码位置3/10/14是协议输入，不是答案布局。"
+        },
+        {
+          "text": "候选按两个build分别给出模块相对根、指针链和字段，verify实际通过四session和每session三帧。",
+          "passed": true,
+          "evidence": "outputs/candidates.json：A root_rva=384、ptr_offsets=[32]、health_offset=56，sessions=A0/A1；B=576/[48]/88，sessions=B0/B1。outputs/verify.stdout.log 四session全部passed=true，每项三帧均[100,73,91]，地址分别8589935672、8592032952、8606712920、8608810200。grader-verification.log：独立verify重算与原日志一致，24个镜像hash匹配。"
+        },
+        {
+          "text": "通过受控变化排除两个同起值decoy，定位脚本不硬编码答案字段/链偏移。",
+          "passed": true,
+          "evidence": "outputs/resolver.py:78-99逐字节枚举int32目标与manager之后的uint64指针槽，用slot-manager推导链偏移，field从指令解码；未硬编码0x20/0x30/0x38/0x58。 outputs/resolver-evidence.json每个session保留首帧3个100候选，接受[100,73,91]，排除[100,100,100]及[100,91,73]；每session只剩一条支持链。复核重新计算evidence完全相同，毒化答案元信息仍相同。"
+        },
+        {
+          "text": "保存真实self-test与verify日志，0/1/多命中及恢复冲突均按预期处理。",
+          "passed": true,
+          "evidence": "outputs/self-test.stdout.log：passed=true，11/11 checks=true，包括aob_0_1_multiple_rip、restore_conflict、stale_session等；outputs/verify.stdout.log的12项AOB记录按每session unique/zero/multi=1/0/2，只接受unique；patch_model enabled/disabled_restored/restore_conflict/conflict_preserved全true。outputs/execution.json记录create/resolver/verify/self-test四步退出0，四份stderr为空；grader-verification.log独立verify重算一致。self-test是共同工具的oracle驱动回归，恢复冲突只验证bytearray模型，未把它算成resolver自有补丁实现。"
+        },
+        {
+          "text": "明确这是离线模型且资料公开，未宣称真实进程、真实游戏或盲测验证通过。",
+          "passed": true,
+          "evidence": "outputs/report.md:7、48-60与outputs/transcript.md:29 明确公开输入、非隐藏答案盲测、仅离线SIM模型，并列明真实进程/游戏尚未执行；未发现真实游戏或进程验证通过的宣称。"
+        }
+      ],
+      "notes": [
+        "未见user_notes.md；两组报告自身均明确公开输入非盲测。",
+        "提供的是执行简记及自写运行器日志，原会话完整工具轨迹不在产物中；本次复算独立确认结果，未估造工具次数或总耗时。",
+        "缺少真实进程附加、真实ASLR/重启、内存API、并发与页保护、真实补丁和游戏行为验证。",
+        "现有fixture所有实际RIP位移为正；<i实现正确，复核仅补充负位移编码/扫描/算术检查，并非负位移端到端fixture测试。",
+        "为保留原产物未运行会重写outputs的run_eval.py；只读直接调用发现函数与verify，复核前后outputs文件SHA256不变。"
+      ]
+    },
+    {
+      "eval_id": 3,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6
+      },
+      "expectations": [
+        {
+          "text": "交付实际运行的离线测试脚本及真实结果，而非只有测试计划。",
+          "passed": true,
+          "evidence": "实际读取 outputs/offline_repair_test.py 全332行、report.md、transcript.md 与 run.log。脚本323-332行由 unittest 真实发现和执行测试，结果与退出码来自 result；原日志11项通过。grader 使用 Python 3.11.9 -B 经 runpy 的 __main__ 再执行同一脚本，grader-verification.log 记录 Ran 11 tests、0 failures/errors、entrypoint_exit_code=0 与 grader_process_exit_code=0。无真实进程API或外部写入。"
+        },
+        {
+          "text": "0命中停止采用；多候选不直接选首个，使用指令目标/结构语义验证或报告歧义。",
+          "passed": true,
+          "evidence": "resolve() 95-113行扫描所有候选，semantic() 71-83行检查代码上下文、数据区、对齐、指针对象ACTR/owner/health/count，要求有效候选恰好1个。194-207行断言旧版0x120；新版原始0x120/0x1A0中首个因object_owner淘汰，选择第二个；zero报signature_zero、两个语义有效报semantic_ambiguity，两失败分支writes==0。重跑通过且observations记录原始/有效命中及排除原因。"
+        },
+        {
+          "text": "代码正确计算有符号RIP目标并验证预期指令/边界，含可执行断言。",
+          "passed": true,
+          "evidence": "decode_rip() 63-68行验证48 8B 0D、struct.unpack('<i', ...)，按base+hit+7+disp计算并检查uint64范围；Image.read() 48-52行限制读取边界；semantic()验证完整16字节代码区、上下文、8字节root与20字节object边界。217-232行实际断言正位移0x300、负位移0x80、错误opcode及越区root；315-320行断言负RVA、负长度、末端越界和末字节合法读取，重跑通过。属于固定指令模型边界验证，非通用x64解码证明。"
+        },
+        {
+          "text": "会话身份失效有实际测试；正常补丁启用禁用恢复有实际测试。",
+          "passed": true,
+          "evidence": "Session保存pid/start/base/build/epoch，check_session在enable/disable前比较完整身份。244-258行逐项改变五个字段，对开启与关闭均检查stale_session、全镜像不变及writes不增。260-274行在两个不同PID/start/base/epoch合成会话中反复启停、幂等调用并断言完整镜像恢复。独立重跑相应用例通过。"
+        },
+        {
+          "text": "恢复前检查已安装字节，外部改动引发冲突并保留现场，代码与测试一致。",
+          "passed": true,
+          "evidence": "disable() 149-162行先检查session/owned，完整6字节等于PATCH才恢复resolved.original；不等时先进入conflict并抛restore_conflict，未到write。299-313行安装后将首字节改CC，断言异常、全镜像等于冲突快照、writes保持不变、state=conflict及后续enable受阻。重跑日志记录restore_conflict=cc9090909090、preserved=true。不是打印写死passed。"
+        },
+        {
+          "text": "保持build身份检查并列出尚未执行的真实游戏/跨会话验证，不以fixture替代实测结论。",
+          "passed": true,
+          "evidence": "resolve() 96-98行要求approved build、当前镜像SHA256匹配、完整扫描预算；234-242行实际测试unapproved_build、scan_budget_incomplete及image_identity_mismatch。report.md 17行明确locate自动登记仅为fixture分支构造；64-74行将真实build/反汇编/ASLR/新进程/切局/重连/并发等列为not_run，3/57/82行明确F成功与真实G/R未运行。"
+        }
+      ],
+      "notes": [
+        "没有独立user_notes.md。报告已明确真实G/R未运行，fixture是显式构造而非盲测定位。",
+        "固定模式逐字节扫描与已知指令长度，并不证明真实x64任意流的指令起点。",
+        "部署时approved build清单须人工审核，不应将fixture用locate()自动批准当前hash直接当生产入口。",
+        "恢复短写的faulted分支存在代码但未有专门执行用例；缓存语义复验仅enable初次安装路径，非已启用幂等路径。",
+        "环境无python3.11命令；在本次PowerShell进程中将其设为C:\\Program Files\\Python311\\python.exe别名，再以python3.11 -B运行，并在Python中断言版本3.11。"
+      ]
+    },
+    {
+      "eval_id": 1,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5
+      },
+      "expectations": [
+        {
+          "text": "准确解释OpenProcess 0x410及ReadProcessMemory/VirtualQueryEx，并不把窗口RestoreLayer66称为游戏补丁恢复。",
+          "passed": true,
+          "evidence": "outputs/report.md:5、56、62-70准确说明1040=0x410=PROCESS_QUERY_INFORMATION|PROCESS_VM_READ、ReadProcessMemory读取与VirtualQueryEx区域查询；79行说明RestoreLayer66是SetWindowPos(HWND_TOPMOST,...,19)调整自身窗口堆叠。独立核对Native.cs:25-45、PlayerInfoReader.cs:2311/2350及SquadMarkerWindow.cs:146-163相符；没有误认游戏补丁恢复，也未把未见写API扩大为绝对无写入证明。"
+        },
+        {
+          "text": "解释模块相对定位与至少两种结构/读取校验，并给出可复查源码位置。",
+          "passed": true,
+          "evidence": "outputs/report.md:15、23-48解释image相对RVA、32位arena偏移与世界/玩家/队伍链；列名称表跨度<=6144且整除48、资源语义名、完整读取长度、浮点有限值、玩家count 1..16、升级数量及前后容器/identity复核。独立核对PlayerInfoReader.cs:2355-2446、2697-2799与描述相符，超过两类校验且有明确源码位置。"
+        },
+        {
+          "text": "说明扫描对象与预算/缓存/epoch机制，而非误称通用AOB或未知初值扫描器。",
+          "passed": true,
+          "evidence": "outputs/report.md:50-58明确小地图UI树/类型标记发现：先树、hint与轮换候选，再VirtualQueryEx过滤区域，64KiB块/8字节对齐，80ms或32MiB循环预算、64候选及布局/位置复核；58行解释PID/启动/image/地址缓存和停止发现增加epoch使旧结果失效。独立核对PlayerInfoReader.cs:1539-1814。没有将其说成通用AOB或未知初值扫描；未解释scan token属于额外深度差异，现断言没有要求。"
+        },
+        {
+          "text": "解释覆盖层绘制或窗口机制，并区分CoH3特定布局和可迁移工程方法。",
+          "passed": true,
+          "evidence": "outputs/report.md:74-89准确解释独立Form、透明/穿透/不激活/TopMost、客户区对齐、前台与新鲜度隐藏、投影及OnPaint/GDI+绘制。独立核对SquadMarkerWindow.cs:111-176、600-645；未将AlphaSurface错误归入该窗口。report:93-103将生命周期、结构校验、epoch、预算和覆盖层适配分离列为可迁移方法，明确偏移、arena规则、类型标记及矩阵布局需重新取证。现断言允许解释绘制或窗口，不要求另述AlphaSurface。"
+        },
+        {
+          "text": "准确说明游戏build哈希机制与存量验证报告未覆盖完整对局的限制，不虚构本轮动态验证。",
+          "passed": true,
+          "evidence": "outputs/report.md:17说明SHA256按路径/长度/mtime缓存，未知或异常仅Unverified且允许继续测试，区分工具与游戏hash；独立核对GameVersion45.cs:25-49和OverlaySettingsForm.cs:2186-2187。report:107-122把120测试/七组/像素及音频一致明确限定历史观测，激活窗口不等于进入游戏，完整对局/长期/第二机/全部游戏路径未覆盖；与protection-validation.md:54/82一致。transcript:3、95明确没有本轮运行、构建、测试或服务，不虚构动态验证。"
+        }
+      ],
+      "notes": [
+        "未提供单独user_notes.md；报告明确四类映射范围、没有审计所有依赖、没有复跑存量回归，实际完整对局和性能仍未验证。",
+        "首次JSON编码失败的错误输出包含损坏原JSON；transcript已披露，未有将assertions用于报告的实质证据。",
+        "报告及transcript明确无可用token/time统计，不推造指标。",
+        "原版历史诊断错误原因未定位，报告正确保持未判定；完整对局、重启/换局和性能是后续验证事项。",
+        "默认编码解析eval_metadata失败后显式UTF8重读；使用已有ILSpy静态类型导出，未将静态成功当作动态测量成功。"
+      ]
+    },
+    {
+      "eval_id": 2,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5
+      },
+      "expectations": [
+        {
+          "text": "存在可运行定位脚本，从镜像扫描指令、正确按指令末端加有符号RIP位移求根，而非从答案表取布局。",
+          "passed": true,
+          "evidence": "outputs/resolver.py:31-38 对manifest显式投影id/build/base/文件名；46-50以<i解码并按mb+h+14+disp求root；63读取manager。发现阶段无答案字段读取。 grader-verification.log：直接调用发现函数，候选及evidence与原产物完全一致；内存毒化pointer_root/field_layout/health_address/decoy_addresses/expected_values后发现结果不变。公开AOB、[100,73,91]与编码位置3/10/14是协议输入，不是答案布局。"
+        },
+        {
+          "text": "候选按两个build分别给出模块相对根、指针链和字段，verify实际通过四session和每session三帧。",
+          "passed": true,
+          "evidence": "outputs/candidates.json：A root_rva=384、ptr_offsets=[32]、health_offset=56，sessions=A0/A1；B=576/[48]/88，sessions=B0/B1。outputs/verify.stdout.log 四session全部passed=true，每项三帧均[100,73,91]，地址分别8589935672、8592032952、8606712920、8608810200。grader-verification.log：独立verify重算与原日志一致，24个镜像hash匹配。"
+        },
+        {
+          "text": "通过受控变化排除两个同起值decoy，定位脚本不硬编码答案字段/链偏移。",
+          "passed": true,
+          "evidence": "outputs/resolver.py:64-93按4字节扫描int32、按8字节扫描指针，用slot_address-manager推导链偏移，field从指令解码；4/8是对齐假设，未硬编码答案偏移。 outputs/resolver-evidence.json每个session保留首帧3个100候选，接受[100,73,91]，排除[100,100,100]及[100,91,73]；每session只剩一条支持链。复核重新计算evidence完全相同，毒化答案元信息仍相同。"
+        },
+        {
+          "text": "保存真实self-test与verify日志，0/1/多命中及恢复冲突均按预期处理。",
+          "passed": true,
+          "evidence": "outputs/self-test.stdout.log：passed=true，11/11 checks=true，包括aob_0_1_multiple_rip、restore_conflict、stale_session等；outputs/verify.stdout.log的12项AOB记录按每session unique/zero/multi=1/0/2，只接受unique；patch_model enabled/disabled_restored/restore_conflict/conflict_preserved全true。outputs/execution.json记录create/resolver/verify/self-test四步退出0，四份stderr为空；grader-verification.log独立verify重算一致。self-test是共同工具的oracle驱动回归，恢复冲突只验证bytearray模型，未把它算成resolver自有补丁实现。"
+        },
+        {
+          "text": "明确这是离线模型且资料公开，未宣称真实进程、真实游戏或盲测验证通过。",
+          "passed": true,
+          "evidence": "outputs/report.md:9-11、70-74与outputs/transcript.md:5、12 明确公开输入、非隐藏答案盲测、仅离线SIM模型，并列明真实进程/游戏尚未执行；未发现真实游戏或进程验证通过的宣称。"
+        }
+      ],
+      "notes": [
+        "未见user_notes.md；两组报告自身均明确公开输入非盲测。",
+        "提供的是执行简记及自写运行器日志，原会话完整工具轨迹不在产物中；本次复算独立确认结果，未估造工具次数或总耗时。",
+        "缺少真实进程附加、真实ASLR/重启、内存API、并发与页保护、真实补丁和游戏行为验证。",
+        "现有fixture所有实际RIP位移为正；<i实现正确，复核仅补充负位移编码/扫描/算术检查，并非负位移端到端fixture测试。",
+        "为保留原产物未运行会重写outputs的run_eval.py；只读直接调用发现函数与verify，复核前后outputs文件SHA256不变。"
+      ]
+    },
+    {
+      "eval_id": 3,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6
+      },
+      "expectations": [
+        {
+          "text": "交付实际运行的离线测试脚本及真实结果，而非只有测试计划。",
+          "passed": true,
+          "evidence": "实际读取outputs/offline_test.py全275行、report.md、transcript.md、test.log及results.json。259-275行用unittest发现和执行测试、从result构造统计并决定退出码，非打印写死passed；原日志14 tests通过。grader用Python3.11.9 -B 经runpy __main__实际重跑，grader-verification.log记14 tests、0 failures/errors、entrypoint_exit_code=0及grader_process_exit_code=0。仅截留入口写results.json这一项副作用，不改变测试或判断逻辑。"
+        },
+        {
+          "text": "0命中停止采用；多候选不直接选首个，使用指令目标/结构语义验证或报告歧义。",
+          "passed": true,
+          "evidence": "select() 64-78行收集所有原始候选，按有符号RIP目标的8字节访问范围过滤；len(valid)!=1立即报错，非取首个。144-165行断言零候选candidate_count:0;raw:0、多有效候选candidate_count:2;raw:2并保持全缓冲区不变；另测仅一个目标合规与全部目标越区。重跑全部通过。此处语义仅目标区域，深度有限，但报告歧义分支足以满足本断言。"
+        },
+        {
+          "text": "代码正确计算有符号RIP目标并验证预期指令/边界，含可执行断言。",
+          "passed": true,
+          "evidence": "decode() 55-61行检查完整10字节范围及48 8B 05/48 85 C0上下文，以struct.unpack_from('<i',...)读signed disp32，返回rva+7+displacement。select()限制代码区及目标起点[128,184]以容纳8字节访问。138-142行正位移目标160及VA=0x1400000A0；177-185行负位移-71解出32、错误opcode与末端截断实际异常，重跑通过。report 47行明确逐字节扫描不证明真实可变长指令边界；此pass限固定模型。"
+        },
+        {
+          "text": "会话身份失效有实际测试；正常补丁启用禁用恢复有实际测试。",
+          "passed": true,
+          "evidence": "validate_session() 89-98行比较session/build/base并保持stale状态。187-197行实际验证启用、重复启用、关闭、全镜像恢复及事件顺序；221-247行测试同址新session在启用/恢复两种路径报stale、base/build变化失效、新session新解析可正常启停。独立grader的CountingBuffer额外证实stale enable/restore write_delta=0，日志有记录。"
+        },
+        {
+          "text": "恢复前检查已安装字节，外部改动引发冲突并保留现场，代码与测试一致。",
+          "passed": true,
+          "evidence": "transition() 100-125行先读当前7字节，enabled状态要求等于PATCH；不等则设conflict并抛byte_conflict，早于118行唯一写入。208-219行安装后改第3字节0x41，断言恢复冲突、全缓冲区保留、conflict状态及后续启用冻结。原测试没有写计数，grader重跑后另用CountingBuffer跟踪__setitem__，确认恢复冲突write_delta=0且whole_buffer_preserved=true；没有用字节相等单独冒充零写证明。"
+        },
+        {
+          "text": "保持build身份检查并列出尚未执行的真实游戏/跨会话验证，不以fixture替代实测结论。",
+          "passed": true,
+          "evidence": "select() 65-68行保留build/size/hash gate，167-175行实际测试build与hash失配。report 24-25行区分fixture自动造profile与生产审核，并指出整个运行时模块hash局限；68-77行明确真实build/反汇编/ASLR/重启/PID复用/同址重载/并发等均待执行。5行及transcript 54行仅称合成bytearray通过，未声称线上验证。"
+        }
+      ],
+      "notes": [
+        "没有独立user_notes.md。报告主动限定为固定指令、串行稳定缓冲区模型。",
+        "session字符串代表实例/模块代次，但未像with_skill将PID/start/epoch拆分逐项测试。",
+        "目标语义只检查引用地址区域，未解引用验证对象类型、owner或字段不变量。",
+        "原产物冲突测试只比较字节快照；独立grader已补计数探针确认零写，交付测试自身可补持久化的计数断言。",
+        "未模拟部分写、读写异常、真实线程、模块卸载或并发窗口；报告如实列为待验证。",
+        "为不改原产物，grader在runpy执行__main__期间拦截精确results.json的Path.write_text；真实生成统计照常打印到grader-verification.log，其余测试与退出逻辑保持原样。",
+        "python3.11命令原环境未注册，在单次PowerShell将其设为C:\\Program Files\\Python311\\python.exe别名，使用-B，并在Python内断言3.11版本。"
+      ]
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.00"
+    }
+  },
+  "notes": [
+    "每题每配置仅一次；三题合计六次执行。这是方法与交接质量检查，不是跨游戏成功率估计。",
+    "宿主未给出完整代理任务耗时、token和总工具调用数，已移除聚合器用0填充的资源统计；模型测试耗时不能代替代理耗时。",
+    "无技能基线仍能使用既有通用技能与本机工具；两组都有相同公开输入。新技能组另读主技能及按需参考资料。",
+    "第二案例生成器与协议公开布局，属于已知材料下的字节发现验证，并非隐藏oracle盲测；评分者另以毒化ground truth检查定位算法独立性。",
+    "所有真实进程、真实游戏、跨实际会话与新机器交付验证仍为not_run。"
+  ]
+}

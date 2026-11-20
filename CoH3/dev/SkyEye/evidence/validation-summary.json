@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-13T06:59:11.478583+00:00",
+  "generatedAt": "2026-11-16T07:55:42.920788+00:00",
   "passed": true,
   "serverChecksPassed": 120,
   "rawPassingModes": 7,
   "releasePassingModes": 7,
   "reactorTrialPassingModes": 7,
-  "rawSha256": "A2BD412924CE669666AFC4FCAA68B96FA5A6AE29B2BF6A32D89EF1466F20EF10",
-  "releaseSha256": "636206FDD6DC6EEDA979D5C3D1FC21432E6AAFFBBBAD899299A835E28CE1CE6B",
+  "rawSha256": "A9AA1858E08A34509C2F0AD5DA1039E9A1C7580EBDBDBE9E617A1411755650EC",
+  "releaseSha256": "CDCA3D5AA5A351201729E713141CE4E5F34701064A0970ABDD84BB6F0242EBCF",
   "reactorTrialSha256": "6551EB5BF91CBB34D579590E4EA70C04FAC55F1A00BE6AF22EB3B3F348EB7F25",
   "pictures": [
     {
@@ -91,11 +91,12 @@
     }
   ],
   "sessionCleanupChecks": 12,
+  "globalActiveSessions": 0,
   "realEntry": {
-    "Exe": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\client\\天穹之眼-自有授权版-v0.60.8.exe",
-    "Sha256": "636206FDD6DC6EEDA979D5C3D1FC21432E6AAFFBBBAD899299A835E28CE1CE6B",
-    "Pid": 17512,
-    "Started": "2026-11-13T14:57:03.7592958+08:00",
+    "Exe": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\verification\\sandbox\\real-entry-20261116\\天穹之眼-自有授权版-v0.60.8.exe",
+    "Sha256": "CDCA3D5AA5A351201729E713141CE4E5F34701064A0970ABDD84BB6F0242EBCF",
+    "Pid": 24036,
+    "Started": "2026-11-16T15:54:55.1011420+08:00",
     "WindowCaptured": true,
     "Closed": true
   },
@@ -108,12 +109,17 @@
   "releaseIlspyExportExitCode": 0,
   "releaseIlspyCSharpFiles": 56,
   "protectedTiming": {
-    "firstHeartbeatHttpMs": 28117,
-    "activationHttpMs": 107,
-    "heartbeatIntervalMs": 28010,
-    "networkGateClosedObservedMs": 59178
+    "firstHeartbeatHttpMs": 134,
+    "activationHttpMs": 156,
+    "heartbeatIntervalMs": 28229,
+    "networkGateClosedObservedMs": 59339
   },
   "timingSource": "protected-coordinator/network execution logs; elapsed values are wall time since harness startup, except interval subtraction",
+  "deployment": {
+    "baseUrl": "https://124.220.147.56/",
+    "transport": "TLS with a publicly trusted Let's Encrypt IP certificate",
+    "endpoint": "nginx 1.29.8 -> http://127.0.0.1:47835 (ASP.NET Core 10) on 124.220.147.56"
+  },
   "limitations": [
     "Reactor output is a 14-day demo experiment and excluded from every delivery archive.",
     "ILSpy still exports release C#; obfuscation raises analysis cost.",

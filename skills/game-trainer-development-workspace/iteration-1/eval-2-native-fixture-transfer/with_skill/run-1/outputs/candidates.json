@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "candidates": [
+    {
+      "build": "A",
+      "root_rva": 384,
+      "ptr_offsets": [
+        32
+      ],
+      "health_offset": 56,
+      "sessions": [
+        "A0",
+        "A1"
+      ],
+      "resolved_addresses": {
+        "A0": 8589935672,
+        "A1": 8592032952
+      }
+    },
+    {
+      "build": "B",
+      "root_rva": 576,
+      "ptr_offsets": [
+        48
+      ],
+      "health_offset": 88,
+      "sessions": [
+        "B0",
+        "B1"
+      ],
+      "resolved_addresses": {
+        "B0": 8606712920,
+        "B1": 8608810200
+      }
+    }
+  ]
+}

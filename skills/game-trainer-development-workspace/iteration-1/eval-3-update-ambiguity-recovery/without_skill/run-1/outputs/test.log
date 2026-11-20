@@ -1,0 +1,33 @@
+test_all_targets_invalid (__main__.OfflineTests.test_all_targets_invalid) ... ok
+test_build_and_hash_are_required (__main__.OfflineTests.test_build_and_hash_are_required) ... ok
+test_context_instruction_change_blocks_enable (__main__.OfflineTests.test_context_instruction_change_blocks_enable) ... ok
+test_enable_conflict_does_not_write (__main__.OfflineTests.test_enable_conflict_does_not_write) ... ok
+test_enable_disable_exact_restoration (__main__.OfflineTests.test_enable_disable_exact_restoration) ... ok
+test_module_reload_and_rebase_invalidate (__main__.OfflineTests.test_module_reload_and_rebase_invalidate) ... ok
+test_new_build_ambiguous_no_first_match (__main__.OfflineTests.test_new_build_ambiguous_no_first_match) ... ok
+test_new_session_fresh_resolution (__main__.OfflineTests.test_new_session_fresh_resolution) ... ok
+test_old_build_unique (__main__.OfflineTests.test_old_build_unique) ... ok
+test_restart_same_address_invalidates_enable_and_restore (__main__.OfflineTests.test_restart_same_address_invalidates_enable_and_restore) ... ok
+test_restore_conflict_preserves_other_component (__main__.OfflineTests.test_restore_conflict_preserves_other_component) ... ok
+test_semantic_filter_resolves_one_candidate (__main__.OfflineTests.test_semantic_filter_resolves_one_candidate) ... ok
+test_signed_rip_and_expected_instruction (__main__.OfflineTests.test_signed_rip_and_expected_instruction) ... ok
+test_zero_candidates_no_write (__main__.OfflineTests.test_zero_candidates_no_write) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.002s
+
+OK
+{
+  "started_at_utc": "2026-11-16T01:12:18.999853+00:00",
+  "finished_at_utc": "2026-11-16T01:12:19.001851+00:00",
+  "elapsed_seconds": 0.001659700006712228,
+  "tests_run": 14,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "data_source": "synthetic bytearray only",
+  "real_process_attached": false,
+  "tokens": null,
+  "tokens_note": "not measured; no model token telemetry available"
+}

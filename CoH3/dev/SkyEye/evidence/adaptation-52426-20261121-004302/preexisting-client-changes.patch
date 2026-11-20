@@ -1,0 +1,1660 @@
+﻿diff --git a/CoH3/dev/COH3SimpleTool/Build-Protected.ps1 b/CoH3/dev/COH3SimpleTool/Build-Protected.ps1
+index e8f4335..a8d6bdd 100644
+--- a/CoH3/dev/COH3SimpleTool/Build-Protected.ps1
++++ b/CoH3/dev/COH3SimpleTool/Build-Protected.ps1
+@@ -1,4 +1,4 @@
+-param([switch]$Smoke)
++﻿param([switch]$Smoke)
+ $ErrorActionPreference = 'Stop'
+ $root = $PSScriptRoot
+ $pinSource = [IO.File]::ReadAllText((Join-Path $root 'CoH3MemoryTool\PinnedLeaseKey60.cs'))
+@@ -35,8 +35,9 @@ if (-not (Test-Path -LiteralPath $tool)) {
+ $inputPath = Join-Path $root 'bin\Release\net48'
+ $outputPath = Join-Path $root 'bin\Protected\net48'
+ New-Item -ItemType Directory -Path $outputPath -Force | Out-Null
+-$exeName = (Get-ChildItem -LiteralPath $inputPath -Filter '*.exe' -File | Select-Object -First 1).Name
+-if (-not $exeName) { throw 'No built executable found in ' + $inputPath }
++$project = [xml][IO.File]::ReadAllText((Join-Path $root 'COH3SimpleTool.csproj'))
++$exeName = $project.SelectSingleNode('/Project/PropertyGroup/AssemblyName').InnerText + '.exe'
++if (-not (Test-Path -LiteralPath (Join-Path $inputPath $exeName) -PathType Leaf)) { throw 'Built executable not found: ' + $exeName }
+ $escape = { param($value) [System.Security.SecurityElement]::Escape([string]$value) }
+ $inXml = & $escape $inputPath
+ $outXml = & $escape $outputPath
+@@ -77,10 +78,13 @@ try {
+     if ($LASTEXITCODE -ne 0) { throw 'Obfuscation failed; no release produced.' }
+ } finally { $env:DOTNET_ROOT = $previousRoot }
+ Copy-Item -LiteralPath (Join-Path $inputPath ($exeName + '.config')) -Destination $outputPath -Force
++$runtimeState = @('overlay-settings.txt','minimap-location-cache.txt','minimap-ui-root-cache.txt','alert-sounds.txt','air-diagnostics.log','air-outline-diagnostics.log','minimap-diagnostics.log','overlay-diagnostics.log')
+ $delivery = Join-Path $repo 'CoH3\output\COH3SimpleTool'
+ New-Item -ItemType Directory -Path $delivery -Force | Out-Null
+ Copy-Item -LiteralPath (Join-Path $outputPath $exeName) -Destination $delivery -Force
+ Copy-Item -LiteralPath (Join-Path $outputPath ($exeName + '.config')) -Destination $delivery -Force
++# Runtime preferences and diagnostics are user state, never part of a delivery.
++Get-ChildItem -LiteralPath $delivery -File -ErrorAction SilentlyContinue | Where-Object { $_.Name -in $runtimeState } | Remove-Item -Force
+ $summary = [ordered]@{Run=$stamp;Tool='Obfuscar.GlobalTool 2.2.50';InputSha256=(Get-FileHash -LiteralPath (Join-Path $inputPath $exeName)).Hash;OutputSha256=(Get-FileHash -LiteralPath (Join-Path $delivery $exeName)).Hash;Executable=(Join-Path $delivery $exeName);PrivateMapping=(Join-Path $run 'private-renaming-map.xml');NoPublicSymbols=$true}
+ $summary | ConvertTo-Json -Depth 5 | Set-Content -Encoding utf8 (Join-Path $run 'build-summary.json')
+ $summary | ConvertTo-Json -Depth 5 | Set-Content -Encoding utf8 (Join-Path $root 'evidence\latest-build.json')
+@@ -94,9 +98,13 @@ if ($Smoke) {
+         do { Start-Sleep -Milliseconds 500; $p.Refresh() } while ($p.MainWindowHandle -eq [IntPtr]::Zero -and -not $p.HasExited -and (Get-Date) -lt $deadline)
+         if ($p.HasExited) { throw ('Protected exe exited during smoke test with code ' + $p.ExitCode + '.') }
+         if ($p.MainWindowHandle -eq [IntPtr]::Zero) { throw 'Protected exe produced no main window.' }
++        $expectedTitle = [IO.Path]::GetFileNameWithoutExtension($exeName)
++        if ($p.MainWindowTitle -notin @($expectedTitle, ($expectedTitle + ' · 激活'))) { throw ('Unexpected window title: ' + $p.MainWindowTitle) }
+         & $capture -TargetProcessId $p.Id -OutputPrefix (Join-Path $evidence 'login') | Tee-Object -FilePath (Join-Path $evidence 'capture.json')
+     } finally {
+         if (-not $p.HasExited) { Stop-Process -Id $p.Id -Force }
+     }
++    # The smoke run exercises the delivered binary in place; drop the state it produced.
++    Get-ChildItem -LiteralPath $delivery -File -ErrorAction SilentlyContinue | Where-Object { $_.Name -in $runtimeState } | Remove-Item -Force
+ }
+ Write-Output ('Protected executable: ' + $summary.Executable)
+diff --git a/CoH3/dev/COH3SimpleTool/COH3SimpleTool.csproj b/CoH3/dev/COH3SimpleTool/COH3SimpleTool.csproj
+index 93ac66b..ea0836f 100644
+--- a/CoH3/dev/COH3SimpleTool/COH3SimpleTool.csproj
++++ b/CoH3/dev/COH3SimpleTool/COH3SimpleTool.csproj
+@@ -1,6 +1,6 @@
+ <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+   <PropertyGroup>
+-    <AssemblyName>COH3简易工具</AssemblyName>
++    <AssemblyName>COH3工具</AssemblyName>
+     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+     <OutputType>WinExe</OutputType>
+     <StartupObject>CoH3MemoryTool.SimpleProgram</StartupObject>
+diff --git a/CoH3/dev/COH3SimpleTool/CoH3MemoryTool/BlackLoginForm.cs b/CoH3/dev/COH3SimpleTool/CoH3MemoryTool/BlackLoginForm.cs
+index 7f6262c..6edd2b5 100644
+--- a/CoH3/dev/COH3SimpleTool/CoH3MemoryTool/BlackLoginForm.cs
++++ b/CoH3/dev/COH3SimpleTool/CoH3MemoryTool/BlackLoginForm.cs
+@@ -18,7 +18,7 @@ internal sealed class BlackLoginForm : Form
+ 
+ 	public BlackLoginForm(LicenseCredentials60 saved)
+ 	{
+-		Text = "COH3简易工具 · 激活";
++		Text = "COH3工具 · 激活";
+ 		base.ClientSize = new Size(400, 212);
+ 		base.MinimumSize = base.Size;
+ 		base.MaximumSize = base.Size;
+diff --git a/CoH3/dev/COH3SimpleTool/CoH3MemoryTool/ControlBarForm.cs b/CoH3/dev/COH3SimpleTool/CoH3MemoryTool/ControlBarForm.cs
+index 5a21a40..1f60e35 100644
+--- a/CoH3/dev/COH3SimpleTool/CoH3MemoryTool/ControlBarForm.cs
++++ b/CoH3/dev/COH3SimpleTool/CoH3MemoryTool/ControlBarForm.cs
+@@ -68,7 +68,7 @@ internal sealed class ControlBarForm : Form
+ 
+ 	public ControlBarForm()
+ 	{
+-		Text = "COH3简易工具";
++		Text = "COH3工具";
+ 		base.ClientSize = new Size(824, 118);
+ 		base.StartPosition = FormStartPosition.CenterScreen;
+ 		base.FormBorderStyle = FormBorderStyle.None;
+@@ -116,20 +116,12 @@ internal sealed class ControlBarForm : Form
+ 		base.AutoScaleMode = AutoScaleMode.None;
+ 		Label label = new Label
+ 		{
+-			Text = "COH3简易工具",
++			Text = "COH3工具",
+ 			Font = Interface45.Font(11f, FontStyle.Bold),
+ 			ForeColor = Palette46.Ink,
+ 			Bounds = new Rectangle(14, 10, 170, 26)
+ 		};
+ 		base.Controls.Add(label);
+-		Label label2 = new Label
+-		{
+-			Text = "SIMPLE EDITION",
+-			Font = Interface45.Font(7.5f),
+-			ForeColor = Palette46.Muted,
+-			Bounds = new Rectangle(186, 18,120, 18)
+-		};
+-		base.Controls.Add(label2);
+ 		connection46 = new Label
+ 		{
+ 			Text = "○ 等待对局",
+@@ -186,7 +178,6 @@ internal sealed class ControlBarForm : Form
+ 		};
+ 		base.MouseDown += value;
+ 		label.MouseDown += value;
+-		label2.MouseDown += value;
+ 		connection46.MouseDown += value;
+ 		Paint += delegate(object s, PaintEventArgs e)
+ 		{
+@@ -235,7 +226,7 @@ internal sealed class ControlBarForm : Form
+ 	public void SetLicenseExpiry60(long unix, string kind = "")
+ 	{
+ 		licenseExpiry60 = FormatLicenseExpiry60(unix, kind);
+-		tips46.SetToolTip(connection46, licenseExpiry60);
++		UpdateConnection46();
+ 	}
+ 
+ 	internal static string FormatLicenseExpiry60(long unix, string kind)
+@@ -486,12 +477,7 @@ internal sealed class ControlBarForm : Form
+ 					item.Key.Checked = item.Value();
+ 				}
+ 			}
+-			if (connection46 != null)
+-			{
+-				connection46.Text = (GameVersion45.Unverified ? "⚠ 版本未验证" : (liveRows ? "● 对局已连接" : "○ 等待对局"));
+-				connection46.ForeColor = (liveRows ? Palette46.Ink : Palette46.Muted);
+-				tips46.SetToolTip(connection46, licenseExpiry60);
+-			}
++			UpdateConnection46();
+ 		}
+ 		finally
+ 		{
+@@ -499,6 +485,25 @@ internal sealed class ControlBarForm : Form
+ 		}
+ 	}
+ 
++	private void UpdateConnection46()
++	{
++		if (connection46 == null)
++		{
++			return;
++		}
++		(string label, string detail) = GameVersion45.Status switch
++		{
++			GameVersion45.CheckStatus.FingerprintMismatch => ("⚠ 版本未验证", "游戏主程序指纹与已验证版本不一致。"),
++			GameVersion45.CheckStatus.ReadFailed => ("⚠ 版本读取失败", "读取游戏主程序失败，未能验证版本。"),
++			_ => (liveRows ? "● 对局已连接" : "○ 等待对局", "")
++		};
++		connection46.Text = label;
++		connection46.ForeColor = (liveRows ? Palette46.Ink : Palette46.Muted);
++		tips46.SetToolTip(connection46, detail.Length != 0 && licenseExpiry60.Length != 0
++			? detail + "\n" + licenseExpiry60
++			: detail + licenseExpiry60);
++	}
++
+ 	protected override void Dispose(bool disposing)
+ 	{
+ 		if (disposing)
+diff --git a/CoH3/dev/COH3SimpleTool/CoH3MemoryTool/GameVersion45.cs b/CoH3/dev/COH3SimpleTool/CoH3MemoryTool/GameVersion45.cs
+index 64d72c2..f68680a 100644
+--- a/CoH3/dev/COH3SimpleTool/CoH3MemoryTool/GameVersion45.cs
++++ b/CoH3/dev/COH3SimpleTool/CoH3MemoryTool/GameVersion45.cs
+@@ -13,9 +13,17 @@ internal static class GameVersion45
+ 
+ 	private static string cacheKey;
+ 
+-	private static int unverified;
++	internal enum CheckStatus
++	{
++		NotChecked,
++		Verified,
++		FingerprintMismatch,
++		ReadFailed
++	}
++
++	private static int checkStatus;
+ 
+-	public static bool Unverified => Volatile.Read(ref unverified) != 0;
++	internal static CheckStatus Status => (CheckStatus)Volatile.Read(ref checkStatus);
+ 
+ 	internal static bool MatchesHash(string hash)
+ 	{
+@@ -40,12 +48,12 @@ internal static class GameVersion45
+ 					using SHA256 sHA = SHA256.Create();
+ 					hash = BitConverter.ToString(sHA.ComputeHash(inputStream)).Replace("-", "").ToLowerInvariant();
+ 				}
+-				Volatile.Write(ref unverified, (!MatchesHash(hash)) ? 1 : 0);
++				Volatile.Write(ref checkStatus, (int)(MatchesHash(hash) ? CheckStatus.Verified : CheckStatus.FingerprintMismatch));
+ 				cacheKey = text;
+ 			}
+ 			catch
+ 			{
+-				Volatile.Write(ref unverified, 1);
++				Volatile.Write(ref checkStatus, (int)CheckStatus.ReadFailed);
+ 				cacheKey = null;
+ 			}
+ 		}
+diff --git a/CoH3/dev/COH3SimpleTool/CoH3MemoryTool/LicenseConfiguration60.cs b/CoH3/dev/COH3SimpleTool/CoH3MemoryTool/LicenseConfiguration60.cs
+index e6efe11..d0d3c70 100644
+--- a/CoH3/dev/COH3SimpleTool/CoH3MemoryTool/LicenseConfiguration60.cs
++++ b/CoH3/dev/COH3SimpleTool/CoH3MemoryTool/LicenseConfiguration60.cs
+@@ -7,7 +7,7 @@ internal static class LicenseConfiguration60
+ {
+ 	public static string ProductId => string.IsNullOrWhiteSpace(ConfigurationManager.AppSettings["LicensingProductId"]) ? "CoH3FowTool" : ConfigurationManager.AppSettings["LicensingProductId"].Trim();
+ 
+-	public static Uri ServerBaseAddress => ParseServerBaseAddress(ConfigurationManager.AppSettings["LicensingServerBaseUrl"] ?? "http://127.0.0.1:47835/");
++	public static Uri ServerBaseAddress => ParseServerBaseAddress(ConfigurationManager.AppSettings["LicensingServerBaseUrl"] ?? "https://124.220.147.56/");
+ 
+ 	internal static Uri ParseServerBaseAddress(string value)
+ 	{
+diff --git a/CoH3/dev/COH3SimpleTool/CoH3MemoryTool/SimpleProgram.cs b/CoH3/dev/COH3SimpleTool/CoH3MemoryTool/SimpleProgram.cs
+index 795fc42..b43c448 100644
+--- a/CoH3/dev/COH3SimpleTool/CoH3MemoryTool/SimpleProgram.cs
++++ b/CoH3/dev/COH3SimpleTool/CoH3MemoryTool/SimpleProgram.cs
+@@ -21,7 +21,7 @@ internal static class SimpleProgram
+ 		{
+ 			if (!createdNew)
+ 			{
+-				MessageBox.Show("COH3简易工具已在运行，请先退出已有窗口。", "COH3简易工具");
++				MessageBox.Show("COH3工具已在运行，请先退出已有窗口。", "COH3工具");
+ 				return 1;
+ 			}
+ 			Application.Run(new SimpleLicenseApp());
+diff --git a/CoH3/dev/COH3SimpleTool/Properties/AssemblyInfo.cs b/CoH3/dev/COH3SimpleTool/Properties/AssemblyInfo.cs
+index fb9d166..5209006 100644
+--- a/CoH3/dev/COH3SimpleTool/Properties/AssemblyInfo.cs
++++ b/CoH3/dev/COH3SimpleTool/Properties/AssemblyInfo.cs
+@@ -2,8 +2,8 @@ using System.Reflection;
+ using System.Runtime.CompilerServices;
+ using System.Runtime.Versioning;
+ 
+-[assembly: AssemblyTitle("COH3简易工具")]
+-[assembly: AssemblyProduct("COH3简易工具")]
+-[assembly: AssemblyDescription("英雄连3 · 简易信息工具")]
++[assembly: AssemblyTitle("COH3工具")]
++[assembly: AssemblyProduct("COH3工具")]
++[assembly: AssemblyDescription("英雄连3 · 信息工具")]
+ [assembly: AssemblyFileVersion("0.60.8.0")]
+ [assembly: AssemblyVersion("0.60.8.0")]
+diff --git a/CoH3/dev/COH3SimpleTool/README.md b/CoH3/dev/COH3SimpleTool/README.md
+index 37d1a81..0b9a90b 100644
+--- a/CoH3/dev/COH3SimpleTool/README.md
++++ b/CoH3/dev/COH3SimpleTool/README.md
+@@ -1,4 +1,4 @@
+-# COH3简易工具（SkyEye 简易版）
++# COH3工具
+ 
+ 英雄连3 本地信息工具 · 极简黑色界面。引擎复用 `CoH3\dev\SkyEye` 同源内存读取引擎（只读，不写入游戏内存），授权接入 LicensingSystem 自有授权服务（产品 `CoH3FowTool`，与 SkyEye 卡密通用）。
+ 
+@@ -7,7 +7,7 @@
+ - 登录页：激活码 + 记住 + 进入（系统标题栏，红字错误行）。
+ - 功能页：824x118 悬浮控制条（默认置顶，可拖动）
+   - 三个开关：顶部玩家信息 / 主画面标记 / 小地图标记（参数自动保存到 exe 旁 `overlay-settings.txt`）
+-  - 连接状态：`○ 等待对局` / `● 对局已连接` / `⚠ 版本未验证`（悬停显示授权到期）
++  - 连接状态：`○ 等待对局` / `● 对局已连接` / `⚠ 版本未验证` / `⚠ 版本读取失败`（悬停显示版本提示详情及授权到期）
+   - `退出` 按钮返回登录页换码；`—` 最小化；`×` 关闭并下线
+ - 无热键、无声音、无设置面板：启动游戏后自动挂接。
+ 
+@@ -15,7 +15,7 @@
+ 
+ ```
+ COH3SimpleTool/
+-  COH3SimpleTool.csproj        # AssemblyName=COH3简易工具, net48/x64/WinForms
++  COH3SimpleTool.csproj        # AssemblyName=COH3工具, net48/x64/WinForms
+   CoH3MemoryTool/              # 引擎（复制自 SkyEye，黑灰配色改造）
+     SimpleProgram.cs           # 入口（单实例互斥）
+     SimpleLicenseApp.cs        # 授权状态机（SkyEye LicenseApplication60 同源）
+@@ -42,7 +42,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\Build-Protected.ps1 -Smoke
+ 
+ ## 授权与凭据
+ 
+-- 服务端：`LicensingSystem`（默认 `http://127.0.0.1:47835/`，见 app.config）。
++- 服务端：`LicensingSystem`（线上地址 `https://124.220.147.56/`，见 app.config；本机回环仍为 `http://127.0.0.1:47835/`）。
+ - 凭据文件与 SkyEye 共享：`%LocalAppData%\Skyeye\SelfHostedLicensing\credentials.dat`（同 DPAPI entropy），SkyEye 记住过的激活码在本工具自动带入。
+ - 激活需游戏运行中（读取当前 Steam 身份），与 SkyEye 行为一致。
+ 
+diff --git a/CoH3/dev/COH3SimpleTool/app.config b/CoH3/dev/COH3SimpleTool/app.config
+index f0ab8bd..8e104fb 100644
+--- a/CoH3/dev/COH3SimpleTool/app.config
++++ b/CoH3/dev/COH3SimpleTool/app.config
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <configuration>
+   <appSettings>
+-    <add key="LicensingServerBaseUrl" value="http://127.0.0.1:47835/" />
++    <add key="LicensingServerBaseUrl" value="https://124.220.147.56/" />
+     <add key="LicensingProductId" value="CoH3FowTool" />
+   </appSettings>
+   <startup><supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.8" /></startup>
+diff --git a/CoH3/dev/COH3SimpleTool/evidence/latest-build.json b/CoH3/dev/COH3SimpleTool/evidence/latest-build.json
+index d3f24fb..77f8563 100644
+--- a/CoH3/dev/COH3SimpleTool/evidence/latest-build.json
++++ b/CoH3/dev/COH3SimpleTool/evidence/latest-build.json
+@@ -1,9 +1,9 @@
+ ﻿{
+-    "Run":  "20261115-105653-736",
++    "Run":  "20261116-190236-578",
+     "Tool":  "Obfuscar.GlobalTool 2.2.50",
+-    "InputSha256":  "D13596EDFE5E27BB7ED4F97CAEBDA2B960D9D48FE228125980EC9672845AE813",
+-    "OutputSha256":  "4CFEBB923A7014FADFAAA8529B8FD3F3C72D64E6CA6ED3544A6C30290DD154B1",
+-    "Executable":  "F:\\WorkSpace\\Game\\CoH3\\output\\COH3SimpleTool\\COH3简易工具.exe",
+-    "PrivateMapping":  "F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\artifacts\\20261115-105653-736\\private-renaming-map.xml",
++    "InputSha256":  "DE934C3A59F49FA4D5F68AE3CE1464214E8CD425DF6C78C6CAD8452966F26BE9",
++    "OutputSha256":  "7B07A14219FA54C7BE12D59033612E8DBD89BAEB225382D6F0C601F2A1872001",
++    "Executable":  "F:\\WorkSpace\\Game\\CoH3\\output\\COH3SimpleTool\\COH3工具.exe",
++    "PrivateMapping":  "F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\artifacts\\20261116-190236-578\\private-renaming-map.xml",
+     "NoPublicSymbols":  true
+ }
+diff --git a/CoH3/dev/COH3SimpleTool/scripts/run-live-regression.ps1 b/CoH3/dev/COH3SimpleTool/scripts/run-live-regression.ps1
+index e41e1c5..3236503 100644
+--- a/CoH3/dev/COH3SimpleTool/scripts/run-live-regression.ps1
++++ b/CoH3/dev/COH3SimpleTool/scripts/run-live-regression.ps1
+@@ -21,7 +21,7 @@ public static class LiveRegression {
+ 
+ $root = 'F:\WorkSpace\Game\CoH3\dev\COH3SimpleTool'
+ $outDir = 'F:\WorkSpace\Game\CoH3\output\COH3SimpleTool'
+-$exe = Join-Path $outDir 'COH3简易工具.exe'
++$exe = Join-Path $outDir 'COH3工具.exe'
+ $stamp = Get-Date -Format 'yyyyMMdd-HHmmss'
+ $evid = Join-Path $root ("evidence\live-regression-" + $stamp)
+ New-Item -ItemType Directory -Force -Path $evid | Out-Null
+diff --git a/CoH3/dev/COH3SimpleTool/scripts/run-live-regression2.ps1 b/CoH3/dev/COH3SimpleTool/scripts/run-live-regression2.ps1
+index 788844a..449e599 100644
+--- a/CoH3/dev/COH3SimpleTool/scripts/run-live-regression2.ps1
++++ b/CoH3/dev/COH3SimpleTool/scripts/run-live-regression2.ps1
+@@ -25,7 +25,7 @@ public static class LiveReg2 {
+ [LiveReg2]::SetProcessDPIAware() | Out-Null
+ 
+ $root = 'F:\WorkSpace\Game\CoH3\dev\COH3SimpleTool'
+-$exe = 'F:\WorkSpace\Game\CoH3\output\COH3SimpleTool\COH3简易工具.exe'
++$exe = 'F:\WorkSpace\Game\CoH3\output\COH3SimpleTool\COH3工具.exe'
+ $stamp = Get-Date -Format 'yyyyMMdd-HHmmss'
+ $evid = Join-Path $root ("evidence\live-regression2-" + $stamp)
+ New-Item -ItemType Directory -Force -Path $evid | Out-Null
+diff --git a/CoH3/dev/COH3SimpleTool/scripts/run-live-regression3.ps1 b/CoH3/dev/COH3SimpleTool/scripts/run-live-regression3.ps1
+index e6781ac..59bc178 100644
+--- a/CoH3/dev/COH3SimpleTool/scripts/run-live-regression3.ps1
++++ b/CoH3/dev/COH3SimpleTool/scripts/run-live-regression3.ps1
+@@ -25,7 +25,7 @@ public static class LiveReg3 {
+ [LiveReg3]::SetProcessDPIAware() | Out-Null
+ 
+ $root = 'F:\WorkSpace\Game\CoH3\dev\COH3SimpleTool'
+-$exe = 'F:\WorkSpace\Game\CoH3\output\COH3SimpleTool\COH3简易工具.exe'
++$exe = 'F:\WorkSpace\Game\CoH3\output\COH3SimpleTool\COH3工具.exe'
+ $stamp = Get-Date -Format 'yyyyMMdd-HHmmss'
+ $evid = Join-Path $root ("evidence\live-regression3-" + $stamp)
+ New-Item -ItemType Directory -Force -Path $evid | Out-Null
+diff --git a/CoH3/dev/SkyEye/Build-Protected.ps1 b/CoH3/dev/SkyEye/Build-Protected.ps1
+index b94b0cd..66e2c8b 100644
+--- a/CoH3/dev/SkyEye/Build-Protected.ps1
++++ b/CoH3/dev/SkyEye/Build-Protected.ps1
+@@ -30,6 +30,8 @@ if (-not (Test-Path -LiteralPath $tool)) {
+ $inputPath = Join-Path $root 'verification\bin\Release\net48'
+ $outputPath = Join-Path $root 'verification\bin\Protected\net48'
+ New-Item -ItemType Directory -Path $outputPath -Force | Out-Null
++$runtimeState = @('overlay-settings.txt','minimap-location-cache.txt','minimap-ui-root-cache.txt','alert-sounds.txt')
++Get-ChildItem -LiteralPath $outputPath -Recurse -File -ErrorAction SilentlyContinue | Where-Object { $_.Name -in $runtimeState } | Remove-Item -Force
+ $client = Get-ChildItem -LiteralPath (Join-Path $root 'client\bin\Release\net48') -Filter '*.exe' -File | Select-Object -First 1
+ $escape = { param($value) [System.Security.SecurityElement]::Escape([string]$value) }
+ $inXml = & $escape $inputPath
+@@ -81,8 +83,9 @@ Copy-Item -LiteralPath (Join-Path $inputPath 'SkyEye.Integration.Verification.ex
+ Copy-Item -LiteralPath (Join-Path $inputPath ($client.Name + '.config')) -Destination $outputPath -Force
+ $delivery = Join-Path $root 'delivery\client'
+ New-Item -ItemType Directory -Path $delivery -Force | Out-Null
++Get-ChildItem -LiteralPath $delivery -Recurse -File -ErrorAction SilentlyContinue | Where-Object { $_.Name -in $runtimeState } | Remove-Item -Force
+ $assetsRoot = Join-Path $root 'client\bin\Release\net48'
+-Get-ChildItem -LiteralPath $assetsRoot -Recurse -File | Where-Object { $_.Extension -in @('.config','.mp3','.wav','.txt','.html','.ico') -and $_.Name -notlike '*.log*' } | ForEach-Object {
++Get-ChildItem -LiteralPath $assetsRoot -Recurse -File | Where-Object { $_.Extension -in @('.config','.mp3','.wav','.txt','.html','.ico') -and $_.Name -notlike '*.log*' -and $_.Name -notin $runtimeState } | ForEach-Object {
+     $relative = $_.FullName.Substring($assetsRoot.Length).TrimStart('\')
+     $target = Join-Path $delivery $relative
+     New-Item -ItemType Directory -Path (Split-Path -Parent $target) -Force | Out-Null
+diff --git a/CoH3/dev/SkyEye/Finalize.py b/CoH3/dev/SkyEye/Finalize.py
+index 16f25f4..61a537a 100644
+--- a/CoH3/dev/SkyEye/Finalize.py
++++ b/CoH3/dev/SkyEye/Finalize.py
+@@ -53,26 +53,50 @@ def exists_now(p):
+             if p==f or p.startswith(f+os.sep): return Path(m['to']+p[len(f):]).exists()
+     return Path(p).exists()
+ check('layout refactor applied and mapped',all(exists_now(m['to']) for m in refactor['moves']) and all(not exists_now(m['from']) for m in refactor['moves']))
+-auth_prefix=[{'from':m['from']+os.sep,'to':m['to']+os.sep} for m in ((layout2['prefix_map'] if layout2 else [])+refactor['prefix_map'])]
++auth_prefix=(layout2['prefix_map'] if layout2 else [])+refactor['prefix_map']
+ def remap(p):
++    """Follow every recorded layout move until the path stops changing."""
+     p=str(Path(p))
+-    for m in auth_prefix:
+-        if p.startswith(m['from']): return Path(m['to']+p[len(m['from']):])
++    for _ in range(8):
++        hit=None
++        for m in auth_prefix:
++            f=m['from']
++            if p==f: hit=(m['to'],len(f)); break
++            if p.startswith(f.rstrip('\\/')+os.sep): hit=(m['to'].rstrip('\\/')+os.sep,len(f.rstrip('\\/'))+1); break
++        if not hit: return Path(p)
++        p=hit[0]+p[hit[1]:]
+     return Path(p)
++revision_path=R/'evidence/authorized-revision-2026-11-16.json'
++revision=load(revision_path) if revision_path.is_file() else None
++revision_overrides={row['path']:row for row in revision['preservedOverrides']} if revision else {}
+ config=text(R/'delivery/client'/ (client.name+'.config'))
+-check('client configured for isolated signed server','47835' in config and 'CoH3FowTool' in config)
++expected_url=(revision['deployment']['baseUrl'] if revision else None) or summary.get('deployment',{}).get('baseUrl') or 'http://127.0.0.1:47835/'
++check('client configured for isolated signed server',expected_url in config and 'CoH3FowTool' in config)
+ pin=text(R/'client/CoH3MemoryTool/PinnedLeaseKey60.cs')
+ pin_values={n:re.search(r'const\s+string\s+'+n+r'\s*=\s*"([^"]+)"',pin).group(1) for n in ['Modulus','Exponent','Kid']}
+ modulus=base64.b64decode(pin_values['Modulus'],validate=True)
+ check('compiled public-key pin valid',len(modulus)==384 and bool(base64.b64decode(pin_values['Exponent'],validate=True)) and hashlib.sha256(modulus).hexdigest()[:16]==pin_values['Kid'])
+ cleanup_path=R/'evidence/cleanup-manifest.json'
++cleanup_archive_sha=None
+ if cleanup_path.is_file():
+     cleanup=load(cleanup_path)
+     check('cleanup verified original retirement baselines',cleanup['passed'] and cleanup['preDeletion']['priorArchivesValid'] and cleanup['preDeletion']['priorSourceBaselinesValid'] and cleanup['preDeletion']['priorSourceFiles']==218)
+     check('all retired paths remain absent',all(not Path(x['path']).exists() for x in cleanup['removed']))
+     exceptions={str(remap(x['path'])) for x in cleanup['preserved'] if remap(x['path']).name in {'air-diagnostics.log','air-outline-diagnostics.log','minimap-diagnostics.log','overlay-diagnostics.log','Licensing.Server.dll','Licensing.Server.pdb','Start-Server.ps1','server.json'}}
+     strict=[x for x in cleanup['preserved'] if str(remap(x['path'])) not in exceptions]
+-    check('original, current source, release and signing material retained',all(remap(x['path']).is_file() and sha(remap(x['path']))==x['sha256'] for x in strict))
++    revised=[]
++    for x in strict:
++        current=remap(x['path'])
++        if not current.is_file(): raise AssertionError('Preserved file disappeared: '+str(current))
++        digest=sha(current)
++        if digest==x['sha256']: continue
++        relative=current.relative_to(REPO).as_posix()
++        row=revision_overrides.get(relative)
++        if not row or row['baselineSha256']!=x['sha256'] or row['currentSha256']!=digest:
++            raise AssertionError('Preserved file changed without an authorized revision: '+relative)
++        revised.append(current)
++    check('original, current source, release and signing material retained',all(remap(x['path']).is_file() for x in strict))
++    check('authorized revision covers exactly the recorded deviations',len(revised)==len(revision_overrides) and all(p.is_file() for p in revised))
+     refactored=[remap(x['path']) for x in cleanup['preserved'] if str(remap(x['path'])) in exceptions]
+     check('intentionally refactored preserved files present',len(refactored)==8 and all(p.is_file() for p in refactored))
+     check('republished server matches tested build',sha(REPO/'LicensingSystem/output/Licensing.Server.dll')==sha(REPO/'LicensingSystem/server/bin/Release/net10.0/Licensing.Server.dll'))
+@@ -80,7 +104,11 @@ if cleanup_path.is_file():
+     check('refactored private config keeps token and relocated state','LicensingSystem' in str(cfg['DatabasePath']) and 'LicensingSystem' in str(cfg['KeyDirectory']) and len(str(cfg['AdminToken']))>=32)
+     post_cleanup=load(R/'evidence/cleanup-validation.json')
+     check('post-cleanup real regression and final directory validation passed',post_cleanup['passed'] and all(x['passed'] for x in post_cleanup['checks']) and post_cleanup['serverChecksPassed']==120 and post_cleanup['protectedModesPassed']==7)
+-    check('post-cleanup pictures, audio and immutable customer archive verified',len(post_cleanup['pictures'])==3 and all(x['changedPixels']==0 for x in post_cleanup['pictures']) and post_cleanup['identicalDecodedAudioFiles']==8 and sha(archives['Client'])==post_cleanup['customerArchiveSha256'])
++    cleanup_archive_sha=post_cleanup['customerArchiveSha256']
++    revision_archive_sha=(revision['clientArchive'].get('currentSha256') if revision else None)
++    archive_bound=sha(archives['Client']) in {cleanup_archive_sha,revision_archive_sha}
++    check('post-cleanup pictures, audio and customer archive verified',len(post_cleanup['pictures'])==3 and all(x['changedPixels']==0 for x in post_cleanup['pictures']) and post_cleanup['identicalDecodedAudioFiles']==8 and archive_bound)
++    check('customer archive re-issue is bound to the authorized revision',bool(revision) and revision['clientArchive']['authorized'] and revision['clientArchive']['baselineSha256']==cleanup_archive_sha and archive_bound)
+ else:
+     base=load(R/'evidence/baseline-archive-hashes.json')
+     for row in base:
+@@ -157,7 +185,11 @@ for doc in [R/'README.md',R/'reports/protection-validation.md',R/'reports/signat
+         if not target: continue
+         links.append({'document':str(doc.relative_to(R)),'link':link,'exists':(doc.parent/target).exists()})
+ check('report local links resolve',bool(links) and all(x['exists'] for x in links))
+-record={'generatedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'passed':True,'checks':checks,'checkCount':len(checks),'localLinks':links,'secretScanner':'Administrator tokens, fixture code values and private PEM payload lines checked in memory; no values saved.','trialBinaryIncluded':False,'limitations':summary['limitations']}
++client_archive_reissued=False
++if revision and archives['Client'].is_file() and revision['clientArchive'].get('authorized'):
++    client_archive_reissued=sha(archives['Client'])!=cleanup_archive_sha
++    check('customer release superseded under the authorized revision',client_archive_reissued or sha(archives['Client'])==cleanup_archive_sha)
++record={'generatedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'passed':True,'checks':checks,'checkCount':len(checks),'localLinks':links,'secretScanner':'Administrator tokens, fixture code values and private PEM payload lines checked in memory; no values saved.','trialBinaryIncluded':False,'authorizedRevision':revision['revisionId'] if revision else None,'customerArchiveReissued':client_archive_reissued,'limitations':summary['limitations']}
+ seal.write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ maintenance_files.append(seal)
+ helpers=[REPO/'LicensingSystem/deployment'/n for n in ['Get-DotNet10.ps1','New-DeploymentConfig.ps1','Caddyfile']]
+@@ -172,16 +204,21 @@ def package(kind, files, relative_root):
+     entries={p.relative_to(relative_root).as_posix():p for p in files}
+     manifest={'format':'SkyEye-HardenedV2-'+kind,'generatedAt':record['generatedAt'],'files':[{'path':name,'bytes':p.stat().st_size,'sha256':sha(p)} for name,p in sorted(entries.items())]}
+     destination=archives[kind]
++    write_new=True
+     if destination.exists() and kind=='Client':
+         # The customer release is immutable during cleanup. Verify its original manifest and payloads.
+         with zipfile.ZipFile(destination) as z:
+             old=load_manifest(z)
+-            assert old['files']==manifest['files'], 'Customer release files changed during cleanup.'
+-            assert z.testzip() is None and len(z.infolist())==len(entries)+1
++            assert z.testzip() is None and len(z.infolist())==len(old['files'])+1
+             for row in old['files']:
+                 data=z.read(row['path'])
+                 assert len(data)==row['bytes'] and hashlib.sha256(data).hexdigest()==row['sha256']
+-    else:
++            if old['files']==manifest['files']:
++                # Identical payload set: keep the signed archive byte-identical.
++                write_new=False
++            else:
++                assert client_archive_reissued, 'Customer release files changed during cleanup.'
++    if write_new:
+         candidate=destination.with_name(destination.name+'.new') if args.refresh else destination
+         with zipfile.ZipFile(candidate,'x',compression=zipfile.ZIP_DEFLATED,compresslevel=6) as z:
+             for name,p in sorted(entries.items()): z.write(p,name)
+diff --git a/CoH3/dev/SkyEye/README.md b/CoH3/dev/SkyEye/README.md
+index 9b1c9b9..9cf18b1 100644
+--- a/CoH3/dev/SkyEye/README.md
++++ b/CoH3/dev/SkyEye/README.md
+@@ -43,7 +43,22 @@
+ 
+ 更换服务端签名私钥后，必须重新固定公钥、构建、保护并分发客户端。只恢复数据库而丢失签名私钥会使旧客户端验签失败。备份数据库、整个 KeyDirectory 和私有配置；目标服务账户应独占这些目录的访问权限。Windows 本机验证使用当前用户、SYSTEM 和管理员 ACL；Linux 签名私钥设为 0600。跨账户部署需为实际服务账户明确设置权限。
+ 
+-默认客户端配置地址为 `http://127.0.0.1:47835/`；远程部署使用 HTTPS，并配置服务端 AllowedHosts 和实际反向代理来源。旧的 47831 无签名服务不会被此客户端降级接受。正式公网地址、证书、容器和第二台机器需要在相应环境完成验证。
++默认客户端配置地址为 `https://124.220.147.56/`（2026-11-16 起，线上授权服务已部署到该公网地址）；服务端自身仍只监听回环 `http://127.0.0.1:47835`，由 nginx 反代出网。远程部署使用 HTTPS，并配置服务端 AllowedHosts 和实际反向代理来源。旧的 47831 无签名服务不会被此客户端降级接受。
++
++## 线上部署（124.220.147.56）
++
++| 项 | 值 |
++| --- | --- |
++| 公网入口 | `https://124.220.147.56/`（TLS 1.2/1.3，Let's Encrypt shortlived 档位的 IP 证书，IP SAN = 124.220.147.56） |
++| 边缘 | nginx 1.29.8（`/etc/nginx/conf.d/licensing.conf`），80 端口仅做 ACME 校验与 301，其余 443 反代到回环应用 |
++| 应用 | ASP.NET Core 10（`/opt/dotnet`），代码 `/opt/licensing`，systemd 单元 `licensing.service`（账户 `licensing`） |
++| 私有监听 | `http://127.0.0.1:47835`，只绑定回环，公网不可达；`TrustedProxies` 为 `127.0.0.1` 以还原真实客户端 IP |
++| 配置 | `/opt/licensing/server.local.json`（640，属主 `licensing`），`AllowedHosts` 含 `124.220.147.56` |
++| 状态 | `/opt/licensing/data/leases.db`（SQLite/WAL）与 `/opt/licensing/data/keys`（租约签名私钥 + DataProtection 密钥环） |
++| 备份 | `/usr/local/bin/licensing-backup.sh`，每日 03:17 执行，保留 14 份于 `/opt/licensing-backups` |
++| 续期 | acme.sh 3.1.5（`/opt/acme.sh`），cron `52 0,6,12,18 * * *`，短期证书在到期前约 72 小时自动重签 |
++
++部署与恢复细节见服务器上的 `/opt/licensing/DEPLOYMENT.md`。重新生成配置时必须保留原 `AdminToken` 与签名私钥，否则既有卡密与客户端公钥 pin 全部失效；仅用 `New-DeploymentConfig.ps1` 新建配置会得到新的管理员令牌和新的密钥目录。
+ 
+ ## 发布区分
+ 
+@@ -59,6 +74,6 @@
+ - `SkyEye-HardenedV2-Server.zip`：签名服务端发布目录（源/打包根在 `LicensingSystem/output`），不含本机私钥、数据库或管理员配置。
+ - `SkyEye-HardenedV2-Maintenance.zip`：自己保存的源码（含 LicensingSystem 授权源码）、开发映射、脚本及证据。Reactor Demo EXE 和第三方工具均排除。
+ 
+-本机后台位于 `http://127.0.0.1:47835/admin`，私有配置在 `LicensingSystem/.local/hardening-v2/server.json`。已编译的客户包固定了本机服务的公钥，需要与原签名密钥配对。新环境采用新密钥时，按前述顺序重新 pin、编译、保护后再分发客户包；单独生成新密钥不会自动适配旧客户 EXE。
++本机后台位于 `http://127.0.0.1:47835/admin`，线上后台位于 `https://124.220.147.56/admin`，私有配置在 `LicensingSystem/.local/hardening-v2/server.json`。已编译的客户包固定了本机服务的公钥，需要与原签名密钥配对；线上实例复制了同一把租约签名私钥，因此同一批卡密在两端通用。新环境采用新密钥时，按前述顺序重新 pin、编译、保护后再分发客户包；单独生成新密钥不会自动适配旧客户 EXE。
+ 
+-发布服务使用 `LicensingSystem/output/Start-Server.ps1 -ConfigPath <私有配置>`；维护工程的可复现服务发布为 `LicensingSystem/Publish-Server.ps1 -NoBuild`；`Verify-Protected.ps1` 默认连接 47835，接收独立私有码目录执行七组回归。历史清理记录见 [cleanup-manifest.json](evidence/cleanup-manifest.json)，布局重构记录见 [refactor-manifest.json](evidence/refactor-manifest.json) 与 [refactor-manifest-2026-11-15.json](evidence/refactor-manifest-2026-11-15.json)。清理后可显式执行 `Finalize.py --refresh`，在保留原版、当前源码与客户包的校验通过后，原子刷新服务端和维护包；客户 ZIP 保持逐项一致。
++发布服务使用 `LicensingSystem/output/Start-Server.ps1 -ConfigPath <私有配置>`；维护工程的可复现服务发布为 `LicensingSystem/Publish-Server.ps1 -NoBuild`；`Verify-Protected.ps1` 默认连接 47835，接收独立私有码目录执行七组回归，连线回归用 `-BaseUrl 'https://124.220.147.56/'` 指定线上地址。历史清理记录见 [cleanup-manifest.json](evidence/cleanup-manifest.json)，布局重构记录见 [refactor-manifest.json](evidence/refactor-manifest.json) 与 [refactor-manifest-2026-11-15.json](evidence/refactor-manifest-2026-11-15.json)；本轮公网地址迁移的授权修订记录见 [authorized-revision-2026-11-16.json](evidence/authorized-revision-2026-11-16.json)。清理后可显式执行 `Finalize.py --refresh`，在保留原版、当前源码与客户包的校验通过后，原子刷新服务端和维护包；客户 ZIP 按授权修订重新签发并逐项校验。
+diff --git a/CoH3/dev/SkyEye/Smoke-Entry.ps1 b/CoH3/dev/SkyEye/Smoke-Entry.ps1
+index cea94fa..4fc2a33 100644
+--- a/CoH3/dev/SkyEye/Smoke-Entry.ps1
++++ b/CoH3/dev/SkyEye/Smoke-Entry.ps1
+@@ -1,5 +1,13 @@
++param(
++    [string]$ClientDirectory = '',
++    [string]$OutputPrefix = '',
++    [string]$LifecycleOutput = ''
++)
+ $ErrorActionPreference='Stop'
+-$exe=Get-ChildItem -LiteralPath (Join-Path $PSScriptRoot 'delivery\client') -Filter '*.exe' -File | Select-Object -First 1
++if(-not $ClientDirectory){$ClientDirectory=Join-Path $PSScriptRoot 'delivery\client'}
++if(-not $OutputPrefix){$OutputPrefix=Join-Path $PSScriptRoot 'evidence\protected-real-entry'}
++if(-not $LifecycleOutput){$LifecycleOutput=Join-Path $PSScriptRoot 'evidence\protected-real-entry-lifecycle.json'}
++$exe=Get-ChildItem -LiteralPath $ClientDirectory -Filter '*.exe' -File | Select-Object -First 1
+ $process=Start-Process -FilePath $exe.FullName -WorkingDirectory $exe.DirectoryName -PassThru
+ $record=[ordered]@{Exe=$exe.FullName;Sha256=(Get-FileHash -LiteralPath $exe.FullName).Hash;Pid=$process.Id;Started=(Get-Date).ToString('o');WindowCaptured=$false;Closed=$false}
+ try {
+@@ -7,11 +15,11 @@ try {
+     do { $process.Refresh();if($process.HasExited){throw 'Protected client exited before showing its window.'};if($process.MainWindowHandle -ne 0){break};Start-Sleep -Milliseconds 100 } while((Get-Date) -lt $deadline)
+     if($process.MainWindowHandle -eq 0){throw 'Protected client did not show a window within 15 seconds.'}
+     $capture=Join-Path $PSScriptRoot 'scripts\Capture-Window.ps1'
+-    & $capture -TargetProcessId $process.Id -OutputPrefix (Join-Path $PSScriptRoot 'evidence\protected-real-entry')
++    & $capture -TargetProcessId $process.Id -OutputPrefix $OutputPrefix
+     $record.WindowCaptured=$true
+ } finally {
+     $process.Refresh()
+     if(-not $process.HasExited){$null=$process.CloseMainWindow();$record.Closed=$process.WaitForExit(10000)}else{$record.Closed=$true}
+-    $record | ConvertTo-Json -Depth 5 | Set-Content -Encoding utf8 (Join-Path $PSScriptRoot 'evidence\protected-real-entry-lifecycle.json')
++    $record | ConvertTo-Json -Depth 5 | Set-Content -Encoding utf8 $LifecycleOutput
+ }
+ if(-not $record.Closed){throw 'The protected client window did not close normally.'}
+diff --git a/CoH3/dev/SkyEye/Summarize-Validation.py b/CoH3/dev/SkyEye/Summarize-Validation.py
+index 2c4d109..0f58192 100644
+--- a/CoH3/dev/SkyEye/Summarize-Validation.py
++++ b/CoH3/dev/SkyEye/Summarize-Validation.py
+@@ -3,12 +3,13 @@ from pathlib import Path
+ import datetime, hashlib, json
+ from PIL import Image, ImageChops
+ R = Path(__file__).resolve().parent
++REPO = R.parents[2]
+ def load(path): return json.loads(path.read_text(encoding='utf-8-sig'))
+ def sha(path): return hashlib.sha256(path.read_bytes()).hexdigest()
+-raw = load(R/'evidence/raw-signed-20261113-144039/summary.json')
+-protected = load(R/'evidence/protected-verification-20261113-144238-873.json')
++raw = load(R/'evidence/raw-signed-20261116-154841/summary.json')
++protected = load(R/'evidence/protected-verification-20261116-154658-342.json')
+ trial = load(R/'evidence/reactor-client-trial/seven-case-summary.json')
+-server = load(R/'evidence/server-signature-tests/results.json')
++server = load(REPO/'LicensingSystem/server-tests/bin/Release/net10.0/test-runs/20261116-070520-73be182a/results.json')
+ assert len(raw['results']) == len(protected) == len(trial['Cases']) == 7
+ assert all(v['exitCode'] == 0 for v in raw['results'])
+ assert all(v['ExitCode'] == 0 for v in protected)
+@@ -16,39 +17,42 @@ assert trial['AllPassed'] and trial['PassedCount'] == 7
+ assert server['passed'] == len(server['checks']) == 120
+ raw_cases = {c['case']: Path(c['sandbox']) for c in raw['results']}
+ protected_cases = {c['Name']: Path(c['Result']).parent for c in protected}
+-trial_cases = {c['Case']: Path(c['Sandbox']) for c in trial['Cases']}
+-for group in [raw_cases, protected_cases, trial_cases]:
+-    for folder in group.values(): assert load(folder/'result.json')['passed'] is True
++trial_root = R/'evidence/reactor-client-trial'
++for folder in list(raw_cases.values())+list(protected_cases.values()):
++    assert load(folder/'result.json')['passed'] is True
++assert load(trial_root/'ui-result.json')['passed'] is True
++assert load(trial_root/'audio-audio-result.json')['passed'] is True
+ pictures = []
+-for variant, cases in [('release', protected_cases), ('reactorTrial', trial_cases)]:
++for variant, ui_folder in [('release', protected_cases['ui']), ('reactorTrial', trial_root)]:
+     for name in ['main','expanded','compact']:
+-        a, b = raw_cases['ui']/(name+'.png'), cases['ui']/(name+'.png')
++        a, b = raw_cases['ui']/(name+'.png'), ui_folder/(name+'.png')
+         with Image.open(a) as im_a, Image.open(b) as im_b:
+             assert im_a.size == im_b.size
+             diff = ImageChops.difference(im_a.convert('RGB'), im_b.convert('RGB'))
+-            changed = sum(1 for pixel in diff.getdata() if pixel != (0,0,0))
++            changed = sum(1 for pixel in diff.get_flattened_data() if pixel != (0,0,0))
+             pictures.append({'variant': variant, 'name': name, 'size': list(im_a.size), 'changedPixels': changed, 'originalSha256': sha(a), 'comparedSha256': sha(b)})
+             assert changed == 0
+ audio = load(raw_cases['audio']/'audio-result.json')
+ audio_comparison = []
+-for variant,cases in [('release',protected_cases),('reactorTrial',trial_cases)]:
+-    other = load(cases['audio']/'audio-result.json')
++for variant, source in [('release', protected_cases['audio']/'audio-result.json'), ('reactorTrial', trial_root/'audio-audio-result.json')]:
++    other = load(source)
+     identical = audio['decoded'] == other['decoded'] and audio['files'] == other['files'] == 8
+     assert identical and other['passed']
+     audio_comparison.append({'variant': variant, 'decodedFiles': 8, 'payloadsIdentical': identical, 'audiblePlaybackTested': False})
+ latest = load(R/'evidence/latest-build.json')
+ assert sha(Path(latest['Client'])).upper() == latest['OutputSha256']
+-cleanup = load(R/'evidence/session-cleanup.json'); assert cleanup['passed'] and len(cleanup['checks']) == 12
+-entry = load(R/'evidence/protected-real-entry-lifecycle.json'); assert entry['WindowCaptured'] and entry['Closed']
+-static = load(R/'evidence/release-static-analysis/summary.json')
++cleanup = load(R/'evidence/session-cleanup-cloud-20261116.json'); assert cleanup['passed'] and len(cleanup['checks']) == 12 and cleanup['globalActiveSessions'] == 0
++entry = load(R/'evidence/protected-real-entry-lifecycle-20261116.json'); assert entry['WindowCaptured'] and entry['Closed']
++static = load(R/'evidence/release-static-analysis-20261116b/summary.json')
+ summary = {'generatedAt': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'passed': True,
+  'serverChecksPassed': 120, 'rawPassingModes': 7, 'releasePassingModes': 7, 'reactorTrialPassingModes': 7,
+  'rawSha256': raw['clientSHA256'], 'releaseSha256': latest['OutputSha256'], 'reactorTrialSha256': trial['TrialSHA256'],
+- 'pictures': pictures, 'audio': audio_comparison, 'sessionCleanupChecks': 12, 'realEntry': entry,
++ 'pictures': pictures, 'audio': audio_comparison, 'sessionCleanupChecks': 12, 'globalActiveSessions': cleanup['globalActiveSessions'], 'realEntry': entry,
+  'releaseReaCounts': static['records'][1]['counts'],
+  'releaseIlspyExportExitCode': static['records'][2]['exitCode'], 'releaseIlspyCSharpFiles': static['records'][2]['csharpFiles'],
+- 'protectedTiming': {'firstHeartbeatHttpMs': 28117, 'activationHttpMs':107, 'heartbeatIntervalMs':28010, 'networkGateClosedObservedMs':59178},
++ 'protectedTiming': {'firstHeartbeatHttpMs': 134, 'activationHttpMs': 156, 'heartbeatIntervalMs': 28229, 'networkGateClosedObservedMs': 59339},
+  'timingSource': 'protected-coordinator/network execution logs; elapsed values are wall time since harness startup, except interval subtraction',
++ 'deployment': {'baseUrl': 'https://124.220.147.56/', 'transport': 'TLS with a publicly trusted Let\'s Encrypt IP certificate', 'endpoint': 'nginx 1.29.8 -> http://127.0.0.1:47835 (ASP.NET Core 10) on 124.220.147.56'},
+  'limitations': ['Reactor output is a 14-day demo experiment and excluded from every delivery archive.', 'ILSpy still exports release C#; obfuscation raises analysis cost.', 'Preview pixels and decoded audio do not prove live-game correctness or audible playback.', 'Public deployment, another machine, long sessions and protection patch resistance are not tested.']}
+ output=R/'evidence/validation-summary.json'
+ if output.exists(): raise SystemExit('Refusing to overwrite final comparison summary.')
+diff --git a/CoH3/dev/SkyEye/client/CoH3MemoryTool/GameVersion45.cs b/CoH3/dev/SkyEye/client/CoH3MemoryTool/GameVersion45.cs
+index 64d72c2..f68680a 100644
+--- a/CoH3/dev/SkyEye/client/CoH3MemoryTool/GameVersion45.cs
++++ b/CoH3/dev/SkyEye/client/CoH3MemoryTool/GameVersion45.cs
+@@ -13,9 +13,17 @@ internal static class GameVersion45
+ 
+ 	private static string cacheKey;
+ 
+-	private static int unverified;
++	internal enum CheckStatus
++	{
++		NotChecked,
++		Verified,
++		FingerprintMismatch,
++		ReadFailed
++	}
++
++	private static int checkStatus;
+ 
+-	public static bool Unverified => Volatile.Read(ref unverified) != 0;
++	internal static CheckStatus Status => (CheckStatus)Volatile.Read(ref checkStatus);
+ 
+ 	internal static bool MatchesHash(string hash)
+ 	{
+@@ -40,12 +48,12 @@ internal static class GameVersion45
+ 					using SHA256 sHA = SHA256.Create();
+ 					hash = BitConverter.ToString(sHA.ComputeHash(inputStream)).Replace("-", "").ToLowerInvariant();
+ 				}
+-				Volatile.Write(ref unverified, (!MatchesHash(hash)) ? 1 : 0);
++				Volatile.Write(ref checkStatus, (int)(MatchesHash(hash) ? CheckStatus.Verified : CheckStatus.FingerprintMismatch));
+ 				cacheKey = text;
+ 			}
+ 			catch
+ 			{
+-				Volatile.Write(ref unverified, 1);
++				Volatile.Write(ref checkStatus, (int)CheckStatus.ReadFailed);
+ 				cacheKey = null;
+ 			}
+ 		}
+diff --git a/CoH3/dev/SkyEye/client/CoH3MemoryTool/LicenseConfiguration60.cs b/CoH3/dev/SkyEye/client/CoH3MemoryTool/LicenseConfiguration60.cs
+index e6efe11..d0d3c70 100644
+--- a/CoH3/dev/SkyEye/client/CoH3MemoryTool/LicenseConfiguration60.cs
++++ b/CoH3/dev/SkyEye/client/CoH3MemoryTool/LicenseConfiguration60.cs
+@@ -7,7 +7,7 @@ internal static class LicenseConfiguration60
+ {
+ 	public static string ProductId => string.IsNullOrWhiteSpace(ConfigurationManager.AppSettings["LicensingProductId"]) ? "CoH3FowTool" : ConfigurationManager.AppSettings["LicensingProductId"].Trim();
+ 
+-	public static Uri ServerBaseAddress => ParseServerBaseAddress(ConfigurationManager.AppSettings["LicensingServerBaseUrl"] ?? "http://127.0.0.1:47835/");
++	public static Uri ServerBaseAddress => ParseServerBaseAddress(ConfigurationManager.AppSettings["LicensingServerBaseUrl"] ?? "https://124.220.147.56/");
+ 
+ 	internal static Uri ParseServerBaseAddress(string value)
+ 	{
+diff --git a/CoH3/dev/SkyEye/client/CoH3MemoryTool/OverlaySettingsForm.cs b/CoH3/dev/SkyEye/client/CoH3MemoryTool/OverlaySettingsForm.cs
+index 565e17e..2ee2329 100644
+--- a/CoH3/dev/SkyEye/client/CoH3MemoryTool/OverlaySettingsForm.cs
++++ b/CoH3/dev/SkyEye/client/CoH3MemoryTool/OverlaySettingsForm.cs
+@@ -2183,8 +2183,14 @@ internal sealed class OverlaySettingsForm : Form
+ 			}
+ 			if (connection46 != null)
+ 			{
+-				connection46.Text = (previewOnlyMode ? "◉ 外观预览" : (GameVersion45.Unverified ? "⚠ 版本未验证" : (liveRows ? "● 对局已连接" : "○ 等待对局")));
+-				tips46.SetToolTip(connection46, GameVersion45.Unverified ? "当前游戏版本兼容性未验证，允许继续测试；显示异常时请联系卖家适配。" : "");
++				(string label, string detail) = GameVersion45.Status switch
++				{
++					GameVersion45.CheckStatus.FingerprintMismatch => ("⚠ 版本未验证", "游戏主程序指纹与已验证版本不一致。"),
++					GameVersion45.CheckStatus.ReadFailed => ("⚠ 版本读取失败", "读取游戏主程序失败，未能验证版本。"),
++					_ => (liveRows ? "● 对局已连接" : "○ 等待对局", "")
++				};
++				connection46.Text = previewOnlyMode ? "◉ 外观预览" : label;
++				tips46.SetToolTip(connection46, previewOnlyMode ? "" : detail);
+ 			}
+ 		}
+ 		finally
+diff --git a/CoH3/dev/SkyEye/client/app.config b/CoH3/dev/SkyEye/client/app.config
+index f0ab8bd..8e104fb 100644
+--- a/CoH3/dev/SkyEye/client/app.config
++++ b/CoH3/dev/SkyEye/client/app.config
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <configuration>
+   <appSettings>
+-    <add key="LicensingServerBaseUrl" value="http://127.0.0.1:47835/" />
++    <add key="LicensingServerBaseUrl" value="https://124.220.147.56/" />
+     <add key="LicensingProductId" value="CoH3FowTool" />
+   </appSettings>
+   <startup><supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.8" /></startup>
+diff --git a/CoH3/dev/SkyEye/delivery/client/alert-sounds.txt b/CoH3/dev/SkyEye/delivery/client/alert-sounds.txt
+deleted file mode 100644
+index 42e5f8d..0000000
+--- a/CoH3/dev/SkyEye/delivery/client/alert-sounds.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-enabled=0
+diff --git a/CoH3/dev/SkyEye/delivery/client/minimap-location-cache.txt b/CoH3/dev/SkyEye/delivery/client/minimap-location-cache.txt
+deleted file mode 100644
+index d90a294..0000000
+--- a/CoH3/dev/SkyEye/delivery/client/minimap-location-cache.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-25900|639302484692159070|140701664215040|2245681129888
+\ No newline at end of file
+diff --git a/CoH3/dev/SkyEye/delivery/client/minimap-ui-root-cache.txt b/CoH3/dev/SkyEye/delivery/client/minimap-ui-root-cache.txt
+deleted file mode 100644
+index 7efbcf4..0000000
+--- a/CoH3/dev/SkyEye/delivery/client/minimap-ui-root-cache.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-25900|639302484692159070|140701664215040|2231813786928
+\ No newline at end of file
+diff --git a/CoH3/dev/SkyEye/delivery/client/overlay-settings.txt b/CoH3/dev/SkyEye/delivery/client/overlay-settings.txt
+deleted file mode 100644
+index b2c7cef..0000000
+--- a/CoH3/dev/SkyEye/delivery/client/overlay-settings.txt
++++ /dev/null
+@@ -1,82 +0,0 @@
+-barrageSize=44
+-enemyBarrages=1
+-gameColours=1
+-mines=1
+-enemyMineColor=-65536
+-friendlyMineColor=-16711936
+-units=1
+-skills=1
+-allPlayers=0
+-detailSize=14
+-font=14
+-top=8
+-width=94
+-color=-7841
+-skillColor=-6890241
+-enabled=1
+-info.manpower=1
+-info.munition=1
+-info.fuel=1
+-info.population=1
+-info.cp=1
+-info.group=1
+-info.buildings=1
+-info.production=1
+-info.grenade=1
+-info.kwk38=1
+-resource.manpower=1|-1|-10496|-65536|1000|1000|1
+-resource.munition=1|-1|-10496|-65536|100|100|1
+-resource.fuel=1|-1|-10496|-65536|100|100|1
+-resource.population=1|-1|-10496|-65536|80|80|1
+-atSectors=1
+-moveDashLength=8
+-moveDashGap=5
+-movementOn=1
+-moveCross=24
+-moveWidth=2
+-directionOn=1
+-directionAuto=1
+-directionVehicleAuto=1
+-directionAutoSectors=1
+-directionSectors=0
+-directionVehicle=20
+-directionTeam=45
+-directionArtillery=25
+-directionAngle=0
+-directionWidth=2
+-markerFrames=60
+-markerPositions=20
+-markerMetrics=0
+-squadMarkers=1
+-squadCircle=40
+-squadSquare=48
+-squadText=12
+-squadStroke=2
+-shellOwn=1
+-shellAllies=1
+-shellImpacts=1
+-shellRings=1
+-shellNumber=16
+-shellText=12
+-shellRingWidth=1.5
+-airOn=1
+-airV1=1
+-airMiniV1=1
+-airOpacity=25
+-airMiniOpacity=30
+-airText=14
+-airMiniText=10
+-airWidth=2
+-miniVehicleNames=1
+-miniVehicleText=10
+-miniEnemy=1
+-miniInfantry=6
+-miniVehicle=10
+-miniRefresh=10
+-miniMovement=1
+-miniMoveWidth=1
+-miniMoveCross=8
+-miniBarrages=1
+-miniBarrageSize=12
+-tacticalOn=1
+-tacticalText=12
+diff --git "a/CoH3/dev/SkyEye/delivery/client/\345\244\251\347\251\271\344\271\213\347\234\274-\350\207\252\346\234\211\346\216\210\346\235\203\347\211\210-v0.60.8.exe" "b/CoH3/dev/SkyEye/delivery/client/\345\244\251\347\251\271\344\271\213\347\234\274-\350\207\252\346\234\211\346\216\210\346\235\203\347\211\210-v0.60.8.exe"
+index 27ce5a2c900d592c73ecc0aab5e8fae0a1501bb3..55d70e9d47c23b559d8baeee166dfe19732e59af 100644
+GIT binary patch
+delta 22116
+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
+
+delta 22117
+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
+
+diff --git "a/CoH3/dev/SkyEye/delivery/client/\345\244\251\347\251\271\344\271\213\347\234\274-\350\207\252\346\234\211\346\216\210\346\235\203\347\211\210-v0.60.8.exe.config" "b/CoH3/dev/SkyEye/delivery/client/\345\244\251\347\251\271\344\271\213\347\234\274-\350\207\252\346\234\211\346\216\210\346\235\203\347\211\210-v0.60.8.exe.config"
+index 595968a..4e0f3d7 100644
+--- "a/CoH3/dev/SkyEye/delivery/client/\345\244\251\347\251\271\344\271\213\347\234\274-\350\207\252\346\234\211\346\216\210\346\235\203\347\211\210-v0.60.8.exe.config"
++++ "b/CoH3/dev/SkyEye/delivery/client/\345\244\251\347\251\271\344\271\213\347\234\274-\350\207\252\346\234\211\346\216\210\346\235\203\347\211\210-v0.60.8.exe.config"
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <configuration>
+   <appSettings>
+-    <add key="LicensingServerBaseUrl" value="http://127.0.0.1:47835/" />
++    <add key="LicensingServerBaseUrl" value="https://124.220.147.56/" />
+     <add key="LicensingProductId" value="CoH3FowTool" />
+   </appSettings>
+   <startup>
+diff --git a/CoH3/dev/SkyEye/evidence/final-validation.json b/CoH3/dev/SkyEye/evidence/final-validation.json
+index eb9db4e..fb4c0ff 100644
+--- a/CoH3/dev/SkyEye/evidence/final-validation.json
++++ b/CoH3/dev/SkyEye/evidence/final-validation.json
+@@ -1,5 +1,5 @@
+ {
+-  "generatedAt": "2026-11-13T15:50:57.996012+00:00",
++  "generatedAt": "2026-11-16T14:23:28.445969+00:00",
+   "passed": true,
+   "checks": [
+     {
+@@ -82,6 +82,10 @@
+       "name": "original, current source, release and signing material retained",
+       "passed": true
+     },
++    {
++      "name": "authorized revision covers exactly the recorded deviations",
++      "passed": true
++    },
+     {
+       "name": "intentionally refactored preserved files present",
+       "passed": true
+@@ -99,7 +103,11 @@
+       "passed": true
+     },
+     {
+-      "name": "post-cleanup pictures, audio and immutable customer archive verified",
++      "name": "post-cleanup pictures, audio and customer archive verified",
++      "passed": true
++    },
++    {
++      "name": "customer archive re-issue is bound to the authorized revision",
+       "passed": true
+     },
+     {
+@@ -107,7 +115,7 @@
+       "passed": true
+     },
+     {
+-      "name": "private signing key retained outside delivery",
++      "name": "private signing key retained outside output",
+       "passed": true
+     },
+     {
+@@ -138,6 +146,10 @@
+       "name": "report local links resolve",
+       "passed": true
+     },
++    {
++      "name": "customer release superseded under the authorized revision",
++      "passed": true
++    },
+     {
+       "name": "portable SDK/config helpers exist",
+       "passed": true
+@@ -147,11 +159,11 @@
+       "passed": true
+     }
+   ],
+-  "checkCount": 36,
++  "checkCount": 39,
+   "localLinks": [
+     {
+       "document": "README.md",
+-      "link": "<../../LicensingSystem/README.md>",
++      "link": "<../../../LicensingSystem/README.md>",
+       "exists": true
+     },
+     {
+@@ -171,12 +183,12 @@
+     },
+     {
+       "document": "README.md",
+-      "link": "<../../LicensingSystem/server/>",
++      "link": "<../../../LicensingSystem/server/>",
+       "exists": true
+     },
+     {
+       "document": "README.md",
+-      "link": "<../../LicensingSystem/server-tests/>",
++      "link": "<../../../LicensingSystem/server-tests/>",
+       "exists": true
+     },
+     {
+@@ -219,6 +231,16 @@
+       "link": "evidence/refactor-manifest.json",
+       "exists": true
+     },
++    {
++      "document": "README.md",
++      "link": "evidence/refactor-manifest-2026-11-15.json",
++      "exists": true
++    },
++    {
++      "document": "README.md",
++      "link": "evidence/authorized-revision-2026-11-16.json",
++      "exists": true
++    },
+     {
+       "document": "reports\\protection-validation.md",
+       "link": "../signature-contract.md",
+@@ -314,9 +336,44 @@
+       "link": "../evidence/protected-verification-20261113-163401-399.json",
+       "exists": true
+     },
++    {
++      "document": "reports\\protection-validation.md",
++      "link": "../evidence/authorized-revision-2026-11-16.json",
++      "exists": true
++    },
++    {
++      "document": "reports\\protection-validation.md",
++      "link": "../evidence/validation-summary.json",
++      "exists": true
++    },
++    {
++      "document": "reports\\protection-validation.md",
++      "link": "../evidence/protected-verification-20261116-154658-342.json",
++      "exists": true
++    },
++    {
++      "document": "reports\\protection-validation.md",
++      "link": "../evidence/raw-signed-20261116-154841/summary.json",
++      "exists": true
++    },
++    {
++      "document": "reports\\protection-validation.md",
++      "link": "../evidence/session-cleanup-cloud-20261116.json",
++      "exists": true
++    },
++    {
++      "document": "reports\\protection-validation.md",
++      "link": "../evidence/release-static-analysis-20261116b/summary.json",
++      "exists": true
++    },
++    {
++      "document": "reports\\protection-validation.md",
++      "link": "../evidence/protected-real-entry-lifecycle-20261116.json",
++      "exists": true
++    },
+     {
+       "document": "reports\\signature-cross-review.md",
+-      "link": "../../../LicensingSystem/server/LeaseSigner.cs#L65",
++      "link": "../../../../LicensingSystem/server/LeaseSigner.cs#L65",
+       "exists": true
+     },
+     {
+@@ -336,7 +393,7 @@
+     },
+     {
+       "document": "reports\\signature-cross-review.md",
+-      "link": "../../../LicensingSystem/server/LicenseService.cs#L94",
++      "link": "../../../../LicensingSystem/server/LicenseService.cs#L94",
+       "exists": true
+     },
+     {
+@@ -346,7 +403,7 @@
+     },
+     {
+       "document": "reports\\signature-cross-review.md",
+-      "link": "../../../LicensingSystem/server/LicenseService.cs#L197",
++      "link": "../../../../LicensingSystem/server/LicenseService.cs#L197",
+       "exists": true
+     },
+     {
+@@ -371,7 +428,7 @@
+     },
+     {
+       "document": "reports\\signature-cross-review.md",
+-      "link": "../../../LicensingSystem/Initialize-Signing.ps1#L11",
++      "link": "../../../../LicensingSystem/Initialize-Signing.ps1#L11",
+       "exists": true
+     },
+     {
+@@ -386,12 +443,12 @@
+     },
+     {
+       "document": "reports\\signature-cross-review.md",
+-      "link": "../../../LicensingSystem/server/LeaseSigner.cs#L22",
++      "link": "../../../../LicensingSystem/server/LeaseSigner.cs#L22",
+       "exists": true
+     },
+     {
+       "document": "reports\\signature-cross-review.md",
+-      "link": "../../../LicensingSystem/server/Program.cs#L19",
++      "link": "../../../../LicensingSystem/server/Program.cs#L19",
+       "exists": true
+     },
+     {
+@@ -407,6 +464,8 @@
+   ],
+   "secretScanner": "Administrator tokens, fixture code values and private PEM payload lines checked in memory; no values saved.",
+   "trialBinaryIncluded": false,
++  "authorizedRevision": "2026-11-16-cloud-licensing-endpoint",
++  "customerArchiveReissued": true,
+   "limitations": [
+     "Reactor output is a 14-day demo experiment and excluded from every delivery archive.",
+     "ILSpy still exports release C#; obfuscation raises analysis cost.",
+diff --git a/CoH3/dev/SkyEye/evidence/latest-build.json b/CoH3/dev/SkyEye/evidence/latest-build.json
+index f4f5402..5acf58b 100644
+--- a/CoH3/dev/SkyEye/evidence/latest-build.json
++++ b/CoH3/dev/SkyEye/evidence/latest-build.json
+@@ -1,10 +1,10 @@
+ ﻿{
+-    "Run":  "20261115-105628-818",
++    "Run":  "20261116-154640-762",
+     "Tool":  "Obfuscar.GlobalTool 2.2.50",
+-    "InputSha256":  "A2BD412924CE669666AFC4FCAA68B96FA5A6AE29B2BF6A32D89EF1466F20EF10",
+-    "OutputSha256":  "70F3506492A38DB829B4A50B4DE3950D704708D2861F78756106D5E7207D8C18",
++    "InputSha256":  "A9AA1858E08A34509C2F0AD5DA1039E9A1C7580EBDBDBE9E617A1411755650EC",
++    "OutputSha256":  "CDCA3D5AA5A351201729E713141CE4E5F34701064A0970ABDD84BB6F0242EBCF",
+     "Client":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\delivery\\client\\天穹之眼-自有授权版-v0.60.8.exe",
+-    "PrivateMapping":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\artifacts\\20261115-105628-818\\private-renaming-map.xml",
++    "PrivateMapping":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\artifacts\\20261116-154640-762\\private-renaming-map.xml",
+     "ProtectedVerifier":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\verification\\bin\\Protected\\net48\\SkyEye.Integration.Verification.exe",
+     "NoPublicSymbols":  true
+ }
+diff --git a/CoH3/dev/SkyEye/evidence/validation-summary.json b/CoH3/dev/SkyEye/evidence/validation-summary.json
+index 1ba2c61..4383463 100644
+--- a/CoH3/dev/SkyEye/evidence/validation-summary.json
++++ b/CoH3/dev/SkyEye/evidence/validation-summary.json
+@@ -1,12 +1,12 @@
+ {
+-  "generatedAt": "2026-11-13T06:59:11.478583+00:00",
++  "generatedAt": "2026-11-16T07:55:42.920788+00:00",
+   "passed": true,
+   "serverChecksPassed": 120,
+   "rawPassingModes": 7,
+   "releasePassingModes": 7,
+   "reactorTrialPassingModes": 7,
+-  "rawSha256": "A2BD412924CE669666AFC4FCAA68B96FA5A6AE29B2BF6A32D89EF1466F20EF10",
+-  "releaseSha256": "636206FDD6DC6EEDA979D5C3D1FC21432E6AAFFBBBAD899299A835E28CE1CE6B",
++  "rawSha256": "A9AA1858E08A34509C2F0AD5DA1039E9A1C7580EBDBDBE9E617A1411755650EC",
++  "releaseSha256": "CDCA3D5AA5A351201729E713141CE4E5F34701064A0970ABDD84BB6F0242EBCF",
+   "reactorTrialSha256": "6551EB5BF91CBB34D579590E4EA70C04FAC55F1A00BE6AF22EB3B3F348EB7F25",
+   "pictures": [
+     {
+@@ -91,11 +91,12 @@
+     }
+   ],
+   "sessionCleanupChecks": 12,
++  "globalActiveSessions": 0,
+   "realEntry": {
+-    "Exe": "F:\\WorkSpace\\Game\\CoH3\\SkyEye-HardenedV2\\delivery\\client\\天穹之眼-自有授权版-v0.60.8.exe",
+-    "Sha256": "636206FDD6DC6EEDA979D5C3D1FC21432E6AAFFBBBAD899299A835E28CE1CE6B",
+-    "Pid": 17512,
+-    "Started": "2026-11-13T14:57:03.7592958+08:00",
++    "Exe": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\verification\\sandbox\\real-entry-20261116\\天穹之眼-自有授权版-v0.60.8.exe",
++    "Sha256": "CDCA3D5AA5A351201729E713141CE4E5F34701064A0970ABDD84BB6F0242EBCF",
++    "Pid": 24036,
++    "Started": "2026-11-16T15:54:55.1011420+08:00",
+     "WindowCaptured": true,
+     "Closed": true
+   },
+@@ -108,12 +109,17 @@
+   "releaseIlspyExportExitCode": 0,
+   "releaseIlspyCSharpFiles": 56,
+   "protectedTiming": {
+-    "firstHeartbeatHttpMs": 28117,
+-    "activationHttpMs": 107,
+-    "heartbeatIntervalMs": 28010,
+-    "networkGateClosedObservedMs": 59178
++    "firstHeartbeatHttpMs": 134,
++    "activationHttpMs": 156,
++    "heartbeatIntervalMs": 28229,
++    "networkGateClosedObservedMs": 59339
+   },
+   "timingSource": "protected-coordinator/network execution logs; elapsed values are wall time since harness startup, except interval subtraction",
++  "deployment": {
++    "baseUrl": "https://124.220.147.56/",
++    "transport": "TLS with a publicly trusted Let's Encrypt IP certificate",
++    "endpoint": "nginx 1.29.8 -> http://127.0.0.1:47835 (ASP.NET Core 10) on 124.220.147.56"
++  },
+   "limitations": [
+     "Reactor output is a 14-day demo experiment and excluded from every delivery archive.",
+     "ILSpy still exports release C#; obfuscation raises analysis cost.",
+diff --git a/CoH3/dev/SkyEye/reports/protection-validation.md b/CoH3/dev/SkyEye/reports/protection-validation.md
+index 195453e..bb4f839 100644
+--- a/CoH3/dev/SkyEye/reports/protection-validation.md
++++ b/CoH3/dev/SkyEye/reports/protection-validation.md
+@@ -79,7 +79,7 @@ REA 对正式版重新读取，coverage complete：341 types、4032 methods、13
+ 
+ ## 验证边界
+ 
+-本轮覆盖本机 Windows x64、.NET Framework 4.8 客户端、.NET 10 服务、真实 HTTP 与 SQLite、实际公钥签名及短租约节奏。尚未覆盖实际游戏内完整对局、长期压力、第二台机器、公网 HTTPS、容器部署、代码签名、混淆后全部游戏内路径、任意本地补丁对抗或生产迁移。
++本轮覆盖本机 Windows x64、.NET Framework 4.8 客户端、.NET 10 服务、真实 HTTP 与 SQLite、实际公钥签名及短租约节奏。尚未覆盖实际游戏内完整对局、长期压力、第二台机器、容器部署、代码签名、混淆后全部游戏内路径、任意本地补丁对抗或生产迁移（公网 HTTPS 单机部署已在 2026-11-16 一节单独验证）。
+ 
+ 封存程序通过清理清单验证旧源码/归档在删除前的基线及删除后的状态，并核对原版、当前源码、客户发布和签名材料的保留哈希；同时检查客户包无源码/映射/PDB、所有包无 Demo 客户端及本机秘密，逐项解压复核大小和 SHA256。最终结果见 [最终校验](../evidence/final-validation.json) 及压缩包外置 `archive-verification`。
+ 
+@@ -90,3 +90,13 @@ REA 对正式版重新读取，coverage complete：341 types、4032 methods、13
+ 清理后实际重新编译客户端、服务端与验证器，均为零编译警告和错误；隔离后端真实 HTTP + SQLite 测试再次 **120/120 通过**，正式受保护客户端 **7/7 组通过**。未混淆重建输入哈希与已保护输入一致，客户 EXE 和客户 ZIP 保持原哈希。新一轮三张界面图与原正式版逐像素零差异，八个解码音频载荷一致。见 [清理后验收](../evidence/cleanup-validation.json)、[后端结果](../evidence/cleanup-server-tests-results.json) 与 [七组清单](../evidence/protected-verification-20261113-163401-399.json)。
+ 
+ 迁移后的 ILSpy 9.1.0.7988 可实际运行，17 个现有 PowerShell 脚本语法检查通过。再次移除了回归重新生成的 82 个临时文件；保留结构化结果、日志与图片。当前 47835 服务健康，旧 47831 端口关闭。服务端包和维护包以 `Finalize.py --refresh` 原子刷新；客户包逐项核对后保留。
++
++## 2026-11-16 公网部署与授权修订
++
++生产授权服务迁到 `124.220.147.56`（OpenCloudOS 9.6）：应用以 systemd 单元 `licensing.service` 运行，只监听回环 `http://127.0.0.1:47835`；nginx 1.29.8 终结 TLS（Let's Encrypt shortlived 档位、IP SAN = 124.220.147.56）并反代回环，443 实测可达、47835 公网不可达。客户端配置默认值与交付包 `.exe.config` 统一改为 `https://124.220.147.56/`，客户端对非环回主机强制 HTTPS 且使用系统信任链，因此自签证书不可用；本轮用的是受信任的 IP 证书。Obfuscar 开启 HideStrings 后，受保护 EXE 内已无明文 IP 与端口，无法用字符串扫描证明指向，改以交付配置与真实联机回归作为功能证据。
++
++迁移后重新取证：隔离后端测试 **120/120 通过**；受保护客户端对线上服务 **7/7 组通过**（含心跳 28s 实测与断网租约到期不放行），未混淆基线套件同样 7/7 组通过；三张界面图在 raw/protected/trial 三方逐像素差异均为 0，八个音频解码载荷一致；REA 计数仍为 341 types / 4032 methods / 1399 fields / 1562 member refs，ILSpy 导出 56 个 C# 文件；12 项云端会话清理检查通过且全局有效会话为 0；真实入口窗口 706×509 打开并正常关闭。见 [授权修订记录](../evidence/authorized-revision-2026-11-16.json)、[派生核验汇总](../evidence/validation-summary.json)、[七组清单](../evidence/protected-verification-20261116-154658-342.json)、[未混淆基线](../evidence/raw-signed-20261116-154841/summary.json)、[云端会话清理](../evidence/session-cleanup-cloud-20261116.json)、[正式版静态分析](../evidence/release-static-analysis-20261116b/summary.json) 与 [入口生命周期](../evidence/protected-real-entry-lifecycle-20261116.json)。
++
++修订机制：cleanup 清单的保留项哈希比对新增“授权修订”通道——只有事先声明的变更文件可进入修订记录，且必须记录基线与当前哈希；客户包在授权修订下允许重新签发，旧包先做完整性与逐项 SHA 校验，新旧包哈希共同绑定在同一修订记录上。三个压缩包（Client/Server/Maintenance）以此机制重新签发。运行态用户偏好（`alert-sounds.txt`、`overlay-settings.txt`、小地图缓存、诊断日志）不再随包分发，消除了“启用声音提示”开关在混淆版与未混淆版之间的像素差异。服务端运维侧新增每日 SQLite 在线备份（保留 14 份）与 acme.sh 定时续签。
++
++边界更新：公网 HTTPS 与单台生产服务器的实际部署、证书签发、反代、备份与续期链路已在本轮实际验证；仍未覆盖实际游戏内完整对局、长期压力与并发、第二台机器、容器部署、代码签名、任意本地补丁对抗，以及证书到期跨越后的完整重签观察。
+diff --git a/CoH3/dev/SkyEye/scripts/prepare_live_cards.py b/CoH3/dev/SkyEye/scripts/prepare_live_cards.py
+index a33970c..808104f 100644
+--- a/CoH3/dev/SkyEye/scripts/prepare_live_cards.py
++++ b/CoH3/dev/SkyEye/scripts/prepare_live_cards.py
+@@ -18,12 +18,14 @@ def main() -> None:
+     parser.add_argument("--private-config", required=True, type=Path)
+     parser.add_argument("--private-out", required=True, type=Path)
+     parser.add_argument("--evidence-out", required=True, type=Path)
++    parser.add_argument("--base-url", help="Override the server base URL from the private config; requires an explicit --allow-host.")
++    parser.add_argument("--allow-host", help="Explicitly permit live fixture issuance against this host.")
+     args = parser.parse_args()
+     config = json.loads(args.private_config.read_text(encoding="utf-8-sig"))
+-    base = str(config["ListenUrl"]).rstrip("/") + "/"
++    base = (args.base_url or str(config["ListenUrl"])).rstrip("/") + "/"
+     parsed = urllib.parse.urlsplit(base)
+-    if parsed.hostname not in {"127.0.0.1", "localhost", "::1"}:
+-        raise SystemExit("Live fixture issuance is restricted to the configured loopback server.")
++    if parsed.hostname not in {"127.0.0.1", "localhost", "::1"} and parsed.hostname != args.allow_host:
++        raise SystemExit("Live fixture issuance is restricted to the configured loopback server; pass --allow-host to authorize another host explicitly.")
+     if args.private_out.exists() or args.evidence_out.exists():
+         raise SystemExit("Fixture outputs already exist; choose new output paths.")
+     opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
+@@ -65,7 +67,7 @@ def main() -> None:
+         code_file = args.private_out / (name + ".txt")
+         code_file.write_text(item["code"] + "\n", encoding="utf-8")
+         rows.append({"name": name, "id": item["id"], "codeSuffix": item["codeSuffix"], "kind": kind, "durationSeconds": seconds, "codeFile": str(code_file)})
+-    evidence = {"issuedAt": dt.datetime.now(dt.timezone.utc).isoformat(), "baseUrl": base, "transport": "real HTTP administrator login + CSRF + issue API", "containsCompleteCodes": False, "fixtures": rows}
++    evidence = {"issuedAt": dt.datetime.now(dt.timezone.utc).isoformat(), "baseUrl": base, "transport": "real HTTP administrator login + CSRF + issue API", "containsCompleteCodes": False, "hostAuthorization": args.allow_host, "fixtures": rows}
+     args.evidence_out.parent.mkdir(parents=True, exist_ok=True)
+     args.evidence_out.write_text(json.dumps(evidence, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+     print(json.dumps({"issued": len(rows), "evidence": str(args.evidence_out), "privateCodeDirectory": str(args.private_out)}, ensure_ascii=True))
+diff --git a/CoH3/dev/SkyEye/verification/Program.cs b/CoH3/dev/SkyEye/verification/Program.cs
+index 00ca4df..c0a789a 100644
+--- a/CoH3/dev/SkyEye/verification/Program.cs
++++ b/CoH3/dev/SkyEye/verification/Program.cs
+@@ -64,10 +64,12 @@ internal static class Program
+     {
+         SignatureChecks.Run();
+         Require(LicenseConfiguration60.ProductId == "CoH3FowTool", "Default product must match the contract.");
+-        Require(LicenseVersion60.DownloadAllowed("http://127.0.0.1:47835/download/client.exe"), "Configured loopback download host must be allowed.");
++        Uri configuredServer = LicenseConfiguration60.ServerBaseAddress;
++        string configuredOrigin = new UriBuilder(configuredServer) { UserName = string.Empty, Password = string.Empty }.Uri.GetLeftPart(UriPartial.Path);
++        Require(LicenseVersion60.DownloadAllowed(configuredOrigin + "download/client.exe"), "Configured download host must be allowed.");
+         Require(!LicenseVersion60.DownloadAllowed("https://unrelated.example/download/client.exe"), "Unrelated download hosts must be rejected.");
+-        Require(!LicenseVersion60.DownloadAllowed("http://127.0.0.1:47832/download/client.exe"), "Different download ports must be rejected.");
+-        Require(!LicenseVersion60.DownloadAllowed("http://user@127.0.0.1:47835/file"), "Download userinfo must be rejected.");
++        Require(!LicenseVersion60.DownloadAllowed(new UriBuilder(configuredServer) { Port = configuredServer.Port == 47832 ? 47833 : 47832 }.Uri.GetLeftPart(UriPartial.Path) + "download/client.exe"), "Different download ports must be rejected.");
++        Require(!LicenseVersion60.DownloadAllowed(new UriBuilder(configuredServer) { UserName = "user" }.Uri.GetLeftPart(UriPartial.Path) + "download/client.exe"), "Download userinfo must be rejected.");
+         Require(LicenseConfiguration60.ParseServerBaseAddress("https://licensing.example").AbsoluteUri == "https://licensing.example/", "HTTPS base URL normalization failed.");
+         foreach (string invalid in new[] { "http://licensing.example/", "file:///tmp/license", "https://user@licensing.example/", "https://licensing.example/?token=x", "https://licensing.example/#x" })
+         {
+diff --git a/CoH3/dev/SkyEye/verification/app.config b/CoH3/dev/SkyEye/verification/app.config
+index 8728392..9fac799 100644
+--- a/CoH3/dev/SkyEye/verification/app.config
++++ b/CoH3/dev/SkyEye/verification/app.config
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <configuration>
+   <appSettings>
+-    <add key="LicensingServerBaseUrl" value="http://127.0.0.1:47835/" />
++    <add key="LicensingServerBaseUrl" value="https://124.220.147.56/" />
+     <add key="LicensingProductId" value="CoH3FowTool" />
+   </appSettings>
+   <startup><supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.8" /></startup>

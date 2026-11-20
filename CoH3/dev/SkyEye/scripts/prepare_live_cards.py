@@ -18,12 +18,14 @@ def main() -> None:
     parser.add_argument("--private-config", required=True, type=Path)
     parser.add_argument("--private-out", required=True, type=Path)
     parser.add_argument("--evidence-out", required=True, type=Path)
+    parser.add_argument("--base-url", help="Override the server base URL from the private config; requires an explicit --allow-host.")
+    parser.add_argument("--allow-host", help="Explicitly permit live fixture issuance against this host.")
     args = parser.parse_args()
     config = json.loads(args.private_config.read_text(encoding="utf-8-sig"))
-    base = str(config["ListenUrl"]).rstrip("/") + "/"
+    base = (args.base_url or str(config["ListenUrl"])).rstrip("/") + "/"
     parsed = urllib.parse.urlsplit(base)
-    if parsed.hostname not in {"127.0.0.1", "localhost", "::1"}:
-        raise SystemExit("Live fixture issuance is restricted to the configured loopback server.")
+    if parsed.hostname not in {"127.0.0.1", "localhost", "::1"} and parsed.hostname != args.allow_host:
+        raise SystemExit("Live fixture issuance is restricted to the configured loopback server; pass --allow-host to authorize another host explicitly.")
     if args.private_out.exists() or args.evidence_out.exists():
         raise SystemExit("Fixture outputs already exist; choose new output paths.")
     opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
@@ -65,7 +67,7 @@ def main() -> None:
         code_file = args.private_out / (name + ".txt")
         code_file.write_text(item["code"] + "\n", encoding="utf-8")
         rows.append({"name": name, "id": item["id"], "codeSuffix": item["codeSuffix"], "kind": kind, "durationSeconds": seconds, "codeFile": str(code_file)})
-    evidence = {"issuedAt": dt.datetime.now(dt.timezone.utc).isoformat(), "baseUrl": base, "transport": "real HTTP administrator login + CSRF + issue API", "containsCompleteCodes": False, "fixtures": rows}
+    evidence = {"issuedAt": dt.datetime.now(dt.timezone.utc).isoformat(), "baseUrl": base, "transport": "real HTTP administrator login + CSRF + issue API", "containsCompleteCodes": False, "hostAuthorization": args.allow_host, "fixtures": rows}
     args.evidence_out.parent.mkdir(parents=True, exist_ok=True)
     args.evidence_out.write_text(json.dumps(evidence, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"issued": len(rows), "evidence": str(args.evidence_out), "privateCodeDirectory": str(args.private_out)}, ensure_ascii=True))

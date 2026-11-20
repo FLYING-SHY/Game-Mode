@@ -79,7 +79,7 @@ REA 对正式版重新读取，coverage complete：341 types、4032 methods、13
 
 ## 验证边界
 
-本轮覆盖本机 Windows x64、.NET Framework 4.8 客户端、.NET 10 服务、真实 HTTP 与 SQLite、实际公钥签名及短租约节奏。尚未覆盖实际游戏内完整对局、长期压力、第二台机器、公网 HTTPS、容器部署、代码签名、混淆后全部游戏内路径、任意本地补丁对抗或生产迁移。
+本轮覆盖本机 Windows x64、.NET Framework 4.8 客户端、.NET 10 服务、真实 HTTP 与 SQLite、实际公钥签名及短租约节奏。尚未覆盖实际游戏内完整对局、长期压力、第二台机器、容器部署、代码签名、混淆后全部游戏内路径、任意本地补丁对抗或生产迁移（公网 HTTPS 单机部署已在 2026-11-16 一节单独验证）。
 
 封存程序通过清理清单验证旧源码/归档在删除前的基线及删除后的状态，并核对原版、当前源码、客户发布和签名材料的保留哈希；同时检查客户包无源码/映射/PDB、所有包无 Demo 客户端及本机秘密，逐项解压复核大小和 SHA256。最终结果见 [最终校验](../evidence/final-validation.json) 及压缩包外置 `archive-verification`。
 
@@ -90,3 +90,13 @@ REA 对正式版重新读取，coverage complete：341 types、4032 methods、13
 清理后实际重新编译客户端、服务端与验证器，均为零编译警告和错误；隔离后端真实 HTTP + SQLite 测试再次 **120/120 通过**，正式受保护客户端 **7/7 组通过**。未混淆重建输入哈希与已保护输入一致，客户 EXE 和客户 ZIP 保持原哈希。新一轮三张界面图与原正式版逐像素零差异，八个解码音频载荷一致。见 [清理后验收](../evidence/cleanup-validation.json)、[后端结果](../evidence/cleanup-server-tests-results.json) 与 [七组清单](../evidence/protected-verification-20261113-163401-399.json)。
 
 迁移后的 ILSpy 9.1.0.7988 可实际运行，17 个现有 PowerShell 脚本语法检查通过。再次移除了回归重新生成的 82 个临时文件；保留结构化结果、日志与图片。当前 47835 服务健康，旧 47831 端口关闭。服务端包和维护包以 `Finalize.py --refresh` 原子刷新；客户包逐项核对后保留。
+
+## 2026-11-16 公网部署与授权修订
+
+生产授权服务迁到 `124.220.147.56`（OpenCloudOS 9.6）：应用以 systemd 单元 `licensing.service` 运行，只监听回环 `http://127.0.0.1:47835`；nginx 1.29.8 终结 TLS（Let's Encrypt shortlived 档位、IP SAN = 124.220.147.56）并反代回环，443 实测可达、47835 公网不可达。客户端配置默认值与交付包 `.exe.config` 统一改为 `https://124.220.147.56/`，客户端对非环回主机强制 HTTPS 且使用系统信任链，因此自签证书不可用；本轮用的是受信任的 IP 证书。Obfuscar 开启 HideStrings 后，受保护 EXE 内已无明文 IP 与端口，无法用字符串扫描证明指向，改以交付配置与真实联机回归作为功能证据。
+
+迁移后重新取证：隔离后端测试 **120/120 通过**；受保护客户端对线上服务 **7/7 组通过**（含心跳 28s 实测与断网租约到期不放行），未混淆基线套件同样 7/7 组通过；三张界面图在 raw/protected/trial 三方逐像素差异均为 0，八个音频解码载荷一致；REA 计数仍为 341 types / 4032 methods / 1399 fields / 1562 member refs，ILSpy 导出 56 个 C# 文件；12 项云端会话清理检查通过且全局有效会话为 0；真实入口窗口 706×509 打开并正常关闭。见 [授权修订记录](../evidence/authorized-revision-2026-11-16.json)、[派生核验汇总](../evidence/validation-summary.json)、[七组清单](../evidence/protected-verification-20261116-154658-342.json)、[未混淆基线](../evidence/raw-signed-20261116-154841/summary.json)、[云端会话清理](../evidence/session-cleanup-cloud-20261116.json)、[正式版静态分析](../evidence/release-static-analysis-20261116b/summary.json) 与 [入口生命周期](../evidence/protected-real-entry-lifecycle-20261116.json)。
+
+修订机制：cleanup 清单的保留项哈希比对新增“授权修订”通道——只有事先声明的变更文件可进入修订记录，且必须记录基线与当前哈希；客户包在授权修订下允许重新签发，旧包先做完整性与逐项 SHA 校验，新旧包哈希共同绑定在同一修订记录上。三个压缩包（Client/Server/Maintenance）以此机制重新签发。运行态用户偏好（`alert-sounds.txt`、`overlay-settings.txt`、小地图缓存、诊断日志）不再随包分发，消除了“启用声音提示”开关在混淆版与未混淆版之间的像素差异。服务端运维侧新增每日 SQLite 在线备份（保留 14 份）与 acme.sh 定时续签。
+
+边界更新：公网 HTTPS 与单台生产服务器的实际部署、证书签发、反代、备份与续期链路已在本轮实际验证；仍未覆盖实际游戏内完整对局、长期压力与并发、第二台机器、容器部署、代码签名、任意本地补丁对抗，以及证书到期跨越后的完整重签观察。

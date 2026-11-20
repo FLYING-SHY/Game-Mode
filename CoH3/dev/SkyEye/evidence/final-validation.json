@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T15:50:57.996012+00:00",
+  "generatedAt": "2026-11-16T14:23:28.445969+00:00",
   "passed": true,
   "checks": [
     {
@@ -83,6 +83,10 @@
       "passed": true
     },
     {
+      "name": "authorized revision covers exactly the recorded deviations",
+      "passed": true
+    },
+    {
       "name": "intentionally refactored preserved files present",
       "passed": true
     },
@@ -99,7 +103,11 @@
       "passed": true
     },
     {
-      "name": "post-cleanup pictures, audio and immutable customer archive verified",
+      "name": "post-cleanup pictures, audio and customer archive verified",
+      "passed": true
+    },
+    {
+      "name": "customer archive re-issue is bound to the authorized revision",
       "passed": true
     },
     {
@@ -107,7 +115,7 @@
       "passed": true
     },
     {
-      "name": "private signing key retained outside delivery",
+      "name": "private signing key retained outside output",
       "passed": true
     },
     {
@@ -139,6 +147,10 @@
       "passed": true
     },
     {
+      "name": "customer release superseded under the authorized revision",
+      "passed": true
+    },
+    {
       "name": "portable SDK/config helpers exist",
       "passed": true
     },
@@ -147,11 +159,11 @@
       "passed": true
     }
   ],
-  "checkCount": 36,
+  "checkCount": 39,
   "localLinks": [
     {
       "document": "README.md",
-      "link": "<../../LicensingSystem/README.md>",
+      "link": "<../../../LicensingSystem/README.md>",
       "exists": true
     },
     {
@@ -171,12 +183,12 @@
     },
     {
       "document": "README.md",
-      "link": "<../../LicensingSystem/server/>",
+      "link": "<../../../LicensingSystem/server/>",
       "exists": true
     },
     {
       "document": "README.md",
-      "link": "<../../LicensingSystem/server-tests/>",
+      "link": "<../../../LicensingSystem/server-tests/>",
       "exists": true
     },
     {
@@ -217,6 +229,16 @@
     {
       "document": "README.md",
       "link": "evidence/refactor-manifest.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "link": "evidence/refactor-manifest-2026-11-15.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "link": "evidence/authorized-revision-2026-11-16.json",
       "exists": true
     },
     {
@@ -315,8 +337,43 @@
       "exists": true
     },
     {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/authorized-revision-2026-11-16.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/validation-summary.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/protected-verification-20261116-154658-342.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/raw-signed-20261116-154841/summary.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/session-cleanup-cloud-20261116.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/release-static-analysis-20261116b/summary.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/protected-real-entry-lifecycle-20261116.json",
+      "exists": true
+    },
+    {
       "document": "reports\\signature-cross-review.md",
-      "link": "../../../LicensingSystem/server/LeaseSigner.cs#L65",
+      "link": "../../../../LicensingSystem/server/LeaseSigner.cs#L65",
       "exists": true
     },
     {
@@ -336,7 +393,7 @@
     },
     {
       "document": "reports\\signature-cross-review.md",
-      "link": "../../../LicensingSystem/server/LicenseService.cs#L94",
+      "link": "../../../../LicensingSystem/server/LicenseService.cs#L94",
       "exists": true
     },
     {
@@ -346,7 +403,7 @@
     },
     {
       "document": "reports\\signature-cross-review.md",
-      "link": "../../../LicensingSystem/server/LicenseService.cs#L197",
+      "link": "../../../../LicensingSystem/server/LicenseService.cs#L197",
       "exists": true
     },
     {
@@ -371,7 +428,7 @@
     },
     {
       "document": "reports\\signature-cross-review.md",
-      "link": "../../../LicensingSystem/Initialize-Signing.ps1#L11",
+      "link": "../../../../LicensingSystem/Initialize-Signing.ps1#L11",
       "exists": true
     },
     {
@@ -386,12 +443,12 @@
     },
     {
       "document": "reports\\signature-cross-review.md",
-      "link": "../../../LicensingSystem/server/LeaseSigner.cs#L22",
+      "link": "../../../../LicensingSystem/server/LeaseSigner.cs#L22",
       "exists": true
     },
     {
       "document": "reports\\signature-cross-review.md",
-      "link": "../../../LicensingSystem/server/Program.cs#L19",
+      "link": "../../../../LicensingSystem/server/Program.cs#L19",
       "exists": true
     },
     {
@@ -407,6 +464,8 @@
   ],
   "secretScanner": "Administrator tokens, fixture code values and private PEM payload lines checked in memory; no values saved.",
   "trialBinaryIncluded": false,
+  "authorizedRevision": "2026-11-16-cloud-licensing-endpoint",
+  "customerArchiveReissued": true,
   "limitations": [
     "Reactor output is a 14-day demo experiment and excluded from every delivery archive.",
     "ILSpy still exports release C#; obfuscation raises analysis cost.",

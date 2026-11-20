@@ -1,0 +1,52 @@
+{
+  "verifiedAt": "2026-11-16T14:29:54.068086+00:00",
+  "baseUrl": "https://124.220.147.56/",
+  "originalCardCount": 44,
+  "finalCardCount": 44,
+  "concurrentAdminDeletions": 0,
+  "fixtureCount": 2,
+  "checks": {
+    "remainingOriginalCardsUnchanged": true,
+    "allAbsentOriginalCardsHaveNewDeletionAudit": true,
+    "previousAuditRetained": true,
+    "allRemainingCodesReadable": true,
+    "protectedSignedProtocolPassed": true,
+    "liveLeasesCheckedBeforeDelete": true,
+    "fixture1:absent": true,
+    "fixture1:singleAudit": true,
+    "fixture1:exactNonsensitiveAudit": true,
+    "fixture1:dependentRowsDeleted": true,
+    "fixture1:noSessionsRemain": true,
+    "fixture1:oldBearerRevoked": true,
+    "fixture1:oldRequestReplayRevoked": true,
+    "fixture1:newActivationRevoked": true,
+    "fixture2:absent": true,
+    "fixture2:singleAudit": true,
+    "fixture2:exactNonsensitiveAudit": true,
+    "fixture2:dependentRowsDeleted": true,
+    "fixture2:noSessionsRemain": true,
+    "fixture2:oldBearerRevoked": true,
+    "fixture2:oldRequestReplayRevoked": true,
+    "fixture2:newActivationRevoked": true,
+    "repeatBatchNotFound": true,
+    "repeatBatchAddsNoAudit": true,
+    "csvExcludesBothDeletedCodes": true,
+    "remainingLegacyPlaintextsStillMatch": true,
+    "healthReady": true
+  },
+  "deletionAuditDetails": {
+    "d2e919eae0db45ecad3877521dbbea0e": {
+      "codeSuffix": "709C4B56",
+      "kind": "permanent",
+      "sessionsDeleted": 4,
+      "activationRequestsDeleted": 4
+    },
+    "904d52776fce4c9fa2cc24251c95f209": {
+      "codeSuffix": "276416A3",
+      "kind": "permanent",
+      "sessionsDeleted": 2,
+      "activationRequestsDeleted": 2
+    }
+  },
+  "serverAssertionsPassed": 195
+}

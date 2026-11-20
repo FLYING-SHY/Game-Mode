@@ -1,0 +1,285 @@
+{
+  "branch": "with_skill",
+  "method": "runpy + direct discovery/verify calls, no artifact serialization; no create/self-test rerun",
+  "candidate_recomputed_equal": true,
+  "evidence_recomputed_equal": true,
+  "verify_recomputed_equal": true,
+  "verify": {
+    "schema": 1,
+    "model": "offline-simulated-native64",
+    "passed": true,
+    "candidates": [
+      {
+        "build": "A",
+        "passed": true,
+        "sessions": [
+          {
+            "id": "A0",
+            "address": 8589935672,
+            "values": [
+              100,
+              73,
+              91
+            ],
+            "decoy_values": [
+              [
+                100,
+                100,
+                100
+              ],
+              [
+                100,
+                91,
+                73
+              ]
+            ],
+            "passed": true
+          },
+          {
+            "id": "A1",
+            "address": 8592032952,
+            "values": [
+              100,
+              73,
+              91
+            ],
+            "decoy_values": [
+              [
+                100,
+                100,
+                100
+              ],
+              [
+                100,
+                91,
+                73
+              ]
+            ],
+            "passed": true
+          }
+        ]
+      },
+      {
+        "build": "B",
+        "passed": true,
+        "sessions": [
+          {
+            "id": "B0",
+            "address": 8606712920,
+            "values": [
+              100,
+              73,
+              91
+            ],
+            "decoy_values": [
+              [
+                100,
+                100,
+                100
+              ],
+              [
+                100,
+                91,
+                73
+              ]
+            ],
+            "passed": true
+          },
+          {
+            "id": "B1",
+            "address": 8608810200,
+            "values": [
+              100,
+              73,
+              91
+            ],
+            "decoy_values": [
+              [
+                100,
+                100,
+                100
+              ],
+              [
+                100,
+                91,
+                73
+              ]
+            ],
+            "passed": true
+          }
+        ]
+      }
+    ],
+    "aob": [
+      {
+        "session": "A0",
+        "mode": "unique",
+        "count": 1,
+        "status": "unique",
+        "decoded_roots": [
+          5368709504
+        ],
+        "accepted": true,
+        "passed": true
+      },
+      {
+        "session": "A0",
+        "mode": "zero",
+        "count": 0,
+        "status": "zero",
+        "decoded_roots": [],
+        "accepted": false,
+        "passed": true
+      },
+      {
+        "session": "A0",
+        "mode": "multi",
+        "count": 2,
+        "status": "multiple",
+        "decoded_roots": [
+          5368709504,
+          5368709504
+        ],
+        "accepted": false,
+        "passed": true
+      },
+      {
+        "session": "A1",
+        "mode": "unique",
+        "count": 1,
+        "status": "unique",
+        "decoded_roots": [
+          5368709504
+        ],
+        "accepted": true,
+        "passed": true
+      },
+      {
+        "session": "A1",
+        "mode": "zero",
+        "count": 0,
+        "status": "zero",
+        "decoded_roots": [],
+        "accepted": false,
+        "passed": true
+      },
+      {
+        "session": "A1",
+        "mode": "multi",
+        "count": 2,
+        "status": "multiple",
+        "decoded_roots": [
+          5368709504,
+          5368709504
+        ],
+        "accepted": false,
+        "passed": true
+      },
+      {
+        "session": "B0",
+        "mode": "unique",
+        "count": 1,
+        "status": "unique",
+        "decoded_roots": [
+          6442451520
+        ],
+        "accepted": true,
+        "passed": true
+      },
+      {
+        "session": "B0",
+        "mode": "zero",
+        "count": 0,
+        "status": "zero",
+        "decoded_roots": [],
+        "accepted": false,
+        "passed": true
+      },
+      {
+        "session": "B0",
+        "mode": "multi",
+        "count": 2,
+        "status": "multiple",
+        "decoded_roots": [
+          6442451520,
+          6442451520
+        ],
+        "accepted": false,
+        "passed": true
+      },
+      {
+        "session": "B1",
+        "mode": "unique",
+        "count": 1,
+        "status": "unique",
+        "decoded_roots": [
+          6442451520
+        ],
+        "accepted": true,
+        "passed": true
+      },
+      {
+        "session": "B1",
+        "mode": "zero",
+        "count": 0,
+        "status": "zero",
+        "decoded_roots": [],
+        "accepted": false,
+        "passed": true
+      },
+      {
+        "session": "B1",
+        "mode": "multi",
+        "count": 2,
+        "status": "multiple",
+        "decoded_roots": [
+          6442451520,
+          6442451520
+        ],
+        "accepted": false,
+        "passed": true
+      }
+    ],
+    "patch_model": {
+      "enabled": true,
+      "disabled_restored": true,
+      "restore_conflict": true,
+      "conflict_preserved": true,
+      "original_hex": "0f8511000000",
+      "installed_hex": "909090909090",
+      "conflicting_hex": "cc9090909090"
+    }
+  },
+  "oracle_metadata_poison_test": "PASS: discovery unchanged when pointer_root/field_layout/health_address/decoy_addresses/expected_values replaced in memory",
+  "image_hashes_verified": 24,
+  "original_self_test_checks": {
+    "passed": true,
+    "checks": {
+      "two_builds_two_sessions_decoys": true,
+      "aob_0_1_multiple_rip": true,
+      "normal_enable_disable": true,
+      "restore_conflict": true,
+      "last_byte_boundary": true,
+      "short_read": true,
+      "outside_image": true,
+      "negative_size": true,
+      "stale_session": true,
+      "decoy_rejected": true,
+      "deterministic": true
+    }
+  },
+  "recorded_exit_codes": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "stderr_empty": true,
+  "synthetic_negative_rip_scan_and_arithmetic": true,
+  "outputs_unchanged_sha256": true,
+  "limitations": [
+    "self-test log checked, not rerun to avoid temporary file writes",
+    "synthetic negative displacement checks encoding/scan/arithmetic, not end-to-end changed fixture",
+    "no process/game/hidden-layout trial"
+  ]
+}

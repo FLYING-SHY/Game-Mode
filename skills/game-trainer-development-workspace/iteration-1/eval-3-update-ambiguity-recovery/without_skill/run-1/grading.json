@@ -1,0 +1,54 @@
+{
+  "expectations": [
+    {
+      "text": "交付实际运行的离线测试脚本及真实结果，而非只有测试计划。",
+      "passed": true,
+      "evidence": "实际读取outputs/offline_test.py全275行、report.md、transcript.md、test.log及results.json。259-275行用unittest发现和执行测试、从result构造统计并决定退出码，非打印写死passed；原日志14 tests通过。grader用Python3.11.9 -B 经runpy __main__实际重跑，grader-verification.log记14 tests、0 failures/errors、entrypoint_exit_code=0及grader_process_exit_code=0。仅截留入口写results.json这一项副作用，不改变测试或判断逻辑。"
+    },
+    {
+      "text": "0命中停止采用；多候选不直接选首个，使用指令目标/结构语义验证或报告歧义。",
+      "passed": true,
+      "evidence": "select() 64-78行收集所有原始候选，按有符号RIP目标的8字节访问范围过滤；len(valid)!=1立即报错，非取首个。144-165行断言零候选candidate_count:0;raw:0、多有效候选candidate_count:2;raw:2并保持全缓冲区不变；另测仅一个目标合规与全部目标越区。重跑全部通过。此处语义仅目标区域，深度有限，但报告歧义分支足以满足本断言。"
+    },
+    {
+      "text": "代码正确计算有符号RIP目标并验证预期指令/边界，含可执行断言。",
+      "passed": true,
+      "evidence": "decode() 55-61行检查完整10字节范围及48 8B 05/48 85 C0上下文，以struct.unpack_from('<i',...)读signed disp32，返回rva+7+displacement。select()限制代码区及目标起点[128,184]以容纳8字节访问。138-142行正位移目标160及VA=0x1400000A0；177-185行负位移-71解出32、错误opcode与末端截断实际异常，重跑通过。report 47行明确逐字节扫描不证明真实可变长指令边界；此pass限固定模型。"
+    },
+    {
+      "text": "会话身份失效有实际测试；正常补丁启用禁用恢复有实际测试。",
+      "passed": true,
+      "evidence": "validate_session() 89-98行比较session/build/base并保持stale状态。187-197行实际验证启用、重复启用、关闭、全镜像恢复及事件顺序；221-247行测试同址新session在启用/恢复两种路径报stale、base/build变化失效、新session新解析可正常启停。独立grader的CountingBuffer额外证实stale enable/restore write_delta=0，日志有记录。"
+    },
+    {
+      "text": "恢复前检查已安装字节，外部改动引发冲突并保留现场，代码与测试一致。",
+      "passed": true,
+      "evidence": "transition() 100-125行先读当前7字节，enabled状态要求等于PATCH；不等则设conflict并抛byte_conflict，早于118行唯一写入。208-219行安装后改第3字节0x41，断言恢复冲突、全缓冲区保留、conflict状态及后续启用冻结。原测试没有写计数，grader重跑后另用CountingBuffer跟踪__setitem__，确认恢复冲突write_delta=0且whole_buffer_preserved=true；没有用字节相等单独冒充零写证明。"
+    },
+    {
+      "text": "保持build身份检查并列出尚未执行的真实游戏/跨会话验证，不以fixture替代实测结论。",
+      "passed": true,
+      "evidence": "select() 65-68行保留build/size/hash gate，167-175行实际测试build与hash失配。report 24-25行区分fixture自动造profile与生产审核，并指出整个运行时模块hash局限；68-77行明确真实build/反汇编/ASLR/重启/PID复用/同址重载/并发等均待执行。5行及transcript 54行仅称合成bytearray通过，未声称线上验证。"
+    }
+  ],
+  "summary": {"passed": 6, "failed": 0, "total": 6, "pass_rate": 1.0},
+  "claims": [
+    {"claim": "14项unittest全部通过，退出码0。", "type": "factual", "verified": true, "evidence": "原test.log、results.json与grader实际重跑日志一致为14 tests、0 failures/errors；实际unittest断言驱动结果。"},
+    {"claim": "恢复冲突与跨会话过期路径保持零写入。", "type": "quality", "verified": true, "evidence": "原脚本异常路径早于唯一slice assignment；原用例检查全镜像。grader另用CountingBuffer计数，恢复冲突与stale enable/restore均write_delta=0，记录于grader-verification.log。"},
+    {"claim": "仅合成内存模型，未附加真实游戏。", "type": "process", "verified": true, "evidence": "完整脚本仅标准库、合成256字节缓冲区及结果文件写出；报告和运行统计一致称real_process_attached=false、真实游戏待验证。"},
+    {"claim": "grader重跑保持原始交付物不变。", "type": "process", "verified": true, "evidence": "仅mock Path.write_text拦截精确results.json路径，在内存接收真实统计；runpy执行原入口及全部测试。重跑前后outputs全部原文件SHA256字典相等，日志确认unchanged。"}
+  ],
+  "user_notes_summary": {
+    "uncertainties": ["没有独立user_notes.md。报告主动限定为固定指令、串行稳定缓冲区模型。", "session字符串代表实例/模块代次，但未像with_skill将PID/start/epoch拆分逐项测试。", "目标语义只检查引用地址区域，未解引用验证对象类型、owner或字段不变量。"],
+    "needs_review": ["原产物冲突测试只比较字节快照；独立grader已补计数探针确认零写，交付测试自身可补持久化的计数断言。", "未模拟部分写、读写异常、真实线程、模块卸载或并发窗口；报告如实列为待验证。"],
+    "workarounds": ["为不改原产物，grader在runpy执行__main__期间拦截精确results.json的Path.write_text；真实生成统计照常打印到grader-verification.log，其余测试与退出逻辑保持原样。", "python3.11命令原环境未注册，在单次PowerShell将其设为C:\\Program Files\\Python311\\python.exe别名，使用-B，并在Python内断言3.11版本。"]
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {"assertion": "恢复前检查已安装字节，外部改动引发冲突并保留现场，代码与测试一致。", "reason": "将零写入规定为对write调用或缓冲区写操作计数，而不只比较最终字节。原测试字节相等理论上容许写后还原；本次独立CountingBuffer探针已证明实现确实零写，建议将该探针纳入交付测试。"},
+      {"assertion": "代码正确计算有符号RIP目标并验证预期指令/边界，含可执行断言。", "reason": "明确区分固定指令模型与真实指令边界；增加目标区间端点、负RVA、嵌入操作数内假签名、截断profile和64位VA溢出。当前pass是固定模型正确性，不代表通用反汇编。"},
+      {"reason": "六条断言都满足，但不衡量语义验证深度、会话身份分量、短写/回滚、并发窗口等方法完善度。可追加独立断言或隐藏fixture，防止用例数量14对11被误用作质量胜负。"}
+    ],
+    "overall": "六条均通过，与with_skill同为6/6。baseline实现较简明，目标区域约束和组合session已经满足本轮合同；with_skill另有对象语义、五项身份、写计数和安装短写回滚，属于方法完善度差异，不应反向扣除baseline已满足的六条。没有真实游戏成功结论。"
+  }
+}

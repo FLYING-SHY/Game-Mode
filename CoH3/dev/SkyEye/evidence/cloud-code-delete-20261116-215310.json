@@ -1,0 +1,36 @@
+{
+  "verifiedAt": "2026-11-16T14:04:13.964655+00:00",
+  "baseUrl": "https://124.220.147.56/",
+  "originalCardCount": 67,
+  "finalCardCount": 44,
+  "concurrentAdminDeletions": 23,
+  "checks": {
+    "fixtureAbsent": true,
+    "remainingOriginalCardsUnchanged": true,
+    "allAbsentOriginalCardsHaveNewDeletionAudit": true,
+    "originalCardCountAccountedFor": true,
+    "allRecordsReadable": true,
+    "remainingLegacyPlaintextsStillMatch": true,
+    "singleDeletionAudit": true,
+    "previousAuditRetained": true,
+    "auditHasNoPlaintext": true,
+    "deletedSessionsRecorded": true,
+    "deletedActivationRequestsRecorded": true,
+    "noRemainingFixtureSessions": true,
+    "oldBearerRevoked": true,
+    "oldActivationReplayRevoked": true,
+    "newActivationRevoked": true,
+    "repeatDeletionNotFound": true,
+    "csvExcludesDeletedCode": true,
+    "protectedSignedProtocolPassed": true,
+    "healthReady": true,
+    "repeatDeletionDidNotDuplicateAudit": true
+  },
+  "deletionAuditDetails": {
+    "codeSuffix": "8590FD71",
+    "kind": "permanent",
+    "sessionsDeleted": 4,
+    "activationRequestsDeleted": 4
+  },
+  "serverAssertionsPassed": 150
+}

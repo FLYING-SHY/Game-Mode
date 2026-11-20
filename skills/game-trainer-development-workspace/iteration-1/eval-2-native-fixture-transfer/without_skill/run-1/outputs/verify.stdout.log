@@ -1,0 +1,246 @@
+{
+  "schema": 1,
+  "model": "offline-simulated-native64",
+  "passed": true,
+  "candidates": [
+    {
+      "build": "A",
+      "passed": true,
+      "sessions": [
+        {
+          "id": "A0",
+          "address": 8589935672,
+          "values": [
+            100,
+            73,
+            91
+          ],
+          "decoy_values": [
+            [
+              100,
+              100,
+              100
+            ],
+            [
+              100,
+              91,
+              73
+            ]
+          ],
+          "passed": true
+        },
+        {
+          "id": "A1",
+          "address": 8592032952,
+          "values": [
+            100,
+            73,
+            91
+          ],
+          "decoy_values": [
+            [
+              100,
+              100,
+              100
+            ],
+            [
+              100,
+              91,
+              73
+            ]
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "build": "B",
+      "passed": true,
+      "sessions": [
+        {
+          "id": "B0",
+          "address": 8606712920,
+          "values": [
+            100,
+            73,
+            91
+          ],
+          "decoy_values": [
+            [
+              100,
+              100,
+              100
+            ],
+            [
+              100,
+              91,
+              73
+            ]
+          ],
+          "passed": true
+        },
+        {
+          "id": "B1",
+          "address": 8608810200,
+          "values": [
+            100,
+            73,
+            91
+          ],
+          "decoy_values": [
+            [
+              100,
+              100,
+              100
+            ],
+            [
+              100,
+              91,
+              73
+            ]
+          ],
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "aob": [
+    {
+      "session": "A0",
+      "mode": "unique",
+      "count": 1,
+      "status": "unique",
+      "decoded_roots": [
+        5368709504
+      ],
+      "accepted": true,
+      "passed": true
+    },
+    {
+      "session": "A0",
+      "mode": "zero",
+      "count": 0,
+      "status": "zero",
+      "decoded_roots": [],
+      "accepted": false,
+      "passed": true
+    },
+    {
+      "session": "A0",
+      "mode": "multi",
+      "count": 2,
+      "status": "multiple",
+      "decoded_roots": [
+        5368709504,
+        5368709504
+      ],
+      "accepted": false,
+      "passed": true
+    },
+    {
+      "session": "A1",
+      "mode": "unique",
+      "count": 1,
+      "status": "unique",
+      "decoded_roots": [
+        5368709504
+      ],
+      "accepted": true,
+      "passed": true
+    },
+    {
+      "session": "A1",
+      "mode": "zero",
+      "count": 0,
+      "status": "zero",
+      "decoded_roots": [],
+      "accepted": false,
+      "passed": true
+    },
+    {
+      "session": "A1",
+      "mode": "multi",
+      "count": 2,
+      "status": "multiple",
+      "decoded_roots": [
+        5368709504,
+        5368709504
+      ],
+      "accepted": false,
+      "passed": true
+    },
+    {
+      "session": "B0",
+      "mode": "unique",
+      "count": 1,
+      "status": "unique",
+      "decoded_roots": [
+        6442451520
+      ],
+      "accepted": true,
+      "passed": true
+    },
+    {
+      "session": "B0",
+      "mode": "zero",
+      "count": 0,
+      "status": "zero",
+      "decoded_roots": [],
+      "accepted": false,
+      "passed": true
+    },
+    {
+      "session": "B0",
+      "mode": "multi",
+      "count": 2,
+      "status": "multiple",
+      "decoded_roots": [
+        6442451520,
+        6442451520
+      ],
+      "accepted": false,
+      "passed": true
+    },
+    {
+      "session": "B1",
+      "mode": "unique",
+      "count": 1,
+      "status": "unique",
+      "decoded_roots": [
+        6442451520
+      ],
+      "accepted": true,
+      "passed": true
+    },
+    {
+      "session": "B1",
+      "mode": "zero",
+      "count": 0,
+      "status": "zero",
+      "decoded_roots": [],
+      "accepted": false,
+      "passed": true
+    },
+    {
+      "session": "B1",
+      "mode": "multi",
+      "count": 2,
+      "status": "multiple",
+      "decoded_roots": [
+        6442451520,
+        6442451520
+      ],
+      "accepted": false,
+      "passed": true
+    }
+  ],
+  "patch_model": {
+    "enabled": true,
+    "disabled_restored": true,
+    "restore_conflict": true,
+    "conflict_preserved": true,
+    "original_hex": "0f8511000000",
+    "installed_hex": "909090909090",
+    "conflicting_hex": "cc9090909090"
+  }
+}

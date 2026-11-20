@@ -21,7 +21,7 @@ public static class LiveRegression {
 
 $root = 'F:\WorkSpace\Game\CoH3\dev\COH3SimpleTool'
 $outDir = 'F:\WorkSpace\Game\CoH3\output\COH3SimpleTool'
-$exe = Join-Path $outDir 'COH3简易工具.exe'
+$exe = Join-Path $outDir 'COH3工具.exe'
 $stamp = Get-Date -Format 'yyyyMMdd-HHmmss'
 $evid = Join-Path $root ("evidence\live-regression-" + $stamp)
 New-Item -ItemType Directory -Force -Path $evid | Out-Null

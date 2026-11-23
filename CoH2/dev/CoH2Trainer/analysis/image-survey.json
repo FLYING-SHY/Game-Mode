@@ -1,0 +1,1704 @@
+{
+  "schema": "coh2-image-survey-v1",
+  "capturedUtc": "2026-11-23T13:42:11.982207+00:00",
+  "input": "G:\\SteamLibrary\\steamapps\\common\\Company of Heroes 2\\RelicCoH2.exe",
+  "bytes": 52867544,
+  "sha256": "568d7c64f90bb878b397f4bd7b655efa1a1a139e230c386f4c26ab378c0e8e32",
+  "machine": "0x8664",
+  "bits": 64,
+  "clrDirectory": {
+    "rva": "0x0",
+    "bytes": 0
+  },
+  "peTimestamp": "0x62a8e808",
+  "imageBase": "0x140000000",
+  "sizeOfImage": "0x3537000",
+  "sections": [
+    {
+      "name": ".text",
+      "rva": 4096,
+      "virtualSize": 32144015,
+      "rawOffset": 1536,
+      "rawSize": 32144384,
+      "characteristics": "0x60000020"
+    },
+    {
+      "name": "MSSMIXER",
+      "rva": 32149504,
+      "virtualSize": 17418,
+      "rawOffset": 32145920,
+      "rawSize": 17920,
+      "characteristics": "0x60000020"
+    },
+    {
+      "name": "RADCODE",
+      "rva": 32169984,
+      "virtualSize": 5231,
+      "rawOffset": 32163840,
+      "rawSize": 5632,
+      "characteristics": "0x60000020"
+    },
+    {
+      "name": ".rdata",
+      "rva": 32178176,
+      "virtualSize": 9448596,
+      "rawOffset": 32169472,
+      "rawSize": 9448960,
+      "characteristics": "0x40000040"
+    },
+    {
+      "name": ".data",
+      "rva": 41627648,
+      "virtualSize": 8518000,
+      "rawOffset": 41618432,
+      "rawSize": 5605888,
+      "characteristics": "0xc0000040"
+    },
+    {
+      "name": ".pdata",
+      "rva": 50147328,
+      "virtualSize": 1644084,
+      "rawOffset": 47224320,
+      "rawSize": 1644544,
+      "characteristics": "0x40000040"
+    },
+    {
+      "name": "RADDATA",
+      "rva": 51793920,
+      "virtualSize": 80,
+      "rawOffset": 48868864,
+      "rawSize": 512,
+      "characteristics": "0xc0000040"
+    },
+    {
+      "name": "RADCONST",
+      "rva": 51798016,
+      "virtualSize": 188,
+      "rawOffset": 48869376,
+      "rawSize": 512,
+      "characteristics": "0x40000040"
+    },
+    {
+      "name": ".rodata",
+      "rva": 51802112,
+      "virtualSize": 2592,
+      "rawOffset": 48869888,
+      "rawSize": 3072,
+      "characteristics": "0x40000040"
+    },
+    {
+      "name": "_RDATA",
+      "rva": 51806208,
+      "virtualSize": 21512,
+      "rawOffset": 48872960,
+      "rawSize": 22016,
+      "characteristics": "0x40000040"
+    },
+    {
+      "name": ".rsrc",
+      "rva": 51830784,
+      "virtualSize": 3176416,
+      "rawOffset": 48894976,
+      "rawSize": 3176448,
+      "characteristics": "0x40000040"
+    },
+    {
+      "name": ".reloc",
+      "rva": 55009280,
+      "virtualSize": 786940,
+      "rawOffset": 52071424,
+      "rawSize": 786944,
+      "characteristics": "0x42000040"
+    }
+  ],
+  "keywordPattern": "(FOW|FogOfWar|fog_|reveal|setsimrate|gamespeed|cheat|Player_SetResource|Player_AddResource|populationcap)",
+  "matchingStrings": [
+    {
+      "text": "PCMD_CheatResources",
+      "fileOffset": "0x1ef1600",
+      "rva": "0x1ef3800",
+      "va": "0x141ef3800",
+      "candidateCodeRefs": [
+        "0x1412e20bd"
+      ]
+    },
+    {
+      "text": "PCMD_CheatRevealAll",
+      "fileOffset": "0x1ef1618",
+      "rva": "0x1ef3818",
+      "va": "0x141ef3818",
+      "candidateCodeRefs": [
+        "0x1412e20e5"
+      ]
+    },
+    {
+      "text": "PCMD_CheatKillSelf",
+      "fileOffset": "0x1ef1630",
+      "rva": "0x1ef3830",
+      "va": "0x141ef3830",
+      "candidateCodeRefs": [
+        "0x1412e210d"
+      ]
+    },
+    {
+      "text": "PCMD_CheatBuildTime",
+      "fileOffset": "0x1ef1658",
+      "rva": "0x1ef3858",
+      "va": "0x141ef3858",
+      "candidateCodeRefs": [
+        "0x1412e215d"
+      ]
+    },
+    {
+      "text": "CameraFoW",
+      "fileOffset": "0x1f02578",
+      "rva": "0x1f04778",
+      "va": "0x141f04778",
+      "candidateCodeRefs": [
+        "0x1405a1859",
+        "0x14080c25f"
+      ]
+    },
+    {
+      "text": "fow_filter_factor",
+      "fileOffset": "0x1f025f0",
+      "rva": "0x1f047f0",
+      "va": "0x141f047f0",
+      "candidateCodeRefs": [
+        "0x1405a16fb"
+      ]
+    },
+    {
+      "text": "sound_fow",
+      "fileOffset": "0x1f02a68",
+      "rva": "0x1f04c68",
+      "va": "0x141f04c68",
+      "candidateCodeRefs": [
+        "0x140056250",
+        "0x14008cae0"
+      ]
+    },
+    {
+      "text": "reveal",
+      "fileOffset": "0x1f03c80",
+      "rva": "0x1f05e80",
+      "va": "0x141f05e80"
+    },
+    {
+      "text": "cheat_resources",
+      "fileOffset": "0x1f05118",
+      "rva": "0x1f07318",
+      "va": "0x141f07318",
+      "candidateCodeRefs": [
+        "0x1405dbca6"
+      ]
+    },
+    {
+      "text": "cheat_resource",
+      "fileOffset": "0x1f05128",
+      "rva": "0x1f07328",
+      "va": "0x141f07328",
+      "candidateCodeRefs": [
+        "0x1405dbd42"
+      ]
+    },
+    {
+      "text": "cheat_revealall",
+      "fileOffset": "0x1f05138",
+      "rva": "0x1f07338",
+      "va": "0x141f07338",
+      "candidateCodeRefs": [
+        "0x1405dbdde"
+      ]
+    },
+    {
+      "text": "cheat_killself",
+      "fileOffset": "0x1f05148",
+      "rva": "0x1f07348",
+      "va": "0x141f07348",
+      "candidateCodeRefs": [
+        "0x1405dbe73"
+      ]
+    },
+    {
+      "text": "cheat_buildtime",
+      "fileOffset": "0x1f05158",
+      "rva": "0x1f07358",
+      "va": "0x141f07358",
+      "candidateCodeRefs": [
+        "0x1405dbf08"
+      ]
+    },
+    {
+      "text": "populationCap",
+      "fileOffset": "0x1f1a568",
+      "rva": "0x1f1c768",
+      "va": "0x141f1c768",
+      "candidateCodeRefs": [
+        "0x1406d2016"
+      ]
+    },
+    {
+      "text": "fowState",
+      "fileOffset": "0x1f1d9f0",
+      "rva": "0x1f1fbf0",
+      "va": "0x141f1fbf0",
+      "candidateCodeRefs": [
+        "0x1406ecd67"
+      ]
+    },
+    {
+      "text": "toggleFoW",
+      "fileOffset": "0x1f1db98",
+      "rva": "0x1f1fd98",
+      "va": "0x141f1fd98"
+    },
+    {
+      "text": "Sound_SetMusicFoWFilterFactor",
+      "fileOffset": "0x1f39970",
+      "rva": "0x1f3bb70",
+      "va": "0x141f3bb70",
+      "candidateCodeRefs": [
+        "0x1407d5768"
+      ]
+    },
+    {
+      "text": "Cannot check FOW for hidden position when no player ID is specified.",
+      "fileOffset": "0x1f39fe0",
+      "rva": "0x1f3c1e0",
+      "va": "0x141f3c1e0",
+      "candidateCodeRefs": [
+        "0x1407f7b25"
+      ]
+    },
+    {
+      "text": "CHECK_IN_FOW",
+      "fileOffset": "0x1f3af28",
+      "rva": "0x1f3d128",
+      "va": "0x141f3d128",
+      "candidateCodeRefs": [
+        "0x1407d97c1"
+      ]
+    },
+    {
+      "text": "UIE_EnemyReveal",
+      "fileOffset": "0x1f3b148",
+      "rva": "0x1f3d348",
+      "va": "0x141f3d348",
+      "candidateCodeRefs": [
+        "0x1407d9c3d"
+      ]
+    },
+    {
+      "text": "BT_Reveal",
+      "fileOffset": "0x1f3b2b0",
+      "rva": "0x1f3d4b0",
+      "va": "0x141f3d4b0",
+      "candidateCodeRefs": [
+        "0x1407d9fbd"
+      ]
+    },
+    {
+      "text": "Cheat Menu",
+      "fileOffset": "0x1f41b48",
+      "rva": "0x1f43d48",
+      "va": "0x141f43d48",
+      "candidateCodeRefs": [
+        "0x140814d0b"
+      ]
+    },
+    {
+      "text": "GAME -- FoWTexture::Setup() failed",
+      "fileOffset": "0x1f436b0",
+      "rva": "0x1f458b0",
+      "va": "0x141f458b0",
+      "candidateCodeRefs": [
+        "0x140824d9d"
+      ]
+    },
+    {
+      "text": "setsimrate",
+      "fileOffset": "0x1f44760",
+      "rva": "0x1f46960",
+      "va": "0x141f46960",
+      "candidateCodeRefs": [
+        "0x14082e5b9"
+      ]
+    },
+    {
+      "text": "FOW_Toggle",
+      "fileOffset": "0x1f45dc0",
+      "rva": "0x1f47fc0",
+      "va": "0x141f47fc0",
+      "candidateCodeRefs": [
+        "0x140843c49"
+      ]
+    },
+    {
+      "text": "FOW_EnableTint",
+      "fileOffset": "0x1f45dd0",
+      "rva": "0x1f47fd0",
+      "va": "0x141f47fd0",
+      "candidateCodeRefs": [
+        "0x140843cad"
+      ]
+    },
+    {
+      "text": "FOW_IsTintEnabled",
+      "fileOffset": "0x1f45de0",
+      "rva": "0x1f47fe0",
+      "va": "0x141f47fe0",
+      "candidateCodeRefs": [
+        "0x140843d1f"
+      ]
+    },
+    {
+      "text": "Scar_SetSimRate",
+      "fileOffset": "0x1f460a0",
+      "rva": "0x1f482a0",
+      "va": "0x141f482a0",
+      "candidateCodeRefs": [
+        "0x1408458db"
+      ]
+    },
+    {
+      "text": "fxshader_additive_no_fow",
+      "fileOffset": "0x1f65788",
+      "rva": "0x1f67988",
+      "va": "0x141f67988",
+      "candidateCodeRefs": [
+        "0x140083c9c",
+        "0x140085eac",
+        "0x14008904c",
+        "0x14008922c"
+      ]
+    },
+    {
+      "text": "fxshader_alpha_no_fow",
+      "fileOffset": "0x1f657a8",
+      "rva": "0x1f679a8",
+      "va": "0x141f679a8",
+      "candidateCodeRefs": [
+        "0x140083d5c",
+        "0x140085f3c",
+        "0x1400890dc",
+        "0x1400892bc"
+      ]
+    },
+    {
+      "text": "UseFoW",
+      "fileOffset": "0x1f67c08",
+      "rva": "0x1f69e08",
+      "va": "0x141f69e08"
+    },
+    {
+      "text": "FowAlpha16Update needs to be converted",
+      "fileOffset": "0x1f69ed9",
+      "rva": "0x1f6c0d9",
+      "va": "0x141f6c0d9"
+    },
+    {
+      "text": "FowAlpha32Update needs to be converted",
+      "fileOffset": "0x1f69f09",
+      "rva": "0x1f6c109",
+      "va": "0x141f6c109"
+    },
+    {
+      "text": "fog_light_direction",
+      "fileOffset": "0x1f774b0",
+      "rva": "0x1f796b0",
+      "va": "0x141f796b0",
+      "candidateCodeRefs": [
+        "0x14008b46c"
+      ]
+    },
+    {
+      "text": "fow_visited",
+      "fileOffset": "0x1f77848",
+      "rva": "0x1f79a48",
+      "va": "0x141f79a48",
+      "candidateCodeRefs": [
+        "0x14008b52c"
+      ]
+    },
+    {
+      "text": "fow_hidden",
+      "fileOffset": "0x1f77858",
+      "rva": "0x1f79a58",
+      "va": "0x141f79a58",
+      "candidateCodeRefs": [
+        "0x14008b4fc"
+      ]
+    },
+    {
+      "text": "fow_blend",
+      "fileOffset": "0x1f77868",
+      "rva": "0x1f79a68",
+      "va": "0x141f79a68",
+      "candidateCodeRefs": [
+        "0x14008b4cc"
+      ]
+    },
+    {
+      "text": "fog_start",
+      "fileOffset": "0x1f77b60",
+      "rva": "0x1f79d60",
+      "va": "0x141f79d60",
+      "candidateCodeRefs": [
+        "0x140b8add8"
+      ]
+    },
+    {
+      "text": "fog_end",
+      "fileOffset": "0x1f77b70",
+      "rva": "0x1f79d70",
+      "va": "0x141f79d70",
+      "candidateCodeRefs": [
+        "0x140b8ae0d"
+      ]
+    },
+    {
+      "text": "fog_colour",
+      "fileOffset": "0x1f77b78",
+      "rva": "0x1f79d78",
+      "va": "0x141f79d78",
+      "candidateCodeRefs": [
+        "0x140b8ae42"
+      ]
+    },
+    {
+      "text": "fog_towards_sun_start",
+      "fileOffset": "0x1f77e08",
+      "rva": "0x1f7a008",
+      "va": "0x141f7a008",
+      "candidateCodeRefs": [
+        "0x140b8b759"
+      ]
+    },
+    {
+      "text": "fog_towards_sun_end",
+      "fileOffset": "0x1f77e20",
+      "rva": "0x1f7a020",
+      "va": "0x141f7a020",
+      "candidateCodeRefs": [
+        "0x140b8b791"
+      ]
+    },
+    {
+      "text": "fog_away_sun_start",
+      "fileOffset": "0x1f77e38",
+      "rva": "0x1f7a038",
+      "va": "0x141f7a038",
+      "candidateCodeRefs": [
+        "0x140b8b7c9"
+      ]
+    },
+    {
+      "text": "fog_away_sun_end",
+      "fileOffset": "0x1f77e50",
+      "rva": "0x1f7a050",
+      "va": "0x141f7a050",
+      "candidateCodeRefs": [
+        "0x140b8b801"
+      ]
+    },
+    {
+      "text": "fog_base_height",
+      "fileOffset": "0x1f77e68",
+      "rva": "0x1f7a068",
+      "va": "0x141f7a068",
+      "candidateCodeRefs": [
+        "0x140b8b839"
+      ]
+    },
+    {
+      "text": "fog_ground_factor",
+      "fileOffset": "0x1f77e78",
+      "rva": "0x1f7a078",
+      "va": "0x141f7a078",
+      "candidateCodeRefs": [
+        "0x140b8b871"
+      ]
+    },
+    {
+      "text": "fog_towards_gradient",
+      "fileOffset": "0x1f77e90",
+      "rva": "0x1f7a090",
+      "va": "0x141f7a090",
+      "candidateCodeRefs": [
+        "0x140b8b8d0"
+      ]
+    },
+    {
+      "text": "fog_away_gradient",
+      "fileOffset": "0x1f77ea8",
+      "rva": "0x1f7a0a8",
+      "va": "0x141f7a0a8",
+      "candidateCodeRefs": [
+        "0x140b8b8e7"
+      ]
+    },
+    {
+      "text": "fog_sky_blend_height",
+      "fileOffset": "0x1f77ec0",
+      "rva": "0x1f7a0c0",
+      "va": "0x141f7a0c0",
+      "candidateCodeRefs": [
+        "0x140b8b90a"
+      ]
+    },
+    {
+      "text": "soldier_light_fog_amount",
+      "fileOffset": "0x1f784b0",
+      "rva": "0x1f7a6b0",
+      "va": "0x141f7a6b0",
+      "candidateCodeRefs": [
+        "0x140b8c573"
+      ]
+    },
+    {
+      "text": "vehicle_light_fog_amount",
+      "fileOffset": "0x1f78778",
+      "rva": "0x1f7a978",
+      "va": "0x141f7a978",
+      "candidateCodeRefs": [
+        "0x140b8cade"
+      ]
+    },
+    {
+      "text": "fowlines",
+      "fileOffset": "0x1fcac90",
+      "rva": "0x1fcce90",
+      "va": "0x141fcce90",
+      "candidateCodeRefs": [
+        "0x14008ddfe"
+      ]
+    },
+    {
+      "text": "Ice Health Texture (fow)",
+      "fileOffset": "0x1fcc6d0",
+      "rva": "0x1fce8d0",
+      "va": "0x141fce8d0",
+      "candidateCodeRefs": [
+        "0x140d6b6c9"
+      ]
+    },
+    {
+      "text": "fow_copy",
+      "fileOffset": "0x1fcc6f0",
+      "rva": "0x1fce8f0",
+      "va": "0x141fce8f0",
+      "candidateCodeRefs": [
+        "0x140d6b778",
+        "0x140da13fd"
+      ]
+    },
+    {
+      "text": "slush_reveal_map_name",
+      "fileOffset": "0x1fcd408",
+      "rva": "0x1fcf608",
+      "va": "0x141fcf608",
+      "candidateCodeRefs": [
+        "0x140d774fa"
+      ]
+    },
+    {
+      "text": "slush_reveal_range",
+      "fileOffset": "0x1fcd420",
+      "rva": "0x1fcf620",
+      "va": "0x141fcf620",
+      "candidateCodeRefs": [
+        "0x140d7752a"
+      ]
+    },
+    {
+      "text": "slush_reveal_tiling",
+      "fileOffset": "0x1fcd438",
+      "rva": "0x1fcf638",
+      "va": "0x141fcf638",
+      "candidateCodeRefs": [
+        "0x140d7756c"
+      ]
+    },
+    {
+      "text": "IceSlushRevealMap",
+      "fileOffset": "0x1fcd960",
+      "rva": "0x1fcfb60",
+      "va": "0x141fcfb60",
+      "candidateCodeRefs": [
+        "0x14008e600"
+      ]
+    },
+    {
+      "text": "IceSlushReveal",
+      "fileOffset": "0x1fcd978",
+      "rva": "0x1fcfb78",
+      "va": "0x141fcfb78",
+      "candidateCodeRefs": [
+        "0x14008e5e0"
+      ]
+    },
+    {
+      "text": "slush reveal",
+      "fileOffset": "0x1fcdad8",
+      "rva": "0x1fcfcd8",
+      "va": "0x141fcfcd8",
+      "candidateCodeRefs": [
+        "0x140d8301c"
+      ]
+    },
+    {
+      "text": "UpdateFOWTracksPass",
+      "fileOffset": "0x1fd1228",
+      "rva": "0x1fd3428",
+      "va": "0x141fd3428",
+      "candidateCodeRefs": [
+        "0x140dbb5a0"
+      ]
+    },
+    {
+      "text": "snowtracks_fow",
+      "fileOffset": "0x1fd12d0",
+      "rva": "0x1fd34d0",
+      "va": "0x141fd34d0",
+      "candidateCodeRefs": [
+        "0x140db9c06",
+        "0x140dbb019"
+      ]
+    },
+    {
+      "text": "FOW Track texture",
+      "fileOffset": "0x1fd1300",
+      "rva": "0x1fd3500",
+      "va": "0x141fd3500",
+      "candidateCodeRefs": [
+        "0x140dba001"
+      ]
+    },
+    {
+      "text": "FOWTexture",
+      "fileOffset": "0x1fd1b88",
+      "rva": "0x1fd3d88",
+      "va": "0x141fd3d88",
+      "candidateCodeRefs": [
+        "0x14009008c"
+      ]
+    },
+    {
+      "text": "FOWTextureWorldScaleOffset",
+      "fileOffset": "0x1fd1b98",
+      "rva": "0x1fd3d98",
+      "va": "0x141fd3d98",
+      "candidateCodeRefs": [
+        "0x1400900bc"
+      ]
+    },
+    {
+      "text": "RENDERING -- Could not add FOWTexture global shader variable",
+      "fileOffset": "0x1fd1bb8",
+      "rva": "0x1fd3db8",
+      "va": "0x141fd3db8",
+      "candidateCodeRefs": [
+        "0x140dc7d83",
+        "0x140dc8474"
+      ]
+    },
+    {
+      "text": "RENDERING -- Could not add FOWTextureWorldScaleOffset global shader variable",
+      "fileOffset": "0x1fd1c00",
+      "rva": "0x1fd3e00",
+      "va": "0x141fd3e00",
+      "candidateCodeRefs": [
+        "0x140dc7dc9",
+        "0x140dc84ba"
+      ]
+    },
+    {
+      "text": "RENDERING -- unable to set global FOWTextureWorldScaleOffset variable",
+      "fileOffset": "0x1fd1c50",
+      "rva": "0x1fd3e50",
+      "va": "0x141fd3e50",
+      "candidateCodeRefs": [
+        "0x140dc80ad"
+      ]
+    },
+    {
+      "text": "RENDERING -- unable to set global FOWTexture variable",
+      "fileOffset": "0x1fd1c98",
+      "rva": "0x1fd3e98",
+      "va": "0x141fd3e98",
+      "candidateCodeRefs": [
+        "0x140dc82b4",
+        "0x140dc8394",
+        "0x140dc877d"
+      ]
+    },
+    {
+      "text": "fow_depth",
+      "fileOffset": "0x1fe3758",
+      "rva": "0x1fe5958",
+      "va": "0x141fe5958",
+      "candidateCodeRefs": [
+        "0x140093b30"
+      ]
+    },
+    {
+      "text": "ModFOW",
+      "fileOffset": "0x1fe3aac",
+      "rva": "0x1fe5cac",
+      "va": "0x141fe5cac",
+      "candidateCodeRefs": [
+        "0x140f200c8"
+      ]
+    },
+    {
+      "text": "SimWorld::DoCommand - (sender %d) trying to run a cheat command (%s) from an untrusted source",
+      "fileOffset": "0x1fe3b50",
+      "rva": "0x1fe5d50",
+      "va": "0x141fe5d50",
+      "candidateCodeRefs": [
+        "0x140f21d0d"
+      ]
+    },
+    {
+      "text": "WorldFOW",
+      "fileOffset": "0x1fe3bf8",
+      "rva": "0x1fe5df8",
+      "va": "0x141fe5df8",
+      "candidateCodeRefs": [
+        "0x140f22100"
+      ]
+    },
+    {
+      "text": "always_revealed_in_fow",
+      "fileOffset": "0x1fe58e8",
+      "rva": "0x1fe7ae8",
+      "va": "0x141fe7ae8",
+      "candidateCodeRefs": [
+        "0x140f4dffb"
+      ]
+    },
+    {
+      "text": "CANPRODUCE_PopulationCapFull",
+      "fileOffset": "0x1fef3d0",
+      "rva": "0x1ff15d0",
+      "va": "0x141ff15d0",
+      "candidateCodeRefs": [
+        "0x140ff326e"
+      ]
+    },
+    {
+      "text": "FOW_DrawAccurate",
+      "fileOffset": "0x1ffab90",
+      "rva": "0x1ffcd90",
+      "va": "0x141ffcd90",
+      "candidateCodeRefs": [
+        "0x14111b467"
+      ]
+    },
+    {
+      "text": "FOW_Blockers",
+      "fileOffset": "0x1ffaba8",
+      "rva": "0x1ffcda8",
+      "va": "0x141ffcda8",
+      "candidateCodeRefs": [
+        "0x14111b4d7"
+      ]
+    },
+    {
+      "text": "UI_SetUIReveallAll",
+      "fileOffset": "0x1ffabb8",
+      "rva": "0x1ffcdb8",
+      "va": "0x141ffcdb8",
+      "candidateCodeRefs": [
+        "0x14111b547"
+      ]
+    },
+    {
+      "text": "Option_cheats",
+      "fileOffset": "0x1ffc210",
+      "rva": "0x1ffe410",
+      "va": "0x141ffe410",
+      "candidateCodeRefs": [
+        "0x14113775e"
+      ]
+    },
+    {
+      "text": "Option_gameSpeed",
+      "fileOffset": "0x1ffc238",
+      "rva": "0x1ffe438",
+      "va": "0x141ffe438",
+      "candidateCodeRefs": [
+        "0x1411377e8"
+      ]
+    },
+    {
+      "text": "fog_of_war",
+      "fileOffset": "0x1ffcaf0",
+      "rva": "0x1ffecf0",
+      "va": "0x141ffecf0"
+    },
+    {
+      "text": "can_target_in_fow",
+      "fileOffset": "0x1fff5f0",
+      "rva": "0x20017f0",
+      "va": "0x1420017f0",
+      "candidateCodeRefs": [
+        "0x14114e478"
+      ]
+    },
+    {
+      "text": "action\\reveal_area.lua",
+      "fileOffset": "0x2003ae8",
+      "rva": "0x2005ce8",
+      "va": "0x142005ce8"
+    },
+    {
+      "text": "radius_reveal",
+      "fileOffset": "0x2007260",
+      "rva": "0x2009460",
+      "va": "0x142009460",
+      "candidateCodeRefs": [
+        "0x14116f3fa"
+      ]
+    },
+    {
+      "text": "distance_between_reveals_sqr",
+      "fileOffset": "0x2007270",
+      "rva": "0x2009470",
+      "va": "0x142009470",
+      "candidateCodeRefs": [
+        "0x14116f42f"
+      ]
+    },
+    {
+      "text": "ticks_reveal",
+      "fileOffset": "0x2007290",
+      "rva": "0x2009490",
+      "va": "0x142009490",
+      "candidateCodeRefs": [
+        "0x14116f464"
+      ]
+    },
+    {
+      "text": "reveal_radius",
+      "fileOffset": "0x20072d8",
+      "rva": "0x20094d8",
+      "va": "0x1420094d8",
+      "candidateCodeRefs": [
+        "0x14116effb"
+      ]
+    },
+    {
+      "text": "distance_between_reveals",
+      "fileOffset": "0x20072e8",
+      "rva": "0x20094e8",
+      "va": "0x1420094e8",
+      "candidateCodeRefs": [
+        "0x14116f022",
+        "0x14116f063"
+      ]
+    },
+    {
+      "text": "time_revealed_for",
+      "fileOffset": "0x2007308",
+      "rva": "0x2009508",
+      "va": "0x142009508",
+      "candidateCodeRefs": [
+        "0x14116f0a8",
+        "0x14116f0e9"
+      ]
+    },
+    {
+      "text": "check_fow",
+      "fileOffset": "0x200b8f8",
+      "rva": "0x200daf8",
+      "va": "0x14200daf8",
+      "candidateCodeRefs": [
+        "0x14119c80f",
+        "0x14119c966",
+        "0x14119d4bc",
+        "0x14119d5b5",
+        "0x14119da7b",
+        "0x14119db78"
+      ]
+    },
+    {
+      "text": "additional_scatter_in_fog_of_war",
+      "fileOffset": "0x200cca0",
+      "rva": "0x200eea0",
+      "va": "0x14200eea0",
+      "candidateCodeRefs": [
+        "0x1411ab44d",
+        "0x1411ab471"
+      ]
+    },
+    {
+      "text": "RevealAreaAction",
+      "fileOffset": "0x200e208",
+      "rva": "0x2010408",
+      "va": "0x142010408",
+      "candidateCodeRefs": [
+        "0x1411bc4c0"
+      ]
+    },
+    {
+      "text": "all_player_reveal",
+      "fileOffset": "0x200e240",
+      "rva": "0x2010440",
+      "va": "0x142010440",
+      "candidateCodeRefs": [
+        "0x1411bb7c3",
+        "0x1411bbee8"
+      ]
+    },
+    {
+      "text": "is_area_revealed",
+      "fileOffset": "0x200e268",
+      "rva": "0x2010468",
+      "va": "0x142010468",
+      "candidateCodeRefs": [
+        "0x1411bbfc8"
+      ]
+    },
+    {
+      "text": "RevealAreaAction::LoadImp -- unable to load player from saved id",
+      "fileOffset": "0x200e280",
+      "rva": "0x2010480",
+      "va": "0x142010480",
+      "candidateCodeRefs": [
+        "0x1411bc2bb"
+      ]
+    },
+    {
+      "text": "force_reveal",
+      "fileOffset": "0x2013bf8",
+      "rva": "0x2015df8",
+      "va": "0x142015df8",
+      "candidateCodeRefs": [
+        "0x141220c7a"
+      ]
+    },
+    {
+      "text": "UI/Reveal",
+      "fileOffset": "0x2013cd0",
+      "rva": "0x2015ed0",
+      "va": "0x142015ed0",
+      "candidateCodeRefs": [
+        "0x1400954b0",
+        "0x141220b96",
+        "0x141221171"
+      ]
+    },
+    {
+      "text": "ForceReveal",
+      "fileOffset": "0x2013d80",
+      "rva": "0x2015f80",
+      "va": "0x142015f80",
+      "candidateCodeRefs": [
+        "0x1412217be"
+      ]
+    },
+    {
+      "text": "chain_revealer",
+      "fileOffset": "0x2013fb0",
+      "rva": "0x20161b0",
+      "va": "0x1420161b0",
+      "candidateCodeRefs": [
+        "0x1412222f5"
+      ]
+    },
+    {
+      "text": "reveal_to_all_on_death",
+      "fileOffset": "0x2017fd8",
+      "rva": "0x201a1d8",
+      "va": "0x14201a1d8",
+      "candidateCodeRefs": [
+        "0x141256531"
+      ]
+    },
+    {
+      "text": "mine_reveal_ticks",
+      "fileOffset": "0x201b470",
+      "rva": "0x201d670",
+      "va": "0x14201d670",
+      "candidateCodeRefs": [
+        "0x14127b030"
+      ]
+    },
+    {
+      "text": "reveal_area_on_death_time",
+      "fileOffset": "0x201b7c0",
+      "rva": "0x201d9c0",
+      "va": "0x14201d9c0",
+      "candidateCodeRefs": [
+        "0x14127c42c",
+        "0x14127c44b"
+      ]
+    },
+    {
+      "text": "cannot place outside of player's line of sight. in FOW.",
+      "fileOffset": "0x201f928",
+      "rva": "0x2021b28",
+      "va": "0x142021b28",
+      "candidateCodeRefs": [
+        "0x1412bf94d"
+      ]
+    },
+    {
+      "text": "modfow",
+      "fileOffset": "0x201fc38",
+      "rva": "0x2021e38",
+      "va": "0x142021e38"
+    },
+    {
+      "text": "FOW_RevealTerritory: could not reveal territory with sector ID %d",
+      "fileOffset": "0x201fc40",
+      "rva": "0x2021e40",
+      "va": "0x142021e40",
+      "candidateCodeRefs": [
+        "0x1412c7a1d"
+      ]
+    },
+    {
+      "text": "FOW_RevealArea",
+      "fileOffset": "0x201fca8",
+      "rva": "0x2021ea8",
+      "va": "0x142021ea8",
+      "candidateCodeRefs": [
+        "0x1412c44d3"
+      ]
+    },
+    {
+      "text": "FOW_UnRevealArea",
+      "fileOffset": "0x201fcb8",
+      "rva": "0x2021eb8",
+      "va": "0x142021eb8",
+      "candidateCodeRefs": [
+        "0x1412c4545"
+      ]
+    },
+    {
+      "text": "FOW_PlayerRevealArea",
+      "fileOffset": "0x201fcd0",
+      "rva": "0x2021ed0",
+      "va": "0x142021ed0",
+      "candidateCodeRefs": [
+        "0x1412c45b7"
+      ]
+    },
+    {
+      "text": "FOW_PlayerUnRevealArea",
+      "fileOffset": "0x201fce8",
+      "rva": "0x2021ee8",
+      "va": "0x142021ee8",
+      "candidateCodeRefs": [
+        "0x1412c4629"
+      ]
+    },
+    {
+      "text": "FOW_RevealEntity",
+      "fileOffset": "0x201fd00",
+      "rva": "0x2021f00",
+      "va": "0x142021f00",
+      "candidateCodeRefs": [
+        "0x1412c469b"
+      ]
+    },
+    {
+      "text": "FOW_RevealSquad",
+      "fileOffset": "0x201fd18",
+      "rva": "0x2021f18",
+      "va": "0x142021f18",
+      "candidateCodeRefs": [
+        "0x1412c470d"
+      ]
+    },
+    {
+      "text": "FOW_RevealEGroup",
+      "fileOffset": "0x201fd28",
+      "rva": "0x2021f28",
+      "va": "0x142021f28",
+      "candidateCodeRefs": [
+        "0x1412c478d"
+      ]
+    },
+    {
+      "text": "FOW_RevealSGroup",
+      "fileOffset": "0x201fd40",
+      "rva": "0x2021f40",
+      "va": "0x142021f40",
+      "candidateCodeRefs": [
+        "0x1412c47ff"
+      ]
+    },
+    {
+      "text": "FOW_RevealEGroupOnly",
+      "fileOffset": "0x201fd58",
+      "rva": "0x2021f58",
+      "va": "0x142021f58",
+      "candidateCodeRefs": [
+        "0x1412c4863"
+      ]
+    },
+    {
+      "text": "FOW_RevealSGroupOnly",
+      "fileOffset": "0x201fd70",
+      "rva": "0x2021f70",
+      "va": "0x142021f70",
+      "candidateCodeRefs": [
+        "0x1412c48c7"
+      ]
+    },
+    {
+      "text": "FOW_RevealTerritory",
+      "fileOffset": "0x201fd88",
+      "rva": "0x2021f88",
+      "va": "0x142021f88",
+      "candidateCodeRefs": [
+        "0x1412c492b"
+      ]
+    },
+    {
+      "text": "FOW_UnRevealTerritory",
+      "fileOffset": "0x201fda0",
+      "rva": "0x2021fa0",
+      "va": "0x142021fa0",
+      "candidateCodeRefs": [
+        "0x1412c499d"
+      ]
+    },
+    {
+      "text": "FOW_RevealAll",
+      "fileOffset": "0x201fdb8",
+      "rva": "0x2021fb8",
+      "va": "0x142021fb8",
+      "candidateCodeRefs": [
+        "0x1412c4a1d"
+      ]
+    },
+    {
+      "text": "FOW_UnRevealAll",
+      "fileOffset": "0x201fdc8",
+      "rva": "0x2021fc8",
+      "va": "0x142021fc8",
+      "candidateCodeRefs": [
+        "0x1412c4a81"
+      ]
+    },
+    {
+      "text": "FOW_PlayerRevealAll",
+      "fileOffset": "0x201fdd8",
+      "rva": "0x2021fd8",
+      "va": "0x142021fd8",
+      "candidateCodeRefs": [
+        "0x1412c4af3"
+      ]
+    },
+    {
+      "text": "FOW_PlayerUnRevealAll",
+      "fileOffset": "0x201fdf0",
+      "rva": "0x2021ff0",
+      "va": "0x142021ff0",
+      "candidateCodeRefs": [
+        "0x1412c4b57"
+      ]
+    },
+    {
+      "text": "FOW_PlayerExploreAll",
+      "fileOffset": "0x201fe08",
+      "rva": "0x2022008",
+      "va": "0x142022008",
+      "candidateCodeRefs": [
+        "0x1412c4bbb"
+      ]
+    },
+    {
+      "text": "FOW_PlayerUnExploreAll",
+      "fileOffset": "0x201fe20",
+      "rva": "0x2022020",
+      "va": "0x142022020",
+      "candidateCodeRefs": [
+        "0x1412c4c1f"
+      ]
+    },
+    {
+      "text": "Player_SetResource",
+      "fileOffset": "0x2021878",
+      "rva": "0x2023a78",
+      "va": "0x142023a78",
+      "candidateCodeRefs": [
+        "0x1412d6611"
+      ]
+    },
+    {
+      "text": "GE_PlayerCheat",
+      "fileOffset": "0x2022eb8",
+      "rva": "0x20250b8",
+      "va": "0x1420250b8",
+      "candidateCodeRefs": [
+        "0x1412e0a89"
+      ]
+    },
+    {
+      "text": "modifiers\\enable_visible_in_fow.lua",
+      "fileOffset": "0x20256e0",
+      "rva": "0x20278e0",
+      "va": "0x1420278e0",
+      "candidateCodeRefs": [
+        "0x1412fbf8f",
+        "0x1412fc358"
+      ]
+    },
+    {
+      "text": "modifiers\\ability_target_in_FOW_modifier.lua",
+      "fileOffset": "0x20265f0",
+      "rva": "0x20287f0",
+      "va": "0x1420287f0",
+      "candidateCodeRefs": [
+        "0x1412fce13",
+        "0x1412fcf09"
+      ]
+    },
+    {
+      "text": "MOD -- (CHEAT) player %d added %.2f, %.2f, %.2f, %.2f, %.2f",
+      "fileOffset": "0x2026da0",
+      "rva": "0x2028fa0",
+      "va": "0x142028fa0",
+      "candidateCodeRefs": [
+        "0x141308ec6",
+        "0x14130dd7f"
+      ]
+    },
+    {
+      "text": "MOD -- CmdCheatKillSelf %d",
+      "fileOffset": "0x2026de0",
+      "rva": "0x2028fe0",
+      "va": "0x142028fe0",
+      "candidateCodeRefs": [
+        "0x141308f67",
+        "0x14130db6d"
+      ]
+    },
+    {
+      "text": "MOD -- (CHEAT) player %d revealed fow",
+      "fileOffset": "0x2026e00",
+      "rva": "0x2029000",
+      "va": "0x142029000",
+      "candidateCodeRefs": [
+        "0x141308fca",
+        "0x14130dbda"
+      ]
+    },
+    {
+      "text": "MOD -- (CHEAT) player %d reduced build times to 1",
+      "fileOffset": "0x2026e28",
+      "rva": "0x2029028",
+      "va": "0x142029028",
+      "candidateCodeRefs": [
+        "0x141309066",
+        "0x14130e821"
+      ]
+    },
+    {
+      "text": "MOD -- (CHEAT) player %d restored normal build times",
+      "fileOffset": "0x2026e60",
+      "rva": "0x2029060",
+      "va": "0x142029060",
+      "candidateCodeRefs": [
+        "0x14130906f",
+        "0x14130e82a"
+      ]
+    },
+    {
+      "text": "FogOfWarCRC",
+      "fileOffset": "0x2026f00",
+      "rva": "0x2029100",
+      "va": "0x142029100",
+      "candidateCodeRefs": [
+        "0x14131164b"
+      ]
+    },
+    {
+      "text": "attacker_fow_area_reveal_radius",
+      "fileOffset": "0x20283f8",
+      "rva": "0x202a5f8",
+      "va": "0x14202a5f8",
+      "candidateCodeRefs": [
+        "0x141328346",
+        "0x141328374"
+      ]
+    },
+    {
+      "text": "garrison_camouflage_reveal_duration",
+      "fileOffset": "0x20288d8",
+      "rva": "0x202aad8",
+      "va": "0x14202aad8",
+      "candidateCodeRefs": [
+        "0x141328c90",
+        "0x141328cc3"
+      ]
+    },
+    {
+      "text": "attacker_reveal_time",
+      "fileOffset": "0x2028f60",
+      "rva": "0x202b160",
+      "va": "0x14202b160",
+      "candidateCodeRefs": [
+        "0x14132a552",
+        "0x14132a584"
+      ]
+    },
+    {
+      "text": "projectile_reveal_time",
+      "fileOffset": "0x2028f78",
+      "rva": "0x202b178",
+      "va": "0x14202b178",
+      "candidateCodeRefs": [
+        "0x14132a5c6",
+        "0x14132a5f1"
+      ]
+    },
+    {
+      "text": "death_reveal_time",
+      "fileOffset": "0x2028f90",
+      "rva": "0x202b190",
+      "va": "0x14202b190",
+      "candidateCodeRefs": [
+        "0x14132a627",
+        "0x14132a652"
+      ]
+    },
+    {
+      "text": "defender_reveal_time",
+      "fileOffset": "0x2028fa8",
+      "rva": "0x202b1a8",
+      "va": "0x14202b1a8",
+      "candidateCodeRefs": [
+        "0x14132a688",
+        "0x14132a6b3"
+      ]
+    },
+    {
+      "text": "extended_sight_reveals_ingame",
+      "fileOffset": "0x2028fc0",
+      "rva": "0x202b1c0",
+      "va": "0x14202b1c0",
+      "candidateCodeRefs": [
+        "0x14132a6e9"
+      ]
+    },
+    {
+      "text": "enemy_reveal",
+      "fileOffset": "0x2029388",
+      "rva": "0x202b588",
+      "va": "0x14202b588"
+    },
+    {
+      "text": "UI/FOW_Reveal",
+      "fileOffset": "0x202ae70",
+      "rva": "0x202d070",
+      "va": "0x14202d070",
+      "candidateCodeRefs": [
+        "0x14133d752",
+        "0x14133d8f1"
+      ]
+    },
+    {
+      "text": "pathing_detects_squads_in_fog_of_war",
+      "fileOffset": "0x202e020",
+      "rva": "0x2030220",
+      "va": "0x142030220",
+      "candidateCodeRefs": [
+        "0x14136c527"
+      ]
+    },
+    {
+      "text": "pathing_detects_opponents_fog_of_war",
+      "fileOffset": "0x202e0a0",
+      "rva": "0x20302a0",
+      "va": "0x1420302a0",
+      "candidateCodeRefs": [
+        "0x14136c569"
+      ]
+    },
+    {
+      "text": "detect_squads_in_fog_of_war",
+      "fileOffset": "0x202e310",
+      "rva": "0x2030510",
+      "va": "0x142030510",
+      "candidateCodeRefs": [
+        "0x14136cc03"
+      ]
+    },
+    {
+      "text": "aisettings_pathing_detects_squads_in_fog_of_war",
+      "fileOffset": "0x202edb8",
+      "rva": "0x2030fb8",
+      "va": "0x142030fb8",
+      "candidateCodeRefs": [
+        "0x141368c46"
+      ]
+    },
+    {
+      "text": "aisettings_pathing_detects_opponents_fog_of_war",
+      "fileOffset": "0x202ee50",
+      "rva": "0x2031050",
+      "va": "0x142031050",
+      "candidateCodeRefs": [
+        "0x141368d81"
+      ]
+    },
+    {
+      "text": "aisettings_detect_squads_in_fog_of_war",
+      "fileOffset": "0x202f098",
+      "rva": "0x2031298",
+      "va": "0x142031298",
+      "candidateCodeRefs": [
+        "0x141369281"
+      ]
+    },
+    {
+      "text": "reveal_self_attacker_time_use",
+      "fileOffset": "0x2034e38",
+      "rva": "0x2037038",
+      "va": "0x142037038",
+      "candidateCodeRefs": [
+        "0x1413a5e57"
+      ]
+    },
+    {
+      "text": "reveal_self_attacker_time",
+      "fileOffset": "0x2034e58",
+      "rva": "0x2037058",
+      "va": "0x142037058",
+      "candidateCodeRefs": [
+        "0x1413a5e70",
+        "0x1413a5e95"
+      ]
+    },
+    {
+      "text": "reveal_defender_time_use",
+      "fileOffset": "0x2034e78",
+      "rva": "0x2037078",
+      "va": "0x142037078",
+      "candidateCodeRefs": [
+        "0x1413a5ee2"
+      ]
+    },
+    {
+      "text": "reveal_defender_time",
+      "fileOffset": "0x2034e98",
+      "rva": "0x2037098",
+      "va": "0x142037098",
+      "candidateCodeRefs": [
+        "0x1413a5efb",
+        "0x1413a5f20"
+      ]
+    },
+    {
+      "text": "reveal_for_decryption",
+      "fileOffset": "0x203d318",
+      "rva": "0x203f518",
+      "va": "0x14203f518",
+      "candidateCodeRefs": [
+        "0x14143d467"
+      ]
+    },
+    {
+      "text": "fow_angle_multiplier",
+      "fileOffset": "0x203f208",
+      "rva": "0x2041408",
+      "va": "0x142041408",
+      "candidateCodeRefs": [
+        "0x14145de0a"
+      ]
+    },
+    {
+      "text": "fow_distance_multiplier",
+      "fileOffset": "0x203f288",
+      "rva": "0x2041488",
+      "va": "0x142041488",
+      "candidateCodeRefs": [
+        "0x14145ded3"
+      ]
+    },
+    {
+      "text": "Reading a WorldFOW from a previous version of the game!",
+      "fileOffset": "0x203fd60",
+      "rva": "0x2041f60",
+      "va": "0x142041f60",
+      "candidateCodeRefs": [
+        "0x1414797c5"
+      ]
+    },
+    {
+      "text": "SharedFOW",
+      "fileOffset": "0x203fd98",
+      "rva": "0x2041f98",
+      "va": "0x142041f98",
+      "candidateCodeRefs": [
+        "0x141479eb3"
+      ]
+    },
+    {
+      "text": "FOWSum",
+      "fileOffset": "0x203fdc4",
+      "rva": "0x2041fc4",
+      "va": "0x142041fc4",
+      "candidateCodeRefs": [
+        "0x141479e6e"
+      ]
+    },
+    {
+      "text": "FOW_Reveal applied to non animator",
+      "fileOffset": "0x2042ad1",
+      "rva": "0x2044cd1",
+      "va": "0x142044cd1"
+    },
+    {
+      "text": "D:\\projects\\coh2-dlc\\bia\\src\\game\\simvis\\FOWRevealCommandFunction.cpp",
+      "fileOffset": "0x2042b00",
+      "rva": "0x2044d00",
+      "va": "0x142044d00",
+      "candidateCodeRefs": [
+        "0x1414b8596"
+      ]
+    },
+    {
+      "text": "COH_FOW_Reveal",
+      "fileOffset": "0x2042b48",
+      "rva": "0x2044d48",
+      "va": "0x142044d48",
+      "candidateCodeRefs": [
+        "0x1414b8527"
+      ]
+    },
+    {
+      "text": "SystemParametersInfoW",
+      "fileOffset": "0x27abdc0",
+      "rva": "0x27adfc0",
+      "va": "0x1427adfc0"
+    },
+    {
+      "text": "GetFileVersionInfoW",
+      "fileOffset": "0x27ac916",
+      "rva": "0x27aeb16",
+      "va": "0x1427aeb16"
+    },
+    {
+      "text": "GetStartupInfoW",
+      "fileOffset": "0x27b0918",
+      "rva": "0x27b2b18",
+      "va": "0x1427b2b18"
+    },
+    {
+      "text": ".?AVGameCheats@COH2UI@Relic@@",
+      "fileOffset": "0x2c32450",
+      "rva": "0x2c34850",
+      "va": "0x142c34850"
+    },
+    {
+      "text": ".?AVFOWImageProvider@COH2UI@Relic@@",
+      "fileOffset": "0x2c3de98",
+      "rva": "0x2c40298",
+      "va": "0x142c40298"
+    },
+    {
+      "text": ".?AVLoader@?1??LoaderCheatMenu@GameObjLoader@@YAPEAVEntry@InitList@@XZ@",
+      "fileOffset": "0x2c91c80",
+      "rva": "0x2c94080",
+      "va": "0x142c94080"
+    },
+    {
+      "text": ".?AVUpdateFOWTracksPass@@",
+      "fileOffset": "0x2ca38e8",
+      "rva": "0x2ca5ce8",
+      "va": "0x142ca5ce8"
+    },
+    {
+      "text": ".?AU?$Creator@VRevealAreaActionInfo@@@@",
+      "fileOffset": "0x2cc02c8",
+      "rva": "0x2cc26c8",
+      "va": "0x142cc26c8"
+    },
+    {
+      "text": ".?AV?$_Func_impl_no_alloc@U?$Creator@VRevealAreaActionInfo@@@@PEAVActionInfo@@$$V@std@@",
+      "fileOffset": "0x2cc0f50",
+      "rva": "0x2cc3350",
+      "va": "0x142cc3350"
+    },
+    {
+      "text": ".?AV?$_Func_impl_no_alloc@U?$Creator@VRevealAreaAction@@@@PEAVActionState@@$$V@std@@",
+      "fileOffset": "0x2cc4db0",
+      "rva": "0x2cc71b0",
+      "va": "0x142cc71b0"
+    },
+    {
+      "text": ".?AU?$Creator@VRevealAreaAction@@@@",
+      "fileOffset": "0x2cc7c18",
+      "rva": "0x2cca018",
+      "va": "0x142cca018"
+    },
+    {
+      "text": ".?AVRevealAreaActionInfo@@",
+      "fileOffset": "0x2cca310",
+      "rva": "0x2ccc710",
+      "va": "0x142ccc710"
+    },
+    {
+      "text": ".?AVRevealAreaAction@@",
+      "fileOffset": "0x2cca340",
+      "rva": "0x2ccc740",
+      "va": "0x142ccc740"
+    },
+    {
+      "text": ".?AVLuaFOW@?A0x7a4b430e@@",
+      "fileOffset": "0x2cd6298",
+      "rva": "0x2cd8698",
+      "va": "0x142cd8698"
+    },
+    {
+      "text": ".?AVGameEvent_PlayerCheat@@",
+      "fileOffset": "0x2cdacf8",
+      "rva": "0x2cdd0f8",
+      "va": "0x142cdd0f8"
+    },
+    {
+      "text": ".?AVFogOfWarInfo@ModTuning@@",
+      "fileOffset": "0x2cdbc18",
+      "rva": "0x2cde018",
+      "va": "0x142cde018"
+    },
+    {
+      "text": ".?AV?$PropertyBagTemplate@VFogOfWarInfo@ModTuning@@$07$00@@",
+      "fileOffset": "0x2cdbc50",
+      "rva": "0x2cde050",
+      "va": "0x142cde050"
+    },
+    {
+      "text": ".?AV?$PropertyBagFactoryRegistration@VFogOfWarInfo@ModTuning@@@@",
+      "fileOffset": "0x2cdbca0",
+      "rva": "0x2cde0a0",
+      "va": "0x142cde0a0"
+    },
+    {
+      "text": ".?AVWorldFOW@@",
+      "fileOffset": "0x2ce6468",
+      "rva": "0x2ce8868",
+      "va": "0x142ce8868"
+    },
+    {
+      "text": ".?AVTerrainFOWVisibilityPred@?A0x1a4df86d@@",
+      "fileOffset": "0x2ce7b40",
+      "rva": "0x2ce9f40",
+      "va": "0x142ce9f40"
+    },
+    {
+      "text": ".?AVFOW_Reveal@?A0x43e17cfa@@",
+      "fileOffset": "0x2ce88f8",
+      "rva": "0x2ceacf8",
+      "va": "0x142ceacf8"
+    }
+  ]
+}

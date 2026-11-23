@@ -12,6 +12,7 @@
 | [BF6/original/Battlefield6-Steam](<BF6/original/Battlefield6-Steam/>) | 战地 6 构建身份元数据，冻结区（游戏本体不入库） |
 | [dev/Bf6Esp（战地 6）](<BF6/dev/Bf6Esp/docs/USER-GUIDE.md>) | 战地 6 外部信息工具：授权接入（ProductId `Bf6Esp`）、只读逆向探针、构建脚本与配置档 |
 | [output/Bf6Esp](<BF6/output/Bf6Esp/>) | Bf6Esp 交付：EXE + .exe.config + BUILD-INFO.json + overlay-settings.txt |
+| [dev/CoH2Trainer（英雄连2）](<CoH2/dev/CoH2Trainer/analysis/inspect_image.py>) | 开发进行中：针对已安装 RelicCoH2.exe 的只读 PE 身份与关键字勘测，尚未建立 original/output 与授权产品 |
 | [LicensingSystem](<LicensingSystem/README.md>) | 通用授权系统：服务端、测试、部署辅助、SDK 与本机私有状态 |
 | [授权服务端发布](<LicensingSystem/output/>) | ASP.NET Core 10 签名服务发布目录（Publish-Server.ps1 产出，Server.zip 打包根） |
 | [工作流配置](<docs/agents/>) | Issue、triage 与 domain 工作流 |
@@ -30,7 +31,7 @@
 从仓库根目录执行（顺序固定；Verify-Protected 依赖上一步刷新的 `evidence/latest-build.json`）：
 
 ```powershell
-# 编译授权服务端与测试，运行全部 120 项隔离测试
+# 编译授权服务端与测试，运行全部 267 项隔离测试
 & .\LicensingSystem\Build.ps1 -VerifyServer
 
 # 编译游戏客户端 + 验证工程
@@ -56,6 +57,20 @@
 
 部署新机器、配对公钥和备份私有状态，见[SkyEye 说明](<CoH3/dev/SkyEye/README.md>)、[LicensingSystem 说明](<LicensingSystem/README.md>)与[签名协议](<CoH3/dev/SkyEye/signature-contract.md>)。现有客户 EXE 与现有签名私钥配对；更换私钥后须重新固定公钥并构建、分发客户端。
 
+## 授权系统的多产品支持
+
+授权系统按 ProductId 隔离多个产品，同一套服务进程同时为不同产品签发授权：
+
+- **根产品**：`CoH3FowTool`（CoH3 天穹之眼与 COH3工具共用），设备激活 / 心跳 / 退出的既有接口保持原样。
+- **追加产品**：在服务端配置的 `ServerOptions.Products` 数组里追加，每个产品必须绑定**自己的 SQLite 数据库**与**互不重叠的 DPAPI 密钥目录**；服务启动时校验路径重复或目录嵌套，违反直接拒绝启动。
+- **`ProductCatalog`**（[server/ProductCatalog.cs](<LicensingSystem/server/ProductCatalog.cs>)）负责按 ProductId 解析到对应的 `LicenseService` 实例与密钥环；根产品复用既有服务实例，追加产品各自新建 Data Protection 密钥环（Windows 上 DPAPI 加密密钥文件）。
+- **两种授权模型**：
+  - 设备绑定型（根产品、战地 6 `Bf6Esp`）：卡密绑定设备指纹，按设备会话签发租约。
+  - 账号绑定型 `ZeppPortal`（[server/LicenseService.Zepp.cs](<LicensingSystem/server/LicenseService.Zepp.cs>)）：卡密核销到十进制上游 UID，不签发设备租约；提供账号授权查询与兑换接口，兑换要求 36 位 UUID `request_id` 幂等、账号唯一赢家（写锁串行化后事务提交），支持时长卡顺延与永久会员互斥。
+- **内部接口**：`POST /internal/zepp/entitlement`（查询账号授权）与 `POST /internal/zepp/redeem`（核销卡密），使用独立的 `ZeppBackendToken` Bearer 鉴权，且该令牌不得与管理员令牌相同。
+- **管理后台**：产品选择器 + 账号维度的授权视图（`admin.html` / `admin.js` / `admin.css`），各产品的卡密、授权记录互不可见。
+- 新增产品只需在配置里追加一条 `Products` 项并注册对应 ProductId（授权码哈希空间 `{productId}|code-v1|`、设备指纹前缀 `{productId}|device-v1|`），授权系统本体不引入具体游戏耦合。
+
 ## original/ 冻结区保护
 
 `**/original/` 下是别人的原版发布文件，永不写入、构建或清理：
@@ -68,6 +83,6 @@
 
 [删除清单](<CoH3/dev/SkyEye/evidence/cleanup-manifest.json>)记录了清理目标、删除前旧基线校验及原版/最新版保留哈希；[2026-11-13 重构清单](<CoH3/dev/SkyEye/evidence/refactor-manifest.json>)与[2026-11-15 重构清单](<CoH3/dev/SkyEye/evidence/refactor-manifest-2026-11-15.json>)记录历次目录移动的前缀映射与校验。原有授权记录、配置和密钥保留在 `LicensingSystem/.local/`；历史备份中独有的私有状态已单独保留，旧源码备份已移除。Git 历史保留（CoH3Minimap 独立小地图项目已于 2026-11-15 整体删除，需要时从 Git 历史找回）。
 
-远程仓库：`git@github.com:FLYING-SHY/Game-Mode.git`。历次清理与重构成果在 2026-11-23 一次性提交并推送。
+远程仓库：`git@github.com:FLYING-SHY/Game-Mode.git`。历次清理与重构成果、战地 6 工具线以及授权服务多产品改造均在 2026-11-23 提交并推送。
 
 新增一个游戏 = `<Game>/original/`（别人的原版）+ `<Game>/dev/<方向>/`（每条可独立发布的工具线一个子目录）+ `<Game>/output/<方向>/`（一一对应交付物）+ 在授权系统注册对应 ProductId。

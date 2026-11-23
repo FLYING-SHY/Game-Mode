@@ -4,8 +4,8 @@
 
 - 顶层：`AGENTS.md` / `README.md` / `.gitignore` / `docs/agents/`（Agent 工作流配置）。
 - `LicensingSystem/`：通用授权系统本体（所有游戏共用），按 ProductId 隔离多产品。
-  - `server/`：net10.0 / ASP.NET Core / SQLite 的在线授权服务与管理后台源码。
-  - `server-tests/`：引用同树 server 的隔离后端测试（`Build.ps1 -VerifyServer` 共 120 项）。
+  - `server/`：net10.0 / ASP.NET Core / SQLite 的在线授权服务与管理后台源码。根产品默认 `CoH3FowTool`；`ServerOptions.Products` 可追加产品（如账号绑定型的 `ZeppPortal`），每个产品各自绑定独立 SQLite 数据库与 DPAPI 密钥环，`ProductCatalog` 负责按 ProductId 隔离，根产品的设备激活/心跳/退出接口保持原样。
+  - `server-tests/`：引用同树 server 的隔离后端测试（`Build.ps1 -VerifyServer` 共 267 项）。
   - `deployment/`：Get-DotNet10.ps1、New-DeploymentConfig.ps1、Caddyfile。
   - `.cache/dotnet-10/`：必要的 .NET SDK 10 安装（含安装证明），不能按普通下载缓存删除；`.cache/packages/` 为 server/server-tests 的 NuGet 还原目标（`Directory.Build.props` 指定），保留离线构建所需内容。
   - `.local/hardening-v2/`：当前私有配置、数据库、签名私钥和 Data Protection keyring。`.local/` 内其他非测试授权数据/密钥与 retained-private-state 为历史私有数据，保留原有用途，不进入交付包。
@@ -24,6 +24,7 @@
   - `original/Battlefield6-Steam/`：冻结区只保留构建身份元数据（`BUILD-INFO.md` / `FILES.tsv` / `MANIFEST.sha256`，路径相对游戏安装根 `G:\SteamLibrary\steamapps\common\Battlefield 6`），游戏本体不入库；冻结清单 `BF6/original/MANIFEST.sha256` 相对仓库根。
   - `dev/Bf6Esp/`：`client/`（net48/x64 WinForms、授权接入与公钥 pin）、`analysis/`（只读逆向探针与 RIP 引用缓存，可再生）、`docs/`（`ARCHITECTURE.md` / `STATUS.md` / `USER-GUIDE.md`）、`profiles/bf6-1.0.0.0.json`、入口 `Build.ps1`。
   - `output/Bf6Esp/`：`Bf6Esp.exe` + `.exe.config` + `BUILD-INFO.json` + `overlay-settings.txt`。
+- `CoH2/`：英雄连2，开发进行中。当前只有 `dev/CoH2Trainer/analysis/`：针对已安装 `G:\SteamLibrary\steamapps\common\Company of Heroes 2\RelicCoH2.exe` 的只读 PE 身份与关键字勘测（`inspect_image.py` / `image-survey.json`），不修改也不分发游戏本体；`original/`、`output/` 尚未建立，也未在授权系统注册 ProductId。
 - 历史清理：旧 CoH3FowTool、SkyEye-v0.60.8-Recovered、SkyEye-Integration、SkyEye-Hardened 的代码及旧交付包已清理；`Licensing/` 已更名 `LicensingSystem/`；`SkyEye-HardenedV2` → `CoH3/SkyEye`（2026-11-13）→ `CoH3/dev/SkyEye`（2026-11-15）。不应从 Git 恢复旧名来补最新版依赖；确需旧记录时先查清理清单、重构清单（`CoH3/dev/SkyEye/evidence/`）及 Git 历史。
 
 ## 新增一个游戏
@@ -35,7 +36,7 @@
 从仓库根目录运行（顺序固定；Build-Protected 必须先于 Verify-Protected，后者读 `evidence/latest-build.json` 内的绝对路径）：
 
 ```powershell
-& .\LicensingSystem\Build.ps1 -VerifyServer              # 服务端 + 120 测试
+& .\LicensingSystem\Build.ps1 -VerifyServer              # 服务端 + 267 测试
 & .\CoH3\dev\SkyEye\Build.ps1                            # 客户端 + 验证工程
 & .\CoH3\dev\SkyEye\Build-Protected.ps1 -SelfCheck       # 混淆保护 + 自检
 & .\CoH3\dev\SkyEye\Verify-Protected.ps1 -LocalOnly      # 三组离线回归

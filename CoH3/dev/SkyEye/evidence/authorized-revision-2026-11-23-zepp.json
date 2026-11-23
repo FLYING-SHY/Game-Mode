@@ -1,0 +1,174 @@
+{
+  "revisionId": "2026-11-23-multi-product-zepp",
+  "authorizedAt": "2026-11-23T13:40:21.947746+00:00",
+  "reason": "授权服务器由本机回环迁移到公网 124.220.147.56，交付包内的授权地址与可执行文件随之更新；修复 Windows DPAPI 跨机密文导致的后台 503；按用户要求新增单张及批量卡密永久删除、整批事务清理与逐卡操作审计；2026-11-21 按游戏 5.1.52426.0（3.0.2.52426）新增主程序指纹判定与按构建分派的布局读取，受保护客户端重建后重新签发客户包；2026-11-23 客户端接入对局生命周期：标记读取上下文携带 MatchHudContext，空中目标与小队标记改为按连接代次发布的场景快照，设置面板统一清空会话数据并在对局上下文不可用时挂起轮询；2026-11-23 授权服务支持多产品：新增 ZeppPortal 账号绑定型卡密产品，与原游戏产品各自使用独立数据库与 DPAPI 密钥环，后台按产品切换视图，旧游戏客户端的设备激活、心跳与退出接口保持原样。",
+  "deployment": {
+    "baseUrl": "https://124.220.147.56/",
+    "host": "124.220.147.56",
+    "transport": "TLS 1.2/1.3，Let's Encrypt shortlived profile 的 IP 证书（系统信任链可直接校验）",
+    "server": "nginx 1.29.8 → http://127.0.0.1:47835（ASP.NET Core 10），systemd 单元 licensing.service"
+  },
+  "clientArchive": {
+    "path": "CoH3/output/SkyEye/SkyEye-HardenedV2-Client.zip",
+    "baselineSha256": "cda5e3de4f31067fbc5648ce838d61186490a048665858d3b62820c109309dab",
+    "currentSha256": "abc1eb1c01e1dc993ca329daa6619bfcb4896bddaed1758a480e1167c82aec6c",
+    "authorized": true,
+    "reissueReason": "授权地址与 5.1.52426.0 版本适配后的受保护客户端已更新，客户包按本授权修订重新签发；cleanup 期的原始哈希与上一版修订哈希保留用于追溯。",
+    "history": [
+      "cda5e3de4f31067fbc5648ce838d61186490a048665858d3b62820c109309dab",
+      "abc1eb1c01e1dc993ca329daa6619bfcb4896bddaed1758a480e1167c82aec6c"
+    ]
+  },
+  "preservedOverrides": [
+    {
+      "path": "CoH3/dev/SkyEye/delivery/client/天穹之眼-自有授权版-v0.60.8.exe",
+      "baselineSha256": "636206fdd6dc6eeda979d5c3d1fc21432e6aaffbbbad899299a835e28ce1ce6b",
+      "currentSha256": "46ce9f7f7fd693c6577dfd05dc70fdd15368890131db9778bf1b3dc75592abd9",
+      "reason": "按新授权地址与 5.1.52426.0 版本适配重建的受保护客户端可执行文件。"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/delivery/client/天穹之眼-自有授权版-v0.60.8.exe.config",
+      "baselineSha256": "7284ff6a86098ba10784a05c3da402f0527521e6887256567d1549993d90f627",
+      "currentSha256": "e3398daf93fe6f36b7d05148848ebc869ba81671256b839b60ad5650db2cde0a",
+      "reason": "交付包授权服务器地址改为 https://124.220.147.56/"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/app.config",
+      "baselineSha256": "de5c6b7c679aa75f2a60dd0dbd4ae47699dc77b46b50fc672453e77bbd1c6184",
+      "currentSha256": "603ba077967b612c1e1a9b5f809ae718c5f6addf0dff753bc06cc63b585cd441",
+      "reason": "客户端默认配置：授权服务器地址由本机回环改为 https://124.220.147.56/"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/AirLogic.cs",
+      "baselineSha256": "47bc0536ad81189776b2c2ce34b2741b945acbc0d300d19a4ed9a65880839c5d",
+      "currentSha256": "b974ed7c56fb819332355bc815799d2e7fbc3403f7bd5c45dc31bad1aca9b1e9",
+      "reason": "空中单位读取随构建分派新版资源根与偏移，避免套用旧版本 RVA。"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/AirOverlayWindow.cs",
+      "baselineSha256": "83bf3ca2312ff2af4cc6220a5093a5cf3876ebbcdf47a89160a511db6d71c267",
+      "currentSha256": "afcbe022a22084ed9be3f2b48a3d7a2faf7ae20f18f4b38f4774ac00842fe6a8",
+      "reason": "空中目标窗口改为按连接代次发布的场景快照，重连或对局结束后不再绘制上一局残留目标。"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/ArmourProductionTracker.cs",
+      "baselineSha256": "8848941f28e1328a1f147ecf889ef95b34b85ff12f26dcc0d61c98e817269ccc",
+      "currentSha256": "7bca0a0f731e2d35e73a6896d193197c33f637c440e27ce2d6e0f86c6badca54",
+      "reason": "护甲产出统计新增 Reset()，对局切换或重连时清空已统计目标。"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/EnemySelection.cs",
+      "baselineSha256": "7d0d8fdcdec3c84281509ff9e6e293167b6c98da08d4d6adb1c05bc75f7e9b42",
+      "currentSha256": "b44ce08e724a81d182df322801d5ac2916af4719322e5043281b5f337e92a9a6",
+      "reason": "敌方选择新增 Reset()，对局切换时清空选择状态，避免跨局残留。"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/GameIdentityProvider60.cs",
+      "baselineSha256": "90973d7407b39b7f66699f479fa988afb8bc0d61e170b757b1da8a945758a603",
+      "currentSha256": "aa6618910117f61da91133b45b04c3165bdd006a706b6dff6d94c08f50afa872",
+      "reason": "游戏身份读取在版本读取失败时同样判定为身份未确认，避免使用未验证进程的数据。"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/GameVersion45.cs",
+      "baselineSha256": "d7c68ccddfa985b57107cfb28258ecb38d6054edaa5f4d3dc50530ed465151e7",
+      "currentSha256": "e643efa33ff05bf53ae8a6c0bbd13c2e908b2c70d841cb2ff05c4cb2e6d02e07",
+      "reason": "新增 5.1.52426.0（3.0.2.52426）游戏主程序指纹与构建判定；指纹不符时暂停结构依赖功能并提示待适配。"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/LicenseConfiguration60.cs",
+      "baselineSha256": "91cd72057526283835b0dcac631ad5a2a94c432a4fc56409b86583a33fe730d3",
+      "currentSha256": "e72607400ae4d88656071683eca4018bdfb33a00cb0de15d60a87b2e8456f867",
+      "reason": "客户端默认授权地址常量改为 https://124.220.147.56/"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/MarkerReadContext.cs",
+      "baselineSha256": "bf777f7a02831f5e36738eb421d36f35a05c17e08b4e5320a66f68e6fe05188e",
+      "currentSha256": "c10952282b89964316796525f331e1e0519642f8a443c5bdc24d042c518c3d29",
+      "reason": "标记读取上下文携带 MatchHudContext，HUD 层据此判断当前对局上下文是否可用。"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/MineOverlayWindow.cs",
+      "baselineSha256": "45ba866b276997954ec9b71ea92d5c6cf99c8a4dc989043b8e3447ead45d97d2",
+      "currentSha256": "3c61f6bd4a3b7df1887128dbd57434e6d77814a0e2ad1d3751dd2def1f713d03",
+      "reason": "地雷提示在重新连接时清空上次错误，避免展示过期的读取失败原因。"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/OverlaySettingsForm.cs",
+      "baselineSha256": "f609efff4115599541e0369cb5dd64b50b196dd6a54fc3ffb9496b33c0489bde",
+      "currentSha256": "3bd6a9ed3d13777fd2151266a733876b264bf803d6bd121b0a99f3f4ab52e1da",
+      "reason": "设置面板按新的对局生命周期重建：会话数据统一清空（ClearSessionData）、对局上下文不可用时挂起轮询，并按快照接受玩家信息更新。"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/PlayerInfoReader.cs",
+      "baselineSha256": "4d93d6765ea4925d20f83653e5b912f73b2597cc952625ac62cdc68297c803b9",
+      "currentSha256": "8ae3e8bf3c3d9e90924d71799ebeb39e07256db05f8d44073bb89f9a17c48545",
+      "reason": "按检测到的构建分派布局：52426 使用新版资源根、世界偏移与竞技场表，旧构建继续使用原偏移。"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/ProjectileLogic.cs",
+      "baselineSha256": "e88f0a981556c7f8fe4c423c3a0d309f9f70abb15acc5e3a4808e547a2c4f119",
+      "currentSha256": "e22bac88a7bbeda772067eb2bbe17fccd8d89b1b25e4b2e5653b78f035af7123",
+      "reason": "投射物解码新增按构建解析的 RVA 回调，新旧版本各自使用对应偏移。"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/SquadMarkerWindow.cs",
+      "baselineSha256": "7685a91dc528b7adc923b509991eb56c38c01036d836ed8640cc8fdbfd113ed8",
+      "currentSha256": "57fdf046088516706764d4c7d82875b82f441c0d976cfe36c8c23f7478d525fe",
+      "reason": "小队标记窗口改为按连接代次发布的场景快照，重连后不再绘制过期标记。"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/SupportCatalogue49.cs",
+      "baselineSha256": "2bf9c570658aa44815bb00134557138450d15425ee059317a451e25b0fc5e1ca",
+      "currentSha256": "dc5cc8f6557ea5d10d26a06e33c066ddb7ddb5a1fc5b4b81d427d13ad4c60ebb",
+      "reason": "支援装备目录校验新增按构建解析的 RVA 回调。"
+    },
+    {
+      "path": "LicensingSystem/server/admin.css",
+      "baselineSha256": "3ace864904bf6e82ed9a05737face2732328fa3ac675e30f93e3435797bbf42a",
+      "currentSha256": "acb7cacc36bc61a4e8cb362c71c76f97e51a8ecdd3c6cc45e7b763e09d4dc567",
+      "reason": "新增不可读卡密、批量操作栏、勾选框和选中行样式，复用原后台配色与布局。2026-11-23 增加产品选择与 ZeppPortal 视图样式。"
+    },
+    {
+      "path": "LicensingSystem/server/admin.html",
+      "baselineSha256": "f3868b525fa44eb223a70492a869c9b06016baf375ff4e3048ee8e75ab96b7b4",
+      "currentSha256": "81556cec7830b075387533fb984176ff00b592438526f274eced9e0b097838bb",
+      "reason": "按用户要求增加当前页批量选择与永久删除二次确认弹窗，并在操作记录说明中列入删除。2026-11-23 增加产品选择器与 ZeppPortal 账号维度展示。"
+    },
+    {
+      "path": "LicensingSystem/server/admin.js",
+      "baselineSha256": "fac89fa6e1355b0ff54d405229092943dc3b603bf437350eb186c5ef688ea3a3",
+      "currentSha256": "e263e2963bf6ccc9884fa3ede44c01270fecfbe16d915da6c0daa797d5d408a4",
+      "reason": "卡密密文不可读容错；新增当前页勾选、全选、单张及批量删除确认、失败重试与删除后分页及发码导出同步。2026-11-23 后台增加产品切换与 ZeppPortal 账号卡密视图，操作始终作用于当前选中的产品。"
+    },
+    {
+      "path": "LicensingSystem/server/LicenseService.cs",
+      "baselineSha256": "35d35c61576c74b83c644cc64d1e83060eb4f0a39c6f3451871e5e6c537b344c",
+      "currentSha256": "5700daceb5e0a07f9830beeebcba94c5c1efc0191445a191bd96dba3f01c5bec",
+      "reason": "跨机密文迁移容错与自愈；按用户要求增加单张及批量卡密事务删除，清理关联会话与激活请求并保留逐卡审计。2026-11-23 拆出 LicenseService.Zepp.cs 实现 ZeppPortal 账号绑定型卡密的兑换、权益查询与幂等回执，游戏卡的设备激活路径与 Zepp 审计互不越界。"
+    },
+    {
+      "path": "LicensingSystem/server/Program.cs",
+      "baselineSha256": "89eea13a975cab14d0b0ed5e6c0ccc36b16ce59125875bed5d31a81cdacf3009",
+      "currentSha256": "a371a3a2ce9897098035cf29dd43e8e61041e5377d8b18dd4929b0064efe610d",
+      "reason": "新增密文迁移离线 CLI 与独立 DataProtection 提供器；新增受管理员认证和 CSRF 保护的单张及批量删除接口。2026-11-23 引入 ProductCatalog 按产品隔离数据库与密钥环，并开放 ZeppPortal 内部 Bearer 鉴权的权益与兑换接口。"
+    },
+    {
+      "path": "LicensingSystem/server/ProtocolModels.cs",
+      "baselineSha256": "b88e3cf442f3cb60294c88773cb9b8fc1512cca3f084374683e1db4619fa82ba",
+      "currentSha256": "a65c4de28843a61cf03ce4d5875c61b0ec399a4e6dd0508915f0f0d9be481754",
+      "reason": "新增 CodePlaintext / CodeRepairReport、CodeRow.CodeReadable 标记及 BatchDeleteRequest 批量删除请求。2026-11-23 协议模型补齐产品标识，使旧游戏客户端的响应结构保持不变。"
+    },
+    {
+      "path": "LicensingSystem/server/ServerOptions.cs",
+      "baselineSha256": "6ee544a6b618b4682d151166084de1af27eabb713e99f6325e0059f1c979e54f",
+      "currentSha256": "36780bfbbefc4b3bc6eb4f0c4427d3b2342c23deccee522e77b1513fc4dfb54c",
+      "reason": "2026-11-23 配置拆分：ServerOptions 继承 ProductOptions，根产品保持默认客户端身份，Products 追加额外产品并各自绑定独立数据库与密钥目录；新增 Zepp 后端令牌与产品级校验。"
+    },
+    {
+      "path": "CoH3/output/SkyEye/SkyEye-HardenedV2-Client.zip",
+      "baselineSha256": "cda5e3de4f31067fbc5648ce838d61186490a048665858d3b62820c109309dab",
+      "currentSha256": "abc1eb1c01e1dc993ca329daa6619bfcb4896bddaed1758a480e1167c82aec6c",
+      "reason": "客户包按本授权修订重新签发：包内配置指向 https://124.220.147.56/，并包含 5.1.52426.0 版本适配后的受保护客户端。"
+    }
+  ]
+}

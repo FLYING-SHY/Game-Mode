@@ -24,7 +24,7 @@
 所有构建使用仓库内 `LicensingSystem/.cache/dotnet-10/dotnet.exe`（SDK 10）。独立部署先生成全新私有配置，或明确沿用已备份的同一签名密钥。
 
 ```powershell
-# 1. 编译服务端并运行全部 120 项隔离测试
+# 1. 编译服务端并运行全部 267 项隔离测试
 & .\LicensingSystem\Build.ps1 -VerifyServer
 
 # 2. 创建私有配置；端口/域名按目标环境明确设置

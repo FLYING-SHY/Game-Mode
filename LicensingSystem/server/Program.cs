@@ -93,6 +93,7 @@ public static class Program
         builder.Services.AddSingleton<TimeProvider>(timeProvider ?? TimeProvider.System);
         builder.Services.AddSingleton<LeaseSigner>();
         builder.Services.AddSingleton<LicenseService>();
+        builder.Services.AddSingleton<ProductCatalog>();
         Directory.CreateDirectory(Path.GetFullPath(options.KeyDirectory));
         var protection = builder.Services.AddDataProtection()
             .SetApplicationName("Licensing.Native.v1")
@@ -140,6 +141,26 @@ public static class Program
         // Prevent ambient ASPNETCORE_FORWARDEDHEADERS_ENABLED from enabling blanket trust.
         builder.Configuration["ForwardedHeaders_Enabled"] = "false";
         var app = builder.Build();
+        // Authenticate internal requests using the socket peer before any forwarded-header rewrite.
+        app.Use(async (context, next) =>
+        {
+            if (context.Request.Path.StartsWithSegments("/internal"))
+            {
+                var peer = context.Connection.RemoteIpAddress;
+                var token = Bearer(context);
+                if (peer is null || !IPAddress.IsLoopback(peer.IsIPv4MappedToIPv6 ? peer.MapToIPv4() : peer)
+                    || !options.ProductConfigurations().Any(product => product.ProductId == "ZeppPortal")
+                    || string.IsNullOrEmpty(options.ZeppBackendToken) || string.IsNullOrEmpty(token)
+                    || !CryptographicOperations.FixedTimeEquals(SHA256.HashData(Encoding.UTF8.GetBytes(token)),
+                        SHA256.HashData(Encoding.UTF8.GetBytes(options.ZeppBackendToken))))
+                {
+                    context.Response.Headers.CacheControl = "no-store";
+                    await Error(context, 403, "forbidden", "内部身份验证失败。");
+                    return;
+                }
+            }
+            await next();
+        });
         if (options.TrustedProxies.Length > 0)
         {
             var forwarded = new ForwardedHeadersOptions
@@ -192,11 +213,15 @@ public static class Program
         app.UseRateLimiter();
         app.UseAuthentication();
         app.UseAuthorization();
-        app.MapGet("/health", (LicenseService service) =>
+        app.MapGet("/health", (ProductCatalog products) =>
         {
-            service.Probe();
+            foreach (var product in products.All) product.Service.Probe();
             return Results.Json(new { status = "ready", framework = "ASP.NET Core", mode = "native-leases" });
         });
+        app.MapPost("/internal/zepp/redeem", (ZeppRedeemRequest request, ProductCatalog products) =>
+            Results.Json(products.Get("ZeppPortal").Service.Redeem(request)));
+        app.MapPost("/internal/zepp/entitlement", (ZeppEntitlementRequest request, ProductCatalog products) =>
+            Results.Json(products.Get("ZeppPortal").Service.Entitlement(request)));
         app.MapGet("/api/v1/version", (LicenseService service) => Results.Json(service.VersionInfo()));
         app.MapPost("/api/v1/activate", (ActivationRequest request, LicenseService service) => Results.Json(service.Activate(request)));
         app.MapPost("/api/v1/heartbeat", (HeartbeatRequest request, HttpContext context, LicenseService service) =>
@@ -246,37 +271,44 @@ public static class Program
             }
             return await next(invocation);
         });
-        admin.MapGet("/settings", () => Results.Json(new
+        admin.MapGet("/settings", (HttpContext context, ProductCatalog products) =>
         {
-            productId = options.ProductId, productName = options.ProductName, codePrefix = options.CodePrefix.ToUpperInvariant(),
-            leaseSeconds = LicenseService.LeaseSeconds, heartbeatSeconds = LicenseService.HeartbeatSeconds
-        }));
-        admin.MapGet("/codes", (string? search, string? status, int? page, int? pageSize, LicenseService service) =>
-            Results.Json(service.List(search, status, page ?? 1, pageSize ?? 25)));
-        admin.MapPost("/codes", (IssueRequest request, LicenseService service) => Results.Json(service.Issue(request)));
-        admin.MapPost("/codes/{id}/suspension", (string id, SuspensionRequest request, LicenseService service) =>
-        { service.Suspend(id, request.Suspended); return Results.Json(new { ok = true }); });
-        admin.MapPost("/codes/{id}/renew", (string id, RenewRequest request, LicenseService service) =>
-        { service.Renew(id, request.DurationSeconds); return Results.Json(new { ok = true }); });
-        admin.MapPost("/codes/{id}/unbind", (string id, LicenseService service) =>
-        { service.Unbind(id); return Results.Json(new { ok = true }); });
-        admin.MapPost("/codes/{id}/kick", (string id, LicenseService service) =>
-        { service.Kick(id); return Results.Json(new { ok = true }); });
-        admin.MapPost("/codes/{id}/delete", (string id, LicenseService service) =>
-        { service.Delete(id); return Results.Json(new { ok = true }); });
-        admin.MapPost("/codes/delete-batch", (BatchDeleteRequest? request, LicenseService service) =>
-            Results.Json(new { ok = true, deletedCount = service.DeleteMany(request?.Ids) }));
-        admin.MapGet("/codes/export", (string? search, string? status, LicenseService service) =>
-            Results.File(Encoding.UTF8.GetPreamble().Concat(Encoding.UTF8.GetBytes(service.Export(search, status))).ToArray(),
+            var selected = products.Selected(context);
+            return Results.Json(new
+            {
+                productId = selected.Options.ProductId, productName = selected.Options.ProductName,
+                codePrefix = selected.Options.CodePrefix.ToUpperInvariant(), accountBound = selected.AccountBound,
+                leaseSeconds = LicenseService.LeaseSeconds, heartbeatSeconds = LicenseService.HeartbeatSeconds,
+                products = products.All.Select(product => product.Metadata())
+            });
+        });
+        admin.MapGet("/codes", (string? search, string? status, int? page, int? pageSize, HttpContext context, ProductCatalog products) =>
+            Results.Json(products.Selected(context).Service.List(search, status, page ?? 1, pageSize ?? 25)));
+        admin.MapPost("/codes", (IssueRequest request, HttpContext context, ProductCatalog products) =>
+            Results.Json(products.Selected(context).Service.Issue(request)));
+        admin.MapPost("/codes/{id}/suspension", (string id, SuspensionRequest request, HttpContext context, ProductCatalog products) =>
+        { products.Selected(context).Service.Suspend(id, request.Suspended); return Results.Json(new { ok = true }); });
+        admin.MapPost("/codes/{id}/renew", (string id, RenewRequest request, HttpContext context, ProductCatalog products) =>
+        { products.Selected(context).Service.Renew(id, request.DurationSeconds); return Results.Json(new { ok = true }); });
+        admin.MapPost("/codes/{id}/unbind", (string id, HttpContext context, ProductCatalog products) =>
+        { products.Selected(context).Service.Unbind(id); return Results.Json(new { ok = true }); });
+        admin.MapPost("/codes/{id}/kick", (string id, HttpContext context, ProductCatalog products) =>
+        { products.Selected(context).Service.Kick(id); return Results.Json(new { ok = true }); });
+        admin.MapPost("/codes/{id}/delete", (string id, HttpContext context, ProductCatalog products) =>
+        { products.Selected(context).Service.Delete(id); return Results.Json(new { ok = true }); });
+        admin.MapPost("/codes/delete-batch", (BatchDeleteRequest? request, HttpContext context, ProductCatalog products) =>
+            Results.Json(new { ok = true, deletedCount = products.Selected(context).Service.DeleteMany(request?.Ids) }));
+        admin.MapGet("/codes/export", (string? search, string? status, HttpContext context, ProductCatalog products) =>
+            Results.File(Encoding.UTF8.GetPreamble().Concat(Encoding.UTF8.GetBytes(products.Selected(context).Service.Export(search, status))).ToArray(),
                 "text/csv; charset=utf-8", "license-codes.csv"));
-        admin.MapGet("/sessions", (string? codeId, bool? activeOnly, LicenseService service) =>
-            Results.Json(new { items = service.Sessions(codeId, activeOnly ?? true) }));
-        admin.MapGet("/audit", (int? page, int? pageSize, LicenseService service) =>
-            Results.Json(service.GetAudit(page ?? 1, pageSize ?? 50)));
+        admin.MapGet("/sessions", (string? codeId, bool? activeOnly, HttpContext context, ProductCatalog products) =>
+            Results.Json(new { items = products.Selected(context).Service.Sessions(codeId, activeOnly ?? true) }));
+        admin.MapGet("/audit", (int? page, int? pageSize, HttpContext context, ProductCatalog products) =>
+            Results.Json(products.Selected(context).Service.GetAudit(page ?? 1, pageSize ?? 50)));
         admin.MapPost("/logout", async (HttpContext context) =>
         { await context.SignOutAsync("admin"); return Results.Json(new { ok = true }); });
         // Validate storage during startup, rather than on the first activation.
-        app.Services.GetRequiredService<LicenseService>().Probe();
+        foreach (var product in app.Services.GetRequiredService<ProductCatalog>().All) product.Service.Probe();
         return app;
     }
 
@@ -296,6 +328,8 @@ public static class Program
     {
         if (context.Response.HasStarted) return;
         context.Response.StatusCode = status;
-        await context.Response.WriteAsJsonAsync(new { error = code, message });
+        if (context.Request.Path.StartsWithSegments("/internal"))
+            await context.Response.WriteAsJsonAsync(new { success = false, code });
+        else await context.Response.WriteAsJsonAsync(new { error = code, message });
     }
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T09:08:56.512261+00:00",
+  "generatedAt": "2026-11-23T13:44:15.967555+00:00",
   "passed": true,
   "checks": [
     {
@@ -519,7 +519,7 @@
   ],
   "secretScanner": "Administrator tokens, fixture code values and private PEM payload lines checked in memory; no values saved.",
   "trialBinaryIncluded": false,
-  "authorizedRevision": "2026-11-23-session-lifecycle-adaptation",
+  "authorizedRevision": "2026-11-23-multi-product-zepp",
   "customerArchiveReissued": true,
   "limitations": [
     "Reactor output is a 14-day demo experiment and excluded from every delivery archive.",

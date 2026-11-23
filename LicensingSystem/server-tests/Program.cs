@@ -824,6 +824,7 @@ try
     Assert(oldRejected, "native server refuses a legacy database");
     var oldHashAfterRejection = SHA256.HashData(await File.ReadAllBytesAsync(oldPath));
     Assert(oldHash.SequenceEqual(oldHashAfterRejection), "refusing legacy database leaves its bytes unchanged");
+    await ProductTests.Run(root, Assert);
     var report = new { mode = "native-leases-real-http-and-sqlite", passed = passed.Count, checks = passed,
         targetFramework = AppContext.TargetFrameworkName, runtimeVersion = Environment.Version.ToString(),
         frameworkDescription = System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription,

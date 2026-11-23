@@ -51,24 +51,36 @@ DECLARATIONS = {
     'CoH3/dev/SkyEye/client/CoH3MemoryTool/SquadMarkerWindow.cs':
         '小队标记窗口改为按连接代次发布的场景快照，重连后不再绘制过期标记。',
     'LicensingSystem/server/LicenseService.cs':
-        '跨机密文迁移容错与自愈；按用户要求增加单张及批量卡密事务删除，清理关联会话与激活请求并保留逐卡审计。',
+        '跨机密文迁移容错与自愈；按用户要求增加单张及批量卡密事务删除，清理关联会话与激活请求并保留逐卡审计。'
+        '2026-11-23 拆出 LicenseService.Zepp.cs 实现 ZeppPortal 账号绑定型卡密的兑换、权益查询与幂等回执，'
+        '游戏卡的设备激活路径与 Zepp 审计互不越界。',
     'LicensingSystem/server/ProtocolModels.cs':
-        '新增 CodePlaintext / CodeRepairReport、CodeRow.CodeReadable 标记及 BatchDeleteRequest 批量删除请求。',
+        '新增 CodePlaintext / CodeRepairReport、CodeRow.CodeReadable 标记及 BatchDeleteRequest 批量删除请求。'
+        '2026-11-23 协议模型补齐产品标识，使旧游戏客户端的响应结构保持不变。',
     'LicensingSystem/server/Program.cs':
-        '新增密文迁移离线 CLI 与独立 DataProtection 提供器；新增受管理员认证和 CSRF 保护的单张及批量删除接口。',
+        '新增密文迁移离线 CLI 与独立 DataProtection 提供器；新增受管理员认证和 CSRF 保护的单张及批量删除接口。'
+        '2026-11-23 引入 ProductCatalog 按产品隔离数据库与密钥环，并开放 ZeppPortal 内部 Bearer 鉴权的权益与兑换接口。',
     'LicensingSystem/server/admin.js':
-        '卡密密文不可读容错；新增当前页勾选、全选、单张及批量删除确认、失败重试与删除后分页及发码导出同步。',
+        '卡密密文不可读容错；新增当前页勾选、全选、单张及批量删除确认、失败重试与删除后分页及发码导出同步。'
+        '2026-11-23 后台增加产品切换与 ZeppPortal 账号卡密视图，操作始终作用于当前选中的产品。',
     'LicensingSystem/server/admin.html':
-        '按用户要求增加当前页批量选择与永久删除二次确认弹窗，并在操作记录说明中列入删除。',
+        '按用户要求增加当前页批量选择与永久删除二次确认弹窗，并在操作记录说明中列入删除。'
+        '2026-11-23 增加产品选择器与 ZeppPortal 账号维度展示。',
     'LicensingSystem/server/admin.css':
-        '新增不可读卡密、批量操作栏、勾选框和选中行样式，复用原后台配色与布局。',
+        '新增不可读卡密、批量操作栏、勾选框和选中行样式，复用原后台配色与布局。'
+        '2026-11-23 增加产品选择与 ZeppPortal 视图样式。',
+    'LicensingSystem/server/ServerOptions.cs':
+        '2026-11-23 配置拆分：ServerOptions 继承 ProductOptions，根产品保持默认客户端身份，'
+        'Products 追加额外产品并各自绑定独立数据库与密钥目录；新增 Zepp 后端令牌与产品级校验。',
 }
 
 REASON = ('授权服务器由本机回环迁移到公网 124.220.147.56，交付包内的授权地址与可执行文件随之更新；'
           '修复 Windows DPAPI 跨机密文导致的后台 503；按用户要求新增单张及批量卡密永久删除、整批事务清理与逐卡操作审计；'
           '2026-11-21 按游戏 5.1.52426.0（3.0.2.52426）新增主程序指纹判定与按构建分派的布局读取，受保护客户端重建后重新签发客户包；'
           '2026-11-23 客户端接入对局生命周期：标记读取上下文携带 MatchHudContext，空中目标与小队标记改为按连接代次发布的场景快照，'
-          '设置面板统一清空会话数据并在对局上下文不可用时挂起轮询。')
+          '设置面板统一清空会话数据并在对局上下文不可用时挂起轮询；'
+          '2026-11-23 授权服务支持多产品：新增 ZeppPortal 账号绑定型卡密产品，与原游戏产品各自使用独立数据库与 DPAPI 密钥环，'
+          '后台按产品切换视图，旧游戏客户端的设备激活、心跳与退出接口保持原样。')
 
 
 def load(path):
@@ -110,8 +122,8 @@ def remapper():
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument('--out', default=str(R/'evidence/authorized-revision-2026-11-23.json'))
-    ap.add_argument('--revision-id', default='2026-11-23-session-lifecycle-adaptation')
+    ap.add_argument('--out', default=str(R/'evidence/authorized-revision-2026-11-23-zepp.json'))
+    ap.add_argument('--revision-id', default='2026-11-23-multi-product-zepp')
     args = ap.parse_args()
 
     remap = remapper()
@@ -147,7 +159,7 @@ def main():
         raise SystemExit('Expected the customer archive to be present as the revision baseline.')
     cleanup_validation = load(R/'evidence/cleanup-validation.json')
     cleanup_baseline = cleanup_validation['customerArchiveSha256']
-    previous_revision = R/'evidence/authorized-revision-2026-11-21.json'
+    previous_revision = R/'evidence/authorized-revision-2026-11-23.json'
     previous_archive_sha = load(previous_revision)['clientArchive'].get('currentSha256') if previous_revision.is_file() else None
     latest = load(R/'evidence/latest-build.json')
     delivery_config = R/'delivery/client'/(Path(latest['Client']).name + '.config')

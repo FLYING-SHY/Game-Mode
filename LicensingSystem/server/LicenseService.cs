@@ -7,7 +7,7 @@ using Microsoft.Data.Sqlite;
 
 namespace Licensing.Server;
 
-public sealed class LicenseService
+public sealed partial class LicenseService
 {
     public const int LeaseSeconds = 60;
     public const int HeartbeatSeconds = 28;
@@ -40,7 +40,7 @@ public sealed class LicenseService
             probe.CommandText = "SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%'";
             using var reader = probe.ExecuteReader();
             while (reader.Read())
-                if (reader.GetString(0) is not ("LicenseCodes" or "LeaseSessions" or "ActivationRequests" or "AuditEvents" or "NativeMetadata"))
+                if (reader.GetString(0) is not ("LicenseCodes" or "LeaseSessions" or "ActivationRequests" or "AuditEvents" or "NativeMetadata" or "ZeppRedemptions" or "ZeppRequests"))
                     throw new InvalidOperationException("数据库含旧版或其他系统表；请配置独立的新数据库路径。");
         }
         using var command = db.CreateCommand();
@@ -81,6 +81,7 @@ public sealed class LicenseService
         if (product is not null && product != options.ProductId)
             throw new InvalidOperationException("此数据库已属于另一个产品，请使用独立数据库。");
         Execute(db, tx, "INSERT OR IGNORE INTO NativeMetadata(Name,Value) VALUES('ProductId',$product)", ("$product", options.ProductId));
+        InitializeZeppStorage(db, tx);
         tx.Commit();
     }
 
@@ -93,6 +94,7 @@ public sealed class LicenseService
 
     public LeaseResponse Activate(ActivationRequest request)
     {
+        RequireDeviceProduct();
         LeaseSigner.ValidateNonce(request.Nonce);
         var code = NormalizeCode(request.Code);
         var device = NormalizeDevice(request.DeviceId);
@@ -161,6 +163,7 @@ public sealed class LicenseService
 
     public LeaseResponse Heartbeat(string? token, HeartbeatRequest request)
     {
+        RequireDeviceProduct();
         LeaseSigner.ValidateNonce(request.Nonce);
         if (!ValidToken(token)) return Denied("revoked", Now());
         using var db = Open();
@@ -203,6 +206,7 @@ public sealed class LicenseService
 
     public void Logout(string? token)
     {
+        RequireDeviceProduct();
         if (!ValidToken(token)) return;
         using var db = Open();
         using var tx = db.BeginTransaction(deferred: false);
@@ -267,11 +271,15 @@ public sealed class LicenseService
         using var db = Open();
         using var tx = db.BeginTransaction();
         var rows = Filter(ReadCodes(db, tx, Now()), search, status);
-        var text = new StringBuilder("id,code,codeSuffix,kind,durationSeconds,note,createdAtUnix,activatedAtUnix,expiresAtUnix,boundDeviceId,lastSteamId,state,activeSessionCount\r\n");
+        var text = new StringBuilder("id,code,codeSuffix,kind,durationSeconds,note,createdAtUnix,activatedAtUnix,expiresAtUnix,boundDeviceId,lastSteamId,state,activeSessionCount"
+            + (IsZepp ? ",accountId,startsAtUnix" : "") + "\r\n");
         foreach (var row in rows)
-            text.AppendJoin(',', new object?[] { row.Id, row.Code, row.CodeSuffix, row.Kind, row.DurationSeconds, row.Note,
-                row.CreatedAtUnix, row.ActivatedAtUnix, row.ExpiresAtUnix, row.BoundDeviceId, row.LastSteamId, row.State,
-                row.ActiveSessionCount }.Select(Csv)).Append("\r\n");
+        {
+            var fields = new List<object?> { row.Id, row.Code, row.CodeSuffix, row.Kind, row.DurationSeconds, row.Note,
+                row.CreatedAtUnix, row.ActivatedAtUnix, row.ExpiresAtUnix, row.BoundDeviceId, row.LastSteamId, row.State, row.ActiveSessionCount };
+            if (IsZepp) fields.AddRange([row.AccountId, row.StartsAtUnix]);
+            text.AppendJoin(',', fields.Select(Csv)).Append("\r\n");
+        }
         Audit(db, tx, "export", null, "{}", Now());
         tx.Commit();
         return text.ToString();
@@ -282,6 +290,7 @@ public sealed class LicenseService
         MutateCode(id, "suspension", JsonSerializer.Serialize(new { suspended }), (db, tx, row, now) =>
         {
             Execute(db, tx, "UPDATE LicenseCodes SET Suspended=$suspended WHERE Id=$id", ("$suspended", suspended ? 1 : 0), ("$id", id));
+            if (IsZepp) Execute(db, tx, "UPDATE ZeppRedemptions SET Suspended=$suspended WHERE CodeId=$id", ("$suspended", suspended ? 1 : 0), ("$id", id));
             if (suspended) RevokeCode(db, tx, id, "blocked", now);
         });
     }
@@ -298,16 +307,25 @@ public sealed class LicenseService
             var expiry = row.ExpiresAt is null ? (long?)null : AddDuration(Math.Max(now, row.ExpiresAt.Value), durationSeconds);
             Execute(db, tx, "UPDATE LicenseCodes SET DurationSeconds=$duration,ExpiresAt=$expiry WHERE Id=$id",
                 ("$duration", duration), ("$expiry", expiry), ("$id", id));
+            if (IsZepp) Execute(db, tx, "UPDATE ZeppRedemptions SET ExpiresAt=$expiry WHERE CodeId=$id", ("$expiry", expiry), ("$id", id));
         });
     }
 
-    public void Unbind(string id) => MutateCode(id, "unbind", "{}", (db, tx, row, now) =>
+    public void Unbind(string id)
     {
-        Execute(db, tx, "UPDATE LicenseCodes SET BoundDeviceId=NULL WHERE Id=$id", ("$id", id));
-        RevokeCode(db, tx, id, "revoked", now);
-    });
+        RequireDeviceProduct();
+        MutateCode(id, "unbind", "{}", (db, tx, row, now) =>
+        {
+            Execute(db, tx, "UPDATE LicenseCodes SET BoundDeviceId=NULL WHERE Id=$id", ("$id", id));
+            RevokeCode(db, tx, id, "revoked", now);
+        });
+    }
 
-    public void Kick(string id) => MutateCode(id, "kick", "{}", (db, tx, row, now) => RevokeCode(db, tx, id, "revoked", now));
+    public void Kick(string id)
+    {
+        RequireDeviceProduct();
+        MutateCode(id, "kick", "{}", (db, tx, row, now) => RevokeCode(db, tx, id, "revoked", now));
+    }
 
     public void Delete(string id) => DeleteMany([id]);
 
@@ -325,6 +343,7 @@ public sealed class LicenseService
             var activationRequestsDeleted = Execute(db, tx,
                 "DELETE FROM ActivationRequests WHERE SessionId IN (SELECT Id FROM LeaseSessions WHERE CodeId=$id)", ("$id", row.Id));
             var sessionsDeleted = Execute(db, tx, "DELETE FROM LeaseSessions WHERE CodeId=$id", ("$id", row.Id));
+            if (IsZepp) Execute(db, tx, "UPDATE ZeppRedemptions SET Revoked=1 WHERE CodeId=$id", ("$id", row.Id));
             Execute(db, tx, "DELETE FROM LicenseCodes WHERE Id=$id", ("$id", row.Id));
             Audit(db, tx, "delete", row.Id, JsonSerializer.Serialize(new
             {
@@ -402,8 +421,9 @@ public sealed class LicenseService
         using var command = db.CreateCommand(); command.Transaction = tx;
         command.CommandText = $"""
             SELECT {CodeColumns},(SELECT COUNT(*) FROM LeaseSessions s WHERE s.CodeId=c.Id
-                AND s.RevokedAt IS NULL AND s.LeaseUntil>$now AND c.Suspended=0 AND (c.ExpiresAt IS NULL OR c.ExpiresAt>$now))
-            FROM LicenseCodes c ORDER BY c.CreatedAt DESC,c.Id DESC
+                AND s.RevokedAt IS NULL AND s.LeaseUntil>$now AND c.Suspended=0 AND (c.ExpiresAt IS NULL OR c.ExpiresAt>$now)),
+                {(IsZepp ? "z.AccountId,z.StartsAt" : "NULL,NULL")}
+            FROM LicenseCodes c {(IsZepp ? "LEFT JOIN ZeppRedemptions z ON z.CodeId=c.Id" : "")} ORDER BY c.CreatedAt DESC,c.Id DESC
             """;
         Add(command, "$now", now);
         using var reader = command.ExecuteReader();
@@ -414,7 +434,8 @@ public sealed class LicenseService
             var readable = TryUnprotect(row.CodeCipher, out var code);
             result.Add(new(row.Id, readable ? code! : "", row.CodeSuffix, row.Kind, row.DurationSeconds,
                 row.Note, row.CreatedAt, row.ActivatedAt, row.ExpiresAt, row.BoundDeviceId, row.LastSteamId,
-                CodeState(row, now), reader.GetInt32(12), readable));
+                IsZepp && !row.Suspended && Number(reader, 14) is long start && start > now ? "scheduled" : CodeState(row, now),
+                reader.GetInt32(12), readable, Text(reader, 13), Number(reader, 14)));
         }
         return result;
     }
@@ -486,7 +507,7 @@ public sealed class LicenseService
         if (!string.IsNullOrWhiteSpace(search))
         {
             search = search.Trim();
-            rows = rows.Where(row => new[] { row.Id, row.Code, row.Note, row.BoundDeviceId, row.LastSteamId }
+            rows = rows.Where(row => new[] { row.Id, row.Code, row.Note, row.BoundDeviceId, row.LastSteamId, row.AccountId }
                 .Any(value => value?.Contains(search, StringComparison.OrdinalIgnoreCase) == true));
         }
         return rows;
@@ -583,7 +604,7 @@ public sealed class LicenseService
     }
     private static void ValidateStatus(string? status)
     {
-        if (!string.IsNullOrEmpty(status) && status is not ("all" or "unused" or "active" or "expired" or "suspended" or "online"))
+        if (!string.IsNullOrEmpty(status) && status is not ("all" or "unused" or "active" or "expired" or "suspended" or "online" or "scheduled"))
             throw new LicensingException("invalid_status", "状态筛选值无效。");
     }
     private static string Csv(object? value)

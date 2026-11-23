@@ -45,7 +45,7 @@ public sealed record RenewRequest(long DurationSeconds);
 public sealed record BatchDeleteRequest(IReadOnlyList<string>? Ids);
 public sealed record CodeRow(string Id, string Code, string CodeSuffix, string Kind, long? DurationSeconds,
     string Note, long CreatedAtUnix, long? ActivatedAtUnix, long? ExpiresAtUnix, string? BoundDeviceId,
-    string? LastSteamId, string State, int ActiveSessionCount, bool CodeReadable = true);
+    string? LastSteamId, string State, int ActiveSessionCount, bool CodeReadable = true, string? AccountId = null, long? StartsAtUnix = null);
 public sealed record CodePlaintext(string Id, string? Code, string CodeSuffix, string Note, long CreatedAtUnix, bool Readable);
 public sealed record CodeRepairReport(int Repaired, int AlreadyReadable, int Missing, int Mismatched, int Total);
 public sealed record CodeStats(int Total, int Unused, int Active, int Expired, int Suspended, int Online);

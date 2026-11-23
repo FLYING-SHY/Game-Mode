@@ -1,0 +1,139 @@
+{
+  "revisionId": "2026-11-21-build-52426-layout-adaptation",
+  "authorizedAt": "2026-11-21T12:11:54.085696+00:00",
+  "reason": "授权服务器由本机回环迁移到公网 124.220.147.56，交付包内的授权地址与可执行文件随之更新；修复 Windows DPAPI 跨机密文导致的后台 503；按用户要求新增单张及批量卡密永久删除、整批事务清理与逐卡操作审计；2026-11-21 按游戏 5.1.52426.0（3.0.2.52426）新增主程序指纹判定与按构建分派的布局读取，受保护客户端重建后重新签发客户包。",
+  "deployment": {
+    "baseUrl": "https://124.220.147.56/",
+    "host": "124.220.147.56",
+    "transport": "TLS 1.2/1.3，Let's Encrypt shortlived profile 的 IP 证书（系统信任链可直接校验）",
+    "server": "nginx 1.29.8 → http://127.0.0.1:47835（ASP.NET Core 10），systemd 单元 licensing.service"
+  },
+  "clientArchive": {
+    "path": "CoH3/output/SkyEye/SkyEye-HardenedV2-Client.zip",
+    "baselineSha256": "cda5e3de4f31067fbc5648ce838d61186490a048665858d3b62820c109309dab",
+    "currentSha256": "abc1eb1c01e1dc993ca329daa6619bfcb4896bddaed1758a480e1167c82aec6c",
+    "authorized": true,
+    "reissueReason": "授权地址与 5.1.52426.0 版本适配后的受保护客户端已更新，客户包按本授权修订重新签发；cleanup 期的原始哈希与上一版修订哈希保留用于追溯。",
+    "history": [
+      "cda5e3de4f31067fbc5648ce838d61186490a048665858d3b62820c109309dab",
+      "44509096e0f32784661dd20d7bd34932c69be88de74df472e4c65edc5436b1d9",
+      "abc1eb1c01e1dc993ca329daa6619bfcb4896bddaed1758a480e1167c82aec6c"
+    ]
+  },
+  "preservedOverrides": [
+    {
+      "path": "CoH3/dev/SkyEye/delivery/client/天穹之眼-自有授权版-v0.60.8.exe",
+      "baselineSha256": "636206fdd6dc6eeda979d5c3d1fc21432e6aaffbbbad899299a835e28ce1ce6b",
+      "currentSha256": "46ce9f7f7fd693c6577dfd05dc70fdd15368890131db9778bf1b3dc75592abd9",
+      "reason": "按新授权地址与 5.1.52426.0 版本适配重建的受保护客户端可执行文件。"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/delivery/client/天穹之眼-自有授权版-v0.60.8.exe.config",
+      "baselineSha256": "7284ff6a86098ba10784a05c3da402f0527521e6887256567d1549993d90f627",
+      "currentSha256": "e3398daf93fe6f36b7d05148848ebc869ba81671256b839b60ad5650db2cde0a",
+      "reason": "交付包授权服务器地址改为 https://124.220.147.56/"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/app.config",
+      "baselineSha256": "de5c6b7c679aa75f2a60dd0dbd4ae47699dc77b46b50fc672453e77bbd1c6184",
+      "currentSha256": "603ba077967b612c1e1a9b5f809ae718c5f6addf0dff753bc06cc63b585cd441",
+      "reason": "客户端默认配置：授权服务器地址由本机回环改为 https://124.220.147.56/"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/AirLogic.cs",
+      "baselineSha256": "47bc0536ad81189776b2c2ce34b2741b945acbc0d300d19a4ed9a65880839c5d",
+      "currentSha256": "b974ed7c56fb819332355bc815799d2e7fbc3403f7bd5c45dc31bad1aca9b1e9",
+      "reason": "空中单位读取随构建分派新版资源根与偏移，避免套用旧版本 RVA。"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/GameIdentityProvider60.cs",
+      "baselineSha256": "90973d7407b39b7f66699f479fa988afb8bc0d61e170b757b1da8a945758a603",
+      "currentSha256": "aa6618910117f61da91133b45b04c3165bdd006a706b6dff6d94c08f50afa872",
+      "reason": "游戏身份读取在版本读取失败时同样判定为身份未确认，避免使用未验证进程的数据。"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/GameVersion45.cs",
+      "baselineSha256": "d7c68ccddfa985b57107cfb28258ecb38d6054edaa5f4d3dc50530ed465151e7",
+      "currentSha256": "e643efa33ff05bf53ae8a6c0bbd13c2e908b2c70d841cb2ff05c4cb2e6d02e07",
+      "reason": "新增 5.1.52426.0（3.0.2.52426）游戏主程序指纹与构建判定；指纹不符时暂停结构依赖功能并提示待适配。"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/LicenseConfiguration60.cs",
+      "baselineSha256": "91cd72057526283835b0dcac631ad5a2a94c432a4fc56409b86583a33fe730d3",
+      "currentSha256": "e72607400ae4d88656071683eca4018bdfb33a00cb0de15d60a87b2e8456f867",
+      "reason": "客户端默认授权地址常量改为 https://124.220.147.56/"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/MineOverlayWindow.cs",
+      "baselineSha256": "45ba866b276997954ec9b71ea92d5c6cf99c8a4dc989043b8e3447ead45d97d2",
+      "currentSha256": "3c61f6bd4a3b7df1887128dbd57434e6d77814a0e2ad1d3751dd2def1f713d03",
+      "reason": "地雷提示在重新连接时清空上次错误，避免展示过期的读取失败原因。"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/OverlaySettingsForm.cs",
+      "baselineSha256": "f609efff4115599541e0369cb5dd64b50b196dd6a54fc3ffb9496b33c0489bde",
+      "currentSha256": "0bfd348c9fb16feaef6a97056de6037b83b0d3166f6379af2a22a203e2cf31b7",
+      "reason": "版本状态文案由“版本未验证”改为“待适配”，与新版指纹拦截语义保持一致。"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/PlayerInfoReader.cs",
+      "baselineSha256": "4d93d6765ea4925d20f83653e5b912f73b2597cc952625ac62cdc68297c803b9",
+      "currentSha256": "3444f469137c616d382ee795967188f82e758a14ed36aa99fb7e52fad3ab0350",
+      "reason": "按检测到的构建分派布局：52426 使用新版资源根、世界偏移与竞技场表，旧构建继续使用原偏移。"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/ProjectileLogic.cs",
+      "baselineSha256": "e88f0a981556c7f8fe4c423c3a0d309f9f70abb15acc5e3a4808e547a2c4f119",
+      "currentSha256": "e22bac88a7bbeda772067eb2bbe17fccd8d89b1b25e4b2e5653b78f035af7123",
+      "reason": "投射物解码新增按构建解析的 RVA 回调，新旧版本各自使用对应偏移。"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/SupportCatalogue49.cs",
+      "baselineSha256": "2bf9c570658aa44815bb00134557138450d15425ee059317a451e25b0fc5e1ca",
+      "currentSha256": "dc5cc8f6557ea5d10d26a06e33c066ddb7ddb5a1fc5b4b81d427d13ad4c60ebb",
+      "reason": "支援装备目录校验新增按构建解析的 RVA 回调。"
+    },
+    {
+      "path": "LicensingSystem/server/admin.css",
+      "baselineSha256": "3ace864904bf6e82ed9a05737face2732328fa3ac675e30f93e3435797bbf42a",
+      "currentSha256": "1b36429f1a013913d6c4706e8736dec542b269b0a2d6a3ba4c87f6cad745dcee",
+      "reason": "新增不可读卡密、批量操作栏、勾选框和选中行样式，复用原后台配色与布局。"
+    },
+    {
+      "path": "LicensingSystem/server/admin.html",
+      "baselineSha256": "f3868b525fa44eb223a70492a869c9b06016baf375ff4e3048ee8e75ab96b7b4",
+      "currentSha256": "e2cbb9c670404930cd839a2e89275186d3c8c49c6cdfd8c226da6bc5b476bf5b",
+      "reason": "按用户要求增加当前页批量选择与永久删除二次确认弹窗，并在操作记录说明中列入删除。"
+    },
+    {
+      "path": "LicensingSystem/server/admin.js",
+      "baselineSha256": "fac89fa6e1355b0ff54d405229092943dc3b603bf437350eb186c5ef688ea3a3",
+      "currentSha256": "3a95c0355433ac18c748ef9594445cdd0c3b5bc36079ce0e8526fbe725c99dae",
+      "reason": "卡密密文不可读容错；新增当前页勾选、全选、单张及批量删除确认、失败重试与删除后分页及发码导出同步。"
+    },
+    {
+      "path": "LicensingSystem/server/LicenseService.cs",
+      "baselineSha256": "35d35c61576c74b83c644cc64d1e83060eb4f0a39c6f3451871e5e6c537b344c",
+      "currentSha256": "89bad15b3dda551c23cacb68e62d8558f9091a238063fb2f2d6640f96e790860",
+      "reason": "跨机密文迁移容错与自愈；按用户要求增加单张及批量卡密事务删除，清理关联会话与激活请求并保留逐卡审计。"
+    },
+    {
+      "path": "LicensingSystem/server/Program.cs",
+      "baselineSha256": "89eea13a975cab14d0b0ed5e6c0ccc36b16ce59125875bed5d31a81cdacf3009",
+      "currentSha256": "0372e8c39bd432ccd321b030b59719530c1de4bd0b976bc620e35244926cc7fb",
+      "reason": "新增密文迁移离线 CLI 与独立 DataProtection 提供器；新增受管理员认证和 CSRF 保护的单张及批量删除接口。"
+    },
+    {
+      "path": "LicensingSystem/server/ProtocolModels.cs",
+      "baselineSha256": "b88e3cf442f3cb60294c88773cb9b8fc1512cca3f084374683e1db4619fa82ba",
+      "currentSha256": "cab7d39c0cf38d81c64b47c37c17a262c138b89906487ea2f988eaf1ca72f2a6",
+      "reason": "新增 CodePlaintext / CodeRepairReport、CodeRow.CodeReadable 标记及 BatchDeleteRequest 批量删除请求。"
+    },
+    {
+      "path": "CoH3/output/SkyEye/SkyEye-HardenedV2-Client.zip",
+      "baselineSha256": "cda5e3de4f31067fbc5648ce838d61186490a048665858d3b62820c109309dab",
+      "currentSha256": "abc1eb1c01e1dc993ca329daa6619bfcb4896bddaed1758a480e1167c82aec6c",
+      "reason": "客户包按本授权修订重新签发：包内配置指向 https://124.220.147.56/，并包含 5.1.52426.0 版本适配后的受保护客户端。"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+﻿diff --git a/CoH3/dev/SkyEye/tests/unknown-build/before/SkyEye/PlayerInfoReader.cs b/CoH3/dev/SkyEye/client/CoH3MemoryTool/PlayerInfoReader.cs
+index d4e3f83..58cc3fb 100644
+--- a/CoH3/dev/SkyEye/tests/unknown-build/before/SkyEye/PlayerInfoReader.cs
++++ b/CoH3/dev/SkyEye/client/CoH3MemoryTool/PlayerInfoReader.cs
+@@ -2370,9 +2370,8 @@ internal sealed class PlayerInfoReader : IDisposable
+ 		{
+ 			return false;
+ 		}
+-		// A maintenance probe may inspect a build that is not verified yet; it stays labelled
+-		// as diagnostics in the snapshot and never ships in the normal client.
+-		return detectedBuild == GameVersion45.GameBuild.Unknown && maintenanceDiagnostics;
++		// Maintenance diagnostics must also select an explicitly registered build layout.
++		throw new InvalidOperationException("游戏版本未登记布局，结构依赖功能已暂停。请等待版本适配。");
+ 	}
+ 
+ 	private void ValidateLayout()
+diff --git a/CoH3/dev/SkyEye/tests/unknown-build/before/Simple/PlayerInfoReader.cs b/CoH3/dev/COH3SimpleTool/CoH3MemoryTool/PlayerInfoReader.cs
+index d4e3f83..58cc3fb 100644
+--- a/CoH3/dev/SkyEye/tests/unknown-build/before/Simple/PlayerInfoReader.cs
++++ b/CoH3/dev/COH3SimpleTool/CoH3MemoryTool/PlayerInfoReader.cs
+@@ -2370,9 +2370,8 @@ internal sealed class PlayerInfoReader : IDisposable
+ 		{
+ 			return false;
+ 		}
+-		// A maintenance probe may inspect a build that is not verified yet; it stays labelled
+-		// as diagnostics in the snapshot and never ships in the normal client.
+-		return detectedBuild == GameVersion45.GameBuild.Unknown && maintenanceDiagnostics;
++		// Maintenance diagnostics must also select an explicitly registered build layout.
++		throw new InvalidOperationException("游戏版本未登记布局，结构依赖功能已暂停。请等待版本适配。");
+ 	}
+ 
+ 	private void ValidateLayout()

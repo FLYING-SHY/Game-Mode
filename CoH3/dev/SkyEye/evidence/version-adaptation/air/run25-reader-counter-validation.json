@@ -1,0 +1,193 @@
+{
+  "status": "PASS_counter_ledger_only_payload_missing",
+  "gameFeatureAccepted": false,
+  "payloadGeometryValidated": false,
+  "readerReport": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\maintenance-run-25-p47-prewarmed\\maintenance-live.json",
+  "readerReportSha256": "2e1ada1429eeb61d6df1f1ebd7b8c06fddb1b1b70709919190412193fc2f0dad",
+  "scope": "all_current_snapshot_rows_diagnostic_not_production_enemy_UI",
+  "match": "31572:639308258698492330:2188107579392:2188149555200:1000",
+  "epoch": 1,
+  "queryAttempts": 551,
+  "decodedObservationCount": 83,
+  "firstPositive": {
+    "ordinal": 221,
+    "utc": "2026-11-21T01:24:58.5949709Z",
+    "startedMilliseconds": 23988,
+    "finishedMilliseconds": 23998,
+    "status": "completed",
+    "decodedCount": 0,
+    "airDecodedCount": 1
+  },
+  "lastPositive": {
+    "ordinal": 303,
+    "utc": "2026-11-21T01:25:07.5450765Z",
+    "startedMilliseconds": 32938,
+    "finishedMilliseconds": 32946,
+    "status": "completed",
+    "decodedCount": 0,
+    "airDecodedCount": 1
+  },
+  "firstLaterEmpty": {
+    "ordinal": 304,
+    "utc": "2026-11-21T01:25:07.6549371Z",
+    "startedMilliseconds": 33048,
+    "finishedMilliseconds": 33056,
+    "status": "completed",
+    "decodedCount": 0,
+    "airDecodedCount": 0
+  },
+  "lastPoll": {
+    "ordinal": 551,
+    "utc": "2026-11-21T01:25:34.5746467Z",
+    "startedMilliseconds": 59968,
+    "finishedMilliseconds": 59977,
+    "status": "completed",
+    "decodedCount": 0,
+    "airDecodedCount": 0
+  },
+  "retainedFrames": 128,
+  "retainedDecoded": 0,
+  "droppedFrames": 423,
+  "droppedDecoded": 83,
+  "limitation": "Initial 128 empty frames filled retention capacity. All 83 positive payloads are missing; do not infer exact keys, geometry, owner or cast/fallback routing from the counters. Raw snapshots below are independently timestamped evidence.",
+  "rawSnapshots": [
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\live-raw-03-p47-early.json",
+      "sha256": "c41393167a442024f2c7791659f574be2c2b06f1f1692c9cd4b2030b0c0f0046",
+      "timestampUtc": "2026-11-21T01:25:00.282269+00:00",
+      "casts": [
+        {
+          "player": "0x1fd77e08000",
+          "slot": 0,
+          "address": "0x1fd72f19a00",
+          "blueprint": "abilities\\races\\american\\aircraft\\strafing_run_p47_us",
+          "fields": {
+            "targetOffset8": "0xee420",
+            "targetCount12": 1,
+            "type20": 6,
+            "identity24": "0x3e8",
+            "direction40": [
+              0.02023591287434101,
+              0.0,
+              -0.9997951984405518
+            ],
+            "blueprint56": "0x1fdb2fbe0f0",
+            "instance68": 2914,
+            "phase76": 0,
+            "flags144": 13
+          },
+          "rawCastCandidate": true,
+          "failedGates": []
+        }
+      ],
+      "p47Aircraft": []
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\live-raw-04-p47-middle.json",
+      "sha256": "916afdd243fc28a4df78566e459ec6c879a4cd3f688303b1e024bc86f3cf8514",
+      "timestampUtc": "2026-11-21T01:25:03.398827+00:00",
+      "casts": [
+        {
+          "player": "0x1fd77e08000",
+          "slot": 0,
+          "address": "0x1fd72f19a00",
+          "blueprint": "abilities\\races\\american\\aircraft\\strafing_run_p47_us",
+          "fields": {
+            "targetOffset8": "0xee420",
+            "targetCount12": 1,
+            "type20": 6,
+            "identity24": "0x3e8",
+            "direction40": [
+              0.02023591287434101,
+              0.0,
+              -0.9997951984405518
+            ],
+            "blueprint56": "0x1fdb2fbe0f0",
+            "instance68": 4294967295,
+            "phase76": 2,
+            "flags144": 1
+          },
+          "rawCastCandidate": false,
+          "failedGates": [
+            "phaseNot2"
+          ]
+        }
+      ],
+      "p47Aircraft": [
+        {
+          "entity": "0x1fd7445fe00",
+          "registryIndex": 3108,
+          "generation": 1000008534,
+          "blueprint": "ebps\\races\\american\\aircraft\\p47_thunderbolt_air_support_center_us",
+          "ownerPlayer": {
+            "address": "0x1fd77e08000",
+            "identity": "0x3e8",
+            "slot": 0
+          },
+          "position44": [
+            31.98074722290039,
+            41.27513122558594,
+            121.996337890625
+          ],
+          "failedRecoveryRawGates": [
+            "unitHeading"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\live-raw-05-p47-late.json",
+      "sha256": "564bb611ce5d0a383c1eb053e68c03db0d6c6d6e46771471f316695c6f09ef58",
+      "timestampUtc": "2026-11-21T01:25:07.515611+00:00",
+      "casts": [
+        {
+          "player": "0x1fd77e08000",
+          "slot": 0,
+          "address": "0x1fd72f19a00",
+          "blueprint": "abilities\\races\\american\\aircraft\\strafing_run_p47_us",
+          "fields": {
+            "targetOffset8": "0xee420",
+            "targetCount12": 1,
+            "type20": 6,
+            "identity24": "0x3e8",
+            "direction40": [
+              0.02023591287434101,
+              0.0,
+              -0.9997951984405518
+            ],
+            "blueprint56": "0x1fdb2fbe0f0",
+            "instance68": 4294967295,
+            "phase76": 2,
+            "flags144": 1
+          },
+          "rawCastCandidate": false,
+          "failedGates": [
+            "phaseNot2"
+          ]
+        }
+      ],
+      "p47Aircraft": [
+        {
+          "entity": "0x1fd7445fe00",
+          "registryIndex": 3108,
+          "generation": 1000008534,
+          "blueprint": "ebps\\races\\american\\aircraft\\p47_thunderbolt_air_support_center_us",
+          "ownerPlayer": {
+            "address": "0x1fd77e08000",
+            "identity": "0x3e8",
+            "slot": 0
+          },
+          "position44": [
+            35.452571868896484,
+            39.29228973388672,
+            -49.571136474609375
+          ],
+          "failedRecoveryRawGates": [
+            "unitHeading",
+            "aboveTarget"
+          ]
+        }
+      ]
+    }
+  ]
+}

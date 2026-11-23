@@ -11,7 +11,7 @@
 | 维护包 | 两端源码、构建脚本、私有重命名映射、验证器和运行证据 | 自己维护 |
 | Reactor 试验记录 | 两个验签方法选择性虚拟化的历史实验 | 日志与测量保留；试用工具、EXE 及实验验证器已清理 |
 
-正式客户端 SHA256：`636206fdd6dc6eeda979d5c3d1fc21432e6aaffbbbad899299a835e28ce1ce6b`。
+正式客户端 SHA256：`46ce9f7f7fd693c6577dfd05dc70fdd15368890131db9778bf1b3dc75592abd9`（2026-11-21 按游戏 5.1.52426.0 适配后重建；本报告首轮与 2026-11-16 章节各自保留当时的哈希）。
 原始签名输入 SHA256：`a2bd412924ce669666afc4fcaa68b96fa5a6ae29b2bf6a32d89ef1466f20ef10`。
 Reactor 试验 SHA256：`6551eb5bf91cbb34d579590e4ea70c04fac55f1a00be6af22eb3b3f348eb7f25`。
 
@@ -73,7 +73,7 @@ REA 与 ILSpy 直接比较：Verify 从 699 字节 / 290 条 CIL 变为 147 字�
 
 ## 正式版逆向检查
 
-REA 对正式版重新读取，coverage complete：341 types、4032 methods、1399 fields、1562 member refs。ILSpy 实际 project export **成功**，生成 56 个 C# 文件。元数据重命名和字符串隐藏提高阅读及修改成本，未阻止托管反编译。见 [正式版静态分析](../evidence/release-static-analysis/summary.json)。
+REA 对正式版重新读取，coverage complete：347 types、4061 methods、1423 fields、1571 member refs（2026-11-21 版本适配后的正式版；2026-11-16 那一版为 341 types / 4032 methods / 1399 fields / 1562 member refs）。ILSpy 实际 project export **成功**，生成 56 个 C# 文件。元数据重命名和字符串隐藏提高阅读及修改成本，未阻止托管反编译。见 [正式版静态分析](../evidence/release-static-analysis-20261121/summary.json)。
 
 独立只读跨端审查未发现导致错误授权的重大缺口；canonical、nonce、验证标记、token fallback、密钥生命周期和构建 pin 链均有源码锚点。Steam 输入域客户端更严格等兼容性差异和 Unix 权限前提仍保留在 [审查报告](signature-cross-review.md)。
 
@@ -100,3 +100,19 @@ REA 对正式版重新读取，coverage complete：341 types、4032 methods、13
 修订机制：cleanup 清单的保留项哈希比对新增“授权修订”通道——只有事先声明的变更文件可进入修订记录，且必须记录基线与当前哈希；客户包在授权修订下允许重新签发，旧包先做完整性与逐项 SHA 校验，新旧包哈希共同绑定在同一修订记录上。三个压缩包（Client/Server/Maintenance）以此机制重新签发。运行态用户偏好（`alert-sounds.txt`、`overlay-settings.txt`、小地图缓存、诊断日志）不再随包分发，消除了“启用声音提示”开关在混淆版与未混淆版之间的像素差异。服务端运维侧新增每日 SQLite 在线备份（保留 14 份）与 acme.sh 定时续签。
 
 边界更新：公网 HTTPS 与单台生产服务器的实际部署、证书签发、反代、备份与续期链路已在本轮实际验证；仍未覆盖实际游戏内完整对局、长期压力与并发、第二台机器、容器部署、代码签名、任意本地补丁对抗，以及证书到期跨越后的完整重签观察。
+
+## 2026-11-21 游戏 5.1.52426.0 版本适配与发布刷新
+
+游戏主程序升级到 5.1.52426.0（3.0.2.52426）后，旧版基于固定偏移与资源根的读取全部失效。本轮把版本判定与布局读取拆成两层：`GameVersion45` 以主程序 SHA-256 判定构建（已知指纹两枚，未知即 `Unknown`），`PlayerInfoReader` 再按构建分派——52426 走新的资源根、世界偏移与竞技场表，旧构建继续用原偏移；投射物与支援目录新增按构建解析的 RVA 回调，指纹不符时结构依赖功能直接停用并提示待适配。客户端在实机对局中读取到 4 → 17 → 23 个单位，未出现版本未验证提示；三个夹具（build-gate / layout-preflight / decoder-layout）在当前工作树上全部通过。
+
+发布侧按“录授权修订 → `Finalize.py --refresh` → 再录修订 → 再 `--refresh`”刷新三个压缩包，修订记录覆盖 19 个 cleanup 保留项偏差（其中 8 个是本次新增的客户端源文件）。重新取证结果：隔离后端真实 HTTP + SQLite 测试 **195/195 通过**（`20261121-101926-01b34cac`）；未混淆基线与受保护客户端对线上服务各 **7/7 组通过**；八个解码音频载荷一致；REA 计数 347 types / 4061 methods / 1423 fields / 1571 member refs，ILSpy 导出 56 个 C# 文件；封存程序 **39 项审计检查**全部通过。刷新后的客户包 SHA256 `abc1eb1c01e1dc993ca329daa6619bfcb4896bddaed1758a480e1167c82aec6c`（756865 B，内含 2026-11-21 受保护客户端 `46ce9f7f…`，配置指向 `https://124.220.147.56/`），服务端包 `e116428341b697fd6786d0649a0726422108946f1e7b080f905c179c0ee831f0`，维护包 `6ed57a23168192e5dabb9e91b13ad50d7e1f284fc972f3d54e886a74c021ddb2`。
+
+本轮与既往取证的三点口径差异，均已写入派生汇总的 limitations：其一，界面像素比较改为**同一条件下先后采集**两版（`capture_ui_pair.py`），因为验证器的设置窗会附加到正在运行的游戏进程，预览行的数字着色随活体数据变化，两次相隔较远的套件运行会因此产生与保护无关的像素差；其二，云端全局有效会话为 1 且属于操作者自己的在线客户端，改为可审计的“外来会话额度”，发布夹具卡的 12 项检查仍全部为 0 活跃；其三，真实入口在隔离的回环部署上采集，避免干扰操作者正在进行的对局，用户的实机对局运行作为另一份独立证据。商业保护试用 CLI 不在本仓库内，Reactor 试验组仍沿用 2026-11-13 的产物，未按新客户端重建，故其像素与音频比较保留历史结论。
+
+见 [版本适配证据](../evidence/version-adaptation/perbuild-adaptation-52426.md)、[派生核验汇总](../evidence/validation-summary-2026-11-21.json)、[授权修订记录](../evidence/authorized-revision-2026-11-21.json)、[未混淆基线](../evidence/raw-signed-20261121-194453/summary.json)、[七组清单](../evidence/protected-verification-20261121-194637-331.json)、[界面同条件采集](../evidence/ui-pair-20261121-200800.json)、[云端会话清理](../evidence/session-cleanup-cloud-20261121.json)、[正式版静态分析](../evidence/release-static-analysis-20261121/summary.json)、[入口生命周期](../evidence/protected-real-entry-lifecycle-20261121.json) 与 [最终校验](../evidence/final-validation.json)。
+
+## 2026-11-23 对局生命周期接入与维护包瘦身
+
+客户端接入对局生命周期：`MarkerReadContext` 携带 `MatchHudContext`；空中目标窗口与小队标记窗口改为按连接代次发布的场景快照（`ScenePublication`），重连或对局结束后不再绘制上一局残留；护甲产出统计与敌方选择新增 `Reset()`；设置面板把 `DropReader()` 重写为 `ClearSessionData()`，对局上下文不可用时挂起轮询并提示，玩家信息按快照整体接受。授权修订记录随之扩到 **24 个** cleanup 保留项偏差（新增 `AirOverlayWindow`、`ArmourProductionTracker`、`EnemySelection`、`MarkerReadContext`、`SquadMarkerWindow` 五个客户端源文件，并改写 `OverlaySettingsForm` 的偏差说明），修订号 `2026-11-23-session-lifecycle-adaptation`，见 [授权修订记录](../evidence/authorized-revision-2026-11-23.json)。
+
+维护包此前会吞入整个 `evidence/` 语料（截图与多兆字节状态转储），单包膨胀到 1,115,779,376 B。`Finalize.py` 的 `eligible()` 现对 `evidence/` 只保留清单、脚本与小型元数据，排除图片与超过 4 MiB 的状态转储；重建后维护包降到约 10.3 MB（2085 条目），三个包的权威 SHA256 以 `CoH3/output/SkyEye/SkyEye-HardenedV2.archive-verification.json` 与同名 `.sha256` 旁文件为准（服务端与维护包每次重签都会因清单时间戳变化而换哈希，客户包因逐项一致保持字节不变：`abc1eb1c01e1dc993ca329daa6619bfcb4896bddaed1758a480e1167c82aec6c`，756,865 B）。封存程序 **39 项审计检查**全部通过；本地链接检查同步修正了本报告中指向 `evidence/version-adaptation/perbuild-adaptation-52426.md` 的相对链接。

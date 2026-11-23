@@ -1,0 +1,31 @@
+{
+  "utc": "2026-11-21T05:20:08.261633+00:00",
+  "readerPid": 31592,
+  "driverRecordedExitCode": null,
+  "reportDeclaredExitCode": 5,
+  "osExitCodeAcceptance": false,
+  "readerReportExists": true,
+  "reportSha256": "5376dfeaf421263aa6e46a30c85e0bbe4494a2bc0b0f3e2811cb539a13bb6fca",
+  "driverReportedFailure": "Reader reported failure: ",
+  "mechanism": "Start-Process PassThru returned a Process object whose ExitCode was null after WaitForExit returned true; the result was written at 05:16:42.3414040Z. A later process check found it exited. The original wrapper failure is retained; OS exit code is not inferred from the JSON.",
+  "durationFromIdentityToDriverResultSeconds": 6.702804,
+  "nextCaptureMethod": "direct executable invocation; capture LASTEXITCODE immediately after process returns",
+  "productionEvidence": {
+    "Slot": 1,
+    "ProductionKnown": true,
+    "Kwk38Known": true,
+    "GrenadeRemainingTicks": null,
+    "tickRatePerSecond": 8,
+    "grenadeRemainingSeconds": null,
+    "jobs": [
+      {
+        "Path": "upgrade\\afrika_korps\\vehicle\\20mm_halftrack_250_ak",
+        "Key": "2834896846336:2807501192",
+        "RemainingTicks": 456,
+        "TotalTicks": 480,
+        "RemainingSeconds": 57
+      }
+    ]
+  },
+  "sourceIdentityMapping": "Kwk38Upgrade.IsResearch compares exactly upgrade\\afrika_korps\\vehicle\\20mm_halftrack_250_ak; native tooltip says KwK38 conversion. No cancellation or requeue was performed."
+}

@@ -1,0 +1,428 @@
+{
+  "sha256": "8A3445292255D652C8DBE9B53F24328AF159C161BE89836BA54EF070946DD3EC",
+  "version": "5.1.52426.0",
+  "manifest": "signatures-by-hash.json",
+  "feature_count": 30,
+  "features": [
+    {
+      "id": "resource_root_getter",
+      "category": "resources",
+      "expected_rva": "0x930c32",
+      "raw_hit_count": 44,
+      "expected_decode_targets": [
+        "0x6bb1ed0"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "resource_vector_iteration",
+      "category": "resources",
+      "expected_rva": "0x2727fe",
+      "raw_hit_count": 1,
+      "expected_decode_targets": [
+        "0x6bb2238",
+        "0x6a9aaf0",
+        "0x6bb2240",
+        "0x27282c",
+        "0x272824",
+        "0x272810",
+        "0x272831"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "resource_vector_count",
+      "category": "resources",
+      "expected_rva": "0x272880",
+      "raw_hit_count": 1,
+      "expected_decode_targets": [
+        "0x6bb2240",
+        "0x6bb2238"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "world_offset",
+      "category": "world",
+      "expected_rva": "0x17932a",
+      "raw_hit_count": 1,
+      "expected_decode_targets": [
+        "0x5e0decc",
+        "0x7a5770"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "role_0xcd0f10",
+      "category": "guards",
+      "expected_rva": "0xcd0f10",
+      "raw_hit_count": 6,
+      "expected_decode_targets": [
+        "0xcd0f1d",
+        "0xcd0f60"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "role_0xcd0f1d",
+      "category": "guards",
+      "expected_rva": "0xcd0f1d",
+      "raw_hit_count": 1,
+      "expected_decode_targets": [
+        "0xcd0f55",
+        "0x6187e40"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "role_0xcd0f60",
+      "category": "guards",
+      "expected_rva": "0xcd0f60",
+      "raw_hit_count": 2,
+      "expected_decode_targets": [
+        "0xcd0fa2",
+        "0xcd0fa2",
+        "0x6187e40",
+        "0xcd0fa5"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "role_0x7e1e97",
+      "category": "guards",
+      "expected_rva": "0x7e1e97",
+      "raw_hit_count": 15,
+      "expected_decode_targets": [
+        "0x3d98bf0"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "role_0x54c7c4",
+      "category": "guards",
+      "expected_rva": "0x54c7c4",
+      "raw_hit_count": 12,
+      "expected_decode_targets": [
+        "0x3d92160"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "role_0x54c783",
+      "category": "guards",
+      "expected_rva": "0x54c783",
+      "raw_hit_count": 12,
+      "expected_decode_targets": [
+        "0x3d92058"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "role_0x76568f",
+      "category": "guards",
+      "expected_rva": "0x76568f",
+      "raw_hit_count": 467,
+      "expected_decode_targets": [
+        "0x3d94a40",
+        "0x906f70"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "role_0x550170",
+      "category": "guards",
+      "expected_rva": "0x550170",
+      "raw_hit_count": 1,
+      "expected_decode_targets": [
+        "0x38f860",
+        "0x550196",
+        "0xcdfa70",
+        "0x550196",
+        "0x55019e",
+        "0x54f7b0"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "role_0xd23080",
+      "category": "guards",
+      "expected_rva": "0xd23080",
+      "raw_hit_count": 1,
+      "expected_decode_targets": [
+        "0x2702b0",
+        "0xd230a6",
+        "0xc69d40",
+        "0xd230a6",
+        "0xd230ae",
+        "0x54f7b0"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "role_0x11370e0",
+      "category": "guards",
+      "expected_rva": "0x11370e0",
+      "raw_hit_count": 1,
+      "expected_decode_targets": [
+        "0x54f7b0"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "role_0x328a7f8",
+      "category": "guards",
+      "expected_rva": "0x328a7f8",
+      "raw_hit_count": 1,
+      "expected_decode_targets": [
+        "0x328a832",
+        "0x328a832",
+        "0x328a832",
+        "0x903cd0",
+        "0x328a832",
+        "0x328a834"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "camera_registry",
+      "category": "camera",
+      "expected_rva": "0x189e43",
+      "raw_hit_count": 119,
+      "expected_decode_targets": [
+        "0x6187f58"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "ui_singleton_read",
+      "category": "ui",
+      "expected_rva": "0x6a613d",
+      "raw_hit_count": 1,
+      "expected_decode_targets": [
+        "0x6b9e078",
+        "0x6a6165"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "ui_singleton_store",
+      "category": "ui",
+      "expected_rva": "0x14c9708",
+      "raw_hit_count": 6,
+      "expected_decode_targets": [
+        "0x6b9e078"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "colour_property_registry",
+      "category": "property_registry",
+      "expected_rva": "0x405576",
+      "raw_hit_count": 2,
+      "expected_decode_targets": [
+        "0x61881b0"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "matrix_wrapper",
+      "category": "ui_properties",
+      "expected_rva": "0x1411bc2",
+      "raw_hit_count": 1,
+      "expected_decode_targets": [
+        "0x6ab3ff8",
+        "0x9c5e30",
+        "0x6a2da0",
+        "0x1411bf2",
+        "0x2aac048"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "playable_width_wrapper",
+      "category": "ui_properties",
+      "expected_rva": "0xdf457b",
+      "raw_hit_count": 2,
+      "expected_decode_targets": [
+        "0x6acf308",
+        "0x9c5e30",
+        "0x6a2da0",
+        "0x6bfe190",
+        "0x6bfe180",
+        "0xdf4622",
+        "0x6bfe180"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "playable_height_wrapper",
+      "category": "ui_properties",
+      "expected_rva": "0xdf465c",
+      "raw_hit_count": 2,
+      "expected_decode_targets": [
+        "0x6acf330",
+        "0x9c5e30",
+        "0x6a2da0",
+        "0x6bfe230",
+        "0x6bfe220",
+        "0xdf4702",
+        "0x6bfe220"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "wrapper_pointer_store",
+      "category": "ui_properties",
+      "expected_rva": "0x9c5e56",
+      "raw_hit_count": 401,
+      "expected_decode_targets": [],
+      "selected_rva": null
+    },
+    {
+      "id": "health_lookup",
+      "category": "components",
+      "expected_rva": "0x2eb5d4",
+      "raw_hit_count": 1,
+      "expected_decode_targets": [
+        "0x0",
+        "0x628a7ea"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "tls_component_pool",
+      "category": "components",
+      "expected_rva": "0x2eb5f7",
+      "raw_hit_count": 1,
+      "expected_decode_targets": [
+        "0x6187e70"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "component_descriptor_resolver",
+      "category": "components",
+      "expected_rva": "0x820980",
+      "raw_hit_count": 1,
+      "expected_decode_targets": [
+        "0x8209b9",
+        "0x8209be",
+        "0x6187e40"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "arena_helper_anchor",
+      "category": "roots",
+      "expected_rva": "0x8209ad",
+      "raw_hit_count": 12,
+      "expected_decode_targets": [
+        "0x6187e40"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "projectile_dynamics_install",
+      "category": "guards",
+      "expected_rva": "0x10e25a2",
+      "raw_hit_count": 1,
+      "expected_decode_targets": [
+        "0x3e4aa38"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "projectile_vtable_install",
+      "category": "guards",
+      "expected_rva": "0x10ccaa0",
+      "raw_hit_count": 5,
+      "expected_decode_targets": [
+        "0x3e49618"
+      ],
+      "selected_rva": null
+    },
+    {
+      "id": "mover_vtable_install",
+      "category": "guards",
+      "expected_rva": "0x707a9d",
+      "raw_hit_count": 1,
+      "expected_decode_targets": [
+        "0x3d926e0"
+      ],
+      "selected_rva": null
+    }
+  ],
+  "role_candidates": [
+    {
+      "old_decimal": 64568064,
+      "old_rva": "0x3d93b00",
+      "name": "TimedAbility",
+      "new_candidate_rva": "0x3d94a40",
+      "evidence_level": "static_identity_plus_agent1_runtime_role",
+      "limitation": "Base Ability is not a substitute."
+    },
+    {
+      "old_decimal": 64584880,
+      "old_rva": "0x3d97cb0",
+      "name": "SpawnProductionItem",
+      "new_candidate_rva": "0x3d98bf0",
+      "evidence_level": "static_identity_plus_agent1_runtime_role",
+      "limitation": "Constructor stores blueprint-like argument at +16; runtime production role observed by agent1."
+    },
+    {
+      "old_decimal": 64557040,
+      "old_rva": "0x3d90ff0",
+      "name": "SquadUpgradeProductionItem",
+      "new_candidate_rva": "0x3d92058",
+      "evidence_level": "static_role_candidate_not_observed",
+      "limitation": "Vehicle path follows SquadSimInventoryItem queue; no upgrade object observed, old executable absent."
+    },
+    {
+      "old_decimal": 64557304,
+      "old_rva": "0x3d910f8",
+      "name": "EntityUpgradeProductionItem",
+      "new_candidate_rva": "0x3d92160",
+      "evidence_level": "static_role_candidate_not_observed",
+      "limitation": "Normal path follows ProductionQueueExt; no upgrade object observed; PlayerUpgradeProductionItem alternative is 0x3E57008."
+    },
+    {
+      "old_decimal": 64559016,
+      "old_rva": "0x3d917a8",
+      "name": "MoverDynamics",
+      "new_candidate_rva": "0x3d926e0",
+      "evidence_level": "static_role_candidate_not_observed",
+      "limitation": "Matches state64 discriminator and virtual-slot movement semantics; aircraft, +272/+280 loiter fields not proven."
+    },
+    {
+      "old_decimal": 65307976,
+      "old_rva": "0x3e48548",
+      "name": "ProjectileExt",
+      "new_candidate_rva": "0x3e49618",
+      "evidence_level": "static_identity_plus_agent1_runtime_role",
+      "limitation": "Actual projectile extension observed by agent1, not necessarily owned projectile."
+    },
+    {
+      "old_decimal": 65313128,
+      "old_rva": "0x3e49968",
+      "name": "ProjectileDynamics",
+      "new_candidate_rva": "0x3e4aa38",
+      "evidence_level": "static_role_candidate",
+      "limitation": "Inherited EntityDynamics; constructor initializes mode+64 to2, not proof of live mode0/3. Pure ProjectileLogic/AirLogic actor guard, not ProjectileExt."
+    },
+    {
+      "old_decimal": 13437424,
+      "old_rva": "0xcd09f0",
+      "name": "MoverDynamics virtual +344",
+      "new_candidate_rva": "0xcd0f10",
+      "evidence_level": "static_callable_candidate",
+      "limitation": "This is a function RVA, not a vtable. vtable0x3D926E0+344 contains image+0xCD0F10."
+    }
+  ],
+  "other_preserved_evidence": [
+    "focused-evidence.json",
+    "ui-followup.json",
+    "role-guards.json",
+    "compactguard-evidence.json",
+    "broad-pattern-exploration.json"
+  ]
+}

@@ -1,0 +1,1084 @@
+{
+  "schema": "skyeye.simple-maintenance.task15.review.v1",
+  "createdUtc": "2026-11-21T05:48:13.711424+00:00",
+  "status": "PASS_offline_build_and_static_review",
+  "taskId": "task-15",
+  "writeScope": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15",
+  "maintenanceOnly": true,
+  "buildVerified": false,
+  "guiRun": "not_run",
+  "authorizationRun": "not_run",
+  "gameAttach": "not_run",
+  "clientMainInvocations": 0,
+  "processQueries": 0,
+  "generatorFixturesPassed": 5,
+  "buildErrors": 0,
+  "buildWarnings": {
+    "count": 15,
+    "code": "CS0649",
+    "scope": "existing Simple production source fields"
+  },
+  "sourceInputsUnchanged": 153,
+  "historicalSimpleFilesUnchanged": 15,
+  "existingSkyEyeUiFilesUnchanged": 12,
+  "templateDiff": {
+    "files": 4,
+    "onlyChanges": "one relative-root literal per copied project/script"
+  },
+  "oldBuildSourceDrift": [
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\AirLogic.cs",
+      "historicalSha256": "22758734981407a68805937364b77dd33bda8cab545cf39c22767a1a9c1ef603",
+      "currentSha256": "8e3eced8cd1e9f120e76da38ba2d5146c0e56fcfe670ea66b4486fb2011dac50"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\MineOverlayWindow.cs",
+      "historicalSha256": "45ba866b276997954ec9b71ea92d5c6cf99c8a4dc989043b8e3447ead45d97d2",
+      "currentSha256": "3c61f6bd4a3b7df1887128dbd57434e6d77814a0e2ad1d3751dd2def1f713d03"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\PlayerInfoReader.cs",
+      "historicalSha256": "36796d25f86894d86260fdb8ee72021878e01c866dee9afa161eb5648ea715c7",
+      "currentSha256": "bbb359cd59409065d8b4d00ace784243ae5e99816611bc11617e7c9ed8adba9d"
+    }
+  ],
+  "oldManifestIsCurrentBuildSourceProof": false,
+  "newSourceManifest": {
+    "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\obj\\maintenance-simple-ui-generated\\source-manifest.json",
+    "bytes": 47691,
+    "sha256": "b8079c0e2fb068461cd2829d44253b1cfc2f9f8685176234c3bad593f19dfb41"
+  },
+  "artifacts": [
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\MaintenanceSimpleUi.csproj",
+      "bytes": 3005,
+      "sha256": "d5afd5dfdf69c7777aebc012f40a1dbf0fc1e8b5b679b33bf0c8d0d8caef061b"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\GenerateSources.ps1",
+      "bytes": 5004,
+      "sha256": "961dea0a6758482078e05555449fed6825cdee3751c4977dc62d8add11e4639c"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\Build.ps1",
+      "bytes": 1110,
+      "sha256": "18e6000170ee7186fa0b1fcd64b777fcfdd92f409c1999be9cba7057461c779f"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\Verify-Offline.ps1",
+      "bytes": 4954,
+      "sha256": "31dca8db19ce2b4d8e2d01d012dd91b92e7d58d8a0a833a2c3ab19fc2d2dbdca"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\baseline.json",
+      "bytes": 43505,
+      "sha256": "b8a641642602701c64023e795ee94e66583c068dfac579c4e18f8b7e8da285f4"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\template.diff",
+      "bytes": 2555,
+      "sha256": "d366b82b976d4861877cf246646695375be4f5acb55cb885cf8b14c59ecea09c"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\build-report.json",
+      "bytes": 2450,
+      "sha256": "0757c53414a6ffd9ff47ee502e8c464d27aebcc346ed4fb2e92f331d07c21c03"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\compiled-metadata.json",
+      "bytes": 1560,
+      "sha256": "ab49a1e3dd546bfd5835f6a36a524982f8b55f5ba7fbb256cb4b81601eff40e0"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\obj\\maintenance-simple-ui-generated\\source-manifest.json",
+      "bytes": 47691,
+      "sha256": "b8079c0e2fb068461cd2829d44253b1cfc2f9f8685176234c3bad593f19dfb41"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\bin\\Release\\net48\\COH3SimpleTool.Maintenance.UI.Unverified.exe",
+      "bytes": 563200,
+      "sha256": "a169466a2ccf6b37354ce04562ce31c89ca7fa4ac9941f299e545b8bc65f6563"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\bin\\Release\\net48\\COH3SimpleTool.Maintenance.UI.Unverified.exe.config",
+      "bytes": 496,
+      "sha256": "603ba077967b612c1e1a9b5f809ae718c5f6addf0dff753bc06cc63b585cd441"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\generation-self-test.log",
+      "bytes": 326,
+      "sha256": "01f8bc9b5ed6a1ddc648e94f4232546cbd51a6cdd64e5114226f3149cf829d1a"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\build.log",
+      "bytes": 15364,
+      "sha256": "3c04b234d458f2145f8d59704b23fc115ced07818d02f92d8f60bfac4f6af39d"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\offline-verification.log",
+      "bytes": 262,
+      "sha256": "65a7a9a6a82e9976648224e6189f8c3a31ed36f7b33bfedf5d0878fb9f6ff4f9"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\obj\\maintenance-simple-ui-generated\\ControlBarForm.cs",
+      "bytes": 13276,
+      "sha256": "6848f60425c75f59cfc8266634585da96f88b2f166eee62aa03d8ca13fba96d4"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\obj\\maintenance-simple-ui-generated\\SquadMarkerWindow.cs",
+      "bytes": 17113,
+      "sha256": "412eb00d2a41738d14cebb7ee9835389d8c311551d228a878e450011fd7220e4"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\obj\\maintenance-simple-ui-generated\\AirOverlayWindow.cs",
+      "bytes": 10796,
+      "sha256": "0c96c072b77320144323fe4e719d413e315f7b9cc4be9d5ec517c3abad42da25"
+    }
+  ],
+  "checks": [
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\Adaptation58.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\AirCast.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\AirCastTracker.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\AirCatalogue.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\AirDefinition.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\AirDrawing.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\AirLogic.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\AirOverlayHost.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\AirOverlayWindow.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\AirPlane.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\AirPreferences.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\AirRender42.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\AirZone.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\AlertKind.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\AlertTracker.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\AlphaSurface.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ArmourProductionTracker.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ArmourUnits.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ArtilleryState.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\AttackCatalogue67.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\BarrageCatalogue.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\BarrageDisplayTracker.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\BarrageLogic.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\BarrageRecord.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\BlackLoginForm.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\BuildingNames.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ByteMemory45.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ChineseNames.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ColourBytes.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ControlBarForm.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\DeviceSerial69.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\DirectionData.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\DirectionDrawing.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\DirectionStroke.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\EnemyChoice.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\EnemyOverlayWindow.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\EnemySelection.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\FlankMapDrawing55.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\FlankMapRange55.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\GameAlert.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\GameIdentity60.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\GameIdentityProvider60.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\GameLayout52426.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\GameVersion45.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\GrenadeUpgrade.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\HazardKind.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\IGameIdentityProvider60.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ILicenseApi60.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\Infrastructure49.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\Interface45.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\Kwk38Upgrade.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\LeaseSignature60.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\LicenseApi60.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\LicenseArray60.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\LicenseClock60.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\LicenseConfiguration60.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\LicenseCoordinator60.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\LicenseCredentials60.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\LicenseDevice60.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\LicenseGate60.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\LicenseLease60.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\LicenseNotice60.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\LicenseReply60.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\LicenseStore60.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\LicenseVersion60.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\LicenseView60.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\LocalAccountLog59.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\LocalPlayerAccount59.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\Loiter49.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\LoiterState49.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\LoiterWeaponCatalogue49.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\MapUnitLabels52.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\MarkerDrawCommand.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\MarkerReadContext.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\MarkerScene.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\MarkerSpriteCache.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\MineCamera.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\MineOverlayWindow.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\MineRecord.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\MiniHintCache52.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\MinimapAffine.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\MinimapBarrageDrawing.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\MinimapFrame.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\MinimapMarkerDrawing.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\MinimapMarkerWindow.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\MinimapMovementDrawing.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\MinimapMovementGuide.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\MinimapPreferences.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\MinimapRetiredControl.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\MiniScanProgress44.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\MovementData.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\MovementDrawing.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\MovementLabelLayout.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\MovementLogic.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\Native.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\NumberSpan.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\OverlayDiagnostics55.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\OverlayDrawing.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\OverlayPreferences.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\OverlayText.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\Palette46.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\PinnedLeaseKey60.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\PlayerColour76.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\PlayerInfoReader.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\PlayerInfoRow.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\PrecisionFrameClock.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ProcHandle.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ProductionJob.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ProductionText.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ProjectileDrawing.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ProjectileImpact.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ProjectileLogic.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ProjectilePipeline65.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ProjectilePlayer.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ProjectilePreferences.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ProjectileSequenceTracker.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ProjectileSprite.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ProjectileSpriteCache.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ReadRecovery55.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ResourceClock.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ResourceColourRule.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ResourceColours.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ResourceLineDrawing.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\SimpleLicenseApp.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\SimpleProgram.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\SquadMarker.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\SquadMarkerDrawing.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\SquadMarkerHost.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\SquadMarkerLogic.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\SquadMarkerMember.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\SquadMarkerPreferences.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\SquadMarkerSource.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\SquadMarkerWindow.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\SupportCatalogue49.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\SupportCommand49.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\SupportSchedule49.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\TacticalMapDrawing51.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\TacticalMapPreferences51.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\TacticalMapState51.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\Toggle46.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\TrackedBuilding.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\UnitNames.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\UnitNamesBase.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\UpdateNotice74.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\UserUnitNames56.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\Properties\\AssemblyInfo.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\COH3SimpleTool.csproj",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\app.config",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\app.ico",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\app.manifest",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3.InterfaceIcon",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\names-zh-hans.tsv",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "sourceInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3.BarrageCatalogue.tsv",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "historicalSimpleInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\MaintenanceSimpleUi.csproj",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "historicalSimpleInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\GenerateSources.ps1",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "historicalSimpleInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\Build.ps1",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "historicalSimpleInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\Verify-Offline.ps1",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "historicalSimpleInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\README.md",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "historicalSimpleInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\build-report.json",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "historicalSimpleInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\obj\\maintenance-simple-ui-generated\\source-manifest.json",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "historicalSimpleInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\obj\\maintenance-simple-ui-generated\\ControlBarForm.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "historicalSimpleInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\obj\\maintenance-simple-ui-generated\\SquadMarkerWindow.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "historicalSimpleInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\obj\\maintenance-simple-ui-generated\\AirOverlayWindow.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "historicalSimpleInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\bin\\Release\\net48\\COH3SimpleTool.Maintenance.UI.Unverified.exe",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "historicalSimpleInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\bin\\Release\\net48\\COH3SimpleTool.Maintenance.UI.Unverified.exe.config",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "historicalSimpleInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\generation-self-test.log",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "historicalSimpleInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\build.log",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "historicalSimpleInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\offline-verification.log",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "existingSkyEyeUiInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-ui\\MaintenanceUi.csproj",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "existingSkyEyeUiInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-ui\\GenerateSources.ps1",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "existingSkyEyeUiInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-ui\\Build.ps1",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "existingSkyEyeUiInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-ui\\Verify-Offline.ps1",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "existingSkyEyeUiInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-ui\\README.md",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "existingSkyEyeUiInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-ui\\build-report.json",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "existingSkyEyeUiInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-ui\\obj\\maintenance-ui-generated\\source-manifest.json",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "existingSkyEyeUiInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-ui\\obj\\maintenance-ui-generated\\OverlaySettingsForm.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "existingSkyEyeUiInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-ui\\obj\\maintenance-ui-generated\\SquadMarkerWindow.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "existingSkyEyeUiInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-ui\\obj\\maintenance-ui-generated\\AirOverlayWindow.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "existingSkyEyeUiInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-ui\\bin\\Release\\net48\\SkyEye.Maintenance.UI.Unverified.exe",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "existingSkyEyeUiInputs: F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-ui\\bin\\Release\\net48\\SkyEye.Maintenance.UI.Unverified.exe.config",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "153 current original source/resource/project/config/icon/manifest inputs preserved",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "15 upper Simple build/template/history files preserved",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "12 existing SkyEye UI static artifacts preserved",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "new source manifest closes exactly over current baseline inputs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "template known expression occurs exactly once: MaintenanceSimpleUi.csproj",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "copied template has only source-root adjustment: MaintenanceSimpleUi.csproj",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "template known expression occurs exactly once: GenerateSources.ps1",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "copied template has only source-root adjustment: GenerateSources.ps1",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "template known expression occurs exactly once: Verify-Offline.ps1",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "copied template has only source-root adjustment: Verify-Offline.ps1",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "template known expression occurs exactly once: Build.ps1",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "copied template has only source-root adjustment: Build.ps1",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "project OutputType=WinExe",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "project TargetFramework=net48",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "project PlatformTarget=x64",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "project StartupObject=CoH3MemoryTool.SimpleProgram",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "project AssemblyName=COH3SimpleTool.Maintenance.UI.Unverified",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "explicit maintenance compile symbol",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "resolved Simple production root",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "no dependent project or package builds",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "project embeds exactly the three Simple resources",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "project has no NAudio reference",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "exactly three caller changes and no internal reader changes",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "only three permitted callers generated",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "one production constructor per caller: ControlBarForm.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "generated source stays within task15 obj: ControlBarForm.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "generated full text differs only in known factory: ControlBarForm.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "source/generated manifest hashes agree: ControlBarForm.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "one replacement and no production mutation: ControlBarForm.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "one production constructor per caller: SquadMarkerWindow.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "generated source stays within task15 obj: SquadMarkerWindow.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "generated full text differs only in known factory: SquadMarkerWindow.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "source/generated manifest hashes agree: SquadMarkerWindow.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "one replacement and no production mutation: SquadMarkerWindow.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "one production constructor per caller: AirOverlayWindow.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "generated source stays within task15 obj: AirOverlayWindow.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "generated full text differs only in known factory: AirOverlayWindow.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "source/generated manifest hashes agree: AirOverlayWindow.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "one replacement and no production mutation: AirOverlayWindow.cs",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "new assembly stays within task15 bin",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "new EXE matches build report and reflection metadata",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "new config is byte-identical to original",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "new report binds new task15 manifest path",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "guiRun remains not_run",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "authorizationRun remains not_run",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "gameAttach remains not_run",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "candidate maintenance status retained",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "original Simple startup identity",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "compiled x64 PE32Plus",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "compiled resources exactly the three originals",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "compiled assembly references have no NAudio",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "compiled two maintenance overloads",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "reflection-only inspection did not invoke Main",
+      "status": "PASS_offline"
+    },
+    {
+      "name": "five generation fixtures passed",
+      "status": "PASS_offline"
+    }
+  ],
+  "checkCount": 234,
+  "initializationNote": "Initial Build.ps1 call completed all five generation fixtures, then Windows PowerShell 5.1 treated blank SDK first-use stderr as NativeCommandError before project compilation. SDK isolated initialization completed with welcome/certificate/toolpath actions disabled; the unchanged copied project/scripts then built successfully.",
+  "limitations": [
+    "No client Main, GUI, activation, heartbeat, game process discovery or attachment was invoked by this task.",
+    "New current-source build is independent of the preserved historical Simple build and its older source manifest.",
+    "BuildVerified=false and all candidate/fingerprint/Matches/lease/credential/ProductId/public-pin checks remain production source.",
+    "Live UI operation and game-feature acceptance require separately recorded lead-controlled evidence."
+  ]
+}

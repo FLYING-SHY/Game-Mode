@@ -1,0 +1,14 @@
+﻿{
+    "gameStartUtc":  "2026-11-21T03:42:27.6605831Z",
+    "stdout":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\production\\run30-stdout.txt",
+    "readerPid":  31592,
+    "utc":  "2026-11-21T05:16:35.9201704Z",
+    "nativeState":  "tactical pause 03:10; KwK38 queue raw456/480 ticks",
+    "authorization":  "normal existing application; credentials not read",
+    "stderr":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\production\\run30-stderr.txt",
+    "readerExe":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\bin\\Release\\net48\\SkyEye.Maintenance.Live.exe",
+    "out":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\maintenance-run-30-fresh02-kwk38-start",
+    "readerStartUtc":  "2026-11-21T05:16:35.6386000Z",
+    "readerSha256":  "CD125BFFA33E525CD4B94A753D65A6E4CBB199395E3860E57E85003DB7665F79",
+    "gamePid":  33656
+}

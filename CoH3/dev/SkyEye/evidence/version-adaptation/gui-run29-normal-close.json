@@ -1,0 +1,16 @@
+﻿{
+    "gamePid":  33656,
+    "normalCloseRequested":  true,
+    "processStillRunning":  false,
+    "uiExe":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-ui\\bin\\Release\\net48\\SkyEye.Maintenance.UI.Unverified.exe",
+    "uiPid":  24288,
+    "finishedUtc":  "2026-11-21T05:06:26.3908220Z",
+    "uiStartUtc":  "2026-11-21T03:16:36.5587055Z",
+    "uiSha256":  "F06F3BD1625A45E314B20F4B6AB05EEF1C4DD871C15BCD0B062AB9A10D9946FA",
+    "gameStartUtc":  "2026-11-21T03:42:27.6605831Z",
+    "credentialsRead":  false,
+    "exitedWithin10Seconds":  true,
+    "scope":  "normal UI shutdown only; no game input",
+    "settingsAfterSha256":  "BBB872F63920966015B1CC979B2BE7A421612C30D062150831B513A498120126",
+    "startedUtc":  "2026-11-21T05:06:26.2077315Z"
+}

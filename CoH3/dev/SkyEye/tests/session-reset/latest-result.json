@@ -1,0 +1,47 @@
+﻿{
+    "utc":  "2026-11-22T01:39:33.7468533Z",
+    "results":  [
+                    {
+                        "client":  "SkyEye",
+                        "level":  "F",
+                        "exit_code":  0,
+                        "executable":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\session-reset\\bin\\SkyEye\\SessionReset.SkyEye.Fixture.exe",
+                        "log":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\session-reset\\run-SkyEye.log"
+                    },
+                    {
+                        "client":  "Simple",
+                        "level":  "F",
+                        "exit_code":  0,
+                        "executable":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\session-reset\\bin\\Simple\\SessionReset.Simple.Fixture.exe",
+                        "log":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\session-reset\\run-Simple.log"
+                    }
+                ],
+    "source_inputs":  [
+                          {
+                              "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\OverlaySettingsForm.cs",
+                              "sha256":  "E18E6F535EA47DFCB337EC24B28A01ACCB9A79B7EB6E85D51A84E0CB11E4FE0A"
+                          },
+                          {
+                              "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ControlBarForm.cs",
+                              "sha256":  "49F6DCBFD16965543FD7313B985F6BBA47E2FC343D908EFC6FEDFB8A0731678B"
+                          },
+                          {
+                              "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\EnemySelection.cs",
+                              "sha256":  "B44CE08E724A81D182DF322801D5AC2916AF4719322E5043281B5F337E92A9A6"
+                          },
+                          {
+                              "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\EnemySelection.cs",
+                              "sha256":  "B44CE08E724A81D182DF322801D5AC2916AF4719322E5043281B5F337E92A9A6"
+                          },
+                          {
+                              "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\ArmourProductionTracker.cs",
+                              "sha256":  "7BCA0A0F731E2D35E73A6896D193197C33F637C440E27CE2D6E0F86C6BADCA54"
+                          },
+                          {
+                              "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ArmourProductionTracker.cs",
+                              "sha256":  "7BCA0A0F731E2D35E73A6896D193197C33F637C440E27CE2D6E0F86C6BADCA54"
+                          }
+                      ],
+    "game_validation":  "not_run",
+    "gui_validation":  "not_run"
+}

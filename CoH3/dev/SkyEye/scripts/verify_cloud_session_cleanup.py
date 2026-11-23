@@ -11,6 +11,12 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--base-url', default='https://124.220.147.56/')
 parser.add_argument('--private-config', default=r'F:\WorkSpace\Game\LicensingSystem\.local\hardening-v2\server.json')
 parser.add_argument('--out', default=str(ROOT / 'evidence' / 'session-cleanup-cloud-20261116.json'))
+parser.add_argument('--fixtures', nargs='+', default=['raw-live-fixtures.json', 'protected-live-fixtures.json', 'reactor-trial-live-fixtures.json'],
+                    help='Fixture evidence files under evidence/ whose cards must have no active session.')
+parser.add_argument('--allow-global-sessions', type=int, default=0,
+                    help='Number of active sessions that belong to out-of-scope owners (for example the operator own live client).')
+parser.add_argument('--foreign-session-note', default='',
+                    help='Free text recorded next to the global session count so the allowance is auditable.')
 args = parser.parse_args()
 
 config = json.loads(Path(args.private_config).read_text(encoding='utf-8-sig'))
@@ -32,7 +38,7 @@ if 'name="csrf-token"' not in page:
     raise SystemExit('Administrator authentication failed.')
 
 checks = []
-for fixture_name in ['raw-live-fixtures.json', 'protected-live-fixtures.json', 'reactor-trial-live-fixtures.json']:
+for fixture_name in args.fixtures:
     fixtures = json.loads((ROOT / 'evidence' / fixture_name).read_text(encoding='utf-8-sig'))
     for fixture in fixtures['fixtures'][:4]:
         query = urllib.parse.urlencode({'codeId': fixture['id'], 'activeOnly': 'true'})
@@ -51,10 +57,13 @@ summary = {
     'checkedAt': datetime.datetime.now(datetime.timezone.utc).isoformat(),
     'transport': 'real HTTPS authenticated administrator read-only session query',
     'endpoint': urllib.parse.urlsplit(base).hostname,
-    'passed': all(item['passed'] for item in checks) and len(global_items) == 0,
+    'passed': all(item['passed'] for item in checks) and len(global_items) <= args.allow_global_sessions,
     'checks': checks,
     'globalActiveSessions': len(global_items),
-    'limitation': 'No active session at observation time; protocol finally/logout is additionally evidenced by awaited client execution.'
+    'allowedForeignSessions': args.allow_global_sessions,
+    'foreignSessionNote': args.foreign_session_note,
+    'fixtureSets': list(args.fixtures),
+    'limitation': 'Fixture card sessions must be inactive; global session count is compared against an explicit allowance for out-of-scope owners instead of an unconditional zero.'
 }
 output = Path(args.out)
 if output.exists():

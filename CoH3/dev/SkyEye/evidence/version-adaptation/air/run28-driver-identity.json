@@ -1,0 +1,23 @@
+﻿{
+    "startedUtc":  "2026-11-21T03:08:46.3549495Z",
+    "gamePid":  31572,
+    "gameStartUtc":  "2026-11-20T18:44:29.8492330Z",
+    "gameExe":  "G:\\SteamLibrary\\steamapps\\common\\Company of Heroes 3\\RelicCoH3.exe",
+    "gameSha256":  "8A3445292255D652C8DBE9B53F24328AF159C161BE89836BA54EF070946DD3EC",
+    "runner":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\bin\\Release\\net48\\SkyEye.Maintenance.Live.exe",
+    "runnerSha256":  "CD125BFFA33E525CD4B94A753D65A6E4CBB199395E3860E57E85003DB7665F79",
+    "arguments":  [
+                      "--out",
+                      "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\maintenance-run-28-camera-recovery",
+                      "--wait-seconds",
+                      "120",
+                      "--event-seconds",
+                      "60",
+                      "--air-events",
+                      "--recovery-probe",
+                      "--event-prewarm-delay-ms",
+                      "1000"
+                  ],
+    "nativePrecondition":  "Game paused12:15 after run27; no other reader active.",
+    "purpose":  "Observe normal camera updates during native minimap pans. Recovery is recorded only after a naturally occurring reader camera exception; no injected exception or memory write."
+}

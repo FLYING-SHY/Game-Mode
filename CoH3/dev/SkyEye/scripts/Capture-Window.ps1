@@ -25,10 +25,10 @@ $nodes = @()
 for ($i=0; $i -lt [Math]::Min($elements.Count,1500); $i++) {
     try {
         $current = $elements.Item($i).Current
-        $name = $current.Name
-        if ($current.ControlType -eq [System.Windows.Automation.ControlType]::Edit -or $current.IsPassword) {
+        if ($current.ControlType -eq [System.Windows.Automation.ControlType]::Edit -or $current.IsPassword -or $current.ClassName -match '(^|\.)EDIT(\.|$)') {
             $name = '[editable or password content omitted]'
         } else {
+            $name = $current.Name
             $name = [regex]::Replace($name,'\b\d{7,}\b','[numeric identity omitted]')
             $name = [regex]::Replace($name,'\b[A-Za-z0-9_-]{24,}\b','[long identifier omitted]')
         }

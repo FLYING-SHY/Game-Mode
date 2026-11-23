@@ -1,0 +1,135 @@
+{
+ "recordedUtc": "2026-11-21T19:26:00Z",
+ "purpose": "Expected values for the 5.1.52426.0 per-build adaptation; verify_perbuild_adaptation.py re-derives every fact from disk and compares.",
+ "game": {
+  "path": "G:/SteamLibrary/steamapps/common/Company of Heroes 3/RelicCoH3.exe",
+  "sha256": "8A3445292255D652C8DBE9B53F24328AF159C161BE89836BA54EF070946DD3EC",
+  "version": "5.1.52426.0",
+  "expectedBuild": "Build52426"
+ },
+ "newLayoutRvas": {
+  "resource": 112926416,
+  "arena": 102268480,
+  "world": 98623180
+ },
+ "legacyLayoutRvas": {
+  "resource": 112918560,
+  "arena": 102260400,
+  "world": 98614988
+ },
+ "fingerprints": {
+  "build52426": "8a3445292255d652c8dbe9b53f24328af159c161be89836ba54ef070946dd3ec",
+  "build2406": "2406b3ee580bfc983b0aea93a31c26f9a6c98f10f706c5cec6a13ab5e3a22cde"
+ },
+ "deliveredBinaries": [
+  {
+   "path": "CoH3/output/COH3SimpleTool/COH3工具.exe",
+   "sha256": "9F3C8A6C139E5CD585E2AF908274EE156B3EDBB546E272E7FA0F7D58E646E319",
+   "bytes": 588800,
+   "builtUtc": "2026-11-21T18:19:37Z"
+  },
+  {
+   "path": "CoH3/dev/SkyEye/delivery/client/天穹之眼-自有授权版-v0.60.8.exe",
+   "sha256": "46CE9F7F7FD693C6577DFD05DC70FDD15368890131DB9778BF1B3DC75592ABD9",
+   "bytes": 1226240,
+   "builtUtc": "2026-11-21T18:19:32Z"
+  }
+ ],
+ "deliveryConfig": {
+  "path": "CoH3/output/COH3SimpleTool/COH3工具.exe.config",
+  "mustContain": [
+   "https://124.220.147.56/",
+   "CoH3FowTool"
+  ],
+  "mustNotContain": [
+   "127.0.0.1",
+   "localhost"
+  ]
+ },
+ "sourceFiles": [
+  {
+   "rel": "CoH3/dev/SkyEye/client/CoH3MemoryTool/GameVersion45.cs",
+   "sha256": "E643EFA33FF05BF53AE8A6C0BBD13C2E908B2C70D841CB2FF05C4CB2E6D02E07"
+  },
+  {
+   "rel": "CoH3/dev/SkyEye/client/CoH3MemoryTool/GameLayout52426.cs",
+   "sha256": "90AF6A0F98C5C3C48DD9CAD8595377EE90990938753E68B142899B707C596D47"
+  },
+  {
+   "rel": "CoH3/dev/SkyEye/client/CoH3MemoryTool/PlayerInfoReader.cs",
+   "sha256": "3444F469137C616D382EE795967188F82E758A14ED36AA99FB7E52FAD3AB0350"
+  },
+  {
+   "rel": "CoH3/dev/SkyEye/client/CoH3MemoryTool/AirLogic.cs",
+   "sha256": "B974ED7C56FB819332355BC815799D2E7FBC3403F7BD5C45DC31BAD1ACA9B1E9"
+  },
+  {
+   "rel": "CoH3/dev/COH3SimpleTool/CoH3MemoryTool/GameVersion45.cs",
+   "sha256": "E643EFA33FF05BF53AE8A6C0BBD13C2E908B2C70D841CB2FF05C4CB2E6D02E07"
+  },
+  {
+   "rel": "CoH3/dev/COH3SimpleTool/CoH3MemoryTool/GameLayout52426.cs",
+   "sha256": "90AF6A0F98C5C3C48DD9CAD8595377EE90990938753E68B142899B707C596D47"
+  },
+  {
+   "rel": "CoH3/dev/COH3SimpleTool/CoH3MemoryTool/PlayerInfoReader.cs",
+   "sha256": "3444F469137C616D382EE795967188F82E758A14ED36AA99FB7E52FAD3AB0350"
+  },
+  {
+   "rel": "CoH3/dev/COH3SimpleTool/CoH3MemoryTool/AirLogic.cs",
+   "sha256": "B974ED7C56FB819332355BC815799D2E7FBC3403F7BD5C45DC31BAD1ACA9B1E9"
+  }
+ ],
+ "layoutTable": {
+  "rel": "CoH3/dev/SkyEye/client/CoH3MemoryTool/GameLayout52426.cs",
+  "expectedRoleCount": 37,
+  "mustContainLiterals": [
+   "8a3445292255d652c8dbe9b53f24328af159c161be89836ba54ef070946dd3ec",
+   "0x6BB1ED0",
+   "0x6187E40",
+   "0x5E0DECC"
+  ]
+ },
+ "fixtures": {
+  "rel": "CoH3/dev/SkyEye/evidence/version-adaptation/fixture-rerun-20261121.json",
+  "expect": {
+   "suites.build-gate.totalAssertions": 48,
+   "suites.layout-preflight.modes.Release.checks": 104,
+   "suites.layout-preflight.modes.Maintenance.checks": 104,
+   "suites.decoder-layout.modes.Release.passed": 171,
+   "suites.decoder-layout.modes.Maintenance.passed": 171,
+   "suites.decoder-layout.modes.Release.legacyAndMapperPassed": 97,
+   "suites.decoder-layout.modes.Maintenance.legacyAndMapperPassed": 97
+  }
+ },
+ "roleProvenance": {
+  "rel": "CoH3/dev/SkyEye/evidence/version-adaptation/role-provenance.json",
+  "expectedRoleCount": 37,
+  "expectedUnbacked": 0
+ },
+ "liveSamples": {
+  "index": "CoH3/dev/SkyEye/evidence/version-adaptation/live-probe-samples/index.json",
+  "minSamples": 10
+ },
+ "clientRuntimeLogs": {
+  "dir": "CoH3/output/COH3SimpleTool",
+  "encoding": "utf-8",
+  "files": [
+   "minimap-diagnostics.log",
+   "air-diagnostics.log",
+   "overlay-diagnostics.log",
+   "air-outline-diagnostics.log"
+  ],
+  "forbiddenSubstrings": [
+   "游戏版本未验证",
+   "版本未验证"
+  ],
+  "requiredSubstrings": [
+   "小地图绘制"
+  ]
+ },
+ "evidenceDocument": {
+  "rel": "CoH3/dev/SkyEye/evidence/version-adaptation/perbuild-adaptation-52426.md",
+  "minBytes": 60000
+ }
+}

@@ -1,0 +1,40 @@
+{
+  "utc": "2026-11-20T18:36:05.427663+00:00",
+  "pid": 32780,
+  "tag": "skyeye-current-map-reopened",
+  "windows": [
+    {
+      "hwnd": 2559516,
+      "isControlPanel": false,
+      "rect": [
+        66,
+        69,
+        1870,
+        163
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\skyeye-current-map-reopened-2559516.png"
+    },
+    {
+      "hwnd": 1838374,
+      "isControlPanel": false,
+      "rect": [
+        8,
+        61,
+        1928,
+        1141
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\skyeye-current-map-reopened-1838374.png"
+    },
+    {
+      "hwnd": 330954,
+      "isControlPanel": true,
+      "rect": [
+        540,
+        221,
+        2020,
+        1171
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\skyeye-current-map-reopened-330954.png"
+    }
+  ]
+}

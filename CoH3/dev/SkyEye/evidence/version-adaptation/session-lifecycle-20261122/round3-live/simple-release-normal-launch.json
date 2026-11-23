@@ -1,0 +1,18 @@
+{
+    "schema":  "normal-client-launch-v1",
+    "capturedUtc":  "2026-11-22T02:26:52.7126147Z",
+    "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\live-lifecycle\\clients\\Simple\\Release\\bin\\COH3工具.exe",
+    "sha256":  "B0556430651AD57FA278A7FE32A9439CF5FD2129FDF6B058207F97520CED2180",
+    "pid":  37772,
+    "startUtc":  "2026-11-22T02:26:52.6269498Z",
+    "window":  0,
+    "inputIdle":  true,
+    "entry":  "unchanged SimpleProgram.Main -\u003e SimpleLicenseApp -\u003e LicenseCoordinator60",
+    "arguments":  [
+
+                  ],
+    "licensing":  "normal production endpoint and pinned lease verification; no injected credentials or grant",
+    "protected":  false,
+    "deliveryUpdated":  false,
+    "acceptance":  "normal_launch_only; GUI and game behavior not yet accepted"
+}

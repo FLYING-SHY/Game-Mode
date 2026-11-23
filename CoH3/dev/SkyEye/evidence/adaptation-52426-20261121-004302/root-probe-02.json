@@ -1,0 +1,118 @@
+{
+  "timestamp": "2026-11-20T17:04:02.065389+00:00",
+  "pid": 11192,
+  "imageBase": "0x7ff7a37e0000",
+  "access": "PROCESS_VM_READ | PROCESS_QUERY_INFORMATION",
+  "baselineStatus": "unverified",
+  "old": {
+    "resourceRootRva": "0x6bb0020",
+    "arenaRva": "0x6185eb0",
+    "worldRva": "0x5e0becc",
+    "resourceVector": [
+      "0x80003aa080003a9f",
+      "0x8000026880000267"
+    ],
+    "error": "invalid resource vector dimensions",
+    "status": "failed"
+  },
+  "candidate": {
+    "resourceRootRva": "0x6bb1ed0",
+    "arenaRva": "0x6187e40",
+    "worldRva": "0x5e0decc",
+    "resourceVector": [
+      "0x17c96ef0df0",
+      "0x17c96ef0fd0"
+    ],
+    "resources": [
+      {
+        "name": "ability_resource_1",
+        "index": 0
+      },
+      {
+        "name": "ability_resource_2",
+        "index": 1
+      },
+      {
+        "name": "action",
+        "index": 2
+      },
+      {
+        "name": "command",
+        "index": 3
+      },
+      {
+        "name": "fuel",
+        "index": 4
+      },
+      {
+        "name": "manpower",
+        "index": 5
+      },
+      {
+        "name": "munition",
+        "index": 6
+      },
+      {
+        "name": "popcap",
+        "index": 7
+      },
+      {
+        "name": "requisition",
+        "index": 8
+      },
+      {
+        "name": "ultimate",
+        "index": 9
+      }
+    ],
+    "arena": "0x17c00000000",
+    "worldOffset": "0x6400000",
+    "world": "0x17c06400000",
+    "playerCount": 2,
+    "players": [
+      {
+        "address": "0x17c08c08000",
+        "identity": "0x3e8",
+        "slot": 0,
+        "rawResources": [
+          0.0,
+          0.0,
+          750.4039306640625,
+          1.0,
+          93.59772491455078,
+          3421.875,
+          25.0,
+          0.0,
+          0.0,
+          0.069091796875
+        ],
+        "populationParts": [
+          4.0,
+          0.0
+        ]
+      },
+      {
+        "address": "0x17c08c09000",
+        "identity": "0x1000003e9",
+        "slot": 1,
+        "rawResources": [
+          0.0,
+          0.0,
+          448.40203857421875,
+          0.0,
+          225.80511474609375,
+          50.88117218017578,
+          103.6351318359375,
+          0.0,
+          0.0,
+          0.069091796875
+        ],
+        "populationParts": [
+          42.0,
+          0.0
+        ]
+      }
+    ],
+    "status": "structure_candidate_read_success_not_full_validation"
+  }
+}

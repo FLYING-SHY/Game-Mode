@@ -1,0 +1,15 @@
+﻿{
+    "utcBefore":  "2026-11-21T03:40:18.5121378Z",
+    "oldGamePid":  31572,
+    "oldGameStartedUtc":  "2026-11-20T18:44:29.8492330Z",
+    "gamePath":  "G:\\SteamLibrary\\steamapps\\common\\Company of Heroes 3\\RelicCoH3.exe",
+    "clientPid":  24288,
+    "clientStartedUtc":  "2026-11-21T03:16:36.5587055Z",
+    "closeMainWindow":  true,
+    "exitedWithin10s":  true,
+    "utcAfter":  "2026-11-21T03:40:28.0958747Z",
+    "gameProcessesRemaining":  [
+
+                               ],
+    "clientStillRunning":  true
+}

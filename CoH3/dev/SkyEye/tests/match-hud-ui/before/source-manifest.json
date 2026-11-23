@@ -1,0 +1,14 @@
+﻿[
+    {
+        "source":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\OverlaySettingsForm.cs",
+        "backup":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\match-hud-ui\\before\\SkyEye-OverlaySettingsForm.cs",
+        "sha256":  "E18E6F535EA47DFCB337EC24B28A01ACCB9A79B7EB6E85D51A84E0CB11E4FE0A",
+        "bytes":  67755
+    },
+    {
+        "source":  "F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\ControlBarForm.cs",
+        "backup":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\match-hud-ui\\before\\Simple-ControlBarForm.cs",
+        "sha256":  "49F6DCBFD16965543FD7313B985F6BBA47E2FC343D908EFC6FEDFB8A0731678B",
+        "bytes":  13788
+    }
+]

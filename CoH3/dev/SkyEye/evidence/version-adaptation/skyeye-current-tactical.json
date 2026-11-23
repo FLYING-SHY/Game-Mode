@@ -1,0 +1,40 @@
+{
+  "utc": "2026-11-20T18:34:50.678337+00:00",
+  "pid": 32780,
+  "tag": "skyeye-current-tactical",
+  "windows": [
+    {
+      "hwnd": 2559516,
+      "isControlPanel": false,
+      "rect": [
+        66,
+        69,
+        1870,
+        163
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\skyeye-current-tactical-2559516.png"
+    },
+    {
+      "hwnd": 1838374,
+      "isControlPanel": false,
+      "rect": [
+        8,
+        61,
+        1928,
+        1141
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\skyeye-current-tactical-1838374.png"
+    },
+    {
+      "hwnd": 330954,
+      "isControlPanel": true,
+      "rect": [
+        540,
+        221,
+        2020,
+        1171
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\skyeye-current-tactical-330954.png"
+    }
+  ]
+}

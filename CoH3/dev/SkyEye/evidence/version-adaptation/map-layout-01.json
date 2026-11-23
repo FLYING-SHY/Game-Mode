@@ -1,0 +1,686 @@
+{
+  "timestamp": "2026-11-20T17:19:06.886838+00:00",
+  "pid": 11192,
+  "verification": "candidate_only",
+  "maps": [
+    {
+      "type": ".?AVTacticalMapControl@WPFGUI@@",
+      "address": "0x180adda0ad0",
+      "worldSizeCandidates": {
+        "874": 384.0,
+        "875": 384.0
+      },
+      "template": "0x180addb5a30",
+      "displaySize": [
+        0.0,
+        0.0
+      ],
+      "chain": [
+        {
+          "address": "0x180addb5a30",
+          "type": ".?AVGrid@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            0.0,
+            0.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x180addb55b0",
+          "type": ".?AVGrid@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            0.0,
+            0.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x180addb5130",
+          "type": ".?AVGrid@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            0.0,
+            0.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x180adda0ad0",
+          "type": ".?AVTacticalMapControl@WPFGUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            0.0,
+            0.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x180adddd680",
+          "type": ".?AVGrid@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            0.0,
+            0.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x180add9ea80",
+          "type": ".?AVControl@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            0.0,
+            0.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x180add6d720",
+          "type": ".?AVGrid@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1000.0,
+            250.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x1802ee96a60",
+          "type": ".?AVGrid@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1000.0,
+            836.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x180add3b280",
+          "type": ".?AVContentPresenter@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1000.0,
+            836.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x180adefe500",
+          "type": ".?AVBorder@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1000.0,
+            836.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x1808ebd78e0",
+          "type": ".?AVAnvilRTSHUDPage@WPFGUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1000.0,
+            836.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x17ead9817b0",
+          "type": ".?AVContentPresenter@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1000.0,
+            836.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x17ead962f20",
+          "type": ".?AVGrid@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1000.0,
+            836.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x17ca2819a30",
+          "type": ".?AVTransitionControl@WPFGUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1000.0,
+            836.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x17ead962860",
+          "type": ".?AVGrid@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1000.0,
+            836.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x17ca17edde0",
+          "type": ".?AVFrame@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1000.0,
+            836.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x17ead97ec60",
+          "type": ".?AVAdornerDecorator@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1000.0,
+            836.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x17c9c8df960",
+          "type": ".?AVGrid@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1920.0,
+            1080.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x17ead981390",
+          "type": ".?AVContentPresenter@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1920.0,
+            1080.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x17ead981180",
+          "type": ".?AVAdornerDecorator@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1920.0,
+            1080.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x17caa730900",
+          "type": ".?AVBorder@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1920.0,
+            1080.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x17cca47b9f0",
+          "type": ".?AVGameUIAppWindow@WPFGUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1920.0,
+            1080.0
+          ],
+          "visibilityFlags": "0x0"
+        }
+      ],
+      "terminatedAtRoot": true
+    },
+    {
+      "type": ".?AVMapControl@WPFGUI@@",
+      "address": "0x180add3ea30",
+      "worldSizeCandidates": {
+        "874": 384.0,
+        "875": 384.0
+      },
+      "template": "0x180ae241ec0",
+      "displaySize": [
+        268.0,
+        268.0
+      ],
+      "chain": [
+        {
+          "address": "0x180ae241ec0",
+          "type": ".?AVGrid@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            268.0,
+            268.0
+          ],
+          "visibilityFlags": "0xae2c3010",
+          "transform": {
+            "address": "0x17c7878aeb0",
+            "type": ".?AVTransformGroup@AVUI@@",
+            "vtableRva": "0x3d73ae0",
+            "floats208": [
+              8.920726649558599e+34,
+              5.324934164434305e-43,
+              -8.742277657347586e-08,
+              -0.9999999403953552,
+              -0.9999999403953552,
+              8.742277657347586e-08,
+              268.0,
+              267.9999694824219,
+              0.0,
+              5.605193857299268e-45,
+              0.0,
+              0.0
+            ],
+            "propertyKeys": [
+              714
+            ]
+          }
+        },
+        {
+          "address": "0x180add3ea30",
+          "type": ".?AVMapControl@WPFGUI@@",
+          "translation": [
+            70.0,
+            52.0
+          ],
+          "size": [
+            268.0,
+            268.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x180adb4cba0",
+          "type": ".?AVGrid@AVUI@@",
+          "translation": [
+            -3.0,
+            35.0
+          ],
+          "size": [
+            369.0,
+            395.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x180adb4d020",
+          "type": ".?AVGrid@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            405.0,
+            464.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x180051c5310",
+          "type": ".?AVDockPanel@AVUI@@",
+          "translation": [
+            0.0,
+            372.0
+          ],
+          "size": [
+            487.0,
+            464.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x180adaf1020",
+          "type": ".?AVStackPanel@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            487.0,
+            836.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x180adb4d260",
+          "type": ".?AVGrid@AVUI@@",
+          "translation": [
+            0.0,
+            244.0
+          ],
+          "size": [
+            887.0,
+            836.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x180adb4c060",
+          "type": ".?AVGrid@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            887.0,
+            836.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x18091e7ad00",
+          "type": ".?AVGrid@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            887.0,
+            836.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x1802ee963a0",
+          "type": ".?AVGrid@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            887.0,
+            836.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x180554ecf80",
+          "type": ".?AVAdornerDecorator@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            887.0,
+            836.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x1802ee96a60",
+          "type": ".?AVGrid@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1000.0,
+            836.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x180add3b280",
+          "type": ".?AVContentPresenter@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1000.0,
+            836.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x180adefe500",
+          "type": ".?AVBorder@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1000.0,
+            836.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x1808ebd78e0",
+          "type": ".?AVAnvilRTSHUDPage@WPFGUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1000.0,
+            836.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x17ead9817b0",
+          "type": ".?AVContentPresenter@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1000.0,
+            836.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x17ead962f20",
+          "type": ".?AVGrid@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1000.0,
+            836.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x17ca2819a30",
+          "type": ".?AVTransitionControl@WPFGUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1000.0,
+            836.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x17ead962860",
+          "type": ".?AVGrid@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1000.0,
+            836.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x17ca17edde0",
+          "type": ".?AVFrame@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1000.0,
+            836.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x17ead97ec60",
+          "type": ".?AVAdornerDecorator@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1000.0,
+            836.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x17c9c8df960",
+          "type": ".?AVGrid@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1920.0,
+            1080.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x17ead981390",
+          "type": ".?AVContentPresenter@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1920.0,
+            1080.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x17ead981180",
+          "type": ".?AVAdornerDecorator@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1920.0,
+            1080.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x17caa730900",
+          "type": ".?AVBorder@AVUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1920.0,
+            1080.0
+          ],
+          "visibilityFlags": "0x0"
+        },
+        {
+          "address": "0x17cca47b9f0",
+          "type": ".?AVGameUIAppWindow@WPFGUI@@",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1920.0,
+            1080.0
+          ],
+          "visibilityFlags": "0x0"
+        }
+      ],
+      "terminatedAtRoot": true
+    }
+  ],
+  "bytesRead": 36340
+}

@@ -15,4 +15,6 @@ internal sealed class MarkerReadContext
 	public DateTime Started;
 
 	public string Match;
+
+	internal MatchHudContext Hud;
 }

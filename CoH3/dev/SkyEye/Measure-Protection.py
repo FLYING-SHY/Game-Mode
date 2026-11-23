@@ -1,8 +1,11 @@
 """Capture real REA metadata for the release candidate and an ILSpy export attempt."""
-import hashlib, json, subprocess
+import argparse, hashlib, json, subprocess
 from pathlib import Path
 ROOT = Path(__file__).resolve().parent
-OUT = ROOT / 'evidence' / 'release-static-analysis'
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--out', default='release-static-analysis', help='Evidence subdirectory name under evidence/.')
+args = parser.parse_args()
+OUT = ROOT / 'evidence' / args.out
 OUT.mkdir(parents=True, exist_ok=True)
 NODE = Path(r'F:\WorkSpace\REA\.runtime\node-v24.22.3-win-x64\node.exe')
 REA = Path(r'F:\WorkSpace\REA\scripts\rea.mjs')

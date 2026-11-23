@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <GateSourceRoot Condition="'$(GateSourceRoot)' == ''">../../client/CoH3MemoryTool</GateSourceRoot>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Maintenance'">
+    <DefineConstants>$(DefineConstants);MAINTENANCE_DIAGNOSTICS</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="full-build/**/*.cs" />
+    <Compile Include="$(GateSourceRoot)/GameVersion45.cs" Link="GameVersion45.cs" />
+  </ItemGroup>
+</Project>

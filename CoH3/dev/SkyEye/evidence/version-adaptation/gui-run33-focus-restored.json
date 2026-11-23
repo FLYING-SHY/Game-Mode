@@ -1,0 +1,40 @@
+{
+  "utc": "2026-11-21T05:38:26.419463+00:00",
+  "pid": 7672,
+  "tag": "gui-run33-focus-restored",
+  "windows": [
+    {
+      "hwnd": 1575036,
+      "isControlPanel": false,
+      "rect": [
+        66,
+        69,
+        1870,
+        163
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run33-focus-restored-1575036.png"
+    },
+    {
+      "hwnd": 3278778,
+      "isControlPanel": false,
+      "rect": [
+        8,
+        61,
+        1928,
+        1141
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run33-focus-restored-3278778.png"
+    },
+    {
+      "hwnd": 9046006,
+      "isControlPanel": true,
+      "rect": [
+        540,
+        221,
+        2020,
+        1171
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run33-focus-restored-9046006.png"
+    }
+  ]
+}

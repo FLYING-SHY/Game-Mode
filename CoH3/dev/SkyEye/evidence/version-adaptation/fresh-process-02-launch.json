@@ -1,0 +1,12 @@
+﻿{
+    "requestUtc":  "2026-11-21T03:41:38.3386529Z",
+    "uri":  "steam://rungameid/1677280",
+    "oldGamePid":  31572,
+    "oldGameAbsent":  true,
+    "clientPid":  24288,
+    "clientStartedUtc":  "2026-11-21T03:16:36.5587055Z",
+    "observedUtc":  "2026-11-21T03:41:46.4201591Z",
+    "newProcesses":  [
+
+                     ]
+}

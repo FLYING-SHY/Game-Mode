@@ -1,0 +1,15 @@
+{
+    "schema":  "normal-client-input-v1",
+    "utc":  "2026-11-22T02:28:18.2139963Z",
+    "pid":  37772,
+    "expectedStartUtc":  "2026-11-22T02:26:52.6269498Z",
+    "window":  1052264,
+    "button":  1313596,
+    "buttonName":  "进入",
+    "action":  "BM_CLICK on original production login button",
+    "buttonOwnerVerified":  true,
+    "credentialSource":  "unchanged client masked field loaded by normal LicenseStore60",
+    "credentialValueCaptured":  false,
+    "resultingLicenseState":  "not_evaluated",
+    "inputSent":  true
+}

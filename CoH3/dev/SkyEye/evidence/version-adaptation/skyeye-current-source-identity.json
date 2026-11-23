@@ -1,0 +1,14 @@
+﻿{
+    "utc":  "2026-11-20T18:36:27.9513819Z",
+    "clientPid":  32780,
+    "gamePid":  11192,
+    "gameStartTime":  "2026-11-21T00:43:18.3201160+08:00",
+    "clientSha256":  "3FE10E1295B6C5F6E5C49A22C3BBF2C55C3F421B52C09A7C83116AB7393F0E88",
+    "sourceManifest":  "../../tests/maintenance-ui/obj/maintenance-ui-generated/source-manifest.json",
+    "buildReport":  "../../tests/maintenance-ui/build-report.json",
+    "gameLayoutSha256":  "77C44EFFBF42D9F6300CFD41E753712BED85E551B487F4DB1A779DF528DC8D92",
+    "normalCloseRequested":  true,
+    "clientStillRunning":  false,
+    "freshGameProcess":  false,
+    "buildRegistered":  false
+}

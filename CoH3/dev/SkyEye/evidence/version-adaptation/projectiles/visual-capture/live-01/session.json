@@ -1,0 +1,386 @@
+{
+  "schema": "skyeye-window-evidence-v1",
+  "utcStart": "2026-11-21T01:13:26.809005+00:00",
+  "monotonicStart": 39054.578,
+  "deadlineMonotonic": 39114.578,
+  "config": {
+    "gamePid": 31572,
+    "overlayPid": 23716,
+    "seconds": 60.0,
+    "cadenceMs": 1000,
+    "gameFormat": "jpeg",
+    "desktopGameRegion": true
+  },
+  "limits": {
+    "groups": 120,
+    "totalBytes": 83886080,
+    "finalReportReserveBytes": 65536
+  },
+  "groupsAttempted": 40,
+  "groupsSaved": 39,
+  "groupsDropped": 1,
+  "imagesCaptured": 235,
+  "imagesSaved": 234,
+  "imagesDropped": 1,
+  "droppedGroupsByReason": {
+    "byte_budget": 1
+  },
+  "missedCadenceSlots": 0,
+  "missedCadenceRanges": [],
+  "groups": [
+    {
+      "attempt": 1,
+      "cadenceSlot": 0,
+      "metadata": "group-001.json",
+      "images": 6,
+      "bytes": 2138509
+    },
+    {
+      "attempt": 2,
+      "cadenceSlot": 1,
+      "metadata": "group-002.json",
+      "images": 6,
+      "bytes": 2125144
+    },
+    {
+      "attempt": 3,
+      "cadenceSlot": 2,
+      "metadata": "group-003.json",
+      "images": 6,
+      "bytes": 2111786
+    },
+    {
+      "attempt": 4,
+      "cadenceSlot": 3,
+      "metadata": "group-004.json",
+      "images": 6,
+      "bytes": 2119314
+    },
+    {
+      "attempt": 5,
+      "cadenceSlot": 4,
+      "metadata": "group-005.json",
+      "images": 6,
+      "bytes": 2121776
+    },
+    {
+      "attempt": 6,
+      "cadenceSlot": 5,
+      "metadata": "group-006.json",
+      "images": 6,
+      "bytes": 2116950
+    },
+    {
+      "attempt": 7,
+      "cadenceSlot": 6,
+      "metadata": "group-007.json",
+      "images": 6,
+      "bytes": 2118416
+    },
+    {
+      "attempt": 8,
+      "cadenceSlot": 7,
+      "metadata": "group-008.json",
+      "images": 6,
+      "bytes": 2123630
+    },
+    {
+      "attempt": 9,
+      "cadenceSlot": 8,
+      "metadata": "group-009.json",
+      "images": 6,
+      "bytes": 2128664
+    },
+    {
+      "attempt": 10,
+      "cadenceSlot": 9,
+      "metadata": "group-010.json",
+      "images": 6,
+      "bytes": 2123270
+    },
+    {
+      "attempt": 11,
+      "cadenceSlot": 10,
+      "metadata": "group-011.json",
+      "images": 6,
+      "bytes": 2126125
+    },
+    {
+      "attempt": 12,
+      "cadenceSlot": 11,
+      "metadata": "group-012.json",
+      "images": 6,
+      "bytes": 2090072
+    },
+    {
+      "attempt": 13,
+      "cadenceSlot": 12,
+      "metadata": "group-013.json",
+      "images": 6,
+      "bytes": 2080547
+    },
+    {
+      "attempt": 14,
+      "cadenceSlot": 13,
+      "metadata": "group-014.json",
+      "images": 6,
+      "bytes": 2083314
+    },
+    {
+      "attempt": 15,
+      "cadenceSlot": 14,
+      "metadata": "group-015.json",
+      "images": 6,
+      "bytes": 2080030
+    },
+    {
+      "attempt": 16,
+      "cadenceSlot": 15,
+      "metadata": "group-016.json",
+      "images": 6,
+      "bytes": 2151141
+    },
+    {
+      "attempt": 17,
+      "cadenceSlot": 16,
+      "metadata": "group-017.json",
+      "images": 6,
+      "bytes": 2139249
+    },
+    {
+      "attempt": 18,
+      "cadenceSlot": 17,
+      "metadata": "group-018.json",
+      "images": 6,
+      "bytes": 2138007
+    },
+    {
+      "attempt": 19,
+      "cadenceSlot": 18,
+      "metadata": "group-019.json",
+      "images": 6,
+      "bytes": 2142213
+    },
+    {
+      "attempt": 20,
+      "cadenceSlot": 19,
+      "metadata": "group-020.json",
+      "images": 6,
+      "bytes": 2141860
+    },
+    {
+      "attempt": 21,
+      "cadenceSlot": 20,
+      "metadata": "group-021.json",
+      "images": 6,
+      "bytes": 2142572
+    },
+    {
+      "attempt": 22,
+      "cadenceSlot": 21,
+      "metadata": "group-022.json",
+      "images": 6,
+      "bytes": 2150988
+    },
+    {
+      "attempt": 23,
+      "cadenceSlot": 22,
+      "metadata": "group-023.json",
+      "images": 6,
+      "bytes": 2160905
+    },
+    {
+      "attempt": 24,
+      "cadenceSlot": 23,
+      "metadata": "group-024.json",
+      "images": 6,
+      "bytes": 2160997
+    },
+    {
+      "attempt": 25,
+      "cadenceSlot": 24,
+      "metadata": "group-025.json",
+      "images": 6,
+      "bytes": 2166244
+    },
+    {
+      "attempt": 26,
+      "cadenceSlot": 25,
+      "metadata": "group-026.json",
+      "images": 6,
+      "bytes": 2161921
+    },
+    {
+      "attempt": 27,
+      "cadenceSlot": 26,
+      "metadata": "group-027.json",
+      "images": 6,
+      "bytes": 2161485
+    },
+    {
+      "attempt": 28,
+      "cadenceSlot": 27,
+      "metadata": "group-028.json",
+      "images": 6,
+      "bytes": 2143962
+    },
+    {
+      "attempt": 29,
+      "cadenceSlot": 28,
+      "metadata": "group-029.json",
+      "images": 6,
+      "bytes": 2140685
+    },
+    {
+      "attempt": 30,
+      "cadenceSlot": 29,
+      "metadata": "group-030.json",
+      "images": 6,
+      "bytes": 2137471
+    },
+    {
+      "attempt": 31,
+      "cadenceSlot": 30,
+      "metadata": "group-031.json",
+      "images": 6,
+      "bytes": 2141015
+    },
+    {
+      "attempt": 32,
+      "cadenceSlot": 31,
+      "metadata": "group-032.json",
+      "images": 6,
+      "bytes": 2164324
+    },
+    {
+      "attempt": 33,
+      "cadenceSlot": 32,
+      "metadata": "group-033.json",
+      "images": 6,
+      "bytes": 2183143
+    },
+    {
+      "attempt": 34,
+      "cadenceSlot": 33,
+      "metadata": "group-034.json",
+      "images": 6,
+      "bytes": 2185654
+    },
+    {
+      "attempt": 35,
+      "cadenceSlot": 34,
+      "metadata": "group-035.json",
+      "images": 6,
+      "bytes": 2130543
+    },
+    {
+      "attempt": 36,
+      "cadenceSlot": 35,
+      "metadata": "group-036.json",
+      "images": 6,
+      "bytes": 2136439
+    },
+    {
+      "attempt": 37,
+      "cadenceSlot": 36,
+      "metadata": "group-037.json",
+      "images": 6,
+      "bytes": 2122986
+    },
+    {
+      "attempt": 38,
+      "cadenceSlot": 37,
+      "metadata": "group-038.json",
+      "images": 6,
+      "bytes": 2128812
+    },
+    {
+      "attempt": 39,
+      "cadenceSlot": 38,
+      "metadata": "group-039.json",
+      "images": 6,
+      "bytes": 2125704
+    }
+  ],
+  "dataBytesWritten": 83245867,
+  "writeFailures": [],
+  "captureSemantics": "Sequential full-window PrintWindow; layers alone prove drawing, not desktop composition.",
+  "selectedGame": {
+    "hwnd": 527128,
+    "pid": 31572,
+    "tid": 29216,
+    "windowRect": [
+      0,
+      30,
+      1936,
+      1149
+    ],
+    "title": "Company of Heroes 3 -print_turn_action_log_continuously -turn_soft_lock_detection_seconds 60",
+    "className": "Plat::Window {DB3DC0D7-BBA3-4d06-BCD8-40CD448B4AE3}",
+    "style": 2496331776
+  },
+  "initialDisplays": [
+    [
+      0,
+      0,
+      2560,
+      1440
+    ]
+  ],
+  "initialValidation": {
+    "valid": true,
+    "foreground": {
+      "hwnd": 527128,
+      "pid": 31572
+    },
+    "checkedWindows": [
+      {
+        "hwnd": 527128,
+        "pid": 31572,
+        "tid": 29216,
+        "windowRect": [
+          0,
+          30,
+          1936,
+          1149
+        ],
+        "title": "Company of Heroes 3 -print_turn_action_log_continuously -turn_soft_lock_detection_seconds 60",
+        "className": "Plat::Window {DB3DC0D7-BBA3-4d06-BCD8-40CD448B4AE3}",
+        "style": 2496331776
+      },
+      {
+        "hwnd": 7801622,
+        "pid": 23716,
+        "tid": 13772,
+        "windowRect": [
+          8,
+          61,
+          1928,
+          1141
+        ],
+        "title": "",
+        "className": "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+        "style": 369164288
+      }
+    ]
+  },
+  "nativeCallAbandoned": false,
+  "utcEnd": "2026-11-21T01:14:05.878420+00:00",
+  "monotonicEnd": 39093.64,
+  "stopReason": "byte_budget",
+  "stopDetail": {
+    "phase": "capture:game:527128",
+    "candidateImageBytes": 984991,
+    "availableDataBytes": 574677
+  },
+  "finalValidation": {
+    "valid": true,
+    "checkedWindowCount": 6,
+    "foreground": {
+      "hwnd": 527128,
+      "pid": 31572
+    },
+    "identitiesSha256": "c3c88d962ba4bd624dd7016bc6cb596a4d8351c6b8eb2012f9b25c6eb49a853d"
+  },
+  "totalBytesWritten": 83253861
+}

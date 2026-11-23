@@ -1,0 +1,37 @@
+﻿{
+    "startedUtc":  "2026-11-21T02:26:21.9100562Z",
+    "gamePid":  31572,
+    "gameStartUtc":  "2026-11-20T18:44:29.8492330Z",
+    "gameExe":  "G:\\SteamLibrary\\steamapps\\common\\Company of Heroes 3\\RelicCoH3.exe",
+    "gameSha256":  "8A3445292255D652C8DBE9B53F24328AF159C161BE89836BA54EF070946DD3EC",
+    "moduleBase":  140701576593408,
+    "moduleSize":  120369152,
+    "runner":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\bin\\Release\\net48\\SkyEye.Maintenance.Live.exe",
+    "runnerSha256":  "CD125BFFA33E525CD4B94A753D65A6E4CBB199395E3860E57E85003DB7665F79",
+    "arguments":  [
+                      "--out",
+                      "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\maintenance-run-27-p47-compact-flight",
+                      "--wait-seconds",
+                      "120",
+                      "--event-seconds",
+                      "20",
+                      "--air-events",
+                      "--recovery-probe",
+                      "--event-prewarm-delay-ms",
+                      "4000"
+                  ],
+    "coreHashes":  [
+                       {
+                           "source":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\AirLogic.cs",
+                           "mirror":  "F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\AirLogic.cs",
+                           "sha256":  "8E3ECED8CD1E9F120E76DA38BA2D5146C0E56FCFE670EA66B4486FB2011DAC50"
+                       },
+                       {
+                           "source":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\PlayerInfoReader.cs",
+                           "mirror":  "F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\PlayerInfoReader.cs",
+                           "sha256":  "BBB359CD59409065D8B4D00ACE784243AE5E99816611BC11617E7C9ED8ADBA9D"
+                       }
+                   ],
+    "nativePrecondition":  "Game paused12:04 with accepted P47 order; native ammo504-\u003e454 and target capsule recorded separately. No UI/other reader active.",
+    "purpose":  "Existing reader initial air scan,4000ms prewarm gap while native cast advances, then actual ReadAirZones newly sees the plane. No cast decoder bypass or injected event."
+}

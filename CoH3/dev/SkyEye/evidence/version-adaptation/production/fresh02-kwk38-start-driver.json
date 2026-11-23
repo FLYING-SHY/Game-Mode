@@ -1,0 +1,23 @@
+﻿{
+    "scope":  "native KwK38 button; short normal resume/pause; bounded VM_READ queue capture",
+    "gameStartUtc":  "2026-11-21T03:42:27.6605831Z",
+    "pid":  33656,
+    "nativeActions":  [
+                          {
+                              "utc":  "2026-11-21T05:11:09.4874950Z",
+                              "action":  "native_click_kwk38",
+                              "client":  [
+                                             1620,
+                                             913
+                                         ]
+                          },
+                          {
+                              "utc":  "2026-11-21T05:11:10.5669142Z",
+                              "action":  "resume"
+                          },
+                          {
+                              "utc":  "2026-11-21T05:11:13.6553529Z",
+                              "action":  "pause"
+                          }
+                      ]
+}

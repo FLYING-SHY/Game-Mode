@@ -1,0 +1,40 @@
+{
+  "utc": "2026-11-20T19:06:15.486871+00:00",
+  "pid": 15820,
+  "tag": "fresh01-tactical-ui-foreground",
+  "windows": [
+    {
+      "hwnd": 461442,
+      "isControlPanel": false,
+      "rect": [
+        8,
+        61,
+        1928,
+        1141
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\fresh01-tactical-ui-foreground-461442.png"
+    },
+    {
+      "hwnd": 1641234,
+      "isControlPanel": false,
+      "rect": [
+        66,
+        69,
+        1870,
+        163
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\fresh01-tactical-ui-foreground-1641234.png"
+    },
+    {
+      "hwnd": 7800856,
+      "isControlPanel": true,
+      "rect": [
+        540,
+        221,
+        2020,
+        1171
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\fresh01-tactical-ui-foreground-7800856.png"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+    "utc":  "2026-11-21T03:16:36.5665564Z",
+    "gamePid":  31572,
+    "gameStartUtc":  "2026-11-20T18:44:29.8492330Z",
+    "gameExeSha256":  "8A3445292255D652C8DBE9B53F24328AF159C161BE89836BA54EF070946DD3EC",
+    "uiPid":  24288,
+    "uiStartUtc":  "2026-11-21T03:16:36.5587055Z",
+    "uiExe":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-ui\\bin\\Release\\net48\\SkyEye.Maintenance.UI.Unverified.exe",
+    "uiSha256":  "F06F3BD1625A45E314B20F4B6AB05EEF1C4DD871C15BCD0B062AB9A10D9946FA",
+    "buildReportSha256":  "5B4E0DB6D2BDC0E6D946892670662BB9AE5CDC834B93F186D486C088AA613EE3",
+    "settingsBeforeSha256":  "2D1460E714C11BEEC9BA495344D3C935377D51BB46811F8F9DD8D2AC5BA33727",
+    "diagnosticsLengthBefore":  4590,
+    "authorization":  "normal_existing_application_no_credentials_read",
+    "scope":  "maintenance_candidate_gui_only"
+}

@@ -1,0 +1,137 @@
+{
+  "schema": "phase-probe-v4-freeze-v1",
+  "task": "task-5",
+  "status": "offline_verified_pending_root_live_review",
+  "workdir": "F:\\WorkSpace\\Game",
+  "writeScope": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v4\\**",
+  "files": {
+    "phase_probe_v4.py": {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v4\\phase_probe_v4.py",
+      "sha256": "b8cc05b3ae3ed8c162bd6119b2f7896ec23f389ab273c1337c03eac3f1dcb23f",
+      "bytes": 24900
+    },
+    "phase_probe_v4_selftest.py": {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v4\\phase_probe_v4_selftest.py",
+      "sha256": "bf1e256e49e639bbf26124ab5a4656a45d006f0c39be877647adb90ec2582d01",
+      "bytes": 39058
+    },
+    "offline-validation.json": {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v4\\offline-validation.json",
+      "sha256": "22475fbb588b1afc70c98823f7382772f72b92d4158b4e0d8ec7d8139c6c560c",
+      "bytes": 12405
+    },
+    "offline-validation-initial.json": {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v4\\offline-validation-initial.json",
+      "sha256": "e9f0620afc1ffd41be8988e5031f15a03735d353e4b0b9a67ab89c5ddc88cb6b",
+      "bytes": 13634
+    },
+    "source-attestation.json": {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v4\\source-attestation.json",
+      "sha256": "5a0fef331d2402894424066c4e5f95dbf6eec03a9c5869fce554edd485ad1866",
+      "bytes": 5901
+    },
+    "README.md": {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v4\\README.md",
+      "sha256": "03cbb68291c7d5e320e0701362390dba23818d6aa72943dd340621431c87a521",
+      "bytes": 8547
+    }
+  },
+  "validation": {
+    "testsRun": 40,
+    "failures": 0,
+    "errors": 0,
+    "nativeWinDLLBlocked": true,
+    "nativeWinDLLAttempts": 0,
+    "realSamples": 0,
+    "protectedHistoricalFilesChecked": 27,
+    "protectedHistoricalFilesUnchanged": true,
+    "legacyTestSuiteRerun": false
+  },
+  "frozenDependencies": {
+    "schema": "phase-probe-execution-attestation-v3",
+    "wrapper": {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\phase_probe_v3.py",
+      "sha256": "81ee593a762933f0cf119cbc6fdcafc37cfa687ddd171aad6aa6f99dbf7da66b",
+      "digestMeaning": "wrapper disk bytes at load; self-reported, not a signature"
+    },
+    "measurementEngine": {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v2\\phase_probe_v2.py",
+      "sha256": "e2c56be1b7b49f242b4549545e03e4a50d765e5de9c9cf7b8473a9966525e7c0",
+      "compileFilename": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v2\\phase_probe_v2.py",
+      "sourceBytesExecutedUnmodified": true,
+      "entrypoint": "capture"
+    },
+    "baseProbe": {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\phase_probe.py",
+      "sha256": "21af7198c86ea5f53b06e9df737251d81a21dd345ec243b8974beca75ec1d723",
+      "compileFilename": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\phase_probe.py",
+      "sourceBytesExecutedUnmodified": true,
+      "checkedBy": "frozen v2 load_base"
+    },
+    "sourceBinding": {
+      "originalFrozenV1SourcePins": {
+        "client/CoH3MemoryTool/GameLayout52426.cs": "77c44effbf42d9f6300cfd41e753712bed85e551b487f4db1a779df528dc8d92",
+        "client/CoH3MemoryTool/PlayerInfoReader.cs": "bbb359cd59409065d8b4d00ace784243ae5e99816611bc11617e7c9ed8adba9d",
+        "evidence/version-adaptation/air/air_raw_snapshot.py": "0438ebbe4b29bcae3b6d428e46ce2db0fcdf58c87d93f6058f0432dc9ff765d4"
+      },
+      "effectiveSourceLoaderPins": {
+        "client/CoH3MemoryTool/GameLayout52426.cs": "90af6a0f98c5c3c48dd9cad8595377ee90990938753e68b142899b707c596d47",
+        "client/CoH3MemoryTool/PlayerInfoReader.cs": "39dde7a0f2bd80e2412fed3439870cf7a49a794a9aab0f812a9afee6f60c65d2",
+        "evidence/version-adaptation/air/air_raw_snapshot.py": "0438ebbe4b29bcae3b6d428e46ce2db0fcdf58c87d93f6058f0432dc9ff765d4"
+      },
+      "sourceRoot": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye",
+      "sourceFilesExecuted": false,
+      "loaderCodeUnchanged": true,
+      "override": "v1 load_sources same code object with a copied globals dict; only SOURCE_PINS replaced",
+      "scope": "load_sources only; original v1 module SOURCE_PINS retained for unchanged v2 reference validation",
+      "roleValidation": "unchanged v1 load_sources: exact source hashes, fixed game SHA, individual role RVAs",
+      "policy": "fixed allowlist; no CLI pin override, automatic refresh, or arbitrary new source acceptance"
+    },
+    "reportAdapter": {
+      "override": "v2 module-local json proxy: dump adds v3 provenance; other JSON operations delegate unchanged",
+      "topLevelScriptSha256Meaning": "v3 wrapper disk SHA; original v2 report schema/SHA retained under frozenEngineReport",
+      "measurementFunctionsChanged": false
+    },
+    "boundaries": {
+      "productSnapshotCalled": false,
+      "productCSharpExecuted": false,
+      "productBuildCorrespondenceEstablished": false,
+      "phasePredicateImplemented": false,
+      "operatorLabelIsObservedPhase": false,
+      "productAcceptance": false,
+      "referencePolicy": "original v2 parser accepts only genuine pinned v1 running/paused reports from the same process/module; v3 reports are not converted to references",
+      "limitations": "source provenance plus bounded Python field observations; not product Snapshot or HUD coordinate/phase acceptance"
+    }
+  },
+  "positiveReferences": {
+    "running": {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\live-round3\\pid30504-running-001.json",
+      "sha256": "760a92a813aac94c94444dc2ee1b2d3d01a941c648305a68488f0194e008ac59",
+      "bytes": 5039164
+    },
+    "paused": {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\live-round3\\pid30504-paused-001.json",
+      "sha256": "ba29370662feeab744da3fa20cbf3812eb69ae5d9b2fd79fcf7f63f4591696fd",
+      "bytes": 5031347
+    }
+  },
+  "targetIdentity": {
+    "pid": 30504,
+    "startUtc": "2026-11-22T01:23:35.3993114Z",
+    "startFiletime": 134397842153993114,
+    "gameSha256": "8a3445292255d652c8dbe9b53f24328af159c161be89836ba54ef070946dd3ec",
+    "imageSize": 120369152
+  },
+  "proposedRootCommand": "python -B -X utf8 CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v4\\phase_probe_v4.py --pid 30504 --expected-start-utc 2026-11-22T01:23:35.3993114Z --label results --reference CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\live-round3\\pid30504-paused-001.json --reference-sha256 ba29370662feeab744da3fa20cbf3812eb69ae5d9b2fd79fcf7f63f4591696fd --out CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v4\\pid30504-results-reference-paused-001.json",
+  "commandExecutedByThisTask": false,
+  "hintPolicy": "unique HUD required; optional map kinds complete and identical across all 0/1/3 samples",
+  "phaseDecision": "not_evaluated",
+  "productAcceptance": false,
+  "operatorLabelIsObservedPhase": false,
+  "evidenceLimits": [
+    "offline fixture success is not G",
+    "historical root is metadata; current root is re-read",
+    "coverage unknown is not absence",
+    "wrapper/report digests are not signatures"
+  ]
+}

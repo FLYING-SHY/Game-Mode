@@ -1,0 +1,12 @@
+﻿{
+    "schema":  "match-hud-normal-launch-v1",
+    "utc":  "2026-11-22T03:42:15.5426809Z",
+    "pid":  40716,
+    "startUtc":  "2026-11-22T03:42:15.5351164Z",
+    "executable":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\match-hud-ui\\clients\\Simple\\Release\\bin\\COH3工具.exe",
+    "sha256":  "F48A5550E1435A5BD8A063BDD978A03EE4DAF817FB0181F641647B9F8D684258",
+    "client":  "Simple",
+    "mode":  "Release",
+    "normalEntry":  true,
+    "productAcceptance":  false
+}

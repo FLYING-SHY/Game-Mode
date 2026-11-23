@@ -1,0 +1,9 @@
+--- baseline/SkyEye.MarkerReadContext.cs
++++ F:\WorkSpace\Game\CoH3\dev\SkyEye\client\CoH3MemoryTool\MarkerReadContext.cs
+@@ -15,4 +15,6 @@
+ 	public DateTime Started;
+ 
+ 	public string Match;
++
++	internal MatchHudContext Hud;
+ }

@@ -1,0 +1,15 @@
+﻿{
+    "gamePid":  33656,
+    "authorization":  "normal existing application; credentials not read",
+    "uiExe":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-ui\\bin\\Release\\net48\\SkyEye.Maintenance.UI.Unverified.exe",
+    "settingsBeforeSha256":  "BBB872F63920966015B1CC979B2BE7A421612C30D062150831B513A498120126",
+    "uiPid":  7672,
+    "utc":  "2026-11-21T05:31:23.1449680Z",
+    "uiStartUtc":  "2026-11-21T05:31:23.1370342Z",
+    "uiSha256":  "439DB8B3469464323C0E55CE706166E813817C9F9609ED941E4A8CA33478FEAA",
+    "gameStartUtc":  "2026-11-21T03:42:27.6605831Z",
+    "gameExeSha256":  "8A3445292255D652C8DBE9B53F24328AF159C161BE89836BA54EF070946DD3EC",
+    "buildReportSha256":  "F3B9306A9019E2F5C2C57B02FEE4D6EF8F057BC5CF90EE748D9F0AF1C5E44C8F",
+    "sourceManifestSha256":  "E0F0AD2EB0754ADD0C3242DCA1F679B2DE567340B253C8EA3C20195E5CAF946E",
+    "scope":  "maintenance candidate UI with MineOverlayWindow.ClearData LastError cleanup; normal native lifecycle observation only"
+}

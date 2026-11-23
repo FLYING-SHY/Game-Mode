@@ -1,9 +1,9 @@
 ﻿{
-    "Run":  "20261116-190236-578",
+    "Run":  "20261121-181936-122",
     "Tool":  "Obfuscar.GlobalTool 2.2.50",
-    "InputSha256":  "DE934C3A59F49FA4D5F68AE3CE1464214E8CD425DF6C78C6CAD8452966F26BE9",
-    "OutputSha256":  "7B07A14219FA54C7BE12D59033612E8DBD89BAEB225382D6F0C601F2A1872001",
+    "InputSha256":  "09141A3AA8F2A8B544208B0B75A7BE37A689A57DD03E4DCA08B2615150C46AE1",
+    "OutputSha256":  "9F3C8A6C139E5CD585E2AF908274EE156B3EDBB546E272E7FA0F7D58E646E319",
     "Executable":  "F:\\WorkSpace\\Game\\CoH3\\output\\COH3SimpleTool\\COH3工具.exe",
-    "PrivateMapping":  "F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\artifacts\\20261116-190236-578\\private-renaming-map.xml",
+    "PrivateMapping":  "F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\artifacts\\20261121-181936-122\\private-renaming-map.xml",
     "NoPublicSymbols":  true
 }

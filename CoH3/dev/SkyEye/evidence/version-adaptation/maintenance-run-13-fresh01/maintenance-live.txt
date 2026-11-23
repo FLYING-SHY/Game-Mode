@@ -1,0 +1,78 @@
+MAINTENANCE ONLY; read success is not build/visual verification; exitCode=5
+authorization: pass build= ms=0 samples= utc=
+Real coordinator lease allowed; no synthetic grant.
+null
+
+
+snapshot/resources: observed build=FingerprintMismatch ms=21 samples=2 utc=2026-11-20T19:01:52.8869341Z
+Resources are raw game values. Snapshot captured once; downstream items share this timestamp, not atomic cross-feature state.
+[{"Slot":0,"Relation":"自己","IsLocalPlayer":true,"identity":"3e8","Manpower":1424.875,"Munition":500,"Fuel":315.904419,"CP":12,"Population":4,"Race":"american"},{"Slot":1,"Relation":"敌方","IsLocalPlayer":false,"identity":"1000003e9","Manpower":1177.897,"Munition":500,"Fuel":300.722778,"CP":5,"Population":4,"Race":"german"}]
+
+
+units: observed build=FingerprintMismatch ms=1 samples=3 utc=2026-11-20T19:01:52.9084895Z
+
+[{"Slot":0,"UnitsKnown":true,"units":[{"Key":"sbps\\races\\american\\infantry\\scout_us","Value":1}]},{"Slot":1,"UnitsKnown":true,"units":[{"Key":"sbps\\races\\german\\infantry\\pioneer_ger","Value":1},{"Key":"sbps\\races\\german\\gameplay\\pioneer_autobuild_ger","Value":1}]}]
+
+
+buildings: observed build=FingerprintMismatch ms=0 samples=1 utc=2026-11-20T19:01:52.9104890Z
+
+[{"Slot":0,"BuildingsKnown":true,"items":[]},{"Slot":1,"BuildingsKnown":true,"items":[{"Tier":1,"Key":"2188088160256:2807501192","Complete":false}]}]
+
+
+production: observed build=FingerprintMismatch ms=1 samples=1 utc=2026-11-20T19:01:52.9104890Z
+Tick-to-second conversion inherited from GrenadeUpgrade: ceil(ticks/8); visual timer agreement not established.
+[{"Slot":0,"ProductionKnown":true,"Kwk38Known":true,"GrenadeRemainingTicks":null,"tickRatePerSecond":8,"grenadeRemainingSeconds":null,"jobs":[]},{"Slot":1,"ProductionKnown":true,"Kwk38Known":true,"GrenadeRemainingTicks":null,"tickRatePerSecond":8,"grenadeRemainingSeconds":null,"jobs":[{"Path":"sbps\\races\\german\\vehicles\\kettenkrad_ger","Key":"2188047759744:1","RemainingTicks":141,"TotalTicks":160,"RemainingSeconds":18}]}]
+
+
+upgrades: observed build=FingerprintMismatch ms=0 samples=7 utc=2026-11-20T19:01:52.9124897Z
+No independent UpgradesKnown flag exists; empty lists mean sample_absent, not absence proven.
+[{"Slot":0,"items":["upgrade\\gameplay\\reinforcement_time_state_modifier"]},{"Slot":1,"items":["upgrade\\gameplay\\reinforcement_time_state_modifier","upgrade\\german\\battlegroups\\mechanized\\mechanized","upgrade\\german\\battlegroups\\mechanized\\mechanized_left_1a_raid_package","upgrade\\german\\battlegroups\\mechanized\\mechanized_left_2b_8_rad","upgrade\\german\\battlegroups\\mechanized\\mechanized_left_panther_production_unlock_ger","upgrade\\german\\battlegroups\\mechanized\\mechanized_right_1a_mobile_repair_ger"]}]
+
+
+colours: observed build=FingerprintMismatch ms=0 samples=2 utc=2026-11-20T19:01:52.9134912Z
+
+[{"Slot":0,"Relation":"自己","GameColourKnown":true,"argb":"ff188cff"},{"Slot":1,"Relation":"敌方","GameColourKnown":true,"argb":"ffff3b30"}]
+
+
+camera: observed build=FingerprintMismatch ms=0 samples=1 utc=2026-11-20T19:01:52.9144918Z
+
+{"View":[0,0.681998432,0.731353641,0,0,0.731353641,-0.681998432,0,-1,-1.01625686E-08,-1.08980185E-08,0,98.10012,64.30344,136.964523,1],"Projection":[0.974278569,0,0,0,0,1.7320509,0,0,0,0,1.00000107,1,0,0,-0.1000001,0],"convention":"16 floats per matrix, raw reader ordering"}
+
+
+squad_markers: observed build=FingerprintMismatch ms=16 samples=3 utc=2026-11-20T19:01:52.9144918Z
+Bound source colours from the shared snapshot, matching SquadMarkerHost; sourceCount=3
+Sampling flags: FlankReadMovement47=True; previous=False; restored in finally. This opts infantry into the same movement path used by UpdateFlank47.
+Direction/Movement null means no optional result from this read, not event absence or verified layout. Regular marker hosts bind colour and capture Context/membership; UpdateFlank47 is the only production assignment of a reader sampling flag.
+[{"Slot":0,"Name":"侦","Path":"sbps\\races\\american\\infantry\\scout_us","X":-101.833336,"Y":24.60251,"Z":85.1666641,"Direction":null,"Movement":null},{"Slot":1,"Name":"工","Path":"sbps\\races\\german\\infantry\\pioneer_ger","X":78.78268,"Y":25.3143234,"Z":-88.90267,"Direction":null,"Movement":{"X":32.73037,"Y":15.5968952,"Z":-64.02573}},{"Slot":1,"Name":"pioneer_autobuild_ger","Path":"sbps\\races\\german\\gameplay\\pioneer_autobuild_ger","X":105.935638,"Y":25.2944736,"Z":-110.161987,"Direction":null,"Movement":{"X":105.5,"Y":0,"Z":-109.5}}]
+
+
+support: sample_absent build=FingerprintMismatch ms=1 samples=0 utc=2026-11-20T19:01:52.9311549Z
+
+[]
+
+
+projectiles: sample_absent build=FingerprintMismatch ms=21 samples=0 utc=2026-11-20T19:01:52.9321546Z
+
+[]
+
+
+air: sample_absent build=FingerprintMismatch ms=17 samples=0 utc=2026-11-20T19:01:52.9536842Z
+
+[]
+
+
+minimap: observed build=FingerprintMismatch ms=5002 samples=1 utc=2026-11-20T19:01:52.9737302Z
+sharedBudgetMilliseconds=5000; maxPollingRounds=101; pollingRounds=81; reader disposed after map probes; cancellation is cooperative.
+minimapStatus=; minimapDiagnostic=nativeControl=201bb076d40 cursor=1ffa4000000 batchMB=0 ms=24 ; tacticalStatus=战术地图尚未完成布局。
+{"CentreX":201.375,"CentreY":836.625,"PixelWidth":267.749969,"PixelHeight":267.749969,"RootWidth":1920,"RootHeight":1080,"WorldWidth":384,"WorldHeight":384,"Angle":-90.00001,"NativeTransform":true,"WorldToUi":{"XX":-6.095689694674E-08,"XY":-0.69726558343973011,"YX":-0.69726558343973011,"YY":6.095689694674E-08,"TX":201.37499627584759,"TY":836.62498916571792,"Valid":true}}
+
+
+tactical: discovery_timeout build=FingerprintMismatch ms=5002 samples= utc=2026-11-20T19:01:52.9737302Z
+sharedBudgetMilliseconds=5000; maxPollingRounds=101; pollingRounds=81; reader disposed after map probes; cancellation is cooperative.
+minimapStatus=; minimapDiagnostic=nativeControl=201bb076d40 cursor=1ffa4000000 batchMB=0 ms=24 ; tacticalStatus=战术地图尚未完成布局。
+null
+Bounded discovery ended; not a layout-invalid conclusion.
+
+VerifyLive58: not_run build= ms=0 samples= utc=
+Aggregate iterator repeats Snapshot and contains its own 12-second minimap loop. Disabled in bounded runner; use independent feature evidence above.
+null

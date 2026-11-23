@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "utc": "2026-11-21T06:44:40.127028+00:00",
+  "status": "pass",
+  "verificationMode": "independent fresh reads after exclusive-copy command; frozen AST maps are parsed without importing or executing probes/verifiers",
+  "manifestPath": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\round06-frozen\\freeze-manifest.json",
+  "manifestBytes": 406361,
+  "manifestSha256": "7e60ba59d5b71db45fa74536aeb895d5abe6c4c6a28a103001f7db7889758900",
+  "preflightSha256": "a96a2f34450c7e976822926b1bd382ee64540484877bd61070abaa7b59b1eefd",
+  "sourceFileCount": 363,
+  "sourceTotalBytes": 4147010,
+  "sourceHashComparisons": 363,
+  "snapshotHashComparisons": 363,
+  "totalSourceAndSnapshotHashComparisons": 726,
+  "historicalExpectedHashBindings": 181,
+  "exactGeneratedTransforms": 6,
+  "globMembershipCheckedFiles": 365,
+  "missing": [],
+  "changedSources": [],
+  "changedSnapshots": [],
+  "extraSnapshotFiles": [],
+  "forbiddenPaths": [],
+  "uiChecks": [
+    {
+      "name": "skyeye",
+      "assemblySha256": "439db8b3469464323c0e55ce706166e813817c9f9609ed941e4a8ca33478feaa",
+      "reportSha256": "f3b9306a9019e2f5c2c57b02fee4d6ef8f057bc5cf90ee748d9f0af1c5e44c8f",
+      "sourceManifestSha256": "e0f0ad2eb0754add0c3242dca1f679b2de567340b253c8ea3c20195e5caf946e",
+      "sourceInputCount": 0,
+      "exactGeneratedTransforms": 3,
+      "sourceBindingPreserved": true,
+      "fullBuildTimeSourceBinding": false
+    },
+    {
+      "name": "simple_task15",
+      "assemblySha256": "a169466a2ccf6b37354ce04562ce31c89ca7fa4ac9941f299e545b8bc65f6563",
+      "reportSha256": "0757c53414a6ffd9ff47ee502e8c464d27aebcc346ed4fb2e92f331d07c21c03",
+      "sourceManifestSha256": "b8079c0e2fb068461cd2829d44253b1cfc2f9f8685176234c3bad593f19dfb41",
+      "sourceInputCount": 153,
+      "exactGeneratedTransforms": 3,
+      "sourceBindingPreserved": true,
+      "fullBuildTimeSourceBinding": true
+    }
+  ],
+  "kwkFrozenExpectedCsPins": 6,
+  "phaseFrozenSourcePins": 3,
+  "oldVerifierBytesAndPathRulesUnchanged": true,
+  "productionSourceWrites": 0,
+  "oldEvidenceWrites": 0,
+  "processQueries": 0,
+  "guiRun": "not_run",
+  "authorizationRun": "not_run",
+  "gameAttach": "not_run",
+  "buildRun": "not_run",
+  "limits": [
+    "SkyEye original source-manifest has no sourceInputs. Its project-derived compile/resources/manifest rows have build_time_source_binding=false; only original three source/generated caller pairs and Coordinator have historical exact manifest pins.",
+    "Simple task15 retains all 153 original sourceInputs hash bindings; this audit preserves existing report claims without rerunning a build.",
+    "KwK snapshot includes verifier plus only the six EXPECTED *.cs source dependencies; other historical raw inputs, drivers and screenshots remain at their existing paths. This is not a standalone full KwK evidence tree.",
+    "Phase snapshot includes original phase_probe.py, phase_probe_selftest.py and all three SOURCE_PINS, including air_raw_snapshot.py. Live execution is not performed.",
+    "Framework/SDK binaries, implicit SDK-generated sources, sounds, build wrapper scripts, runtime settings, credentials, authorization state and logs are outside this finite whitelist; no standalone rebuilt EXE equivalence is claimed.",
+    "Both EXE hashes remain bound to the original reports. Freezing bytes does not add production, GUI, game-feature or verified-baseline acceptance."
+  ]
+}

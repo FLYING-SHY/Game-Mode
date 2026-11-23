@@ -1,0 +1,13 @@
+First invocation of Run.ps1 stopped before a build log was produced.
+Host: Windows PowerShell 5.1.26100.9818.
+Command: & F:\WorkSpace\Game\CoH3\dev\SkyEye\tests\unknown-build\Run.ps1
+Result: exit code 1.
+Exact host diagnostic:
+dotnet.exe :
+所在位置 F:\WorkSpace\Game\CoH3\dev\SkyEye\tests\unknown-build\Run.ps1:31 字符: 9
++         & $dotnet build $project -c $configuration --nologo "-p:Clien ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+Cause under investigation: WinPS 5.1 converts native stderr into error records under ErrorActionPreference=Stop. The isolated runner now captures native output under Continue and checks LASTEXITCODE immediately, then restores Stop. No production source changed after the freeze.

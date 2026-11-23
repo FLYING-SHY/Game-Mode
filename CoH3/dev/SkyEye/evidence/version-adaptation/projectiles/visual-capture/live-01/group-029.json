@@ -1,0 +1,215 @@
+{
+  "attempt": 29,
+  "cadenceSlot": 28,
+  "utcStart": "2026-11-21T01:13:54.817669+00:00",
+  "utcEnd": "2026-11-21T01:13:55.225016+00:00",
+  "monotonicStart": 39082.578,
+  "monotonicEnd": 39082.984,
+  "scheduledMonotonic": 39082.578,
+  "foregroundBefore": {
+    "hwnd": 527128,
+    "pid": 31572
+  },
+  "foregroundAfter": {
+    "hwnd": 527128,
+    "pid": 31572
+  },
+  "game": {
+    "hwnd": 527128,
+    "pid": 31572,
+    "tid": 29216,
+    "windowRect": [
+      0,
+      30,
+      1936,
+      1149
+    ],
+    "title": "Company of Heroes 3 -print_turn_action_log_continuously -turn_soft_lock_detection_seconds 60",
+    "className": "Plat::Window {DB3DC0D7-BBA3-4d06-BCD8-40CD448B4AE3}",
+    "style": 2496331776
+  },
+  "overlayWindowCount": 25,
+  "overlayVisibleLayerCount": 4,
+  "overlayExcludedPanels": [
+    {
+      "hwnd": 3672474,
+      "pid": 23716,
+      "tid": 18692,
+      "windowRect": [
+        540,
+        221,
+        2020,
+        1171
+      ],
+      "title": "天穹之眼 · 英雄连3  /  v0.60.8",
+      "className": "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+      "style": 369164288
+    }
+  ],
+  "overlayNotDrawableCount": 20,
+  "images": [
+    {
+      "hwnd": 527128,
+      "pid": 31572,
+      "tid": 29216,
+      "windowRect": [
+        0,
+        30,
+        1936,
+        1149
+      ],
+      "title": "Company of Heroes 3 -print_turn_action_log_continuously -turn_soft_lock_detection_seconds 60",
+      "className": "Plat::Window {DB3DC0D7-BBA3-4d06-BCD8-40CD448B4AE3}",
+      "style": 2496331776,
+      "role": "game",
+      "bitmapSize": [
+        1936,
+        1119
+      ],
+      "image": "group-029-game-527128.jpg",
+      "imageBytes": 954806,
+      "sha256": "9cded97a6208d866745ea0405d8f7166346d5a90a0fa942658e235d2712d3fcf",
+      "utcStart": "2026-11-21T01:13:54.818669+00:00",
+      "utcEnd": "2026-11-21T01:13:54.876978+00:00",
+      "monotonicStart": 39082.578,
+      "monotonicEnd": 39082.64,
+      "method": "PrintWindow.PW_RENDERFULLCONTENT"
+    },
+    {
+      "hwnd": 331162,
+      "pid": 23716,
+      "tid": 18692,
+      "windowRect": [
+        8,
+        61,
+        1928,
+        1141
+      ],
+      "title": "",
+      "className": "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+      "style": 369164288,
+      "role": "overlay",
+      "bitmapSize": [
+        1920,
+        1080
+      ],
+      "image": "group-029-overlay-331162.png",
+      "imageBytes": 7244,
+      "sha256": "fde7de06833e9211cfe0c3b01bc343acfd0a2ba876e6dc4ac4178f24bfa75387",
+      "utcStart": "2026-11-21T01:13:54.879479+00:00",
+      "utcEnd": "2026-11-21T01:13:54.955050+00:00",
+      "monotonicStart": 39082.64,
+      "monotonicEnd": 39082.718,
+      "method": "PrintWindow.PW_RENDERFULLCONTENT"
+    },
+    {
+      "hwnd": 658888,
+      "pid": 23716,
+      "tid": 18692,
+      "windowRect": [
+        66,
+        69,
+        1870,
+        163
+      ],
+      "title": "",
+      "className": "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+      "style": 369164288,
+      "role": "overlay",
+      "bitmapSize": [
+        1804,
+        94
+      ],
+      "image": "group-029-overlay-658888.png",
+      "imageBytes": 30329,
+      "sha256": "c8034c3396445dcc1104e60737b6f7871224f1f12c517fa658160de64221a3fa",
+      "utcStart": "2026-11-21T01:13:54.956052+00:00",
+      "utcEnd": "2026-11-21T01:13:55.013261+00:00",
+      "monotonicStart": 39082.718,
+      "monotonicEnd": 39082.781,
+      "method": "PrintWindow.PW_RENDERFULLCONTENT"
+    },
+    {
+      "hwnd": 2820452,
+      "pid": 23716,
+      "tid": 18692,
+      "windowRect": [
+        8,
+        61,
+        1928,
+        1141
+      ],
+      "title": "",
+      "className": "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+      "style": 369164288,
+      "role": "overlay",
+      "bitmapSize": [
+        1920,
+        1080
+      ],
+      "image": "group-029-overlay-2820452.png",
+      "imageBytes": 6109,
+      "sha256": "0f52608dd021e7069ef19f9d8f46f6d651aaf5cbac5154465092de3574cf8514",
+      "utcStart": "2026-11-21T01:13:55.014262+00:00",
+      "utcEnd": "2026-11-21T01:13:55.066146+00:00",
+      "monotonicStart": 39082.781,
+      "monotonicEnd": 39082.828,
+      "method": "PrintWindow.PW_RENDERFULLCONTENT"
+    },
+    {
+      "hwnd": 7801622,
+      "pid": 23716,
+      "tid": 13772,
+      "windowRect": [
+        8,
+        61,
+        1928,
+        1141
+      ],
+      "title": "",
+      "className": "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+      "style": 369164288,
+      "role": "overlay",
+      "bitmapSize": [
+        1920,
+        1080
+      ],
+      "image": "group-029-overlay-7801622.png",
+      "imageBytes": 49443,
+      "sha256": "1e40f2a6f77d83a5b1df2bbb9354d72132873d636df2d87e8f13454a0c15688d",
+      "utcStart": "2026-11-21T01:13:55.068145+00:00",
+      "utcEnd": "2026-11-21T01:13:55.143910+00:00",
+      "monotonicStart": 39082.828,
+      "monotonicEnd": 39082.906,
+      "method": "PrintWindow.PW_RENDERFULLCONTENT"
+    },
+    {
+      "hwnd": 527128,
+      "pid": 31572,
+      "tid": 29216,
+      "windowRect": [
+        0,
+        30,
+        1936,
+        1149
+      ],
+      "title": "Company of Heroes 3 -print_turn_action_log_continuously -turn_soft_lock_detection_seconds 60",
+      "className": "Plat::Window {DB3DC0D7-BBA3-4d06-BCD8-40CD448B4AE3}",
+      "style": 2496331776,
+      "role": "desktop_game_region",
+      "bitmapSize": [
+        1936,
+        1119
+      ],
+      "image": "group-029-desktop_game_region-527128.jpg",
+      "imageBytes": 1086818,
+      "sha256": "1c1064ed2957e408ca670831df43980e5c0ab7cc09801c5dd678fe58b18398b3",
+      "utcStart": "2026-11-21T01:13:55.145911+00:00",
+      "utcEnd": "2026-11-21T01:13:55.221982+00:00",
+      "monotonicStart": 39082.906,
+      "monotonicEnd": 39082.984,
+      "method": "ImageGrab.game_bbox.composited",
+      "compositionLimit": "Actual desktop pixels within game rect; includes any occluders; pre/post foreground checks are not atomic with capture."
+    }
+  ]
+}

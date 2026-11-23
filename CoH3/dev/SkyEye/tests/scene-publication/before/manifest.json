@@ -1,0 +1,18 @@
+﻿[
+    {
+        "path":  "CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\AirOverlayWindow.cs",
+        "sha256":  "83BF3CA2312FF2AF4CC6220A5093A5CF3876EBBCDF47A89160A511DB6D71C267"
+    },
+    {
+        "path":  "CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\SquadMarkerWindow.cs",
+        "sha256":  "7685A91DC528B7ADC923B509991EB56C38C01036D836ED8640CC8FDBFD113ED8"
+    },
+    {
+        "path":  "CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\AirOverlayWindow.cs",
+        "sha256":  "83BF3CA2312FF2AF4CC6220A5093A5CF3876EBBCDF47A89160A511DB6D71C267"
+    },
+    {
+        "path":  "CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\SquadMarkerWindow.cs",
+        "sha256":  "7685A91DC528B7ADC923B509991EB56C38C01036D836ED8640CC8FDBFD113ED8"
+    }
+]

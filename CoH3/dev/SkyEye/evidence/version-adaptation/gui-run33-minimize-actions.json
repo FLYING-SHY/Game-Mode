@@ -1,0 +1,21 @@
+﻿{
+    "scope":  "native window state only; no game memory write",
+    "uiStartUtc":  "2026-11-21T05:31:23.1370342Z",
+    "events":  [
+                   {
+                       "gameHwnd":  2428198,
+                       "utc":  "2026-11-21T05:38:27.3566236Z",
+                       "foregroundHwnd":  2428198,
+                       "isIconic":  true,
+                       "action":  "native SW_MINIMIZE"
+                   },
+                   {
+                       "utc":  "2026-11-21T05:38:27.6147441Z",
+                       "isIconic":  false,
+                       "action":  "native SW_RESTORE"
+                   }
+               ],
+    "uiPid":  7672,
+    "gamePid":  33656,
+    "gameStartUtc":  "2026-11-21T03:42:27.6605831Z"
+}

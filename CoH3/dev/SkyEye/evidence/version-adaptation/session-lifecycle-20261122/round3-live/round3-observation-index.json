@@ -1,0 +1,446 @@
+{
+  "schema": "round3-visual-raw-observation-index-v1",
+  "generatedUtc": "2026-11-22T02:33:18.653594+00:00",
+  "generator": {
+    "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\live-lifecycle\\summarize_round3.py",
+    "bytes": 6413,
+    "sha256": "d5ca3d344fd2e37df5f272e8cbea2e5251c2ad523c3d75ca1db39b5b33bb9c85"
+  },
+  "status": "recorded_material_consistency_only",
+  "productAcceptance": false,
+  "productSnapshotExecutedByProbe": false,
+  "phasePredicateImplemented": false,
+  "commonModule": {
+    "path": "G:\\SteamLibrary\\steamapps\\common\\Company of Heroes 3\\RelicCoH3.exe",
+    "sha256": "8a3445292255d652c8dbe9b53f24328af159c161be89836ba54ef070946dd3ec",
+    "fileBytes": 108391096,
+    "imageSize": 120369152,
+    "base": "0x7ff6985b0000",
+    "fileStableDuringHash": true
+  },
+  "sourceManifest": {
+    "client/CoH3MemoryTool/GameLayout52426.cs": {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\GameLayout52426.cs",
+      "sha256": "90af6a0f98c5c3c48dd9cad8595377ee90990938753e68b142899b707c596d47",
+      "bytes": 4166
+    },
+    "client/CoH3MemoryTool/PlayerInfoReader.cs": {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\PlayerInfoReader.cs",
+      "sha256": "39dde7a0f2bd80e2412fed3439870cf7a49a794a9aab0f812a9afee6f60c65d2",
+      "bytes": 105047
+    },
+    "evidence/version-adaptation/air/air_raw_snapshot.py": {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\air_raw_snapshot.py",
+      "sha256": "0438ebbe4b29bcae3b6d428e46ce2db0fcdf58c87d93f6058f0432dc9ff765d4",
+      "bytes": 40147
+    }
+  },
+  "executionAttestation": {
+    "schema": "phase-probe-execution-attestation-v3",
+    "wrapper": {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\phase_probe_v3.py",
+      "sha256": "81ee593a762933f0cf119cbc6fdcafc37cfa687ddd171aad6aa6f99dbf7da66b",
+      "digestMeaning": "wrapper disk bytes at load; self-reported, not a signature"
+    },
+    "measurementEngine": {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v2\\phase_probe_v2.py",
+      "sha256": "e2c56be1b7b49f242b4549545e03e4a50d765e5de9c9cf7b8473a9966525e7c0",
+      "compileFilename": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v2\\phase_probe_v2.py",
+      "sourceBytesExecutedUnmodified": true,
+      "entrypoint": "capture"
+    },
+    "baseProbe": {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\phase_probe.py",
+      "sha256": "21af7198c86ea5f53b06e9df737251d81a21dd345ec243b8974beca75ec1d723",
+      "compileFilename": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\phase_probe.py",
+      "sourceBytesExecutedUnmodified": true,
+      "checkedBy": "frozen v2 load_base"
+    },
+    "sourceBinding": {
+      "originalFrozenV1SourcePins": {
+        "client/CoH3MemoryTool/GameLayout52426.cs": "77c44effbf42d9f6300cfd41e753712bed85e551b487f4db1a779df528dc8d92",
+        "client/CoH3MemoryTool/PlayerInfoReader.cs": "bbb359cd59409065d8b4d00ace784243ae5e99816611bc11617e7c9ed8adba9d",
+        "evidence/version-adaptation/air/air_raw_snapshot.py": "0438ebbe4b29bcae3b6d428e46ce2db0fcdf58c87d93f6058f0432dc9ff765d4"
+      },
+      "effectiveSourceLoaderPins": {
+        "client/CoH3MemoryTool/GameLayout52426.cs": "90af6a0f98c5c3c48dd9cad8595377ee90990938753e68b142899b707c596d47",
+        "client/CoH3MemoryTool/PlayerInfoReader.cs": "39dde7a0f2bd80e2412fed3439870cf7a49a794a9aab0f812a9afee6f60c65d2",
+        "evidence/version-adaptation/air/air_raw_snapshot.py": "0438ebbe4b29bcae3b6d428e46ce2db0fcdf58c87d93f6058f0432dc9ff765d4"
+      },
+      "sourceRoot": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye",
+      "sourceFilesExecuted": false,
+      "loaderCodeUnchanged": true,
+      "override": "v1 load_sources same code object with a copied globals dict; only SOURCE_PINS replaced",
+      "scope": "load_sources only; original v1 module SOURCE_PINS retained for unchanged v2 reference validation",
+      "roleValidation": "unchanged v1 load_sources: exact source hashes, fixed game SHA, individual role RVAs",
+      "policy": "fixed allowlist; no CLI pin override, automatic refresh, or arbitrary new source acceptance"
+    },
+    "reportAdapter": {
+      "override": "v2 module-local json proxy: dump adds v3 provenance; other JSON operations delegate unchanged",
+      "topLevelScriptSha256Meaning": "v3 wrapper disk SHA; original v2 report schema/SHA retained under frozenEngineReport",
+      "measurementFunctionsChanged": false
+    },
+    "boundaries": {
+      "productSnapshotCalled": false,
+      "productCSharpExecuted": false,
+      "productBuildCorrespondenceEstablished": false,
+      "phasePredicateImplemented": false,
+      "operatorLabelIsObservedPhase": false,
+      "productAcceptance": false,
+      "referencePolicy": "original v2 parser accepts only genuine pinned v1 running/paused reports from the same process/module; v3 reports are not converted to references",
+      "limitations": "source provenance plus bounded Python field observations; not product Snapshot or HUD coordinate/phase acceptance"
+    }
+  },
+  "stageCount": 4,
+  "stages": [
+    {
+      "observerVisualLabel": "mainmenu",
+      "observerVisualNote": "main menu with continue/start/armory/store/replay/mods",
+      "visualClassificationMethod": "manual inspection of both retained pictures; no automatic classifier",
+      "beforeMetadata": {
+        "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\session-lifecycle-20261122\\round3-live\\state-02-mainmenu-before.json",
+        "bytes": 853,
+        "sha256": "f631ad9229716aaecdb3d98d77d1c4d840c2f2c2ae109a2c0c874b9693e9663f"
+      },
+      "beforePicture": {
+        "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\session-lifecycle-20261122\\round3-live\\state-02-mainmenu-before.png",
+        "bytes": 5114912,
+        "sha256": "a5e13f94cb3aadb91083bf97f69156bb52eb229ce747d256c408beefa24ae7be"
+      },
+      "rawReport": {
+        "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\live-round3\\pid30504-mainmenu-001.json",
+        "bytes": 4492831,
+        "sha256": "0e97e864802dc297d03456b418f18996603754a60da99f8a119f658d54a88ee1"
+      },
+      "afterMetadata": {
+        "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\session-lifecycle-20261122\\round3-live\\state-03-mainmenu-after.json",
+        "bytes": 852,
+        "sha256": "d2f301693eb7a9ba2879c431048828c88c86a52469028f22080c76ce0061aa2d"
+      },
+      "afterPicture": {
+        "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\session-lifecycle-20261122\\round3-live\\state-03-mainmenu-after.png",
+        "bytes": 5015501,
+        "sha256": "dc4a518c1354b5514b45f26bc91ae2f5ea6166c6b6ea20a7b2ec91a32106603f"
+      },
+      "captureType": "selected-window PrintWindow; no composited-overlay claim",
+      "reportedObservations": [
+        {
+          "offsetSeconds": 0,
+          "reportedPositiveProofs": [],
+          "knownGraphComplete": false,
+          "traversalStopReason": "queue_exhausted",
+          "matchKeyCandidate": "30504:639309074153993114:1993462513664:1993504485376:1000"
+        },
+        {
+          "offsetSeconds": 1,
+          "reportedPositiveProofs": [],
+          "knownGraphComplete": false,
+          "traversalStopReason": "queue_exhausted",
+          "matchKeyCandidate": "30504:639309074153993114:1993462513664:1993504485376:1000"
+        },
+        {
+          "offsetSeconds": 3,
+          "reportedPositiveProofs": [],
+          "knownGraphComplete": false,
+          "traversalStopReason": "queue_exhausted",
+          "matchKeyCandidate": "30504:639309074153993114:1993462513664:1993504485376:1000"
+        }
+      ],
+      "counters": {
+        "readAttempts": 14654,
+        "requestedBytes": 993406,
+        "returnedBytes": 989598,
+        "elapsedSeconds": 3.172000000005937
+      },
+      "elapsedSeconds": 3.172000000005937,
+      "absenceClaim": false
+    },
+    {
+      "observerVisualLabel": "running",
+      "observerVisualNote": "game clock progresses 02:12 -> 02:15; resources 983 -> 999",
+      "visualClassificationMethod": "manual inspection of both retained pictures; no automatic classifier",
+      "beforeMetadata": {
+        "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\session-lifecycle-20261122\\round3-live\\state-12-running-before.json",
+        "bytes": 852,
+        "sha256": "604ccba865e95a1623766918d1bbd369e8b4b1237caf3eaca7c8e98a5c949632"
+      },
+      "beforePicture": {
+        "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\session-lifecycle-20261122\\round3-live\\state-12-running-before.png",
+        "bytes": 8239091,
+        "sha256": "94e57b6b0a803c4760896efe9fbfc9864544a3fe4dc0ad18a60468166798c043"
+      },
+      "rawReport": {
+        "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\live-round3\\pid30504-running-001.json",
+        "bytes": 5039164,
+        "sha256": "760a92a813aac94c94444dc2ee1b2d3d01a941c648305a68488f0194e008ac59"
+      },
+      "afterMetadata": {
+        "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\session-lifecycle-20261122\\round3-live\\state-13-running-after.json",
+        "bytes": 851,
+        "sha256": "1d8d79df44904bfd5fe4fd06958bc3e8b544b396d3b01aadcacef6eeb50eed2e"
+      },
+      "afterPicture": {
+        "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\session-lifecycle-20261122\\round3-live\\state-13-running-after.png",
+        "bytes": 8238869,
+        "sha256": "3f6f556fe2632c424aaa2d9cadbee8bbf88b6e1cc3317e93e2e0e2fa9f7ff03f"
+      },
+      "captureType": "selected-window PrintWindow; no composited-overlay claim",
+      "reportedObservations": [
+        {
+          "offsetSeconds": 0,
+          "reportedPositiveProofs": [
+            {
+              "kind": "hud",
+              "address": "0x1d3cc5ec570",
+              "allChainBit20Set": true
+            },
+            {
+              "kind": "tactical",
+              "address": "0x1d3ccc60fb0",
+              "allChainBit20Set": false
+            },
+            {
+              "kind": "minimap",
+              "address": "0x1d3cca73b30",
+              "allChainBit20Set": true
+            }
+          ],
+          "knownGraphComplete": false,
+          "traversalStopReason": "partition_limit",
+          "matchKeyCandidate": "30504:639309074153993114:1993462513664:1993504493568:1001"
+        },
+        {
+          "offsetSeconds": 1,
+          "reportedPositiveProofs": [
+            {
+              "kind": "hud",
+              "address": "0x1d3cc5ec570",
+              "allChainBit20Set": true
+            },
+            {
+              "kind": "tactical",
+              "address": "0x1d3ccc60fb0",
+              "allChainBit20Set": false
+            },
+            {
+              "kind": "minimap",
+              "address": "0x1d3cca73b30",
+              "allChainBit20Set": true
+            }
+          ],
+          "knownGraphComplete": false,
+          "traversalStopReason": "partition_limit",
+          "matchKeyCandidate": "30504:639309074153993114:1993462513664:1993504493568:1001"
+        },
+        {
+          "offsetSeconds": 3,
+          "reportedPositiveProofs": [
+            {
+              "kind": "hud",
+              "address": "0x1d3cc5ec570",
+              "allChainBit20Set": true
+            },
+            {
+              "kind": "tactical",
+              "address": "0x1d3ccc60fb0",
+              "allChainBit20Set": false
+            },
+            {
+              "kind": "minimap",
+              "address": "0x1d3cca73b30",
+              "allChainBit20Set": true
+            }
+          ],
+          "knownGraphComplete": false,
+          "traversalStopReason": "partition_limit",
+          "matchKeyCandidate": "30504:639309074153993114:1993462513664:1993504493568:1001"
+        }
+      ],
+      "counters": {
+        "readAttempts": 15384,
+        "requestedBytes": 1023198,
+        "returnedBytes": 1017654,
+        "elapsedSeconds": 3.1569999999919673
+      },
+      "elapsedSeconds": 3.1569999999919673,
+      "absenceClaim": false
+    },
+    {
+      "observerVisualLabel": "paused",
+      "observerVisualNote": "Escape menu; game clock 02:58 and resources 1194 unchanged",
+      "visualClassificationMethod": "manual inspection of both retained pictures; no automatic classifier",
+      "beforeMetadata": {
+        "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\session-lifecycle-20261122\\round3-live\\state-15-paused-before.json",
+        "bytes": 851,
+        "sha256": "5f41686b985a1540412936a17995470a780b21344da48a951cec8309b4415d85"
+      },
+      "beforePicture": {
+        "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\session-lifecycle-20261122\\round3-live\\state-15-paused-before.png",
+        "bytes": 4075305,
+        "sha256": "d89deee6faa99e7347b96f57ee942f4c154eb8e10be97de35856e21023d9f7d9"
+      },
+      "rawReport": {
+        "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\live-round3\\pid30504-paused-001.json",
+        "bytes": 5031347,
+        "sha256": "ba29370662feeab744da3fa20cbf3812eb69ae5d9b2fd79fcf7f63f4591696fd"
+      },
+      "afterMetadata": {
+        "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\session-lifecycle-20261122\\round3-live\\state-16-paused-after.json",
+        "bytes": 850,
+        "sha256": "ce3b9f2406c77c19edbedee230dea762a237e1f40b49e9666cb899bd92e32a3a"
+      },
+      "afterPicture": {
+        "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\session-lifecycle-20261122\\round3-live\\state-16-paused-after.png",
+        "bytes": 4074877,
+        "sha256": "cf552ab2cddd78b58f370b45e2f3d0aa0ac4c369267a7071707925e5799a2af0"
+      },
+      "captureType": "selected-window PrintWindow; no composited-overlay claim",
+      "reportedObservations": [
+        {
+          "offsetSeconds": 0,
+          "reportedPositiveProofs": [
+            {
+              "kind": "hud",
+              "address": "0x1d3cc5ec570",
+              "allChainBit20Set": true
+            },
+            {
+              "kind": "tactical",
+              "address": "0x1d3ccc60fb0",
+              "allChainBit20Set": false
+            },
+            {
+              "kind": "minimap",
+              "address": "0x1d3cca73b30",
+              "allChainBit20Set": true
+            }
+          ],
+          "knownGraphComplete": false,
+          "traversalStopReason": "partition_limit",
+          "matchKeyCandidate": "30504:639309074153993114:1993462513664:1993504493568:1001"
+        },
+        {
+          "offsetSeconds": 1,
+          "reportedPositiveProofs": [
+            {
+              "kind": "hud",
+              "address": "0x1d3cc5ec570",
+              "allChainBit20Set": true
+            },
+            {
+              "kind": "tactical",
+              "address": "0x1d3ccc60fb0",
+              "allChainBit20Set": false
+            },
+            {
+              "kind": "minimap",
+              "address": "0x1d3cca73b30",
+              "allChainBit20Set": true
+            }
+          ],
+          "knownGraphComplete": false,
+          "traversalStopReason": "partition_limit",
+          "matchKeyCandidate": "30504:639309074153993114:1993462513664:1993504493568:1001"
+        },
+        {
+          "offsetSeconds": 3,
+          "reportedPositiveProofs": [
+            {
+              "kind": "hud",
+              "address": "0x1d3cc5ec570",
+              "allChainBit20Set": true
+            },
+            {
+              "kind": "tactical",
+              "address": "0x1d3ccc60fb0",
+              "allChainBit20Set": false
+            },
+            {
+              "kind": "minimap",
+              "address": "0x1d3cca73b30",
+              "allChainBit20Set": true
+            }
+          ],
+          "knownGraphComplete": false,
+          "traversalStopReason": "partition_limit",
+          "matchKeyCandidate": "30504:639309074153993114:1993462513664:1993504493568:1001"
+        }
+      ],
+      "counters": {
+        "readAttempts": 15384,
+        "requestedBytes": 1037334,
+        "returnedBytes": 1032078,
+        "elapsedSeconds": 3.125
+      },
+      "elapsedSeconds": 3.125,
+      "absenceClaim": false
+    },
+    {
+      "observerVisualLabel": "results",
+      "observerVisualNote": "match data - exit; Femontville 02:58, units tab",
+      "visualClassificationMethod": "manual inspection of both retained pictures; no automatic classifier",
+      "beforeMetadata": {
+        "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\session-lifecycle-20261122\\round3-live\\state-20-results-before.json",
+        "bytes": 852,
+        "sha256": "3f743d6e0d5f26cebdf07de253404b70207f829a5e606e143a61ed4b034bd44b"
+      },
+      "beforePicture": {
+        "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\session-lifecycle-20261122\\round3-live\\state-20-results-before.png",
+        "bytes": 3253221,
+        "sha256": "ff913ab02b1fe2f28ff3d19866146f91bb9d4ed299dc431cd074ae25d8714ea2"
+      },
+      "rawReport": {
+        "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\live-round3\\pid30504-results-001.json",
+        "bytes": 4084223,
+        "sha256": "fcf57146d7e032598dbe9967a7013163f8f1fb10373da0eca589b76f9a7100f8"
+      },
+      "afterMetadata": {
+        "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\session-lifecycle-20261122\\round3-live\\state-21-results-after.json",
+        "bytes": 851,
+        "sha256": "377e488890c3a9e80de517aa1036f04040aa956f45f5ac8696663f59bd49c891"
+      },
+      "afterPicture": {
+        "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\session-lifecycle-20261122\\round3-live\\state-21-results-after.png",
+        "bytes": 3253221,
+        "sha256": "ff913ab02b1fe2f28ff3d19866146f91bb9d4ed299dc431cd074ae25d8714ea2"
+      },
+      "captureType": "selected-window PrintWindow; no composited-overlay claim",
+      "reportedObservations": [
+        {
+          "offsetSeconds": 0,
+          "reportedPositiveProofs": [],
+          "knownGraphComplete": false,
+          "traversalStopReason": "queue_exhausted",
+          "matchKeyCandidate": "30504:639309074153993114:1993462513664:1993504493568:1001"
+        },
+        {
+          "offsetSeconds": 1,
+          "reportedPositiveProofs": [],
+          "knownGraphComplete": false,
+          "traversalStopReason": "queue_exhausted",
+          "matchKeyCandidate": "30504:639309074153993114:1993462513664:1993504493568:1001"
+        },
+        {
+          "offsetSeconds": 3,
+          "reportedPositiveProofs": [],
+          "knownGraphComplete": false,
+          "traversalStopReason": "queue_exhausted",
+          "matchKeyCandidate": "30504:639309074153993114:1993462513664:1993504493568:1001"
+        }
+      ],
+      "counters": {
+        "readAttempts": 13398,
+        "requestedBytes": 940686,
+        "returnedBytes": 937542,
+        "elapsedSeconds": 3.1569999999919673
+      },
+      "elapsedSeconds": 3.1569999999919673,
+      "absenceClaim": false
+    }
+  ],
+  "limits": [
+    "Positive paths are recorded structural evidence; whole-graph negative coverage remains unknown.",
+    "Same retained world/key at results is a counterexample to treating valid world data as an active match.",
+    "No product GUI/render/audio/hotkey or protected delivery acceptance is asserted."
+  ]
+}

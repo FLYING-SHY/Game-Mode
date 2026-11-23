@@ -1,0 +1,51 @@
+{
+  "utc": "2026-11-20T17:56:57.805572+00:00",
+  "pid": 32392,
+  "tag": "ui-world-off",
+  "windows": [
+    {
+      "hwnd": 855314,
+      "isControlPanel": false,
+      "rect": [
+        -1153,
+        196,
+        651,
+        290
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\ui-world-off-855314.png"
+    },
+    {
+      "hwnd": 199812,
+      "isControlPanel": false,
+      "rect": [
+        -1211,
+        188,
+        709,
+        1268
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\ui-world-off-199812.png"
+    },
+    {
+      "hwnd": 265346,
+      "isControlPanel": false,
+      "rect": [
+        -1211,
+        188,
+        709,
+        1268
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\ui-world-off-265346.png"
+    },
+    {
+      "hwnd": 2033744,
+      "isControlPanel": true,
+      "rect": [
+        540,
+        221,
+        2020,
+        1171
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\ui-world-off-2033744.png"
+    }
+  ]
+}

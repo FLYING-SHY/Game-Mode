@@ -1,0 +1,244 @@
+﻿diff --git "a/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\artifacts\\air-retention-fix-before\\AirEventEvidence.cs.before" "b/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\AirEventEvidence.cs"
+index 2f9d816..4f1c9ea 100644
+--- "a/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\artifacts\\air-retention-fix-before\\AirEventEvidence.cs.before"
++++ "b/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\AirEventEvidence.cs"
+@@ -5,7 +5,7 @@ using System.Linq;
+ namespace CoH3MemoryTool;
+ 
+ // All-sides maintenance diagnostics, not production enemy-only UI routing.
+-// Retain successful empty frames too: zero output is absence of samples, never PASS.
++// Reserve two slots for first/latest successful empty reads; zero output is never PASS.
+ internal sealed class AirEventEvidence
+ {
+     internal const int MaximumFrames = 128;
+@@ -16,19 +16,34 @@ internal sealed class AirEventEvidence
+     internal int RetainedDecoded;
+     internal int DroppedFrames;
+     internal long DroppedDecoded;
++    private bool hasFirstEmptyFrame;
++    private object latestEmptyFrame;
++    private int nonzeroFrames;
+ 
+     internal void Add(List<object> items, string utc, long startedMs, long finishedMs, string match, long epoch)
+     {
+         TotalDecoded += items.Count;
+         if (items.Count > 0) NonzeroPolls++;
+         int take = Math.Min(16, Math.Min(items.Count, MaximumDecoded - RetainedDecoded));
+-        if (Frames.Count >= MaximumFrames) { DroppedFrames++; DroppedDecoded += items.Count; return; }
+-        Frames.Add(new
++        if (items.Count > 0 && nonzeroFrames >= MaximumFrames - 2) { DroppedFrames++; DroppedDecoded += items.Count; return; }
++        var frame = new
+         {
+             utc, pollStartedMilliseconds = startedMs, readFinishedMilliseconds = finishedMs, match, epoch,
+             decodedCount = items.Count, decoded = items.Take(take).ToArray(),
+             droppedDecodedInThisPoll = items.Count - take
+-        });
++        };
++        if (items.Count == 0)
++        {
++            if (!hasFirstEmptyFrame) hasFirstEmptyFrame = true;
++            else
++            {
++                if (latestEmptyFrame != null) { Frames.Remove(latestEmptyFrame); DroppedFrames++; }
++                latestEmptyFrame = frame;
++            }
++        }
++        else nonzeroFrames++;
++        // Removing the previous latest empty before appending keeps retained polls in time order.
++        Frames.Add(frame);
+         RetainedDecoded += take;
+         DroppedDecoded += items.Count - take;
+     }
+diff --git "a/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\artifacts\\air-retention-fix-before\\AirEventSelfTests.cs.before" "b/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\AirEventSelfTests.cs"
+index b51fd8b..6601c20 100644
+--- "a/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\artifacts\\air-retention-fix-before\\AirEventSelfTests.cs.before"
++++ "b/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\AirEventSelfTests.cs"
+@@ -7,6 +7,32 @@ namespace CoH3MemoryTool;
+ 
+ internal static class AirEventSelfTests
+ {
++    private sealed class Frame
++    {
++        public Frame() { }
++        public long pollStartedMilliseconds { get; set; }
++        public int decodedCount { get; set; }
++        public object[] decoded { get; set; }
++        public int droppedDecodedInThisPoll { get; set; }
++    }
++
++    private static Frame[] ReadFrames(AirEventEvidence evidence)
++    {
++        var serializer = new JavaScriptSerializer();
++        return serializer.Deserialize<Frame[]>(serializer.Serialize(evidence.Frames));
++    }
++
++    private static bool AccountsFor(AirEventEvidence evidence, int calls)
++    {
++        var frames = ReadFrames(evidence);
++        return calls == frames.Length + evidence.DroppedFrames && frames.Length <= AirEventEvidence.MaximumFrames &&
++            evidence.TotalDecoded == evidence.RetainedDecoded + evidence.DroppedDecoded && evidence.RetainedDecoded <= AirEventEvidence.MaximumDecoded &&
++            frames.Sum(frame => frame.decoded.Length) == evidence.RetainedDecoded &&
++            frames.All(frame => frame.decoded.Length <= 16 && frame.decodedCount == frame.decoded.Length + frame.droppedDecodedInThisPoll) &&
++            frames.Count(frame => frame.decodedCount == 0) <= 2 && frames.Count(frame => frame.decodedCount > 0) <= AirEventEvidence.MaximumFrames - 2 &&
++            frames.Select(frame => frame.pollStartedMilliseconds).SequenceEqual(frames.Select(frame => frame.pollStartedMilliseconds).OrderBy(time => time));
++    }
++
+     internal static int Run()
+     {
+         int passed = 0;
+@@ -25,17 +51,47 @@ internal static class AirEventSelfTests
+             empty.Add(new List<object>(), "utc", 0, 1, "match", 7);
+             check(empty.TotalDecoded == 0 && empty.NonzeroPolls == 0 && empty.Frames.Count == 1, "successful zero air output retains empty frame not a gameplay PASS");
+             object zone = new { Slot = 1, Name = "fixture", X = 1f, Y = 2f, Z = 3f, DX = 4f, DZ = 5f, HalfWidth = 6f, Length = 7f, Radius = 8f, Rocket = false, Point = true };
++            var leading = new AirEventEvidence();
++            for (int i = 0; i < 400; i++) leading.Add(new List<object>(), "utc", i, i + 1, "match", 7);
++            check(leading.Frames.Count == 2 && leading.DroppedFrames == 398 && leading.RetainedDecoded == 0 && leading.DroppedDecoded == 0, "long leading empties retain only first and latest and count replacements");
++            for (int i = 400; i < 483; i++) leading.Add(new List<object> { zone }, "utc", i, i + 1, "match", 7);
++            for (int i = 483; i < 551; i++) leading.Add(new List<object>(), "utc", i, i + 1, "match", 7);
++            check(leading.TotalDecoded == 83 && leading.NonzeroPolls == 83 && leading.RetainedDecoded == 83 && leading.Frames.Count == 85 && leading.DroppedFrames == 466 && leading.DroppedDecoded == 0, "551 polls with83 late positives retain actual decoded geometry after leading empties");
++            check(ReadFrames(leading).Select(frame => frame.pollStartedMilliseconds).SequenceEqual(new long[] { 0 }.Concat(Enumerable.Range(400, 83).Select(i => (long)i)).Concat(new long[] { 550 })), "leading positive trailing sequence keeps first latest empty and chronological positives");
++            var interleaved = new AirEventEvidence();
++            for (int i = 0; i < 5; i++) interleaved.Add(i % 2 == 0 ? new List<object>() : new List<object> { zone }, "utc", i, i + 1, "match", 7);
++            check(interleaved.DroppedFrames == 1 && ReadFrames(interleaved).Select(frame => frame.pollStartedMilliseconds).SequenceEqual(new long[] { 0, 1, 3, 4 }), "latest empty replacement preserves interleaved positive time order");
+             var capped = new AirEventEvidence();
+             for (int i = 0; i < 17; i++) capped.Add(Enumerable.Repeat(zone, 20).ToList(), "utc", i * 100, i * 100 + 1, "match", 7);
+             check(capped.TotalDecoded == 340 && capped.RetainedDecoded == 256 && capped.Frames.Count == 17 && capped.DroppedDecoded == 84 && capped.DroppedFrames == 0, "air decoded cap retains frame shape with exact decoded drops");
++            var cappedFrames = ReadFrames(capped);
++            check(cappedFrames.Take(16).All(frame => frame.decoded.Length == 16 && frame.droppedDecodedInThisPoll == 4) && cappedFrames[16].decoded.Length == 0 && cappedFrames[16].decodedCount == 20 && cappedFrames[16].droppedDecodedInThisPoll == 20, "per-frame16 and total256 caps preserve decodedCount after geometry budget exhausted");
+             var frames = new AirEventEvidence();
+             for (int i = 0; i < 130; i++) frames.Add(new List<object> { zone }, "utc", i, i + 1, "match", 7);
+-            check(frames.Frames.Count == 128 && frames.DroppedFrames == 2 && frames.DroppedDecoded == 2 && frames.TotalDecoded == 130, "air frame cap has independent exact drop accounting");
++            check(frames.Frames.Count == 126 && frames.RetainedDecoded == 126 && frames.DroppedFrames == 4 && frames.DroppedDecoded == 4 && frames.TotalDecoded == 130, "positive frame cap reserves two empty slots with exact drops");
++            for (int i = 130; i < 133; i++) frames.Add(new List<object>(), "utc", i, i + 1, "match", 7);
++            check(frames.Frames.Count == 128 && frames.DroppedFrames == 5 && frames.RetainedDecoded == 126 && frames.DroppedDecoded == 4, "first and latest empty slots remain available after positive saturation");
++            check(ReadFrames(frames).Select(frame => frame.pollStartedMilliseconds).SequenceEqual(Enumerable.Range(0, 126).Select(i => (long)i).Concat(new long[] { 130, 132 })), "positive saturation retains earliest positives and first latest late empty frames");
+             var emptyFrames = new AirEventEvidence();
+             for (int i = 0; i < 130; i++) emptyFrames.Add(new List<object>(), "utc", i, i + 1, "match", 7);
+-            check(emptyFrames.Frames.Count == 128 && emptyFrames.DroppedFrames == 2 && emptyFrames.DroppedDecoded == 0, "empty air frames bounded and dropped separately");
++            check(emptyFrames.Frames.Count == 2 && emptyFrames.DroppedFrames == 128 && emptyFrames.DroppedDecoded == 0 && emptyFrames.NonzeroPolls == 0, "empty-only window has two frames and exact replacement count");
++            check(ReadFrames(emptyFrames).Select(frame => frame.pollStartedMilliseconds).SequenceEqual(new long[] { 0, 129 }), "empty-only window retains first and latest timestamps");
++            var mixed = new AirEventEvidence();
++            for (int i = 0; i < 400; i++) mixed.Add(new List<object>(), "utc", i, i + 1, "match", 7);
++            for (int i = 400; i < 417; i++) mixed.Add(Enumerable.Repeat(zone, 20).ToList(), "utc", i, i + 1, "match", 7);
++            for (int i = 417; i < 420; i++) mixed.Add(new List<object>(), "utc", i, i + 1, "match", 7);
++            check(mixed.TotalDecoded == 340 && mixed.RetainedDecoded == 256 && mixed.DroppedDecoded == 84 && mixed.Frames.Count == 19 && mixed.DroppedFrames == 401, "empty replacements and decoded truncation use independent exact ledgers");
+             string json = new JavaScriptSerializer().Serialize(capped.Frames[0]);
+-            check(json.Contains("\"HalfWidth\":6") && json.Contains("\"Point\":true") && json.Contains("\"epoch\":7") && json.Contains("\"pollStartedMilliseconds\":0") && json.Contains("\"droppedDecodedInThisPoll\":4"), "air structural fields timing epoch and per-frame drops serialize");
++            check(json.Contains("\"HalfWidth\":6") && json.Contains("\"Point\":true") && json.Contains("\"epoch\":7") && json.Contains("\"pollStartedMilliseconds\":0") && json.Contains("\"droppedDecodedInThisPoll\":4"), "air structural fields timing epoch and per-frame drops serialize without schema changes");
++            check(AccountsFor(empty, 1) && AccountsFor(leading, 551) && AccountsFor(interleaved, 5) && AccountsFor(capped, 17) && AccountsFor(frames, 133) && AccountsFor(emptyFrames, 130) && AccountsFor(mixed, 420), "all fixtures satisfy frame decoded accounting bounds and chronological order");
++            var ledger = new AirEventEvidence();
++            bool exactAtEveryPoll = true;
++            for (int i = 0; i < 600; i++)
++            {
++                ledger.Add(i % 11 == 0 ? Enumerable.Repeat(zone, 20).ToList() : i > 400 ? new List<object> { zone } : new List<object>(), "utc", i, i + 1, "match", 7);
++                exactAtEveryPoll &= AccountsFor(ledger, i + 1);
++            }
++            check(exactAtEveryPoll, "600 mixed polls satisfy accounting and all bounds after every add");
+             Console.WriteLine("AIR_EVENT_SELF_TEST_ONLY passed=" + passed + "; synthetic routing/retention only; no game, coordinator, credentials, auth grant or GUI.");
+             return 0;
+         }
+diff --git "a/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\artifacts\\air-retention-fix-before\\EventSampling.cs.before" "b/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\EventSampling.cs"
+index fcb6c77..35af441 100644
+--- "a/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\artifacts\\air-retention-fix-before\\EventSampling.cs.before"
++++ "b/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\EventSampling.cs"
+@@ -122,7 +122,7 @@ internal sealed partial class MaintenanceLiveContext
+                             frames = airEvidence.Frames
+                         }
+                     };
+-                    result.Details.Add("Air summary/frames are separate from projectile counters; every successful air read retains a frame including empty output, subject to128 frames/256 decoded total and16 decoded per frame, with exact drops. Zero output is sample_absent, never PASS. Aggregate observed can come from either stream; consult each stream separately.");
++                    result.Details.Add("Air summary/frames are separate from projectile counters; retain first/latest successful empty reads and up to126 positive frames in time order, within128 frames/256 decoded total and16 decoded per frame. Replaced empty frames and omitted positive frames count as droppedFrames; all decoded truncation/drops are exact. Zero output is sample_absent, never PASS. Aggregate observed can come from either stream; consult each stream separately.");
+                     result.Details.Add("Air uses the same initial match/epoch checks before and after ReadAirZones; cancellation/deadline checked again between projectile and air reads. Earlier frames remain historical if a later read fails.");
+                     Console.WriteLine("event_window airScope=all_sides_diagnostic airQueries=" + airQueries + " airDecodedObservations=" + airEvidence.TotalDecoded);
+                 }
+diff --git "a/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\artifacts\\air-retention-fix-before\\README.md.before" "b/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\README.md"
+index 51aaee3..1c0f33b 100644
+--- "a/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\artifacts\\air-retention-fix-before\\README.md.before"
++++ "b/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\README.md"
+@@ -85,13 +85,13 @@ JSON 与文本分别写入输出目录下 `maintenance-live.json` / `maintenance
+ 
+ 每轮沿用同一个实际 Snapshot/BindMarkerColours 结果；先保留原敌方弹道读取，再于预算和取消检查后调用实际 C# `ReadAirZones(initialMatch, Players(all current rows))`，包括自己、友方与敌方。目标是让使用者受控 LOCAL US 空袭留下真实结构证据，而不是声称生产 enemy-only 空袭 UI 已验证。前后逐次检查最初固定 MatchKey/LicenseEpoch/Allowed；任何变化终止该窗口，早前帧只作为历史记录。两个同步查询间取消/到期会跳过空袭查询；同步查询仍为合作式预算。
+ 
+-启用时 `event_window.Evidence` 分成 `projectile`（原证据对象、原计数）及独立 `air`；每轮 `projectile.polls` 额外记录可空 `airDecodedCount`（未调用或调用失效为 null）。`air` 单列 scope/status/queryAttempts/nonzeroPolls/decodedObservationCount、保留与丢弃计数和 frames。每次成功空袭查询均记录帧，包括 decodedCount=0；每帧最多16项，最多128帧/256项，超额精确计入 droppedFrames/droppedDecoded，不随时长增加。保留 Slot/Name/X/Y/Z/DX/DZ/HalfWidth/Length/Radius/Rocket/Point，与 UTC/起止毫秒/match/epoch；非 raw memory。重复区域跨轮重复计数，不是唯一空袭数。零空袭只为 sample_absent，未开始为 not_run，异常窗口为 invalidated；绝不把零事件标成 PASS。聚合 SampleCount/observed 可来自任一流，空袭结论须单看 air，不能从弹道 observed 推导空袭覆盖。
++启用时 `event_window.Evidence` 分成 `projectile`（原证据对象、原计数）及独立 `air`；每轮 `projectile.polls` 额外记录可空 `airDecodedCount`（未调用或调用失效为 null）。`air` 单列 scope/status/queryAttempts/nonzeroPolls/decodedObservationCount、保留与丢弃计数和 frames。成功空袭查询按有界策略保留：固定预留2个空帧位置，只留首个空帧与最新空帧（只有一次空读时只留1帧），最新空帧替换时计入 droppedFrames；其余最多126帧留给最早的正帧，避免长前导空读挤掉后续真实结构。帧按读取时间顺序排列。每帧最多16项，总预算仍为128帧/256项；正帧超容量时整帧计入 droppedFrames、全部条目计入 droppedDecoded；正帧内裁剪同样精确记入 droppedDecodedInThisPoll 与 droppedDecoded。decoded预算耗尽后的已保留正帧仍保留 decodedCount/时间、decoded为空。成功读取次数 = retainedFrames + droppedFrames，decodedObservationCount = retainedDecoded + droppedDecoded；空帧替换只增加帧丢弃数，不增加decoded丢弃数。上限不随时长增加，原JSON字段保持兼容。保留 Slot/Name/X/Y/Z/DX/DZ/HalfWidth/Length/Radius/Rocket/Point，与 UTC/起止毫秒/match/epoch；非 raw memory。重复区域跨轮重复计数，不是唯一空袭数。零空袭只为 sample_absent，未开始为 not_run，异常窗口为 invalidated；绝不把零事件标成 PASS。聚合 SampleCount/observed 可来自任一流，空袭结论须单看 air，不能从弹道 observed 推导空袭覆盖。
+ 
+ ```powershell
+ & .\CoH3\dev\SkyEye\tests\maintenance-live\bin\Release\net48\SkyEye.Maintenance.Live.exe --air-event-self-test
+ ```
+ 
+-此独立分支在音频/UI/coordinator之前返回，7项纯合成测试覆盖 enemy-only 与 all-current-rows 路由、空帧、decoded/frame独立上限与精确drop，以及结构/时序序列化。合成数据仅验证runner，不证明真实空袭读取；本次交付只构建并运行离线测试，未启动游戏或登录。
++此独立分支在音频/UI/coordinator之前返回，18项纯合成测试覆盖 enemy-only 与 all-current-rows 路由、551轮中的400前导空帧→83正帧→68后导空帧、首/最新空帧替换和时序、126正帧与晚到空帧、每帧16/总256项裁剪、混合淘汰、原结构序列化，以及600轮每次Add后的计数恒等式与上限。551轮fixture应保留85帧/83条，droppedFrames=466、droppedDecoded=0；该fixture并非真实对局回放。合成数据仅验证runner，不证明真实空袭读取；此修复只构建并运行离线测试，未启动游戏、授权UI或读进程。
+ 
+ ### 新窗口离线测试（不重复原20项）
+ 
+diff --git "a/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\artifacts\\air-retention-fix-before\\air-events-handoff.md.before" "b/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\air-events-handoff.md"
+index 039982f..397f1f6 100644
+--- "a/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\artifacts\\air-retention-fix-before\\air-events-handoff.md.before"
++++ "b/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\air-events-handoff.md"
+@@ -1,35 +1,48 @@
+-# Air event sampling handoff
++# Air event sampling handoff — task-3 retention fix
+ 
+-## Scope and result
++## Scope and trigger
+ 
+-All writes for this task were confined to `F:\WorkSpace\Game\CoH3\dev\SkyEye\tests\maintenance-live\` (source, related tests/docs and local build output). No game/auth launch, engine edits, private/original writes, commit or push.
++All writes for this revision were confined to `F:\WorkSpace\Game\CoH3\dev\SkyEye\tests\maintenance-live\` (source, related tests/docs and local build output). No game/auth/GUI launch, process reads, engine edits, private/original writes, commit or push. Task-3 was read and claimed before modifications; karpathy-guidelines was reloaded.
+ 
+-- `Program.cs`: optional boolean `--air-events`, default false; requires `--event-seconds 1..60` before audio/UI/coordinator initialization. New offline `--air-event-self-test` dispatch also returns before those initializations.
+-- `EventSampling.cs`: retains Snapshot, BindMarkerColours and enemy-only actual C# projectile sampling; opt-in actual `ReadAirZones` follows in the same loop with all current rows (local/allied/enemy), and fixed initial MatchKey/LicenseEpoch/Allowed checks before and after every read. Deadline/cancellation are checked again between projectile and air. No synthetic grant or engine changes.
+-- `AirEventEvidence.cs`: separate bounded air frames/counters. Successful empty reads retain an empty frame, never gameplay PASS. Max128 frames, max256 decoded total, max16 decoded per frame, exact droppedFrames/droppedDecoded including empty-frame drops.
+-- `AirEventSelfTests.cs`: seven synthetic routing/retention/serialization checks. Existing20 and16 tests remain unchanged and were both rerun.
+-- `README.md`: all-sides diagnostic vs production enemy-only UI distinction, switch/shape/bounds/status and offline selftest description.
++Parent-reported live run25 (`maintenance-run-25-p47-prewarmed/maintenance-live.json`): 551 air queries / 83 positive polls, but128 leading empty frames filled retention, retainedDecoded=0, droppedFrames=423 and droppedDecoded=83. This worker did not open or rerun that external live evidence; it supplied the regression requirement.
+ 
+-When disabled the prior event evidence shape and projectile routing remain unchanged. When enabled, `event_window.Evidence.projectile` holds the prior evidence object (poll entries additionally carry nullable airDecodedCount), and `.air` holds separate diagnostic scope/status/query attempts/nonzero counts/decoded totals/retention/drops/frames. Aggregate observed can come from either stream: read the air status independently. Air zero-event is sample_absent, no call is not_run, exception is invalidated, cancellation is cancelled. Historical earlier frames do not validate a failing later read.
++## Diff summary
++
++- `AirEventEvidence.cs`: unchanged128-frame /256-decoded /16-per-frame budgets. Always reserve2 slots for the first successful empty read and latest successful empty read (one slot if there has only been one empty read). Subsequent empty reads replace the old latest empty and increment droppedFrames. Up to126 earliest positive frames use the remaining capacity. Removing the old latest empty before appending preserves Add/read order; positive geometry is not displaced by leading empty polls. Positive overflow drops the entire frame and counts all its items. Existing per-frame/total decoded truncation remains unchanged, including positive metadata frames with decoded=[] after the decoded budget is exhausted.
++- `AirEventSelfTests.cs`: expanded7 checks to18. Added long leading-empty → positive → trailing-empty fixture, interleaved chronological replacement, positive saturation before late empty reads, empty-only first/latest retention, decoded truncation with empty replacement, final accounting across fixtures, and600 mixed polls with invariants checked after each Add.
++- `EventSampling.cs`: only the enabled-air explanatory Details string changed to describe retention accurately. Actual call routing, default projectile output, fixed MatchKey/LicenseEpoch/Allowed guards and cancellation/deadline logic are unchanged.
++- `README.md`: new retention policy, exact accounting semantics,18-test coverage and551-poll fixture result.
++- `air-events-handoff.md`: current evidence and binary hash; this replaces the previous handoff after the parent's explicit continuation request.
++
++No JSON field names or types changed. `--air-events` remains optional/default false; all-sides maintenance diagnostic scope remains distinct from production enemy-only UI. No-event remains sample_absent, never gameplay PASS.
++
++For N successful AirEventEvidence.Add calls:
++
++- `N == retainedFrames + droppedFrames` (droppedFrames includes replaced empty frames).
++- `decodedObservationCount == retainedDecoded + droppedDecoded`.
++- `retainedDecoded == sum(frames[].decoded.Length)`; each frame retains at most16 decoded items.
++- Empty replacement contributes0 to droppedDecoded. Retained frames stay in read/time order, with at most2 decodedCount=0 frames and126 positive frames.
+ 
+ ## Verification
+ 
+-- `Build.ps1`: success, 0 warnings, 0 errors.
++- Regression before fix: normal build succeeded, then new air selftest failed as expected at `FAIL long leading empties retain only first and latest and count replacements` (native exit1, captured in `air-retention-regression-before.log`).
++- Final `Build.ps1`: success,0 warnings,0 errors (`build.log`).
+ - `--self-test`: exit0, passed20 (`self-test.log`).
+ - `--event-self-test`: exit0, passed16 (`event-self-test.log`).
+-- `--air-event-self-test`: exit0, passed7 (`air-event-self-test.log`).
+-- `--air-events` without duration: expected exit2 before initialization (`air-events-cli-test.log`).
+-- No actual live event evidence was collected; synthetic tests only verify runner behavior. No-event is never a gameplay acceptance PASS.
+-- Scoped git status reports this pre-existing runner directory as untracked, so git diff has no baseline for these files; final modified source was read/reviewed directly.
++- `--air-event-self-test`: exit0, passed18 (`air-event-self-test.log`). Total54 checks.
++- Synthetic551-poll fixture:400 leading empties,83 one-item positive polls,68 trailing empties →85 retained frames /83 retained decoded, droppedFrames=466, droppedDecoded=0. Retained times:0,400..482,550. This is a structural regression fixture, not a replay of run25 or new live evidence.
++- Positive-cap fixture:130 positives followed by3 empty reads →128 retained frames /126 decoded, droppedFrames=5, droppedDecoded=4, first/latest empty times130/132.
++- Mixed truncation fixture:400 empty /17 positive polls of20 items /3 empty →19 frames /256 decoded, droppedFrames=401, droppedDecoded=84.
++-600 mixed synthetic polls satisfy accounting, chronological order and all budgets after every Add.
++
++The untracked runner directory has no Git baseline. Before-edit copies are in `artifacts/air-retention-fix-before/` with `.before` suffixes; `air-retention-fix.diff` provides the five-file review diff against those copies.
+ 
+-## Binary
++## Final binary
+ 
+ Executable: `F:\WorkSpace\Game\CoH3\dev\SkyEye\tests\maintenance-live\bin\Release\net48\SkyEye.Maintenance.Live.exe`
+ 
+ Matching intermediate: `F:\WorkSpace\Game\CoH3\dev\SkyEye\tests\maintenance-live\obj\Release\net48\SkyEye.Maintenance.Live.exe`
+ 
+-Both SHA256: `40E954B3C0404EA9362EFFE9287D2A7F7BAC20B1CCBDF7BDD1C4AD9347F1290F`
+-
+-Build log: `F:\WorkSpace\Game\CoH3\dev\SkyEye\tests\maintenance-live\build.log`
++Both SHA256: `51D2B29FC617D76E217A0CA8B5944F000C0E157C3E1A242FAAF15AE27C4620CD`
+ 
+-Handoff is final: no further runtime/source edits or live launch by this worker after this report.
++Handoff is final: no further runtime/source edits, rebuilds or live launch by this worker after delivery. Parent will review before any actual sampling. This worker collected only offline runner/build evidence.

@@ -1,0 +1,25 @@
+{
+  "pid": 33656,
+  "startUtc": "2026-11-21T03:42:27.6605831Z",
+  "hwnd": 2428198,
+  "action": "foreground_checked_native_double_click",
+  "events": [
+    {
+      "click": 1,
+      "utc": "2026-11-21T04:50:33.356671+00:00",
+      "client": [
+        1680,
+        1040
+      ]
+    },
+    {
+      "click": 2,
+      "utc": "2026-11-21T04:50:33.488994+00:00",
+      "client": [
+        1680,
+        1040
+      ]
+    }
+  ],
+  "screenshot": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\fresh02-light-support-ordered.png"
+}

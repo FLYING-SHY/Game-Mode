@@ -1,0 +1,33 @@
+{
+  "status": "PASS_fixture_only",
+  "date_local": "2026-11-22",
+  "configurations": [
+    {
+      "name": "SkyEye production helper/context",
+      "configuration": "Release",
+      "checks": 121,
+      "exit_code": 0,
+      "job_id": "pwsh-219d85cc4e3648c5"
+    },
+    {
+      "name": "Simple production helper/context",
+      "configuration": "Release",
+      "checks": 121,
+      "exit_code": 0,
+      "job_id": "pwsh-a2db01a338aa44a0"
+    }
+  ],
+  "real_game": "not_run",
+  "native_process_open": "not_linked",
+  "license": "not_linked",
+  "production_helper": "linked",
+  "production_reader": "source_seams_only",
+  "production_reader_sha256": "8AE3E8BF3C3D9E90924D71799EBEB39E07256DB05F8D44073BB89F9A17C48545",
+  "production_context_sha256": "C10952282B89964316796525F331E1E0519642F8A443C5BDC24D042C518C3D29",
+  "production_helper_sha256": "1BC671A1641B6BA2D46F8F91B11D5790DB8E346D55D2262070F06EBF607D7878",
+  "remaining": [
+    "Full production build and protection are owned by lead.",
+    "Real UI integration and live game regression are not established by this fixture.",
+    "Supported-root-frontier coverage and steady-state read cost need native G."
+  ]
+}

@@ -1,0 +1,518 @@
+{
+  "timestamp": "2026-11-20T17:16:29.543699+00:00",
+  "pid": 11192,
+  "verification": "candidate_only",
+  "hypotheses": [
+    {
+      "globalRva": "0x6b9c1c8",
+      "error": "Invalid or unbounded read"
+    },
+    {
+      "globalRva": "0x6b9e078",
+      "singleton": "0x17c795de410",
+      "root": "0x17cca47b9f0",
+      "type": ".?AVGameUIAppWindow@WPFGUI@@",
+      "vtableRva": "0x3dd4bf0",
+      "objectOffset": 0,
+      "visited": 3475,
+      "queueRemaining": 0,
+      "types": {
+        ".?AVGameUIAppWindow@WPFGUI@@": 1,
+        ".?AVBorder@AVUI@@": 516,
+        ".?AVAdornerDecorator@AVUI@@": 14,
+        ".?AVContentPresenter@AVUI@@": 274,
+        ".?AVAdornerLayer@AVUI@@": 41,
+        ".?AVGrid@AVUI@@": 778,
+        ".?AVRectangle@AVUI@@": 296,
+        ".?AVFrameworkElement@AVUI@@": 7,
+        ".?AVContentControl@AVUI@@": 108,
+        ".?AVFrame@AVUI@@": 13,
+        ".?AVImage@AVUI@@": 196,
+        ".?AVTransitionControl@WPFGUI@@": 6,
+        ".?AVAnvilRTSHUDPage@WPFGUI@@": 1,
+        ".?AVLetterbox@WPFGUI@@": 1,
+        ".?AVControl@AVUI@@": 137,
+        ".?AVStackPanel@AVUI@@": 129,
+        ".?AVCanvas@AVUI@@": 3,
+        ".?AVBlurredBackgroundBorder@WPFGUI@@": 1,
+        ".?AVTextBlock@AVUI@@": 277,
+        ".?AVTacticalPauseControl@WPFGUI@@": 1,
+        ".?AVButton@AVUI@@": 39,
+        ".?AVPositionCanvasItemsControl@WPFGUI@@": 6,
+        ".?AVTacticalMapControl@WPFGUI@@": 1,
+        ".?AVItemsControl@AVUI@@": 47,
+        ".?AVScrollViewer@AVUI@@": 28,
+        ".?AVDockPanel@AVUI@@": 7,
+        ".?AVScrim@WPFGUI@@": 1,
+        ".?AVItemsPresenter@AVUI@@": 47,
+        ".?AVChatControl@WPFGUI@@": 3,
+        ".?AVListBox@AVUI@@": 1,
+        ".?AVCompassControl@WPFGUI@@": 2,
+        ".?AVAlignedCanvas@WPFGUI@@": 6,
+        ".?AVXamlPresenter@WPFGUI@@": 1,
+        ".?AVEllipse@AVUI@@": 10,
+        ".?AVDecorator@AVUI@@": 23,
+        ".?AVDelegateCommand@@": 1,
+        ".?AV?$ObservableCollection@VGroupStyle@AVUI@@@AVUI@@": 2,
+        ".?AVMediaElement@AVUI@@": 1,
+        ".?AVAnimatedItemsControl@WPFGUI@@": 1,
+        ".?AVPath@AVUI@@": 1,
+        ".?AVPerspectiveBox@WPFGUI@@": 2,
+        ".?AVFacingVisualControl@WPFGUI@@": 3,
+        ".?AVAnvilCompassCanvas@WPFGUI@@": 2,
+        ".?AVMapControl@WPFGUI@@": 1,
+        ".?AVWatermarkTextBox@WPFGUI@@": 1,
+        ".?AVAnimatedPanel@WPFGUI@@": 1,
+        ".?AVProgressBar@AVUI@@": 94,
+        ".?AVAnimatedItem@WPFGUI@@": 4,
+        ".?AVMapCanvas@WPFGUI@@": 9,
+        ".?AVScrollContentPresenter@AVUI@@": 27,
+        ".?AVScrollBar@AVUI@@": 54,
+        ".?AVTrack@AVUI@@": 1,
+        ".?AVRepeatButton@AVUI@@": 2,
+        ".?AVThumb@AVUI@@": 1,
+        ".?AVUniformGrid@AVUI@@": 3,
+        ".?AVTextBoxView@AVUI@@": 1,
+        ".?AVSmoothStackPanel@WPFGUI@@": 3,
+        ".?AVCircularProgressBar@WPFGUI@@": 61,
+        ".?AVAccordionPanel@WPFGUI@@": 6,
+        ".?AVMarquee@WPFGUI@@": 56,
+        ".?AVIssuableButton@WPFGUI@@": 30,
+        ".?AVRing@WPFGUI@@": 13,
+        ".?AVMarqueeContentPresenter@WPFGUI@@": 44,
+        ".?AVRangeInterpolator@WPFGUI@@": 3,
+        ".?AVWrapPanel@AVUI@@": 1,
+        ".?AVCancelButton@WPFGUI@@": 12,
+        ".?AVToggleButton@AVUI@@": 12
+      },
+      "selected": [
+        {
+          "address": "0x17cca47b9f0",
+          "parent": "0x0",
+          "type": ".?AVGameUIAppWindow@WPFGUI@@",
+          "vtableRva": "0x3dd4bf0",
+          "objectOffset": 0,
+          "bodyHex": "f04b5ba7f77f00000000000000000000040000000000000040952aaaf77f000008a506767c01000050aa04777c01000000000000ffffffffd086afaf7c010000809b47787c010000609c47787c010000000000007c01000000000000000000000000000000000000000000000000000070900aa77c0100002a00773e170c3800000000007c010000000000000000000000000000000000000000000000000000000000000000000000000000000000004cf30aca00000000ec120b4a109c9a493280012a00000200000000000000000028435ba7f77f0000d0405ba7f77f0000000000007c010000000000000000000000000000000000000000000000000000000000007c01000000000000000000000000000000000000000000000000000000000000000000000000f0440000874400000000000000000000f044000087440304c0000000f044000087440000f04400008744ffffffff58405ba7f77f000070405ba7f77f000088405ba7f77f0000a0405ba7f77f0000000000007c01000000000000000000000000000000000000000000000000000000986045ffff3088010000007c010000000000000000000000000000ffffffff0000000000000000000000000000000000000000000000000000000000000000000973aa7c01000020650ea47e0100000000000000000000c09803a47e010000b8405ba7f77f000088f65aa7f77f0000000000000000000001000000000000000000000000000000000000000000000070f65aa7f77f000000000000000000000000000000000000"
+        },
+        {
+          "address": "0x1808ebd78e0",
+          "parent": "0x17ead9817b0",
+          "type": ".?AVAnvilRTSHUDPage@WPFGUI@@",
+          "vtableRva": "0x3eac6b0",
+          "objectOffset": 0,
+          "bodyHex": "b0c668a7f77f000000000000000000000400000000000000400827aaf77f00004869f3757c010000d0f30c777c0100000000000022616374d086afaf7c010000409f89777c010000d0e8782b80010000000000006c6c656e000000000000000000000000000000000000000000000000b056fead8001000030006e741910380000000000756e7422b01798ad7e01000000000000000000000000000000000000000000000000000000000000000000004cf30aca00000000ec120b4a109c9a493080012a0b00010000e5efad8001000090c468a7f77f000058c468a7f77f00000000000075697265000000000000000000000000000000000000000000000000000000007b227479000000000000000000000000000000000000000000000000000000000000000000007a440000514400000000000000000000f044000087440104c0000000f044000087440000f044000087447d2c2265c0c368a7f77f0000d8c368a7f77f0000f0c368a7f77f000008c468a7f77f0000000000002274726100000000000000000000000000000000000000000000000000986045ffffb00800000000756c6573000000000000000000000000223a5b7be0dd7ea17c0100006864f6757c010000209c02ca7c010000000000000000000000e5efad80010000a0700ea47e01000000000000656e7422a01b02a47e01000020c468a7f77f000038c468a7f77f0000b05097777c01000070be7400800100000000000000000000906c1c058001000030ead3ad80010000d0c5a00b80010000e056a02580010000"
+        },
+        {
+          "address": "0x180adda0ad0",
+          "parent": "0x180adddd680",
+          "type": ".?AVTacticalMapControl@WPFGUI@@",
+          "vtableRva": "0x3e7b810",
+          "objectOffset": 0,
+          "bodyHex": "10b865a7f77f000000000000000000000200000000000000c0f426aaf77f0000881e74787c010000509320777c0100000000000000000000d086afaf7c01000090eddcad80010000a05cdbad800100000000000000000000e078bd8e80010000d0d2d9ad800100008051dbad80010000b02879787c010000100000001000a800000000000000000080d6ddad80010000800cdaad80010000205edbad80010000000000000000000000000000000000000000807f0000807f000080ff000080ff1800012a120001003051dbad80010000f0b565a7f77f000048ad65a7f77f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000cd0200010000000000000000000000000000000000000000d0ac65a7f77f0000e8ac65a7f77f000000ad65a7f77f000018ad65a7f77f0000000000000000000080ead9ad80010000d8eedcad80010000e85ddbad80010000018160411000800904000000000000000000000000000000000000000000000080d6ddad8001000000e0ddad80010000500bdaad80010000f0c0afad800100003051dbad80010000b0a711a47e0100000000000000000000c07bb7ad8001000030ad65a7f77f000080ad65a7f77f0000b055dbad80010000305adbad800100007088dcad80010000f08cdcad800100007b5ca9e3000d0090a04856a7f77f00000000000000000000",
+          "properties": [
+            {
+              "flags": "0xb",
+              "key": 3,
+              "value": "0x17c7716fcd0",
+              "resolved": "0x17c7716fcd0",
+              "float40": -2.966632947870411e-15,
+              "type": ".?AVFrugalMap@AVUI@@",
+              "vtableRva": "0x3d7c4f0",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0xb",
+              "key": 22,
+              "value": "0x180add5ec80",
+              "resolved": "0x180add5ec80",
+              "float40": -2.9660857645864847e-15,
+              "type": ".?AV?$ItemStructList@V?$TRefCountedPtr@VDependencyObject@AVUI@@@AVUI@@@AVUI@@",
+              "vtableRva": "0x3d7bab8",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0xb",
+              "key": 24,
+              "value": "0x180add7e900",
+              "resolved": "0x180add7e900",
+              "float40": -2.041522506601723e-11,
+              "type": ".?AV?$TArray@V?$TRefCountedPtr@VHybridDictionary@AVUI@@@AVUI@@@AVUI@@",
+              "vtableRva": "0x3d7c608",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0xb",
+              "key": 27,
+              "value": "0x17c77208e50",
+              "resolved": "0x17c77208e50",
+              "float40": -2.96672273336282e-15,
+              "type": ".?AVHybridDictionary@AVUI@@",
+              "vtableRva": "0x3d7c698",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0xb",
+              "key": 39,
+              "value": "0x7ff7a9953f60",
+              "resolved": "0x7ff7a9953f60",
+              "float40": 0.0,
+              "type": ".?AV?$BoxedValueTypeInstance@M@AVUI@@",
+              "vtableRva": "0x3d77450",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0x119",
+              "key": 88,
+              "value": "0x17c75ef9a10",
+              "resolved": "0x7ff7a9953fd0",
+              "float40": 0.0,
+              "type": ".?AV?$BoxedValueTypeInstance@H@AVUI@@",
+              "vtableRva": "0x3d8dd10",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0x9",
+              "key": 96,
+              "value": "0x7ff7a9953e38",
+              "resolved": "0x7ff7a9953e38",
+              "float40": 0.0,
+              "type": ".?AV?$BoxedValueTypeInstance@_N@AVUI@@",
+              "vtableRva": "0x3d82700",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0x9",
+              "key": 98,
+              "value": "0x180adafc0f0",
+              "resolved": "0x180adafc0f0",
+              "float40": 0.0,
+              "type": ".?AVStyle@AVUI@@",
+              "vtableRva": "0x3d7c2b8",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0xb",
+              "key": 103,
+              "value": "0x17e396d6ff0",
+              "resolved": "0x17e396d6ff0",
+              "float40": -2.073036187155708e-11,
+              "type": ".?AVString@AVUI@@",
+              "vtableRva": "0x3d774f0",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0x9",
+              "key": 116,
+              "value": "0x17e39bcf720",
+              "resolved": "0x17e39bcf720",
+              "float40": 4.203895392974451e-45,
+              "type": ".?AV?$BoxedValueTypeInstance@H@AVUI@@",
+              "vtableRva": "0x3d8dd10",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0x9",
+              "key": 117,
+              "value": "0x17e39bd00a0",
+              "resolved": "0x17e39bd00a0",
+              "float40": 4.203895392974451e-45,
+              "type": ".?AV?$BoxedValueTypeInstance@H@AVUI@@",
+              "vtableRva": "0x3d8dd10",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0x5",
+              "key": 250,
+              "value": "0x180adb77bc0",
+              "resolved": "0x180adb77bc0",
+              "float40": 0.0,
+              "type": ".?AVControlTemplate@AVUI@@",
+              "vtableRva": "0x3e06860",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0x9",
+              "key": 481,
+              "value": "0x7ff7a9953fd0",
+              "resolved": "0x7ff7a9953fd0",
+              "float40": 0.0,
+              "type": ".?AV?$BoxedValueTypeInstance@H@AVUI@@",
+              "vtableRva": "0x3d8dd10",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0x9",
+              "key": 483,
+              "value": "0x17e39bcde60",
+              "resolved": "0x17e39bcde60",
+              "float40": 2.802596928649634e-45,
+              "type": ".?AV?$BoxedValueTypeInstance@H@AVUI@@",
+              "vtableRva": "0x3d8dd10",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0x119",
+              "key": 874,
+              "value": "0x17c75f7c030",
+              "resolved": "0x180add84040",
+              "float40": 384.0,
+              "type": ".?AV?$BoxedValueTypeInstance@M@AVUI@@",
+              "vtableRva": "0x3d77450",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0x119",
+              "key": 875,
+              "value": "0x17c75f7c0f0",
+              "resolved": "0x180add831c0",
+              "float40": 384.0,
+              "type": ".?AV?$BoxedValueTypeInstance@M@AVUI@@",
+              "vtableRva": "0x3d77450",
+              "objectOffset": 0
+            }
+          ]
+        },
+        {
+          "address": "0x180add3ea30",
+          "parent": "0x180adb4cba0",
+          "type": ".?AVMapControl@WPFGUI@@",
+          "vtableRva": "0x3e7b160",
+          "objectOffset": 0,
+          "bodyHex": "60b165a7f77f00000000000000000000010000000000000050f22aaaf77f0000f80978797c010000d0a024777c0100000000000000000000d086afaf7c01000010d435498001000010e7d6ad800100000000000000000000e078bd8e80010000d0f6d3ad8001000030e7d6ad80010000b0c974787c010000100000000f0028000000000000000000a0cbb4ad80010000e0ebd3ad8001000090e8d6ad80010000000000000000000000008c4200005042d0d7ed36298b4ab600439743000086433080012a18000100c01e24ae8001000040af65a7f77f000080ae65a7f77f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000086430000864300000000000000000000cc430000ba430100c0000060f0440000807f00008643000086432053756208ae65a7f77f000020ae65a7f77f000038ae65a7f77f000050ae65a7f77f000000000000000000000000000000000000000000000000000000000000000000000098e041ffff8000050000000000000000000000000000000000000000000000a0cbb4ad8001000000f7d3ad80010000b0ead3ad80010000703777a47e010000c01e24ae80010000b0a711a47e0100000000000000000000d02f29ad7e01000068ae65a7f77f0000b8ae65a7f77f000077c2a3e1001d00900b00030000000000501b0e777c0100000b00040000000000d09ff8777c0100000b00180000000000f0accbad80010000",
+          "properties": [
+            {
+              "flags": "0xb",
+              "key": 3,
+              "value": "0x17c77250250",
+              "resolved": "0x17c77250250",
+              "float40": -2.966632947870411e-15,
+              "type": ".?AVFrugalMap@AVUI@@",
+              "vtableRva": "0x3d7c4f0",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0xb",
+              "key": 22,
+              "value": "0x180ae275a60",
+              "resolved": "0x180ae275a60",
+              "float40": -2.9660857645864847e-15,
+              "type": ".?AV?$ItemStructList@V?$TRefCountedPtr@VDependencyObject@AVUI@@@AVUI@@@AVUI@@",
+              "vtableRva": "0x3d7bab8",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0xb",
+              "key": 23,
+              "value": "0x1800b57b340",
+              "resolved": "0x1800b57b340",
+              "float40": -2.96672273336282e-15,
+              "type": ".?AVHybridDictionary@AVUI@@",
+              "vtableRva": "0x3d7c698",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0xb",
+              "key": 24,
+              "value": "0x180adcbb970",
+              "resolved": "0x180adcbb970",
+              "float40": -2.0412310730577587e-11,
+              "type": ".?AV?$TArray@V?$TRefCountedPtr@VHybridDictionary@AVUI@@@AVUI@@@AVUI@@",
+              "vtableRva": "0x3d7c608",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0x1b",
+              "key": 88,
+              "value": "0x17c75f75eb0",
+              "resolved": "0x180ae291a20",
+              "float40": 2.802596928649634e-45,
+              "type": ".?AV?$BoxedValueTypeInstance@H@AVUI@@",
+              "vtableRva": "0x3d8dd10",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0xb",
+              "key": 96,
+              "value": "0x7ff7a9953e00",
+              "resolved": "0x7ff7a9953e00",
+              "float40": 1.401298464324817e-45,
+              "type": ".?AV?$BoxedValueTypeInstance@_N@AVUI@@",
+              "vtableRva": "0x3d82700",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0xb",
+              "key": 98,
+              "value": "0x17ea4773770",
+              "resolved": "0x17ea4773770",
+              "float40": 0.0,
+              "type": ".?AVStyle@AVUI@@",
+              "vtableRva": "0x3d7c2b8",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0xb",
+              "key": 103,
+              "value": "0x180adcd8b10",
+              "resolved": "0x180adcd8b10",
+              "float40": -2.2057800030950148e-11,
+              "type": ".?AVString@AVUI@@",
+              "vtableRva": "0x3d774f0",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0x1b",
+              "key": 108,
+              "value": "0x17c75eb56d0",
+              "resolved": "0x180ae291fe0",
+              "float40": 268.0,
+              "type": ".?AV?$BoxedValueTypeInstance@M@AVUI@@",
+              "vtableRva": "0x3d77450",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0x1b",
+              "key": 111,
+              "value": "0x17c75f75490",
+              "resolved": "0x180ae291aa0",
+              "float40": 268.0,
+              "type": ".?AV?$BoxedValueTypeInstance@M@AVUI@@",
+              "vtableRva": "0x3d77450",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0xb",
+              "key": 116,
+              "value": "0x180adcbb2f0",
+              "resolved": "0x180adcbb2f0",
+              "float40": 2.802596928649634e-45,
+              "type": ".?AV?$BoxedValueTypeInstance@H@AVUI@@",
+              "vtableRva": "0x3d8dd10",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0xb",
+              "key": 117,
+              "value": "0x180adcbbd30",
+              "resolved": "0x180adcbbd30",
+              "float40": 2.802596928649634e-45,
+              "type": ".?AV?$BoxedValueTypeInstance@H@AVUI@@",
+              "vtableRva": "0x3d8dd10",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0x5",
+              "key": 250,
+              "value": "0x17ead292fd0",
+              "resolved": "0x17ead292fd0",
+              "float40": 0.0,
+              "type": ".?AVControlTemplate@AVUI@@",
+              "vtableRva": "0x3e06860",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0x1b",
+              "key": 874,
+              "value": "0x17c75fc8f50",
+              "resolved": "0x180add82d80",
+              "float40": 384.0,
+              "type": ".?AV?$BoxedValueTypeInstance@M@AVUI@@",
+              "vtableRva": "0x3d77450",
+              "objectOffset": 0
+            },
+            {
+              "flags": "0x1b",
+              "key": 875,
+              "value": "0x17c75fc8e30",
+              "resolved": "0x180add82a00",
+              "float40": 384.0,
+              "type": ".?AV?$BoxedValueTypeInstance@M@AVUI@@",
+              "vtableRva": "0x3d77450",
+              "objectOffset": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "globalRva": "0x6b9e158",
+      "error": "Invalid or unbounded read"
+    }
+  ],
+  "propertyHypotheses": [
+    {
+      "oldSlotRva": "0x6ab2078",
+      "slotRva": "0x6ab2078",
+      "address": "0x7ff7aa292060",
+      "id": 0,
+      "type": ".?AV?$TRefCountedPtr@VDependencyProperty@AVUI@@@AVUI@@",
+      "vtableRva": "0x3d8dd70",
+      "objectOffset": 0
+    },
+    {
+      "oldSlotRva": "0x6ab2078",
+      "slotRva": "0x6ab3f28",
+      "address": "0x7ff7aa293ff8",
+      "id": 695,
+      "type": ".?AV?$TRefCountedPtr@VDependencyProperty@AVUI@@@AVUI@@",
+      "vtableRva": "0x3d8dd70",
+      "objectOffset": 0
+    },
+    {
+      "oldSlotRva": "0x6ab2078",
+      "slotRva": "0x6ab4008",
+      "address": "0x7ff7aa294318",
+      "id": 17336,
+      "type": ".?AV?$TRefCountedPtr@VDependencyProperty@AVUI@@@AVUI@@",
+      "vtableRva": "0x3d8dd70",
+      "objectOffset": 0
+    },
+    {
+      "oldSlotRva": "0x6acd388",
+      "slotRva": "0x6acd388",
+      "error": "Invalid or unbounded read"
+    },
+    {
+      "oldSlotRva": "0x6acd388",
+      "slotRva": "0x6acf238",
+      "address": "0x7ff7aa2af308",
+      "id": 4,
+      "type": ".?AV?$TRefCountedPtr@VDependencyProperty@AVUI@@@AVUI@@",
+      "vtableRva": "0x3d8dd70",
+      "objectOffset": 0
+    },
+    {
+      "oldSlotRva": "0x6acd388",
+      "slotRva": "0x6acf318",
+      "address": "0x7ff7aa2af330",
+      "id": 0,
+      "type": ".?AV?$TRefCountedPtr@VDependencyProperty@AVUI@@@AVUI@@",
+      "vtableRva": "0x3d8dd70",
+      "objectOffset": 0
+    },
+    {
+      "oldSlotRva": "0x6acd3b0",
+      "slotRva": "0x6acd3b0",
+      "address": "0x7ff7aa296600",
+      "id": 0,
+      "type": ".?AVType@AVUI@@",
+      "vtableRva": "0x3e06b28",
+      "objectOffset": 0
+    },
+    {
+      "oldSlotRva": "0x6acd3b0",
+      "slotRva": "0x6acf260",
+      "error": "Invalid or unbounded read"
+    },
+    {
+      "oldSlotRva": "0x6acd3b0",
+      "slotRva": "0x6acf340",
+      "address": "0x7ff7aa2af358",
+      "id": 0,
+      "type": ".?AV?$TRefCountedPtr@VDependencyProperty@AVUI@@@AVUI@@",
+      "vtableRva": "0x3d8dd70",
+      "objectOffset": 0
+    }
+  ],
+  "bytesRead": 4510270
+}

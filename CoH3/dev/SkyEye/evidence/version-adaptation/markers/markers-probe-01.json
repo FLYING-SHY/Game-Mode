@@ -1,0 +1,2050 @@
+{
+  "utc": "2026-11-20T17:38:10.545860+00:00",
+  "pid": 11192,
+  "moduleBase": "0x7ff7a37e0000",
+  "access": "0x410 PROCESS_QUERY_INFORMATION|PROCESS_VM_READ",
+  "status": "observed_sources",
+  "sourceSha256": "b5b29be06d90c33a59324a4b0429cd24eaf534350a2225d63f763ad1a707d7d0",
+  "sourceModel": "Reconstruction of ReadOwnedSquad/TrackSquadMember/ReadSquadMarkers, not a call into authorized runner Snapshot. No credentials/authentication involved.",
+  "players": [
+    {
+      "slot": 0,
+      "registryCount": 53,
+      "rejections": {
+        "no_squad": 46,
+        "unsupported_squad": 4
+      }
+    },
+    {
+      "slot": 1,
+      "registryCount": 334,
+      "rejections": {
+        "no_squad": 293,
+        "unsupported_squad": 4,
+        "no_live_health": 4
+      }
+    }
+  ],
+  "sources": [
+    {
+      "slot": 0,
+      "squad": "0x17c05212800",
+      "identity": "0xc350",
+      "path": "sbps\\races\\american\\infantry\\scout_us",
+      "members": [
+        {
+          "entity": "0x17c051ffc00",
+          "owner": "0x17c08c08000",
+          "generation": 2807501192,
+          "squadOffset": 86059008,
+          "snapshotRaw128": "f81057a7f77f0000be8d24bf000000007a1b44bf000000000000803f000000007a1b443f00000000be8d24bf0000c9c24da6c4410000a742a04b12b37c010000003c2b032800000028000000f4012b026010c008d016c0080080c00800000000881157a7f77f00001ee99a3b960b0000604bf69280010000c0454b0100282105",
+          "snapshotHealth": {
+            "kind": 500,
+            "index": 8,
+            "descriptor": "0x17c562b3cc0",
+            "mode": 0,
+            "value": "0xd3d2be0",
+            "state": 1,
+            "raw": "0000000000000000e02b3d0d0000000001000a0000000000",
+            "address": "0x17c0d3d2be0",
+            "health": 85.0
+          },
+          "recheckRaw128": "f81057a7f77f0000be8d24bf000000007a1b44bf000000000000803f000000007a1b443f00000000be8d24bf0000c9c24da6c4410000a742a04b12b37c010000003c2b032800000028000000f4012b026010c008d016c0080080c00800000000881157a7f77f00001ee99a3b960b0000604bf69280010000c0454b0100282105",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 500,
+            "index": 8,
+            "descriptor": "0x17c562b3cc0",
+            "mode": 0,
+            "value": "0xd3d2be0",
+            "state": 1,
+            "raw": "0000000000000000e02b3d0d0000000001000a0000000000",
+            "address": "0x17c0d3d2be0",
+            "health": 85.0
+          },
+          "position": [
+            -100.5,
+            24.581201553344727,
+            83.5
+          ],
+          "status": "position_observed"
+        },
+        {
+          "entity": "0x17c05206000",
+          "owner": "0x17c08c08000",
+          "generation": 2807501192,
+          "squadOffset": 86059008,
+          "snapshotRaw128": "f81057a7f77f0000be8d24bf000000007a1b44bf000000000000803f000000007a1b443f00000000be8d24bf0000d5c2c611c5410000a742203e12b37c010000004c2b032800000028000000f4012b026010c008d016c0080080c00800000000881157a7f77f000026e99a3b9e0b0000b069f69280010000404f4b0100282105",
+          "snapshotHealth": {
+            "kind": 500,
+            "index": 8,
+            "descriptor": "0x17c562b4cc0",
+            "mode": 0,
+            "value": "0xd3d2cb0",
+            "state": 1,
+            "raw": "0000000000000000b02c3d0d0000000001000a0000000000",
+            "address": "0x17c0d3d2cb0",
+            "health": 85.0
+          },
+          "recheckRaw128": "f81057a7f77f0000be8d24bf000000007a1b44bf000000000000803f000000007a1b443f00000000be8d24bf0000d5c2c611c5410000a742203e12b37c010000004c2b032800000028000000f4012b026010c008d016c0080080c00800000000881157a7f77f000026e99a3b9e0b0000b069f69280010000404f4b0100282105",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 500,
+            "index": 8,
+            "descriptor": "0x17c562b4cc0",
+            "mode": 0,
+            "value": "0xd3d2cb0",
+            "state": 1,
+            "raw": "0000000000000000b02c3d0d0000000001000a0000000000",
+            "address": "0x17c0d3d2cb0",
+            "health": 85.0
+          },
+          "position": [
+            -106.5,
+            24.633678436279297,
+            83.5
+          ],
+          "status": "position_observed"
+        },
+        {
+          "entity": "0x17c0520c400",
+          "owner": "0x17c08c08000",
+          "generation": 2807501192,
+          "squadOffset": 86059008,
+          "snapshotRaw128": "f81057a7f77f0000be8d24bf000000007a1b44bf000000000000803f000000007a1b443f00000000be8d24bf0000c5c2c0bdc4410000b142203e12b37c010000005c2b032800000028000000f4012b026010c008d016c0080080c00800000000881157a7f77f00002ee99a3ba60b00000060f69280010000c0584b0100282105",
+          "snapshotHealth": {
+            "kind": 500,
+            "index": 8,
+            "descriptor": "0x17c562b5cc0",
+            "mode": 0,
+            "value": "0xd3d2d80",
+            "state": 1,
+            "raw": "0000000000000000802d3d0d0000000001000a0000000000",
+            "address": "0x17c0d3d2d80",
+            "health": 85.0
+          },
+          "recheckRaw128": "f81057a7f77f0000be8d24bf000000007a1b44bf000000000000803f000000007a1b443f00000000be8d24bf0000c5c2c0bdc4410000b142203e12b37c010000005c2b032800000028000000f4012b026010c008d016c0080080c00800000000881157a7f77f00002ee99a3ba60b00000060f69280010000c0584b0100282105",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 500,
+            "index": 8,
+            "descriptor": "0x17c562b5cc0",
+            "mode": 0,
+            "value": "0xd3d2d80",
+            "state": 1,
+            "raw": "0000000000000000802d3d0d0000000001000a0000000000",
+            "address": "0x17c0d3d2d80",
+            "health": 85.0
+          },
+          "position": [
+            -98.5,
+            24.5926513671875,
+            88.5
+          ],
+          "status": "position_observed"
+        }
+      ],
+      "positions": [
+        [
+          -100.5,
+          24.581201553344727,
+          83.5
+        ],
+        [
+          -106.5,
+          24.633678436279297,
+          83.5
+        ],
+        [
+          -98.5,
+          24.5926513671875,
+          88.5
+        ]
+      ],
+      "sourceColourKnownDefault": false,
+      "runnerColourAssignmentPresentAtCapture": true,
+      "identityBeforeMatches": true,
+      "identityAfterMatches": true,
+      "memberCount": 3,
+      "validPositionCount": 3,
+      "centreIfRealColourBound": [
+        -101.83333333333333,
+        24.602510452270508,
+        85.16666666666667
+      ],
+      "preFixRunnerGateOutcome": "Skipped before member checks because source.ColourKnown defaults false",
+      "capturedRunnerBindingStatus": "Binding now present in source; actual runner execution is separate evidence"
+    },
+    {
+      "slot": 1,
+      "squad": "0x17c05226c00",
+      "identity": "0x10000c351",
+      "path": "sbps\\races\\german\\infantry\\pioneer_ger",
+      "members": [
+        {
+          "entity": "0x17c05222c00",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86141952,
+          "snapshotRaw128": "f81057a7f77f00009869e5be000000000cdd64bf000000000000803f000000000cdd643f000000009869e5be963fbcc10000a04114ceb040e03ee0b27c01000000b82b032700000027000000640298026010c008d016c0080090c00800000000881157a7f77f00004ae99a3bbd0b0000709cf4928001000080874b01006c2205",
+          "snapshotHealth": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562bb8c0",
+            "mode": 0,
+            "value": "0xd3d3400",
+            "state": 1,
+            "raw": "000000000000000000343d0d0000000001000a0000000000",
+            "address": "0x17c0d3d3400",
+            "health": 22.5
+          },
+          "recheckRaw128": "f81057a7f77f00009869e5be000000000cdd64bf000000000000803f000000000cdd643f000000009869e5be963fbcc10000a04114ceb040e03ee0b27c01000000b82b032700000027000000640298026010c008d016c0080090c00800000000881157a7f77f00004ae99a3bbd0b0000709cf4928001000080874b01006c2205",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562bb8c0",
+            "mode": 0,
+            "value": "0xd3d3400",
+            "state": 1,
+            "raw": "000000000000000000343d0d0000000001000a0000000000",
+            "address": "0x17c0d3d3400",
+            "health": 22.5
+          },
+          "position": [
+            -23.531047821044922,
+            20.0,
+            5.525156021118164
+          ],
+          "status": "position_observed"
+        }
+      ],
+      "positions": [
+        [
+          -23.531047821044922,
+          20.0,
+          5.525156021118164
+        ]
+      ],
+      "sourceColourKnownDefault": false,
+      "runnerColourAssignmentPresentAtCapture": true,
+      "identityBeforeMatches": true,
+      "identityAfterMatches": true,
+      "memberCount": 1,
+      "validPositionCount": 1,
+      "centreIfRealColourBound": [
+        -23.531047821044922,
+        20.0,
+        5.525156021118164
+      ],
+      "preFixRunnerGateOutcome": "Skipped before member checks because source.ColourKnown defaults false",
+      "capturedRunnerBindingStatus": "Binding now present in source; actual runner execution is separate evidence"
+    },
+    {
+      "slot": 1,
+      "squad": "0x17c0524b800",
+      "identity": "0xa0000c35b",
+      "path": "sbps\\races\\german\\vehicles\\kettenkrad_ger",
+      "members": [
+        {
+          "entity": "0x17c0524ce00",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86292480,
+          "snapshotRaw128": "f81057a7f77f00007823503f0826aebd5372133fd87d703d88077f3f0e79833df54814bff78a96bca5a0503f21258942f6769c41ebcfa8425034bfaf7c010000000c2c0325000000250000002e035e036010c008d016c0080090c008cb000000881157a7f77f000092e99a3b600b0000e0bae4867e010000c023460100b82405",
+          "snapshotHealth": {
+            "kind": 814,
+            "index": 8,
+            "descriptor": "0x17c562c0cc0",
+            "mode": 0,
+            "value": "0xd3d4510",
+            "state": 1,
+            "raw": "00000000adadadad10453d0d0000000001000aadadadadad",
+            "address": "0x17c0d3d4510",
+            "health": 180.0
+          },
+          "recheckRaw128": "f81057a7f77f00007823503f0826aebd5372133fd87d703d88077f3f0e79833df54814bff78a96bca5a0503f21258942f6769c41ebcfa8425034bfaf7c010000000c2c0325000000250000002e035e036010c008d016c0080090c008cb000000881157a7f77f000092e99a3b600b0000e0bae4867e010000c023460100b82405",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 814,
+            "index": 8,
+            "descriptor": "0x17c562c0cc0",
+            "mode": 0,
+            "value": "0xd3d4510",
+            "state": 1,
+            "raw": "00000000adadadad10453d0d0000000001000aadadadadad",
+            "address": "0x17c0d3d4510",
+            "health": 180.0
+          },
+          "position": [
+            68.57251739501953,
+            19.558086395263672,
+            84.40608978271484
+          ],
+          "status": "position_observed"
+        }
+      ],
+      "positions": [
+        [
+          68.57251739501953,
+          19.558086395263672,
+          84.40608978271484
+        ]
+      ],
+      "sourceColourKnownDefault": false,
+      "runnerColourAssignmentPresentAtCapture": true,
+      "identityBeforeMatches": true,
+      "identityAfterMatches": true,
+      "memberCount": 1,
+      "validPositionCount": 1,
+      "centreIfRealColourBound": [
+        68.57251739501953,
+        19.558086395263672,
+        84.40608978271484
+      ],
+      "preFixRunnerGateOutcome": "Skipped before member checks because source.ColourKnown defaults false",
+      "capturedRunnerBindingStatus": "Binding now present in source; actual runner execution is separate evidence"
+    },
+    {
+      "slot": 1,
+      "squad": "0x17c05278400",
+      "identity": "0xb0000c35c",
+      "path": "sbps\\races\\german\\infantry\\assault_grenadier_ger",
+      "members": [
+        {
+          "entity": "0x17c0517a400",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86475776,
+          "snapshotRaw128": "f81057a7f77f000000000000000000000000803f000000000000803f00000000000080bf000000000000000041c589c26a92c0410000764290ee42b27c01000000142c032700000027000000640298026010c008d016c0080090c00883010000881157a7f77f000096e99a3be20b0000a0d402b27c0100000061470100842705",
+          "snapshotHealth": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562c14c0",
+            "mode": 0,
+            "value": "0xd3d46b0",
+            "state": 1,
+            "raw": "0000000000000000b0463d0d0000000001000a0000000000",
+            "address": "0x17c0d3d46b0",
+            "health": 10.0
+          },
+          "recheckRaw128": "f81057a7f77f000000000000000000000000803f000000000000803f00000000000080bf000000000000000041c589c26a92c0410000764290ee42b27c01000000142c032700000027000000640298026010c008d016c0080090c00883010000881157a7f77f000096e99a3be20b0000a0d402b27c0100000061470100842705",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562c14c0",
+            "mode": 0,
+            "value": "0xd3d46b0",
+            "state": 1,
+            "raw": "0000000000000000b0463d0d0000000001000a0000000000",
+            "address": "0x17c0d3d46b0",
+            "health": 10.0
+          },
+          "position": [
+            -68.88526153564453,
+            24.071491241455078,
+            61.5
+          ],
+          "status": "position_observed"
+        },
+        {
+          "entity": "0x17c05258400",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86475776,
+          "snapshotRaw128": "f81057a7f77f000051595b3f0000000020fe033f000000000000803f0000000020fe03bf0000000051595b3f5d9a86c2a204bf4132ae744290ee42b27c010000002c29032700000027000000640298026010c008d016c0080090c00883010000881157a7f77f0000aae99a3b870b0000603703b27c010000c0fb4b0100842705",
+          "snapshotHealth": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c56292cc0",
+            "mode": 0,
+            "value": "0xd33a080",
+            "state": 1,
+            "raw": "00000000ffff7fbf80a0330d0000000001000a0000000000",
+            "address": "0x17c0d33a080",
+            "health": 60.0
+          },
+          "recheckRaw128": "f81057a7f77f000051595b3f0000000020fe033f000000000000803f0000000020fe03bf0000000051595b3f5d9a86c2a204bf4132ae744290ee42b27c010000002c29032700000027000000640298026010c008d016c0080090c00883010000881157a7f77f0000aae99a3b870b0000603703b27c010000c0fb4b0100842705",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c56292cc0",
+            "mode": 0,
+            "value": "0xd33a080",
+            "state": 1,
+            "raw": "00000000ffff7fbf80a0330d0000000001000a0000000000",
+            "address": "0x17c0d33a080",
+            "health": 60.0
+          },
+          "position": [
+            -67.3014907836914,
+            23.877262115478516,
+            61.17011260986328
+          ],
+          "status": "position_observed"
+        },
+        {
+          "entity": "0x17c05260600",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86475776,
+          "snapshotRaw128": "f81057a7f77f0000a95a663f00000000705ddf3e000000000000803f00000000705ddfbe00000000a95a663fc0c286c24d23bf415403754290ee42b27c010000001c2c032700000027000000640298026010c008d016c0080090c00883010000881157a7f77f0000b4e99a3bff0b0000f06503b27c01000040064c0100842705",
+          "snapshotHealth": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562c1cc0",
+            "mode": 0,
+            "value": "0xccb9380",
+            "state": 1,
+            "raw": "00000000ffff7fbf8093cb0c0000000001000a0000000000",
+            "address": "0x17c0ccb9380",
+            "health": 40.0
+          },
+          "recheckRaw128": "f81057a7f77f0000a95a663f00000000705ddf3e000000000000803f00000000705ddfbe00000000a95a663fc0c286c24d23bf415403754290ee42b27c010000001c2c032700000027000000640298026010c008d016c0080090c00883010000881157a7f77f0000b4e99a3bff0b0000f06503b27c01000040064c0100842705",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562c1cc0",
+            "mode": 0,
+            "value": "0xccb9380",
+            "state": 1,
+            "raw": "00000000ffff7fbf8093cb0c0000000001000a0000000000",
+            "address": "0x17c0ccb9380",
+            "health": 40.0
+          },
+          "position": [
+            -67.38037109375,
+            23.892236709594727,
+            61.25325012207031
+          ],
+          "status": "position_observed"
+        },
+        {
+          "entity": "0x17c05268600",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86475776,
+          "snapshotRaw128": "f81057a7f77f00005e75663f0000000025efde3e000000000000803f0000000025efdebe000000005e75663f39cd85c2f814be41790b714290ee42b27c01000000202c032700000027000000640298026010c008d016c0080090c00883010000881157a7f77f0000bee99a3b090c0000f025d8b17c010000c0104c0100842705",
+          "snapshotHealth": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562c20c0",
+            "mode": 0,
+            "value": "0xd3d42a0",
+            "state": 1,
+            "raw": "00000000ffff7fbfa0423d0d0000000001000a0000000000",
+            "address": "0x17c0d3d42a0",
+            "health": 80.0
+          },
+          "recheckRaw128": "f81057a7f77f00005e75663f0000000025efde3e000000000000803f0000000025efdebe000000005e75663f39cd85c2f814be41790b714290ee42b27c01000000202c032700000027000000640298026010c008d016c0080090c00883010000881157a7f77f0000bee99a3b090c0000f025d8b17c010000c0104c0100842705",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562c20c0",
+            "mode": 0,
+            "value": "0xd3d42a0",
+            "state": 1,
+            "raw": "00000000ffff7fbfa0423d0d0000000001000a0000000000",
+            "address": "0x17c0d3d42a0",
+            "health": 80.0
+          },
+          "position": [
+            -66.90082550048828,
+            23.760238647460938,
+            60.26120376586914
+          ],
+          "status": "position_observed"
+        },
+        {
+          "entity": "0x17c05270600",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86475776,
+          "snapshotRaw128": "f81057a7f77f0000a8a7693f00000000c533d13e000000000000803f00000000c533d1be00000000a8a7693f94d186c29330bf419b30754290ee42b27c01000000242c032700000027000000640298026010c008d016c0080090c00883010000881157a7f77f0000c8e99a3b130c00001060d8b17c010000401b4c0100842705",
+          "snapshotHealth": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562c24c0",
+            "mode": 0,
+            "value": "0xd3d4370",
+            "state": 1,
+            "raw": "00000000ffff7fbf70433d0d0000000001000a0000000000",
+            "address": "0x17c0d3d4370",
+            "health": 40.0
+          },
+          "recheckRaw128": "f81057a7f77f0000a8a7693f00000000c533d13e000000000000803f00000000c533d1be00000000a8a7693f94d186c29330bf419b30754290ee42b27c01000000242c032700000027000000640298026010c008d016c0080090c00883010000881157a7f77f0000c8e99a3b130c00001060d8b17c010000401b4c0100842705",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562c24c0",
+            "mode": 0,
+            "value": "0xd3d4370",
+            "state": 1,
+            "raw": "00000000ffff7fbf70433d0d0000000001000a0000000000",
+            "address": "0x17c0d3d4370",
+            "health": 40.0
+          },
+          "position": [
+            -67.40933227539062,
+            23.898717880249023,
+            61.29746627807617
+          ],
+          "status": "position_observed"
+        }
+      ],
+      "positions": [
+        [
+          -68.88526153564453,
+          24.071491241455078,
+          61.5
+        ],
+        [
+          -67.3014907836914,
+          23.877262115478516,
+          61.17011260986328
+        ],
+        [
+          -67.38037109375,
+          23.892236709594727,
+          61.25325012207031
+        ],
+        [
+          -66.90082550048828,
+          23.760238647460938,
+          60.26120376586914
+        ],
+        [
+          -67.40933227539062,
+          23.898717880249023,
+          61.29746627807617
+        ]
+      ],
+      "sourceColourKnownDefault": false,
+      "runnerColourAssignmentPresentAtCapture": true,
+      "identityBeforeMatches": true,
+      "identityAfterMatches": true,
+      "memberCount": 5,
+      "validPositionCount": 5,
+      "centreIfRealColourBound": [
+        -67.57545623779296,
+        23.899989318847656,
+        61.09640655517578
+      ],
+      "preFixRunnerGateOutcome": "Skipped before member checks because source.ColourKnown defaults false",
+      "capturedRunnerBindingStatus": "Binding now present in source; actual runner execution is separate evidence"
+    },
+    {
+      "slot": 1,
+      "squad": "0x17c052a7c00",
+      "identity": "0xc0000c35d",
+      "path": "sbps\\races\\german\\infantry\\assault_grenadier_ger",
+      "members": [
+        {
+          "entity": "0x17c05246400",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86670336,
+          "snapshotRaw128": "f81057a7f77f000030f964bf0000000030f9e4be000000000000803f0000000030f9e43e0000000030f964bf26abacc2ba249b4197ac1c4290ee42b27c01000000282c032700000027000000640298026010c008d016c0080090c008a5030000881157a7f77f0000dce99a3b7c07000010f011058001000080524501007c2a05",
+          "snapshotHealth": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562c28c0",
+            "mode": 0,
+            "value": "0xd3d4440",
+            "state": 1,
+            "raw": "00000000ffff7fbf40443d0d0000000001000a0000000000",
+            "address": "0x17c0d3d4440",
+            "health": 70.0
+          },
+          "recheckRaw128": "f81057a7f77f000030f964bf0000000030f9e4be000000000000803f0000000030f9e43e0000000030f964bf26abacc2ba249b4197ac1c4290ee42b27c01000000282c032700000027000000640298026010c008d016c0080090c008a5030000881157a7f77f0000dce99a3b7c07000010f011058001000080524501007c2a05",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562c28c0",
+            "mode": 0,
+            "value": "0xd3d4440",
+            "state": 1,
+            "raw": "00000000ffff7fbf40443d0d0000000001000a0000000000",
+            "address": "0x17c0d3d4440",
+            "health": 70.0
+          },
+          "position": [
+            -86.33427429199219,
+            19.392932891845703,
+            39.16854476928711
+          ],
+          "status": "position_observed"
+        },
+        {
+          "entity": "0x17c0527fc00",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86670336,
+          "snapshotRaw128": "f81057a7f77f0000d69b77bf00000000a40382be000000000000803f00000000a403823e00000000d69b77bf87b4b0c270399a412c68194290ee42b27c010000002c2c032700000027000000640298026010c008d016c0080090c008a5030000881157a7f77f0000e6e99a3be40b000010e1110580010000c0334c01007c2a05",
+          "snapshotHealth": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562c2cc0",
+            "mode": 0,
+            "value": "0xd142630",
+            "state": 1,
+            "raw": "00000000ffff7fbf3026140d0000000001000a0000000000",
+            "address": "0x17c0d142630",
+            "health": 10.0
+          },
+          "recheckRaw128": "f81057a7f77f0000d69b77bf00000000a40382be000000000000803f00000000a403823e00000000d69b77bf87b4b0c270399a412c68194290ee42b27c010000002c2c032700000027000000640298026010c008d016c0080090c008a5030000881157a7f77f0000e6e99a3be40b000010e1110580010000c0334c01007c2a05",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562c2cc0",
+            "mode": 0,
+            "value": "0xd142630",
+            "state": 1,
+            "raw": "00000000ffff7fbf3026140d0000000001000a0000000000",
+            "address": "0x17c0d142630",
+            "health": 10.0
+          },
+          "position": [
+            -88.35259246826172,
+            19.278045654296875,
+            38.35173034667969
+          ],
+          "status": "position_observed"
+        },
+        {
+          "entity": "0x17c0529fc00",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86670336,
+          "snapshotRaw128": "f81057a7f77f00007f324ebf000000001ab817bf000000000000803f000000001ab8173f000000007f324ebfe591adc2a8dc994104101a4290ee42b27c010000003c2c032700000027000000640298026010c008d016c0080090c008a5030000881157a7f77f00000eea9a3b460c0000f004474980010000c05d4c01007c2a05",
+          "snapshotHealth": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562c3cc0",
+            "mode": 0,
+            "value": "0xd0b9110",
+            "state": 1,
+            "raw": "00000000ffff7fbf10910b0d0000000001000a0000000000",
+            "address": "0x17c0d0b9110",
+            "health": 30.0
+          },
+          "recheckRaw128": "f81057a7f77f00007f324ebf000000001ab817bf000000000000803f000000001ab8173f000000007f324ebfe591adc2a8dc994104101a4290ee42b27c010000003c2c032700000027000000640298026010c008d016c0080090c008a5030000881157a7f77f00000eea9a3b460c0000f004474980010000c05d4c01007c2a05",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562c3cc0",
+            "mode": 0,
+            "value": "0xd0b9110",
+            "state": 1,
+            "raw": "00000000ffff7fbf10910b0d0000000001000a0000000000",
+            "address": "0x17c0d0b9110",
+            "health": 30.0
+          },
+          "position": [
+            -86.78495025634766,
+            19.232742309570312,
+            38.51564025878906
+          ],
+          "status": "position_observed"
+        }
+      ],
+      "positions": [
+        [
+          -86.33427429199219,
+          19.392932891845703,
+          39.16854476928711
+        ],
+        [
+          -88.35259246826172,
+          19.278045654296875,
+          38.35173034667969
+        ],
+        [
+          -86.78495025634766,
+          19.232742309570312,
+          38.51564025878906
+        ]
+      ],
+      "sourceColourKnownDefault": false,
+      "runnerColourAssignmentPresentAtCapture": true,
+      "identityBeforeMatches": true,
+      "identityAfterMatches": true,
+      "memberCount": 3,
+      "validPositionCount": 3,
+      "centreIfRealColourBound": [
+        -87.15727233886719,
+        19.30124028523763,
+        38.67863845825195
+      ],
+      "preFixRunnerGateOutcome": "Skipped before member checks because source.ColourKnown defaults false",
+      "capturedRunnerBindingStatus": "Binding now present in source; actual runner execution is separate evidence"
+    },
+    {
+      "slot": 1,
+      "squad": "0x17c052abe00",
+      "identity": "0xd0000c35e",
+      "path": "sbps\\races\\german\\team_weapons\\mortar_81mm_ger",
+      "members": [
+        {
+          "entity": "0x17c05021c00",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86687232,
+          "snapshotRaw128": "f81057a7f77f0000be4c233f000000001727453f000000000000803f00000000172745bf00000000be4c233fef8f70c10000a0413845594140540fb27c010000000826032800000028000000f4012b026010c008d016c0080090c008d1050000881157a7f77f000025ea9a3bf50b000090c511058001000000734a0100be2a05",
+          "snapshotHealth": {
+            "kind": 500,
+            "index": 8,
+            "descriptor": "0x17c562608c0",
+            "mode": 0,
+            "value": "0xcdc4030",
+            "state": 1,
+            "raw": "00000000000000003040dc0c0000000001000a0000000000",
+            "address": "0x17c0cdc4030",
+            "health": 80.0
+          },
+          "recheckRaw128": "f81057a7f77f0000be4c233f000000001727453f000000000000803f00000000172745bf00000000be4c233fef8f70c10000a0413845594140540fb27c010000000826032800000028000000f4012b026010c008d016c0080090c008d1050000881157a7f77f000025ea9a3bf50b000090c511058001000000734a0100be2a05",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 500,
+            "index": 8,
+            "descriptor": "0x17c562608c0",
+            "mode": 0,
+            "value": "0xcdc4030",
+            "state": 1,
+            "raw": "00000000000000003040dc0c0000000001000a0000000000",
+            "address": "0x17c0cdc4030",
+            "health": 80.0
+          },
+          "position": [
+            -15.035140037536621,
+            20.0,
+            13.579399108886719
+          ],
+          "status": "position_observed"
+        },
+        {
+          "entity": "0x17c050f9400",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86687232,
+          "snapshotRaw128": "f81057a7f77f000012c6413f000000009f4b273f000000000000803f000000009f4b27bf0000000012c6413fdcf56dc10000a04183d9624140540fb27c01000000ac29032800000028000000f4012b026010c008d016c0080090c008d1050000881157a7f77f000027ea9a3bec0b000070bd110580010000c0cd420100be2a05",
+          "snapshotHealth": {
+            "kind": 500,
+            "index": 8,
+            "descriptor": "0x17c5629acc0",
+            "mode": 0,
+            "value": "0xcdc41d0",
+            "state": 1,
+            "raw": "0000000000000000d041dc0c0000000001000a0000000000",
+            "address": "0x17c0cdc41d0",
+            "health": 80.0
+          },
+          "recheckRaw128": "f81057a7f77f000012c6413f000000009f4b273f000000000000803f000000009f4b27bf0000000012c6413fdcf56dc10000a04183d9624140540fb27c01000000ac29032800000028000000f4012b026010c008d016c0080090c008d1050000881157a7f77f000027ea9a3bec0b000070bd110580010000c0cd420100be2a05",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 500,
+            "index": 8,
+            "descriptor": "0x17c5629acc0",
+            "mode": 0,
+            "value": "0xcdc41d0",
+            "state": 1,
+            "raw": "0000000000000000d041dc0c0000000001000a0000000000",
+            "address": "0x17c0cdc41d0",
+            "health": 80.0
+          },
+          "position": [
+            -14.87252426147461,
+            20.0,
+            14.17810344696045
+          ],
+          "status": "position_observed"
+        },
+        {
+          "entity": "0x17c052a8e00",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86687232,
+          "snapshotRaw128": "f81057a7f77f0000e2b42c3f000000007ff73cbf000000000000803f000000007ff73c3f00000000e2b42c3f65884ac10000a04166af354140540fb27c010000008026032800000028000000f4012b026010c008d016c0080090c008d1050000881157a7f77f000029ea9a3be8000000e0ca11058001000040cf410100be2a05",
+          "snapshotHealth": {
+            "kind": 500,
+            "index": 8,
+            "descriptor": "0x17c562680c0",
+            "mode": 0,
+            "value": "0xcdc42a0",
+            "state": 1,
+            "raw": "0000000000000000a042dc0c0000000001000a0000000000",
+            "address": "0x17c0cdc42a0",
+            "health": 80.0
+          },
+          "recheckRaw128": "f81057a7f77f0000e2b42c3f000000007ff73cbf000000000000803f000000007ff73c3f00000000e2b42c3f65884ac10000a04166af354140540fb27c010000008026032800000028000000f4012b026010c008d016c0080090c008d1050000881157a7f77f000029ea9a3be8000000e0ca11058001000040cf410100be2a05",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 500,
+            "index": 8,
+            "descriptor": "0x17c562680c0",
+            "mode": 0,
+            "value": "0xcdc42a0",
+            "state": 1,
+            "raw": "0000000000000000a042dc0c0000000001000a0000000000",
+            "address": "0x17c0cdc42a0",
+            "health": 80.0
+          },
+          "position": [
+            -12.658299446105957,
+            20.0,
+            11.355321884155273
+          ],
+          "status": "position_observed"
+        },
+        {
+          "entity": "0x17c052aa600",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86687232,
+          "snapshotRaw128": "f81057a7f77f00006499153f000000008cbd4f3f000000000000803f000000008cbd4fbf000000006499153f53423ac10000a0410bd8324140540fb27c01000000402c032800000028000000f4012b026010c008d016c0080090c008d1050000881157a7f77f00002bea9a3bd606000080cb11058001000040704c0100be2a05",
+          "snapshotHealth": {
+            "kind": 500,
+            "index": 8,
+            "descriptor": "0x17c562c40c0",
+            "mode": 0,
+            "value": "0xcdc1930",
+            "state": 1,
+            "raw": "00000000000000003019dc0c0000000001000a0000000000",
+            "address": "0x17c0cdc1930",
+            "health": 80.0
+          },
+          "recheckRaw128": "f81057a7f77f00006499153f000000008cbd4f3f000000000000803f000000008cbd4fbf000000006499153f53423ac10000a0410bd8324140540fb27c01000000402c032800000028000000f4012b026010c008d016c0080090c008d1050000881157a7f77f00002bea9a3bd606000080cb11058001000040704c0100be2a05",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 500,
+            "index": 8,
+            "descriptor": "0x17c562c40c0",
+            "mode": 0,
+            "value": "0xcdc1930",
+            "state": 1,
+            "raw": "00000000000000003019dc0c0000000001000a0000000000",
+            "address": "0x17c0cdc1930",
+            "health": 80.0
+          },
+          "position": [
+            -11.641192436218262,
+            20.0,
+            11.17774486541748
+          ],
+          "status": "position_observed"
+        }
+      ],
+      "positions": [
+        [
+          -15.035140037536621,
+          20.0,
+          13.579399108886719
+        ],
+        [
+          -14.87252426147461,
+          20.0,
+          14.17810344696045
+        ],
+        [
+          -12.658299446105957,
+          20.0,
+          11.355321884155273
+        ],
+        [
+          -11.641192436218262,
+          20.0,
+          11.17774486541748
+        ]
+      ],
+      "sourceColourKnownDefault": false,
+      "runnerColourAssignmentPresentAtCapture": true,
+      "identityBeforeMatches": true,
+      "identityAfterMatches": true,
+      "memberCount": 4,
+      "validPositionCount": 4,
+      "centreIfRealColourBound": [
+        -13.551789045333862,
+        20.0,
+        12.57264232635498
+      ],
+      "preFixRunnerGateOutcome": "Skipped before member checks because source.ColourKnown defaults false",
+      "capturedRunnerBindingStatus": "Binding now present in source; actual runner execution is separate evidence"
+    },
+    {
+      "slot": 1,
+      "squad": "0x17c052b8600",
+      "identity": "0xe0000c35f",
+      "path": "sbps\\races\\german\\infantry\\pioneer_ger",
+      "members": [
+        {
+          "entity": "0x17c05189600",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86738432,
+          "snapshotRaw128": "f81057a7f77f0000f0bf643e00000000e187793f000000000000803f00000000e18779bf00000000f0bf643e234bb4c21ccc9541bdd70f42e03ee0b27c01000000442c032700000027000000640298026010c008d016c0080090c008a3060000881157a7f77f000031ea9a3be90b0000c06691fe7e01000080ed4b0100862b05",
+          "snapshotHealth": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562c44c0",
+            "mode": 0,
+            "value": "0xce42b10",
+            "state": 1,
+            "raw": "0000000000000000102be40c0000000001000a0000000000",
+            "address": "0x17c0ce42b10",
+            "health": 15.0
+          },
+          "recheckRaw128": "f81057a7f77f0000f0bf643e00000000e187793f000000000000803f00000000e18779bf00000000f0bf643e234bb4c21ccc9541bdd70f42e03ee0b27c01000000442c032700000027000000640298026010c008d016c0080090c008a3060000881157a7f77f000031ea9a3be90b0000c06691fe7e01000080ed4b0100862b05",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562c44c0",
+            "mode": 0,
+            "value": "0xce42b10",
+            "state": 1,
+            "raw": "0000000000000000102be40c0000000001000a0000000000",
+            "address": "0x17c0ce42b10",
+            "health": 15.0
+          },
+          "position": [
+            -90.1467514038086,
+            18.72466278076172,
+            35.9606819152832
+          ],
+          "status": "position_observed"
+        },
+        {
+          "entity": "0x17c052b0600",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86738432,
+          "snapshotRaw128": "f81057a7f77f0000d28c5b3e00000000f70b7a3f000000000000803f00000000f70b7abf00000000d28c5b3e6a40b2c22ac494418f090f42e03ee0b27c010000004c2c032700000027000000640298026010c008d016c0080090c008a3060000881157a7f77f000036ea9a3bef0b0000806091fe7e01000080814c0100862b05",
+          "snapshotHealth": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562c4cc0",
+            "mode": 0,
+            "value": "0xd141c70",
+            "state": 1,
+            "raw": "0000000000000000701c140d0000000001000a0000000000",
+            "address": "0x17c0d141c70",
+            "health": 45.0
+          },
+          "recheckRaw128": "f81057a7f77f0000d28c5b3e00000000f70b7a3f000000000000803f00000000f70b7abf00000000d28c5b3e6a40b2c22ac494418f090f42e03ee0b27c010000004c2c032700000027000000640298026010c008d016c0080090c008a3060000881157a7f77f000036ea9a3bef0b0000806091fe7e01000080814c0100862b05",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562c4cc0",
+            "mode": 0,
+            "value": "0xd141c70",
+            "state": 1,
+            "raw": "0000000000000000701c140d0000000001000a0000000000",
+            "address": "0x17c0d141c70",
+            "health": 45.0
+          },
+          "position": [
+            -89.12580871582031,
+            18.595783233642578,
+            35.759334564208984
+          ],
+          "status": "position_observed"
+        },
+        {
+          "entity": "0x17c052b4600",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86738432,
+          "snapshotRaw128": "f81057a7f77f0000907fd03e00000000e9cf693f000000000000803f00000000e9cf69bf00000000907fd03eed54b7c26c2d984198ba1242e03ee0b27c01000000502c032700000027000000640298026010c008d016c0080090c008a3060000881157a7f77f00003bea9a3b6f070000405f91fe7e01000080884c0100862b05",
+          "snapshotHealth": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562c50c0",
+            "mode": 0,
+            "value": "0xcf1c510",
+            "state": 1,
+            "raw": "000000000000000010c5f10c0000000001000a0000000000",
+            "address": "0x17c0cf1c510",
+            "health": 85.0
+          },
+          "recheckRaw128": "f81057a7f77f0000907fd03e00000000e9cf693f000000000000803f00000000e9cf69bf00000000907fd03eed54b7c26c2d984198ba1242e03ee0b27c01000000502c032700000027000000640298026010c008d016c0080090c008a3060000881157a7f77f00003bea9a3b6f070000405f91fe7e01000080884c0100862b05",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562c50c0",
+            "mode": 0,
+            "value": "0xcf1c510",
+            "state": 1,
+            "raw": "000000000000000010c5f10c0000000001000a0000000000",
+            "address": "0x17c0cf1c510",
+            "health": 85.0
+          },
+          "position": [
+            -91.6658706665039,
+            19.022178649902344,
+            36.682220458984375
+          ],
+          "status": "position_observed"
+        }
+      ],
+      "positions": [
+        [
+          -90.1467514038086,
+          18.72466278076172,
+          35.9606819152832
+        ],
+        [
+          -89.12580871582031,
+          18.595783233642578,
+          35.759334564208984
+        ],
+        [
+          -91.6658706665039,
+          19.022178649902344,
+          36.682220458984375
+        ]
+      ],
+      "sourceColourKnownDefault": false,
+      "runnerColourAssignmentPresentAtCapture": true,
+      "identityBeforeMatches": true,
+      "identityAfterMatches": true,
+      "memberCount": 3,
+      "validPositionCount": 3,
+      "centreIfRealColourBound": [
+        -90.31281026204427,
+        18.780874888102215,
+        36.13407897949219
+      ],
+      "preFixRunnerGateOutcome": "Skipped before member checks because source.ColourKnown defaults false",
+      "capturedRunnerBindingStatus": "Binding now present in source; actual runner execution is separate evidence"
+    },
+    {
+      "slot": 1,
+      "squad": "0x17c052bda00",
+      "identity": "0xf0000c361",
+      "path": "sbps\\races\\german\\vehicles\\truck_2_5_ger",
+      "members": [
+        {
+          "entity": "0x17c052bf000",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86759936,
+          "snapshotRaw128": "f81057a7f77f0000921335bf7e203bbc47f0343f99867d3c58d77f3fdb93013d3aeb34bf9873083d3ceb34bf0000a0c1081254410000b8c200fc3cb37c010000005c2c032700000027000000df03da036010c008d016c0080090c0083f090000881157a7f77f000055ea9a3b3b000000502440008001000080a74c0100da2b05",
+          "snapshotHealth": {
+            "kind": 991,
+            "index": 8,
+            "descriptor": "0x17c562c5cc0",
+            "mode": 0,
+            "value": "0xcf1c440",
+            "state": 1,
+            "raw": "00000000adadadad40c4f10c0000000001000aadadadadad",
+            "address": "0x17c0cf1c440",
+            "health": 240.0
+          },
+          "recheckRaw128": "f81057a7f77f0000921335bf7e203bbc47f0343f99867d3c58d77f3fdb93013d3aeb34bf9873083d3ceb34bf0000a0c1081254410000b8c200fc3cb37c010000005c2c032700000027000000df03da036010c008d016c0080090c0083f090000881157a7f77f000055ea9a3b3b000000502440008001000080a74c0100da2b05",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 991,
+            "index": 8,
+            "descriptor": "0x17c562c5cc0",
+            "mode": 0,
+            "value": "0xcf1c440",
+            "state": 1,
+            "raw": "00000000adadadad40c4f10c0000000001000aadadadadad",
+            "address": "0x17c0cf1c440",
+            "health": 240.0
+          },
+          "position": [
+            -20.0,
+            13.254402160644531,
+            -92.0
+          ],
+          "status": "position_observed"
+        }
+      ],
+      "positions": [
+        [
+          -20.0,
+          13.254402160644531,
+          -92.0
+        ]
+      ],
+      "sourceColourKnownDefault": false,
+      "runnerColourAssignmentPresentAtCapture": true,
+      "identityBeforeMatches": true,
+      "identityAfterMatches": true,
+      "memberCount": 1,
+      "validPositionCount": 1,
+      "centreIfRealColourBound": [
+        -20.0,
+        13.254402160644531,
+        -92.0
+      ],
+      "preFixRunnerGateOutcome": "Skipped before member checks because source.ColourKnown defaults false",
+      "capturedRunnerBindingStatus": "Binding now present in source; actual runner execution is separate evidence"
+    },
+    {
+      "slot": 1,
+      "squad": "0x17c05256400",
+      "identity": "0x110000c363",
+      "path": "sbps\\races\\german\\infantry\\jaeger_ger",
+      "members": [
+        {
+          "entity": "0x17c0524de00",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86336512,
+          "snapshotRaw128": "f81057a7f77f000058a95b3f00000000c778033f000000000000803f00000000c77803bf0000000058a95b3f90d388c2548ec041816b7942103bbfaf7c010000006826032700000027000000640298026010c008d016c0080090c008f90c0000881157a7f77f0000a7ea9a3be6030000f05447498001000080004c0100642505",
+          "snapshotHealth": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562668c0",
+            "mode": 0,
+            "value": "0xcf1aa40",
+            "state": 1,
+            "raw": "00000000ffff7fbf40aaf10c0000000001000a0000000000",
+            "address": "0x17c0cf1aa40",
+            "health": 50.0
+          },
+          "recheckRaw128": "f81057a7f77f000058a95b3f00000000c778033f000000000000803f00000000c77803bf0000000058a95b3f90d388c2548ec041816b7942103bbfaf7c010000006826032700000027000000640298026010c008d016c0080090c008f90c0000881157a7f77f0000a7ea9a3be6030000f05447498001000080004c0100642505",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562668c0",
+            "mode": 0,
+            "value": "0xcf1aa40",
+            "state": 1,
+            "raw": "00000000ffff7fbf40aaf10c0000000001000a0000000000",
+            "address": "0x17c0cf1aa40",
+            "health": 50.0
+          },
+          "position": [
+            -68.4132080078125,
+            24.069496154785156,
+            62.354984283447266
+          ],
+          "status": "position_observed"
+        },
+        {
+          "entity": "0x17c05276c00",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86336512,
+          "snapshotRaw128": "f81057a7f77f00007d3ef23e00000000a188613f000000000000803f00000000a18861bf000000007d3ef23ead2f8cc24ecac1417f8878421020bfaf7c01000000d426032700000027000000640298026010c008d016c0080090c008f90c0000881157a7f77f0000aeea9a3b5f0b0000205c474980010000c020480100642505",
+          "snapshotHealth": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c5626d4c0",
+            "mode": 0,
+            "value": "0xd33c2a0",
+            "state": 1,
+            "raw": "0000000000000000a0c2330d0000000001000a0000000000",
+            "address": "0x17c0d33c2a0",
+            "health": 60.0
+          },
+          "recheckRaw128": "f81057a7f77f00007d3ef23e00000000a188613f000000000000803f00000000a18861bf000000007d3ef23ead2f8cc24ecac1417f8878421020bfaf7c01000000d426032700000027000000640298026010c008d016c0080090c008f90c0000881157a7f77f0000aeea9a3b5f0b0000205c474980010000c020480100642505",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c5626d4c0",
+            "mode": 0,
+            "value": "0xd33c2a0",
+            "state": 1,
+            "raw": "0000000000000000a0c2330d0000000001000a0000000000",
+            "address": "0x17c0d33c2a0",
+            "health": 60.0
+          },
+          "position": [
+            -70.0931167602539,
+            24.22378158569336,
+            62.133296966552734
+          ],
+          "status": "position_observed"
+        },
+        {
+          "entity": "0x17c0526d200",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86336512,
+          "snapshotRaw128": "f81057a7f77f000048af2b3f000000004ce53d3f000000000000803f000000004ce53dbf0000000048af2b3f384f87c270a1bf4171f176421020bfaf7c01000000b426032700000027000000640298026010c008d016c0080090c008f90c0000881157a7f77f0000b5ea9a3b710b0000b05d474980010000c098450100642505",
+          "snapshotHealth": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c5626b4c0",
+            "mode": 0,
+            "value": "0xce40750",
+            "state": 1,
+            "raw": "00000000000000005007e40c0000000001000a0000000000",
+            "address": "0x17c0ce40750",
+            "health": 70.0
+          },
+          "recheckRaw128": "f81057a7f77f000048af2b3f000000004ce53d3f000000000000803f000000004ce53dbf0000000048af2b3f384f87c270a1bf4171f176421020bfaf7c01000000b426032700000027000000640298026010c008d016c0080090c008f90c0000881157a7f77f0000b5ea9a3b710b0000b05d474980010000c098450100642505",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c5626b4c0",
+            "mode": 0,
+            "value": "0xce40750",
+            "state": 1,
+            "raw": "00000000000000005007e40c0000000001000a0000000000",
+            "address": "0x17c0ce40750",
+            "health": 70.0
+          },
+          "position": [
+            -67.65472412109375,
+            23.953826904296875,
+            61.735782623291016
+          ],
+          "status": "position_observed"
+        },
+        {
+          "entity": "0x17c05265200",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86336512,
+          "snapshotRaw128": "f81057a7f77f0000e52d5c3f00000000539a023f000000000000803f00000000539a02bf00000000e52d5c3f065687c2b94fbf41b86374421020bfaf7c010000006426032700000027000000640298026010c008d016c0080090c008f90c0000881157a7f77f0000bcea9a3bf60b0000407347498001000000d64b0100642505",
+          "snapshotHealth": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562664c0",
+            "mode": 0,
+            "value": "0xcd91d40",
+            "state": 1,
+            "raw": "0000000000000000401dd90c0000000001000a0000000000",
+            "address": "0x17c0cd91d40",
+            "health": 60.0
+          },
+          "recheckRaw128": "f81057a7f77f0000e52d5c3f00000000539a023f000000000000803f00000000539a02bf00000000e52d5c3f065687c2b94fbf41b86374421020bfaf7c010000006426032700000027000000640298026010c008d016c0080090c008f90c0000881157a7f77f0000bcea9a3bf60b0000407347498001000000d64b0100642505",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562664c0",
+            "mode": 0,
+            "value": "0xcd91d40",
+            "state": 1,
+            "raw": "0000000000000000401dd90c0000000001000a0000000000",
+            "address": "0x17c0cd91d40",
+            "health": 60.0
+          },
+          "position": [
+            -67.66801452636719,
+            23.91392707824707,
+            61.097381591796875
+          ],
+          "status": "position_observed"
+        },
+        {
+          "entity": "0x17c0525d600",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86336512,
+          "snapshotRaw128": "f81057a7f77f000072183b3f0000000066bb2e3f000000000000803f0000000066bb2ebf0000000072183b3f39dc85c2296cbe413efe72421020bfaf7c01000000742c032700000027000000640298026010c008d016c0080090c008f90c0000881157a7f77f0000c3ea9a3bfd0b0000606c474980010000401e4c0100642505",
+          "snapshotHealth": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562c74c0",
+            "mode": 0,
+            "value": "0xce435a0",
+            "state": 1,
+            "raw": "0000000000000000a035e40c0000000001000a0000000000",
+            "address": "0x17c0ce435a0",
+            "health": 100.0
+          },
+          "recheckRaw128": "f81057a7f77f000072183b3f0000000066bb2e3f000000000000803f0000000066bb2ebf0000000072183b3f39dc85c2296cbe413efe72421020bfaf7c01000000742c032700000027000000640298026010c008d016c0080090c008f90c0000881157a7f77f0000c3ea9a3bfd0b0000606c474980010000401e4c0100642505",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562c74c0",
+            "mode": 0,
+            "value": "0xce435a0",
+            "state": 1,
+            "raw": "0000000000000000a035e40c0000000001000a0000000000",
+            "address": "0x17c0ce435a0",
+            "health": 100.0
+          },
+          "position": [
+            -66.93012237548828,
+            23.802812576293945,
+            60.74828338623047
+          ],
+          "status": "position_observed"
+        }
+      ],
+      "positions": [
+        [
+          -68.4132080078125,
+          24.069496154785156,
+          62.354984283447266
+        ],
+        [
+          -70.0931167602539,
+          24.22378158569336,
+          62.133296966552734
+        ],
+        [
+          -67.65472412109375,
+          23.953826904296875,
+          61.735782623291016
+        ],
+        [
+          -67.66801452636719,
+          23.91392707824707,
+          61.097381591796875
+        ],
+        [
+          -66.93012237548828,
+          23.802812576293945,
+          60.74828338623047
+        ]
+      ],
+      "sourceColourKnownDefault": false,
+      "runnerColourAssignmentPresentAtCapture": true,
+      "identityBeforeMatches": true,
+      "identityAfterMatches": true,
+      "memberCount": 5,
+      "validPositionCount": 5,
+      "centreIfRealColourBound": [
+        -68.15183715820312,
+        23.992768859863283,
+        61.61394577026367
+      ],
+      "preFixRunnerGateOutcome": "Skipped before member checks because source.ColourKnown defaults false",
+      "capturedRunnerBindingStatus": "Binding now present in source; actual runner execution is separate evidence"
+    },
+    {
+      "slot": 1,
+      "squad": "0x17c05297600",
+      "identity": "0x100000c364",
+      "path": "sbps\\races\\german\\vehicles\\truck_2_5_ger",
+      "members": [
+        {
+          "entity": "0x17c052a1600",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86603264,
+          "snapshotRaw128": "f81057a7f77f0000e72991be5ce1453cc879753f28960ebe51227d3f05a75bbdb6e472bf3b4b18be71ad8ebe0000a0c1d0d24a410000c8c200fc3cb37c010000007c2c032700000027000000df03da036010c008d016c0080090c008e10e0000881157a7f77f0000fdea9a3b72070000a01ee4867e010000c0274c0100762905",
+          "snapshotHealth": {
+            "kind": 991,
+            "index": 8,
+            "descriptor": "0x17c562c7cc0",
+            "mode": 0,
+            "value": "0xd141a00",
+            "state": 1,
+            "raw": "0000000000000000001a140d0000000001000a0000000000",
+            "address": "0x17c0d141a00",
+            "health": 240.0
+          },
+          "recheckRaw128": "f81057a7f77f0000e72991be5ce1453cc879753f28960ebe51227d3f05a75bbdb6e472bf3b4b18be71ad8ebe0000a0c1d0d24a410000c8c200fc3cb37c010000007c2c032700000027000000df03da036010c008d016c0080090c008e10e0000881157a7f77f0000fdea9a3b72070000a01ee4867e010000c0274c0100762905",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 991,
+            "index": 8,
+            "descriptor": "0x17c562c7cc0",
+            "mode": 0,
+            "value": "0xd141a00",
+            "state": 1,
+            "raw": "0000000000000000001a140d0000000001000a0000000000",
+            "address": "0x17c0d141a00",
+            "health": 240.0
+          },
+          "position": [
+            -20.0,
+            12.676467895507812,
+            -100.0
+          ],
+          "status": "position_observed"
+        }
+      ],
+      "positions": [
+        [
+          -20.0,
+          12.676467895507812,
+          -100.0
+        ]
+      ],
+      "sourceColourKnownDefault": false,
+      "runnerColourAssignmentPresentAtCapture": true,
+      "identityBeforeMatches": true,
+      "identityAfterMatches": true,
+      "memberCount": 1,
+      "validPositionCount": 1,
+      "centreIfRealColourBound": [
+        -20.0,
+        12.676467895507812,
+        -100.0
+      ],
+      "preFixRunnerGateOutcome": "Skipped before member checks because source.ColourKnown defaults false",
+      "capturedRunnerBindingStatus": "Binding now present in source; actual runner execution is separate evidence"
+    },
+    {
+      "slot": 1,
+      "squad": "0x17c0529c400",
+      "identity": "0x120000c365",
+      "path": "sbps\\races\\german\\team_weapons\\aa_gun_20mm_ger",
+      "members": [
+        {
+          "entity": "0x17c0527a800",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86623232,
+          "snapshotRaw128": "f81057a7f77f000006f1793f403ec7bd69c945be2a272e3d2847763fb80d8abe1323593ee894823e2a82713f2d68b8c2255ea24153112542203c3db37c01000000fc250327000000270000007b049c046010c008d016c0080090c008eb120000881157a7f77f00000aeb9a3b5e020000d0ac120580010000c021480100c42905",
+          "snapshotHealth": {
+            "kind": 1147,
+            "index": 7,
+            "descriptor": "0x17c5625fca8",
+            "mode": 0,
+            "value": "0xd2246b0",
+            "state": 1,
+            "raw": "000000007c010000b046220d0000000001000a3f00000000",
+            "address": "0x17c0d2246b0",
+            "health": 350.0
+          },
+          "recheckRaw128": "f81057a7f77f000006f1793f403ec7bd69c945be2a272e3d2847763fb80d8abe1323593ee894823e2a82713f2d68b8c2255ea24153112542203c3db37c01000000fc250327000000270000007b049c046010c008d016c0080090c008eb120000881157a7f77f00000aeb9a3b5e020000d0ac120580010000c021480100c42905",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 1147,
+            "index": 7,
+            "descriptor": "0x17c5625fca8",
+            "mode": 0,
+            "value": "0xd2246b0",
+            "state": 1,
+            "raw": "000000007c010000b046220d0000000001000a3f00000000",
+            "address": "0x17c0d2246b0",
+            "health": 350.0
+          },
+          "position": [
+            -92.2034683227539,
+            20.295969009399414,
+            41.26691818237305
+          ],
+          "status": "position_observed"
+        },
+        {
+          "entity": "0x17c05298400",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86623232,
+          "snapshotRaw128": "f81057a7f77f0000dce8223f00000000a87945bf000000000000803f00000000a879453f00000000dce8223f8531b2c298559741ae9c13428050fcb17c010000000824032700000027000000a9049b046010c008d016c0080090c008eb120000881157a7f77f00000deb9a3be503000060ae120580010000404d4c0100c42905",
+          "snapshotHealth": {
+            "kind": 1193,
+            "index": 8,
+            "descriptor": "0x17c562408c0",
+            "mode": 0,
+            "value": "0xcdc3b50",
+            "state": 1,
+            "raw": "0000000000000000503bdc0c0000000001000abf00000000",
+            "address": "0x17c0cdc3b50",
+            "health": 100.0
+          },
+          "recheckRaw128": "f81057a7f77f0000dce8223f00000000a87945bf000000000000803f00000000a879453f00000000dce8223f8531b2c298559741ae9c13428050fcb17c010000000824032700000027000000a9049b046010c008d016c0080090c008eb120000881157a7f77f00000deb9a3be503000060ae120580010000404d4c0100c42905",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 1193,
+            "index": 8,
+            "descriptor": "0x17c562408c0",
+            "mode": 0,
+            "value": "0xcdc3b50",
+            "state": 1,
+            "raw": "0000000000000000503bdc0c0000000001000abf00000000",
+            "address": "0x17c0cdc3b50",
+            "health": 100.0
+          },
+          "position": [
+            -89.09671783447266,
+            18.916793823242188,
+            36.90300750732422
+          ],
+          "status": "position_observed"
+        },
+        {
+          "entity": "0x17c0529ae00",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86623232,
+          "snapshotRaw128": "f81057a7f77f00009a5d993e461b8abed6476abf2a272e3d2847763fb80d8abeac00743f07722b3dce69993ea1c3bdc2b136a3411de324428050fcb17c010000009c2c032700000027000000a9049e046010c008d016c0080090c008eb120000881157a7f77f000011eb9a3b420c0000a0c812058001000040554c0100c42905",
+          "snapshotHealth": {
+            "kind": 1193,
+            "index": 8,
+            "descriptor": "0x17c562c9cc0",
+            "mode": 0,
+            "value": "0xcdc4370",
+            "state": 1,
+            "raw": "00000000000000007043dc0c0000000001000a0000000000",
+            "address": "0x17c0cdc4370",
+            "health": 70.0
+          },
+          "recheckRaw128": "f81057a7f77f00009a5d993e461b8abed6476abf2a272e3d2847763fb80d8abeac00743f07722b3dce69993ea1c3bdc2b136a3411de324428050fcb17c010000009c2c032700000027000000a9049e046010c008d016c0080090c008eb120000881157a7f77f000011eb9a3b420c0000a0c812058001000040554c0100c42905",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 1193,
+            "index": 8,
+            "descriptor": "0x17c562c9cc0",
+            "mode": 0,
+            "value": "0xcdc4370",
+            "state": 1,
+            "raw": "00000000000000007043dc0c0000000001000a0000000000",
+            "address": "0x17c0cdc4370",
+            "health": 70.0
+          },
+          "position": [
+            -94.88208770751953,
+            20.401704788208008,
+            41.2217903137207
+          ],
+          "status": "position_observed"
+        },
+        {
+          "entity": "0x17c0529d800",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 86623232,
+          "snapshotRaw128": "f81057a7f77f000072a17a3f9b63c0bdf61f39be2a272e3d2847763fb80d8abe2c084c3ef438833e8e22723f0ebcb8c2ff63a041f06f21428050fcb17c01000000a42c032700000027000000a9049e046010c008d016c0080090c008eb120000881157a7f77f000015eb9a3b3c0c000090e712058001000080074b0100c42905",
+          "snapshotHealth": {
+            "kind": 1193,
+            "index": 8,
+            "descriptor": "0x17c562ca4c0",
+            "mode": 0,
+            "value": "0xce42560",
+            "state": 1,
+            "raw": "00000000000000006025e40c0000000001000a0000000000",
+            "address": "0x17c0ce42560",
+            "health": 100.0
+          },
+          "recheckRaw128": "f81057a7f77f000072a17a3f9b63c0bdf61f39be2a272e3d2847763fb80d8abe2c084c3ef438833e8e22723f0ebcb8c2ff63a041f06f21428050fcb17c01000000a42c032700000027000000a9049e046010c008d016c0080090c008eb120000881157a7f77f000015eb9a3b3c0c000090e712058001000080074b0100c42905",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 1193,
+            "index": 8,
+            "descriptor": "0x17c562ca4c0",
+            "mode": 0,
+            "value": "0xce42560",
+            "state": 1,
+            "raw": "00000000000000006025e40c0000000001000a0000000000",
+            "address": "0x17c0ce42560",
+            "health": 100.0
+          },
+          "position": [
+            -92.36729431152344,
+            20.048826217651367,
+            40.35931396484375
+          ],
+          "status": "position_observed"
+        }
+      ],
+      "positions": [
+        [
+          -92.2034683227539,
+          20.295969009399414,
+          41.26691818237305
+        ],
+        [
+          -89.09671783447266,
+          18.916793823242188,
+          36.90300750732422
+        ],
+        [
+          -94.88208770751953,
+          20.401704788208008,
+          41.2217903137207
+        ],
+        [
+          -92.36729431152344,
+          20.048826217651367,
+          40.35931396484375
+        ]
+      ],
+      "sourceColourKnownDefault": false,
+      "runnerColourAssignmentPresentAtCapture": true,
+      "identityBeforeMatches": true,
+      "identityAfterMatches": true,
+      "memberCount": 4,
+      "validPositionCount": 4,
+      "centreIfRealColourBound": [
+        -92.13739204406738,
+        19.915823459625244,
+        39.93775749206543
+      ],
+      "preFixRunnerGateOutcome": "Skipped before member checks because source.ColourKnown defaults false",
+      "capturedRunnerBindingStatus": "Binding now present in source; actual runner execution is separate evidence"
+    },
+    {
+      "slot": 1,
+      "squad": "0x17c052fa800",
+      "identity": "0x150000c368",
+      "path": "sbps\\races\\german\\infantry\\jaeger_ger",
+      "members": [
+        {
+          "entity": "0x17c05121200",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 87009280,
+          "snapshotRaw128": "f81057a7f77f00000606eb3e00000000896f633f000000000000803f00000000896f63bf000000000606eb3e0000c942115aca41008002c3103bbfaf7c01000000b42b032700000027000000640298026010c008d016c0080090c0088f150000881157a7f77f000036eb9a3bbb0b00009047120580010000c09b4c0100a82f05",
+          "snapshotHealth": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562bb4c0",
+            "mode": 0,
+            "value": "0xce441d0",
+            "state": 1,
+            "raw": "0000000000000000d041e40c0000000001000a0000000000",
+            "address": "0x17c0ce441d0",
+            "health": 110.0
+          },
+          "recheckRaw128": "f81057a7f77f00000606eb3e00000000896f633f000000000000803f00000000896f63bf000000000606eb3e0000c942115aca41008002c3103bbfaf7c01000000b42b032700000027000000640298026010c008d016c0080090c0088f150000881157a7f77f000036eb9a3bbb0b00009047120580010000c09b4c0100a82f05",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562bb4c0",
+            "mode": 0,
+            "value": "0xce441d0",
+            "state": 1,
+            "raw": "0000000000000000d041e40c0000000001000a0000000000",
+            "address": "0x17c0ce441d0",
+            "health": 110.0
+          },
+          "position": [
+            100.5,
+            25.293977737426758,
+            -130.5
+          ],
+          "status": "position_observed"
+        },
+        {
+          "entity": "0x17c05292e00",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 87009280,
+          "snapshotRaw128": "f81057a7f77f00000606eb3e00000000896f633f000000000000803f00000000896f63bf000000000606eb3e0000cb42115aca41008000c31020bfaf7c01000000302c032700000027000000640298026010c008d016c0080090c0088f150000881157a7f77f00003deb9a3b860c000000dc90fe7e01000000f34c0100a82f05",
+          "snapshotHealth": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562c30c0",
+            "mode": 0,
+            "value": "0xd33aa40",
+            "state": 1,
+            "raw": "000000000000000040aa330d0000000001000a0000000000",
+            "address": "0x17c0d33aa40",
+            "health": 110.0
+          },
+          "recheckRaw128": "f81057a7f77f00000606eb3e00000000896f633f000000000000803f00000000896f63bf000000000606eb3e0000cb42115aca41008000c31020bfaf7c01000000302c032700000027000000640298026010c008d016c0080090c0088f150000881157a7f77f00003deb9a3b860c000000dc90fe7e01000000f34c0100a82f05",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562c30c0",
+            "mode": 0,
+            "value": "0xd33aa40",
+            "state": 1,
+            "raw": "000000000000000040aa330d0000000001000a0000000000",
+            "address": "0x17c0d33aa40",
+            "health": 110.0
+          },
+          "position": [
+            101.5,
+            25.293977737426758,
+            -128.5
+          ],
+          "status": "position_observed"
+        },
+        {
+          "entity": "0x17c05289a00",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 87009280,
+          "snapshotRaw128": "f81057a7f77f00000606eb3e00000000896f633f000000000000803f00000000896f63bf000000000606eb3e0000c942115aca41008001c31020bfaf7c01000000b42c032700000027000000640298026010c008d016c0080090c0088f150000881157a7f77f000044eb9a3b200c000030de90fe7e01000080d44c0100a82f05",
+          "snapshotHealth": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562cb4c0",
+            "mode": 0,
+            "value": "0xcfa4100",
+            "state": 1,
+            "raw": "00000000000000000041fa0c0000000001000a0000000000",
+            "address": "0x17c0cfa4100",
+            "health": 110.0
+          },
+          "recheckRaw128": "f81057a7f77f00000606eb3e00000000896f633f000000000000803f00000000896f63bf000000000606eb3e0000c942115aca41008001c31020bfaf7c01000000b42c032700000027000000640298026010c008d016c0080090c0088f150000881157a7f77f000044eb9a3b200c000030de90fe7e01000080d44c0100a82f05",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562cb4c0",
+            "mode": 0,
+            "value": "0xcfa4100",
+            "state": 1,
+            "raw": "00000000000000000041fa0c0000000001000a0000000000",
+            "address": "0x17c0cfa4100",
+            "health": 110.0
+          },
+          "position": [
+            100.5,
+            25.293977737426758,
+            -129.5
+          ],
+          "status": "position_observed"
+        },
+        {
+          "entity": "0x17c052ec800",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 87009280,
+          "snapshotRaw128": "f81057a7f77f00000606eb3e00000000896f633f000000000000803f00000000896f63bf000000000606eb3e0000cb42115aca410000ffc21020bfaf7c01000000b82c032700000027000000640298026010c008d016c0080090c0088f150000881157a7f77f00004beb9a3b290c000040d390fe7e01000040044d0100a82f05",
+          "snapshotHealth": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562cb8c0",
+            "mode": 0,
+            "value": "0xcfa4030",
+            "state": 1,
+            "raw": "00000000000000003040fa0c0000000001000a0000000000",
+            "address": "0x17c0cfa4030",
+            "health": 110.0
+          },
+          "recheckRaw128": "f81057a7f77f00000606eb3e00000000896f633f000000000000803f00000000896f63bf000000000606eb3e0000cb42115aca410000ffc21020bfaf7c01000000b82c032700000027000000640298026010c008d016c0080090c0088f150000881157a7f77f00004beb9a3b290c000040d390fe7e01000040044d0100a82f05",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562cb8c0",
+            "mode": 0,
+            "value": "0xcfa4030",
+            "state": 1,
+            "raw": "00000000000000003040fa0c0000000001000a0000000000",
+            "address": "0x17c0cfa4030",
+            "health": 110.0
+          },
+          "position": [
+            101.5,
+            25.293977737426758,
+            -127.5
+          ],
+          "status": "position_observed"
+        },
+        {
+          "entity": "0x17c0527dc00",
+          "owner": "0x17c08c09000",
+          "generation": 2807501192,
+          "squadOffset": 87009280,
+          "snapshotRaw128": "f81057a7f77f00000606eb3e00000000896f633f000000000000803f00000000896f63bf000000000606eb3e0000c742115aca41008001c31020bfaf7c01000000bc2c032700000027000000640298026010c008d016c0080090c0088f150000881157a7f77f000052eb9a3b300c000010f490fe7e010000c00c4d0100a82f05",
+          "snapshotHealth": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562cbcc0",
+            "mode": 0,
+            "value": "0xcfa3f60",
+            "state": 1,
+            "raw": "0000000000000000603ffa0c0000000001000a0000000000",
+            "address": "0x17c0cfa3f60",
+            "health": 110.0
+          },
+          "recheckRaw128": "f81057a7f77f00000606eb3e00000000896f633f000000000000803f00000000896f63bf000000000606eb3e0000c742115aca41008001c31020bfaf7c01000000bc2c032700000027000000640298026010c008d016c0080090c0088f150000881157a7f77f000052eb9a3b300c000010f490fe7e010000c00c4d0100a82f05",
+          "checks": {
+            "generation": true,
+            "squadOffset": true,
+            "owner": true,
+            "liveHealth": true,
+            "validPosition": true
+          },
+          "health": {
+            "kind": 612,
+            "index": 8,
+            "descriptor": "0x17c562cbcc0",
+            "mode": 0,
+            "value": "0xcfa3f60",
+            "state": 1,
+            "raw": "0000000000000000603ffa0c0000000001000a0000000000",
+            "address": "0x17c0cfa3f60",
+            "health": 110.0
+          },
+          "position": [
+            99.5,
+            25.293977737426758,
+            -129.5
+          ],
+          "status": "position_observed"
+        }
+      ],
+      "positions": [
+        [
+          100.5,
+          25.293977737426758,
+          -130.5
+        ],
+        [
+          101.5,
+          25.293977737426758,
+          -128.5
+        ],
+        [
+          100.5,
+          25.293977737426758,
+          -129.5
+        ],
+        [
+          101.5,
+          25.293977737426758,
+          -127.5
+        ],
+        [
+          99.5,
+          25.293977737426758,
+          -129.5
+        ]
+      ],
+      "sourceColourKnownDefault": false,
+      "runnerColourAssignmentPresentAtCapture": true,
+      "identityBeforeMatches": true,
+      "identityAfterMatches": true,
+      "memberCount": 5,
+      "validPositionCount": 5,
+      "centreIfRealColourBound": [
+        100.7,
+        25.293977737426758,
+        -129.1
+      ],
+      "preFixRunnerGateOutcome": "Skipped before member checks because source.ColourKnown defaults false",
+      "capturedRunnerBindingStatus": "Binding now present in source; actual runner execution is separate evidence"
+    }
+  ],
+  "limitations": [
+    "Single paused PID; no UI/visual or lifecycle acceptance.",
+    "Source ColourKnown=false is inferred from C# default and missing runner assignment, not read from runner heap.",
+    "Infrastructure49 marker sources are excluded from this squad-only reconstruction."
+  ],
+  "stableRegistryRechecks": true,
+  "stableRootsAfterRead": true,
+  "sourceCount": 12,
+  "memberCount": 36,
+  "validMemberCount": 36,
+  "centresIfColourBound": 12,
+  "readCalls": 1658,
+  "requestedBytes": 63858,
+  "successfulBytes": 63858,
+  "readFailures": [],
+  "elapsedMilliseconds": 5.723
+}

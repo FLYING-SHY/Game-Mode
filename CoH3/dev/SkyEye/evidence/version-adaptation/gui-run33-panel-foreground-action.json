@@ -1,0 +1,13 @@
+﻿{
+    "setForegroundReturned":  true,
+    "action":  "foreground existing maintenance panel; game stays running paused",
+    "detachedFinally":  true,
+    "utc":  "2026-11-21T05:37:40.9848038Z",
+    "temporaryInputQueueAttachment":  true,
+    "foregroundHwnd":  9046006,
+    "priorSimpleSetForegroundAttempt":  "did not acquire focus; no evidence file or input sent",
+    "expected":  "game overlay windows hidden; panel retained",
+    "uiPid":  7672,
+    "gameStateChangingInput":  false,
+    "gamePid":  33656
+}

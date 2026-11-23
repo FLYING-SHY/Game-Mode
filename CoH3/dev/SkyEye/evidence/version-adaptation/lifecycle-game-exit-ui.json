@@ -1,0 +1,18 @@
+{
+  "utc": "2026-11-20T18:43:35.469261+00:00",
+  "pid": 27452,
+  "tag": "lifecycle-game-exit-ui",
+  "windows": [
+    {
+      "hwnd": 1837188,
+      "isControlPanel": true,
+      "rect": [
+        540,
+        221,
+        2020,
+        1171
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-game-exit-ui-1837188.png"
+    }
+  ]
+}

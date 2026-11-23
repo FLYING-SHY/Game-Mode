@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <NoWarn>$(NoWarn);CS0649</NoWarn>
+    <DefineConstants Condition="'$(Maintenance)' == 'true'">$(DefineConstants);MAINTENANCE_DIAGNOSTICS</DefineConstants>
+    <EngineRoot>../../client/CoH3MemoryTool</EngineRoot>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(EngineRoot)/AirLogic.cs;$(EngineRoot)/ProjectileLogic.cs;$(EngineRoot)/SupportCatalogue49.cs;$(EngineRoot)/GameLayout52426.cs;$(EngineRoot)/AirZone.cs;$(EngineRoot)/AirDefinition.cs;$(EngineRoot)/ProjectileImpact.cs;$(EngineRoot)/AirCatalogue.cs;$(EngineRoot)/Loiter49.cs;$(EngineRoot)/LoiterState49.cs;$(EngineRoot)/AttackCatalogue67.cs;$(EngineRoot)/BarrageLogic.cs;$(EngineRoot)/BarrageCatalogue.cs;$(EngineRoot)/SquadMarkerLogic.cs;$(EngineRoot)/SquadMarker.cs;$(EngineRoot)/SquadMarkerSource.cs;$(EngineRoot)/SquadMarkerMember.cs;$(EngineRoot)/MovementData.cs;$(EngineRoot)/DirectionData.cs;$(EngineRoot)/Infrastructure49.cs;$(EngineRoot)/UnitNames.cs;$(EngineRoot)/UserUnitNames56.cs;$(EngineRoot)/UnitNamesBase.cs;$(EngineRoot)/PlayerInfoRow.cs;$(EngineRoot)/ProductionJob.cs;$(EngineRoot)/GrenadeUpgrade.cs;$(EngineRoot)/BarrageRecord.cs;$(EngineRoot)/MineRecord.cs;$(EngineRoot)/TrackedBuilding.cs;$(EngineRoot)/ArtilleryState.cs" Link="Engine/%(Filename)%(Extension)" />
+    <EmbeddedResource Include="../../client/CoH3.BarrageCatalogue.tsv" LogicalName="CoH3.BarrageCatalogue.tsv" />
+  </ItemGroup>
+</Project>

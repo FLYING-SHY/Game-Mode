@@ -1,0 +1,2719 @@
+{
+  "timestamp": "2026-11-20T17:06:42.666584+00:00",
+  "pid": 11192,
+  "moduleBase": "0x7ff7a37e0000",
+  "access": "PROCESS_QUERY_INFORMATION|PROCESS_VM_READ",
+  "verification": "candidate_not_baseline",
+  "snapshot": {
+    "roots": {
+      "resource": "0x6bb1ed0",
+      "arena": "0x6187e40",
+      "world": "0x5e0decc"
+    },
+    "status": "candidate_only",
+    "resources": [
+      {
+        "name": "ability_resource_1",
+        "index": 0
+      },
+      {
+        "name": "ability_resource_2",
+        "index": 1
+      },
+      {
+        "name": "action",
+        "index": 2
+      },
+      {
+        "name": "command",
+        "index": 3
+      },
+      {
+        "name": "fuel",
+        "index": 4
+      },
+      {
+        "name": "manpower",
+        "index": 5
+      },
+      {
+        "name": "munition",
+        "index": 6
+      },
+      {
+        "name": "popcap",
+        "index": 7
+      },
+      {
+        "name": "requisition",
+        "index": 8
+      },
+      {
+        "name": "ultimate",
+        "index": 9
+      }
+    ],
+    "timers": [
+      {
+        "name": "activate_stance_timer",
+        "index": 0
+      },
+      {
+        "name": "anzio_annie_barrage",
+        "index": 1
+      },
+      {
+        "name": "campaign_shared_heal_ability",
+        "index": 2
+      },
+      {
+        "name": "deploy_aircraft_b25_timer",
+        "index": 3
+      },
+      {
+        "name": "deploy_aircraft_c47_timer",
+        "index": 4
+      },
+      {
+        "name": "deploy_aircraft_l2_timer",
+        "index": 5
+      },
+      {
+        "name": "deploy_aircraft_p47_timer",
+        "index": 6
+      },
+      {
+        "name": "deploy_engineer_timer",
+        "index": 7
+      },
+      {
+        "name": "deploy_medic_timer",
+        "index": 8
+      },
+      {
+        "name": "deploy_partisan_timer",
+        "index": 9
+      },
+      {
+        "name": "designate_forward_depot_timer",
+        "index": 10
+      },
+      {
+        "name": "faction_ability",
+        "index": 11
+      },
+      {
+        "name": "forward_observer",
+        "index": 12
+      },
+      {
+        "name": "mobile_entrenchment",
+        "index": 13
+      },
+      {
+        "name": "purchase_attachment_timer",
+        "index": 14
+      },
+      {
+        "name": "purchase_company_timer",
+        "index": 15
+      },
+      {
+        "name": "reinforce_timer",
+        "index": 16
+      },
+      {
+        "name": "shared_ability_1",
+        "index": 17
+      },
+      {
+        "name": "shared_ability_2",
+        "index": 18
+      },
+      {
+        "name": "shared_barrage_ability",
+        "index": 19
+      },
+      {
+        "name": "shared_veterancy_unlock",
+        "index": 20
+      }
+    ],
+    "arena": "0x17c00000000",
+    "worldOffset": "0x6400000",
+    "players": [
+      {
+        "address": "0x17c08c08000",
+        "identity": "0x3e8",
+        "slot": 0,
+        "name": "咋咋咋",
+        "resources": [
+          0.0,
+          0.0,
+          750.4039306640625,
+          1.0,
+          93.59772491455078,
+          3421.875,
+          25.0,
+          0.0,
+          0.0,
+          0.069091796875
+        ],
+        "population": [
+          4.0,
+          0.0
+        ],
+        "registryCount": 53,
+        "ownedEntities": [
+          {
+            "address": "0x17c05174e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\starting_position\\starting_territory_team",
+            "generation": 2807501192,
+            "componentKind": 371
+          },
+          {
+            "address": "0x17c05175200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\map_entry_point",
+            "generation": 2807501192,
+            "componentKind": 380
+          },
+          {
+            "address": "0x17c051f7c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\buildings\\production\\hq_us",
+            "generation": 2807501192,
+            "componentKind": 429
+          },
+          {
+            "address": "0x17c051f8600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\flags\\flag_us",
+            "generation": 2807501192,
+            "componentKind": 402
+          },
+          {
+            "address": "0x17c051f9000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\buildings\\defensive\\base_defense_us",
+            "generation": 2807501192,
+            "componentKind": 452
+          },
+          {
+            "address": "0x17c051f9c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\small_arms\\machine_guns\\heavy_machine_gun\\w_30cal_fighting_position_base_defense_us",
+            "generation": 2807501192,
+            "componentKind": 465
+          },
+          {
+            "address": "0x17c051fac00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\buildings\\defensive\\base_defense_us",
+            "generation": 2807501192,
+            "componentKind": 452
+          },
+          {
+            "address": "0x17c051fb800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\small_arms\\machine_guns\\heavy_machine_gun\\w_30cal_fighting_position_base_defense_us",
+            "generation": 2807501192,
+            "componentKind": 465
+          },
+          {
+            "address": "0x17c051fc600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\buildings\\defensive\\base_defense_us",
+            "generation": 2807501192,
+            "componentKind": 452
+          },
+          {
+            "address": "0x17c051fd200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\small_arms\\machine_guns\\heavy_machine_gun\\w_30cal_fighting_position_base_defense_us",
+            "generation": 2807501192,
+            "componentKind": 465
+          },
+          {
+            "address": "0x17c051fe000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\buildings\\defensive\\base_defense_us",
+            "generation": 2807501192,
+            "componentKind": 452
+          },
+          {
+            "address": "0x17c051fec00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\small_arms\\machine_guns\\heavy_machine_gun\\w_30cal_fighting_position_base_defense_us",
+            "generation": 2807501192,
+            "componentKind": 465
+          },
+          {
+            "address": "0x17c051ffc00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\infantry\\scout_leader_radio_us",
+            "generation": 2807501192,
+            "componentKind": 500
+          },
+          {
+            "address": "0x17c05200800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\small_arms\\single_fire\\rifle\\w_garand_scout_us",
+            "generation": 2807501192,
+            "componentKind": 508
+          },
+          {
+            "address": "0x17c05201400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\small_arms\\single_fire\\rifle\\w_garand_pathfinder_us",
+            "generation": 2807501192,
+            "componentKind": 508
+          },
+          {
+            "address": "0x17c05202000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_smoke_rifle_grenade_scout_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05202e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_rifle_grenade_pathfinder_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05203c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_flare_scout_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c05204800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\small_arms\\single_fire\\rifle\\w_garand_tracer_rounds_scout_us",
+            "generation": 2807501192,
+            "componentKind": 508
+          },
+          {
+            "address": "0x17c05205400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\british\\weapons\\explosive_weapons\\grenade\\w_grenade_smoke_red_uk",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c05206000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\infantry\\scout_us",
+            "generation": 2807501192,
+            "componentKind": 500
+          },
+          {
+            "address": "0x17c05206c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\small_arms\\single_fire\\rifle\\w_garand_scout_us",
+            "generation": 2807501192,
+            "componentKind": 508
+          },
+          {
+            "address": "0x17c05207800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\small_arms\\single_fire\\rifle\\w_garand_pathfinder_us",
+            "generation": 2807501192,
+            "componentKind": 508
+          },
+          {
+            "address": "0x17c05208400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_smoke_rifle_grenade_scout_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05209200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_rifle_grenade_pathfinder_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c0520a000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_flare_scout_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c0520ac00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\small_arms\\single_fire\\rifle\\w_garand_tracer_rounds_scout_us",
+            "generation": 2807501192,
+            "componentKind": 508
+          },
+          {
+            "address": "0x17c0520b800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\british\\weapons\\explosive_weapons\\grenade\\w_grenade_smoke_red_uk",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c0520c400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\infantry\\scout_us",
+            "generation": 2807501192,
+            "componentKind": 500
+          },
+          {
+            "address": "0x17c0520d000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\small_arms\\single_fire\\rifle\\w_garand_scout_us",
+            "generation": 2807501192,
+            "componentKind": 508
+          },
+          {
+            "address": "0x17c0520dc00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\small_arms\\single_fire\\rifle\\w_garand_pathfinder_us",
+            "generation": 2807501192,
+            "componentKind": 508
+          },
+          {
+            "address": "0x17c0520e800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_smoke_rifle_grenade_scout_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c0520f600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_rifle_grenade_pathfinder_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05210400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_flare_scout_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c05211000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\small_arms\\single_fire\\rifle\\w_garand_tracer_rounds_scout_us",
+            "generation": 2807501192,
+            "componentKind": 508
+          },
+          {
+            "address": "0x17c05211c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\british\\weapons\\explosive_weapons\\grenade\\w_grenade_smoke_red_uk",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c05176200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\infantry\\crew_hmg_dummy_us",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x17c05228800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\infantry\\crew_hmg_dummy_us",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x17c05229400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\special\\w_ammo_box_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c0522a000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\special\\w_ammo_box_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c0522b200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\infantry\\crew_hmg_dummy_us",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x17c0522ca00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\infantry\\crew_hmg_dummy_us",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x17c0522d600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\special\\w_ammo_box_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c0522e200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\special\\w_ammo_box_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c0522f400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\infantry\\crew_hmg_dummy_us",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x17c05230c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\infantry\\crew_hmg_dummy_us",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x17c05231800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\special\\w_ammo_box_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05232400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\special\\w_ammo_box_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05233600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\infantry\\crew_hmg_dummy_us",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x17c05234e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\infantry\\crew_hmg_dummy_us",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x17c05235a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\special\\w_ammo_box_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05236600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\special\\w_ammo_box_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05245000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\common\\buildings\\placeholder_support_center",
+            "generation": 2807501192,
+            "componentKind": 651
+          }
+        ]
+      },
+      {
+        "address": "0x17c08c09000",
+        "identity": "0x1000003e9",
+        "slot": 1,
+        "name": "CPU - 标准",
+        "resources": [
+          0.0,
+          0.0,
+          448.40203857421875,
+          0.0,
+          225.80511474609375,
+          50.88117218017578,
+          103.6351318359375,
+          0.0,
+          0.0,
+          0.069091796875
+        ],
+        "population": [
+          42.0,
+          0.0
+        ],
+        "registryCount": 307,
+        "ownedEntities": [
+          {
+            "address": "0x17c05175400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\starting_position\\starting_territory_team",
+            "generation": 2807501192,
+            "componentKind": 371
+          },
+          {
+            "address": "0x17c05175800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\map_entry_point",
+            "generation": 2807501192,
+            "componentKind": 380
+          },
+          {
+            "address": "0x17c05175c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\buildings\\production\\hq_ger",
+            "generation": 2807501192,
+            "componentKind": 564
+          },
+          {
+            "address": "0x17c05213400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\flags\\flag_ger",
+            "generation": 2807501192,
+            "componentKind": 402
+          },
+          {
+            "address": "0x17c05213c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\buildings\\defensive\\base_defense_ger",
+            "generation": 2807501192,
+            "componentKind": 584
+          },
+          {
+            "address": "0x17c05214800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\heavy_machine_gun\\w_mg42_bunker_ger",
+            "generation": 2807501192,
+            "componentKind": 595
+          },
+          {
+            "address": "0x17c05215800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\buildings\\defensive\\base_defense_ger",
+            "generation": 2807501192,
+            "componentKind": 584
+          },
+          {
+            "address": "0x17c05216400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\heavy_machine_gun\\w_mg42_bunker_ger",
+            "generation": 2807501192,
+            "componentKind": 595
+          },
+          {
+            "address": "0x17c05217400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\buildings\\defensive\\base_defense_ger",
+            "generation": 2807501192,
+            "componentKind": 584
+          },
+          {
+            "address": "0x17c05218000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\heavy_machine_gun\\w_mg42_bunker_ger",
+            "generation": 2807501192,
+            "componentKind": 595
+          },
+          {
+            "address": "0x17c05219000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\buildings\\defensive\\base_defense_ger",
+            "generation": 2807501192,
+            "componentKind": 584
+          },
+          {
+            "address": "0x17c05219c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\heavy_machine_gun\\w_mg42_bunker_ger",
+            "generation": 2807501192,
+            "componentKind": 595
+          },
+          {
+            "address": "0x17c0521ac00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\pioneer_ger",
+            "generation": 2807501192,
+            "componentKind": 612
+          },
+          {
+            "address": "0x17c0521b800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\sub_machine_gun\\w_mp40_pioneer_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c0521c400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_satchel_charge_paratrooper_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c0521d000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c0521de00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_3_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c0521ec00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\pioneer_ger",
+            "generation": 2807501192,
+            "componentKind": 612
+          },
+          {
+            "address": "0x17c0521f800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\sub_machine_gun\\w_mp40_pioneer_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05220400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_satchel_charge_paratrooper_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c05221000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05221e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_3_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05222c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\pioneer_ger",
+            "generation": 2807501192,
+            "componentKind": 612
+          },
+          {
+            "address": "0x17c05223800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\sub_machine_gun\\w_mp40_pioneer_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05224400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_satchel_charge_paratrooper_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c05225000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05225e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_3_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05237800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\crew_hmg_dummy_ger",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x17c05239000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\crew_hmg_dummy_ger",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x17c0523ae00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\crew_hmg_dummy_ger",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x17c0523c600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\crew_hmg_dummy_ger",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x17c0523e400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\crew_hmg_dummy_ger",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x17c0523fc00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\crew_hmg_dummy_ger",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x17c05241a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\crew_hmg_dummy_ger",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x17c05243200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\crew_hmg_dummy_ger",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x17c0517ca00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\buildings\\production\\infanterie_kompanie_ger",
+            "generation": 2807501192,
+            "componentKind": 671
+          },
+          {
+            "address": "0x17c0524ce00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\vehicles\\kettenkrad_ger",
+            "generation": 2807501192,
+            "componentKind": 814
+          },
+          {
+            "address": "0x17c0524b200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\vehicles\\crew\\crew_vehicle_kettenkrad_ger",
+            "generation": 2807501192,
+            "componentKind": 843
+          },
+          {
+            "address": "0x17c05172600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\strategic\\territory_strategic_point",
+            "generation": 2807501192,
+            "componentKind": 369
+          },
+          {
+            "address": "0x17c05247e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_flag_ger",
+            "generation": 2807501192,
+            "componentKind": 388
+          },
+          {
+            "address": "0x17c0517a400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 612
+          },
+          {
+            "address": "0x17c05250400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 612
+          },
+          {
+            "address": "0x17c05258400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 612
+          },
+          {
+            "address": "0x17c05260600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 612
+          },
+          {
+            "address": "0x17c05268600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 612
+          },
+          {
+            "address": "0x17c05270600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 612
+          },
+          {
+            "address": "0x17c05172a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\strategic\\territory_strategic_point",
+            "generation": 2807501192,
+            "componentKind": 369
+          },
+          {
+            "address": "0x17c05278a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_flag_ger",
+            "generation": 2807501192,
+            "componentKind": 388
+          },
+          {
+            "address": "0x17c05172c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\strategic\\territory_strategic_point",
+            "generation": 2807501192,
+            "componentKind": 369
+          },
+          {
+            "address": "0x17c05249200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_flag_ger",
+            "generation": 2807501192,
+            "componentKind": 388
+          },
+          {
+            "address": "0x17c05173600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point",
+            "generation": 2807501192,
+            "componentKind": 369
+          },
+          {
+            "address": "0x17c0506e200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_flag_ger",
+            "generation": 2807501192,
+            "componentKind": 388
+          },
+          {
+            "address": "0x17c05174600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\fuel\\territory_fuel_point_medium",
+            "generation": 2807501192,
+            "componentKind": 369
+          },
+          {
+            "address": "0x17c0517e600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_low",
+            "generation": 2807501192,
+            "componentKind": 397
+          },
+          {
+            "address": "0x17c0517ea00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_medium",
+            "generation": 2807501192,
+            "componentKind": 397
+          },
+          {
+            "address": "0x17c050e1400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_flag_ger",
+            "generation": 2807501192,
+            "componentKind": 388
+          },
+          {
+            "address": "0x17c05172800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\strategic\\territory_strategic_point",
+            "generation": 2807501192,
+            "componentKind": 369
+          },
+          {
+            "address": "0x17c05247600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_flag_ger",
+            "generation": 2807501192,
+            "componentKind": 388
+          },
+          {
+            "address": "0x17c05246400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 612
+          },
+          {
+            "address": "0x17c0527fc00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 612
+          },
+          {
+            "address": "0x17c0528fc00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 612
+          },
+          {
+            "address": "0x17c0529fc00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 612
+          },
+          {
+            "address": "0x17c05173800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\munitions\\territory_munitions_point_low",
+            "generation": 2807501192,
+            "componentKind": 369
+          },
+          {
+            "address": "0x17c0517ac00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_low",
+            "generation": 2807501192,
+            "componentKind": 397
+          },
+          {
+            "address": "0x17c052a8800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_flag_ger",
+            "generation": 2807501192,
+            "componentKind": 388
+          },
+          {
+            "address": "0x17c05174000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\munitions\\territory_munitions_point_medium",
+            "generation": 2807501192,
+            "componentKind": 369
+          },
+          {
+            "address": "0x17c0517cc00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_low",
+            "generation": 2807501192,
+            "componentKind": 397
+          },
+          {
+            "address": "0x17c0517d000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_medium",
+            "generation": 2807501192,
+            "componentKind": 397
+          },
+          {
+            "address": "0x17c052a8200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_flag_ger",
+            "generation": 2807501192,
+            "componentKind": 388
+          },
+          {
+            "address": "0x17c05172e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\munitions\\territory_munitions_point_medium",
+            "generation": 2807501192,
+            "componentKind": 369
+          },
+          {
+            "address": "0x17c05179600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_low",
+            "generation": 2807501192,
+            "componentKind": 397
+          },
+          {
+            "address": "0x17c05179a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_medium",
+            "generation": 2807501192,
+            "componentKind": 397
+          },
+          {
+            "address": "0x17c05028800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_flag_ger",
+            "generation": 2807501192,
+            "componentKind": 388
+          },
+          {
+            "address": "0x17c05173a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\munitions\\territory_munitions_point_low",
+            "generation": 2807501192,
+            "componentKind": 369
+          },
+          {
+            "address": "0x17c0517b200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_low",
+            "generation": 2807501192,
+            "componentKind": 397
+          },
+          {
+            "address": "0x17c052a8600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_flag_ger",
+            "generation": 2807501192,
+            "componentKind": 388
+          },
+          {
+            "address": "0x17c05174c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\fuel\\territory_fuel_point_extra_low",
+            "generation": 2807501192,
+            "componentKind": 369
+          },
+          {
+            "address": "0x17c0517fe00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_low",
+            "generation": 2807501192,
+            "componentKind": 397
+          },
+          {
+            "address": "0x17c05180200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_medium",
+            "generation": 2807501192,
+            "componentKind": 397
+          },
+          {
+            "address": "0x17c050a2600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_flag_ger",
+            "generation": 2807501192,
+            "componentKind": 388
+          },
+          {
+            "address": "0x17c05174800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\fuel\\territory_fuel_point_extra_low",
+            "generation": 2807501192,
+            "componentKind": 369
+          },
+          {
+            "address": "0x17c0517ee00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_low",
+            "generation": 2807501192,
+            "componentKind": 397
+          },
+          {
+            "address": "0x17c0517f200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_medium",
+            "generation": 2807501192,
+            "componentKind": 397
+          },
+          {
+            "address": "0x17c05246e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_flag_ger",
+            "generation": 2807501192,
+            "componentKind": 388
+          },
+          {
+            "address": "0x17c05245600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\mortar\\w_81mm_mortar_barrage_ger",
+            "generation": 2807501192,
+            "componentKind": 1000
+          },
+          {
+            "address": "0x17c05021c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\crew_mortar_ger",
+            "generation": 2807501192,
+            "componentKind": 500
+          },
+          {
+            "address": "0x17c050f9400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\crew_mortar_ger",
+            "generation": 2807501192,
+            "componentKind": 500
+          },
+          {
+            "address": "0x17c0501a000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\sub_machine_gun\\w_mp40_crew_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052a8e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\crew_mortar_ger",
+            "generation": 2807501192,
+            "componentKind": 500
+          },
+          {
+            "address": "0x17c052a9a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\sub_machine_gun\\w_mp40_crew_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052aa600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\crew_mortar_ger",
+            "generation": 2807501192,
+            "componentKind": 500
+          },
+          {
+            "address": "0x17c052ab200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\sub_machine_gun\\w_mp40_crew_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05173e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\munitions\\territory_munitions_point_high",
+            "generation": 2807501192,
+            "componentKind": 369
+          },
+          {
+            "address": "0x17c0517c200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_low",
+            "generation": 2807501192,
+            "componentKind": 397
+          },
+          {
+            "address": "0x17c0517c600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_medium",
+            "generation": 2807501192,
+            "componentKind": 397
+          },
+          {
+            "address": "0x17c0517c800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_high",
+            "generation": 2807501192,
+            "componentKind": 397
+          },
+          {
+            "address": "0x17c05246600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_flag_ger",
+            "generation": 2807501192,
+            "componentKind": 388
+          },
+          {
+            "address": "0x17c05173400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point",
+            "generation": 2807501192,
+            "componentKind": 369
+          },
+          {
+            "address": "0x17c05246c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_flag_ger",
+            "generation": 2807501192,
+            "componentKind": 388
+          },
+          {
+            "address": "0x17c05189600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\pioneer_ger",
+            "generation": 2807501192,
+            "componentKind": 612
+          },
+          {
+            "address": "0x17c052ad200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\sub_machine_gun\\w_mp40_pioneer_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052ade00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_satchel_charge_paratrooper_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052aea00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052af800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_3_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052b0600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\pioneer_ger",
+            "generation": 2807501192,
+            "componentKind": 612
+          },
+          {
+            "address": "0x17c052b1200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\sub_machine_gun\\w_mp40_pioneer_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052b1e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_satchel_charge_paratrooper_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052b2a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052b3800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_3_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052b4600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\pioneer_ger",
+            "generation": 2807501192,
+            "componentKind": 612
+          },
+          {
+            "address": "0x17c052b5200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\sub_machine_gun\\w_mp40_pioneer_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052b5e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_satchel_charge_paratrooper_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052b6a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052b7800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_3_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05173200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point",
+            "generation": 2807501192,
+            "componentKind": 369
+          },
+          {
+            "address": "0x17c0509ec00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_flag_ger",
+            "generation": 2807501192,
+            "componentKind": 388
+          },
+          {
+            "address": "0x17c05173c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\munitions\\territory_munitions_point_high",
+            "generation": 2807501192,
+            "componentKind": 369
+          },
+          {
+            "address": "0x17c0517b800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_low",
+            "generation": 2807501192,
+            "componentKind": 397
+          },
+          {
+            "address": "0x17c0517bc00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_medium",
+            "generation": 2807501192,
+            "componentKind": 397
+          },
+          {
+            "address": "0x17c0517be00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_high",
+            "generation": 2807501192,
+            "componentKind": 397
+          },
+          {
+            "address": "0x17c0519ac00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_flag_ger",
+            "generation": 2807501192,
+            "componentKind": 388
+          },
+          {
+            "address": "0x17c0509e400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\flame_throwers\\w_flamethrower_pioneer_ger",
+            "generation": 2807501192,
+            "componentKind": 941
+          },
+          {
+            "address": "0x17c050bc200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\buildings\\production\\mechanized_kompanie_ger",
+            "generation": 2807501192,
+            "componentKind": 969
+          },
+          {
+            "address": "0x17c05174200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\munitions\\territory_munitions_point_medium",
+            "generation": 2807501192,
+            "componentKind": 369
+          },
+          {
+            "address": "0x17c0517d600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_low",
+            "generation": 2807501192,
+            "componentKind": 397
+          },
+          {
+            "address": "0x17c0517da00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_medium",
+            "generation": 2807501192,
+            "componentKind": 397
+          },
+          {
+            "address": "0x17c052c0200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_flag_ger",
+            "generation": 2807501192,
+            "componentKind": 388
+          },
+          {
+            "address": "0x17c05174400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\fuel\\territory_fuel_point_medium",
+            "generation": 2807501192,
+            "componentKind": 369
+          },
+          {
+            "address": "0x17c0517de00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_low",
+            "generation": 2807501192,
+            "componentKind": 397
+          },
+          {
+            "address": "0x17c0517e200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_medium",
+            "generation": 2807501192,
+            "componentKind": 397
+          },
+          {
+            "address": "0x17c050ccc00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_flag_ger",
+            "generation": 2807501192,
+            "componentKind": 388
+          },
+          {
+            "address": "0x17c05174a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\fuel\\territory_fuel_point_extra_low",
+            "generation": 2807501192,
+            "componentKind": 369
+          },
+          {
+            "address": "0x17c0517f600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_low",
+            "generation": 2807501192,
+            "componentKind": 397
+          },
+          {
+            "address": "0x17c0517fa00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_medium",
+            "generation": 2807501192,
+            "componentKind": 397
+          },
+          {
+            "address": "0x17c052c0a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_flag_ger",
+            "generation": 2807501192,
+            "componentKind": 388
+          },
+          {
+            "address": "0x17c052bf000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\vehicles\\truck_2_5_ger",
+            "generation": 2807501192,
+            "componentKind": 991
+          },
+          {
+            "address": "0x17c052bd600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\vehicles\\crew\\crew_vehicle_ger",
+            "generation": 2807501192,
+            "componentKind": 843
+          },
+          {
+            "address": "0x17c052bce00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\vehicles\\crew\\crew_vehicle_ger",
+            "generation": 2807501192,
+            "componentKind": 843
+          },
+          {
+            "address": "0x17c05173000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\munitions\\territory_munitions_point_medium",
+            "generation": 2807501192,
+            "componentKind": 369
+          },
+          {
+            "address": "0x17c05179e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_low",
+            "generation": 2807501192,
+            "componentKind": 397
+          },
+          {
+            "address": "0x17c0517a200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_medium",
+            "generation": 2807501192,
+            "componentKind": 397
+          },
+          {
+            "address": "0x17c052b8c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_flag_ger",
+            "generation": 2807501192,
+            "componentKind": 388
+          },
+          {
+            "address": "0x17c052c0600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\sub_machine_gun\\w_mp40_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052b9a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\sub_machine_gun\\w_mp40_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052bf400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\sub_machine_gun\\w_mp40_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c051c8c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\single_fire\\rifle\\w_kar98k_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 864
+          },
+          {
+            "address": "0x17c050ab400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c051cfe00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_incendiary_grenade_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052ba000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_grenade_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c051aac00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_rifle_grenade_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05249600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_grenade_assault_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c05250200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_satchel_charge_paratrooper_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052c1000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_1_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052c1e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_3_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05251a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\single_fire\\rifle\\w_kar98k_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 864
+          },
+          {
+            "address": "0x17c05256600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052c3400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_incendiary_grenade_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052c4000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_grenade_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052c4c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_rifle_grenade_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052c5a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_grenade_assault_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052c6600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_satchel_charge_paratrooper_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052c7200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_1_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052c8000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_3_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05259a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\single_fire\\rifle\\w_kar98k_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 864
+          },
+          {
+            "address": "0x17c0525e800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052c9600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_incendiary_grenade_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052ca200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_grenade_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052cae00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_rifle_grenade_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052cbc00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_grenade_assault_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052cc800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_satchel_charge_paratrooper_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052cd400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_1_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052ce200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_3_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05262a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\single_fire\\rifle\\w_kar98k_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 864
+          },
+          {
+            "address": "0x17c05267600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052cfa00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_incendiary_grenade_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052d0600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_grenade_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052d1200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_rifle_grenade_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052d2000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_grenade_assault_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052d2c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_satchel_charge_paratrooper_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052d3800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_1_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052d4600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_3_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c0526aa00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\single_fire\\rifle\\w_kar98k_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 864
+          },
+          {
+            "address": "0x17c0526f600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052d5c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_incendiary_grenade_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052d6800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_grenade_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052d7400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_rifle_grenade_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052d8200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_grenade_assault_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052d8e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_satchel_charge_paratrooper_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052d9a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_1_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052da800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_3_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05272a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\single_fire\\rifle\\w_kar98k_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 864
+          },
+          {
+            "address": "0x17c05277400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052dbe00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_incendiary_grenade_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052dca00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_grenade_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052dd600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_rifle_grenade_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052de400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_grenade_assault_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052df000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_satchel_charge_paratrooper_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052dfc00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_1_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052e0a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_3_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05251400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\sub_machine_gun\\w_mp40_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c0524f800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\sub_machine_gun\\w_mp40_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c0524de00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\jaeger_support_ger",
+            "generation": 2807501192,
+            "componentKind": 612
+          },
+          {
+            "address": "0x17c05178c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\single_fire\\rifle\\w_g43_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05248400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_rifle_grenade_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05248600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_smoke_rifle_grenade_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05180400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_flare_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c05084800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05278600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_3_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05276c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 612
+          },
+          {
+            "address": "0x17c05274600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\single_fire\\rifle\\w_g43_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05274c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_rifle_grenade_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05274000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_smoke_rifle_grenade_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c0526fc00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_flare_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c0526ea00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c0526e200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\afrika_korps\\weapons\\explosive_weapons\\grenade\\w_grenade_stun_panzerpioneer_ak",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c0526d200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 612
+          },
+          {
+            "address": "0x17c0526b800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\single_fire\\rifle\\w_g43_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052ac400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_rifle_grenade_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05272000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_smoke_rifle_grenade_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05267c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_flare_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c05266e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c0526b400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\afrika_korps\\weapons\\explosive_weapons\\grenade\\w_grenade_stun_panzerpioneer_ak",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c05265200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 612
+          },
+          {
+            "address": "0x17c05268000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\single_fire\\rifle\\w_g43_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c0506e800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_rifle_grenade_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05261800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_smoke_rifle_grenade_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05262e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_flare_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c0525f200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05263000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\afrika_korps\\weapons\\explosive_weapons\\grenade\\w_grenade_stun_panzerpioneer_ak",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c0525d600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 612
+          },
+          {
+            "address": "0x17c0525c800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\single_fire\\rifle\\w_g43_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c0525ba00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_rifle_grenade_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c0525a400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_smoke_rifle_grenade_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05258000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_flare_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c05257c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05255c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\afrika_korps\\weapons\\explosive_weapons\\grenade\\w_grenade_stun_panzerpioneer_ak",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c05256000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\single_fire\\rifle\\w_kar98k_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 864
+          },
+          {
+            "address": "0x17c05254c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05252c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_incendiary_grenade_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c05252a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_grenade_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052bba00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_rifle_grenade_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05275400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_grenade_assault_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c0526c600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_satchel_charge_paratrooper_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c05087e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_1_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c0524fc00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_3_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05245a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\single_fire\\rifle\\w_kar98k_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 864
+          },
+          {
+            "address": "0x17c05281200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05287a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_incendiary_grenade_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052e2200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_grenade_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052e2e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_rifle_grenade_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052e3c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_grenade_assault_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052e4800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_satchel_charge_paratrooper_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052e5400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_1_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052e6200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_3_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05292000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\single_fire\\rifle\\w_kar98k_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 864
+          },
+          {
+            "address": "0x17c05296c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052edc00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_incendiary_grenade_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052ee800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_grenade_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052ef400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_rifle_grenade_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052f0200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_grenade_assault_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052f0e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_satchel_charge_paratrooper_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052f1a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_1_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052f2800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_3_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052a2000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\single_fire\\rifle\\w_kar98k_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 864
+          },
+          {
+            "address": "0x17c052a6c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052f3e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_incendiary_grenade_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052f4a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_grenade_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052f5600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_rifle_grenade_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052f6400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_grenade_assault_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052f7000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_satchel_charge_paratrooper_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c052f7c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_1_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052f8a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_3_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052a7400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\buildings\\defensive\\bunker_ger",
+            "generation": 2807501192,
+            "componentKind": 1046
+          },
+          {
+            "address": "0x17c052a3400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\single_fire\\rifle\\w_g43_scoped_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052a2600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\single_fire\\rifle\\w_g43_scoped_jaeger_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052a1600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\vehicles\\truck_2_5_ger",
+            "generation": 2807501192,
+            "componentKind": 991
+          },
+          {
+            "address": "0x17c05297000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\vehicles\\crew\\crew_vehicle_ger",
+            "generation": 2807501192,
+            "componentKind": 843
+          },
+          {
+            "address": "0x17c05296000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\vehicles\\crew\\crew_vehicle_ger",
+            "generation": 2807501192,
+            "componentKind": 843
+          },
+          {
+            "address": "0x17c05283c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\buildings\\defensive\\mine_pioneer_ger",
+            "generation": 2807501192,
+            "componentKind": 1107
+          },
+          {
+            "address": "0x17c05283a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\mine\\w_mine_engineer_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c0529f200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\buildings\\defensive\\mine_pioneer_ger",
+            "generation": 2807501192,
+            "componentKind": 1107
+          },
+          {
+            "address": "0x17c0529ea00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\mine\\w_mine_engineer_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c0527a800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\team_weapons\\tw_aa_gun_20mm_ger",
+            "generation": 2807501192,
+            "componentKind": 1147
+          },
+          {
+            "address": "0x17c05279800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\flak_gun\\w_20mm_aa_gun_ger",
+            "generation": 2807501192,
+            "componentKind": 1155
+          },
+          {
+            "address": "0x17c05252600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\flak_gun\\w_20mm_aa_gun_button_ger",
+            "generation": 2807501192,
+            "componentKind": 1158
+          },
+          {
+            "address": "0x17c05298400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\crew_aa_gun_20mm_ger",
+            "generation": 2807501192,
+            "componentKind": 1193
+          },
+          {
+            "address": "0x17c05281c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\sub_machine_gun\\w_mp40_crew_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05280e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\crew_aa_gun_20mm_ger",
+            "generation": 2807501192,
+            "componentKind": 1193
+          },
+          {
+            "address": "0x17c05281400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\sub_machine_gun\\w_mp40_crew_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c0529ae00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\crew_aa_gun_20mm_ger",
+            "generation": 2807501192,
+            "componentKind": 1193
+          },
+          {
+            "address": "0x17c0529a200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\sub_machine_gun\\w_mp40_crew_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c05299000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\crew_aa_gun_20mm_ger",
+            "generation": 2807501192,
+            "componentKind": 1193
+          },
+          {
+            "address": "0x17c0529f000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\sub_machine_gun\\w_mp40_crew_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c0529d800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\crew_aa_gun_20mm_ger",
+            "generation": 2807501192,
+            "componentKind": 1193
+          },
+          {
+            "address": "0x17c0529b400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\sub_machine_gun\\w_mp40_crew_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x17c052a1800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\buildings\\defensive\\tripwire_flare_ger",
+            "generation": 2807501192,
+            "componentKind": 1211
+          },
+          {
+            "address": "0x17c052a4000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\mine\\w_trip_flare_kettenkrad_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c0528e000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\buildings\\defensive\\tripwire_flare_ger",
+            "generation": 2807501192,
+            "componentKind": 1211
+          },
+          {
+            "address": "0x17c0528f800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\mine\\w_trip_flare_kettenkrad_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c050f9200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\buildings\\defensive\\tripwire_flare_ger",
+            "generation": 2807501192,
+            "componentKind": 1211
+          },
+          {
+            "address": "0x17c05285600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\mine\\w_trip_flare_kettenkrad_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c0527aa00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\buildings\\defensive\\mine_pioneer_ger",
+            "generation": 2807501192,
+            "componentKind": 1107
+          },
+          {
+            "address": "0x17c05293e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\mine\\w_mine_engineer_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c05292200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\buildings\\defensive\\mine_pioneer_ger",
+            "generation": 2807501192,
+            "componentKind": 1107
+          },
+          {
+            "address": "0x17c0528e400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\mine\\w_mine_engineer_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x17c0527e000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\buildings\\defensive\\tripwire_flare_ger",
+            "generation": 2807501192,
+            "componentKind": 1211
+          },
+          {
+            "address": "0x17c0527f000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\explosive_weapons\\mine\\w_trip_flare_kettenkrad_ger",
+            "generation": 2807501192,
+            "componentKind": 520
+          }
+        ]
+      }
+    ],
+    "stableRootsAfterRead": true
+  },
+  "bytesRead": 47204
+}

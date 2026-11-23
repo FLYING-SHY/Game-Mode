@@ -1,0 +1,12 @@
+﻿{
+    "schema":  "match-hud-normal-submit-v1",
+    "startedUtc":  "2026-11-22T03:43:30.3146052Z",
+    "returnedUtc":  "2026-11-22T03:43:30.3382994Z",
+    "pid":  40716,
+    "processStartUtc":  "2026-11-22T03:42:15.5351164Z",
+    "buttonHwnd":  1117800,
+    "action":  "BM_CLICK on existing standard Enter button",
+    "credentialContentRead":  false,
+    "normalApiPath":  true,
+    "result":  "not_evaluated"
+}

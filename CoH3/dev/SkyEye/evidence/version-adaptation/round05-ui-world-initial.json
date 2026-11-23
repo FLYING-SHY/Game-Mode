@@ -1,0 +1,18 @@
+{
+  "utc": "2026-11-21T00:55:59.760650+00:00",
+  "pid": 23716,
+  "tag": "round05-ui-world-initial",
+  "windows": [
+    {
+      "hwnd": 3672474,
+      "isControlPanel": true,
+      "rect": [
+        540,
+        221,
+        2020,
+        1171
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\round05-ui-world-initial-3672474.png"
+    }
+  ]
+}

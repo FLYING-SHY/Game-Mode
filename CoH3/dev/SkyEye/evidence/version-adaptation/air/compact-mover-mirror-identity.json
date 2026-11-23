@@ -1,0 +1,25 @@
+﻿{
+    "status":  "PASS_source_mirror_only",
+    "utc":  "2026-11-21T02:20:33.8786484Z",
+    "noGameFeatureAcceptance":  true,
+    "records":  [
+                    {
+                        "source":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\AirLogic.cs",
+                        "target":  "F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\AirLogic.cs",
+                        "backup":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\compact-mover-simple-before\\AirLogic.cs",
+                        "targetBeforeSha256":  "22758734981407A68805937364B77DD33BDA8CAB545CF39C22767A1A9C1EF603",
+                        "sourceSha256":  "8E3ECED8CD1E9F120E76DA38BA2D5146C0E56FCFE670EA66B4486FB2011DAC50",
+                        "targetAfterSha256":  "8E3ECED8CD1E9F120E76DA38BA2D5146C0E56FCFE670EA66B4486FB2011DAC50",
+                        "bytes":  6815
+                    },
+                    {
+                        "source":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\PlayerInfoReader.cs",
+                        "target":  "F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\PlayerInfoReader.cs",
+                        "backup":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\compact-mover-simple-before\\PlayerInfoReader.cs",
+                        "targetBeforeSha256":  "36796D25F86894D86260FDB8EE72021878E01C866DEE9AFA161EB5648EA715C7",
+                        "sourceSha256":  "BBB359CD59409065D8B4D00ACE784243AE5E99816611BC11617E7C9ED8ADBA9D",
+                        "targetAfterSha256":  "BBB359CD59409065D8B4D00ACE784243AE5E99816611BC11617E7C9ED8ADBA9D",
+                        "bytes":  104468
+                    }
+                ]
+}

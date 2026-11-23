@@ -1,0 +1,51 @@
+{
+  "sandboxTarget": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\verification\\sandbox",
+  "clientSHA256": "1DD98A5D97E1C61D60173BD5B55A116966F8537AB95C3B799362D75B0C5DD512",
+  "baseUrl": "https://124.220.147.56/",
+  "results": [
+    {
+      "exitCode": 0,
+      "case": "selfcheck",
+      "sandbox": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\verification\\sandbox\\raw-v2-20261121-194453-selfcheck",
+      "elapsedMs": 661.46
+    },
+    {
+      "exitCode": 0,
+      "case": "ui",
+      "sandbox": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\verification\\sandbox\\raw-v2-20261121-194453-ui",
+      "elapsedMs": 1127.52
+    },
+    {
+      "exitCode": 0,
+      "case": "audio",
+      "sandbox": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\verification\\sandbox\\raw-v2-20261121-194453-audio",
+      "elapsedMs": 140.09
+    },
+    {
+      "exitCode": 0,
+      "case": "protocol-permanent",
+      "sandbox": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\verification\\sandbox\\raw-v2-20261121-194453-protocol-permanent",
+      "elapsedMs": 2048.91
+    },
+    {
+      "exitCode": 0,
+      "case": "protocol-timed",
+      "sandbox": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\verification\\sandbox\\raw-v2-20261121-194453-protocol-timed",
+      "elapsedMs": 1965.72
+    },
+    {
+      "exitCode": 0,
+      "case": "coordinator",
+      "sandbox": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\verification\\sandbox\\raw-v2-20261121-194453-coordinator",
+      "elapsedMs": 31267.14
+    },
+    {
+      "exitCode": 0,
+      "case": "network",
+      "sandbox": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\verification\\sandbox\\raw-v2-20261121-194453-network",
+      "elapsedMs": 59690.92
+    }
+  ],
+  "allCardsLoggedOut": true,
+  "note": "Unprotected baseline; identical case set to the protected verification."
+}

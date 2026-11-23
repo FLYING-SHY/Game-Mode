@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "sha256": "8a3445292255d652c8dbe9b53f24328af159c161be89836ba54ef070946dd3ec",
+  "old_dependency_count": 36,
+  "rtti_selected_record_count": 77,
+  "rip_target_checks": 5,
+  "signature_counts": {
+    "0x930c32": 44,
+    "0x2727fe": 1,
+    "0x272880": 1,
+    "0x17932a": 1
+  },
+  "scope": "Static-file consistency only; no dynamic correctness claim."
+}

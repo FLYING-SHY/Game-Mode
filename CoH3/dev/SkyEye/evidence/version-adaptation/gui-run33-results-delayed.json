@@ -1,0 +1,40 @@
+{
+  "utc": "2026-11-21T05:43:02.771988+00:00",
+  "pid": 7672,
+  "tag": "gui-run33-results-delayed",
+  "windows": [
+    {
+      "hwnd": 4656326,
+      "isControlPanel": false,
+      "rect": [
+        8,
+        61,
+        1928,
+        1141
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run33-results-delayed-4656326.png"
+    },
+    {
+      "hwnd": 1575036,
+      "isControlPanel": false,
+      "rect": [
+        66,
+        69,
+        1870,
+        163
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run33-results-delayed-1575036.png"
+    },
+    {
+      "hwnd": 9046006,
+      "isControlPanel": true,
+      "rect": [
+        540,
+        221,
+        2020,
+        1171
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run33-results-delayed-9046006.png"
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "status": "PASS_historical_air_prefix_only_later_camera_failure",
+  "windowAccepted": false,
+  "gameFeatureAccepted": false,
+  "readerReport": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\maintenance-run-26-p47-retained\\maintenance-live.json",
+  "readerReportSha256": "85829f13f953a434a28139b4d6883364bc63596155d597f55c55768177b8d22d",
+  "readerReportedExitCode": 3,
+  "osChildExitCode": "not_recorded_by_driver",
+  "error": "System.Exception: 镜头已切换。\r\n   在 CoH3MemoryTool.PlayerInfoReader.ReadMineCamera()\r\n   在 CoH3MemoryTool.PlayerInfoReader.LocalIdentity58()\r\n   在 CoH3MemoryTool.PlayerInfoReader.Snapshot()\r\n   在 CoH3MemoryTool.MaintenanceLiveContext.<>c__DisplayClass2_1.<SampleEvents>b__1()\r\n   在 CoH3MemoryTool.EventPolling.Run(Int32 seconds, Func`1 sample, Func`1 elapsed, Action`1 sleep, Func`1 cancelled, Int32& rounds)\r\n   在 CoH3MemoryTool.MaintenanceLiveContext.<>c__DisplayClass2_0.<SampleEvents>b__0(LiveProbeResult result)\r\n   在 CoH3MemoryTool.MaintenanceLiveContext.Probe(PlayerInfoReader reader, Exception openError, String feature, Action`1 query)",
+  "scope": "all_current_snapshot_rows_diagnostic_not_production_enemy_UI",
+  "match": "31572:639308258698492330:2188107579392:2188149555200:1000",
+  "epoch": 1,
+  "attemptedPolls": 429,
+  "completedAirQueries": 428,
+  "retainedDecoded": 66,
+  "retainedFrames": 68,
+  "droppedFrames": 360,
+  "droppedDecoded": 0,
+  "firstPositive": {
+    "ordinal": 12,
+    "utc": "2026-11-21T01:50:10.4223985Z",
+    "startedMilliseconds": 1202,
+    "finishedMilliseconds": 1208,
+    "status": "completed",
+    "decodedCount": 0,
+    "airDecodedCount": 1
+  },
+  "lastPositive": {
+    "ordinal": 77,
+    "utc": "2026-11-21T01:50:17.5193676Z",
+    "startedMilliseconds": 8299,
+    "finishedMilliseconds": 8307,
+    "status": "completed",
+    "decodedCount": 0,
+    "airDecodedCount": 1
+  },
+  "firstLaterEmpty": {
+    "ordinal": 78,
+    "utc": "2026-11-21T01:50:17.6294220Z",
+    "startedMilliseconds": 8409,
+    "finishedMilliseconds": 8418,
+    "status": "completed",
+    "decodedCount": 0,
+    "airDecodedCount": 0
+  },
+  "lastCompletedPoll": {
+    "ordinal": 428,
+    "utc": "2026-11-21T01:50:55.8767318Z",
+    "startedMilliseconds": 46656,
+    "finishedMilliseconds": 46665,
+    "status": "completed",
+    "decodedCount": 0,
+    "airDecodedCount": 0
+  },
+  "failedPoll": {
+    "ordinal": 429,
+    "utc": "2026-11-21T01:50:55.9841974Z",
+    "startedMilliseconds": 46764,
+    "finishedMilliseconds": 46771,
+    "status": "incomplete",
+    "decodedCount": null,
+    "airDecodedCount": null
+  },
+  "zone": {
+    "Key": "2188149555200:2188067394560:3481:abilities\\races\\american\\aircraft\\strafing_run_p47_us:9KUJQjeboUGsr+4/",
+    "Owner": 2188149555200,
+    "Offset": 0,
+    "Slot": 0,
+    "Name": "P47扫射",
+    "X": 34.4120636,
+    "Y": 20.2007885,
+    "Z": 1.86473608,
+    "DX": 0.999969959,
+    "DZ": 0.00774675328,
+    "HalfWidth": 5,
+    "Length": 45,
+    "Radius": 0,
+    "Rocket": false,
+    "Point": false
+  },
+  "zoneDistinctKeys": 1,
+  "allRetainedZonesSameGeometry": true,
+  "rawCast": {
+    "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\live-raw-07-p47-early.json",
+    "sha256": "f22378d8ee8dcc1b5422d3463dc41186b580c6a91603636f88647bfa8618d095",
+    "instance": 3481,
+    "keyExactlyMatchesActualCSharp": true,
+    "targetXYZ": [
+      34.41206359863281,
+      20.200788497924805,
+      1.8647360801696777
+    ],
+    "directionXZ": [
+      0.9999699934545389,
+      0.007746753547757124
+    ]
+  },
+  "rawAircraft": [
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\live-raw-08-p47-middle.json",
+      "sha256": "c9ccf40c15f82dfc58d96d07d96dfe51ca57d8b4683a88721ded6d0de4c88a66",
+      "timestampUtc": "2026-11-21T01:50:15.181297+00:00",
+      "entity": "0x1fd74467a00",
+      "generation": 1000008610,
+      "index": 3063,
+      "position": [
+        -109.47994995117188,
+        41.380645751953125,
+        0.7498246431350708
+      ],
+      "alongOriginalCastMetres": -143.89633279168888,
+      "actorPresent": true,
+      "actor96_100": [
+        0.999970018863678,
+        0.007746754214167595
+      ],
+      "body32_36_40": [
+        0.9997981786727905,
+        0.018539365381002426,
+        0.007743749301880598
+      ],
+      "failedLegacyRecoveryGates": [
+        "unitHeading"
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\live-raw-08-p47-middle.json",
+      "sha256": "c9ccf40c15f82dfc58d96d07d96dfe51ca57d8b4683a88721ded6d0de4c88a66",
+      "timestampUtc": "2026-11-21T01:50:15.181297+00:00",
+      "entity": "0x1fd74466400",
+      "generation": 1000008611,
+      "index": 3064,
+      "position": [
+        -114.21865844726562,
+        41.286258697509766,
+        0.7131204009056091
+      ],
+      "alongOriginalCastMetres": -148.63518343422945,
+      "actorPresent": false,
+      "actor96_100": null,
+      "body32_36_40": [
+        0.9998089075088501,
+        0.017951959744095802,
+        0.007743773050606251
+      ],
+      "failedLegacyRecoveryGates": [
+        "actorPresent",
+        "recoverableStrafePath"
+      ]
+    }
+  ],
+  "limitation": "Prefix samples passed per-read guards before the later Snapshot camera failure. This validates historical retained outputs only, not the complete event window, recovery, enemy-only GUI or protected build."
+}

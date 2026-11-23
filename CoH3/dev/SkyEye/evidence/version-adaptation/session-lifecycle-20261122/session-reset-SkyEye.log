@@ -1,0 +1,80 @@
+Fixture=OverlaySettingsForm; level=F; no form constructors, tracking, process discovery, game native or credentials
+PASS clear rows identity invalidated
+PASS clear old rows removed
+PASS clear support identity baseline dedupe reset
+PASS clear selection reset
+PASS clear armourSelection reset
+PASS clear armour identity initialized seen reset
+PASS clear alerts baseline reset
+PASS clear alerts enemyBarrages reset
+PASS clear alerts barrageOwners reset
+PASS clear alerts grenades reset
+PASS clear alerts groups reset
+PASS clear alerts completed reset
+PASS clear alerts confirmations reset
+PASS clear alerts artillery reset
+PASS clear persistent preferences retained
+PASS clear active support reset
+PASS clear flank active identity units reset
+PASS clear flank timing coordinates source reset
+PASS clear flank preferences retained
+PASS repeat-clear rows identity invalidated
+PASS repeat-clear old rows removed
+PASS repeat-clear support identity baseline dedupe reset
+PASS repeat-clear selection reset
+PASS repeat-clear armourSelection reset
+PASS repeat-clear armour identity initialized seen reset
+PASS repeat-clear alerts baseline reset
+PASS repeat-clear alerts enemyBarrages reset
+PASS repeat-clear alerts barrageOwners reset
+PASS repeat-clear alerts grenades reset
+PASS repeat-clear alerts groups reset
+PASS repeat-clear alerts completed reset
+PASS repeat-clear alerts confirmations reset
+PASS repeat-clear alerts artillery reset
+PASS repeat-clear persistent preferences retained
+PASS repeat-clear active support reset
+PASS repeat-clear flank active identity units reset
+PASS repeat-clear flank timing coordinates source reset
+PASS repeat-clear flank preferences retained
+PASS detach rows identity invalidated
+PASS detach old rows removed
+PASS detach support identity baseline dedupe reset
+PASS detach selection reset
+PASS detach armourSelection reset
+PASS detach armour identity initialized seen reset
+PASS detach alerts baseline reset
+PASS detach alerts enemyBarrages reset
+PASS detach alerts barrageOwners reset
+PASS detach alerts grenades reset
+PASS detach alerts groups reset
+PASS detach alerts completed reset
+PASS detach alerts confirmations reset
+PASS detach alerts artillery reset
+PASS detach persistent preferences retained
+PASS detach active support reset
+PASS detach flank active identity units reset
+PASS detach flank timing coordinates source reset
+PASS detach flank preferences retained
+PASS detach reader and pid cleared
+PASS detach disposes previous handle-free reader and invalidates its scan epoch
+PASS same-key reconnect keeps new reader alive
+PASS same-key reconnect keeps successful fresh rows
+PASS same-key reconnect clears old selection
+PASS same-key reconnect first sample silent baseline
+PASS same-key reconnect reused job alerts after new baseline
+PASS same-key reconnect job dedupe retained within session
+PASS same-key reconnect support key reusable baseline not armed
+PASS same-match polling preserves transient dedupe and choices
+PASS same-reader A to B retains successful reader and pid
+PASS same-reader A to B assigns fresh after clearing old rows
+PASS same-reader A to B selections reset before new display
+PASS same-reader A to B support reset
+PASS same-reader A to B armour baseline silent
+PASS same-reader A to B alerts baseline silent
+PASS production Poll snapshot then AcceptSnapshot before first overlay publication
+PASS production DropReader calls actual reset transaction
+PASS production AcceptSnapshot has no reader disposal
+PASS fixture created no top-level or control window handles
+PASS fixture started no renderer threads
+RESULT PASS assertions=78

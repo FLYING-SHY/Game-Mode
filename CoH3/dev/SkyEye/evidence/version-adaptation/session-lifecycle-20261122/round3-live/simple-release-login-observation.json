@@ -1,0 +1,33 @@
+{
+  "schema": "normal-client-login-observation-v1",
+  "pid": 37772,
+  "startUtc": "2026-11-22T02:26:52.6269498Z",
+  "executableSha256": "B0556430651AD57FA278A7FE32A9439CF5FD2129FDF6B058207F97520CED2180",
+  "entry": "unchanged SimpleProgram.Main -> SimpleLicenseApp -> LicenseCoordinator60",
+  "loginActionRecord": "simple-release-enter-01.json",
+  "windowRecords": ["simple-release-normal-window-01.json", "simple-release-normal-window-02.json", "simple-release-normal-window-03.json"],
+  "observedWindowTitle": "COH3工具 · 激活",
+  "observedStatusText": "本次登录已解除，请重新确认激活码。",
+  "normalSubmitClicked": true,
+  "credentialSource": "client normal saved masked field; no value captured or exported",
+  "observedResult": "login window remains; control bar not observed",
+  "sourceMapping": {
+    "file": "F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\LicenseCoordinator60.cs",
+    "line": 442,
+    "mappedState": "login_required",
+    "mappedReplyState": "revoked",
+    "meaning": "mapping from public client source, not captured network response"
+  },
+  "readerOrOverlayAcceptance": "not_run",
+  "gameFeatureAcceptance": "not_run",
+  "protectedDeliveryAcceptance": "not_run",
+  "productAcceptance": false,
+  "nextCondition": "normal login must reach active before actual product game tests",
+  "capturePrivacy": {
+    "beforeScriptSha256": "D9D2FA3150006F59715EA7A823F673CE63218CFD0A816C5F50DEC39CE71F2472",
+    "afterScriptSha256": "64DACF5EBE92A25C8A8CB53B5A5A33E688D1DCFB2268F751FAC5213D2AA1F051",
+    "change": "redact Win32 EDIT classes before reading UIA Name, including providers reporting an editor as ControlType.Pane",
+    "verification": "window-03 EDIT node Name is [editable or password content omitted]",
+    "screenshots": "original client uses UseSystemPasswordChar=true; only masked values are visible"
+  }
+}

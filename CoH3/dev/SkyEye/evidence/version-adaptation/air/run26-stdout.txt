@@ -1,0 +1,23 @@
+license_state=active
+snapshot/resources: observed samples=2
+units: observed samples=10
+buildings: observed samples=4
+production: sample_absent samples=0
+upgrades: observed samples=15
+colours: observed samples=2
+camera: observed samples=1
+squad_markers: observed samples=10
+support: sample_absent samples=0
+projectiles: sample_absent samples=0
+air: sample_absent samples=0
+license_state=active
+event_window airScope=all_sides_diagnostic airQueries=428 airDecodedObservations=66
+event_window stop=exception polls=429 decodedObservations=0
+event_window: fail samples=66 System.Exception: 镜头已切换。
+   在 CoH3MemoryTool.PlayerInfoReader.ReadMineCamera()
+   在 CoH3MemoryTool.PlayerInfoReader.LocalIdentity58()
+   在 CoH3MemoryTool.PlayerInfoReader.Snapshot()
+   在 CoH3MemoryTool.MaintenanceLiveContext.<>c__DisplayClass2_1.<SampleEvents>b__1()
+   在 CoH3MemoryTool.EventPolling.Run(Int32 seconds, Func`1 sample, Func`1 elapsed, Action`1 sleep, Func`1 cancelled, Int32& rounds)
+   在 CoH3MemoryTool.MaintenanceLiveContext.<>c__DisplayClass2_0.<SampleEvents>b__0(LiveProbeResult result)
+   在 CoH3MemoryTool.MaintenanceLiveContext.Probe(PlayerInfoReader reader, Exception openError, String feature, Action`1 query)

@@ -42,7 +42,7 @@ internal static class ProjectileLogic
 		return num * num + num2 * num2 + num3 * num3 <= 0.0001;
 	}
 
-	public static bool Decode(byte[] body, byte[] actor, byte[] ext, long image, long arena, long entity, uint id, uint index, out ProjectileImpact impact, bool mortar = false, bool infantry = false, bool playerSource = false)
+	public static bool Decode(byte[] body, byte[] actor, byte[] ext, long image, long arena, long entity, uint id, uint index, out ProjectileImpact impact, bool mortar = false, bool infantry = false, bool playerSource = false, Func<long, long> resolveRva = null)
 	{
 		impact = null;
 		if (body == null || body.Length < 392 || actor == null || actor.Length < 80 || ext == null || ext.Length < 108)
@@ -53,11 +53,11 @@ internal static class ProjectileLogic
 		{
 			return false;
 		}
-		if (BitConverter.ToInt64(actor, 0) != image + 65313128 || BitConverter.ToUInt32(actor, 36) + arena != entity || (BitConverter.ToUInt32(actor, 64) != 0 && ((!mortar && !infantry) || BitConverter.ToUInt32(actor, 64) != 3)))
+		if (BitConverter.ToInt64(actor, 0) != image + (resolveRva?.Invoke(65313128) ?? 65313128) || BitConverter.ToUInt32(actor, 36) + arena != entity || (BitConverter.ToUInt32(actor, 64) != 0 && ((!mortar && !infantry) || BitConverter.ToUInt32(actor, 64) != 3)))
 		{
 			return false;
 		}
-		if (BitConverter.ToInt64(ext, 0) != image + 65307976 || BitConverter.ToUInt32(ext, 8) + arena != entity || (actor[16] != 1 && actor[16] != 2))
+		if (BitConverter.ToInt64(ext, 0) != image + (resolveRva?.Invoke(65307976) ?? 65307976) || BitConverter.ToUInt32(ext, 8) + arena != entity || (actor[16] != 1 && actor[16] != 2))
 		{
 			return false;
 		}

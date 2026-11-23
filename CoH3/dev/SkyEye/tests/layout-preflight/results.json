@@ -1,0 +1,17 @@
+{
+  "status": "PASS_fixture_only",
+  "source_roots": ["CoH3/dev/SkyEye/client/CoH3MemoryTool", "CoH3/dev/COH3SimpleTool/CoH3MemoryTool"],
+  "configurations": {"Maintenance": {"assertions_per_root": 94, "exit_code": 0}, "Release": {"assertions_per_root": 8, "exit_code": 0}},
+  "dependency_count": 37,
+  "independent_missing_key_cases_per_root": 37,
+  "constructor_preflight_branches_per_root": 2,
+  "mirrored_sha256": {
+    "GameLayout52426.cs": "77C44EFFBF42D9F6300CFD41E753712BED85E551B487F4DB1A779DF528DC8D92",
+    "PlayerInfoReader.cs": "36796D25F86894D86260FDB8EE72021878E01C866DEE9AFA161EB5648EA715C7"
+  },
+  "real_game": "not_run",
+  "ui": "not_run",
+  "native_process_open": "not_linked_in_fixture",
+  "full_client_build": "not_run",
+  "scope": "Missing mapping keys fail during maintenance construction before the explicit native OpenProcess. Other runtime errors may still be caught per object. Candidate values remain unverified."
+}

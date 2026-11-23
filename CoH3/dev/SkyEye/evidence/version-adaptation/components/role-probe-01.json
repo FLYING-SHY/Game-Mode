@@ -1,0 +1,3150 @@
+{
+  "timestamp": "2026-11-20T17:25:09.291859+00:00",
+  "pid": 11192,
+  "moduleBase": "0x7ff7a37e0000",
+  "access": "0x410 read only",
+  "status": "candidate_not_baseline",
+  "observed": [
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6af00",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 0
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\infantry\\infantry_left_2a_expert_trackers_us",
+      "state12": 1,
+      "targetOffset8": "0xa79e0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6b000",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 1
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\infantry\\infantry_left_3a_ranger_weapon_training_us",
+      "state12": 1,
+      "targetOffset8": "0xa7980"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6b200",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 2
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\infantry\\infantry_right_1a_defensive_operations_us",
+      "state12": 1,
+      "targetOffset8": "0xa7920"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6b100",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 3
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\infantry\\infantry_right_1b_m1919a6_us",
+      "state12": 1,
+      "targetOffset8": "0xa7860"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6b300",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 4
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\infantry\\infantry_right_2_105mm_howitzer_us",
+      "state12": 1,
+      "targetOffset8": "0xa7880"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6b400",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 5
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\airborne\\airborne_right_1a_pathfinders_us",
+      "state12": 1,
+      "targetOffset8": "0xa77e0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6b500",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 6
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\armored\\armored_left_1b_veteran_crews_us",
+      "state12": 1,
+      "targetOffset8": "0xa77a0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6b600",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 7
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\armored\\armored_left_3_war_machine_us",
+      "state12": 1,
+      "targetOffset8": "0xa7760"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6b700",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 8
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\armored\\armored_right_1b_strength_in_steel_us",
+      "state12": 1,
+      "targetOffset8": "0xa7ae0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6b800",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 9
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\armored\\armored_right_1a_fast_deploy_us",
+      "state12": 1,
+      "targetOffset8": "0xa7c80"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6b900",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 10
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\armored\\armored_right_2a_scott_us",
+      "state12": 1,
+      "targetOffset8": "0xa7c40"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6ba00",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 11
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\airborne\\passive\\c_airborne_take_and_hold_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa7c00"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6bb00",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 12
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\airborne\\passive\\c_airborne_frontline_medics_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa7bc0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6bc00",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 13
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\airborne\\passive\\c_airborne_starting_cache_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa7b20"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6bd00",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 14
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\airborne\\passive\\c_airborne_efficient_airpower_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa7b60"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6be00",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 15
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\airborne\\passive\\c_airborne_behind_enemy_lines_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa7b00"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6bf00",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 16
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\special_operations\\passive\\top\\c_special_operations_marksmen_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa7aa0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6c000",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 17
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\special_operations\\passive\\middle\\c_special_operations_rigorous_training_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa7a60"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6c100",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 18
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\special_operations\\passive\\top\\c_special_operations_self_heal_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa7a20"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6c200",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 19
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\special_operations\\passive\\c_special_operations_special_arms_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa7da0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6c300",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 20
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\special_operations\\passive\\c_special_operations_stolen_schrecks_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa7f40"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6c400",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 21
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\special_operations\\passive\\top\\c_special_operations_supply_raid_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa7f00"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6c500",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 22
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\special_operations\\passive\\c_special_operations_surprise_strike_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa7ec0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6c600",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 23
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\special_operations\\passive\\middle\\c_special_operations_the_best_offense_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa7e80"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6c700",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 24
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\special_operations\\passive\\middle\\c_special_operations_well_researched_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa7de0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6c800",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 25
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\airborne\\passive\\c_airborne_expert_foundation_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa7e20"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6c900",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 26
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\airborne\\passive\\c_airborne_tools_of_the_trade_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa7dc0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6ca00",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 27
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\airborne\\active\\specialization\\supplemental\\c_airborne_paratroopers_vet1_vet_up_us",
+      "state12": 1,
+      "targetOffset8": "0xa7d60"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6cb00",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 28
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\airborne\\active\\specialization\\supplemental\\c_airborne_paratroopers_vet1_weapon_costs_us",
+      "state12": 1,
+      "targetOffset8": "0xa7d20"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6cd00",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 29
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\airborne\\passive\\c_airborne_asc_1_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa7ce0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6ce00",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 30
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\airborne\\passive\\c_airborne_asc_2_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa8060"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6cf00",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 31
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\airborne\\passive\\c_airborne_rally_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa8200"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6d000",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 32
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\airborne\\passive\\c_airborne_munitions_flow_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa81c0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6d100",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 33
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\armoured\\passive\\middle\\c_armoured_improved_radio_net_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa8180"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6d200",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 34
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\armoured\\passive\\middle\\c_armoured_light_vehicle_resiliency_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa8140"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6d300",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 35
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\armoured\\passive\\middle\\c_armoured_penetration_rounds_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa80a0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6d400",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 36
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\armoured\\passive\\middle\\c_armoured_rudimentary_repairs_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa80e0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6d500",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 37
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\armoured\\passive\\middle\\c_armoured_skilled_gunners_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa8080"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6d600",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 38
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\armoured\\passive\\top\\c_armoured_american_war_machine_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa8020"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6d700",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 39
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\armoured\\passive\\top\\c_armoured_bonus_supplies_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa7fe0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6d800",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 40
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\armoured\\passive\\top\\c_armoured_flamethrower_requisition_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa7fa0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6d900",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 41
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\armoured\\passive\\top\\c_armoured_improved_assault_package_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa8320"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6da00",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 42
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\armoured\\passive\\top\\c_armoured_increased_fuel_rate_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa84c0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6cc00",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 43
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\special_operations\\passive\\top\\c_special_operations_munitions_boost_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa8480"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6dc00",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 44
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\campaign\\company\\airborne\\passive\\c_airborne_paratroopers_pathfinders_pillage_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa8440"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6dd00",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 45
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\common\\reinforcement_out_of_hq_check",
+      "state12": 1,
+      "targetOffset8": "0xa8400"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6de00",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 46
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\infantry\\infantry_right_1b_ammunition_storage_us",
+      "state12": 1,
+      "targetOffset8": "0xa8360"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6df00",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 47
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\infantry\\infantry_right_1a_artillery_observers_us",
+      "state12": 1,
+      "targetOffset8": "0xa83a0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6e000",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 48
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\infantry\\infantry_left_2b_lead_the_way",
+      "state12": 1,
+      "targetOffset8": "0xa8340"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6e100",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 49
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\infantry\\infantry_right_3b_auto_fire_howitzer_us",
+      "state12": 1,
+      "targetOffset8": "0xa82e0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6e200",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 50
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\armored\\armored_right_sherman_easy_8_production_unlock_us",
+      "state12": 1,
+      "targetOffset8": "0xa82a0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6e300",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 51
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\armored\\special_operations_sherman_whizbang_production_us",
+      "state12": 1,
+      "targetOffset8": "0xa8260"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6e400",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 52
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\special_weapons\\special_weapons_assault_halftrack_m3_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa85e0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6e500",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 53
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\special_weapons\\special_weapons_rapid_reposition_us",
+      "state12": 1,
+      "targetOffset8": "0xa8780"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6e600",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 54
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\special_weapons\\special_weapons_bolstered_fire_teams_us",
+      "state12": 1,
+      "targetOffset8": "0xa8740"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6e700",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 55
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\special_weapons\\special_weapons_strongpoint_us",
+      "state12": 1,
+      "targetOffset8": "0xa8700"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6e800",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 56
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\special_weapons\\special_weapons_exchangeable_parts_us",
+      "state12": 1,
+      "targetOffset8": "0xa86c0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6e900",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 57
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\special_weapons\\special_weapons_50cal_hmg_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa8620"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6ea00",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 58
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\partisans\\partisan_tunnel_network_transit_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa8660"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6eb00",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 59
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\partisans\\partisan_tunnel_network_transit_dummy_passive_ui_info_us",
+      "state12": 1,
+      "targetOffset8": "0xa8600"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6ec00",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 60
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\partisans\\partisans_dummy_passive_oss_coordination_us",
+      "state12": 1,
+      "targetOffset8": "0xa85a0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6ed00",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 61
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\partisans\\partisan_medical_supplies_us",
+      "state12": 1,
+      "targetOffset8": "0xa8560"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6ee00",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 62
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\partisans\\partisans_dummy_smuggling_routes_us",
+      "state12": 1,
+      "targetOffset8": "0xa8520"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6ef00",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 63
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\partisans\\partisans_dummy_forward_headquarters_us",
+      "state12": 1,
+      "targetOffset8": "0xa88a0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6db00",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 64
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\french\\french_production_unlock_char_b1_us",
+      "state12": 1,
+      "targetOffset8": "0xa8a40"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6f000",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 65
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\french\\french_maginot_dummy_us",
+      "state12": 1,
+      "targetOffset8": "0xa8a00"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6f100",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 66
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\french\\french_old_guard_dummy_us",
+      "state12": 1,
+      "targetOffset8": "0xa89c0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6f200",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 67
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\french\\french_new_blood_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa8980"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6f300",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 68
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\french\\french_advanced_tourelles_dummy_us",
+      "state12": 1,
+      "targetOffset8": "0xa88e0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6f400",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 69
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\brazilian\\brazilian_supercharged_counterbattery_dummy_us",
+      "state12": 1,
+      "targetOffset8": "0xa8920"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6f500",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 70
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\brazilian\\brazilian_fire_support_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa88c0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6f600",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 71
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\brazilian\\brazilian_goons_and_deuces_passive_us",
+      "state12": 1,
+      "targetOffset8": "0xa8860"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6f700",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 72
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\brazilian\\brazilian_victor_target_dummy_us",
+      "state12": 1,
+      "targetOffset8": "0xa8820"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e6f800",
+      "source": {
+        "player": "0x17c08c08000",
+        "index": 73
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\american\\battlegroups\\brazilian\\brazilian_stalwart_defense_dummy_us",
+      "state12": 1,
+      "targetOffset8": "0xa87e0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03debf00",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 0
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\mechanized\\mechanized_left_1b_raid_ger",
+      "state12": 1,
+      "targetOffset8": "0xb98c0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03dec400",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 1
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\mechanized\\mechanized_right_1b_smoke_canisters_ger",
+      "state12": 1,
+      "targetOffset8": "0xb9920"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03dec600",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 2
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\breakthrough\\breakthrough_left_1a_rapid_production_ger",
+      "state12": 1,
+      "targetOffset8": "0xb9960"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03decb00",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 3
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\breakthrough\\breakthrough_right_1_assault_grenadiers_ger",
+      "state12": 1,
+      "targetOffset8": "0xdbe00"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03dec500",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 4
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\luftwaffe\\luftwaffe_left_1a_infantry_reserves_ger",
+      "state12": 1,
+      "targetOffset8": "0xb9a00"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eaad00",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 5
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\luftwaffe\\luftwaffe_left_3_88mm_at_gun_ger",
+      "state12": 1,
+      "targetOffset8": "0xb9c60"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eaae00",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 6
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\defense\\defense_left_1_fortress_pioneers_ger",
+      "state12": 1,
+      "targetOffset8": "0xb9ca0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eaaf00",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 7
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\defense\\defense_left_2a_support_bunkers_ger",
+      "state12": 1,
+      "targetOffset8": "0xa69e0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eab000",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 8
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\defense\\defense_left_2b_early_warning_ger",
+      "state12": 1,
+      "targetOffset8": "0xa6a20"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eab100",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 9
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\defense\\defense_right_1a_kettenkrad_observation_ger",
+      "state12": 1,
+      "targetOffset8": "0xa69c0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eab200",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 10
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\campaign\\company\\panzer\\passive\\c_panzer_operate_under_pressure_ger",
+      "state12": 1,
+      "targetOffset8": "0xa6c20"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eab300",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 11
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\campaign\\company\\panzer\\passive\\c_panzer_vehicle_cost_reduction_ger",
+      "state12": 1,
+      "targetOffset8": "0xa6c60"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eab400",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 12
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\campaign\\company\\panzer\\passive\\c_panzer_veteran_vehicles_ger",
+      "state12": 1,
+      "targetOffset8": "0xa6c00"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eab500",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 13
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\coastal\\coastal_support_bunkers_ger",
+      "state12": 1,
+      "targetOffset8": "0xa6ce0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eab600",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 14
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\coastal\\coastal_bunker_supplies",
+      "state12": 1,
+      "targetOffset8": "0xa6d20"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eab700",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 15
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\coastal\\coastal_obice_ger",
+      "state12": 1,
+      "targetOffset8": "0xa6cc0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eab800",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 16
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\coastal\\coastal_bulwark_ger",
+      "state12": 1,
+      "targetOffset8": "0xa6da0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eab900",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 17
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\campaign\\company\\panzer\\passive\\c_panzer_assault_grenadiers_ger",
+      "state12": 1,
+      "targetOffset8": "0xa6de0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eaba00",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 18
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\campaign\\company\\mechanized\\active\\c_mechanized_self_repair_ger",
+      "state12": 1,
+      "targetOffset8": "0xa6d80"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eabb00",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 19
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\campaign\\company\\mechanized\\active\\c_mechanized_smoke_canisters_ger",
+      "state12": 1,
+      "targetOffset8": "0xa7160"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eabc00",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 20
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\campaign\\company\\common\\passive_unlocks\\c_common_increased_fuel_rate_ger",
+      "state12": 1,
+      "targetOffset8": "0xa71a0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eabd00",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 21
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\campaign\\company\\common\\passive_unlocks\\c_common_increased_muni_rate_ger",
+      "state12": 1,
+      "targetOffset8": "0xa7140"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eabe00",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 22
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\campaign\\company\\common\\passive_unlocks\\c_common_infantry_reserves_ger",
+      "state12": 1,
+      "targetOffset8": "0xb9940"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eabf00",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 23
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\campaign\\company\\common\\passive_unlocks\\c_common_vehicle_upkeep_reduction_ger",
+      "state12": 1,
+      "targetOffset8": "0xb99e0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eac000",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 24
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\campaign\\company\\common\\passive_unlocks\\c_common_infantry_upkeep_reduction_ger",
+      "state12": 1,
+      "targetOffset8": "0xdbe60"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eac100",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 25
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\campaign\\company\\mechanized\\passive\\c_mechanized_raid_ger",
+      "state12": 1,
+      "targetOffset8": "0xdbea0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eac200",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 26
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\mechanized\\mechanized_right_1a_fuel_siphon_ger",
+      "state12": 1,
+      "targetOffset8": "0xdbee0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eac300",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 27
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\mechanized\\mechanized_right_1b_spotting_scopes_ger",
+      "state12": 1,
+      "targetOffset8": "0xdbf20"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eac400",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 28
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\mechanized\\mechanized_right_3a_stosstruppen_package_ger",
+      "state12": 1,
+      "targetOffset8": "0xdbf60"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eac600",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 29
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\mechanized\\mechanized_right_1a_mobile_repair_kits_ger",
+      "state12": 1,
+      "targetOffset8": "0xdbfa0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eac700",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 30
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\mechanized\\mechanized_panther_production_unlock_ger",
+      "state12": 1,
+      "targetOffset8": "0xdbfe0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eac800",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 31
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\luftwaffe\\luftwaffe_relay_point_ger",
+      "state12": 1,
+      "targetOffset8": "0xdc020"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eac900",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 32
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\terror\\terror_contempt_for_the_weak_ger",
+      "state12": 1,
+      "targetOffset8": "0xdc060"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eaca00",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 33
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\terror\\terror_heavy_gunnery_ger",
+      "state12": 1,
+      "targetOffset8": "0xdc0a0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eacb00",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 34
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\terror\\terror_ambush_camouflage_ger",
+      "state12": 1,
+      "targetOffset8": "0xdc0e0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eacc00",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 35
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\terror\\terror_interrogate_ger",
+      "state12": 1,
+      "targetOffset8": "0xdc120"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eacd00",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 36
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\terror\\terror_no_quarter_ger",
+      "state12": 1,
+      "targetOffset8": "0xdc160"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eace00",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 37
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\common\\reinforcement_out_of_hq_check",
+      "state12": 1,
+      "targetOffset8": "0xdc1a0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eacf00",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 38
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\last_stand\\last_stand_recovery_efforts_ger",
+      "state12": 1,
+      "targetOffset8": "0xdc1e0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03ead000",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 39
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\last_stand\\last_stand_immobilize_and_fortify_ger",
+      "state12": 1,
+      "targetOffset8": "0xdc220"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03ead100",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 40
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\last_stand\\last_stand_last_ditch_defenses_ger",
+      "state12": 1,
+      "targetOffset8": "0xdc260"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03ead200",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 41
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\last_stand\\last_stand_panzerfaust_rollout_completed_ger",
+      "state12": 1,
+      "targetOffset8": "0xdc2a0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03ead300",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 42
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\last_stand\\last_stand_scavenge_ger",
+      "state12": 1,
+      "targetOffset8": "0xdc2e0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eac500",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 43
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\siegebreakers\\siegebreakers_production_unlock_sturmtiger_ger",
+      "state12": 1,
+      "targetOffset8": "0xdc320"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03ead500",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 44
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\siegebreakers\\siegebreakers_siege_specialists_dummy_ger",
+      "state12": 1,
+      "targetOffset8": "0xdc360"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03ead600",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 45
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\siegebreakers\\siegebreakers_firestorm_doctrine_dummy_ger",
+      "state12": 1,
+      "targetOffset8": "0xdc3a0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03ead700",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 46
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\siegebreakers\\siegebreakers_clearing_gear_dummy_ger",
+      "state12": 1,
+      "targetOffset8": "0xdc3e0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03ead800",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 47
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\siegebreakers\\siegebreakers_grinding_advance_dummy_ger",
+      "state12": 1,
+      "targetOffset8": "0xdc420"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03ead900",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 48
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\blocking_force\\blocking_force_production_unlock_nashorn_ger",
+      "state12": 1,
+      "targetOffset8": "0xdc460"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eada00",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 49
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\blocking_force\\blocking_force_picket_defenses_dummy_ger",
+      "state12": 1,
+      "targetOffset8": "0xdc4a0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eadb00",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 50
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\blocking_force\\blocking_force_marking_fire_dummy_ger",
+      "state12": 1,
+      "targetOffset8": "0xdc4e0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eadc00",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 51
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\blocking_force\\blocking_force_panzergranate_munitions_dummy_ger",
+      "state12": 1,
+      "targetOffset8": "0xdc520"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eadd00",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 52
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\blocking_force\\blocking_force_weapon_delivery_dummy_ger",
+      "state12": 1,
+      "targetOffset8": "0xdc560"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eade00",
+      "source": {
+        "player": "0x17c08c09000",
+        "index": 53
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\blocking_force\\blocking_force_incursion_response_ger",
+      "state12": 1,
+      "targetOffset8": "0xdc5a0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03ebd500",
+      "source": {
+        "entity": "0x17c051f7c00",
+        "component": "0x17c0c990690",
+        "index": 0
+      },
+      "rtti": {
+        "name": ".?AVToggledAbility@@",
+        "vtableRva": "0x3e97398",
+        "colRva": "0x5064e58",
+        "typeDescriptorRva": "0x5f6f3d0"
+      },
+      "blueprint": "abilities\\races\\common\\buildings\\auto_reinforce_hq",
+      "state12": 1,
+      "targetOffset8": "0xea2c0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03eae500",
+      "source": {
+        "entity": "0x17c05175c00",
+        "component": "0x17c0c990a10",
+        "index": 0
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\buildings\\healing_aura_hq_ger",
+      "state12": 1,
+      "targetOffset8": "0xdccc0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03cde600",
+      "source": {
+        "entity": "0x17c0524ce00",
+        "component": "0x17c0c991650",
+        "index": 0
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\common\\vehicles\\vehicle_capture_dummy_common",
+      "state12": 1,
+      "targetOffset8": "0xec2c0"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03cefb00",
+      "source": {
+        "entity": "0x17c0524ce00",
+        "component": "0x17c0c991650",
+        "index": 1
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\battlegroups\\siegebreakers\\siegebreakers_grinding_advance_light_ger",
+      "state12": 1,
+      "targetOffset8": "0xb9780"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03d29f00",
+      "source": {
+        "entity": "0x17c05021c00",
+        "component": "0x17c0c991c70",
+        "index": 0
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\team_weapons\\blocking_force_marking_fire_team_weapon_dummy_ger",
+      "state12": 1,
+      "targetOffset8": "0xf8680"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03e10200",
+      "source": {
+        "entity": "0x17c05021c00",
+        "component": "0x17c0c991c70",
+        "index": 1
+      },
+      "rtti": {
+        "name": ".?AVTimedAbility@@",
+        "vtableRva": "0x3d94a40",
+        "colRva": "0x5064e80",
+        "typeDescriptorRva": "0x5f6f3a8"
+      },
+      "blueprint": "abilities\\races\\german\\team_weapons\\barrage_81mm_mortar_ger",
+      "state12": 1,
+      "targetOffset8": "0x10ec40"
+    },
+    {
+      "role": "entity_queue_controller",
+      "address": "0x17c07820800",
+      "source": {
+        "entity": "0x17c050bc200",
+        "component": "0x17c0c971d60",
+        "queue": "0x17c02adac00",
+        "queueCount": 1,
+        "entry": "0x17c03d8bf00"
+      },
+      "rtti": {
+        "name": ".?AVSpawnProductionItem@@",
+        "vtableRva": "0x3d98bf0",
+        "colRva": "0x505a6b0",
+        "typeDescriptorRva": "0x5f9b110"
+      },
+      "blueprint": "sbps\\races\\german\\infantry\\jaeger_ger",
+      "remaining": 13.0,
+      "total": 240.0
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03d96a00",
+      "source": {
+        "entity": "0x17c052a7400",
+        "component": "0x17c0c992450",
+        "index": 0
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\buildings\\coastal_bulwark_building_repair_ger",
+      "state12": 1,
+      "targetOffset8": "0xf5480"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03d96c00",
+      "source": {
+        "entity": "0x17c052a7400",
+        "component": "0x17c0c992450",
+        "index": 1
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\common\\buildings\\garrison_combat_bonus",
+      "state12": 1,
+      "targetOffset8": "0xf5180"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03dd9200",
+      "source": {
+        "entity": "0x17c0527a800",
+        "component": "0x17c0c992610",
+        "index": 0
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\team_weapons\\aa_gun_deflection_damage",
+      "state12": 1,
+      "targetOffset8": "0x10d780"
+    },
+    {
+      "role": "ability_instance",
+      "address": "0x17c03d0cb00",
+      "source": {
+        "entity": "0x17c0527a800",
+        "component": "0x17c0c992610",
+        "index": 1
+      },
+      "rtti": {
+        "name": ".?AVAlwaysOnAbility@@",
+        "vtableRva": "0x3da77b8",
+        "colRva": "0x5064ed0",
+        "typeDescriptorRva": "0x5e75be0"
+      },
+      "blueprint": "abilities\\races\\german\\team_weapons\\blocking_force_marking_fire_team_weapon_dummy_ger",
+      "state12": 1,
+      "targetOffset8": "0x1099a0"
+    },
+    {
+      "role": "entity_body388_candidate",
+      "address": "0x17c02bca880",
+      "source": {
+        "entity": "0x17c052ea600",
+        "blueprint": "ebps\\races\\german\\buildings\\defensive\\mine_pioneer_ger",
+        "registryIndex": 1761
+      },
+      "rtti": {
+        "name": ".?AVBuildingDynamics@@",
+        "vtableRva": "0x3dba160",
+        "colRva": "0x505b150",
+        "typeDescriptorRva": "0x5f98a18"
+      },
+      "ownerBackReference": "0x17c052ea600",
+      "state64": 1,
+      "matchesOwner": true
+    },
+    {
+      "role": "entity_body388_candidate",
+      "address": "0x17c02b2f780",
+      "source": {
+        "entity": "0x17c0527aa00",
+        "blueprint": "ebps\\races\\german\\buildings\\defensive\\mine_pioneer_ger",
+        "registryIndex": 1941
+      },
+      "rtti": {
+        "name": ".?AVBuildingDynamics@@",
+        "vtableRva": "0x3dba160",
+        "colRva": "0x505b150",
+        "typeDescriptorRva": "0x5f98a18"
+      },
+      "ownerBackReference": "0x17c0527aa00",
+      "state64": 1,
+      "matchesOwner": true
+    },
+    {
+      "role": "projectile_component",
+      "address": "0x17c0c979790",
+      "source": {
+        "entity": "0x17c0527b000",
+        "blueprint": "ebps\\gameplay\\projectiles\\common\\artillery\\p_artillery_mortar_81mm",
+        "registryIndex": 3001
+      },
+      "rtti": {
+        "name": ".?AVProjectileExt@@",
+        "vtableRva": "0x3e49618",
+        "colRva": "0x505ddb0",
+        "typeDescriptorRva": "0x5f8b540"
+      }
+    },
+    {
+      "role": "entity_body388_candidate",
+      "address": "0x17c02bd1d80",
+      "source": {
+        "entity": "0x17c05292200",
+        "blueprint": "ebps\\races\\german\\buildings\\defensive\\mine_pioneer_ger",
+        "registryIndex": 3105
+      },
+      "rtti": {
+        "name": ".?AVBuildingDynamics@@",
+        "vtableRva": "0x3dba160",
+        "colRva": "0x505b150",
+        "typeDescriptorRva": "0x5f98a18"
+      },
+      "ownerBackReference": "0x17c05292200",
+      "state64": 1,
+      "matchesOwner": true
+    },
+    {
+      "role": "entity_body388_candidate",
+      "address": "0x17c02bac500",
+      "source": {
+        "entity": "0x17c05283c00",
+        "blueprint": "ebps\\races\\german\\buildings\\defensive\\mine_pioneer_ger",
+        "registryIndex": 3133
+      },
+      "rtti": {
+        "name": ".?AVBuildingDynamics@@",
+        "vtableRva": "0x3dba160",
+        "colRva": "0x505b150",
+        "typeDescriptorRva": "0x5f98a18"
+      },
+      "ownerBackReference": "0x17c05283c00",
+      "state64": 2913796097,
+      "matchesOwner": true
+    },
+    {
+      "role": "entity_body388_candidate",
+      "address": "0x17c02ba0d80",
+      "source": {
+        "entity": "0x17c0529f200",
+        "blueprint": "ebps\\races\\german\\buildings\\defensive\\mine_pioneer_ger",
+        "registryIndex": 3136
+      },
+      "rtti": {
+        "name": ".?AVBuildingDynamics@@",
+        "vtableRva": "0x3dba160",
+        "colRva": "0x505b150",
+        "typeDescriptorRva": "0x5f98a18"
+      },
+      "ownerBackReference": "0x17c0529f200",
+      "state64": 1,
+      "matchesOwner": true
+    }
+  ],
+  "summary": [
+    {
+      "role": "ability_instance",
+      "name": ".?AVAlwaysOnAbility@@",
+      "vtableRva": "0x3da77b8",
+      "count": 136
+    },
+    {
+      "role": "ability_instance",
+      "name": ".?AVToggledAbility@@",
+      "vtableRva": "0x3e97398",
+      "count": 1
+    },
+    {
+      "role": "ability_instance",
+      "name": ".?AVTimedAbility@@",
+      "vtableRva": "0x3d94a40",
+      "count": 1
+    },
+    {
+      "role": "entity_queue_controller",
+      "name": ".?AVSpawnProductionItem@@",
+      "vtableRva": "0x3d98bf0",
+      "count": 1
+    },
+    {
+      "role": "entity_body388_candidate",
+      "name": ".?AVBuildingDynamics@@",
+      "vtableRva": "0x3dba160",
+      "count": 5
+    },
+    {
+      "role": "projectile_component",
+      "name": ".?AVProjectileExt@@",
+      "vtableRva": "0x3e49618",
+      "count": 1
+    }
+  ],
+  "coverage": {
+    "registryCapacity": 3229,
+    "maxLiveObjects": 4096,
+    "registryLiveInspected": 3181,
+    "ownedEntities": 357,
+    "abilityLists": [
+      {
+        "player": "0x17c08c08000",
+        "kind": "player",
+        "count": 74
+      },
+      {
+        "player": "0x17c08c09000",
+        "kind": "player",
+        "count": 54
+      },
+      {
+        "entity": "0x17c051f7c00",
+        "kind": "component",
+        "count": 1
+      },
+      {
+        "entity": "0x17c051f9c00",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c051fb800",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c051fd200",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c051fec00",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c051ffc00",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c05206000",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c0520c400",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c05176200",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c05228800",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c0522b200",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c0522ca00",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c0522f400",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c05230c00",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c05233600",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c05234e00",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c05175c00",
+        "kind": "component",
+        "count": 1
+      },
+      {
+        "entity": "0x17c05214800",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c05216400",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c05218000",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c05219c00",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c0521ac00",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c05222c00",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c05237800",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c05239000",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c0523ae00",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c0523c600",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c0523e400",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c0523fc00",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c05241a00",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c05243200",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c0517ca00",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c0524ce00",
+        "kind": "component",
+        "count": 2
+      },
+      {
+        "entity": "0x17c0524b200",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c0517a400",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c05250400",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c05258400",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c05260600",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c05268600",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c05270600",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c05246400",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c0527fc00",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c0528fc00",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c0529fc00",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c05021c00",
+        "kind": "component",
+        "count": 2
+      },
+      {
+        "entity": "0x17c050f9400",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c052a8e00",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c052aa600",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c05189600",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c052b0600",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c052b4600",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c052bf000",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c052bd600",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c052bce00",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c0524de00",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c05276c00",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c0526d200",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c05265200",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c0525d600",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c052a7400",
+        "kind": "component",
+        "count": 2
+      },
+      {
+        "entity": "0x17c052a1600",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c05297000",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c05296000",
+        "kind": "component",
+        "count": 0
+      },
+      {
+        "entity": "0x17c0527a800",
+        "kind": "component",
+        "count": 2
+      }
+    ],
+    "production": {
+      "entity_empty": 67,
+      "vehicle_empty": 3,
+      "vehicle_no_component": 5,
+      "entity_observed": 1,
+      "entity_no_component": 11
+    },
+    "projectilePaths": [
+      "ebps\\gameplay\\projectiles\\common\\artillery\\p_artillery_mortar_81mm"
+    ],
+    "loiterOrMinePaths": [
+      "ebps\\races\\german\\weapons\\explosive_weapons\\mine\\w_trip_flare_kettenkrad_ger",
+      "ebps\\races\\german\\weapons\\explosive_weapons\\mine\\w_trip_flare_kettenkrad_ger",
+      "ebps\\races\\german\\buildings\\defensive\\mine_pioneer_ger",
+      "ebps\\races\\american\\weapons\\explosive_weapons\\mine\\w_mine_engineer_us",
+      "ebps\\races\\german\\weapons\\explosive_weapons\\mine\\w_trip_flare_kettenkrad_ger",
+      "ebps\\races\\german\\buildings\\defensive\\mine_pioneer_ger",
+      "ebps\\races\\american\\weapons\\explosive_weapons\\mine\\w_mine_engineer_us",
+      "ebps\\races\\german\\weapons\\explosive_weapons\\mine\\w_trip_flare_kettenkrad_ger",
+      "ebps\\races\\german\\buildings\\defensive\\mine_pioneer_ger",
+      "ebps\\races\\american\\weapons\\explosive_weapons\\mine\\w_mine_engineer_us",
+      "ebps\\races\\german\\buildings\\defensive\\mine_pioneer_ger",
+      "ebps\\races\\american\\weapons\\explosive_weapons\\mine\\w_mine_engineer_us",
+      "ebps\\races\\german\\buildings\\defensive\\mine_pioneer_ger",
+      "ebps\\races\\american\\weapons\\explosive_weapons\\mine\\w_mine_engineer_us"
+    ],
+    "registryBlueprintCounts": {
+      "ebps\\environment\\buildings\\italian_rural\\ir_plaster_3x2x3_02": 1,
+      "ebps\\environment\\nature\\trees\\oak_tree_lrg_02": 26,
+      "ebps\\environment\\buildings\\italian_rural\\ir_plaster_3x2x3_01_blocker": 1,
+      "ebps\\environment\\buildings\\italian_rural\\ir_stone_1x1x1_01_blocker": 1,
+      "ebps\\environment\\buildings\\italian_rural\\ir_plaster_2x2x1_01": 1,
+      "ebps\\environment\\buildings\\italian_rural\\ir_plaster_2x2x2_01": 1,
+      "ebps\\environment\\buildings\\italian_rural\\ir_plaster_1x2x3_02": 2,
+      "ebps\\environment\\buildings\\italian_rural\\ir_plaster_2x1x2_01": 4,
+      "ebps\\environment\\buildings\\italian_rural\\ir_plaster_2x2x2_03": 2,
+      "ebps\\environment\\buildings\\italian_rural\\ir_lighthouse_1x1x4_01": 1,
+      "ebps\\environment\\buildings\\italian_rural\\ir_wood_1x1x2_01": 1,
+      "ebps\\environment\\buildings\\italian_rural\\ir_plaster_2x2x2_01_blue": 1,
+      "ebps\\environment\\buildings\\italian_rural\\ir_plaster_2x2x1_01_blue": 1,
+      "ebps\\environment\\greybox\\common\\gb_6x12_sight_shot_blocking_uncrushable": 1,
+      "ebps\\environment\\nature\\shrubs\\macchia_sm_01": 119,
+      "ebps\\environment\\nature\\shrubs\\myrtus_sm_dry_01": 5,
+      "ebps\\environment\\nature\\trees\\italian_stone_med_02": 20,
+      "ebps\\environment\\objects\\coast_features\\fishnet_pile_lrg_01": 9,
+      "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_ger": 20,
+      "ebps\\environment\\nature\\shrubs\\myrtus_sm_sb_01": 3,
+      "ebps\\environment\\nature\\shrubs\\myrtus_sm_dry_03": 3,
+      "ebps\\races\\german\\vehicles\\truck_2_5_ger": 2,
+      "ebps\\environment\\objects\\coast_features\\fishnet_pile_med_01": 54,
+      "ebps\\environment\\objects\\farm_features\\barrel_set\\barrel_01": 1,
+      "ebps\\environment\\objects\\farm_features\\barrel_set\\barrel_02": 68,
+      "ebps\\environment\\objects\\farm_features\\wagon_wood_01": 6,
+      "ebps\\environment\\objects\\farm_features\\wagon_wood_02": 2,
+      "ebps\\environment\\nature\\trees\\italian_stone_med_03": 26,
+      "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_flag_ger": 20,
+      "ebps\\environment\\objects\\vehicles\\civilian\\rowboat_02": 33,
+      "ebps\\environment\\nature\\trees\\oak_tree_sm_01": 16,
+      "ebps\\environment\\nature\\trees\\oak_hedges_04": 31,
+      "ebps\\environment\\nature\\trees\\oak_hedges_01": 96,
+      "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\sub_machine_gun\\w_mp40_grenadier_ger": 6,
+      "ebps\\environment\\objects\\market_features\\food_crate_set\\food_crate_dressing": 43,
+      "ebps\\environment\\objects\\walkways\\wooden_planks_01": 6,
+      "ebps\\races\\german\\infantry\\crew_mortar_ger": 4,
+      "ebps\\environment\\objects\\vehicles\\military\\truck_6x6_broken_01": 2,
+      "ebps\\environment\\nature\\shrubs\\myrtus_med_01": 82,
+      "ebps\\environment\\nature\\trees\\italian_cypress_02": 16,
+      "ebps\\environment\\nature\\trees\\oak_hedges_02": 16,
+      "ebps\\environment\\nature\\trees\\oak_hedges_03": 34,
+      "ebps\\environment\\nature\\trees\\italian_stone_med_01": 7,
+      "ebps\\environment\\nature\\shrubs\\italian_buckthorn_sm_01": 6,
+      "ebps\\environment\\nature\\shrubs\\italian_buckthorn": 112,
+      "ebps\\environment\\nature\\trees\\italian_cypress_01": 6,
+      "ebps\\environment\\nature\\trees\\oleander_sm_02": 18,
+      "ebps\\environment\\nature\\shrubs\\macchia_sm_02": 36,
+      "ebps\\races\\german\\team_weapons\\tw_aa_gun_20mm_ger": 1,
+      "ebps\\environment\\nature\\trees\\oleander_sm_01": 19,
+      "ebps\\environment\\nature\\shrubs\\italian_buckthorn_sm_02": 35,
+      "ebps\\environment\\nature\\shrubs\\myrtus_sm_dry_02": 1,
+      "ebps\\races\\german\\weapons\\ballistic_weapon\\flak_gun\\w_20mm_aa_gun_ger": 1,
+      "ebps\\environment\\nature\\shrubs\\italian_ruscus_04": 1,
+      "ebps\\environment\\nature\\shrubs\\italian_ruscus_03": 85,
+      "ebps\\environment\\nature\\shrubs\\italian_ruscus_01": 45,
+      "ebps\\races\\german\\weapons\\explosive_weapons\\mine\\w_trip_flare_kettenkrad_ger": 4,
+      "ebps\\races\\german\\buildings\\defensive\\tripwire_flare_ger": 4,
+      "ebps\\races\\german\\weapons\\small_arms\\single_fire\\rifle\\w_g43_jaeger_ger": 5,
+      "ebps\\environment\\objects\\walls\\support\\stone_support_03_corner": 17,
+      "ebps\\environment\\nature\\trees\\burnt_foliage_lush_02": 1,
+      "ebps\\environment\\nature\\trees\\burnt_foliage_02": 2,
+      "ebps\\environment\\nature\\trees\\oak_hedges_damaged_01": 3,
+      "ebps\\races\\german\\weapons\\ballistic_weapon\\flak_gun\\w_20mm_aa_gun_button_ger": 1,
+      "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\sub_machine_gun\\w_mp40_pioneer_ger": 5,
+      "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_satchel_charge_paratrooper_us": 15,
+      "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_rifle_grenade_jaeger_ger": 15,
+      "ebps\\races\\german\\weapons\\small_arms\\single_fire\\rifle\\w_g43_scoped_jaeger_ger": 2,
+      "ebps\\races\\german\\buildings\\production\\mechanized_kompanie_ger": 1,
+      "ebps\\environment\\nature\\trees\\burnt_foliage_01": 9,
+      "ebps\\races\\german\\infantry\\crew_aa_gun_20mm_ger": 5,
+      "ebps\\races\\german\\infantry\\jaeger_support_ger": 1,
+      "ebps\\environment\\objects\\walls\\low_walls\\stone_wall_04_post_02": 13,
+      "ebps\\environment\\objects\\walls\\low_walls\\stone_wall_03_post_01": 2,
+      "ebps\\environment\\objects\\vehicles\\civilian\\italian_truck_grey_canopy_open": 4,
+      "ebps\\environment\\objects\\vehicles\\civilian\\italian_truck_grey_canopy_closed": 2,
+      "ebps\\environment\\objects\\vehicles\\civilian\\italian_truck_red_canopy_open": 1,
+      "ebps\\environment\\objects\\defenses\\sandbags\\sandbag_wall_02": 3,
+      "ebps\\environment\\objects\\defenses\\sandbags\\sandbag_section_04": 2,
+      "ebps\\environment\\objects\\defenses\\sandbags\\sandbag_pile_01": 3,
+      "ebps\\environment\\objects\\defenses\\metal\\hedgehog_02": 76,
+      "ebps\\environment\\objects\\defenses\\metal\\hedgehog_01": 3,
+      "ebps\\environment\\objects\\yard_park_features\\fountain_square_01": 1,
+      "ebps\\environment\\objects\\vehicles\\civilian\\rowboat_01": 10,
+      "ebps\\environment\\objects\\coast_features\\fishnet_pile_sml_01": 1,
+      "ebps\\environment\\objects\\coast_features\\crab_trap": 11,
+      "ebps\\environment\\objects\\walkways\\dock_wood_planks_med": 15,
+      "ebps\\environment\\objects\\walkways\\dock_wood_frame_med": 19,
+      "ebps\\environment\\objects\\walkways\\wooden_planks_02": 56,
+      "ebps\\environment\\objects\\accoutrements\\wood_crate_01": 49,
+      "ebps\\environment\\objects\\market_features\\basket_set\\basket_01": 4,
+      "ebps\\environment\\objects\\market_features\\basket_set\\basket_round_m_01": 2,
+      "ebps\\environment\\objects\\accoutrements\\crate_set\\crate_set_md_01": 7,
+      "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\sub_machine_gun\\w_mp40_crew_ger": 17,
+      "ebps\\environment\\objects\\accoutrements\\alliedsupply_stack_m_01": 2,
+      "ebps\\environment\\objects\\walls\\support_01": 3,
+      "ebps\\environment\\objects\\vehicles\\civilian\\italian_car_grey_canopy_closed": 2,
+      "ebps\\environment\\objects\\defenses\\sandbags\\sandbag_pile": 26,
+      "ebps\\environment\\objects\\vehicles\\civilian\\belgian_farm_truck": 1,
+      "ebps\\environment\\objects\\walkways\\wooden_planks_03": 2,
+      "ebps\\environment\\objects\\defenses\\sandbags\\sandbag_section_03": 4,
+      "ebps\\environment\\objects\\coast_features\\float_set\\buoy_pile_01": 17,
+      "ebps\\environment\\objects\\coast_features\\float_set\\buoy_set_02": 1,
+      "ebps\\races\\german\\vehicles\\crew\\crew_vehicle_ger": 4,
+      "ebps\\environment\\objects\\vehicles\\civilian\\belgian_car_black": 2,
+      "ebps\\environment\\objects\\industrial_features\\searchlight_01\\searchlight_01": 7,
+      "ebps\\environment\\objects\\rubble_debris\\building_rubble_set_01\\rubble_h_cover_01": 7,
+      "ebps\\environment\\objects\\rubble_debris\\building_rubble_set_01\\rubble_h_cover_01_wreck": 29,
+      "ebps\\environment\\objects\\walls\\support\\stone_support_03": 49,
+      "ebps\\environment\\objects\\rubble_debris\\brick_debris\\building_rubble_02": 2,
+      "ebps\\environment\\objects\\rubble_debris\\brick_debris\\building_rubble_01": 18,
+      "ebps\\environment\\objects\\rubble_debris\\building_rubble_set_01\\rubble_l_cover_01": 1,
+      "ebps\\environment\\objects\\rubble_debris\\building_rubble_set_01\\rubble_l_cover_03": 4,
+      "ebps\\environment\\objects\\rubble_debris\\building_rubble_set_01\\rubble_l_cover_04": 3,
+      "ebps\\environment\\objects\\vehicles\\military\\stuka_ju87_wo": 1,
+      "ebps\\environment\\objects\\vehicles\\military\\lct-5\\lct-5_boat_01": 3,
+      "ebps\\environment\\objects\\vehicles\\military\\lct-5\\gunnel_wall_01": 51,
+      "ebps\\environment\\objects\\vehicles\\military\\lct-5\\gunnel_wall_02": 3,
+      "ebps\\environment\\objects\\vehicles\\military\\lct-5\\gunnel_wall_03": 6,
+      "ebps\\environment\\objects\\vehicles\\military\\lct-5\\gunnel_wall_support_01": 57,
+      "ebps\\environment\\objects\\vehicles\\military\\lct-5\\gunnel_wall_05": 3,
+      "ebps\\environment\\objects\\defenses\\sandbags\\sandbag_single_01": 61,
+      "ebps\\environment\\objects\\farm_features\\barrel_set\\barrel_05": 18,
+      "ebps\\environment\\objects\\farm_features\\barrel_set\\barrel_06": 7,
+      "ebps\\races\\german\\buildings\\defensive\\mine_pioneer_ger": 5,
+      "ebps\\races\\american\\weapons\\explosive_weapons\\mine\\w_mine_engineer_us": 5,
+      "ebps\\environment\\objects\\market_features\\food_crate_set\\food_crate_04": 18,
+      "ebps\\environment\\objects\\posts\\lamp\\rural_lamp_s_01": 1,
+      "ebps\\environment\\objects\\defenses\\sandbags\\sandbag_shoring_cap_front": 9,
+      "ebps\\environment\\objects\\defenses\\sandbags\\sandbag_shoring_cap_end": 10,
+      "ebps\\environment\\objects\\defenses\\sandbags\\sandbag_shoring_01": 5,
+      "ebps\\environment\\objects\\defenses\\sandbags\\sandbag_section_02": 2,
+      "ebps\\environment\\objects\\defenses\\metal\\barbed_wire_01": 21,
+      "ebps\\environment\\objects\\vehicles\\military\\halftrack_ger_broken_01": 2,
+      "ebps\\environment\\objects\\accoutrements\\crate_set\\crate_set_lrg_01": 11,
+      "ebps\\environment\\objects\\accoutrements\\crate_set\\crate_set_lrg_02": 48,
+      "ebps\\races\\american\\buildings\\defensive\\barbed_wire_fence_us": 50,
+      "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_3_ger": 16,
+      "ebps\\races\\german\\infantry\\pioneer_ger": 5,
+      "ebps\\races\\german\\infantry\\grenadier_ger": 10,
+      "ebps\\environment\\objects\\accoutrements\\munitions_case_ax_03": 1,
+      "ebps\\environment\\objects\\accoutrements\\munitions_case_ax_01": 5,
+      "ebps\\environment\\objects\\accoutrements\\munitions_case_ax_02": 2,
+      "ebps\\environment\\objects\\posts\\lamp\\rural_lamp_s_02": 4,
+      "ebps\\environment\\objects\\accoutrements\\trunk_01": 1,
+      "ebps\\environment\\objects\\industrial_features\\metal_fuel_barrel_set\\metal_fuel_barrel_set_02": 8,
+      "ebps\\environment\\objects\\industrial_features\\metal_fuel_barrel_set\\metal_fuel_barrel_single_01": 3,
+      "ebps\\races\\german\\buildings\\defensive\\bunker_ger": 1,
+      "ebps\\environment\\objects\\accoutrements\\suitcase_04": 1,
+      "ebps\\environment\\objects\\posts\\signs\\crossroads_01": 1,
+      "ebps\\environment\\objects\\urban_features\\street_signs\\place\\36_place_ostello_sign": 2,
+      "ebps\\environment\\objects\\urban_features\\street_signs\\square_right\\square_right": 1,
+      "ebps\\environment\\objects\\urban_features\\street_signs\\circle\\57_circle_side_car_motorcycle_carriage_bicycle_sign": 1,
+      "ebps\\environment\\objects\\urban_features\\street_signs\\place\\39_place_servizio_sign": 1,
+      "ebps\\races\\american\\vehicles\\higgins_boat_us_map_object": 4,
+      "ebps\\environment\\objects\\walls\\low_walls\\stone_wall_02_post_02": 10,
+      "ebps\\environment\\nature\\cliffs_rocks\\sedi_rock_sm_03": 10,
+      "ebps\\environment\\nature\\cliffs_rocks\\sedi_rock_sm_02": 6,
+      "ebps\\environment\\nature\\cliffs_rocks\\sedi_rock_sm_04_cover": 32,
+      "ebps\\environment\\nature\\cliffs_rocks\\sedi_rock_sm_01": 1,
+      "ebps\\environment\\nature\\cliffs_rocks\\sedi_rock_sm_04": 5,
+      "ebps\\environment\\nature\\cliffs_rocks\\sedi_rock_md_02": 1,
+      "ebps\\environment\\nature\\cliffs_rocks\\sedi_cliff_lg_01": 13,
+      "ebps\\environment\\objects\\walls\\support\\stone_wall_rural_support_01": 13,
+      "ebps\\environment\\nature\\cliffs_rocks\\sedi_rock_sm_05": 3,
+      "ebps\\environment\\nature\\cliffs_rocks\\sedi_cliff_lg_02": 3,
+      "ebps\\environment\\objects\\rubble_debris\\stone_rubble_set_01\\stone_rubble_pile_01": 15,
+      "ebps\\environment\\objects\\rubble_debris\\stone_rubble_set_01\\stone_rubble_pile_02": 18,
+      "ebps\\environment\\objects\\rubble_debris\\stone_rubble_set_01\\stone_rubble_single_02": 6,
+      "ebps\\environment\\objects\\walls\\support\\stone_rural_breakable_01": 4,
+      "ebps\\environment\\objects\\rubble_debris\\stone_rubble_set_01\\stone_rubble_pile_03": 158,
+      "ebps\\environment\\objects\\rubble_debris\\stone_rubble_set_01\\stone_rubble_pile_04": 23,
+      "ebps\\environment\\nature\\cliffs_rocks\\sedi_rock_sm_04_cover_small": 4,
+      "ebps\\environment\\objects\\rubble_debris\\brick_debris\\building_rubble_03": 1,
+      "ebps\\environment\\objects\\rubble_debris\\brick_debris\\building_rubble_04": 1,
+      "ebps\\environment\\objects\\ruins\\italy_ruins_set\\roman_tower_01": 3,
+      "ebps\\environment\\objects\\ruins\\greek_ruins\\ruin_pile_01": 1,
+      "ebps\\environment\\objects\\ruins\\italy_ruins_set\\roman_sb_wall_01": 9,
+      "ebps\\environment\\objects\\ruins\\italy_ruins_set\\ruin_wall_italy_02": 14,
+      "ebps\\environment\\objects\\ruins\\italy_ruins_set\\ruin_wall_italy_03": 16,
+      "ebps\\environment\\objects\\ruins\\italy_ruins_set\\ruin_wall_italy_01": 9,
+      "ebps\\environment\\objects\\ruins\\italy_ruins_set\\door_ruins_italy_01": 5,
+      "ebps\\environment\\objects\\ruins\\italy_ruins_set\\italy_ruins_set_01": 3,
+      "ebps\\environment\\objects\\ruins\\italy_ruins_set\\italy_ruins_set_02": 1,
+      "ebps\\environment\\objects\\ruins\\italy_ruins_set\\stone_pile_italy_01": 37,
+      "ebps\\environment\\objects\\ruins\\italy_ruins_set\\stone_pile_italy_02": 9,
+      "ebps\\environment\\objects\\ruins\\italy_ruins_set\\buttress_02": 6,
+      "ebps\\environment\\objects\\ruins\\italy_ruins_set\\buttress_01": 3,
+      "ebps\\environment\\objects\\ruins\\italy_ruins_set\\roman_arch_ruins_003": 1,
+      "ebps\\races\\american\\vehicles\\lct5_boat_us": 1,
+      "ebps\\environment\\objects\\vehicles\\military\\sherman_broken_01": 1,
+      "ebps\\environment\\objects\\vehicles\\military\\churchill_mkiii_broken_01": 1,
+      "ebps\\environment\\objects\\walls\\support\\stone_support_01": 4,
+      "ebps\\environment\\objects\\walls\\low_walls\\stone_wall_02": 25,
+      "ebps\\environment\\objects\\walls\\low_walls\\wood_fence_01": 35,
+      "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_smoke_rifle_grenade_jaeger_ger": 5,
+      "ebps\\gameplay\\blockers\\gb_1x6_move_shot_sight_blocker": 155,
+      "ebps\\races\\german\\weapons\\small_arms\\single_fire\\rifle\\w_kar98k_grenadier_ger": 10,
+      "ebps\\environment\\objects\\walls\\low_walls\\stone_wall_03": 6,
+      "ebps\\environment\\objects\\ruins\\greek_ruins_set\\greek_ruins_set_extra_02": 5,
+      "ebps\\environment\\objects\\walls\\high_walls\\wrought_iron_wall_02": 27,
+      "ebps\\environment\\objects\\walls\\low_walls\\stone_wall_04": 19,
+      "ebps\\environment\\objects\\walls\\high_walls\\wood_fence_04": 20,
+      "ebps\\environment\\objects\\walls\\low_walls\\stone_wall_03_post_02": 4,
+      "ebps\\environment\\objects\\stairs\\5x3_7_steps_03_set\\steps_03": 30,
+      "ebps\\environment\\objects\\stairs\\5x3_7_steps": 2,
+      "ebps\\environment\\objects\\stairs\\8x2_3_steps": 5,
+      "ebps\\gameplay\\strategic_points\\strategic\\territory_strategic_point": 4,
+      "ebps\\gameplay\\strategic_points\\munitions\\territory_munitions_point_medium": 4,
+      "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point": 3,
+      "ebps\\gameplay\\strategic_points\\munitions\\territory_munitions_point_low": 2,
+      "ebps\\gameplay\\strategic_points\\munitions\\territory_munitions_point_high": 2,
+      "ebps\\gameplay\\strategic_points\\fuel\\territory_fuel_point_medium": 2,
+      "ebps\\gameplay\\strategic_points\\fuel\\territory_fuel_point_extra_low": 3,
+      "ebps\\gameplay\\starting_position\\starting_territory_team": 2,
+      "ebps\\races\\german\\buildings\\defensive\\base_defense_ger": 4,
+      "ebps\\gameplay\\map_entry_point": 2,
+      "ebps\\races\\american\\weapons\\special\\w_ammo_box_us": 12,
+      "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\heavy_machine_gun\\w_mg42_bunker_ger": 4,
+      "ebps\\races\\german\\flags\\flag_ger": 1,
+      "ebps\\races\\american\\infantry\\crew_hmg_dummy_us": 8,
+      "ebps\\races\\german\\buildings\\production\\hq_ger": 1,
+      "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_flare_jaeger_ger": 5,
+      "ebps\\races\\german\\vehicles\\crew\\crew_vehicle_kettenkrad_ger": 1,
+      "ebps\\races\\german\\infantry\\jaeger_ger": 4,
+      "ebps\\races\\german\\vehicles\\kettenkrad_ger": 1,
+      "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_low": 13,
+      "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_medium": 11,
+      "ebps\\races\\afrika_korps\\weapons\\explosive_weapons\\grenade\\w_grenade_stun_panzerpioneer_ak": 4,
+      "ebps\\gameplay\\strategic_points\\victory\\territory_victory_point_pennant_high": 2,
+      "ebps\\races\\german\\buildings\\production\\infanterie_kompanie_ger": 1,
+      "ebps\\races\\american\\buildings\\production\\hq_us": 1,
+      "ebps\\races\\american\\flags\\flag_us": 1,
+      "ebps\\races\\american\\buildings\\defensive\\base_defense_us": 4,
+      "ebps\\races\\american\\weapons\\small_arms\\machine_guns\\heavy_machine_gun\\w_30cal_fighting_position_base_defense_us": 4,
+      "ebps\\races\\american\\infantry\\scout_leader_radio_us": 1,
+      "ebps\\races\\american\\weapons\\small_arms\\single_fire\\rifle\\w_garand_scout_us": 3,
+      "ebps\\races\\american\\weapons\\small_arms\\single_fire\\rifle\\w_garand_pathfinder_us": 3,
+      "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_smoke_rifle_grenade_scout_us": 3,
+      "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_rifle_grenade_pathfinder_us": 3,
+      "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_flare_scout_us": 3,
+      "ebps\\races\\american\\weapons\\small_arms\\single_fire\\rifle\\w_garand_tracer_rounds_scout_us": 3,
+      "ebps\\races\\british\\weapons\\explosive_weapons\\grenade\\w_grenade_smoke_red_uk": 3,
+      "ebps\\races\\american\\infantry\\scout_us": 2,
+      "ebps\\gameplay\\projectiles\\common\\artillery\\p_artillery_mortar_81mm": 1,
+      "ebps\\races\\german\\infantry\\crew_hmg_dummy_ger": 8,
+      "ebps\\races\\common\\buildings\\placeholder_support_center": 1,
+      "ebps\\races\\german\\weapons\\flame_throwers\\w_flamethrower_pioneer_ger": 2,
+      "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_incendiary_grenade_grenadier_ger": 10,
+      "ebps\\races\\german\\weapons\\explosive_weapons\\mortar\\w_81mm_mortar_barrage_ger": 1,
+      "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_grenade_assault_grenadier_ger": 10,
+      "ebps\\races\\german\\weapons\\explosive_weapons\\grenade\\w_grenade_grenadier_ger": 10,
+      "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_1_ger": 10
+    }
+  },
+  "errors": [],
+  "stableArenaWorld": true,
+  "bytesRead": 789379
+}

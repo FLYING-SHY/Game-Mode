@@ -1,0 +1,78 @@
+{
+ "verifiedUtc": "20261121-121937",
+ "root": "F:\\WorkSpace\\Game",
+ "baseline": "CoH3/dev/SkyEye/evidence/version-adaptation/delivery-baseline.json",
+ "checks": [
+  {
+   "id": "game_fingerprint",
+   "status": "PASS",
+   "detail": "RelicCoH3.exe sha256=8A3445292255D652C8DBE9B53F24328AF159C161BE89836BA54EF070946DD3EC expected=8A3445292255D652C8DBE9B53F24328AF159C161BE89836BA54EF070946DD3EC version=5.1.52426.0 build=Build52426"
+  },
+  {
+   "id": "delivered:COH3工具.exe",
+   "status": "PASS",
+   "detail": "CoH3/output/COH3SimpleTool/COH3工具.exe bytes=588800/588800 sha256=9F3C8A6C139E5CD5… expected=9F3C8A6C139E5CD5…"
+  },
+  {
+   "id": "delivered:天穹之眼-自有授权版-v0.60.8.exe",
+   "status": "PASS",
+   "detail": "CoH3/dev/SkyEye/delivery/client/天穹之眼-自有授权版-v0.60.8.exe bytes=1226240/1226240 sha256=46CE9F7F7FD693C6… expected=46CE9F7F7FD693C6…"
+  },
+  {
+   "id": "delivery_config",
+   "status": "PASS",
+   "detail": "CoH3/output/COH3SimpleTool/COH3工具.exe.config missing=none localEndpointLeak=none"
+  },
+  {
+   "id": "source_files",
+   "status": "PASS",
+   "detail": "8 files checked, mismatches: none"
+  },
+  {
+   "id": "mirror_trees_identical",
+   "status": "PASS",
+   "detail": "4 adapted files compared across trees, drift: none"
+  },
+  {
+   "id": "layout_table",
+   "status": "PASS",
+   "detail": "roles=37/37 missingLiterals=none keyPairProblems=none"
+  },
+  {
+   "id": "fixtures",
+   "status": "PASS",
+   "detail": "suites=['build-gate', 'layout-preflight', 'decoder-layout'] problems=none"
+  },
+  {
+   "id": "role_provenance",
+   "status": "PASS",
+   "detail": "roleCount=37 manifestBacked=16 reportBacked=21 unbacked=0"
+  },
+  {
+   "id": "live_sample_newest",
+   "status": "PASS",
+   "detail": "live-new-roots-1922-match2.json players=8 bytesRead=217388 stableRootsAfterRead=True"
+  },
+  {
+   "id": "live_samples",
+   "status": "PASS",
+   "detail": "10 samples verified, problems=none"
+  },
+  {
+   "id": "client_runtime_logs",
+   "status": "PASS",
+   "detail": "4 logs, 795 lines, minimap draws=574, problems=none"
+  },
+  {
+   "id": "evidence_document",
+   "status": "PASS",
+   "detail": "perbuild-adaptation-52426.md bytes=74584 (min 60000) lines=867"
+  }
+ ],
+ "passed": true,
+ "summary": {
+  "total": 13,
+  "passed": 13,
+  "failed": 0
+ }
+}

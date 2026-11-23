@@ -1,0 +1,457 @@
+{
+  "utc": "2026-11-20T18:16:33.410150+00:00",
+  "pid": 11192,
+  "moduleBase": "0x7ff7a37e0000",
+  "access": "0x410 PROCESS_QUERY_INFORMATION|PROCESS_VM_READ",
+  "scope": "production paths only; no game inputs, writes, resume, login or credential reads",
+  "source": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\GameLayout52426.cs",
+  "sourceSha256": "cd72046d436678632e47840fecd47fe58f4574a54002e57e24b6d8092d44e2e7",
+  "guards": [
+    {
+      "legacy": "0x3d97cb0",
+      "presentInCurrentMap": true,
+      "currentMappedRva": "0x3d98bf0",
+      "staticCandidateName": "SpawnProductionItem",
+      "staticCandidateRva": "0x3d98bf0",
+      "candidateStatus": "not_promoted_by_this_probe"
+    },
+    {
+      "legacy": "0x3d90ff0",
+      "presentInCurrentMap": true,
+      "currentMappedRva": "0x3d92058",
+      "staticCandidateName": "SquadUpgradeProductionItem",
+      "staticCandidateRva": "0x3d92058",
+      "candidateStatus": "not_promoted_by_this_probe"
+    },
+    {
+      "legacy": "0x3d910f8",
+      "presentInCurrentMap": true,
+      "currentMappedRva": "0x3d92160",
+      "staticCandidateName": "EntityUpgradeProductionItem",
+      "staticCandidateRva": "0x3d92160",
+      "candidateStatus": "not_promoted_by_this_probe"
+    }
+  ],
+  "players": [
+    {
+      "slot": 0,
+      "playerAddress": "0x17c08c08000",
+      "productionEntities": [
+        {
+          "entity": "0x17c051f7c00",
+          "blueprint": "ebps\\races\\american\\buildings\\production\\hq_us",
+          "vehicle": false,
+          "status": "nonempty_queue_observed",
+          "healthComponent": {
+            "roleLegacy": "0x628884a",
+            "lookupRva": "0x628a7ea",
+            "kind": 429,
+            "index": 6,
+            "descriptor": "0x17c56200890",
+            "raw": "0000000000000000d0273d0d0000000001000a0000000000",
+            "mode": 0,
+            "value": "0xd3d27d0",
+            "state": 1,
+            "address": "0x17c0d3d27d0",
+            "rtti": {
+              "vtable": "0x7ff7a756e5b0",
+              "vtableRva": "0x3d8e5b0",
+              "colRva": "0x505e170",
+              "typeDescriptorRva": "0x5f899c8",
+              "name": ".?AVHealthExt@@"
+            }
+          },
+          "health": 3000.0,
+          "queueComponent": {
+            "roleLegacy": "0x6288851",
+            "lookupRva": "0x628a7f1",
+            "kind": 429,
+            "index": 11,
+            "descriptor": "0x17c56200908",
+            "raw": "0000000000000000900b970c000000000100110000000000",
+            "mode": 0,
+            "value": "0xc970b90",
+            "state": 1,
+            "address": "0x17c0c970b90",
+            "rtti": {
+              "vtable": "0x7ff7a761e620",
+              "vtableRva": "0x3e3e620",
+              "colRva": "0x505ddd8",
+              "typeDescriptorRva": "0x5f8b510",
+              "name": ".?AVProductionQueueExt@@"
+            }
+          },
+          "queueOffset": "0x2af5000",
+          "queueAddress": "0x17c02af5000",
+          "queueCount": 1,
+          "queueDataOffset": "0x3d03700",
+          "entryAddress": "0x17c03d03700",
+          "entryRaw": "e803000002000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000ed430000f04303ffffff14e99a3b8c0b0000ffffff7f000000802b24000001000080000000000000000000000000000000000000f0410000c842000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000882156a7f77f0000ffffffff0000000080900a0000000000",
+          "entry": {
+            "remainingTicks": 474.0,
+            "totalTicks": 480.0,
+            "itemOffset": 692352,
+            "entryIdentity": 8589935592,
+            "generation": 2
+          },
+          "itemAddress": "0x17c000a9080",
+          "itemRtti": {
+            "vtable": "0x7ff7a7572160",
+            "vtableRva": "0x3d92160",
+            "colRva": "0x505a840",
+            "typeDescriptorRva": "0x5f9abc0",
+            "name": ".?AVEntityUpgradeProductionItem@@"
+          },
+          "itemBlueprint": "upgrade\\american\\research\\mechanized_support_center_us",
+          "itemRaw64": "602157a7f77f000014000000adadadadf0a59eb27c0100000101adadadadadada0900a00a0900a00a0900a00a9874af40c000000ffffffff01016522a9874af4",
+          "itemBlueprintAddress": "0x17cb29ea5f0",
+          "timerInvariant": true,
+          "derivedRemainingSeconds": 60,
+          "stableQueueRecheck": true,
+          "sourceGuardEvaluationOrder": [
+            "0x3d97cb0",
+            "0x3d910f8"
+          ],
+          "firstMissingGuard": null,
+          "sourceOutcome": "No missing guard in captured source; runtime comparison still requires verification"
+        },
+        {
+          "entity": "0x17c0531e600",
+          "blueprint": "ebps\\races\\american\\buildings\\production\\mechanized_support_center_us",
+          "vehicle": false,
+          "status": "empty_queue",
+          "healthComponent": {
+            "roleLegacy": "0x628884a",
+            "lookupRva": "0x628a7ea",
+            "kind": 1560,
+            "index": 6,
+            "descriptor": "0x17c5626c090",
+            "raw": "000000007013f9cd80c7930c0000000001000a3f007f0000",
+            "mode": 0,
+            "value": "0xc93c780",
+            "state": 1,
+            "address": "0x17c0c93c780",
+            "rtti": {
+              "vtable": "0x7ff7a756e5b0",
+              "vtableRva": "0x3d8e5b0",
+              "colRva": "0x505e170",
+              "typeDescriptorRva": "0x5f899c8",
+              "name": ".?AVHealthExt@@"
+            }
+          },
+          "health": 1500.0,
+          "queueComponent": {
+            "roleLegacy": "0x6288851",
+            "lookupRva": "0x628a7f1",
+            "kind": 1560,
+            "index": 11,
+            "descriptor": "0x17c5626c108",
+            "raw": "0000000081615990802f970c00000000010011bf00000000",
+            "mode": 0,
+            "value": "0xc972f80",
+            "state": 1,
+            "address": "0x17c0c972f80",
+            "rtti": {
+              "vtable": "0x7ff7a761e620",
+              "vtableRva": "0x3e3e620",
+              "colRva": "0x505ddd8",
+              "typeDescriptorRva": "0x5f8b510",
+              "name": ".?AVProductionQueueExt@@"
+            }
+          },
+          "queueOffset": "0x2b74280",
+          "queueAddress": "0x17c02b74280",
+          "queueCount": 0,
+          "queueDataOffset": "0xffffffff"
+        }
+      ],
+      "ownedEntityCount": 46,
+      "identity": "0x3e8",
+      "resourceRaw": "0000000000000000a47e4e4400004040bc2ef042d7b0a2450000c841000000000000000000808d3d"
+    },
+    {
+      "slot": 1,
+      "playerAddress": "0x17c08c09000",
+      "productionEntities": [
+        {
+          "entity": "0x17c05175c00",
+          "blueprint": "ebps\\races\\german\\buildings\\production\\hq_ger",
+          "vehicle": false,
+          "status": "empty_queue",
+          "healthComponent": {
+            "roleLegacy": "0x628884a",
+            "lookupRva": "0x628a7ea",
+            "kind": 564,
+            "index": 6,
+            "descriptor": "0x17c562b6c90",
+            "raw": "000000003b6ae19a502e3d0d0000000001000a0000757300",
+            "mode": 0,
+            "value": "0xd3d2e50",
+            "state": 1,
+            "address": "0x17c0d3d2e50",
+            "rtti": {
+              "vtable": "0x7ff7a756e5b0",
+              "vtableRva": "0x3d8e5b0",
+              "colRva": "0x505e170",
+              "typeDescriptorRva": "0x5f899c8",
+              "name": ".?AVHealthExt@@"
+            }
+          },
+          "health": 3000.0,
+          "queueComponent": {
+            "roleLegacy": "0x6288851",
+            "lookupRva": "0x628a7f1",
+            "kind": 564,
+            "index": 11,
+            "descriptor": "0x17c562b6d08",
+            "raw": "0000000057ab490d100e970c00000000010011be010080be",
+            "mode": 0,
+            "value": "0xc970e10",
+            "state": 1,
+            "address": "0x17c0c970e10",
+            "rtti": {
+              "vtable": "0x7ff7a761e620",
+              "vtableRva": "0x3e3e620",
+              "colRva": "0x505ddd8",
+              "typeDescriptorRva": "0x5f8b510",
+              "name": ".?AVProductionQueueExt@@"
+            }
+          },
+          "queueOffset": "0x2af3980",
+          "queueAddress": "0x17c02af3980",
+          "queueCount": 0,
+          "queueDataOffset": "0x3cdb600"
+        },
+        {
+          "entity": "0x17c0517ca00",
+          "blueprint": "ebps\\races\\german\\buildings\\production\\infanterie_kompanie_ger",
+          "vehicle": false,
+          "status": "empty_queue",
+          "healthComponent": {
+            "roleLegacy": "0x628884a",
+            "lookupRva": "0x628a7ea",
+            "kind": 671,
+            "index": 6,
+            "descriptor": "0x17c562bfc90",
+            "raw": "000000003b6ae19ad0413d0d0000000001000a0000000000",
+            "mode": 0,
+            "value": "0xd3d41d0",
+            "state": 1,
+            "address": "0x17c0d3d41d0",
+            "rtti": {
+              "vtable": "0x7ff7a756e5b0",
+              "vtableRva": "0x3d8e5b0",
+              "colRva": "0x505e170",
+              "typeDescriptorRva": "0x5f899c8",
+              "name": ".?AVHealthExt@@"
+            }
+          },
+          "health": 1500.0,
+          "queueComponent": {
+            "roleLegacy": "0x6288851",
+            "lookupRva": "0x628a7f1",
+            "kind": 671,
+            "index": 11,
+            "descriptor": "0x17c562bfd08",
+            "raw": "0000000057ab490d9015970c00000000010011be010080be",
+            "mode": 0,
+            "value": "0xc971590",
+            "state": 1,
+            "address": "0x17c0c971590",
+            "rtti": {
+              "vtable": "0x7ff7a761e620",
+              "vtableRva": "0x3e3e620",
+              "colRva": "0x505ddd8",
+              "typeDescriptorRva": "0x5f8b510",
+              "name": ".?AVProductionQueueExt@@"
+            }
+          },
+          "queueOffset": "0x29fba00",
+          "queueAddress": "0x17c029fba00",
+          "queueCount": 0,
+          "queueDataOffset": "0x3ceff00"
+        },
+        {
+          "entity": "0x17c050bc200",
+          "blueprint": "ebps\\races\\german\\buildings\\production\\mechanized_kompanie_ger",
+          "vehicle": false,
+          "status": "empty_queue",
+          "healthComponent": {
+            "roleLegacy": "0x628884a",
+            "lookupRva": "0x628a7ea",
+            "kind": 969,
+            "index": 6,
+            "descriptor": "0x17c56295c90",
+            "raw": "000000003b6ae19a10abc30c0000000001000a0000000000",
+            "mode": 0,
+            "value": "0xcc3ab10",
+            "state": 1,
+            "address": "0x17c0cc3ab10",
+            "rtti": {
+              "vtable": "0x7ff7a756e5b0",
+              "vtableRva": "0x3d8e5b0",
+              "colRva": "0x505e170",
+              "typeDescriptorRva": "0x5f899c8",
+              "name": ".?AVHealthExt@@"
+            }
+          },
+          "health": 1500.0,
+          "queueComponent": {
+            "roleLegacy": "0x6288851",
+            "lookupRva": "0x628a7f1",
+            "kind": 969,
+            "index": 11,
+            "descriptor": "0x17c56295d08",
+            "raw": "000000006d1ba9ab601d970c000000000100110000000000",
+            "mode": 0,
+            "value": "0xc971d60",
+            "state": 1,
+            "address": "0x17c0c971d60",
+            "rtti": {
+              "vtable": "0x7ff7a761e620",
+              "vtableRva": "0x3e3e620",
+              "colRva": "0x505ddd8",
+              "typeDescriptorRva": "0x5f8b510",
+              "name": ".?AVProductionQueueExt@@"
+            }
+          },
+          "queueOffset": "0x2adac00",
+          "queueAddress": "0x17c02adac00",
+          "queueCount": 0,
+          "queueDataOffset": "0x3d8bf00"
+        },
+        {
+          "entity": "0x17c0529b000",
+          "blueprint": "ebps\\races\\german\\buildings\\production\\hq_medical_accessories_ger",
+          "vehicle": false,
+          "status": "health_component_absent",
+          "healthComponent": {
+            "roleLegacy": "0x628884a",
+            "lookupRva": "0x628a7ea",
+            "kind": 1259,
+            "index": 255
+          }
+        },
+        {
+          "entity": "0x17c05208e00",
+          "blueprint": "ebps\\races\\german\\buildings\\production\\support_armory_ger",
+          "vehicle": false,
+          "status": "empty_queue",
+          "healthComponent": {
+            "roleLegacy": "0x628884a",
+            "lookupRva": "0x628a7ea",
+            "kind": 969,
+            "index": 6,
+            "descriptor": "0x17c562bcc90",
+            "raw": "000000003b6ae19a8020e40c0000000001000a0000010000",
+            "mode": 0,
+            "value": "0xce42080",
+            "state": 1,
+            "address": "0x17c0ce42080",
+            "rtti": {
+              "vtable": "0x7ff7a756e5b0",
+              "vtableRva": "0x3d8e5b0",
+              "colRva": "0x505e170",
+              "typeDescriptorRva": "0x5f899c8",
+              "name": ".?AVHealthExt@@"
+            }
+          },
+          "health": 2000.0,
+          "queueComponent": {
+            "roleLegacy": "0x6288851",
+            "lookupRva": "0x628a7f1",
+            "kind": 969,
+            "index": 11,
+            "descriptor": "0x17c562bcd08",
+            "raw": "00000000332f3a90802a970c000000000100113b02cae6bc",
+            "mode": 0,
+            "value": "0xc972a80",
+            "state": 1,
+            "address": "0x17c0c972a80",
+            "rtti": {
+              "vtable": "0x7ff7a761e620",
+              "vtableRva": "0x3e3e620",
+              "colRva": "0x505ddd8",
+              "typeDescriptorRva": "0x5f8b510",
+              "name": ".?AVProductionQueueExt@@"
+            }
+          },
+          "queueOffset": "0x2b71f00",
+          "queueAddress": "0x17c02b71f00",
+          "queueCount": 0,
+          "queueDataOffset": "0x3ddd900"
+        },
+        {
+          "entity": "0x17c051fdc00",
+          "blueprint": "ebps\\races\\german\\buildings\\production\\panzer_armory_ger",
+          "vehicle": false,
+          "status": "empty_queue",
+          "healthComponent": {
+            "roleLegacy": "0x628884a",
+            "lookupRva": "0x628a7ea",
+            "kind": 1478,
+            "index": 6,
+            "descriptor": "0x17c562bd490",
+            "raw": "000000003b6ae19aa0a8010d0000000001000a0000010000",
+            "mode": 0,
+            "value": "0xd01a8a0",
+            "state": 1,
+            "address": "0x17c0d01a8a0",
+            "rtti": {
+              "vtable": "0x7ff7a756e5b0",
+              "vtableRva": "0x3d8e5b0",
+              "colRva": "0x505e170",
+              "typeDescriptorRva": "0x5f899c8",
+              "name": ".?AVHealthExt@@"
+            }
+          },
+          "health": 2000.0,
+          "queueComponent": {
+            "roleLegacy": "0x6288851",
+            "lookupRva": "0x628a7f1",
+            "kind": 1478,
+            "index": 11,
+            "descriptor": "0x17c562bd508",
+            "raw": "00000000e3c3740d002d970c000000000100110000000000",
+            "mode": 0,
+            "value": "0xc972d00",
+            "state": 1,
+            "address": "0x17c0c972d00",
+            "rtti": {
+              "vtable": "0x7ff7a761e620",
+              "vtableRva": "0x3e3e620",
+              "colRva": "0x505ddd8",
+              "typeDescriptorRva": "0x5f8b510",
+              "name": ".?AVProductionQueueExt@@"
+            }
+          },
+          "queueOffset": "0x2b71100",
+          "queueAddress": "0x17c02b71100",
+          "queueCount": 0,
+          "queueDataOffset": "0xffffffff"
+        }
+      ],
+      "ownedEntityCount": 414,
+      "identity": "0x1000003e9",
+      "resourceRaw": "0000000000000000467e5a4400000000d88261439c728e425d74e342000000000000000000808d3d"
+    }
+  ],
+  "limitations": [
+    "Paused 19:18 HQ upgrade event reported by lead; this probe does not control UI or independently establish trigger/time progression.",
+    "RTTI/path equality is structural evidence, not proof of full production behavior."
+  ],
+  "arena": "0x17c00000000",
+  "worldOffset": "0x6400000",
+  "stableRootsAfterRead": true,
+  "coverage": {
+    "SpawnProductionItem": "sample_absent",
+    "SquadUpgradeProductionItem": "sample_absent",
+    "EntityUpgradeProductionItem": "observed"
+  },
+  "status": "observed_nonempty_queue",
+  "readCalls": 2966,
+  "requestedBytes": 56288,
+  "successfulBytes": 56288,
+  "readFailures": [],
+  "elapsedMilliseconds": 10
+}

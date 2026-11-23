@@ -1,0 +1,19 @@
+{
+    "utc":  "2026-11-22T02:48:48.2229214Z",
+    "pid":  30504,
+    "startTimeUtc":  "2026-11-22T01:23:35.3993114Z",
+    "hwnd":  1379546,
+    "executable":  "G:\\SteamLibrary\\steamapps\\common\\Company of Heroes 3\\RelicCoH3.exe",
+    "action":  "Click",
+    "referenceX":  1743,
+    "referenceY":  719,
+    "virtualKey":  0,
+    "clientWidth":  2560,
+    "clientHeight":  1440,
+    "screenX":  1743,
+    "screenY":  719,
+    "foregroundPid":  30504,
+    "focusMethod":  "SetForegroundWindow",
+    "inputSent":  true,
+    "resultingGameState":  "not_evaluated"
+}

@@ -11,6 +11,13 @@ internal sealed class ArmourProductionTracker
 
 	private readonly HashSet<string> seen = new HashSet<string>();
 
+	public void Reset()
+	{
+		match = null;
+		initialized.Clear();
+		seen.Clear();
+	}
+
 	public void Reconnect()
 	{
 		initialized.Clear();

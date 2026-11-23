@@ -1,0 +1,514 @@
+{
+  "status": "pass",
+  "offlineOnly": true,
+  "checkCount": 87,
+  "checks": [
+    "sha256:evidence/version-adaptation/maintenance-run-28-camera-recovery/maintenance-live.json",
+    "sha256:evidence/version-adaptation/air/run28-driver-identity.json",
+    "sha256:evidence/version-adaptation/air/run28-driver-result.json",
+    "sha256:evidence/version-adaptation/air/run28_camera_driver.ps1",
+    "sha256:evidence/version-adaptation/air/run28-stdout.txt",
+    "sha256:evidence/version-adaptation/air/run28-stderr.txt",
+    "sha256:evidence/version-adaptation/game_input.py",
+    "sha256:tests/maintenance-live/RecoveryProbe.cs",
+    "sha256:tests/maintenance-live/RecoverySampling.cs",
+    "sha256:tests/maintenance-live/EventSampling.cs",
+    "sha256:tests/maintenance-live/LiveSampling.cs",
+    "sha256:tests/maintenance-live/EventPrewarm.cs",
+    "sha256:tests/maintenance-live/EventPolling.cs",
+    "sha256:tests/maintenance-live/BoundedPoll.cs",
+    "sha256:tests/maintenance-live/Program.cs",
+    "sha256:client/CoH3MemoryTool/PlayerInfoReader.cs",
+    "sha256:tests/maintenance-live/bin/Release/net48/SkyEye.Maintenance.Live.exe",
+    "sha256:evidence/version-adaptation/air/run28-native-resume.png",
+    "sha256:evidence/version-adaptation/air/run28-native-pan-01.png",
+    "sha256:evidence/version-adaptation/air/run28-native-pan-02.png",
+    "sha256:evidence/version-adaptation/air/run28-native-pan-03.png",
+    "sha256:evidence/version-adaptation/air/run28-native-pan-04.png",
+    "sha256:evidence/version-adaptation/air/run28-native-pan-05.png",
+    "sha256:evidence/version-adaptation/air/run28-native-pan-06.png",
+    "sha256:evidence/version-adaptation/air/run28-native-pan-07.png",
+    "sha256:evidence/version-adaptation/air/run28-native-pan-08.png",
+    "sha256:evidence/version-adaptation/air/run28-native-paused.png",
+    "source:client/CoH3MemoryTool/PlayerInfoReader.cs",
+    "source:tests/maintenance-live/RecoveryProbe.cs",
+    "source:tests/maintenance-live/RecoverySampling.cs",
+    "source:tests/maintenance-live/EventSampling.cs",
+    "source:tests/maintenance-live/LiveSampling.cs",
+    "source:one reader allocation and recovery before maps",
+    "source:tests/maintenance-live/BoundedPoll.cs",
+    "source:tests/maintenance-live/Program.cs",
+    "source:evidence/version-adaptation/air/run28_camera_driver.ps1",
+    "source:evidence/version-adaptation/game_input.py",
+    "unique feature names",
+    "maintenance evidence only",
+    "active lease and one reader open",
+    "candidate fingerprint status retained",
+    "recorded process identities and game hash",
+    "driver before/after/current runner hashes agree",
+    "explicit recovery and event flags",
+    "OS exit3 retained without forced timeout",
+    "natural camera exception stack and original failure preserved",
+    "independent successful recovery result",
+    "original event match and epoch retained",
+    "event stopped on exception before requested deadline",
+    "98 attempts and 97 completed query rounds",
+    "terminal incomplete snapshot has no query result",
+    "every poll has ordered UTC and monotonic bounds",
+    "UTC/stopwatch ledger relative drift under5ms",
+    "projectile counts are retained historical observations",
+    "projectile frame and drop ledger",
+    "97 historical empty air reads remain invalidated",
+    "projectile frames bind completed ledger rounds",
+    "air frames bind completed ledger rounds",
+    "air retains first/latest successful empty reads",
+    "one successful pair within cooperative caps",
+    "direct camera and snapshot both actually called",
+    "six original-reference match epoch lease guards",
+    "recovery monotonic sequence",
+    "exception precedes direct camera then snapshot UTC",
+    "two finite16-float camera matrices",
+    "camera engine format invariants",
+    "snapshot local identity address and original match correspond",
+    "match process start ticks agree with UTCplus8 recorded start",
+    "snapshot accounting:initial1 plus event98 plus recovery1 equals100",
+    "prewarm completed with original context and two live checks",
+    "complete recorded UTC sequence",
+    "maps start after direct recovery and cannot supply its evidence",
+    "eight native pans match driver coordinates and capture names",
+    "pan times precede final report and normal pause",
+    "natural exception occurred between sixth/seventh capture completion",
+    "png dimensions:evidence/version-adaptation/air/run28-native-resume.png",
+    "png dimensions:evidence/version-adaptation/air/run28-native-pan-01.png",
+    "png dimensions:evidence/version-adaptation/air/run28-native-pan-02.png",
+    "png dimensions:evidence/version-adaptation/air/run28-native-pan-03.png",
+    "png dimensions:evidence/version-adaptation/air/run28-native-pan-04.png",
+    "png dimensions:evidence/version-adaptation/air/run28-native-pan-05.png",
+    "png dimensions:evidence/version-adaptation/air/run28-native-pan-06.png",
+    "png dimensions:evidence/version-adaptation/air/run28-native-pan-07.png",
+    "png dimensions:evidence/version-adaptation/air/run28-native-pan-08.png",
+    "png dimensions:evidence/version-adaptation/air/run28-native-paused.png",
+    "retained console agrees and stderr empty",
+    "exit3 remains required after recovery"
+  ],
+  "validatorSha256": "CFFA2EA7069CC3363AB47B0A8AF2CAEB0AE77090FB4A6A0F79ECE2C163D165E0",
+  "inputs": [
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\maintenance-run-28-camera-recovery\\maintenance-live.json",
+      "bytes": 48669,
+      "sha256": "F9E5E343BCBF1E22F2B7B36A87D8C2D1DFDFD752915661D5BE81DBA825101AA6"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\run28-driver-identity.json",
+      "bytes": 1333,
+      "sha256": "C3D56ECB0AF24FBD0088C304C4D7800BCE1B57A5AA8AE116AB9CDD7C9E403B5D"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\run28-driver-result.json",
+      "bytes": 3761,
+      "sha256": "A46079559E5AB81405139D8FEF2E672B8F906E574826F8835ED9CB184CC1058B"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\run28_camera_driver.ps1",
+      "bytes": 6324,
+      "sha256": "7E1D25B60BB82709C2CBE254C50A9CF89328692D050984899CFBB6EB9B002E85"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\run28-stdout.txt",
+      "bytes": 1533,
+      "sha256": "B8AE585EF577B859A8E8FCC4E4E117EA55EF509D403AF1460FEC8A3BC3C19987"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\run28-stderr.txt",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\game_input.py",
+      "bytes": 3609,
+      "sha256": "0C5C9D65535C0E9ED4122E5B4A433C38ABE6EB05D063DA5B0D5E29C7656A384F"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\RecoveryProbe.cs",
+      "bytes": 8092,
+      "sha256": "2C7C5C18F20E39D8E8220858784C501FA6F66FCD5EEF45D8996E0E4CB6B36B12"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\RecoverySampling.cs",
+      "bytes": 6282,
+      "sha256": "48C4C51451E3FCB90DA7DB4EE9E2E67F1605932475A2CBBC5365541C145F7289"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\EventSampling.cs",
+      "bytes": 11095,
+      "sha256": "00D4E288A40CAFE9E525595BC38FB4793F38AA4E8B639B158E838008B5F84792"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\LiveSampling.cs",
+      "bytes": 15839,
+      "sha256": "02221D71D6B00D9FC0D421FB11A4EFF60635E3A05D774CA2D6EFA7025ED42B4D"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\EventPrewarm.cs",
+      "bytes": 958,
+      "sha256": "0A4B7467836001CF1B38FAA30D39D9B86DCD73C85AF2733463EB4D58AE19A3A4"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\EventPolling.cs",
+      "bytes": 1168,
+      "sha256": "59E996EAAD6BFEDE1E464DDD25613C83EEF13A85B8D61C54849C98D267DDDD71"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\BoundedPoll.cs",
+      "bytes": 1021,
+      "sha256": "49344C6F36F769EBB8DE13499DC41B956755A7FBD591FA32D7B58FD586AB3EAE"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\Program.cs",
+      "bytes": 9360,
+      "sha256": "933C837887771D5AD73594DAB8DA01A9ECA44ECEE8CD5DD841789E884B4BDB25"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\PlayerInfoReader.cs",
+      "bytes": 104468,
+      "sha256": "BBB359CD59409065D8B4D00ACE784243AE5E99816611BC11617E7C9ED8ADBA9D"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\bin\\Release\\net48\\SkyEye.Maintenance.Live.exe",
+      "bytes": 1309184,
+      "sha256": "CD125BFFA33E525CD4B94A753D65A6E4CBB199395E3860E57E85003DB7665F79"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\run28-native-resume.png",
+      "bytes": 3209359,
+      "sha256": "CD7F3945D27FC5AAC8ACBAEB879B1291AC0894C35ECA1F4BC409C19832510B26"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\run28-native-pan-01.png",
+      "bytes": 3263055,
+      "sha256": "2CA6D6E5B5DCB3DB015DDD08A137329B855896ED451112571310BA785AAD00A0"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\run28-native-pan-02.png",
+      "bytes": 2948416,
+      "sha256": "354CE3E75D5D4C2DAF2C25297D2051CEF400996A56B13F2B29CFF85D1E4DA402"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\run28-native-pan-03.png",
+      "bytes": 3030962,
+      "sha256": "00BF54C03DBD4265F53D3C005B2D8347E6334F8EA4FAEAA2DC697BFD28F6D5A5"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\run28-native-pan-04.png",
+      "bytes": 3139060,
+      "sha256": "DA1590BAE530BE44DC1EAD7C3403195FD54A3F6AD386A4746004C350B22DF099"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\run28-native-pan-05.png",
+      "bytes": 3270901,
+      "sha256": "CE747B4A861BF571B388260398F96F51D3B87BF0BDB75BBD18C36221C051530E"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\run28-native-pan-06.png",
+      "bytes": 3012512,
+      "sha256": "E1DF813C678924BC6FB116108ACB526788ADFDC25533CCEE88B55FDA09AD0C61"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\run28-native-pan-07.png",
+      "bytes": 3034085,
+      "sha256": "6D4C13A602FEAED0A7952F93948C3FA0A541030AE51F1EEB212D6FB3AC5451A9"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\run28-native-pan-08.png",
+      "bytes": 3129424,
+      "sha256": "D56391FDB67F381879AF8A9578C85DF8B8BC31B7452D7B56524C80FC41B42096"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\run28-native-paused.png",
+      "bytes": 2999886,
+      "sha256": "E7097551F86E8A26D28B7CFEE55A207A1414B8DD7E32F65D883C6766AF76F3AB"
+    }
+  ],
+  "readerRecoveryAccepted": true,
+  "originalEventWindowAccepted": false,
+  "productionGuiRecoveryAccepted": false,
+  "gameFeatureAccepted": false,
+  "protectedDeliveryAccepted": false,
+  "gamePid": 31572,
+  "gameStartUtc": "2026-11-20T18:44:29.8492330Z",
+  "recordedGameSha256": "8A3445292255D652C8DBE9B53F24328AF159C161BE89836BA54EF070946DD3EC",
+  "runnerPid": 14352,
+  "runnerSha256": "CD125BFFA33E525CD4B94A753D65A6E4CBB199395E3860E57E85003DB7665F79",
+  "match": "31572:639308258698492330:2188107579392:2188149555200:1000",
+  "epoch": 1,
+  "readerIdentityLabel": "020266e5",
+  "referenceEvidence": "ReferenceEquals source guard plus six recorded Valid/SameReader contexts; hash label alone is not identity proof",
+  "readerOpenAttempts": 1,
+  "snapshotAccounting": {
+    "initial": 1,
+    "eventAttemptsIncludingFailure": 98,
+    "recovery": 1,
+    "total": 100
+  },
+  "originalWindow": {
+    "status": "fail",
+    "error": "System.Exception: 镜头已切换。\r\n   在 CoH3MemoryTool.PlayerInfoReader.ReadMineCamera()\r\n   在 CoH3MemoryTool.PlayerInfoReader.LocalIdentity58()\r\n   在 CoH3MemoryTool.PlayerInfoReader.Snapshot()\r\n   在 CoH3MemoryTool.MaintenanceLiveContext.<>c__DisplayClass2_1.<SampleEvents>b__1()\r\n   在 CoH3MemoryTool.EventPolling.Run(Int32 seconds, Func`1 sample, Func`1 elapsed, Action`1 sleep, Func`1 cancelled, Int32& rounds)\r\n   在 CoH3MemoryTool.MaintenanceLiveContext.<>c__DisplayClass2_0.<SampleEvents>b__0(LiveProbeResult result)\r\n   在 CoH3MemoryTool.MaintenanceLiveContext.Probe(PlayerInfoReader reader, Exception openError, String feature, Action`1 query)",
+    "airStatus": "invalidated",
+    "readerAndOsExitCode": 3,
+    "requestedSeconds": 60,
+    "elapsedMilliseconds": 10586,
+    "polls": 98,
+    "completedQueryRounds": 97,
+    "finalPoll": {
+      "ordinal": 98,
+      "utc": "2026-11-21T03:08:59.3349766Z",
+      "startedMilliseconds": 10582,
+      "finishedMilliseconds": 10582,
+      "status": "incomplete",
+      "decodedCount": null,
+      "airDecodedCount": null
+    },
+    "decodedHistoricalProjectiles": 23,
+    "historicalEmptyAirQueries": 97,
+    "maximumLedgerUtcStopwatchDriftMilliseconds": 1.1973
+  },
+  "recovery": {
+    "probeStartedUtc": "2026-11-21T03:08:59.3413529Z",
+    "Status": "observed",
+    "StopReason": "camera_and_snapshot_observed",
+    "TriggeredUtc": "2026-11-21T03:08:59.3355359Z",
+    "TriggerError": "System.Exception: 镜头已切换。\r\n   在 CoH3MemoryTool.PlayerInfoReader.ReadMineCamera()\r\n   在 CoH3MemoryTool.PlayerInfoReader.LocalIdentity58()\r\n   在 CoH3MemoryTool.PlayerInfoReader.Snapshot()\r\n   在 CoH3MemoryTool.MaintenanceLiveContext.<>c__DisplayClass2_1.<SampleEvents>b__1()\r\n   在 CoH3MemoryTool.EventPolling.Run(Int32 seconds, Func`1 sample, Func`1 elapsed, Action`1 sleep, Func`1 cancelled, Int32& rounds)\r\n   在 CoH3MemoryTool.MaintenanceLiveContext.<>c__DisplayClass2_0.<SampleEvents>b__0(LiveProbeResult result)",
+    "TriggerReaderIdentity": "020266e5",
+    "ReaderOpenAttemptsAtTrigger": 1,
+    "InitialMatch": "31572:639308258698492330:2188107579392:2188149555200:1000",
+    "InitialEpoch": 1,
+    "MaximumAttempts": 3,
+    "BudgetMilliseconds": 2000,
+    "DirectCameraAttempts": 1,
+    "SnapshotAttempts": 1,
+    "CameraAndSnapshotRecovered": true,
+    "ElapsedMilliseconds": 6,
+    "OverrunMilliseconds": 0,
+    "StartContext": {
+      "ReaderIdentity": "020266e5",
+      "SameReader": true,
+      "ReaderOpenAttempts": 1,
+      "Match": "31572:639308258698492330:2188107579392:2188149555200:1000",
+      "Epoch": 1,
+      "Allowed": true,
+      "Valid": true
+    },
+    "EndContext": {
+      "ReaderIdentity": "020266e5",
+      "SameReader": true,
+      "ReaderOpenAttempts": 1,
+      "Match": "31572:639308258698492330:2188107579392:2188149555200:1000",
+      "Epoch": 1,
+      "Allowed": true,
+      "Valid": true
+    },
+    "Attempts": [
+      {
+        "Ordinal": 1,
+        "Camera": {
+          "Called": true,
+          "Status": "observed",
+          "StartedUtc": "2026-11-21T03:08:59.3438609Z",
+          "FinishedUtc": "2026-11-21T03:08:59.3438609Z",
+          "StartedMilliseconds": 2,
+          "FinishedMilliseconds": 2,
+          "Before": {
+            "ReaderIdentity": "020266e5",
+            "SameReader": true,
+            "ReaderOpenAttempts": 1,
+            "Match": "31572:639308258698492330:2188107579392:2188149555200:1000",
+            "Epoch": 1,
+            "Allowed": true,
+            "Valid": true
+          },
+          "After": {
+            "ReaderIdentity": "020266e5",
+            "SameReader": true,
+            "ReaderOpenAttempts": 1,
+            "Match": "31572:639308258698492330:2188107579392:2188149555200:1000",
+            "Epoch": 1,
+            "Allowed": true,
+            "Valid": true
+          },
+          "Evidence": {
+            "View": [
+              -6.39171844e-08,
+              0.681999564,
+              0.731352568,
+              0,
+              1.88543368e-08,
+              0.731352568,
+              -0.681999564,
+              0,
+              -1,
+              -1.88543368e-08,
+              -6.39171844e-08,
+              0,
+              -84.53733,
+              82.75858,
+              141.987061,
+              1
+            ],
+            "Projection": [
+              0.974278569,
+              0,
+              0,
+              0,
+              0,
+              1.7320509,
+              0,
+              0,
+              0,
+              0,
+              1.00000107,
+              1,
+              0,
+              0,
+              -0.1000001,
+              0
+            ],
+            "convention": "16 floats per matrix, raw reader ordering"
+          },
+          "Error": null
+        },
+        "Snapshot": {
+          "Called": true,
+          "Status": "observed",
+          "StartedUtc": "2026-11-21T03:08:59.3438609Z",
+          "FinishedUtc": "2026-11-21T03:08:59.3478715Z",
+          "StartedMilliseconds": 2,
+          "FinishedMilliseconds": 6,
+          "Before": {
+            "ReaderIdentity": "020266e5",
+            "SameReader": true,
+            "ReaderOpenAttempts": 1,
+            "Match": "31572:639308258698492330:2188107579392:2188149555200:1000",
+            "Epoch": 1,
+            "Allowed": true,
+            "Valid": true
+          },
+          "After": {
+            "ReaderIdentity": "020266e5",
+            "SameReader": true,
+            "ReaderOpenAttempts": 1,
+            "Match": "31572:639308258698492330:2188107579392:2188149555200:1000",
+            "Epoch": 1,
+            "Allowed": true,
+            "Valid": true
+          },
+          "Evidence": {
+            "rowCount": 2,
+            "local": {
+              "Slot": 0,
+              "Relation": "自己",
+              "IsLocalPlayer": true,
+              "playerAddress": "1fd77e08000",
+              "identity": "3e8"
+            }
+          },
+          "Error": null
+        }
+      }
+    ],
+    "triggerToFirstCameraMilliseconds": 8.325,
+    "triggerToSnapshotFinishedMilliseconds": 12.3356,
+    "recordedCameraWallMilliseconds": 0.0,
+    "recordedSnapshotWallMilliseconds": 4.0106
+  },
+  "prewarm": {
+    "requestedMilliseconds": 1000,
+    "startedUtc": "2026-11-21T03:08:47.7493658Z",
+    "finishedUtc": "2026-11-21T03:08:48.7496125Z",
+    "elapsedMilliseconds": 1000,
+    "initialMatch": "31572:639308258698492330:2188107579392:2188149555200:1000",
+    "initialEpoch": 1,
+    "liveMatchChecks": 2,
+    "outcome": "elapsed"
+  },
+  "mapsAfterRecovery": {
+    "minimap": {
+      "Status": "observed",
+      "StartedUtc": "2026-11-21T03:08:59.3493951Z",
+      "ElapsedMilliseconds": 5015
+    },
+    "tactical": {
+      "Status": "sample_absent",
+      "StartedUtc": "2026-11-21T03:08:59.3493951Z",
+      "ElapsedMilliseconds": 5015
+    }
+  },
+  "nativePans": [
+    {
+      "ordinal": 1,
+      "clientX": 140,
+      "clientY": 900,
+      "finishedUtc": "2026-11-21T03:08:50.3204381Z",
+      "capture": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\run28-native-pan-01.png"
+    },
+    {
+      "ordinal": 2,
+      "clientX": 260,
+      "clientY": 930,
+      "finishedUtc": "2026-11-21T03:08:51.9472264Z",
+      "capture": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\run28-native-pan-02.png"
+    },
+    {
+      "ordinal": 3,
+      "clientX": 220,
+      "clientY": 800,
+      "finishedUtc": "2026-11-21T03:08:53.5430938Z",
+      "capture": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\run28-native-pan-03.png"
+    },
+    {
+      "ordinal": 4,
+      "clientX": 90,
+      "clientY": 820,
+      "finishedUtc": "2026-11-21T03:08:55.1516956Z",
+      "capture": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\run28-native-pan-04.png"
+    },
+    {
+      "ordinal": 5,
+      "clientX": 140,
+      "clientY": 900,
+      "finishedUtc": "2026-11-21T03:08:56.7656352Z",
+      "capture": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\run28-native-pan-05.png"
+    },
+    {
+      "ordinal": 6,
+      "clientX": 260,
+      "clientY": 930,
+      "finishedUtc": "2026-11-21T03:08:58.3790125Z",
+      "capture": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\run28-native-pan-06.png"
+    },
+    {
+      "ordinal": 7,
+      "clientX": 220,
+      "clientY": 800,
+      "finishedUtc": "2026-11-21T03:08:59.9887676Z",
+      "capture": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\run28-native-pan-07.png"
+    },
+    {
+      "ordinal": 8,
+      "clientX": 90,
+      "clientY": 820,
+      "finishedUtc": "2026-11-21T03:09:01.6003748Z",
+      "capture": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\run28-native-pan-08.png"
+    }
+  ],
+  "nativeAdvanceSeconds": 16.6008448,
+  "limitations": [
+    "Only one naturally occurring exception and one recovered direct camera/Snapshot pair in a maintenance runner; no production GUI retry was exercised.",
+    "The event window failed at about10.586s of the requested60s; air invalidated and reader/OS exit3 remain unchanged.",
+    "MatchKey guards are cached equality checks. Successful Snapshot adds live process/world/local-identity checks; no raw camera-pointer before/after dump was retained.",
+    "RuntimeHelpers identity hash is only a label. ReferenceEquals in the reviewed source implements the recorded SameReader/Valid guards.",
+    "Snapshot and prewarm perform additional internal camera reads; DirectCameraAttempts1 is not the total camera-call count. Maps are separate later probes.",
+    "Eight retained pan captures support the native driver sequence; their completion timestamps do not identify which exact click caused the pointer change.",
+    "Driver-captured game binary hash is retained, not re-read from the running game. Runner/source/capture hashes are rechecked offline; this is not a new build or binary-to-source attestation.",
+    "A zero recorded direct-camera duration reflects timer granularity, not proof of zero execution time. No build/fingerprint, other-feature or protected-delivery acceptance is granted."
+  ]
+}

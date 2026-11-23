@@ -1,0 +1,51 @@
+{
+  "utc": "2026-11-20T18:23:02.988958+00:00",
+  "pid": 32148,
+  "tag": "simple-world-off",
+  "windows": [
+    {
+      "hwnd": 200036,
+      "isControlPanel": false,
+      "rect": [
+        66,
+        69,
+        1870,
+        163
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\simple-world-off-200036.png"
+    },
+    {
+      "hwnd": 265322,
+      "isControlPanel": false,
+      "rect": [
+        8,
+        61,
+        1928,
+        1141
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\simple-world-off-265322.png"
+    },
+    {
+      "hwnd": 461658,
+      "isControlPanel": false,
+      "rect": [
+        8,
+        61,
+        1928,
+        1141
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\simple-world-off-461658.png"
+    },
+    {
+      "hwnd": 330702,
+      "isControlPanel": true,
+      "rect": [
+        868,
+        637,
+        1692,
+        755
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\simple-world-off-330702.png"
+    }
+  ]
+}

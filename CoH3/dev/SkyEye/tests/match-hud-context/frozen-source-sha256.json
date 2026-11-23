@@ -1,0 +1,41 @@
+{
+  "baseline_reader_sha256": "39DDE7A0F2BD80E2412FED3439870CF7A49A794A9AAB0F812A9AFEE6F60C65D2",
+  "entries": [
+    {
+      "tree": "SkyEye",
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\PlayerInfoReader.cs",
+      "sha256": "8AE3E8BF3C3D9E90924D71799EBEB39E07256DB05F8D44073BB89F9A17C48545",
+      "bytes": 108772
+    },
+    {
+      "tree": "SkyEye",
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\MarkerReadContext.cs",
+      "sha256": "C10952282B89964316796525F331E1E0519642F8A443C5BDC24D042C518C3D29",
+      "bytes": 274
+    },
+    {
+      "tree": "SkyEye",
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\MatchHudContext.cs",
+      "sha256": "1BC671A1641B6BA2D46F8F91B11D5790DB8E346D55D2262070F06EBF607D7878",
+      "bytes": 13991
+    },
+    {
+      "tree": "Simple",
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\PlayerInfoReader.cs",
+      "sha256": "8AE3E8BF3C3D9E90924D71799EBEB39E07256DB05F8D44073BB89F9A17C48545",
+      "bytes": 108772
+    },
+    {
+      "tree": "Simple",
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\MarkerReadContext.cs",
+      "sha256": "C10952282B89964316796525F331E1E0519642F8A443C5BDC24D042C518C3D29",
+      "bytes": 274
+    },
+    {
+      "tree": "Simple",
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\MatchHudContext.cs",
+      "sha256": "1BC671A1641B6BA2D46F8F91B11D5790DB8E346D55D2262070F06EBF607D7878",
+      "bytes": 13991
+    }
+  ]
+}

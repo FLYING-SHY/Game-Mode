@@ -1,0 +1,375 @@
+--- task4-baseline/Program.cs
++++ CoH3/dev/SkyEye/tests/decoder-layout/Program.cs
+@@ -2,7 +2,7 @@
+ using System.Text.Json;
+ using CoH3MemoryTool;
+ 
+-internal static class Program
++internal static partial class Program
+ {
+     private const long Image = 0x140000000, Arena = 0x200000000, Entity = Arena + 0x400, Identity = 0x12345678;
+     private const uint Id = 13, Index = 27;
+@@ -211,9 +211,19 @@
+         {
+             foreach (var fixture in Fixtures()) TestFixture(fixture);
+             TestExtraBounds(); TestLayout();
+-            if (args.Length == 2 && args[0] == "--captured-projectile") TestCapturedProjectile(args[1]);
+-            else if (args.Length != 0) throw new ArgumentException("Usage: [--captured-projectile EVENT_JSON]");
+-            File.WriteAllText(Path.Combine(AppContext.BaseDirectory, "fixture-report.json"), JsonSerializer.Serialize(new { mode, evidence = "F only / synthetic buffers and optional offline captured-byte replay", passed = passed.Count, checks = passed, capturedEvidence, nativeOrReaderLinked = false, gameRun = "not_run", runnerErrorPropagation = "not_run; direct helper exceptions verified only" }, new JsonSerializerOptions { WriteIndented = true }));
++            string projectilePath = null, airDirectory = null;
++            for (int i = 0; i < args.Length; i += 2)
++            {
++                if (i + 1 >= args.Length) throw new ArgumentException("Usage: [--captured-projectile EVENT_JSON] [--captured-air AIR_DIRECTORY]");
++                if (args[i] == "--captured-projectile" && projectilePath == null) projectilePath = args[i + 1];
++                else if (args[i] == "--captured-air" && airDirectory == null) airDirectory = args[i + 1];
++                else throw new ArgumentException("Unknown or duplicate option: " + args[i]);
++            }
++            if (projectilePath != null) TestCapturedProjectile(projectilePath);
++            int legacyAndMapperPassed = passed.Count;
++            TestAirMoverShape();
++            if (airDirectory != null) TestCapturedAir(airDirectory);
++            File.WriteAllText(Path.Combine(AppContext.BaseDirectory, "fixture-report.json"), JsonSerializer.Serialize(new { mode, evidence = "F only / synthetic buffers and optional offline captured-byte replay", passed = passed.Count, legacyAndMapperPassed, checks = passed, capturedEvidence, capturedAirEvidence, nativeOrReaderLinked = false, gameRun = "not_run", runnerErrorPropagation = "not_run; direct helper exceptions verified only" }, new JsonSerializerOptions { WriteIndented = true }));
+             Console.WriteLine("FIXTURE_ONLY mode=" + mode + " passed=" + passed.Count + "; no Native, reader, GUI, coordinator, process discovery, credential access or game attachment.");
+             return 0;
+         }
+--- task4-baseline/Run.ps1
++++ CoH3/dev/SkyEye/tests/decoder-layout/Run.ps1
+@@ -5,6 +5,10 @@
+ $engine = (Resolve-Path (Join-Path $PSScriptRoot '../../client/CoH3MemoryTool')).Path
+ $captured = (Resolve-Path (Join-Path $PSScriptRoot '../../evidence/version-adaptation/projectiles/event-30s-02.json')).Path
+ $capturedHash = (Get-FileHash -LiteralPath $captured -Algorithm SHA256).Hash
++$airDirectory = (Resolve-Path (Join-Path $PSScriptRoot '../../evidence/version-adaptation/air')).Path
++$airBefore = @('live-raw-04-p47-middle.json','live-raw-05-p47-late.json','live-raw-07-p47-early.json','live-raw-08-p47-middle.json','live-raw-09-p47-late.json' | ForEach-Object { $path = Join-Path $airDirectory $_; [ordered]@{ path = $path; sha256 = (Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash } })
++$fixtureBefore = @('Program.cs','AirMoverReplay.cs','Run.ps1','DecoderLayout.Fixture.csproj' | ForEach-Object { $path = Join-Path $PSScriptRoot $_; [ordered]@{ path = $path; sha256 = (Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash } })
++$legacyPreservation = @()
+ [xml]$xml = [IO.File]::ReadAllText($project)
+ $spec = @($xml.Project.ItemGroup.Compile | Where-Object { $_.Include })[0].Include
+ $sourceFiles = @($spec.Split(';') | ForEach-Object { $_.Replace('$(EngineRoot)', $engine) })
+@@ -13,14 +17,24 @@
+     $isMaintenance = ($mode -eq 'Maintenance').ToString().ToLowerInvariant()
+     & $dotnet build $project -c $mode ('-p:Maintenance=' + $isMaintenance) --nologo 2>&1 | Tee-Object -FilePath (Join-Path $PSScriptRoot ($mode.ToLowerInvariant() + '-build.log'))
+     if ($LASTEXITCODE -ne 0) { throw ($mode + ' fixture build failed') }
+-    & $dotnet (Join-Path $PSScriptRoot ('bin/' + $mode + '/net10.0/DecoderLayout.Fixture.dll')) --captured-projectile $captured 2>&1 | Tee-Object -FilePath (Join-Path $PSScriptRoot ($mode.ToLowerInvariant() + '-test.log'))
++    & $dotnet (Join-Path $PSScriptRoot ('bin/' + $mode + '/net10.0/DecoderLayout.Fixture.dll')) --captured-projectile $captured --captured-air $airDirectory 2>&1 | Tee-Object -FilePath (Join-Path $PSScriptRoot ($mode.ToLowerInvariant() + '-test.log'))
+     if ($LASTEXITCODE -ne 0) { throw ($mode + ' fixtures failed') }
++    $baseline = Get-Content -LiteralPath (Join-Path $PSScriptRoot ('task4-baseline/' + $mode.ToLowerInvariant() + '-fixture-report.json')) -Raw | ConvertFrom-Json
++    $current = Get-Content -LiteralPath (Join-Path $PSScriptRoot ('bin/' + $mode + '/net10.0/fixture-report.json')) -Raw | ConvertFrom-Json
++    if ($current.legacyAndMapperPassed -ne $baseline.passed) { throw ($mode + ' original assertion count changed') }
++    for ($i = 0; $i -lt $baseline.checks.Count; $i++) {
++        if ($current.checks[$i] -cne $baseline.checks[$i]) { throw ($mode + ' original assertion changed at ' + $i) }
++    }
++    $legacyPreservation += [ordered]@{ mode = $mode; originalPassed = $baseline.passed; originalNamesAndOrderPreserved = $true; currentPassed = $current.passed }
+ }
+ foreach ($record in $before) {
+     if ((Get-FileHash -LiteralPath $record.path -Algorithm SHA256).Hash -ne $record.sha256) { throw ('Linked production source changed during fixture run; rerun required: ' + $record.path) }
+ }
+ if ((Get-FileHash -LiteralPath $captured -Algorithm SHA256).Hash -ne $capturedHash) { throw 'Captured event JSON changed during run; rerun required' }
+-$report = [ordered]@{ utc = [datetime]::UtcNow.ToString('O'); scope = 'F only, no G/R evidence'; linkedSourceHashes = $before; linkedSourcesUnchangedDuringRun = $true; capturedEvent = $captured; capturedEventSha256 = $capturedHash; capturedEventUnchangedDuringRun = $true; configurations = @('Release', 'Maintenance') }
++foreach ($record in @($airBefore) + @($fixtureBefore)) {
++    if ((Get-FileHash -LiteralPath $record.path -Algorithm SHA256).Hash -ne $record.sha256) { throw ('Fixture source or air input changed during run: ' + $record.path) }
++}
++$report = [ordered]@{ utc = [datetime]::UtcNow.ToString('O'); scope = 'F only, no G/R evidence'; linkedSourceHashes = $before; linkedSourcesUnchangedDuringRun = $true; fixtureSourceHashes = $fixtureBefore; fixtureSourcesUnchangedDuringRun = $true; capturedEvent = $captured; capturedEventSha256 = $capturedHash; capturedEventUnchangedDuringRun = $true; capturedAirInputs = $airBefore; capturedAirUnchangedDuringRun = $true; original186Assertions = $legacyPreservation; configurations = @('Release', 'Maintenance') }
+ $utf8 = New-Object Text.UTF8Encoding($false)
+ [IO.File]::WriteAllText((Join-Path $PSScriptRoot 'source-manifest.json'), ($report | ConvertTo-Json -Depth 5), $utf8)
+ Write-Host 'PASS source hash stability. All artifacts remain in decoder-layout; original production sources untouched.'
+--- task4-baseline/README.md
++++ CoH3/dev/SkyEye/tests/decoder-layout/README.md
+@@ -12,7 +12,7 @@
+ 
+ 使用仓库 .NET10 SDK。依次构建运行 Release 与 Maintenance 配置；后一配置显式定义 MAINTENANCE_DIAGNOSTICS。所有 bin/obj/报告/日志在本目录，30个链接源文件运行前后 SHA256相等才成功。
+ 
+-当前结果：**Release89/89 + Maintenance97/97 = 186 PASS**，两配置0warning0error。静态数据字段的预期 CS0649 在此独立工程禁用；未改正式工程警告设置。
++当前结果：**Release118/118 + Maintenance170/170 = 288 PASS**，两配置0warning0error。原先 Release89 + Maintenance97 共186项的名称、顺序、数量仍逐条保持，基线留在 [task4-baseline](<F:/WorkSpace/Game/CoH3/dev/SkyEye/tests/decoder-layout/task4-baseline>)。静态数据字段的预期 CS0649 在此独立工程禁用；未改正式工程警告设置。
+ 
+ - `release-build.log` / `release-test.log`
+ - `maintenance-build.log` / `maintenance-test.log`
+@@ -47,6 +47,33 @@
+ 
+ ## 证据范围
+ 
+-这186个断言仅为F：合成buffer及单个已采样rawbytes离线回放验证guard路由与decoder字段逻辑，不证明候选RTTI的完整动态事件链、owner/weapon/mode全场景语义、屏幕绘制、跨局恢复或游戏功能正常。`source-manifest.json`固定本轮源码快照；后续引擎更改应重跑。
++这288个断言仅为F：合成buffer、单个已采样炮弹与两轮P47的rawbytes离线回放验证guard路由与decoder字段逻辑，不证明候选RTTI的完整动态事件链、owner/weapon/mode全场景语义、屏幕绘制、跨局恢复或游戏功能正常。[source-manifest.json](<F:/WorkSpace/Game/CoH3/dev/SkyEye/tests/decoder-layout/source-manifest.json>)固定本轮30个链接源、4个fixture源及5份空袭输入的SHA256与运行前后稳定性；后续引擎更改应重跑。
+ 
+ Direct helper mapper异常传播已实测；reader逐对象catch→runner fail/blocked/layouterror的端到端分类**not_run**，本工程没有链接reader或runner，未声称该链已覆盖。37项检查对照当前显式required表与字典，不声称独立解析了整个reader语法树。原始游戏、输出交付、凭据、ProductId、pin均未写入或运行。
++
++## Task-4：显式184字节 Mover 形状
++
++[AirMoverReplay.cs](<F:/WorkSpace/Game/CoH3/dev/SkyEye/tests/decoder-layout/AirMoverReplay.cs>)新增102项断言（Release29、Maintenance73）。原有186项保持在报告开头，[Run.ps1](<F:/WorkSpace/Game/CoH3/dev/SkyEye/tests/decoder-layout/Run.ps1>)逐条对照冻结基线后才写成功manifest。fixture新增 `--captured-air AIR_DIRECTORY`，继续支持原 `--captured-projectile EVENT_JSON`。
++
++候选形状的依据为之前对相同SHA256游戏样本所做静态分析：RVA707A10工厂的707A2A分配0xB8=184字节；707A70构造在707A9D安装MoverDynamics RVA3D926E0。对象内+96/+100在序列化/反序列化路径中是两个4字节元素。原+272/+276/+280越过该分配；这些尾部字节在历史284字节采集中稳定，并不表示它们属于对象。
++
++[AirLogic.cs](<F:/WorkSpace/Game/CoH3/dev/SkyEye/client/CoH3MemoryTool/AirLogic.cs:5>)新增显式 `AirMoverShape`：默认Legacy284，继续解析+272/+276/+280；Candidate52426_184只在MAINTENANCE_DIAGNOSTICS中存在，解析+96/+100并令二维方向Y为0。候选RVA mapper本身不会选择紧凑形状，184字节buffer也不会触发自动识别。
++
++[PlayerInfoReader.cs](<F:/WorkSpace/Game/CoH3/dev/SkyEye/client/CoH3MemoryTool/PlayerInfoReader.cs:552>)的RecoverStrafe读点与[ReadLoiter49](<F:/WorkSpace/Game/CoH3/dev/SkyEye/client/CoH3MemoryTool/PlayerInfoReader.cs:1048>)同时使用该形状的读长度及方向。新增选择函数只在维护编译且maintenanceDiagnostics=true时选择candidate；现有两个构造入口的RequireVerified、RequireCandidate和ValidateDependencies逻辑保持原样。普通reader即使编在维护配置中仍选择legacy。原身份、状态、目标、时序、600ms/2500ms、tracker、owner及高度门槛保留。
++
++| 原始输入 | 离线结果与独立对照 |
++| --- | --- |
++| [raw04](<F:/WorkSpace/Game/CoH3/dev/SkyEye/evidence/version-adaptation/air/live-raw-04-p47-middle.json>) | 未改392字节body和actor前184字节直接恢复P47区域；方向与同机raw04→05位移一致。 |
++| [raw05](<F:/WorkSpace/Game/CoH3/dev/SkyEye/evidence/version-adaptation/air/live-raw-05-p47-late.json>) | 同代次、同actor；原始高度差3.8748<8，candidate继续返回null。另有仅改body Y的反事实克隆用来定位该门槛，未将克隆记为真实正例。 |
++| [raw07](<F:/WorkSpace/Game/CoH3/dev/SkyEye/evidence/version-adaptation/air/live-raw-07-p47-early.json>)与[raw08](<F:/WorkSpace/Game/CoH3/dev/SkyEye/evidence/version-adaptation/air/live-raw-08-p47-middle.json>) | raw07原生TimedAbility原始字节解码成功；raw08的184字节P47方向与该cast一致，和raw04航向近似正交。 |
++| [raw09](<F:/WorkSpace/Game/CoH3/dev/SkyEye/evidence/version-adaptation/air/live-raw-09-p47-late.json>) | P47已不在该快照；作为缺飞机负例，未假定actor字段总存在。 |
++
++每个真实184字节正例另外验证183字节、null actor、391字节body、generation/index、vtable、backref、state、mode、destroyed、两个方向分量分别NaN/±Infinity、零方向、非有限目标以及mapper异常对象保持。正例在Legacy284下仍返回null；Release只编入Legacy284。Loiter49的纯函数接收同一真实方向后生成几何，acquisition/range为显式合成参数；本轮没有原生Stuka loiter事件样本，也没有执行完整reader。
++
++REA 6.8.0通过已安装CLI对两份fixture DLL执行 `inspect-managed-artifact` 和 `inspect-managed-members`，保留完整元数据及CIL anchors。Release的两个helper常数分别仅为284与272/276/280；Maintenance另有184和96/100。Release没有候选枚举成员、GameLayout候选字段或方法。完整证据为[Release artifact](<F:/WorkSpace/Game/CoH3/dev/SkyEye/tests/decoder-layout/rea-release-artifact.json>)、[Release members](<F:/WorkSpace/Game/CoH3/dev/SkyEye/tests/decoder-layout/rea-release-members.json>)、[Maintenance artifact](<F:/WorkSpace/Game/CoH3/dev/SkyEye/tests/decoder-layout/rea-maintenance-artifact.json>)及[Maintenance members](<F:/WorkSpace/Game/CoH3/dev/SkyEye/tests/decoder-layout/rea-maintenance-members.json>)；全为不执行目标的静态解析。
++
++本轮源码增量见[task4-engine.diff](<F:/WorkSpace/Game/CoH3/dev/SkyEye/tests/decoder-layout/task4-engine.diff>)；该diff相对task-4领取时基线，保留更早的mapper适配，便于父代理镜像。fixture增量为[task4-fixture.diff](<F:/WorkSpace/Game/CoH3/dev/SkyEye/tests/decoder-layout/task4-fixture.diff>)。
++
++[verify_task4.py](<F:/WorkSpace/Game/CoH3/dev/SkyEye/tests/decoder-layout/verify_task4.py>)另做34项离线审查，并写入[task4-review.json](<F:/WorkSpace/Game/CoH3/dev/SkyEye/tests/decoder-layout/task4-review.json>)：重核源与输入hash、精确反向还原本轮编辑以检查其他代码保持、保留186项原断言、校验REA证据属于当前DLL、完整CIL anchors与实际IL字节hash，以及两配置的精确常数/候选字段隔离。运行方式为 `python -B verify_task4.py`。核心源码hash固定在报告中，父代理接管构建前可直接复核。
++
++正式Release/受保护交付、maintenance runner、GUI、真实附加与授权均未构建或执行。
+--- /dev/null
++++ CoH3/dev/SkyEye/tests/decoder-layout/AirMoverReplay.cs
+@@ -0,0 +1,147 @@
++using System.Globalization;
++using System.Security.Cryptography;
++using System.Text.Json;
++using CoH3MemoryTool;
++
++internal static partial class Program
++{
++    private const string P47Aircraft = "ebps\\races\\american\\aircraft\\p47_thunderbolt_air_support_center_us";
++    private const string P47Ability = "abilities\\races\\american\\aircraft\\strafing_run_p47_us";
++    private static object capturedAirEvidence;
++    private static bool Near(float a, float b, float tolerance = 0.00001f) => Math.Abs(a - b) <= tolerance;
++    private static long Hex(JsonElement value) => long.Parse(value.GetString().Substring(2), NumberStyles.HexNumber, CultureInfo.InvariantCulture);
++
++    private static void TestAirMoverShape()
++    {
++        Check(AirLogic.MoverReadSize() == 284, "mover default extent remains legacy 284");
++        Check(Equals(typeof(AirLogic).GetMethod(nameof(AirLogic.RecoverStrafe)).GetParameters().Last().DefaultValue, AirMoverShape.Legacy284), "RecoverStrafe optional shape defaults to legacy in both configurations");
++        var legacy = Actor(Map, 64559016, 1);
++        F(legacy, 96, 0); F(legacy, 100, 1);
++        AirLogic.MoverDirection(legacy, AirMoverShape.Legacy284, out float x, out float y, out float z);
++        Check(x == 1 && y == 0 && z == 0, "legacy direction ignores conflicting compact fields even with mapped vtable");
++        bool invalidThrows = false;
++        try { AirLogic.MoverReadSize((AirMoverShape)int.MaxValue); }
++        catch (ArgumentOutOfRangeException) { invalidThrows = true; }
++        Check(invalidThrows, "unknown mover shape fails instead of choosing by buffer length or RVA");
++#if MAINTENANCE_DIAGNOSTICS
++        Check(Enum.GetNames<AirMoverShape>().SequenceEqual(new[] { "Legacy284", "Candidate52426_184" }), "maintenance explicitly exposes two mover shapes");
++        Check(AirLogic.MoverReadSize(AirMoverShape.Candidate52426_184) == 184, "candidate allocation extent is exactly 184");
++        F(legacy, 96, 0.6f); F(legacy, 100, 0.8f);
++        var body = Body(); F(body, 48, 30);
++        var compact = legacy.Take(184).ToArray();
++        var recovered = AirLogic.RecoverStrafe(P47Aircraft, body, compact, Image, Arena, Entity, Id, Index, Map, AirMoverShape.Candidate52426_184);
++        Check(compact.Length == 184 && recovered != null && Near(recovered.DX, 0.6f) && Near(recovered.DZ, 0.8f), "exact 184-byte compact buffer recovers with explicit shape");
++        var defaultZone = AirLogic.RecoverStrafe(P47Aircraft, body, legacy, Image, Arena, Entity, Id, Index, Map);
++        Check(defaultZone != null && defaultZone.DX == 1 && defaultZone.DZ == 0, "maintenance-compiled default parser still uses legacy offsets");
++        Check(AirLogic.RecoverStrafe(P47Aircraft, body, compact, Image, Arena, Entity, Id, Index, Map) == null, "mapper alone does not enable compact shape");
++#else
++        Check(Enum.GetNames<AirMoverShape>().SequenceEqual(new[] { "Legacy284" }), "release has no candidate mover enum member");
++        Check(typeof(GameLayout52426).GetFields(System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Static).Length == 0, "release candidate layout has no roles or shape state");
++#endif
++    }
++
++    private static void TestCapturedAir(string directory)
++    {
++        var inputEvidence = new List<object>();
++        JsonElement Load(string name)
++        {
++            string path = Path.GetFullPath(Path.Combine(directory, name));
++            byte[] file = File.ReadAllBytes(path);
++            using var doc = JsonDocument.Parse(file);
++            var root = doc.RootElement.Clone(); var snapshot = root.GetProperty("snapshot");
++            Check(snapshot.GetProperty("errors").GetArrayLength() == 0 && snapshot.GetProperty("stableRootsAndDescriptors").GetBoolean() && snapshot.GetProperty("stableEntries").GetBoolean() && snapshot.GetProperty("scanComplete").EnumerateObject().All(p => p.Value.GetBoolean()), name + " retained snapshot is complete and stable");
++            inputEvidence.Add(new { path, sha256 = Convert.ToHexString(SHA256.HashData(file)), timestampUtc = root.GetProperty("timestampUtc").GetString(), moduleBase = root.GetProperty("moduleBase").GetString(), arena = snapshot.GetProperty("roots").GetProperty("arena").GetString() });
++            return root;
++        }
++        var raw04 = Load("live-raw-04-p47-middle.json");
++        var raw05 = Load("live-raw-05-p47-late.json");
++        var raw07 = Load("live-raw-07-p47-early.json");
++        var raw08 = Load("live-raw-08-p47-middle.json");
++        var raw09 = Load("live-raw-09-p47-late.json");
++        JsonElement Plane(JsonElement root, string entity) => root.GetProperty("snapshot").GetProperty("airEntities").EnumerateArray().Single(p => p.GetProperty("entity").GetString() == entity);
++        var plane04 = Plane(raw04, "0x1fd7445fe00"); var plane05 = Plane(raw05, "0x1fd7445fe00");
++        var plane08 = Plane(raw08, "0x1fd74467a00");
++        Check(plane04.GetProperty("generation").GetUInt32() == plane05.GetProperty("generation").GetUInt32() && plane04.GetProperty("actor").GetProperty("address").GetString() == plane05.GetProperty("actor").GetProperty("address").GetString(), "raw04 and raw05 retain the same aircraft generation and actor");
++        Check(!raw09.GetProperty("snapshot").GetProperty("airEntities").EnumerateArray().Any(p => p.GetProperty("blueprint").GetString() == P47Aircraft), "raw09 is an absent-aircraft negative sample; actor is optional");
++        var cast07 = raw07.GetProperty("snapshot").GetProperty("timedAbilities").EnumerateArray().Single(a => a.GetProperty("blueprint").GetString() == P47Ability);
++        var castBytes = Convert.FromHexString(cast07.GetProperty("raw148Hex").GetString());
++        var targetBytes = Convert.FromHexString(cast07.GetProperty("target").GetProperty("raw20Hex").GetString());
++        var player07 = raw07.GetProperty("snapshot").GetProperty("players").EnumerateArray().Single(p => p.GetProperty("address").GetString() == cast07.GetProperty("player").GetString());
++        Check(AirLogic.Cast(castBytes, targetBytes, Hex(raw07.GetProperty("moduleBase")), Hex(player07.GetProperty("identity")), out _, out _, out _, out float castDX, out float castDZ, resolveRva: Map), "raw07 unmodified native timed cast decodes with explicit mapper");
++        var body04 = Convert.FromHexString(plane04.GetProperty("raw392Hex").GetString());
++        var body05 = Convert.FromHexString(plane05.GetProperty("raw392Hex").GetString());
++        var actor04 = Convert.FromHexString(plane04.GetProperty("actor").GetProperty("rawHex").GetString());
++        var actor08 = Convert.FromHexString(plane08.GetProperty("actor").GetProperty("rawHex").GetString());
++        float motionX = BitConverter.ToSingle(body05, 44) - BitConverter.ToSingle(body04, 44);
++        float motionZ = BitConverter.ToSingle(body05, 52) - BitConverter.ToSingle(body04, 52);
++        double motionLength = Math.Sqrt((double)motionX * motionX + (double)motionZ * motionZ);
++        double oldLength = Math.Sqrt(Math.Pow(BitConverter.ToSingle(actor04, 96), 2) + Math.Pow(BitConverter.ToSingle(actor04, 100), 2));
++        double newLength = Math.Sqrt(Math.Pow(BitConverter.ToSingle(actor08, 96), 2) + Math.Pow(BitConverter.ToSingle(actor08, 100), 2));
++        Check(Near((float)(BitConverter.ToSingle(actor04, 96) / oldLength), (float)(motionX / motionLength)) && Near((float)(BitConverter.ToSingle(actor04, 100) / oldLength), (float)(motionZ / motionLength)), "raw04 compact pair agrees with independent same-plane raw04-to-05 displacement");
++        Check(Near((float)(BitConverter.ToSingle(actor08, 96) / newLength), castDX) && Near((float)(BitConverter.ToSingle(actor08, 100) / newLength), castDZ), "raw08 compact pair agrees with separate native raw07 cast direction");
++        Check(Math.Abs(BitConverter.ToSingle(actor04, 96) / oldLength * castDX + BitConverter.ToSingle(actor04, 100) / oldLength * castDZ) < 0.02, "two captured passes exercise approximately orthogonal headings");
++
++        foreach (var sample in new[] { (Name: "raw04", Root: raw04, Plane: plane04, Positive: true), (Name: "raw05", Root: raw05, Plane: plane05, Positive: false), (Name: "raw08", Root: raw08, Plane: plane08, Positive: true) })
++        {
++            byte[] body = Convert.FromHexString(sample.Plane.GetProperty("raw392Hex").GetString());
++            byte[] capturedActor = Convert.FromHexString(sample.Plane.GetProperty("actor").GetProperty("rawHex").GetString());
++            byte[] actor = capturedActor.Take(184).ToArray();
++            long image = Hex(sample.Root.GetProperty("moduleBase")), arena = Hex(sample.Root.GetProperty("snapshot").GetProperty("roots").GetProperty("arena")), entity = Hex(sample.Plane.GetProperty("entity"));
++            uint generation = sample.Plane.GetProperty("generation").GetUInt32(), index = sample.Plane.GetProperty("registryIndex").GetUInt32();
++            Check(body.Length == 392 && capturedActor.Length == 284 && actor.Length == 184 && capturedActor.AsSpan(0, 184).SequenceEqual(actor), sample.Name + " replay uses unmodified 392-byte body and exact 184-byte actor prefix");
++            Check(BitConverter.ToUInt32(actor, 36) + arena == entity && BitConverter.ToInt64(actor, 0) == image + Map(64559016), sample.Name + " independent saved arena/module roots agree with actor backref and vtable");
++            Check(AirLogic.RecoverStrafe(P47Aircraft, body, capturedActor, image, arena, entity, generation, index, Map) == null, sample.Name + " full captured tail fails legacy direction despite candidate RVA mapper");
++#if MAINTENANCE_DIAGNOSTICS
++            AirZone Run(byte[] a, byte[] b = null, uint? id = null, uint? idx = null, Func<long, long> mapper = null) => AirLogic.RecoverStrafe(P47Aircraft, b ?? body, a, image, arena, entity, id ?? generation, idx ?? index, mapper ?? Map, AirMoverShape.Candidate52426_184);
++            var zone = Run(actor);
++            if (!sample.Positive)
++            {
++                float targetY = BitConverter.ToSingle(actor, 24);
++                Check(zone == null && BitConverter.ToSingle(body, 48) - targetY < 8, "raw05 compact replay retains the original above-target rejection");
++                var counterfactual = (byte[])body.Clone(); F(counterfactual, 48, targetY + 16);
++                Check(Run(actor, counterfactual) != null, "raw05 counterfactual clone changing only body Y isolates height rejection; not a captured positive");
++                continue;
++            }
++            double length = Math.Sqrt(Math.Pow(BitConverter.ToSingle(actor, 96), 2) + Math.Pow(BitConverter.ToSingle(actor, 100), 2));
++            Check(zone != null && zone.X == BitConverter.ToSingle(actor, 20) && zone.Y == BitConverter.ToSingle(actor, 24) && zone.Z == BitConverter.ToSingle(actor, 28) && Near(zone.DX, (float)(BitConverter.ToSingle(actor, 96) / length)) && Near(zone.DZ, (float)(BitConverter.ToSingle(actor, 100) / length)) && zone.Length == 45 && zone.HalfWidth == 5 && zone.Key == "flight:" + entity + ":" + generation, sample.Name + " exact 184-byte real buffer recovers native P47 geometry and identity");
++            Check(Run(capturedActor)?.DX == zone.DX && Run(capturedActor)?.DZ == zone.DZ, sample.Name + " explicit compact shape ignores captured bytes beyond 184");
++            int mapperCalls = 0;
++            long Trace(long key) { mapperCalls++; return Map(key); }
++            Check(Run(actor.Take(183).ToArray(), mapper: Trace) == null && mapperCalls == 0, sample.Name + " 183-byte actor rejected before mapper");
++            Check(Run(null, mapper: Trace) == null && mapperCalls == 0, sample.Name + " absent actor rejected before mapper");
++            Check(Run(actor, body.Take(391).ToArray(), mapper: Trace) == null && mapperCalls == 0, sample.Name + " 391-byte body rejected before mapper");
++            Check(Run(actor, id: generation + 1) == null && Run(actor, idx: index + 1) == null, sample.Name + " wrong generation and registry index independently rejected");
++            var wrong = (byte[])actor.Clone(); Q(wrong, 0, image + 0x7FFF0000);
++            Check(Run(wrong) == null, sample.Name + " wrong mover type rejected with compact shape");
++            wrong = (byte[])actor.Clone(); U(wrong, 36, BitConverter.ToUInt32(wrong, 36) + 4);
++            Check(Run(wrong) == null, sample.Name + " wrong arena-relative backref rejected");
++            wrong = (byte[])actor.Clone(); U(wrong, 64, 0);
++            Check(Run(wrong) == null, sample.Name + " wrong mover state rejected");
++            wrong = (byte[])actor.Clone(); wrong[16] = 1;
++            Check(Run(wrong) == null, sample.Name + " wrong target mode rejected");
++            var destroyed = (byte[])body.Clone(); U(destroyed, 160, BitConverter.ToUInt32(destroyed, 160) | 0x4000);
++            Check(Run(actor, destroyed) == null, sample.Name + " destroyed entity rejected");
++            foreach (int offset in new[] { 96, 100 })
++                foreach (float value in new[] { float.NaN, float.PositiveInfinity, float.NegativeInfinity })
++                {
++                    wrong = (byte[])actor.Clone(); F(wrong, offset, value);
++                    Check(Run(wrong) == null, sample.Name + " non-finite compact heading rejected at " + offset + " " + value);
++                }
++            wrong = (byte[])actor.Clone(); F(wrong, 96, 0); F(wrong, 100, 0);
++            Check(Run(wrong) == null, sample.Name + " zero compact heading rejected");
++            wrong = (byte[])actor.Clone(); F(wrong, 20, float.NaN);
++            Check(Run(wrong) == null, sample.Name + " non-finite target rejected");
++            var failure = new MapperFailure(); Exception caught = null;
++            try { Run(actor, mapper: _ => throw failure); } catch (Exception ex) { caught = ex; }
++            Check(ReferenceEquals(caught, failure), sample.Name + " compact parser preserves direct mapper exception identity");
++            AirLogic.MoverDirection(actor, AirMoverShape.Candidate52426_184, out float dx, out float dy, out float dz);
++            var loiter = new LoiterState49();
++            Loiter49.Observe(loiter, true, zone.X, zone.Y, zone.Z, BitConverter.ToSingle(body, 44), BitConverter.ToSingle(body, 52), dx, dz, 45, 5, "offline-p47-direction", "fixture only");
++            Check(dy == 0 && loiter.Zone != null && Near(loiter.Zone.DX, zone.DX) && Near(loiter.Zone.DZ, zone.DZ), sample.Name + " shared compact direction feeds pure Loiter49 with synthetic acquisition inputs; not a native loiter sample");
++#else
++            Check(AirLogic.RecoverStrafe(P47Aircraft, body, actor, image, arena, entity, generation, index, Map) == null, sample.Name + " release retains legacy extent and never infers compact shape");
++#endif
++        }
++        capturedAirEvidence = new { inputs = inputEvidence, aircraft = new[] { "0x1fd7445fe00", "0x1fd74467a00" }, rawActorBytes = 184, bodyBytes = 392, capturedTailExcluded = true, independentSavedRoots = true, approximatelyOrthogonalNativeCast = true, nativeLoiterSample = false, limitation = "F only. Original captured bytes replayed offline; candidate positive/rejection cases run only in maintenance. Loiter call uses synthetic acquisition/range inputs. No reader, timing, enemy UI, camera recovery or live game validation." };
++    }
++}
+--- /dev/null
++++ CoH3/dev/SkyEye/tests/decoder-layout/verify_task4.py
+@@ -0,0 +1,102 @@
++"""Verify frozen task-4 source, original fixtures and complete REA CIL evidence offline."""
++from pathlib import Path
++import datetime
++import difflib
++import hashlib
++import json
++import re
++import struct
++
++HERE = Path(__file__).resolve().parent
++ENGINE = HERE.parents[1] / "client" / "CoH3MemoryTool"
++checks = []
++
++def load(path):
++    return json.loads(path.read_text(encoding="utf-8-sig"))
++
++def sha(path):
++    return hashlib.sha256(path.read_bytes()).hexdigest()
++
++def check(condition, name):
++    if not condition:
++        raise AssertionError(name)
++    checks.append(name)
++
++manifest = load(HERE / "source-manifest.json")
++for group in ("linkedSourceHashes", "fixtureSourceHashes", "capturedAirInputs"):
++    records = manifest[group]
++    check(all(sha(Path(r["path"])) == r["sha256"].lower() for r in records), group + " still match successful fixture run")
++check(sha(Path(manifest["capturedEvent"])) == manifest["capturedEventSha256"].lower(), "captured projectile input unchanged")
++
++expected_core = {
++    "AirLogic.cs": "8e3eced8cd1e9f120e76da38ba2d5146c0e56fcfe670ea66b4486fb2011dac50",
++    "PlayerInfoReader.cs": "bbb359cd59409065d8b4d00ace784243ae5e99816611bc11617e7c9ed8adba9d",
++}
++for name, digest in expected_core.items():
++    check(sha(ENGINE / name) == digest, name + " remains frozen after parent notification")
++
++# Invert just this task's reviewed edits to prove every other guard and timer stayed intact.
++reader = (ENGINE / "PlayerInfoReader.cs").read_text(encoding="utf-8-sig")
++selector_start = reader.index("\tprivate AirMoverShape AirMoverShape45()")
++selector_end = reader.index("\tprivate long BuildRva45(long legacy)", selector_start)
++selector = reader[selector_start:selector_end]
++check(selector == "\tprivate AirMoverShape AirMoverShape45()\n\t{\n#if MAINTENANCE_DIAGNOSTICS\n\t\tif (maintenanceDiagnostics) return AirMoverShape.Candidate52426_184;\n#endif\n\t\treturn AirMoverShape.Legacy284;\n\t}\n\n", "reader explicit shape selection requires maintenance compilation AND maintenanceDiagnostics=true")
++restored = reader[:selector_start] + reader[selector_end:]
++restored, count = re.subn(r"(?m)^(\t+)AirMoverShape moverShape = AirMoverShape45\(\);\n\1byte\[\] (array6|array) = Read\((Resolve\(arena, (?:num21|num)\)), AirLogic.MoverReadSize\(moverShape\)\);", r"\1byte[] \2 = Read(\3, 284);", restored)
++check(count == 2, "both reader consumers use the explicit shape for bounded reads")
++restored = restored.replace(", BuildRva45, moverShape);", ", BuildRva45);")
++restored = restored.replace("\t\tAirLogic.MoverDirection(array, moverShape, out float headingX, out _, out float headingZ);\n", "")
++restored = restored.replace("px, pz, headingX, headingZ, length, width", "px, pz, BitConverter.ToSingle(array, 272), BitConverter.ToSingle(array, 280), length, width")
++check(restored == (HERE / "task4-baseline" / "PlayerInfoReader.cs.txt").read_text(encoding="utf-8-sig"), "inverting only shape/extent/direction edits restores reader baseline exactly; constructors, fingerprint, identity and timing guards unchanged")
++
++logic = (ENGINE / "AirLogic.cs").read_text(encoding="utf-8-sig")
++start = logic.index("internal enum AirMoverShape")
++end = logic.index("\tpublic static bool Passed(", start)
++restored = logic[:start] + "internal static class AirLogic\n{\n" + logic[end:]
++restored = restored.replace(", AirMoverShape moverShape = AirMoverShape.Legacy284)", ")")
++restored = restored.replace("actor.Length < MoverReadSize(moverShape)", "actor.Length < 284")
++restored = restored.replace("\t\tMoverDirection(actor, moverShape, out float num4, out float num5, out float num6);", "\t\tfloat num4 = BitConverter.ToSingle(actor, 272);\n\t\tfloat num5 = BitConverter.ToSingle(actor, 276);\n\t\tfloat num6 = BitConverter.ToSingle(actor, 280);")
++check(restored == (HERE / "task4-baseline" / "AirLogic.cs.txt").read_text(encoding="utf-8-sig"), "inverting shape helper/signature edits restores AirLogic baseline exactly; all other decoder guards unchanged")
++
++reviewed_modes = []
++for mode, original_count, current_count in (("Release", 89, 118), ("Maintenance", 97, 170)):
++    fixture = load(HERE / "bin" / mode / "net10.0" / "fixture-report.json")
++    baseline = load(HERE / "task4-baseline" / f"{mode.lower()}-fixture-report.json")
++    check(fixture["legacyAndMapperPassed"] == baseline["passed"] == original_count and fixture["checks"][:original_count] == baseline["checks"], mode + " original assertion names, order and count preserved")
++    check(fixture["passed"] == len(fixture["checks"]) == current_count, mode + " all recorded fixture checks passed")
++    artifact = load(HERE / f"rea-{mode.lower()}-artifact.json")
++    evidence = load(HERE / f"rea-{mode.lower()}-members.json")
++    members = evidence["normalized_result"]
++    dll = HERE / "bin" / mode / "net10.0" / "DecoderLayout.Fixture.dll"
++    digest = sha(dll)
++    check(artifact["subject"]["digest"]["sha256"] == evidence["subject"]["digest"]["sha256"] == members["artifact"]["sha256"] == digest, mode + " REA evidence belongs to the currently tested DLL")
++    check(artifact["normalized_result"]["coverage"] == {"state": "complete", "issues": []} and members["coverage"] == {"state": "complete", "issues": []} and not members["selection"]["unmatched_type_names"], mode + " REA metadata coverage complete with all three selected types")
++    mover_fields = [f["name"] for f in members["fields"] if f["declaring_type"] == "CoH3MemoryTool.AirMoverShape"]
++    expected_fields = ["value__", "Legacy284"] + (["Candidate52426_184"] if mode == "Maintenance" else [])
++    check(mover_fields == expected_fields, mode + " candidate shape member compile isolation verified in actual metadata")
++    layout_fields = [f["name"] for f in members["fields"] if f["declaring_type"] == "CoH3MemoryTool.GameLayout52426"]
++    layout_methods = [m["name"] for m in members["methods"] if m["declaring_type"] == "CoH3MemoryTool.GameLayout52426"]
++    check((not layout_fields and not layout_methods) if mode == "Release" else (layout_fields == ["candidates", "requiredDependencies"] and "RequireCandidate" in layout_methods), mode + " candidate role table/fingerprint member compile isolation verified")
++    constants = {}
++    for name, expected in (("MoverReadSize", [284] if mode == "Release" else [184, 284]), ("MoverDirection", [272, 276, 280] if mode == "Release" else [96, 100, 272, 276, 280])):
++        method = next(m for m in members["methods"] if m["declaring_type"] == "CoH3MemoryTool.AirLogic" and m["name"] == name)
++        body = method["body"]
++        check(body["status"] == "present" and body["truncated_instructions"] == 0 and body["decoded_instruction_count"] == body["instruction_count"] == len(body["anchors"]), mode + " " + name + " CIL anchors cover all instructions")
++        constants[name] = [int(a["operand"]) for a in body["anchors"] if a["operand_kind"] == "constant" and a["opcode"].startswith("ldc.i4")]
++        check(constants[name] == expected, mode + " " + name + " exact compiled integer constants verified")
++        raw = dll.read_bytes(); offset = body["file_offset"]
++        header = 1 if body["header_format"] == "tiny" else ((struct.unpack_from("<H", raw, offset)[0] >> 12) * 4)
++        il = raw[offset + header:offset + header + body["il_size"]]
++        check(hashlib.sha256(il).hexdigest() == body["il_sha256"], mode + " " + name + " returned CIL digest matches artifact bytes")
++    reviewed_modes.append({"mode": mode, "originalPassed": original_count, "currentPassed": current_count, "dll": str(dll), "sha256": digest, "moverFields": mover_fields, "layoutFields": layout_fields, "layoutMethods": layout_methods, "constants": constants, "memberEvidenceId": evidence["evidence_id"], "moduleMvid": members["module"]["mvid"]})
++
++patch = []
++for name in ("Program.cs", "Run.ps1", "README.md", "DecoderLayout.Fixture.csproj", "AirMoverReplay.cs", "verify_task4.py"):
++    before = HERE / "task4-baseline" / f"{name}.txt"
++    old = before.read_text(encoding="utf-8-sig").splitlines(True) if before.exists() else []
++    new = (HERE / name).read_text(encoding="utf-8-sig").splitlines(True)
++    patch.extend(difflib.unified_diff(old, new, fromfile=f"task4-baseline/{name}" if before.exists() else "/dev/null", tofile=f"CoH3/dev/SkyEye/tests/decoder-layout/{name}"))
++(HERE / "task4-fixture.diff").write_text("".join(patch), encoding="utf-8", newline="")
++report = {"status": "PASS_F_only_task4_review", "utc": datetime.datetime.now(datetime.timezone.utc).isoformat(), "checksPassed": len(checks), "checks": checks, "coreSourceFrozen": [{"path": str(ENGINE / name), "sha256": digest} for name, digest in expected_core.items()], "original186Preserved": True, "fixtureChecksPassed": 288, "configurations": reviewed_modes, "gameOrReaderExecution": "not_run", "productionReleaseOrMaintenanceRunnerBuild": "not_run", "reaProvider": "rea-dotnet-static", "reaTargetExecution": False, "limitations": ["Fixture DLLs only; not a formal release artifact audit.", "Reader selector/unchanged guards verified by source inversion, not a linked or live reader run.", "No native loiter event, enemy UI, camera recovery or full air lifetime validation."]}
++(HERE / "task4-review.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
++print(json.dumps({"status": report["status"], "reviewChecksPassed": len(checks), "fixtureChecksPassed": 288, "original186Preserved": True, "report": str(HERE / "task4-review.json")}, indent=2))

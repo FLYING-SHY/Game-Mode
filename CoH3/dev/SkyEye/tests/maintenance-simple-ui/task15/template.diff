@@ -1,0 +1,35 @@
+--- F:\WorkSpace\Game\CoH3\dev\SkyEye\tests\maintenance-simple-ui\MaintenanceSimpleUi.csproj
++++ F:\WorkSpace\Game\CoH3\dev\SkyEye\tests\maintenance-simple-ui\task15\MaintenanceSimpleUi.csproj
+@@ -11,5 +11,5 @@
+     <StartupObject>CoH3MemoryTool.SimpleProgram</StartupObject>
+     <DefineConstants>$(DefineConstants);MAINTENANCE_DIAGNOSTICS</DefineConstants>
+-    <ClientRoot>../../../COH3SimpleTool</ClientRoot>
++    <ClientRoot>../../../../COH3SimpleTool</ClientRoot>
+     <GeneratedSourceRoot>$(MSBuildProjectDirectory)/obj/maintenance-simple-ui-generated</GeneratedSourceRoot>
+     <ApplicationIcon>$(ClientRoot)/app.ico</ApplicationIcon>
+--- F:\WorkSpace\Game\CoH3\dev\SkyEye\tests\maintenance-simple-ui\GenerateSources.ps1
++++ F:\WorkSpace\Game\CoH3\dev\SkyEye\tests\maintenance-simple-ui\task15\GenerateSources.ps1
+@@ -21,5 +21,5 @@
+     exit 0
+ }
+-$client = (Resolve-Path (Join-Path $PSScriptRoot '../../../COH3SimpleTool')).Path
++$client = (Resolve-Path (Join-Path $PSScriptRoot '../../../../COH3SimpleTool')).Path
+ $generated = Join-Path $PSScriptRoot 'obj/maintenance-simple-ui-generated'
+ [void][IO.Directory]::CreateDirectory($generated)
+--- F:\WorkSpace\Game\CoH3\dev\SkyEye\tests\maintenance-simple-ui\Verify-Offline.ps1
++++ F:\WorkSpace\Game\CoH3\dev\SkyEye\tests\maintenance-simple-ui\task15\Verify-Offline.ps1
+@@ -29,5 +29,5 @@
+ $factories = @($reader.GetMethods($flags) | Where-Object { $_.Name -eq 'OpenForMaintenanceDiagnostics' })
+ if ($factories.Count -ne 2) { throw 'Expected both maintenance factory overloads in this isolated assembly' }
+-$client = (Resolve-Path (Join-Path $PSScriptRoot '../../../COH3SimpleTool')).Path
++$client = (Resolve-Path (Join-Path $PSScriptRoot '../../../../COH3SimpleTool')).Path
+ $configSourceHash = (Get-FileHash -LiteralPath (Join-Path $client 'app.config') -Algorithm SHA256).Hash
+ $configOutputHash = (Get-FileHash -LiteralPath ($exe + '.config') -Algorithm SHA256).Hash
+--- F:\WorkSpace\Game\CoH3\dev\SkyEye\tests\maintenance-simple-ui\Build.ps1
++++ F:\WorkSpace\Game\CoH3\dev\SkyEye\tests\maintenance-simple-ui\task15\Build.ps1
+@@ -1,4 +1,4 @@
+ $ErrorActionPreference = 'Stop'
+-$repo = (Resolve-Path (Join-Path $PSScriptRoot '../../../../..')).Path
++$repo = (Resolve-Path (Join-Path $PSScriptRoot '../../../../../..')).Path
+ $dotnet = Join-Path $repo 'LicensingSystem/.cache/dotnet-10/dotnet.exe'
+ & powershell.exe -NoProfile -ExecutionPolicy Bypass -File (Join-Path $PSScriptRoot 'GenerateSources.ps1') -SelfTest 2>&1 | Tee-Object -FilePath (Join-Path $PSScriptRoot 'generation-self-test.log')

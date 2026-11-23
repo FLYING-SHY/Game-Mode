@@ -1,0 +1,12 @@
+﻿{
+    "utc":  "2026-11-21T06:48:05.9074006Z",
+    "uiPid":  30972,
+    "uiStartUtc":  "2026-11-21T06:48:05.9042747Z",
+    "uiSha256":  "A169466A2CCF6B37354CE04562CE31C89CA7FA4AC9941F299E545B8BC65F6563",
+    "uiExe":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\bin\\Release\\net48\\COH3SimpleTool.Maintenance.UI.Unverified.exe",
+    "gamePid":  33656,
+    "gameStartUtc":  "2026-11-21T03:42:27.6605831Z",
+    "settingsBeforeRelaunchSha256":  "C1595CC7371CE4A773FDB264996248FA5814B059AE1B42B6DD1ED7B18ED2B713",
+    "previousUiPid":  11632,
+    "scope":  "normal relaunch for three preferences; no gameplay promotion"
+}

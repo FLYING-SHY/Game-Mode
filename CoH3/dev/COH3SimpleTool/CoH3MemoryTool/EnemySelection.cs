@@ -14,6 +14,12 @@ internal sealed class EnemySelection
 		return p.Slot + "|" + p.Name;
 	}
 
+	public void Reset()
+	{
+		match = null;
+		excluded.Clear();
+	}
+
 	public void UpdateMatch(string identity)
 	{
 		if (match != identity)

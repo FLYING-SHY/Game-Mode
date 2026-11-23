@@ -1,0 +1,293 @@
+{
+  "status": "PASS_retained_artifact_integrity_only",
+  "gameFeatureAccepted": false,
+  "notVerified": "native impact correspondence, exact hit location, air coverage, protected delivery and baseline promotion",
+  "captureSession": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\projectiles\\visual-capture\\live-01\\session.json",
+  "captureSessionSha256": "cfa8499596140018120cd849737ebe33f757fbadb70295bafb2856ac8b7c4eb8",
+  "captureToolSha256": "697065dbf3231e03dab2c4dd946ed7be75f752d30f7a19489f02d68e05214607",
+  "windowIdentityRecord": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\round05-ui-rendering-identity.json",
+  "completeGroups": 39,
+  "verifiedImages": 234,
+  "totalBytes": 83253861,
+  "seconds": 39.06199999999808,
+  "stopReason": "byte_budget",
+  "groupsDropped": 1,
+  "imagesDropped": 1,
+  "missedCadenceSlots": 0,
+  "worldUniqueHashes": 37,
+  "worldFrames": [
+    {
+      "group": 1,
+      "image": "group-001-overlay-7801622.png",
+      "sha256": "39a60fce0581d3eee2f07ecf4ec1ac3db599f37c6abb0f15f5b52624df7a49e4",
+      "start": 39054.828,
+      "end": 39054.875
+    },
+    {
+      "group": 2,
+      "image": "group-002-overlay-7801622.png",
+      "sha256": "456d7b17534e9de57d1f72b27855ced8b1bfd02bed1565ed398825b3749ed3fe",
+      "start": 39055.765,
+      "end": 39055.812
+    },
+    {
+      "group": 3,
+      "image": "group-003-overlay-7801622.png",
+      "sha256": "066af3892039e390b9b08bdb2291f17b963b3d42698e244af5c0d4f66b19dada",
+      "start": 39056.796,
+      "end": 39056.843
+    },
+    {
+      "group": 4,
+      "image": "group-004-overlay-7801622.png",
+      "sha256": "87c87563db250b889b96dc0e5c468620cdab4cbf723c1fa9080d7210bddcc26b",
+      "start": 39057.843,
+      "end": 39057.89
+    },
+    {
+      "group": 5,
+      "image": "group-005-overlay-7801622.png",
+      "sha256": "f6cacaa5c23d94e07d0b367e2368cf965691853b7879afe3e2b59373e4468776",
+      "start": 39058.796,
+      "end": 39058.859
+    },
+    {
+      "group": 6,
+      "image": "group-006-overlay-7801622.png",
+      "sha256": "cb3fc4f19688ba317fa698b49bf24c14537212869804873177d718142d87a025",
+      "start": 39059.843,
+      "end": 39059.906
+    },
+    {
+      "group": 7,
+      "image": "group-007-overlay-7801622.png",
+      "sha256": "38a683cfc8aa83ee539cd3eda91629244ab325862641ef32a8f20e8db797cd39",
+      "start": 39060.812,
+      "end": 39060.875
+    },
+    {
+      "group": 8,
+      "image": "group-008-overlay-7801622.png",
+      "sha256": "da06090223d76805601e89163001f2d596fc6197593c3bdd5fe7322a71d09d81",
+      "start": 39061.781,
+      "end": 39061.843
+    },
+    {
+      "group": 9,
+      "image": "group-009-overlay-7801622.png",
+      "sha256": "606c01722022aa272c667927a9bb66fa6428a6af5feedb13084c515ab2ebab79",
+      "start": 39062.812,
+      "end": 39062.875
+    },
+    {
+      "group": 10,
+      "image": "group-010-overlay-7801622.png",
+      "sha256": "c581caa3580d60206c1a666b0b1720ba9651e66167ce09f106a6a1846b1e056a",
+      "start": 39063.796,
+      "end": 39063.843
+    },
+    {
+      "group": 11,
+      "image": "group-011-overlay-7801622.png",
+      "sha256": "3dd0bdc46ebae2e76fa7686b30e2deb8d73e0d1b6218132d1ed11fa5c35b05ca",
+      "start": 39064.812,
+      "end": 39064.875
+    },
+    {
+      "group": 12,
+      "image": "group-012-overlay-7801622.png",
+      "sha256": "470edbaae6798c1b2506e78dc50692b589249dc33c8e942dd955c9ba044a2b36",
+      "start": 39065.796,
+      "end": 39065.859
+    },
+    {
+      "group": 13,
+      "image": "group-013-overlay-7801622.png",
+      "sha256": "9209969dc9d4d1c57d60302654ecc854cfc003c0f9c93673593743d176a82855",
+      "start": 39066.796,
+      "end": 39066.843
+    },
+    {
+      "group": 14,
+      "image": "group-014-overlay-7801622.png",
+      "sha256": "a80f72ca670dabdefa34a732c5e3ab6196cb7f952f1d805357598c77a4227e12",
+      "start": 39067.796,
+      "end": 39067.843
+    },
+    {
+      "group": 15,
+      "image": "group-015-overlay-7801622.png",
+      "sha256": "fc21ab3d6b70e99af8fb84371988e052de8c13ef1947aad9437edfbcf056a88c",
+      "start": 39068.828,
+      "end": 39068.89
+    },
+    {
+      "group": 16,
+      "image": "group-016-overlay-7801622.png",
+      "sha256": "87ac74708d29bdf52119fe2f4e23bd920604569f7bae8982e2324602712d5c63",
+      "start": 39069.812,
+      "end": 39069.89
+    },
+    {
+      "group": 17,
+      "image": "group-017-overlay-7801622.png",
+      "sha256": "210a3ffdf130722bc846f8484a018b83d5fc828a07cd5e718ddf8b1bb2af8a87",
+      "start": 39070.843,
+      "end": 39070.921
+    },
+    {
+      "group": 18,
+      "image": "group-018-overlay-7801622.png",
+      "sha256": "c40f9430b577234e827f0616fc9703ff6d2f7fc8520779e5d992c1973eaa3900",
+      "start": 39071.859,
+      "end": 39071.921
+    },
+    {
+      "group": 19,
+      "image": "group-019-overlay-7801622.png",
+      "sha256": "cba4bfe27e77e6b404d24d66e01c8c0cc4e9ea69495eec5308be5bcb9ddc39a1",
+      "start": 39072.843,
+      "end": 39072.906
+    },
+    {
+      "group": 20,
+      "image": "group-020-overlay-7801622.png",
+      "sha256": "766f68ddd0ea5afa53169100683785376d6bbdba51ce48d366754d64b8285159",
+      "start": 39073.812,
+      "end": 39073.89
+    },
+    {
+      "group": 21,
+      "image": "group-021-overlay-7801622.png",
+      "sha256": "5d917e10402d372134d386a8449e21d81b35a789270b8e73e8cdfd625e232b32",
+      "start": 39074.828,
+      "end": 39074.906
+    },
+    {
+      "group": 22,
+      "image": "group-022-overlay-7801622.png",
+      "sha256": "20b555ce5be53e536afbb8333604004a697a716c05c598a24254844a4b60128b",
+      "start": 39075.796,
+      "end": 39075.875
+    },
+    {
+      "group": 23,
+      "image": "group-023-overlay-7801622.png",
+      "sha256": "a5b3c65273385035319c4cd2b02b94d439f9682101124a1922349fb3b10d8f2b",
+      "start": 39076.796,
+      "end": 39076.875
+    },
+    {
+      "group": 24,
+      "image": "group-024-overlay-7801622.png",
+      "sha256": "3ccffbf64ac0752f8eea55e0ee714987a8f27ccf4435ca6010f81c32462919e4",
+      "start": 39077.828,
+      "end": 39077.906
+    },
+    {
+      "group": 25,
+      "image": "group-025-overlay-7801622.png",
+      "sha256": "1b386938bb5c1b3760a0b66953b66c9a309b2431dc09cf3d86680faed52503ff",
+      "start": 39078.828,
+      "end": 39078.906
+    },
+    {
+      "group": 26,
+      "image": "group-026-overlay-7801622.png",
+      "sha256": "9f32ae2f6a1459066ba83ac288a737c5b664a42db817f56688814cea297b757a",
+      "start": 39079.796,
+      "end": 39079.875
+    },
+    {
+      "group": 27,
+      "image": "group-027-overlay-7801622.png",
+      "sha256": "ae52cef5feb6501fa670ef4ceb822f2a83bd4d54cc23b744ba2c57fd7892a7a2",
+      "start": 39080.828,
+      "end": 39080.906
+    },
+    {
+      "group": 28,
+      "image": "group-028-overlay-7801622.png",
+      "sha256": "b9452ea666d58d9b8d70d47fc041f87fc7c79fcdeb6a8110d080e014df08f4ed",
+      "start": 39081.828,
+      "end": 39081.906
+    },
+    {
+      "group": 29,
+      "image": "group-029-overlay-7801622.png",
+      "sha256": "1e40f2a6f77d83a5b1df2bbb9354d72132873d636df2d87e8f13454a0c15688d",
+      "start": 39082.828,
+      "end": 39082.906
+    },
+    {
+      "group": 30,
+      "image": "group-030-overlay-7801622.png",
+      "sha256": "1e40f2a6f77d83a5b1df2bbb9354d72132873d636df2d87e8f13454a0c15688d",
+      "start": 39083.796,
+      "end": 39083.89
+    },
+    {
+      "group": 31,
+      "image": "group-031-overlay-7801622.png",
+      "sha256": "1e40f2a6f77d83a5b1df2bbb9354d72132873d636df2d87e8f13454a0c15688d",
+      "start": 39084.812,
+      "end": 39084.89
+    },
+    {
+      "group": 32,
+      "image": "group-032-overlay-7801622.png",
+      "sha256": "1d12df2b2b158fa83151156d0a8cb9bc9674fcec68414b8643586e7e2ae918e6",
+      "start": 39085.828,
+      "end": 39085.906
+    },
+    {
+      "group": 33,
+      "image": "group-033-overlay-7801622.png",
+      "sha256": "257b013413e09e28f208cb5f793f72b4c867e0adc4ee094b8c99a32eb6e62d52",
+      "start": 39086.796,
+      "end": 39086.875
+    },
+    {
+      "group": 34,
+      "image": "group-034-overlay-7801622.png",
+      "sha256": "3576da167bedae03994f22f749e2ed789a9594130b6e7b4beca762ff740c77c1",
+      "start": 39087.859,
+      "end": 39087.921
+    },
+    {
+      "group": 35,
+      "image": "group-035-overlay-7801622.png",
+      "sha256": "533cb08975688764de393dd5fac92935cf01a55c00b4937bc5b02a0310466f58",
+      "start": 39088.828,
+      "end": 39088.89
+    },
+    {
+      "group": 36,
+      "image": "group-036-overlay-7801622.png",
+      "sha256": "7e1b50b6b89de7a44652d8ca809fa548f87bf065a40bfef12f6eed3c2b300dc6",
+      "start": 39089.828,
+      "end": 39089.89
+    },
+    {
+      "group": 37,
+      "image": "group-037-overlay-7801622.png",
+      "sha256": "57ef4909d87f65eeb57972124199268e4d4f074d0ad0a05eae85774a0000d6c7",
+      "start": 39090.828,
+      "end": 39090.875
+    },
+    {
+      "group": 38,
+      "image": "group-038-overlay-7801622.png",
+      "sha256": "d356133189856eef52946aa1c0319c4a20e8bf9cec34aeaac039411c2e3598ff",
+      "start": 39091.796,
+      "end": 39091.859
+    },
+    {
+      "group": 39,
+      "image": "group-039-overlay-7801622.png",
+      "sha256": "35fd70569f349be9898f820f1fcd1aafcbe80401d269a105dfe1258405edbdb7",
+      "start": 39092.796,
+      "end": 39092.843
+    }
+  ]
+}

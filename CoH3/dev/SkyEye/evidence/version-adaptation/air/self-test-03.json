@@ -1,0 +1,576 @@
+{
+  "schema": "coh3-air-raw-snapshot/v1",
+  "timestampUtc": "2026-11-21T00:30:10.794989+00:00",
+  "verification": "candidate_raw_evidence_not_engine_or_visual_validation",
+  "limits": {
+    "seconds": 10.0,
+    "requestedBytes": 2097152,
+    "readAttempts": 20000,
+    "singleReadBytes": 65536,
+    "reservedFinalBytes": 8192,
+    "reservedFinalReads": 64,
+    "reservedFinalSeconds": 0.5
+  },
+  "currentRvas": {
+    "resource": "0x6bb1ed0",
+    "arena": "0x6187e40",
+    "world": "0x5e0decc",
+    "timedAbility": "0x3d94a40",
+    "moverDynamics": "0x3d926e0"
+  },
+  "sources": {
+    "GameLayout52426": {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\GameLayout52426.cs",
+      "sha256": "77c44effbf42d9f6300cfd41e753712bed85e551b487f4db1a779df528dc8d92"
+    },
+    "PlayerInfoReader": {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\PlayerInfoReader.cs",
+      "sha256": "36796d25f86894d86260fdb8ee72021878e01c866dee9afa161eb5648ea715c7"
+    },
+    "AirLogic": {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\AirLogic.cs",
+      "sha256": "22758734981407a68805937364b77dd33bda8cab545cf39c22767a1a9c1ef603"
+    },
+    "AirCatalogue": {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\AirCatalogue.cs",
+      "sha256": "704e7035dd4f812a8ad731953a9b4b05d3114c2dfa71ad5da139e0064448fece"
+    },
+    "Loiter49": {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\Loiter49.cs",
+      "sha256": "369765d924b36c298959caffaba85291fd3f90bcbe6167c3e7e576c4127f7165"
+    },
+    "SquadMarkerLogic": {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\SquadMarkerLogic.cs",
+      "sha256": "44bb6781eb442dbe00d805edf173eb68b180edd74281a3997b7fe331a4e88a67"
+    },
+    "BarrageLogic": {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\BarrageLogic.cs",
+      "sha256": "0434c9ebc08a7af328d301099a03e0cb2ea542aebfa7b35cb8a71a912c89d0b7"
+    },
+    "live_probe": {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\live_probe.py",
+      "sha256": "e94668a20e387300d8146f79ad1844a3333bcc0bf5938653ef2b8a587d4a400b"
+    }
+  },
+  "selfTest": {
+    "status": "pass",
+    "mode": "fake_bytes_only",
+    "liveProcessOpened": false,
+    "testCount": 26,
+    "tests": [
+      {
+        "name": "fake native P47 raw cast + actor recovery gates",
+        "status": "pass"
+      },
+      {
+        "name": "uncatalogued recon remains visible and rejected by catalogue",
+        "status": "pass"
+      },
+      {
+        "name": "complete stable fake snapshot",
+        "status": "pass"
+      },
+      {
+        "name": "inline resource and heap timer vectors",
+        "status": "pass"
+      },
+      {
+        "name": "multi-target count never followed as one target",
+        "status": "pass"
+      },
+      {
+        "name": "wrong TimedAbility vtable preserved but rejected",
+        "status": "pass"
+      },
+      {
+        "name": "NaN target rejected and JSON remains finite",
+        "status": "pass"
+      },
+      {
+        "name": "player count 17 rejected without unbounded dereference",
+        "status": "pass"
+      },
+      {
+        "name": "entity count 65537 rejected without unbounded dereference",
+        "status": "pass"
+      },
+      {
+        "name": "ability count 257 rejected without unbounded dereference",
+        "status": "pass"
+      },
+      {
+        "name": "ability data sentinel rejected without unbounded dereference",
+        "status": "pass"
+      },
+      {
+        "name": "registry data sentinel rejected without unbounded dereference",
+        "status": "pass"
+      },
+      {
+        "name": "blueprint string length 1025 rejected without unbounded dereference",
+        "status": "pass"
+      },
+      {
+        "name": "target offset sentinel rejected without unbounded dereference",
+        "status": "pass"
+      },
+      {
+        "name": "changed arena root invalidates snapshot",
+        "status": "pass"
+      },
+      {
+        "name": "changed ability data/count invalidates snapshot",
+        "status": "pass"
+      },
+      {
+        "name": "changing raw148 rejected",
+        "status": "pass"
+      },
+      {
+        "name": "registry generation mismatch is incomplete evidence",
+        "status": "pass"
+      },
+      {
+        "name": "attempt count budget",
+        "status": "pass"
+      },
+      {
+        "name": "requested-byte budget",
+        "status": "pass"
+      },
+      {
+        "name": "single-read 65537 rejected",
+        "status": "pass"
+      },
+      {
+        "name": "noncanonical/overflow pointer rejected",
+        "status": "pass"
+      },
+      {
+        "name": "null pointer rejected",
+        "status": "pass"
+      },
+      {
+        "name": "10-second clock guard with final-check time reserve",
+        "status": "pass"
+      },
+      {
+        "name": "failed memory requests count against both budgets",
+        "status": "pass"
+      },
+      {
+        "name": "reserved final root check remains within total limits",
+        "status": "pass"
+      }
+    ],
+    "fakeSnapshotStats": {
+      "readAttempts": 64,
+      "requestedBytes": 3236,
+      "returnedBytes": 3236,
+      "elapsedSeconds": 0.0
+    },
+    "fakeSnapshot": {
+      "players": [
+        {
+          "address": "0x200003000",
+          "identity": "0x3e8",
+          "slot": 0,
+          "abilityVector": {
+            "dataOffset40": "0x4000",
+            "count44": 2
+          }
+        }
+      ],
+      "timedAbilities": [
+        {
+          "player": "0x200003000",
+          "slot": 0,
+          "vectorIndex": 0,
+          "offset": "0x8000",
+          "address": "0x200008000",
+          "raw148Hex": "404ad9430100000000900000010000000000000006000000e80300000000000000000000000000000000803f0000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000",
+          "vtable": {
+            "address": "0x143d94a40",
+            "rva": "0x3d94a40",
+            "expectedRva": "0x3d94a40",
+            "matches": true
+          },
+          "fields": {
+            "targetOffset8": "0x9000",
+            "targetCount12": 1,
+            "type20": 6,
+            "identity24": "0x3e8",
+            "direction40": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "blueprint56": "0x300000000",
+            "instance68": 0,
+            "phase76": 0,
+            "flags144": 1
+          },
+          "blueprint": "abilities\\races\\american\\aircraft\\strafing_run_p47_us",
+          "gates": {
+            "timedVtable": true,
+            "cataloguedAbility": true,
+            "oneTarget": true,
+            "phaseNot2": true,
+            "type6": true,
+            "identityMatchesPlayer": true,
+            "flag144Bit0": true,
+            "targetKind1or2": true,
+            "validTargetPosition": true,
+            "targetStable": true,
+            "directionOrPoint": true,
+            "raw148Stable": true
+          },
+          "catalogueDefinition": {
+            "name": "P47扫射",
+            "point": false
+          },
+          "target": {
+            "address": "0x200009000",
+            "raw20Hex": "020000000000c842000000000000484300000000",
+            "kind0": 2,
+            "position4": [
+              100.0,
+              0.0,
+              200.0
+            ]
+          },
+          "directionAllFinite": true,
+          "rawCastCandidate": true,
+          "failedGates": []
+        },
+        {
+          "player": "0x200003000",
+          "slot": 0,
+          "vectorIndex": 1,
+          "offset": "0x8200",
+          "address": "0x200008200",
+          "raw148Hex": "404ad9430100000000910000010000000000000006000000e80300000000000000000000000000000000803f0000000000000000000000000010000003000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000",
+          "vtable": {
+            "address": "0x143d94a40",
+            "rva": "0x3d94a40",
+            "expectedRva": "0x3d94a40",
+            "matches": true
+          },
+          "fields": {
+            "targetOffset8": "0x9100",
+            "targetCount12": 1,
+            "type20": 6,
+            "identity24": "0x3e8",
+            "direction40": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "blueprint56": "0x300001000",
+            "instance68": 0,
+            "phase76": 0,
+            "flags144": 1
+          },
+          "blueprint": "abilities\\races\\american\\aircraft\\recon_l2_us",
+          "gates": {
+            "timedVtable": true,
+            "cataloguedAbility": false,
+            "oneTarget": true,
+            "phaseNot2": true,
+            "type6": true,
+            "identityMatchesPlayer": true,
+            "flag144Bit0": true,
+            "targetKind1or2": true,
+            "validTargetPosition": true,
+            "targetStable": true,
+            "directionOrPoint": true,
+            "raw148Stable": true
+          },
+          "catalogueDefinition": null,
+          "target": {
+            "address": "0x200009100",
+            "raw20Hex": "020000000000c842000000000000484300000000",
+            "kind0": 2,
+            "position4": [
+              100.0,
+              0.0,
+              200.0
+            ]
+          },
+          "directionAllFinite": true,
+          "rawCastCandidate": false,
+          "failedGates": [
+            "cataloguedAbility"
+          ]
+        }
+      ],
+      "airEntities": [
+        {
+          "entity": "0x200010000",
+          "registryIndex": 0,
+          "generation": 7,
+          "blueprint": "ebps\\races\\american\\aircraft\\p47_thunderbolt_air_support_center_us",
+          "cataloguedAircraft": true,
+          "p47Name": true,
+          "reconName": false,
+          "v1": false,
+          "raw392Hex": "56341240010000000000000000000000000000000000000000000000000000000000000000000000000000000000b4420000a04100004843002000000300000000000000000000000000000000000000000000000000000000300000000000000000000000000000070000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200100",
+          "entityVtable": "0x140123456",
+          "blueprintPointer": "0x300002000",
+          "ownerOffset88": "0x3000",
+          "ownerPlayer": {
+            "address": "0x200003000",
+            "identity": "0x3e8",
+            "slot": 0
+          },
+          "flags160": "0x0",
+          "position44": [
+            90.0,
+            20.0,
+            200.0
+          ],
+          "actorOffset388": "0x12000",
+          "recoveryRawGates": {
+            "registryIdentity": true,
+            "notDestroyed": true,
+            "ownerPresent": true,
+            "ownerInPlayers": true,
+            "actorPresent": true,
+            "recoverableStrafePath": true,
+            "moverVtable": true,
+            "actorBackref": true,
+            "actorState1": true,
+            "actorMode2": true,
+            "validActorPosition": true,
+            "unitHeading": true,
+            "flatHeading": true,
+            "aboveTarget": true,
+            "actorTargetStable": true,
+            "identityAndOwnerStable": true
+          },
+          "actor": {
+            "address": "0x200012000",
+            "rawHex": "e026d943010000000000000000000000020000000000c84200000000000048430000000000000100000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000803f0000000000000000",
+            "vtable": {
+              "address": "0x143d926e0",
+              "rva": "0x3d926e0",
+              "expectedRva": "0x3d926e0",
+              "matches": true
+            },
+            "mode16": 2,
+            "position20": [
+              100.0,
+              0.0,
+              200.0
+            ],
+            "backref36": "0x10000",
+            "state64": 1,
+            "heading272": [
+              1.0,
+              0.0,
+              0.0
+            ]
+          },
+          "failedRecoveryRawGates": [],
+          "rawRecoveryCandidate": true,
+          "temporalAndEnemyGatesEvaluated": false
+        },
+        {
+          "entity": "0x200011000",
+          "registryIndex": 1,
+          "generation": 8,
+          "blueprint": "ebps\\races\\american\\aircraft\\l2_grasshopper_recon_reveal_los_us",
+          "cataloguedAircraft": false,
+          "p47Name": false,
+          "reconName": true,
+          "v1": false,
+          "raw392Hex": "56341240010000000000000000000000000000000000000000000000000000000000000000000000000000000000b4420000a04100004843003000000300000000000000000000000000000000000000000000000000000000300000000000000000000000000000080000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000220100",
+          "entityVtable": "0x140123456",
+          "blueprintPointer": "0x300003000",
+          "ownerOffset88": "0x3000",
+          "ownerPlayer": {
+            "address": "0x200003000",
+            "identity": "0x3e8",
+            "slot": 0
+          },
+          "flags160": "0x0",
+          "position44": [
+            90.0,
+            20.0,
+            200.0
+          ],
+          "actorOffset388": "0x12200",
+          "recoveryRawGates": {
+            "registryIdentity": true,
+            "notDestroyed": true,
+            "ownerPresent": true,
+            "ownerInPlayers": true,
+            "actorPresent": true,
+            "recoverableStrafePath": false,
+            "moverVtable": true,
+            "actorBackref": true,
+            "actorState1": true,
+            "actorMode2": true,
+            "validActorPosition": true,
+            "unitHeading": true,
+            "flatHeading": true,
+            "aboveTarget": true,
+            "actorTargetStable": true,
+            "identityAndOwnerStable": true
+          },
+          "actor": {
+            "address": "0x200012200",
+            "rawHex": "e026d943010000000000000000000000020000000000c84200000000000048430000000000100100000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000803f0000000000000000",
+            "vtable": {
+              "address": "0x143d926e0",
+              "rva": "0x3d926e0",
+              "expectedRva": "0x3d926e0",
+              "matches": true
+            },
+            "mode16": 2,
+            "position20": [
+              100.0,
+              0.0,
+              200.0
+            ],
+            "backref36": "0x11000",
+            "state64": 1,
+            "heading272": [
+              1.0,
+              0.0,
+              0.0
+            ]
+          },
+          "failedRecoveryRawGates": [
+            "recoverableStrafePath"
+          ],
+          "rawRecoveryCandidate": false,
+          "temporalAndEnemyGatesEvaluated": false
+        }
+      ],
+      "errors": [],
+      "scanComplete": {
+        "players": true,
+        "timedAbilities": true,
+        "entityRegistry": true
+      },
+      "roots": {
+        "arena": "0x200000000",
+        "worldOffset": "0x1000",
+        "world": "0x200001000",
+        "resourceStaticAddress": "0x146bb1ed0"
+      },
+      "registry": {
+        "address": "0x200005000",
+        "offsets8": "0x6000",
+        "ids20": "0x7000",
+        "count24": 2
+      },
+      "resources": {
+        "begin": "0x320000000",
+        "end": "0x320000030",
+        "count": 1,
+        "rows": [
+          {
+            "name": "fuel",
+            "index": 4
+          }
+        ]
+      },
+      "timers": {
+        "begin": "0x320001000",
+        "end": "0x320001030",
+        "count": 1,
+        "rows": [
+          {
+            "name": "deploy_aircraft_p47_timer",
+            "index": 6
+          }
+        ]
+      },
+      "stabilityChecks": [
+        {
+          "label": "root.arena",
+          "address": "0x146187e40",
+          "beforeHex": "0000000002000000",
+          "afterHex": "0000000002000000",
+          "stable": true
+        },
+        {
+          "label": "root.worldOffset",
+          "address": "0x145e0decc",
+          "beforeHex": "00100000",
+          "afterHex": "00100000",
+          "stable": true
+        },
+        {
+          "label": "world.playerAndEntityOffsets",
+          "address": "0x2000010fc",
+          "beforeHex": "002000000000000000500000",
+          "afterHex": "002000000000000000500000",
+          "stable": true
+        },
+        {
+          "label": "players.dataCount",
+          "address": "0x20000200c",
+          "beforeHex": "0028000001000000",
+          "afterHex": "0028000001000000",
+          "stable": true
+        },
+        {
+          "label": "players.offsets",
+          "address": "0x200002800",
+          "beforeHex": "00300000",
+          "afterHex": "00300000",
+          "stable": true
+        },
+        {
+          "label": "registry.dataIdsCount",
+          "address": "0x200005008",
+          "beforeHex": "0060000000000000000000000070000002000000",
+          "afterHex": "0060000000000000000000000070000002000000",
+          "stable": true
+        },
+        {
+          "label": "resources.beginEnd",
+          "address": "0x146bb2238",
+          "beforeHex": "00000020030000003000002003000000",
+          "afterHex": "00000020030000003000002003000000",
+          "stable": true
+        },
+        {
+          "label": "timers.beginEnd",
+          "address": "0x146bb2120",
+          "beforeHex": "00100020030000003010002003000000",
+          "afterHex": "00100020030000003010002003000000",
+          "stable": true
+        },
+        {
+          "label": "player@0x200003000.identity",
+          "address": "0x200003008",
+          "beforeHex": "e803000000000000",
+          "afterHex": "e803000000000000",
+          "stable": true
+        },
+        {
+          "label": "abilities@0x200003000.dataCount",
+          "address": "0x200003420",
+          "beforeHex": "0040000002000000",
+          "afterHex": "0040000002000000",
+          "stable": true
+        }
+      ],
+      "stableRootsAndDescriptors": true,
+      "coverage": {
+        "abilitySlotsRead": 2,
+        "registrySlotsScanned": 2,
+        "registryLiveSlots": 2,
+        "entityHeadersRead": 2
+      },
+      "stableEntries": true,
+      "status": "complete_raw_candidate_snapshot",
+      "absenceEvidenceCompleteWithinThisSnapshot": true
+    }
+  },
+  "status": "self_test_pass"
+}

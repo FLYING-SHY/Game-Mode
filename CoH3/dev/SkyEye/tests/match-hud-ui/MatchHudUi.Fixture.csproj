@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <UseWindowsForms>true</UseWindowsForms>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <NuGetAudit>false</NuGetAudit>
+    <ClientFlavor Condition="'$(ClientFlavor)' == ''">SkyEye</ClientFlavor>
+    <ClientRoot Condition="'$(ClientFlavor)' == 'SkyEye'">$(MSBuildThisFileDirectory)..\..\client</ClientRoot>
+    <ClientRoot Condition="'$(ClientFlavor)' == 'Simple'">$(MSBuildThisFileDirectory)..\..\..\COH3SimpleTool</ClientRoot>
+    <AssemblyName>MatchHudUi.$(ClientFlavor).Fixture</AssemblyName>
+    <StartupObject>CoH3MemoryTool.MatchHudUiFixture</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="..\session-reset\Program.cs" Link="SessionResetFixture.cs" />
+    <Compile Include="$(ClientRoot)\CoH3MemoryTool\**\*.cs" Exclude="$(ClientRoot)\CoH3MemoryTool\*Checks*.cs" Link="Production\%(RecursiveDir)%(Filename)%(Extension)" />
+    <Compile Include="$(ClientRoot)\Skyeye.QqProbe\*.cs" Condition="'$(ClientFlavor)' == 'SkyEye'" Link="Production\Skyeye.QqProbe\%(Filename)%(Extension)" />
+    <Reference Include="System.Configuration" />
+    <EmbeddedResource Include="$(ClientRoot)\names-zh-hans.tsv" LogicalName="names-zh-hans.tsv" />
+    <EmbeddedResource Include="$(ClientRoot)\CoH3.BarrageCatalogue.tsv" LogicalName="CoH3.BarrageCatalogue.tsv" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="NAudio" Condition="'$(ClientFlavor)' == 'SkyEye'">
+      <HintPath>$(ClientRoot)\CoH3.Audio.NAudio.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

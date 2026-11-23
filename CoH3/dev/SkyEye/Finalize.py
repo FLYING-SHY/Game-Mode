@@ -3,6 +3,8 @@ from pathlib import Path
 import argparse, base64, datetime, hashlib, json, os, re, zipfile
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--refresh', action='store_true', help='Revalidate preserved releases and atomically refresh current Server/Maintenance archives after cleanup.')
+parser.add_argument('--summary', default=None, help='Comparison summary to seal (default: evidence/validation-summary.json).')
+parser.add_argument('--revision', default=None, help='Authorized revision that covers the preserved deviations (default: evidence/authorized-revision-2026-11-16.json).')
 args = parser.parse_args()
 R = Path(__file__).resolve().parent
 REPO = R.parents[2]
@@ -24,9 +26,11 @@ for p in [*archives.values(),proof,seal]:
     if p.exists() and not args.refresh: raise FileExistsError('Final output already exists; use --refresh for the authorized cleanup refresh: '+str(p))
 if args.refresh and not (R/'evidence/cleanup-manifest.json').is_file():
     raise FileNotFoundError('A verified cleanup manifest is required for --refresh.')
-summary=load(R/'evidence/validation-summary.json')
+summary_path=Path(args.summary) if args.summary else R/'evidence/validation-summary.json'
+summary=load(summary_path)
 check('derived comparison passed',summary['passed'])
-check('120 server regression checks',summary['serverChecksPassed']==120)
+server_checks=summary['serverChecksPassed']
+check('server regression checks recorded',server_checks>=120 and server_checks==summary.get('serverChecksTotal',server_checks))
 check('seven real modes in every variant',all(summary[k]==7 for k in ['rawPassingModes','releasePassingModes','reactorTrialPassingModes']))
 check('six pixel comparisons identical',len(summary['pictures'])==6 and all(x['changedPixels']==0 for x in summary['pictures']))
 check('eight decoded files identical in both protection variants',len(summary['audio'])==2 and all(x['decodedFiles']==8 and x['payloadsIdentical'] for x in summary['audio']))
@@ -66,7 +70,7 @@ def remap(p):
         if not hit: return Path(p)
         p=hit[0]+p[hit[1]:]
     return Path(p)
-revision_path=R/'evidence/authorized-revision-2026-11-16.json'
+revision_path=Path(args.revision) if args.revision else R/'evidence/authorized-revision-2026-11-16.json'
 revision=load(revision_path) if revision_path.is_file() else None
 revision_overrides={row['path']:row for row in revision['preservedOverrides']} if revision else {}
 config=text(R/'delivery/client'/ (client.name+'.config'))
@@ -151,6 +155,12 @@ def eligible(p,base):
     if 'sandbox' in parts and p.name not in {'result.json','audio-result.json'}: return False
     if parts[0]=='artifacts':
         return len(parts)==3 and parts[1]==latest['Run'] and p.suffix.lower() in {'.xml','.json','.log'}
+    if parts[0]=='evidence':
+        # Keep the manifests and probe tooling a maintainer needs to re-run the
+        # pipeline, but drop the regenerable corpus media and the multi-megabyte
+        # state dumps: a maintenance bundle has to stay shippable.
+        if p.suffix.lower() in {'.png','.jpg','.jpeg','.bmp','.gif','.mp4','.mov','.wav'}: return False
+        if p.stat().st_size>4*1024*1024: return False
     return True
 
 def scan_files(files):
@@ -230,11 +240,20 @@ def package(kind, files, relative_root):
                 content=z.read(row['path'])
                 assert len(content)==row['bytes'] and hashlib.sha256(content).hexdigest()==row['sha256']
             assert load_manifest(z)==manifest
-        if args.refresh: os.replace(candidate,destination)
+        if args.refresh: replace_archive(candidate,destination)
     digest=sha(destination)
     Path(str(destination)+'.sha256').write_text(digest+'  '+destination.name+'\n',encoding='ascii')
     return {'archive':str(destination),'bytes':destination.stat().st_size,'sha256':digest,'entriesVerified':len(entries)+1,'passed':True}
 def load_manifest(z): return json.loads(z.read('PACKAGE-MANIFEST.json').decode('utf-8'))
+def replace_archive(candidate,destination):
+    """Swap the freshly written archive in; a scanner may still hold the previous file."""
+    import time
+    for attempt in range(12):
+        try:
+            os.replace(candidate,destination); return
+        except PermissionError:
+            if attempt==11: raise
+            time.sleep(5)
 results=[package('Client',client_files,R/'delivery/client'),package('Server',server_files,REPO/'LicensingSystem/output'),package('Maintenance',maintenance_files+helpers,REPO)]
 proof.write_text(json.dumps({'passed':True,'auditChecks':len(checks),'archives':results},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(json.dumps({'passed':True,'auditChecks':len(checks),'archives':results},ensure_ascii=True,indent=2))

@@ -1,0 +1,233 @@
+{
+  "timestamp": "2026-11-20T17:45:35.444443+00:00",
+  "pid": 11192,
+  "base": "0x7ff7a37e0000",
+  "access": "0x410 query/read only",
+  "arena": "0x17c00000000",
+  "worldOffset": "0x6400000",
+  "registry": "0x17c08c01000",
+  "registryCapacity": 3229,
+  "coverage": {
+    "liveInspected": 3212,
+    "projectilePaths": 3
+  },
+  "records": [
+    {
+      "entity": "0x17c05281600",
+      "registryIndex": 3135,
+      "generation": 1000008557,
+      "blueprint": "ebps\\gameplay\\projectiles\\races\\german\\p_gun_20mm_axis",
+      "gates": {
+        "bodyPresent": true,
+        "componentPresent": false,
+        "actorVtable": true,
+        "actorBackref": true,
+        "actorMode16": true
+      },
+      "body": {
+        "offset388": "0x5281800",
+        "flags160": "0x4586",
+        "position44": [
+          -89.07234191894531,
+          25.457595825195312,
+          56.5052490234375
+        ]
+      },
+      "component": {
+        "lookupRva": "0x628a7f2",
+        "kind": 1003,
+        "slot": 0,
+        "mode": 0,
+        "state": 0,
+        "value": "0xc97a8a0",
+        "componentId": 18
+      },
+      "actor": {
+        "address": "0x17c05281800",
+        "rtti": {
+          "vtableRva": "0x3e4aa38",
+          "name": ".?AVProjectileDynamics@@",
+          "colRva": "0x505adb8",
+          "typeDescriptorRva": "0x5f992d0"
+        },
+        "backref36": "0x17c05281600",
+        "state64": 1,
+        "mode16": 2,
+        "position20": [
+          -88.56946563720703,
+          26.076303482055664,
+          59.149192810058594
+        ]
+      },
+      "generationStable": true,
+      "failedGates": [
+        "componentPresent"
+      ],
+      "note": "ownerInPlayers is not enemy attribution; exact enemy/local selection and engine ValidPosition, cache warmup, source-name/timing not reimplemented"
+    },
+    {
+      "entity": "0x17c0529d400",
+      "registryIndex": 3138,
+      "generation": 1000008558,
+      "blueprint": "ebps\\gameplay\\projectiles\\parent\\p_flamethrower_parent",
+      "gates": {
+        "bodyPresent": true,
+        "componentPresent": true,
+        "actorVtable": true,
+        "actorBackref": true,
+        "actorMode16": true,
+        "extVtable": true,
+        "ownerValid": true,
+        "ownerInPlayers": true,
+        "weapon": false,
+        "extBackref": true,
+        "sourceType": true,
+        "source20": true,
+        "radius": true,
+        "notDestroyed": true,
+        "actorState64": false,
+        "notArrived": true
+      },
+      "body": {
+        "offset388": "0x52a7600",
+        "flags160": "0x19e",
+        "position44": [
+          -89.14554595947266,
+          23.961009979248047,
+          56.54527282714844
+        ]
+      },
+      "component": {
+        "lookupRva": "0x628a7f2",
+        "kind": 1003,
+        "slot": 0,
+        "mode": 0,
+        "state": 1,
+        "value": "0xc97a970",
+        "componentId": 18,
+        "address": "0x17c0c97a970",
+        "rtti": {
+          "vtableRva": "0x3e49618",
+          "name": ".?AVProjectileExt@@",
+          "colRva": "0x505ddb0",
+          "typeDescriptorRva": "0x5f8b540"
+        }
+      },
+      "actor": {
+        "address": "0x17c052a7600",
+        "rtti": {
+          "vtableRva": "0x3e4aa38",
+          "name": ".?AVProjectileDynamics@@",
+          "colRva": "0x505adb8",
+          "typeDescriptorRva": "0x5f992d0"
+        },
+        "backref36": "0x17c0529d400",
+        "state64": 1,
+        "mode16": 2,
+        "position20": [
+          -88.5910415649414,
+          26.075984954833984,
+          59.14276885986328
+        ]
+      },
+      "ext": {
+        "rtti": {
+          "vtableRva": "0x3e49618",
+          "name": ".?AVProjectileExt@@",
+          "colRva": "0x505ddb0",
+          "typeDescriptorRva": "0x5f8b540"
+        },
+        "backref8": "0x17c0529d400",
+        "ownerOffset56": "0x8c09000",
+        "ownerPlayer": {
+          "address": "0x17c08c09000",
+          "slot": 1,
+          "identity": "0x1000003e9"
+        },
+        "weapon": "weapon\\german\\flame_throwers\\flamethrower_pioneer_us",
+        "sourceType16": 3,
+        "source20": 1000008241,
+        "source24": 3049,
+        "radius104": 5.0,
+        "mortar": false,
+        "arc": false
+      },
+      "positionsFiniteBroadBound": true,
+      "generationStable": true,
+      "failedGates": [
+        "weapon",
+        "actorState64"
+      ],
+      "note": "ownerInPlayers is not enemy attribution; exact enemy/local selection and engine ValidPosition, cache warmup, source-name/timing not reimplemented"
+    },
+    {
+      "entity": "0x17c0529f400",
+      "registryIndex": 3139,
+      "generation": 1000008556,
+      "blueprint": "ebps\\gameplay\\projectiles\\parent\\p_flamethrower_parent",
+      "gates": {
+        "bodyPresent": true,
+        "componentPresent": false,
+        "actorVtable": true,
+        "actorBackref": true,
+        "actorMode16": true
+      },
+      "body": {
+        "offset388": "0x5281a00",
+        "flags160": "0x4586",
+        "position44": [
+          -89.14554595947266,
+          23.961009979248047,
+          56.54527282714844
+        ]
+      },
+      "component": {
+        "lookupRva": "0x628a7f2",
+        "kind": 1003,
+        "slot": 0,
+        "mode": 0,
+        "state": 0,
+        "value": "0xc97a7d0",
+        "componentId": 18
+      },
+      "actor": {
+        "address": "0x17c05281a00",
+        "rtti": {
+          "vtableRva": "0x3e4aa38",
+          "name": ".?AVProjectileDynamics@@",
+          "colRva": "0x505adb8",
+          "typeDescriptorRva": "0x5f992d0"
+        },
+        "backref36": "0x17c0529f400",
+        "state64": 1,
+        "mode16": 2,
+        "position20": [
+          -88.5910415649414,
+          26.075984954833984,
+          59.14276885986328
+        ]
+      },
+      "generationStable": true,
+      "failedGates": [
+        "componentPresent"
+      ],
+      "note": "ownerInPlayers is not enemy attribution; exact enemy/local selection and engine ValidPosition, cache warmup, source-name/timing not reimplemented"
+    }
+  ],
+  "errors": [],
+  "stableRootsAndRegistry": true,
+  "bytesRead": 718599,
+  "elapsedSeconds": 0.0319999999992433,
+  "status": "observed_candidates_not_decode_verified",
+  "limits": {
+    "singleReadBytes": 65536,
+    "totalBytes": 8388608,
+    "seconds": 20,
+    "maxRegistry": 65536
+  },
+  "notes": [
+    "one snapshot; no gameplay input/write",
+    "all-live inspection bypasses shellSeen warmup; not actual C# Decode execution",
+    "absence only for complete successful registry scan; no cross-session assertion"
+  ]
+}

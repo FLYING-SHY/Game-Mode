@@ -2,8 +2,36 @@ using System;
 
 namespace CoH3MemoryTool;
 
+internal enum AirMoverShape
+{
+	Legacy284,
+	Candidate52426_184,
+}
+
 internal static class AirLogic
 {
+	internal static int MoverReadSize(AirMoverShape shape = AirMoverShape.Legacy284)
+	{
+		if (shape == AirMoverShape.Candidate52426_184) return 184;
+		if (shape != AirMoverShape.Legacy284) throw new ArgumentOutOfRangeException(nameof(shape));
+		return 284;
+	}
+
+	internal static void MoverDirection(byte[] actor, AirMoverShape shape, out float x, out float y, out float z)
+	{
+		if (shape == AirMoverShape.Candidate52426_184)
+		{
+			x = BitConverter.ToSingle(actor, 96);
+			y = 0f;
+			z = BitConverter.ToSingle(actor, 100);
+			return;
+		}
+		if (shape != AirMoverShape.Legacy284) throw new ArgumentOutOfRangeException(nameof(shape));
+		x = BitConverter.ToSingle(actor, 272);
+		y = BitConverter.ToSingle(actor, 276);
+		z = BitConverter.ToSingle(actor, 280);
+	}
+
 	public static bool Passed(AirZone z, AirDefinition definition, float x, float y)
 	{
 		if (z.Point || (definition != null && definition.Point) || !SquadMarkerLogic.ValidPosition(x, 0f, y))
@@ -15,22 +43,20 @@ internal static class AirLogic
 		return (x - z.X) * z.DX + (y - z.Z) * z.DZ > num2 + num + 10f;
 	}
 
-	public static AirZone RecoverStrafe(string path, byte[] body, byte[] actor, long image, long arena, long entity, uint id, uint index)
+	public static AirZone RecoverStrafe(string path, byte[] body, byte[] actor, long image, long arena, long entity, uint id, uint index, Func<long, long> resolveRva = null, AirMoverShape moverShape = AirMoverShape.Legacy284)
 	{
-		if (body == null || body.Length < 392 || actor == null || actor.Length < 284 || BitConverter.ToUInt32(body, 104) != id || BitConverter.ToUInt32(body, 108) != index || (BitConverter.ToUInt32(body, 160) & 0x4000) != 0)
+		if (body == null || body.Length < 392 || actor == null || actor.Length < MoverReadSize(moverShape) || BitConverter.ToUInt32(body, 104) != id || BitConverter.ToUInt32(body, 108) != index || (BitConverter.ToUInt32(body, 160) & 0x4000) != 0)
 		{
 			return null;
 		}
-		if (BitConverter.ToInt64(actor, 0) != image + 64559016 || BitConverter.ToUInt32(actor, 36) + arena != entity || BitConverter.ToUInt32(actor, 64) != 1 || actor[16] != 2)
+		if (BitConverter.ToInt64(actor, 0) != image + (resolveRva?.Invoke(64559016) ?? 64559016) || BitConverter.ToUInt32(actor, 36) + arena != entity || BitConverter.ToUInt32(actor, 64) != 1 || actor[16] != 2)
 		{
 			return null;
 		}
 		float num = BitConverter.ToSingle(actor, 20);
 		float num2 = BitConverter.ToSingle(actor, 24);
 		float num3 = BitConverter.ToSingle(actor, 28);
-		float num4 = BitConverter.ToSingle(actor, 272);
-		float num5 = BitConverter.ToSingle(actor, 276);
-		float num6 = BitConverter.ToSingle(actor, 280);
+		MoverDirection(actor, moverShape, out float num4, out float num5, out float num6);
 		float num7 = BitConverter.ToSingle(body, 48);
 		double num8 = Math.Sqrt(num4 * num4 + num6 * num6);
 		if (!SquadMarkerLogic.ValidPosition(num, num2, num3) || double.IsNaN(num8) || double.IsInfinity(num8) || num8 < 0.95 || num8 > 1.01 || float.IsNaN(num5) || float.IsInfinity(num5) || (double)Math.Abs(num5) > 0.1 || float.IsNaN(num7) || float.IsInfinity(num7) || num7 - num2 < 8f)
@@ -62,10 +88,10 @@ internal static class AirLogic
 		return airZone;
 	}
 
-	public static bool Cast(byte[] raw, byte[] targets, long image, long identity, out float x, out float y, out float z, out float dx, out float dz, bool point = false)
+	public static bool Cast(byte[] raw, byte[] targets, long image, long identity, out float x, out float y, out float z, out float dx, out float dz, bool point = false, Func<long, long> resolveRva = null)
 	{
 		x = (y = (z = (dx = (dz = 0f))));
-		if (raw == null || raw.Length < 148 || targets == null || targets.Length != 20 || BitConverter.ToInt64(raw, 0) != image + 64568064 || raw[76] == 2 || raw[20] != 6 || BitConverter.ToInt64(raw, 24) != identity || (raw[144] & 1) == 0)
+		if (raw == null || raw.Length < 148 || targets == null || targets.Length != 20 || BitConverter.ToInt64(raw, 0) != image + (resolveRva?.Invoke(64568064) ?? 64568064) || raw[76] == 2 || raw[20] != 6 || BitConverter.ToInt64(raw, 24) != identity || (raw[144] & 1) == 0)
 		{
 			return false;
 		}
@@ -92,13 +118,13 @@ internal static class AirLogic
 		return true;
 	}
 
-	public static AirZone Rocket(byte[] body, byte[] motion, byte[] ext, long image, long arena, long entity, uint id, uint index)
+	public static AirZone Rocket(byte[] body, byte[] motion, byte[] ext, long image, long arena, long entity, uint id, uint index, Func<long, long> resolveRva = null)
 	{
 		if (body.Length < 392 || motion.Length < 68 || ext.Length < 108 || BitConverter.ToUInt32(body, 104) != id || BitConverter.ToUInt32(body, 108) != index || (BitConverter.ToUInt32(body, 160) & 0x4000) != 0)
 		{
 			return null;
 		}
-		if (BitConverter.ToInt64(motion, 0) != image + 65313128 || BitConverter.ToUInt32(motion, 36) + arena != entity || BitConverter.ToUInt32(motion, 64) != 3 || BitConverter.ToInt64(ext, 0) != image + 65307976 || BitConverter.ToUInt32(ext, 8) + arena != entity || (motion[16] != 1 && motion[16] != 2))
+		if (BitConverter.ToInt64(motion, 0) != image + (resolveRva?.Invoke(65313128) ?? 65313128) || BitConverter.ToUInt32(motion, 36) + arena != entity || BitConverter.ToUInt32(motion, 64) != 3 || BitConverter.ToInt64(ext, 0) != image + (resolveRva?.Invoke(65307976) ?? 65307976) || BitConverter.ToUInt32(ext, 8) + arena != entity || (motion[16] != 1 && motion[16] != 2))
 		{
 			return null;
 		}

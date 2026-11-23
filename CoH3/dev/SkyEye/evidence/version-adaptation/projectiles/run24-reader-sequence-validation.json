@@ -1,0 +1,152 @@
+{
+  "status": "PASS_retained_reader_sequence_only",
+  "gameFeatureAccepted": false,
+  "limitations": [
+    "Predicted impact coordinates, not physical projectile positions.",
+    "Identity observations are not exact spawn/despawn or impact times.",
+    "No synchronized rendered overlay or ground impact comparison in this run."
+  ],
+  "match": "31572:639308258698492330:2188107579392:2188149555200:1000",
+  "epoch": 1,
+  "polls": 459,
+  "decodedObservations": 128,
+  "distinctRetainedIdentities": 4,
+  "elapsedMs": 50006,
+  "overrunMs": 6,
+  "startGapMedianMs": 109.0,
+  "startGapMaximumMs": 112,
+  "emptyPolls": 331,
+  "identities": [
+    {
+      "entity": "0x1fd7441b800",
+      "Id": 1000008446,
+      "Index": 1712,
+      "observations": 33,
+      "firstUtc": "2026-11-21T00:28:41.7224106Z",
+      "lastUtc": "2026-11-21T00:28:45.2200097Z",
+      "firstMs": 34699,
+      "lastMs": 38197,
+      "sourceKey": "0x3b9aea1500000c4e",
+      "Slot": 1,
+      "Number": 1,
+      "Name": "黄",
+      "Weapon": "weapon\\german\\explosive_weapon\\heavy_artillery\\105mm_wespe_ger",
+      "Label": null,
+      "Radius": 8,
+      "predictedImpactBounds": {
+        "X": [
+          -99.56421,
+          -99.56421
+        ],
+        "Y": [
+          24.5662422,
+          24.5662422
+        ],
+        "Z": [
+          73.38151,
+          73.38151
+        ]
+      },
+      "laterAllZeroPollMs": 38306
+    },
+    {
+      "entity": "0x1fd7441d400",
+      "Id": 1000008447,
+      "Index": 1712,
+      "observations": 34,
+      "firstUtc": "2026-11-21T00:28:45.7667137Z",
+      "lastUtc": "2026-11-21T00:28:49.3687470Z",
+      "firstMs": 38744,
+      "lastMs": 42346,
+      "sourceKey": "0x3b9aea1500000c4e",
+      "Slot": 1,
+      "Number": 2,
+      "Name": "黄",
+      "Weapon": "weapon\\german\\explosive_weapon\\heavy_artillery\\105mm_wespe_ger",
+      "Label": null,
+      "Radius": 8,
+      "predictedImpactBounds": {
+        "X": [
+          -81.78934,
+          -81.78934
+        ],
+        "Y": [
+          24.5663681,
+          24.5663681
+        ],
+        "Z": [
+          81.11048,
+          81.11048
+        ]
+      },
+      "laterAllZeroPollMs": 42455
+    },
+    {
+      "entity": "0x1fd744c7000",
+      "Id": 1000008450,
+      "Index": 1712,
+      "observations": 33,
+      "firstUtc": "2026-11-21T00:28:49.9165592Z",
+      "lastUtc": "2026-11-21T00:28:53.4061239Z",
+      "firstMs": 42894,
+      "lastMs": 46383,
+      "sourceKey": "0x3b9aea1500000c4e",
+      "Slot": 1,
+      "Number": 3,
+      "Name": "黄",
+      "Weapon": "weapon\\german\\explosive_weapon\\heavy_artillery\\105mm_wespe_ger",
+      "Label": null,
+      "Radius": 8,
+      "predictedImpactBounds": {
+        "X": [
+          -92.84718,
+          -92.84718
+        ],
+        "Y": [
+          24.5558052,
+          24.5558052
+        ],
+        "Z": [
+          80.76666,
+          80.76666
+        ]
+      },
+      "laterAllZeroPollMs": 46495
+    },
+    {
+      "entity": "0x1fd7441e200",
+      "Id": 1000008451,
+      "Index": 1712,
+      "observations": 28,
+      "firstUtc": "2026-11-21T00:28:54.0639536Z",
+      "lastUtc": "2026-11-21T00:28:57.0133397Z",
+      "firstMs": 47041,
+      "lastMs": 49991,
+      "sourceKey": "0x3b9aea1500000c4e",
+      "Slot": 1,
+      "Number": 4,
+      "Name": "黄",
+      "Weapon": "weapon\\german\\explosive_weapon\\heavy_artillery\\105mm_wespe_ger",
+      "Label": null,
+      "Radius": 8,
+      "predictedImpactBounds": {
+        "X": [
+          -92.7956543,
+          -92.7956543
+        ],
+        "Y": [
+          24.2330666,
+          24.2330666
+        ],
+        "Z": [
+          54.9527664,
+          54.9527664
+        ]
+      },
+      "laterAllZeroPollMs": null
+    }
+  ],
+  "airStatus": "sample_absent",
+  "input": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\maintenance-run-24-artillery-50s\\maintenance-live.json",
+  "inputSha256": "2e4f02e991e2d3763d5cfe7d3cac05ad7575b6ff05bddad074117339bf6c6243"
+}

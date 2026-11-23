@@ -128,6 +128,7 @@ internal sealed class MineOverlayWindow : Form
 	{
 		reader = null;
 		camera = null;
+		LastError = "";
 		mines.Clear();
 		barrages.Clear();
 		barrageTracker.Clear();

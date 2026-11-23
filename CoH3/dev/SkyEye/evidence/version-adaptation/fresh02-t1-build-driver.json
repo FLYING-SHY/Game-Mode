@@ -1,0 +1,33 @@
+﻿{
+    "scope":  "foreground-checked pause/resume only; production reads were bounded VM_READ probes",
+    "finishedUtc":  "2026-11-21T04:54:05.2801152Z",
+    "startUtc":  "2026-11-21T03:42:27.6605831Z",
+    "pid":  33656,
+    "startedUtc":  "2026-11-21T04:52:48.5923672Z",
+    "outputs":  [
+                    "fresh02-t1-build-start.json",
+                    "fresh02-t1-build-35.json",
+                    "fresh02-t1-build-75.json",
+                    "fresh02-t1-running.png",
+                    "fresh02-t1-paused.png",
+                    "fresh02-t1-build-driver.json"
+                ],
+    "nativeActions":  [
+                          {
+                              "utc":  "2026-11-21T04:52:49.3671650Z",
+                              "action":  "resume"
+                          },
+                          {
+                              "utc":  "2026-11-21T04:53:24.4521766Z",
+                              "action":  "probe35"
+                          },
+                          {
+                              "utc":  "2026-11-21T04:54:04.5221982Z",
+                              "action":  "probe75"
+                          },
+                          {
+                              "utc":  "2026-11-21T04:54:05.2801152Z",
+                              "action":  "pause"
+                          }
+                      ]
+}

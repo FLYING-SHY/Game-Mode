@@ -1,0 +1,57 @@
+﻿{
+    "utc":  "2026-11-21T06:06:49.3506242Z",
+    "scope":  "Offline Release fingerprint fixture with static reader call-order assertions",
+    "fixtureProjectSha256":  "CA2F1557DB792F2DB5998A0A8287B4CBEF1A6622D7CA133AF26AB6F7A9149E15",
+    "fixtureSourceSha256":  "350FC2BEDF1C464798C4110195A7ACDED287D275B98EB34013D5D25FEAAE0C94",
+    "sourceFixturePassed":  true,
+    "fullClientBuild":  "not_run",
+    "nativeGameAttach":  "not_run",
+    "protectedDelivery":  "not_run",
+    "newVerifiedFingerprint":  false,
+    "cases":  [
+                  {
+                      "client":  "SkyEye",
+                      "configuration":  "Release",
+                      "checksPassed":  27,
+                      "exitCode":  0,
+                      "sourceInputs":  [
+                                           {
+                                               "file":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\GameVersion45.cs",
+                                               "sha256":  "2310F0E8E3A9671F5987190808FC01143FBC2E245D63A70990F58B7A33589640"
+                                           },
+                                           {
+                                               "file":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\GameIdentityProvider60.cs",
+                                               "sha256":  "AA6618910117F61DA91133B45B04C3165BDD006A706B6DFF6D94C08F50AFA872"
+                                           },
+                                           {
+                                               "file":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\PlayerInfoReader.cs",
+                                               "sha256":  "BBB359CD59409065D8B4D00ACE784243AE5E99816611BC11617E7C9ED8ADBA9D"
+                                           }
+                                       ],
+                      "log":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\release-gate-check-01\\SkyEye.log",
+                      "logSha256":  "C980461023F6E1A3672E9690A65FC5CE5D4BD50397482B6882AE08BF78FDBF04"
+                  },
+                  {
+                      "client":  "COH3SimpleTool",
+                      "configuration":  "Release",
+                      "checksPassed":  27,
+                      "exitCode":  0,
+                      "sourceInputs":  [
+                                           {
+                                               "file":  "F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\GameVersion45.cs",
+                                               "sha256":  "2310F0E8E3A9671F5987190808FC01143FBC2E245D63A70990F58B7A33589640"
+                                           },
+                                           {
+                                               "file":  "F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\GameIdentityProvider60.cs",
+                                               "sha256":  "AA6618910117F61DA91133B45B04C3165BDD006A706B6DFF6D94C08F50AFA872"
+                                           },
+                                           {
+                                               "file":  "F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\PlayerInfoReader.cs",
+                                               "sha256":  "BBB359CD59409065D8B4D00ACE784243AE5E99816611BC11617E7C9ED8ADBA9D"
+                                           }
+                                       ],
+                      "log":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\release-gate-check-01\\COH3SimpleTool.log",
+                      "logSha256":  "C980461023F6E1A3672E9690A65FC5CE5D4BD50397482B6882AE08BF78FDBF04"
+                  }
+              ]
+}

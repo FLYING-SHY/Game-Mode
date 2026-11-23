@@ -1,0 +1,270 @@
+.?AVAbility@@ BASES [{'name': '.?AVAbility@@', 'bcd': '0x5186d08', 'contained': 0, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}]
+('0x3da7868', ['0x7644ad', '0x7656e8', '0x906b5f', '0x906d8d', '0x1330f6d'])
+.?AVAlwaysOnAbility@@ BASES [{'name': '.?AVAlwaysOnAbility@@', 'bcd': '0x5186ff8', 'contained': 1, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}, {'name': '.?AVAbility@@', 'bcd': '0x5186d08', 'contained': 0, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}]
+('0x3da77b8', ['0x904d10', '0x9063bf', '0x90694f', '0x9069d9', '0x3286acd', '0x3286b7d', '0x3286c35'])
+.?AVTimedAbility@@ BASES [{'name': '.?AVTimedAbility@@', 'bcd': '0x51870b0', 'contained': 1, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}, {'name': '.?AVAbility@@', 'bcd': '0x5186d08', 'contained': 0, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}]
+('0x3d94a40', ['0x7646d7', '0x76561a', '0x76568f', '0x904e10', '0x9063f2', '0x1330ed7', '0x3286d7a'])
+.?AVProjectileExt@@ BASES [{'name': '.?AVProjectileExt@@', 'bcd': '0x51a2fa0', 'contained': 2, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}, {'name': '.?AVEntityExtension@@', 'bcd': '0x5195c80', 'contained': 1, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}, {'name': '.?AVIComponent@Component@@', 'bcd': '0x5195cf8', 'contained': 0, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}]
+('0x3e49618', ['0x10ccaa0'])
+.?AVEntityDynamics@@ BASES [{'name': '.?AVEntityDynamics@@', 'bcd': '0x51aed00', 'contained': 0, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}]
+('0x3db9f18', ['0x6c4e8d', '0x707a00', '0x98f94f', '0xa38506', '0xa38634', '0x1258b66', '0x12f7be6', '0x1507090', '0x3421216', '0x342ba4a'])
+.?AVAttachmentDynamics@@ BASES [{'name': '.?AVAttachmentDynamics@@', 'bcd': '0x51aed28', 'contained': 1, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}, {'name': '.?AVEntityDynamics@@', 'bcd': '0x51aed00', 'contained': 0, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}]
+('0x3db17d8', ['0x98fbff'])
+.?AVBuildingDynamics@@ BASES [{'name': '.?AVBuildingDynamics@@', 'bcd': '0x51aed80', 'contained': 1, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}, {'name': '.?AVEntityDynamics@@', 'bcd': '0x51aed00', 'contained': 0, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}]
+('0x3dba160', ['0xa385e7'])
+.?AVMoverDynamics@@ BASES [{'name': '.?AVMoverDynamics@@', 'bcd': '0x51af2c8', 'contained': 1, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}, {'name': '.?AVEntityDynamics@@', 'bcd': '0x51aed00', 'contained': 0, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}]
+('0x3d926e0', ['0x7079b9', '0x707a9d'])
+.?AVNavigationDynamics@@ BASES [{'name': '.?AVNavigationDynamics@@', 'bcd': '0x51af850', 'contained': 1, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}, {'name': '.?AVEntityDynamics@@', 'bcd': '0x51aed00', 'contained': 0, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}]
+('0x47aa198', ['0x342b70a', '0x342ba21'])
+.?AVProjectileDynamics@@ BASES [{'name': '.?AVProjectileDynamics@@', 'bcd': '0x51af928', 'contained': 1, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}, {'name': '.?AVEntityDynamics@@', 'bcd': '0x51aed00', 'contained': 0, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}]
+('0x3e4aa38', ['0x10e25a2'])
+.?AVEntityUpgradeProductionItem@@ BASES [{'name': '.?AVEntityUpgradeProductionItem@@', 'bcd': '0x51b29b8', 'contained': 2, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}, {'name': '.?AVIUpgradeProductionItem@@', 'bcd': '0x51b2990', 'contained': 1, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}, {'name': '.?AVProductionItem@@', 'bcd': '0x51b29e0', 'contained': 0, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}]
+('0x3d92160', ['0x54c7c8', '0x6e66e2', '0x6e725e', '0x6e74ea', '0x27ff55e'])
+.?AVProductionItem@@ BASES [{'name': '.?AVProductionItem@@', 'bcd': '0x51b29e0', 'contained': 0, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}]
+('0x3dd6068', ['0x54c6c2', '0xbe6666', '0xbe6789', '0xbe6a76', '0xbe6aa6', '0xbe6b2d', '0x15078c0', '0x264a2a0', '0x344865a'])
+.?AVPlayerUpgradeProductionItem@@ BASES [{'name': '.?AVPlayerUpgradeProductionItem@@', 'bcd': '0x51b2a40', 'contained': 2, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}, {'name': '.?AVIUpgradeProductionItem@@', 'bcd': '0x51b2990', 'contained': 1, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}, {'name': '.?AVProductionItem@@', 'bcd': '0x51b29e0', 'contained': 0, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}]
+('0x3e57008', ['0x54c809', '0x1170af4'])
+.?AVSpawnProductionItem@@ BASES [{'name': '.?AVSpawnProductionItem@@', 'bcd': '0x51b2f58', 'contained': 1, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}, {'name': '.?AVProductionItem@@', 'bcd': '0x51b29e0', 'contained': 0, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}]
+('0x3d98bf0', ['0x54bf1b', '0x7e1e97'])
+.?AVSquadUpgradeProductionItem@@ BASES [{'name': '.?AVSquadUpgradeProductionItem@@', 'bcd': '0x51b30f8', 'contained': 2, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}, {'name': '.?AVIUpgradeProductionItem@@', 'bcd': '0x51b2990', 'contained': 1, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}, {'name': '.?AVProductionItem@@', 'bcd': '0x51b29e0', 'contained': 0, 'mdisp': 0, 'pdisp': -1, 'vdisp': 0}]
+('0x3d92058', ['0x54c787', '0x6e7154', '0x27c9491', '0x27c9591', '0x27c9662', '0x27ff5ab'])
+WINDOW 0xcd0f10
+0xcd0f10 mov edx, dword ptr [rcx + 0x40]
+0xcd0f13 test edx, edx
+0xcd0f15 jne 0x140cd0f1d
+0xcd0f17 jmp 0x140cd0f60
+0xcd0f1c ret 
+0xcd0f1d cmp edx, 1
+0xcd0f20 jne 0x140cd0f55
+0xcd0f22 mov rax, qword ptr gs:[0x58]
+0xcd0f2b mov r8d, 0x40
+0xcd0f31 mov rdx, qword ptr [rax]
+0xcd0f34 mov eax, dword ptr [r8 + rdx]
+0xcd0f38 lea r8, [rip + 0x54b6f01]
+0xcd0f3f mov edx, dword ptr [rcx + 0xb0]
+0xcd0f45 mov rax, qword ptr [r8 + rax*8]
+0xcd0f49 cmp byte ptr [rax + rdx + 0x84], 0
+0xcd0f51 setne al
+0xcd0f54 ret 
+0xcd0f55 xor al, al
+0xcd0f57 jmp 0x140cd0f1c
+0xcd0f59 int3 
+0xcd0f5a int3 
+0xcd0f5b int3 
+0xcd0f5c int3 
+0xcd0f5d int3 
+0xcd0f5e int3 
+0xcd0f5f int3 
+0xcd0f60 cmp dword ptr [rcx + 8], 0
+0xcd0f64 jne 0x140cd0fa2
+0xcd0f66 cmp byte ptr [rcx + 0x10], 5
+0xcd0f6a je 0x140cd0fa2
+0xcd0f6c mov rax, qword ptr gs:[0x58]
+0xcd0f75 mov r8d, 0x40
+0xcd0f7b mov rdx, qword ptr [rax]
+0xcd0f7e mov eax, dword ptr [r8 + rdx]
+0xcd0f82 lea r8, [rip + 0x54b6eb7]
+0xcd0f89 mov edx, dword ptr [rcx + 0xac]
+0xcd0f8f mov rax, qword ptr [r8 + rax*8]
+0xcd0f93 mov ecx, dword ptr [rax + rdx + 0x90]
+0xcd0f9a cmp ecx, 3
+0xcd0f9d jne 0x140cd0fa5
+0xcd0f9f mov al, 1
+0xcd0fa1 ret 
+0xcd0fa2 xor al, al
+0xcd0fa4 ret 
+0xcd0fa5 cmp ecx, 2
+0xcd0fa8 je 0x140cd0f9f
+0xcd0faa cmp ecx, 4
+0xcd0fad sete al
+0xcd0fb0 ret 
+0xcd0fb1 int3 
+0xcd0fb2 int3 
+0xcd0fb3 int3 
+0xcd0fb4 int3 
+0xcd0fb5 int3 
+0xcd0fb6 int3 
+0xcd0fb7 int3 
+0xcd0fb8 int3 
+0xcd0fb9 int3 
+0xcd0fba int3 
+0xcd0fbb int3 
+0xcd0fbc int3 
+0xcd0fbd int3 
+0xcd0fbe int3 
+0xcd0fbf int3 
+0xcd0fc0 push rbp
+0xcd0fc2 sub rsp, 0x50
+0xcd0fc6 mov r10, qword ptr [rcx + 8]
+0xcd0fca mov rbp, rdx
+0xcd0fcd test r10, r10
+WINDOW 0xcd0f60
+0xcd0f60 cmp dword ptr [rcx + 8], 0
+0xcd0f64 jne 0x140cd0fa2
+0xcd0f66 cmp byte ptr [rcx + 0x10], 5
+0xcd0f6a je 0x140cd0fa2
+0xcd0f6c mov rax, qword ptr gs:[0x58]
+0xcd0f75 mov r8d, 0x40
+0xcd0f7b mov rdx, qword ptr [rax]
+0xcd0f7e mov eax, dword ptr [r8 + rdx]
+0xcd0f82 lea r8, [rip + 0x54b6eb7]
+0xcd0f89 mov edx, dword ptr [rcx + 0xac]
+0xcd0f8f mov rax, qword ptr [r8 + rax*8]
+0xcd0f93 mov ecx, dword ptr [rax + rdx + 0x90]
+0xcd0f9a cmp ecx, 3
+0xcd0f9d jne 0x140cd0fa5
+0xcd0f9f mov al, 1
+0xcd0fa1 ret 
+0xcd0fa2 xor al, al
+0xcd0fa4 ret 
+0xcd0fa5 cmp ecx, 2
+0xcd0fa8 je 0x140cd0f9f
+0xcd0faa cmp ecx, 4
+0xcd0fad sete al
+0xcd0fb0 ret 
+0xcd0fb1 int3 
+0xcd0fb2 int3 
+0xcd0fb3 int3 
+0xcd0fb4 int3 
+0xcd0fb5 int3 
+0xcd0fb6 int3 
+0xcd0fb7 int3 
+0xcd0fb8 int3 
+0xcd0fb9 int3 
+0xcd0fba int3 
+0xcd0fbb int3 
+0xcd0fbc int3 
+0xcd0fbd int3 
+0xcd0fbe int3 
+0xcd0fbf int3 
+0xcd0fc0 push rbp
+0xcd0fc2 sub rsp, 0x50
+0xcd0fc6 mov r10, qword ptr [rcx + 8]
+0xcd0fca mov rbp, rdx
+0xcd0fcd test r10, r10
+0xcd0fd0 jne 0x14266a95c
+0xcd0fd6 mov qword ptr [rsp + 0x48], rbx
+0xcd0fdb mov rbx, qword ptr [rcx]
+0xcd0fde lea rcx, [rip - 0x1c0755]
+0xcd0fe5 mov qword ptr [rsp + 0x40], rsi
+0xcd0fea lea rsi, [r8*4]
+0xcd0ff2 mov qword ptr [rsp + 0x38], rdi
+0xcd0ff7 mov rax, qword ptr [rbx]
+0xcd0ffa mov r9, qword ptr [rax + 0x20]
+WINDOW 0x765680
+0x765680 mov qword ptr [rsp + 8], rbx
+0x765685 push rdi
+0x765686 sub rsp, 0x20
+0x76568a mov edi, edx
+0x76568c mov rbx, rcx
+0x76568f lea rax, [rip + 0x362f3aa]
+0x765696 mov qword ptr [rcx], rax
+0x765699 call 0x140906f70
+0x76569e mov rcx, rbx
+0x7656a1 call 0x140906d80
+0x7656a6 nop 
+0x7656a7 test dil, 1
+0x7656ab jne 0x1427e3f26
+0x7656b1 mov rax, rbx
+0x7656b4 mov rbx, qword ptr [rsp + 0x30]
+0x7656b9 add rsp, 0x20
+0x7656bd pop rdi
+0x7656be ret 
+WINDOW 0x903180
+0x903180 mov qword ptr [rsp + 0x10], rbx
+0x903185 push rdi
+0x903186 sub rsp, 0x20
+0x90318a mov rdi, rcx
+0x90318d mov rbx, rdx
+0x903190 mov rcx, qword ptr [rcx + 0x38]
+0x903194 test rcx, rcx
+0x903197 je 0x1409031fe
+0x903199 call 0x140904300
+0x90319e test byte ptr [rax + 0x178], 0x20
+0x9031a5 jne 0x1409031dd
+0x9031a7 mov rdx, qword ptr [rdi + 0x38]
+0x9031ab lea rcx, [rdi + 0x14]
+0x9031af call 0x1409040a0
+0x9031b4 test eax, eax
+0x9031b6 jle 0x1409031ca
+0x9031b8 lea rdx, [rsp + 0x30]
+0x9031bd mov byte ptr [rsp + 0x30], 0xf
+0x9031c2 mov rcx, rbx
+0x9031c5 call 0x1405474c0
+0x9031ca cmp qword ptr [rbx + 8], 0
+0x9031cf mov rbx, qword ptr [rsp + 0x38]
+0x9031d4 sete al
+0x9031d7 add rsp, 0x20
+0x9031db pop rdi
+0x9031dc ret 
+0x9031dd mov rcx, rdi
+WINDOW 0x550170
+0x550170 sub rsp, 0x28
+0x550174 mov rcx, rdx
+0x550177 call 0x14038f860
+0x55017c test rax, rax
+0x55017f je 0x140550196
+0x550181 mov rcx, qword ptr [rax + 0x38]
+0x550185 call 0x140cdfa70
+0x55018a test rax, rax
+0x55018d je 0x140550196
+0x55018f mov eax, dword ptr [rax + 0x50]
+0x550192 test eax, eax
+0x550194 jns 0x14055019e
+0x550196 call 0x14054f7b0
+0x55019b mov eax, dword ptr [rax + 0x18]
+0x55019e add rsp, 0x28
+0x5501a2 ret 
+WINDOW 0xd23080
+0xd23080 sub rsp, 0x28
+0xd23084 mov rcx, rdx
+0xd23087 call 0x1402702b0
+0xd2308c test rax, rax
+0xd2308f je 0x140d230a6
+0xd23091 mov rcx, qword ptr [rax + 0x38]
+0xd23095 call 0x140c69d40
+0xd2309a test rax, rax
+0xd2309d je 0x140d230a6
+0xd2309f mov eax, dword ptr [rax + 0x3c]
+0xd230a2 test eax, eax
+0xd230a4 jns 0x140d230ae
+0xd230a6 call 0x14054f7b0
+0xd230ab mov eax, dword ptr [rax + 0x18]
+0xd230ae add rsp, 0x28
+0xd230b2 ret 
+WINDOW 0x11370e0
+0x11370e0 sub rsp, 0x28
+0x11370e4 call 0x14054f7b0
+0x11370e9 mov eax, dword ptr [rax + 0x18]
+0x11370ec add rsp, 0x28
+0x11370f0 ret 
+WINDOW 0x5501b0
+0x5501b0 push rbx
+0x5501b2 sub rsp, 0x70
+0x5501b6 mov rax, qword ptr [rip + 0x58a2e03]
+0x5501bd xor rax, rsp
+0x5501c0 mov qword ptr [rsp + 0x60], rax
+0x5501c5 mov rcx, rdx
+0x5501c8 call 0x1402702b0
+0x5501cd test rax, rax
+0x5501d0 je 0x140550206
+0x5501d2 mov rbx, qword ptr [rax + 0x38]
+0x5501d6 cmp dword ptr [rbx + 0x48], 0x130000
+0x5501dd jne 0x14277d75e
+0x5501e3 mov ecx, dword ptr [rip + 0x58a5793]
+0x5501e9 mov rax, qword ptr [rbx + 0x128]
+0x5501f0 mov rax, qword ptr [rax]
+0x5501f3 mov rax, qword ptr [rax + rcx*8]
+0x5501f7 test rax, rax
+0x5501fa je 0x140550206
+0x5501fc mov eax, dword ptr [rax + 0x110]
+0x550202 test eax, eax
+0x550204 jns 0x14055020e
+0x550206 call 0x14054f7b0
+0x55020b mov eax, dword ptr [rax + 0x18]
+0x55020e mov rcx, qword ptr [rsp + 0x60]
+0x550213 xor rcx, rsp
+0x550216 call 0x1422ba3f0
+0x55021b add rsp, 0x70
+0x55021f pop rbx
+0x550220 ret 

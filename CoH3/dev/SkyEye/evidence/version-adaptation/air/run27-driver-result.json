@@ -1,0 +1,13 @@
+﻿{
+    "status":  "completed_driver_only_consult_reader_report",
+    "runnerPid":  25740,
+    "childExitCode":  5,
+    "childExitCodeRecorded":  true,
+    "childKilledAtTimeout":  false,
+    "resumedUtc":  "2026-11-21T02:26:24.3026965Z",
+    "pausedUtc":  "2026-11-21T02:26:35.2842632Z",
+    "pauseExitCode":  0,
+    "finishedUtc":  "2026-11-21T02:26:52.5617756Z",
+    "error":  null,
+    "runnerSha256After":  "CD125BFFA33E525CD4B94A753D65A6E4CBB199395E3860E57E85003DB7665F79"
+}

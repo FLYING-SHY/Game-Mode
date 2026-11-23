@@ -1,0 +1,9 @@
+﻿{
+    "uiPid":  11632,
+    "uiStartUtc":  "2026-11-21T06:38:35.7755905Z",
+    "closeRequestedUtc":  "2026-11-21T06:48:05.6860731Z",
+    "observedUtc":  "2026-11-21T06:48:05.8256459Z",
+    "closeRequested":  true,
+    "processExited":  true,
+    "settingsAfterCloseSha256":  "C1595CC7371CE4A773FDB264996248FA5814B059AE1B42B6DD1ED7B18ED2B713"
+}

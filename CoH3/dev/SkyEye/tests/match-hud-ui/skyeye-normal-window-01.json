@@ -1,0 +1,197 @@
+﻿{
+    "CapturedAt":  "2026-11-22T11:47:41.9573763+08:00",
+    "ProcessId":  36656,
+    "Executable":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\match-hud-ui\\clients\\SkyEye\\Release\\bin\\天穹之眼-自有授权版-v0.60.8.exe",
+    "WindowHandle":  7736892,
+    "WindowTitle":  "天穹之眼 · 激活",
+    "IsVisible":  true,
+    "Width":  706,
+    "Height":  509,
+    "ScreenshotSucceeded":  true,
+    "ScreenshotPath":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\match-hud-ui\\skyeye-normal-window-01.png",
+    "TotalDescendants":  12,
+    "CapturedNodes":  12,
+    "Privacy":  "Edit/password values and long identifiers are omitted from the accessibility export; screenshot remains a local selected-window capture.",
+    "Nodes":  [
+                  {
+                      "Index":  0,
+                      "Name":  "",
+                      "AutomationId":  "3475646",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  935,
+                                        "Y":  461,
+                                        "Width":  706,
+                                        "Height":  509
+                                    }
+                  },
+                  {
+                      "Index":  1,
+                      "Name":  "◉  天穹之眼",
+                      "AutomationId":  "4328016",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  965,
+                                        "Y":  487,
+                                        "Width":  440,
+                                        "Height":  47
+                                    }
+                  },
+                  {
+                      "Index":  2,
+                      "Name":  "×",
+                      "AutomationId":  "1444668",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1553,
+                                        "Y":  489,
+                                        "Width":  40,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  3,
+                      "Name":  "TACTICAL SYSTEM  /  授权登录",
+                      "AutomationId":  "1837946",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  969,
+                                        "Y":  544,
+                                        "Width":  550,
+                                        "Height":  28
+                                    }
+                  },
+                  {
+                      "Index":  4,
+                      "Name":  "",
+                      "AutomationId":  "7736800",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  967,
+                                        "Y":  587,
+                                        "Width":  626,
+                                        "Height":  236
+                                    }
+                  },
+                  {
+                      "Index":  5,
+                      "Name":  "激活码",
+                      "AutomationId":  "3214172",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  989,
+                                        "Y":  606,
+                                        "Width":  560,
+                                        "Height":  25
+                                    }
+                  },
+                  {
+                      "Index":  6,
+                      "Name":  "[editable or password content omitted]",
+                      "AutomationId":  "9308646",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.EDIT.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  989,
+                                        "Y":  639,
+                                        "Width":  580,
+                                        "Height":  28
+                                    }
+                  },
+                  {
+                      "Index":  7,
+                      "Name":  "记住激活码",
+                      "AutomationId":  "11274928",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  987,
+                                        "Y":  686,
+                                        "Width":  220,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  8,
+                      "Name":  "激活并进入",
+                      "AutomationId":  "4524934",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1385,
+                                        "Y":  686,
+                                        "Width":  184,
+                                        "Height":  36
+                                    }
+                  },
+                  {
+                      "Index":  9,
+                      "Name":  "请先启动游戏并停留在大厅。",
+                      "AutomationId":  "1183336",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  989,
+                                        "Y":  738,
+                                        "Width":  580,
+                                        "Height":  70
+                                    }
+                  },
+                  {
+                      "Index":  10,
+                      "Name":  "首次成功激活后开始计时 · 同一张激活码仅限一台电脑同时使用",
+                      "AutomationId":  "3477040",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  969,
+                                        "Y":  845,
+                                        "Width":  620,
+                                        "Height":  28
+                                    }
+                  },
+                  {
+                      "Index":  11,
+                      "Name":  "激活及使用期间会记录设备序列号和连接IP，用于授权与异常使用管理。",
+                      "AutomationId":  "4065198",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  969,
+                                        "Y":  875,
+                                        "Width":  620,
+                                        "Height":  36
+                                    }
+                  }
+              ]
+}

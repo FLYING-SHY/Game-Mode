@@ -1,0 +1,815 @@
+{
+  "timestamp": "2026-11-20T18:59:46.449451+00:00",
+  "pid": 31572,
+  "moduleBase": "0x7ff7a37e0000",
+  "access": "PROCESS_QUERY_INFORMATION|PROCESS_VM_READ",
+  "verification": "candidate_not_baseline",
+  "snapshot": {
+    "roots": {
+      "resource": "0x6bb1ed0",
+      "arena": "0x6187e40",
+      "world": "0x5e0decc"
+    },
+    "status": "candidate_only",
+    "resources": [
+      {
+        "name": "ability_resource_1",
+        "index": 0
+      },
+      {
+        "name": "ability_resource_2",
+        "index": 1
+      },
+      {
+        "name": "action",
+        "index": 2
+      },
+      {
+        "name": "command",
+        "index": 3
+      },
+      {
+        "name": "fuel",
+        "index": 4
+      },
+      {
+        "name": "manpower",
+        "index": 5
+      },
+      {
+        "name": "munition",
+        "index": 6
+      },
+      {
+        "name": "popcap",
+        "index": 7
+      },
+      {
+        "name": "requisition",
+        "index": 8
+      },
+      {
+        "name": "ultimate",
+        "index": 9
+      }
+    ],
+    "timers": [
+      {
+        "name": "activate_stance_timer",
+        "index": 0
+      },
+      {
+        "name": "anzio_annie_barrage",
+        "index": 1
+      },
+      {
+        "name": "campaign_shared_heal_ability",
+        "index": 2
+      },
+      {
+        "name": "deploy_aircraft_b25_timer",
+        "index": 3
+      },
+      {
+        "name": "deploy_aircraft_c47_timer",
+        "index": 4
+      },
+      {
+        "name": "deploy_aircraft_l2_timer",
+        "index": 5
+      },
+      {
+        "name": "deploy_aircraft_p47_timer",
+        "index": 6
+      },
+      {
+        "name": "deploy_engineer_timer",
+        "index": 7
+      },
+      {
+        "name": "deploy_medic_timer",
+        "index": 8
+      },
+      {
+        "name": "deploy_partisan_timer",
+        "index": 9
+      },
+      {
+        "name": "designate_forward_depot_timer",
+        "index": 10
+      },
+      {
+        "name": "faction_ability",
+        "index": 11
+      },
+      {
+        "name": "forward_observer",
+        "index": 12
+      },
+      {
+        "name": "mobile_entrenchment",
+        "index": 13
+      },
+      {
+        "name": "purchase_attachment_timer",
+        "index": 14
+      },
+      {
+        "name": "purchase_company_timer",
+        "index": 15
+      },
+      {
+        "name": "reinforce_timer",
+        "index": 16
+      },
+      {
+        "name": "shared_ability_1",
+        "index": 17
+      },
+      {
+        "name": "shared_ability_2",
+        "index": 18
+      },
+      {
+        "name": "shared_barrage_ability",
+        "index": 19
+      },
+      {
+        "name": "shared_veterancy_unlock",
+        "index": 20
+      }
+    ],
+    "arena": "0x1fd6f200000",
+    "worldOffset": "0x6400000",
+    "players": [
+      {
+        "address": "0x1fd77e08000",
+        "identity": "0x3e8",
+        "slot": 0,
+        "name": "咋咋咋",
+        "resources": [
+          0.0,
+          0.0,
+          2.4600000381469727,
+          12.0,
+          315.11669921875,
+          1394.5,
+          500.0,
+          0.0,
+          0.0,
+          3.078000068664551
+        ],
+        "population": [
+          4.0,
+          0.0
+        ],
+        "registryCount": 53,
+        "ownedEntities": [
+          {
+            "address": "0x1fd74374e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\starting_position\\starting_territory_team",
+            "generation": 2807501192,
+            "componentKind": 371
+          },
+          {
+            "address": "0x1fd74375200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\map_entry_point",
+            "generation": 2807501192,
+            "componentKind": 380
+          },
+          {
+            "address": "0x1fd743f7c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\buildings\\production\\hq_us",
+            "generation": 2807501192,
+            "componentKind": 429
+          },
+          {
+            "address": "0x1fd743f8600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\flags\\flag_us",
+            "generation": 2807501192,
+            "componentKind": 402
+          },
+          {
+            "address": "0x1fd743f9000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\buildings\\defensive\\base_defense_us",
+            "generation": 2807501192,
+            "componentKind": 452
+          },
+          {
+            "address": "0x1fd743f9c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\small_arms\\machine_guns\\heavy_machine_gun\\w_30cal_fighting_position_base_defense_us",
+            "generation": 2807501192,
+            "componentKind": 465
+          },
+          {
+            "address": "0x1fd743fac00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\buildings\\defensive\\base_defense_us",
+            "generation": 2807501192,
+            "componentKind": 452
+          },
+          {
+            "address": "0x1fd743fb800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\small_arms\\machine_guns\\heavy_machine_gun\\w_30cal_fighting_position_base_defense_us",
+            "generation": 2807501192,
+            "componentKind": 465
+          },
+          {
+            "address": "0x1fd743fc600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\buildings\\defensive\\base_defense_us",
+            "generation": 2807501192,
+            "componentKind": 452
+          },
+          {
+            "address": "0x1fd743fd200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\small_arms\\machine_guns\\heavy_machine_gun\\w_30cal_fighting_position_base_defense_us",
+            "generation": 2807501192,
+            "componentKind": 465
+          },
+          {
+            "address": "0x1fd743fe000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\buildings\\defensive\\base_defense_us",
+            "generation": 2807501192,
+            "componentKind": 452
+          },
+          {
+            "address": "0x1fd743fec00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\small_arms\\machine_guns\\heavy_machine_gun\\w_30cal_fighting_position_base_defense_us",
+            "generation": 2807501192,
+            "componentKind": 465
+          },
+          {
+            "address": "0x1fd743ffc00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\infantry\\scout_leader_radio_us",
+            "generation": 2807501192,
+            "componentKind": 500
+          },
+          {
+            "address": "0x1fd74400800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\small_arms\\single_fire\\rifle\\w_garand_scout_us",
+            "generation": 2807501192,
+            "componentKind": 508
+          },
+          {
+            "address": "0x1fd74401400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\small_arms\\single_fire\\rifle\\w_garand_pathfinder_us",
+            "generation": 2807501192,
+            "componentKind": 508
+          },
+          {
+            "address": "0x1fd74402000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_smoke_rifle_grenade_scout_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x1fd74402e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_rifle_grenade_pathfinder_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x1fd74403c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_flare_scout_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x1fd74404800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\small_arms\\single_fire\\rifle\\w_garand_tracer_rounds_scout_us",
+            "generation": 2807501192,
+            "componentKind": 508
+          },
+          {
+            "address": "0x1fd74405400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\british\\weapons\\explosive_weapons\\grenade\\w_grenade_smoke_red_uk",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x1fd74406000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\infantry\\scout_us",
+            "generation": 2807501192,
+            "componentKind": 500
+          },
+          {
+            "address": "0x1fd74406c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\small_arms\\single_fire\\rifle\\w_garand_scout_us",
+            "generation": 2807501192,
+            "componentKind": 508
+          },
+          {
+            "address": "0x1fd74407800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\small_arms\\single_fire\\rifle\\w_garand_pathfinder_us",
+            "generation": 2807501192,
+            "componentKind": 508
+          },
+          {
+            "address": "0x1fd74408400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_smoke_rifle_grenade_scout_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x1fd74409200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_rifle_grenade_pathfinder_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x1fd7440a000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_flare_scout_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x1fd7440ac00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\small_arms\\single_fire\\rifle\\w_garand_tracer_rounds_scout_us",
+            "generation": 2807501192,
+            "componentKind": 508
+          },
+          {
+            "address": "0x1fd7440b800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\british\\weapons\\explosive_weapons\\grenade\\w_grenade_smoke_red_uk",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x1fd7440c400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\infantry\\scout_us",
+            "generation": 2807501192,
+            "componentKind": 500
+          },
+          {
+            "address": "0x1fd7440d000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\small_arms\\single_fire\\rifle\\w_garand_scout_us",
+            "generation": 2807501192,
+            "componentKind": 508
+          },
+          {
+            "address": "0x1fd7440dc00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\small_arms\\single_fire\\rifle\\w_garand_pathfinder_us",
+            "generation": 2807501192,
+            "componentKind": 508
+          },
+          {
+            "address": "0x1fd7440e800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_smoke_rifle_grenade_scout_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x1fd7440f600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_rifle_grenade_pathfinder_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x1fd74410400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_flare_scout_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x1fd74411000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\small_arms\\single_fire\\rifle\\w_garand_tracer_rounds_scout_us",
+            "generation": 2807501192,
+            "componentKind": 508
+          },
+          {
+            "address": "0x1fd74411c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\british\\weapons\\explosive_weapons\\grenade\\w_grenade_smoke_red_uk",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x1fd74376200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\infantry\\crew_hmg_dummy_us",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x1fd74428800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\infantry\\crew_hmg_dummy_us",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x1fd74429400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\special\\w_ammo_box_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x1fd7442a000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\special\\w_ammo_box_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x1fd7442b200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\infantry\\crew_hmg_dummy_us",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x1fd7442ca00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\infantry\\crew_hmg_dummy_us",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x1fd7442d600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\special\\w_ammo_box_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x1fd7442e200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\special\\w_ammo_box_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x1fd7442f400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\infantry\\crew_hmg_dummy_us",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x1fd74430c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\infantry\\crew_hmg_dummy_us",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x1fd74431800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\special\\w_ammo_box_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x1fd74432400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\special\\w_ammo_box_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x1fd74433600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\infantry\\crew_hmg_dummy_us",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x1fd74434e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\infantry\\crew_hmg_dummy_us",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x1fd74435a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\special\\w_ammo_box_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x1fd74436600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\special\\w_ammo_box_us",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x1fd74445000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\common\\buildings\\placeholder_support_center",
+            "generation": 2807501192,
+            "componentKind": 651
+          }
+        ]
+      },
+      {
+        "address": "0x1fd77e09000",
+        "identity": "0x1000003e9",
+        "slot": 1,
+        "name": "CPU - 标准",
+        "resources": [
+          0.0,
+          0.0,
+          2.4600000381469727,
+          12.0,
+          315.09326171875,
+          1393.599609375,
+          500.0,
+          0.0,
+          0.0,
+          3.078000068664551
+        ],
+        "population": [
+          4.0,
+          0.0
+        ],
+        "registryCount": 35,
+        "ownedEntities": [
+          {
+            "address": "0x1fd74375400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\starting_position\\starting_territory_team",
+            "generation": 2807501192,
+            "componentKind": 371
+          },
+          {
+            "address": "0x1fd74375800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\gameplay\\map_entry_point",
+            "generation": 2807501192,
+            "componentKind": 380
+          },
+          {
+            "address": "0x1fd74375c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\buildings\\production\\hq_ger",
+            "generation": 2807501192,
+            "componentKind": 564
+          },
+          {
+            "address": "0x1fd74413400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\flags\\flag_ger",
+            "generation": 2807501192,
+            "componentKind": 402
+          },
+          {
+            "address": "0x1fd74413c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\buildings\\defensive\\base_defense_ger",
+            "generation": 2807501192,
+            "componentKind": 584
+          },
+          {
+            "address": "0x1fd74414800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\heavy_machine_gun\\w_mg42_bunker_ger",
+            "generation": 2807501192,
+            "componentKind": 595
+          },
+          {
+            "address": "0x1fd74415800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\buildings\\defensive\\base_defense_ger",
+            "generation": 2807501192,
+            "componentKind": 584
+          },
+          {
+            "address": "0x1fd74416400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\heavy_machine_gun\\w_mg42_bunker_ger",
+            "generation": 2807501192,
+            "componentKind": 595
+          },
+          {
+            "address": "0x1fd74417400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\buildings\\defensive\\base_defense_ger",
+            "generation": 2807501192,
+            "componentKind": 584
+          },
+          {
+            "address": "0x1fd74418000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\heavy_machine_gun\\w_mg42_bunker_ger",
+            "generation": 2807501192,
+            "componentKind": 595
+          },
+          {
+            "address": "0x1fd74419000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\buildings\\defensive\\base_defense_ger",
+            "generation": 2807501192,
+            "componentKind": 584
+          },
+          {
+            "address": "0x1fd74419c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\heavy_machine_gun\\w_mg42_bunker_ger",
+            "generation": 2807501192,
+            "componentKind": 595
+          },
+          {
+            "address": "0x1fd7441ac00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\pioneer_ger",
+            "generation": 2807501192,
+            "componentKind": 612
+          },
+          {
+            "address": "0x1fd7441b800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\sub_machine_gun\\w_mp40_pioneer_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x1fd7441c400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_satchel_charge_paratrooper_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x1fd7441d000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x1fd7441de00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_3_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x1fd7441ec00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\pioneer_ger",
+            "generation": 2807501192,
+            "componentKind": 612
+          },
+          {
+            "address": "0x1fd7441f800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\sub_machine_gun\\w_mp40_pioneer_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x1fd74420400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_satchel_charge_paratrooper_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x1fd74421000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x1fd74421e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_3_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x1fd74422c00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\pioneer_ger",
+            "generation": 2807501192,
+            "componentKind": 612
+          },
+          {
+            "address": "0x1fd74423800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\small_arms\\machine_gun\\sub_machine_gun\\w_mp40_pioneer_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x1fd74424400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\american\\weapons\\explosive_weapons\\grenade\\w_satchel_charge_paratrooper_us",
+            "generation": 2807501192,
+            "componentKind": 520
+          },
+          {
+            "address": "0x1fd74425000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x1fd74425e00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\weapons\\ballistic_weapon\\infantry_anti_tank_weapon\\w_panzerfaust_grenadier_veteran_3_ger",
+            "generation": 2807501192,
+            "componentKind": 515
+          },
+          {
+            "address": "0x1fd74437800",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\crew_hmg_dummy_ger",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x1fd74439000",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\crew_hmg_dummy_ger",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x1fd7443ae00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\crew_hmg_dummy_ger",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x1fd7443c600",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\crew_hmg_dummy_ger",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x1fd7443e400",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\crew_hmg_dummy_ger",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x1fd7443fc00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\crew_hmg_dummy_ger",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x1fd74441a00",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\crew_hmg_dummy_ger",
+            "generation": 2807501192,
+            "componentKind": 649
+          },
+          {
+            "address": "0x1fd74443200",
+            "vtableRva": "0x3d910f8",
+            "blueprint": "ebps\\races\\german\\infantry\\crew_hmg_dummy_ger",
+            "generation": 2807501192,
+            "componentKind": 649
+          }
+        ]
+      }
+    ],
+    "stableRootsAfterRead": true
+  },
+  "bytesRead": 12070
+}

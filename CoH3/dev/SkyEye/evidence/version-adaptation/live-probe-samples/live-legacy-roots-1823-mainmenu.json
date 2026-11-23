@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-11-21T10:23:09.014353+00:00",
+  "pid": 11296,
+  "moduleBase": "0x7ff7a37e0000",
+  "access": "PROCESS_QUERY_INFORMATION|PROCESS_VM_READ",
+  "verification": "candidate_not_baseline",
+  "snapshot": {
+    "roots": {
+      "resource": "0x6bb0020",
+      "arena": "0x6185eb0",
+      "world": "0x5e0becc"
+    },
+    "status": "candidate_only",
+    "resources": {
+      "error": "Invalid name vector"
+    },
+    "timers": [],
+    "arena": "0x7ff7a75e7858",
+    "worldOffset": "0x0",
+    "players": {
+      "error": "Invalid player count"
+    },
+    "stableRootsAfterRead": true
+  },
+  "bytesRead": 68
+}

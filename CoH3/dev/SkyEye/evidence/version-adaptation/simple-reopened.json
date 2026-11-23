@@ -1,0 +1,51 @@
+{
+  "utc": "2026-11-20T18:27:22.803078+00:00",
+  "pid": 30868,
+  "tag": "simple-reopened",
+  "windows": [
+    {
+      "hwnd": 396390,
+      "isControlPanel": false,
+      "rect": [
+        8,
+        61,
+        1928,
+        1141
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\simple-reopened-396390.png"
+    },
+    {
+      "hwnd": 2886206,
+      "isControlPanel": false,
+      "rect": [
+        66,
+        69,
+        1870,
+        163
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\simple-reopened-2886206.png"
+    },
+    {
+      "hwnd": 330902,
+      "isControlPanel": false,
+      "rect": [
+        8,
+        61,
+        1928,
+        1141
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\simple-reopened-330902.png"
+    },
+    {
+      "hwnd": 7407640,
+      "isControlPanel": true,
+      "rect": [
+        868,
+        637,
+        1692,
+        755
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\simple-reopened-7407640.png"
+    }
+  ]
+}

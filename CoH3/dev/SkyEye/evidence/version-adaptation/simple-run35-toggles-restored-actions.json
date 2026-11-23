@@ -1,0 +1,32 @@
+﻿{
+    "uiPid":  30972,
+    "uiStartUtc":  "2026-11-21T06:48:05.9042747Z",
+    "mainHwnd":  2294644,
+    "actions":  [
+                    {
+                        "utc":  "2026-11-21T06:55:01.1886898Z",
+                        "name":  "顶部玩家信息",
+                        "childHwnd":  1182834,
+                        "x":  1014,
+                        "y":  632,
+                        "mechanism":  "foreground and owning-PID checked native mouse"
+                    },
+                    {
+                        "utc":  "2026-11-21T06:55:01.4210109Z",
+                        "name":  "主画面标记",
+                        "childHwnd":  2427012,
+                        "x":  1228,
+                        "y":  632,
+                        "mechanism":  "foreground and owning-PID checked native mouse"
+                    },
+                    {
+                        "utc":  "2026-11-21T06:55:01.6552928Z",
+                        "name":  "小地图标记",
+                        "childHwnd":  1182856,
+                        "x":  1442,
+                        "y":  632,
+                        "mechanism":  "foreground and owning-PID checked native mouse"
+                    }
+                ],
+    "scope":  "native control actions only; settings and rendering require independent observations"
+}

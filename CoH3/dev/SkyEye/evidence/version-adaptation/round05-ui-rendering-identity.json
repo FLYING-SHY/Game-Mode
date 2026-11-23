@@ -1,0 +1,29 @@
+﻿{
+    "utc":  "2026-11-21T00:59:19.9144346Z",
+    "mode":  "candidate_maintenance_normal_login",
+    "client":  {
+                   "pid":  23716,
+                   "startUtc":  "2026-11-21T00:54:00.0261884Z",
+                   "exe":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-ui\\bin\\Release\\net48\\SkyEye.Maintenance.UI.Unverified.exe",
+                   "sha256":  "3FE10E1295B6C5F6E5C49A22C3BBF2C55C3F421B52C09A7C83116AB7393F0E88"
+               },
+    "game":  {
+                 "pid":  31572,
+                 "startUtc":  "2026-11-20T18:44:29.8492330Z",
+                 "path":  "G:\\SteamLibrary\\steamapps\\common\\Company of Heroes 3\\RelicCoH3.exe",
+                 "sha256":  "8A3445292255D652C8DBE9B53F24328AF159C161BE89836BA54EF070946DD3EC",
+                 "moduleBase":  140701576593408,
+                 "moduleSize":  120369152
+             },
+    "layout":  {
+                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\GameLayout52426.cs",
+                   "sha256":  "77C44EFFBF42D9F6300CFD41E753712BED85E551B487F4DB1A779DF528DC8D92"
+               },
+    "testPreferenceChange":  "Only maintenance-ui overlay-settings squadMarkers=0 to1; backup round05-before-world-on-settings.txt; restore after test",
+    "sourceBuildReport":  "CoH3/dev/SkyEye/tests/maintenance-ui/build-report.json",
+    "notClaimed":  [
+                       "whole_feature_pass",
+                       "new_baseline",
+                       "protected_delivery"
+                   ]
+}

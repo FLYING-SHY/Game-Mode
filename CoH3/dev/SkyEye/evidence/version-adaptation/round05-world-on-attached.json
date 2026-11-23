@@ -1,0 +1,62 @@
+{
+  "utc": "2026-11-21T00:56:58.505342+00:00",
+  "pid": 23716,
+  "tag": "round05-world-on-attached",
+  "windows": [
+    {
+      "hwnd": 7801622,
+      "isControlPanel": false,
+      "rect": [
+        8,
+        61,
+        1928,
+        1141
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\round05-world-on-attached-7801622.png"
+    },
+    {
+      "hwnd": 658888,
+      "isControlPanel": false,
+      "rect": [
+        66,
+        69,
+        1870,
+        163
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\round05-world-on-attached-658888.png"
+    },
+    {
+      "hwnd": 331162,
+      "isControlPanel": false,
+      "rect": [
+        8,
+        61,
+        1928,
+        1141
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\round05-world-on-attached-331162.png"
+    },
+    {
+      "hwnd": 2820452,
+      "isControlPanel": false,
+      "rect": [
+        8,
+        61,
+        1928,
+        1141
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\round05-world-on-attached-2820452.png"
+    },
+    {
+      "hwnd": 3672474,
+      "isControlPanel": true,
+      "rect": [
+        540,
+        221,
+        2020,
+        1171
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\round05-world-on-attached-3672474.png"
+    }
+  ]
+}

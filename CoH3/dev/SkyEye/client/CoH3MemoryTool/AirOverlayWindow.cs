@@ -35,7 +35,9 @@ internal sealed class AirOverlayWindow : Form
 
 	private volatile SquadMarkerPreferences settings;
 
-	private volatile MarkerScene scene;
+	private readonly ScenePublication<MarkerScene> scene = new ScenePublication<MarkerScene>();
+
+	private long connectionGeneration = -1;
 
 	private PrecisionFrameClock clock;
 
@@ -262,7 +264,8 @@ internal sealed class AirOverlayWindow : Form
 
 	public void Publish(MarkerScene p)
 	{
-		scene = p;
+		scene.Publish(p);
+		if (p == null) Interlocked.Exchange(ref testUntil, 0L);
 		if (clock != null)
 		{
 			clock.RequestNow();
@@ -290,6 +293,7 @@ internal sealed class AirOverlayWindow : Form
 		reader = null;
 		match = null;
 		zones.Clear();
+		diagnosticZones.Clear();
 		minimap = null;
 		tacticalMap51 = null;
 		nextRead = (nextMap = 0.0);
@@ -319,7 +323,12 @@ internal sealed class AirOverlayWindow : Form
 
 	private void Frame()
 	{
-		MarkerScene markerScene = scene;
+		MarkerScene markerScene = scene.Capture(out long generation);
+		if (connectionGeneration != generation)
+		{
+			Drop();
+			connectionGeneration = generation;
+		}
 		AirPreferences air = settings.Air;
 		if (!LicenseGate60.Allowed)
 		{
@@ -434,15 +443,22 @@ internal sealed class AirOverlayWindow : Form
 			{
 				AirDrawing.Minimap(surface.Graphics, zones, tacticalMap51, air, r.Right, r.Bottom, miniFont);
 			}
-			if (!base.Visible)
+			if (!scene.TryPresent(generation, delegate
 			{
-				Show();
+				if (!base.Visible)
+				{
+					Show();
+				}
+				surface.Present(base.Handle, p);
+				SetWindowPos(base.Handle, new IntPtr(-1), 0, 0, 0, 0, 19u);
+				TraceState("绘制正常");
+				LastError = "";
+				errors = 0;
+			}))
+			{
+				Drop();
+				Pause();
 			}
-			surface.Present(base.Handle, p);
-			SetWindowPos(base.Handle, new IntPtr(-1), 0, 0, 0, 0, 19u);
-			TraceState("绘制正常");
-			LastError = "";
-			errors = 0;
 		}
 		catch (Exception ex)
 		{

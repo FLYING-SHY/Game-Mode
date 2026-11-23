@@ -1,0 +1,10 @@
+﻿{
+    "name":  "主画面标记",
+    "type":  "ControlType.Pane",
+    "enabled":  true,
+    "offscreen":  false,
+    "rect":  "878,300,210,30",
+    "action":  "foreground_checked_click",
+    "utc":  "2026-11-21T03:30:36.0693669Z",
+    "windowHandle":  5113760
+}

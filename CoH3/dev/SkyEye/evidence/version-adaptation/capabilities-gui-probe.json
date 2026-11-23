@@ -1,0 +1,43 @@
+{
+  "pid": 11192,
+  "hwnd": 4982018,
+  "title": "Company of Heroes 3 -print_turn_action_log_continuously -turn_soft_lock_detection_seconds 60",
+  "rect": [
+    -1219,
+    157,
+    717,
+    1276
+  ],
+  "visible": true,
+  "minimized": false,
+  "foregroundHwnd": 3607402,
+  "libraries": {
+    "PIL": true,
+    "pyautogui": false,
+    "pywinauto": false,
+    "mss": false,
+    "win32gui": true,
+    "pydirectinput": false
+  },
+  "inputExportsPresentNotInvoked": {
+    "SendInput": true,
+    "SetForegroundWindow": true,
+    "GetClientRect": true
+  },
+  "printWindowReturn": 1,
+  "imageExtrema": [
+    [
+      0,
+      255
+    ],
+    [
+      0,
+      255
+    ],
+    [
+      0,
+      255
+    ]
+  ],
+  "screenshot": "capabilities-game-window.png"
+}

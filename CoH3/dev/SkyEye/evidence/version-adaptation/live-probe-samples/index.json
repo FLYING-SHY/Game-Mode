@@ -1,0 +1,87 @@
+{
+ "scope": "read-only live-process samples of RelicCoH3.exe (pid 16556) taken with CoH3/dev/SkyEye/evidence/version-adaptation/live_probe.py and with the per-build decision harness built from the client sources",
+ "gameExe": "G:/SteamLibrary/steamapps/common/Company of Heroes 3/RelicCoH3.exe",
+ "gameExeSha256": "8A3445292255D652C8DBE9B53F24328AF159C161BE89836BA54EF070946DD3EC",
+ "newLayoutRvas": {
+  "resource": 112926416,
+  "arena": 102268480,
+  "world": 98623180
+ },
+ "legacyRvas": {
+  "resource": 112918560,
+  "arena": 102260400,
+  "world": 98614988
+ },
+ "samples": [
+  {
+   "file": "live-new-roots-1823-mainmenu.json",
+   "description": "18:23 主菜单态，新表根（resource/arena/world 均取新版 RVA）",
+   "bytes": 3435,
+   "sha256": "8120DDDC112018D0F4C88B743551727DF44F535E413CB6CAA9BD8F8C9BED9DCC",
+   "captured": 1795256588.9460056
+  },
+  {
+   "file": "live-legacy-roots-1823-mainmenu.json",
+   "description": "18:23 主菜单态，旧偏移（同一进程、同一读法）",
+   "bytes": 642,
+   "sha256": "1AB4189AD1D227080943E5815A084E6C83BFC82E95B66BD73E8A2F2DB781A275",
+   "captured": 1795256589.0153542
+  },
+  {
+   "file": "live-new-roots-1835-match1.json",
+   "description": "18:38 第一局对局中，新表根，8 名玩家",
+   "bytes": 294951,
+   "sha256": "F6AE852F779836E5EE93A63F9F133F201B82159DEDF15E6B96A1967123297471",
+   "captured": 1795257515.4246778
+  },
+  {
+   "file": "live-legacy-roots-1838-match1.json",
+   "description": "18:38 第一局对局中，旧偏移（同一进程、同一读法）",
+   "bytes": 642,
+   "sha256": "E756502A8F8E897CEC183C8309DEAB410B372F3AE97EB1CEA7EA9DB75D8BF8C3",
+   "captured": 1795257515.4973166
+  },
+  {
+   "file": "live-new-roots-1922-match2.json",
+   "description": "19:22 第二局对局中，新表根，8 名玩家",
+   "bytes": 482256,
+   "sha256": "439504D7BBB926839DF477D777D6DA0E9AC566A9538CEB8DA49C651DAFE38594",
+   "captured": 1795260164.448569
+  },
+  {
+   "file": "probe-digest-52426.json",
+   "description": "按 build 判定 harness：指纹 8a3445…d3ec",
+   "bytes": 187,
+   "sha256": "F9C0BE614F5DD6363170EB57DF65F15F4C220D50578E8FDBF49B7183A8E3F9EB",
+   "captured": 1795257541.582927
+  },
+  {
+   "file": "probe-digest-2406.json",
+   "description": "按 build 判定 harness：指纹 2406b3ee…cde",
+   "bytes": 186,
+   "sha256": "0CF4A515B555A3CA97E4C461F0D5820EC24F8EA4CE2D635C981904D72BF5B33A",
+   "captured": 1795257541.6176476
+  },
+  {
+   "file": "probe-digest-unknown.json",
+   "description": "按 build 判定 harness：未知指纹 → 拒绝",
+   "bytes": 269,
+   "sha256": "3D1E2E5BE345D0CF2FBFD943134DF685A19FA2981D6E2023C15F68BC539EDBBF",
+   "captured": 1795257541.647843
+  },
+  {
+   "file": "probe-file-52426.json",
+   "description": "按 build 判定 harness：直接对游戏主程序文件取指纹",
+   "bytes": 187,
+   "sha256": "10C510F657F72A49A58A7D06F76DFED10C5902339B473D7A9C86F9F7813868CB",
+   "captured": 1795257541.5483994
+  },
+  {
+   "file": "probe-roles-52426.jsonl",
+   "description": "按 build 判定 harness：37 个角色的解析一致性",
+   "bytes": 149,
+   "sha256": "A0D696F7AC452566231334D90BB500D380C7B34C6B99C6CBBB4F7AC2554D13C8",
+   "captured": 1795257541.693197
+  }
+ ]
+}

@@ -1,0 +1,1345 @@
+{
+  "timestamp": "2026-11-20T17:18:25.129619+00:00",
+  "pid": 11192,
+  "moduleBase": "0x7ff7a37e0000",
+  "access": "0x410 read only",
+  "status": "candidate_not_baseline",
+  "searchStartRva": "0x6188840",
+  "searchEndRva": "0x63ae640",
+  "searchRanges": [
+    [
+      "0x6188840",
+      65536
+    ],
+    [
+      "0x6198840",
+      65536
+    ],
+    [
+      "0x61a8840",
+      65536
+    ],
+    [
+      "0x61b8840",
+      65536
+    ],
+    [
+      "0x61c8840",
+      65536
+    ],
+    [
+      "0x61d8840",
+      65536
+    ],
+    [
+      "0x61e8840",
+      65536
+    ],
+    [
+      "0x61f8840",
+      65536
+    ],
+    [
+      "0x6208840",
+      65536
+    ],
+    [
+      "0x6218840",
+      65536
+    ],
+    [
+      "0x6228840",
+      65536
+    ],
+    [
+      "0x6238840",
+      65536
+    ],
+    [
+      "0x6248840",
+      65536
+    ],
+    [
+      "0x6258840",
+      65536
+    ],
+    [
+      "0x6268840",
+      65536
+    ],
+    [
+      "0x6278840",
+      65536
+    ],
+    [
+      "0x6288840",
+      65536
+    ],
+    [
+      "0x6298840",
+      65536
+    ],
+    [
+      "0x62a8840",
+      65536
+    ],
+    [
+      "0x62b8840",
+      65536
+    ],
+    [
+      "0x62c8840",
+      65536
+    ],
+    [
+      "0x62d8840",
+      65536
+    ],
+    [
+      "0x62e8840",
+      65536
+    ],
+    [
+      "0x62f8840",
+      65536
+    ],
+    [
+      "0x6308840",
+      65536
+    ],
+    [
+      "0x6318840",
+      65536
+    ],
+    [
+      "0x6328840",
+      65536
+    ],
+    [
+      "0x6338840",
+      65536
+    ],
+    [
+      "0x6348840",
+      65536
+    ],
+    [
+      "0x6358840",
+      65536
+    ],
+    [
+      "0x6368840",
+      65536
+    ],
+    [
+      "0x6378840",
+      65536
+    ],
+    [
+      "0x6388840",
+      65536
+    ],
+    [
+      "0x6398840",
+      65536
+    ],
+    [
+      "0x63a8840",
+      24064
+    ]
+  ],
+  "queries": [
+    {
+      "name": ".?AVHealthExt@@",
+      "oldLookupRva": "0x628884a",
+      "positiveCount": 19,
+      "candidates": [
+        {
+          "lookupRva": "0x628a7ea",
+          "deltaFromOld": 8096,
+          "positiveCount": 19,
+          "mismatches": [],
+          "mapping": [
+            {
+              "type": 371,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 380,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 429,
+              "slot": 6,
+              "expected": 6
+            },
+            {
+              "type": 402,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 452,
+              "slot": 6,
+              "expected": 6
+            },
+            {
+              "type": 465,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 500,
+              "slot": 8,
+              "expected": 8
+            },
+            {
+              "type": 508,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 515,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 520,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 649,
+              "slot": 8,
+              "expected": 8
+            },
+            {
+              "type": 651,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 564,
+              "slot": 6,
+              "expected": 6
+            },
+            {
+              "type": 584,
+              "slot": 6,
+              "expected": 6
+            },
+            {
+              "type": 595,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 612,
+              "slot": 8,
+              "expected": 8
+            },
+            {
+              "type": 671,
+              "slot": 6,
+              "expected": 6
+            },
+            {
+              "type": 814,
+              "slot": 8,
+              "expected": 8
+            },
+            {
+              "type": 843,
+              "slot": 8,
+              "expected": 8
+            },
+            {
+              "type": 369,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 388,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 397,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 1000,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 941,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 969,
+              "slot": 6,
+              "expected": 6
+            },
+            {
+              "type": 991,
+              "slot": 8,
+              "expected": 8
+            },
+            {
+              "type": 864,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 1046,
+              "slot": 6,
+              "expected": 6
+            },
+            {
+              "type": 1107,
+              "slot": 5,
+              "expected": 5
+            },
+            {
+              "type": 1147,
+              "slot": 7,
+              "expected": 7
+            },
+            {
+              "type": 1155,
+              "slot": 4,
+              "expected": 4
+            },
+            {
+              "type": 1158,
+              "slot": 4,
+              "expected": 4
+            },
+            {
+              "type": 1193,
+              "slot": 8,
+              "expected": 8
+            },
+            {
+              "type": 1211,
+              "slot": 3,
+              "expected": 3
+            }
+          ]
+        }
+      ],
+      "candidateCount": 1
+    },
+    {
+      "name": ".?AVCombatExt@@",
+      "oldLookupRva": "0x628884b",
+      "positiveCount": 16,
+      "candidates": [
+        {
+          "lookupRva": "0x628a7f0",
+          "deltaFromOld": 8101,
+          "positiveCount": 16,
+          "mismatches": [
+            612
+          ],
+          "mapping": [
+            {
+              "type": 371,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 380,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 429,
+              "slot": 10,
+              "expected": 10
+            },
+            {
+              "type": 402,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 452,
+              "slot": 10,
+              "expected": 10
+            },
+            {
+              "type": 465,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 500,
+              "slot": 12,
+              "expected": 12
+            },
+            {
+              "type": 508,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 515,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 520,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 649,
+              "slot": 12,
+              "expected": 12
+            },
+            {
+              "type": 651,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 564,
+              "slot": 10,
+              "expected": 10
+            },
+            {
+              "type": 584,
+              "slot": 10,
+              "expected": 10
+            },
+            {
+              "type": 595,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 612,
+              "slot": 12,
+              "expected": 255
+            },
+            {
+              "type": 671,
+              "slot": 10,
+              "expected": 10
+            },
+            {
+              "type": 814,
+              "slot": 12,
+              "expected": 12
+            },
+            {
+              "type": 843,
+              "slot": 11,
+              "expected": 11
+            },
+            {
+              "type": 369,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 388,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 397,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 1000,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 941,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 969,
+              "slot": 10,
+              "expected": 10
+            },
+            {
+              "type": 991,
+              "slot": 12,
+              "expected": 12
+            },
+            {
+              "type": 864,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 1046,
+              "slot": 10,
+              "expected": 10
+            },
+            {
+              "type": 1107,
+              "slot": 9,
+              "expected": 9
+            },
+            {
+              "type": 1147,
+              "slot": 11,
+              "expected": 11
+            },
+            {
+              "type": 1155,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 1158,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 1193,
+              "slot": 12,
+              "expected": 12
+            },
+            {
+              "type": 1211,
+              "slot": 7,
+              "expected": 7
+            }
+          ]
+        }
+      ],
+      "candidateCount": 1
+    },
+    {
+      "name": ".?AVMovingExt@@",
+      "oldLookupRva": null,
+      "positiveCount": 8,
+      "candidates": [
+        {
+          "lookupRva": "0x628a7ed",
+          "deltaFromOld": null,
+          "positiveCount": 8,
+          "mismatches": [],
+          "mapping": [
+            {
+              "type": 371,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 380,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 429,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 402,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 452,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 465,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 500,
+              "slot": 10,
+              "expected": 10
+            },
+            {
+              "type": 508,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 515,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 520,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 649,
+              "slot": 10,
+              "expected": 10
+            },
+            {
+              "type": 651,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 564,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 584,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 595,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 612,
+              "slot": 10,
+              "expected": 10
+            },
+            {
+              "type": 671,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 814,
+              "slot": 10,
+              "expected": 10
+            },
+            {
+              "type": 843,
+              "slot": 10,
+              "expected": 10
+            },
+            {
+              "type": 369,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 388,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 397,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 1000,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 941,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 969,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 991,
+              "slot": 10,
+              "expected": 10
+            },
+            {
+              "type": 864,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 1046,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 1107,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 1147,
+              "slot": 9,
+              "expected": 9
+            },
+            {
+              "type": 1155,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 1158,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 1193,
+              "slot": 10,
+              "expected": 10
+            },
+            {
+              "type": 1211,
+              "slot": 255,
+              "expected": 255
+            }
+          ]
+        }
+      ],
+      "candidateCount": 1
+    },
+    {
+      "name": ".?AVAbilityExt@@",
+      "oldLookupRva": "0x6288855",
+      "positiveCount": 13,
+      "candidates": [
+        {
+          "lookupRva": "0x628a7f5",
+          "deltaFromOld": 8096,
+          "positiveCount": 13,
+          "mismatches": [],
+          "mapping": [
+            {
+              "type": 371,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 380,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 429,
+              "slot": 12,
+              "expected": 12
+            },
+            {
+              "type": 402,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 452,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 465,
+              "slot": 7,
+              "expected": 7
+            },
+            {
+              "type": 500,
+              "slot": 15,
+              "expected": 15
+            },
+            {
+              "type": 508,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 515,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 520,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 649,
+              "slot": 15,
+              "expected": 15
+            },
+            {
+              "type": 651,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 564,
+              "slot": 12,
+              "expected": 12
+            },
+            {
+              "type": 584,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 595,
+              "slot": 8,
+              "expected": 8
+            },
+            {
+              "type": 612,
+              "slot": 15,
+              "expected": 15
+            },
+            {
+              "type": 671,
+              "slot": 12,
+              "expected": 12
+            },
+            {
+              "type": 814,
+              "slot": 14,
+              "expected": 14
+            },
+            {
+              "type": 843,
+              "slot": 14,
+              "expected": 14
+            },
+            {
+              "type": 369,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 388,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 397,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 1000,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 941,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 969,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 991,
+              "slot": 14,
+              "expected": 14
+            },
+            {
+              "type": 864,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 1046,
+              "slot": 12,
+              "expected": 12
+            },
+            {
+              "type": 1107,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 1147,
+              "slot": 14,
+              "expected": 14
+            },
+            {
+              "type": 1155,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 1158,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 1193,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 1211,
+              "slot": 255,
+              "expected": 255
+            }
+          ]
+        }
+      ],
+      "candidateCount": 1
+    },
+    {
+      "name": ".?AVWeaponExt@@",
+      "oldLookupRva": null,
+      "positiveCount": 10,
+      "candidates": [
+        {
+          "lookupRva": "0x628a831",
+          "deltaFromOld": null,
+          "positiveCount": 10,
+          "mismatches": [],
+          "mapping": [
+            {
+              "type": 371,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 380,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 429,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 402,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 452,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 465,
+              "slot": 16,
+              "expected": 16
+            },
+            {
+              "type": 500,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 508,
+              "slot": 8,
+              "expected": 8
+            },
+            {
+              "type": 515,
+              "slot": 7,
+              "expected": 7
+            },
+            {
+              "type": 520,
+              "slot": 6,
+              "expected": 6
+            },
+            {
+              "type": 649,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 651,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 564,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 584,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 595,
+              "slot": 14,
+              "expected": 14
+            },
+            {
+              "type": 612,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 671,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 814,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 843,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 369,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 388,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 397,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 1000,
+              "slot": 14,
+              "expected": 14
+            },
+            {
+              "type": 941,
+              "slot": 9,
+              "expected": 9
+            },
+            {
+              "type": 969,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 991,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 864,
+              "slot": 7,
+              "expected": 7
+            },
+            {
+              "type": 1046,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 1107,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 1147,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 1155,
+              "slot": 9,
+              "expected": 9
+            },
+            {
+              "type": 1158,
+              "slot": 8,
+              "expected": 8
+            },
+            {
+              "type": 1193,
+              "slot": 255,
+              "expected": 255
+            },
+            {
+              "type": 1211,
+              "slot": 255,
+              "expected": 255
+            }
+          ]
+        }
+      ],
+      "candidateCount": 1
+    }
+  ],
+  "poolComparisons": [
+    {
+      "globalRva": "0x6187dd0",
+      "payload": "0x17c62950000",
+      "equalToE70Types": [
+        371,
+        380,
+        429,
+        402,
+        452,
+        465,
+        500,
+        508,
+        515,
+        520,
+        649,
+        651,
+        564,
+        584,
+        595,
+        612,
+        671,
+        814,
+        843,
+        369,
+        388,
+        397,
+        1000,
+        941,
+        969,
+        991,
+        864,
+        1046,
+        1107,
+        1147,
+        1155,
+        1193,
+        1211
+      ],
+      "differentOrFailedTypes": [
+        1158
+      ]
+    },
+    {
+      "globalRva": "0x6187dd8",
+      "payload": "0x17c87730000",
+      "equalToE70Types": [
+        371,
+        380,
+        429,
+        402,
+        452,
+        465,
+        500,
+        508,
+        515,
+        520,
+        649,
+        651,
+        564,
+        584,
+        595,
+        612,
+        671,
+        814,
+        843,
+        369,
+        388,
+        397,
+        1000,
+        941,
+        969,
+        991,
+        864,
+        1046,
+        1107,
+        1147,
+        1155,
+        1193,
+        1211
+      ],
+      "differentOrFailedTypes": [
+        1158
+      ]
+    },
+    {
+      "globalRva": "0x6187e70",
+      "payload": "0x17c53000000",
+      "equalToE70Types": [
+        371,
+        380,
+        429,
+        402,
+        452,
+        465,
+        500,
+        508,
+        515,
+        520,
+        649,
+        651,
+        564,
+        584,
+        595,
+        612,
+        671,
+        814,
+        843,
+        369,
+        388,
+        397,
+        1000,
+        941,
+        969,
+        991,
+        864,
+        1046,
+        1107,
+        1147,
+        1155,
+        1158,
+        1193,
+        1211
+      ],
+      "differentOrFailedTypes": []
+    },
+    {
+      "globalRva": "0x6187e78",
+      "payload": "0x17c62950000",
+      "equalToE70Types": [
+        371,
+        380,
+        429,
+        402,
+        452,
+        465,
+        500,
+        508,
+        515,
+        520,
+        649,
+        651,
+        564,
+        584,
+        595,
+        612,
+        671,
+        814,
+        843,
+        369,
+        388,
+        397,
+        1000,
+        941,
+        969,
+        991,
+        864,
+        1046,
+        1107,
+        1147,
+        1155,
+        1193,
+        1211
+      ],
+      "differentOrFailedTypes": [
+        1158
+      ]
+    },
+    {
+      "globalRva": "0x6187e80",
+      "payload": "0x17c7ff30000",
+      "equalToE70Types": [
+        371,
+        380,
+        429,
+        402,
+        452,
+        465,
+        500,
+        508,
+        515,
+        520,
+        649,
+        651,
+        564,
+        584,
+        595,
+        612,
+        671,
+        814,
+        843,
+        369,
+        388,
+        397,
+        1000,
+        941,
+        969,
+        991,
+        864,
+        1046,
+        1107,
+        1147,
+        1155,
+        1193,
+        1211
+      ],
+      "differentOrFailedTypes": [
+        1158
+      ]
+    },
+    {
+      "globalRva": "0x6187e88",
+      "payload": "0x17c62950000",
+      "equalToE70Types": [
+        371,
+        380,
+        429,
+        402,
+        452,
+        465,
+        500,
+        508,
+        515,
+        520,
+        649,
+        651,
+        564,
+        584,
+        595,
+        612,
+        671,
+        814,
+        843,
+        369,
+        388,
+        397,
+        1000,
+        941,
+        969,
+        991,
+        864,
+        1046,
+        1107,
+        1147,
+        1155,
+        1193,
+        1211
+      ],
+      "differentOrFailedTypes": [
+        1158
+      ]
+    }
+  ],
+  "bytesRead": 2566504,
+  "errors": [],
+  "limitations": [
+    "RTTI slot assumptions derive from prior same PID snapshot; max slot31 prevents common neighboring allocation spill but is not an independently proven slot count",
+    "Absence expected FF inferred from no RTTI slot in first32; high slot may be present",
+    "Table matches do not establish runtime caller linkage or process restart stability"
+  ]
+}

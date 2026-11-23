@@ -1,0 +1,173 @@
+{
+  "schema": "coh3-historical-hud-route-comparison-v1",
+  "index": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\session-lifecycle-20261122\\round3-live\\round3-v4-observation-index.json",
+  "indexSha256": "77ee4ce6c610a22219385bb749f034e1ac495ad826828cfe2e567f152c9cb483",
+  "module": {
+    "path": "G:\\SteamLibrary\\steamapps\\common\\Company of Heroes 3\\RelicCoH3.exe",
+    "sha256": "8a3445292255d652c8dbe9b53f24328af159c161be89836ba54ef070946dd3ec",
+    "fileBytes": 108391096,
+    "imageSize": 120369152,
+    "base": "0x7ff6985b0000",
+    "fileStableDuringHash": true
+  },
+  "reports": [
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\live-round3\\pid30504-paused-001.json",
+      "sha256": "ba29370662feeab744da3fa20cbf3812eb69ae5d9b2fd79fcf7f63f4591696fd",
+      "bytes": 5031347,
+      "traceCount": 6,
+      "allRoutesEqualWithinReport": true,
+      "rootToHudRoute": [
+        {
+          "parentTypeRva": "0x3dd4bf0",
+          "childTypeRva": "0x3dddca0",
+          "inlineOffset": 472,
+          "vectorIndex": null
+        },
+        {
+          "parentTypeRva": "0x3dddca0",
+          "childTypeRva": "0x3edf650",
+          "inlineOffset": 200,
+          "vectorIndex": null
+        },
+        {
+          "parentTypeRva": "0x3edf650",
+          "childTypeRva": "0x3ddfcd0",
+          "inlineOffset": 496,
+          "vectorIndex": null
+        },
+        {
+          "parentTypeRva": "0x3ddfcd0",
+          "childTypeRva": "0x3d857e0",
+          "inlineOffset": 200,
+          "vectorIndex": null
+        },
+        {
+          "parentTypeRva": "0x3d857e0",
+          "childTypeRva": "0x3edf650",
+          "inlineOffset": null,
+          "vectorIndex": 7
+        },
+        {
+          "parentTypeRva": "0x3edf650",
+          "childTypeRva": "0x3d9e730",
+          "inlineOffset": 496,
+          "vectorIndex": null
+        },
+        {
+          "parentTypeRva": "0x3d9e730",
+          "childTypeRva": "0x3d857e0",
+          "inlineOffset": 200,
+          "vectorIndex": null
+        },
+        {
+          "parentTypeRva": "0x3d857e0",
+          "childTypeRva": "0x3e72570",
+          "inlineOffset": 200,
+          "vectorIndex": null
+        },
+        {
+          "parentTypeRva": "0x3e72570",
+          "childTypeRva": "0x3d857e0",
+          "inlineOffset": 200,
+          "vectorIndex": null
+        },
+        {
+          "parentTypeRva": "0x3d857e0",
+          "childTypeRva": "0x3ddfcd0",
+          "inlineOffset": null,
+          "vectorIndex": 0
+        },
+        {
+          "parentTypeRva": "0x3ddfcd0",
+          "childTypeRva": "0x3eac6b0",
+          "inlineOffset": 200,
+          "vectorIndex": null
+        }
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v4\\live-round3\\pid30504-second-paused-ref-paused-001.json",
+      "sha256": "950b7254e1508bf4e5301bf18a6346897735f88daed40b8089702d674e56ff1e",
+      "bytes": 4992125,
+      "traceCount": 6,
+      "allRoutesEqualWithinReport": true,
+      "rootToHudRoute": [
+        {
+          "parentTypeRva": "0x3dd4bf0",
+          "childTypeRva": "0x3dddca0",
+          "inlineOffset": 472,
+          "vectorIndex": null
+        },
+        {
+          "parentTypeRva": "0x3dddca0",
+          "childTypeRva": "0x3edf650",
+          "inlineOffset": 200,
+          "vectorIndex": null
+        },
+        {
+          "parentTypeRva": "0x3edf650",
+          "childTypeRva": "0x3ddfcd0",
+          "inlineOffset": 496,
+          "vectorIndex": null
+        },
+        {
+          "parentTypeRva": "0x3ddfcd0",
+          "childTypeRva": "0x3d857e0",
+          "inlineOffset": 200,
+          "vectorIndex": null
+        },
+        {
+          "parentTypeRva": "0x3d857e0",
+          "childTypeRva": "0x3edf650",
+          "inlineOffset": null,
+          "vectorIndex": 7
+        },
+        {
+          "parentTypeRva": "0x3edf650",
+          "childTypeRva": "0x3d9e730",
+          "inlineOffset": 496,
+          "vectorIndex": null
+        },
+        {
+          "parentTypeRva": "0x3d9e730",
+          "childTypeRva": "0x3d857e0",
+          "inlineOffset": 200,
+          "vectorIndex": null
+        },
+        {
+          "parentTypeRva": "0x3d857e0",
+          "childTypeRva": "0x3e72570",
+          "inlineOffset": 200,
+          "vectorIndex": null
+        },
+        {
+          "parentTypeRva": "0x3e72570",
+          "childTypeRva": "0x3d857e0",
+          "inlineOffset": 200,
+          "vectorIndex": null
+        },
+        {
+          "parentTypeRva": "0x3d857e0",
+          "childTypeRva": "0x3ddfcd0",
+          "inlineOffset": null,
+          "vectorIndex": 0
+        },
+        {
+          "parentTypeRva": "0x3ddfcd0",
+          "childTypeRva": "0x3eac6b0",
+          "inlineOffset": 200,
+          "vectorIndex": null
+        }
+      ]
+    }
+  ],
+  "crossMatchRouteEqual": true,
+  "inputFilesUnchanged": true,
+  "nativeOrGuiCalls": 0,
+  "fixedIndexLocatorImplemented": false,
+  "sameHudAddressReuseObserved": false,
+  "phaseDecision": "not_evaluated",
+  "productAcceptance": false,
+  "limits": "Equality of recorded typed routes in these two paused observations only; vector positions are historical data, not a live discovery contract."
+}

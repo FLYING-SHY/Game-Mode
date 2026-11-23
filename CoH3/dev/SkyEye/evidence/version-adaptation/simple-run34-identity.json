@@ -1,0 +1,19 @@
+﻿{
+    "utc":  "2026-11-21T06:38:36.6496227Z",
+    "uiPid":  11632,
+    "uiStartUtc":  "2026-11-21T06:38:35.7755905Z",
+    "uiExe":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\bin\\Release\\net48\\COH3SimpleTool.Maintenance.UI.Unverified.exe",
+    "uiSha256":  "A169466A2CCF6B37354CE04562CE31C89CA7FA4AC9941F299E545B8BC65F6563",
+    "buildReportSha256":  "0757C53414A6FFD9FF47EE502E8C464D27AEBCC346ED4FB2E92F331D07C21C03",
+    "sourceManifestSha256":  "B8079C0E2FB068461CD2829D44253B1CFC2F9F8685176234C3BAD593F19DFB41",
+    "gamePid":  33656,
+    "gameStartUtc":  "2026-11-21T03:42:27.6605831Z",
+    "settingsExistedBefore":  false,
+    "settingsBeforeSha256":  {
+
+                             },
+    "authorization":  "normal unchanged application; no credential reads",
+    "scope":  "unverified Simple maintenance UI; native results-page observation and later lifecycle only",
+    "initialWindowTitle":  "COH3工具 · 激活",
+    "initialHwnd":  1838536
+}

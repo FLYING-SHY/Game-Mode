@@ -1,0 +1,18 @@
+﻿{
+    "CapturedAt":  "2026-11-22T10:45:55.2509382+08:00",
+    "ProcessId":  30504,
+    "Executable":  "G:\\SteamLibrary\\steamapps\\common\\Company of Heroes 3\\RelicCoH3.exe",
+    "WindowHandle":  1379546,
+    "WindowTitle":  "Company of Heroes 3 -print_turn_action_log_continuously -turn_soft_lock_detection_seconds 60",
+    "IsVisible":  true,
+    "Width":  2560,
+    "Height":  1440,
+    "ScreenshotSucceeded":  true,
+    "ScreenshotPath":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\session-lifecycle-20261122\\round3-live\\state-28-newgame-modes.png",
+    "TotalDescendants":  0,
+    "CapturedNodes":  0,
+    "Privacy":  "Edit/password values and long identifiers are omitted from the accessibility export; screenshot remains a local selected-window capture.",
+    "Nodes":  [
+
+              ]
+}

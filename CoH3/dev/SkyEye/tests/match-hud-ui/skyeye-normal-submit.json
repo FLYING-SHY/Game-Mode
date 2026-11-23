@@ -1,0 +1,12 @@
+﻿{
+    "schema":  "match-hud-normal-submit-v1",
+    "startedUtc":  "2026-11-22T03:48:54.0866275Z",
+    "returnedUtc":  "2026-11-22T03:48:54.1091632Z",
+    "pid":  36656,
+    "processStartUtc":  "2026-11-22T03:47:16.1251932Z",
+    "inputHwnd":  9308646,
+    "action":  "Return keydown/up on the existing masked textbox; public KeyDown handler calls Submit",
+    "credentialContentRead":  false,
+    "normalApiPath":  true,
+    "result":  "not_evaluated"
+}

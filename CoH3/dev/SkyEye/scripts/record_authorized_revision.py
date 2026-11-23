@@ -21,9 +21,35 @@ DECLARATIONS = {
     'CoH3/dev/SkyEye/delivery/client/天穹之眼-自有授权版-v0.60.8.exe.config':
         '交付包授权服务器地址改为 ' + BASE_URL,
     'CoH3/dev/SkyEye/delivery/client/天穹之眼-自有授权版-v0.60.8.exe':
-        '按新授权地址重建的受保护客户端可执行文件。',
+        '按新授权地址与 5.1.52426.0 版本适配重建的受保护客户端可执行文件。',
     'CoH3/output/SkyEye/SkyEye-HardenedV2-Client.zip':
-        '客户包按本授权修订重新签发：包内配置与受保护客户端指向 ' + BASE_URL + '。',
+        '客户包按本授权修订重新签发：包内配置指向 ' + BASE_URL + '，并包含 5.1.52426.0 版本适配后的受保护客户端。',
+    'CoH3/dev/SkyEye/client/CoH3MemoryTool/GameVersion45.cs':
+        '新增 5.1.52426.0（3.0.2.52426）游戏主程序指纹与构建判定；指纹不符时暂停结构依赖功能并提示待适配。',
+    'CoH3/dev/SkyEye/client/CoH3MemoryTool/PlayerInfoReader.cs':
+        '按检测到的构建分派布局：52426 使用新版资源根、世界偏移与竞技场表，旧构建继续使用原偏移。',
+    'CoH3/dev/SkyEye/client/CoH3MemoryTool/AirLogic.cs':
+        '空中单位读取随构建分派新版资源根与偏移，避免套用旧版本 RVA。',
+    'CoH3/dev/SkyEye/client/CoH3MemoryTool/ProjectileLogic.cs':
+        '投射物解码新增按构建解析的 RVA 回调，新旧版本各自使用对应偏移。',
+    'CoH3/dev/SkyEye/client/CoH3MemoryTool/SupportCatalogue49.cs':
+        '支援装备目录校验新增按构建解析的 RVA 回调。',
+    'CoH3/dev/SkyEye/client/CoH3MemoryTool/MineOverlayWindow.cs':
+        '地雷提示在重新连接时清空上次错误，避免展示过期的读取失败原因。',
+    'CoH3/dev/SkyEye/client/CoH3MemoryTool/GameIdentityProvider60.cs':
+        '游戏身份读取在版本读取失败时同样判定为身份未确认，避免使用未验证进程的数据。',
+    'CoH3/dev/SkyEye/client/CoH3MemoryTool/OverlaySettingsForm.cs':
+        '设置面板按新的对局生命周期重建：会话数据统一清空（ClearSessionData）、对局上下文不可用时挂起轮询，并按快照接受玩家信息更新。',
+    'CoH3/dev/SkyEye/client/CoH3MemoryTool/AirOverlayWindow.cs':
+        '空中目标窗口改为按连接代次发布的场景快照，重连或对局结束后不再绘制上一局残留目标。',
+    'CoH3/dev/SkyEye/client/CoH3MemoryTool/ArmourProductionTracker.cs':
+        '护甲产出统计新增 Reset()，对局切换或重连时清空已统计目标。',
+    'CoH3/dev/SkyEye/client/CoH3MemoryTool/EnemySelection.cs':
+        '敌方选择新增 Reset()，对局切换时清空选择状态，避免跨局残留。',
+    'CoH3/dev/SkyEye/client/CoH3MemoryTool/MarkerReadContext.cs':
+        '标记读取上下文携带 MatchHudContext，HUD 层据此判断当前对局上下文是否可用。',
+    'CoH3/dev/SkyEye/client/CoH3MemoryTool/SquadMarkerWindow.cs':
+        '小队标记窗口改为按连接代次发布的场景快照，重连后不再绘制过期标记。',
     'LicensingSystem/server/LicenseService.cs':
         '跨机密文迁移容错与自愈；按用户要求增加单张及批量卡密事务删除，清理关联会话与激活请求并保留逐卡审计。',
     'LicensingSystem/server/ProtocolModels.cs':
@@ -39,7 +65,10 @@ DECLARATIONS = {
 }
 
 REASON = ('授权服务器由本机回环迁移到公网 124.220.147.56，交付包内的授权地址与可执行文件随之更新；'
-          '修复 Windows DPAPI 跨机密文导致的后台 503；按用户要求新增单张及批量卡密永久删除、整批事务清理与逐卡操作审计。')
+          '修复 Windows DPAPI 跨机密文导致的后台 503；按用户要求新增单张及批量卡密永久删除、整批事务清理与逐卡操作审计；'
+          '2026-11-21 按游戏 5.1.52426.0（3.0.2.52426）新增主程序指纹判定与按构建分派的布局读取，受保护客户端重建后重新签发客户包；'
+          '2026-11-23 客户端接入对局生命周期：标记读取上下文携带 MatchHudContext，空中目标与小队标记改为按连接代次发布的场景快照，'
+          '设置面板统一清空会话数据并在对局上下文不可用时挂起轮询。')
 
 
 def load(path):
@@ -81,8 +110,8 @@ def remapper():
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument('--out', default=str(R/'evidence/authorized-revision-2026-11-16.json'))
-    ap.add_argument('--revision-id', default='2026-11-16-cloud-licensing-endpoint')
+    ap.add_argument('--out', default=str(R/'evidence/authorized-revision-2026-11-23.json'))
+    ap.add_argument('--revision-id', default='2026-11-23-session-lifecycle-adaptation')
     args = ap.parse_args()
 
     remap = remapper()
@@ -118,6 +147,8 @@ def main():
         raise SystemExit('Expected the customer archive to be present as the revision baseline.')
     cleanup_validation = load(R/'evidence/cleanup-validation.json')
     cleanup_baseline = cleanup_validation['customerArchiveSha256']
+    previous_revision = R/'evidence/authorized-revision-2026-11-21.json'
+    previous_archive_sha = load(previous_revision)['clientArchive'].get('currentSha256') if previous_revision.is_file() else None
     latest = load(R/'evidence/latest-build.json')
     delivery_config = R/'delivery/client'/(Path(latest['Client']).name + '.config')
     if BASE_URL not in text(delivery_config):
@@ -138,8 +169,8 @@ def main():
             'baselineSha256': cleanup_baseline,
             'currentSha256': sha(client_zip),
             'authorized': True,
-            'reissueReason': '授权地址与受保护客户端已更新，客户包按本授权修订重新签发；cleanup 期的原始哈希保留用于追溯。',
-            'history': [h for h in dict.fromkeys([cleanup_baseline, sha(client_zip)])],
+            'reissueReason': '授权地址与 5.1.52426.0 版本适配后的受保护客户端已更新，客户包按本授权修订重新签发；cleanup 期的原始哈希与上一版修订哈希保留用于追溯。',
+            'history': [h for h in dict.fromkeys([cleanup_baseline, previous_archive_sha, sha(client_zip)]) if h],
         },
         'preservedOverrides': overrides,
     }

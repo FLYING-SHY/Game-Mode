@@ -1,0 +1,132 @@
+{
+  "timestamp": "2026-11-20T17:11:23.823669+00:00",
+  "pid": 11192,
+  "base": "0x7ff7a37e0000",
+  "verification": "hypothesis_not_verified",
+  "hypotheses": [
+    {
+      "rootRva": "0x6185fc8",
+      "error": "Invalid or unbounded read"
+    },
+    {
+      "rootRva": "0x6187f58",
+      "owner": "0x17e538329a0",
+      "begin": "0x17e6df636e0",
+      "end": "0x17e6df63748",
+      "candidates": [
+        {
+          "core": "0x17e6f185058",
+          "vtableRva": "-0x7e793465afa0",
+          "type": "�",
+          "locatorOffset": 4294967295,
+          "error": "ReadProcessMemory(0x40000,816) error=299 actual=0"
+        },
+        {
+          "core": "0x17e869aad98",
+          "error": "Invalid or unbounded read"
+        },
+        {
+          "core": "0x17e872aa058",
+          "error": "Invalid or unbounded read"
+        },
+        {
+          "core": "0x17e6ed4ce90",
+          "vtableRva": "0x3db1068",
+          "type": ".?AVGameUICore@UI@Relic@@",
+          "locatorOffset": 0,
+          "view": [
+            0.0,
+            0.6819984316825867,
+            0.7313537001609802,
+            0.0,
+            0.0,
+            0.7313537001609802,
+            -0.6819984316825867,
+            0.0,
+            -1.0,
+            1.0162568564453522e-08,
+            1.0898019375815693e-08,
+            0.0,
+            -160.0,
+            -86.25535583496094,
+            -26.298192977905273,
+            1.0
+          ],
+          "projection": [
+            0.9742785692214966,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.732050895690918,
+            0.0,
+            0.0,
+            -0.0,
+            -0.0,
+            1.000001072883606,
+            1.0,
+            0.0,
+            0.0,
+            -0.10000009834766388,
+            0.0
+          ],
+          "matrixInvariant": true,
+          "controller": {
+            "address": "0x17e6df63750",
+            "vtableRva": "0x3db0d68",
+            "type": ".?AVTeamColourManager@UI@Relic@@",
+            "locatorOffset": 0,
+            "identity": "0x3e8",
+            "mode": 0
+          }
+        },
+        {
+          "core": "0x17e3bf14188",
+          "vtableRva": "-0x7e79678cbe70",
+          "type": "�",
+          "locatorOffset": 4294967295,
+          "error": "ReadProcessMemory(0x1000000004c,816) error=299 actual=0"
+        },
+        {
+          "core": "0x17e6e1f9488",
+          "error": "Invalid or unbounded read"
+        },
+        {
+          "core": "0x17e872aa298",
+          "error": "Invalid or unbounded read"
+        },
+        {
+          "core": "0x17e872a9b18",
+          "error": "Invalid or unbounded read"
+        },
+        {
+          "core": "0x17f630d2cf8",
+          "error": "Invalid or unbounded read"
+        },
+        {
+          "core": "0x17e6de554d8",
+          "error": "Invalid or unbounded read"
+        },
+        {
+          "core": "0x17f634a7f78",
+          "vtableRva": "-0x7e783fce1ae0",
+          "type": "�\t/��\t���\t�\u0007�\b.��\t�\u0007�\b���\t�\u0007�\b.��\t�\u0007\t.��\t/�\u0017\t-��\t�\u0007�\b.��\tRich/��\t",
+          "locatorOffset": 382,
+          "error": "Invalid or unbounded read"
+        },
+        {
+          "core": "0x17cb17a9388",
+          "error": "ReadProcessMemory(0x40000003e,8) error=299 actual=0"
+        },
+        {
+          "core": "0x17e6f4b4728",
+          "error": "Invalid or unbounded read"
+        }
+      ]
+    },
+    {
+      "rootRva": "0x6187fc8",
+      "error": "Invalid or unbounded read"
+    }
+  ]
+}

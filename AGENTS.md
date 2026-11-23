@@ -12,7 +12,7 @@
   - `Build.ps1` / `Start-Server.ps1` / `Initialize-Signing.ps1` / `Publish-Server.ps1`：授权系统入口。
   - `output/`：服务端发布目录（`Publish-Server.ps1` 产出，Server.zip 打包根）。
 - `CoH3/`：英雄连3。每个游戏目录固定三区，新游戏照抄此模板：
-  - `original/`：别人的原版，冻结区。铁律：`**/original/**` 下永不写入、构建、清理。保护栈四层：① 全量清单 `CoH3/original/MANIFEST.sha256`；② 仓库根 `Verify-Original.ps1` 漂移校验；③ pre-commit 钩子拒绝 `**/original/**` 的一切 staged 变更（白名单 `original/MANIFEST.sha256`）；④ 全文件只读属性。
+  - `original/`：别人的原版，冻结区。铁律：`**/original/**` 下永不写入、构建、清理。保护栈四层：① 每游戏全量清单 `<Game>/original/MANIFEST.sha256`（CoH3 / BF6 各一份）；② 仓库根 `Verify-Original.ps1` 漂移校验（自动遍历所有 `<Game>/original` 冻结区）；③ pre-commit 钩子拒绝 `**/original/**` 的一切 staged 变更（白名单 `original/MANIFEST.sha256`）；④ 全文件只读属性。
     - `original/天穹之眼-v0.60.8/`：原始发布文件，保持原样。
   - `dev/`：自己开发的一切，一个方向（一条可独立发布的工具线）一个子目录：
     - `dev/SkyEye/`：天穹之眼当前唯一维护源码与发布工程（授权接入编译内嵌于客户端）。`client/`（net48/x64/WinForms，签名租约验签、公钥 pin `PinnedLeaseKey60.cs`）、`verification/`（受保护验证器在 `bin/Protected/net48`）、`delivery/client/`（Finalize.py 的解包打包 staging，dev 内唯一保留的 delivery）、`tools/obfuscar|ilspy`、`evidence/`、`reports/`、`artifacts/`、`Build.ps1` / `Build-Protected.ps1` / `Verify-Protected.ps1` / `Finalize.py` / `Summarize-Validation.py` 等入口。
@@ -20,6 +20,10 @@
   - `output/`：与 dev/ 一一对应的最终交付物（平铺、直接可用；文件名带 -Client/-Maintenance 区分客户/维护包）：
     - `output/SkyEye/`：`SkyEye-HardenedV2-{Client,Server,Maintenance}.zip` + `SkyEye-HardenedV2.archive-verification.json`。
     - `output/COH3SimpleTool/`：受保护 EXE + `.exe.config` + `overlay-settings.txt`。
+- `BF6/`：战地 6（Battlefield 6）。同样三区布局，授权产品标识 `Bf6Esp`（授权码哈希空间 `{Bf6Esp}|code-v1|`、设备指纹前缀 `{Bf6Esp}|device-v1|`），授权接入编译内嵌于客户端，复用 `LicensingSystem` 本体：
+  - `original/Battlefield6-Steam/`：冻结区只保留构建身份元数据（`BUILD-INFO.md` / `FILES.tsv` / `MANIFEST.sha256`，路径相对游戏安装根 `G:\SteamLibrary\steamapps\common\Battlefield 6`），游戏本体不入库；冻结清单 `BF6/original/MANIFEST.sha256` 相对仓库根。
+  - `dev/Bf6Esp/`：`client/`（net48/x64 WinForms、授权接入与公钥 pin）、`analysis/`（只读逆向探针与 RIP 引用缓存，可再生）、`docs/`（`ARCHITECTURE.md` / `STATUS.md` / `USER-GUIDE.md`）、`profiles/bf6-1.0.0.0.json`、入口 `Build.ps1`。
+  - `output/Bf6Esp/`：`Bf6Esp.exe` + `.exe.config` + `BUILD-INFO.json` + `overlay-settings.txt`。
 - 历史清理：旧 CoH3FowTool、SkyEye-v0.60.8-Recovered、SkyEye-Integration、SkyEye-Hardened 的代码及旧交付包已清理；`Licensing/` 已更名 `LicensingSystem/`；`SkyEye-HardenedV2` → `CoH3/SkyEye`（2026-11-13）→ `CoH3/dev/SkyEye`（2026-11-15）。不应从 Git 恢复旧名来补最新版依赖；确需旧记录时先查清理清单、重构清单（`CoH3/dev/SkyEye/evidence/`）及 Git 历史。
 
 ## 新增一个游戏

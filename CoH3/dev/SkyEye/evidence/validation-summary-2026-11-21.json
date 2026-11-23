@@ -1,0 +1,164 @@
+{
+  "generatedAt": "2026-11-21T12:08:26.574846+00:00",
+  "passed": true,
+  "serverChecksPassed": 195,
+  "serverChecksTotal": 195,
+  "serverTestRun": "20261121-101926-01b34cac",
+  "rawPassingModes": 7,
+  "releasePassingModes": 7,
+  "reactorTrialPassingModes": 7,
+  "rawSha256": "1DD98A5D97E1C61D60173BD5B55A116966F8537AB95C3B799362D75B0C5DD512",
+  "releaseSha256": "46CE9F7F7FD693C6577DFD05DC70FDD15368890131DB9778BF1B3DC75592ABD9",
+  "reactorTrialSha256": "6551EB5BF91CBB34D579590E4EA70C04FAC55F1A00BE6AF22EB3B3F348EB7F25",
+  "sources": {
+    "raw": "evidence\\raw-signed-20261121-194453\\summary.json",
+    "protected": "evidence\\protected-verification-20261121-194637-331.json",
+    "trial": "evidence\\reactor-client-trial\\seven-case-summary.json",
+    "serverResults": "LicensingSystem\\server-tests\\bin\\Release\\net10.0\\test-runs\\20261121-101926-01b34cac\\results.json",
+    "sessionCleanup": "evidence\\session-cleanup-cloud-20261121.json",
+    "realEntry": "evidence\\protected-real-entry-lifecycle-20261121.json",
+    "staticAnalysis": "evidence\\release-static-analysis-20261121\\summary.json",
+    "trialPixelBaseline": "verification\\sandbox\\raw-v2-20261116-154841-ui",
+    "releasePixelBaseline": "verification\\sandbox\\ui-pair-20261121-200800-raw",
+    "releasePixelFolder": "verification\\sandbox\\ui-pair-20261121-200800-release"
+  },
+  "pictures": [
+    {
+      "variant": "release",
+      "name": "main",
+      "size": [
+        1480,
+        950
+      ],
+      "changedPixels": 0,
+      "originalSha256": "a93150fffa736fcb081f9b1e01aeecbab22485550cfd1d69ba841c49b961fa56",
+      "comparedSha256": "a93150fffa736fcb081f9b1e01aeecbab22485550cfd1d69ba841c49b961fa56"
+    },
+    {
+      "variant": "release",
+      "name": "expanded",
+      "size": [
+        1480,
+        950
+      ],
+      "changedPixels": 0,
+      "originalSha256": "79c62c2bda8e7239af086be639a2a7687fe13b063864801ae718ca87c94c29b8",
+      "comparedSha256": "79c62c2bda8e7239af086be639a2a7687fe13b063864801ae718ca87c94c29b8"
+    },
+    {
+      "variant": "release",
+      "name": "compact",
+      "size": [
+        1180,
+        740
+      ],
+      "changedPixels": 0,
+      "originalSha256": "e405814352b8ca2e71e3f43b19d4cd8e8f81fefbcbe045df154d4087ac4f2cf7",
+      "comparedSha256": "e405814352b8ca2e71e3f43b19d4cd8e8f81fefbcbe045df154d4087ac4f2cf7"
+    },
+    {
+      "variant": "reactorTrial",
+      "name": "main",
+      "size": [
+        1480,
+        950
+      ],
+      "changedPixels": 0,
+      "originalSha256": "a93150fffa736fcb081f9b1e01aeecbab22485550cfd1d69ba841c49b961fa56",
+      "comparedSha256": "a93150fffa736fcb081f9b1e01aeecbab22485550cfd1d69ba841c49b961fa56"
+    },
+    {
+      "variant": "reactorTrial",
+      "name": "expanded",
+      "size": [
+        1480,
+        950
+      ],
+      "changedPixels": 0,
+      "originalSha256": "79c62c2bda8e7239af086be639a2a7687fe13b063864801ae718ca87c94c29b8",
+      "comparedSha256": "79c62c2bda8e7239af086be639a2a7687fe13b063864801ae718ca87c94c29b8"
+    },
+    {
+      "variant": "reactorTrial",
+      "name": "compact",
+      "size": [
+        1180,
+        740
+      ],
+      "changedPixels": 0,
+      "originalSha256": "e63494668cbb5652d7c0ae0229d00cf0c14a1269082fc4cf742ba9af59ca24dd",
+      "comparedSha256": "e63494668cbb5652d7c0ae0229d00cf0c14a1269082fc4cf742ba9af59ca24dd"
+    }
+  ],
+  "audio": [
+    {
+      "variant": "release",
+      "decodedFiles": 8,
+      "payloadsIdentical": true,
+      "audiblePlaybackTested": false
+    },
+    {
+      "variant": "reactorTrial",
+      "decodedFiles": 8,
+      "payloadsIdentical": true,
+      "audiblePlaybackTested": false
+    }
+  ],
+  "sessionCleanupChecks": 12,
+  "globalActiveSessions": 1,
+  "allowedForeignSessions": 1,
+  "foreignSessionNote": "One active session belongs to the operator own live client (COH3工具 pid 29688, started 2026-11-21T18:32:03) whose card is not part of any release fixture set (verified by code-id attribution against every evidence/*live-fixtures*.json). The release verification left no session behind: all 12 fixture cards are inactive.",
+  "realEntry": {
+    "Exe": "F:\\WorkSpace\\Game\\.local\\tmp-histprobe\\real-entry-20261121\\client\\天穹之眼-自有授权版-v0.60.8.exe",
+    "Sha256": "46CE9F7F7FD693C6577DFD05DC70FDD15368890131DB9778BF1B3DC75592ABD9",
+    "Pid": 10144,
+    "Started": "2026-11-21T19:56:56.2877933+08:00",
+    "WindowCaptured": true,
+    "Closed": true,
+    "WindowTitle": "天穹之眼 · 激活",
+    "WindowWidth": 706,
+    "WindowHeight": 509,
+    "ScreenshotSucceeded": true,
+    "CapturedNodes": 12,
+    "CaptureJson": "evidence/protected-real-entry-window-20261121b.json",
+    "CapturePng": "evidence/protected-real-entry-window-20261121b.png",
+    "ClientConfigBaseUrl": "http://127.0.0.1:47835/",
+    "Isolation": "sandbox copy of delivery/client/天穹之眼-自有授权版-v0.60.8.exe (byte-identical, sha256 unchanged); app.config base url repointed from https://124.220.147.56/ to an isolated loopback deployment (empty database leases-realentry.db, same signing keyring) so that the release run could not touch the operator's live cloud session or the live match",
+    "ExpectedOutcome": "activation rejected because the operator's card is absent from the empty isolated database; the client stays on the activation window and never attaches to a running game",
+    "ObservedOutcome": "activation window rendered (706x509, 12 accessibility nodes), screenshot captured, window closed via CloseMainWindow, process exited without error",
+    "CredentialsStoreUntouched": true,
+    "UserSessionDisruption": "none: the isolated endpoint never accepted the stored credential, so no overlay was drawn over the operator's running match; two short-lived sandbox instances were closed immediately after capture",
+    "DeviationFrom20261116": "2026-11-16 ran the delivered client against the production endpoint with a valid stored credential; this run uses an isolated loopback deployment because the operator's client was live and playing, so the cloud session and the running match could not be disturbed. The UI startup path, the delivery binary and the capture method are identical.",
+    "Notes": "A second sandbox instance started while the first was still up and was captured as the single-instance guard message box (evidence/protected-real-entry-window-20261121.json, title 天穹之眼 · 英雄连3, node 软件已在运行，请退出旧版后再打开新版。); that instance was closed and is not the real-entry record. Single-instance mutexes: Local\\SkyeyeSelfHostedControls (ControlsProgram.cs:21), Local\\SkyeyeSelfHostedOverlay (OverlayProgram.cs:29), Local\\COH3SimpleToolControls (SimpleProgram.cs:20) for the simple shell."
+  },
+  "releaseReaCounts": {
+    "types": 347,
+    "methods": 4061,
+    "fields": 1423,
+    "member_refs": 1571
+  },
+  "releaseIlspyExportExitCode": 0,
+  "releaseIlspyCSharpFiles": 56,
+  "protectedTiming": {
+    "activationHttpMs": 125,
+    "firstHeartbeatHttpMs": 191,
+    "heartbeatIntervalMs": 28203,
+    "networkGateClosedObservedMs": 54314
+  },
+  "timingSource": "protected-coordinator/network execution logs of the recorded run; elapsed values are wall time since harness startup, except interval subtraction",
+  "deployment": {
+    "baseUrl": "https://124.220.147.56/",
+    "transport": "TLS with a publicly trusted Let's Encrypt IP certificate",
+    "endpoint": "nginx 1.29.8 -> http://127.0.0.1:47835 (ASP.NET Core 10) on 124.220.147.56"
+  },
+  "limitations": [
+    "Reactor output is a 14-day demo experiment and excluded from every delivery archive.",
+    "ILSpy still exports release C#; obfuscation raises analysis cost.",
+    "Preview pixels and decoded audio do not prove live-game correctness or audible playback.",
+    "Public deployment, another machine, long sessions and protection patch resistance are not tested.",
+    "The .NET Reactor trial binary could not be rebuilt for the 2026-11-21 client because the vendor CLI is absent from this checkout; the reactorTrial comparison therefore still covers the 2026-11-13 trial artifact while the raw and release comparisons cover the 2026-11-21 binaries.",
+    "The cloud session count is compared against an explicit allowance of one foreign session (the operator own live client); every release fixture card is inactive.",
+    "The 2026-11-21 real entry capture ran against an isolated loopback deployment with an empty database so that the operator live match and cloud session were not disturbed.",
+    "The settings form under verification attaches to a running RelicCoH3 process, so the preview line paints live number colours; the release pixel comparison therefore uses a back to back capture of both builds (evidence/ui-pair-20261121-200800.json) instead of two suite runs separated in time."
+  ]
+}

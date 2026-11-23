@@ -1,0 +1,3176 @@
+{
+  "schema": "skyeye.gui-run29.layer-offline-validation.v1",
+  "createdUtc": "2026-11-21T04:15:10.714558+00:00",
+  "taskId": "task-8",
+  "reviewer": "air-raw-probe",
+  "status": "limited_GUI_evidence_review_complete_with_open_result_page_residual",
+  "scope": "offline saved run29 GUI layers and pre-restart lifecycle artifacts only",
+  "execution": {
+    "liveGuiOrGameOperations": 0,
+    "processQueriesOrAttachments": 0,
+    "authenticationOperations": 0,
+    "helperImportsOrExecution": 0,
+    "sourceChanges": 0,
+    "newFiles": [
+      "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-layer-validation.json",
+      "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-layer-live-report.md"
+    ]
+  },
+  "conclusions": {
+    "guiHideRestore": {
+      "status": "PASS_limited_GUI_window_capture",
+      "positiveTag": "gui-run29-enemy-view",
+      "worldHwnd": 3869816,
+      "offTag": "gui-run29-world-off",
+      "restoreTag": "gui-run29-world-restored",
+      "worldRestoredSha256": "4b5bd95052046264f87ab2e234bcb75ff9aa8e83c0cc3ad418a9d7b7e60247b7",
+      "unchangedMinimapSha256": "d42b00d35779bc710aec0d484a1ec2a413cc73546a9068b2522a552a59bc8bab",
+      "meaning": "visible enumeration hides and returns the world layer, with matching restored bytes; other listed layers retained"
+    },
+    "resultPageResidual": {
+      "status": "unresolved",
+      "gameScreenshot": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle02-first-menu-after-match.png",
+      "actualPage": "战绩/比赛数据/退出",
+      "overlayTag": "gui-run29-after-match-menu",
+      "remainingVisibleHwnds": [
+        3869816,
+        2230404,
+        986248,
+        5113760
+      ],
+      "oldWorldSha256": "4b5bd95052046264f87ab2e234bcb75ff9aa8e83c0cc3ad418a9d7b7e60247b7",
+      "oldTopSha256": "6eae852445959dc56ff9def3c9f2f8a21aa0669b79219b772fc67ebeb81c52a4",
+      "auxiliaryCapturedDrawing": "entire RGB frame black",
+      "panelObservation": "仍有已勾选敌方与旧统计；主画面开关为开"
+    },
+    "menuCleanup": {
+      "status": "observed",
+      "gameScreenshot": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle02-lobby-before-restart.png",
+      "actualPage": "主菜单：继续/开始游戏/装备库；版本3.0.2.52426",
+      "overlayTag": "gui-run29-lobby-before-restart",
+      "remainingVisibleHwnds": [
+        5113760
+      ],
+      "panelObservation": "敌方列表为空；未勾选敌方或尚无敌方数据，悬浮层已隐藏",
+      "closesResultPageResidual": false
+    },
+    "allFeaturesAcceptance": false,
+    "baselinePromoted": false,
+    "sameReaderOrGuiObjectProven": false
+  },
+  "recordedIdentity": {
+    "utc": "2026-11-21T03:16:36.5665564Z",
+    "gamePid": 31572,
+    "gameStartUtc": "2026-11-20T18:44:29.8492330Z",
+    "gameExeSha256": "8A3445292255D652C8DBE9B53F24328AF159C161BE89836BA54EF070946DD3EC",
+    "uiPid": 24288,
+    "uiStartUtc": "2026-11-21T03:16:36.5587055Z",
+    "uiExe": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-ui\\bin\\Release\\net48\\SkyEye.Maintenance.UI.Unverified.exe",
+    "uiSha256": "F06F3BD1625A45E314B20F4B6AB05EEF1C4DD871C15BCD0B062AB9A10D9946FA",
+    "buildReportSha256": "5B4E0DB6D2BDC0E6D946892670662BB9AE5CDC834B93F186D486C088AA613EE3",
+    "settingsBeforeSha256": "2D1460E714C11BEEC9BA495344D3C935377D51BB46811F8F9DD8D2AC5BA33727",
+    "diagnosticsLengthBefore": 4590,
+    "authorization": "normal_existing_application_no_credentials_read",
+    "scope": "maintenance_candidate_gui_only"
+  },
+  "identityChecks": {
+    "settingsBeforeHashVerified": true,
+    "stagePidsAgree": true,
+    "liveRequeryPerformed": false,
+    "recordedBinaryHashesIndependentlyRecomputed": false
+  },
+  "initialSettings": {
+    "squadMarkers": 0,
+    "file": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-before-settings.txt",
+    "sha256": "2d1460e714c11beec9ba495344d3c935377d51bb46811f8f9dd8d2ac5ba33727",
+    "otherRelevantValues": {
+      "enabled": "1",
+      "miniEnemy": "1",
+      "movementOn": "1",
+      "directionOn": "1",
+      "airOn": "1"
+    },
+    "afterSettingsSnapshotInInputs": false,
+    "afterEnablePrefsValueReportedByParentTask": 1,
+    "afterEnablePersistedValueIndependentlyVerified": false
+  },
+  "captureSemantics": {
+    "method": "sequential per-window PrintWindow(hwnd, dc, 2)",
+    "enumeration": "EnumWindows, selected PID and IsWindowVisible",
+    "isControlPanel": "bool(window title) heuristic in capture helper",
+    "tagUtc": "completion time after all per-window captures",
+    "desktopCompositeAvailable": false,
+    "sameReaderEvidence": false
+  },
+  "roleAttribution": {
+    "basis": "saved HWND/geometry, screenshot content and task labels; not a runtime class/object identity test",
+    "hwnds": {
+      "3869816": "world_markers",
+      "2689582": "minimap_markers",
+      "986248": "auxiliary_window_mine_label_unproven",
+      "2230404": "top_player_information",
+      "5113760": "control_panel"
+    }
+  },
+  "stages": [
+    {
+      "tag": "gui-run29-world-on",
+      "utc": "2026-11-21T03:17:28.276326+00:00",
+      "utcSemantics": "capture batch completion timestamp; individual window frames are sequential",
+      "pid": 24288,
+      "manifestPath": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-on.json",
+      "manifestSha256": "d1f9409f8e91e19882989df7d4b70cc50ec2e5323750b48468198b5af730704d",
+      "windows": [
+        {
+          "hwnd": 2230404,
+          "isControlPanel": false,
+          "rect": [
+            66,
+            69,
+            1870,
+            163
+          ],
+          "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-on-2230404.png",
+          "roleInThisReview": "top_player_information",
+          "bytes": 27917,
+          "sha256": "5c4876e6bd8cbd9f7f2a3951a2640228f33500c6c85c87c66fa9dd0e0c0399e0",
+          "imageSize": [
+            1804,
+            94
+          ],
+          "nonblackBounds": [
+            6,
+            8,
+            917,
+            82
+          ]
+        },
+        {
+          "hwnd": 2689582,
+          "isControlPanel": false,
+          "rect": [
+            8,
+            61,
+            1928,
+            1141
+          ],
+          "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-on-2689582.png",
+          "roleInThisReview": "minimap_markers",
+          "bytes": 8039,
+          "sha256": "d42b00d35779bc710aec0d484a1ec2a413cc73546a9068b2522a552a59bc8bab",
+          "imageSize": [
+            1920,
+            1080
+          ],
+          "nonblackBounds": [
+            127,
+            734,
+            284,
+            901
+          ]
+        },
+        {
+          "hwnd": 986248,
+          "isControlPanel": false,
+          "rect": [
+            8,
+            61,
+            1928,
+            1141
+          ],
+          "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-on-986248.png",
+          "roleInThisReview": "auxiliary_window_mine_label_unproven",
+          "bytes": 6823,
+          "sha256": "6199b53308c7f8d4b58f14b065d9cf476b66a0dd16ba361e71a86c54ab52bbf6",
+          "imageSize": [
+            1920,
+            1080
+          ],
+          "nonblackBounds": [
+            1815,
+            164,
+            1864,
+            185
+          ]
+        },
+        {
+          "hwnd": 5113760,
+          "isControlPanel": true,
+          "rect": [
+            540,
+            221,
+            2020,
+            1171
+          ],
+          "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-on-5113760.png",
+          "roleInThisReview": "control_panel",
+          "bytes": 144558,
+          "sha256": "5183bfe745718c3340a1ddac0df455d41c2d2a3d3c4648e491f370ee57286c88",
+          "imageSize": [
+            1480,
+            950
+          ],
+          "nonblackBounds": [
+            0,
+            0,
+            1480,
+            950
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "gui-run29-world-enabled",
+      "utc": "2026-11-21T03:26:53.926882+00:00",
+      "utcSemantics": "capture batch completion timestamp; individual window frames are sequential",
+      "pid": 24288,
+      "manifestPath": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-enabled.json",
+      "manifestSha256": "634cced65d082c8ceac8b5d262f8eb99449060b296349ac6aab38026c6bc10e0",
+      "windows": [
+        {
+          "hwnd": 2230404,
+          "isControlPanel": false,
+          "rect": [
+            66,
+            69,
+            1870,
+            163
+          ],
+          "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-enabled-2230404.png",
+          "roleInThisReview": "top_player_information",
+          "bytes": 27630,
+          "sha256": "6eae852445959dc56ff9def3c9f2f8a21aa0669b79219b772fc67ebeb81c52a4",
+          "imageSize": [
+            1804,
+            94
+          ],
+          "nonblackBounds": [
+            6,
+            8,
+            917,
+            82
+          ]
+        },
+        {
+          "hwnd": 2689582,
+          "isControlPanel": false,
+          "rect": [
+            8,
+            61,
+            1928,
+            1141
+          ],
+          "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-enabled-2689582.png",
+          "roleInThisReview": "minimap_markers",
+          "bytes": 8039,
+          "sha256": "d42b00d35779bc710aec0d484a1ec2a413cc73546a9068b2522a552a59bc8bab",
+          "imageSize": [
+            1920,
+            1080
+          ],
+          "nonblackBounds": [
+            127,
+            734,
+            284,
+            901
+          ]
+        },
+        {
+          "hwnd": 986248,
+          "isControlPanel": false,
+          "rect": [
+            8,
+            61,
+            1928,
+            1141
+          ],
+          "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-enabled-986248.png",
+          "roleInThisReview": "auxiliary_window_mine_label_unproven",
+          "bytes": 6823,
+          "sha256": "6199b53308c7f8d4b58f14b065d9cf476b66a0dd16ba361e71a86c54ab52bbf6",
+          "imageSize": [
+            1920,
+            1080
+          ],
+          "nonblackBounds": [
+            1815,
+            164,
+            1864,
+            185
+          ]
+        },
+        {
+          "hwnd": 5113760,
+          "isControlPanel": true,
+          "rect": [
+            540,
+            221,
+            2020,
+            1171
+          ],
+          "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-enabled-5113760.png",
+          "roleInThisReview": "control_panel",
+          "bytes": 144129,
+          "sha256": "eab5e568b57669ada3513967c03c463c3ad2b9b64fc9aae4d19476a45e91e973",
+          "imageSize": [
+            1480,
+            950
+          ],
+          "nonblackBounds": [
+            0,
+            0,
+            1480,
+            950
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "gui-run29-enemy-view",
+      "utc": "2026-11-21T03:29:05.823155+00:00",
+      "utcSemantics": "capture batch completion timestamp; individual window frames are sequential",
+      "pid": 24288,
+      "manifestPath": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-enemy-view.json",
+      "manifestSha256": "a8f481614e4de4554b1e755d894d90fd7a6eaac13f19e058e0935100a996c119",
+      "windows": [
+        {
+          "hwnd": 3869816,
+          "isControlPanel": false,
+          "rect": [
+            8,
+            61,
+            1928,
+            1141
+          ],
+          "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-enemy-view-3869816.png",
+          "roleInThisReview": "world_markers",
+          "bytes": 27885,
+          "sha256": "4b5bd95052046264f87ab2e234bcb75ff9aa8e83c0cc3ad418a9d7b7e60247b7",
+          "imageSize": [
+            1920,
+            1080
+          ],
+          "nonblackBounds": [
+            813,
+            243,
+            1572,
+            1080
+          ]
+        },
+        {
+          "hwnd": 2230404,
+          "isControlPanel": false,
+          "rect": [
+            66,
+            69,
+            1870,
+            163
+          ],
+          "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-enemy-view-2230404.png",
+          "roleInThisReview": "top_player_information",
+          "bytes": 27630,
+          "sha256": "6eae852445959dc56ff9def3c9f2f8a21aa0669b79219b772fc67ebeb81c52a4",
+          "imageSize": [
+            1804,
+            94
+          ],
+          "nonblackBounds": [
+            6,
+            8,
+            917,
+            82
+          ]
+        },
+        {
+          "hwnd": 2689582,
+          "isControlPanel": false,
+          "rect": [
+            8,
+            61,
+            1928,
+            1141
+          ],
+          "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-enemy-view-2689582.png",
+          "roleInThisReview": "minimap_markers",
+          "bytes": 8039,
+          "sha256": "d42b00d35779bc710aec0d484a1ec2a413cc73546a9068b2522a552a59bc8bab",
+          "imageSize": [
+            1920,
+            1080
+          ],
+          "nonblackBounds": [
+            127,
+            734,
+            284,
+            901
+          ]
+        },
+        {
+          "hwnd": 986248,
+          "isControlPanel": false,
+          "rect": [
+            8,
+            61,
+            1928,
+            1141
+          ],
+          "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-enemy-view-986248.png",
+          "roleInThisReview": "auxiliary_window_mine_label_unproven",
+          "bytes": 6109,
+          "sha256": "0f52608dd021e7069ef19f9d8f46f6d651aaf5cbac5154465092de3574cf8514",
+          "imageSize": [
+            1920,
+            1080
+          ],
+          "nonblackBounds": null
+        },
+        {
+          "hwnd": 5113760,
+          "isControlPanel": true,
+          "rect": [
+            540,
+            221,
+            2020,
+            1171
+          ],
+          "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-enemy-view-5113760.png",
+          "roleInThisReview": "control_panel",
+          "bytes": 144129,
+          "sha256": "eab5e568b57669ada3513967c03c463c3ad2b9b64fc9aae4d19476a45e91e973",
+          "imageSize": [
+            1480,
+            950
+          ],
+          "nonblackBounds": [
+            0,
+            0,
+            1480,
+            950
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "gui-run29-world-off",
+      "utc": "2026-11-21T03:30:37.654503+00:00",
+      "utcSemantics": "capture batch completion timestamp; individual window frames are sequential",
+      "pid": 24288,
+      "manifestPath": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-off.json",
+      "manifestSha256": "ab7b2efe1b251fa7ff67cf62fe43d5a55ff2ace3afac8052bcd1df0580e96175",
+      "windows": [
+        {
+          "hwnd": 2230404,
+          "isControlPanel": false,
+          "rect": [
+            66,
+            69,
+            1870,
+            163
+          ],
+          "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-off-2230404.png",
+          "roleInThisReview": "top_player_information",
+          "bytes": 27630,
+          "sha256": "6eae852445959dc56ff9def3c9f2f8a21aa0669b79219b772fc67ebeb81c52a4",
+          "imageSize": [
+            1804,
+            94
+          ],
+          "nonblackBounds": [
+            6,
+            8,
+            917,
+            82
+          ]
+        },
+        {
+          "hwnd": 2689582,
+          "isControlPanel": false,
+          "rect": [
+            8,
+            61,
+            1928,
+            1141
+          ],
+          "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-off-2689582.png",
+          "roleInThisReview": "minimap_markers",
+          "bytes": 8039,
+          "sha256": "d42b00d35779bc710aec0d484a1ec2a413cc73546a9068b2522a552a59bc8bab",
+          "imageSize": [
+            1920,
+            1080
+          ],
+          "nonblackBounds": [
+            127,
+            734,
+            284,
+            901
+          ]
+        },
+        {
+          "hwnd": 986248,
+          "isControlPanel": false,
+          "rect": [
+            8,
+            61,
+            1928,
+            1141
+          ],
+          "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-off-986248.png",
+          "roleInThisReview": "auxiliary_window_mine_label_unproven",
+          "bytes": 6109,
+          "sha256": "0f52608dd021e7069ef19f9d8f46f6d651aaf5cbac5154465092de3574cf8514",
+          "imageSize": [
+            1920,
+            1080
+          ],
+          "nonblackBounds": null
+        },
+        {
+          "hwnd": 5113760,
+          "isControlPanel": true,
+          "rect": [
+            540,
+            221,
+            2020,
+            1171
+          ],
+          "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-off-5113760.png",
+          "roleInThisReview": "control_panel",
+          "bytes": 144410,
+          "sha256": "c68dfffd89b17e10cc577f64eca2ef05e11d33dfce864a7f0d8ac03bb27042cd",
+          "imageSize": [
+            1480,
+            950
+          ],
+          "nonblackBounds": [
+            0,
+            0,
+            1480,
+            950
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "gui-run29-world-restored",
+      "utc": "2026-11-21T03:30:41.624073+00:00",
+      "utcSemantics": "capture batch completion timestamp; individual window frames are sequential",
+      "pid": 24288,
+      "manifestPath": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-restored.json",
+      "manifestSha256": "48e52aff3a6dc3ea071f099a2ac650991c4770190e2cec4aea0a6b278cacfbc5",
+      "windows": [
+        {
+          "hwnd": 3869816,
+          "isControlPanel": false,
+          "rect": [
+            8,
+            61,
+            1928,
+            1141
+          ],
+          "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-restored-3869816.png",
+          "roleInThisReview": "world_markers",
+          "bytes": 27885,
+          "sha256": "4b5bd95052046264f87ab2e234bcb75ff9aa8e83c0cc3ad418a9d7b7e60247b7",
+          "imageSize": [
+            1920,
+            1080
+          ],
+          "nonblackBounds": [
+            813,
+            243,
+            1572,
+            1080
+          ]
+        },
+        {
+          "hwnd": 2230404,
+          "isControlPanel": false,
+          "rect": [
+            66,
+            69,
+            1870,
+            163
+          ],
+          "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-restored-2230404.png",
+          "roleInThisReview": "top_player_information",
+          "bytes": 27630,
+          "sha256": "6eae852445959dc56ff9def3c9f2f8a21aa0669b79219b772fc67ebeb81c52a4",
+          "imageSize": [
+            1804,
+            94
+          ],
+          "nonblackBounds": [
+            6,
+            8,
+            917,
+            82
+          ]
+        },
+        {
+          "hwnd": 2689582,
+          "isControlPanel": false,
+          "rect": [
+            8,
+            61,
+            1928,
+            1141
+          ],
+          "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-restored-2689582.png",
+          "roleInThisReview": "minimap_markers",
+          "bytes": 8039,
+          "sha256": "d42b00d35779bc710aec0d484a1ec2a413cc73546a9068b2522a552a59bc8bab",
+          "imageSize": [
+            1920,
+            1080
+          ],
+          "nonblackBounds": [
+            127,
+            734,
+            284,
+            901
+          ]
+        },
+        {
+          "hwnd": 986248,
+          "isControlPanel": false,
+          "rect": [
+            8,
+            61,
+            1928,
+            1141
+          ],
+          "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-restored-986248.png",
+          "roleInThisReview": "auxiliary_window_mine_label_unproven",
+          "bytes": 6109,
+          "sha256": "0f52608dd021e7069ef19f9d8f46f6d651aaf5cbac5154465092de3574cf8514",
+          "imageSize": [
+            1920,
+            1080
+          ],
+          "nonblackBounds": null
+        },
+        {
+          "hwnd": 5113760,
+          "isControlPanel": true,
+          "rect": [
+            540,
+            221,
+            2020,
+            1171
+          ],
+          "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-restored-5113760.png",
+          "roleInThisReview": "control_panel",
+          "bytes": 144129,
+          "sha256": "eab5e568b57669ada3513967c03c463c3ad2b9b64fc9aae4d19476a45e91e973",
+          "imageSize": [
+            1480,
+            950
+          ],
+          "nonblackBounds": [
+            0,
+            0,
+            1480,
+            950
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "gui-run29-after-match-menu",
+      "utc": "2026-11-21T03:35:54.874214+00:00",
+      "utcSemantics": "capture batch completion timestamp; individual window frames are sequential",
+      "pid": 24288,
+      "manifestPath": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-after-match-menu.json",
+      "manifestSha256": "c48881bbedcf1dd42d969bb72c25cef47750da98ea5924629e392ffb1137ee35",
+      "windows": [
+        {
+          "hwnd": 3869816,
+          "isControlPanel": false,
+          "rect": [
+            8,
+            61,
+            1928,
+            1141
+          ],
+          "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-after-match-menu-3869816.png",
+          "roleInThisReview": "world_markers",
+          "bytes": 27885,
+          "sha256": "4b5bd95052046264f87ab2e234bcb75ff9aa8e83c0cc3ad418a9d7b7e60247b7",
+          "imageSize": [
+            1920,
+            1080
+          ],
+          "nonblackBounds": [
+            813,
+            243,
+            1572,
+            1080
+          ]
+        },
+        {
+          "hwnd": 2230404,
+          "isControlPanel": false,
+          "rect": [
+            66,
+            69,
+            1870,
+            163
+          ],
+          "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-after-match-menu-2230404.png",
+          "roleInThisReview": "top_player_information",
+          "bytes": 27630,
+          "sha256": "6eae852445959dc56ff9def3c9f2f8a21aa0669b79219b772fc67ebeb81c52a4",
+          "imageSize": [
+            1804,
+            94
+          ],
+          "nonblackBounds": [
+            6,
+            8,
+            917,
+            82
+          ]
+        },
+        {
+          "hwnd": 986248,
+          "isControlPanel": false,
+          "rect": [
+            8,
+            61,
+            1928,
+            1141
+          ],
+          "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-after-match-menu-986248.png",
+          "roleInThisReview": "auxiliary_window_mine_label_unproven",
+          "bytes": 6109,
+          "sha256": "0f52608dd021e7069ef19f9d8f46f6d651aaf5cbac5154465092de3574cf8514",
+          "imageSize": [
+            1920,
+            1080
+          ],
+          "nonblackBounds": null
+        },
+        {
+          "hwnd": 5113760,
+          "isControlPanel": true,
+          "rect": [
+            540,
+            221,
+            2020,
+            1171
+          ],
+          "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-after-match-menu-5113760.png",
+          "roleInThisReview": "control_panel",
+          "bytes": 142775,
+          "sha256": "1731f9e2b2f89ef4c04eaff3ead702e29327a609615247c4bb3742557c7d9be5",
+          "imageSize": [
+            1480,
+            950
+          ],
+          "nonblackBounds": [
+            0,
+            0,
+            1480,
+            950
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "gui-run29-lobby-before-restart",
+      "utc": "2026-11-21T03:36:46.875685+00:00",
+      "utcSemantics": "capture batch completion timestamp; individual window frames are sequential",
+      "pid": 24288,
+      "manifestPath": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-lobby-before-restart.json",
+      "manifestSha256": "856c2dbcc00ab1f5989720d059e37d85b5b182d228d8696078b708d80db67765",
+      "windows": [
+        {
+          "hwnd": 5113760,
+          "isControlPanel": true,
+          "rect": [
+            540,
+            221,
+            2020,
+            1171
+          ],
+          "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-lobby-before-restart-5113760.png",
+          "roleInThisReview": "control_panel",
+          "bytes": 118369,
+          "sha256": "dfc188dc28229df9a1374f514478ab7769beaf1a993a6a58a13f6aa04b8af531",
+          "imageSize": [
+            1480,
+            950
+          ],
+          "nonblackBounds": [
+            0,
+            0,
+            1480,
+            950
+          ]
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-enable-action.json",
+      "sha256": "1cb7fa7729f62cc2f44b4c3796f4311540ee844d5bc0a156868996f86cdb30b2",
+      "recordedAction": {
+        "name": "主画面标记",
+        "type": "ControlType.Pane",
+        "enabled": true,
+        "offscreen": false,
+        "rect": "878,300,210,30",
+        "action": "foreground_checked_click",
+        "utc": "2026-11-21T03:26:52.3040991Z",
+        "windowHandle": 5113760
+      },
+      "rectInterpretation": "screen x,y,width,height",
+      "captureTag": "gui-run29-world-enabled",
+      "captureUtc": "2026-11-21T03:26:53.926882+00:00",
+      "captureCompletionAfterActionSeconds": "1.6227829",
+      "toggleValueFieldPresent": false
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-off-action.json",
+      "sha256": "423aa3546316780ab79669b64b01c5f73302e9c1759afe2d457c2219281bf0ff",
+      "recordedAction": {
+        "name": "主画面标记",
+        "type": "ControlType.Pane",
+        "enabled": true,
+        "offscreen": false,
+        "rect": "878,300,210,30",
+        "action": "foreground_checked_click",
+        "utc": "2026-11-21T03:30:36.0693669Z",
+        "windowHandle": 5113760
+      },
+      "rectInterpretation": "screen x,y,width,height",
+      "captureTag": "gui-run29-world-off",
+      "captureUtc": "2026-11-21T03:30:37.654503+00:00",
+      "captureCompletionAfterActionSeconds": "1.5851361",
+      "toggleValueFieldPresent": false
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-restore-action.json",
+      "sha256": "23d3dc2281ddc40a8497b420ee7b043b355f82b6cabcbca242c1cd1a01376d97",
+      "recordedAction": {
+        "name": "主画面标记",
+        "type": "ControlType.Pane",
+        "enabled": true,
+        "offscreen": false,
+        "rect": "878,300,210,30",
+        "action": "foreground_checked_click",
+        "utc": "2026-11-21T03:30:40.0330837Z",
+        "windowHandle": 5113760
+      },
+      "rectInterpretation": "screen x,y,width,height",
+      "captureTag": "gui-run29-world-restored",
+      "captureUtc": "2026-11-21T03:30:41.624073+00:00",
+      "captureCompletionAfterActionSeconds": "1.5909893",
+      "toggleValueFieldPresent": false
+    }
+  ],
+  "gameContextImages": [
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-game-initial.png",
+      "sha256": "f90b677e9a0fba918a0cd3b05cbfa8286adab85ae41ae752be7a074b76aa4ba8",
+      "size": [
+        1936,
+        1119
+      ],
+      "visualObservation": "战术暂停已启用，时间12:31；仅静态上下文，非桌面合成层截图"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-game-world-enabled.png",
+      "sha256": "8dea64c32a1884343a0c89b029517792ff6c11af9c344fad46c8601a0f7ddfe1",
+      "size": [
+        1936,
+        1119
+      ],
+      "visualObservation": "战术暂停已启用，时间12:31；仅静态上下文，非桌面合成层截图"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-game-enemy-view.png",
+      "sha256": "0b5dce27850049185515e85b24fbfac8c04743f24133d0b05d86b8aa89de2402",
+      "size": [
+        1936,
+        1119
+      ],
+      "visualObservation": "战术暂停已启用，时间12:31；仅静态上下文，非桌面合成层截图"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-game-world-off.png",
+      "sha256": "9a6b5f27e14afa27702c63a4eac66e2fddd5848702f6c39591ef59797db2f878",
+      "size": [
+        1936,
+        1119
+      ],
+      "visualObservation": "战术暂停已启用，时间12:31；仅静态上下文，非桌面合成层截图"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-game-world-restored.png",
+      "sha256": "6a8349ecca905e8978713755198469c4c80de03d3af993a0bc260460d8f0dac5",
+      "size": [
+        1936,
+        1119
+      ],
+      "visualObservation": "战术暂停已启用，时间12:31；仅静态上下文，非桌面合成层截图"
+    }
+  ],
+  "lifecycleContextImages": [
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle02-first-menu-after-match.png",
+      "sha256": "271b8dfa0866f28eb5b670edbf861011a381f9b9d6ed45d39b3a38de66085577",
+      "interpretedPage": "post_match_results_page",
+      "screenshotUtcAvailable": false,
+      "pairingBasis": "parent-recorded sequence and visual page semantics; no independent screenshot UTC in supplied file"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle02-lobby-before-restart.png",
+      "sha256": "dacb04c5d3455c65d22031691fc09c3ca09d55f7df8d589cea4f902fb4fe39ea",
+      "interpretedPage": "actual_main_menu",
+      "screenshotUtcAvailable": false,
+      "pairingBasis": "parent-recorded sequence and visual page semantics; no independent screenshot UTC in supplied file"
+    }
+  ],
+  "visualReview": [
+    {
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-enemy-view-3869816.png",
+      "observation": "红色八轮文字、框形标记、实线与虚线；存在实际非黑绘制",
+      "scope": "drawing presence only"
+    },
+    {
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-enemy-view-2689582.png",
+      "observation": "小地图区域红点、三角与路径；与off/restored原始PNG相同",
+      "scope": "static minimap layer drawing only"
+    },
+    {
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-enemy-view-2230404.png",
+      "observation": "电脑-标准资源/人口/战斗群和单位文字",
+      "scope": "top layer drawing; values not ground-truth validated"
+    },
+    {
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-enemy-view-986248.png",
+      "observation": "RGB所有通道extrema均0；无非黑绘图",
+      "scope": "empty capture; mine-hit behavior untested"
+    },
+    {
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-off-5113760.png",
+      "observation": "主画面标记开关为关"
+    },
+    {
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-restored-5113760.png",
+      "observation": "主画面标记开关为开"
+    }
+  ],
+  "sourceExplanations": [
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\capture_overlay_state.py",
+      "lines": [
+        6,
+        7,
+        12,
+        13
+      ],
+      "finding": "runpy passes only --pid to window_probe; captures each enumerated window then writes batch UTC; isControlPanel uses title truthiness",
+      "runtimeBranchClaim": false
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\adaptation-52426-20261121-004302\\window_probe.py",
+      "lines": [
+        6,
+        20,
+        25,
+        39,
+        41,
+        44
+      ],
+      "finding": "capture_window uses PrintWindow flag2 and RGB BGRX; visitor filters selected PID and visible windows",
+      "runtimeBranchClaim": false
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\SquadMarkerHost.cs",
+      "lines": [
+        188,
+        192,
+        201,
+        216,
+        217
+      ],
+      "finding": "ClearData publishes a null scene; Dispose closes window/thread; visibility and disposal are distinct operations",
+      "runtimeBranchClaim": false
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\SquadMarkerWindow.cs",
+      "lines": [
+        268,
+        286,
+        295,
+        312,
+        580
+      ],
+      "finding": "ClearAirForSwitch/Pause may Hide; DropConnection may dispose/reset reader; no trace selects the actual branch here",
+      "runtimeBranchClaim": false
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\SquadMarkerPreferences.cs",
+      "lines": [
+        117,
+        260,
+        263
+      ],
+      "finding": "squadMarkers serializes Enabled as 0/1 and parses nonzero as true",
+      "runtimeBranchClaim": false
+    }
+  ],
+  "limitations": [
+    "候选维护GUI证据；整体版本基线仍待适配，未形成全功能验收或baseline提升。",
+    "原始world-on是初始失败attempt，before-settings的squadMarkers=0且panel开关为关；该标签不作世界层正例。",
+    "world-enabled的panel开关为开，但当次可见窗口集合尚无3869816；首个世界层正例在enemy-view。",
+    "动作JSON的enabled=true表示控件可操作，未记录TogglePattern或持久化设置值；父任务报告enable后prefs1，本轮输入无独立after-settings快照。",
+    "分窗PrintWindow只证明保存的各层绘制；本组文件未记录桌面合成、遮挡顺序、点击穿透、坐标投影精度或动态运动精度。",
+    "游戏窗口截图处于战术暂停12:31；同PNG哈希表示捕获内容相同，不证明刷新率、最新帧或新运动数据。",
+    "窗口清单来源于IsWindowVisible过滤；缺席代表未列入该次可见窗口清单，未证明窗口销毁。",
+    "同PID/启动记录和同HWND返回未证明同一GUI托管对象或same-reader；UI对象/reader身份与重连分支无运行跟踪。",
+    "capture tag的UTC写在顺序窗口采集完成后；全批非原子，动作到capture间隔是完成时间差。",
+    "生命周期两张独立游戏截图本身无供本轮核对的UTC；按父任务记录的顺序与实际页面内容解释关联。",
+    "战绩页旧世界图/顶部数据残留仍为未闭合生命周期问题；随后主菜单清理观察未关闭该问题。",
+    "身份JSON记录的进程启动与二进制哈希仅作为保存记录；本轮未查询运行进程或重算UI/game二进制哈希。",
+    "无炮弹、空袭、mine功能命中、所有敌方识别或新局重连验收；986248全黑帧只证明窗口存在与空绘图。"
+  ],
+  "inputs": [
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\SquadMarkerHost.cs",
+      "role": "optional_source_explanation_not_runtime_trace",
+      "bytes": 5120,
+      "sha256": "2858b9beccf6d49704b15795f4bac63cbc16ffa1791b20748352b9690dde3786"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\SquadMarkerPreferences.cs",
+      "role": "settings_key_source_explanation",
+      "bytes": 8032,
+      "sha256": "aa76fd45879bba59da73171f7e73af83bfe874c49ddef0056c08bd9b817662c4"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\SquadMarkerWindow.cs",
+      "role": "optional_source_explanation_not_runtime_trace",
+      "bytes": 17087,
+      "sha256": "7685a91dc528b7adc923b509991eb56c38c01036d836ed8640cc8fdbfd113ed8"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\adaptation-52426-20261121-004302\\window_probe.py",
+      "role": "capture_semantics_source_read_only",
+      "bytes": 3666,
+      "sha256": "40f4aec1e269f5355f8c4178d7535e733310ffefc2342065a083dc4974eb42b6"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\capabilities-gui-probe.py",
+      "role": "discovery_only_not_supporting_run29_and_not_executed",
+      "bytes": 2152,
+      "sha256": "b84ac566f44be46ca5710f6bc830d31b8cf39d0d3040670bbae8b447531e6932"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\capture_overlay_state.py",
+      "role": "capture_semantics_source_read_only",
+      "bytes": 952,
+      "sha256": "4db2388905c774ee14c8e7b3d9d07fdda6bfb79b1d1e945649dbca4f09cd97e6"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-after-match-menu-2230404.png",
+      "role": "per_window_PrintWindow_capture",
+      "bytes": 27630,
+      "sha256": "6eae852445959dc56ff9def3c9f2f8a21aa0669b79219b772fc67ebeb81c52a4",
+      "format": "PNG",
+      "size": [
+        1804,
+        94
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          246
+        ]
+      ],
+      "nonblackBounds": [
+        6,
+        8,
+        917,
+        82
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-after-match-menu-3869816.png",
+      "role": "per_window_PrintWindow_capture",
+      "bytes": 27885,
+      "sha256": "4b5bd95052046264f87ab2e234bcb75ff9aa8e83c0cc3ad418a9d7b7e60247b7",
+      "format": "PNG",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          59
+        ],
+        [
+          0,
+          48
+        ]
+      ],
+      "nonblackBounds": [
+        813,
+        243,
+        1572,
+        1080
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-after-match-menu-5113760.png",
+      "role": "per_window_PrintWindow_capture",
+      "bytes": 142775,
+      "sha256": "1731f9e2b2f89ef4c04eaff3ead702e29327a609615247c4bb3742557c7d9be5",
+      "format": "PNG",
+      "size": [
+        1480,
+        950
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ]
+      ],
+      "nonblackBounds": [
+        0,
+        0,
+        1480,
+        950
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-after-match-menu-986248.png",
+      "role": "per_window_PrintWindow_capture",
+      "bytes": 6109,
+      "sha256": "0f52608dd021e7069ef19f9d8f46f6d651aaf5cbac5154465092de3574cf8514",
+      "format": "PNG",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "nonblackBounds": null
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-after-match-menu.json",
+      "role": "visible_UI_window_capture_manifest",
+      "bytes": 1243,
+      "sha256": "c48881bbedcf1dd42d969bb72c25cef47750da98ea5924629e392ffb1137ee35"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-before-settings.txt",
+      "role": "persisted_before_settings",
+      "bytes": 1422,
+      "sha256": "2d1460e714c11beec9ba495344d3c935377d51bb46811f8f9dd8d2ac5ba33727"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-enemy-view-2230404.png",
+      "role": "per_window_PrintWindow_capture",
+      "bytes": 27630,
+      "sha256": "6eae852445959dc56ff9def3c9f2f8a21aa0669b79219b772fc67ebeb81c52a4",
+      "format": "PNG",
+      "size": [
+        1804,
+        94
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          246
+        ]
+      ],
+      "nonblackBounds": [
+        6,
+        8,
+        917,
+        82
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-enemy-view-2689582.png",
+      "role": "per_window_PrintWindow_capture",
+      "bytes": 8039,
+      "sha256": "d42b00d35779bc710aec0d484a1ec2a413cc73546a9068b2522a552a59bc8bab",
+      "format": "PNG",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          59
+        ],
+        [
+          0,
+          48
+        ]
+      ],
+      "nonblackBounds": [
+        127,
+        734,
+        284,
+        901
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-enemy-view-3869816.png",
+      "role": "per_window_PrintWindow_capture",
+      "bytes": 27885,
+      "sha256": "4b5bd95052046264f87ab2e234bcb75ff9aa8e83c0cc3ad418a9d7b7e60247b7",
+      "format": "PNG",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          59
+        ],
+        [
+          0,
+          48
+        ]
+      ],
+      "nonblackBounds": [
+        813,
+        243,
+        1572,
+        1080
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-enemy-view-5113760.png",
+      "role": "per_window_PrintWindow_capture",
+      "bytes": 144129,
+      "sha256": "eab5e568b57669ada3513967c03c463c3ad2b9b64fc9aae4d19476a45e91e973",
+      "format": "PNG",
+      "size": [
+        1480,
+        950
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ]
+      ],
+      "nonblackBounds": [
+        0,
+        0,
+        1480,
+        950
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-enemy-view-986248.png",
+      "role": "per_window_PrintWindow_capture",
+      "bytes": 6109,
+      "sha256": "0f52608dd021e7069ef19f9d8f46f6d651aaf5cbac5154465092de3574cf8514",
+      "format": "PNG",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "nonblackBounds": null
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-enemy-view.json",
+      "role": "visible_UI_window_capture_manifest",
+      "bytes": 1486,
+      "sha256": "a8f481614e4de4554b1e755d894d90fd7a6eaac13f19e058e0935100a996c119"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-game-enemy-view.png",
+      "role": "separate_game_window_context_paused_12_31",
+      "bytes": 2857836,
+      "sha256": "0b5dce27850049185515e85b24fbfac8c04743f24133d0b05d86b8aa89de2402",
+      "format": "PNG",
+      "size": [
+        1936,
+        1119
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ]
+      ],
+      "nonblackBounds": [
+        0,
+        0,
+        1936,
+        1111
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-game-initial.png",
+      "role": "separate_game_window_context_paused_12_31",
+      "bytes": 3004842,
+      "sha256": "f90b677e9a0fba918a0cd3b05cbfa8286adab85ae41ae752be7a074b76aa4ba8",
+      "format": "PNG",
+      "size": [
+        1936,
+        1119
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ]
+      ],
+      "nonblackBounds": [
+        0,
+        0,
+        1936,
+        1111
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-game-world-enabled.png",
+      "role": "separate_game_window_context_paused_12_31",
+      "bytes": 3002736,
+      "sha256": "8dea64c32a1884343a0c89b029517792ff6c11af9c344fad46c8601a0f7ddfe1",
+      "format": "PNG",
+      "size": [
+        1936,
+        1119
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ]
+      ],
+      "nonblackBounds": [
+        0,
+        0,
+        1936,
+        1111
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-game-world-off.png",
+      "role": "separate_game_window_context_paused_12_31",
+      "bytes": 2866155,
+      "sha256": "9a6b5f27e14afa27702c63a4eac66e2fddd5848702f6c39591ef59797db2f878",
+      "format": "PNG",
+      "size": [
+        1936,
+        1119
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ]
+      ],
+      "nonblackBounds": [
+        0,
+        0,
+        1936,
+        1111
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-game-world-restored.png",
+      "role": "separate_game_window_context_paused_12_31",
+      "bytes": 2864194,
+      "sha256": "6a8349ecca905e8978713755198469c4c80de03d3af993a0bc260460d8f0dac5",
+      "format": "PNG",
+      "size": [
+        1936,
+        1119
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ]
+      ],
+      "nonblackBounds": [
+        0,
+        0,
+        1936,
+        1111
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-identity.json",
+      "role": "recorded_session_identity_not_live_requeried",
+      "bytes": 876,
+      "sha256": "596422dc40cb643cc3059308bd5b9ab71eda5b63d6487d949e68586e67a08b76"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-lobby-before-restart-5113760.png",
+      "role": "per_window_PrintWindow_capture",
+      "bytes": 118369,
+      "sha256": "dfc188dc28229df9a1374f514478ab7769beaf1a993a6a58a13f6aa04b8af531",
+      "format": "PNG",
+      "size": [
+        1480,
+        950
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ]
+      ],
+      "nonblackBounds": [
+        0,
+        0,
+        1480,
+        950
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-lobby-before-restart.json",
+      "role": "visible_UI_window_capture_manifest",
+      "bytes": 416,
+      "sha256": "856c2dbcc00ab1f5989720d059e37d85b5b182d228d8696078b708d80db67765"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-enable-action.json",
+      "role": "recorded_guarded_UI_action_not_reexecuted",
+      "bytes": 276,
+      "sha256": "1cb7fa7729f62cc2f44b4c3796f4311540ee844d5bc0a156868996f86cdb30b2"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-enabled-2230404.png",
+      "role": "per_window_PrintWindow_capture",
+      "bytes": 27630,
+      "sha256": "6eae852445959dc56ff9def3c9f2f8a21aa0669b79219b772fc67ebeb81c52a4",
+      "format": "PNG",
+      "size": [
+        1804,
+        94
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          246
+        ]
+      ],
+      "nonblackBounds": [
+        6,
+        8,
+        917,
+        82
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-enabled-2689582.png",
+      "role": "per_window_PrintWindow_capture",
+      "bytes": 8039,
+      "sha256": "d42b00d35779bc710aec0d484a1ec2a413cc73546a9068b2522a552a59bc8bab",
+      "format": "PNG",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          59
+        ],
+        [
+          0,
+          48
+        ]
+      ],
+      "nonblackBounds": [
+        127,
+        734,
+        284,
+        901
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-enabled-5113760.png",
+      "role": "per_window_PrintWindow_capture",
+      "bytes": 144129,
+      "sha256": "eab5e568b57669ada3513967c03c463c3ad2b9b64fc9aae4d19476a45e91e973",
+      "format": "PNG",
+      "size": [
+        1480,
+        950
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ]
+      ],
+      "nonblackBounds": [
+        0,
+        0,
+        1480,
+        950
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-enabled-986248.png",
+      "role": "per_window_PrintWindow_capture",
+      "bytes": 6823,
+      "sha256": "6199b53308c7f8d4b58f14b065d9cf476b66a0dd16ba361e71a86c54ab52bbf6",
+      "format": "PNG",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "nonblackBounds": [
+        1815,
+        164,
+        1864,
+        185
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-enabled.json",
+      "role": "visible_UI_window_capture_manifest",
+      "bytes": 1228,
+      "sha256": "634cced65d082c8ceac8b5d262f8eb99449060b296349ac6aab38026c6bc10e0"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-off-2230404.png",
+      "role": "per_window_PrintWindow_capture",
+      "bytes": 27630,
+      "sha256": "6eae852445959dc56ff9def3c9f2f8a21aa0669b79219b772fc67ebeb81c52a4",
+      "format": "PNG",
+      "size": [
+        1804,
+        94
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          246
+        ]
+      ],
+      "nonblackBounds": [
+        6,
+        8,
+        917,
+        82
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-off-2689582.png",
+      "role": "per_window_PrintWindow_capture",
+      "bytes": 8039,
+      "sha256": "d42b00d35779bc710aec0d484a1ec2a413cc73546a9068b2522a552a59bc8bab",
+      "format": "PNG",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          59
+        ],
+        [
+          0,
+          48
+        ]
+      ],
+      "nonblackBounds": [
+        127,
+        734,
+        284,
+        901
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-off-5113760.png",
+      "role": "per_window_PrintWindow_capture",
+      "bytes": 144410,
+      "sha256": "c68dfffd89b17e10cc577f64eca2ef05e11d33dfce864a7f0d8ac03bb27042cd",
+      "format": "PNG",
+      "size": [
+        1480,
+        950
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ]
+      ],
+      "nonblackBounds": [
+        0,
+        0,
+        1480,
+        950
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-off-986248.png",
+      "role": "per_window_PrintWindow_capture",
+      "bytes": 6109,
+      "sha256": "0f52608dd021e7069ef19f9d8f46f6d651aaf5cbac5154465092de3574cf8514",
+      "format": "PNG",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "nonblackBounds": null
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-off-action.json",
+      "role": "recorded_guarded_UI_action_not_reexecuted",
+      "bytes": 276,
+      "sha256": "423aa3546316780ab79669b64b01c5f73302e9c1759afe2d457c2219281bf0ff"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-off.json",
+      "role": "visible_UI_window_capture_manifest",
+      "bytes": 1208,
+      "sha256": "ab7b2efe1b251fa7ff67cf62fe43d5a55ff2ace3afac8052bcd1df0580e96175"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-on-2230404.png",
+      "role": "per_window_PrintWindow_capture",
+      "bytes": 27917,
+      "sha256": "5c4876e6bd8cbd9f7f2a3951a2640228f33500c6c85c87c66fa9dd0e0c0399e0",
+      "format": "PNG",
+      "size": [
+        1804,
+        94
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          246
+        ]
+      ],
+      "nonblackBounds": [
+        6,
+        8,
+        917,
+        82
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-on-2689582.png",
+      "role": "per_window_PrintWindow_capture",
+      "bytes": 8039,
+      "sha256": "d42b00d35779bc710aec0d484a1ec2a413cc73546a9068b2522a552a59bc8bab",
+      "format": "PNG",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          59
+        ],
+        [
+          0,
+          48
+        ]
+      ],
+      "nonblackBounds": [
+        127,
+        734,
+        284,
+        901
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-on-5113760.png",
+      "role": "per_window_PrintWindow_capture",
+      "bytes": 144558,
+      "sha256": "5183bfe745718c3340a1ddac0df455d41c2d2a3d3c4648e491f370ee57286c88",
+      "format": "PNG",
+      "size": [
+        1480,
+        950
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ]
+      ],
+      "nonblackBounds": [
+        0,
+        0,
+        1480,
+        950
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-on-986248.png",
+      "role": "per_window_PrintWindow_capture",
+      "bytes": 6823,
+      "sha256": "6199b53308c7f8d4b58f14b065d9cf476b66a0dd16ba361e71a86c54ab52bbf6",
+      "format": "PNG",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "nonblackBounds": [
+        1815,
+        164,
+        1864,
+        185
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-on.json",
+      "role": "visible_UI_window_capture_manifest",
+      "bytes": 1203,
+      "sha256": "d1f9409f8e91e19882989df7d4b70cc50ec2e5323750b48468198b5af730704d"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-restore-action.json",
+      "role": "recorded_guarded_UI_action_not_reexecuted",
+      "bytes": 276,
+      "sha256": "23d3dc2281ddc40a8497b420ee7b043b355f82b6cabcbca242c1cd1a01376d97"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-restored-2230404.png",
+      "role": "per_window_PrintWindow_capture",
+      "bytes": 27630,
+      "sha256": "6eae852445959dc56ff9def3c9f2f8a21aa0669b79219b772fc67ebeb81c52a4",
+      "format": "PNG",
+      "size": [
+        1804,
+        94
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          246
+        ]
+      ],
+      "nonblackBounds": [
+        6,
+        8,
+        917,
+        82
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-restored-2689582.png",
+      "role": "per_window_PrintWindow_capture",
+      "bytes": 8039,
+      "sha256": "d42b00d35779bc710aec0d484a1ec2a413cc73546a9068b2522a552a59bc8bab",
+      "format": "PNG",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          59
+        ],
+        [
+          0,
+          48
+        ]
+      ],
+      "nonblackBounds": [
+        127,
+        734,
+        284,
+        901
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-restored-3869816.png",
+      "role": "per_window_PrintWindow_capture",
+      "bytes": 27885,
+      "sha256": "4b5bd95052046264f87ab2e234bcb75ff9aa8e83c0cc3ad418a9d7b7e60247b7",
+      "format": "PNG",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          59
+        ],
+        [
+          0,
+          48
+        ]
+      ],
+      "nonblackBounds": [
+        813,
+        243,
+        1572,
+        1080
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-restored-5113760.png",
+      "role": "per_window_PrintWindow_capture",
+      "bytes": 144129,
+      "sha256": "eab5e568b57669ada3513967c03c463c3ad2b9b64fc9aae4d19476a45e91e973",
+      "format": "PNG",
+      "size": [
+        1480,
+        950
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ]
+      ],
+      "nonblackBounds": [
+        0,
+        0,
+        1480,
+        950
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-restored-986248.png",
+      "role": "per_window_PrintWindow_capture",
+      "bytes": 6109,
+      "sha256": "0f52608dd021e7069ef19f9d8f46f6d651aaf5cbac5154465092de3574cf8514",
+      "format": "PNG",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "nonblackBounds": null
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-world-restored.json",
+      "role": "visible_UI_window_capture_manifest",
+      "bytes": 1510,
+      "sha256": "48e52aff3a6dc3ea071f099a2ac650991c4770190e2cec4aea0a6b278cacfbc5"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle02-first-menu-after-match.png",
+      "role": "lifecycle_game_window_visual_context",
+      "bytes": 1808810,
+      "sha256": "271b8dfa0866f28eb5b670edbf861011a381f9b9d6ed45d39b3a38de66085577",
+      "format": "PNG",
+      "size": [
+        1936,
+        1119
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ]
+      ],
+      "nonblackBounds": [
+        0,
+        0,
+        1936,
+        1111
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle02-lobby-before-restart.png",
+      "role": "lifecycle_game_window_visual_context",
+      "bytes": 2939913,
+      "sha256": "dacb04c5d3455c65d22031691fc09c3ca09d55f7df8d589cea4f902fb4fe39ea",
+      "format": "PNG",
+      "size": [
+        1936,
+        1119
+      ],
+      "mode": "RGB",
+      "rgbExtrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ]
+      ],
+      "nonblackBounds": [
+        0,
+        0,
+        1936,
+        1111
+      ]
+    }
+  ],
+  "integrity": {
+    "allInputHashesVerifiedBeforeOutput": true,
+    "distinctInputFiles": 52,
+    "pngFiles": 34,
+    "tagJsonFiles": 7,
+    "actionJsonFiles": 3,
+    "identityJsonFiles": 1,
+    "settingsFiles": 1,
+    "sourceExplanationFiles": 5,
+    "discoveryOnlyFiles": 1,
+    "allInputHashesUnchangedAfterOutput": true,
+    "afterOutputRecheck": "verified against all 52 listed original inputs after both outputs were created"
+  },
+  "offlineConsistencyChecks": [
+    {
+      "name": "Repeated input bytes agree: gui-run29-identity.json",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Recorded session binds expected UI and game IDs",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Identity explicitly records candidate-only GUI scope",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "UI recorded start precedes identity snapshot",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-before-settings.txt",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Settings-before hash matches recorded identity",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Initial world switch stored off",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-world-on.json",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-on manifest binds expected tag and UI PID",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-on visible HWND set matches recorded transition",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-on image path binding 2230404",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-world-on-2230404.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-on PNG geometry 2230404",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-on panel-title heuristic consistency 2230404",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-on image path binding 2689582",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-world-on-2689582.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-on PNG geometry 2689582",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-on panel-title heuristic consistency 2689582",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-on image path binding 986248",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-world-on-986248.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-on PNG geometry 986248",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-on panel-title heuristic consistency 986248",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-on image path binding 5113760",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-world-on-5113760.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-on PNG geometry 5113760",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-on panel-title heuristic consistency 5113760",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-world-enabled.json",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-enabled manifest binds expected tag and UI PID",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-enabled visible HWND set matches recorded transition",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-enabled image path binding 2230404",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-world-enabled-2230404.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-enabled PNG geometry 2230404",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-enabled panel-title heuristic consistency 2230404",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-enabled image path binding 2689582",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-world-enabled-2689582.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-enabled PNG geometry 2689582",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-enabled panel-title heuristic consistency 2689582",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-enabled image path binding 986248",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-world-enabled-986248.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-enabled PNG geometry 986248",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-enabled panel-title heuristic consistency 986248",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-enabled image path binding 5113760",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-world-enabled-5113760.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-enabled PNG geometry 5113760",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-enabled panel-title heuristic consistency 5113760",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-enemy-view.json",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "enemy-view manifest binds expected tag and UI PID",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "enemy-view visible HWND set matches recorded transition",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "enemy-view image path binding 3869816",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-enemy-view-3869816.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "enemy-view PNG geometry 3869816",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "enemy-view panel-title heuristic consistency 3869816",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "enemy-view image path binding 2230404",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-enemy-view-2230404.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "enemy-view PNG geometry 2230404",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "enemy-view panel-title heuristic consistency 2230404",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "enemy-view image path binding 2689582",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-enemy-view-2689582.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "enemy-view PNG geometry 2689582",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "enemy-view panel-title heuristic consistency 2689582",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "enemy-view image path binding 986248",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-enemy-view-986248.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "enemy-view PNG geometry 986248",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "enemy-view panel-title heuristic consistency 986248",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "enemy-view image path binding 5113760",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-enemy-view-5113760.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "enemy-view PNG geometry 5113760",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "enemy-view panel-title heuristic consistency 5113760",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-world-off.json",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-off manifest binds expected tag and UI PID",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-off visible HWND set matches recorded transition",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-off image path binding 2230404",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-world-off-2230404.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-off PNG geometry 2230404",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-off panel-title heuristic consistency 2230404",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-off image path binding 2689582",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-world-off-2689582.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-off PNG geometry 2689582",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-off panel-title heuristic consistency 2689582",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-off image path binding 986248",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-world-off-986248.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-off PNG geometry 986248",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-off panel-title heuristic consistency 986248",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-off image path binding 5113760",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-world-off-5113760.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-off PNG geometry 5113760",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-off panel-title heuristic consistency 5113760",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-world-restored.json",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-restored manifest binds expected tag and UI PID",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-restored visible HWND set matches recorded transition",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-restored image path binding 3869816",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-world-restored-3869816.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-restored PNG geometry 3869816",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-restored panel-title heuristic consistency 3869816",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-restored image path binding 2230404",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-world-restored-2230404.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-restored PNG geometry 2230404",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-restored panel-title heuristic consistency 2230404",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-restored image path binding 2689582",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-world-restored-2689582.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-restored PNG geometry 2689582",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-restored panel-title heuristic consistency 2689582",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-restored image path binding 986248",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-world-restored-986248.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-restored PNG geometry 986248",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-restored panel-title heuristic consistency 986248",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-restored image path binding 5113760",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-world-restored-5113760.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-restored PNG geometry 5113760",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "world-restored panel-title heuristic consistency 5113760",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-after-match-menu.json",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "after-match-menu manifest binds expected tag and UI PID",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "after-match-menu visible HWND set matches recorded transition",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "after-match-menu image path binding 3869816",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-after-match-menu-3869816.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "after-match-menu PNG geometry 3869816",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "after-match-menu panel-title heuristic consistency 3869816",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "after-match-menu image path binding 2230404",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-after-match-menu-2230404.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "after-match-menu PNG geometry 2230404",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "after-match-menu panel-title heuristic consistency 2230404",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "after-match-menu image path binding 986248",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-after-match-menu-986248.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "after-match-menu PNG geometry 986248",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "after-match-menu panel-title heuristic consistency 986248",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "after-match-menu image path binding 5113760",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-after-match-menu-5113760.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "after-match-menu PNG geometry 5113760",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "after-match-menu panel-title heuristic consistency 5113760",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-lobby-before-restart.json",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "lobby-before-restart manifest binds expected tag and UI PID",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "lobby-before-restart visible HWND set matches recorded transition",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "lobby-before-restart image path binding 5113760",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-lobby-before-restart-5113760.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "lobby-before-restart PNG geometry 5113760",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "lobby-before-restart panel-title heuristic consistency 5113760",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "All seven stage completion timestamps strictly increase",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "All stages follow recorded UI start",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-world-enable-action.json",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "enable action target identity",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "enable control was actionable, enabled is not toggle value",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "enable action rectangle is XYWH within panel",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "enable capture completion follows action within two seconds",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-world-off-action.json",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "off action target identity",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "off control was actionable, enabled is not toggle value",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "off action rectangle is XYWH within panel",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "off capture completion follows action within two seconds",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-world-restore-action.json",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "restore action target identity",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "restore control was actionable, enabled is not toggle value",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "restore action rectangle is XYWH within panel",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "restore capture completion follows action within two seconds",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "World captured content matches positive, restore and result-page residual",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "World HWND is absent from off visible-window enumeration",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Mini layer is unchanged across positive/off/restore",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Top old content survives result page",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Result-page auxiliary window has no nonblack captured drawing",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Main-menu enumeration contains panel only",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Enabled and restored panel captures have identical bytes",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Off panel differs from on panel",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-game-initial.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "gui-run29-game-initial.png game context geometry",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-game-world-enabled.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "gui-run29-game-world-enabled.png game context geometry",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-game-enemy-view.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "gui-run29-game-enemy-view.png game context geometry",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-game-world-off.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "gui-run29-game-world-off.png game context geometry",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: gui-run29-game-world-restored.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "gui-run29-game-world-restored.png game context geometry",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: lifecycle02-first-menu-after-match.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "lifecycle02-first-menu-after-match.png saved screenshot identity",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: lifecycle02-lobby-before-restart.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "lifecycle02-lobby-before-restart.png saved screenshot identity",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: capture_overlay_state.py",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: window_probe.py",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: SquadMarkerHost.cs",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: SquadMarkerWindow.cs",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: SquadMarkerPreferences.cs",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Repeated input bytes agree: capabilities-gui-probe.py",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Evidence manifest contains all 34 scoped PNGs",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Scoped inputs total 52 distinct files",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-identity.json",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-before-settings.txt",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-world-on.json",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-world-on-2230404.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-world-on-2689582.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-world-on-986248.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-world-on-5113760.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-world-enabled.json",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-world-enabled-2230404.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-world-enabled-2689582.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-world-enabled-986248.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-world-enabled-5113760.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-enemy-view.json",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-enemy-view-3869816.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-enemy-view-2230404.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-enemy-view-2689582.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-enemy-view-986248.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-enemy-view-5113760.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-world-off.json",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-world-off-2230404.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-world-off-2689582.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-world-off-986248.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-world-off-5113760.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-world-restored.json",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-world-restored-3869816.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-world-restored-2230404.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-world-restored-2689582.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-world-restored-986248.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-world-restored-5113760.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-after-match-menu.json",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-after-match-menu-3869816.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-after-match-menu-2230404.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-after-match-menu-986248.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-after-match-menu-5113760.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-lobby-before-restart.json",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-lobby-before-restart-5113760.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-world-enable-action.json",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-world-off-action.json",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-world-restore-action.json",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-game-initial.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-game-world-enabled.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-game-enemy-view.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-game-world-off.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: gui-run29-game-world-restored.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: lifecycle02-first-menu-after-match.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: lifecycle02-lobby-before-restart.png",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: capture_overlay_state.py",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: window_probe.py",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: SquadMarkerHost.cs",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: SquadMarkerWindow.cs",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: SquadMarkerPreferences.cs",
+      "status": "PASS_offline_evidence_consistency"
+    },
+    {
+      "name": "Input unchanged before output: capabilities-gui-probe.py",
+      "status": "PASS_offline_evidence_consistency"
+    }
+  ],
+  "offlineConsistencyCheckCount": 235
+}

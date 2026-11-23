@@ -1,0 +1,11 @@
+﻿{
+    "utc":  "2026-11-21T06:32:40.4779657Z",
+    "gamePid":  33656,
+    "gameStartUtc":  "2026-11-21T03:42:27.6605831Z",
+    "gamePath":  "G:\\SteamLibrary\\steamapps\\common\\Company of Heroes 3\\RelicCoH3.exe",
+    "gameSha256":  "8A3445292255D652C8DBE9B53F24328AF159C161BE89836BA54EF070946DD3EC",
+    "gameHwnd":  2428198,
+    "ui7672Absent":  true,
+    "nativeScreenshot":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\round06-current-native-page.png",
+    "scope":  "scoped identity and passive native-window capture only"
+}

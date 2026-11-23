@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T14:23:28.445969+00:00",
+  "generatedAt": "2026-11-23T09:02:18.195822+00:00",
   "passed": true,
   "checks": [
     {
@@ -7,7 +7,7 @@
       "passed": true
     },
     {
-      "name": "120 server regression checks",
+      "name": "server regression checks recorded",
       "passed": true
     },
     {
@@ -303,7 +303,7 @@
     },
     {
       "document": "reports\\protection-validation.md",
-      "link": "../evidence/release-static-analysis/summary.json",
+      "link": "../evidence/release-static-analysis-20261121/summary.json",
       "exists": true
     },
     {
@@ -369,6 +369,61 @@
     {
       "document": "reports\\protection-validation.md",
       "link": "../evidence/protected-real-entry-lifecycle-20261116.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/version-adaptation/perbuild-adaptation-52426.md",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/validation-summary-2026-11-21.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/authorized-revision-2026-11-21.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/raw-signed-20261121-194453/summary.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/protected-verification-20261121-194637-331.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/ui-pair-20261121-200800.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/session-cleanup-cloud-20261121.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/release-static-analysis-20261121/summary.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/protected-real-entry-lifecycle-20261121.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/final-validation.json",
+      "exists": true
+    },
+    {
+      "document": "reports\\protection-validation.md",
+      "link": "../evidence/authorized-revision-2026-11-23.json",
       "exists": true
     },
     {
@@ -464,12 +519,16 @@
   ],
   "secretScanner": "Administrator tokens, fixture code values and private PEM payload lines checked in memory; no values saved.",
   "trialBinaryIncluded": false,
-  "authorizedRevision": "2026-11-16-cloud-licensing-endpoint",
+  "authorizedRevision": "2026-11-23-session-lifecycle-adaptation",
   "customerArchiveReissued": true,
   "limitations": [
     "Reactor output is a 14-day demo experiment and excluded from every delivery archive.",
     "ILSpy still exports release C#; obfuscation raises analysis cost.",
     "Preview pixels and decoded audio do not prove live-game correctness or audible playback.",
-    "Public deployment, another machine, long sessions and protection patch resistance are not tested."
+    "Public deployment, another machine, long sessions and protection patch resistance are not tested.",
+    "The .NET Reactor trial binary could not be rebuilt for the 2026-11-21 client because the vendor CLI is absent from this checkout; the reactorTrial comparison therefore still covers the 2026-11-13 trial artifact while the raw and release comparisons cover the 2026-11-21 binaries.",
+    "The cloud session count is compared against an explicit allowance of one foreign session (the operator own live client); every release fixture card is inactive.",
+    "The 2026-11-21 real entry capture ran against an isolated loopback deployment with an empty database so that the operator live match and cloud session were not disturbed.",
+    "The settings form under verification attaches to a running RelicCoH3 process, so the preview line paints live number colours; the release pixel comparison therefore uses a back to back capture of both builds (evidence/ui-pair-20261121-200800.json) instead of two suite runs separated in time."
   ]
 }

@@ -1,0 +1,9 @@
+﻿{
+    "utc":  "2026-11-21T06:06:49.8046502Z",
+    "pid":  7672,
+    "expectedStartUtc":  "2026-11-21T05:31:23.1370342Z",
+    "closeRequested":  true,
+    "processExited":  true,
+    "observation":  "scoped CloseMainWindow request and process exit check",
+    "finishedUtc":  "2026-11-21T06:06:50.1474080Z"
+}

@@ -1,0 +1,586 @@
+{
+  "status": "PASS_offline_internal_consistency_only",
+  "target": "G:\\SteamLibrary\\steamapps\\common\\Company of Heroes 3\\RelicCoH3.exe",
+  "sha256": "8A3445292255D652C8DBE9B53F24328AF159C161BE89836BA54EF070946DD3EC",
+  "feature_count": 30,
+  "total_raw_hits": 1122,
+  "features": [
+    {
+      "id": "resource_root_getter",
+      "expected_rva": "0x930c32",
+      "raw_hit_count": 44,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "multi_hit",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "resource_vector_iteration",
+      "expected_rva": "0x2727fe",
+      "raw_hit_count": 1,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "unique_raw_candidate",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "resource_vector_count",
+      "expected_rva": "0x272880",
+      "raw_hit_count": 1,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "unique_raw_candidate",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "world_offset",
+      "expected_rva": "0x17932a",
+      "raw_hit_count": 1,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "unique_raw_candidate",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "role_0xcd0f10",
+      "expected_rva": "0xcd0f10",
+      "raw_hit_count": 6,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "multi_hit",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "role_0xcd0f1d",
+      "expected_rva": "0xcd0f1d",
+      "raw_hit_count": 1,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "unique_raw_candidate",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "role_0xcd0f60",
+      "expected_rva": "0xcd0f60",
+      "raw_hit_count": 2,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "multi_hit",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "role_0x7e1e97",
+      "expected_rva": "0x7e1e97",
+      "raw_hit_count": 15,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "multi_hit",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "role_0x54c7c4",
+      "expected_rva": "0x54c7c4",
+      "raw_hit_count": 12,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "multi_hit",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "role_0x54c783",
+      "expected_rva": "0x54c783",
+      "raw_hit_count": 12,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "multi_hit",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "role_0x76568f",
+      "expected_rva": "0x76568f",
+      "raw_hit_count": 467,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "multi_hit",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "role_0x550170",
+      "expected_rva": "0x550170",
+      "raw_hit_count": 1,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "unique_raw_candidate",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "role_0xd23080",
+      "expected_rva": "0xd23080",
+      "raw_hit_count": 1,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "unique_raw_candidate",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "role_0x11370e0",
+      "expected_rva": "0x11370e0",
+      "raw_hit_count": 1,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "unique_raw_candidate",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "role_0x328a7f8",
+      "expected_rva": "0x328a7f8",
+      "raw_hit_count": 1,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "unique_raw_candidate",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "camera_registry",
+      "expected_rva": "0x189e43",
+      "raw_hit_count": 119,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "multi_hit",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "ui_singleton_read",
+      "expected_rva": "0x6a613d",
+      "raw_hit_count": 1,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "unique_raw_candidate",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "ui_singleton_store",
+      "expected_rva": "0x14c9708",
+      "raw_hit_count": 6,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "multi_hit",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "colour_property_registry",
+      "expected_rva": "0x405576",
+      "raw_hit_count": 2,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "multi_hit",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "matrix_wrapper",
+      "expected_rva": "0x1411bc2",
+      "raw_hit_count": 1,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "unique_raw_candidate",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "playable_width_wrapper",
+      "expected_rva": "0xdf457b",
+      "raw_hit_count": 2,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "multi_hit",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "playable_height_wrapper",
+      "expected_rva": "0xdf465c",
+      "raw_hit_count": 2,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "multi_hit",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "wrapper_pointer_store",
+      "expected_rva": "0x9c5e56",
+      "raw_hit_count": 401,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "multi_hit",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "health_lookup",
+      "expected_rva": "0x2eb5d4",
+      "raw_hit_count": 1,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "unique_raw_candidate",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "tls_component_pool",
+      "expected_rva": "0x2eb5f7",
+      "raw_hit_count": 1,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "unique_raw_candidate",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "component_descriptor_resolver",
+      "expected_rva": "0x820980",
+      "raw_hit_count": 1,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "unique_raw_candidate",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "arena_helper_anchor",
+      "expected_rva": "0x8209ad",
+      "raw_hit_count": 12,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "multi_hit",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "projectile_dynamics_install",
+      "expected_rva": "0x10e25a2",
+      "raw_hit_count": 1,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "unique_raw_candidate",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "projectile_vtable_install",
+      "expected_rva": "0x10ccaa0",
+      "raw_hit_count": 5,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "multi_hit",
+      "selected_rva": null,
+      "runtime_validated": false
+    },
+    {
+      "id": "mover_vtable_install",
+      "expected_rva": "0x707a9d",
+      "raw_hit_count": 1,
+      "checks": {
+        "all_hits_equal_manifest": true,
+        "count_equal": true,
+        "expected_site_present": true,
+        "all_decoded_targets_equal_manifest": true,
+        "expected_site_target_constraints": true
+      },
+      "classification": "unique_raw_candidate",
+      "selected_rva": null,
+      "runtime_validated": false
+    }
+  ],
+  "rtti": [
+    {
+      "name": ".?AVTimedAbility@@",
+      "checks": {
+        "col_signature1": true,
+        "col_self": true,
+        "type_descriptor": true,
+        "vtable_minus8": true,
+        "name": true
+      }
+    },
+    {
+      "name": ".?AVProjectileExt@@",
+      "checks": {
+        "col_signature1": true,
+        "col_self": true,
+        "type_descriptor": true,
+        "vtable_minus8": true,
+        "name": true
+      }
+    },
+    {
+      "name": ".?AVMoverDynamics@@",
+      "checks": {
+        "col_signature1": true,
+        "col_self": true,
+        "type_descriptor": true,
+        "vtable_minus8": true,
+        "name": true
+      }
+    },
+    {
+      "name": ".?AVProjectileDynamics@@",
+      "checks": {
+        "col_signature1": true,
+        "col_self": true,
+        "type_descriptor": true,
+        "vtable_minus8": true,
+        "name": true
+      }
+    },
+    {
+      "name": ".?AVEntityUpgradeProductionItem@@",
+      "checks": {
+        "col_signature1": true,
+        "col_self": true,
+        "type_descriptor": true,
+        "vtable_minus8": true,
+        "name": true
+      }
+    },
+    {
+      "name": ".?AVPlayerUpgradeProductionItem@@",
+      "checks": {
+        "col_signature1": true,
+        "col_self": true,
+        "type_descriptor": true,
+        "vtable_minus8": true,
+        "name": true
+      }
+    },
+    {
+      "name": ".?AVSpawnProductionItem@@",
+      "checks": {
+        "col_signature1": true,
+        "col_self": true,
+        "type_descriptor": true,
+        "vtable_minus8": true,
+        "name": true
+      }
+    },
+    {
+      "name": ".?AVSquadUpgradeProductionItem@@",
+      "checks": {
+        "col_signature1": true,
+        "col_self": true,
+        "type_descriptor": true,
+        "vtable_minus8": true,
+        "name": true
+      }
+    }
+  ],
+  "MoverDynamics_slot344": true,
+  "fixtures": [
+    {
+      "id": "zero",
+      "fixture_bytes": "90 90 90",
+      "sig": "CC DD",
+      "all_hits": [],
+      "classification": "zero_hit",
+      "selected_rva": null,
+      "runtime_validated": false,
+      "pass": true
+    },
+    {
+      "id": "multi",
+      "fixture_bytes": "aa bb 00 00 aa bb",
+      "sig": "AA BB",
+      "all_hits": [
+        0,
+        4
+      ],
+      "classification": "multi_hit",
+      "selected_rva": null,
+      "runtime_validated": false,
+      "pass": true
+    },
+    {
+      "id": "unique_is_not_validation",
+      "fixture_bytes": "aa bb 00",
+      "sig": "AA BB",
+      "all_hits": [
+        0
+      ],
+      "classification": "unique_raw_candidate",
+      "selected_rva": null,
+      "runtime_validated": false,
+      "pass": true
+    }
+  ],
+  "failures": [],
+  "limits": [
+    "No candidate is selected, including unique patterns.",
+    "Raw matches include mid-instruction offsets; decoder target agreement is a static constraint, not runtime object validation.",
+    "Image-base/TLS indexed operand displacement requires surrounding register semantics; manifest preserves instructions rather than guessing the external thread.",
+    "No old executable or two-new-session dynamic verification is performed."
+  ]
+}

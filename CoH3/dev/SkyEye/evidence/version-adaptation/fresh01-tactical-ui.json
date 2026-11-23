@@ -1,0 +1,18 @@
+{
+  "utc": "2026-11-20T19:05:49.777869+00:00",
+  "pid": 15820,
+  "tag": "fresh01-tactical-ui",
+  "windows": [
+    {
+      "hwnd": 7800856,
+      "isControlPanel": true,
+      "rect": [
+        540,
+        221,
+        2020,
+        1171
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\fresh01-tactical-ui-7800856.png"
+    }
+  ]
+}

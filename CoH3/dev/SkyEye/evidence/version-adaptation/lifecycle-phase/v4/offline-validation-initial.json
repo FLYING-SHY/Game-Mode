@@ -1,0 +1,115 @@
+{
+  "schema": "phase-probe-offline-validation-v4",
+  "runMode": "offline_fixture_only",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "testsRun": 38,
+  "failures": 2,
+  "errors": 0,
+  "skipped": 0,
+  "successful": false,
+  "nativeWinDLLBlocked": true,
+  "nativeWinDLLAttempts": 0,
+  "realSamples": 0,
+  "phaseDecision": "not_evaluated",
+  "productAcceptance": false,
+  "operatorLabelIsObservedPhase": false,
+  "wrapperSha256": "b8cc05b3ae3ed8c162bd6119b2f7896ec23f389ab273c1337c03eac3f1dcb23f",
+  "selftestSha256": "9f942236d4eed3f0f7463fb19a7e89097dd6e16048fe6746c98829187f4699ed",
+  "frozenV2FixtureHelper": {
+    "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v2\\phase_probe_v2_selftest.py",
+    "sha256": "944ea751f2917c95476b1c60de447059f530e8e45405e29bc797db2b18003055",
+    "sourceBytesExecutedUnmodified": true,
+    "legacyTestSuiteRerun": false
+  },
+  "positiveReferences": {
+    "running": {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\live-round3\\pid30504-running-001.json",
+      "sha256": "760a92a813aac94c94444dc2ee1b2d3d01a941c648305a68488f0194e008ac59",
+      "bytes": 5039164
+    },
+    "paused": {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\live-round3\\pid30504-paused-001.json",
+      "sha256": "ba29370662feeab744da3fa20cbf3812eb69ae5d9b2fd79fcf7f63f4591696fd",
+      "bytes": 5031347
+    }
+  },
+  "protectedHistoricalFilesUnchanged": true,
+  "protectedHashesBefore": {
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\fresh02-paused-before-kwk38-progress.json": "36d7929624a755691157772fd2dbe86b1a087ae9d94dfd80c23a124a428293de",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\fresh02-paused-before-results.json": "8481416d9cc9a7748dd9528467bc0b6481385c9ef6a44ee1e422f3397164f939",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\fresh02-results.json": "37504727a98da1dc8dfeab46aac03618cf88b85f394500dd1c34ec5bbcf024f4",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\fresh02-running-kwk38-progress.json": "b8f41a428be8a352bc37041239945a29aa32ccfb6d5d10a2d28147c27607a40b",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\fresh03-paused-0001.json": "7eb5bf5e2971816c2a1686f34f99f32f02223b8a615234a9083edec6e711c6be",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\phase_probe.py": "21af7198c86ea5f53b06e9df737251d81a21dd345ec243b8974beca75ec1d723",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\phase_probe_selftest.py": "719006fae4c7389932082756cc08cc703f0ea3d419dc762083dba4b168a7c2a2",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\README.md": "79c69b460b775819a9c560f98966c40d9dbd918528ad538419cb70ee8ccac9b1",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v2\\fresh02-mainmenu-label-correction.json": "68c22d2f4a8b85ebe1f9436cbe38335ca9736fd34a6a2572fbdf3195de11dd8d",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v2\\fresh02-mainmenu-v2.json": "bbd598de59de73b18c66e232617f49f90581c831a5f3410f4e34b2c595421c42",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v2\\fresh02-results-v2.json": "c6b57fd2f067fb94ff4037d1ca7ba9a82cae6d4061120ed659cb5ec55a3703c2",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v2\\fresh03-paused-old-ref-v2.json": "88bd51deeced24ec43431f9351e7e4e1572bce0374d8ca4c4780940589859f5d",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v2\\fresh03-paused-own-ref-v2.json": "fce776c4249a199aea3aff48eba141828b48dc9fa29c8680ecf0c6539dfaacd0",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v2\\fresh03-running-old-ref-v2.json": "73a46195a122315d49ceac516e5c324a9d525f284c20dc3ea03392e88245f655",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v2\\phase_probe_v2.py": "e2c56be1b7b49f242b4549545e03e4a50d765e5de9c9cf7b8473a9966525e7c0",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v2\\phase_probe_v2_selftest.py": "944ea751f2917c95476b1c60de447059f530e8e45405e29bc797db2b18003055",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v2\\README.md": "f33d25db85a210ba8caa9eca098438ded792b0c2a652b7bdfa5d4714963b7017",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\live-round3\\pid30504-mainmenu-001.json": "0e97e864802dc297d03456b418f18996603754a60da99f8a119f658d54a88ee1",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\live-round3\\pid30504-paused-001.json": "ba29370662feeab744da3fa20cbf3812eb69ae5d9b2fd79fcf7f63f4591696fd",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\live-round3\\pid30504-results-001.json": "fcf57146d7e032598dbe9967a7013163f8f1fb10373da0eca589b76f9a7100f8",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\live-round3\\pid30504-running-001.json": "760a92a813aac94c94444dc2ee1b2d3d01a941c648305a68488f0194e008ac59",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\offline-validation-initial.json": "dd0d8e2dd383d00ba185c92d228234c9b4599dc86d35cf83bca7dc563d52feb5",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\offline-validation.json": "b8d3602c03588d546bbaddc0c5ef30758da16db93b2d5431b82463d7f3ca6d58",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\phase_probe_v3.py": "81ee593a762933f0cf119cbc6fdcafc37cfa687ddd171aad6aa6f99dbf7da66b",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\phase_probe_v3_selftest.py": "7d0417a9b6a126a80e95695810b8583847ca41ff50f58715094c6119b1b6eeac",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\README.md": "a9833b33611427012f3e51cd896b84c287f13d723841df048f362b96e1a6e7d2",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\source-binding-offline.json": "0797dc974673131b11d43b8cd002f4d7f041cf72c26cbd20c45a3bce812b551e"
+  },
+  "protectedHashesAfter": {
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\fresh02-paused-before-kwk38-progress.json": "36d7929624a755691157772fd2dbe86b1a087ae9d94dfd80c23a124a428293de",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\fresh02-paused-before-results.json": "8481416d9cc9a7748dd9528467bc0b6481385c9ef6a44ee1e422f3397164f939",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\fresh02-results.json": "37504727a98da1dc8dfeab46aac03618cf88b85f394500dd1c34ec5bbcf024f4",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\fresh02-running-kwk38-progress.json": "b8f41a428be8a352bc37041239945a29aa32ccfb6d5d10a2d28147c27607a40b",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\fresh03-paused-0001.json": "7eb5bf5e2971816c2a1686f34f99f32f02223b8a615234a9083edec6e711c6be",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\phase_probe.py": "21af7198c86ea5f53b06e9df737251d81a21dd345ec243b8974beca75ec1d723",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\phase_probe_selftest.py": "719006fae4c7389932082756cc08cc703f0ea3d419dc762083dba4b168a7c2a2",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\README.md": "79c69b460b775819a9c560f98966c40d9dbd918528ad538419cb70ee8ccac9b1",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v2\\fresh02-mainmenu-label-correction.json": "68c22d2f4a8b85ebe1f9436cbe38335ca9736fd34a6a2572fbdf3195de11dd8d",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v2\\fresh02-mainmenu-v2.json": "bbd598de59de73b18c66e232617f49f90581c831a5f3410f4e34b2c595421c42",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v2\\fresh02-results-v2.json": "c6b57fd2f067fb94ff4037d1ca7ba9a82cae6d4061120ed659cb5ec55a3703c2",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v2\\fresh03-paused-old-ref-v2.json": "88bd51deeced24ec43431f9351e7e4e1572bce0374d8ca4c4780940589859f5d",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v2\\fresh03-paused-own-ref-v2.json": "fce776c4249a199aea3aff48eba141828b48dc9fa29c8680ecf0c6539dfaacd0",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v2\\fresh03-running-old-ref-v2.json": "73a46195a122315d49ceac516e5c324a9d525f284c20dc3ea03392e88245f655",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v2\\phase_probe_v2.py": "e2c56be1b7b49f242b4549545e03e4a50d765e5de9c9cf7b8473a9966525e7c0",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v2\\phase_probe_v2_selftest.py": "944ea751f2917c95476b1c60de447059f530e8e45405e29bc797db2b18003055",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v2\\README.md": "f33d25db85a210ba8caa9eca098438ded792b0c2a652b7bdfa5d4714963b7017",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\live-round3\\pid30504-mainmenu-001.json": "0e97e864802dc297d03456b418f18996603754a60da99f8a119f658d54a88ee1",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\live-round3\\pid30504-paused-001.json": "ba29370662feeab744da3fa20cbf3812eb69ae5d9b2fd79fcf7f63f4591696fd",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\live-round3\\pid30504-results-001.json": "fcf57146d7e032598dbe9967a7013163f8f1fb10373da0eca589b76f9a7100f8",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\live-round3\\pid30504-running-001.json": "760a92a813aac94c94444dc2ee1b2d3d01a941c648305a68488f0194e008ac59",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\offline-validation-initial.json": "dd0d8e2dd383d00ba185c92d228234c9b4599dc86d35cf83bca7dc563d52feb5",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\offline-validation.json": "b8d3602c03588d546bbaddc0c5ef30758da16db93b2d5431b82463d7f3ca6d58",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\phase_probe_v3.py": "81ee593a762933f0cf119cbc6fdcafc37cfa687ddd171aad6aa6f99dbf7da66b",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\phase_probe_v3_selftest.py": "7d0417a9b6a126a80e95695810b8583847ca41ff50f58715094c6119b1b6eeac",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\README.md": "a9833b33611427012f3e51cd896b84c287f13d723841df048f362b96e1a6e7d2",
+    "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v3\\source-binding-offline.json": "0797dc974673131b11d43b8cd002f4d7f041cf72c26cbd20c45a3bce812b551e"
+  },
+  "writesObserved": [
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v4\\offline-validation-initial.json",
+      "mode": "x"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v4\\phase_probe_v4.py",
+      "mode": "x"
+    }
+  ],
+  "failureDetails": [
+    {
+      "test": "test_template_field_kind_offsets_and_minimap_parent (__main__.ReferenceChecks.test_template_field_kind_offsets_and_minimap_parent) (path=['samples', 0, 'hud', 'proofs', 0, 'flags192Stable'], value='False')",
+      "traceback": "Traceback (most recent call last):\n  File \"F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v4\\phase_probe_v4_selftest.py\", line 117, in reject\n    with self.subTest(path=path, value=str(value)[:80]), self.assertRaisesRegex(ValueError, reason):\nAssertionError: ValueError not raised\n"
+    },
+    {
+      "test": "test_global_read_budget_and_blocking_overrun_close_and_keep_partial_evidence (__main__.CaptureChecks.test_global_read_budget_and_blocking_overrun_close_and_keep_partial_evidence)",
+      "traceback": "Traceback (most recent call last):\n  File \"F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\lifecycle-phase\\v4\\phase_probe_v4_selftest.py\", line 471, in test_global_read_budget_and_blocking_overrun_close_and_keep_partial_evidence\n    self.assertEqual(report[\"status\"], \"budget_exhausted\")\nAssertionError: 'failed' != 'budget_exhausted'\n- failed\n+ budget_exhausted\n\n"
+    }
+  ]
+}

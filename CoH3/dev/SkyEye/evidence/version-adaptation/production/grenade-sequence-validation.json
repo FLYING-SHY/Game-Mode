@@ -1,0 +1,27 @@
+{
+  "status": "pass",
+  "scope": "actual US grenade queue decreasing to completion; not full build acceptance",
+  "pid": 31572,
+  "blueprint": "upgrade\\american\\research\\barracks\\grenade_riflemen_us",
+  "queue": "0x1fd71d92000",
+  "entry": "0x1fd72efff00",
+  "item": "0x1fd6f2ed300",
+  "remainingTicks": [
+    187,
+    118,
+    null
+  ],
+  "totalTicks": 200,
+  "derivedSeconds": [
+    24,
+    15,
+    null
+  ],
+  "completedPlayerUpgrade": true,
+  "limitations": [
+    "UI countdown numerical agreement not independently read",
+    "Sound/production overlay not verified",
+    "Kwk38 SquadUpgrade still absent",
+    "Other event families keep aggregate exit5"
+  ]
+}

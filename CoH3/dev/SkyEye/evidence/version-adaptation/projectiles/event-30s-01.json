@@ -1,0 +1,776 @@
+{
+  "status": "event_observation_not_CSharp_execution",
+  "stopReason": "20 second diagnostic budget exceeded",
+  "elapsedSeconds": 20.21899999999914,
+  "totalBytesRead": 25889632,
+  "limits": {
+    "seconds": 30,
+    "intervalSeconds": 0.5,
+    "totalReadBytes": 33554432,
+    "retainedRecordJsonBytes": 1500000,
+    "samples": 61
+  },
+  "samples": [
+    {
+      "utc": "2026-11-20T17:48:28.706225+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718599,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:29.253365+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:29.798186+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:30.344628+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:30.888467+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:31.434639+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:31.981228+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:32.538809+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:33.113549+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:33.689822+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:34.246570+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:34.815278+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:35.370662+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:35.935499+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:36.488415+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:37.059663+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:37.635625+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:38.212447+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:38.781097+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:39.338779+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:39.899465+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:40.466022+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:41.027219+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:41.592604+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:42.151760+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:42.709272+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:43.271436+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:43.847725+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:44.430896+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:45.016051+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:45.572169+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:46.121502+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:46.679946+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:47.241898+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:47.814634+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    },
+    {
+      "utc": "2026-11-20T17:48:48.374996+00:00",
+      "coverage": {
+        "liveInspected": 3212,
+        "projectilePaths": 3
+      },
+      "filteredGates": {
+        "componentPresent": 2,
+        "weapon": 1,
+        "actorState64": 1
+      },
+      "errors": [],
+      "bytesRead": 718063,
+      "candidateCount": 0
+    }
+  ],
+  "records": [
+    {
+      "entity": "0x17c05281600",
+      "registryIndex": 3135,
+      "generation": 1000008557,
+      "blueprint": "ebps\\gameplay\\projectiles\\races\\german\\p_gun_20mm_axis",
+      "gates": {
+        "bodyPresent": true,
+        "componentPresent": false,
+        "actorVtable": true,
+        "actorBackref": true,
+        "actorMode16": true
+      },
+      "rawBodyHex": "f81057a7f77f0000d17d7b3f000000005e553fbeec772bbd027e793f6f6161be38783a3ecb6b653e2d19753f0a25b2c228a9cb41600562423016e3b27c010000009342010300000003000000eb03e6036010c008d016c008fffffffff4150000881157a7f77f00006deb9a3b3f0c000010b984008101000000604c01ffffffff703a02d680010000e3270a00942500000000803fb378273da478273d3cedd63d86450000d422b2c264b3cb419e1b6242b378273da478273d3cedd63dd17d7b3f000000005e553fbeec772bbd027e793f6f6161be38783a3ecb6b653e2d19753fd422b2c29e1b6242b378273d3cedd63dd37d7b3f5f553fbe5f553f3ed37d7b3f0000000000000000000000000000000000000000ffffffff000000000000000079e01a04060000000400000000000000009d40390084c0b86efab93c03adadad0beb9a3bc3020000adadadadadadadad0a25b2c26005624200000000000000000000803f00000000000000000000803fffffffff0000000000000000ffffffff40aa100000182805",
+      "body": {
+        "offset388": "0x5281800",
+        "flags160": "0x4586",
+        "position44": [
+          -89.07234191894531,
+          25.457595825195312,
+          56.5052490234375
+        ]
+      },
+      "component": {
+        "lookupRva": "0x628a7f2",
+        "kind": 1003,
+        "slot": 0,
+        "mode": 0,
+        "state": 0,
+        "value": "0xc97a8a0",
+        "componentId": 18
+      },
+      "rawActorHex": "38aa62a7f77f00000100000000000000020000009123b1c2459cd041c6986c42080000000016280596a9e63dfffffffffffffffff77f0000002156a7007f0100010000000a25b2c228a9cb4160056242",
+      "actor": {
+        "address": "0x17c05281800",
+        "rtti": {
+          "vtableRva": "0x3e4aa38",
+          "name": ".?AVProjectileDynamics@@",
+          "colRva": "0x505adb8",
+          "typeDescriptorRva": "0x5f992d0"
+        },
+        "backref36": "0x17c05281600",
+        "state64": 1,
+        "mode16": 2,
+        "position20": [
+          -88.56946563720703,
+          26.076303482055664,
+          59.149192810058594
+        ]
+      },
+      "generationStable": true,
+      "failedGates": [
+        "componentPresent"
+      ],
+      "note": "ownerInPlayers is not enemy attribution; exact enemy/local selection and engine ValidPosition, cache warmup, source-name/timing not reimplemented",
+      "allRecordedGatesPass": false,
+      "sampledUtc": "2026-11-20T17:48:28.706225+00:00"
+    },
+    {
+      "entity": "0x17c0529d400",
+      "registryIndex": 3138,
+      "generation": 1000008558,
+      "blueprint": "ebps\\gameplay\\projectiles\\parent\\p_flamethrower_parent",
+      "gates": {
+        "bodyPresent": true,
+        "componentPresent": true,
+        "actorVtable": true,
+        "actorBackref": true,
+        "actorMode16": true,
+        "extVtable": true,
+        "ownerValid": true,
+        "ownerInPlayers": true,
+        "weapon": false,
+        "extBackref": true,
+        "sourceType": true,
+        "source20": true,
+        "radius": true,
+        "notDestroyed": true,
+        "actorState64": false,
+        "notArrived": true
+      },
+      "rawBodyHex": "f81057a7f77f0000c211783f00000000e9e77cbe900659bd1f0a7a3f12e054be7a04773e47ae5b3e274b723f854ab2c226b0bf415c2e6242c043e3b27c01000080b942010300000003000000eb03e4036010c008d016c008fffffffff5150000881157a7f77f00006eeb9a3b420c0000f0b2329b7c010000c0434c01ffffffff80fb5ffe8001000000000000ffffffff0000803fa478a73db478a73d3ced563e9e010000fe44b2c2d0c3bf41be596242a478a73db478a73d3ced563ec211783f00000000e9e77cbe900659bd1f0a7a3f12e054be7a04773e47ae5b3e274b723ffe44b2c2be596242a478a73d3ced563ec211783fe9e77cbeebe77c3ec411783f0000000000000000000000000000000000000000adadadad00000000000000007ae01a040000000004000000000000000000a03200004cb47657373d03adadad44ea9a3bed0b0000adadadadadadadad854ab2c25c2e624200000000000000000000803f00000000000000000000803fffffffff0000000000000000ffffffffc0c1100000762a05",
+      "body": {
+        "offset388": "0x52a7600",
+        "flags160": "0x19e",
+        "position44": [
+          -89.14554595947266,
+          23.961009979248047,
+          56.54527282714844
+        ]
+      },
+      "component": {
+        "lookupRva": "0x628a7f2",
+        "kind": 1003,
+        "slot": 0,
+        "mode": 0,
+        "state": 1,
+        "value": "0xc97a970",
+        "componentId": 18,
+        "address": "0x17c0c97a970",
+        "rtti": {
+          "vtableRva": "0x3e49618",
+          "name": ".?AVProjectileExt@@",
+          "colRva": "0x505ddb0",
+          "typeDescriptorRva": "0x5f8b540"
+        }
+      },
+      "rawActorHex": "38aa62a7f77f0000010000000000000002b7033f9d2eb1c29e9bd04132926c42de8e854200d4290593a9663ec3f5a83eee52033ffabf5b3f00bf5bbf0052010001000000854ab2c226b0bf415c2e6242",
+      "actor": {
+        "address": "0x17c052a7600",
+        "rtti": {
+          "vtableRva": "0x3e4aa38",
+          "name": ".?AVProjectileDynamics@@",
+          "colRva": "0x505adb8",
+          "typeDescriptorRva": "0x5f992d0"
+        },
+        "backref36": "0x17c0529d400",
+        "state64": 1,
+        "mode16": 2,
+        "position20": [
+          -88.5910415649414,
+          26.075984954833984,
+          59.14276885986328
+        ]
+      },
+      "rawExtHex": "189662a7f77f000000d429050000000003adadad31ea9a3be90b0000adadadadadadadad03adadad18e99a3b900b0000adadadadadadadad0090c008adadadad707275b27c010000e0bb1000a0b7100020b9100020c2100080df10000000004000000040000000400000a04001adadadffffffff010000ad0000803e000000000000000000000000000000000000adad4d79bbc229ffab41c7cf1b42ffffffff0400000000000000882156a7f77f0000ffffffff00000000adadadadadadadad00ab970c7c010000adadadadadadadad",
+      "ext": {
+        "rtti": {
+          "vtableRva": "0x3e49618",
+          "name": ".?AVProjectileExt@@",
+          "colRva": "0x505ddb0",
+          "typeDescriptorRva": "0x5f8b540"
+        },
+        "backref8": "0x17c0529d400",
+        "ownerOffset56": "0x8c09000",
+        "ownerPlayer": {
+          "address": "0x17c08c09000",
+          "slot": 1,
+          "identity": "0x1000003e9"
+        },
+        "weapon": "weapon\\german\\flame_throwers\\flamethrower_pioneer_us",
+        "sourceType16": 3,
+        "source20": 1000008241,
+        "source24": 3049,
+        "radius104": 5.0,
+        "mortar": false,
+        "arc": false
+      },
+      "positionsFiniteBroadBound": true,
+      "generationStable": true,
+      "failedGates": [
+        "weapon",
+        "actorState64"
+      ],
+      "note": "ownerInPlayers is not enemy attribution; exact enemy/local selection and engine ValidPosition, cache warmup, source-name/timing not reimplemented",
+      "allRecordedGatesPass": false,
+      "sampledUtc": "2026-11-20T17:48:28.706225+00:00"
+    },
+    {
+      "entity": "0x17c0529f400",
+      "registryIndex": 3139,
+      "generation": 1000008556,
+      "blueprint": "ebps\\gameplay\\projectiles\\parent\\p_flamethrower_parent",
+      "gates": {
+        "bodyPresent": true,
+        "componentPresent": false,
+        "actorVtable": true,
+        "actorBackref": true,
+        "actorMode16": true
+      },
+      "rawBodyHex": "f81057a7f77f0000c211783f00000000e9e77cbe900659bd1f0a7a3f12e054be7a04773e47ae5b3e274b723f854ab2c226b0bf415c2e6242c043e3b27c010000009742010300000003000000eb03e6036010c008d016c008fffffffff4150000881157a7f77f00006ceb9a3b430c0000f0c484008101000080314801ffffffffd02902d68001000000000000ffffffff0000803fa478a73db478a73d3ced563e86450000fe44b2c2d0c3bf41be596242a478a73db478a73d3ced563ec211783f00000000e9e77cbe900659bd1f0a7a3f12e054be7a04773e47ae5b3e274b723ffe44b2c2be596242a478a73d3ced563ec211783fe9e77cbeebe77c3ec411783f0000000000000000000000000000000000000000adadadad000000000000000078e01a040e00000004000000000000000000a03200004cb47657373d03adadad44ea9a3bed0b0000adadadadadadadad854ab2c25c2e624200000000000000000000803f00000000000000000000803fffffffff0000000000000000ffffffff80b51000001a2805",
+      "body": {
+        "offset388": "0x5281a00",
+        "flags160": "0x4586",
+        "position44": [
+          -89.14554595947266,
+          23.961009979248047,
+          56.54527282714844
+        ]
+      },
+      "component": {
+        "lookupRva": "0x628a7f2",
+        "kind": 1003,
+        "slot": 0,
+        "mode": 0,
+        "state": 0,
+        "value": "0xc97a7d0",
+        "componentId": 18
+      },
+      "rawActorHex": "38aa62a7f77f00000100000000000000022f79be9d2eb1c29e9bd04132926c42d6f4fd3d00f4290593a9663e205b1bc155a87841ddedb7c2006366b30001010001000000854ab2c226b0bf415c2e6242",
+      "actor": {
+        "address": "0x17c05281a00",
+        "rtti": {
+          "vtableRva": "0x3e4aa38",
+          "name": ".?AVProjectileDynamics@@",
+          "colRva": "0x505adb8",
+          "typeDescriptorRva": "0x5f992d0"
+        },
+        "backref36": "0x17c0529f400",
+        "state64": 1,
+        "mode16": 2,
+        "position20": [
+          -88.5910415649414,
+          26.075984954833984,
+          59.14276885986328
+        ]
+      },
+      "generationStable": true,
+      "failedGates": [
+        "componentPresent"
+      ],
+      "note": "ownerInPlayers is not enemy attribution; exact enemy/local selection and engine ValidPosition, cache warmup, source-name/timing not reimplemented",
+      "allRecordedGatesPass": false,
+      "sampledUtc": "2026-11-20T17:48:28.706225+00:00"
+    }
+  ],
+  "notes": [
+    "raw hex retained for distinct gate signatures; not every position update",
+    "full decoder predicate uses candidate expected vtables and positions; caller enemy attribution/cache not included",
+    "root change stops capture; no UI input or process writes"
+  ]
+}

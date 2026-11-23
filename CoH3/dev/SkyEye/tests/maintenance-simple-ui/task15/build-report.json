@@ -1,0 +1,44 @@
+{
+    "utc":  "2026-11-21T05:44:48.3376201Z",
+    "maintenanceOnly":  true,
+    "buildVerified":  false,
+    "guiRun":  "not_run",
+    "authorizationRun":  "not_run",
+    "gameAttach":  "not_run",
+    "assembly":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\bin\\Release\\net48\\COH3SimpleTool.Maintenance.UI.Unverified.exe",
+    "assemblySha256":  "A169466A2CCF6B37354CE04562CE31C89CA7FA4AC9941F299E545B8BC65F6563",
+    "startup":  "CoH3MemoryTool.SimpleProgram",
+    "exactReplacementCount":  3,
+    "originalUiSourcesUnchanged":  true,
+    "maintenanceFactoryCount":  2,
+    "embeddedResources":  [
+                              "CoH3.InterfaceIcon",
+                              "names-zh-hans.tsv",
+                              "CoH3.BarrageCatalogue.tsv"
+                          ],
+    "expectedResources":  [
+                              "CoH3.InterfaceIcon",
+                              "names-zh-hans.tsv",
+                              "CoH3.BarrageCatalogue.tsv"
+                          ],
+    "originalAppConfigBytesMatch":  true,
+    "originalAppConfigSha256":  "603BA077967B612C1E1A9B5F809AE718C5F6ADDF0DFF753BC06CC63B585CD441",
+    "sourceManifest":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\obj\\maintenance-simple-ui-generated\\source-manifest.json",
+    "auditedOriginalInputCount":  153,
+    "environmentBypassAdded":  false,
+    "originalAuthorization":  "SimpleProgram -\u003e SimpleLicenseApp -\u003e original LicenseCoordinator60 + BlackLoginForm; no replacement auth or new grants",
+    "verified":  [
+                     "source hashes unchanged",
+                     "exact 3 generated caller replacements",
+                     "reader internal source linked unchanged",
+                     "original SimpleProgram startup",
+                     "maintenance compile-only factories",
+                     "exact resource logical names",
+                     "original app config bytes"
+                 ],
+    "limitations":  [
+                        "Reflection-only metadata checks do not execute Main or initialize the game reader.",
+                        "Actual activation, overlay rendering, window ownership and close/revoke behavior require lead-controlled GUI validation.",
+                        "All candidate layouts remain unverified for formal release."
+                    ]
+}

@@ -1,0 +1,9 @@
+{
+  "executable": "C:\\Windows\\System32\\cmd.exe",
+  "arguments": ["/d", "/c", "exit", "0"],
+  "working_directory": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation",
+  "timeout_ms": 1000,
+  "idle_timeout_ms": 1000,
+  "filesystem_observation_paths": [],
+  "events": []
+}

@@ -50,6 +50,8 @@ internal sealed class ControlBarForm : Form
 
 	private bool liveRows;
 
+	private string rowsMatch;
+
 	private readonly ReadRecovery55 recovery55 = new ReadRecovery55();
 
 	private readonly List<KeyValuePair<Toggle46, Func<bool>>> bindings46 = new List<KeyValuePair<Toggle46, Func<bool>>>();
@@ -299,24 +301,57 @@ internal sealed class ControlBarForm : Form
 		}
 	}
 
-	private void DropReader()
+	private void ClearSessionData()
 	{
+		liveRows = false;
+		rowsMatch = null;
 		airOverlay.ClearData();
 		miniOverlay.ClearData();
 		squadOverlay.ClearData();
 		mineOverlay.ClearData();
-		if (reader != null)
-		{
-			reader.Dispose();
-		}
-		reader = null;
-		pid = 0;
+		supportMatch49 = null;
+		supportSeen49.Clear();
+		supportBaseline49 = false;
+		selection.Reset();
+		armourSelection.Reset();
 		alerts.Reset();
-		armourAlerts.Reconnect();
+		armourAlerts.Reset();
+		recovery55.Success();
 		overlay.ClearData();
 		rows.Clear();
-		liveRows = false;
 		SyncConsole46();
+	}
+
+	private void SuspendMatchContext(MatchHudUnavailableException error)
+	{
+		ClearSessionData();
+		polling.Interval = 250;
+		OverlayDiagnostics55.Record("等待对局上下文", error.Outcome + " " + error.Message);
+		status.Text = error.Message;
+	}
+
+	private void AcceptSnapshot(List<PlayerInfoRow> fresh, string match)
+	{
+		if (rowsMatch != match)
+		{
+			ClearSessionData();
+		}
+		selection.UpdateMatch(match);
+		armourSelection.UpdateMatch(match);
+		rows = fresh;
+		rowsMatch = match;
+	}
+
+	private void DropReader()
+	{
+		PlayerInfoReader previous = reader;
+		reader = null;
+		pid = 0;
+		ClearSessionData();
+		if (previous != null)
+		{
+			previous.Dispose();
+		}
 	}
 
 	private void Poll()
@@ -355,7 +390,8 @@ internal sealed class ControlBarForm : Form
 				}
 				reader = new PlayerInfoReader();
 			}
-			rows = reader.Snapshot();
+			List<PlayerInfoRow> fresh = reader.Snapshot();
+			AcceptSnapshot(fresh, reader.MatchKey);
 			recovery55.Success();
 			polling.Interval = 1000;
 			Layer55("地雷标记", delegate
@@ -374,8 +410,6 @@ internal sealed class ControlBarForm : Form
 			{
 				airOverlay.UpdateRows(reader, pid, rows);
 			});
-			selection.UpdateMatch(reader.MatchKey);
-			armourSelection.UpdateMatch(reader.MatchKey);
 			liveRows = true;
 			overlay.UpdateRows(pid, DisplayRows());
 			foreach (GameAlert item in alerts.Update(reader.MatchKey, rows, selection))
@@ -392,9 +426,22 @@ internal sealed class ControlBarForm : Form
 			}
 			SyncConsole46();
 		}
+		catch (MatchHudUnavailableException ex)
+		{
+			SuspendMatchContext(ex);
+		}
 		catch (Exception ex2)
 		{
-			bool sameMatch = reader != null && liveRows && reader.IsCurrentMatch55();
+			bool sameMatch;
+			try
+			{
+				sameMatch = reader != null && liveRows && reader.IsCurrentMatch55();
+			}
+			catch (MatchHudUnavailableException ex)
+			{
+				SuspendMatchContext(ex);
+				return;
+			}
 			if (recovery55.Retry(sameMatch, DateTime.UtcNow))
 			{
 				polling.Interval = 100;
@@ -443,6 +490,10 @@ internal sealed class ControlBarForm : Form
 			}
 			supportBaseline49 = true;
 		}
+		catch (MatchHudUnavailableException ex)
+		{
+			SuspendMatchContext(ex);
+		}
 		catch
 		{
 		}
@@ -453,6 +504,10 @@ internal sealed class ControlBarForm : Form
 		try
 		{
 			action();
+		}
+		catch (MatchHudUnavailableException)
+		{
+			throw;
 		}
 		catch (Exception ex)
 		{
@@ -493,7 +548,7 @@ internal sealed class ControlBarForm : Form
 		}
 		(string label, string detail) = GameVersion45.Status switch
 		{
-			GameVersion45.CheckStatus.FingerprintMismatch => ("⚠ 版本未验证", "游戏主程序指纹与已验证版本不一致。"),
+			GameVersion45.CheckStatus.FingerprintMismatch => ("⚠ 待适配", "游戏主程序指纹与已验证基线不一致，结构依赖功能已暂停。"),
 			GameVersion45.CheckStatus.ReadFailed => ("⚠ 版本读取失败", "读取游戏主程序失败，未能验证版本。"),
 			_ => (liveRows ? "● 对局已连接" : "○ 等待对局", "")
 		};

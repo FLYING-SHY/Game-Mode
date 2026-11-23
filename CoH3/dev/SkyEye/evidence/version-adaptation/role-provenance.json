@@ -1,0 +1,642 @@
+{
+ "table": "F:/WorkSpace/Game/CoH3/dev/SkyEye/client/CoH3MemoryTool/GameLayout52426.cs",
+ "manifest": "F:/WorkSpace/Game/CoH3/dev/SkyEye/evidence/version-adaptation/static/signatures-by-hash.json",
+ "roleCount": 37,
+ "manifestBacked": 16,
+ "reportBacked": 21,
+ "unbacked": [],
+ "rows": [
+  {
+   "legacyRaw": "112918560",
+   "legacyDec": 112918560,
+   "legacyHex": "0x6BB0020",
+   "newRva": 112926416,
+   "newRvaHex": "0x6bb1ed0",
+   "note": "resource singleton / getter and live name/index table",
+   "manifestSources": [
+    "feature:resource_root_getter->rip_relative"
+   ],
+   "reportMentions": [
+    "air/air-raw-snapshot-report.md",
+    "static/REPORT.md"
+   ],
+   "backedByManifest": true,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "98614988",
+   "legacyDec": 98614988,
+   "legacyHex": "0x5E0BECC",
+   "newRva": 98623180,
+   "newRvaHex": "0x5e0decc",
+   "note": "world offset / RIP read and live world",
+   "manifestSources": [
+    "feature:world_offset->rip_relative"
+   ],
+   "reportMentions": [
+    "air/air-raw-snapshot-report.md",
+    "static/REPORT.md"
+   ],
+   "backedByManifest": true,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "102260400",
+   "legacyDec": 102260400,
+   "legacyHex": "0x6185EB0",
+   "newRva": 102268480,
+   "newRvaHex": "0x6187e40",
+   "note": "arena table / static resolver and live arena",
+   "manifestSources": [
+    "feature:role_0xcd0f1d->rip_relative",
+    "feature:role_0xcd0f60->rip_relative",
+    "feature:component_descriptor_resolver->rip_relative",
+    "feature:arena_helper_anchor->rip_relative"
+   ],
+   "reportMentions": [
+    "air/air-raw-snapshot-report.md",
+    "components/component-report.md",
+    "static/REPORT.md"
+   ],
+   "backedByManifest": true,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "102260448",
+   "legacyDec": 102260448,
+   "legacyHex": "0x6185EE0",
+   "newRva": 102268528,
+   "newRvaHex": "0x6187e70",
+   "note": "TLS-indexed component pool array (index 0 snapshot)",
+   "manifestSources": [
+    "feature:tls_component_pool->image_indexed_displacement"
+   ],
+   "reportMentions": [
+    "components/component-report.md",
+    "static/REPORT.md"
+   ],
+   "backedByManifest": true,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "102260680",
+   "legacyDec": 102260680,
+   "legacyHex": "0x6185FC8",
+   "newRva": 102268760,
+   "newRvaHex": "0x6187f58",
+   "note": "GameUICore list owner",
+   "manifestSources": [
+    "feature:camera_registry->rip_relative"
+   ],
+   "reportMentions": [
+    "static/REPORT.md"
+   ],
+   "backedByManifest": true,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "102261280",
+   "legacyDec": 102261280,
+   "legacyHex": "0x6186220",
+   "newRva": 102269360,
+   "newRvaHex": "0x61881b0",
+   "note": "config registry / key 0x320000",
+   "manifestSources": [
+    "feature:colour_property_registry->rip_relative"
+   ],
+   "reportMentions": [
+    "static/REPORT.md"
+   ],
+   "backedByManifest": true,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "112837064",
+   "legacyDec": 112837064,
+   "legacyHex": "0x6B9C1C8",
+   "newRva": 112844920,
+   "newRvaHex": "0x6b9e078",
+   "note": "UI singleton / GameUIAppWindow",
+   "manifestSources": [
+    "feature:ui_singleton_read->rip_relative",
+    "feature:ui_singleton_store->rip_relative"
+   ],
+   "reportMentions": [
+    "static/REPORT.md"
+   ],
+   "backedByManifest": true,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "64684536",
+   "legacyDec": 64684536,
+   "legacyHex": "0x3DB01F8",
+   "newRva": 64688232,
+   "newRvaHex": "0x3db1068",
+   "note": "GameUICore, not CameraEntity",
+   "manifestSources": [],
+   "reportMentions": [
+    "static/REPORT.md"
+   ],
+   "backedByManifest": false,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "64683768",
+   "legacyDec": 64683768,
+   "legacyHex": "0x3DAFEF8",
+   "newRva": 64687464,
+   "newRvaHex": "0x3db0d68",
+   "note": "TeamColourManager",
+   "manifestSources": [],
+   "reportMentions": [
+    "static/REPORT.md"
+   ],
+   "backedByManifest": false,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "64823200",
+   "legacyDec": 64823200,
+   "legacyHex": "0x3DD1FA0",
+   "newRva": 64834544,
+   "newRvaHex": "0x3dd4bf0",
+   "note": "GameUIAppWindow",
+   "manifestSources": [],
+   "reportMentions": [
+    "static/REPORT.md"
+   ],
+   "backedByManifest": false,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "65511760",
+   "legacyDec": 65511760,
+   "legacyHex": "0x3E7A150",
+   "newRva": 65515872,
+   "newRvaHex": "0x3e7b160",
+   "note": "MapControl",
+   "manifestSources": [],
+   "reportMentions": [
+    "static/REPORT.md"
+   ],
+   "backedByManifest": false,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "65513472",
+   "legacyDec": 65513472,
+   "legacyHex": "0x3E7A800",
+   "newRva": 65517584,
+   "newRvaHex": "0x3e7b810",
+   "note": "TacticalMapControl",
+   "manifestSources": [],
+   "reportMentions": [
+    "static/REPORT.md"
+   ],
+   "backedByManifest": false,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "65713904",
+   "legacyDec": 65713904,
+   "legacyHex": "0x3EAB6F0",
+   "newRva": 65717936,
+   "newRvaHex": "0x3eac6b0",
+   "note": "AnvilRTSHUDPage",
+   "manifestSources": [],
+   "reportMentions": [
+    "static/REPORT.md"
+   ],
+   "backedByManifest": false,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "64430720",
+   "legacyDec": 64430720,
+   "legacyHex": "0x3D72280",
+   "newRva": 64434816,
+   "newRvaHex": "0x3d73280",
+   "note": "TranslateTransform",
+   "manifestSources": [],
+   "reportMentions": [
+    "static/REPORT.md"
+   ],
+   "backedByManifest": false,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "64431008",
+   "legacyDec": 64431008,
+   "legacyHex": "0x3D723A0",
+   "newRva": 64435104,
+   "newRvaHex": "0x3d733a0",
+   "note": "MatrixTransform",
+   "manifestSources": [],
+   "reportMentions": [
+    "static/REPORT.md"
+   ],
+   "backedByManifest": false,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "64432864",
+   "legacyDec": 64432864,
+   "legacyHex": "0x3D72AE0",
+   "newRva": 64436960,
+   "newRvaHex": "0x3d73ae0",
+   "note": "TransformGroup",
+   "manifestSources": [],
+   "reportMentions": [
+    "static/REPORT.md"
+   ],
+   "backedByManifest": false,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "64815280",
+   "legacyDec": 64815280,
+   "legacyHex": "0x3DD00B0",
+   "newRva": 64826624,
+   "newRvaHex": "0x3dd2d00",
+   "note": "RotateTransform",
+   "manifestSources": [],
+   "reportMentions": [
+    "static/REPORT.md"
+   ],
+   "backedByManifest": false,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "64815656",
+   "legacyDec": 64815656,
+   "legacyHex": "0x3DD0228",
+   "newRva": 64827000,
+   "newRvaHex": "0x3dd2e78",
+   "note": "ScaleTransform",
+   "manifestSources": [],
+   "reportMentions": [
+    "static/REPORT.md"
+   ],
+   "backedByManifest": false,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "111878264",
+   "legacyDec": 111878264,
+   "legacyHex": "0x6AB2078",
+   "newRva": 111886360,
+   "newRvaHex": "0x6ab4018",
+   "note": "Matrix property pointer, wrapper +32; ID 69",
+   "manifestSources": [],
+   "reportMentions": [
+    "static/REPORT.md"
+   ],
+   "backedByManifest": false,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "111989640",
+   "legacyDec": 111989640,
+   "legacyHex": "0x6ACD388",
+   "newRva": 111997736,
+   "newRvaHex": "0x6acf328",
+   "note": "PlayableWidth pointer; ID 874",
+   "manifestSources": [],
+   "reportMentions": [
+    "static/REPORT.md"
+   ],
+   "backedByManifest": false,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "111989680",
+   "legacyDec": 111989680,
+   "legacyHex": "0x6ACD3B0",
+   "newRva": 111997776,
+   "newRvaHex": "0x6acf350",
+   "note": "PlayableHeight pointer; ID 875",
+   "manifestSources": [],
+   "reportMentions": [
+    "static/REPORT.md"
+   ],
+   "backedByManifest": false,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "64584880",
+   "legacyDec": 64584880,
+   "legacyHex": "0x3D97CB0",
+   "newRva": 64588784,
+   "newRvaHex": "0x3d98bf0",
+   "note": "SpawnProductionItem / RTTI and live production chain",
+   "manifestSources": [
+    "role_candidates:SpawnProductionItem[static_identity_plus_agent1_runtime_role]",
+    "feature:role_0x7e1e97->rip_relative"
+   ],
+   "reportMentions": [
+    "components/role-report.md",
+    "production/REPORT.md",
+    "static/REPORT.md"
+   ],
+   "backedByManifest": true,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "64568064",
+   "legacyDec": 64568064,
+   "legacyHex": "0x3D93B00",
+   "newRva": 64571968,
+   "newRvaHex": "0x3d94a40",
+   "note": "TimedAbility / RTTI, constructor, live mortar barrage",
+   "manifestSources": [
+    "role_candidates:TimedAbility[static_identity_plus_agent1_runtime_role]",
+    "feature:role_0x76568f->rip_relative"
+   ],
+   "reportMentions": [
+    "air/air-raw-snapshot-report.md",
+    "components/role-report.md",
+    "static/REPORT.md"
+   ],
+   "backedByManifest": true,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "65313128",
+   "legacyDec": 65313128,
+   "legacyHex": "0x3E49968",
+   "newRva": 65317432,
+   "newRvaHex": "0x3e4aa38",
+   "note": "ProjectileDynamics / static RTTI candidate; event fields pending",
+   "manifestSources": [
+    "role_candidates:ProjectileDynamics[static_role_candidate]",
+    "feature:projectile_dynamics_install->rip_relative"
+   ],
+   "reportMentions": [
+    "layout-review.md",
+    "projectiles/event-report.md",
+    "projectiles/projectile-report.md",
+    "static/REPORT.md"
+   ],
+   "backedByManifest": true,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "65307976",
+   "legacyDec": 65307976,
+   "legacyHex": "0x3E48548",
+   "newRva": 65312280,
+   "newRvaHex": "0x3e49618",
+   "note": "ProjectileExt / RTTI and live mortar projectile chain",
+   "manifestSources": [
+    "role_candidates:ProjectileExt[static_identity_plus_agent1_runtime_role]",
+    "feature:projectile_vtable_install->rip_relative"
+   ],
+   "reportMentions": [
+    "components/role-report.md",
+    "projectiles/event-report.md",
+    "projectiles/projectile-report.md",
+    "static/REPORT.md"
+   ],
+   "backedByManifest": true,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "64559016",
+   "legacyDec": 64559016,
+   "legacyHex": "0x3D917A8",
+   "newRva": 64562912,
+   "newRvaHex": "0x3d926e0",
+   "note": "MoverDynamics / RTTI and live loiter instance",
+   "manifestSources": [
+    "role_candidates:MoverDynamics[static_role_candidate_not_observed]",
+    "feature:mover_vtable_install->rip_relative"
+   ],
+   "reportMentions": [
+    "air/air-raw-snapshot-report.md",
+    "air/run25-26-air-evidence.md",
+    "components/role-report.md",
+    "static/REPORT.md"
+   ],
+   "backedByManifest": true,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "13437424",
+   "legacyDec": 13437424,
+   "legacyHex": "0xCD09F0",
+   "newRva": 13438736,
+   "newRvaHex": "0xcd0f10",
+   "note": "MoverDynamics vtable slot +344 / mode resolver",
+   "manifestSources": [
+    "role_candidates:MoverDynamics virtual +344[static_callable_candidate]"
+   ],
+   "reportMentions": [
+    "components/role-report.md",
+    "static/REPORT.md"
+   ],
+   "backedByManifest": true,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "64557040",
+   "legacyDec": 64557040,
+   "legacyHex": "0x3D90FF0",
+   "newRva": 64561240,
+   "newRvaHex": "0x3d92058",
+   "note": "SquadUpgradeProductionItem",
+   "manifestSources": [
+    "role_candidates:SquadUpgradeProductionItem[static_role_candidate_not_observed]",
+    "feature:role_0x54c783->rip_relative"
+   ],
+   "reportMentions": [
+    "components/role-report.md",
+    "production/hq-upgrade-report-01.md",
+    "production/kwk38-sequence-report.md",
+    "production/REPORT.md",
+    "static/REPORT.md"
+   ],
+   "backedByManifest": true,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "64557304",
+   "legacyDec": 64557304,
+   "legacyHex": "0x3D910F8",
+   "newRva": 64561504,
+   "newRvaHex": "0x3d92160",
+   "note": "EntityUpgradeProductionItem",
+   "manifestSources": [
+    "role_candidates:EntityUpgradeProductionItem[static_role_candidate_not_observed]",
+    "feature:role_0x54c7c4->rip_relative"
+   ],
+   "reportMentions": [
+    "acceptance-current.md",
+    "components/role-report.md",
+    "production/grenade-live-report-01.md",
+    "production/hq-upgrade-report-01.md",
+    "production/REPORT.md",
+    "progress-20261121.md",
+    "static/REPORT.md"
+   ],
+   "backedByManifest": true,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "103319618",
+   "legacyDec": 103319618,
+   "legacyHex": "0x6288842",
+   "newRva": 103327714,
+   "newRvaHex": "0x628a7e2",
+   "note": "SimInventoryItemExt",
+   "manifestSources": [],
+   "reportMentions": [
+    "components/component-report.md",
+    "production/kwk38-sequence-report.md"
+   ],
+   "backedByManifest": false,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "103319626",
+   "legacyDec": 103319626,
+   "legacyHex": "0x628884A",
+   "newRva": 103327722,
+   "newRvaHex": "0x628a7ea",
+   "note": "HealthExt",
+   "manifestSources": [
+    "feature:health_lookup->image_indexed_displacement"
+   ],
+   "reportMentions": [
+    "components/component-report.md",
+    "production/hq-upgrade-report-01.md",
+    "static/REPORT.md"
+   ],
+   "backedByManifest": true,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "103319627",
+   "legacyDec": 103319627,
+   "legacyHex": "0x628884B",
+   "newRva": 103327723,
+   "newRvaHex": "0x628a7eb",
+   "note": "ConstructionExt",
+   "manifestSources": [],
+   "reportMentions": [
+    "components/component-report.md"
+   ],
+   "backedByManifest": false,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "103319632",
+   "legacyDec": 103319632,
+   "legacyHex": "0x6288850",
+   "newRva": 103327728,
+   "newRvaHex": "0x628a7f0",
+   "note": "CombatExt",
+   "manifestSources": [],
+   "reportMentions": [
+    "components/component-report.md"
+   ],
+   "backedByManifest": false,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "103319633",
+   "legacyDec": 103319633,
+   "legacyHex": "0x6288851",
+   "newRva": 103327729,
+   "newRvaHex": "0x628a7f1",
+   "note": "ProductionQueueExt",
+   "manifestSources": [],
+   "reportMentions": [
+    "components/component-report.md",
+    "production/hq-upgrade-report-01.md"
+   ],
+   "backedByManifest": false,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "103319634",
+   "legacyDec": 103319634,
+   "legacyHex": "0x6288852",
+   "newRva": 103327730,
+   "newRvaHex": "0x628a7f2",
+   "note": "no active sample yet; lookup ID only",
+   "manifestSources": [],
+   "reportMentions": [
+    "components/component-report.md",
+    "components/role-report.md"
+   ],
+   "backedByManifest": false,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "103319637",
+   "legacyDec": 103319637,
+   "legacyHex": "0x6288855",
+   "newRva": 103327733,
+   "newRvaHex": "0x628a7f5",
+   "note": "AbilityExt",
+   "manifestSources": [],
+   "reportMentions": [
+    "components/component-report.md"
+   ],
+   "backedByManifest": false,
+   "backedByReport": true,
+   "backed": true
+  },
+  {
+   "legacyRaw": "103319697",
+   "legacyDec": 103319697,
+   "legacyHex": "0x6288891",
+   "newRva": 103327793,
+   "newRvaHex": "0x628a831",
+   "note": "WeaponExt",
+   "manifestSources": [],
+   "reportMentions": [
+    "components/component-report.md"
+   ],
+   "backedByManifest": false,
+   "backedByReport": true,
+   "backed": true
+  }
+ ]
+}

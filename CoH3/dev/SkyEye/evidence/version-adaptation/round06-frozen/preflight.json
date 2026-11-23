@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "utc": "2026-11-21T06:42:45.857832+00:00",
+  "status": "passed_before_directory_creation",
+  "sourceFileCount": 363,
+  "sourceTotalBytes": 4147010,
+  "topPrefixes": {
+    "CoH3/dev/COH3SimpleTool/": {
+      "count": 153,
+      "bytes": 704310
+    },
+    "CoH3/dev/SkyEye/client/": {
+      "count": 186,
+      "bytes": 1367038
+    },
+    "CoH3/dev/SkyEye/evidence/version-adaptation/": {
+      "count": 4,
+      "bytes": 130815
+    },
+    "CoH3/dev/SkyEye/tests/maintenance-simple-ui/task15/": {
+      "count": 10,
+      "bytes": 667985
+    },
+    "CoH3/dev/SkyEye/tests/maintenance-ui/": {
+      "count": 10,
+      "bytes": 1276862
+    }
+  },
+  "pinChecks": {
+    "skyeye:assembly_report_pin": 1,
+    "skyeye:appconfig_report_pin": 2,
+    "skyeye:manifest_original_caller": 3,
+    "skyeye:manifest_generated_caller": 3,
+    "skyeye:manifest_coordinator_pin": 1,
+    "simple_task15:assembly_report_pin": 1,
+    "simple_task15:appconfig_report_pin": 1,
+    "simple_task15:build_time_source_input": 153,
+    "simple_task15:manifest_original_caller": 3,
+    "simple_task15:manifest_generated_caller": 3,
+    "simple_task15:manifest_coordinator_pin": 1,
+    "kwk38:expected_cs_pin": 6,
+    "phase:source_pin": 3
+  },
+  "forbiddenPaths": [],
+  "runtimeCredentialFiles": [],
+  "staticCredentialNamedSources": [
+    "CoH3/dev/COH3SimpleTool/CoH3MemoryTool/LicenseCredentials60.cs",
+    "CoH3/dev/SkyEye/client/CoH3MemoryTool/LicenseCredentials60.cs"
+  ],
+  "whiteListPlanSha256": "3321455b584458d56891d3d04cbd041551c9b391217d66ef8dd1b9286696cebd",
+  "currentProjectDerivationAuthorizedByLead": true,
+  "sourceDiscovery": "Host glob of client/**/*.cs filtered by exact current csproj Include/Exclude; no directory copying.",
+  "snapshotMethod": "New target directory and xb copies only; source files are never written."
+}

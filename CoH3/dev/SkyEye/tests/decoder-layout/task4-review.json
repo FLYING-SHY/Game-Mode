@@ -1,0 +1,127 @@
+{
+  "status": "PASS_F_only_task4_review",
+  "utc": "2026-11-21T02:26:06.292196+00:00",
+  "checksPassed": 34,
+  "checks": [
+    "linkedSourceHashes still match successful fixture run",
+    "fixtureSourceHashes still match successful fixture run",
+    "capturedAirInputs still match successful fixture run",
+    "captured projectile input unchanged",
+    "AirLogic.cs remains frozen after parent notification",
+    "PlayerInfoReader.cs remains frozen after parent notification",
+    "reader explicit shape selection requires maintenance compilation AND maintenanceDiagnostics=true",
+    "both reader consumers use the explicit shape for bounded reads",
+    "inverting only shape/extent/direction edits restores reader baseline exactly; constructors, fingerprint, identity and timing guards unchanged",
+    "inverting shape helper/signature edits restores AirLogic baseline exactly; all other decoder guards unchanged",
+    "Release original assertion names, order and count preserved",
+    "Release all recorded fixture checks passed",
+    "Release REA evidence belongs to the currently tested DLL",
+    "Release REA metadata coverage complete with all three selected types",
+    "Release candidate shape member compile isolation verified in actual metadata",
+    "Release candidate role table/fingerprint member compile isolation verified",
+    "Release MoverReadSize CIL anchors cover all instructions",
+    "Release MoverReadSize exact compiled integer constants verified",
+    "Release MoverReadSize returned CIL digest matches artifact bytes",
+    "Release MoverDirection CIL anchors cover all instructions",
+    "Release MoverDirection exact compiled integer constants verified",
+    "Release MoverDirection returned CIL digest matches artifact bytes",
+    "Maintenance original assertion names, order and count preserved",
+    "Maintenance all recorded fixture checks passed",
+    "Maintenance REA evidence belongs to the currently tested DLL",
+    "Maintenance REA metadata coverage complete with all three selected types",
+    "Maintenance candidate shape member compile isolation verified in actual metadata",
+    "Maintenance candidate role table/fingerprint member compile isolation verified",
+    "Maintenance MoverReadSize CIL anchors cover all instructions",
+    "Maintenance MoverReadSize exact compiled integer constants verified",
+    "Maintenance MoverReadSize returned CIL digest matches artifact bytes",
+    "Maintenance MoverDirection CIL anchors cover all instructions",
+    "Maintenance MoverDirection exact compiled integer constants verified",
+    "Maintenance MoverDirection returned CIL digest matches artifact bytes"
+  ],
+  "coreSourceFrozen": [
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\AirLogic.cs",
+      "sha256": "8e3eced8cd1e9f120e76da38ba2d5146c0e56fcfe670ea66b4486fb2011dac50"
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\PlayerInfoReader.cs",
+      "sha256": "bbb359cd59409065d8b4d00ace784243ae5e99816611bc11617e7c9ed8adba9d"
+    }
+  ],
+  "original186Preserved": true,
+  "fixtureChecksPassed": 288,
+  "configurations": [
+    {
+      "mode": "Release",
+      "originalPassed": 89,
+      "currentPassed": 118,
+      "dll": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\decoder-layout\\bin\\Release\\net10.0\\DecoderLayout.Fixture.dll",
+      "sha256": "4c05fd8bc248a01ff41daa5afd333cc476469082c253f58de13eb8dca6348d64",
+      "moverFields": [
+        "value__",
+        "Legacy284"
+      ],
+      "layoutFields": [],
+      "layoutMethods": [],
+      "constants": {
+        "MoverReadSize": [
+          284
+        ],
+        "MoverDirection": [
+          272,
+          276,
+          280
+        ]
+      },
+      "memberEvidenceId": "ev_92dd19eedd35c48c8650f59eedd9c1a9c2c07c394d6177bb38ea418adec5d13a",
+      "moduleMvid": "7937b0c8-19a9-4a6b-994b-fd66136eaebc"
+    },
+    {
+      "mode": "Maintenance",
+      "originalPassed": 97,
+      "currentPassed": 170,
+      "dll": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\decoder-layout\\bin\\Maintenance\\net10.0\\DecoderLayout.Fixture.dll",
+      "sha256": "f21cb5ba45ab86cc7f2e8a4a73415c5e1430d15f0973db12e14e01d0ca94137b",
+      "moverFields": [
+        "value__",
+        "Legacy284",
+        "Candidate52426_184"
+      ],
+      "layoutFields": [
+        "candidates",
+        "requiredDependencies"
+      ],
+      "layoutMethods": [
+        "RequireCandidate",
+        "ValidateDependencies",
+        "Resolve",
+        "LegacyTransform",
+        ".cctor"
+      ],
+      "constants": {
+        "MoverReadSize": [
+          184,
+          284
+        ],
+        "MoverDirection": [
+          96,
+          100,
+          272,
+          276,
+          280
+        ]
+      },
+      "memberEvidenceId": "ev_880844475cf76482e0993671001738b8a4e8153e311ccd6894175ed41f3dd5b4",
+      "moduleMvid": "20ae0490-f403-45f4-aac9-fc6e33e48363"
+    }
+  ],
+  "gameOrReaderExecution": "not_run",
+  "productionReleaseOrMaintenanceRunnerBuild": "not_run",
+  "reaProvider": "rea-dotnet-static",
+  "reaTargetExecution": false,
+  "limitations": [
+    "Fixture DLLs only; not a formal release artifact audit.",
+    "Reader selector/unchanged guards verified by source inversion, not a linked or live reader run.",
+    "No native loiter event, enemy UI, camera recovery or full air lifetime validation."
+  ]
+}

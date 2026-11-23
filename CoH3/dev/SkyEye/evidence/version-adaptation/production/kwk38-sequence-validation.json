@@ -1,0 +1,357 @@
+{
+  "schemaVersion": 1,
+  "scope": "offline audit of one local AK KwK38 native conversion sequence; candidate maintenance only",
+  "localSequenceVerified": true,
+  "fullAcceptance": false,
+  "newBaseline": false,
+  "sameReaderObjectProven": false,
+  "productionGuiFlowVerified": false,
+  "nativeCountdownAgreementVerified": false,
+  "game": {
+    "pid": 33656,
+    "startUtc": "2026-11-21T03:42:27.6605831Z",
+    "localSlot": 1,
+    "localIdentity": "1000003e9",
+    "startBinding": "historical driver records; raw captures have pid but no process start time"
+  },
+  "reader": {
+    "recordedExeSha256": "cd125bffa33e525cd4b94a753d65a6e4cbb199395e3860e57e85003db7665f79",
+    "binaryHashSource": "run30 identity and run31/32 driver results; current mutable EXE is not read",
+    "instances": "three separate short-lived runner invocations; one reader open / one Snapshot per report",
+    "rawReportedNormalizedLayoutTextSha256": "cd72046d436678632e47840fecd47fe58f4574a54002e57e24b6d8092d44e2e7",
+    "currentLayoutByteSha256": "77c44effbf42d9f6300cfd41e753712bed85e551b487f4db1a779df528dc8d92",
+    "currentNormalizedLayoutTextSha256": "cd72046d436678632e47840fecd47fe58f4574a54002e57e24b6d8092d44e2e7",
+    "currentLayoutByteCount": 4524,
+    "currentLayoutNormalizedTextByteCount": 4431,
+    "currentLayoutCrlfCount": 93,
+    "probeSource": "CoH3/dev/SkyEye/evidence/version-adaptation/production/production_queue_probe.py",
+    "probeHashMechanism": "lines24-26 read UTF8 text with universal newline conversion and parse mapping; line62 hashes text.encode(utf8), not raw bytes or an imported SOURCE_SHA constant",
+    "probeMappingMechanism": "component/roots lookups use the parsed mapping; fixed GUARDS role labels/candidate RVAs are diagnostic coverage constants",
+    "historicalSourceClosureOrBinaryEqualityClaimed": false
+  },
+  "stages": [
+    {
+      "run": 30,
+      "stage": "initial",
+      "rawPath": "CoH3/dev/SkyEye/evidence/version-adaptation/production/fresh02-kwk38-initial-raw.json",
+      "reportPath": "CoH3/dev/SkyEye/evidence/version-adaptation/maintenance-run-30-fresh02-kwk38-start/maintenance-live.json",
+      "rawUtc": "2026-11-21T05:11:13.709167+00:00",
+      "snapshotCapturedUtc": "2026-11-21T05:16:37.0777753Z",
+      "arena": "0x29407e00000",
+      "moduleBase": "0x7ff7a37e0000",
+      "playerAddress": "0x29410a09000",
+      "entity": "0x2940d04fe00",
+      "entityBlueprint": "ebps\\races\\afrika_korps\\vehicles\\halftrack_250_ak",
+      "squadBlueprint": "sbps\\races\\afrika_korps\\vehicles\\halftrack_250_ak",
+      "queueAddress": "0x2940a99ae80",
+      "queueCount": 1,
+      "entryAddress": "0x2940bb82e00",
+      "itemAddress": "0x29407ef2fc0",
+      "key": "2834896846336:2807501192",
+      "remainingTicks": 456,
+      "totalTicks": 480,
+      "derivedSeconds": 57,
+      "productionKnown": true,
+      "kwk38Known": true
+    },
+    {
+      "run": 31,
+      "stage": "mid",
+      "rawPath": "CoH3/dev/SkyEye/evidence/version-adaptation/production/fresh02-kwk38-mid-raw.json",
+      "reportPath": "CoH3/dev/SkyEye/evidence/version-adaptation/maintenance-run-31-fresh02-kwk38-mid/maintenance-live.json",
+      "rawUtc": "2026-11-21T05:23:18.457041+00:00",
+      "snapshotCapturedUtc": "2026-11-21T05:23:19.4285231Z",
+      "arena": "0x29407e00000",
+      "moduleBase": "0x7ff7a37e0000",
+      "playerAddress": "0x29410a09000",
+      "entity": "0x2940d04fe00",
+      "entityBlueprint": "ebps\\races\\afrika_korps\\vehicles\\halftrack_250_ak",
+      "squadBlueprint": "sbps\\races\\afrika_korps\\vehicles\\halftrack_250_ak",
+      "queueAddress": "0x2940a99ae80",
+      "queueCount": 1,
+      "entryAddress": "0x2940bb82e00",
+      "itemAddress": "0x29407ef2fc0",
+      "key": "2834896846336:2807501192",
+      "remainingTicks": 244,
+      "totalTicks": 480,
+      "derivedSeconds": 31,
+      "productionKnown": true,
+      "kwk38Known": true
+    },
+    {
+      "run": 32,
+      "stage": "complete",
+      "rawPath": "CoH3/dev/SkyEye/evidence/version-adaptation/production/fresh02-kwk38-complete-raw.json",
+      "reportPath": "CoH3/dev/SkyEye/evidence/version-adaptation/maintenance-run-32-fresh02-kwk38-complete/maintenance-live.json",
+      "rawUtc": "2026-11-21T05:28:10.379400+00:00",
+      "snapshotCapturedUtc": "2026-11-21T05:28:11.3388051Z",
+      "arena": "0x29407e00000",
+      "moduleBase": "0x7ff7a37e0000",
+      "playerAddress": "0x29410a09000",
+      "entity": "0x2940d04fe00",
+      "entityBlueprint": "ebps\\races\\afrika_korps\\vehicles\\halftrack_250_20mm_ak",
+      "squadBlueprint": "sbps\\races\\afrika_korps\\vehicles\\halftrack_250_20mm_ak",
+      "queueAddress": "0x2940a999680",
+      "queueCount": 0,
+      "entryAddress": null,
+      "itemAddress": null,
+      "key": null,
+      "remainingTicks": null,
+      "totalTicks": null,
+      "derivedSeconds": null,
+      "productionKnown": true,
+      "kwk38Known": true
+    }
+  ],
+  "checks": [
+    "driver identity, recorded binary hash, original run30 failure and unknown OS exit preserved",
+    "run30: raw bytes, C# JSON, text, stdout, native-action driver chronology, local identity and limits agree",
+    "run31: raw bytes, C# JSON, text, stdout, native-action driver chronology, local identity and limits agree",
+    "run32: raw bytes, C# JSON, text, stdout, native-action driver chronology, local identity and limits agree",
+    "active queue identity/total preserved; 456 > 244; completion is missing job plus converted entity/squad, never a synthesized zero timer",
+    "probe computes normalized UTF8 text SHA and parses current source mapping; raw digest equals current LF-normalized layout text, separately pinned from CRLF byte SHA",
+    "current dual Kwk38 filters identical; relevant reader key/queue/type and ceil(ticks/8) source semantics present",
+    "five native PNG hashes and full-resolution dimensions bound; no OCR or machine countdown comparison"
+  ],
+  "historicalExitCodes": {
+    "run30": {
+      "wrapperExitCode": 1,
+      "wrapperExitCodeProvenance": "lead task-14 original tool observation; not an OS exit code and not reconstructed from the JSON",
+      "driverRecordedExitCode": null,
+      "osExitCode": null,
+      "osExitCodeAccepted": false,
+      "reportDeclaredExitCode": 5,
+      "originalFailureRetained": "Reader reported failure: "
+    },
+    "run31": {
+      "osExitCode": 5,
+      "method": "driver records direct LASTEXITCODE"
+    },
+    "run32": {
+      "osExitCode": 5,
+      "method": "driver records direct LASTEXITCODE"
+    }
+  },
+  "wholeReportLimits": {
+    "maintenanceOnly": true,
+    "buildVerifiedByThisRun": false,
+    "BuildStatus": "FingerprintMismatch",
+    "visualVerification": "not_run",
+    "reportExitCode": 5,
+    "notPromoted": [
+      "F02 complete matrix",
+      "production GUI",
+      "same-object recovery",
+      "full feature acceptance",
+      "new supported baseline"
+    ]
+  },
+  "nativeHumanObservations": [
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/fresh02-250-conversion-hover-t.png",
+      "gameTime": "03:07",
+      "observation": "KwK38型自动火炮改装 tooltip; nominal 60s; fuel15",
+      "basis": "offline human image review; no OCR"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/fresh02-kwk38-native-timer-start-hover.png",
+      "gameTime": "03:10",
+      "observation": "KwK38 tooltip identity; no remaining numeric countdown established",
+      "basis": "lead native correlation and offline human image review"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/fresh02-kwk38-initial-paused.png",
+      "gameTime": "03:10",
+      "observation": "paused; selected 250轻型运兵车",
+      "basis": "lead native correlation and offline human image review"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/fresh02-kwk38-mid-paused.png",
+      "gameTime": "03:36",
+      "observation": "paused; selected 250轻型运兵车",
+      "basis": "lead native correlation and offline human image review"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/fresh02-kwk38-complete-paused.png",
+      "gameTime": "04:13",
+      "observation": "paused; KwK38 completion notification and 250/9装甲半履带车 name",
+      "basis": "lead native correlation and offline human image review"
+    }
+  ],
+  "limitations": [
+    "Human screenshot annotations are not asserted by this machine checker; only file identity and dimensions are machine checked.",
+    "57 and 31 seconds are ceil(ticks/8) arithmetic; native remaining-digit equality and countdown precision are not established.",
+    "After capture has queueCount=0 and no entry; remainingTicks/totalTicks are absent, not measured zero.",
+    "Raw entry generation1 and entryIdentity4294968297 are separate from C# entity-generation key suffix2807501192; only key prefix is independently tied to raw entity address.",
+    "Completion changes the raw queue address; same active queue is asserted for initial/mid only.",
+    "Historical driver startUTC binds the captures to the game process; raw files do not independently record startUTC.",
+    "Raw sourceSha256 is SHA256 of UTF8 text after universal-newline normalization, computed from the read source rather than an imported SOURCE_SHA constant. Current layout raw-byte SHA77c44 differs from text SHAcd720 because 93 CRLF pairs normalize to LF; current normalized full-text digest equals the raw reported value. This does not attest a historical source closure or compiled EXE.",
+    "The inspected probe parses the read layout mapping and uses it for component/roots lookups; its fixed GUARDS candidate-RVA labels are diagnostic coverage constants. The probe source itself is hash-pinned without importing or executing its ProcessReader.",
+    "No current runtime manifest or mutable compiled executable is an input; recorded EXE hashes are historical evidence only.",
+    "Snapshot features share one captured snapshot timestamp, not atomic cross-feature state; separate raw and runner captures were made during the recorded pause."
+  ],
+  "inputCount": 31,
+  "inputBytes": 15724713,
+  "inputs": [
+    {
+      "path": "CoH3/dev/COH3SimpleTool/CoH3MemoryTool/Kwk38Upgrade.cs",
+      "bytes": 920,
+      "sha256": "1e56617e2213d1928f2129fe2db6bd97d075a625341036328002759047932e8b"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/GameLayout52426.cs",
+      "bytes": 4524,
+      "sha256": "77c44effbf42d9f6300cfd41e753712bed85e551b487f4db1a779df528dc8d92"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/GrenadeUpgrade.cs",
+      "bytes": 1286,
+      "sha256": "6a80659f1360a8c578f07d00e22fcf1a69544f6777867b1cb159934733f338c1"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/Kwk38Upgrade.cs",
+      "bytes": 920,
+      "sha256": "1e56617e2213d1928f2129fe2db6bd97d075a625341036328002759047932e8b"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/PlayerInfoReader.cs",
+      "bytes": 104468,
+      "sha256": "bbb359cd59409065d8b4d00ace784243ae5e99816611bc11617e7c9ed8adba9d"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/client/CoH3MemoryTool/ProductionJob.cs",
+      "bytes": 825,
+      "sha256": "7d9dc6ce83868fc2b9a05cf3746b7b454885f4525e05f8fc0a19007cffaf567a"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/fresh02-250-conversion-hover-t.png",
+      "bytes": 3032928,
+      "sha256": "c28fde01f133560449310e3b7515208603c0d9bffa592a705c2f8f37554211fd"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/fresh02-kwk38-complete-paused.png",
+      "bytes": 3133891,
+      "sha256": "6e3af16cdd5b94dcaea7491533a6d39ad49a3b98abebfc77c5c88fcfcd96b67a"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/fresh02-kwk38-initial-paused.png",
+      "bytes": 3089380,
+      "sha256": "ac9bbd447f8a6bee0cc1b173691beff8ee8661f6e6473beff9bf0705261e2b92"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/fresh02-kwk38-mid-paused.png",
+      "bytes": 3129145,
+      "sha256": "4e19355e3b31157861500bbaadd13b71bea2d6f1fa65ff1ec1886edcb7c4dbaf"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/fresh02-kwk38-native-timer-start-hover.png",
+      "bytes": 3093438,
+      "sha256": "f18e9b5eb2182d02a187c9607772a1c7d9e93f630d8ca7f2196b9cf0efc6a4e1"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/maintenance-run-30-fresh02-kwk38-start/maintenance-live.json",
+      "bytes": 10631,
+      "sha256": "5376dfeaf421263aa6e46a30c85e0bbe4494a2bc0b0f3e2811cb539a13bb6fca"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/maintenance-run-30-fresh02-kwk38-start/maintenance-live.txt",
+      "bytes": 8786,
+      "sha256": "a701596ba5b37ba3a035b1325df701636b5debb217b3e15e144d8036cb62461c"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/maintenance-run-31-fresh02-kwk38-mid/maintenance-live.json",
+      "bytes": 11008,
+      "sha256": "763c19a2dd8a24517c29e2e8a0a2e13ffc13dbe06ba0357c4c148642a8c86e6a"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/maintenance-run-31-fresh02-kwk38-mid/maintenance-live.txt",
+      "bytes": 9163,
+      "sha256": "a616045580276aaf1e1bab630b543129b28b529423f03b33f60bb88c0b495c19"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/maintenance-run-32-fresh02-kwk38-complete/maintenance-live.json",
+      "bytes": 10960,
+      "sha256": "f91dc5a38298a011ded3cdcf069a557989f65e76b99e5b199ad7af519fc161f9"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/maintenance-run-32-fresh02-kwk38-complete/maintenance-live.txt",
+      "bytes": 9115,
+      "sha256": "54496212be87a275b16c96b065df2e58df653a71229870f628727b31321d939b"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/production/fresh02-kwk38-complete-raw.json",
+      "bytes": 16468,
+      "sha256": "c0649381dbab43fb9c7da126e4d65548e242d4a40a3e86dec196556e8a5b4b1e"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/production/fresh02-kwk38-initial-raw.json",
+      "bytes": 19733,
+      "sha256": "2f28fa062af5d76579367c99b6e3926ed639831686cccfb63eb20c25d623f808"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/production/fresh02-kwk38-mid-raw.json",
+      "bytes": 18093,
+      "sha256": "3c8ff4522fc53b66449342e733918f1c7323076267ac9040a2b853f2509c4392"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/production/fresh02-kwk38-start-driver.json",
+      "bytes": 973,
+      "sha256": "2f94dff4d5b5c5df8fad2f150e4ce7b6376f300678b0cf69c974cf12545ec58b"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/production/production_queue_probe.py",
+      "bytes": 11785,
+      "sha256": "41781ea1bb1cb45bec9ac019054a0aa1d50b6f94cf6619372113f54166917e5a"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/production/run30-driver-identity.json",
+      "bytes": 951,
+      "sha256": "6994f95928e7ef9e4a397d08b67bc15e8b517a308093a1f70115b5539f37db29"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/production/run30-driver-observation-correction.json",
+      "bytes": 1477,
+      "sha256": "7fba90a903d72959aad7b5a4ce4566c9e8ed9a5c86344d0ed058e68d2db6e017"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/production/run30-driver-result.json",
+      "bytes": 254,
+      "sha256": "18d303c80b1dc98d0b901b1803273966c30fcd4bc2aad2b77aec43a8bb907f3b"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/production/run30-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/production/run30-stdout.txt",
+      "bytes": 377,
+      "sha256": "1df8a5066b83ddfef681617937029642ea96e833a9108a064560aee719e1785a"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/production/run31-driver-result.json",
+      "bytes": 835,
+      "sha256": "7454c3e413c4d9cd9a38123ebd8a2fd57f63bb840dbcd5b1ae8d7e457d928d6a"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/production/run31-stdout-stderr.txt",
+      "bytes": 760,
+      "sha256": "a3aa68d8f561007b905afd45b26514f4ffc84150fd162b78d91c26c66ddd2fb3"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/production/run32-driver-result.json",
+      "bytes": 849,
+      "sha256": "1a0d8757c5e694a4ae7bc51f71744382e7f0a4515fdbbfde8242c5ee72784e3c"
+    },
+    {
+      "path": "CoH3/dev/SkyEye/evidence/version-adaptation/production/run32-stdout-stderr.txt",
+      "bytes": 770,
+      "sha256": "a6c5e0448941efed1c61780dba0255dba532d1bc818dfe3900fde3108fe8b26f"
+    }
+  ],
+  "verifier": {
+    "path": "CoH3/dev/SkyEye/evidence/version-adaptation/production/verify_kwk38_sequence.py",
+    "bytes": 35936,
+    "sha256": "3d0a73527a833754efd89b5a2d561750c337a36146023957cdd3df1176c61749"
+  }
+}

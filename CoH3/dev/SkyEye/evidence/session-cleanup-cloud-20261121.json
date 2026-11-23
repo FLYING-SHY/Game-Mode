@@ -1,0 +1,89 @@
+{
+  "checkedAt": "2026-11-21T11:58:11.403203+00:00",
+  "transport": "real HTTPS authenticated administrator read-only session query",
+  "endpoint": "124.220.147.56",
+  "passed": true,
+  "checks": [
+    {
+      "fixtureSet": "raw-live-fixtures-20261121.json",
+      "case": "protocol-permanent",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "raw-live-fixtures-20261121.json",
+      "case": "protocol-timed",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "raw-live-fixtures-20261121.json",
+      "case": "coordinator",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "raw-live-fixtures-20261121.json",
+      "case": "network",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "protected-live-fixtures-20261121.json",
+      "case": "protocol-permanent",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "protected-live-fixtures-20261121.json",
+      "case": "protocol-timed",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "protected-live-fixtures-20261121.json",
+      "case": "coordinator",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "protected-live-fixtures-20261121.json",
+      "case": "network",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "reactor-trial-live-fixtures.json",
+      "case": "protocol-permanent",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "reactor-trial-live-fixtures.json",
+      "case": "protocol-timed",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "reactor-trial-live-fixtures.json",
+      "case": "coordinator",
+      "activeSessions": 0,
+      "passed": true
+    },
+    {
+      "fixtureSet": "reactor-trial-live-fixtures.json",
+      "case": "network",
+      "activeSessions": 0,
+      "passed": true
+    }
+  ],
+  "globalActiveSessions": 1,
+  "allowedForeignSessions": 1,
+  "foreignSessionNote": "One active session belongs to the operator own live client (COH3工具 pid 29688, started 2026-11-21T18:32:03) whose card is not part of any release fixture set (verified by code-id attribution against every evidence/*live-fixtures*.json). The release verification left no session behind: all 12 fixture cards are inactive.",
+  "fixtureSets": [
+    "raw-live-fixtures-20261121.json",
+    "protected-live-fixtures-20261121.json",
+    "reactor-trial-live-fixtures.json"
+  ],
+  "limitation": "Fixture card sessions must be inactive; global session count is compared against an explicit allowance for out-of-scope owners instead of an unconditional zero."
+}

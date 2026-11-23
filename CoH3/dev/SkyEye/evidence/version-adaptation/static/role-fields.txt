@@ -1,0 +1,362 @@
+WINDOW 0x54c760
+0x54c760 mov ecx, 0x18
+0x54c765 call 0x1422ba6b8
+0x54c76a mov rcx, rax
+0x54c76d mov qword ptr [rsp + 0x20], rax
+0x54c772 mov eax, dword ptr [rip + 0x653dff0]
+0x54c778 inc eax
+0x54c77a mov dword ptr [rip + 0x653dfe8], eax
+0x54c780 mov dword ptr [rcx + 8], eax
+0x54c783 mov qword ptr [rcx + 0x10], rdi
+0x54c787 lea rax, [rip + 0x38458ca]
+0x54c78e mov qword ptr [rcx], rax
+0x54c791 mov rdi, qword ptr [rbx]
+0x54c794 mov qword ptr [rbx], rcx
+0x54c797 test rdi, rdi
+0x54c79a je 0x14054c748
+0x54c79c jmp 0x14264a276
+0x54c7a1 mov ecx, 0x18
+0x54c7a6 call 0x1422ba6b8
+0x54c7ab mov rcx, rax
+0x54c7ae mov qword ptr [rsp + 0x20], rax
+0x54c7b3 mov eax, dword ptr [rip + 0x653dfaf]
+0x54c7b9 inc eax
+0x54c7bb mov dword ptr [rip + 0x653dfa7], eax
+0x54c7c1 mov dword ptr [rcx + 8], eax
+0x54c7c4 mov qword ptr [rcx + 0x10], rdi
+0x54c7c8 lea rax, [rip + 0x3845991]
+0x54c7cf mov qword ptr [rcx], rax
+0x54c7d2 jmp 0x14054c791
+0x54c7d4 sub eax, 1
+0x54c7d7 je 0x14054c818
+WINDOW 0x7e1e80
+0x7e1e80 mov r10, r8
+0x7e1e83 mov rdi, rcx
+0x7e1e86 mov eax, dword ptr [rip + 0x62a88dc]
+0x7e1e8c inc eax
+0x7e1e8e mov dword ptr [rip + 0x62a88d4], eax
+0x7e1e94 mov dword ptr [rcx + 8], eax
+0x7e1e97 lea rax, [rip + 0x35b6d52]
+0x7e1e9e mov qword ptr [rcx], rax
+0x7e1ea1 mov qword ptr [rcx + 0x10], rdx
+0x7e1ea5 add rcx, 0x18
+0x7e1ea9 mov r8, qword ptr [r8]
+0x7e1eac mov eax, dword ptr [r10 + 8]
+0x7e1eb0 lea rdx, [r8 + rax*8]
+WINDOW 0x6e7120
+0x6e7120 mov qword ptr [rsp + 8], rbx
+0x6e7125 push rdi
+0x6e7126 sub rsp, 0x30
+0x6e712a mov rbx, rdx
+0x6e712d mov rdi, rcx
+0x6e7130 mov edx, 0x18
+0x6e7135 xor ecx, ecx
+0x6e7137 call 0x1405027f0
+0x6e713c mov r8, qword ptr [rbx]
+0x6e713f mov edx, dword ptr [rip + 0x63a3623]
+0x6e7145 inc edx
+0x6e7147 mov dword ptr [rip + 0x63a361b], edx
+0x6e714d mov dword ptr [rax + 8], edx
+0x6e7150 mov qword ptr [rax + 0x10], r8
+0x6e7154 lea rcx, [rip + 0x36aaefd]
+0x6e715b mov qword ptr [rax], rcx
+WINDOW 0x6e66e2
+0x6e66e2 lea r13, [rip + 0x36aba77]
+0x6e66e9 mov r12d, 0x40
+0x6e66ef mov rax, qword ptr [r14 + 0x20]
+0x6e66f3 mov rbx, qword ptr [rax + rdi*8]
+0x6e66f7 mov edx, 0x18
+0x6e66fc xor ecx, ecx
+0x6e66fe call 0x1405027f0
+0x6e6703 mov r8, rax
+0x6e6706 mov ecx, dword ptr [rip + 0x63a405c]
+0x6e670c inc ecx
+0x6e670e mov dword ptr [rip + 0x63a4054], ecx
+0x6e6714 mov dword ptr [rax + 8], ecx
+0x6e6717 mov qword ptr [rax + 0x10], rbx
+0x6e671b mov qword ptr [rax], r13
+0x6e671e test rax, rax
+WINDOW 0x707a9d
+0x707a9d lea rax, [rip + 0x368ac3c]
+0x707aa4 mov qword ptr [rdi], rax
+0x707aa7 mov dword ptr [rdi + 0x40], ebx
+0x707aaa lea rcx, [rdi + 0x48]
+0x707aae call 0x140707b90
+0x707ab3 nop 
+0x707ab4 xor eax, eax
+0x707ab6 mov qword ptr [rdi + 0xa0], rax
+0x707abd mov byte ptr [rdi + 0xa8], 1
+0x707ac4 mov qword ptr [rdi + 0xac], 0xffffffffffffffff
+0x707acf mov dword ptr [rdi + 0xb4], 0xffffffff
+0x707ad9 mov rcx, qword ptr [rbp + 0x38]
+0x707add call 0x140b285e0
+0x707ae2 mov r15, rax
+0x707ae5 mov rcx, qword ptr [rbp + 0x38]
+0x707ae9 test rax, rax
+0x707aec je 0x1427d0096
+0x707af2 mov sil, 1
+0x707af5 call 0x140d6b330
+0x707afa mov rbx, rax
+0x707afd mov r8, r15
+WINDOW 0x1330ed7
+0x1330ed7 lea rax, [rip + 0x2a63b62]
+0x1330ede mov qword ptr [r14], rax
+0x1330ee1 mov word ptr [r14 + 0xa0], bp
+0x1330ee9 test r14, r14
+0x1330eec je 0x141330f2c
+0x1330eee mov rax, qword ptr gs:[0x58]
+0x1330ef7 mov edx, 0x40
+0x1330efc mov rcx, qword ptr [rax]
+0x1330eff mov eax, dword ptr [rdx + rcx]
+0x1330f02 lea rcx, [rip + 0x4e56f37]
+0x1330f09 sub r14d, dword ptr [rcx + rax*8]
+0x1330f0d mov dword ptr [r15], r14d
+0x1330f10 mov rbx, qword ptr [rsp + 0x60]
+0x1330f15 mov rax, r15
+0x1330f18 mov rbp, qword ptr [rsp + 0x68]
+0x1330f1d mov rsi, qword ptr [rsp + 0x70]
+0x1330f22 add rsp, 0x40
+0x1330f26 pop r15
+0x1330f28 pop r14
+0x1330f2a pop rdi
+0x1330f2b ret 
+0x1330f2c mov dword ptr [r15], 0xffffffff
+0x1330f33 jmp 0x141330f10
+WINDOW 0x9063f2
+0x9063f2 lea rax, [rip + 0x348e647]
+0x9063f9 mov qword ptr [rbx], rax
+0x9063fc mov rcx, rbx
+0x9063ff call 0x140906f70
+0x906404 mov rcx, rbx
+0x906407 call 0x140906d80
+0x90640c nop 
+0x90640d mov rdx, rdi
+0x906410 xor ecx, ecx
+0x906412 call 0x140502580
+0x906417 jmp 0x14090638f
+0x90641c lea rcx, [rip + 0xa2880d]
+0x906423 cmp rax, rcx
+0x906426 jne 0x140906452
+0x906428 lea rax, [rip + 0x3590f69]
+0x90642f mov qword ptr [rbx], rax
+0x906432 mov rcx, rbx
+0x906435 call 0x140906f70
+0x90643a mov rcx, rbx
+0x90643d call 0x140906d80
+0x906442 nop 
+0x906443 mov rdx, rdi
+0x906446 xor ecx, ecx
+0x906448 call 0x140502580
+0x90644d jmp 0x14090638f
+WINDOW 0x904300
+0x904300 push rbx
+0x904302 sub rsp, 0x70
+0x904306 mov rax, qword ptr [rip + 0x54eecb3]
+0x90430d xor rax, rsp
+0x904310 mov qword ptr [rsp + 0x60], rax
+0x904315 mov rbx, rcx
+0x904318 cmp dword ptr [rcx + 0x48], 0
+0x90431c jne 0x14265a526
+0x904322 mov rax, qword ptr [rbx + 0x128]
+0x904329 mov ecx, dword ptr [rip + 0x54f1529]
+0x90432f mov rax, qword ptr [rax]
+0x904332 mov rax, qword ptr [rax + rcx*8]
+0x904336 mov rcx, qword ptr [rsp + 0x60]
+0x90433b xor rcx, rsp
+0x90433e call 0x1422ba3f0
+0x904343 add rsp, 0x70
+0x904347 pop rbx
+0x904348 ret 
+WINDOW 0xcd0f1d
+0xcd0f1d cmp edx, 1
+0xcd0f20 jne 0x140cd0f55
+0xcd0f22 mov rax, qword ptr gs:[0x58]
+0xcd0f2b mov r8d, 0x40
+0xcd0f31 mov rdx, qword ptr [rax]
+0xcd0f34 mov eax, dword ptr [r8 + rdx]
+0xcd0f38 lea r8, [rip + 0x54b6f01]
+0xcd0f3f mov edx, dword ptr [rcx + 0xb0]
+0xcd0f45 mov rax, qword ptr [r8 + rax*8]
+0xcd0f49 cmp byte ptr [rax + rdx + 0x84], 0
+0xcd0f51 setne al
+0xcd0f54 ret 
+FIELD ('.?AVTimedAbility@@', 0, '0x765680')
+0x765680 mov qword ptr [rsp + 8], rbx
+FIELD ('.?AVTimedAbility@@', 8, '0x903180')
+0x903190 mov rcx, qword ptr [rcx + 0x38]
+0x9031a7 mov rdx, qword ptr [rdi + 0x38]
+0x9031ca cmp qword ptr [rbx + 8], 0
+0x9031cf mov rbx, qword ptr [rsp + 0x38]
+FIELD ('.?AVTimedAbility@@', 40, '0x328a7f8')
+0x328a804 comiss xmm0, dword ptr [rcx + 0x48]
+0x328a80a cmp word ptr [rcx + 0xa0], 0
+0x328a814 comiss xmm0, dword ptr [rcx + 0x98]
+0x328a826 mov al, byte ptr [rbx + 0x90]
+FIELD ('.?AVTimedAbility@@', 56, '0xbb9db0')
+0xbb9dbc mov rdx, qword ptr [rax + 0x50]
+0xbb9de0 comiss xmm0, dword ptr [rcx + 0x48]
+0xbb9dea comiss xmm0, dword ptr [rcx + 0x98]
+0xbb9e2a cmp word ptr [rbx + 0xa0], 0
+0xbb9e38 test byte ptr [rbx + 0x90], 2
+0xbb9e41 mov rdx, qword ptr [rbx + 0x38]
+FIELD ('.?AVTimedAbility@@', 72, '0x79a7f0')
+0x79a7f0 mov qword ptr [rsp + 8], rbx
+0x79a852 mov qword ptr [rax + 8], rcx
+0x79a86e lea r8, [rbp + 0x98]
+0x79a88a lea rdx, [rbp + 0x98]
+0x79a8c6 mov qword ptr [rax + 8], rcx
+0x79a8d4 movzx ecx, word ptr [rbp + 0xa0]
+0x79a8e5 lea rdx, [rbp + 0xa0]
+0x79a918 mov rbp, qword ptr [rsp + 0x38]
+0x79a922 mov rdi, qword ptr [rsp + 0x48]
+FIELD ('.?AVTimedAbility@@', 80, '0x903c60')
+0x903c6c comiss xmm0, dword ptr [rcx + 0x48]
+0x903c72 comiss xmm0, dword ptr [rcx + 0x98]
+0x903c8f cmp word ptr [rbx + 0xa0], 0
+0x903c99 test byte ptr [rbx + 0x90], 2
+0x903ca2 mov rdx, qword ptr [rbx + 0x38]
+FIELD ('.?AVTimedAbility@@', 88, '0x909870')
+0x909870 mov qword ptr [rsp + 8], rbx
+0x90988e mov rcx, qword ptr [rcx + 0x38]
+0x9098c6 mov rcx, qword ptr [rbx + 0x38]
+0x9098ca movss dword ptr [rbx + 0x98], xmm0
+0x9098e7 mov rcx, qword ptr [rbx + 0x38]
+0x9098f2 mov word ptr [rbx + 0xa0], ax
+0x909926 mov rcx, qword ptr [rbx + 0x38]
+0x90994c mov rcx, qword ptr [rbx + 0x38]
+0x90996f mov rdx, qword ptr [rbx + 0x38]
+0x909996 mov rbp, qword ptr [rsp + 0x48]
+0x90999b mov rsi, qword ptr [rsp + 0x50]
+0x9099ae mov rcx, qword ptr [rbx + 0x38]
+FIELD ('.?AVTimedAbility@@', 104, '0x903aa0')
+0x903aab mov rdx, qword ptr [rcx + 0x38]
+FIELD ('.?AVTimedAbility@@', 112, '0xe2c180')
+0xe2c180 mov qword ptr [rsp + 8], rbx
+0xe2c19a mov rbx, qword ptr [rcx + 0x38]
+0xe2c1e4 mov rbp, qword ptr [rsp + 0x38]
+0xe2c1ee mov rdi, qword ptr [rsp + 0x48]
+0xe2c20b mov rcx, qword ptr [rdi + 0x38]
+0xe2c224 mov rdx, qword ptr [rdi + 0x38]
+0xe2c23e mov rcx, qword ptr [rdi + 0x38]
+FIELD ('.?AVTimedAbility@@', 120, '0x328a83c')
+0x328a83f mov qword ptr [rax + 8], rbx
+0x328a85c mov rcx, qword ptr [rcx + 0x38]
+0x328a891 mov rdx, qword ptr [rdi + 0x38]
+0x328a8a0 mulss xmm0, dword ptr [rdi + 0x98]
+0x328a8b0 mov rcx, qword ptr [rdi + 0x38]
+0x328a8c4 movss xmm6, dword ptr [rdi + 0x48]
+FIELD ('.?AVTimedAbility@@', 128, '0x328a358')
+0x328a39e mov rcx, qword ptr [rcx + 0x38]
+0x328a3f2 mov rcx, qword ptr [rdi + 0x38]
+0x328a41b mov rcx, qword ptr [rdi + 0x38]
+0x328a434 mov rcx, qword ptr [rdi + 0x38]
+0x328a456 mov rbx, qword ptr [rax + 8]
+0x328a496 mov rcx, qword ptr [rdi + 0x38]
+0x328a4af mov rcx, qword ptr [rdi + 0x38]
+0x328a4d1 mov rbx, qword ptr [rax + 8]
+0x328a4dd mov r8d, dword ptr [rdi + 8]
+0x328a538 mov rcx, qword ptr [rdi + 0x38]
+0x328a55f mov rcx, qword ptr [rdi + 0x38]
+0x328a580 mov rcx, qword ptr [rdi + 0x38]
+FIELD ('.?AVTimedAbility@@', 144, '0x328aa44')
+0x328aa44 mov qword ptr [rsp + 8], rbx
+0x328aa6f lea rbx, [rsi + 0x50]
+0x328aa7c lea rdx, [rdi + 0x98]
+0x328aaab lea rdx, [rdi + 0xa0]
+0x328aacc mov rsi, qword ptr [rsp + 0x38]
+FIELD ('.?AVTimedAbility@@', 152, '0x328a924')
+0x328a93d mov qword ptr [rsp + 0x48], rax
+0x328a96f lea rbx, [rsi + 0x50]
+0x328a999 lea rdx, [rdi + 0x98]
+0x328a9c0 lea rdx, [rdi + 0xa0]
+0x328a9db lea rcx, [rsp + 0x38]
+0x328a9e5 mov rcx, qword ptr [rsp + 0x48]
+FIELD ('.?AVMoverDynamics@@', 16, '0x979a60')
+0x979a6f mov edx, dword ptr [rcx + 0x40]
+0x979a7a mov r8d, dword ptr [rcx + 0x24]
+FIELD ('.?AVMoverDynamics@@', 40, '0xe118f0')
+0xe11916 mov ecx, dword ptr [rcx + 0x40]
+0xe1192b mov dword ptr [rsp + 0x40], eax
+FIELD ('.?AVMoverDynamics@@', 48, '0xca4110')
+0xca411f mov ecx, dword ptr [rcx + 0x40]
+0xca4134 mov dword ptr [rsp + 0x40], eax
+FIELD ('.?AVMoverDynamics@@', 56, '0x3427fb4')
+0x3427fcc mov edx, dword ptr [rcx + 0x40]
+0x3428017 mov dword ptr [rsp + 0x40], ecx
+FIELD ('.?AVMoverDynamics@@', 64, '0x479740')
+0x479749 mov edx, dword ptr [rcx + 0x40]
+FIELD ('.?AVMoverDynamics@@', 72, '0x249cb70')
+0x249cbaf mov eax, dword ptr [rcx + 0x40]
+0x249cbe9 mov r14d, dword ptr [rbx + 0x24]
+0x249cc10 mov eax, dword ptr [rbx + 0xac]
+0x249cc1c movss dword ptr [rsp + 0x40], xmm0
+0x249cc3c lea rcx, [rsp + 0x40]
+0x249cd23 lea rax, [rsp + 0x40]
+0x249cd82 lea rdx, [rsp + 0x40]
+0x249cd8f mov ecx, dword ptr [rbx + 0x40]
+0x249cd9f mov esi, dword ptr [rbx + 0xac]
+0x249cdde lea rdx, [rsp + 0x40]
+0x249cdeb mov ecx, dword ptr [rbx + 0x40]
+0x249cdfb mov esi, dword ptr [rbx + 0xac]
+FIELD ('.?AVMoverDynamics@@', 80, '0xca3ff0')
+0xca400b mov edx, dword ptr [rcx + 0x40]
+FIELD ('.?AVMoverDynamics@@', 88, '0x34218fc')
+0x3421935 lea rcx, [rbx + 0x24]
+0x342195e movss dword ptr [rsp + 0x24], xmm1
+FIELD ('.?AVMoverDynamics@@', 96, '0x3421790')
+0x3421814 movss dword ptr [rsp + 0x24], xmm3
+FIELD ('.?AVMoverDynamics@@', 104, '0x342184c')
+0x34218c3 movss dword ptr [rsp + 0x24], xmm3
+FIELD ('.?AVMoverDynamics@@', 136, '0x1187f80')
+0x1187f86 cmp dword ptr [rcx + 0x40], 0
+0x1187fca mov edx, dword ptr [rbx + 0xac]
+0x1187ff8 mov ecx, dword ptr [rbx + 0xac]
+FIELD ('.?AVMoverDynamics@@', 144, '0x342874c')
+0x3428750 cmp dword ptr [rcx + 0x40], 0
+0x342877b mov eax, dword ptr [r9 + 0xac]
+0x342878e mov ecx, dword ptr [r9 + 0x24]
+FIELD ('.?AVMoverDynamics@@', 160, '0xbdf580')
+0xbdf587 mov ecx, dword ptr [rcx + 0x40]
+0xbdf5ad mov edx, dword ptr [r9 + 0xac]
+FIELD ('.?AVMoverDynamics@@', 168, '0xbdf5e0')
+0xbdf5e4 cmp dword ptr [rcx + 0x40], 0
+0xbdf5f6 mov edx, dword ptr [rdx + 0xac]
+FIELD ('.?AVMoverDynamics@@', 240, '0x1162d10')
+0x1162d14 cmp dword ptr [rcx + 0x40], 0
+0x1162d54 mov edx, dword ptr [r9 + 0xac]
+FIELD ('.?AVMoverDynamics@@', 272, '0x3423c64')
+0x3423c6e mov edx, dword ptr [rcx + 0x40]
+0x3423cb7 mov ecx, dword ptr [r8 + 0xac]
+FIELD ('.?AVMoverDynamics@@', 280, '0x34287dc')
+0x34287e0 mov r8d, dword ptr [rcx + 0x40]
+0x3428817 mov edx, dword ptr [r9 + 0xb0]
+FIELD ('.?AVMoverDynamics@@', 288, '0x47f470')
+0x47f47a mov ecx, dword ptr [rcx + 0x40]
+FIELD ('.?AVMoverDynamics@@', 408, '0x47f530')
+0x47f536 cmp dword ptr [rcx + 0x40], 0
+0x47f566 lea rcx, [rbx + 0x24]
+0x47f572 lea rdx, [rsp + 0x40]
+FIELD ('.?AVMoverDynamics@@', 416, '0x3423cd8')
+0x3423d0a mov ecx, dword ptr [rbx + 0x24]
+FIELD ('.?AVMoverDynamics@@', 456, '0xa35840')
+0xa35847 mov ecx, dword ptr [rcx + 0x40]
+0xa35864 mov r10d, dword ptr [r9 + 0xac]
+FIELD ('.?AVMoverDynamics@@', 488, '0x70a320')
+0x70a331 mov ecx, dword ptr [rcx + 0x40]
+0x70a33c lea rcx, [rsi + 0x24]
+0x70a3b4 mov qword ptr [rsp + 0x40], rbp
+FIELD ('.?AVMoverDynamics@@', 496, '0xfa93b0')
+0xfa93b4 mov edx, dword ptr [rcx + 0x40]
+FIELD ('.?AVMoverDynamics@@', 512, '0x3428604')
+0x3428697 mov ecx, dword ptr [rdi + 0x40]
+0x34286bd mov ecx, dword ptr [rdi + 0xb0]
+0x34286ec mov ecx, dword ptr [rdi + 0xac]
+0x3428708 mov rsi, qword ptr [rsp + 0x40]
+FIELD ('.?AVMoverDynamics@@', 520, '0x3427e98')
+0x3427f30 mov ecx, dword ptr [rdi + 0x40]
+0x3427f56 mov ecx, dword ptr [rdi + 0xb0]
+0x3427f73 mov r8d, dword ptr [rdi + 0x24]
+0x3427f89 mov ecx, dword ptr [rdi + 0xac]
+FIELD ('.?AVMoverDynamics@@', 536, '0x34277b0')
+0x342788a mov ecx, dword ptr [rdi + 0xac]
+0x34278c7 mov rsi, qword ptr [rsp + 0x40]

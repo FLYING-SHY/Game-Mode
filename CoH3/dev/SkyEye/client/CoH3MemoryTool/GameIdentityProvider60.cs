@@ -26,7 +26,7 @@ internal sealed class GameIdentityProvider60 : IGameIdentityProvider60
 			}
 			Process process = processesByName[0];
 			DateTime startTime = process.StartTime;
-			if (checkedPid != process.Id || checkedStart != startTime)
+			if (checkedPid != process.Id || checkedStart != startTime || GameVersion45.Status == GameVersion45.CheckStatus.ReadFailed)
 			{
 				GameVersion45.Assess(process.MainModule.FileName);
 				checkedPid = process.Id;

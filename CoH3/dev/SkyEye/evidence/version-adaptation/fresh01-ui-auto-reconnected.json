@@ -1,0 +1,40 @@
+{
+  "utc": "2026-11-20T18:55:18.239485+00:00",
+  "pid": 27452,
+  "tag": "fresh01-ui-auto-reconnected",
+  "windows": [
+    {
+      "hwnd": 986100,
+      "isControlPanel": false,
+      "rect": [
+        66,
+        69,
+        1870,
+        163
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\fresh01-ui-auto-reconnected-986100.png"
+    },
+    {
+      "hwnd": 920924,
+      "isControlPanel": false,
+      "rect": [
+        8,
+        61,
+        1928,
+        1141
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\fresh01-ui-auto-reconnected-920924.png"
+    },
+    {
+      "hwnd": 1837188,
+      "isControlPanel": true,
+      "rect": [
+        540,
+        221,
+        2020,
+        1171
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\fresh01-ui-auto-reconnected-1837188.png"
+    }
+  ]
+}

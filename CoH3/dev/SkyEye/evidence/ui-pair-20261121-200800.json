@@ -1,0 +1,44 @@
+{
+  "capturedAt": "2026-11-21T12:07:48.909969+00:00",
+  "stamp": "20261121-200800",
+  "method": "unprotected and protected verifiers rendered back to back within the same second; both attached to the same environment",
+  "rawVerifier": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\verification\\bin\\Release\\net48\\SkyEye.Integration.Verification.exe",
+  "releaseVerifier": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\verification\\bin\\Protected\\net48\\SkyEye.Integration.Verification.exe",
+  "sandboxes": {
+    "raw": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\verification\\sandbox\\ui-pair-20261121-200800-raw",
+    "release": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\verification\\sandbox\\ui-pair-20261121-200800-release"
+  },
+  "pictures": [
+    {
+      "name": "main",
+      "size": [
+        1480,
+        950
+      ],
+      "changedPixels": 0,
+      "rawSha256": "a93150fffa736fcb081f9b1e01aeecbab22485550cfd1d69ba841c49b961fa56",
+      "releaseSha256": "a93150fffa736fcb081f9b1e01aeecbab22485550cfd1d69ba841c49b961fa56"
+    },
+    {
+      "name": "expanded",
+      "size": [
+        1480,
+        950
+      ],
+      "changedPixels": 0,
+      "rawSha256": "79c62c2bda8e7239af086be639a2a7687fe13b063864801ae718ca87c94c29b8",
+      "releaseSha256": "79c62c2bda8e7239af086be639a2a7687fe13b063864801ae718ca87c94c29b8"
+    },
+    {
+      "name": "compact",
+      "size": [
+        1180,
+        740
+      ],
+      "changedPixels": 0,
+      "rawSha256": "e405814352b8ca2e71e3f43b19d4cd8e8f81fefbcbe045df154d4087ac4f2cf7",
+      "releaseSha256": "e405814352b8ca2e71e3f43b19d4cd8e8f81fefbcbe045df154d4087ac4f2cf7"
+    }
+  ],
+  "identical": true
+}

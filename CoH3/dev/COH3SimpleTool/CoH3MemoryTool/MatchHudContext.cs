@@ -1,0 +1,404 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Globalization;
+using System.Threading;
+
+namespace CoH3MemoryTool
+{
+	internal enum MatchHudOutcome
+	{
+		Resolving,
+		Retired,
+		ReadFault,
+		Ambiguous
+	}
+
+	internal sealed class MatchHudUnavailableException : InvalidOperationException
+	{
+		internal MatchHudOutcome Outcome { get; private set; }
+
+		internal MatchHudUnavailableException(MatchHudOutcome outcome, string message)
+			: base(message)
+		{
+			Outcome = outcome;
+		}
+	}
+
+	// A committed product-session identity. Only the main reader's discovery path mints epochs.
+	internal sealed class MatchHudContext
+	{
+		private static long sequence;
+		internal readonly string World;
+		internal readonly long Root;
+		internal readonly long Hud;
+		internal readonly long Epoch;
+		private int retired;
+		internal bool IsRetired { get { return Volatile.Read(ref retired) != 0; } }
+		internal void Retire() { Interlocked.Exchange(ref retired, 1); }
+
+		internal MatchHudContext(string world, long root, long hud, long epoch)
+		{
+			World = world;
+			Root = root;
+			Hud = hud;
+			Epoch = epoch;
+		}
+
+		internal static MatchHudContext Create(string world, long root, long hud)
+		{
+			return new MatchHudContext(world, root, hud, Interlocked.Increment(ref sequence));
+		}
+
+		internal static string ProductKey(string world, MatchHudContext context, bool requireHud = true)
+		{
+			if (!requireHud) return world;
+			if (context != null && context.IsRetired)
+				throw new MatchHudUnavailableException(MatchHudOutcome.Retired, "旧对局 HUD 上下文已退役。");
+			if (context == null || context.Epoch <= 0 || context.World != world)
+			{
+				throw new MatchHudUnavailableException(MatchHudOutcome.Resolving, "对局 HUD 身份尚未就绪。");
+			}
+			return world + ":hud:" + context.Root.ToString("x", CultureInfo.InvariantCulture) + ":" + context.Hud.ToString("x", CultureInfo.InvariantCulture) + ":" + context.Epoch.ToString(CultureInfo.InvariantCulture);
+		}
+	}
+
+	// Positive current-root witnesses only. Exhaustion/partial reads never mean HUD absence.
+	// The injected operation is the same exact-read operation used by PlayerInfoReader.
+	internal sealed class MatchHudGuard
+	{
+		private sealed class Budget
+		{
+			internal readonly Stopwatch Watch = Stopwatch.StartNew();
+			internal int Reads;
+			internal int Bytes;
+		}
+
+		private sealed class WalkNode
+		{
+			internal readonly long Address;
+			internal byte[] Body;
+			internal readonly List<long> Children = new List<long>();
+			internal bool Prepared;
+			internal int Cursor;
+			internal WalkNode(long address) { Address = address; }
+		}
+
+		private readonly object gate = new object();
+		private readonly Func<long, int, byte[]> read;
+		private readonly long rootSlot;
+		private readonly long rootType;
+		private readonly long hudType;
+		private readonly long image;
+		private readonly int maxReads;
+		private readonly int maxBytes;
+		private readonly int maxMilliseconds;
+		private readonly Queue<WalkNode> pending = new Queue<WalkNode>();
+		private readonly HashSet<long> seen = new HashSet<long>();
+		private readonly HashSet<long> candidates = new HashSet<long>();
+		private MatchHudContext bound;
+		private bool expectedOnly;
+		private WalkNode walking;
+		private long walkRoot;
+		private bool walkReadFault;
+		private bool walkLimited;
+
+		internal MatchHudGuard(Func<long, int, byte[]> read, long rootSlot, long rootType, long hudType, long image, int maxReads = 256, int maxBytes = 131072, int maxMilliseconds = 12)
+		{
+			this.read = read;
+			this.rootSlot = rootSlot;
+			this.rootType = rootType;
+			this.hudType = hudType;
+			this.image = image;
+			this.maxReads = maxReads;
+			this.maxBytes = maxBytes;
+			this.maxMilliseconds = maxMilliseconds;
+		}
+
+		internal void BindExpected(MatchHudContext context)
+		{
+			lock (gate)
+			{
+				if (context == null || context.Epoch <= 0)
+					throw Unavailable(MatchHudOutcome.Resolving, "工作读取器缺少 HUD 上下文。");
+				bound = context;
+				expectedOnly = true;
+			}
+		}
+
+		internal void Verify(MatchHudContext expected)
+		{
+			lock (gate)
+			{
+				if (expected == null)
+					throw Unavailable(MatchHudOutcome.Resolving, "对局 HUD 身份尚未就绪。");
+				if (bound == null || bound.Epoch != expected.Epoch || bound.Root != expected.Root || bound.Hud != expected.Hud || bound.World != expected.World)
+					throw Unavailable(MatchHudOutcome.Retired, "旧对局 HUD 上下文已退役。");
+				try { VerifyPath(expected, new Budget()); }
+				catch (MatchHudUnavailableException error)
+				{
+					if (error.Outcome == MatchHudOutcome.Retired) Retire();
+					throw;
+				}
+			}
+		}
+
+		internal MatchHudContext Resolve(string world)
+		{
+			lock (gate)
+			{
+				Budget budget = new Budget();
+				if (expectedOnly && bound == null)
+					throw Unavailable(MatchHudOutcome.Retired, "严格工作上下文已退役，等待主读取器连接。");
+				if (bound != null)
+				{
+					if (bound.World != world)
+					{
+						Retire();
+						throw Unavailable(MatchHudOutcome.Retired, "对局世界身份已切换。");
+					}
+					try { VerifyPath(bound, budget); return bound; }
+					catch (MatchHudUnavailableException error)
+					{
+						if (error.Outcome == MatchHudOutcome.Retired) Retire();
+						throw;
+					}
+				}
+				long root = ReadRoot(budget);
+				if (walkRoot != root || (pending.Count == 0 && walking == null && candidates.Count == 0)) ResetWalk(root);
+				int nodes = 0;
+				int steps = 0;
+				while (walking != null || pending.Count != 0)
+				{
+					if (nodes++ >= 128) throw Unavailable(MatchHudOutcome.Resolving, "正在有界定位对局 HUD。");
+					if (walking == null) walking = pending.Dequeue();
+					try { Prepare(walking, budget); }
+					catch (MatchHudUnavailableException error)
+					{
+						if (error.Outcome != MatchHudOutcome.ReadFault) throw;
+						walkReadFault = true;
+						pending.Enqueue(walking);
+						walking = null;
+						throw;
+					}
+					while (walking.Cursor < walking.Children.Count)
+					{
+						if (++steps > 1024 || budget.Watch.ElapsedMilliseconds >= maxMilliseconds)
+							throw Unavailable(MatchHudOutcome.Resolving, "HUD 定位达到步数预算，等待继续。");
+						long child = walking.Children[walking.Cursor];
+						if (seen.Contains(child)) { walking.Cursor++; continue; }
+						byte[] header;
+						try { header = Read(child, 144, budget); }
+						catch (MatchHudUnavailableException error)
+						{
+							if (error.Outcome != MatchHudOutcome.ReadFault) throw;
+							walkReadFault = true;
+							walking.Cursor++;
+							continue;
+						}
+						walking.Cursor++;
+						long type = BitConverter.ToInt64(header, 0);
+						if (BitConverter.ToInt64(header, 136) != walking.Address || !IsUiType(type)) continue;
+						if (seen.Count >= 6000) { walkLimited = true; continue; }
+						seen.Add(child);
+						if (type == hudType) { candidates.Add(child); continue; }
+						pending.Enqueue(new WalkNode(child));
+					}
+					walking = null;
+				}
+				if (walkReadFault || walkLimited)
+				{
+					MatchHudOutcome outcome = walkReadFault ? MatchHudOutcome.ReadFault : MatchHudOutcome.Resolving;
+					ResetWalk(root);
+					throw Unavailable(outcome, "HUD 定位仍有部分未知，等待下一轮正向复验。");
+				}
+				MatchHudContext ready = TryAdopt(world, budget);
+				if (ready != null) return ready;
+				throw Unavailable(MatchHudOutcome.Resolving, "HUD 尚未定位，等待当前根的正向路径。");
+			}
+		}
+
+		private MatchHudContext TryAdopt(string world, Budget budget)
+		{
+			if (candidates.Count == 0) return null;
+			List<long> rejected = new List<long>();
+			long accepted = 0;
+			foreach (long candidate in candidates)
+			{
+				try { VerifyPath(new MatchHudContext(world, walkRoot, candidate, 0), budget); }
+				catch (MatchHudUnavailableException error)
+				{
+					if (error.Outcome != MatchHudOutcome.Retired) throw;
+					rejected.Add(candidate);
+					continue;
+				}
+				if (accepted != 0)
+					throw Unavailable(MatchHudOutcome.Ambiguous, "观察到多个有效 HUD，等待身份消歧。");
+				accepted = candidate;
+			}
+			foreach (long candidate in rejected) candidates.Remove(candidate);
+			if (accepted == 0) return null;
+			bound = MatchHudContext.Create(world, walkRoot, accepted);
+			pending.Clear();
+			walking = null;
+			return bound;
+		}
+
+		private void Retire()
+		{
+			if (bound != null) bound.Retire();
+			bound = null;
+			ResetWalk(0);
+		}
+
+		private void ResetWalk(long root)
+		{
+			walkRoot = root;
+			pending.Clear();
+			seen.Clear();
+			candidates.Clear();
+			walking = null;
+			walkReadFault = false;
+			walkLimited = false;
+			if (root != 0) { seen.Add(root); pending.Enqueue(new WalkNode(root)); }
+		}
+
+		private void Prepare(WalkNode node, Budget budget)
+		{
+			if (node.Prepared) return;
+			if (node.Body == null)
+			{
+				node.Body = Read(node.Address, 576, budget);
+				for (int offset = 144; offset <= 568; offset += 8)
+				{
+					long child = BitConverter.ToInt64(node.Body, offset);
+					if (IsPointer(child) && !node.Children.Contains(child)) node.Children.Add(child);
+				}
+			}
+			long container = BitConverter.ToInt64(node.Body, 504);
+			if (container >= 65536)
+			{
+				try
+				{
+					byte[] header = Read(container, 128, budget);
+					long data = BitConverter.ToInt64(header, 112);
+					uint count = BitConverter.ToUInt32(header, 124);
+					if (data >= 65536 && count > 0 && count <= 512)
+					{
+						byte[] items = Read(data, checked((int)count * 8), budget);
+						for (int index = 0; index < count; index++)
+						{
+							long child = BitConverter.ToInt64(items, index * 8);
+							if (IsPointer(child) && !node.Children.Contains(child)) node.Children.Add(child);
+						}
+					}
+				}
+				catch (MatchHudUnavailableException error)
+				{
+					if (error.Outcome != MatchHudOutcome.ReadFault) throw;
+					walkReadFault = true;
+				}
+			}
+			node.Prepared = true;
+		}
+
+		private void VerifyPath(MatchHudContext expected, Budget budget)
+		{
+			if (expected.IsRetired) throw Unavailable(MatchHudOutcome.Retired, "旧对局 HUD 上下文已退役。");
+			if (Q(expected.Hud, budget) != hudType)
+				throw Unavailable(MatchHudOutcome.Retired, "对局 HUD 对象类型已退役。");
+			long root = ReadRoot(budget);
+			if (root != expected.Root)
+				throw Unavailable(MatchHudOutcome.Retired, "当前 UI 根已切换，旧 HUD 已退役。");
+			HashSet<long> ancestors = new HashSet<long>();
+			long child = expected.Hud;
+			bool reached = false;
+			for (int depth = 0; depth < 64; depth++)
+			{
+				if (!ancestors.Add(child)) break;
+				long parent = Q(child + 136, budget);
+				if (parent < 65536) break;
+				if (!HasChild(parent, child, budget))
+					throw Unavailable(MatchHudOutcome.Resolving, "HUD 父子归属尚待正向复验。");
+				if (Q(child + 136, budget) != parent)
+					throw Unavailable(MatchHudOutcome.Resolving, "HUD 父链正在变化。");
+				if (parent == root) { reached = true; break; }
+				if (Q(parent, budget) == rootType)
+					throw Unavailable(MatchHudOutcome.Retired, "HUD 归属于旧 UI 根。");
+				child = parent;
+			}
+			if (!reached) throw Unavailable(MatchHudOutcome.Resolving, "HUD 到当前根的父链尚未完整。");
+			if (Q(expected.Hud, budget) != hudType)
+				throw Unavailable(MatchHudOutcome.Retired, "对局 HUD 对象类型已退役。");
+			if (ReadRoot(budget) != root)
+				throw Unavailable(MatchHudOutcome.Retired, "当前 UI 根在复验期间切换。");
+		}
+
+		private static bool IsPointer(long address)
+		{
+			return address >= 65536 && address < 140737488355328L && (address & 7) == 0;
+		}
+
+		private bool IsUiType(long type)
+		{
+			long rva = type - image;
+			return rva >= 64307200L && rva < 96444416L;
+		}
+
+		private bool HasChild(long parent, long child, Budget budget)
+		{
+			byte[] body = Read(parent, 576, budget);
+			if (!IsUiType(BitConverter.ToInt64(body, 0)))
+				throw Unavailable(MatchHudOutcome.Resolving, "HUD 祖先的 UI 对象身份尚未就绪。");
+			for (int offset = 144; offset <= 568; offset += 8)
+				if (BitConverter.ToInt64(body, offset) == child) return true;
+			long container = BitConverter.ToInt64(body, 504);
+			if (container < 65536) return false;
+			byte[] header = Read(container, 128, budget);
+			long data = BitConverter.ToInt64(header, 112);
+			uint count = BitConverter.ToUInt32(header, 124);
+			if (data < 65536 || count == 0 || count > 512) return false;
+			byte[] items = Read(data, checked((int)count * 8), budget);
+			for (int index = 0; index < count; index++)
+				if (BitConverter.ToInt64(items, index * 8) == child) return true;
+			return false;
+		}
+
+		private long ReadRoot(Budget budget)
+		{
+			long singleton = Q(rootSlot, budget);
+			if (singleton < 65536) throw Unavailable(MatchHudOutcome.Resolving, "当前 UI 根尚未就绪。");
+			long root = Q(singleton + 136, budget);
+			if (!IsPointer(root) || Q(root, budget) != rootType || Q(root + 136, budget) != 0)
+				throw Unavailable(MatchHudOutcome.Resolving, "当前 UI 根身份尚未就绪。");
+			return root;
+		}
+
+		private long Q(long address, Budget budget) { return BitConverter.ToInt64(Read(address, 8, budget), 0); }
+
+		private byte[] Read(long address, int count, Budget budget)
+		{
+			if (budget.Reads >= maxReads || budget.Bytes + count > maxBytes || budget.Watch.ElapsedMilliseconds >= maxMilliseconds)
+				throw Unavailable(MatchHudOutcome.Resolving, "HUD 复验达到读取预算，等待继续。");
+			budget.Reads++;
+			budget.Bytes += count;
+			try
+			{
+				byte[] bytes = read(address, count);
+				if (bytes == null || bytes.Length != count)
+					throw Unavailable(MatchHudOutcome.ReadFault, "HUD 数据短读，等待重新复验。");
+				return bytes;
+			}
+			catch (MatchHudUnavailableException) { throw; }
+			catch (Exception)
+			{
+				throw Unavailable(MatchHudOutcome.ReadFault, "HUD 数据读取暂时失败，等待重新复验。");
+			}
+		}
+
+		private static MatchHudUnavailableException Unavailable(MatchHudOutcome outcome, string message)
+		{
+			return new MatchHudUnavailableException(outcome, message);
+		}
+	}
+}

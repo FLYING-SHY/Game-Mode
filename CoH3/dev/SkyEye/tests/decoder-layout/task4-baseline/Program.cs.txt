@@ -1,0 +1,222 @@
+using System.Reflection;
+using System.Text.Json;
+using CoH3MemoryTool;
+
+internal static class Program
+{
+    private const long Image = 0x140000000, Arena = 0x200000000, Entity = Arena + 0x400, Identity = 0x12345678;
+    private const uint Id = 13, Index = 27;
+    private static readonly List<string> passed = new();
+    private static readonly Dictionary<long, long> syntheticMap = new()
+    {
+        [64559016] = 0x3D926E0, [64568064] = 0x3D94A40,
+        [65313128] = 0x3E4AA38, [65307976] = 0x3E49618
+    };
+
+    private sealed class Fixture
+    {
+        internal string Name;
+        internal long[] Keys;
+        internal int[] GuardBuffers;
+        internal Func<Func<long, long>, byte[][]> Build;
+        internal Func<byte[][], Func<long, long>, bool> Run;
+        internal int MinimumFirstLength;
+        internal bool NullThrows;
+    }
+    private sealed class MapperFailure : Exception { }
+    private sealed class MappingContext
+    {
+        private readonly long delta;
+        internal readonly List<long> Calls = new();
+        internal MappingContext(long delta) { this.delta = delta; }
+        internal long Resolve(long key) { Calls.Add(key); return Map(key) + delta; }
+    }
+    private static void Check(bool condition, string name)
+    {
+        if (!condition) throw new Exception("FAIL " + name);
+        passed.Add(name); Console.WriteLine("PASS " + name);
+    }
+    private static long Map(long key)
+    {
+#if MAINTENANCE_DIAGNOSTICS
+        return GameLayout52426.Resolve(key);
+#else
+        return syntheticMap[key]; // Release helper contract uses an injected fixture mapper, not production candidate code.
+#endif
+    }
+    private static void Q(byte[] b, int offset, long value) => BitConverter.GetBytes(value).CopyTo(b, offset);
+    private static void U(byte[] b, int offset, uint value) => BitConverter.GetBytes(value).CopyTo(b, offset);
+    private static void F(byte[] b, int offset, float value) => BitConverter.GetBytes(value).CopyTo(b, offset);
+    private static byte[] Body()
+    {
+        var b = new byte[392]; U(b, 104, Id); U(b, 108, Index); return b;
+    }
+    private static byte[] Actor(Func<long, long> map, long key, uint mode)
+    {
+        var a = new byte[284]; Q(a, 0, Image + map(key)); a[16] = 2;
+        F(a, 20, 100); F(a, 24, 0); F(a, 28, 200);
+        U(a, 36, 0x400); U(a, 64, mode); F(a, 272, 1); return a;
+    }
+    private static byte[] Ext(Func<long, long> map)
+    {
+        var e = new byte[108]; Q(e, 0, Image + map(65307976)); U(e, 8, 0x400);
+        e[16] = 3; U(e, 20, 7); U(e, 24, 8); U(e, 56, 0x500); F(e, 104, 12); return e;
+    }
+    private static byte[] Ability(Func<long, long> map)
+    {
+        var a = new byte[164]; Q(a, 0, Image + map(64568064)); a[20] = 6;
+        Q(a, 24, Identity); F(a, 40, 1); U(a, 68, 1); a[144] = 1; return a;
+    }
+    private static byte[] Targets()
+    {
+        var t = new byte[20]; t[0] = 1; F(t, 4, 100); F(t, 8, 5); F(t, 12, 200); return t;
+    }
+    private static Fixture[] Fixtures() => new[]
+    {
+        new Fixture { Name = "RecoverStrafe", Keys = new long[] {64559016}, GuardBuffers = new[] {1}, MinimumFirstLength = 392,
+            Build = m => { var b = Body(); F(b, 48, 30); return new[] {b, Actor(m, 64559016, 1)}; },
+            Run = (b, m) => { var z = AirLogic.RecoverStrafe("ebps\\races\\german\\aircraft\\stuka_ju87_strafe", b[0], b[1], Image, Arena, Entity, Id, Index, m); return z != null && z.X == 102.5f && z.Y == 0 && z.Z == 200 && z.DX == 1 && z.DZ == 0 && z.Length == 42 && z.HalfWidth == 5; } },
+        new Fixture { Name = "AirCast", Keys = new long[] {64568064}, GuardBuffers = new[] {0}, MinimumFirstLength = 148,
+            Build = m => new[] {Ability(m), Targets()},
+            Run = (b, m) => AirLogic.Cast(b[0], b[1], Image, Identity, out float x, out float y, out float z, out float dx, out float dz, resolveRva: m) && x == 100 && y == 5 && z == 200 && dx == 1 && dz == 0 },
+        new Fixture { Name = "Rocket", Keys = new long[] {65313128, 65307976}, GuardBuffers = new[] {1, 2}, MinimumFirstLength = 392, NullThrows = true,
+            Build = m => new[] {Body(), Actor(m, 65313128, 3), Ext(m)},
+            Run = (b, m) => { var z = AirLogic.Rocket(b[0], b[1], b[2], Image, Arena, Entity, Id, Index, m); return z != null && z.Rocket && z.Owner == Arena + 0x500 && z.X == 100 && z.Y == 0 && z.Z == 200 && z.Radius == 12; } },
+        new Fixture { Name = "Projectile", Keys = new long[] {65313128, 65307976}, GuardBuffers = new[] {1, 2}, MinimumFirstLength = 392,
+            Build = m => new[] {Body(), Actor(m, 65313128, 0), Ext(m)},
+            Run = (b, m) => ProjectileLogic.Decode(b[0], b[1], b[2], Image, Arena, Entity, Id, Index, out var p, resolveRva: m) && p.Entity == Entity && p.Id == Id && p.Index == Index && p.SourceKey == ((7UL << 32) | 8) && p.X == 100 && p.Y == 0 && p.Z == 200 && p.Radius == 12 },
+        new Fixture { Name = "SupportActive", Keys = new long[] {64568064}, GuardBuffers = new[] {0}, MinimumFirstLength = 164,
+            Build = m => new[] {Ability(m)}, Run = (b, m) => SupportCatalogue49.Active(b[0], Image, Identity, m) }
+    };
+    private static void TestFixture(Fixture f)
+    {
+        long IdentityMap(long key) => key;
+        Check(f.Run(f.Build(IdentityMap), null), f.Name + " default legacy bytes accepted with payload fields intact");
+        var calls = new List<long>();
+        long TraceIdentity(long key) { calls.Add(key); return key; }
+        Check(f.Run(f.Build(IdentityMap), TraceIdentity) && calls.SequenceEqual(f.Keys), f.Name + " explicit identity matches default and traces exact keys");
+        var legacy = f.Build(IdentityMap); var candidate = f.Build(Map);
+        var normalized = candidate.Select(b => (byte[])b.Clone()).ToArray();
+        foreach (int buffer in f.GuardBuffers) Array.Copy(legacy[buffer], 0, normalized[buffer], 0, 8);
+        Check(normalized.Zip(legacy).All(pair => pair.First.SequenceEqual(pair.Second)), f.Name + " candidate changes only vtable bytes");
+        Check(!f.Run(candidate, null), f.Name + " default legacy guard rejects candidate bytes");
+        calls.Clear();
+        long TraceCandidate(long key) { calls.Add(key); return Map(key); }
+        Check(f.Run(candidate, TraceCandidate) && calls.SequenceEqual(f.Keys), f.Name + " mapped candidate accepted and exact dependency keys invoked");
+        for (int i = 0; i < f.Keys.Length; i++)
+        {
+            var wrong = f.Build(Map); Q(wrong[f.GuardBuffers[i]], 0, Image + 0x7FFF0000);
+            Check(!f.Run(wrong, Map), f.Name + " wrong type independently rejected for key " + f.Keys[i]);
+            var mixed = f.Build(Map); Q(mixed[f.GuardBuffers[i]], 0, Image + f.Keys[i]);
+            Check(!f.Run(mixed, Map), f.Name + " legacy type cannot pass mapped guard for key " + f.Keys[i]);
+            long failKey = f.Keys[i]; var sentinel = new MapperFailure(); bool propagated = false;
+            try { f.Run(f.Build(Map), key => key == failKey ? throw sentinel : Map(key)); }
+            catch (MapperFailure ex) { propagated = ReferenceEquals(ex, sentinel); }
+            Check(propagated, f.Name + " mapper exception propagates unchanged for key " + failKey);
+        }
+        var a = new MappingContext(0); var b = new MappingContext(0x2000);
+        Check(f.Run(f.Build(a.Resolve), a.Resolve) && f.Run(f.Build(b.Resolve), b.Resolve) && f.Run(f.Build(a.Resolve), a.Resolve), f.Name + " interleaved mapping contexts remain isolated");
+        Check(!f.Run(f.Build(a.Resolve), b.Resolve), f.Name + " different mapping context cannot accept other context bytes");
+        int invoked = 0;
+        long Unexpected(long key) { invoked++; throw new MapperFailure(); }
+        var shortBytes = f.Build(Map); shortBytes[0] = new byte[f.MinimumFirstLength - 1];
+        Check(!f.Run(shortBytes, Unexpected) && invoked == 0, f.Name + " short first buffer exits before mapper");
+        var nullBytes = f.Build(Map); nullBytes[0] = null; bool nullExpected;
+        if (f.NullThrows)
+        {
+            nullExpected = false;
+            try { f.Run(nullBytes, Unexpected); } catch (NullReferenceException) { nullExpected = true; }
+        }
+        else nullExpected = !f.Run(nullBytes, Unexpected);
+        Check(nullExpected && invoked == 0, f.Name + " existing null behavior preserved without mapper invocation");
+        var noEvent = f.Build(Map);
+        if (f.Name == "SupportActive") U(noEvent[0], 68, uint.MaxValue);
+        else if (f.Name == "AirCast") noEvent[0][76] = 2;
+        else U(noEvent[0], 160, 0x4000);
+        Check(!f.Run(noEvent, Map), f.Name + " correctly mapped no-event negative control remains false/null");
+    }
+    private static void TestExtraBounds()
+    {
+        int calls = 0; long Unexpected(long key) { calls++; throw new MapperFailure(); }
+        Check(AirLogic.RecoverStrafe("unused", Body(), new byte[283], Image, Arena, Entity, Id, Index, Unexpected) == null && calls == 0, "RecoverStrafe short actor avoids mapper");
+        Check(AirLogic.Rocket(Body(), new byte[67], new byte[108], Image, Arena, Entity, Id, Index, Unexpected) == null && calls == 0, "Rocket short motion avoids mapper");
+        Check(AirLogic.Rocket(Body(), new byte[68], new byte[107], Image, Arena, Entity, Id, Index, Unexpected) == null && calls == 0, "Rocket short ext avoids mapper");
+        Check(!ProjectileLogic.Decode(Body(), new byte[79], new byte[108], Image, Arena, Entity, Id, Index, out _, resolveRva: Unexpected) && calls == 0, "Projectile short actor avoids mapper");
+        Check(!ProjectileLogic.Decode(Body(), new byte[80], new byte[107], Image, Arena, Entity, Id, Index, out _, resolveRva: Unexpected) && calls == 0, "Projectile short ext avoids mapper");
+        Check(!AirLogic.Cast(Ability(Map), new byte[19], Image, Identity, out _, out _, out _, out _, out _, resolveRva: Unexpected) && calls == 0, "AirCast short targets avoid mapper");
+        Check(!AirLogic.Cast(Ability(Map), null, Image, Identity, out _, out _, out _, out _, out _, resolveRva: Unexpected) && calls == 0, "AirCast null targets avoid mapper");
+    }
+    private static void TestLayout()
+    {
+#if MAINTENANCE_DIAGNOSTICS
+        GameLayout52426.ValidateDependencies();
+        var flags = BindingFlags.NonPublic | BindingFlags.Static;
+        var required = (long[])typeof(GameLayout52426).GetField("requiredDependencies", flags).GetValue(null);
+        var candidates = (Dictionary<long, long>)typeof(GameLayout52426).GetField("candidates", flags).GetValue(null);
+        Check(required.Length == 37 && required.Distinct().Count() == 37 && required.Order().SequenceEqual(candidates.Keys.Order()), "maintenance preflight enumerates exactly 37 distinct registered dependencies");
+        Check(syntheticMap.All(pair => GameLayout52426.Resolve(pair.Key) == pair.Value), "four decoder-role keys match reviewed actual candidate layout");
+        foreach (long legacy in new long[] {64430720, 64431008, 64432864, 64815280, 64815656})
+            Check(GameLayout52426.LegacyTransform(GameLayout52426.Resolve(legacy)) == legacy, "candidate transform reverses exact role " + legacy);
+        bool unknown = false;
+        try { GameLayout52426.Resolve(0x123); } catch (InvalidOperationException) { unknown = true; }
+        Check(unknown, "unregistered dependency throws instead of identity fallback");
+        unknown = false;
+        try { GameLayout52426.LegacyTransform(0x123); } catch (InvalidOperationException) { unknown = true; }
+        Check(unknown, "unregistered transform throws instead of identity fallback");
+#else
+        Check(typeof(GameLayout52426).GetFields(BindingFlags.NonPublic | BindingFlags.Static).Length == 0 && typeof(GameLayout52426).GetMethod("Resolve", BindingFlags.NonPublic | BindingFlags.Static) == null, "release build omits actual candidate table and resolver");
+#endif
+    }
+    private static object capturedEvidence;
+    private static void TestCapturedProjectile(string path)
+    {
+        byte[] file = File.ReadAllBytes(path);
+        using var document = JsonDocument.Parse(file);
+        var record = document.RootElement.GetProperty("records")[0];
+        var body = Convert.FromHexString(record.GetProperty("rawBodyHex").GetString());
+        var actor = Convert.FromHexString(record.GetProperty("rawActorHex").GetString());
+        var ext = Convert.FromHexString(record.GetProperty("rawExtHex").GetString());
+        long entity = Convert.ToInt64(record.GetProperty("entity").GetString().Substring(2), 16);
+        uint id = record.GetProperty("generation").GetUInt32(), index = record.GetProperty("registryIndex").GetUInt32();
+        long arena = entity - BitConverter.ToUInt32(actor, 36);
+        long image = BitConverter.ToInt64(actor, 0) - Map(65313128);
+        Check(body.Length == 392 && actor.Length == 80 && ext.Length == 208, "captured projectile retains exact 392/80/208 raw lengths");
+        Check(arena == entity - BitConverter.ToUInt32(ext, 8) && arena == 0x17C00000000, "captured actor/ext backrefs derive same supplied arena context");
+        Check(image == BitConverter.ToInt64(ext, 0) - Map(65307976) && image == 0x7FF7A37E0000, "captured actor/ext vtables derive same supplied image context");
+        Check(ProjectileLogic.Mortar(record.GetProperty("ext").GetProperty("weapon").GetString()), "captured weapon selects actual mortar predicate");
+        Check(!ProjectileLogic.Decode(body, actor, ext, image, arena, entity, id, index, out _, mortar: true), "captured candidate bytes rejected by default legacy guards");
+        var calls = new List<long>();
+        long Trace(long key) { calls.Add(key); return Map(key); }
+        bool decoded = ProjectileLogic.Decode(body, actor, ext, image, arena, entity, id, index, out var impact, mortar: true, resolveRva: Trace);
+        Check(decoded && calls.SequenceEqual(new long[] {65313128, 65307976}), "captured actual raw bytes accepted by mapped mortar decoder with exact keys");
+        Check(impact != null && impact.Entity == entity && impact.Id == id && impact.Index == index && impact.SourceKey == ((1000008229UL << 32) | 3061) && impact.Radius == 4.5f && impact.X == record.GetProperty("actor").GetProperty("position20")[0].GetSingle() && impact.Y == record.GetProperty("actor").GetProperty("position20")[1].GetSingle() && impact.Z == record.GetProperty("actor").GetProperty("position20")[2].GetSingle(), "captured decoder payload matches retained event metadata");
+        Check(!ProjectileLogic.Decode(body, actor, ext, image, arena, entity, id, index, out _, resolveRva: Map), "captured state64=3 requires explicit mortar or infantry context");
+        foreach (int guard in new[] {1, 2})
+        {
+            var buffers = new[] {(byte[])body.Clone(), (byte[])actor.Clone(), (byte[])ext.Clone()};
+            Q(buffers[guard], 0, image + 0x7FFF0000);
+            Check(!ProjectileLogic.Decode(buffers[0], buffers[1], buffers[2], image, arena, entity, id, index, out _, mortar: true, resolveRva: Map), "captured wrong type independently rejected in buffer " + guard);
+        }
+        capturedEvidence = new { source = Path.GetFullPath(path), sha256 = Convert.ToHexString(System.Security.Cryptography.SHA256.HashData(file)), recordIndex = 0, rawLengths = new[] {body.Length, actor.Length, ext.Length}, sourceStatus = document.RootElement.GetProperty("status").GetString(), imageDerivedAndSupplied = image.ToString("X"), arenaDerivedAndSupplied = arena.ToString("X"), limitation = "Offline replay of one captured event, not motion, timing, renderer or G/R proof; base/arena consistency derived from retained bytes and supplied context." };
+    }
+    public static int Main(string[] args)
+    {
+        string mode =
+#if MAINTENANCE_DIAGNOSTICS
+            "maintenance";
+#else
+            "release";
+#endif
+        try
+        {
+            foreach (var fixture in Fixtures()) TestFixture(fixture);
+            TestExtraBounds(); TestLayout();
+            if (args.Length == 2 && args[0] == "--captured-projectile") TestCapturedProjectile(args[1]);
+            else if (args.Length != 0) throw new ArgumentException("Usage: [--captured-projectile EVENT_JSON]");
+            File.WriteAllText(Path.Combine(AppContext.BaseDirectory, "fixture-report.json"), JsonSerializer.Serialize(new { mode, evidence = "F only / synthetic buffers and optional offline captured-byte replay", passed = passed.Count, checks = passed, capturedEvidence, nativeOrReaderLinked = false, gameRun = "not_run", runnerErrorPropagation = "not_run; direct helper exceptions verified only" }, new JsonSerializerOptions { WriteIndented = true }));
+            Console.WriteLine("FIXTURE_ONLY mode=" + mode + " passed=" + passed.Count + "; no Native, reader, GUI, coordinator, process discovery, credential access or game attachment.");
+            return 0;
+        }
+        catch (Exception ex) { Console.Error.WriteLine(ex); return 1; }
+    }
+}

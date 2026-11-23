@@ -1,0 +1,67 @@
+{
+ "rerunUtc": "2026-11-21T19:18:00Z..2026-11-21T19:21:30Z",
+ "scope": "offline static fixtures only; no game launch, no process attachment, no credential access",
+ "suites": {
+  "build-gate": {
+   "script": "CoH3/dev/SkyEye/tests/build-gate/Run.ps1",
+   "exitCode": 0,
+   "combinations": [
+    "SkyEye/Release",
+    "SkyEye/Maintenance",
+    "Simple/Release",
+    "Simple/Maintenance"
+   ],
+   "assertionsPerCombination": 48,
+   "totalAssertions": 48,
+   "log": "CoH3/dev/SkyEye/tests/build-gate/validation.log",
+   "logSha256": "EE5B4C05368953CDF8486661A0E7DCC8CD448323DF905D471C11382300A963DB"
+  },
+  "layout-preflight": {
+   "project": "CoH3/dev/SkyEye/tests/layout-preflight/LayoutPreflight.Fixture.csproj",
+   "modes": {
+    "Release": {
+     "exitCode": 0,
+     "checks": 104,
+     "status": "PASS_fixture_only"
+    },
+    "Maintenance": {
+     "exitCode": 0,
+     "checks": 104,
+     "status": "PASS_fixture_only"
+    }
+   },
+   "stdout": [
+    "{\"status\":\"PASS_fixture_only\",\"mode\":\"Release\",\"checks\":104,\"real_game\":\"not_run\",\"ui\":\"not_run\",\"native_process_open\":\"not_linked\"}",
+    "{\"status\":\"PASS_fixture_only\",\"mode\":\"Maintenance\",\"checks\":104,\"real_game\":\"not_run\",\"ui\":\"not_run\",\"native_process_open\":\"not_linked\"}"
+   ]
+  },
+  "decoder-layout": {
+   "script": "CoH3/dev/SkyEye/tests/decoder-layout/Run.ps1",
+   "exitCode": 0,
+   "modes": {
+    "Release": {
+     "passed": 171,
+     "legacyAndMapperPassed": 97
+    },
+    "Maintenance": {
+     "passed": 171,
+     "legacyAndMapperPassed": 97
+    }
+   },
+   "baselineCompared": "perbuild-baseline (original assertions preserved verbatim)",
+   "historicalBaseline": "task4-baseline (untouched)",
+   "linkedSourcesUnchangedDuringRun": true
+  }
+ },
+ "sourceHashes": {
+  "CoH3/dev/SkyEye/client/CoH3MemoryTool/GameVersion45.cs": "E643EFA33FF05BF53AE8A6C0BBD13C2E908B2C70D841CB2FF05C4CB2E6D02E07",
+  "CoH3/dev/SkyEye/client/CoH3MemoryTool/GameLayout52426.cs": "90AF6A0F98C5C3C48DD9CAD8595377EE90990938753E68B142899B707C596D47",
+  "CoH3/dev/SkyEye/client/CoH3MemoryTool/PlayerInfoReader.cs": "3444F469137C616D382EE795967188F82E758A14ED36AA99FB7E52FAD3AB0350",
+  "CoH3/dev/SkyEye/client/CoH3MemoryTool/AirLogic.cs": "B974ED7C56FB819332355BC815799D2E7FBC3403F7BD5C45DC31BAD1ACA9B1E9",
+  "CoH3/dev/COH3SimpleTool/CoH3MemoryTool/GameVersion45.cs": "E643EFA33FF05BF53AE8A6C0BBD13C2E908B2C70D841CB2FF05C4CB2E6D02E07",
+  "CoH3/dev/COH3SimpleTool/CoH3MemoryTool/GameLayout52426.cs": "90AF6A0F98C5C3C48DD9CAD8595377EE90990938753E68B142899B707C596D47",
+  "CoH3/dev/COH3SimpleTool/CoH3MemoryTool/PlayerInfoReader.cs": "3444F469137C616D382EE795967188F82E758A14ED36AA99FB7E52FAD3AB0350",
+  "CoH3/dev/COH3SimpleTool/CoH3MemoryTool/AirLogic.cs": "B974ED7C56FB819332355BC815799D2E7FBC3403F7BD5C45DC31BAD1ACA9B1E9"
+ },
+ "mirrorTreesIdentical": true
+}

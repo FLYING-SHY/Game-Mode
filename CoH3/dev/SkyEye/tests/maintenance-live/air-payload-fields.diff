@@ -1,0 +1,69 @@
+﻿diff --git "a/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\artifacts\\air-payload-fields-before\\EventSampling.cs.before" "b/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\EventSampling.cs"
+index 35af441..d30c36b 100644
+--- "a/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\artifacts\\air-payload-fields-before\\EventSampling.cs.before"
++++ "b/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\EventSampling.cs"
+@@ -71,7 +71,7 @@ internal sealed partial class MaintenanceLiveContext
+                             airCount = zones.Count;
+                             airEvidence.Add(zones.Select(item => (object)new
+                             {
+-                                item.Slot, item.Name, item.X, item.Y, item.Z, item.DX, item.DZ,
++                                item.Key, item.Owner, item.Offset, item.Slot, item.Name, item.X, item.Y, item.Z, item.DX, item.DZ,
+                                 item.HalfWidth, item.Length, item.Radius, item.Rocket, item.Point
+                             }).ToList(), utc, started, clock.ElapsedMilliseconds, match, epoch);
+                         }
+diff --git "a/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\artifacts\\air-payload-fields-before\\README.md.before" "b/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\README.md"
+index 1c0f33b..b906927 100644
+--- "a/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\artifacts\\air-payload-fields-before\\README.md.before"
++++ "b/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\README.md"
+@@ -85,7 +85,7 @@ JSON 与文本分别写入输出目录下 `maintenance-live.json` / `maintenance
+ 
+ 每轮沿用同一个实际 Snapshot/BindMarkerColours 结果；先保留原敌方弹道读取，再于预算和取消检查后调用实际 C# `ReadAirZones(initialMatch, Players(all current rows))`，包括自己、友方与敌方。目标是让使用者受控 LOCAL US 空袭留下真实结构证据，而不是声称生产 enemy-only 空袭 UI 已验证。前后逐次检查最初固定 MatchKey/LicenseEpoch/Allowed；任何变化终止该窗口，早前帧只作为历史记录。两个同步查询间取消/到期会跳过空袭查询；同步查询仍为合作式预算。
+ 
+-启用时 `event_window.Evidence` 分成 `projectile`（原证据对象、原计数）及独立 `air`；每轮 `projectile.polls` 额外记录可空 `airDecodedCount`（未调用或调用失效为 null）。`air` 单列 scope/status/queryAttempts/nonzeroPolls/decodedObservationCount、保留与丢弃计数和 frames。成功空袭查询按有界策略保留：固定预留2个空帧位置，只留首个空帧与最新空帧（只有一次空读时只留1帧），最新空帧替换时计入 droppedFrames；其余最多126帧留给最早的正帧，避免长前导空读挤掉后续真实结构。帧按读取时间顺序排列。每帧最多16项，总预算仍为128帧/256项；正帧超容量时整帧计入 droppedFrames、全部条目计入 droppedDecoded；正帧内裁剪同样精确记入 droppedDecodedInThisPoll 与 droppedDecoded。decoded预算耗尽后的已保留正帧仍保留 decodedCount/时间、decoded为空。成功读取次数 = retainedFrames + droppedFrames，decodedObservationCount = retainedDecoded + droppedDecoded；空帧替换只增加帧丢弃数，不增加decoded丢弃数。上限不随时长增加，原JSON字段保持兼容。保留 Slot/Name/X/Y/Z/DX/DZ/HalfWidth/Length/Radius/Rocket/Point，与 UTC/起止毫秒/match/epoch；非 raw memory。重复区域跨轮重复计数，不是唯一空袭数。零空袭只为 sample_absent，未开始为 not_run，异常窗口为 invalidated；绝不把零事件标成 PASS。聚合 SampleCount/observed 可来自任一流，空袭结论须单看 air，不能从弹道 observed 推导空袭覆盖。
++启用时 `event_window.Evidence` 分成 `projectile`（原证据对象、原计数）及独立 `air`；每轮 `projectile.polls` 额外记录可空 `airDecodedCount`（未调用或调用失效为 null）。`air` 单列 scope/status/queryAttempts/nonzeroPolls/decodedObservationCount、保留与丢弃计数和 frames。成功空袭查询按有界策略保留：固定预留2个空帧位置，只留首个空帧与最新空帧（只有一次空读时只留1帧），最新空帧替换时计入 droppedFrames；其余最多126帧留给最早的正帧，避免长前导空读挤掉后续真实结构。帧按读取时间顺序排列。每帧最多16项，总预算仍为128帧/256项；正帧超容量时整帧计入 droppedFrames、全部条目计入 droppedDecoded；正帧内裁剪同样精确记入 droppedDecodedInThisPoll 与 droppedDecoded。decoded预算耗尽后的已保留正帧仍保留 decodedCount/时间、decoded为空。成功读取次数 = retainedFrames + droppedFrames，decodedObservationCount = retainedDecoded + droppedDecoded；空帧替换只增加帧丢弃数，不增加decoded丢弃数。上限不随时长增加，原JSON字段保持兼容。保留 Key/Owner/Offset/Slot/Name/X/Y/Z/DX/DZ/HalfWidth/Length/Radius/Rocket/Point，与 UTC/起止毫秒/match/epoch；非 raw memory。新增 Key、Owner、Offset 仅在 --air-events 的 air.frames[].decoded 中原样记录 ReadAirZones 返回值：Key 用于后续实测区分 flight: fallback 与 cast key，Owner 保留读取器输出的归属值，Offset 保留原始几何偏移；runner 不重建或推断这些值。重复区域跨轮重复计数，不是唯一空袭数。零空袭只为 sample_absent，未开始为 not_run，异常窗口为 invalidated；绝不把零事件标成 PASS。聚合 SampleCount/observed 可来自任一流，空袭结论须单看 air，不能从弹道 observed 推导空袭覆盖。
+ 
+ ```powershell
+ & .\CoH3\dev\SkyEye\tests\maintenance-live\bin\Release\net48\SkyEye.Maintenance.Live.exe --air-event-self-test
+diff --git "a/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\artifacts\\air-payload-fields-before\\air-events-handoff.md.before" "b/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\air-events-handoff.md"
+index 397f1f6..0033b3b 100644
+--- "a/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\artifacts\\air-payload-fields-before\\air-events-handoff.md.before"
++++ "b/F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\air-events-handoff.md"
+@@ -1,4 +1,4 @@
+-# Air event sampling handoff — task-3 retention fix
++# Air event sampling handoff — task-3 retention fix and diagnostic fields
+ 
+ ## Scope and trigger
+ 
+@@ -10,11 +10,11 @@ Parent-reported live run25 (`maintenance-run-25-p47-prewarmed/maintenance-live.j
+ 
+ - `AirEventEvidence.cs`: unchanged128-frame /256-decoded /16-per-frame budgets. Always reserve2 slots for the first successful empty read and latest successful empty read (one slot if there has only been one empty read). Subsequent empty reads replace the old latest empty and increment droppedFrames. Up to126 earliest positive frames use the remaining capacity. Removing the old latest empty before appending preserves Add/read order; positive geometry is not displaced by leading empty polls. Positive overflow drops the entire frame and counts all its items. Existing per-frame/total decoded truncation remains unchanged, including positive metadata frames with decoded=[] after the decoded budget is exhausted.
+ - `AirEventSelfTests.cs`: expanded7 checks to18. Added long leading-empty → positive → trailing-empty fixture, interleaved chronological replacement, positive saturation before late empty reads, empty-only first/latest retention, decoded truncation with empty replacement, final accounting across fixtures, and600 mixed polls with invariants checked after each Add.
+-- `EventSampling.cs`: only the enabled-air explanatory Details string changed to describe retention accurately. Actual call routing, default projectile output, fixed MatchKey/LicenseEpoch/Allowed guards and cancellation/deadline logic are unchanged.
+-- `README.md`: new retention policy, exact accounting semantics,18-test coverage and551-poll fixture result.
+-- `air-events-handoff.md`: current evidence and binary hash; this replaces the previous handoff after the parent's explicit continuation request.
++- `EventSampling.cs`: retention fix changed only the enabled-air explanatory Details string. Parent subsequently explicitly requested raw diagnostic fields; the sole source-line change for that supplement adds `item.Key, item.Owner, item.Offset` to the existing anonymous air payload at line74. These public ReadAirZones outputs are passed through without reconstruction: Key supports later flight: fallback versus cast-key diagnosis, Owner preserves the reader's attribution value, and Offset preserves its geometry value. Actual call routing, default projectile output, fixed MatchKey/LicenseEpoch/Allowed guards and cancellation/deadline logic are unchanged.
++- `README.md`: new retention policy, exact accounting semantics,18-test coverage and551-poll fixture result; now also explains Key/Owner/Offset in opt-in `air.frames[].decoded`.
++- `air-events-handoff.md`: current evidence and binary hash; this replaces the previous handoff after the parent's explicit continuation requests.
+ 
+-No JSON field names or types changed. `--air-events` remains optional/default false; all-sides maintenance diagnostic scope remains distinct from production enemy-only UI. No-event remains sample_absent, never gameplay PASS.
++The retention fix changed no JSON field names or types. The follow-up adds only Key/Owner/Offset to the opt-in air decoded object; existing fields are preserved. `--air-events` remains optional/default false; all-sides maintenance diagnostic scope remains distinct from production enemy-only UI. No-event remains sample_absent, never gameplay PASS. All three unchanged selftest suites were rerun after the diagnostic-field supplement; no new live sampling was performed.
+ 
+ For N successful AirEventEvidence.Add calls:
+ 
+@@ -35,7 +35,7 @@ For N successful AirEventEvidence.Add calls:
+ - Mixed truncation fixture:400 empty /17 positive polls of20 items /3 empty →19 frames /256 decoded, droppedFrames=401, droppedDecoded=84.
+ -600 mixed synthetic polls satisfy accounting, chronological order and all budgets after every Add.
+ 
+-The untracked runner directory has no Git baseline. Before-edit copies are in `artifacts/air-retention-fix-before/` with `.before` suffixes; `air-retention-fix.diff` provides the five-file review diff against those copies.
++The untracked runner directory has no Git baseline. Retention-fix before-edit copies are in `artifacts/air-retention-fix-before/` with `.before` suffixes; `air-retention-fix.diff` preserves that earlier five-file review diff. The subsequent diagnostic-field supplement has separate before-edit copies in `artifacts/air-payload-fields-before/`; `air-payload-fields.diff` is the final three-file review diff (EventSampling, README and handoff). Both diffs were reviewed, with no whitespace errors.
+ 
+ ## Final binary
+ 
+@@ -43,6 +43,6 @@ Executable: `F:\WorkSpace\Game\CoH3\dev\SkyEye\tests\maintenance-live\bin\Releas
+ 
+ Matching intermediate: `F:\WorkSpace\Game\CoH3\dev\SkyEye\tests\maintenance-live\obj\Release\net48\SkyEye.Maintenance.Live.exe`
+ 
+-Both SHA256: `51D2B29FC617D76E217A0CA8B5944F000C0E157C3E1A242FAAF15AE27C4620CD`
++Both SHA256: `BB3D856A2E5683F4C14492E8A9FD385A47204010C93D61CE1BB56798D61EA564`
+ 
+ Handoff is final: no further runtime/source edits, rebuilds or live launch by this worker after delivery. Parent will review before any actual sampling. This worker collected only offline runner/build evidence.

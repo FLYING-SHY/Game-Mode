@@ -1,0 +1,23 @@
+{
+    "Exe":  "F:\\WorkSpace\\Game\\.local\\tmp-histprobe\\real-entry-20261121\\client\\天穹之眼-自有授权版-v0.60.8.exe",
+    "Sha256":  "46CE9F7F7FD693C6577DFD05DC70FDD15368890131DB9778BF1B3DC75592ABD9",
+    "Pid":  10144,
+    "Started":  "2026-11-21T19:56:56.2877933+08:00",
+    "WindowCaptured":  true,
+    "Closed":  true,
+    "WindowTitle":  "天穹之眼 · 激活",
+    "WindowWidth":  706,
+    "WindowHeight":  509,
+    "ScreenshotSucceeded":  true,
+    "CapturedNodes":  12,
+    "CaptureJson":  "evidence/protected-real-entry-window-20261121b.json",
+    "CapturePng":  "evidence/protected-real-entry-window-20261121b.png",
+    "ClientConfigBaseUrl":  "http://127.0.0.1:47835/",
+    "Isolation":  "sandbox copy of delivery/client/天穹之眼-自有授权版-v0.60.8.exe (byte-identical, sha256 unchanged); app.config base url repointed from https://124.220.147.56/ to an isolated loopback deployment (empty database leases-realentry.db, same signing keyring) so that the release run could not touch the operator's live cloud session or the live match",
+    "ExpectedOutcome":  "activation rejected because the operator's card is absent from the empty isolated database; the client stays on the activation window and never attaches to a running game",
+    "ObservedOutcome":  "activation window rendered (706x509, 12 accessibility nodes), screenshot captured, window closed via CloseMainWindow, process exited without error",
+    "CredentialsStoreUntouched":  true,
+    "UserSessionDisruption":  "none: the isolated endpoint never accepted the stored credential, so no overlay was drawn over the operator's running match; two short-lived sandbox instances were closed immediately after capture",
+    "DeviationFrom20261116":  "2026-11-16 ran the delivered client against the production endpoint with a valid stored credential; this run uses an isolated loopback deployment because the operator's client was live and playing, so the cloud session and the running match could not be disturbed. The UI startup path, the delivery binary and the capture method are identical.",
+    "Notes":  "A second sandbox instance started while the first was still up and was captured as the single-instance guard message box (evidence/protected-real-entry-window-20261121.json, title 天穹之眼 · 英雄连3, node 软件已在运行，请退出旧版后再打开新版。); that instance was closed and is not the real-entry record. Single-instance mutexes: Local\\SkyeyeSelfHostedControls (ControlsProgram.cs:21), Local\\SkyeyeSelfHostedOverlay (OverlayProgram.cs:29), Local\\COH3SimpleToolControls (SimpleProgram.cs:20) for the simple shell."
+}

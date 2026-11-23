@@ -1,0 +1,20 @@
+license_state=active
+snapshot/resources: observed samples=2
+units: observed samples=11
+buildings: observed samples=4
+production: sample_absent samples=0
+upgrades: observed samples=15
+colours: observed samples=2
+camera: observed samples=1
+squad_markers: observed samples=11
+support: sample_absent samples=0
+projectiles: observed samples=1
+air: sample_absent samples=0
+event_prewarm_delay started milliseconds=4000 utc=2026-11-21T02:26:23.3474087Z
+event_prewarm_delay finished outcome=elapsed elapsedMilliseconds=4001 utc=2026-11-21T02:26:27.3495179Z
+event_prewarm_delay: observed samples=
+event_window airScope=all_sides_diagnostic airQueries=184 airDecodedObservations=44
+event_window stop=deadline polls=184 decodedObservations=174
+event_window: observed samples=218
+same_reader_recovery: not_triggered cameraAttempts=0 snapshotAttempts=0 stop=no_natural_camera_error_in_event_window
+license_state=active

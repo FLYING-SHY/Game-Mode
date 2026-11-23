@@ -1,0 +1,16 @@
+{
+  "schema": "coh3-air-raw-snapshot/v1",
+  "timestampUtc": "2026-11-21T00:26:57.263765+00:00",
+  "verification": "candidate_raw_evidence_not_engine_or_visual_validation",
+  "limits": {
+    "seconds": 10.0,
+    "requestedBytes": 2097152,
+    "readAttempts": 20000,
+    "singleReadBytes": 65536,
+    "reservedFinalBytes": 8192,
+    "reservedFinalReads": 64,
+    "reservedFinalSeconds": 0.5
+  },
+  "status": "probe_error",
+  "error": "ValueError: Unexpected AirCatalogue.Add source format"
+}

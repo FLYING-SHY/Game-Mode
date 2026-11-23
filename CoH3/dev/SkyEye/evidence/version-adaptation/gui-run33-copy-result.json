@@ -1,0 +1,19 @@
+﻿{
+    "expected":  [
+                     "279",
+                     "546",
+                     "248",
+                     "41",
+                     "装甲"
+                 ],
+    "trigger":  "registered F8; game foreground; native key down/up",
+    "clipboardReadScope":  "read only after product copy; expected selected-enemy game text matched",
+    "utc":  "2026-11-21T05:34:18.2175685Z",
+    "rebindConflictAndExitUnregister":  "not_run",
+    "textFile":  "gui-run33-copied-player-text.txt",
+    "characters":  159,
+    "sha256":  "A33E46E43817FB927B6B32AE22EEAF33D4A540B4D009203AD286E7A1195F0FFA",
+    "observed":  true,
+    "uiPid":  7672,
+    "gamePid":  33656
+}

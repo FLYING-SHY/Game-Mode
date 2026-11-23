@@ -1,0 +1,167 @@
+﻿{
+    "CapturedAt":  "2026-11-21T14:48:24.3205284+08:00",
+    "ProcessId":  30972,
+    "Executable":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\bin\\Release\\net48\\COH3SimpleTool.Maintenance.UI.Unverified.exe",
+    "WindowHandle":  2294644,
+    "WindowTitle":  "COH3工具",
+    "IsVisible":  true,
+    "Width":  824,
+    "Height":  118,
+    "ScreenshotSucceeded":  true,
+    "ScreenshotPath":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\simple-run35-persisted-off-panel.png",
+    "TotalDescendants":  10,
+    "CapturedNodes":  10,
+    "Privacy":  "Edit/password values and long identifiers are omitted from the accessibility export; screenshot remains a local selected-window capture.",
+    "Nodes":  [
+                  {
+                      "Index":  0,
+                      "Name":  "COH3工具",
+                      "AutomationId":  "11274990",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  882,
+                                        "Y":  647,
+                                        "Width":  170,
+                                        "Height":  26
+                                    }
+                  },
+                  {
+                      "Index":  1,
+                      "Name":  "⚠ 待适配",
+                      "AutomationId":  "8063636",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1256,
+                                        "Y":  649,
+                                        "Width":  180,
+                                        "Height":  22
+                                    }
+                  },
+                  {
+                      "Index":  2,
+                      "Name":  "退出",
+                      "AutomationId":  "9505772",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.BUTTON.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1444,
+                                        "Y":  645,
+                                        "Width":  70,
+                                        "Height":  28
+                                    }
+                  },
+                  {
+                      "Index":  3,
+                      "Name":  "—",
+                      "AutomationId":  "5570770",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.BUTTON.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1518,
+                                        "Y":  645,
+                                        "Width":  34,
+                                        "Height":  28
+                                    }
+                  },
+                  {
+                      "Index":  4,
+                      "Name":  "×",
+                      "AutomationId":  "6228320",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.BUTTON.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1554,
+                                        "Y":  645,
+                                        "Width":  34,
+                                        "Height":  28
+                                    }
+                  },
+                  {
+                      "Index":  5,
+                      "Name":  "顶部玩家信息",
+                      "AutomationId":  "1182834",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  882,
+                                        "Y":  689,
+                                        "Width":  205,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  6,
+                      "Name":  "主画面标记",
+                      "AutomationId":  "2427012",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1096,
+                                        "Y":  689,
+                                        "Width":  205,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  7,
+                      "Name":  "小地图标记",
+                      "AutomationId":  "1182856",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1310,
+                                        "Y":  689,
+                                        "Width":  205,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  8,
+                      "Name":  "参数自动保存",
+                      "AutomationId":  "5375988",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1532,
+                                        "Y":  697,
+                                        "Width":  130,
+                                        "Height":  20
+                                    }
+                  },
+                  {
+                      "Index":  9,
+                      "Name":  "数据更新中，正在快速重试：镜头已切换。",
+                      "AutomationId":  "6095642",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  884,
+                                        "Y":  725,
+                                        "Width":  792,
+                                        "Height":  20
+                                    }
+                  }
+              ]
+}

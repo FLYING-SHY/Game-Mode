@@ -1,0 +1,10 @@
+Second invocation: all four isolated production-linked builds exited 0, and each fixture reported passed=50 failed=0 scenarios=8. The runner then exited 1 while producing the aggregate report.
+Exact error:
+Measure-Object : 在任何对象的输入中都找不到属性“passed”。
+所在位置 F:\WorkSpace\Game\CoH3\dev\SkyEye\tests\unknown-build\Run.ps1:58 字符: 39
++ ... F'; passed = ($results | Measure-Object -Property passed -Sum).Sum; f ...
++                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Measure-Object]，PSArgumentException
+    + FullyQualifiedErrorId : GenericMeasurePropertyNotFound,Microsoft.PowerShell.Commands.MeasureObjectCommand
+
+Resolution: project each OrderedDictionary count with ForEach-Object before Measure-Object -Sum for WinPS 5.1. Tee-Object -FilePath also defaults to UTF-16 in this host, so final logs now use explicit Out-File -Encoding utf8. SDK first-run banner on stderr explains attempt-1 NativeCommandError; native exit codes remain checked. DOTNET_GENERATE_ASPNET_CERTIFICATE=false and DOTNET_NOLOGO=1 are set for subsequent fresh CLI homes. No production source changed after the freeze.

@@ -1,0 +1,724 @@
+{
+  "status": "event_observation_not_CSharp_execution",
+  "stopReason": "deadline",
+  "elapsedSeconds": 30.0,
+  "totalBytesRead": 39615111,
+  "limits": {
+    "seconds": 30,
+    "intervalSeconds": 0.5,
+    "totalReadBytes": 67108864,
+    "retainedRecordJsonBytes": 1500000,
+    "samples": 61
+  },
+  "samples": [
+    {
+      "utc": "2026-11-20T17:51:36.874568+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720801,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:37.418269+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:37.964464+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:38.508688+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:39.055680+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:39.604403+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:40.164344+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:40.720931+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:41.286217+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:41.869684+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:42.416634+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:42.962191+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:43.506186+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:44.055522+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:44.598276+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:45.144806+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:45.690481+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:46.265241+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:46.828841+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:47.386614+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:47.950945+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:48.508311+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:49.079476+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:49.631217+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:50.175202+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:50.723622+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:51.285357+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:51.830707+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:52.375460+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:52.920646+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:53.467670+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:54.015920+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:54.571791+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:55.116509+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:55.668203+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:56.220084+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:56.780098+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:57.342360+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:57.889446+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:58.459622+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:59.006461+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:51:59.555217+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:52:00.100727+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:52:00.650306+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:52:01.218855+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:52:01.769561+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:52:02.314469+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:52:02.859607+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:52:03.406930+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:52:03.950160+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:52:04.493614+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:52:05.068486+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:52:05.647406+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:52:06.224714+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    },
+    {
+      "utc": "2026-11-20T17:52:06.789757+00:00",
+      "coverage": {
+        "liveInspected": 3226,
+        "projectilePaths": 1
+      },
+      "filteredGates": {},
+      "errors": [],
+      "bytesRead": 720265,
+      "candidateCount": 1
+    }
+  ],
+  "records": [
+    {
+      "entity": "0x17c052e7000",
+      "registryIndex": 3087,
+      "generation": 1000008637,
+      "blueprint": "ebps\\gameplay\\projectiles\\common\\artillery\\p_artillery_mortar_81mm",
+      "gates": {
+        "bodyPresent": true,
+        "componentPresent": true,
+        "actorVtable": true,
+        "actorBackref": true,
+        "actorMode16": true,
+        "extVtable": true,
+        "ownerValid": true,
+        "ownerInPlayers": true,
+        "weapon": true,
+        "extBackref": true,
+        "sourceType": true,
+        "source20": true,
+        "radius": true,
+        "notDestroyed": true,
+        "actorState64": true,
+        "notArrived": true
+      },
+      "rawBodyHex": "f81057a7f77f0000d7dc083f00000000ff57583f645f52be0152783fd215053e8cda51bf32ef78bec8c1043f3a8074c2757e6842c18c2b42b081e2b27c01000000d442010300000003000000eb03e4036010c008d016c008ffffffffd6160000881157a7f77f0000bdeb9a3b0f0c0000c03f66a18001000000964c01ffffffff10a29ea08001000062280a00212500000000803ff21d253dc607233d4309643e9e010000803a74c2e392684282622b42f21d253dc607233d4309643ed7dc083f00000000ff57583f645f52be0152783fd215053e8cda51bf32ef78bec8c1043f803a74c282622b42f21d253d4309643ed7dc083fff57583fff5758bfd7dc083f0000000000000000000000000000000000000000000000000000000000000000c9e01a04000000000400000000000000b0b4c93a00002032f210a8bd0301000024ea9a3bf30b000000000000000000003a8074c2c18c2b4200000000000000000000803f00000000000000000000803fffffffff0000000000000000ffffffffc02e0f0000ee2405",
+      "body": {
+        "offset388": "0x524ee00",
+        "flags160": "0x19e",
+        "position44": [
+          -61.125221252441406,
+          58.12349319458008,
+          42.887454986572266
+        ]
+      },
+      "component": {
+        "lookupRva": "0x628a7f2",
+        "kind": 1003,
+        "slot": 0,
+        "mode": 0,
+        "state": 1,
+        "value": "0xc97bcf0",
+        "componentId": 18,
+        "address": "0x17c0c97bcf0",
+        "rtti": {
+          "vtableRva": "0x3e49618",
+          "name": ".?AVProjectileExt@@",
+          "colRva": "0x505ddb0",
+          "typeDescriptorRva": "0x5f8b540"
+        }
+      },
+      "rawActorHex": "38aa62a7f77f000000000000000000000200000053adb6c21d30c441ec0078420000000000702e0505be673effffffffffffffffadadadad002156a7007f010003000000000000000000000000000000",
+      "actor": {
+        "address": "0x17c0524ee00",
+        "rtti": {
+          "vtableRva": "0x3e4aa38",
+          "name": ".?AVProjectileDynamics@@",
+          "colRva": "0x505adb8",
+          "typeDescriptorRva": "0x5f992d0"
+        },
+        "backref36": "0x17c052e7000",
+        "state64": 3,
+        "mode16": 2,
+        "position20": [
+          -91.3385238647461,
+          24.52349281311035,
+          62.00090026855469
+        ]
+      },
+      "rawExtHex": "189662a7f77f000000702e050000000003adadad25ea9a3bf50b0000adadadadadadadad00adadadadadadadadadadadadadadadadadadad0090c008adadadad90c32bb27c010000a06d1000402e0f00802d0f00006b100020641100000090400000003f000000000000904001adadad04000000010000ade1c1b241000070410000000000000000000000000000adad60e27cc10000b041047a63418051bc020600000000000000882156a7f77f000000bc530624ea9a3badadadadadadadade0bc970c7c010000adadadadadadadad",
+      "ext": {
+        "rtti": {
+          "vtableRva": "0x3e49618",
+          "name": ".?AVProjectileExt@@",
+          "colRva": "0x505ddb0",
+          "typeDescriptorRva": "0x5f8b540"
+        },
+        "backref8": "0x17c052e7000",
+        "ownerOffset56": "0x8c09000",
+        "ownerPlayer": {
+          "address": "0x17c08c09000",
+          "slot": 1,
+          "identity": "0x1000003e9"
+        },
+        "weapon": "weapon\\german\\explosive_weapon\\mortar\\81mm_mortar_barrage_ger",
+        "sourceType16": 3,
+        "source20": 1000008229,
+        "source24": 3061,
+        "radius104": 4.5,
+        "mortar": true,
+        "arc": false
+      },
+      "positionsFiniteBroadBound": true,
+      "generationStable": true,
+      "failedGates": [],
+      "note": "ownerInPlayers is not enemy attribution; exact enemy/local selection and engine ValidPosition, cache warmup, source-name/timing not reimplemented",
+      "allRecordedGatesPass": true,
+      "sampledUtc": "2026-11-20T17:51:36.874568+00:00"
+    }
+  ],
+  "notes": [
+    "raw hex retained for distinct gate signatures; not every position update",
+    "full decoder predicate uses candidate expected vtables and positions; caller enemy attribution/cache not included",
+    "root change stops capture; no UI input or process writes"
+  ]
+}

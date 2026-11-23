@@ -1,6 +1,6 @@
 {
   "format": "SkyEye-HardenedV2-Client",
-  "generatedAt": "2026-11-16T08:00:13.037755+00:00",
+  "generatedAt": "2026-11-21T12:11:00.433671+00:00",
   "files": [
     {
       "path": "NAudio-LICENSE.txt",
@@ -59,8 +59,8 @@
     },
     {
       "path": "天穹之眼-自有授权版-v0.60.8.exe",
-      "bytes": 1221120,
-      "sha256": "cdca3d5aa5a351201729e713141ce4e5f34701064a0970abdd84bb6f0242ebcf"
+      "bytes": 1226240,
+      "sha256": "46ce9f7f7fd693c6577dfd05dc70fdd15368890131db9778bf1b3dc75592abd9"
     },
     {
       "path": "天穹之眼-自有授权版-v0.60.8.exe.config",

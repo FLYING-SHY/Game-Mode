@@ -1,0 +1,3737 @@
+﻿{
+    "CapturedAt":  "2026-11-21T13:32:51.5526758+08:00",
+    "ProcessId":  7672,
+    "Executable":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-ui\\bin\\Release\\net48\\SkyEye.Maintenance.UI.Unverified.exe",
+    "WindowHandle":  9046006,
+    "WindowTitle":  "天穹之眼 · 英雄连3  /  v0.60.8",
+    "IsVisible":  true,
+    "Width":  1480,
+    "Height":  950,
+    "ScreenshotSucceeded":  true,
+    "ScreenshotPath":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run33-panel-initial.png",
+    "TotalDescendants":  248,
+    "CapturedNodes":  248,
+    "Privacy":  "Edit/password values and long identifiers are omitted from the accessibility export; screenshot remains a local selected-window capture.",
+    "Nodes":  [
+                  {
+                      "Index":  0,
+                      "Name":  "",
+                      "AutomationId":  "8522014",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  548,
+                                        "Y":  229,
+                                        "Width":  1464,
+                                        "Height":  934
+                                    }
+                  },
+                  {
+                      "Index":  1,
+                      "Name":  "",
+                      "AutomationId":  "723916",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  558,
+                                        "Y":  239,
+                                        "Width":  1444,
+                                        "Height":  914
+                                    }
+                  },
+                  {
+                      "Index":  2,
+                      "Name":  "",
+                      "AutomationId":  "4458354",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  561,
+                                        "Y":  242,
+                                        "Width":  1438,
+                                        "Height":  46
+                                    }
+                  },
+                  {
+                      "Index":  3,
+                      "Name":  "◉  天穹之眼",
+                      "AutomationId":  "2689086",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  565,
+                                        "Y":  246,
+                                        "Width":  166,
+                                        "Height":  37
+                                    }
+                  },
+                  {
+                      "Index":  4,
+                      "Name":  "TACTICAL SYSTEM  /  战术信息控制台",
+                      "AutomationId":  "658402",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  821,
+                                        "Y":  257,
+                                        "Width":  220,
+                                        "Height":  17
+                                    }
+                  },
+                  {
+                      "Index":  5,
+                      "Name":  "",
+                      "AutomationId":  "1314146",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1679,
+                                        "Y":  242,
+                                        "Width":  320,
+                                        "Height":  46
+                                    }
+                  },
+                  {
+                      "Index":  6,
+                      "Name":  "⚠ 待适配",
+                      "AutomationId":  "1182900",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1682,
+                                        "Y":  242,
+                                        "Width":  140,
+                                        "Height":  34
+                                    }
+                  },
+                  {
+                      "Index":  7,
+                      "Name":  "收起",
+                      "AutomationId":  "723930",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1825,
+                                        "Y":  244,
+                                        "Width":  52,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  8,
+                      "Name":  "□",
+                      "AutomationId":  "6685510",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1885,
+                                        "Y":  244,
+                                        "Width":  42,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  9,
+                      "Name":  "×",
+                      "AutomationId":  "4131552",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1935,
+                                        "Y":  244,
+                                        "Width":  42,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  10,
+                      "Name":  "",
+                      "AutomationId":  "1770062",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  561,
+                                        "Y":  294,
+                                        "Width":  1438,
+                                        "Height":  44
+                                    }
+                  },
+                  {
+                      "Index":  11,
+                      "Name":  "快速控制",
+                      "AutomationId":  "2360098",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  569,
+                                        "Y":  300,
+                                        "Width":  90,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  12,
+                      "Name":  "顶部玩家信息",
+                      "AutomationId":  "3539812",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  662,
+                                        "Y":  300,
+                                        "Width":  210,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  13,
+                      "Name":  "主画面标记",
+                      "AutomationId":  "1640544",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  878,
+                                        "Y":  300,
+                                        "Width":  210,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  14,
+                      "Name":  "小地图标记",
+                      "AutomationId":  "3082232",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1094,
+                                        "Y":  300,
+                                        "Width":  210,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  15,
+                      "Name":  "显示参数自动保存",
+                      "AutomationId":  "5179418",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1310,
+                                        "Y":  300,
+                                        "Width":  165,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  16,
+                      "Name":  "",
+                      "AutomationId":  "2230268",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  558,
+                                        "Y":  351,
+                                        "Width":  1444,
+                                        "Height":  698
+                                    }
+                  },
+                  {
+                      "Index":  17,
+                      "Name":  "",
+                      "AutomationId":  "1181752",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  558,
+                                        "Y":  351,
+                                        "Width":  481,
+                                        "Height":  698
+                                    }
+                  },
+                  {
+                      "Index":  18,
+                      "Name":  "",
+                      "AutomationId":  "1903362",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  558,
+                                        "Y":  351,
+                                        "Width":  471,
+                                        "Height":  377
+                                    }
+                  },
+                  {
+                      "Index":  19,
+                      "Name":  "",
+                      "AutomationId":  "1509506",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  573,
+                                        "Y":  399,
+                                        "Width":  441,
+                                        "Height":  314
+                                    }
+                  },
+                  {
+                      "Index":  20,
+                      "Name":  "持有单位",
+                      "AutomationId":  "1705996",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  573,
+                                        "Y":  401,
+                                        "Width":  146,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  21,
+                      "Name":  "战斗群技能",
+                      "AutomationId":  "2229080",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  725,
+                                        "Y":  401,
+                                        "Width":  146,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  22,
+                      "Name":  "",
+                      "AutomationId":  "2165458",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.LISTBOX.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  573,
+                                        "Y":  437,
+                                        "Width":  441,
+                                        "Height":  90
+                                    }
+                  },
+                  {
+                      "Index":  23,
+                      "Name":  "",
+                      "AutomationId":  "7801088",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  573,
+                                        "Y":  535,
+                                        "Width":  150,
+                                        "Height":  32
+                                    }
+                  },
+                  {
+                      "Index":  24,
+                      "Name":  "基础字号",
+                      "AutomationId":  "2295674",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  573,
+                                        "Y":  537,
+                                        "Width":  73,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  25,
+                      "Name":  "",
+                      "AutomationId":  "2295048",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  649,
+                                        "Y":  538,
+                                        "Width":  74,
+                                        "Height":  26
+                                    }
+                  },
+                  {
+                      "Index":  26,
+                      "Name":  "14",
+                      "AutomationId":  "2099924",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.EDIT.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  655,
+                                        "Y":  543,
+                                        "Width":  47,
+                                        "Height":  16
+                                    }
+                  },
+                  {
+                      "Index":  27,
+                      "Name":  "+",
+                      "AutomationId":  "4655492",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  704,
+                                        "Y":  538,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  28,
+                      "Name":  "−",
+                      "AutomationId":  "920444",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  704,
+                                        "Y":  551,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  29,
+                      "Name":  "",
+                      "AutomationId":  "1051766",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  727,
+                                        "Y":  535,
+                                        "Width":  150,
+                                        "Height":  32
+                                    }
+                  },
+                  {
+                      "Index":  30,
+                      "Name":  "详情字号",
+                      "AutomationId":  "1379110",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  727,
+                                        "Y":  537,
+                                        "Width":  73,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  31,
+                      "Name":  "",
+                      "AutomationId":  "2295912",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  803,
+                                        "Y":  538,
+                                        "Width":  74,
+                                        "Height":  26
+                                    }
+                  },
+                  {
+                      "Index":  32,
+                      "Name":  "14",
+                      "AutomationId":  "3672818",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.EDIT.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  809,
+                                        "Y":  543,
+                                        "Width":  47,
+                                        "Height":  16
+                                    }
+                  },
+                  {
+                      "Index":  33,
+                      "Name":  "+",
+                      "AutomationId":  "1901328",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  858,
+                                        "Y":  538,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  34,
+                      "Name":  "−",
+                      "AutomationId":  "1510154",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  858,
+                                        "Y":  551,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  35,
+                      "Name":  "基础行颜色",
+                      "AutomationId":  "3146516",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  573,
+                                        "Y":  571,
+                                        "Width":  146,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  36,
+                      "Name":  "详情行颜色",
+                      "AutomationId":  "3541290",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  727,
+                                        "Y":  571,
+                                        "Width":  146,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  37,
+                      "Name":  "",
+                      "AutomationId":  "1182264",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  573,
+                                        "Y":  608,
+                                        "Width":  441,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  38,
+                      "Name":  "信息类别：资源 / 进度 / 战斗群  ＋",
+                      "AutomationId":  "920438",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  573,
+                                        "Y":  608,
+                                        "Width":  441,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  39,
+                      "Name":  "",
+                      "AutomationId":  "3279154",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  573,
+                                        "Y":  644,
+                                        "Width":  441,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  40,
+                      "Name":  "显示对象与信息位置  ＋",
+                      "AutomationId":  "658988",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  573,
+                                        "Y":  644,
+                                        "Width":  441,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  41,
+                      "Name":  "",
+                      "AutomationId":  "921252",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  573,
+                                        "Y":  680,
+                                        "Width":  441,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  42,
+                      "Name":  "数值渐变与闪烁  ＋",
+                      "AutomationId":  "3541524",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  573,
+                                        "Y":  680,
+                                        "Width":  441,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  43,
+                      "Name":  "",
+                      "AutomationId":  "4655466",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  558,
+                                        "Y":  740,
+                                        "Width":  471,
+                                        "Height":  277
+                                    }
+                  },
+                  {
+                      "Index":  44,
+                      "Name":  "",
+                      "AutomationId":  "986642",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  573,
+                                        "Y":  788,
+                                        "Width":  441,
+                                        "Height":  214
+                                    }
+                  },
+                  {
+                      "Index":  45,
+                      "Name":  "战术地图标记",
+                      "AutomationId":  "855574",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  573,
+                                        "Y":  790,
+                                        "Width":  146,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  46,
+                      "Name":  "",
+                      "AutomationId":  "986650",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  725,
+                                        "Y":  790,
+                                        "Width":  150,
+                                        "Height":  32
+                                    }
+                  },
+                  {
+                      "Index":  47,
+                      "Name":  "战术字号",
+                      "AutomationId":  "1116968",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  725,
+                                        "Y":  792,
+                                        "Width":  73,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  48,
+                      "Name":  "",
+                      "AutomationId":  "2034458",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  801,
+                                        "Y":  793,
+                                        "Width":  74,
+                                        "Height":  26
+                                    }
+                  },
+                  {
+                      "Index":  49,
+                      "Name":  "12",
+                      "AutomationId":  "789986",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.EDIT.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  807,
+                                        "Y":  798,
+                                        "Width":  47,
+                                        "Height":  16
+                                    }
+                  },
+                  {
+                      "Index":  50,
+                      "Name":  "+",
+                      "AutomationId":  "1379518",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  856,
+                                        "Y":  793,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  51,
+                      "Name":  "−",
+                      "AutomationId":  "789680",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  856,
+                                        "Y":  806,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  52,
+                      "Name":  "移动连线终点",
+                      "AutomationId":  "855572",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  573,
+                                        "Y":  826,
+                                        "Width":  146,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  53,
+                      "Name":  "弹幕落点",
+                      "AutomationId":  "1378518",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  725,
+                                        "Y":  826,
+                                        "Width":  146,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  54,
+                      "Name":  "V1 范围",
+                      "AutomationId":  "986294",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  573,
+                                        "Y":  860,
+                                        "Width":  146,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  55,
+                      "Name":  "",
+                      "AutomationId":  "789906",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  725,
+                                        "Y":  860,
+                                        "Width":  150,
+                                        "Height":  32
+                                    }
+                  },
+                  {
+                      "Index":  56,
+                      "Name":  "刷新 次/秒",
+                      "AutomationId":  "658982",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  725,
+                                        "Y":  862,
+                                        "Width":  73,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  57,
+                      "Name":  "",
+                      "AutomationId":  "592770",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  801,
+                                        "Y":  863,
+                                        "Width":  74,
+                                        "Height":  26
+                                    }
+                  },
+                  {
+                      "Index":  58,
+                      "Name":  "10",
+                      "AutomationId":  "1509974",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.EDIT.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  807,
+                                        "Y":  868,
+                                        "Width":  47,
+                                        "Height":  16
+                                    }
+                  },
+                  {
+                      "Index":  59,
+                      "Name":  "+",
+                      "AutomationId":  "2951852",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  856,
+                                        "Y":  863,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  60,
+                      "Name":  "−",
+                      "AutomationId":  "658738",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  856,
+                                        "Y":  876,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  61,
+                      "Name":  "",
+                      "AutomationId":  "658730",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  573,
+                                        "Y":  896,
+                                        "Width":  150,
+                                        "Height":  32
+                                    }
+                  },
+                  {
+                      "Index":  62,
+                      "Name":  "步兵圆点",
+                      "AutomationId":  "593068",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  573,
+                                        "Y":  898,
+                                        "Width":  73,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  63,
+                      "Name":  "",
+                      "AutomationId":  "1051420",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  649,
+                                        "Y":  899,
+                                        "Width":  74,
+                                        "Height":  26
+                                    }
+                  },
+                  {
+                      "Index":  64,
+                      "Name":  "6",
+                      "AutomationId":  "1837808",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.EDIT.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  655,
+                                        "Y":  904,
+                                        "Width":  47,
+                                        "Height":  16
+                                    }
+                  },
+                  {
+                      "Index":  65,
+                      "Name":  "+",
+                      "AutomationId":  "789394",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  704,
+                                        "Y":  899,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  66,
+                      "Name":  "−",
+                      "AutomationId":  "1311836",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  704,
+                                        "Y":  912,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  67,
+                      "Name":  "",
+                      "AutomationId":  "1183190",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  727,
+                                        "Y":  896,
+                                        "Width":  150,
+                                        "Height":  32
+                                    }
+                  },
+                  {
+                      "Index":  68,
+                      "Name":  "载具三角",
+                      "AutomationId":  "1051398",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  727,
+                                        "Y":  898,
+                                        "Width":  73,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  69,
+                      "Name":  "",
+                      "AutomationId":  "4328018",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  803,
+                                        "Y":  899,
+                                        "Width":  74,
+                                        "Height":  26
+                                    }
+                  },
+                  {
+                      "Index":  70,
+                      "Name":  "10",
+                      "AutomationId":  "854892",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.EDIT.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  809,
+                                        "Y":  904,
+                                        "Width":  47,
+                                        "Height":  16
+                                    }
+                  },
+                  {
+                      "Index":  71,
+                      "Name":  "+",
+                      "AutomationId":  "3147700",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  858,
+                                        "Y":  899,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  72,
+                      "Name":  "−",
+                      "AutomationId":  "527260",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  858,
+                                        "Y":  912,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  73,
+                      "Name":  "",
+                      "AutomationId":  "4522498",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  573,
+                                        "Y":  933,
+                                        "Width":  441,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  74,
+                      "Name":  "连线与终点尺寸  ＋",
+                      "AutomationId":  "3148160",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  573,
+                                        "Y":  933,
+                                        "Width":  441,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  75,
+                      "Name":  "重新连接地图标记",
+                      "AutomationId":  "7473194",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  573,
+                                        "Y":  968,
+                                        "Width":  230,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  76,
+                      "Name":  "",
+                      "AutomationId":  "920416",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1039,
+                                        "Y":  351,
+                                        "Width":  481,
+                                        "Height":  698
+                                    }
+                  },
+                  {
+                      "Index":  77,
+                      "Name":  "",
+                      "AutomationId":  "723822",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.SCROLLBAR.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1498,
+                                        "Y":  351,
+                                        "Width":  14,
+                                        "Height":  694
+                                    }
+                  },
+                  {
+                      "Index":  78,
+                      "Name":  "",
+                      "AutomationId":  "2165552",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1039,
+                                        "Y":  351,
+                                        "Width":  457,
+                                        "Height":  325
+                                    }
+                  },
+                  {
+                      "Index":  79,
+                      "Name":  "",
+                      "AutomationId":  "723946",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  399,
+                                        "Width":  427,
+                                        "Height":  262
+                                    }
+                  },
+                  {
+                      "Index":  80,
+                      "Name":  "",
+                      "AutomationId":  "8454818",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  402,
+                                        "Width":  427,
+                                        "Height":  112
+                                    }
+                  },
+                  {
+                      "Index":  81,
+                      "Name":  "班组图形与名称  −",
+                      "AutomationId":  "6687222",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  402,
+                                        "Width":  427,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  82,
+                      "Name":  "",
+                      "AutomationId":  "527264",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  438,
+                                        "Width":  427,
+                                        "Height":  72
+                                    }
+                  },
+                  {
+                      "Index":  83,
+                      "Name":  "",
+                      "AutomationId":  "527262",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  440,
+                                        "Width":  150,
+                                        "Height":  32
+                                    }
+                  },
+                  {
+                      "Index":  84,
+                      "Name":  "步兵圆环",
+                      "AutomationId":  "658320",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  442,
+                                        "Width":  73,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  85,
+                      "Name":  "",
+                      "AutomationId":  "3934872",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1130,
+                                        "Y":  443,
+                                        "Width":  74,
+                                        "Height":  26
+                                    }
+                  },
+                  {
+                      "Index":  86,
+                      "Name":  "40",
+                      "AutomationId":  "3802988",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.EDIT.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1136,
+                                        "Y":  448,
+                                        "Width":  47,
+                                        "Height":  16
+                                    }
+                  },
+                  {
+                      "Index":  87,
+                      "Name":  "+",
+                      "AutomationId":  "985918",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1185,
+                                        "Y":  443,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  88,
+                      "Name":  "−",
+                      "AutomationId":  "1641014",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1185,
+                                        "Y":  456,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  89,
+                      "Name":  "",
+                      "AutomationId":  "3213360",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1208,
+                                        "Y":  440,
+                                        "Width":  150,
+                                        "Height":  32
+                                    }
+                  },
+                  {
+                      "Index":  90,
+                      "Name":  "载具方框",
+                      "AutomationId":  "2296688",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1208,
+                                        "Y":  442,
+                                        "Width":  73,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  91,
+                      "Name":  "",
+                      "AutomationId":  "3476056",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1284,
+                                        "Y":  443,
+                                        "Width":  74,
+                                        "Height":  26
+                                    }
+                  },
+                  {
+                      "Index":  92,
+                      "Name":  "48",
+                      "AutomationId":  "2427562",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.EDIT.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1290,
+                                        "Y":  448,
+                                        "Width":  47,
+                                        "Height":  16
+                                    }
+                  },
+                  {
+                      "Index":  93,
+                      "Name":  "+",
+                      "AutomationId":  "920424",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1339,
+                                        "Y":  443,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  94,
+                      "Name":  "−",
+                      "AutomationId":  "592794",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1339,
+                                        "Y":  456,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  95,
+                      "Name":  "",
+                      "AutomationId":  "5507432",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  476,
+                                        "Width":  150,
+                                        "Height":  32
+                                    }
+                  },
+                  {
+                      "Index":  96,
+                      "Name":  "描边粗细",
+                      "AutomationId":  "854912",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  478,
+                                        "Width":  73,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  97,
+                      "Name":  "",
+                      "AutomationId":  "592722",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1130,
+                                        "Y":  479,
+                                        "Width":  74,
+                                        "Height":  26
+                                    }
+                  },
+                  {
+                      "Index":  98,
+                      "Name":  "2.0",
+                      "AutomationId":  "3148456",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.EDIT.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1136,
+                                        "Y":  484,
+                                        "Width":  47,
+                                        "Height":  16
+                                    }
+                  },
+                  {
+                      "Index":  99,
+                      "Name":  "+",
+                      "AutomationId":  "723864",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1185,
+                                        "Y":  479,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  100,
+                      "Name":  "−",
+                      "AutomationId":  "3082982",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1185,
+                                        "Y":  492,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  101,
+                      "Name":  "",
+                      "AutomationId":  "1248012",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1208,
+                                        "Y":  476,
+                                        "Width":  150,
+                                        "Height":  32
+                                    }
+                  },
+                  {
+                      "Index":  102,
+                      "Name":  "名称字号",
+                      "AutomationId":  "2361908",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1208,
+                                        "Y":  478,
+                                        "Width":  73,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  103,
+                      "Name":  "",
+                      "AutomationId":  "9307682",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1284,
+                                        "Y":  479,
+                                        "Width":  74,
+                                        "Height":  26
+                                    }
+                  },
+                  {
+                      "Index":  104,
+                      "Name":  "12",
+                      "AutomationId":  "2557172",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.EDIT.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1290,
+                                        "Y":  484,
+                                        "Width":  47,
+                                        "Height":  16
+                                    }
+                  },
+                  {
+                      "Index":  105,
+                      "Name":  "+",
+                      "AutomationId":  "8193124",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1339,
+                                        "Y":  479,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  106,
+                      "Name":  "−",
+                      "AutomationId":  "789340",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1339,
+                                        "Y":  492,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  107,
+                      "Name":  "",
+                      "AutomationId":  "658782",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  520,
+                                        "Width":  427,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  108,
+                      "Name":  "",
+                      "AutomationId":  "2164824",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  520,
+                                        "Width":  427,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  109,
+                      "Name":  "移动目标连线",
+                      "AutomationId":  "658292",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1058,
+                                        "Y":  520,
+                                        "Width":  377,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  110,
+                      "Name":  "⌄",
+                      "AutomationId":  "7277270",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1441,
+                                        "Y":  520,
+                                        "Width":  36,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  111,
+                      "Name":  "",
+                      "AutomationId":  "2689354",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  556,
+                                        "Width":  427,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  112,
+                      "Name":  "",
+                      "AutomationId":  "592772",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  556,
+                                        "Width":  427,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  113,
+                      "Name":  "朝向与射程线",
+                      "AutomationId":  "1313140",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1058,
+                                        "Y":  556,
+                                        "Width":  377,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  114,
+                      "Name":  "⌄",
+                      "AutomationId":  "723786",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1441,
+                                        "Y":  556,
+                                        "Width":  36,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  115,
+                      "Name":  "",
+                      "AutomationId":  "592708",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  592,
+                                        "Width":  427,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  116,
+                      "Name":  "",
+                      "AutomationId":  "592700",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  592,
+                                        "Width":  427,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  117,
+                      "Name":  "地雷与炸药",
+                      "AutomationId":  "658242",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1058,
+                                        "Y":  592,
+                                        "Width":  377,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  118,
+                      "Name":  "⌄",
+                      "AutomationId":  "1575140",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1441,
+                                        "Y":  592,
+                                        "Width":  36,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  119,
+                      "Name":  "",
+                      "AutomationId":  "4850172",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  627,
+                                        "Width":  150,
+                                        "Height":  32
+                                    }
+                  },
+                  {
+                      "Index":  120,
+                      "Name":  "镜头 帧/秒",
+                      "AutomationId":  "920982",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  629,
+                                        "Width":  73,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  121,
+                      "Name":  "",
+                      "AutomationId":  "592704",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1130,
+                                        "Y":  630,
+                                        "Width":  74,
+                                        "Height":  26
+                                    }
+                  },
+                  {
+                      "Index":  122,
+                      "Name":  "60",
+                      "AutomationId":  "592760",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.EDIT.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1136,
+                                        "Y":  635,
+                                        "Width":  47,
+                                        "Height":  16
+                                    }
+                  },
+                  {
+                      "Index":  123,
+                      "Name":  "+",
+                      "AutomationId":  "592762",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1185,
+                                        "Y":  630,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  124,
+                      "Name":  "−",
+                      "AutomationId":  "2687756",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1185,
+                                        "Y":  643,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  125,
+                      "Name":  "",
+                      "AutomationId":  "2230484",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1208,
+                                        "Y":  627,
+                                        "Width":  150,
+                                        "Height":  32
+                                    }
+                  },
+                  {
+                      "Index":  126,
+                      "Name":  "位置 次/秒",
+                      "AutomationId":  "1378848",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1208,
+                                        "Y":  629,
+                                        "Width":  73,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  127,
+                      "Name":  "",
+                      "AutomationId":  "592716",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1284,
+                                        "Y":  630,
+                                        "Width":  74,
+                                        "Height":  26
+                                    }
+                  },
+                  {
+                      "Index":  128,
+                      "Name":  "20",
+                      "AutomationId":  "2951598",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.EDIT.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1290,
+                                        "Y":  635,
+                                        "Width":  47,
+                                        "Height":  16
+                                    }
+                  },
+                  {
+                      "Index":  129,
+                      "Name":  "+",
+                      "AutomationId":  "592720",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1339,
+                                        "Y":  630,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  130,
+                      "Name":  "−",
+                      "AutomationId":  "2820106",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1339,
+                                        "Y":  643,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  131,
+                      "Name":  "统计开关",
+                      "AutomationId":  "593384",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1362,
+                                        "Y":  627,
+                                        "Width":  80,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  132,
+                      "Name":  "",
+                      "AutomationId":  "1248042",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1039,
+                                        "Y":  688,
+                                        "Width":  457,
+                                        "Height":  385
+                                    }
+                  },
+                  {
+                      "Index":  133,
+                      "Name":  "",
+                      "AutomationId":  "4262380",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  736,
+                                        "Width":  427,
+                                        "Height":  322
+                                    }
+                  },
+                  {
+                      "Index":  134,
+                      "Name":  "启用声音提示",
+                      "AutomationId":  "790046",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  738,
+                                        "Width":  146,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  135,
+                      "Name":  "MP3 / WAV",
+                      "AutomationId":  "920868",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1206,
+                                        "Y":  738,
+                                        "Width":  110,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  136,
+                      "Name":  "",
+                      "AutomationId":  "593012",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  771,
+                                        "Width":  427,
+                                        "Height":  34
+                                    }
+                  },
+                  {
+                      "Index":  137,
+                      "Name":  "SLD星爆照明弹",
+                      "AutomationId":  "920742",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  773,
+                                        "Width":  110,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  138,
+                      "Name":  "音源",
+                      "AutomationId":  "658246",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1167,
+                                        "Y":  773,
+                                        "Width":  62,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  139,
+                      "Name":  "试听",
+                      "AutomationId":  "1641134",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1237,
+                                        "Y":  773,
+                                        "Width":  52,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  140,
+                      "Name":  "重置",
+                      "AutomationId":  "1183256",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1297,
+                                        "Y":  773,
+                                        "Width":  52,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  141,
+                      "Name":  "",
+                      "AutomationId":  "920720",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  807,
+                                        "Width":  427,
+                                        "Height":  34
+                                    }
+                  },
+                  {
+                      "Index":  142,
+                      "Name":  "选择战斗群",
+                      "AutomationId":  "8915524",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  809,
+                                        "Width":  110,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  143,
+                      "Name":  "音源",
+                      "AutomationId":  "5048652",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1167,
+                                        "Y":  809,
+                                        "Width":  62,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  144,
+                      "Name":  "试听",
+                      "AutomationId":  "4786022",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1237,
+                                        "Y":  809,
+                                        "Width":  52,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  145,
+                      "Name":  "重置",
+                      "AutomationId":  "921258",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1297,
+                                        "Y":  809,
+                                        "Width":  52,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  146,
+                      "Name":  "",
+                      "AutomationId":  "593360",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  843,
+                                        "Width":  427,
+                                        "Height":  34
+                                    }
+                  },
+                  {
+                      "Index":  147,
+                      "Name":  "基地建成",
+                      "AutomationId":  "7408226",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  845,
+                                        "Width":  110,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  148,
+                      "Name":  "音源",
+                      "AutomationId":  "920540",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1167,
+                                        "Y":  845,
+                                        "Width":  62,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  149,
+                      "Name":  "试听",
+                      "AutomationId":  "1247566",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1237,
+                                        "Y":  845,
+                                        "Width":  52,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  150,
+                      "Name":  "重置",
+                      "AutomationId":  "855568",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1297,
+                                        "Y":  845,
+                                        "Width":  52,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  151,
+                      "Name":  "",
+                      "AutomationId":  "593354",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  879,
+                                        "Width":  427,
+                                        "Height":  34
+                                    }
+                  },
+                  {
+                      "Index":  152,
+                      "Name":  "己方火炮就绪",
+                      "AutomationId":  "593456",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  881,
+                                        "Width":  110,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  153,
+                      "Name":  "音源",
+                      "AutomationId":  "593450",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1167,
+                                        "Y":  881,
+                                        "Width":  62,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  154,
+                      "Name":  "试听",
+                      "AutomationId":  "854828",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1237,
+                                        "Y":  881,
+                                        "Width":  52,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  155,
+                      "Name":  "重置",
+                      "AutomationId":  "593376",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1297,
+                                        "Y":  881,
+                                        "Width":  52,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  156,
+                      "Name":  "",
+                      "AutomationId":  "5964836",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  915,
+                                        "Width":  427,
+                                        "Height":  34
+                                    }
+                  },
+                  {
+                      "Index":  157,
+                      "Name":  "手雷升级",
+                      "AutomationId":  "3935138",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  917,
+                                        "Width":  110,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  158,
+                      "Name":  "音源",
+                      "AutomationId":  "592718",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1167,
+                                        "Y":  917,
+                                        "Width":  62,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  159,
+                      "Name":  "试听",
+                      "AutomationId":  "593372",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1237,
+                                        "Y":  917,
+                                        "Width":  52,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  160,
+                      "Name":  "重置",
+                      "AutomationId":  "527556",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1297,
+                                        "Y":  917,
+                                        "Width":  52,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  161,
+                      "Name":  "",
+                      "AutomationId":  "789432",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  951,
+                                        "Width":  427,
+                                        "Height":  34
+                                    }
+                  },
+                  {
+                      "Index":  162,
+                      "Name":  "装甲生产",
+                      "AutomationId":  "789244",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  953,
+                                        "Width":  110,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  163,
+                      "Name":  "音源",
+                      "AutomationId":  "593370",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1167,
+                                        "Y":  953,
+                                        "Width":  62,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  164,
+                      "Name":  "试听",
+                      "AutomationId":  "1837140",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1237,
+                                        "Y":  953,
+                                        "Width":  52,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  165,
+                      "Name":  "重置",
+                      "AutomationId":  "593374",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1297,
+                                        "Y":  953,
+                                        "Width":  52,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  166,
+                      "Name":  "",
+                      "AutomationId":  "724310",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  987,
+                                        "Width":  427,
+                                        "Height":  34
+                                    }
+                  },
+                  {
+                      "Index":  167,
+                      "Name":  "敌方弹幕",
+                      "AutomationId":  "592724",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  989,
+                                        "Width":  110,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  168,
+                      "Name":  "音源",
+                      "AutomationId":  "790178",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1167,
+                                        "Y":  989,
+                                        "Width":  62,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  169,
+                      "Name":  "试听",
+                      "AutomationId":  "1903360",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1237,
+                                        "Y":  989,
+                                        "Width":  52,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  170,
+                      "Name":  "重置",
+                      "AutomationId":  "592864",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1297,
+                                        "Y":  989,
+                                        "Width":  52,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  171,
+                      "Name":  "",
+                      "AutomationId":  "1509392",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  1025,
+                                        "Width":  427,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  172,
+                      "Name":  "装甲提醒玩家（每辆均提醒）  ＋",
+                      "AutomationId":  "723900",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1054,
+                                        "Y":  1025,
+                                        "Width":  427,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  173,
+                      "Name":  "",
+                      "AutomationId":  "2885970",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1520,
+                                        "Y":  351,
+                                        "Width":  482,
+                                        "Height":  698
+                                    }
+                  },
+                  {
+                      "Index":  174,
+                      "Name":  "",
+                      "AutomationId":  "723902",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.SCROLLBAR.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1980,
+                                        "Y":  351,
+                                        "Width":  14,
+                                        "Height":  694
+                                    }
+                  },
+                  {
+                      "Index":  175,
+                      "Name":  "",
+                      "AutomationId":  "527882",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1520,
+                                        "Y":  351,
+                                        "Width":  458,
+                                        "Height":  243
+                                    }
+                  },
+                  {
+                      "Index":  176,
+                      "Name":  "",
+                      "AutomationId":  "985890",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1535,
+                                        "Y":  399,
+                                        "Width":  428,
+                                        "Height":  180
+                                    }
+                  },
+                  {
+                      "Index":  177,
+                      "Name":  "弹幕技能目标",
+                      "AutomationId":  "920492",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1535,
+                                        "Y":  401,
+                                        "Width":  146,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  178,
+                      "Name":  "",
+                      "AutomationId":  "2034326",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1687,
+                                        "Y":  401,
+                                        "Width":  150,
+                                        "Height":  32
+                                    }
+                  },
+                  {
+                      "Index":  179,
+                      "Name":  "弹幕圆环",
+                      "AutomationId":  "1837812",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1687,
+                                        "Y":  403,
+                                        "Width":  73,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  180,
+                      "Name":  "",
+                      "AutomationId":  "1051568",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1763,
+                                        "Y":  404,
+                                        "Width":  74,
+                                        "Height":  26
+                                    }
+                  },
+                  {
+                      "Index":  181,
+                      "Name":  "44",
+                      "AutomationId":  "527844",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.EDIT.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1769,
+                                        "Y":  409,
+                                        "Width":  47,
+                                        "Height":  16
+                                    }
+                  },
+                  {
+                      "Index":  182,
+                      "Name":  "+",
+                      "AutomationId":  "593020",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1818,
+                                        "Y":  404,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  183,
+                      "Name":  "−",
+                      "AutomationId":  "527546",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1818,
+                                        "Y":  417,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  184,
+                      "Name":  "",
+                      "AutomationId":  "3279422",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1535,
+                                        "Y":  438,
+                                        "Width":  428,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  185,
+                      "Name":  "",
+                      "AutomationId":  "3214206",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1535,
+                                        "Y":  438,
+                                        "Width":  428,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  186,
+                      "Name":  "逐发炮弹落点",
+                      "AutomationId":  "2230598",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1539,
+                                        "Y":  438,
+                                        "Width":  378,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  187,
+                      "Name":  "⌄",
+                      "AutomationId":  "592780",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1923,
+                                        "Y":  438,
+                                        "Width":  36,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  188,
+                      "Name":  "",
+                      "AutomationId":  "2034104",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1535,
+                                        "Y":  474,
+                                        "Width":  428,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  189,
+                      "Name":  "",
+                      "AutomationId":  "593028",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1535,
+                                        "Y":  474,
+                                        "Width":  428,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  190,
+                      "Name":  "飞机条形区域",
+                      "AutomationId":  "527552",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1539,
+                                        "Y":  474,
+                                        "Width":  378,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  191,
+                      "Name":  "⌄",
+                      "AutomationId":  "2228800",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1923,
+                                        "Y":  474,
+                                        "Width":  36,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  192,
+                      "Name":  "主画面 V1",
+                      "AutomationId":  "4196388",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1535,
+                                        "Y":  509,
+                                        "Width":  146,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  193,
+                      "Name":  "",
+                      "AutomationId":  "10947278",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1687,
+                                        "Y":  509,
+                                        "Width":  150,
+                                        "Height":  32
+                                    }
+                  },
+                  {
+                      "Index":  194,
+                      "Name":  "不透明度 %",
+                      "AutomationId":  "1510034",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1687,
+                                        "Y":  511,
+                                        "Width":  73,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  195,
+                      "Name":  "",
+                      "AutomationId":  "1182692",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1763,
+                                        "Y":  512,
+                                        "Width":  74,
+                                        "Height":  26
+                                    }
+                  },
+                  {
+                      "Index":  196,
+                      "Name":  "25",
+                      "AutomationId":  "2493640",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.EDIT.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1769,
+                                        "Y":  517,
+                                        "Width":  47,
+                                        "Height":  16
+                                    }
+                  },
+                  {
+                      "Index":  197,
+                      "Name":  "+",
+                      "AutomationId":  "1379638",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1818,
+                                        "Y":  512,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  198,
+                      "Name":  "−",
+                      "AutomationId":  "4655686",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1818,
+                                        "Y":  525,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  199,
+                      "Name":  "清空当前飞机矩形",
+                      "AutomationId":  "855024",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1535,
+                                        "Y":  545,
+                                        "Width":  210,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  200,
+                      "Name":  "",
+                      "AutomationId":  "527342",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1520,
+                                        "Y":  606,
+                                        "Width":  458,
+                                        "Height":  277
+                                    }
+                  },
+                  {
+                      "Index":  201,
+                      "Name":  "",
+                      "AutomationId":  "4851744",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1535,
+                                        "Y":  654,
+                                        "Width":  428,
+                                        "Height":  214
+                                    }
+                  },
+                  {
+                      "Index":  202,
+                      "Name":  "更换激活码",
+                      "AutomationId":  "5311136",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1535,
+                                        "Y":  656,
+                                        "Width":  150,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  203,
+                      "Name":  "查看授权期限",
+                      "AutomationId":  "3149340",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1693,
+                                        "Y":  656,
+                                        "Width":  150,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  204,
+                      "Name":  "复制信息热键",
+                      "AutomationId":  "789610",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1535,
+                                        "Y":  692,
+                                        "Width":  130,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  205,
+                      "Name":  "复制信息热键",
+                      "AutomationId":  "13697806",
+                      "ControlType":  "ControlType.ComboBox",
+                      "ClassName":  "WindowsForms10.COMBOBOX.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1671,
+                                        "Y":  693,
+                                        "Width":  110,
+                                        "Height":  28
+                                    }
+                  },
+                  {
+                      "Index":  206,
+                      "Name":  "复制信息热键",
+                      "AutomationId":  "",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1671,
+                                        "Y":  693,
+                                        "Width":  110,
+                                        "Height":  28
+                                    }
+                  },
+                  {
+                      "Index":  207,
+                      "Name":  "Open",
+                      "AutomationId":  "",
+                      "ControlType":  "ControlType.Button",
+                      "ClassName":  "",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1765,
+                                        "Y":  694,
+                                        "Width":  15,
+                                        "Height":  26
+                                    }
+                  },
+                  {
+                      "Index":  208,
+                      "Name":  "F8",
+                      "AutomationId":  "3541806",
+                      "ControlType":  "ControlType.ComboBox",
+                      "ClassName":  "WindowsForms10.COMBOBOX.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1787,
+                                        "Y":  693,
+                                        "Width":  65,
+                                        "Height":  28
+                                    }
+                  },
+                  {
+                      "Index":  209,
+                      "Name":  "",
+                      "AutomationId":  "",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1787,
+                                        "Y":  693,
+                                        "Width":  65,
+                                        "Height":  28
+                                    }
+                  },
+                  {
+                      "Index":  210,
+                      "Name":  "Open",
+                      "AutomationId":  "",
+                      "ControlType":  "ControlType.Button",
+                      "ClassName":  "",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1836,
+                                        "Y":  694,
+                                        "Width":  15,
+                                        "Height":  26
+                                    }
+                  },
+                  {
+                      "Index":  211,
+                      "Name":  "保存热键",
+                      "AutomationId":  "527798",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1535,
+                                        "Y":  726,
+                                        "Width":  150,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  212,
+                      "Name":  "立即复制",
+                      "AutomationId":  "527832",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1693,
+                                        "Y":  726,
+                                        "Width":  150,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  213,
+                      "Name":  "空袭显示自检（8秒）",
+                      "AutomationId":  "1968914",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1535,
+                                        "Y":  762,
+                                        "Width":  298,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  214,
+                      "Name":  "收起到托盘",
+                      "AutomationId":  "8784212",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1535,
+                                        "Y":  798,
+                                        "Width":  298,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  215,
+                      "Name":  "",
+                      "AutomationId":  "1707006",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1535,
+                                        "Y":  835,
+                                        "Width":  428,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  216,
+                      "Name":  "操作说明  ＋",
+                      "AutomationId":  "986468",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1535,
+                                        "Y":  835,
+                                        "Width":  428,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  217,
+                      "Name":  "",
+                      "AutomationId":  "855190",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1520,
+                                        "Y":  895,
+                                        "Width":  458,
+                                        "Height":  301
+                                    }
+                  },
+                  {
+                      "Index":  218,
+                      "Name":  "",
+                      "AutomationId":  "986464",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1535,
+                                        "Y":  943,
+                                        "Width":  428,
+                                        "Height":  238
+                                    }
+                  },
+                  {
+                      "Index":  219,
+                      "Name":  "启用监测",
+                      "AutomationId":  "7078694",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1535,
+                                        "Y":  945,
+                                        "Width":  146,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  220,
+                      "Name":  "",
+                      "AutomationId":  "855430",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1687,
+                                        "Y":  945,
+                                        "Width":  150,
+                                        "Height":  32
+                                    }
+                  },
+                  {
+                      "Index":  221,
+                      "Name":  "半径(射程)",
+                      "AutomationId":  "920576",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1687,
+                                        "Y":  947,
+                                        "Width":  73,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  222,
+                      "Name":  "",
+                      "AutomationId":  "5377010",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1763,
+                                        "Y":  948,
+                                        "Width":  74,
+                                        "Height":  26
+                                    }
+                  },
+                  {
+                      "Index":  223,
+                      "Name":  "40",
+                      "AutomationId":  "2819782",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.EDIT.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1769,
+                                        "Y":  953,
+                                        "Width":  47,
+                                        "Height":  16
+                                    }
+                  },
+                  {
+                      "Index":  224,
+                      "Name":  "+",
+                      "AutomationId":  "4393370",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1818,
+                                        "Y":  948,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  225,
+                      "Name":  "−",
+                      "AutomationId":  "2755118",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1818,
+                                        "Y":  961,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  226,
+                      "Name":  "",
+                      "AutomationId":  "1838258",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1535,
+                                        "Y":  981,
+                                        "Width":  150,
+                                        "Height":  32
+                                    }
+                  },
+                  {
+                      "Index":  227,
+                      "Name":  "重复间隔 秒",
+                      "AutomationId":  "1182972",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1535,
+                                        "Y":  983,
+                                        "Width":  73,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  228,
+                      "Name":  "",
+                      "AutomationId":  "3541642",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1611,
+                                        "Y":  984,
+                                        "Width":  74,
+                                        "Height":  26
+                                    }
+                  },
+                  {
+                      "Index":  229,
+                      "Name":  "15",
+                      "AutomationId":  "921134",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.EDIT.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1617,
+                                        "Y":  989,
+                                        "Width":  47,
+                                        "Height":  16
+                                    }
+                  },
+                  {
+                      "Index":  230,
+                      "Name":  "+",
+                      "AutomationId":  "3935352",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1666,
+                                        "Y":  984,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  231,
+                      "Name":  "−",
+                      "AutomationId":  "9176512",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1666,
+                                        "Y":  997,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  232,
+                      "Name":  "显示检测圆环",
+                      "AutomationId":  "9374700",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1689,
+                                        "Y":  981,
+                                        "Width":  146,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  233,
+                      "Name":  "",
+                      "AutomationId":  "5244916",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1535,
+                                        "Y":  1017,
+                                        "Width":  150,
+                                        "Height":  32
+                                    }
+                  },
+                  {
+                      "Index":  234,
+                      "Name":  "圆环粗细",
+                      "AutomationId":  "5439698",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1535,
+                                        "Y":  1019,
+                                        "Width":  73,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  235,
+                      "Name":  "",
+                      "AutomationId":  "1051784",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1611,
+                                        "Y":  1020,
+                                        "Width":  74,
+                                        "Height":  26
+                                    }
+                  },
+                  {
+                      "Index":  236,
+                      "Name":  "2.0",
+                      "AutomationId":  "6097248",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.EDIT.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1617,
+                                        "Y":  1025,
+                                        "Width":  47,
+                                        "Height":  16
+                                    }
+                  },
+                  {
+                      "Index":  237,
+                      "Name":  "+",
+                      "AutomationId":  "1051762",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1666,
+                                        "Y":  1020,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  238,
+                      "Name":  "−",
+                      "AutomationId":  "2295940",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1666,
+                                        "Y":  1033,
+                                        "Width":  18,
+                                        "Height":  13
+                                    }
+                  },
+                  {
+                      "Index":  239,
+                      "Name":  "F9",
+                      "AutomationId":  "4785004",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.EDIT.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1692,
+                                        "Y":  1018,
+                                        "Width":  150,
+                                        "Height":  24
+                                    }
+                  },
+                  {
+                      "Index":  240,
+                      "Name":  "保存标记热键",
+                      "AutomationId":  "5964570",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1535,
+                                        "Y":  1053,
+                                        "Width":  150,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  241,
+                      "Name":  "选择音源",
+                      "AutomationId":  "2821640",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1693,
+                                        "Y":  1053,
+                                        "Width":  145,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  242,
+                      "Name":  "试听",
+                      "AutomationId":  "2230686",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1846,
+                                        "Y":  1053,
+                                        "Width":  65,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  243,
+                      "Name":  "重置音源",
+                      "AutomationId":  "331196",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1535,
+                                        "Y":  1089,
+                                        "Width":  100,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  244,
+                      "Name":  "清除监测点",
+                      "AutomationId":  "200106",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1643,
+                                        "Y":  1089,
+                                        "Width":  145,
+                                        "Height":  30
+                                    }
+                  },
+                  {
+                      "Index":  245,
+                      "Name":  "按热键后 5 秒内左键点击单位或地面。",
+                      "AutomationId":  "5376688",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1535,
+                                        "Y":  1127,
+                                        "Width":  428,
+                                        "Height":  48
+                                    }
+                  },
+                  {
+                      "Index":  246,
+                      "Name":  "",
+                      "AutomationId":  "986558",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "WindowsForms10.Window.8.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  558,
+                                        "Y":  1057,
+                                        "Width":  1436,
+                                        "Height":  68
+                                    }
+                  },
+                  {
+                      "Index":  247,
+                      "Name":  "数据更新中，正在快速重试：镜头已切换。",
+                      "AutomationId":  "1706412",
+                      "ControlType":  "ControlType.Text",
+                      "ClassName":  "WindowsForms10.STATIC.app.0.329445b_r6_ad1",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  561,
+                                        "Y":  1125,
+                                        "Width":  1438,
+                                        "Height":  28
+                                    }
+                  }
+              ]
+}

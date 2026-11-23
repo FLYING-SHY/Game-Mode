@@ -1,0 +1,19 @@
+﻿{
+    "gamePid":  33656,
+    "osExitCode":  5,
+    "finishedUtc":  "2026-11-21T05:28:16.5557795Z",
+    "gameStartUtc":  "2026-11-21T03:42:27.6605831Z",
+    "nativeActions":  [
+                          {
+                              "utc":  "2026-11-21T05:27:33.2202751Z",
+                              "action":  "resume"
+                          },
+                          {
+                              "utc":  "2026-11-21T05:28:10.3194598Z",
+                              "action":  "pause"
+                          }
+                      ],
+    "scope":  "normal native progression to completion; bounded raw queue and single normal-lease C# snapshot; direct LASTEXITCODE",
+    "readerSha256":  "CD125BFFA33E525CD4B94A753D65A6E4CBB199395E3860E57E85003DB7665F79",
+    "startedUtc":  "2026-11-21T05:28:10.3941755Z"
+}

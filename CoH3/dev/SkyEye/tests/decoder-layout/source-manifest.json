@@ -1,0 +1,193 @@
+{
+    "utc":  "2026-11-21T11:21:26.9747151Z",
+    "scope":  "F only, no G/R evidence",
+    "baseline":  "perbuild-baseline",
+    "historicalBaseline":  "task4-baseline",
+    "bothConfigurationsAssertTheSamePolicy":  true,
+    "linkedSourceHashes":  [
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/AirLogic.cs",
+                                   "sha256":  "B974ED7C56FB819332355BC815799D2E7FBC3403F7BD5C45DC31BAD1ACA9B1E9"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/ProjectileLogic.cs",
+                                   "sha256":  "E22BAC88A7BBEDA772067EB2BBE17FCCD8D89B1B25E4B2E5653B78F035AF7123"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/SupportCatalogue49.cs",
+                                   "sha256":  "DC5CC8F6557EA5D10D26A06E33C066DDB7DDB5A1FC5B4B81D427D13AD4C60EBB"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/GameLayout52426.cs",
+                                   "sha256":  "90AF6A0F98C5C3C48DD9CAD8595377EE90990938753E68B142899B707C596D47"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/AirZone.cs",
+                                   "sha256":  "814C5B210BA5EF901D122655F0F6D8341BA15D234E07E3D884AE4E8AD62B1430"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/AirDefinition.cs",
+                                   "sha256":  "53AD21386FA2BB363D720139CD0D2BA9D54B84C57B6A2496987803B99CA2777C"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/ProjectileImpact.cs",
+                                   "sha256":  "3265E95B7FEC589BD39309EF8A7664BBD63FC9B13AE8BE2A1C9BBBE80AC9A6E4"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/AirCatalogue.cs",
+                                   "sha256":  "704E7035DD4F812A8AD731953A9B4B05D3114C2DFA71AD5DA139E0064448FECE"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/Loiter49.cs",
+                                   "sha256":  "369765D924B36C298959CAFFABA85291FD3F90BCBE6167C3E7E576C4127F7165"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/LoiterState49.cs",
+                                   "sha256":  "4B729ACC05CD0AFC147EA41C91939F624BE9C3D542DD9310E873766DE6FF7DEA"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/AttackCatalogue67.cs",
+                                   "sha256":  "9C527D5EAD8895D001BC970650135097EB5EE741D434D628D37A6F441DD4B83B"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/BarrageLogic.cs",
+                                   "sha256":  "0434C9EBC08A7AF328D301099A03E0CB2EA542AEBFA7B35CB8A71A912C89D0B7"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/BarrageCatalogue.cs",
+                                   "sha256":  "880FF4697199938B0883AC851904DBEA16127A4C4E7D19DA2916D3339B8EBE88"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/SquadMarkerLogic.cs",
+                                   "sha256":  "44BB6781EB442DBE00D805EDF173EB68B180EDD74281A3997B7FE331A4E88A67"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/SquadMarker.cs",
+                                   "sha256":  "6C0506B2874F11E7578E9003D02C04BCF358E3D2F525B535368FC85BF000F07F"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/SquadMarkerSource.cs",
+                                   "sha256":  "EC1DEC39BBBFD8534E67784A9BF845E918ED63BC85C9CFA6B24BEB22EBE0CEC6"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/SquadMarkerMember.cs",
+                                   "sha256":  "5B6FF392FA17E4394858AEB4B1AB9A30A031829C6244024E2852BE98C6394B27"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/MovementData.cs",
+                                   "sha256":  "78636D82A400B1316764F8985758F128DD93ADD7027ECCBF3567F22935F36339"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/DirectionData.cs",
+                                   "sha256":  "E0FE2BC09A8A38123051D6F243A461DFEE239DA00239477905CB66045158B1E6"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/Infrastructure49.cs",
+                                   "sha256":  "A4547C4DA88F30BC2E363B96924C8216FB67A817257A3C4DDC4325A02BD3D0C8"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/UnitNames.cs",
+                                   "sha256":  "0BCB82FDF87DCD0B60D18B18CE9512FB6944E51151425DA03FD49F750B13E0C8"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/UserUnitNames56.cs",
+                                   "sha256":  "1BC919CB27EFC17FBCE2BB45A50C48B9088875F2F78867B14BBF08C1750B5A53"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/UnitNamesBase.cs",
+                                   "sha256":  "32153ACFCCBC984290D1C4257833C655FAEB8F00A9E7CB96E2B4C4DC8575B13D"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/PlayerInfoRow.cs",
+                                   "sha256":  "DE7B6A73ED05537C330BD7AECF50AE7855AE9AF5BEA209A40AFDF384DCB08064"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/ProductionJob.cs",
+                                   "sha256":  "7D9DC6CE83868FC2B9A05CF3746B7B454885F4525E05F8FC0A19007CFFAF567A"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/GrenadeUpgrade.cs",
+                                   "sha256":  "6A80659F1360A8C578F07D00E22FCF1A69544F6777867B1CB159934733F338C1"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/BarrageRecord.cs",
+                                   "sha256":  "A4D3BB8DD637F15AA417A7EAD87F65609A33D3CEA06A80A11C5626A4B5A4FF1D"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/MineRecord.cs",
+                                   "sha256":  "2B768B82546E7EC136308E4305B1115418F9126BEFD488DAC05051C43B4A521B"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/TrackedBuilding.cs",
+                                   "sha256":  "54D8158874FCC3F62DC2F7925008118A115A38C7DA023A9DA1B28B1AACFE9DC4"
+                               },
+                               {
+                                   "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool/ArtilleryState.cs",
+                                   "sha256":  "7C0D7C3EA8F2812AF414210F4ECB537C2D9113F06789EA2F4F71A8ADEF00AEAC"
+                               }
+                           ],
+    "linkedSourcesUnchangedDuringRun":  true,
+    "fixtureSourceHashes":  [
+                                {
+                                    "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\decoder-layout\\Program.cs",
+                                    "sha256":  "0E6D7E44711B83096BFC39489CF441CA92F1803AD56D6EE3520A1FA7846A6CF5"
+                                },
+                                {
+                                    "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\decoder-layout\\AirMoverReplay.cs",
+                                    "sha256":  "33E758188FE67E40F8D19E88F6930016E6D4C99C255EC901DD3043859FA8074B"
+                                },
+                                {
+                                    "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\decoder-layout\\Run.ps1",
+                                    "sha256":  "99453A852857700FD14680C9C3C3996EA462C2218F949B5CD6FC3D8A620938EE"
+                                },
+                                {
+                                    "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\decoder-layout\\DecoderLayout.Fixture.csproj",
+                                    "sha256":  "F2733A4E6D0274D50DF30EB8E67542EF0770F1D905F73069ABB0597F1C814518"
+                                }
+                            ],
+    "fixtureSourcesUnchangedDuringRun":  true,
+    "capturedEvent":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\projectiles\\event-30s-02.json",
+    "capturedEventSha256":  "7E43A4DA5A6539D31A8DF3F6FB11A873481DEC5D98C3BB1DDC7DAF31D86ED1E5",
+    "capturedEventUnchangedDuringRun":  true,
+    "capturedAirInputs":  [
+                              {
+                                  "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\live-raw-04-p47-middle.json",
+                                  "sha256":  "916AFDD243FC28A4DF78566E459EC6C879A4CD3F688303B1E024BC86F3CF8514"
+                              },
+                              {
+                                  "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\live-raw-05-p47-late.json",
+                                  "sha256":  "564BB611CE5D0A383C1EB053E68C03DB0D6C6D6E46771471F316695C6F09EF58"
+                              },
+                              {
+                                  "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\live-raw-07-p47-early.json",
+                                  "sha256":  "F22378D8EE8DCC1B5422D3463DC41186B580C6A91603636F88647BFA8618D095"
+                              },
+                              {
+                                  "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\live-raw-08-p47-middle.json",
+                                  "sha256":  "C9CCF40C15F82DFC58D96D07D96DFE51CA57D8B4683A88721DED6D0DE4C88A66"
+                              },
+                              {
+                                  "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\live-raw-09-p47-late.json",
+                                  "sha256":  "883D783FDC14487164E76139ABD68039218CA9967852FEE645BBF10D5F8B24A9"
+                              }
+                          ],
+    "capturedAirUnchangedDuringRun":  true,
+    "perBuildAssertions":  [
+                               {
+                                   "mode":  "Release",
+                                   "originalPassed":  171,
+                                   "originalNamesAndOrderPreserved":  true,
+                                   "currentPassed":  171
+                               },
+                               {
+                                   "mode":  "Maintenance",
+                                   "originalPassed":  171,
+                                   "originalNamesAndOrderPreserved":  true,
+                                   "currentPassed":  171
+                               }
+                           ],
+    "configurations":  [
+                           "Release",
+                           "Maintenance"
+                       ]
+}

@@ -1,0 +1,43 @@
+{
+    "utc":  "2026-11-21T03:05:01.2045776Z",
+    "maintenanceOnly":  true,
+    "buildVerified":  false,
+    "guiRun":  "not_run",
+    "authorizationRun":  "not_run",
+    "gameAttach":  "not_run",
+    "assembly":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-ui\\bin\\Release\\net48\\SkyEye.Maintenance.UI.Unverified.exe",
+    "assemblySha256":  "F06F3BD1625A45E314B20F4B6AB05EEF1C4DD871C15BCD0B062AB9A10D9946FA",
+    "startup":  "CoH3MemoryTool.ControlsProgram",
+    "exactReplacementCount":  3,
+    "originalUiSourcesUnchanged":  true,
+    "maintenanceFactoryCount":  2,
+    "embeddedResources":  [
+                              "CoH3.InterfaceIcon",
+                              "names-zh-hans.tsv",
+                              "CoH3.BarrageCatalogue.tsv",
+                              "CoH3.Audio.NAudio.dll"
+                          ],
+    "expectedResources":  [
+                              "CoH3.InterfaceIcon",
+                              "names-zh-hans.tsv",
+                              "CoH3.BarrageCatalogue.tsv",
+                              "CoH3.Audio.NAudio.dll"
+                          ],
+    "originalAppConfigBytesMatch":  true,
+    "originalAppConfigSha256":  "603BA077967B612C1E1A9B5F809AE718C5F6ADDF0DFF753BC06CC63B585CD441",
+    "sourceManifest":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-ui\\obj\\maintenance-ui-generated\\source-manifest.json",
+    "verified":  [
+                     "source hashes unchanged",
+                     "exact 3 generated caller replacements",
+                     "reader internal source linked unchanged",
+                     "original ControlsProgram startup",
+                     "maintenance compile-only factories",
+                     "exact resource logical names",
+                     "original app config bytes"
+                 ],
+    "limitations":  [
+                        "Reflection-only metadata checks do not execute Main or initialize the game reader.",
+                        "Actual activation, overlay rendering, window ownership and close/revoke behavior require lead-controlled GUI validation.",
+                        "All candidate layouts remain unverified for formal release."
+                    ]
+}

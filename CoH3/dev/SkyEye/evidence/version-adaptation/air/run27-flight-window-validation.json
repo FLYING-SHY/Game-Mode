@@ -1,0 +1,162 @@
+{
+  "status": "PASS_actual_reader_flight_fallback_window_only",
+  "readerWindowAccepted": true,
+  "gameFeatureAccepted": false,
+  "readerReport": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\maintenance-run-27-p47-compact-flight\\maintenance-live.json",
+  "readerReportSha256": "698ca3d53185753dac0d59d470e460ece2b3d6c456fc3a6377f9f0e369338743",
+  "driverReport": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\run27-driver-result.json",
+  "driverReportSha256": "31d00dac073f623a5a06989050cbcd9c889a6e5d933dd7a2118defe72ede1f98",
+  "readerAndOsExitCode": 5,
+  "scope": "all_current_snapshot_rows_diagnostic_not_production_enemy_UI",
+  "match": "31572:639308258698492330:2188107579392:2188149555200:1000",
+  "epoch": 1,
+  "completedQueries": 184,
+  "elapsedMilliseconds": 20014,
+  "overrunMilliseconds": 14,
+  "retainedFrames": 46,
+  "retainedDecoded": 44,
+  "droppedFrames": 138,
+  "droppedDecoded": 0,
+  "distinctFlightKeys": 1,
+  "zone": {
+    "Key": "flight:2188088899584:1000008712",
+    "Owner": 2188149555200,
+    "Offset": 0,
+    "Slot": 0,
+    "Name": "P47扫射",
+    "X": 34.41206,
+    "Y": 20.2007885,
+    "Z": 1.8647356,
+    "DX": -0.158670262,
+    "DZ": 0.9873316,
+    "HalfWidth": 5,
+    "Length": 45,
+    "Radius": 0,
+    "Rocket": false,
+    "Point": false
+  },
+  "firstPositive": {
+    "ordinal": 7,
+    "utc": "2026-11-21T02:26:27.9987038Z",
+    "startedMilliseconds": 645,
+    "finishedMilliseconds": 649,
+    "status": "completed",
+    "decodedCount": 1,
+    "airDecodedCount": 1
+  },
+  "lastPositive": {
+    "ordinal": 50,
+    "utc": "2026-11-21T02:26:32.6845724Z",
+    "startedMilliseconds": 5331,
+    "finishedMilliseconds": 5335,
+    "status": "completed",
+    "decodedCount": 1,
+    "airDecodedCount": 1
+  },
+  "firstLaterZero": {
+    "ordinal": 51,
+    "utc": "2026-11-21T02:26:32.7921632Z",
+    "startedMilliseconds": 5439,
+    "finishedMilliseconds": 5442,
+    "status": "completed",
+    "decodedCount": 1,
+    "airDecodedCount": 0
+  },
+  "rawAircraft": [
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\live-raw-11-p47-compact-middle.json",
+      "sha256": "33a58167c5025abea1a3610f3ba73b76794f1a30d8bac7fd9cfa03d0e2c6fd38",
+      "timestampUtc": "2026-11-21T02:26:29.386898+00:00",
+      "entity": "0x1fd7442f800",
+      "generation": 1000008712,
+      "index": 2963,
+      "position": [
+        50.08860778808594,
+        40.07040786743164,
+        -95.70474243164062
+      ],
+      "alongOriginalTargetMetres": -98.82083080093571,
+      "actorTarget": [
+        34.41205978393555,
+        20.200788497924805,
+        1.8647356033325195
+      ],
+      "actorDirection96_100": [
+        -0.15863677859306335,
+        0.987337052822113
+      ],
+      "actorBytesUsed": 184,
+      "castPhase": 2,
+      "castInstance": 4294967295,
+      "failedLegacyRecoveryGates": [
+        "unitHeading"
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\live-raw-12-p47-compact-late.json",
+      "sha256": "e894dffb83439c4621d38de62f1320db42401f4832dc17f58bd182323f1e4554",
+      "timestampUtc": "2026-11-21T02:26:32.500020+00:00",
+      "entity": "0x1fd7442f800",
+      "generation": 1000008712,
+      "index": 2963,
+      "position": [
+        27.632587432861328,
+        42.691871643066406,
+        44.055137634277344
+      ],
+      "alongOriginalTargetMetres": 42.731617833596005,
+      "actorTarget": [
+        0.04668426513671875,
+        33.384769439697266,
+        215.78086853027344
+      ],
+      "actorDirection96_100": [
+        -0.15861761569976807,
+        0.9873401522636414
+      ],
+      "actorBytesUsed": 184,
+      "castPhase": 2,
+      "castInstance": 4294967295,
+      "failedLegacyRecoveryGates": [
+        "unitHeading"
+      ]
+    },
+    {
+      "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\air\\live-raw-13-p47-compact-after-clear.json",
+      "sha256": "89b5a8b11b8c1759ce699725df69bbd2c51bc6cf2e3693a83cf83a3c168832be",
+      "timestampUtc": "2026-11-21T02:40:39.162764+00:00",
+      "entity": "0x1fd7442f800",
+      "generation": 1000008712,
+      "index": 2963,
+      "position": [
+        7.4381890296936035,
+        42.88475799560547,
+        169.79296875
+      ],
+      "alongOriginalTargetMetres": 170.08080229517526,
+      "actorTarget": [
+        0.04668426513671875,
+        33.384769439697266,
+        215.78086853027344
+      ],
+      "actorDirection96_100": [
+        -0.15861761569976807,
+        0.9873401522636414
+      ],
+      "actorBytesUsed": 184,
+      "castPhase": 2,
+      "castInstance": 4294967295,
+      "failedLegacyRecoveryGates": [
+        "unitHeading"
+      ]
+    }
+  ],
+  "naturalRecoveryStatus": "not_triggered",
+  "nativeAdvanceSeconds": 10.981567,
+  "limitations": [
+    "One local-owner flight, not 44 distinct airstrikes; all-current-row diagnostic scope does not prove enemy-only production GUI.",
+    "The native game advanced for about 11 seconds and was then paused; the reader window lasted about 20 wall-clock seconds.",
+    "Raw11/12 are within the sampled window. Raw13 is a later paused state with the same world/entity/generation, not a simultaneous read.",
+    "This does not accept camera recovery, other air types, the complete game version, or protected deliverables."
+  ]
+}

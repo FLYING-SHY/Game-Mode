@@ -1,0 +1,52 @@
+{
+  "schema": "skyeye.simple-maintenance.task15.final-freeze.v1",
+  "createdUtc": "2026-11-21T05:51:56.739888+00:00",
+  "status": "PASS_final_frozen_sources_and_doc",
+  "auditedFileComparisons": 197,
+  "changed": [],
+  "readmeLinkOccurrences": 28,
+  "readmeUniqueTargets": 27,
+  "missingReadmeLinks": [],
+  "readme": {
+    "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\README.md",
+    "bytes": 8373,
+    "sha256": "142db161038645db143d514db62816713133d633a40f91aa7d3844765ad2d53b"
+  },
+  "review": {
+    "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\task15-review.json",
+    "bytes": 42383,
+    "sha256": "4833f386dbb1291a69bf2035921c6700a5096b07fb68eaf42ea1fd6879a6df6a"
+  },
+  "baseline": {
+    "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\baseline.json",
+    "bytes": 43505,
+    "sha256": "b8a641642602701c64023e795ee94e66583c068dfac579c4e18f8b7e8da285f4"
+  },
+  "frozenAssembly": {
+    "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\bin\\Release\\net48\\COH3SimpleTool.Maintenance.UI.Unverified.exe",
+    "bytes": 563200,
+    "sha256": "a169466a2ccf6b37354ce04562ce31c89ca7fa4ac9941f299e545b8bc65f6563"
+  },
+  "frozenConfig": {
+    "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\bin\\Release\\net48\\COH3SimpleTool.Maintenance.UI.Unverified.exe.config",
+    "bytes": 496,
+    "sha256": "603ba077967b612c1e1a9b5f809ae718c5f6addf0dff753bc06cc63b585cd441"
+  },
+  "frozenBuildReport": {
+    "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\build-report.json",
+    "bytes": 2450,
+    "sha256": "0757c53414a6ffd9ff47ee502e8c464d27aebcc346ed4fb2e92f331d07c21c03"
+  },
+  "frozenSourceManifest": {
+    "path": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\obj\\maintenance-simple-ui-generated\\source-manifest.json",
+    "bytes": 47691,
+    "sha256": "b8079c0e2fb068461cd2829d44253b1cfc2f9f8685176234c3bad593f19dfb41"
+  },
+  "productionSourceMutations": 0,
+  "historicalArtifactMutations": 0,
+  "mainExecuted": false,
+  "processQueries": 0,
+  "guiRun": "not_run",
+  "authorizationRun": "not_run",
+  "gameAttach": "not_run"
+}

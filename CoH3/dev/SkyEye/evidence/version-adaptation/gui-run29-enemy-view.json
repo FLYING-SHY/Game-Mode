@@ -1,0 +1,62 @@
+{
+  "utc": "2026-11-21T03:29:05.823155+00:00",
+  "pid": 24288,
+  "tag": "gui-run29-enemy-view",
+  "windows": [
+    {
+      "hwnd": 3869816,
+      "isControlPanel": false,
+      "rect": [
+        8,
+        61,
+        1928,
+        1141
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-enemy-view-3869816.png"
+    },
+    {
+      "hwnd": 2230404,
+      "isControlPanel": false,
+      "rect": [
+        66,
+        69,
+        1870,
+        163
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-enemy-view-2230404.png"
+    },
+    {
+      "hwnd": 2689582,
+      "isControlPanel": false,
+      "rect": [
+        8,
+        61,
+        1928,
+        1141
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-enemy-view-2689582.png"
+    },
+    {
+      "hwnd": 986248,
+      "isControlPanel": false,
+      "rect": [
+        8,
+        61,
+        1928,
+        1141
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-enemy-view-986248.png"
+    },
+    {
+      "hwnd": 5113760,
+      "isControlPanel": true,
+      "rect": [
+        540,
+        221,
+        2020,
+        1171
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\gui-run29-enemy-view-5113760.png"
+    }
+  ]
+}

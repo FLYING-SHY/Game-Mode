@@ -1,0 +1,353 @@
+--- baseline/SkyEye.PlayerInfoReader.cs
++++ F:\WorkSpace\Game\CoH3\dev\SkyEye\client\CoH3MemoryTool\PlayerInfoReader.cs
+@@ -67,6 +67,12 @@
+ 		public ulong SourceKey;
+ 	}
+ 
++	private MatchHudGuard matchHudGuard55;
++
++	private MatchHudContext matchHud55;
++
++	private bool markerClone55;
++
+ 	private long airRegistry;
+ 
+ 	private ulong[] airSeen = new ulong[0];
+@@ -215,9 +221,78 @@
+ 
+ 	public string MatchKey { get; private set; }
+ 
++	private string WorldMatchKey55(long world, long localPlayer, uint identity)
++	{
++		return process.Id + ":" + started.Ticks + ":" + world + ":" + localPlayer + ":" + identity;
++	}
++
++	private string ProductMatchKey55(string world, MatchHudContext hud)
++	{
++		return MatchHudContext.ProductKey(world, hud, UsesCandidateLayout());
++	}
++
++	private MatchHudGuard HudGuard55()
++	{
++		lock (miniGate)
++		{
++			if (matchHudGuard55 == null)
++			{
++				matchHudGuard55 = new MatchHudGuard(Read, image + BuildRva45(112837064), image + BuildRva45(64823200), image + BuildRva45(65713904), image);
++			}
++			return matchHudGuard55;
++		}
++	}
++
++	private void PauseHudMaps55()
++	{
++		lock (miniGate)
++		{
++			miniEpoch++;
++			miniMatch = null;
++			miniControl = 0L;
++			tacticalControl51 = 0L;
++			tacticalRetry51 = DateTime.MinValue;
++			miniRetry = DateTime.MinValue;
++		}
++	}
++
++	private void CheckMatchHud55(MatchHudContext expected = null)
++	{
++		if (!UsesCandidateLayout()) return;
++		try { HudGuard55().Verify(expected ?? matchHud55); }
++		catch (MatchHudUnavailableException) { PauseHudMaps55(); throw; }
++	}
++
++	private MatchHudContext SnapshotHud55(string world)
++	{
++		if (!UsesCandidateLayout()) return null;
++		try
++		{
++			if (markerClone55)
++			{
++				CheckMatchHud55();
++				if (matchHud55.World != world) throw new MatchHudUnavailableException(MatchHudOutcome.Retired, "工作读取器的对局身份已切换。");
++				return matchHud55;
++			}
++			return HudGuard55().Resolve(world);
++		}
++		catch (MatchHudUnavailableException) { PauseHudMaps55(); throw; }
++	}
++
++	private string CurrentWorldMatchKey55()
++	{
++		long identity = LocalIdentity58();
++		uint low = (uint)identity;
++		if (low == 0 || (uint)(identity >>> 32) >= 16) throw new Exception("本地玩家身份尚未就绪。");
++		long world = Resolve(markerArena, markerWorldOffset);
++		long players = Resolve(markerArena, U(world + 252));
++		long localPlayer = ResolveLocalPlayer58(markerArena, Resolve(markerArena, U(players + 12)), U(players + 16), identity);
++		return WorldMatchKey55(world, localPlayer, low);
++	}
++
+ 	private long LocalIdentity58()
+ 	{
+-		ReadMineCamera();
++		ReadMineCameraCore55();
+ 		long num = Q(cameraCore + 680);
+ 		if (Q(num) != image + BuildRva45(64683768) || Read(num + 24, 1)[0] != 0)
+ 		{
+@@ -1126,6 +1201,14 @@
+ 
+ 	public MineCamera ReadMineCamera()
+ 	{
++		MineCamera camera = ReadMineCameraCore55();
++		CheckMatchHud55();
++		return camera;
++	}
++
++	// Bootstrap identity/colour reads are enclosed by Snapshot's start/end HUD checks.
++	private MineCamera ReadMineCameraCore55()
++	{
+ 		try
+ 		{
+ 			if (cameraCore == 0 || Q(cameraCore) != image + BuildRva45(64684536))
+@@ -1378,6 +1461,8 @@
+ 		{
+ 			throw new MinimapRetiredControl("小地图控件已切换。");
+ 		}
++		MatchHudContext hud = matchHud55;
++		CheckMatchHud55(hud);
+ 		byte[] array = Read(control, 480);
+ 		byte[] properties = MiniProperties(control, array);
+ 		float ww = MiniDimension(properties, MiniPropertyId(111989640L));
+@@ -1413,7 +1498,7 @@
+ 			long num8 = BitConverter.ToInt64(array2, 0) - image;
+ 			if (num8 == BuildRva45(65713904))
+ 			{
+-				flag = true;
++				flag = hud == null || num4 == hud.Hud;
+ 			}
+ 			long num9 = MiniProperty(MiniProperties(num4, array2), 40);
+ 			if (flag3 && num9 == 0)
+@@ -1439,7 +1524,7 @@
+ 			}
+ 			if (num12 == 0)
+ 			{
+-				flag2 = num8 == BuildRva45(64823200);
++				flag2 = num8 == BuildRva45(64823200) && (hud == null || num4 == hud.Root);
+ 				num6 = BitConverter.ToSingle(array2, 296);
+ 				num7 = BitConverter.ToSingle(array2, 300);
+ 			}
+@@ -1462,12 +1547,14 @@
+ 		{
+ 			throw new Exception("小地图实际位置无效。");
+ 		}
++		CheckMatchHud55(hud);
+ 		return minimapFrame;
+ 	}
+ 
+ 	public bool TryReadMinimap(out MinimapFrame frame)
+ 	{
+ 		frame = null;
++		CheckMatchHud55();
+ 		long num;
+ 		long num2;
+ 		lock (miniGate)
+@@ -1497,6 +1584,7 @@
+ 			MinimapStatus = "";
+ 			return true;
+ 		}
++		catch (MatchHudUnavailableException) { throw; }
+ 		catch (Exception ex)
+ 		{
+ 			MinimapStatus = ex.Message;
+@@ -1551,6 +1639,9 @@
+ 		{
+ 			return;
+ 		}
++		CheckMatchHud55();
++		MatchHudContext scanHud = matchHud55;
++		string scanMatch = MatchKey;
+ 		LoadMiniHint52();
+ 		long epoch;
+ 		long token;
+@@ -1781,11 +1872,14 @@
+ 							break;
+ 						}
+ 					}
++					CheckMatchHud55(scanHud);
++					bool acceptedControl = false;
+ 					lock (miniGate)
+ 					{
+-						if (!miniDisposed && miniEpoch == epoch)
++						if (!miniDisposed && miniEpoch == epoch && miniMatch == scanMatch && MatchKey == scanMatch && object.ReferenceEquals(matchHud55, scanHud))
+ 						{
+ 							miniControl = num;
++							acceptedControl = num != 0;
+ 							if (num != 0)
+ 							{
+ 								miniHint = num;
+@@ -1799,8 +1893,9 @@
+ 							}
+ 						}
+ 					}
+-					if (num != 0)
+-					{
++					if (acceptedControl)
++					{
++						CheckMatchHud55(scanHud);
+ 						SaveMiniHint52(num);
+ 						CacheMiniRoot53(num);
+ 					}
+@@ -2216,7 +2311,7 @@
+ 		{
+ 			if (cameraCore == 0 || Q(cameraCore) != image + BuildRva45(64684536))
+ 			{
+-				ReadMineCamera();
++				ReadMineCameraCore55();
+ 			}
+ 			long num = Q(cameraCore + 680);
+ 			long num2 = ColourConfig();
+@@ -2292,6 +2387,7 @@
+ 
+ 	public MarkerReadContext MarkerContext()
+ 	{
++		if (UsesCandidateLayout()) CheckMarkerWorld(MatchKey);
+ 		MarkerReadContext markerReadContext = new MarkerReadContext();
+ 		markerReadContext.Pid = process.Id;
+ 		markerReadContext.Image = image;
+@@ -2299,6 +2395,7 @@
+ 		markerReadContext.Match = MatchKey;
+ 		markerReadContext.Arena = markerArena;
+ 		markerReadContext.WorldOffset = markerWorldOffset;
++		markerReadContext.Hud = matchHud55;
+ 		return markerReadContext;
+ 	}
+ 
+@@ -2345,10 +2442,18 @@
+ 			{
+ 				throw new Exception("无法只读连接标记数据。");
+ 			}
++			markerClone55 = true;
++			matchHud55 = context.Hud;
++			if (UsesCandidateLayout()) HudGuard55().BindExpected(context.Hud);
+ 			MatchKey = context.Match;
+ 			ResetMinimapForMatch(context.Match);
+ 			CaptureMarkerWorld(context.Arena, context.WorldOffset);
+ 			CheckMarkerWorld(context.Match);
++			if (UsesCandidateLayout() && ProductMatchKey55(CurrentWorldMatchKey55(), matchHud55) != context.Match)
++			{
++				throw new MatchHudUnavailableException(MatchHudOutcome.Retired, "工作读取器的对局上下文已切换。");
++			}
++			CheckMatchHud55();
+ 		}
+ 		catch
+ 		{
+@@ -2804,7 +2909,9 @@
+ 		long num9 = Resolve(num3, num8);
+ 		long num10 = Resolve(num3, U(num5 + 284));
+ 		long num11 = ResolveLocalPlayer58(num3, num9, num7, num);
+-		string text = process.Id + ":" + started.Ticks + ":" + num5 + ":" + num11 + ":" + num2;
++		string worldKey = WorldMatchKey55(num5, num11, num2);
++		MatchHudContext snapshotHud = SnapshotHud55(worldKey);
++		string text = ProductMatchKey55(worldKey, snapshotHud);
+ 		if (MatchKey != text)
+ 		{
+ 			blueprintNames.Clear();
+@@ -2876,6 +2983,8 @@
+ 			throw new Exception("未在对局中找到自己。");
+ 		}
+ 		ReadPlayerColours(list, num3, num5);
++		CheckMatchHud55(snapshotHud);
++		matchHud55 = snapshotHud;
+ 		ResetMinimapForMatch(text);
+ 		MatchKey = text;
+ 		CaptureMarkerWorld(num3, num4);
+@@ -3314,17 +3423,11 @@
+ 				return false;
+ 			}
+ 			CheckMarkerWorld(MatchKey);
+-			long num = LocalIdentity58();
+-			uint num2 = (uint)num;
+-			if (num2 == 0 || (uint)(num >>> 32) >= 16)
+-			{
+-				return false;
+-			}
+-			long num3 = Resolve(markerArena, markerWorldOffset);
+-			long num4 = Resolve(markerArena, U(num3 + 252));
+-			long num5 = ResolveLocalPlayer58(markerArena, Resolve(markerArena, U(num4 + 12)), U(num4 + 16), num);
+-			return MatchKey == process.Id + ":" + started.Ticks + ":" + num3 + ":" + num5 + ":" + num2;
+-		}
++			string worldKey = CurrentWorldMatchKey55();
++			CheckMatchHud55();
++			return MatchKey == ProductMatchKey55(worldKey, matchHud55);
++		}
++		catch (MatchHudUnavailableException) { throw; }
+ 		catch
+ 		{
+ 			return false;
+@@ -3368,6 +3471,7 @@
+ 		{
+ 			throw new Exception("对局已切换，清空班组标记。");
+ 		}
++		CheckMatchHud55();
+ 	}
+ 
+ 	public List<SquadMarker> ReadSquadMarkers(string match, IEnumerable<SquadMarkerSource> sources)
+@@ -3433,6 +3537,8 @@
+ 
+ 	public List<SupportCommand49> ReadSupport49(IEnumerable<PlayerInfoRow> rows)
+ 	{
++		string match = MatchKey;
++		if (UsesCandidateLayout()) CheckMarkerWorld(match);
+ 		List<SupportCommand49> list = new List<SupportCommand49>();
+ 		foreach (PlayerInfoRow row in rows)
+ 		{
+@@ -3498,6 +3604,7 @@
+ 				throw new Exception("战斗群技能列表正在变化。");
+ 			}
+ 		}
++		if (UsesCandidateLayout()) CheckMarkerWorld(match);
+ 		return list;
+ 	}
+ 
+@@ -3622,6 +3729,8 @@
+ 		{
+ 			throw new MinimapRetiredControl("战术地图控件已切换。");
+ 		}
++		MatchHudContext hud = matchHud55;
++		CheckMatchHud55(hud);
+ 		byte[] array = Read(control, 552);
+ 		byte[] properties = MiniProperties(control, array);
+ 		float ww = MiniDimension(properties, MiniPropertyId(111989640L));
+@@ -3661,7 +3770,7 @@
+ 			}
+ 			if (num7 == BuildRva45(65713904))
+ 			{
+-				flag2 = true;
++				flag2 = hud == null || num4 == hud.Hud;
+ 			}
+ 			flag4 &= TacticalVisible51(BitConverter.ToUInt32(array2, 192));
+ 			long num8 = MiniProperty(MiniProperties(num4, array2), 40);
+@@ -3687,7 +3796,7 @@
+ 			}
+ 			if (num11 == 0)
+ 			{
+-				flag3 = num7 == BuildRva45(64823200);
++				flag3 = num7 == BuildRva45(64823200) && (hud == null || num4 == hud.Root);
+ 				num5 = BitConverter.ToSingle(array2, 296);
+ 				num6 = BitConverter.ToSingle(array2, 300);
+ 			}
+@@ -3710,6 +3819,7 @@
+ 		{
+ 			throw new Exception("战术地图变换无效。");
+ 		}
++		CheckMatchHud55(hud);
+ 		visible = flag4;
+ 		return minimapFrame;
+ 	}
+@@ -3783,6 +3893,7 @@
+ 			frame = minimapFrame;
+ 			return true;
+ 		}
++		catch (MatchHudUnavailableException) { throw; }
+ 		catch (Exception ex)
+ 		{
+ 			TacticalStatus51 = ex.Message;

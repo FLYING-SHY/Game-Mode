@@ -1,0 +1,53 @@
+﻿PASS build=Build2406 maintenance=False UsesCandidateLayout
+PASS build=Build2406 maintenance=False ValidateLayout
+PASS build=Build2406 maintenance=False AirMoverShape45
+PASS build=Build2406 maintenance=False BuildRva45 all registered roles
+PASS build=Build2406 maintenance=False LegacyTransformRva45 all five transform roles
+PASS build=Build2406 maintenance=False no process handle or field initialization
+PASS build=Build2406 maintenance=True UsesCandidateLayout
+PASS build=Build2406 maintenance=True ValidateLayout
+PASS build=Build2406 maintenance=True AirMoverShape45
+PASS build=Build2406 maintenance=True BuildRva45 all registered roles
+PASS build=Build2406 maintenance=True LegacyTransformRva45 all five transform roles
+PASS build=Build2406 maintenance=True no process handle or field initialization
+PASS build=Build52426 maintenance=False UsesCandidateLayout
+PASS build=Build52426 maintenance=False ValidateLayout
+PASS build=Build52426 maintenance=False AirMoverShape45
+PASS build=Build52426 maintenance=False BuildRva45 all registered roles
+PASS build=Build52426 maintenance=False LegacyTransformRva45 all five transform roles
+PASS build=Build52426 maintenance=False no process handle or field initialization
+PASS build=Build52426 maintenance=True UsesCandidateLayout
+PASS build=Build52426 maintenance=True ValidateLayout
+PASS build=Build52426 maintenance=True AirMoverShape45
+PASS build=Build52426 maintenance=True BuildRva45 all registered roles
+PASS build=Build52426 maintenance=True LegacyTransformRva45 all five transform roles
+PASS build=Build52426 maintenance=True no process handle or field initialization
+PASS build=Unknown maintenance=False UsesCandidateLayout
+PASS build=Unknown maintenance=False ValidateLayout
+PASS build=Unknown maintenance=False AirMoverShape45
+PASS build=Unknown maintenance=False BuildRva45 all registered roles
+PASS build=Unknown maintenance=False LegacyTransformRva45 all five transform roles
+PASS build=Unknown maintenance=False no process handle or field initialization
+PASS build=Unknown maintenance=True UsesCandidateLayout
+PASS build=Unknown maintenance=True ValidateLayout
+PASS build=Unknown maintenance=True AirMoverShape45
+PASS build=Unknown maintenance=True BuildRva45 all registered roles
+PASS build=Unknown maintenance=True LegacyTransformRva45 all five transform roles
+PASS build=Unknown maintenance=True no process handle or field initialization
+PASS build=123456 maintenance=False UsesCandidateLayout
+PASS build=123456 maintenance=False ValidateLayout
+PASS build=123456 maintenance=False AirMoverShape45
+PASS build=123456 maintenance=False BuildRva45 all registered roles
+PASS build=123456 maintenance=False LegacyTransformRva45 all five transform roles
+PASS build=123456 maintenance=False no process handle or field initialization
+PASS build=123456 maintenance=True UsesCandidateLayout
+PASS build=123456 maintenance=True ValidateLayout
+PASS build=123456 maintenance=True AirMoverShape45
+PASS build=123456 maintenance=True BuildRva45 all registered roles
+PASS build=123456 maintenance=True LegacyTransformRva45 all five transform roles
+PASS build=123456 maintenance=True no process handle or field initialization
+IL Void .ctor(CoH3MemoryTool.MarkerReadContext, Boolean) RequireVerified@426 ValidateLayout@432 LicenseGate@454 OpenProcess@490
+PASS constructor IL order Void .ctor(CoH3MemoryTool.MarkerReadContext, Boolean)
+IL Void .ctor(Boolean) RequireVerified@427 ValidateLayout@433 LicenseGate@455 OpenProcess@491
+PASS constructor IL order Void .ctor(Boolean)
+RESULT passed=50 failed=0 scenarios=8; level=F; constructors=0; native_handles=0

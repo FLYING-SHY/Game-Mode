@@ -1,0 +1,40 @@
+{
+  "utc": "2026-11-21T06:56:04.114573+00:00",
+  "pid": 30972,
+  "tag": "simple-run35-after-results-close",
+  "windows": [
+    {
+      "hwnd": 1379718,
+      "isControlPanel": false,
+      "rect": [
+        66,
+        69,
+        1870,
+        163
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\simple-run35-after-results-close-1379718.png"
+    },
+    {
+      "hwnd": 5704690,
+      "isControlPanel": false,
+      "rect": [
+        8,
+        61,
+        1928,
+        1141
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\simple-run35-after-results-close-5704690.png"
+    },
+    {
+      "hwnd": 2294644,
+      "isControlPanel": true,
+      "rect": [
+        978,
+        565,
+        1802,
+        683
+      ],
+      "image": "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\version-adaptation\\simple-run35-after-results-close-2294644.png"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>12.0</LangVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <StartupObject>CoH3MemoryTool.RecoveryProbeSelfTests</StartupObject>
+    <DefineConstants>$(DefineConstants);RECOVERY_FIXTURE</DefineConstants>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../RecoveryProbe.cs" Link="RecoveryProbe.cs" />
+    <Compile Include="../RecoveryProbeSelfTests.cs" Link="RecoveryProbeSelfTests.cs" />
+    <Compile Include="../EventPrewarm.cs" Link="EventPrewarm.cs" />
+    <Compile Include="../BoundedPoll.cs" Link="BoundedPoll.cs" />
+    <Compile Include="../LiveProbeResult.cs" Link="LiveProbeResult.cs" />
+    <Reference Include="System.Web.Extensions" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,78 @@
+MAINTENANCE ONLY; read success is not build/visual verification; exitCode=5
+authorization: pass build= ms=0 samples= utc=
+Real coordinator lease allowed; no synthetic grant.
+null
+
+
+snapshot/resources: observed build=FingerprintMismatch ms=23 samples=2 utc=2026-11-20T19:23:10.8848174Z
+Resources are raw game values. Snapshot captured once; downstream items share this timestamp, not atomic cross-feature state.
+[{"Slot":0,"Relation":"自己","IsLocalPlayer":true,"identity":"3e8","Manpower":1589.75,"Munition":503.964874,"Fuel":273.47876,"CP":12,"Population":4,"Race":"american"},{"Slot":1,"Relation":"敌方","IsLocalPlayer":false,"identity":"1000003e9","Manpower":185.502716,"Munition":340,"Fuel":142.36055,"CP":2,"Population":44,"Race":"german"}]
+
+
+units: observed build=FingerprintMismatch ms=1 samples=8 utc=2026-11-20T19:23:10.9087828Z
+
+[{"Slot":0,"UnitsKnown":true,"units":[{"Key":"sbps\\races\\american\\infantry\\scout_us","Value":1}]},{"Slot":1,"UnitsKnown":true,"units":[{"Key":"sbps\\races\\german\\infantry\\pioneer_ger","Value":2},{"Key":"sbps\\races\\german\\vehicles\\kettenkrad_ger","Value":1},{"Key":"sbps\\races\\german\\infantry\\grenadier_ger","Value":1},{"Key":"sbps\\races\\german\\team_weapons\\hmg_mg42_ger","Value":1},{"Key":"sbps\\races\\german\\vehicles\\armored_car_8_rad_ger","Value":1},{"Key":"sbps\\races\\german\\vehicles\\wespe_ger","Value":1}]}]
+
+
+buildings: observed build=FingerprintMismatch ms=0 samples=3 utc=2026-11-20T19:23:10.9097895Z
+
+[{"Slot":0,"BuildingsKnown":true,"items":[{"Tier":1,"Key":"2188089031680:2807501192","Complete":true}]},{"Slot":1,"BuildingsKnown":true,"items":[{"Tier":1,"Key":"2188088160256:2807501192","Complete":true},{"Tier":3,"Key":"2188088152576:2807501192","Complete":true}]}]
+
+
+production: observed build=FingerprintMismatch ms=1 samples=1 utc=2026-11-20T19:23:10.9107867Z
+Tick-to-second conversion inherited from GrenadeUpgrade: ceil(ticks/8); visual timer agreement not established.
+[{"Slot":0,"ProductionKnown":true,"Kwk38Known":true,"GrenadeRemainingTicks":187,"tickRatePerSecond":8,"grenadeRemainingSeconds":24,"jobs":[]},{"Slot":1,"ProductionKnown":true,"Kwk38Known":true,"GrenadeRemainingTicks":null,"tickRatePerSecond":8,"grenadeRemainingSeconds":null,"jobs":[]}]
+
+
+upgrades: observed build=FingerprintMismatch ms=0 samples=12 utc=2026-11-20T19:23:10.9117865Z
+No independent UpgradesKnown flag exists; empty lists mean sample_absent, not absence proven.
+[{"Slot":0,"items":["upgrade\\gameplay\\reinforcement_time_state_modifier","upgrade\\american\\research\\air_support_center_us","upgrade\\american\\gameplay\\p47_strafing_cost_limiter","upgrade\\american\\gameplay\\p47_bombing_run_cost_limiter"]},{"Slot":1,"items":["upgrade\\gameplay\\reinforcement_time_state_modifier","upgrade\\german\\battlegroups\\mechanized\\mechanized","upgrade\\german\\battlegroups\\mechanized\\mechanized_left_1a_raid_package","upgrade\\german\\battlegroups\\mechanized\\mechanized_left_2b_8_rad","upgrade\\german\\battlegroups\\mechanized\\mechanized_left_panther_production_unlock_ger","upgrade\\german\\battlegroups\\mechanized\\mechanized_right_1a_mobile_repair_ger","upgrade\\german\\battlegroups\\mechanized\\mechanized_right_3a_stosstruppen_package","upgrade\\german\\battlegroups\\mechanized\\mechanized_right_3b_wespe"]}]
+
+
+colours: observed build=FingerprintMismatch ms=0 samples=2 utc=2026-11-20T19:23:10.9127862Z
+
+[{"Slot":0,"Relation":"自己","GameColourKnown":true,"argb":"ff188cff"},{"Slot":1,"Relation":"敌方","GameColourKnown":true,"argb":"ffff3b30"}]
+
+
+camera: observed build=FingerprintMismatch ms=0 samples=1 utc=2026-11-20T19:23:10.9137864Z
+
+{"View":[0,0.681998432,0.731353641,0,0,0.731353641,-0.681998432,0,-1,-1.01625686E-08,-1.08980185E-08,0,98.10012,64.30344,136.964523,1],"Projection":[0.974278569,0,0,0,0,1.7320509,0,0,0,0,1.00000107,1,0,0,-0.1000001,0],"convention":"16 floats per matrix, raw reader ordering"}
+
+
+squad_markers: observed build=FingerprintMismatch ms=17 samples=8 utc=2026-11-20T19:23:10.9137864Z
+Bound source colours from the shared snapshot, matching SquadMarkerHost; sourceCount=8
+Sampling flags: FlankReadMovement47=True; previous=False; restored in finally. This opts infantry into the same movement path used by UpdateFlank47.
+Direction/Movement null means no optional result from this read, not event absence or verified layout. Regular marker hosts bind colour and capture Context/membership; UpdateFlank47 is the only production assignment of a reader sampling flag.
+[{"Slot":0,"Name":"侦","Path":"sbps\\races\\american\\infantry\\scout_us","X":-101.2039,"Y":24.5970612,"Z":84.5,"Direction":null,"Movement":null},{"Slot":1,"Name":"工","Path":"sbps\\races\\german\\infantry\\pioneer_ger","X":99.67326,"Y":23.9710083,"Z":-37.28275,"Direction":null,"Movement":{"X":17.2957687,"Y":20,"Z":-22.9381256}},{"Slot":1,"Name":"摩托","Path":"sbps\\races\\german\\vehicles\\kettenkrad_ger","X":28.4432468,"Y":20.7477951,"Z":76.47802,"Direction":null,"Movement":null},{"Slot":1,"Name":"大G","Path":"sbps\\races\\german\\infantry\\grenadier_ger","X":-23.415,"Y":11.9038754,"Z":-112.748337,"Direction":null,"Movement":null},{"Slot":1,"Name":"机枪","Path":"sbps\\races\\german\\team_weapons\\hmg_mg42_ger","X":108.3,"Y":25.3165646,"Z":-96.9,"Direction":{"X":107.5,"Y":25.30854,"Z":-96.5,"DX":0.45902434,"DZ":0.888423741,"Range":44,"ArcLeft":-55,"ArcRight":55,"Team":true,"Artillery":false,"MachineGun":true,"AntiTankGun":false,"Ready":false,"ArcValid":true},"Movement":null},{"Slot":1,"Name":"工","Path":"sbps\\races\\german\\infantry\\pioneer_ger","X":32.83331,"Y":19.9921,"Z":-24.2585735,"Direction":null,"Movement":{"X":-56.7897224,"Y":16.1582985,"Z":15.1559534}},{"Slot":1,"Name":"八轮","Path":"sbps\\races\\german\\vehicles\\armored_car_8_rad_ger","X":127.521942,"Y":23.2195759,"Z":-8.01,"Direction":{"X":127.521942,"Y":23.2195759,"Z":-8.01,"DX":0.611976862,"DZ":0.7908757,"Range":40,"ArcLeft":0,"ArcRight":0,"Team":false,"Artillery":false,"MachineGun":false,"AntiTankGun":false,"Ready":true,"ArcValid":false},"Movement":null},{"Slot":1,"Name":"黄","Path":"sbps\\races\\german\\vehicles\\wespe_ger","X":157.7551,"Y":29.7589989,"Z":-86.64969,"Direction":{"X":157.7551,"Y":29.7589989,"Z":-86.64969,"DX":-0.8622649,"DZ":0.506457567,"Range":180,"ArcLeft":0,"ArcRight":0,"Team":false,"Artillery":true,"MachineGun":false,"AntiTankGun":false,"Ready":true,"ArcValid":false},"Movement":null}]
+
+
+support: sample_absent build=FingerprintMismatch ms=1 samples=0 utc=2026-11-20T19:23:10.9309678Z
+
+[]
+
+
+projectiles: sample_absent build=FingerprintMismatch ms=20 samples=0 utc=2026-11-20T19:23:10.9329667Z
+
+[]
+
+
+air: sample_absent build=FingerprintMismatch ms=18 samples=0 utc=2026-11-20T19:23:10.9540628Z
+
+[]
+
+
+minimap: observed build=FingerprintMismatch ms=5012 samples=1 utc=2026-11-20T19:23:10.9736584Z
+sharedBudgetMilliseconds=5000; maxPollingRounds=101; pollingRounds=81; reader disposed after map probes; cancellation is cooperative.
+minimapStatus=; minimapDiagnostic=nativeControl=201bb076d40 cursor=1ffa4000000 batchMB=0 ms=26 ; tacticalStatus=战术地图未打开
+{"CentreX":201,"CentreY":837,"PixelWidth":268,"PixelHeight":268,"RootWidth":1920,"RootHeight":1080,"WorldWidth":384,"WorldHeight":384,"Angle":-90.00001,"NativeTransform":true,"WorldToUi":{"XX":-6.101381455383954E-08,"XY":-0.69791664493580541,"YX":-0.69791664493580541,"YY":6.101381455383954E-08,"TX":200.99999627237034,"TY":836.99998918409631,"Valid":true}}
+
+
+tactical: sample_absent build=FingerprintMismatch ms=5012 samples=0 utc=2026-11-20T19:23:10.9736584Z
+sharedBudgetMilliseconds=5000; maxPollingRounds=101; pollingRounds=81; reader disposed after map probes; cancellation is cooperative.
+minimapStatus=; minimapDiagnostic=nativeControl=201bb076d40 cursor=1ffa4000000 batchMB=0 ms=26 ; tacticalStatus=战术地图未打开
+null
+Bounded discovery ended; not a layout-invalid conclusion.
+
+VerifyLive58: not_run build= ms=0 samples= utc=
+Aggregate iterator repeats Snapshot and contains its own 12-second minimap loop. Disabled in bounded runner; use independent feature evidence above.
+null

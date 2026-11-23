@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EngineRoot Condition="'$(EngineRoot)' == ''">../../client/CoH3MemoryTool</EngineRoot>
+    <RestorePackagesPath>$(MSBuildThisFileDirectory).packages</RestorePackagesPath>
+    <NuGetAudit>false</NuGetAudit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="$(EngineRoot)/MatchHudContext.cs" Link="Production/MatchHudContext.cs" />
+    <Compile Include="$(EngineRoot)/MarkerReadContext.cs" Link="Production/MarkerReadContext.cs" />
+  </ItemGroup>
+</Project>

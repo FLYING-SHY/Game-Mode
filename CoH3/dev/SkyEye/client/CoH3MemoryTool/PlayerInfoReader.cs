@@ -67,6 +67,12 @@ internal sealed class PlayerInfoReader : IDisposable
 		public ulong SourceKey;
 	}
 
+	private MatchHudGuard matchHudGuard55;
+
+	private MatchHudContext matchHud55;
+
+	private bool markerClone55;
+
 	private long airRegistry;
 
 	private ulong[] airSeen = new ulong[0];
@@ -143,6 +149,12 @@ internal sealed class PlayerInfoReader : IDisposable
 
 	public string ColourError = "";
 
+	private readonly bool maintenanceDiagnostics;
+
+	private readonly GameVersion45.GameBuild detectedBuild;
+
+	internal GameVersion45.CheckStatus BuildStatus { get; }
+
 	private readonly Process process;
 
 	private readonly ProcHandle handle;
@@ -209,11 +221,80 @@ internal sealed class PlayerInfoReader : IDisposable
 
 	public string MatchKey { get; private set; }
 
+	private string WorldMatchKey55(long world, long localPlayer, uint identity)
+	{
+		return process.Id + ":" + started.Ticks + ":" + world + ":" + localPlayer + ":" + identity;
+	}
+
+	private string ProductMatchKey55(string world, MatchHudContext hud)
+	{
+		return MatchHudContext.ProductKey(world, hud, UsesCandidateLayout());
+	}
+
+	private MatchHudGuard HudGuard55()
+	{
+		lock (miniGate)
+		{
+			if (matchHudGuard55 == null)
+			{
+				matchHudGuard55 = new MatchHudGuard(Read, image + BuildRva45(112837064), image + BuildRva45(64823200), image + BuildRva45(65713904), image);
+			}
+			return matchHudGuard55;
+		}
+	}
+
+	private void PauseHudMaps55()
+	{
+		lock (miniGate)
+		{
+			miniEpoch++;
+			miniMatch = null;
+			miniControl = 0L;
+			tacticalControl51 = 0L;
+			tacticalRetry51 = DateTime.MinValue;
+			miniRetry = DateTime.MinValue;
+		}
+	}
+
+	private void CheckMatchHud55(MatchHudContext expected = null)
+	{
+		if (!UsesCandidateLayout()) return;
+		try { HudGuard55().Verify(expected ?? matchHud55); }
+		catch (MatchHudUnavailableException) { PauseHudMaps55(); throw; }
+	}
+
+	private MatchHudContext SnapshotHud55(string world)
+	{
+		if (!UsesCandidateLayout()) return null;
+		try
+		{
+			if (markerClone55)
+			{
+				CheckMatchHud55();
+				if (matchHud55.World != world) throw new MatchHudUnavailableException(MatchHudOutcome.Retired, "工作读取器的对局身份已切换。");
+				return matchHud55;
+			}
+			return HudGuard55().Resolve(world);
+		}
+		catch (MatchHudUnavailableException) { PauseHudMaps55(); throw; }
+	}
+
+	private string CurrentWorldMatchKey55()
+	{
+		long identity = LocalIdentity58();
+		uint low = (uint)identity;
+		if (low == 0 || (uint)(identity >>> 32) >= 16) throw new Exception("本地玩家身份尚未就绪。");
+		long world = Resolve(markerArena, markerWorldOffset);
+		long players = Resolve(markerArena, U(world + 252));
+		long localPlayer = ResolveLocalPlayer58(markerArena, Resolve(markerArena, U(players + 12)), U(players + 16), identity);
+		return WorldMatchKey55(world, localPlayer, low);
+	}
+
 	private long LocalIdentity58()
 	{
-		ReadMineCamera();
+		ReadMineCameraCore55();
 		long num = Q(cameraCore + 680);
-		if (Q(num) != image + 64683768 || Read(num + 24, 1)[0] != 0)
+		if (Q(num) != image + BuildRva45(64683768) || Read(num + 24, 1)[0] != 0)
 		{
 			throw new Exception("等待可控制玩家进入对局。");
 		}
@@ -250,7 +331,7 @@ internal sealed class PlayerInfoReader : IDisposable
 	{
 		Stopwatch sw = Stopwatch.StartNew();
 		List<PlayerInfoRow> rows = Snapshot();
-		yield return "PASS supported executable; read-only snapshot " + rows.Count + " players, " + sw.ElapsedMilliseconds + "ms; match=" + MatchKey;
+		yield return "PASS read-only snapshot; build=" + BuildStatus + (maintenanceDiagnostics ? " MAINTENANCE DIAGNOSTICS (not build verification); " : "; ") + rows.Count + " players, " + sw.ElapsedMilliseconds + "ms; match=" + MatchKey;
 		foreach (PlayerInfoRow p in rows)
 		{
 			yield return p.Relation + " slot=" + p.Slot + " name=" + p.Name + " MP=" + p.Manpower + " ammo=" + p.Munition + " fuel=" + p.Fuel + " CP=" + p.CP + " pop=" + p.Population + " colour=" + (p.GameColourKnown ? p.GameColour.ToArgb().ToString("x8") : ("UNKNOWN " + ColourError)) + " units=" + UnitNames.Summary(p) + " buildings=" + BuildingNames.Summary(p) + " production=" + ProductionText.Summary(p) + " upgrades=" + p.Upgrades.Count;
@@ -276,7 +357,7 @@ internal sealed class PlayerInfoReader : IDisposable
 		}
 		ReadMineCamera();
 		yield return "PASS camera validated; match guard=" + IsCurrentMatch55();
-		using (PlayerInfoReader worker = new PlayerInfoReader(MarkerContext()))
+		using (PlayerInfoReader worker = new PlayerInfoReader(MarkerContext(), maintenanceDiagnostics))
 		{
 			List<SquadMarker> second = worker.ReadSquadMarkers(MatchKey, rows.SelectMany((PlayerInfoRow playerInfoRow) => playerInfoRow.MarkerSquads));
 			worker.ReadMineCamera();
@@ -364,7 +445,7 @@ internal sealed class PlayerInfoReader : IDisposable
 						continue;
 					}
 					long num8 = Resolve(arena, num7);
-					if (Q(num8) != image + 64568064)
+					if (Q(num8) != image + BuildRva45(64568064))
 					{
 						continue;
 					}
@@ -375,7 +456,7 @@ internal sealed class PlayerInfoReader : IDisposable
 					{
 						uint offset = BitConverter.ToUInt32(array, 8);
 						byte[] array2 = Read(Resolve(arena, offset), 20);
-						if (AirLogic.Cast(array, array2, image, identity, out var x, out var y, out var z, out var dx, out var dz, airDefinition.Point) && Read(num8, 148).SequenceEqual(array) && Read(Resolve(arena, offset), 20).SequenceEqual(array2))
+						if (AirLogic.Cast(array, array2, image, identity, out var x, out var y, out var z, out var dx, out var dz, airDefinition.Point, BuildRva45) && Read(num8, 148).SequenceEqual(array) && Read(Resolve(arena, offset), 20).SequenceEqual(array2))
 						{
 							list.Add(new AirZone
 							{
@@ -506,7 +587,7 @@ internal sealed class PlayerInfoReader : IDisposable
 					{
 						byte[] array5 = Read(Resolve(arena, num17), 68);
 						byte[] ext = Read(num18, 108);
-						AirZone airZone = AirLogic.Rocket(array4, array5, ext, image, arena, value4.Entity, num14, num12);
+						AirZone airZone = AirLogic.Rocket(array4, array5, ext, image, arena, value4.Entity, num14, num12, BuildRva45);
 						if (airZone != null && dictionary.TryGetValue(airZone.Owner, out var value5) && U(value4.Entity + 104) == num14 && U(value4.Entity + 388) == num17 && Read(Resolve(arena, num17) + 16, 16).SequenceEqual(array5.Skip(16).Take(16)))
 						{
 							airZone.Slot = value5.Slot;
@@ -545,8 +626,9 @@ internal sealed class PlayerInfoReader : IDisposable
 						uint num21 = BitConverter.ToUInt32(array4, 388);
 						if (num21 != uint.MaxValue)
 						{
-							byte[] array6 = Read(Resolve(arena, num21), 284);
-							AirZone airZone3 = AirLogic.RecoverStrafe(value4.Path, array4, array6, image, arena, value4.Entity, num14, num12);
+							AirMoverShape moverShape = AirMoverShape45();
+							byte[] array6 = Read(Resolve(arena, num21), AirLogic.MoverReadSize(moverShape));
+							AirZone airZone3 = AirLogic.RecoverStrafe(value4.Path, array4, array6, image, arena, value4.Entity, num14, num12, BuildRva45, moverShape);
 							if (airZone3 != null && U(value4.Entity + 388) == num21 && U(value4.Entity + 104) == num14 && Read(Resolve(arena, num21) + 16, 16).SequenceEqual(array6.Skip(16).Take(16)))
 							{
 								value4.Recovered = airZone3;
@@ -650,7 +732,7 @@ internal sealed class PlayerInfoReader : IDisposable
 		}
 		uint id = BitConverter.ToUInt32(targets, num + 4);
 		uint index2 = BitConverter.ToUInt32(targets, num + 8);
-		long num2 = Resolve(arena, U(image + 98614988));
+		long num2 = Resolve(arena, U(image + BuildRva45(98614988)));
 		uint num3 = U(num2 + ((b == 3) ? 260 : 256));
 		if (num3 == uint.MaxValue)
 		{
@@ -780,7 +862,7 @@ internal sealed class PlayerInfoReader : IDisposable
 					continue;
 				}
 				long num11 = Resolve(arena, num10);
-				if (Q(num11) != image + 64568064)
+				if (Q(num11) != image + BuildRva45(64568064))
 				{
 					continue;
 				}
@@ -824,7 +906,7 @@ internal sealed class PlayerInfoReader : IDisposable
 					}
 				}
 				byte[] array3 = Read(num11, 164);
-				if (BitConverter.ToInt64(array3, 0) != image + 64568064 || BitConverter.ToInt64(array3, 56) != BitConverter.ToInt64(array, 56) || BitConverter.ToUInt32(array3, 8) != num12 || BitConverter.ToUInt32(array3, 12) != num13 || !BarrageLogic.Active(text, array3))
+				if (BitConverter.ToInt64(array3, 0) != image + BuildRva45(64568064) || BitConverter.ToInt64(array3, 56) != BitConverter.ToInt64(array, 56) || BitConverter.ToUInt32(array3, 8) != num12 || BitConverter.ToUInt32(array3, 12) != num13 || !BarrageLogic.Active(text, array3))
 				{
 					throw new InvalidOperationException();
 				}
@@ -1040,8 +1122,9 @@ internal sealed class PlayerInfoReader : IDisposable
 		{
 			return null;
 		}
-		byte[] array = Read(Resolve(arena, num), 284);
-		if (BitConverter.ToInt64(array, 0) != image + 64559016 || BitConverter.ToUInt32(array, 36) + arena != entity || BitConverter.ToUInt32(array, 64) != 1)
+		AirMoverShape moverShape = AirMoverShape45();
+		byte[] array = Read(Resolve(arena, num), AirLogic.MoverReadSize(moverShape));
+		if (BitConverter.ToInt64(array, 0) != image + BuildRva45(64559016) || BitConverter.ToUInt32(array, 36) + arena != entity || BitConverter.ToUInt32(array, 64) != 1)
 		{
 			return null;
 		}
@@ -1066,7 +1149,8 @@ internal sealed class PlayerInfoReader : IDisposable
 			}
 		}
 		string name = (path.Contains("anti_vehicle") ? "斯图卡反坦克巡航" : "斯图卡巡航");
-		Loiter49.Observe(value, b == 4, x, y, z, px, pz, BitConverter.ToSingle(array, 272), BitConverter.ToSingle(array, 280), length, width, entity + ":" + id, name);
+		AirLogic.MoverDirection(array, moverShape, out float headingX, out _, out float headingZ);
+		Loiter49.Observe(value, b == 4, x, y, z, px, pz, headingX, headingZ, length, width, entity + ":" + id, name);
 		return value.Zone;
 	}
 
@@ -1117,12 +1201,20 @@ internal sealed class PlayerInfoReader : IDisposable
 
 	public MineCamera ReadMineCamera()
 	{
+		MineCamera camera = ReadMineCameraCore55();
+		CheckMatchHud55();
+		return camera;
+	}
+
+	// Bootstrap identity/colour reads are enclosed by Snapshot's start/end HUD checks.
+	private MineCamera ReadMineCameraCore55()
+	{
 		try
 		{
-			if (cameraCore == 0 || Q(cameraCore) != image + 64684536)
+			if (cameraCore == 0 || Q(cameraCore) != image + BuildRva45(64684536))
 			{
 				cameraCore = 0L;
-				long num = Q(Q(image + 102260680) + 184);
+				long num = Q(Q(image + BuildRva45(102260680)) + 184);
 				long num2 = Q(num);
 				long num3 = Q(num + 8);
 				if (num3 < num2 || num3 - num2 > 8192)
@@ -1138,7 +1230,7 @@ internal sealed class PlayerInfoReader : IDisposable
 					}
 					try
 					{
-						if (Q(num5 - 40) == image + 64684536)
+						if (Q(num5 - 40) == image + BuildRva45(64684536))
 						{
 							cameraCore = num5 - 40;
 							break;
@@ -1276,7 +1368,7 @@ internal sealed class PlayerInfoReader : IDisposable
 
 	private int MiniPropertyId(long slot)
 	{
-		long num = Q(image + slot);
+		long num = Q(image + BuildRva45(slot));
 		return BitConverter.ToUInt16(Read(num + 184, 2), 0);
 	}
 
@@ -1297,7 +1389,7 @@ internal sealed class PlayerInfoReader : IDisposable
 
 	private MinimapAffine MiniTransform(long transform)
 	{
-		switch (Q(transform) - image)
+		switch (LegacyTransformRva45(Q(transform) - image))
 		{
 		case 64432864L:
 		{
@@ -1365,10 +1457,12 @@ internal sealed class PlayerInfoReader : IDisposable
 
 	private MinimapFrame ReadMinimapLayout(long control)
 	{
-		if (control < 65536 || Q(control) != image + 65511760)
+		if (control < 65536 || Q(control) != image + BuildRva45(65511760))
 		{
 			throw new MinimapRetiredControl("小地图控件已切换。");
 		}
+		MatchHudContext hud = matchHud55;
+		CheckMatchHud55(hud);
 		byte[] array = Read(control, 480);
 		byte[] properties = MiniProperties(control, array);
 		float ww = MiniDimension(properties, MiniPropertyId(111989640L));
@@ -1402,9 +1496,9 @@ internal sealed class PlayerInfoReader : IDisposable
 			}
 			byte[] array2 = Read(num4, 344);
 			long num8 = BitConverter.ToInt64(array2, 0) - image;
-			if (num8 == 65713904)
+			if (num8 == BuildRva45(65713904))
 			{
-				flag = true;
+				flag = hud == null || num4 == hud.Hud;
 			}
 			long num9 = MiniProperty(MiniProperties(num4, array2), 40);
 			if (flag3 && num9 == 0)
@@ -1430,7 +1524,7 @@ internal sealed class PlayerInfoReader : IDisposable
 			}
 			if (num12 == 0)
 			{
-				flag2 = num8 == 64823200;
+				flag2 = num8 == BuildRva45(64823200) && (hud == null || num4 == hud.Root);
 				num6 = BitConverter.ToSingle(array2, 296);
 				num7 = BitConverter.ToSingle(array2, 300);
 			}
@@ -1444,7 +1538,7 @@ internal sealed class PlayerInfoReader : IDisposable
 		{
 			throw new Exception("游戏界面尺寸尚未就绪。");
 		}
-		if (Q(control + 472) != num || Q(control) != image + 65511760)
+		if (Q(control + 472) != num || Q(control) != image + BuildRva45(65511760))
 		{
 			throw new MinimapRetiredControl("小地图已切换，等待重新定位。");
 		}
@@ -1453,12 +1547,14 @@ internal sealed class PlayerInfoReader : IDisposable
 		{
 			throw new Exception("小地图实际位置无效。");
 		}
+		CheckMatchHud55(hud);
 		return minimapFrame;
 	}
 
 	public bool TryReadMinimap(out MinimapFrame frame)
 	{
 		frame = null;
+		CheckMatchHud55();
 		long num;
 		long num2;
 		lock (miniGate)
@@ -1488,6 +1584,7 @@ internal sealed class PlayerInfoReader : IDisposable
 			MinimapStatus = "";
 			return true;
 		}
+		catch (MatchHudUnavailableException) { throw; }
 		catch (Exception ex)
 		{
 			MinimapStatus = ex.Message;
@@ -1542,6 +1639,9 @@ internal sealed class PlayerInfoReader : IDisposable
 		{
 			return;
 		}
+		CheckMatchHud55();
+		MatchHudContext scanHud = matchHud55;
+		string scanMatch = MatchKey;
 		LoadMiniHint52();
 		long epoch;
 		long token;
@@ -1625,7 +1725,7 @@ internal sealed class PlayerInfoReader : IDisposable
 							long val = 0L;
 							try
 							{
-								val = Q(Q(image + 112837064) + 136) & -16777216;
+								val = Q(Q(image + BuildRva45(112837064)) + 136) & -16777216;
 							}
 							catch
 							{
@@ -1635,7 +1735,7 @@ internal sealed class PlayerInfoReader : IDisposable
 						num4 = miniProgress.Cursor;
 					}
 					byte[] array2 = new byte[65536];
-					long num5 = image + 65511760;
+					long num5 = image + BuildRva45(65511760);
 					while (num == 0 && stopwatch.ElapsedMilliseconds < 80 && num2 < 33554432)
 					{
 						lock (miniGate)
@@ -1772,11 +1872,14 @@ internal sealed class PlayerInfoReader : IDisposable
 							break;
 						}
 					}
+					CheckMatchHud55(scanHud);
+					bool acceptedControl = false;
 					lock (miniGate)
 					{
-						if (!miniDisposed && miniEpoch == epoch)
+						if (!miniDisposed && miniEpoch == epoch && miniMatch == scanMatch && MatchKey == scanMatch && object.ReferenceEquals(matchHud55, scanHud))
 						{
 							miniControl = num;
+							acceptedControl = num != 0;
 							if (num != 0)
 							{
 								miniHint = num;
@@ -1790,8 +1893,9 @@ internal sealed class PlayerInfoReader : IDisposable
 							}
 						}
 					}
-					if (num != 0)
+					if (acceptedControl)
 					{
+						CheckMatchHud55(scanHud);
 						SaveMiniHint52(num);
 						CacheMiniRoot53(num);
 					}
@@ -1894,7 +1998,7 @@ internal sealed class PlayerInfoReader : IDisposable
 				long num2 = Q(num + 136);
 				if (num2 == 0)
 				{
-					if (Q(num) == image + 64823200)
+					if (Q(num) == image + BuildRva45(64823200))
 					{
 						miniRoot53 = num;
 						File.WriteAllText(MiniRootPath53, process.Id + "|" + started.ToUniversalTime().Ticks + "|" + image + "|" + num);
@@ -1945,8 +2049,8 @@ internal sealed class PlayerInfoReader : IDisposable
 		}
 		try
 		{
-			long num = Q(Q(image + 112837064) + 136);
-			if (num > 65536 && Q(num) == image + 64823200 && num != miniRoot53)
+			long num = Q(Q(image + BuildRva45(112837064)) + 136);
+			if (num > 65536 && Q(num) == image + BuildRva45(64823200) && num != miniRoot53)
 			{
 				miniRoot53 = num;
 				miniNodes53.Clear();
@@ -1964,7 +2068,7 @@ internal sealed class PlayerInfoReader : IDisposable
 					CacheMiniRoot53(num2);
 				}
 			}
-			if (miniRoot53 == 0 || Q(miniRoot53) != image + 64823200)
+			if (miniRoot53 == 0 || Q(miniRoot53) != image + BuildRva45(64823200))
 			{
 				return 0L;
 			}
@@ -1987,7 +2091,7 @@ internal sealed class PlayerInfoReader : IDisposable
 				}
 				try
 				{
-					if (Q(num3) == image + 65511760)
+					if (Q(num3) == image + BuildRva45(65511760))
 					{
 						lock (miniGate)
 						{
@@ -2067,7 +2171,7 @@ internal sealed class PlayerInfoReader : IDisposable
 				}
 				long num3 = Resolve(markerArena, num2);
 				long num4 = Q(num3);
-				if (Q(num4 + 344) != image + 13437424)
+				if (Q(num4 + 344) != image + BuildRva45(13437424))
 				{
 					continue;
 				}
@@ -2158,7 +2262,7 @@ internal sealed class PlayerInfoReader : IDisposable
 
 	private long ColourConfig()
 	{
-		long num = Q(image + 102261280);
+		long num = Q(image + BuildRva45(102261280));
 		ulong num2 = 14695981039346656037uL;
 		for (int i = 0; i < 4; i++)
 		{
@@ -2205,9 +2309,9 @@ internal sealed class PlayerInfoReader : IDisposable
 	{
 		try
 		{
-			if (cameraCore == 0 || Q(cameraCore) != image + 64684536)
+			if (cameraCore == 0 || Q(cameraCore) != image + BuildRva45(64684536))
 			{
-				ReadMineCamera();
+				ReadMineCameraCore55();
 			}
 			long num = Q(cameraCore + 680);
 			long num2 = ColourConfig();
@@ -2283,6 +2387,7 @@ internal sealed class PlayerInfoReader : IDisposable
 
 	public MarkerReadContext MarkerContext()
 	{
+		if (UsesCandidateLayout()) CheckMarkerWorld(MatchKey);
 		MarkerReadContext markerReadContext = new MarkerReadContext();
 		markerReadContext.Pid = process.Id;
 		markerReadContext.Image = image;
@@ -2290,11 +2395,30 @@ internal sealed class PlayerInfoReader : IDisposable
 		markerReadContext.Match = MatchKey;
 		markerReadContext.Arena = markerArena;
 		markerReadContext.WorldOffset = markerWorldOffset;
+		markerReadContext.Hud = matchHud55;
 		return markerReadContext;
 	}
 
-	internal PlayerInfoReader(MarkerReadContext context)
+#if MAINTENANCE_DIAGNOSTICS
+	// Explicit maintenance-only entry points; never compiled into the normal client.
+	internal static PlayerInfoReader OpenForMaintenanceDiagnostics()
 	{
+		return new PlayerInfoReader(true);
+	}
+
+	internal static PlayerInfoReader OpenForMaintenanceDiagnostics(MarkerReadContext context)
+	{
+		return new PlayerInfoReader(context, true);
+	}
+#endif
+
+	internal PlayerInfoReader(MarkerReadContext context) : this(context, false)
+	{
+	}
+
+	private PlayerInfoReader(MarkerReadContext context, bool maintenanceDiagnostics)
+	{
+		this.maintenanceDiagnostics = maintenanceDiagnostics;
 		process = Process.GetProcessById(context.Pid);
 		try
 		{
@@ -2304,6 +2428,11 @@ internal sealed class PlayerInfoReader : IDisposable
 			{
 				throw new Exception("游戏进程已变化。");
 			}
+			GameVersion45.GameBuild detected;
+			BuildStatus = GameVersion45.Assess(process.MainModule.FileName, out detected);
+			detectedBuild = detected;
+			GameVersion45.RequireVerified(BuildStatus, maintenanceDiagnostics);
+			ValidateLayout();
 			if (!LicenseGate60.Matches(process.Id, started))
 			{
 				throw new Exception("授权验证尚未完成。");
@@ -2313,10 +2442,18 @@ internal sealed class PlayerInfoReader : IDisposable
 			{
 				throw new Exception("无法只读连接标记数据。");
 			}
+			markerClone55 = true;
+			matchHud55 = context.Hud;
+			if (UsesCandidateLayout()) HudGuard55().BindExpected(context.Hud);
 			MatchKey = context.Match;
 			ResetMinimapForMatch(context.Match);
 			CaptureMarkerWorld(context.Arena, context.WorldOffset);
 			CheckMarkerWorld(context.Match);
+			if (UsesCandidateLayout() && ProductMatchKey55(CurrentWorldMatchKey55(), matchHud55) != context.Match)
+			{
+				throw new MatchHudUnavailableException(MatchHudOutcome.Retired, "工作读取器的对局上下文已切换。");
+			}
+			CheckMatchHud55();
 		}
 		catch
 		{
@@ -2325,8 +2462,56 @@ internal sealed class PlayerInfoReader : IDisposable
 		}
 	}
 
-	public PlayerInfoReader()
+	// The layout table follows the fingerprint that was actually detected for this process:
+	// the 52426 build re-located every role, so legacy addresses must never be applied
+	// there, and the legacy build must never be handed candidate addresses.
+	private bool UsesCandidateLayout()
 	{
+		if (detectedBuild == GameVersion45.GameBuild.Build52426)
+		{
+			return true;
+		}
+		if (detectedBuild == GameVersion45.GameBuild.Build2406)
+		{
+			return false;
+		}
+		// Maintenance diagnostics must also select an explicitly registered build layout.
+		throw new InvalidOperationException("游戏版本未登记布局，结构依赖功能已暂停。请等待版本适配。");
+	}
+
+	private void ValidateLayout()
+	{
+		if (UsesCandidateLayout())
+		{
+			GameLayout52426.ValidateDependencies();
+		}
+	}
+
+	private AirMoverShape AirMoverShape45()
+	{
+		if (UsesCandidateLayout()) return AirMoverShape.Candidate52426_184;
+		return AirMoverShape.Legacy284;
+	}
+
+	private long BuildRva45(long legacy)
+	{
+		if (UsesCandidateLayout()) return GameLayout52426.Resolve(legacy);
+		return legacy;
+	}
+
+	private long LegacyTransformRva45(long actual)
+	{
+		if (UsesCandidateLayout()) return GameLayout52426.LegacyTransform(actual);
+		return actual;
+	}
+
+	public PlayerInfoReader() : this(false)
+	{
+	}
+
+	private PlayerInfoReader(bool maintenanceDiagnostics)
+	{
+		this.maintenanceDiagnostics = maintenanceDiagnostics;
 		Process[] processesByName = Process.GetProcessesByName("RelicCoH3");
 		if (processesByName.Length != 1)
 		{
@@ -2342,7 +2527,11 @@ internal sealed class PlayerInfoReader : IDisposable
 		{
 			started = this.process.StartTime;
 			image = this.process.MainModule.BaseAddress.ToInt64();
-			GameVersion45.Assess(this.process.MainModule.FileName);
+			GameVersion45.GameBuild detected;
+			BuildStatus = GameVersion45.Assess(this.process.MainModule.FileName, out detected);
+			detectedBuild = detected;
+			GameVersion45.RequireVerified(BuildStatus, maintenanceDiagnostics);
+			ValidateLayout();
 			if (!LicenseGate60.Matches(this.process.Id, started))
 			{
 				throw new Exception("授权验证尚未完成。");
@@ -2352,7 +2541,7 @@ internal sealed class PlayerInfoReader : IDisposable
 			{
 				throw new Exception("无法只读连接游戏。请以与游戏相同的权限运行。");
 			}
-			long num = image + 112918560 + 840;
+			long num = image + BuildRva45(112918560) + 840;
 			long num2 = Q(num + 32);
 			long num3 = Q(num + 40);
 			if (num3 < num2 || num3 - num2 > 6144 || (num3 - num2) % 48 != 0)
@@ -2368,7 +2557,7 @@ internal sealed class PlayerInfoReader : IDisposable
 					resources[key] = (int)num5;
 				}
 			}
-			long num6 = image + 112918560 + 560;
+			long num6 = image + BuildRva45(112918560) + 560;
 			long num7 = Q(num6 + 32);
 			long num8 = Q(num6 + 40);
 			if (num8 < num7 || num8 - num7 > 12288 || (num8 - num7) % 48 != 0)
@@ -2491,12 +2680,12 @@ internal sealed class PlayerInfoReader : IDisposable
 	private long Component(long entity, long lookup)
 	{
 		int num = BitConverter.ToUInt16(Read(entity + 76, 2), 0);
-		int num2 = Read(image + lookup + num * 128, 1)[0];
+		int num2 = Read(image + BuildRva45(lookup) + num * 128, 1)[0];
 		if (num2 == 255)
 		{
 			return 0L;
 		}
-		long num3 = Q(image + 102260448) + U(entity + 64) + num2 * 24;
+		long num3 = Q(image + BuildRva45(102260448)) + U(entity + 64) + num2 * 24;
 		if ((Read(num3 + 16, 1)[0] & 1) == 0)
 		{
 			return 0L;
@@ -2521,7 +2710,7 @@ internal sealed class PlayerInfoReader : IDisposable
 		case 5u:
 		case 6u:
 		case 7u:
-			return Q(image + 102260400 + num4 * 16) + (uint)num5;
+			return Q(image + BuildRva45(102260400) + num4 * 16) + (uint)num5;
 		}
 	}
 
@@ -2707,8 +2896,8 @@ internal sealed class PlayerInfoReader : IDisposable
 		{
 			throw new Exception("等待进入对局。");
 		}
-		long num3 = Q(image + 102260400);
-		uint num4 = U(image + 98614988);
+		long num3 = Q(image + BuildRva45(102260400));
+		uint num4 = U(image + BuildRva45(98614988));
 		long num5 = Resolve(num3, num4);
 		long num6 = Resolve(num3, U(num5 + 252));
 		uint num7 = U(num6 + 16);
@@ -2720,7 +2909,9 @@ internal sealed class PlayerInfoReader : IDisposable
 		long num9 = Resolve(num3, num8);
 		long num10 = Resolve(num3, U(num5 + 284));
 		long num11 = ResolveLocalPlayer58(num3, num9, num7, num);
-		string text = process.Id + ":" + started.Ticks + ":" + num5 + ":" + num11 + ":" + num2;
+		string worldKey = WorldMatchKey55(num5, num11, num2);
+		MatchHudContext snapshotHud = SnapshotHud55(worldKey);
+		string text = ProductMatchKey55(worldKey, snapshotHud);
 		if (MatchKey != text)
 		{
 			blueprintNames.Clear();
@@ -2783,7 +2974,7 @@ internal sealed class PlayerInfoReader : IDisposable
 			ReadEntities(num3, num14, playerInfoRow);
 			list.Add(playerInfoRow);
 		}
-		if (U(image + 98614988) != num4 || Q(image + 102260400) != num3 || U(num6 + 16) != num7 || U(num6 + 12) != num8 || LocalIdentity58() != num || Q(num11 + 8) != num)
+		if (U(image + BuildRva45(98614988)) != num4 || Q(image + BuildRva45(102260400)) != num3 || U(num6 + 16) != num7 || U(num6 + 12) != num8 || LocalIdentity58() != num || Q(num11 + 8) != num)
 		{
 			throw new Exception("对局已切换，等待重新读取。");
 		}
@@ -2792,6 +2983,8 @@ internal sealed class PlayerInfoReader : IDisposable
 			throw new Exception("未在对局中找到自己。");
 		}
 		ReadPlayerColours(list, num3, num5);
+		CheckMatchHud55(snapshotHud);
+		matchHud55 = snapshotHud;
 		ResetMinimapForMatch(text);
 		MatchKey = text;
 		CaptureMarkerWorld(num3, num4);
@@ -2855,7 +3048,7 @@ internal sealed class PlayerInfoReader : IDisposable
 			ProductionJob productionJob = null;
 			ProductionJob productionJob2 = null;
 			float? num11 = null;
-			if (!vehicle && Q(num10) == image + 64584880)
+			if (!vehicle && Q(num10) == image + BuildRva45(64584880))
 			{
 				long num12 = Q(num10 + 16);
 				string text = BlueprintName(num12);
@@ -2864,12 +3057,12 @@ internal sealed class PlayerInfoReader : IDisposable
 					throw new Exception("生产单位名称正在更新。");
 				}
 				productionJob = new ProductionJob(text, BitConverter.ToSingle(value, 48), BitConverter.ToSingle(value, 52), num5 + ":" + BitConverter.ToUInt32(value, 4));
-				if (Q(num10 + 16) != num12 || Q(num10) != image + 64584880)
+				if (Q(num10 + 16) != num12 || Q(num10) != image + BuildRva45(64584880))
 				{
 					throw new Exception("生产单位正在更新。");
 				}
 			}
-			long num13 = image + (vehicle ? 64557040 : 64557304);
+			long num13 = image + BuildRva45(vehicle ? 64557040 : 64557304);
 			if (Q(num10) == num13)
 			{
 				long num14 = Q(num10 + 16);
@@ -2958,7 +3151,7 @@ internal sealed class PlayerInfoReader : IDisposable
 				continue;
 			}
 			long num8 = Resolve(arena, num7);
-			if (Q(num8) != image + 64568064)
+			if (Q(num8) != image + BuildRva45(64568064))
 			{
 				continue;
 			}
@@ -3140,7 +3333,7 @@ internal sealed class PlayerInfoReader : IDisposable
 				}
 				long num12 = Resolve(arena, num11);
 				long num13 = Component(entity, 103319634L);
-				if (num13 == 0 || Q(num13) != image + 65307976)
+				if (num13 == 0 || Q(num13) != image + BuildRva45(65307976))
 				{
 					continue;
 				}
@@ -3159,7 +3352,7 @@ internal sealed class PlayerInfoReader : IDisposable
 					continue;
 				}
 				byte[] array4 = Read(num12, 80);
-				if (ProjectileLogic.Decode(array2, array4, array3, image, arena, entity, num8, num6, out var impact, ProjectileLogic.Mortar(text2) || AttackCatalogue67.Arc(text2) || text4 != null, text3 != null, flag) && U(entity + 104) == num8 && U(entity + 108) == num6 && Q(entity + 56) == value4.Blueprint && U(entity + 388) == num11 && Read(num12 + 16, 16).SequenceEqual(array4.Skip(16).Take(16)) && (value4.SourceKey == 0 || value4.SourceKey == impact.SourceKey))
+				if (ProjectileLogic.Decode(array2, array4, array3, image, arena, entity, num8, num6, out var impact, ProjectileLogic.Mortar(text2) || AttackCatalogue67.Arc(text2) || text4 != null, text3 != null, flag, BuildRva45) && U(entity + 104) == num8 && U(entity + 108) == num6 && Q(entity + 56) == value4.Blueprint && U(entity + 388) == num11 && Read(num12 + 16, 16).SequenceEqual(array4.Skip(16).Take(16)) && (value4.SourceKey == 0 || value4.SourceKey == impact.SourceKey))
 				{
 					value4.SourceKey = impact.SourceKey;
 					if (flag)
@@ -3230,17 +3423,11 @@ internal sealed class PlayerInfoReader : IDisposable
 				return false;
 			}
 			CheckMarkerWorld(MatchKey);
-			long num = LocalIdentity58();
-			uint num2 = (uint)num;
-			if (num2 == 0 || (uint)(num >>> 32) >= 16)
-			{
-				return false;
-			}
-			long num3 = Resolve(markerArena, markerWorldOffset);
-			long num4 = Resolve(markerArena, U(num3 + 252));
-			long num5 = ResolveLocalPlayer58(markerArena, Resolve(markerArena, U(num4 + 12)), U(num4 + 16), num);
-			return MatchKey == process.Id + ":" + started.Ticks + ":" + num3 + ":" + num5 + ":" + num2;
+			string worldKey = CurrentWorldMatchKey55();
+			CheckMatchHud55();
+			return MatchKey == ProductMatchKey55(worldKey, matchHud55);
 		}
+		catch (MatchHudUnavailableException) { throw; }
 		catch
 		{
 			return false;
@@ -3280,10 +3467,11 @@ internal sealed class PlayerInfoReader : IDisposable
 
 	private void CheckMarkerWorld(string match)
 	{
-		if (process.HasExited || MatchKey != match || markerArena == 0 || Q(image + 102260400) != markerArena || U(image + 98614988) != markerWorldOffset)
+		if (process.HasExited || MatchKey != match || markerArena == 0 || Q(image + BuildRva45(102260400)) != markerArena || U(image + BuildRva45(98614988)) != markerWorldOffset)
 		{
 			throw new Exception("对局已切换，清空班组标记。");
 		}
+		CheckMatchHud55();
 	}
 
 	public List<SquadMarker> ReadSquadMarkers(string match, IEnumerable<SquadMarkerSource> sources)
@@ -3349,6 +3537,8 @@ internal sealed class PlayerInfoReader : IDisposable
 
 	public List<SupportCommand49> ReadSupport49(IEnumerable<PlayerInfoRow> rows)
 	{
+		string match = MatchKey;
+		if (UsesCandidateLayout()) CheckMarkerWorld(match);
 		List<SupportCommand49> list = new List<SupportCommand49>();
 		foreach (PlayerInfoRow row in rows)
 		{
@@ -3374,12 +3564,12 @@ internal sealed class PlayerInfoReader : IDisposable
 						continue;
 					}
 					long num5 = Resolve(markerArena, num4);
-					if (Q(num5) != image + 64568064)
+					if (Q(num5) != image + BuildRva45(64568064))
 					{
 						continue;
 					}
 					byte[] array = Read(num5, 164);
-					if (!SupportCatalogue49.Active(array, image, row.PlayerIdentity))
+					if (!SupportCatalogue49.Active(array, image, row.PlayerIdentity, BuildRva45))
 					{
 						continue;
 					}
@@ -3414,6 +3604,7 @@ internal sealed class PlayerInfoReader : IDisposable
 				throw new Exception("战斗群技能列表正在变化。");
 			}
 		}
+		if (UsesCandidateLayout()) CheckMarkerWorld(match);
 		return list;
 	}
 
@@ -3487,13 +3678,13 @@ internal sealed class PlayerInfoReader : IDisposable
 			{
 				return 0L;
 			}
-			if (Q(num) == image + 65713904)
+			if (Q(num) == image + BuildRva45(65713904))
 			{
 				break;
 			}
 			num = Q(num + 136);
 		}
-		if (num == 0 || Q(num) != image + 65713904)
+		if (num == 0 || Q(num) != image + BuildRva45(65713904))
 		{
 			return 0L;
 		}
@@ -3511,11 +3702,11 @@ internal sealed class PlayerInfoReader : IDisposable
 			try
 			{
 				long num3 = Q(num2);
-				if (num3 == image + 65513472)
+				if (num3 == image + BuildRva45(65513472))
 				{
 					return num2;
 				}
-				if (num3 == image + 65511760)
+				if (num3 == image + BuildRva45(65511760))
 				{
 					continue;
 				}
@@ -3534,10 +3725,12 @@ internal sealed class PlayerInfoReader : IDisposable
 	private MinimapFrame ReadTacticalLayout51(long control, out bool visible)
 	{
 		visible = false;
-		if (control < 65536 || Q(control) != image + 65513472)
+		if (control < 65536 || Q(control) != image + BuildRva45(65513472))
 		{
 			throw new MinimapRetiredControl("战术地图控件已切换。");
 		}
+		MatchHudContext hud = matchHud55;
+		CheckMatchHud55(hud);
 		byte[] array = Read(control, 552);
 		byte[] properties = MiniProperties(control, array);
 		float ww = MiniDimension(properties, MiniPropertyId(111989640L));
@@ -3575,9 +3768,9 @@ internal sealed class PlayerInfoReader : IDisposable
 			{
 				flag = true;
 			}
-			if (num7 == 65713904)
+			if (num7 == BuildRva45(65713904))
 			{
-				flag2 = true;
+				flag2 = hud == null || num4 == hud.Hud;
 			}
 			flag4 &= TacticalVisible51(BitConverter.ToUInt32(array2, 192));
 			long num8 = MiniProperty(MiniProperties(num4, array2), 40);
@@ -3603,7 +3796,7 @@ internal sealed class PlayerInfoReader : IDisposable
 			}
 			if (num11 == 0)
 			{
-				flag3 = num7 == 64823200;
+				flag3 = num7 == BuildRva45(64823200) && (hud == null || num4 == hud.Root);
 				num5 = BitConverter.ToSingle(array2, 296);
 				num6 = BitConverter.ToSingle(array2, 300);
 			}
@@ -3617,7 +3810,7 @@ internal sealed class PlayerInfoReader : IDisposable
 		{
 			throw new Exception("战术地图窗口尺寸未就绪。");
 		}
-		if (Q(control + 528) != num || Q(control) != image + 65513472)
+		if (Q(control + 528) != num || Q(control) != image + BuildRva45(65513472))
 		{
 			throw new MinimapRetiredControl("战术地图正在切换。");
 		}
@@ -3626,6 +3819,7 @@ internal sealed class PlayerInfoReader : IDisposable
 		{
 			throw new Exception("战术地图变换无效。");
 		}
+		CheckMatchHud55(hud);
 		visible = flag4;
 		return minimapFrame;
 	}
@@ -3699,6 +3893,7 @@ internal sealed class PlayerInfoReader : IDisposable
 			frame = minimapFrame;
 			return true;
 		}
+		catch (MatchHudUnavailableException) { throw; }
 		catch (Exception ex)
 		{
 			TacticalStatus51 = ex.Message;

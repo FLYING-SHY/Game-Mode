@@ -1,0 +1,4 @@
+.dotnet-home/
+.packages/
+runs/**/bin/
+runs/**/obj/

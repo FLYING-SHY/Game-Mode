@@ -1,0 +1,43 @@
+﻿{
+    "utc":  "2026-11-22T01:40:16.9101299Z",
+    "status":  "PASS_build_and_gate_fixture_only",
+    "runtime":  "10.0.404",
+    "results":  [
+                    {
+                        "client":  "SkyEye",
+                        "mode":  "Release",
+                        "buildExitCode":  0,
+                        "gateExitCode":  0,
+                        "executable":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\scene-publication\\clients\\SkyEye\\Release\\bin\\天穹之眼-自有授权版-v0.60.8.exe",
+                        "sha256":  "083F666D082A626300DA421DAEE0C0F0AD19901FBB6F507870205D65474E91A7"
+                    },
+                    {
+                        "client":  "SkyEye",
+                        "mode":  "Maintenance",
+                        "buildExitCode":  0,
+                        "gateExitCode":  0,
+                        "executable":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\scene-publication\\clients\\SkyEye\\Maintenance\\bin\\天穹之眼-自有授权版-v0.60.8.exe",
+                        "sha256":  "9A4E5A81F0849DCCD10325E015A248BBB1138A44AD635FF9CF6A8081BDAF84E1"
+                    },
+                    {
+                        "client":  "Simple",
+                        "mode":  "Release",
+                        "buildExitCode":  0,
+                        "gateExitCode":  0,
+                        "executable":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\scene-publication\\clients\\Simple\\Release\\bin\\COH3工具.exe",
+                        "sha256":  "2CB5F6D3623A388B497182FA9C6454131B03291EC62708AC0B3F1745ABA57EC4"
+                    },
+                    {
+                        "client":  "Simple",
+                        "mode":  "Maintenance",
+                        "buildExitCode":  0,
+                        "gateExitCode":  0,
+                        "executable":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\scene-publication\\clients\\Simple\\Maintenance\\bin\\COH3工具.exe",
+                        "sha256":  "DFD7823D78367AF309A417B591B5299F7034F2EB8A8147857F1E84A9B07E1BAD"
+                    }
+                ],
+    "gui":  "not_run",
+    "realGame":  "not_run",
+    "protected":  "not_built",
+    "delivery":  "not_updated"
+}

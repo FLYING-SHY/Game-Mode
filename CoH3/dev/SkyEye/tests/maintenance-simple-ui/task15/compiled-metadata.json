@@ -1,0 +1,34 @@
+{
+    "status":  "PASS_reflection_only",
+    "assembly":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-simple-ui\\task15\\bin\\Release\\net48\\COH3SimpleTool.Maintenance.UI.Unverified.exe",
+    "assemblySha256":  "A169466A2CCF6B37354CE04562CE31C89CA7FA4AC9941F299E545B8BC65F6563",
+    "entry":  "CoH3MemoryTool.SimpleProgram",
+    "peKind":  "ILOnly, PE32Plus",
+    "machine":  "AMD64",
+    "imageRuntimeVersion":  "v4.0.30319",
+    "resources":  [
+                      "CoH3.BarrageCatalogue.tsv",
+                      "CoH3.InterfaceIcon",
+                      "names-zh-hans.tsv"
+                  ],
+    "references":  [
+                       "mscorlib",
+                       "System",
+                       "System.Configuration",
+                       "System.Core",
+                       "System.Drawing",
+                       "System.Management",
+                       "System.Net.Http",
+                       "System.Security",
+                       "System.Web.Extensions",
+                       "System.Windows.Forms"
+                   ],
+    "maintenanceFactorySignatures":  [
+                                         "CoH3MemoryTool.PlayerInfoReader OpenForMaintenanceDiagnostics()",
+                                         "CoH3MemoryTool.PlayerInfoReader OpenForMaintenanceDiagnostics(CoH3MemoryTool.MarkerReadContext)"
+                                     ],
+    "mainExecuted":  false,
+    "guiRun":  "not_run",
+    "authorizationRun":  "not_run",
+    "gameAttach":  "not_run"
+}

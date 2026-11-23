@@ -1,0 +1,9 @@
+﻿{
+    "maintenanceOnly":  true,
+    "readerStartedUtc":  "2026-11-21T01:50:08.1946411Z",
+    "readerExe":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\maintenance-live\\bin\\Release\\net48\\SkyEye.Maintenance.Live.exe",
+    "gamePid":  31572,
+    "nativeDirection":  "client950,430_to950,230",
+    "readerExeSha256":  "BB3D856A2E5683F4C14492E8A9FD385A47204010C93D61CE1BB56798D61EA564",
+    "readerPid":  28068
+}

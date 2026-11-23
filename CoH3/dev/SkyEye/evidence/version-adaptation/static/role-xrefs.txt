@@ -1,0 +1,415 @@
+CLASS .?AVTimedAbility@@
+XREF 0x7646d7
+0x7646d7 lea rax, [rip + 0x3630362]
+0x7646de mov qword ptr [r14], rax
+0x7646e1 mov word ptr [r14 + 0xa0], bp
+0x7646e9 test r14, r14
+0x7646ec je 0x14076472c
+0x7646ee mov rax, qword ptr gs:[0x58]
+0x7646f7 mov edx, 0x40
+0x7646fc mov rcx, qword ptr [rax]
+0x7646ff mov eax, dword ptr [rdx + rcx]
+0x764702 lea rcx, [rip + 0x5a23737]
+0x764709 sub r14d, dword ptr [rcx + rax*8]
+0x76470d mov dword ptr [r15], r14d
+0x764710 mov rbx, qword ptr [rsp + 0x60]
+0x764715 mov rax, r15
+0x764718 mov rbp, qword ptr [rsp + 0x68]
+0x76471d mov rsi, qword ptr [rsp + 0x70]
+0x764722 add rsp, 0x40
+0x764726 pop r15
+0x764728 pop r14
+0x76472a pop rdi
+0x76472b ret 
+0x76472c mov dword ptr [r15], 0xffffffff
+0x764733 jmp 0x140764710
+CLASS .?AVTimedAbility@@
+XREF 0x76561a
+0x76561a lea rax, [rip + 0x362f41f]
+0x765621 mov qword ptr [r14], rax
+0x765624 mov word ptr [r14 + 0xa0], bp
+0x76562c test r14, r14
+0x76562f je 0x14076566f
+0x765631 mov rax, qword ptr gs:[0x58]
+0x76563a mov edx, 0x40
+0x76563f mov rcx, qword ptr [rax]
+0x765642 mov eax, dword ptr [rdx + rcx]
+0x765645 lea rcx, [rip + 0x5a227f4]
+0x76564c sub r14d, dword ptr [rcx + rax*8]
+0x765650 mov dword ptr [r15], r14d
+0x765653 mov rbx, qword ptr [rsp + 0x60]
+0x765658 mov rax, r15
+0x76565b mov rbp, qword ptr [rsp + 0x68]
+0x765660 mov rsi, qword ptr [rsp + 0x70]
+0x765665 add rsp, 0x40
+0x765669 pop r15
+0x76566b pop r14
+0x76566d pop rdi
+0x76566e ret 
+0x76566f mov dword ptr [r15], 0xffffffff
+0x765676 jmp 0x140765653
+CLASS .?AVTimedAbility@@
+XREF 0x76568f
+0x76568f lea rax, [rip + 0x362f3aa]
+0x765696 mov qword ptr [rcx], rax
+0x765699 call 0x140906f70
+0x76569e mov rcx, rbx
+0x7656a1 call 0x140906d80
+0x7656a6 nop 
+0x7656a7 test dil, 1
+0x7656ab jne 0x1427e3f26
+0x7656b1 mov rax, rbx
+0x7656b4 mov rbx, qword ptr [rsp + 0x30]
+0x7656b9 add rsp, 0x20
+0x7656bd pop rdi
+0x7656be ret 
+CLASS .?AVTimedAbility@@
+XREF 0x904e10
+0x904e10 lea rax, [rip + 0x348fc29]
+0x904e17 mov qword ptr [rbx], rax
+0x904e1a mov rcx, rbx
+0x904e1d call 0x140906f70
+0x904e22 mov rcx, rbx
+0x904e25 call 0x140906d80
+0x904e2a nop 
+0x904e2b mov rdx, rdi
+0x904e2e xor ecx, ecx
+0x904e30 call 0x140502580
+0x904e35 jmp 0x140904c62
+0x904e3a mov rcx, qword ptr [rsp + 0x78]
+0x904e3f mov qword ptr [rsp + 0x30], rcx
+0x904e44 mov qword ptr [rsp + 0x28], rax
+0x904e49 mov qword ptr [rsp + 0x20], r10
+0x904e4e lea rcx, [rbp - 0x40]
+0x904e52 call 0x141330da0
+0x904e57 mov rdx, rax
+0x904e5a lea rcx, [rbp - 0x48]
+0x904e5e call 0x140906300
+0x904e63 nop 
+0x904e64 lea rcx, [rbp - 0x40]
+0x904e68 call 0x140906380
+0x904e6d nop 
+0x904e6e jmp 0x140904bca
+CLASS .?AVMoverDynamics@@
+XREF 0x7079b9
+0x7079b9 lea rax, [rip + 0x368ad20]
+0x7079c0 mov qword ptr [rcx], rax
+0x7079c3 cmp dword ptr [rcx + 0x40], 0
+0x7079c7 jne 0x1407079cf
+0x7079c9 call 0x140707230
+0x7079ce nop 
+0x7079cf lea rcx, [rbx + 0xb4]
+0x7079d6 call 0x140704430
+0x7079db nop 
+0x7079dc lea rcx, [rbx + 0xb0]
+0x7079e3 call 0x1411f0680
+0x7079e8 nop 
+0x7079e9 lea rcx, [rbx + 0xac]
+0x7079f0 call 0x140709060
+0x7079f5 nop 
+0x7079f6 lea rcx, [rbx + 0x78]
+0x7079fa call 0x1407758c0
+0x7079ff nop 
+0x707a00 lea rax, [rip + 0x36b2511]
+0x707a07 mov qword ptr [rbx], rax
+0x707a0a add rsp, 0x20
+0x707a0e pop rbx
+0x707a0f ret 
+CLASS .?AVMoverDynamics@@
+XREF 0x707a9d
+0x707a9d lea rax, [rip + 0x368ac3c]
+0x707aa4 mov qword ptr [rdi], rax
+0x707aa7 mov dword ptr [rdi + 0x40], ebx
+0x707aaa lea rcx, [rdi + 0x48]
+0x707aae call 0x140707b90
+0x707ab3 nop 
+0x707ab4 xor eax, eax
+0x707ab6 mov qword ptr [rdi + 0xa0], rax
+0x707abd mov byte ptr [rdi + 0xa8], 1
+0x707ac4 mov qword ptr [rdi + 0xac], 0xffffffffffffffff
+0x707acf mov dword ptr [rdi + 0xb4], 0xffffffff
+0x707ad9 mov rcx, qword ptr [rbp + 0x38]
+0x707add call 0x140b285e0
+0x707ae2 mov r15, rax
+0x707ae5 mov rcx, qword ptr [rbp + 0x38]
+0x707ae9 test rax, rax
+0x707aec je 0x1427d0096
+0x707af2 mov sil, 1
+0x707af5 call 0x140d6b330
+0x707afa mov rbx, rax
+0x707afd mov r8, r15
+CLASS .?AVEntityUpgradeProductionItem@@
+XREF 0x54c7c8
+0x54c7c8 lea rax, [rip + 0x3845991]
+0x54c7cf mov qword ptr [rcx], rax
+0x54c7d2 jmp 0x14054c791
+0x54c7d4 sub eax, 1
+0x54c7d7 je 0x14054c818
+0x54c7d9 cmp eax, 1
+0x54c7dc jne 0x14054c748
+0x54c7e2 mov ecx, 0x18
+0x54c7e7 call 0x1422ba6b8
+0x54c7ec mov rcx, rax
+0x54c7ef mov qword ptr [rsp + 0x20], rax
+0x54c7f4 mov eax, dword ptr [rip + 0x653df6e]
+0x54c7fa inc eax
+0x54c7fc mov dword ptr [rip + 0x653df66], eax
+0x54c802 mov dword ptr [rcx + 8], eax
+0x54c805 mov qword ptr [rcx + 0x10], rdi
+0x54c809 lea rax, [rip + 0x390a7f8]
+0x54c810 mov qword ptr [rcx], rax
+0x54c813 jmp 0x14054c791
+0x54c818 mov ecx, 0x18
+0x54c81d call 0x1422ba6b8
+0x54c822 mov rcx, rax
+0x54c825 mov qword ptr [rsp + 0x20], rax
+CLASS .?AVEntityUpgradeProductionItem@@
+XREF 0x6e66e2
+0x6e66e2 lea r13, [rip + 0x36aba77]
+0x6e66e9 mov r12d, 0x40
+0x6e66ef mov rax, qword ptr [r14 + 0x20]
+0x6e66f3 mov rbx, qword ptr [rax + rdi*8]
+0x6e66f7 mov edx, 0x18
+0x6e66fc xor ecx, ecx
+0x6e66fe call 0x1405027f0
+0x6e6703 mov r8, rax
+0x6e6706 mov ecx, dword ptr [rip + 0x63a405c]
+0x6e670c inc ecx
+0x6e670e mov dword ptr [rip + 0x63a4054], ecx
+0x6e6714 mov dword ptr [rax + 8], ecx
+0x6e6717 mov qword ptr [rax + 0x10], rbx
+0x6e671b mov qword ptr [rax], r13
+0x6e671e test rax, rax
+0x6e6721 je 0x1427c8f07
+0x6e6727 mov rax, qword ptr gs:[0x58]
+0x6e6730 mov rcx, qword ptr [rax]
+0x6e6733 mov eax, dword ptr [r12 + rcx]
+0x6e6737 lea rcx, [rip + 0x5aa1702]
+0x6e673e sub r8d, dword ptr [rcx + rax*8]
+0x6e6742 mov dword ptr [rbp - 0x3c], r8d
+CLASS .?AVEntityUpgradeProductionItem@@
+XREF 0x6e725e
+0x6e725e lea r13, [rip + 0x36aaefb]
+0x6e7265 mov r12d, 0x40
+0x6e726b mov rax, qword ptr [r14 + 0x20]
+0x6e726f mov rbx, qword ptr [rax + rsi*8]
+0x6e7273 mov edx, 0x18
+0x6e7278 xor ecx, ecx
+0x6e727a call 0x1405027f0
+0x6e727f mov r8, rax
+0x6e7282 mov ecx, dword ptr [rip + 0x63a34e0]
+0x6e7288 inc ecx
+0x6e728a mov dword ptr [rip + 0x63a34d8], ecx
+0x6e7290 mov dword ptr [rax + 8], ecx
+0x6e7293 mov qword ptr [rax + 0x10], rbx
+0x6e7297 mov qword ptr [rax], r13
+0x6e729a test rax, rax
+0x6e729d je 0x1427c9688
+0x6e72a3 mov rax, qword ptr gs:[0x58]
+0x6e72ac mov rcx, qword ptr [rax]
+0x6e72af mov eax, dword ptr [r12 + rcx]
+0x6e72b3 lea rcx, [rip + 0x5aa0b86]
+0x6e72ba sub r8d, dword ptr [rcx + rax*8]
+0x6e72be mov dword ptr [rbp - 0x3c], r8d
+CLASS .?AVEntityUpgradeProductionItem@@
+XREF 0x6e74ea
+0x6e74ea lea r12, [rip + 0x36aac6f]
+0x6e74f1 mov r15d, 0x40
+0x6e74f7 lea r13, [rip + 0x5aa0942]
+0x6e74fe mov rax, qword ptr [rsi + 0x20]
+0x6e7502 mov rdi, qword ptr [rax + rbp*8]
+0x6e7506 mov edx, 0x18
+0x6e750b xor ecx, ecx
+0x6e750d call 0x1405027f0
+0x6e7512 mov r8, rax
+0x6e7515 mov ecx, dword ptr [rip + 0x63a324d]
+0x6e751b inc ecx
+0x6e751d mov dword ptr [rip + 0x63a3245], ecx
+0x6e7523 mov dword ptr [rax + 8], ecx
+0x6e7526 mov qword ptr [rax + 0x10], rdi
+0x6e752a mov qword ptr [rax], r12
+0x6e752d test rax, rax
+0x6e7530 je 0x1406e75a8
+0x6e7532 mov rax, qword ptr gs:[0x58]
+0x6e753b mov rcx, qword ptr [rax]
+0x6e753e mov eax, dword ptr [r15 + rcx]
+0x6e7542 sub r8d, dword ptr [r13 + rax*8]
+CLASS .?AVPlayerUpgradeProductionItem@@
+XREF 0x54c809
+0x54c809 lea rax, [rip + 0x390a7f8]
+0x54c810 mov qword ptr [rcx], rax
+0x54c813 jmp 0x14054c791
+0x54c818 mov ecx, 0x18
+0x54c81d call 0x1422ba6b8
+0x54c822 mov rcx, rax
+0x54c825 mov qword ptr [rsp + 0x20], rax
+0x54c82a mov eax, dword ptr [rip + 0x653df38]
+0x54c830 inc eax
+0x54c832 mov dword ptr [rip + 0x653df30], eax
+0x54c838 mov dword ptr [rcx + 8], eax
+0x54c83b lea rax, [rip + 0x3917d66]
+0x54c842 mov qword ptr [rcx], rax
+0x54c845 mov qword ptr [rcx + 0x10], rdi
+0x54c849 jmp 0x14054c791
+CLASS .?AVPlayerUpgradeProductionItem@@
+XREF 0x1170af4
+0x1170af4 lea rcx, [rip + 0x2ce650d]
+0x1170afb mov qword ptr [rax], rcx
+0x1170afe test rax, rax
+0x1170b01 je 0x141170b33
+0x1170b03 mov r8d, 0x40
+0x1170b09 mov rcx, qword ptr gs:[0x58]
+0x1170b12 mov rdx, qword ptr [rcx]
+0x1170b15 mov ecx, dword ptr [r8 + rdx]
+0x1170b19 lea rdx, [rip + 0x5017320]
+0x1170b20 sub eax, dword ptr [rdx + rcx*8]
+0x1170b23 mov dword ptr [rdi], eax
+0x1170b25 mov rax, rdi
+0x1170b28 mov rbx, qword ptr [rsp + 0x40]
+0x1170b2d add rsp, 0x30
+0x1170b31 pop rdi
+0x1170b32 ret 
+0x1170b33 mov dword ptr [rdi], 0xffffffff
+0x1170b39 jmp 0x141170b25
+CLASS .?AVSpawnProductionItem@@
+XREF 0x54bf1b
+0x54bf1b lea rax, [rip + 0x384ccce]
+0x54bf22 mov qword ptr [rcx], rax
+0x54bf25 xor eax, eax
+0x54bf27 mov qword ptr [rcx + 0x1c], rax
+0x54bf2b mov dword ptr [rcx + 0x24], eax
+0x54bf2e movups xmm0, xmmword ptr [rip + 0x58c21b3]
+0x54bf35 mov dword ptr [rcx + 0x3c], eax
+0x54bf38 mov dword ptr [rcx + 0x40], 1
+0x54bf3f movups xmmword ptr [rcx + 0x2c], xmm0
+0x54bf43 lea rcx, [rsp + 0x28]
+0x54bf48 mov dword ptr [rsp + 0x20], eax
+0x54bf4c call 0x14054a760
+0x54bf51 lea rcx, [rbx + 0x70]
+0x54bf55 call 0x140303e80
+0x54bf5a mov rax, rbx
+0x54bf5d mov word ptr [rbx + 0x780], 1
+0x54bf66 add rsp, 0x30
+0x54bf6a pop rbx
+0x54bf6b ret 
+CLASS .?AVSpawnProductionItem@@
+XREF 0x7e1e97
+0x7e1e97 lea rax, [rip + 0x35b6d52]
+0x7e1e9e mov qword ptr [rcx], rax
+0x7e1ea1 mov qword ptr [rcx + 0x10], rdx
+0x7e1ea5 add rcx, 0x18
+0x7e1ea9 mov r8, qword ptr [r8]
+0x7e1eac mov eax, dword ptr [r10 + 8]
+0x7e1eb0 lea rdx, [r8 + rax*8]
+0x7e1eb4 mov dword ptr [rcx], 0xffffffff
+0x7e1eba xor eax, eax
+0x7e1ebc mov qword ptr [rcx + 4], rax
+0x7e1ec0 mov qword ptr [r11 + 0x10], rdx
+0x7e1ec4 mov qword ptr [r11 + 0x18], r8
+0x7e1ec8 mov qword ptr [r11 + 0x20], rax
+0x7e1ecc lea r9, [r11 + 0x10]
+0x7e1ed0 lea r8, [r11 + 0x18]
+0x7e1ed4 lea rdx, [r11 + 0x20]
+0x7e1ed8 call 0x1407e2250
+0x7e1edd nop 
+0x7e1ede mov eax, dword ptr [rbx]
+0x7e1ee0 mov dword ptr [rdi + 0x24], eax
+0x7e1ee3 mov eax, dword ptr [rbx + 4]
+0x7e1ee6 mov dword ptr [rdi + 0x28], eax
+0x7e1ee9 mov rax, qword ptr [rsp + 0x70]
+0x7e1eee movups xmm0, xmmword ptr [rax]
+0x7e1ef1 movups xmmword ptr [rdi + 0x2c], xmm0
+0x7e1ef5 mov eax, dword ptr [rsp + 0x78]
+CLASS .?AVSquadUpgradeProductionItem@@
+XREF 0x54c787
+0x54c787 lea rax, [rip + 0x38458ca]
+0x54c78e mov qword ptr [rcx], rax
+0x54c791 mov rdi, qword ptr [rbx]
+0x54c794 mov qword ptr [rbx], rcx
+0x54c797 test rdi, rdi
+0x54c79a je 0x14054c748
+0x54c79c jmp 0x14264a276
+0x54c7a1 mov ecx, 0x18
+0x54c7a6 call 0x1422ba6b8
+0x54c7ab mov rcx, rax
+0x54c7ae mov qword ptr [rsp + 0x20], rax
+0x54c7b3 mov eax, dword ptr [rip + 0x653dfaf]
+0x54c7b9 inc eax
+0x54c7bb mov dword ptr [rip + 0x653dfa7], eax
+0x54c7c1 mov dword ptr [rcx + 8], eax
+0x54c7c4 mov qword ptr [rcx + 0x10], rdi
+0x54c7c8 lea rax, [rip + 0x3845991]
+0x54c7cf mov qword ptr [rcx], rax
+0x54c7d2 jmp 0x14054c791
+0x54c7d4 sub eax, 1
+0x54c7d7 je 0x14054c818
+0x54c7d9 cmp eax, 1
+0x54c7dc jne 0x14054c748
+0x54c7e2 mov ecx, 0x18
+CLASS .?AVSquadUpgradeProductionItem@@
+XREF 0x6e7154
+0x6e7154 lea rcx, [rip + 0x36aaefd]
+0x6e715b mov qword ptr [rax], rcx
+0x6e715e test rax, rax
+0x6e7161 je 0x1406e7193
+0x6e7163 mov r8d, 0x40
+0x6e7169 mov rcx, qword ptr gs:[0x58]
+0x6e7172 mov rdx, qword ptr [rcx]
+0x6e7175 mov ecx, dword ptr [r8 + rdx]
+0x6e7179 lea rdx, [rip + 0x5aa0cc0]
+0x6e7180 sub eax, dword ptr [rdx + rcx*8]
+0x6e7183 mov dword ptr [rdi], eax
+0x6e7185 mov rax, rdi
+0x6e7188 mov rbx, qword ptr [rsp + 0x40]
+0x6e718d add rsp, 0x30
+0x6e7191 pop rdi
+0x6e7192 ret 
+0x6e7193 mov dword ptr [rdi], 0xffffffff
+0x6e7199 jmp 0x1406e7185
+CLASS .?AVSquadUpgradeProductionItem@@
+XREF 0x27c9491
+0x27c9491 lea rdi, [rip + 0x15c8bc0]
+0x27c9498 mov ebx, 0x40
+0x27c949d lea r14, [rip + 0x39be99c]
+0x27c94a4 mov rcx, qword ptr [rsi]
+0x27c94a7 test rcx, rcx
+0x27c94aa jne 0x1427c94b1
+0x27c94ac xor r13d, r13d
+0x27c94af jmp 0x1427c94b9
+0x27c94b1 call 0x14049b060
+0x27c94b6 mov r13, rax
+0x27c94b9 cmp qword ptr [r13 + 0x98], 0
+0x27c94c1 je 0x1427c9598
+0x27c94c7 mov edx, 0x18
+0x27c94cc xor ecx, ecx
+0x27c94ce call 0x1405027f0
+0x27c94d3 mov r8, rax
+0x27c94d6 mov rdx, qword ptr [r13 + 0x98]
+0x27c94dd mov ecx, dword ptr [rip + 0x42c1285]
+0x27c94e3 inc ecx
+0x27c94e5 mov dword ptr [rip + 0x42c127d], ecx
+0x27c94eb mov dword ptr [rax + 8], ecx
+0x27c94ee mov qword ptr [rax + 0x10], rdx
+0x27c94f2 mov qword ptr [rax], rdi
+CLASS .?AVSquadUpgradeProductionItem@@
+XREF 0x27c9591
+0x27c9591 lea rdi, [rip + 0x15c8ac0]
+0x27c9598 mov r14, qword ptr [r13 + 0xa0]
+0x27c959f mov rbx, qword ptr [r13 + 0xa8]
+0x27c95a6 mov qword ptr [rsp + 0x30], rbx
+0x27c95ab cmp r14, rbx
+0x27c95ae je 0x1427c9669
+0x27c95b4 mov r12, qword ptr [r14 + 0x20]
+0x27c95b8 mov r13, qword ptr [r14 + 0x28]
+0x27c95bc cmp r12, r13
+0x27c95bf je 0x1427c9655
+0x27c95c5 mov rax, qword ptr [r12]
+0x27c95c9 mov qword ptr [rsp + 0x90], rax
+0x27c95d1 lea rdx, [rsp + 0x90]
+0x27c95d9 lea rcx, [rsp + 0x28]
+0x27c95de call 0x1406e7120
+0x27c95e3 nop 
+0x27c95e4 mov rdx, rax
+0x27c95e7 lea rcx, [rsp + 0x20]
+0x27c95ec call 0x1401df380
+0x27c95f1 nop 

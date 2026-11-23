@@ -1,0 +1,47 @@
+﻿{
+    "CapturedAt":  "2026-11-21T19:56:30.1921945+08:00",
+    "ProcessId":  25804,
+    "Executable":  "F:\\WorkSpace\\Game\\.local\\tmp-histprobe\\real-entry-20261121\\client\\天穹之眼-自有授权版-v0.60.8.exe",
+    "WindowHandle":  1117664,
+    "WindowTitle":  "天穹之眼 · 英雄连3",
+    "IsVisible":  true,
+    "Width":  275,
+    "Height":  163,
+    "ScreenshotSucceeded":  true,
+    "ScreenshotPath":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\evidence\\protected-real-entry-window-20261121.png",
+    "TotalDescendants":  2,
+    "CapturedNodes":  2,
+    "Privacy":  "Edit/password values and long identifiers are omitted from the accessibility export; screenshot remains a local selected-window capture.",
+    "Nodes":  [
+                  {
+                      "Index":  0,
+                      "Name":  "确定",
+                      "AutomationId":  "2",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "Button",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1310,
+                                        "Y":  761,
+                                        "Width":  88,
+                                        "Height":  28
+                                    }
+                  },
+                  {
+                      "Index":  1,
+                      "Name":  "软件已在运行，请退出旧版后再打开新版。",
+                      "AutomationId":  "65535",
+                      "ControlType":  "ControlType.Pane",
+                      "ClassName":  "Static",
+                      "IsEnabled":  true,
+                      "IsOffscreen":  false,
+                      "Rectangle":  {
+                                        "X":  1170,
+                                        "Y":  705,
+                                        "Width":  210,
+                                        "Height":  18
+                                    }
+                  }
+              ]
+}

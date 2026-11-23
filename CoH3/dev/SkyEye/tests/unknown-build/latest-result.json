@@ -1,0 +1,110 @@
+﻿{
+    "utc":  "2026-11-22T01:56:00.6078895Z",
+    "sdk":  "10.0.404",
+    "powershell":  "5.1.26100.9818",
+    "level":  "F",
+    "passed":  200,
+    "failed":  0,
+    "results":  [
+                    {
+                        "client":  "SkyEye",
+                        "configuration":  "Release",
+                        "level":  "F",
+                        "build_exit_code":  0,
+                        "run_exit_code":  0,
+                        "passed":  50,
+                        "failed":  0,
+                        "scenarios":  8,
+                        "reader_constructors_executed":  0,
+                        "native_handles_created":  0,
+                        "executable":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\unknown-build\\runs\\SkyEye\\Release\\bin\\UnknownBuild.SkyEye.Fixture.exe",
+                        "result":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\unknown-build\\runs\\SkyEye\\Release\\result.json",
+                        "build_log":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\unknown-build\\runs\\SkyEye\\Release\\build.log",
+                        "run_log":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\unknown-build\\runs\\SkyEye\\Release\\run.log"
+                    },
+                    {
+                        "client":  "SkyEye",
+                        "configuration":  "Maintenance",
+                        "level":  "F",
+                        "build_exit_code":  0,
+                        "run_exit_code":  0,
+                        "passed":  50,
+                        "failed":  0,
+                        "scenarios":  8,
+                        "reader_constructors_executed":  0,
+                        "native_handles_created":  0,
+                        "executable":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\unknown-build\\runs\\SkyEye\\Maintenance\\bin\\UnknownBuild.SkyEye.Fixture.exe",
+                        "result":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\unknown-build\\runs\\SkyEye\\Maintenance\\result.json",
+                        "build_log":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\unknown-build\\runs\\SkyEye\\Maintenance\\build.log",
+                        "run_log":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\unknown-build\\runs\\SkyEye\\Maintenance\\run.log"
+                    },
+                    {
+                        "client":  "Simple",
+                        "configuration":  "Release",
+                        "level":  "F",
+                        "build_exit_code":  0,
+                        "run_exit_code":  0,
+                        "passed":  50,
+                        "failed":  0,
+                        "scenarios":  8,
+                        "reader_constructors_executed":  0,
+                        "native_handles_created":  0,
+                        "executable":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\unknown-build\\runs\\Simple\\Release\\bin\\UnknownBuild.Simple.Fixture.exe",
+                        "result":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\unknown-build\\runs\\Simple\\Release\\result.json",
+                        "build_log":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\unknown-build\\runs\\Simple\\Release\\build.log",
+                        "run_log":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\unknown-build\\runs\\Simple\\Release\\run.log"
+                    },
+                    {
+                        "client":  "Simple",
+                        "configuration":  "Maintenance",
+                        "level":  "F",
+                        "build_exit_code":  0,
+                        "run_exit_code":  0,
+                        "passed":  50,
+                        "failed":  0,
+                        "scenarios":  8,
+                        "reader_constructors_executed":  0,
+                        "native_handles_created":  0,
+                        "executable":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\unknown-build\\runs\\Simple\\Maintenance\\bin\\UnknownBuild.Simple.Fixture.exe",
+                        "result":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\unknown-build\\runs\\Simple\\Maintenance\\result.json",
+                        "build_log":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\unknown-build\\runs\\Simple\\Maintenance\\build.log",
+                        "run_log":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\unknown-build\\runs\\Simple\\Maintenance\\run.log"
+                    }
+                ],
+    "input_hashes":  [
+                         {
+                             "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\unknown-build\\before\\SkyEye\\PlayerInfoReader.cs",
+                             "sha256":  "3444F469137C616D382EE795967188F82E758A14ED36AA99FB7E52FAD3AB0350"
+                         },
+                         {
+                             "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\PlayerInfoReader.cs",
+                             "sha256":  "39DDE7A0F2BD80E2412FED3439870CF7A49A794A9AAB0F812A9AFEE6F60C65D2"
+                         },
+                         {
+                             "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\client\\CoH3MemoryTool\\GameLayout52426.cs",
+                             "sha256":  "90AF6A0F98C5C3C48DD9CAD8595377EE90990938753E68B142899B707C596D47"
+                         },
+                         {
+                             "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\unknown-build\\before\\Simple\\PlayerInfoReader.cs",
+                             "sha256":  "3444F469137C616D382EE795967188F82E758A14ED36AA99FB7E52FAD3AB0350"
+                         },
+                         {
+                             "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\PlayerInfoReader.cs",
+                             "sha256":  "39DDE7A0F2BD80E2412FED3439870CF7A49A794A9AAB0F812A9AFEE6F60C65D2"
+                         },
+                         {
+                             "path":  "F:\\WorkSpace\\Game\\CoH3\\dev\\COH3SimpleTool\\CoH3MemoryTool\\GameLayout52426.cs",
+                             "sha256":  "90AF6A0F98C5C3C48DD9CAD8595377EE90990938753E68B142899B707C596D47"
+                         }
+                     ],
+    "reader_constructors_executed":  0,
+    "native_handles_created":  0,
+    "game_validation":  "not_run",
+    "repeat_session_validation":  "not_run",
+    "delivery_validation":  "not_run",
+    "limitations":  [
+                        "Full production source is linked; only five pure reader methods execute on uninitialized managed objects.",
+                        "Constructor call order is checked from compiled IL; constructors, LicenseGate60 and native APIs do not execute.",
+                        "No game attachment, gameplay observation or full client build is performed here."
+                    ]
+}

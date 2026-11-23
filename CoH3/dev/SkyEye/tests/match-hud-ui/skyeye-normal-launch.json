@@ -1,0 +1,12 @@
+﻿{
+    "schema":  "match-hud-normal-launch-v1",
+    "utc":  "2026-11-22T03:47:16.1333863Z",
+    "pid":  36656,
+    "startUtc":  "2026-11-22T03:47:16.1251932Z",
+    "executable":  "F:\\WorkSpace\\Game\\CoH3\\dev\\SkyEye\\tests\\match-hud-ui\\clients\\SkyEye\\Release\\bin\\天穹之眼-自有授权版-v0.60.8.exe",
+    "sha256":  "EF07DBDF4E3D6CC3CBEF77A87CB865CC444C4B1234B005D1FBF78D68FD550DC7",
+    "client":  "SkyEye",
+    "mode":  "Release",
+    "normalEntry":  true,
+    "productAcceptance":  false
+}

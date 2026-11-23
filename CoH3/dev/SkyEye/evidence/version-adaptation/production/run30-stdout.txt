@@ -1,0 +1,12 @@
+license_state=active
+snapshot/resources: observed samples=2
+units: observed samples=9
+buildings: observed samples=3
+production: observed samples=2
+upgrades: observed samples=14
+colours: observed samples=2
+camera: observed samples=1
+squad_markers: observed samples=9
+support: sample_absent samples=0
+projectiles: sample_absent samples=0
+air: sample_absent samples=0

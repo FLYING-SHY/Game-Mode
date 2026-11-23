@@ -1,0 +1,8 @@
+{
+  "utc": "2026-11-21T05:07:16.663500+00:00",
+  "uiPid": 24288,
+  "visibleHwnds": [],
+  "status": "observed_empty",
+  "previousCaptureResult": "capture_overlay_state.py returned No visible window for selected game process after PrintWindow discovery emitted []; it does not create a JSON tag when no windows exist",
+  "scope": "only visible HWNDs owned by the explicitly selected former UI PID; no titles or other application data collected"
+}

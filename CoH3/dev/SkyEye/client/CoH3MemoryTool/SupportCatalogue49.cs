@@ -18,9 +18,9 @@ internal static class SupportCatalogue49
 		};
 	}
 
-	public static bool Active(byte[] raw, long image, long identity)
+	public static bool Active(byte[] raw, long image, long identity, Func<long, long> resolveRva = null)
 	{
-		if (raw != null && raw.Length >= 164 && BitConverter.ToInt64(raw, 0) == image + 64568064 && raw[76] != 2 && raw[20] == 6 && BitConverter.ToInt64(raw, 24) == identity)
+		if (raw != null && raw.Length >= 164 && BitConverter.ToInt64(raw, 0) == image + (resolveRva?.Invoke(64568064) ?? 64568064) && raw[76] != 2 && raw[20] == 6 && BitConverter.ToInt64(raw, 24) == identity)
 		{
 			return BitConverter.ToUInt32(raw, 68) != uint.MaxValue;
 		}

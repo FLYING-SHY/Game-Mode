@@ -26,7 +26,11 @@ internal sealed class SquadMarkerWindow : Form
 
 	private volatile SquadMarkerPreferences settings;
 
-	private volatile MarkerScene scene;
+	private readonly ScenePublication<MarkerScene> scene = new ScenePublication<MarkerScene>();
+
+	private long connectionGeneration = -1;
+
+	private long paintedGeneration = -1;
 
 	private readonly bool track;
 
@@ -285,7 +289,8 @@ internal sealed class SquadMarkerWindow : Form
 
 	public void PublishScene(MarkerScene next)
 	{
-		scene = next;
+		scene.Publish(next);
+		if (next == null) Interlocked.Exchange(ref airTestUntil, 0L);
 		if (pump != null)
 		{
 			pump.RequestNow();
@@ -317,6 +322,8 @@ internal sealed class SquadMarkerWindow : Form
 		}
 		reader = null;
 		activeMatch = null;
+		current = null;
+		paintedGeneration = -1;
 		markers.Clear();
 		commands.Clear();
 		directionPaths.Clear();
@@ -350,7 +357,12 @@ internal sealed class SquadMarkerWindow : Form
 	private void Frame()
 	{
 		SquadMarkerPreferences p = settings;
-		MarkerScene markerScene = scene;
+		MarkerScene markerScene = scene.Capture(out long generation);
+		if (connectionGeneration != generation)
+		{
+			DropConnection();
+			connectionGeneration = generation;
+		}
 		if (!LicenseGate60.Allowed)
 		{
 			DropConnection();
@@ -529,7 +541,6 @@ internal sealed class SquadMarkerWindow : Form
 			{
 				region.Union(item.Bounds);
 			}
-			directionPaths = list;
 			foreach (MarkerDrawCommand command in commands)
 			{
 				region.Union(command.Bounds);
@@ -542,31 +553,40 @@ internal sealed class SquadMarkerWindow : Form
 			{
 				region.Union(rect);
 			}
-			drawnMetrics = p.ShowMetrics;
-			commands = fresh;
-			Rectangle rectangle = new Rectangle(p2.X, p2.Y, r.Right, r.Bottom);
-			bool flag = base.Bounds != rectangle;
-			bool flag2 = !base.Visible;
-			if (flag)
+			if (!scene.TryPresent(generation, delegate
 			{
-				base.Bounds = rectangle;
-			}
-			LastError = ((shellWarning.Length > 0) ? shellWarning : current.Warning);
-			if (flag2)
+				paintedGeneration = generation;
+				drawnMetrics = p.ShowMetrics;
+				directionPaths = list;
+				commands = fresh;
+				Rectangle rectangle = new Rectangle(p2.X, p2.Y, r.Right, r.Bottom);
+				bool flag = base.Bounds != rectangle;
+				bool flag2 = !base.Visible;
+				if (flag)
+				{
+					base.Bounds = rectangle;
+				}
+				LastError = ((shellWarning.Length > 0) ? shellWarning : current.Warning);
+				if (flag2)
+				{
+					Show();
+				}
+				RestoreLayer66();
+				if (flag || flag2)
+				{
+					Invalidate();
+				}
+				else
+				{
+					Invalidate(region);
+				}
+				Update();
+				failedFrames = 0;
+			}))
 			{
-				Show();
+				DropConnection();
+				Pause();
 			}
-			RestoreLayer66();
-			if (flag || flag2)
-			{
-				Invalidate();
-			}
-			else
-			{
-				Invalidate(region);
-			}
-			Update();
-			failedFrames = 0;
 		}
 		catch (Exception ex3)
 		{
@@ -599,8 +619,13 @@ internal sealed class SquadMarkerWindow : Form
 
 	protected override void OnPaint(PaintEventArgs e)
 	{
-		double totalMilliseconds = clock.Elapsed.TotalMilliseconds;
 		base.OnPaint(e);
+		scene.TryPresent(paintedGeneration, delegate { PaintScene(e); });
+	}
+
+	private void PaintScene(PaintEventArgs e)
+	{
+		double totalMilliseconds = clock.Elapsed.TotalMilliseconds;
 		if (!LicenseGate60.Allowed)
 		{
 			return;

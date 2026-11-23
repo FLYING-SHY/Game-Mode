@@ -12,14 +12,14 @@
     {
       "archive": "F:\\WorkSpace\\Game\\CoH3\\output\\SkyEye\\SkyEye-HardenedV2-Server.zip",
       "bytes": 17117601,
-      "sha256": "e40f7ca3528c152aca2bad1a1eccf56c5b39b3b523b5734ac6c9bb62a55ec79f",
+      "sha256": "7cc2271549c7eae9f1bbebe9dd5358a3364afa16160eeb46defd3914b01b64ad",
       "entriesVerified": 38,
       "passed": true
     },
     {
       "archive": "F:\\WorkSpace\\Game\\CoH3\\output\\SkyEye\\SkyEye-HardenedV2-Maintenance.zip",
-      "bytes": 10331132,
-      "sha256": "594b2282dd79810a8e8ec93c4a5f82473ebbdbf3b11ff395c4d897153948b2ec",
+      "bytes": 10331142,
+      "sha256": "476699aed6c1c734aa1a4ea2197e3d8dfd23369a0ea50515902c7a0057dc2a0d",
       "entriesVerified": 2085,
       "passed": true
     }

@@ -1,0 +1,3304 @@
+[
+ {
+  "table": {
+   "section": ".data",
+   "rva": "0xa05c2b0",
+   "stride": 32,
+   "count": 505,
+   "names": [
+    "TestRenderingEnable",
+    "GenericEntityRendererEnable",
+    "GenericEntityMaxVisibleEntityCount",
+    "ZBufferShadowTestEnable",
+    "DrawDebugGroundHeight",
+    "DecalVolumeEnable",
+    "DecalVolumeScale",
+    "DrawDebugDecalVolumes",
+    "NormalLinearizationEnabled",
+    "EnvironmentDecalVolumesEnabled",
+    "EnvironmentDecalVolumeQuality",
+    "EnvironmentDecalVolumeMaxCount",
+    "EmitterDecalVolumeQuality",
+    "EmitterDecalVolumeMaxCount",
+    "EmitterDecalVolumeMaxCountPerSet",
+    "HairStrandsEnabled",
+    "EdgeModelsEnable",
+    "EdgeModelCastShadowsEnable",
+    "EdgeModelDepthBiasEnable",
+    "EdgeModelShadowDepthBiasEnable",
+    "EdgeModelViewDistance",
+    "EdgeModelUseMainLodEnable",
+    "EdgeModelForceLod",
+    "EdgeModelLodScale",
+    "LensFlaresEnable",
+    "LensFlaresForegroundEnable",
+    "DrawDebugLensFlareOccluders",
+    "DrawDebugLensFlares",
+    "LensFlareOcclusionEnable",
+    "MaxLensFlaresPerFrame",
+    "MaxLensFlareElementCount",
+    "LensFlaresQualityLevel",
+    "LensFlareSamplesPerSlice",
+    "LensFlareSliceCount",
+    "PauseRenderingWind",
+    "CloudShadowEnable",
+    "OverrideDynamicAO",
+    "DrawDebugDynamicAO",
+    "DynamicAoQualityLevel",
+    "FilmicEffectsEnable",
+    "EmissiveEnable",
+    "GBufferClearEnable",
+    "DxGBufferNormal16BitEnable",
+    "GBufferAlphaTestSimpleSmoothness",
+    "GBufferForceMetalMask",
+    "GBufferForceReflectance",
+    "GBufferForceSmoothness",
+    "GBufferForceAlbedo",
+    "GBufferForceSpecularOcclusion",
+    "GBufferForceAmbientOcclusion",
+    "GBufferForceMicroShadowing",
+    "AlphaUnrollEnable",
+    "SpecularLightingEnable",
+    "TranslucencyAutoThicknessEnable",
+    "LocalLightTranslucencyEnable",
+    "OutdoorLightEnable",
+    "OutdoorKeyLightEnable",
+    "EmitterSunTransmittanceMapEnable",
+    "EmitterSunTransmittanceMapResolution",
+    "MaxDecalVolumeCount",
+    "LightTileSize",
+    "LightTileAsyncComputeCulling",
+    "LightTileCsAvgLightCountPerTile",
+    "LightTileMinMaxUseHTile",
+    "LightTileUseCullingHierarchy",
+    "LightTileUseDetailedGpuTimers",
+    "LightCullFrustumExpandDistance",
+    "LightTileDebugLightMode",
+    "LightTileDebugColorMode",
+    "LightTileDebugGridOpacity",
+    "LightTileDebugFillOpacity",
+    "DrawDebugLightStats",
+    "DrawDebugLightStatsForward",
+    "DrawDebugLightStatsVolumetric",
+    "DrawDebugLightStatsHierarchy",
+    "DrawDebugLightSources",
+    "DrawDebugLightSourcesNoReflections",
+    "DrawDebugLightShadowSources",
+    "DrawDebugLightShadowStats",
+    "DrawDebugLightShadowSourceViewMode"
+   ],
+   "small_after": []
+  },
+  "cells": [
+   {
+    "slot": 0,
+    "off": "0xa059eb0",
+    "ptr": "0x14928dc58",
+    "name": "TestRenderingEnable",
+    "rest_u32": [
+     0,
+     0,
+     1241908064,
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "slot": 1,
+    "off": "0xa059ed0",
+    "ptr": "0x14928da60",
+    "name": "GenericEntityRendererEnable",
+    "rest_u32": [
+     0,
+     0,
+     1241908064,
+     1,
+     1,
+     0
+    ]
+   },
+   {
+    "slot": 2,
+    "off": "0xa059ef0",
+    "ptr": "0x14928da38",
+    "name": "GenericEntityMaxVisibleEntityCount",
+    "rest_u32": [
+     0,
+     0,
+     1241908064,
+     1,
+     2,
+     0
+    ]
+   },
+   {
+    "slot": 3,
+    "off": "0xa059f10",
+    "ptr": "0x14928da98",
+    "name": "ZBufferShadowTestEnable",
+    "rest_u32": [
+     0,
+     0,
+     1241908064,
+     1,
+     3,
+     0
+    ]
+   },
+   {
+    "slot": 4,
+    "off": "0xa059f30",
+    "ptr": "0x14928da80",
+    "name": "DrawDebugGroundHeight",
+    "rest_u32": [
+     0,
+     0,
+     1241908064,
+     1,
+     4,
+     0
+    ]
+   },
+   {
+    "slot": 5,
+    "off": "0xa059f50",
+    "ptr": "0x14928dac8",
+    "name": "DecalVolumeEnable",
+    "rest_u32": [
+     0,
+     0,
+     1241908064,
+     1,
+     5,
+     0
+    ]
+   },
+   {
+    "slot": 6,
+    "off": "0xa059f70",
+    "ptr": "0x14928dab0",
+    "name": "DecalVolumeScale",
+    "rest_u32": [
+     0,
+     0,
+     1241908064,
+     1,
+     6,
+     0
+    ]
+   },
+   {
+    "slot": 7,
+    "off": "0xa059f90",
+    "ptr": "0x14928db00",
+    "name": "DrawDebugDecalVolumes",
+    "rest_u32": [
+     0,
+     0,
+     1241908064,
+     1,
+     7,
+     0
+    ]
+   },
+   {
+    "slot": 8,
+    "off": "0xa059fb0",
+    "ptr": "0x14928dae0",
+    "name": "NormalLinearizationEnabled",
+    "rest_u32": [
+     0,
+     0,
+     1241908064,
+     1,
+     8,
+     0
+    ]
+   },
+   {
+    "slot": 9,
+    "off": "0xa059fd0",
+    "ptr": "0x14928d960",
+    "name": "EnvironmentDecalVolumesEnabled",
+    "rest_u32": [
+     0,
+     0,
+     1241908064,
+     1,
+     9,
+     0
+    ]
+   },
+   {
+    "slot": 10,
+    "off": "0xa059ff0",
+    "ptr": "0x14928d940",
+    "name": "EnvironmentDecalVolumeQuality",
+    "rest_u32": [
+     0,
+     0,
+     1241908064,
+     1,
+     10,
+     0
+    ]
+   },
+   {
+    "slot": 11,
+    "off": "0xa05a010",
+    "ptr": "0x14928d9a0",
+    "name": "EnvironmentDecalVolumeMaxCount",
+    "rest_u32": [
+     0,
+     0,
+     1241908064,
+     1,
+     11,
+     0
+    ]
+   },
+   {
+    "slot": 12,
+    "off": "0xa05a030",
+    "ptr": "0x14928d980",
+    "name": "EmitterDecalVolumeQuality",
+    "rest_u32": [
+     0,
+     0,
+     1241908064,
+     1,
+     12,
+     0
+    ]
+   },
+   {
+    "slot": 13,
+    "off": "0xa05a050",
+    "ptr": "0x14928d9e8",
+    "name": "EmitterDecalVolumeMaxCount",
+    "rest_u32": [
+     0,
+     0,
+     1241908064,
+     1,
+     13,
+     0
+    ]
+   }
+  ]
+ },
+ {
+  "table": {
+   "section": ".data",
+   "rva": "0x9ad5110",
+   "stride": 32,
+   "count": 389,
+   "names": [
+    "ColorString",
+    "ReturnValue",
+    "ColorString",
+    "ReturnValue",
+    "PersonaID",
+    "PlayerHandle",
+    "Page",
+    "PlatoonId",
+    "PlatoonName",
+    "LeaderPersona",
+    "LeaderNucleus",
+    "PlatoonId",
+    "BFUIPlatoonModelInterface",
+    "BFUIPlatoonSearchResultModelInterface",
+    "SearchPattern",
+    "ExcludeFullPlatoons",
+    "PageSize",
+    "PageNumber",
+    "BFUIPlatoonModelInterface",
+    "BFUIPlatoonMemberListModelInterface",
+    "PersonaId",
+    "BFUIPlatoonModelInterface",
+    "PlatoonId",
+    "BFUIPlatoonMemberListModelInterface",
+    "Name",
+    "Tag",
+    "Description",
+    "Access",
+    "BFUIPlatoonCreationAndValidationModelInterface",
+    "Name",
+    "Tag",
+    "Description",
+    "Access",
+    "CreateOnSuccess",
+    "BFUIPlatoonCreationAndValidationModelInterface",
+    "NewName",
+    "NewTag",
+    "NewDescription",
+    "NewAccess",
+    "ReturnValue",
+    "PlatoonId",
+    "ReturnValue",
+    "PersonaId",
+    "ReturnValue",
+    "BFUIPlatoonPendingApplicationModelInterface",
+    "PersonaId",
+    "NewRole",
+    "ReturnValue",
+    "ReturnValue",
+    "ReturnValue",
+    "NodeId",
+    "Player",
+    "Callback",
+    "ClosureIds",
+    "ClosureValues",
+    "ClosureDebugNames",
+    "NodeId",
+    "Player",
+    "Callback",
+    "ClosureIds",
+    "ClosureValues",
+    "ClosureDebugNames",
+    "NodeId",
+    "Player",
+    "Callback",
+    "ClosureIds",
+    "ClosureValues",
+    "ClosureDebugNames",
+    "Player",
+    "TierInfos",
+    "DogtagCategoryData",
+    "ContextToken",
+    "DogtagGuid",
+    "DynamicData",
+    "ContextToken",
+    "DogtagCollection",
+    "BadgeEntries",
+    "BadgeEntries",
+    "ContextToken",
+    "BadgeGuid"
+   ],
+   "small_after": []
+  },
+  "cells": [
+   {
+    "slot": 0,
+    "off": "0x9ad2d10",
+    "ptr": "0x1484e6000",
+    "name": "ColorString",
+    "rest_u32": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "slot": 1,
+    "off": "0x9ad2d30",
+    "ptr": "0x148d3dac0",
+    "name": "ReturnValue",
+    "rest_u32": [
+     0,
+     0,
+     1,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "slot": 2,
+    "off": "0x9ad2d50",
+    "ptr": "0x1484e6000",
+    "name": "ColorString",
+    "rest_u32": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "slot": 3,
+    "off": "0x9ad2d70",
+    "ptr": "0x148d3dac0",
+    "name": "ReturnValue",
+    "rest_u32": [
+     0,
+     0,
+     1,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "slot": 4,
+    "off": "0x9ad2d90",
+    "ptr": "0x1484e62a0",
+    "name": "PersonaID",
+    "rest_u32": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "slot": 5,
+    "off": "0x9ad2db0",
+    "ptr": "0x14911d170",
+    "name": "PlayerHandle",
+    "rest_u32": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "slot": 6,
+    "off": "0x9ad2dd0",
+    "ptr": "0x1484e62bc",
+    "name": "Page",
+    "rest_u32": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "slot": 7,
+    "off": "0x9ad2df0",
+    "ptr": "0x1484e6328",
+    "name": "PlatoonId",
+    "rest_u32": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "slot": 8,
+    "off": "0x9ad2e10",
+    "ptr": "0x1484e6338",
+    "name": "PlatoonName",
+    "rest_u32": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "slot": 9,
+    "off": "0x9ad2e30",
+    "ptr": "0x1484e6348",
+    "name": "LeaderPersona",
+    "rest_u32": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "slot": 10,
+    "off": "0x9ad2e50",
+    "ptr": "0x1484e6358",
+    "name": "LeaderNucleus",
+    "rest_u32": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "slot": 11,
+    "off": "0x9ad2e70",
+    "ptr": "0x1484e6328",
+    "name": "PlatoonId",
+    "rest_u32": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "slot": 12,
+    "off": "0x9ad2e90",
+    "ptr": "0x1484e6138",
+    "name": "BFUIPlatoonModelInterface",
+    "rest_u32": [
+     0,
+     0,
+     1,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "slot": 13,
+    "off": "0x9ad2eb0",
+    "ptr": "0x1484e6158",
+    "name": "BFUIPlatoonSearchResultModelInterface",
+    "rest_u32": [
+     0,
+     0,
+     1,
+     0,
+     0,
+     0
+    ]
+   }
+  ]
+ },
+ {
+  "table": {
+   "section": ".data",
+   "rva": "0x9ad0ec0",
+   "stride": 32,
+   "count": 354,
+   "names": [
+    "SaveInfos",
+    "SaveBatch",
+    "IconContextType",
+    "IconContextValue",
+    "QueryResult",
+    "PartitionGuid",
+    "InstanceGuid",
+    "Settings",
+    "ReturnValue",
+    "Settings",
+    "OriginTransform",
+    "MaxDistance",
+    "ReturnValue",
+    "ElementCount",
+    "Elements",
+    "PartitionGuid",
+    "InstanceGuid",
+    "ReturnValue",
+    "ReturnValue",
+    "QueryResult",
+    "SaveInfos",
+    "SaveBatch",
+    "IncludeLocalPlayer",
+    "Filter",
+    "AdditionalFriendlyChannels",
+    "AdditionalEnemyChannels",
+    "AdditionalNeutralChannels",
+    "QuerySettingsAsset",
+    "SquadMembers",
+    "HighPrioTeamMembers",
+    "LowPrioTeamMembers",
+    "HighPrioEnemies",
+    "LowPrioEnemies",
+    "HighPrioNeutrals",
+    "LowPrioNeutrals",
+    "QueryResult",
+    "RenderTag",
+    "Color",
+    "Alpha",
+    "Size",
+    "ScalingConfig",
+    "QueryResult",
+    "CameraTransform",
+    "ReturnValue",
+    "Offset",
+    "SourceEntity",
+    "RefPlayerId",
+    "OutValue",
+    "ReturnValue",
+    "SourceEntity",
+    "RefPlayerId",
+    "OutValue",
+    "ReturnValue",
+    "SourceEntity",
+    "RefPlayerId",
+    "OutValue",
+    "ReturnValue",
+    "SourceEntity",
+    "RefPlayerId",
+    "OutValue",
+    "ReturnValue",
+    "SourceEntity",
+    "RefPlayerId",
+    "OutValue",
+    "ReturnValue",
+    "SourceEntity",
+    "RefPlayerId",
+    "OutValue",
+    "ReturnValue",
+    "SourceEntity",
+    "RefPlayerId",
+    "OutValue",
+    "ReturnValue",
+    "SourceEntity",
+    "RefPlayerId",
+    "OutValue",
+    "ReturnValue",
+    "SourceEntity",
+    "RefPlayerId",
+    "OutValue"
+   ],
+   "small_after": []
+  },
+  "cells": [
+   {
+    "slot": 0,
+    "off": "0x9aceac0",
+    "ptr": "0x1484e59c8",
+    "name": "SaveInfos",
+    "rest_u32": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "slot": 1,
+    "off": "0x9aceae0",
+    "ptr": "0x1484e59d8",
+    "name": "SaveBatch",
+    "rest_u32": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "slot": 2,
+    "off": "0x9aceb00",
+    "ptr": "0x1484e59e8",
+    "name": "IconContextType",
+    "rest_u32": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "slot": 3,
+    "off": "0x9aceb20",
+    "ptr": "0x1484e59f8",
+    "name": "IconContextValue",
+    "rest_u32": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "slot": 4,
+    "off": "0x9aceb40",
+    "ptr": "0x148e421d8",
+    "name": "QueryResult",
+    "rest_u32": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "slot": 5,
+    "off": "0x9aceb60",
+    "ptr": "0x148f88648",
+    "name": "PartitionGuid",
+    "rest_u32": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "slot": 6,
+    "off": "0x9aceb80",
+    "ptr": "0x1484e5170",
+    "name": "InstanceGuid",
+    "rest_u32": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "slot": 7,
+    "off": "0x9aceba0",
+    "ptr": "0x148d591e0",
+    "name": "Settings",
+    "rest_u32": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "slot": 8,
+    "off": "0x9acebc0",
+    "ptr": "0x148d3dac0",
+    "name": "ReturnValue",
+    "rest_u32": [
+     0,
+     0,
+     1,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "slot": 9,
+    "off": "0x9acebe0",
+    "ptr": "0x148d591e0",
+    "name": "Settings",
+    "rest_u32": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "slot": 10,
+    "off": "0x9acec00",
+    "ptr": "0x148e70538",
+    "name": "OriginTransform",
+    "rest_u32": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "slot": 11,
+    "off": "0x9acec20",
+    "ptr": "0x148db3b88",
+    "name": "MaxDistance",
+    "rest_u32": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "slot": 12,
+    "off": "0x9acec40",
+    "ptr": "0x148d3dac0",
+    "name": "ReturnValue",
+    "rest_u32": [
+     0,
+     0,
+     1,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "slot": 13,
+    "off": "0x9acec60",
+    "ptr": "0x1484e5a10",
+    "name": "ElementCount",
+    "rest_u32": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   }
+  ]
+ },
+ {
+  "table": {
+   "section": ".rdata",
+   "rva": "0x89e3990",
+   "stride": 16,
+   "count": 297,
+   "names": [
+    "AliceBlue",
+    "AntiqueWhite",
+    "Aqua",
+    "Aquamarine",
+    "Azure",
+    "Beige",
+    "Bisque",
+    "Black",
+    "BlanchedAlmond",
+    "Blue",
+    "BlueViolet",
+    "Brown",
+    "BurlyWood",
+    "CadetBlue",
+    "Chartreuse",
+    "Chocolate",
+    "Coral",
+    "CornflowerBlue",
+    "Cornsilk",
+    "Crimson",
+    "Cyan",
+    "DarkBlue",
+    "DarkCyan",
+    "DarkGoldenRod",
+    "DarkGray",
+    "DarkGreen",
+    "DarkGrey",
+    "DarkKhaki",
+    "DarkMagenta",
+    "DarkOliveGreen",
+    "DarkOrange",
+    "DarkOrchid",
+    "DarkRed",
+    "DarkSalmon",
+    "DarkSeaGreen",
+    "DarkSlateBlue",
+    "DarkSlateGray",
+    "DarkSlateGrey",
+    "DarkTurquoise",
+    "DarkViolet",
+    "DeepPink",
+    "DeepSkyBlue",
+    "DimGray",
+    "DimGrey",
+    "DodgerBlue",
+    "FireBrick",
+    "FloralWhite",
+    "ForestGreen",
+    "Fuchsia",
+    "Gainsboro",
+    "GhostWhite",
+    "Gold",
+    "GoldenRod",
+    "Gray",
+    "Green",
+    "GreenYellow",
+    "Grey",
+    "HoneyDew",
+    "HotPink",
+    "IndianRed",
+    "Indigo",
+    "Ivory",
+    "Khaki",
+    "Lavender",
+    "LavenderBlush",
+    "LawnGreen",
+    "LemonChiffon",
+    "LightBlue",
+    "LightCoral",
+    "LightCyan",
+    "LightGoldenRodYellow",
+    "LightGray",
+    "LightGreen",
+    "LightGrey",
+    "LightPink",
+    "LightSalmon",
+    "LightSeaGreen",
+    "LightSkyBlue",
+    "LightSlateGray",
+    "LightSlateGrey"
+   ],
+   "small_after": [
+    [
+     40,
+     64
+    ],
+    [
+     44,
+     64
+    ],
+    [
+     48,
+     64
+    ],
+    [
+     52,
+     64
+    ]
+   ]
+  },
+  "cells": [
+   {
+    "slot": 0,
+    "off": "0x89e1f90",
+    "ptr": "0x148d3aa58",
+    "name": "AliceBlue",
+    "rest_u32": [
+     4042850303,
+     0
+    ]
+   },
+   {
+    "slot": 1,
+    "off": "0x89e1fa0",
+    "ptr": "0x148d3aa68",
+    "name": "AntiqueWhite",
+    "rest_u32": [
+     4209760255,
+     0
+    ]
+   },
+   {
+    "slot": 2,
+    "off": "0x89e1fb0",
+    "ptr": "0x148d3aa78",
+    "name": "Aqua",
+    "rest_u32": [
+     16777215,
+     0
+    ]
+   },
+   {
+    "slot": 3,
+    "off": "0x89e1fc0",
+    "ptr": "0x148d3aa80",
+    "name": "Aquamarine",
+    "rest_u32": [
+     2147472639,
+     0
+    ]
+   },
+   {
+    "slot": 4,
+    "off": "0x89e1fd0",
+    "ptr": "0x148d3aa8c",
+    "name": "Azure",
+    "rest_u32": [
+     4043309055,
+     0
+    ]
+   },
+   {
+    "slot": 5,
+    "off": "0x89e1fe0",
+    "ptr": "0x148d3aa94",
+    "name": "Beige",
+    "rest_u32": [
+     4126530815,
+     0
+    ]
+   },
+   {
+    "slot": 6,
+    "off": "0x89e1ff0",
+    "ptr": "0x148d3aa9c",
+    "name": "Bisque",
+    "rest_u32": [
+     4293182719,
+     0
+    ]
+   },
+   {
+    "slot": 7,
+    "off": "0x89e2000",
+    "ptr": "0x148d3aaa4",
+    "name": "Black",
+    "rest_u32": [
+     255,
+     0
+    ]
+   },
+   {
+    "slot": 8,
+    "off": "0x89e2010",
+    "ptr": "0x148d3aab0",
+    "name": "BlanchedAlmond",
+    "rest_u32": [
+     4293643775,
+     0
+    ]
+   },
+   {
+    "slot": 9,
+    "off": "0x89e2020",
+    "ptr": "0x148d3aac0",
+    "name": "Blue",
+    "rest_u32": [
+     65535,
+     0
+    ]
+   },
+   {
+    "slot": 10,
+    "off": "0x89e2030",
+    "ptr": "0x148d3aac8",
+    "name": "BlueViolet",
+    "rest_u32": [
+     2318131967,
+     0
+    ]
+   },
+   {
+    "slot": 11,
+    "off": "0x89e2040",
+    "ptr": "0x148d3aad4",
+    "name": "Brown",
+    "rest_u32": [
+     2771004159,
+     0
+    ]
+   },
+   {
+    "slot": 12,
+    "off": "0x89e2050",
+    "ptr": "0x148d3aae0",
+    "name": "BurlyWood",
+    "rest_u32": [
+     3736635391,
+     0
+    ]
+   },
+   {
+    "slot": 13,
+    "off": "0x89e2060",
+    "ptr": "0x148d3aaf0",
+    "name": "CadetBlue",
+    "rest_u32": [
+     1604231423,
+     0
+    ]
+   }
+  ]
+ },
+ {
+  "table": {
+   "section": ".rdata",
+   "rva": "0x8604010",
+   "stride": 32,
+   "count": 296,
+   "names": [
+    "AliceBlue",
+    "Aqua",
+    "Azure",
+    "Bisque",
+    "BlanchedAlmond",
+    "BlueViolet",
+    "BurlyWood",
+    "Chartreuse",
+    "Coral",
+    "Cornsilk",
+    "Cyan",
+    "DarkCyan",
+    "DarkGray",
+    "DarkGrey",
+    "DarkMagenta",
+    "DarkOrange",
+    "DarkRed",
+    "DarkSeaGreen",
+    "DarkSlateGray",
+    "DarkTurquoise",
+    "DeepPink",
+    "DimGray",
+    "DodgerBlue",
+    "FloralWhite",
+    "Fuchsia",
+    "GhostWhite",
+    "GoldenRod",
+    "Green",
+    "Grey",
+    "HotPink",
+    "Indigo",
+    "Khaki",
+    "LavenderBlush",
+    "LemonChiffon",
+    "LightCoral",
+    "LightGoldenRodYellow",
+    "LightGreen",
+    "LightPink",
+    "LightSeaGreen",
+    "LightSlateGray",
+    "LightSteelBlue",
+    "Lime",
+    "Linen",
+    "Maroon",
+    "MediumBlue",
+    "MediumPurple",
+    "MediumSlateBlue",
+    "MediumTurquoise",
+    "MidnightBlue",
+    "MistyRose",
+    "NavajoWhite",
+    "OldLace",
+    "OliveDrab",
+    "OrangeRed",
+    "PaleGoldenRod",
+    "PaleTurquoise",
+    "PapayaWhip",
+    "Peru",
+    "Plum",
+    "Purple",
+    "RosyBrown",
+    "SaddleBrown",
+    "SandyBrown",
+    "SeaShell",
+    "Silver",
+    "SlateBlue",
+    "SlateGrey",
+    "SpringGreen",
+    "Tan",
+    "Thistle",
+    "Turquoise",
+    "Wheat",
+    "WhiteSmoke",
+    "YellowGreen",
+    "AliceBlue",
+    "Aqua",
+    "Azure",
+    "Bisque",
+    "BlanchedAlmond",
+    "BlueViolet"
+   ],
+   "small_after": []
+  },
+  "cells": [
+   {
+    "slot": 0,
+    "off": "0x8602610",
+    "ptr": "0x148d3aa58",
+    "name": "AliceBlue",
+    "rest_u32": [
+     4042850303,
+     0,
+     1221831272,
+     1,
+     4209760255,
+     0
+    ]
+   },
+   {
+    "slot": 1,
+    "off": "0x8602630",
+    "ptr": "0x148d3aa78",
+    "name": "Aqua",
+    "rest_u32": [
+     16777215,
+     0,
+     1221831296,
+     1,
+     2147472639,
+     0
+    ]
+   },
+   {
+    "slot": 2,
+    "off": "0x8602650",
+    "ptr": "0x148d3aa8c",
+    "name": "Azure",
+    "rest_u32": [
+     4043309055,
+     0,
+     1221831316,
+     1,
+     4126530815,
+     0
+    ]
+   },
+   {
+    "slot": 3,
+    "off": "0x8602670",
+    "ptr": "0x148d3aa9c",
+    "name": "Bisque",
+    "rest_u32": [
+     4293182719,
+     0,
+     1221831332,
+     1,
+     255,
+     0
+    ]
+   },
+   {
+    "slot": 4,
+    "off": "0x8602690",
+    "ptr": "0x148d3aab0",
+    "name": "BlanchedAlmond",
+    "rest_u32": [
+     4293643775,
+     0,
+     1221831360,
+     1,
+     65535,
+     0
+    ]
+   },
+   {
+    "slot": 5,
+    "off": "0x86026b0",
+    "ptr": "0x148d3aac8",
+    "name": "BlueViolet",
+    "rest_u32": [
+     2318131967,
+     0,
+     1221831380,
+     1,
+     2771004159,
+     0
+    ]
+   },
+   {
+    "slot": 6,
+    "off": "0x86026d0",
+    "ptr": "0x148d3aae0",
+    "name": "BurlyWood",
+    "rest_u32": [
+     3736635391,
+     0,
+     1221831408,
+     1,
+     1604231423,
+     0
+    ]
+   },
+   {
+    "slot": 7,
+    "off": "0x86026f0",
+    "ptr": "0x148d3ab00",
+    "name": "Chartreuse",
+    "rest_u32": [
+     2147418367,
+     0,
+     1221831440,
+     1,
+     3530104575,
+     0
+    ]
+   },
+   {
+    "slot": 8,
+    "off": "0x8602710",
+    "ptr": "0x148d3ab1c",
+    "name": "Coral",
+    "rest_u32": [
+     4286533887,
+     0,
+     1221831464,
+     1,
+     1687547391,
+     0
+    ]
+   },
+   {
+    "slot": 9,
+    "off": "0x8602730",
+    "ptr": "0x148d3ab38",
+    "name": "Cornsilk",
+    "rest_u32": [
+     4294499583,
+     0,
+     1221831496,
+     1,
+     3692313855,
+     0
+    ]
+   },
+   {
+    "slot": 10,
+    "off": "0x8602750",
+    "ptr": "0x148d3ab50",
+    "name": "Cyan",
+    "rest_u32": [
+     16777215,
+     0,
+     1221831512,
+     1,
+     35839,
+     0
+    ]
+   },
+   {
+    "slot": 11,
+    "off": "0x8602770",
+    "ptr": "0x148d3ab68",
+    "name": "DarkCyan",
+    "rest_u32": [
+     9145343,
+     0,
+     1221831544,
+     1,
+     3095792639,
+     0
+    ]
+   },
+   {
+    "slot": 12,
+    "off": "0x8602790",
+    "ptr": "0x148d3ab88",
+    "name": "DarkGray",
+    "rest_u32": [
+     2846468607,
+     0,
+     1221831576,
+     1,
+     6553855,
+     0
+    ]
+   },
+   {
+    "slot": 13,
+    "off": "0x86027b0",
+    "ptr": "0x148d3aba8",
+    "name": "DarkGrey",
+    "rest_u32": [
+     2846468607,
+     0,
+     1221831608,
+     1,
+     3182914559,
+     0
+    ]
+   }
+  ]
+ },
+ {
+  "table": {
+   "section": ".rdata",
+   "rva": "0x8593b50",
+   "stride": 64,
+   "count": 296,
+   "names": [
+    "AntiqueWhite",
+    "Beige",
+    "Blue",
+    "CadetBlue",
+    "CornflowerBlue",
+    "DarkBlue",
+    "DarkGreen",
+    "DarkOliveGreen",
+    "DarkSalmon",
+    "DarkSlateGrey",
+    "DeepSkyBlue",
+    "FireBrick",
+    "Gainsboro",
+    "Gray",
+    "HoneyDew",
+    "Ivory",
+    "LawnGreen",
+    "LightCyan",
+    "LightGrey",
+    "LightSkyBlue",
+    "LightYellow",
+    "Magenta",
+    "MediumOrchid",
+    "MediumSpringGreen",
+    "MintCream",
+    "Navy",
+    "Orange",
+    "PaleGreen",
+    "PeachPuff",
+    "PowderBlue",
+    "RoyalBlue",
+    "SeaGreen",
+    "SkyBlue",
+    "Snow",
+    "Teal",
+    "Violet",
+    "Yellow",
+    "AntiqueWhite",
+    "Beige",
+    "Blue",
+    "CadetBlue",
+    "CornflowerBlue",
+    "DarkBlue",
+    "DarkGreen",
+    "DarkOliveGreen",
+    "DarkSalmon",
+    "DarkSlateGrey",
+    "DeepSkyBlue",
+    "FireBrick",
+    "Gainsboro",
+    "Gray",
+    "HoneyDew",
+    "Ivory",
+    "LawnGreen",
+    "LightCyan",
+    "LightGrey",
+    "LightSkyBlue",
+    "LightYellow",
+    "Magenta",
+    "MediumOrchid",
+    "MediumSpringGreen",
+    "MintCream",
+    "Navy",
+    "Orange",
+    "PaleGreen",
+    "PeachPuff",
+    "PowderBlue",
+    "RoyalBlue",
+    "SeaGreen",
+    "SkyBlue",
+    "Snow",
+    "Teal",
+    "Violet",
+    "Yellow",
+    "AliceBlue",
+    "Azure",
+    "BlanchedAlmond",
+    "BurlyWood",
+    "Coral",
+    "Cyan"
+   ],
+   "small_after": []
+  },
+  "cells": [
+   {
+    "slot": 0,
+    "off": "0x8592150",
+    "ptr": "0x148d3aa68",
+    "name": "AntiqueWhite",
+    "rest_u32": [
+     4209760255,
+     0,
+     1221831288,
+     1,
+     16777215,
+     0,
+     1221831296
+    ]
+   },
+   {
+    "slot": 1,
+    "off": "0x8592190",
+    "ptr": "0x148d3aa94",
+    "name": "Beige",
+    "rest_u32": [
+     4126530815,
+     0,
+     1221831324,
+     1,
+     4293182719,
+     0,
+     1221831332
+    ]
+   },
+   {
+    "slot": 2,
+    "off": "0x85921d0",
+    "ptr": "0x148d3aac0",
+    "name": "Blue",
+    "rest_u32": [
+     65535,
+     0,
+     1221831368,
+     1,
+     2318131967,
+     0,
+     1221831380
+    ]
+   },
+   {
+    "slot": 3,
+    "off": "0x8592210",
+    "ptr": "0x148d3aaf0",
+    "name": "CadetBlue",
+    "rest_u32": [
+     1604231423,
+     0,
+     1221831424,
+     1,
+     2147418367,
+     0,
+     1221831440
+    ]
+   },
+   {
+    "slot": 4,
+    "off": "0x8592250",
+    "ptr": "0x148d3ab28",
+    "name": "CornflowerBlue",
+    "rest_u32": [
+     1687547391,
+     0,
+     1221831480,
+     1,
+     4294499583,
+     0,
+     1221831496
+    ]
+   },
+   {
+    "slot": 5,
+    "off": "0x8592290",
+    "ptr": "0x148d3ab58",
+    "name": "DarkBlue",
+    "rest_u32": [
+     35839,
+     0,
+     1221831528,
+     1,
+     9145343,
+     0,
+     1221831544
+    ]
+   },
+   {
+    "slot": 6,
+    "off": "0x85922d0",
+    "ptr": "0x148d3ab98",
+    "name": "DarkGreen",
+    "rest_u32": [
+     6553855,
+     0,
+     1221831592,
+     1,
+     2846468607,
+     0,
+     1221831608
+    ]
+   },
+   {
+    "slot": 7,
+    "off": "0x8592310",
+    "ptr": "0x148d3abd8",
+    "name": "DarkOliveGreen",
+    "rest_u32": [
+     1433087999,
+     0,
+     1221831656,
+     1,
+     4287365375,
+     0,
+     1221831672
+    ]
+   },
+   {
+    "slot": 8,
+    "off": "0x8592350",
+    "ptr": "0x148d3ac10",
+    "name": "DarkSalmon",
+    "rest_u32": [
+     3918953215,
+     0,
+     1221831712,
+     1,
+     2411499519,
+     0,
+     1221831728
+    ]
+   },
+   {
+    "slot": 9,
+    "off": "0x8592390",
+    "ptr": "0x148d3ac50",
+    "name": "DarkSlateGrey",
+    "rest_u32": [
+     793726975,
+     0,
+     1221831776,
+     1,
+     13554175,
+     0,
+     1221831792
+    ]
+   },
+   {
+    "slot": 10,
+    "off": "0x85923d0",
+    "ptr": "0x148d3ac90",
+    "name": "DeepSkyBlue",
+    "rest_u32": [
+     12582911,
+     0,
+     1221831840,
+     1,
+     1768516095,
+     0,
+     1221831848
+    ]
+   },
+   {
+    "slot": 11,
+    "off": "0x8592410",
+    "ptr": "0x148d3acc0",
+    "name": "FireBrick",
+    "rest_u32": [
+     2988581631,
+     0,
+     1221831888,
+     1,
+     4294635775,
+     0,
+     1221831904
+    ]
+   },
+   {
+    "slot": 12,
+    "off": "0x8592450",
+    "ptr": "0x148d3acf8",
+    "name": "Gainsboro",
+    "rest_u32": [
+     3705462015,
+     0,
+     1221831944,
+     1,
+     4177068031,
+     0,
+     1221831956
+    ]
+   },
+   {
+    "slot": 13,
+    "off": "0x8592490",
+    "ptr": "0x148d3ad2c",
+    "name": "Gray",
+    "rest_u32": [
+     3200171775,
+     0,
+     1221831988,
+     1,
+     16711935,
+     0,
+     1221832000
+    ]
+   }
+  ]
+ },
+ {
+  "table": {
+   "section": ".rdata",
+   "rva": "0x8593b60",
+   "stride": 64,
+   "count": 296,
+   "names": [
+    "Aqua",
+    "Bisque",
+    "BlueViolet",
+    "Chartreuse",
+    "Cornsilk",
+    "DarkCyan",
+    "DarkGrey",
+    "DarkOrange",
+    "DarkSeaGreen",
+    "DarkTurquoise",
+    "DimGray",
+    "FloralWhite",
+    "GhostWhite",
+    "Green",
+    "HotPink",
+    "Khaki",
+    "LemonChiffon",
+    "LightGoldenRodYellow",
+    "LightPink",
+    "LightSlateGray",
+    "Lime",
+    "Maroon",
+    "MediumPurple",
+    "MediumTurquoise",
+    "MistyRose",
+    "OldLace",
+    "OrangeRed",
+    "PaleTurquoise",
+    "Peru",
+    "Purple",
+    "SaddleBrown",
+    "SeaShell",
+    "SlateBlue",
+    "SpringGreen",
+    "Thistle",
+    "Wheat",
+    "YellowGreen",
+    "Aqua",
+    "Bisque",
+    "BlueViolet",
+    "Chartreuse",
+    "Cornsilk",
+    "DarkCyan",
+    "DarkGrey",
+    "DarkOrange",
+    "DarkSeaGreen",
+    "DarkTurquoise",
+    "DimGray",
+    "FloralWhite",
+    "GhostWhite",
+    "Green",
+    "HotPink",
+    "Khaki",
+    "LemonChiffon",
+    "LightGoldenRodYellow",
+    "LightPink",
+    "LightSlateGray",
+    "Lime",
+    "Maroon",
+    "MediumPurple",
+    "MediumTurquoise",
+    "MistyRose",
+    "OldLace",
+    "OrangeRed",
+    "PaleTurquoise",
+    "Peru",
+    "Purple",
+    "SaddleBrown",
+    "SeaShell",
+    "SlateBlue",
+    "SpringGreen",
+    "Thistle",
+    "Wheat",
+    "YellowGreen",
+    "AntiqueWhite",
+    "Beige",
+    "Blue",
+    "CadetBlue",
+    "CornflowerBlue",
+    "DarkBlue"
+   ],
+   "small_after": []
+  },
+  "cells": [
+   {
+    "slot": 0,
+    "off": "0x8592160",
+    "ptr": "0x148d3aa78",
+    "name": "Aqua",
+    "rest_u32": [
+     16777215,
+     0,
+     1221831296,
+     1,
+     2147472639,
+     0,
+     1221831308
+    ]
+   },
+   {
+    "slot": 1,
+    "off": "0x85921a0",
+    "ptr": "0x148d3aa9c",
+    "name": "Bisque",
+    "rest_u32": [
+     4293182719,
+     0,
+     1221831332,
+     1,
+     255,
+     0,
+     1221831344
+    ]
+   },
+   {
+    "slot": 2,
+    "off": "0x85921e0",
+    "ptr": "0x148d3aac8",
+    "name": "BlueViolet",
+    "rest_u32": [
+     2318131967,
+     0,
+     1221831380,
+     1,
+     2771004159,
+     0,
+     1221831392
+    ]
+   },
+   {
+    "slot": 3,
+    "off": "0x8592220",
+    "ptr": "0x148d3ab00",
+    "name": "Chartreuse",
+    "rest_u32": [
+     2147418367,
+     0,
+     1221831440,
+     1,
+     3530104575,
+     0,
+     1221831452
+    ]
+   },
+   {
+    "slot": 4,
+    "off": "0x8592260",
+    "ptr": "0x148d3ab38",
+    "name": "Cornsilk",
+    "rest_u32": [
+     4294499583,
+     0,
+     1221831496,
+     1,
+     3692313855,
+     0,
+     1221831504
+    ]
+   },
+   {
+    "slot": 5,
+    "off": "0x85922a0",
+    "ptr": "0x148d3ab68",
+    "name": "DarkCyan",
+    "rest_u32": [
+     9145343,
+     0,
+     1221831544,
+     1,
+     3095792639,
+     0,
+     1221831560
+    ]
+   },
+   {
+    "slot": 6,
+    "off": "0x85922e0",
+    "ptr": "0x148d3aba8",
+    "name": "DarkGrey",
+    "rest_u32": [
+     2846468607,
+     0,
+     1221831608,
+     1,
+     3182914559,
+     0,
+     1221831624
+    ]
+   },
+   {
+    "slot": 7,
+    "off": "0x8592320",
+    "ptr": "0x148d3abe8",
+    "name": "DarkOrange",
+    "rest_u32": [
+     4287365375,
+     0,
+     1221831672,
+     1,
+     2570243327,
+     0,
+     1221831688
+    ]
+   },
+   {
+    "slot": 8,
+    "off": "0x8592360",
+    "ptr": "0x148d3ac20",
+    "name": "DarkSeaGreen",
+    "rest_u32": [
+     2411499519,
+     0,
+     1221831728,
+     1,
+     1211993087,
+     0,
+     1221831744
+    ]
+   },
+   {
+    "slot": 9,
+    "off": "0x85923a0",
+    "ptr": "0x148d3ac60",
+    "name": "DarkTurquoise",
+    "rest_u32": [
+     13554175,
+     0,
+     1221831792,
+     1,
+     2483082239,
+     0,
+     1221831808
+    ]
+   },
+   {
+    "slot": 10,
+    "off": "0x85923e0",
+    "ptr": "0x148d3aca0",
+    "name": "DimGray",
+    "rest_u32": [
+     1768516095,
+     0,
+     1221831848,
+     1,
+     1768516095,
+     0,
+     1221831856
+    ]
+   },
+   {
+    "slot": 11,
+    "off": "0x8592420",
+    "ptr": "0x148d3acd0",
+    "name": "FloralWhite",
+    "rest_u32": [
+     4294635775,
+     0,
+     1221831904,
+     1,
+     579543807,
+     0,
+     1221831920
+    ]
+   },
+   {
+    "slot": 12,
+    "off": "0x8592460",
+    "ptr": "0x148d3ad08",
+    "name": "GhostWhite",
+    "rest_u32": [
+     4177068031,
+     0,
+     1221831956,
+     1,
+     4292280575,
+     0,
+     1221831968
+    ]
+   },
+   {
+    "slot": 13,
+    "off": "0x85924a0",
+    "ptr": "0x148d3ad34",
+    "name": "Green",
+    "rest_u32": [
+     16711935,
+     0,
+     1221832000,
+     1,
+     2919182335,
+     0,
+     1221832012
+    ]
+   }
+  ]
+ },
+ {
+  "table": {
+   "section": ".rdata",
+   "rva": "0x8596060",
+   "stride": 32,
+   "count": 295,
+   "names": [
+    "AntiqueWhite",
+    "Aquamarine",
+    "Beige",
+    "Black",
+    "Blue",
+    "Brown",
+    "CadetBlue",
+    "Chocolate",
+    "CornflowerBlue",
+    "Crimson",
+    "DarkBlue",
+    "DarkGoldenRod",
+    "DarkGreen",
+    "DarkKhaki",
+    "DarkOliveGreen",
+    "DarkOrchid",
+    "DarkSalmon",
+    "DarkSlateBlue",
+    "DarkSlateGrey",
+    "DarkViolet",
+    "DeepSkyBlue",
+    "DimGrey",
+    "FireBrick",
+    "ForestGreen",
+    "Gainsboro",
+    "Gold",
+    "Gray",
+    "GreenYellow",
+    "HoneyDew",
+    "IndianRed",
+    "Ivory",
+    "Lavender",
+    "LawnGreen",
+    "LightBlue",
+    "LightCyan",
+    "LightGray",
+    "LightGrey",
+    "LightSalmon",
+    "LightSkyBlue",
+    "LightSlateGrey",
+    "LightYellow",
+    "LimeGreen",
+    "Magenta",
+    "MediumAquaMarine",
+    "MediumOrchid",
+    "MediumSeaGreen",
+    "MediumSpringGreen",
+    "MediumVioletRed",
+    "MintCream",
+    "Moccasin",
+    "Navy",
+    "Olive",
+    "Orange",
+    "Orchid",
+    "PaleGreen",
+    "PaleVioletRed",
+    "PeachPuff",
+    "Pink",
+    "PowderBlue",
+    "Red",
+    "RoyalBlue",
+    "Salmon",
+    "SeaGreen",
+    "Sienna",
+    "SkyBlue",
+    "SlateGray",
+    "Snow",
+    "SteelBlue",
+    "Teal",
+    "Tomato",
+    "Violet",
+    "White",
+    "Yellow",
+    "AliceBlue",
+    "Aqua",
+    "Azure",
+    "Bisque",
+    "BlanchedAlmond",
+    "BlueViolet",
+    "BurlyWood"
+   ],
+   "small_after": []
+  },
+  "cells": [
+   {
+    "slot": 0,
+    "off": "0x8594660",
+    "ptr": "0x148d3aa68",
+    "name": "AntiqueWhite",
+    "rest_u32": [
+     4209760255,
+     0,
+     1221831288,
+     1,
+     16777215,
+     0
+    ]
+   },
+   {
+    "slot": 1,
+    "off": "0x8594680",
+    "ptr": "0x148d3aa80",
+    "name": "Aquamarine",
+    "rest_u32": [
+     2147472639,
+     0,
+     1221831308,
+     1,
+     4043309055,
+     0
+    ]
+   },
+   {
+    "slot": 2,
+    "off": "0x85946a0",
+    "ptr": "0x148d3aa94",
+    "name": "Beige",
+    "rest_u32": [
+     4126530815,
+     0,
+     1221831324,
+     1,
+     4293182719,
+     0
+    ]
+   },
+   {
+    "slot": 3,
+    "off": "0x85946c0",
+    "ptr": "0x148d3aaa4",
+    "name": "Black",
+    "rest_u32": [
+     255,
+     0,
+     1221831344,
+     1,
+     4293643775,
+     0
+    ]
+   },
+   {
+    "slot": 4,
+    "off": "0x85946e0",
+    "ptr": "0x148d3aac0",
+    "name": "Blue",
+    "rest_u32": [
+     65535,
+     0,
+     1221831368,
+     1,
+     2318131967,
+     0
+    ]
+   },
+   {
+    "slot": 5,
+    "off": "0x8594700",
+    "ptr": "0x148d3aad4",
+    "name": "Brown",
+    "rest_u32": [
+     2771004159,
+     0,
+     1221831392,
+     1,
+     3736635391,
+     0
+    ]
+   },
+   {
+    "slot": 6,
+    "off": "0x8594720",
+    "ptr": "0x148d3aaf0",
+    "name": "CadetBlue",
+    "rest_u32": [
+     1604231423,
+     0,
+     1221831424,
+     1,
+     2147418367,
+     0
+    ]
+   },
+   {
+    "slot": 7,
+    "off": "0x8594740",
+    "ptr": "0x148d3ab10",
+    "name": "Chocolate",
+    "rest_u32": [
+     3530104575,
+     0,
+     1221831452,
+     1,
+     4286533887,
+     0
+    ]
+   },
+   {
+    "slot": 8,
+    "off": "0x8594760",
+    "ptr": "0x148d3ab28",
+    "name": "CornflowerBlue",
+    "rest_u32": [
+     1687547391,
+     0,
+     1221831480,
+     1,
+     4294499583,
+     0
+    ]
+   },
+   {
+    "slot": 9,
+    "off": "0x8594780",
+    "ptr": "0x148d3ab48",
+    "name": "Crimson",
+    "rest_u32": [
+     3692313855,
+     0,
+     1221831504,
+     1,
+     16777215,
+     0
+    ]
+   },
+   {
+    "slot": 10,
+    "off": "0x85947a0",
+    "ptr": "0x148d3ab58",
+    "name": "DarkBlue",
+    "rest_u32": [
+     35839,
+     0,
+     1221831528,
+     1,
+     9145343,
+     0
+    ]
+   },
+   {
+    "slot": 11,
+    "off": "0x85947c0",
+    "ptr": "0x148d3ab78",
+    "name": "DarkGoldenRod",
+    "rest_u32": [
+     3095792639,
+     0,
+     1221831560,
+     1,
+     2846468607,
+     0
+    ]
+   },
+   {
+    "slot": 12,
+    "off": "0x85947e0",
+    "ptr": "0x148d3ab98",
+    "name": "DarkGreen",
+    "rest_u32": [
+     6553855,
+     0,
+     1221831592,
+     1,
+     2846468607,
+     0
+    ]
+   },
+   {
+    "slot": 13,
+    "off": "0x8594800",
+    "ptr": "0x148d3abb8",
+    "name": "DarkKhaki",
+    "rest_u32": [
+     3182914559,
+     0,
+     1221831624,
+     1,
+     2332068863,
+     0
+    ]
+   }
+  ]
+ },
+ {
+  "table": {
+   "section": ".rdata",
+   "rva": "0x86067c0",
+   "stride": 32,
+   "count": 295,
+   "names": [
+    "AliceBlue",
+    "Aqua",
+    "Azure",
+    "Bisque",
+    "BlanchedAlmond",
+    "BlueViolet",
+    "BurlyWood",
+    "Chartreuse",
+    "Coral",
+    "Cornsilk",
+    "Cyan",
+    "DarkCyan",
+    "DarkGray",
+    "DarkGrey",
+    "DarkMagenta",
+    "DarkOrange",
+    "DarkRed",
+    "DarkSeaGreen",
+    "DarkSlateGray",
+    "DarkTurquoise",
+    "DeepPink",
+    "DimGray",
+    "DodgerBlue",
+    "FloralWhite",
+    "Fuchsia",
+    "GhostWhite",
+    "GoldenRod",
+    "Green",
+    "Grey",
+    "HotPink",
+    "Indigo",
+    "Khaki",
+    "LavenderBlush",
+    "LemonChiffon",
+    "LightCoral",
+    "LightGoldenRodYellow",
+    "LightGreen",
+    "LightPink",
+    "LightSeaGreen",
+    "LightSlateGray",
+    "LightSteelBlue",
+    "Lime",
+    "Linen",
+    "Maroon",
+    "MediumBlue",
+    "MediumPurple",
+    "MediumSlateBlue",
+    "MediumTurquoise",
+    "MidnightBlue",
+    "MistyRose",
+    "NavajoWhite",
+    "OldLace",
+    "OliveDrab",
+    "OrangeRed",
+    "PaleGoldenRod",
+    "PaleTurquoise",
+    "PapayaWhip",
+    "Peru",
+    "Plum",
+    "Purple",
+    "RosyBrown",
+    "SaddleBrown",
+    "SandyBrown",
+    "SeaShell",
+    "Silver",
+    "SlateBlue",
+    "SlateGrey",
+    "SpringGreen",
+    "Tan",
+    "Thistle",
+    "Turquoise",
+    "Wheat",
+    "WhiteSmoke",
+    "YellowGreen",
+    "AliceBlue",
+    "Aqua",
+    "Azure",
+    "Bisque",
+    "BlanchedAlmond",
+    "BlueViolet"
+   ],
+   "small_after": [
+    [
+     108,
+     12
+    ],
+    [
+     116,
+     16
+    ],
+    [
+     120,
+     20
+    ]
+   ]
+  },
+  "cells": [
+   {
+    "slot": 0,
+    "off": "0x8604dc0",
+    "ptr": "0x148d3aa58",
+    "name": "AliceBlue",
+    "rest_u32": [
+     4042850303,
+     0,
+     1221831272,
+     1,
+     4209760255,
+     0
+    ]
+   },
+   {
+    "slot": 1,
+    "off": "0x8604de0",
+    "ptr": "0x148d3aa78",
+    "name": "Aqua",
+    "rest_u32": [
+     16777215,
+     0,
+     1221831296,
+     1,
+     2147472639,
+     0
+    ]
+   },
+   {
+    "slot": 2,
+    "off": "0x8604e00",
+    "ptr": "0x148d3aa8c",
+    "name": "Azure",
+    "rest_u32": [
+     4043309055,
+     0,
+     1221831316,
+     1,
+     4126530815,
+     0
+    ]
+   },
+   {
+    "slot": 3,
+    "off": "0x8604e20",
+    "ptr": "0x148d3aa9c",
+    "name": "Bisque",
+    "rest_u32": [
+     4293182719,
+     0,
+     1221831332,
+     1,
+     255,
+     0
+    ]
+   },
+   {
+    "slot": 4,
+    "off": "0x8604e40",
+    "ptr": "0x148d3aab0",
+    "name": "BlanchedAlmond",
+    "rest_u32": [
+     4293643775,
+     0,
+     1221831360,
+     1,
+     65535,
+     0
+    ]
+   },
+   {
+    "slot": 5,
+    "off": "0x8604e60",
+    "ptr": "0x148d3aac8",
+    "name": "BlueViolet",
+    "rest_u32": [
+     2318131967,
+     0,
+     1221831380,
+     1,
+     2771004159,
+     0
+    ]
+   },
+   {
+    "slot": 6,
+    "off": "0x8604e80",
+    "ptr": "0x148d3aae0",
+    "name": "BurlyWood",
+    "rest_u32": [
+     3736635391,
+     0,
+     1221831408,
+     1,
+     1604231423,
+     0
+    ]
+   },
+   {
+    "slot": 7,
+    "off": "0x8604ea0",
+    "ptr": "0x148d3ab00",
+    "name": "Chartreuse",
+    "rest_u32": [
+     2147418367,
+     0,
+     1221831440,
+     1,
+     3530104575,
+     0
+    ]
+   },
+   {
+    "slot": 8,
+    "off": "0x8604ec0",
+    "ptr": "0x148d3ab1c",
+    "name": "Coral",
+    "rest_u32": [
+     4286533887,
+     0,
+     1221831464,
+     1,
+     1687547391,
+     0
+    ]
+   },
+   {
+    "slot": 9,
+    "off": "0x8604ee0",
+    "ptr": "0x148d3ab38",
+    "name": "Cornsilk",
+    "rest_u32": [
+     4294499583,
+     0,
+     1221831496,
+     1,
+     3692313855,
+     0
+    ]
+   },
+   {
+    "slot": 10,
+    "off": "0x8604f00",
+    "ptr": "0x148d3ab50",
+    "name": "Cyan",
+    "rest_u32": [
+     16777215,
+     0,
+     1221831512,
+     1,
+     35839,
+     0
+    ]
+   },
+   {
+    "slot": 11,
+    "off": "0x8604f20",
+    "ptr": "0x148d3ab68",
+    "name": "DarkCyan",
+    "rest_u32": [
+     9145343,
+     0,
+     1221831544,
+     1,
+     3095792639,
+     0
+    ]
+   },
+   {
+    "slot": 12,
+    "off": "0x8604f40",
+    "ptr": "0x148d3ab88",
+    "name": "DarkGray",
+    "rest_u32": [
+     2846468607,
+     0,
+     1221831576,
+     1,
+     6553855,
+     0
+    ]
+   },
+   {
+    "slot": 13,
+    "off": "0x8604f60",
+    "ptr": "0x148d3aba8",
+    "name": "DarkGrey",
+    "rest_u32": [
+     2846468607,
+     0,
+     1221831608,
+     1,
+     3182914559,
+     0
+    ]
+   }
+  ]
+ },
+ {
+  "table": {
+   "section": ".rdata",
+   "rva": "0x8572070",
+   "stride": 16,
+   "count": 294,
+   "names": [
+    "AliceBlue",
+    "AntiqueWhite",
+    "Aqua",
+    "Aquamarine",
+    "Azure",
+    "Beige",
+    "Bisque",
+    "Black",
+    "BlanchedAlmond",
+    "Blue",
+    "BlueViolet",
+    "Brown",
+    "BurlyWood",
+    "CadetBlue",
+    "Chartreuse",
+    "Chocolate",
+    "Coral",
+    "CornflowerBlue",
+    "Cornsilk",
+    "Crimson",
+    "Cyan",
+    "DarkBlue",
+    "DarkCyan",
+    "DarkGoldenRod",
+    "DarkGray",
+    "DarkGreen",
+    "DarkGrey",
+    "DarkKhaki",
+    "DarkMagenta",
+    "DarkOliveGreen",
+    "DarkOrange",
+    "DarkOrchid",
+    "DarkRed",
+    "DarkSalmon",
+    "DarkSeaGreen",
+    "DarkSlateBlue",
+    "DarkSlateGray",
+    "DarkSlateGrey",
+    "DarkTurquoise",
+    "DarkViolet",
+    "DeepPink",
+    "DeepSkyBlue",
+    "DimGray",
+    "DimGrey",
+    "DodgerBlue",
+    "FireBrick",
+    "FloralWhite",
+    "ForestGreen",
+    "Fuchsia",
+    "Gainsboro",
+    "GhostWhite",
+    "Gold",
+    "GoldenRod",
+    "Gray",
+    "Green",
+    "GreenYellow",
+    "Grey",
+    "HoneyDew",
+    "HotPink",
+    "IndianRed",
+    "Indigo",
+    "Ivory",
+    "Khaki",
+    "Lavender",
+    "LavenderBlush",
+    "LawnGreen",
+    "LemonChiffon",
+    "LightBlue",
+    "LightCoral",
+    "LightCyan",
+    "LightGoldenRodYellow",
+    "LightGray",
+    "LightGreen",
+    "LightGrey",
+    "LightPink",
+    "LightSalmon",
+    "LightSeaGreen",
+    "LightSkyBlue",
+    "LightSlateGray",
+    "LightSlateGrey"
+   ],
+   "small_after": []
+  },
+  "cells": [
+   {
+    "slot": 0,
+    "off": "0x8570670",
+    "ptr": "0x148d3aa58",
+    "name": "AliceBlue",
+    "rest_u32": [
+     4042850303,
+     0
+    ]
+   },
+   {
+    "slot": 1,
+    "off": "0x8570680",
+    "ptr": "0x148d3aa68",
+    "name": "AntiqueWhite",
+    "rest_u32": [
+     4209760255,
+     0
+    ]
+   },
+   {
+    "slot": 2,
+    "off": "0x8570690",
+    "ptr": "0x148d3aa78",
+    "name": "Aqua",
+    "rest_u32": [
+     16777215,
+     0
+    ]
+   },
+   {
+    "slot": 3,
+    "off": "0x85706a0",
+    "ptr": "0x148d3aa80",
+    "name": "Aquamarine",
+    "rest_u32": [
+     2147472639,
+     0
+    ]
+   },
+   {
+    "slot": 4,
+    "off": "0x85706b0",
+    "ptr": "0x148d3aa8c",
+    "name": "Azure",
+    "rest_u32": [
+     4043309055,
+     0
+    ]
+   },
+   {
+    "slot": 5,
+    "off": "0x85706c0",
+    "ptr": "0x148d3aa94",
+    "name": "Beige",
+    "rest_u32": [
+     4126530815,
+     0
+    ]
+   },
+   {
+    "slot": 6,
+    "off": "0x85706d0",
+    "ptr": "0x148d3aa9c",
+    "name": "Bisque",
+    "rest_u32": [
+     4293182719,
+     0
+    ]
+   },
+   {
+    "slot": 7,
+    "off": "0x85706e0",
+    "ptr": "0x148d3aaa4",
+    "name": "Black",
+    "rest_u32": [
+     255,
+     0
+    ]
+   },
+   {
+    "slot": 8,
+    "off": "0x85706f0",
+    "ptr": "0x148d3aab0",
+    "name": "BlanchedAlmond",
+    "rest_u32": [
+     4293643775,
+     0
+    ]
+   },
+   {
+    "slot": 9,
+    "off": "0x8570700",
+    "ptr": "0x148d3aac0",
+    "name": "Blue",
+    "rest_u32": [
+     65535,
+     0
+    ]
+   },
+   {
+    "slot": 10,
+    "off": "0x8570710",
+    "ptr": "0x148d3aac8",
+    "name": "BlueViolet",
+    "rest_u32": [
+     2318131967,
+     0
+    ]
+   },
+   {
+    "slot": 11,
+    "off": "0x8570720",
+    "ptr": "0x148d3aad4",
+    "name": "Brown",
+    "rest_u32": [
+     2771004159,
+     0
+    ]
+   },
+   {
+    "slot": 12,
+    "off": "0x8570730",
+    "ptr": "0x148d3aae0",
+    "name": "BurlyWood",
+    "rest_u32": [
+     3736635391,
+     0
+    ]
+   },
+   {
+    "slot": 13,
+    "off": "0x8570740",
+    "ptr": "0x148d3aaf0",
+    "name": "CadetBlue",
+    "rest_u32": [
+     1604231423,
+     0
+    ]
+   }
+  ]
+ },
+ {
+  "table": {
+   "section": ".rdata",
+   "rva": "0x85732e0",
+   "stride": 16,
+   "count": 294,
+   "names": [
+    "AliceBlue",
+    "AntiqueWhite",
+    "Aqua",
+    "Aquamarine",
+    "Azure",
+    "Beige",
+    "Bisque",
+    "Black",
+    "BlanchedAlmond",
+    "Blue",
+    "BlueViolet",
+    "Brown",
+    "BurlyWood",
+    "CadetBlue",
+    "Chartreuse",
+    "Chocolate",
+    "Coral",
+    "CornflowerBlue",
+    "Cornsilk",
+    "Crimson",
+    "Cyan",
+    "DarkBlue",
+    "DarkCyan",
+    "DarkGoldenRod",
+    "DarkGray",
+    "DarkGreen",
+    "DarkGrey",
+    "DarkKhaki",
+    "DarkMagenta",
+    "DarkOliveGreen",
+    "DarkOrange",
+    "DarkOrchid",
+    "DarkRed",
+    "DarkSalmon",
+    "DarkSeaGreen",
+    "DarkSlateBlue",
+    "DarkSlateGray",
+    "DarkSlateGrey",
+    "DarkTurquoise",
+    "DarkViolet",
+    "DeepPink",
+    "DeepSkyBlue",
+    "DimGray",
+    "DimGrey",
+    "DodgerBlue",
+    "FireBrick",
+    "FloralWhite",
+    "ForestGreen",
+    "Fuchsia",
+    "Gainsboro",
+    "GhostWhite",
+    "Gold",
+    "GoldenRod",
+    "Gray",
+    "Green",
+    "GreenYellow",
+    "Grey",
+    "HoneyDew",
+    "HotPink",
+    "IndianRed",
+    "Indigo",
+    "Ivory",
+    "Khaki",
+    "Lavender",
+    "LavenderBlush",
+    "LawnGreen",
+    "LemonChiffon",
+    "LightBlue",
+    "LightCoral",
+    "LightCyan",
+    "LightGoldenRodYellow",
+    "LightGray",
+    "LightGreen",
+    "LightGrey",
+    "LightPink",
+    "LightSalmon",
+    "LightSeaGreen",
+    "LightSkyBlue",
+    "LightSlateGray",
+    "LightSlateGrey"
+   ],
+   "small_after": []
+  },
+  "cells": [
+   {
+    "slot": 0,
+    "off": "0x85718e0",
+    "ptr": "0x148d3aa58",
+    "name": "AliceBlue",
+    "rest_u32": [
+     4042850303,
+     0
+    ]
+   },
+   {
+    "slot": 1,
+    "off": "0x85718f0",
+    "ptr": "0x148d3aa68",
+    "name": "AntiqueWhite",
+    "rest_u32": [
+     4209760255,
+     0
+    ]
+   },
+   {
+    "slot": 2,
+    "off": "0x8571900",
+    "ptr": "0x148d3aa78",
+    "name": "Aqua",
+    "rest_u32": [
+     16777215,
+     0
+    ]
+   },
+   {
+    "slot": 3,
+    "off": "0x8571910",
+    "ptr": "0x148d3aa80",
+    "name": "Aquamarine",
+    "rest_u32": [
+     2147472639,
+     0
+    ]
+   },
+   {
+    "slot": 4,
+    "off": "0x8571920",
+    "ptr": "0x148d3aa8c",
+    "name": "Azure",
+    "rest_u32": [
+     4043309055,
+     0
+    ]
+   },
+   {
+    "slot": 5,
+    "off": "0x8571930",
+    "ptr": "0x148d3aa94",
+    "name": "Beige",
+    "rest_u32": [
+     4126530815,
+     0
+    ]
+   },
+   {
+    "slot": 6,
+    "off": "0x8571940",
+    "ptr": "0x148d3aa9c",
+    "name": "Bisque",
+    "rest_u32": [
+     4293182719,
+     0
+    ]
+   },
+   {
+    "slot": 7,
+    "off": "0x8571950",
+    "ptr": "0x148d3aaa4",
+    "name": "Black",
+    "rest_u32": [
+     255,
+     0
+    ]
+   },
+   {
+    "slot": 8,
+    "off": "0x8571960",
+    "ptr": "0x148d3aab0",
+    "name": "BlanchedAlmond",
+    "rest_u32": [
+     4293643775,
+     0
+    ]
+   },
+   {
+    "slot": 9,
+    "off": "0x8571970",
+    "ptr": "0x148d3aac0",
+    "name": "Blue",
+    "rest_u32": [
+     65535,
+     0
+    ]
+   },
+   {
+    "slot": 10,
+    "off": "0x8571980",
+    "ptr": "0x148d3aac8",
+    "name": "BlueViolet",
+    "rest_u32": [
+     2318131967,
+     0
+    ]
+   },
+   {
+    "slot": 11,
+    "off": "0x8571990",
+    "ptr": "0x148d3aad4",
+    "name": "Brown",
+    "rest_u32": [
+     2771004159,
+     0
+    ]
+   },
+   {
+    "slot": 12,
+    "off": "0x85719a0",
+    "ptr": "0x148d3aae0",
+    "name": "BurlyWood",
+    "rest_u32": [
+     3736635391,
+     0
+    ]
+   },
+   {
+    "slot": 13,
+    "off": "0x85719b0",
+    "ptr": "0x148d3aaf0",
+    "name": "CadetBlue",
+    "rest_u32": [
+     1604231423,
+     0
+    ]
+   }
+  ]
+ },
+ {
+  "table": {
+   "section": ".rdata",
+   "rva": "0x8594dd0",
+   "stride": 16,
+   "count": 294,
+   "names": [
+    "AliceBlue",
+    "AntiqueWhite",
+    "Aqua",
+    "Aquamarine",
+    "Azure",
+    "Beige",
+    "Bisque",
+    "Black",
+    "BlanchedAlmond",
+    "Blue",
+    "BlueViolet",
+    "Brown",
+    "BurlyWood",
+    "CadetBlue",
+    "Chartreuse",
+    "Chocolate",
+    "Coral",
+    "CornflowerBlue",
+    "Cornsilk",
+    "Crimson",
+    "Cyan",
+    "DarkBlue",
+    "DarkCyan",
+    "DarkGoldenRod",
+    "DarkGray",
+    "DarkGreen",
+    "DarkGrey",
+    "DarkKhaki",
+    "DarkMagenta",
+    "DarkOliveGreen",
+    "DarkOrange",
+    "DarkOrchid",
+    "DarkRed",
+    "DarkSalmon",
+    "DarkSeaGreen",
+    "DarkSlateBlue",
+    "DarkSlateGray",
+    "DarkSlateGrey",
+    "DarkTurquoise",
+    "DarkViolet",
+    "DeepPink",
+    "DeepSkyBlue",
+    "DimGray",
+    "DimGrey",
+    "DodgerBlue",
+    "FireBrick",
+    "FloralWhite",
+    "ForestGreen",
+    "Fuchsia",
+    "Gainsboro",
+    "GhostWhite",
+    "Gold",
+    "GoldenRod",
+    "Gray",
+    "Green",
+    "GreenYellow",
+    "Grey",
+    "HoneyDew",
+    "HotPink",
+    "IndianRed",
+    "Indigo",
+    "Ivory",
+    "Khaki",
+    "Lavender",
+    "LavenderBlush",
+    "LawnGreen",
+    "LemonChiffon",
+    "LightBlue",
+    "LightCoral",
+    "LightCyan",
+    "LightGoldenRodYellow",
+    "LightGray",
+    "LightGreen",
+    "LightGrey",
+    "LightPink",
+    "LightSalmon",
+    "LightSeaGreen",
+    "LightSkyBlue",
+    "LightSlateGray",
+    "LightSlateGrey"
+   ],
+   "small_after": []
+  },
+  "cells": [
+   {
+    "slot": 0,
+    "off": "0x85933d0",
+    "ptr": "0x148d3aa58",
+    "name": "AliceBlue",
+    "rest_u32": [
+     4042850303,
+     0
+    ]
+   },
+   {
+    "slot": 1,
+    "off": "0x85933e0",
+    "ptr": "0x148d3aa68",
+    "name": "AntiqueWhite",
+    "rest_u32": [
+     4209760255,
+     0
+    ]
+   },
+   {
+    "slot": 2,
+    "off": "0x85933f0",
+    "ptr": "0x148d3aa78",
+    "name": "Aqua",
+    "rest_u32": [
+     16777215,
+     0
+    ]
+   },
+   {
+    "slot": 3,
+    "off": "0x8593400",
+    "ptr": "0x148d3aa80",
+    "name": "Aquamarine",
+    "rest_u32": [
+     2147472639,
+     0
+    ]
+   },
+   {
+    "slot": 4,
+    "off": "0x8593410",
+    "ptr": "0x148d3aa8c",
+    "name": "Azure",
+    "rest_u32": [
+     4043309055,
+     0
+    ]
+   },
+   {
+    "slot": 5,
+    "off": "0x8593420",
+    "ptr": "0x148d3aa94",
+    "name": "Beige",
+    "rest_u32": [
+     4126530815,
+     0
+    ]
+   },
+   {
+    "slot": 6,
+    "off": "0x8593430",
+    "ptr": "0x148d3aa9c",
+    "name": "Bisque",
+    "rest_u32": [
+     4293182719,
+     0
+    ]
+   },
+   {
+    "slot": 7,
+    "off": "0x8593440",
+    "ptr": "0x148d3aaa4",
+    "name": "Black",
+    "rest_u32": [
+     255,
+     0
+    ]
+   },
+   {
+    "slot": 8,
+    "off": "0x8593450",
+    "ptr": "0x148d3aab0",
+    "name": "BlanchedAlmond",
+    "rest_u32": [
+     4293643775,
+     0
+    ]
+   },
+   {
+    "slot": 9,
+    "off": "0x8593460",
+    "ptr": "0x148d3aac0",
+    "name": "Blue",
+    "rest_u32": [
+     65535,
+     0
+    ]
+   },
+   {
+    "slot": 10,
+    "off": "0x8593470",
+    "ptr": "0x148d3aac8",
+    "name": "BlueViolet",
+    "rest_u32": [
+     2318131967,
+     0
+    ]
+   },
+   {
+    "slot": 11,
+    "off": "0x8593480",
+    "ptr": "0x148d3aad4",
+    "name": "Brown",
+    "rest_u32": [
+     2771004159,
+     0
+    ]
+   },
+   {
+    "slot": 12,
+    "off": "0x8593490",
+    "ptr": "0x148d3aae0",
+    "name": "BurlyWood",
+    "rest_u32": [
+     3736635391,
+     0
+    ]
+   },
+   {
+    "slot": 13,
+    "off": "0x85934a0",
+    "ptr": "0x148d3aaf0",
+    "name": "CadetBlue",
+    "rest_u32": [
+     1604231423,
+     0
+    ]
+   }
+  ]
+ }
+]

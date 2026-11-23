@@ -1,0 +1,19 @@
+{
+ "fieldinf_u32_total": 597760,
+ "in_typeinfo_u32_11_domain": 305737,
+ "in_typeinfo_u32_0_domain_only": 0,
+ "small_lt_0x400": 144040,
+ "data_va_low": 19,
+ "other_candidate_hashes": 147964,
+ "other_distinct": 59366,
+ "family_hits": {
+  "djb2_xor(5381)": 4,
+  "djb2_add(5381)": 1,
+  "fnv1a32": 4,
+  "mul31_xor(0)": 0,
+  "mul31_add(0)": 0,
+  "mul131_xor(0)": 1,
+  "mul16777619_xor(0)": 2
+ },
+ "identifier_universe": 132594
+}

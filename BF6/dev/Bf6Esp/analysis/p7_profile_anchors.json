@@ -1,0 +1,796 @@
+{
+ "game": "G:\\SteamLibrary\\steamapps\\common\\Battlefield 6\\bf6.exe",
+ "image_base": 5368709120,
+ "sections": [
+  {
+   "name": ".text",
+   "rva": 4096,
+   "virtual_size": 120325503,
+   "raw_size": 120325632,
+   "raw_offset": 1536,
+   "characteristics": 1610612768
+  },
+  {
+   "name": "ctr",
+   "rva": 120332288,
+   "virtual_size": 17943011,
+   "raw_size": 17943040,
+   "raw_offset": 120327168,
+   "characteristics": 1610612768
+  },
+  {
+   "name": ".rdata",
+   "rva": 138276864,
+   "virtual_size": 24044982,
+   "raw_size": 24045056,
+   "raw_offset": 138270208,
+   "characteristics": 1073741888
+  },
+  {
+   "name": ".data",
+   "rva": 162324480,
+   "virtual_size": 13390792,
+   "raw_size": 6595072,
+   "raw_offset": 162315264,
+   "characteristics": 3221225536
+  },
+  {
+   "name": ".pdata",
+   "rva": 175718400,
+   "virtual_size": 7569264,
+   "raw_size": 7569408,
+   "raw_offset": 168910336,
+   "characteristics": 1073741888
+  },
+  {
+   "name": "typeinfo",
+   "rva": 183287808,
+   "virtual_size": 6023728,
+   "raw_size": 6024192,
+   "raw_offset": 176479744,
+   "characteristics": 3221225536
+  },
+  {
+   "name": "fieldinf",
+   "rva": 189313024,
+   "virtual_size": 2390976,
+   "raw_size": 2391040,
+   "raw_offset": 182503936,
+   "characteristics": 3221225536
+  },
+  {
+   "name": "_RDATA",
+   "rva": 191705088,
+   "virtual_size": 238344,
+   "raw_size": 238592,
+   "raw_offset": 184894976,
+   "characteristics": 1073741888
+  },
+  {
+   "name": ".rodata",
+   "rva": 191946752,
+   "virtual_size": 3456,
+   "raw_size": 3584,
+   "raw_offset": 185133568,
+   "characteristics": 1073741888
+  },
+  {
+   "name": ".rsrc",
+   "rva": 191950848,
+   "virtual_size": 333888,
+   "raw_size": 334336,
+   "raw_offset": 185137152,
+   "characteristics": 1073741888
+  },
+  {
+   "name": ".reloc",
+   "rva": 192286720,
+   "virtual_size": 2439256,
+   "raw_size": 2439680,
+   "raw_offset": 185471488,
+   "characteristics": 1107296320
+  },
+  {
+   "name": ".vm_sec",
+   "rva": 194727936,
+   "virtual_size": 49664,
+   "raw_size": 49664,
+   "raw_offset": 187911168,
+   "characteristics": 3221225536
+  },
+  {
+   "name": ".vlizer",
+   "rva": 194781184,
+   "virtual_size": 11258880,
+   "raw_size": 11258880,
+   "raw_offset": 187960832,
+   "characteristics": 1610612832
+  }
+ ],
+ "name_hits": {
+  "ClientSoldierEntity": [
+   {
+    "file_offset": 153165872,
+    "rva": 153172528,
+    "section": ".rdata"
+   }
+  ],
+  "ClientSoldierHealthComponent": [
+   {
+    "file_offset": 149139458,
+    "rva": 149146114,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 153169728,
+    "rva": 153176384,
+    "section": ".rdata"
+   }
+  ],
+  "CurrentHealth": [
+   {
+    "file_offset": 149074829,
+    "rva": 149081485,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 149388584,
+    "rva": 149395240,
+    "section": ".rdata"
+   }
+  ],
+  "MaxHealth": [
+   {
+    "file_offset": 149074984,
+    "rva": 149081640,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 150782193,
+    "rva": 150788849,
+    "section": ".rdata"
+   }
+  ],
+  "CurrentTeamId": [
+   {
+    "file_offset": 149356008,
+    "rva": 149362664,
+    "section": ".rdata"
+   }
+  ],
+  "ClientPlayerManager": [
+   {
+    "file_offset": 151658696,
+    "rva": 151665352,
+    "section": ".rdata"
+   }
+  ],
+  "ClientPlayerIteratorEntity": [
+   {
+    "file_offset": 151658424,
+    "rva": 151665080,
+    "section": ".rdata"
+   }
+  ],
+  "HealthComponent": [
+   {
+    "file_offset": 148743711,
+    "rva": 148750367,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 148762581,
+    "rva": 148769237,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 148777883,
+    "rva": 148784539,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 148778283,
+    "rva": 148784939,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 148841819,
+    "rva": 148848475,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 148842023,
+    "rva": 148848679,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 148861173,
+    "rva": 148867829,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 148868435,
+    "rva": 148875091,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 148953199,
+    "rva": 148959855,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 148953919,
+    "rva": 148960575,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 149013533,
+    "rva": 149020189,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 149061899,
+    "rva": 149068555,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 149095610,
+    "rva": 149102266,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 149112343,
+    "rva": 149118999,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 149126403,
+    "rva": 149133059,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 149139471,
+    "rva": 149146127,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 149226672,
+    "rva": 149233328,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 149258664,
+    "rva": 149265320,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 149308691,
+    "rva": 149315347,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 149308752,
+    "rva": 149315408,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 149309159,
+    "rva": 149315815,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 149356407,
+    "rva": 149363063,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 149397607,
+    "rva": 149404263,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 149397648,
+    "rva": 149404304,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 149397683,
+    "rva": 149404339,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 150315938,
+    "rva": 150322594,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 150316978,
+    "rva": 150323634,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 150441016,
+    "rva": 150447672,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 150441127,
+    "rva": 150447783,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 150590672,
+    "rva": 150597328,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 150682667,
+    "rva": 150689323,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 150682787,
+    "rva": 150689443,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 150721507,
+    "rva": 150728163,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 150721547,
+    "rva": 150728203,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 151628037,
+    "rva": 151634693,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 151628214,
+    "rva": 151634870,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 151628249,
+    "rva": 151634905,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 151663698,
+    "rva": 151670354,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 151690165,
+    "rva": 151696821,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 151690201,
+    "rva": 151696857,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 151690246,
+    "rva": 151696902,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 151696618,
+    "rva": 151703274,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 151745812,
+    "rva": 151752468,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 151745987,
+    "rva": 151752643,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 151761524,
+    "rva": 151768180,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 151772162,
+    "rva": 151778818,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 151772412,
+    "rva": 151779068,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 151829387,
+    "rva": 151836043,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 151829497,
+    "rva": 151836153,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 153140253,
+    "rva": 153146909,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 153140288,
+    "rva": 153146944,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 153140421,
+    "rva": 153147077,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 153141341,
+    "rva": 153147997,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 153169741,
+    "rva": 153176397,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 153434984,
+    "rva": 153441640,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 153435064,
+    "rva": 153441720,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 153481739,
+    "rva": 153488395,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 153482299,
+    "rva": 153488955,
+    "section": ".rdata"
+   }
+  ],
+  "LocalPlayer": [
+   {
+    "file_offset": 139345031,
+    "rva": 139351687,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 139383163,
+    "rva": 139389819,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 139435125,
+    "rva": 139441781,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 139520257,
+    "rva": 139526913,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 148713686,
+    "rva": 148720342,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 148800122,
+    "rva": 148806778,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 149318978,
+    "rva": 149325634,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 149727616,
+    "rva": 149734272,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 149727706,
+    "rva": 149734362,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 149773478,
+    "rva": 149780134,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 149863115,
+    "rva": 149869771,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 150648320,
+    "rva": 150654976,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 150649456,
+    "rva": 150656112,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 150870873,
+    "rva": 150877529,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 150870899,
+    "rva": 150877555,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 151468353,
+    "rva": 151475009,
+    "section": ".rdata"
+   }
+  ],
+  "ClientGame": [
+   {
+    "file_offset": 148903400,
+    "rva": 148910056,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 150652372,
+    "rva": 150659028,
+    "section": ".rdata"
+   }
+  ],
+  "GameContext": [],
+  "ClientConnection": [
+   {
+    "file_offset": 151658384,
+    "rva": 151665040,
+    "section": ".rdata"
+   }
+  ],
+  "ClientSoldierWeapon": [
+   {
+    "file_offset": 153165848,
+    "rva": 153172504,
+    "section": ".rdata"
+   }
+  ],
+  "ClientSoldierCameraComponent": [
+   {
+    "file_offset": 153169760,
+    "rva": 153176416,
+    "section": ".rdata"
+   }
+  ],
+  "EcsRimeTransform": [
+   {
+    "file_offset": 152986456,
+    "rva": 152993112,
+    "section": ".rdata"
+   }
+  ],
+  "EcsWorldTransform": [
+   {
+    "file_offset": 151319416,
+    "rva": 151326072,
+    "section": ".rdata"
+   }
+  ],
+  "CurrentHealthPercentage": [],
+  "HealthPercentage": [
+   {
+    "file_offset": 149074904,
+    "rva": 149081560,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 149772981,
+    "rva": 149779637,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 149774556,
+    "rva": 149781212,
+    "section": ".rdata"
+   }
+  ],
+  "OwningTeam": [
+   {
+    "file_offset": 149160736,
+    "rva": 149167392,
+    "section": ".rdata"
+   }
+  ],
+  "ShooterTeamId": [
+   {
+    "file_offset": 148835776,
+    "rva": 148842432,
+    "section": ".rdata"
+   }
+  ],
+  "LocalTeam": [
+   {
+    "file_offset": 139348864,
+    "rva": 139355520,
+    "section": ".rdata"
+   },
+   {
+    "file_offset": 149318994,
+    "rva": 149325650,
+    "section": ".rdata"
+   }
+  ],
+  "ClientSoldierEntryComponent": [
+   {
+    "file_offset": 153169944,
+    "rva": 153176600,
+    "section": ".rdata"
+   }
+  ],
+  "BFClientPlayerExtent": [
+   {
+    "file_offset": 149226808,
+    "rva": 149233464,
+    "section": ".rdata"
+   }
+  ],
+  "BFPlayerExtent": [
+   {
+    "file_offset": 149069072,
+    "rva": 149075728,
+    "section": ".rdata"
+   }
+  ]
+ },
+ "anchors": [
+  {
+   "name": "Ctr.LocalPlayerIdThunkCluster",
+   "rva": 127287445,
+   "section": "ctr",
+   "pattern": "48 8D 05 8C 23 60 01 C3 48 8D 05 3C 24 60 01 C3 48 8D 05 44 24 60 01 C3 48 8D 05 4C 24 60 01 C3 48 8D 05 54 24 60 01 C3 48 8D 05 CC 23 60 01 C3 48 8D 05 D4 23 60 01 C3 48 8D 05 DC 23 60 01 C3 48 8D 05 E4 23 60 01 C3 48 8D 05 4C 24 60 01 C3",
+   "wildcard_offsets": [
+    3,
+    4,
+    5,
+    6,
+    11,
+    12,
+    13,
+    14,
+    19,
+    20,
+    21,
+    22,
+    27,
+    28,
+    29,
+    30,
+    35,
+    36,
+    37,
+    38,
+    43,
+    44,
+    45,
+    46,
+    51,
+    52,
+    53,
+    54,
+    59,
+    60,
+    61,
+    62,
+    67,
+    68,
+    69,
+    70,
+    75,
+    76,
+    77,
+    78
+   ],
+   "file_matches": 4468,
+   "note": "10 连 lea rax,[rip+str]; ret，指向 LocalPlayerId_* 枚举名；用作 build 指纹锚点"
+  },
+  {
+   "name": "Text.HealthStringRef",
+   "rva": 49890960,
+   "section": ".text",
+   "pattern": "7C 64 06 06 48 8D 4C 24 20 E8 D2 E3 2A 00 48 8B",
+   "wildcard_offsets": [],
+   "file_matches": 1,
+   "note": "对明文名字的 RIP 相对引用点（静态锚点）"
+  },
+  {
+   "name": "Text.TeamIdStringRef",
+   "rva": 44993504,
+   "section": ".text",
+   "pattern": "0F B7 41 06 44 8B 0D 6D 5C AF 07 4D 8B C7 48 8B",
+   "wildcard_offsets": [],
+   "file_matches": 1,
+   "note": "对明文名字的 RIP 相对引用点（静态锚点）"
+  },
+  {
+   "name": "Text.LocalPlayerStringRef",
+   "rva": 63030528,
+   "section": ".text",
+   "pattern": "0C C8 57 05 EB 34 48 8D 15 23 C8 57 05 EB 2B 48",
+   "wildcard_offsets": [],
+   "file_matches": 1,
+   "note": "对明文名字的 RIP 相对引用点（静态锚点）"
+  },
+  {
+   "name": "Reflect.ClientSoldierEntity",
+   "rva": 153172528,
+   "section": ".rdata",
+   "pattern": "43 6C 69 65 6E 74 53 6F 6C 64 69 65 72 45 6E 74 69 74 79",
+   "wildcard_offsets": [],
+   "file_matches": 1,
+   "note": "明文反射名，运行时反射解析器的名字白名单锚点"
+  },
+  {
+   "name": "Reflect.ClientSoldierHealthComponent",
+   "rva": 149146114,
+   "section": ".rdata",
+   "pattern": "43 6C 69 65 6E 74 53 6F 6C 64 69 65 72 48 65 61 6C 74 68 43 6F 6D 70 6F 6E 65 6E 74",
+   "wildcard_offsets": [],
+   "file_matches": 2,
+   "note": "明文反射名，运行时反射解析器的名字白名单锚点"
+  },
+  {
+   "name": "Reflect.CurrentHealth",
+   "rva": 148806468,
+   "section": ".rdata",
+   "pattern": "43 75 72 72 65 6E 74 48 65 61 6C 74 68",
+   "wildcard_offsets": [],
+   "file_matches": 4,
+   "note": "明文反射名，运行时反射解析器的名字白名单锚点"
+  },
+  {
+   "name": "Reflect.MaxHealth",
+   "rva": 148908078,
+   "section": ".rdata",
+   "pattern": "4D 61 78 48 65 61 6C 74 68",
+   "wildcard_offsets": [],
+   "file_matches": 8,
+   "note": "明文反射名，运行时反射解析器的名字白名单锚点"
+  },
+  {
+   "name": "Reflect.CurrentTeamId",
+   "rva": 149362664,
+   "section": ".rdata",
+   "pattern": "43 75 72 72 65 6E 74 54 65 61 6D 49 64",
+   "wildcard_offsets": [],
+   "file_matches": 1,
+   "note": "明文反射名，运行时反射解析器的名字白名单锚点"
+  },
+  {
+   "name": "Reflect.ClientPlayerManager",
+   "rva": 148750770,
+   "section": ".rdata",
+   "pattern": "43 6C 69 65 6E 74 50 6C 61 79 65 72 4D 61 6E 61 67 65 72",
+   "wildcard_offsets": [],
+   "file_matches": 2,
+   "note": "明文反射名，运行时反射解析器的名字白名单锚点"
+  }
+ ]
+}

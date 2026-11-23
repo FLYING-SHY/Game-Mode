@@ -1,0 +1,18 @@
+=== Bf6Esp 反射解析器自检（合成夹具） ===
+[信息] 夹具基址=0x1B00C737270 大小=0x2000
+TypeInfo 节点: 0x1B00C737670 -> 0x1B00C737680
+info 头: health=0x1B00C737690 soldier=0x1B00C7376D0
+FieldInfo 数组: 0x1B00C737710 / 0x1B00C737750
+描述符数组: 0x1B00C737770
+[信息] 名字指针 9 个；类型候选 16 个；完整类型 3 个；描述符数组 2 段；字段 10 条。
+[成功] 字段 CurrentHealth：期望 0x30，实际 0x30。
+[成功] 字段 MaxHealth：期望 0x34，实际 0x34。
+[成功] 字段 CurrentTeamId：期望 0x40，实际 0x40。
+[成功] 字段 positionX：期望 0x10，实际 0x10。
+[成功] 字段 positionY：期望 0x14，实际 0x14。
+[成功] 字段 positionZ：期望 0x18，实际 0x18。
+[成功] 字段 healthComponent：期望 0x28，实际 0x28。
+[成功] 类型 ClientSoldierHealthComponent：已还原。
+[成功] 类型 ClientSoldierEntity：已还原。
+[信息] 还原类型数=3，字段条目=10，描述符数组=2，读取失败计数=0
+=== 反射自检通过 ===

@@ -1,0 +1,330 @@
+{
+ "targets": {
+  "CurrentHealth": {
+   "hash": "0xa030d390",
+   "in_typeinfo": false,
+   "in_fieldinf": false
+  },
+  "MaxHealth": {
+   "hash": "0x44bc420d",
+   "in_typeinfo": false,
+   "in_fieldinf": false
+  },
+  "HealthPercentage": {
+   "hash": "0xbcdf63e1",
+   "in_typeinfo": false,
+   "in_fieldinf": false
+  },
+  "Health": {
+   "hash": "0xb60d7c59",
+   "in_typeinfo": false,
+   "in_fieldinf": false
+  },
+  "CurrentTeamId": {
+   "hash": "0xcf685d9c",
+   "in_typeinfo": false,
+   "in_fieldinf": false
+  },
+  "TeamId": {
+   "hash": "0xbff30255",
+   "in_typeinfo": false,
+   "in_fieldinf": false
+  },
+  "LocalPlayer": {
+   "hash": "0x09b1cc9b",
+   "in_typeinfo": false,
+   "in_fieldinf": false
+  },
+  "ClientSoldierEntity": {
+   "hash": "0x1a26ffed",
+   "in_typeinfo": false,
+   "in_fieldinf": false
+  },
+  "ClientPlayerManager": {
+   "hash": "0x2844c5dc",
+   "in_typeinfo": false,
+   "in_fieldinf": false
+  },
+  "EcsWorldTransform": {
+   "hash": "0x623844be",
+   "in_typeinfo": false,
+   "in_fieldinf": false
+  },
+  "EcsRimeTransform": {
+   "hash": "0x79819caf",
+   "in_typeinfo": false,
+   "in_fieldinf": false
+  },
+  "ClientSoldierHealthComponent": {
+   "hash": "0xf45bbb85",
+   "in_typeinfo": false,
+   "in_fieldinf": false
+  },
+  "Transform": {
+   "hash": "0x87525469",
+   "in_typeinfo": false,
+   "in_fieldinf": false
+  },
+  "Position": {
+   "hash": "0xcacf49fc",
+   "in_typeinfo": false,
+   "in_fieldinf": false
+  },
+  "GameContext": {
+   "hash": "0x52a51bb4",
+   "in_typeinfo": false,
+   "in_fieldinf": false
+  },
+  "ClientGame": {
+   "hash": "0x3532dfd2",
+   "in_typeinfo": false,
+   "in_fieldinf": false
+  },
+  "Player": {
+   "hash": "0xc9bf6bb6",
+   "in_typeinfo": false,
+   "in_fieldinf": false
+  },
+  "Soldier": {
+   "hash": "0xa98dbf6f",
+   "in_typeinfo": false,
+   "in_fieldinf": false
+  },
+  "Name": {
+   "hash": "0x7c82d882",
+   "in_typeinfo": false,
+   "in_fieldinf": false
+  },
+  "PlayerName": {
+   "hash": "0x2e38d6f1",
+   "in_typeinfo": false,
+   "in_fieldinf": false
+  }
+ },
+ "hits": {
+  "raw|typeinfo": [
+   {
+    "name": "BoH",
+    "hash": "0x0b87c7e0"
+   },
+   {
+    "name": "ColorBlindDaltonizeContrastFactor",
+    "hash": "0x408126b0"
+   },
+   {
+    "name": "GearboxBrake",
+    "hash": "0xd41203fe"
+   },
+   {
+    "name": "LightCullGeometricTriangleRefinePassAsyncEnable",
+    "hash": "0x62aced2f"
+   },
+   {
+    "name": "ProgressedPresentableItem",
+    "hash": "0x90bdfa4d"
+   },
+   {
+    "name": "QueryProcessorExecuteMode_ProcessOnEmptyResults",
+    "hash": "0xc8b9b87f"
+   },
+   {
+    "name": "Rv5S",
+    "hash": "0x7c892727"
+   },
+   {
+    "name": "U3-",
+    "hash": "0x0b87ec0e"
+   },
+   {
+    "name": "U5k",
+    "hash": "0x0b87ec0e"
+   },
+   {
+    "name": "UpscalingQuality",
+    "hash": "0x49c4c950"
+   },
+   {
+    "name": "human: ",
+    "hash": "0x4b581ec0"
+   },
+   {
+    "name": "interactable_id",
+    "hash": "0xb4c6686f"
+   },
+   {
+    "name": "mMYr",
+    "hash": "0x7c6f2e8e"
+   },
+   {
+    "name": "s  firstPartyUidAndDisplayNames: ",
+    "hash": "0xcd6df3e5"
+   },
+   {
+    "name": "santiago.client.authentication.JWTAuthenticationResponse",
+    "hash": "0x43fdea70"
+   },
+   {
+    "name": "unsigned int,class eastl::span<struct fb::DicePhysicsAnimatedBone const ,-1>",
+    "hash": "0x629dcf03"
+   }
+  ],
+  "raw|fieldinf": [
+   {
+    "name": "CurrentVersion",
+    "hash": "0x2b188936"
+   },
+   {
+    "name": "e67",
+    "hash": "0x0b872c81"
+   }
+  ],
+  "lower|typeinfo": [
+   {
+    "name": "Client::allowChangeTo",
+    "hash": "0x5b96d6b8"
+   },
+   {
+    "name": "DebugLinesLine",
+    "hash": "0x233e3f67"
+   },
+   {
+    "name": "EcsRimeProgressBarEndCaps_Round",
+    "hash": "0xdee355dc"
+   },
+   {
+    "name": "EffectorID_RightAnkle",
+    "hash": "0x991508b0"
+   },
+   {
+    "name": "InputIconStringBuilderEntity",
+    "hash": "0x472870f7"
+   },
+   {
+    "name": "ServerType_RANKED",
+    "hash": "0x424ac030"
+   },
+   {
+    "name": "human: ",
+    "hash": "0x4b581ec0"
+   },
+   {
+    "name": "interactable_id",
+    "hash": "0xb4c6686f"
+   }
+  ],
+  "lower|fieldinf": [
+   {
+    "name": "e67",
+    "hash": "0x0b872c81"
+   }
+  ],
+  "upper|typeinfo": [
+   {
+    "name": "BFUIAAPathStyle_Open",
+    "hash": "0x88391fac"
+   },
+   {
+    "name": "ClientBFUIProfileOptionColorStringToVec4Entity",
+    "hash": "0x405c49e0"
+   },
+   {
+    "name": "HiJ",
+    "hash": "0x0b87ec0e"
+   },
+   {
+    "name": "Hij",
+    "hash": "0x0b87ec0e"
+   },
+   {
+    "name": "Talking enabled.",
+    "hash": "0x3bdc90dc"
+   },
+   {
+    "name": "U3-",
+    "hash": "0x0b87ec0e"
+   },
+   {
+    "name": "hn-",
+    "hash": "0x0b87ec0e"
+   }
+  ],
+  "upper|fieldinf": [
+   {
+    "name": "cKveYI",
+    "hash": "0xa4af090e"
+   },
+   {
+    "name": "rightParameter: ",
+    "hash": "0x196a0b76"
+   }
+  ],
+  "raw+nul|typeinfo": [
+   {
+    "name": "MouseButtonsState",
+    "hash": "0xdcdf8436"
+   },
+   {
+    "name": "UBR",
+    "hash": "0x7c851da0"
+   }
+  ],
+  "raw+nul|fieldinf": [
+   {
+    "name": "neS",
+    "hash": "0x7c7284fd"
+   },
+   {
+    "name": "nz,",
+    "hash": "0x7c7284fd"
+   }
+  ],
+  "lower+nul|typeinfo": [
+   {
+    "name": "Crash Info",
+    "hash": "0x4791fca0"
+   },
+   {
+    "name": "HasLicenseReason",
+    "hash": "0x4596d2c0"
+   },
+   {
+    "name": "ITokenServiceService",
+    "hash": "0xbb975db7"
+   },
+   {
+    "name": "L2zA",
+    "hash": "0x0a82d200"
+   },
+   {
+    "name": "MaxQueriesPerFrame",
+    "hash": "0xc8d0cc67"
+   },
+   {
+    "name": "OrtValue shape verification failed. Current shape:",
+    "hash": "0x49f2b9e0"
+   },
+   {
+    "name": "ScreenSpaceRaytraceEnable",
+    "hash": "0x29362d07"
+   },
+   {
+    "name": "elQ",
+    "hash": "0x7c6b8efd"
+   }
+  ],
+  "lower+nul|fieldinf": [
+   {
+    "name": "TinyEvent_AckTimeSyncDone",
+    "hash": "0x01e69447"
+   },
+   {
+    "name": "ndR",
+    "hash": "0x7c7284fd"
+   },
+   {
+    "name": "nz,",
+    "hash": "0x7c7284fd"
+   }
+  ]
+ }
+}

@@ -1,0 +1,209 @@
+{
+ "typeinfo_bases": 23701,
+ "store_refs_to_record_base": 0,
+ "sites": [],
+ "examples": [],
+ "store_refs_into_typeinfo_section": 286731,
+ "target_offset_mod_0x50_histogram": {
+  "0x48": 30576,
+  "0x18": 30531,
+  "0x8": 29829,
+  "0x0": 28668,
+  "0x20": 28567,
+  "0x10": 28492,
+  "0x39": 24233,
+  "0x38": 20994,
+  "0x28": 20767,
+  "0x40": 19038,
+  "0x30": 18943,
+  "0x9": 1183,
+  "0x19": 1170,
+  "0x29": 1138,
+  "0x49": 1071,
+  "0xc": 757,
+  "0x2c": 249,
+  "0x4c": 178,
+  "0x3c": 176,
+  "0x1c": 150,
+  "0x26": 2,
+  "0x21": 2,
+  "0x41": 2,
+  "0x1": 1,
+  "0x11": 1,
+  "0xb": 1,
+  "0x36": 1,
+  "0x1d": 1,
+  "0x25": 1,
+  "0x2d": 1,
+  "0x35": 1,
+  "0x3d": 1,
+  "0x45": 1,
+  "0x4d": 1,
+  "0x22": 1,
+  "0x5": 1,
+  "0x46": 1,
+  "0x7": 1
+ },
+ "top_code_sites": [
+  {
+   "code_rva": 424793,
+   "count": 1
+  },
+  {
+   "code_rva": 424803,
+   "count": 1
+  },
+  {
+   "code_rva": 424804,
+   "count": 1
+  },
+  {
+   "code_rva": 424817,
+   "count": 1
+  },
+  {
+   "code_rva": 424818,
+   "count": 1
+  },
+  {
+   "code_rva": 424824,
+   "count": 1
+  },
+  {
+   "code_rva": 424854,
+   "count": 1
+  },
+  {
+   "code_rva": 424867,
+   "count": 1
+  },
+  {
+   "code_rva": 424868,
+   "count": 1
+  },
+  {
+   "code_rva": 424881,
+   "count": 1
+  },
+  {
+   "code_rva": 424882,
+   "count": 1
+  },
+  {
+   "code_rva": 425013,
+   "count": 1
+  },
+  {
+   "code_rva": 425023,
+   "count": 1
+  },
+  {
+   "code_rva": 425024,
+   "count": 1
+  },
+  {
+   "code_rva": 425051,
+   "count": 1
+  },
+  {
+   "code_rva": 425052,
+   "count": 1
+  },
+  {
+   "code_rva": 425058,
+   "count": 1
+  },
+  {
+   "code_rva": 425088,
+   "count": 1
+  },
+  {
+   "code_rva": 425101,
+   "count": 1
+  },
+  {
+   "code_rva": 425102,
+   "count": 1
+  },
+  {
+   "code_rva": 425115,
+   "count": 1
+  },
+  {
+   "code_rva": 425116,
+   "count": 1
+  },
+  {
+   "code_rva": 425129,
+   "count": 1
+  },
+  {
+   "code_rva": 425130,
+   "count": 1
+  },
+  {
+   "code_rva": 425369,
+   "count": 1
+  },
+  {
+   "code_rva": 425379,
+   "count": 1
+  },
+  {
+   "code_rva": 425380,
+   "count": 1
+  },
+  {
+   "code_rva": 425393,
+   "count": 1
+  },
+  {
+   "code_rva": 425394,
+   "count": 1
+  },
+  {
+   "code_rva": 425400,
+   "count": 1
+  },
+  {
+   "code_rva": 425430,
+   "count": 1
+  },
+  {
+   "code_rva": 425443,
+   "count": 1
+  },
+  {
+   "code_rva": 425444,
+   "count": 1
+  },
+  {
+   "code_rva": 425457,
+   "count": 1
+  },
+  {
+   "code_rva": 425458,
+   "count": 1
+  },
+  {
+   "code_rva": 425589,
+   "count": 1
+  },
+  {
+   "code_rva": 425599,
+   "count": 1
+  },
+  {
+   "code_rva": 425600,
+   "count": 1
+  },
+  {
+   "code_rva": 425627,
+   "count": 1
+  },
+  {
+   "code_rva": 425628,
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,190 @@
+[
+ {
+  "site_rva": "0xd960e0",
+  "func": [
+   "0xd960a0",
+   "0xd96107"
+  ],
+  "strings": [],
+  "section_writes": []
+ },
+ {
+  "site_rva": "0xf3f54d",
+  "func": [
+   "0xf3ecd0",
+   "0xf3f5a4"
+  ],
+  "strings": [],
+  "section_writes": []
+ },
+ {
+  "site_rva": "0x232ea27",
+  "func": [
+   "0x232e9c0",
+   "0x232ec27"
+  ],
+  "strings": [],
+  "section_writes": []
+ },
+ {
+  "site_rva": "0x232ea52",
+  "func": [
+   "0x232e9c0",
+   "0x232ec27"
+  ],
+  "strings": [],
+  "section_writes": []
+ },
+ {
+  "site_rva": "0x38609fe",
+  "func": [
+   "0x38607a5",
+   "0x3860e72"
+  ],
+  "strings": [],
+  "section_writes": []
+ },
+ {
+  "site_rva": "0x3878fc1",
+  "func": [
+   "0x3878f80",
+   "0x3878ffe"
+  ],
+  "strings": [],
+  "section_writes": []
+ },
+ {
+  "site_rva": "0x3cf5cd3",
+  "func": [
+   "0x3cf5b50",
+   "0x3cf5d73"
+  ],
+  "strings": [],
+  "section_writes": []
+ },
+ {
+  "site_rva": "0x44569ca",
+  "func": [
+   "0x44569a0",
+   "0x4456ac2"
+  ],
+  "strings": [],
+  "section_writes": []
+ },
+ {
+  "site_rva": "0x4530664",
+  "func": [
+   "0x4530624",
+   "0x4530808"
+  ],
+  "strings": [],
+  "section_writes": []
+ },
+ {
+  "site_rva": "0x4a1cfce",
+  "func": [
+   "0x4a1cf20",
+   "0x4a1e339"
+  ],
+  "strings": [],
+  "section_writes": []
+ },
+ {
+  "site_rva": "0x4a1e3e4",
+  "func": [
+   "0x4a1e340",
+   "0x4a1fc16"
+  ],
+  "strings": [],
+  "section_writes": []
+ },
+ {
+  "site_rva": "0x4eed65a",
+  "func": [
+   "0x4eed5c0",
+   "0x4eedbcb"
+  ],
+  "strings": [
+   {
+    "code_rva": "0x4eed9b9",
+    "str_rva": "0x8dc455d",
+    "str": "]"
+   },
+   {
+    "code_rva": "0x4eed9ba",
+    "str_rva": "0x8dc455d",
+    "str": "]"
+   }
+  ],
+  "section_writes": []
+ },
+ {
+  "site_rva": "0x56963e5",
+  "func": [
+   "0x5696320",
+   "0x569657e"
+  ],
+  "strings": [],
+  "section_writes": []
+ },
+ {
+  "site_rva": "0x5ed5eea",
+  "func": [
+   "0x5ed5ee0",
+   "0x5ed5f62"
+  ],
+  "strings": [],
+  "section_writes": []
+ },
+ {
+  "site_rva": "0x5f66dcd",
+  "func": [
+   "0x5f66b0d",
+   "0x5f672e6"
+  ],
+  "strings": [],
+  "section_writes": []
+ },
+ {
+  "site_rva": "0x6010f12",
+  "func": [
+   "0x6010e30",
+   "0x6011010"
+  ],
+  "strings": [],
+  "section_writes": []
+ },
+ {
+  "site_rva": "0x6011995",
+  "func": [
+   "0x6011880",
+   "0x6011a03"
+  ],
+  "strings": [],
+  "section_writes": []
+ },
+ {
+  "site_rva": "0x60af054",
+  "func": [
+   "0x60aefb0",
+   "0x60af1e8"
+  ],
+  "strings": [],
+  "section_writes": []
+ },
+ {
+  "site_rva": "0x620c7b2",
+  "func": [
+   "0x620c700",
+   "0x620c836"
+  ],
+  "strings": [],
+  "section_writes": []
+ },
+ {
+  "site_rva": "0x79f028c",
+  "func": null,
+  "strings": [],
+  "section_writes": []
+ }
+]

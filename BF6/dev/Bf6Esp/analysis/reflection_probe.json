@@ -1,0 +1,485 @@
+{
+  "file": "G:\\SteamLibrary\\steamapps\\common\\Battlefield 6\\bf6.exe",
+  "size": 199230312,
+  "sections": [
+    {
+      "name": ".text",
+      "va": 4096,
+      "vsize": 120325503,
+      "roff": 1536,
+      "rsize": 120325632
+    },
+    {
+      "name": "ctr",
+      "va": 120332288,
+      "vsize": 17943011,
+      "roff": 120327168,
+      "rsize": 17943040
+    },
+    {
+      "name": ".rdata",
+      "va": 138276864,
+      "vsize": 24044982,
+      "roff": 138270208,
+      "rsize": 24045056
+    },
+    {
+      "name": ".data",
+      "va": 162324480,
+      "vsize": 13390792,
+      "roff": 162315264,
+      "rsize": 6595072
+    },
+    {
+      "name": ".pdata",
+      "va": 175718400,
+      "vsize": 7569264,
+      "roff": 168910336,
+      "rsize": 7569408
+    },
+    {
+      "name": "typeinfo",
+      "va": 183287808,
+      "vsize": 6023728,
+      "roff": 176479744,
+      "rsize": 6024192
+    },
+    {
+      "name": "fieldinf",
+      "va": 189313024,
+      "vsize": 2390976,
+      "roff": 182503936,
+      "rsize": 2391040
+    },
+    {
+      "name": "_RDATA",
+      "va": 191705088,
+      "vsize": 238344,
+      "roff": 184894976,
+      "rsize": 238592
+    },
+    {
+      "name": ".rodata",
+      "va": 191946752,
+      "vsize": 3456,
+      "roff": 185133568,
+      "rsize": 3584
+    },
+    {
+      "name": ".rsrc",
+      "va": 191950848,
+      "vsize": 333888,
+      "roff": 185137152,
+      "rsize": 334336
+    },
+    {
+      "name": ".reloc",
+      "va": 192286720,
+      "vsize": 2439256,
+      "roff": 185471488,
+      "rsize": 2439680
+    },
+    {
+      "name": ".vm_sec",
+      "va": 194727936,
+      "vsize": 49664,
+      "roff": 187911168,
+      "rsize": 49664
+    },
+    {
+      "name": ".vlizer",
+      "va": 194781184,
+      "vsize": 11258880,
+      "roff": 187960832,
+      "rsize": 11258880
+    }
+  ],
+  "reflection_blob_file_off": "0x8dda7b2",
+  "reflection_blob_va": "0x148ddc1b2",
+  "typeinfo": {
+    "va": "0x14aecc000",
+    "roff": "0xa84de00",
+    "rsize": 6024192,
+    "vsize": 6023728,
+    "head_hex": "cb9ca4c0890008000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002cdfc773890008000000000000000000",
+    "stride_candidates": [
+      "0x20",
+      "0x30",
+      "0x40"
+    ],
+    "first4k_u32_sample": [
+      [
+        0,
+        1765
+      ],
+      [
+        1,
+        687
+      ],
+      [
+        1236066336,
+        60
+      ],
+      [
+        524425,
+        57
+      ],
+      [
+        1156543456,
+        49
+      ],
+      [
+        1194074464,
+        49
+      ],
+      [
+        525069,
+        43
+      ],
+      [
+        1236067704,
+        43
+      ],
+      [
+        131071,
+        24
+      ],
+      [
+        131080,
+        23
+      ],
+      [
+        1194270192,
+        20
+      ],
+      [
+        65544,
+        20
+      ]
+    ],
+    "in_rdata_ptr_count_first8k": 0,
+    "ptr_examples": []
+  },
+  "fieldinf": {
+    "va": "0x14b48b000",
+    "roff": "0xae0ca00",
+    "rsize": 2391040,
+    "vsize": 2390976,
+    "head_hex": "8439b2db880000002000000000000000000000000000000000000000000000000000000000000000000000000000000044b321600000000018000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "stride_candidates": [
+      "0x20",
+      "0x28",
+      "0x40"
+    ],
+    "first4k_u32_sample": [
+      [
+        0,
+        2224
+      ],
+      [
+        1,
+        426
+      ],
+      [
+        1241209736,
+        77
+      ],
+      [
+        1241209832,
+        48
+      ],
+      [
+        2819542105,
+        34
+      ],
+      [
+        1241209864,
+        32
+      ],
+      [
+        136,
+        30
+      ],
+      [
+        1241209896,
+        28
+      ],
+      [
+        8,
+        27
+      ],
+      [
+        1241209408,
+        25
+      ],
+      [
+        4,
+        23
+      ],
+      [
+        1241209160,
+        19
+      ]
+    ]
+  },
+  "names": {
+    "ClientEntityManager": [],
+    "EntityManager": [],
+    "ClientPlayerManager": [
+      "0x8dda7b2",
+      "0x90a20c8"
+    ],
+    "ClientPlayer": [
+      "0x84cf486",
+      "0x84cf4f1",
+      "0x84cf518",
+      "0x84cf528",
+      "0x84cf540",
+      "0x84cf5bc"
+    ],
+    "ClientSoldierEntity": [
+      "0x9212030"
+    ],
+    "ClientCharacterEntity": [
+      "0x8dda790"
+    ],
+    "SoldierEntity": [
+      "0x8e2ab55",
+      "0x8e332cf",
+      "0x8e34300",
+      "0x8e3af80",
+      "0x8e57d4e",
+      "0x8ed58e8"
+    ],
+    "ClPlayer": [
+      "0x90a20a0",
+      "0x90a20e0",
+      "0x90ab520"
+    ],
+    "HealthComponent": [
+      "0x8dda61f",
+      "0x8ddefd5",
+      "0x8de2b9b",
+      "0x8de2d2b",
+      "0x8df255b",
+      "0x8df2627"
+    ],
+    "SoldierHealthComponent": [
+      "0x8e34610",
+      "0x8e3b008",
+      "0x920c056",
+      "0x9212f46"
+    ],
+    "ClientPlayerHealthComponent": [],
+    "m_health": [
+      "0x923045b"
+    ],
+    "m_teamId": [],
+    "m_transformation": [],
+    "m_name": [
+      "0x8e0862b"
+    ],
+    "m_entityId": [],
+    "Player_%d": [
+      "0x90a1fa8"
+    ],
+    "ClientPlayerIteratorEntity": [
+      "0x90a1fb8"
+    ],
+    "NativePtr<ClientPlayerManager>": [
+      "0x8dda7a8"
+    ],
+    "ClClientToServerInfo": [
+      "0x90a2148"
+    ],
+    "ClientConnection": [
+      "0x90a1f08",
+      "0x90a1f28",
+      "0x90a1f50",
+      "0x90a1f70",
+      "0x90a1f90",
+      "0x90a1fe2"
+    ],
+    "TimeSync": [
+      "0x8e00685",
+      "0x8e2b7b9",
+      "0x8e2b7e9",
+      "0x8e2b819",
+      "0x8e2b849",
+      "0x8e2b879"
+    ],
+    "ClientGameContext": [],
+    "GameContext": [
+      "0x8e18ee8"
+    ],
+    "viewMatrix": [
+      "0x8f741a8",
+      "0x8f741b8",
+      "0x8f741c8",
+      "0x8f741d8"
+    ],
+    "ViewMatrix": [
+      "0x8e98d3e",
+      "0x91add37",
+      "0x91add8c",
+      "0x91bc467",
+      "0x91bc4bb"
+    ],
+    "ProjectionMatrix": [
+      "0x8f72f1b",
+      "0x919e988",
+      "0x91c719b",
+      "0x925d11c",
+      "0x927cc12",
+      "0x927ce16"
+    ],
+    "ClientCameraEntity": [
+      "0x90a8f10"
+    ],
+    "CameraEntity": [
+      "0x84dbfa6",
+      "0x8de83a4",
+      "0x8ee4ada",
+      "0x8f36ae0",
+      "0x8f36b99",
+      "0x8f39d2d"
+    ],
+    "ClientCamera": [
+      "0x8ddf1b0",
+      "0x8ddf1c8",
+      "0x8e74748",
+      "0x8f31c18",
+      "0x8f36a90",
+      "0x8f36aa8"
+    ],
+    "SoldierAABB": [],
+    "ClientAreaAABB": [],
+    "AABB": [
+      "0x855b782",
+      "0x855b86a",
+      "0x855b8bd",
+      "0x8b83efb",
+      "0x8b83ff3",
+      "0x8b840ed"
+    ],
+    "BoundingBox": [
+      "0x8e02980",
+      "0x8e02a58",
+      "0x8e16c40",
+      "0x8f9c978",
+      "0x904e5b8",
+      "0x906033f"
+    ],
+    "ClientPhysicsComponent": [],
+    "ClientSoldierWeapon": [
+      "0x8fb4378",
+      "0x9212018",
+      "0x9212068",
+      "0x9213060"
+    ],
+    "SoldierWeapon": [
+      "0x8dfff95",
+      "0x8e6f248",
+      "0x8e88dd8",
+      "0x8ea0407",
+      "0x8ea0437",
+      "0x8ea04bf"
+    ],
+    "VehicleHealthComponent": [
+      "0x8ddefce",
+      "0x8df70ee",
+      "0x8e646e0",
+      "0x8e7a060"
+    ],
+    "ClientDamage": [
+      "0x8ddf090",
+      "0x8e00279",
+      "0x8e002ac",
+      "0x8e1c4e8",
+      "0x8e48bb8",
+      "0x8e48c18"
+    ],
+    "ClientSoldierAim": [
+      "0x8d42328",
+      "0x8d42358",
+      "0x8d42390"
+    ],
+    "Aim": [
+      "0x8508970",
+      "0x85d5bc3",
+      "0x8d418e8",
+      "0x8d418f6",
+      "0x8d41927",
+      "0x8d41946"
+    ],
+    "SoldierAimingComponent": []
+  },
+  "hash_universe_size": 270240,
+  "hash_probe": {
+    "ClientPlayerManager": {
+      "candidates": {
+        "crc32": "0x2d019031",
+        "crc32-lower": "0x7746944c",
+        "crc32-upper": "0x56f5574c",
+        "fnv1a32": "0xd9e7fbae",
+        "fnv1a32-lower": "0xf37baf0e",
+        "fnv1_32": "0x6d442964",
+        "djb2": "0x1d9f1bcc",
+        "sdbm": "0x203a86c1"
+      },
+      "found_in_sections": {}
+    },
+    "ClientSoldierEntity": {
+      "candidates": {
+        "crc32": "0x59f40d2",
+        "crc32-lower": "0x97c97805",
+        "crc32-upper": "0xb67abb05",
+        "fnv1a32": "0xe35ae67b",
+        "fnv1a32-lower": "0x1d6d1b9b",
+        "fnv1_32": "0xcfdb17cb",
+        "djb2": "0xb632f313",
+        "sdbm": "0x8a7fe35a"
+      },
+      "found_in_sections": {}
+    },
+    "HealthComponent": {
+      "candidates": {
+        "crc32": "0x852f25a4",
+        "crc32-lower": "0x8f1b9999",
+        "crc32-upper": "0xecf6dd3a",
+        "fnv1a32": "0xbdd8d10a",
+        "fnv1a32-lower": "0x39ad490a",
+        "fnv1_32": "0x26546fbc",
+        "djb2": "0x728f162e",
+        "sdbm": "0xf0175ba1"
+      },
+      "found_in_sections": {}
+    },
+    "m_health": {
+      "candidates": {
+        "crc32": "0x844971ed",
+        "crc32-lower": "0x844971ed",
+        "crc32-upper": "0x8dc7d43d",
+        "fnv1a32": "0x701fe2f",
+        "fnv1a32-lower": "0x701fe2f",
+        "fnv1_32": "0xd763e33f",
+        "djb2": "0x9e8ab147",
+        "sdbm": "0x8d77ecee"
+      },
+      "found_in_sections": {}
+    },
+    "m_teamId": {
+      "candidates": {
+        "crc32": "0x92c1ddaf",
+        "crc32-lower": "0x745f90d",
+        "crc32-upper": "0xecb5cdd",
+        "fnv1a32": "0xf187d781",
+        "fnv1a32-lower": "0xf139b8a1",
+        "fnv1_32": "0x2f7aba15",
+        "djb2": "0xba889785",
+        "sdbm": "0x97df80ca"
+      },
+      "found_in_sections": {}
+    }
+  }
+}

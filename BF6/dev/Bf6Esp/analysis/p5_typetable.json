@@ -1,0 +1,9 @@
+{
+ "fieldinf": {
+  "slots": 397,
+  "distinct": 278,
+  "zero_targets": 8,
+  "min": "0x83f3345",
+  "max": "0x9ac1047"
+ }
+}

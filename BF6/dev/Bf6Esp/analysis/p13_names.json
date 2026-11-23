@@ -1,0 +1,2491 @@
+{
+ "imageBase": 5368709120,
+ "sections": [
+  {
+   "name": ".text",
+   "vaddr": 4096,
+   "vsize": 120325503,
+   "rawsize": 120325632,
+   "rawoff": 1536,
+   "vaddr_end": 120329728
+  },
+  {
+   "name": "ctr",
+   "vaddr": 120332288,
+   "vsize": 17943011,
+   "rawsize": 17943040,
+   "rawoff": 120327168,
+   "vaddr_end": 138275328
+  },
+  {
+   "name": ".rdata",
+   "vaddr": 138276864,
+   "vsize": 24044982,
+   "rawsize": 24045056,
+   "rawoff": 138270208,
+   "vaddr_end": 162321920
+  },
+  {
+   "name": ".data",
+   "vaddr": 162324480,
+   "vsize": 13390792,
+   "rawsize": 6595072,
+   "rawoff": 162315264,
+   "vaddr_end": 175715272
+  },
+  {
+   "name": ".pdata",
+   "vaddr": 175718400,
+   "vsize": 7569264,
+   "rawsize": 7569408,
+   "rawoff": 168910336,
+   "vaddr_end": 183287808
+  },
+  {
+   "name": "typeinfo",
+   "vaddr": 183287808,
+   "vsize": 6023728,
+   "rawsize": 6024192,
+   "rawoff": 176479744,
+   "vaddr_end": 189312000
+  },
+  {
+   "name": "fieldinf",
+   "vaddr": 189313024,
+   "vsize": 2390976,
+   "rawsize": 2391040,
+   "rawoff": 182503936,
+   "vaddr_end": 191704064
+  },
+  {
+   "name": "_RDATA",
+   "vaddr": 191705088,
+   "vsize": 238344,
+   "rawsize": 238592,
+   "rawoff": 184894976,
+   "vaddr_end": 191943680
+  },
+  {
+   "name": ".rodata",
+   "vaddr": 191946752,
+   "vsize": 3456,
+   "rawsize": 3584,
+   "rawoff": 185133568,
+   "vaddr_end": 191950336
+  },
+  {
+   "name": ".rsrc",
+   "vaddr": 191950848,
+   "vsize": 333888,
+   "rawsize": 334336,
+   "rawoff": 185137152,
+   "vaddr_end": 192285184
+  },
+  {
+   "name": ".reloc",
+   "vaddr": 192286720,
+   "vsize": 2439256,
+   "rawsize": 2439680,
+   "rawoff": 185471488,
+   "vaddr_end": 194726400
+  },
+  {
+   "name": ".vm_sec",
+   "vaddr": 194727936,
+   "vsize": 49664,
+   "rawsize": 49664,
+   "rawoff": 187911168,
+   "vaddr_end": 194777600
+  },
+  {
+   "name": ".vlizer",
+   "vaddr": 194781184,
+   "vsize": 11258880,
+   "rawsize": 11258880,
+   "rawoff": 187960832,
+   "vaddr_end": 206040064
+  }
+ ],
+ "names": {
+  "CurrentHealth": {
+   "fileMatches": 2,
+   "rvas": [
+    149081485,
+    149395240
+   ],
+   "hits": [
+    {
+     "fileOffset": 149074829,
+     "rva": 149081485,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149388584,
+     "rva": 149395240,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "MaxHealth": {
+   "fileMatches": 2,
+   "rvas": [
+    149081640,
+    150788849
+   ],
+   "hits": [
+    {
+     "fileOffset": 149074984,
+     "rva": 149081640,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150782193,
+     "rva": 150788849,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "HealthPercentage": {
+   "fileMatches": 3,
+   "rvas": [
+    149081560,
+    149779637,
+    149781212
+   ],
+   "hits": [
+    {
+     "fileOffset": 149074904,
+     "rva": 149081560,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149772981,
+     "rva": 149779637,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149774556,
+     "rva": 149781212,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "HealthStateType_Alive": {
+   "fileMatches": 1,
+   "rvas": [
+    149545976
+   ],
+   "hits": [
+    {
+     "fileOffset": 149539320,
+     "rva": 149545976,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "ClientSoldierHealthComponent": {
+   "fileMatches": 2,
+   "rvas": [
+    149146114,
+    153176384
+   ],
+   "hits": [
+    {
+     "fileOffset": 149139458,
+     "rva": 149146114,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 153169728,
+     "rva": 153176384,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "ClientVehicleHealthComponent": {
+   "fileMatches": 1,
+   "rvas": [
+    148769224
+   ],
+   "hits": [
+    {
+     "fileOffset": 148762568,
+     "rva": 148769224,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "ClientControllableHealthComponent": {
+   "fileMatches": 1,
+   "rvas": [
+    150323616
+   ],
+   "hits": [
+    {
+     "fileOffset": 150316960,
+     "rva": 150323616,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "GameHealthComponent": {
+   "fileMatches": 3,
+   "rvas": [
+    151670350,
+    151703270,
+    151752464
+   ],
+   "hits": [
+    {
+     "fileOffset": 151663694,
+     "rva": 151670350,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 151696614,
+     "rva": 151703270,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 151745808,
+     "rva": 151752464,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "ClientGameHealthComponent": {
+   "fileMatches": 1,
+   "rvas": [
+    151703264
+   ],
+   "hits": [
+    {
+     "fileOffset": 151696608,
+     "rva": 151703264,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "health": {
+   "fileMatches": 6,
+   "rvas": [
+    148954100,
+    148955499,
+    150383564,
+    153295143,
+    153296477,
+    153296660
+   ],
+   "hits": [
+    {
+     "fileOffset": 148947444,
+     "rva": 148954100,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148948843,
+     "rva": 148955499,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150376908,
+     "rva": 150383564,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 153288487,
+     "rva": 153295143,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 153289821,
+     "rva": 153296477,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 153290004,
+     "rva": 153296660,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "CurrentTeamId": {
+   "fileMatches": 1,
+   "rvas": [
+    149362664
+   ],
+   "hits": [
+    {
+     "fileOffset": 149356008,
+     "rva": 149362664,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "TeamId": {
+   "fileMatches": 19,
+   "rvas": [
+    148663788,
+    148842439,
+    149168956,
+    149349415,
+    149356716,
+    149362595,
+    149362671,
+    149530910,
+    149549990,
+    149596041,
+    149779709,
+    149779832,
+    149780263,
+    149860260,
+    149959875,
+    149962775,
+    149963507,
+    150023985,
+    150045922
+   ],
+   "hits": [
+    {
+     "fileOffset": 148657132,
+     "rva": 148663788,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148835783,
+     "rva": 148842439,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149162300,
+     "rva": 149168956,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149342759,
+     "rva": 149349415,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149350060,
+     "rva": 149356716,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149355939,
+     "rva": 149362595,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149356015,
+     "rva": 149362671,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149524254,
+     "rva": 149530910,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149543334,
+     "rva": 149549990,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149589385,
+     "rva": 149596041,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149773053,
+     "rva": 149779709,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149773176,
+     "rva": 149779832,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149773607,
+     "rva": 149780263,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149853604,
+     "rva": 149860260,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149953219,
+     "rva": 149959875,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149956119,
+     "rva": 149962775,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149956851,
+     "rva": 149963507,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150017329,
+     "rva": 150023985,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150039266,
+     "rva": 150045922,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "OwningTeam": {
+   "fileMatches": 1,
+   "rvas": [
+    149167392
+   ],
+   "hits": [
+    {
+     "fileOffset": 149160736,
+     "rva": 149167392,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "ShooterTeamId": {
+   "fileMatches": 1,
+   "rvas": [
+    148842432
+   ],
+   "hits": [
+    {
+     "fileOffset": 148835776,
+     "rva": 148842432,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "LocalTeam": {
+   "fileMatches": 2,
+   "rvas": [
+    139355520,
+    149325650
+   ],
+   "hits": [
+    {
+     "fileOffset": 139348864,
+     "rva": 139355520,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149318994,
+     "rva": 149325650,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "Property_TeamId": {
+   "fileMatches": 1,
+   "rvas": [
+    149596032
+   ],
+   "hits": [
+    {
+     "fileOffset": 149589376,
+     "rva": 149596032,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "Team1": {
+   "fileMatches": 2,
+   "rvas": [
+    148747373,
+    151734412
+   ],
+   "hits": [
+    {
+     "fileOffset": 148740717,
+     "rva": 148747373,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 151727756,
+     "rva": 151734412,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "Team2": {
+   "fileMatches": 2,
+   "rvas": [
+    148747405,
+    151735232
+   ],
+   "hits": [
+    {
+     "fileOffset": 148740749,
+     "rva": 148747405,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 151728576,
+     "rva": 151735232,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "positionX": {
+   "fileMatches": 1,
+   "rvas": [
+    152547600
+   ],
+   "hits": [
+    {
+     "fileOffset": 152540944,
+     "rva": 152547600,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "positionY": {
+   "fileMatches": 1,
+   "rvas": [
+    152547584
+   ],
+   "hits": [
+    {
+     "fileOffset": 152540928,
+     "rva": 152547584,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "Position": {
+   "fileMatches": 65,
+   "rvas": [
+    139414406,
+    140439930,
+    148134685,
+    148134727,
+    148137089,
+    148137115,
+    148178363,
+    148200859,
+    148211344,
+    148363880,
+    148423196,
+    148439096,
+    148439128,
+    148451154,
+    148474334,
+    148573664,
+    148573761,
+    148573800,
+    148573837,
+    148573868,
+    148574035,
+    148574236,
+    148574283,
+    148574326,
+    148599813,
+    148600591,
+    148612378,
+    148699638,
+    148727759,
+    148842285,
+    148928921,
+    148928953,
+    148928985,
+    148962302,
+    148979182,
+    149080042,
+    149080064,
+    149080343,
+    149080427,
+    149081259,
+    149106654,
+    149127351,
+    149341526,
+    149356886,
+    149358002,
+    149358029,
+    149358061,
+    149358079,
+    149358588,
+    149358750,
+    149358786,
+    149360213,
+    149360776,
+    149361050,
+    149361079,
+    149434198,
+    149437270,
+    149466135,
+    149521951,
+    149531202,
+    149548120,
+    149548205,
+    149548250,
+    149548651,
+    149576167
+   ],
+   "hits": [
+    {
+     "fileOffset": 139407750,
+     "rva": 139414406,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 140433274,
+     "rva": 140439930,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148128029,
+     "rva": 148134685,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148128071,
+     "rva": 148134727,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148130433,
+     "rva": 148137089,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148130459,
+     "rva": 148137115,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148171707,
+     "rva": 148178363,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148194203,
+     "rva": 148200859,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148204688,
+     "rva": 148211344,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148357224,
+     "rva": 148363880,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148416540,
+     "rva": 148423196,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148432440,
+     "rva": 148439096,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148432472,
+     "rva": 148439128,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148444498,
+     "rva": 148451154,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148467678,
+     "rva": 148474334,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148567008,
+     "rva": 148573664,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148567105,
+     "rva": 148573761,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148567144,
+     "rva": 148573800,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148567181,
+     "rva": 148573837,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148567212,
+     "rva": 148573868,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148567379,
+     "rva": 148574035,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148567580,
+     "rva": 148574236,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148567627,
+     "rva": 148574283,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148567670,
+     "rva": 148574326,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148593157,
+     "rva": 148599813,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148593935,
+     "rva": 148600591,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148605722,
+     "rva": 148612378,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148692982,
+     "rva": 148699638,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148721103,
+     "rva": 148727759,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148835629,
+     "rva": 148842285,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148922265,
+     "rva": 148928921,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148922297,
+     "rva": 148928953,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148922329,
+     "rva": 148928985,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148955646,
+     "rva": 148962302,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148972526,
+     "rva": 148979182,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149073386,
+     "rva": 149080042,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149073408,
+     "rva": 149080064,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149073687,
+     "rva": 149080343,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149073771,
+     "rva": 149080427,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149074603,
+     "rva": 149081259,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149099998,
+     "rva": 149106654,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149120695,
+     "rva": 149127351,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149334870,
+     "rva": 149341526,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149350230,
+     "rva": 149356886,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149351346,
+     "rva": 149358002,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149351373,
+     "rva": 149358029,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149351405,
+     "rva": 149358061,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149351423,
+     "rva": 149358079,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149351932,
+     "rva": 149358588,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149352094,
+     "rva": 149358750,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149352130,
+     "rva": 149358786,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149353557,
+     "rva": 149360213,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149354120,
+     "rva": 149360776,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149354394,
+     "rva": 149361050,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149354423,
+     "rva": 149361079,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149427542,
+     "rva": 149434198,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149430614,
+     "rva": 149437270,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149459479,
+     "rva": 149466135,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149515295,
+     "rva": 149521951,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149524546,
+     "rva": 149531202,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149541464,
+     "rva": 149548120,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149541549,
+     "rva": 149548205,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149541594,
+     "rva": 149548250,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149541995,
+     "rva": 149548651,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149569511,
+     "rva": 149576167,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "Transform": {
+   "fileMatches": 65,
+   "rvas": [
+    148127203,
+    148178315,
+    148237837,
+    148567224,
+    148573912,
+    148573934,
+    148574102,
+    148574207,
+    148574403,
+    148709617,
+    148709940,
+    148716672,
+    148720289,
+    148723563,
+    148723612,
+    148807206,
+    148842170,
+    149079582,
+    149079697,
+    149079838,
+    149082021,
+    149106352,
+    149106373,
+    149170376,
+    149207309,
+    149250348,
+    149250405,
+    149264360,
+    149357442,
+    149357886,
+    149360318,
+    149444028,
+    149583525,
+    149596151,
+    149807206,
+    149859149,
+    149882102,
+    150147642,
+    150156647,
+    150159547,
+    150205681,
+    150206968,
+    150207146,
+    150209126,
+    150209599,
+    150214375,
+    150217123,
+    150217295,
+    150217427,
+    150249901,
+    150267691,
+    150267726,
+    150299389,
+    150300106,
+    150383668,
+    150401283,
+    150413525,
+    150413611,
+    150423005,
+    150484619,
+    150555699,
+    150555751,
+    150639576,
+    150653345,
+    150772164
+   ],
+   "hits": [
+    {
+     "fileOffset": 148120547,
+     "rva": 148127203,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148171659,
+     "rva": 148178315,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148231181,
+     "rva": 148237837,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148560568,
+     "rva": 148567224,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148567256,
+     "rva": 148573912,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148567278,
+     "rva": 148573934,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148567446,
+     "rva": 148574102,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148567551,
+     "rva": 148574207,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148567747,
+     "rva": 148574403,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148702961,
+     "rva": 148709617,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148703284,
+     "rva": 148709940,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148710016,
+     "rva": 148716672,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148713633,
+     "rva": 148720289,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148716907,
+     "rva": 148723563,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148716956,
+     "rva": 148723612,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148800550,
+     "rva": 148807206,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148835514,
+     "rva": 148842170,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149072926,
+     "rva": 149079582,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149073041,
+     "rva": 149079697,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149073182,
+     "rva": 149079838,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149075365,
+     "rva": 149082021,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149099696,
+     "rva": 149106352,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149099717,
+     "rva": 149106373,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149163720,
+     "rva": 149170376,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149200653,
+     "rva": 149207309,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149243692,
+     "rva": 149250348,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149243749,
+     "rva": 149250405,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149257704,
+     "rva": 149264360,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149350786,
+     "rva": 149357442,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149351230,
+     "rva": 149357886,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149353662,
+     "rva": 149360318,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149437372,
+     "rva": 149444028,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149576869,
+     "rva": 149583525,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149589495,
+     "rva": 149596151,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149800550,
+     "rva": 149807206,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149852493,
+     "rva": 149859149,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149875446,
+     "rva": 149882102,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150140986,
+     "rva": 150147642,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150149991,
+     "rva": 150156647,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150152891,
+     "rva": 150159547,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150199025,
+     "rva": 150205681,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150200312,
+     "rva": 150206968,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150200490,
+     "rva": 150207146,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150202470,
+     "rva": 150209126,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150202943,
+     "rva": 150209599,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150207719,
+     "rva": 150214375,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150210467,
+     "rva": 150217123,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150210639,
+     "rva": 150217295,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150210771,
+     "rva": 150217427,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150243245,
+     "rva": 150249901,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150261035,
+     "rva": 150267691,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150261070,
+     "rva": 150267726,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150292733,
+     "rva": 150299389,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150293450,
+     "rva": 150300106,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150377012,
+     "rva": 150383668,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150394627,
+     "rva": 150401283,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150406869,
+     "rva": 150413525,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150406955,
+     "rva": 150413611,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150416349,
+     "rva": 150423005,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150477963,
+     "rva": 150484619,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150549043,
+     "rva": 150555699,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150549095,
+     "rva": 150555751,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150632920,
+     "rva": 150639576,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150646689,
+     "rva": 150653345,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150765508,
+     "rva": 150772164,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "EcsRimeTransform": {
+   "fileMatches": 1,
+   "rvas": [
+    152993112
+   ],
+   "hits": [
+    {
+     "fileOffset": 152986456,
+     "rva": 152993112,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "EcsWorldTransform": {
+   "fileMatches": 1,
+   "rvas": [
+    151326072
+   ],
+   "hits": [
+    {
+     "fileOffset": 151319416,
+     "rva": 151326072,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "EcsTransformSpaceComponent": {
+   "fileMatches": 1,
+   "rvas": [
+    153746224
+   ],
+   "hits": [
+    {
+     "fileOffset": 153739568,
+     "rva": 153746224,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "ClientSoldierEntity": {
+   "fileMatches": 1,
+   "rvas": [
+    153172528
+   ],
+   "hits": [
+    {
+     "fileOffset": 153165872,
+     "rva": 153172528,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "ClientPlayerManager": {
+   "fileMatches": 1,
+   "rvas": [
+    151665352
+   ],
+   "hits": [
+    {
+     "fileOffset": 151658696,
+     "rva": 151665352,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "ClientPlayerIteratorEntity": {
+   "fileMatches": 1,
+   "rvas": [
+    151665080
+   ],
+   "hits": [
+    {
+     "fileOffset": 151658424,
+     "rva": 151665080,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "ClientConnection": {
+   "fileMatches": 1,
+   "rvas": [
+    151665040
+   ],
+   "hits": [
+    {
+     "fileOffset": 151658384,
+     "rva": 151665040,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "ClientSoldierCameraComponent": {
+   "fileMatches": 1,
+   "rvas": [
+    153176416
+   ],
+   "hits": [
+    {
+     "fileOffset": 153169760,
+     "rva": 153176416,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "ClientSoldierEntryComponent": {
+   "fileMatches": 1,
+   "rvas": [
+    153176600
+   ],
+   "hits": [
+    {
+     "fileOffset": 153169944,
+     "rva": 153176600,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "ClientSoldierWeapon": {
+   "fileMatches": 1,
+   "rvas": [
+    153172504
+   ],
+   "hits": [
+    {
+     "fileOffset": 153165848,
+     "rva": 153172504,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "BFClientPlayerExtent": {
+   "fileMatches": 1,
+   "rvas": [
+    149233464
+   ],
+   "hits": [
+    {
+     "fileOffset": 149226808,
+     "rva": 149233464,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "BFPlayerExtent": {
+   "fileMatches": 1,
+   "rvas": [
+    149075728
+   ],
+   "hits": [
+    {
+     "fileOffset": 149069072,
+     "rva": 149075728,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "ClientPlayerExtent": {
+   "fileMatches": 7,
+   "rvas": [
+    148834206,
+    149221341,
+    149233466,
+    149233580,
+    149841044,
+    150689219,
+    151665328
+   ],
+   "hits": [
+    {
+     "fileOffset": 148827550,
+     "rva": 148834206,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149214685,
+     "rva": 149221341,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149226810,
+     "rva": 149233466,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149226924,
+     "rva": 149233580,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149834388,
+     "rva": 149841044,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150682563,
+     "rva": 150689219,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 151658672,
+     "rva": 151665328,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "AimEntity": {
+   "fileMatches": 2,
+   "rvas": [
+    148124614,
+    148128928
+   ],
+   "hits": [
+    {
+     "fileOffset": 148117958,
+     "rva": 148124614,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148122272,
+     "rva": 148128928,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "LocalPlayer": {
+   "fileMatches": 16,
+   "rvas": [
+    139351687,
+    139389819,
+    139441781,
+    139526913,
+    148720342,
+    148806778,
+    149325634,
+    149734272,
+    149734362,
+    149780134,
+    149869771,
+    150654976,
+    150656112,
+    150877529,
+    150877555,
+    151475009
+   ],
+   "hits": [
+    {
+     "fileOffset": 139345031,
+     "rva": 139351687,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 139383163,
+     "rva": 139389819,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 139435125,
+     "rva": 139441781,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 139520257,
+     "rva": 139526913,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148713686,
+     "rva": 148720342,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148800122,
+     "rva": 148806778,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149318978,
+     "rva": 149325634,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149727616,
+     "rva": 149734272,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149727706,
+     "rva": 149734362,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149773478,
+     "rva": 149780134,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149863115,
+     "rva": 149869771,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150648320,
+     "rva": 150654976,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150649456,
+     "rva": 150656112,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150870873,
+     "rva": 150877529,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150870899,
+     "rva": 150877555,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 151468353,
+     "rva": 151475009,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "LocalPlayerId": {
+   "fileMatches": 1,
+   "rvas": [
+    149332728
+   ],
+   "hits": [
+    {
+     "fileOffset": 149326072,
+     "rva": 149332728,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "CameraTransform": {
+   "fileMatches": 2,
+   "rvas": [
+    149360312,
+    150156641
+   ],
+   "hits": [
+    {
+     "fileOffset": 149353656,
+     "rva": 149360312,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150149985,
+     "rva": 150156641,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "EvaluatedCameraTransform": {
+   "fileMatches": 1,
+   "rvas": [
+    150156632
+   ],
+   "hits": [
+    {
+     "fileOffset": 150149976,
+     "rva": 150156632,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "g_worldViewProjMatrix": {
+   "fileMatches": 1,
+   "rvas": [
+    153692544
+   ],
+   "hits": [
+    {
+     "fileOffset": 153685888,
+     "rva": 153692544,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "g_invProjMatrix": {
+   "fileMatches": 1,
+   "rvas": [
+    152958144
+   ],
+   "hits": [
+    {
+     "fileOffset": 152951488,
+     "rva": 152958144,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "ViewMatrix": {
+   "fileMatches": 5,
+   "rvas": [
+    149530430,
+    152762167,
+    152762252,
+    152821351,
+    152821435
+   ],
+   "hits": [
+    {
+     "fileOffset": 149523774,
+     "rva": 149530430,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 152755511,
+     "rva": 152762167,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 152755596,
+     "rva": 152762252,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 152814695,
+     "rva": 152821351,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 152814779,
+     "rva": 152821435,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "ProjectionMatrix": {
+   "fileMatches": 5,
+   "rvas": [
+    150423835,
+    152865691,
+    153479964,
+    153609746,
+    153610262
+   ],
+   "hits": [
+    {
+     "fileOffset": 150417179,
+     "rva": 150423835,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 152859035,
+     "rva": 152865691,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 153473308,
+     "rva": 153479964,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 153603090,
+     "rva": 153609746,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 153603606,
+     "rva": 153610262,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "m_health": {
+   "fileMatches": 1,
+   "rvas": [
+    153296475
+   ],
+   "hits": [
+    {
+     "fileOffset": 153289819,
+     "rva": 153296475,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "teamId": {
+   "fileMatches": 3,
+   "rvas": [
+    149957872,
+    150034269,
+    151171841
+   ],
+   "hits": [
+    {
+     "fileOffset": 149951216,
+     "rva": 149957872,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150027613,
+     "rva": 150034269,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 151165185,
+     "rva": 151171841,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "playerName": {
+   "fileMatches": 1,
+   "rvas": [
+    149958656
+   ],
+   "hits": [
+    {
+     "fileOffset": 149952000,
+     "rva": 149958656,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "PlayerName": {
+   "fileMatches": 6,
+   "rvas": [
+    139524256,
+    149170960,
+    149779861,
+    149780652,
+    149965277,
+    151718278
+   ],
+   "hits": [
+    {
+     "fileOffset": 139517600,
+     "rva": 139524256,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149164304,
+     "rva": 149170960,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149773205,
+     "rva": 149779861,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149773996,
+     "rva": 149780652,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149958621,
+     "rva": 149965277,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 151711622,
+     "rva": 151718278,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "Name": {
+   "fileMatches": 65,
+   "rvas": [
+    139319741,
+    139319788,
+    139352644,
+    139352784,
+    139353840,
+    139354408,
+    139354683,
+    139354943,
+    139356109,
+    139356279,
+    139473167,
+    139473181,
+    139524262,
+    139526171,
+    139572911,
+    139582406,
+    139844135,
+    139844751,
+    139901546,
+    139901650,
+    140325901,
+    140325916,
+    144289986,
+    148060807,
+    148221731,
+    148340003,
+    148523552,
+    148533212,
+    148549511,
+    148555664,
+    148557969,
+    148573733,
+    148579133,
+    148599428,
+    148914578,
+    148950391,
+    149021336,
+    149106759,
+    149167415,
+    149167695,
+    149168494,
+    149168743,
+    149168844,
+    149169777,
+    149170966,
+    149264681,
+    149265138,
+    149349385,
+    149349653,
+    149358990,
+    149361832,
+    149362687,
+    149536201,
+    149536260,
+    149536289,
+    149536428,
+    149536724,
+    149538183,
+    149538610,
+    149538690,
+    149538867,
+    149539404,
+    149588765,
+    149627757,
+    149647527
+   ],
+   "hits": [
+    {
+     "fileOffset": 139313085,
+     "rva": 139319741,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 139313132,
+     "rva": 139319788,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 139345988,
+     "rva": 139352644,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 139346128,
+     "rva": 139352784,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 139347184,
+     "rva": 139353840,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 139347752,
+     "rva": 139354408,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 139348027,
+     "rva": 139354683,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 139348287,
+     "rva": 139354943,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 139349453,
+     "rva": 139356109,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 139349623,
+     "rva": 139356279,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 139466511,
+     "rva": 139473167,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 139466525,
+     "rva": 139473181,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 139517606,
+     "rva": 139524262,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 139519515,
+     "rva": 139526171,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 139566255,
+     "rva": 139572911,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 139575750,
+     "rva": 139582406,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 139837479,
+     "rva": 139844135,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 139838095,
+     "rva": 139844751,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 139894890,
+     "rva": 139901546,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 139894994,
+     "rva": 139901650,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 140319245,
+     "rva": 140325901,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 140319260,
+     "rva": 140325916,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 144283330,
+     "rva": 144289986,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148054151,
+     "rva": 148060807,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148215075,
+     "rva": 148221731,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148333347,
+     "rva": 148340003,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148516896,
+     "rva": 148523552,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148526556,
+     "rva": 148533212,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148542855,
+     "rva": 148549511,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148549008,
+     "rva": 148555664,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148551313,
+     "rva": 148557969,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148567077,
+     "rva": 148573733,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148572477,
+     "rva": 148579133,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148592772,
+     "rva": 148599428,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148907922,
+     "rva": 148914578,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148943735,
+     "rva": 148950391,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149014680,
+     "rva": 149021336,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149100103,
+     "rva": 149106759,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149160759,
+     "rva": 149167415,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149161039,
+     "rva": 149167695,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149161838,
+     "rva": 149168494,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149162087,
+     "rva": 149168743,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149162188,
+     "rva": 149168844,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149163121,
+     "rva": 149169777,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149164310,
+     "rva": 149170966,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149258025,
+     "rva": 149264681,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149258482,
+     "rva": 149265138,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149342729,
+     "rva": 149349385,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149342997,
+     "rva": 149349653,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149352334,
+     "rva": 149358990,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149355176,
+     "rva": 149361832,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149356031,
+     "rva": 149362687,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149529545,
+     "rva": 149536201,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149529604,
+     "rva": 149536260,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149529633,
+     "rva": 149536289,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149529772,
+     "rva": 149536428,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149530068,
+     "rva": 149536724,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149531527,
+     "rva": 149538183,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149531954,
+     "rva": 149538610,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149532034,
+     "rva": 149538690,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149532211,
+     "rva": 149538867,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149532748,
+     "rva": 149539404,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149582109,
+     "rva": 149588765,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149621101,
+     "rva": 149627757,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149640871,
+     "rva": 149647527,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "Alive": {
+   "fileMatches": 10,
+   "rvas": [
+    140203585,
+    148998093,
+    149080650,
+    149545992,
+    149801012,
+    149825079,
+    150559201,
+    150578789,
+    150800504,
+    151387114
+   ],
+   "hits": [
+    {
+     "fileOffset": 140196929,
+     "rva": 140203585,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148991437,
+     "rva": 148998093,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149073994,
+     "rva": 149080650,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149539336,
+     "rva": 149545992,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149794356,
+     "rva": 149801012,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149818423,
+     "rva": 149825079,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150552545,
+     "rva": 150559201,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150572133,
+     "rva": 150578789,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150793848,
+     "rva": 150800504,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 151380458,
+     "rva": 151387114,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "Dead": {
+   "fileMatches": 9,
+   "rvas": [
+    149080706,
+    149080745,
+    149081038,
+    149082006,
+    149801268,
+    149825031,
+    150800608,
+    150800883,
+    151395757
+   ],
+   "hits": [
+    {
+     "fileOffset": 149074050,
+     "rva": 149080706,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149074089,
+     "rva": 149080745,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149074382,
+     "rva": 149081038,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149075350,
+     "rva": 149082006,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149794612,
+     "rva": 149801268,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149818375,
+     "rva": 149825031,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150793952,
+     "rva": 150800608,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150794227,
+     "rva": 150800883,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 151389101,
+     "rva": 151395757,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "IsLocalPlayer": {
+   "fileMatches": 2,
+   "rvas": [
+    149325632,
+    149780132
+   ],
+   "hits": [
+    {
+     "fileOffset": 149318976,
+     "rva": 149325632,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149773476,
+     "rva": 149780132,
+     "section": ".rdata"
+    }
+   ]
+  }
+ },
+ "patterns": {
+  "Data.ModuleRegistryMagic": {
+   "pattern": "52 49 46 58 52 49 46 58",
+   "fileMatches": 1,
+   "rva": 162482592,
+   "section": ".data"
+  },
+  "TypeInfo.RecordMarker": {
+   "pattern": "89 00 00 08",
+   "fileMatches": 23701,
+   "section": "typeinfo"
+  },
+  "Ctr.ThunkCluster10": {
+   "pattern": "48 8D 05 ?? ?? ?? ?? C3 (x10)",
+   "fileMatches": 0,
+   "rva": 127287445
+  }
+ }
+}

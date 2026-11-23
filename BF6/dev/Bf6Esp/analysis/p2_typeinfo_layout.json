@@ -1,0 +1,1663 @@
+{
+ "binary": {
+  "path": "G:\\SteamLibrary\\steamapps\\common\\Battlefield 6\\bf6.exe",
+  "size": 199230312,
+  "image_base": "0x140000000",
+  "arch": "PE32+ AMD64"
+ },
+ "section": {
+  "name": "typeinfo",
+  "rva": 183287808,
+  "raw_offset": 176479744,
+  "raw_size": 6024192,
+  "virtual_size": 6023728
+ },
+ "record_layout": {
+  "stride": "0x50",
+  "record_count": 23701,
+  "marker": {
+   "u32_value": "0x00080089",
+   "at": "record_base + 0x04",
+   "note": "record_base = marker_position - 4"
+  },
+  "base_alignment_mod_0x50": {
+   "0x30": 23198,
+   "0x0": 173,
+   "0x10": 145,
+   "0x20": 124,
+   "0x40": 61
+  },
+  "fields": [
+   {
+    "u32_index": 0,
+    "offset": 0,
+    "distinct": 23701,
+    "zero_count": 0,
+    "min": 6278,
+    "max": 4294867115,
+    "top5": [
+     [
+      3232013515,
+      1
+     ],
+     [
+      1942478636,
+      1
+     ],
+     [
+      729779863,
+      1
+     ],
+     [
+      2817255826,
+      1
+     ],
+     [
+      286920605,
+      1
+     ]
+    ]
+   },
+   {
+    "u32_index": 1,
+    "offset": 4,
+    "distinct": 1,
+    "zero_count": 0,
+    "min": 524425,
+    "max": 524425,
+    "top5": [
+     [
+      524425,
+      23701
+     ]
+    ]
+   },
+   {
+    "u32_index": 2,
+    "offset": 8,
+    "distinct": 1,
+    "zero_count": 23701,
+    "min": 0,
+    "max": 0,
+    "top5": [
+     [
+      0,
+      23701
+     ]
+    ]
+   },
+   {
+    "u32_index": 3,
+    "offset": 12,
+    "distinct": 1,
+    "zero_count": 23701,
+    "min": 0,
+    "max": 0,
+    "top5": [
+     [
+      0,
+      23701
+     ]
+    ]
+   },
+   {
+    "u32_index": 4,
+    "offset": 16,
+    "distinct": 1,
+    "zero_count": 23701,
+    "min": 0,
+    "max": 0,
+    "top5": [
+     [
+      0,
+      23701
+     ]
+    ]
+   },
+   {
+    "u32_index": 5,
+    "offset": 20,
+    "distinct": 1,
+    "zero_count": 23701,
+    "min": 0,
+    "max": 0,
+    "top5": [
+     [
+      0,
+      23701
+     ]
+    ]
+   },
+   {
+    "u32_index": 6,
+    "offset": 24,
+    "distinct": 317,
+    "zero_count": 5473,
+    "min": 0,
+    "max": 1236235248,
+    "top5": [
+     [
+      0,
+      5473
+     ],
+     [
+      1236175768,
+      1553
+     ],
+     [
+      1236176056,
+      1361
+     ],
+     [
+      1236183192,
+      723
+     ],
+     [
+      1236209184,
+      514
+     ]
+    ]
+   },
+   {
+    "u32_index": 7,
+    "offset": 28,
+    "distinct": 2,
+    "zero_count": 5473,
+    "min": 0,
+    "max": 1,
+    "top5": [
+     [
+      1,
+      18228
+     ],
+     [
+      0,
+      5473
+     ]
+    ]
+   },
+   {
+    "u32_index": 8,
+    "offset": 32,
+    "distinct": 1,
+    "zero_count": 23701,
+    "min": 0,
+    "max": 0,
+    "top5": [
+     [
+      0,
+      23701
+     ]
+    ]
+   },
+   {
+    "u32_index": 9,
+    "offset": 36,
+    "distinct": 1,
+    "zero_count": 23701,
+    "min": 0,
+    "max": 0,
+    "top5": [
+     [
+      0,
+      23701
+     ]
+    ]
+   },
+   {
+    "u32_index": 10,
+    "offset": 40,
+    "distinct": 2,
+    "zero_count": 5473,
+    "min": 0,
+    "max": 8,
+    "top5": [
+     [
+      8,
+      18228
+     ],
+     [
+      0,
+      5473
+     ]
+    ]
+   },
+   {
+    "u32_index": 11,
+    "offset": 44,
+    "distinct": 18197,
+    "zero_count": 5480,
+    "min": 0,
+    "max": 4294967295,
+    "top5": [
+     [
+      0,
+      5480
+     ],
+     [
+      4294967295,
+      14
+     ],
+     [
+      3574751725,
+      4
+     ],
+     [
+      2039271057,
+      2
+     ],
+     [
+      3743937336,
+      2
+     ]
+    ]
+   },
+   {
+    "u32_index": 12,
+    "offset": 48,
+    "distinct": 18229,
+    "zero_count": 5473,
+    "min": 0,
+    "max": 1241973584,
+    "top5": [
+     [
+      0,
+      5473
+     ],
+     [
+      1241973360,
+      1
+     ],
+     [
+      1241972128,
+      1
+     ],
+     [
+      1241973248,
+      1
+     ],
+     [
+      1241971040,
+      1
+     ]
+    ]
+   },
+   {
+    "u32_index": 13,
+    "offset": 52,
+    "distinct": 2,
+    "zero_count": 5473,
+    "min": 0,
+    "max": 1,
+    "top5": [
+     [
+      1,
+      18228
+     ],
+     [
+      0,
+      5473
+     ]
+    ]
+   },
+   {
+    "u32_index": 14,
+    "offset": 56,
+    "distinct": 2979,
+    "zero_count": 5475,
+    "min": 0,
+    "max": 1177691696,
+    "top5": [
+     [
+      1156419776,
+      10462
+     ],
+     [
+      0,
+      5475
+     ],
+     [
+      1079441392,
+      2649
+     ],
+     [
+      1084146368,
+      333
+     ],
+     [
+      1084204384,
+      188
+     ]
+    ]
+   },
+   {
+    "u32_index": 15,
+    "offset": 60,
+    "distinct": 2,
+    "zero_count": 5475,
+    "min": 0,
+    "max": 1,
+    "top5": [
+     [
+      1,
+      18226
+     ],
+     [
+      0,
+      5475
+     ]
+    ]
+   },
+   {
+    "u32_index": 16,
+    "offset": 64,
+    "distinct": 4,
+    "zero_count": 5475,
+    "min": 0,
+    "max": 1079268576,
+    "top5": [
+     [
+      1079226416,
+      17553
+     ],
+     [
+      0,
+      5475
+     ],
+     [
+      1079268576,
+      672
+     ],
+     [
+      1079167664,
+      1
+     ]
+    ]
+   },
+   {
+    "u32_index": 17,
+    "offset": 68,
+    "distinct": 2,
+    "zero_count": 5475,
+    "min": 0,
+    "max": 1,
+    "top5": [
+     [
+      1,
+      18226
+     ],
+     [
+      0,
+      5475
+     ]
+    ]
+   },
+   {
+    "u32_index": 18,
+    "offset": 72,
+    "distinct": 1,
+    "zero_count": 23701,
+    "min": 0,
+    "max": 0,
+    "top5": [
+     [
+      0,
+      23701
+     ]
+    ]
+   },
+   {
+    "u32_index": 19,
+    "offset": 76,
+    "distinct": 1,
+    "zero_count": 23701,
+    "min": 0,
+    "max": 0,
+    "top5": [
+     [
+      0,
+      23701
+     ]
+    ]
+   }
+  ],
+  "qwords": [
+   {
+    "qword_index": 0,
+    "offset": 0,
+    "n_nonzero": 23701,
+    "target_sections": {},
+    "distinct_va": 23701
+   },
+   {
+    "qword_index": 1,
+    "offset": 8,
+    "n_nonzero": 0,
+    "target_sections": {},
+    "distinct_va": 1
+   },
+   {
+    "qword_index": 2,
+    "offset": 16,
+    "n_nonzero": 0,
+    "target_sections": {},
+    "distinct_va": 1
+   },
+   {
+    "qword_index": 3,
+    "offset": 24,
+    "n_nonzero": 18228,
+    "target_sections": {
+     ".data": 18228
+    },
+    "distinct_va": 317
+   },
+   {
+    "qword_index": 4,
+    "offset": 32,
+    "n_nonzero": 0,
+    "target_sections": {},
+    "distinct_va": 1
+   },
+   {
+    "qword_index": 5,
+    "offset": 40,
+    "n_nonzero": 18228,
+    "target_sections": {},
+    "distinct_va": 18198
+   },
+   {
+    "qword_index": 6,
+    "offset": 48,
+    "n_nonzero": 18228,
+    "target_sections": {
+     ".data": 18228
+    },
+    "distinct_va": 18229
+   },
+   {
+    "qword_index": 7,
+    "offset": 56,
+    "n_nonzero": 18226,
+    "target_sections": {
+     ".text": 18226
+    },
+    "distinct_va": 2979
+   },
+   {
+    "qword_index": 8,
+    "offset": 64,
+    "n_nonzero": 18226,
+    "target_sections": {
+     ".text": 18226
+    },
+    "distinct_va": 4
+   },
+   {
+    "qword_index": 9,
+    "offset": 72,
+    "n_nonzero": 0,
+    "target_sections": {},
+    "distinct_va": 1
+   }
+  ]
+ },
+ "semantics": {
+  "u32_0": "per-type key id: 23701 distinct, NOT a digest of the type name. Proven negative: 70+ digest schemes x 11 name shapes = 0 hits on 2499 verified anchors; the structural test rejects EVERY polynomial family (h=(h*M) OP c) for any multiplier/init/order: ADD-family gcd over same-last-byte pairs = 1, XOR-family low-8 test rejected (29021/29143 pairs violate), init solve = 1/2499; xxh64/xxh32/siphash24/murmur2_64/murmur3_x64_128 (lo+hi32) all 0 hits. The value is BAKED IN BY THE BUILD TOOL.",
+  "u32_1": "always 0x00080089 (record kind)",
+  "u32_2..5": "zero",
+  "q3_+0x18": "module descriptor VA (.data object; q0 -> module name string in .rdata; 317 distinct modules)",
+  "u32_10_+0x28": "always 8 on the 'rich' run (field count?), 0 on 5473 records",
+  "u32_11_+0x2c": "per-type layout id: 18196 nonzero distinct values (held by 18221 records) in [82546, 4294967295] - index-like, NOT a 32-bit hash; 5480 records carry 0",
+  "q6_+0x30": "VA of a .data 'type info' cell {u64 node-ptr, u16 flags=0xFFFF, u16 size, u32 0xFFFFFFFF}",
+  "q7_+0x38": "VA inside the typeinfo section (2979 distinct) - super/base type node",
+  "q8_+0x40": "VA in .text (4 distinct) - vtable",
+  "runtime_node": "the typeinfo section also holds runtime-registered nodes written by 10172 registration stubs in .text; the node carries the type NAME POINTER (filled at runtime), module descriptor ptr, type-info cell ptr, u32 count, and 8 .text vtable pointers"
+ },
+ "module_names_sample": {},
+ "example_records": [
+  {
+   "type_name": "ServerActivityEntryComponentInterface",
+   "module": "ActivityRuntime",
+   "record_rva": 185671296,
+   "record_file_off": 178863232,
+   "u32": [
+    3689995418,
+    524425,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "u64": [
+    2252391914200218,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "annotated": [
+    {
+     "qword": 0,
+     "offset": 0,
+     "value": 2252391914200218,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 1,
+     "offset": 8,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 2,
+     "offset": 16,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 3,
+     "offset": 24,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 4,
+     "offset": 32,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 5,
+     "offset": 40,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 6,
+     "offset": 48,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 7,
+     "offset": 56,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 8,
+     "offset": 64,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 9,
+     "offset": 72,
+     "value": 0,
+     "section": null,
+     "string": null
+    }
+   ]
+  },
+  {
+   "type_name": "ServerActivityPeerFilteringComponentInterface",
+   "module": "ActivityRuntime",
+   "record_rva": 185671216,
+   "record_file_off": 178863152,
+   "u32": [
+    14284977,
+    524425,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "u64": [
+    2252388238489777,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "annotated": [
+    {
+     "qword": 0,
+     "offset": 0,
+     "value": 2252388238489777,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 1,
+     "offset": 8,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 2,
+     "offset": 16,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 3,
+     "offset": 24,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 4,
+     "offset": 32,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 5,
+     "offset": 40,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 6,
+     "offset": 48,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 7,
+     "offset": 56,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 8,
+     "offset": 64,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 9,
+     "offset": 72,
+     "value": 0,
+     "section": null,
+     "string": null
+    }
+   ]
+  },
+  {
+   "type_name": "AftermathProcess",
+   "module": "AftermathRender",
+   "record_rva": 185671136,
+   "record_file_off": 178863072,
+   "u32": [
+    322032497,
+    524425,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "u64": [
+    2252388546237297,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "annotated": [
+    {
+     "qword": 0,
+     "offset": 0,
+     "value": 2252388546237297,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 1,
+     "offset": 8,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 2,
+     "offset": 16,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 3,
+     "offset": 24,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 4,
+     "offset": 32,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 5,
+     "offset": 40,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 6,
+     "offset": 48,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 7,
+     "offset": 56,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 8,
+     "offset": 64,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 9,
+     "offset": 72,
+     "value": 0,
+     "section": null,
+     "string": null
+    }
+   ]
+  },
+  {
+   "type_name": "AftermathContext",
+   "module": "AftermathRender",
+   "record_rva": 185671056,
+   "record_file_off": 178862992,
+   "u32": [
+    2754006028,
+    524425,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "u64": [
+    2252390978210828,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "annotated": [
+    {
+     "qword": 0,
+     "offset": 0,
+     "value": 2252390978210828,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 1,
+     "offset": 8,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 2,
+     "offset": 16,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 3,
+     "offset": 24,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 4,
+     "offset": 32,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 5,
+     "offset": 40,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 6,
+     "offset": 48,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 7,
+     "offset": 56,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 8,
+     "offset": 64,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 9,
+     "offset": 72,
+     "value": 0,
+     "section": null,
+     "string": null
+    }
+   ]
+  },
+  {
+   "type_name": "ClientAftermathEntity",
+   "module": "AftermathRender",
+   "record_rva": 185670976,
+   "record_file_off": 178862912,
+   "u32": [
+    3871396620,
+    524425,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "u64": [
+    2252392095601420,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "annotated": [
+    {
+     "qword": 0,
+     "offset": 0,
+     "value": 2252392095601420,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 1,
+     "offset": 8,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 2,
+     "offset": 16,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 3,
+     "offset": 24,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 4,
+     "offset": 32,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 5,
+     "offset": 40,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 6,
+     "offset": 48,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 7,
+     "offset": 56,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 8,
+     "offset": 64,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 9,
+     "offset": 72,
+     "value": 0,
+     "section": null,
+     "string": null
+    }
+   ]
+  },
+  {
+   "type_name": "ClientAftermathTriggerEntity",
+   "module": "AftermathRender",
+   "record_rva": 185670896,
+   "record_file_off": 178862832,
+   "u32": [
+    213142581,
+    524425,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "u64": [
+    2252388437347381,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "annotated": [
+    {
+     "qword": 0,
+     "offset": 0,
+     "value": 2252388437347381,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 1,
+     "offset": 8,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 2,
+     "offset": 16,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 3,
+     "offset": 24,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 4,
+     "offset": 32,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 5,
+     "offset": 40,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 6,
+     "offset": 48,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 7,
+     "offset": 56,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 8,
+     "offset": 64,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 9,
+     "offset": 72,
+     "value": 0,
+     "section": null,
+     "string": null
+    }
+   ]
+  },
+  {
+   "type_name": "ServerAICommanderOrderControllerEntity",
+   "module": "AICommander",
+   "record_rva": 185670016,
+   "record_file_off": 178861952,
+   "u32": [
+    2671236207,
+    524425,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "u64": [
+    2252390895441007,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "annotated": [
+    {
+     "qword": 0,
+     "offset": 0,
+     "value": 2252390895441007,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 1,
+     "offset": 8,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 2,
+     "offset": 16,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 3,
+     "offset": 24,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 4,
+     "offset": 32,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 5,
+     "offset": 40,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 6,
+     "offset": 48,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 7,
+     "offset": 56,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 8,
+     "offset": 64,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 9,
+     "offset": 72,
+     "value": 0,
+     "section": null,
+     "string": null
+    }
+   ]
+  },
+  {
+   "type_name": "ServerAICommanderOrderEntity",
+   "module": "AICommander",
+   "record_rva": 185669936,
+   "record_file_off": 178861872,
+   "u32": [
+    278013416,
+    524425,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "u64": [
+    2252388502218216,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "annotated": [
+    {
+     "qword": 0,
+     "offset": 0,
+     "value": 2252388502218216,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 1,
+     "offset": 8,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 2,
+     "offset": 16,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 3,
+     "offset": 24,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 4,
+     "offset": 32,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 5,
+     "offset": 40,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 6,
+     "offset": 48,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 7,
+     "offset": 56,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 8,
+     "offset": 64,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 9,
+     "offset": 72,
+     "value": 0,
+     "section": null,
+     "string": null
+    }
+   ]
+  },
+  {
+   "type_name": "ServerAICommanderOrderRequesterEntity",
+   "module": "AICommander",
+   "record_rva": 185669856,
+   "record_file_off": 178861792,
+   "u32": [
+    4062136877,
+    524425,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "u64": [
+    2252392286341677,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "annotated": [
+    {
+     "qword": 0,
+     "offset": 0,
+     "value": 2252392286341677,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 1,
+     "offset": 8,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 2,
+     "offset": 16,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 3,
+     "offset": 24,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 4,
+     "offset": 32,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 5,
+     "offset": 40,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 6,
+     "offset": 48,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 7,
+     "offset": 56,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 8,
+     "offset": 64,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 9,
+     "offset": 72,
+     "value": 0,
+     "section": null,
+     "string": null
+    }
+   ]
+  },
+  {
+   "type_name": "ServerAICommanderPlayerPresenceTrackerEntity",
+   "module": "AICommander",
+   "record_rva": 185669776,
+   "record_file_off": 178861712,
+   "u32": [
+    1565126167,
+    524425,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "u64": [
+    2252389789330967,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "annotated": [
+    {
+     "qword": 0,
+     "offset": 0,
+     "value": 2252389789330967,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 1,
+     "offset": 8,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 2,
+     "offset": 16,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 3,
+     "offset": 24,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 4,
+     "offset": 32,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 5,
+     "offset": 40,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 6,
+     "offset": 48,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 7,
+     "offset": 56,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 8,
+     "offset": 64,
+     "value": 0,
+     "section": null,
+     "string": null
+    },
+    {
+     "qword": 9,
+     "offset": 72,
+     "value": 0,
+     "section": null,
+     "string": null
+    }
+   ]
+  }
+ ],
+ "registration_stubs": {
+  "count": 10172,
+  "pattern": "each stub LEA's a module-name string + a type-name string (.rdata), calls helper 0x50B0A20, then stores module desc ptr / type-info cell ptr / u32 / .data ptr / .rdata ptr / 8 .text fn ptrs into a node in the typeinfo section",
+  "name_to_record_anchor_pairs_verified": 2499,
+  "anchor_link": "stub -> .data type-info cell -> q0 -> exact typeinfo record base (delta=0 for 2499/2499 anchors)"
+ },
+ "section_content": {
+  "finding": "the 'typeinfo' section is a MIXED blob, not a pure reflection table",
+  "evidence": {
+   "static_records_kind_0x00080089": 23701,
+   "static_records_other_kinds": "0x4810b / 0x280063 / 0x300063 / 0x100045 / 0x380063 / 0x80045 / 0x400063 / 0x88045 / 0x48045 / 0x48063 (referenced by .data type cells)",
+   "plain_globals": "1682 functions write 16-byte UUIDs straight into the section (movaps/movups of a 4x u32 constant built on the stack); 0 of those targets coincide with a static record base",
+   "runtime_nodes": "10172 registration stubs fill all-zero regions of the section at runtime"
+  },
+  "consequence": "a reader must locate records by their 0x00080089 marker, not by assuming a flat array over the section"
+ },
+ "runtime_overlay": {
+  "fact": "runtime node base = static record base + 8 (verified on 2499/2499 anchors)",
+  "runtime_written_bytes": "static+0x08..0x17 = {u64 name pointer, u16 flags, u16 size, u32 ?} copied from the return value of helper 0x50B0A20",
+  "on_disk_value": "ZERO - the type NAME pointer only exists in the live process",
+  "mec_compatibility": "info{name ptr, u16 flags, u16 size, module ptr, align, u16 fieldCount} matches the Mirror's Edge Catalyst layout quoted in refs/docs__research",
+  "implication_for_an_esp": "resolve type/field names by walking the LIVE typeinfo + fieldinf structures; the on-disk file only carries the baked key ids"
+ }
+}

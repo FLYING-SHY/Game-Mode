@@ -1,0 +1,11 @@
+=== Bf6Esp 只读通道自检 ===
+[信息] 目标进程：自身 (pid 36384)
+[信息] 主模块：F:\WorkSpace\Game\BF6\dev\Bf6Esp\client\bin\Release\net48\Bf6Esp.exe 基址=0x233DAB80000 大小=163840 bytes
+[成功] 只读句柄已取得（仅 PROCESS_VM_READ | PROCESS_QUERY_LIMITED_INFORMATION）。
+[成功] DOS 头魔数校验（MZ）。
+[成功] PE 头解析：ImageBase=0x140000000 SizeOfImage=0x28000 节数=2（PE32+）
+         节 .text rva=0x2000 vsize=0x22228 raw=0x22400
+         节 .rsrc rva=0x26000 vsize=0x608 raw=0x800
+[成功] 已知内容往返比对（地址 0x233DCBED2C8，256 字节）。
+[信息] 读取失败计数：0
+=== 自检通过：只读通道可用 ===

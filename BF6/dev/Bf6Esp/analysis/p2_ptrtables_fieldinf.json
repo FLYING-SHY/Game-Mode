@@ -1,0 +1,449 @@
+{
+ "top": [
+  [
+   ",",
+   3
+  ],
+  [
+   "i^7#c",
+   2
+  ],
+  [
+   "|",
+   2
+  ],
+  [
+   "WorldBase",
+   1
+  ],
+  [
+   "BattlefieldAudioVoip",
+   1
+  ],
+  [
+   "AntRef",
+   1
+  ],
+  [
+   "AssetRef",
+   1
+  ],
+  [
+   "BattlefieldDestructionShared",
+   1
+  ],
+  [
+   "BattlefieldEngram",
+   1
+  ],
+  [
+   "TblSettings",
+   1
+  ],
+  [
+   "U+5Xc",
+   1
+  ],
+  [
+   ".^`<c",
+   1
+  ],
+  [
+   "Bl ec",
+   1
+  ],
+  [
+   "DynamnicEncounterRarities",
+   1
+  ],
+  [
+   "\"8F6E",
+   1
+  ],
+  [
+   "YDH'c",
+   1
+  ],
+  [
+   "3|d)c",
+   1
+  ],
+  [
+   "SystemSettings",
+   1
+  ],
+  [
+   "Platform",
+   1
+  ],
+  [
+   "BFLodSettings",
+   1
+  ],
+  [
+   "BeatEncounterRarities",
+   1
+  ],
+  [
+   "%'f!c",
+   1
+  ],
+  [
+   ",[q5E",
+   1
+  ],
+  [
+   "Egn(E",
+   1
+  ],
+  [
+   "3PWnE",
+   1
+  ]
+ ],
+ "examples": [
+  {
+   "slot_rva": 189379488,
+   "target_rva": 162492624,
+   "strings": [
+    "WorldBase"
+   ],
+   "raw": [
+    "0x1045000000",
+    "0x14a0487a8",
+    "0x149af7138",
+    "0x14a048798",
+    "0x14a0487a0",
+    "0x14a048790",
+    "0x1492678e0",
+    "0x0"
+   ]
+  },
+  {
+   "slot_rva": 189380424,
+   "target_rva": 162434024,
+   "strings": [
+    "BattlefieldAudioVoip"
+   ],
+   "raw": [
+    "0x3f8000003f800000",
+    "0x3f800000",
+    "0x148eb4d80",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x1"
+   ]
+  },
+  {
+   "slot_rva": 189380512,
+   "target_rva": 162740872,
+   "strings": [
+    "AntRef",
+    "AssetRef"
+   ],
+   "raw": [
+    "0x14b0ee930",
+    "0xffffffff0000ffff",
+    "0x0",
+    "0x0",
+    "0x148da235c",
+    "0x0",
+    "0x149b33b00",
+    "0x148da2368"
+   ]
+  },
+  {
+   "slot_rva": 189380616,
+   "target_rva": 162429592,
+   "strings": [
+    "BattlefieldDestructionShared",
+    "BattlefieldEngram"
+   ],
+   "raw": [
+    "0x42480000",
+    "0x148dd91b0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x1",
+    "0x148dd9f90"
+   ]
+  },
+  {
+   "slot_rva": 189384512,
+   "target_rva": 168032976,
+   "strings": [
+    "i^7#c"
+   ],
+   "raw": [
+    "0x14b20f280",
+    "0xffffffff0060ffff",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0"
+   ]
+  },
+  {
+   "slot_rva": 189384656,
+   "target_rva": 168032976,
+   "strings": [
+    "i^7#c"
+   ],
+   "raw": [
+    "0x14b20f280",
+    "0xffffffff0060ffff",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0"
+   ]
+  },
+  {
+   "slot_rva": 189401504,
+   "target_rva": 167415016,
+   "strings": [
+    "TblSettings"
+   ],
+   "raw": [
+    "0x14afa2630",
+    "0xffffffff0000ffff",
+    "0x0",
+    "0x0",
+    "0x149175f90",
+    "0x0",
+    "0x149fa8df0",
+    "0x14b262bb0"
+   ]
+  },
+  {
+   "slot_rva": 189413168,
+   "target_rva": 167046720,
+   "strings": [
+    "U+5Xc"
+   ],
+   "raw": [
+    "0x14b289510",
+    "0xffffffff0060ffff",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0"
+   ]
+  },
+  {
+   "slot_rva": 189413264,
+   "target_rva": 167040648,
+   "strings": [
+    ".^`<c"
+   ],
+   "raw": [
+    "0x14afc1990",
+    "0xffffffff0000ffff",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x14b2891a0",
+    "0xffffffff00e0ffff",
+    "0x0"
+   ]
+  },
+  {
+   "slot_rva": 189421472,
+   "target_rva": 165838896,
+   "strings": [
+    "Bl ec"
+   ],
+   "raw": [
+    "0x14b346f00",
+    "0xffffffff0060ffff",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0"
+   ]
+  },
+  {
+   "slot_rva": 189429056,
+   "target_rva": 166474440,
+   "strings": [
+    "|"
+   ],
+   "raw": [
+    "0x14b1c9d70",
+    "0xffffffff0010ffff",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x14aff1a50",
+    "0xffffffff0000ffff",
+    "0x0"
+   ]
+  },
+  {
+   "slot_rva": 189429104,
+   "target_rva": 166474440,
+   "strings": [
+    "|"
+   ],
+   "raw": [
+    "0x14b1c9d70",
+    "0xffffffff0010ffff",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x14aff1a50",
+    "0xffffffff0000ffff",
+    "0x0"
+   ]
+  },
+  {
+   "slot_rva": 189434000,
+   "target_rva": 166325816,
+   "strings": [
+    "DynamnicEncounterRarities"
+   ],
+   "raw": [
+    "0x14b154890",
+    "0xffffffff0020ffff",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x148ff2580"
+   ]
+  },
+  {
+   "slot_rva": 189438464,
+   "target_rva": 166234272,
+   "strings": [
+    "\"8F6E"
+   ],
+   "raw": [
+    "0x14b007850",
+    "0xffffffff0000ffff",
+    "0x0",
+    "0x0",
+    "0x1489c4e00",
+    "0x0",
+    "0x14b157ed0",
+    "0xffffffff0020ffff"
+   ]
+  },
+  {
+   "slot_rva": 189442544,
+   "target_rva": 166196256,
+   "strings": [
+    "YDH'c"
+   ],
+   "raw": [
+    "0x14b303900",
+    "0xffffffff0060ffff",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0"
+   ]
+  },
+  {
+   "slot_rva": 189447056,
+   "target_rva": 166051992,
+   "strings": [
+    "3|d)c"
+   ],
+   "raw": [
+    "0x14b01ebe0",
+    "0xffffffff0000ffff",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x14b31e4a0",
+    "0xffffffff0060ffff",
+    "0x0"
+   ]
+  },
+  {
+   "slot_rva": 189452720,
+   "target_rva": 165991856,
+   "strings": [
+    ","
+   ],
+   "raw": [
+    "0x14b329ef0",
+    "0xffffffff0060ffff",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0"
+   ]
+  },
+  {
+   "slot_rva": 189452816,
+   "target_rva": 165991856,
+   "strings": [
+    ","
+   ],
+   "raw": [
+    "0x14b329ef0",
+    "0xffffffff0060ffff",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0"
+   ]
+  },
+  {
+   "slot_rva": 189452864,
+   "target_rva": 165991856,
+   "strings": [
+    ","
+   ],
+   "raw": [
+    "0x14b329ef0",
+    "0xffffffff0060ffff",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0"
+   ]
+  },
+  {
+   "slot_rva": 189461888,
+   "target_rva": 165733576,
+   "strings": [
+    "SystemSettings",
+    "Platform"
+   ],
+   "raw": [
+    "0x14b0467d0",
+    "0xffffffff0000ffff",
+    "0x0",
+    "0x0",
+    "0x148f66520",
+    "0x0",
+    "0x149e0e700",
+    "0x148ea8f68"
+   ]
+  }
+ ]
+}

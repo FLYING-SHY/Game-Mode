@@ -1,0 +1,49 @@
+{
+  "total": 17743,
+  "distinct_strings": 9763,
+  "watch": {
+    "TeamId": [
+      [
+        ".data",
+        "0x9acef60",
+        "0x8dc6dec"
+      ],
+      [
+        ".data",
+        "0x9acefa0",
+        "0x8dc6dec"
+      ],
+      [
+        ".data",
+        "0x9acf000",
+        "0x8dc6dec"
+      ],
+      [
+        ".data",
+        "0x9acf060",
+        "0x8dc6dec"
+      ],
+      [
+        ".data",
+        "0x9acf280",
+        "0x8dc6dec"
+      ],
+      [
+        ".data",
+        "0x9acf4e0",
+        "0x8dc6dec"
+      ],
+      [
+        ".data",
+        "0x9acf560",
+        "0x8dc6dec"
+      ],
+      [
+        ".data",
+        "0x9acf5a0",
+        "0x8dc6dec"
+      ]
+    ]
+  },
+  "neighbourhoods": []
+}

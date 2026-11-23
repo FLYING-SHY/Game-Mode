@@ -1,0 +1,20 @@
+{
+ "generated": "p2_crack6.py",
+ "anchor_count": 2499,
+ "families": {
+  "xxh64_lo32": 0,
+  "xxh64_hi32": 0,
+  "xxh32": 0,
+  "siphash24_lo32": 0,
+  "siphash24_hi32": 0,
+  "murmur2_64_lo32": 0,
+  "murmur2_64_hi32": 0,
+  "murmur3_128_h1_lo32": 0,
+  "murmur3_128_h1_hi32": 0,
+  "murmur3_128_h2_lo32": 0,
+  "murmur3_128_h2_hi32": 0,
+  "xxh64_lo32_reversed": 0
+ },
+ "verdict": "no family produced a single hit on the 2499 verified (type name -> key) anchors",
+ "coverage_note": "each family is evaluated on all anchors; a single correct hit would have identified the scheme"
+}

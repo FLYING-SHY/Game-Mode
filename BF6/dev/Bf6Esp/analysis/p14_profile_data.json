@@ -1,0 +1,1747 @@
+{
+ "exe": "G:\\SteamLibrary\\steamapps\\common\\Battlefield 6\\bf6.exe",
+ "fileSize": 199230312,
+ "imageBase": 5368709120,
+ "sections": [
+  {
+   "name": ".text",
+   "vaddr": 4096,
+   "vsize": 120325503,
+   "rawsize": 120325632,
+   "rawoff": 1536
+  },
+  {
+   "name": "ctr",
+   "vaddr": 120332288,
+   "vsize": 17943011,
+   "rawsize": 17943040,
+   "rawoff": 120327168
+  },
+  {
+   "name": ".rdata",
+   "vaddr": 138276864,
+   "vsize": 24044982,
+   "rawsize": 24045056,
+   "rawoff": 138270208
+  },
+  {
+   "name": ".data",
+   "vaddr": 162324480,
+   "vsize": 13390792,
+   "rawsize": 6595072,
+   "rawoff": 162315264
+  },
+  {
+   "name": ".pdata",
+   "vaddr": 175718400,
+   "vsize": 7569264,
+   "rawsize": 7569408,
+   "rawoff": 168910336
+  },
+  {
+   "name": "typeinfo",
+   "vaddr": 183287808,
+   "vsize": 6023728,
+   "rawsize": 6024192,
+   "rawoff": 176479744
+  },
+  {
+   "name": "fieldinf",
+   "vaddr": 189313024,
+   "vsize": 2390976,
+   "rawsize": 2391040,
+   "rawoff": 182503936
+  },
+  {
+   "name": "_RDATA",
+   "vaddr": 191705088,
+   "vsize": 238344,
+   "rawsize": 238592,
+   "rawoff": 184894976
+  },
+  {
+   "name": ".rodata",
+   "vaddr": 191946752,
+   "vsize": 3456,
+   "rawsize": 3584,
+   "rawoff": 185133568
+  },
+  {
+   "name": ".rsrc",
+   "vaddr": 191950848,
+   "vsize": 333888,
+   "rawsize": 334336,
+   "rawoff": 185137152
+  },
+  {
+   "name": ".reloc",
+   "vaddr": 192286720,
+   "vsize": 2439256,
+   "rawsize": 2439680,
+   "rawoff": 185471488
+  },
+  {
+   "name": ".vm_sec",
+   "vaddr": 194727936,
+   "vsize": 49664,
+   "rawsize": 49664,
+   "rawoff": 187911168
+  },
+  {
+   "name": ".vlizer",
+   "vaddr": 194781184,
+   "vsize": 11258880,
+   "rawsize": 11258880,
+   "rawoff": 187960832
+  }
+ ],
+ "names": {
+  "ClientSoldierEntity": {
+   "count": 1,
+   "occurrences": [
+    {
+     "fileOffset": 153165872,
+     "rva": 153172528,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "ClientSoldierHealthComponent": {
+   "count": 2,
+   "occurrences": [
+    {
+     "fileOffset": 149139458,
+     "rva": 149146114,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 153169728,
+     "rva": 153176384,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "ClientSoldierCameraComponent": {
+   "count": 1,
+   "occurrences": [
+    {
+     "fileOffset": 153169760,
+     "rva": 153176416,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "ClientSoldierEntryComponent": {
+   "count": 1,
+   "occurrences": [
+    {
+     "fileOffset": 153169944,
+     "rva": 153176600,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "ClientSoldierWeapon": {
+   "count": 1,
+   "occurrences": [
+    {
+     "fileOffset": 153165848,
+     "rva": 153172504,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "ClientPlayerManager": {
+   "count": 1,
+   "occurrences": [
+    {
+     "fileOffset": 151658696,
+     "rva": 151665352,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "ClientPlayerIteratorEntity": {
+   "count": 1,
+   "occurrences": [
+    {
+     "fileOffset": 151658424,
+     "rva": 151665080,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "ClientConnection": {
+   "count": 1,
+   "occurrences": [
+    {
+     "fileOffset": 151658384,
+     "rva": 151665040,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "ClientPlayerExtent": {
+   "count": 7,
+   "occurrences": [
+    {
+     "fileOffset": 148827550,
+     "rva": 148834206,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149214685,
+     "rva": 149221341,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149226810,
+     "rva": 149233466,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149226924,
+     "rva": 149233580,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149834388,
+     "rva": 149841044,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150682563,
+     "rva": 150689219,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 151658672,
+     "rva": 151665328,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "BFClientPlayerExtent": {
+   "count": 1,
+   "occurrences": [
+    {
+     "fileOffset": 149226808,
+     "rva": 149233464,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "BFPlayerExtent": {
+   "count": 1,
+   "occurrences": [
+    {
+     "fileOffset": 149069072,
+     "rva": 149075728,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "CurrentHealth": {
+   "count": 2,
+   "occurrences": [
+    {
+     "fileOffset": 149074829,
+     "rva": 149081485,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149388584,
+     "rva": 149395240,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "MaxHealth": {
+   "count": 2,
+   "occurrences": [
+    {
+     "fileOffset": 149074984,
+     "rva": 149081640,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150782193,
+     "rva": 150788849,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "CurrentTeamId": {
+   "count": 1,
+   "occurrences": [
+    {
+     "fileOffset": 149356008,
+     "rva": 149362664,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "OwningTeam": {
+   "count": 1,
+   "occurrences": [
+    {
+     "fileOffset": 149160736,
+     "rva": 149167392,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "ShooterTeamId": {
+   "count": 1,
+   "occurrences": [
+    {
+     "fileOffset": 148835776,
+     "rva": 148842432,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "positionX": {
+   "count": 1,
+   "occurrences": [
+    {
+     "fileOffset": 152540944,
+     "rva": 152547600,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "positionY": {
+   "count": 1,
+   "occurrences": [
+    {
+     "fileOffset": 152540928,
+     "rva": 152547584,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "positionZ": {
+   "count": 0,
+   "occurrences": []
+  },
+  "HealthPercentage": {
+   "count": 3,
+   "occurrences": [
+    {
+     "fileOffset": 149074904,
+     "rva": 149081560,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149772981,
+     "rva": 149779637,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149774556,
+     "rva": 149781212,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "Alive": {
+   "count": 10,
+   "occurrences": [
+    {
+     "fileOffset": 140196929,
+     "rva": 140203585,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148991437,
+     "rva": 148998093,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149073994,
+     "rva": 149080650,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149539336,
+     "rva": 149545992,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149794356,
+     "rva": 149801012,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149818423,
+     "rva": 149825079,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150552545,
+     "rva": 150559201,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150572133,
+     "rva": 150578789,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150793848,
+     "rva": 150800504,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 151380458,
+     "rva": 151387114,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "Dead": {
+   "count": 9,
+   "occurrences": [
+    {
+     "fileOffset": 149074050,
+     "rva": 149080706,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149074089,
+     "rva": 149080745,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149074382,
+     "rva": 149081038,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149075350,
+     "rva": 149082006,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149794612,
+     "rva": 149801268,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149818375,
+     "rva": 149825031,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150793952,
+     "rva": 150800608,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150794227,
+     "rva": 150800883,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 151389101,
+     "rva": 151395757,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "playerName": {
+   "count": 1,
+   "occurrences": [
+    {
+     "fileOffset": 149952000,
+     "rva": 149958656,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "PlayerName": {
+   "count": 6,
+   "occurrences": [
+    {
+     "fileOffset": 139517600,
+     "rva": 139524256,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149164304,
+     "rva": 149170960,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149773205,
+     "rva": 149779861,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149773996,
+     "rva": 149780652,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149958621,
+     "rva": 149965277,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 151711622,
+     "rva": 151718278,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "LocalPlayer": {
+   "count": 16,
+   "occurrences": [
+    {
+     "fileOffset": 139345031,
+     "rva": 139351687,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 139383163,
+     "rva": 139389819,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 139435125,
+     "rva": 139441781,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 139520257,
+     "rva": 139526913,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148713686,
+     "rva": 148720342,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148800122,
+     "rva": 148806778,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149318978,
+     "rva": 149325634,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149727616,
+     "rva": 149734272,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149727706,
+     "rva": 149734362,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149773478,
+     "rva": 149780134,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149863115,
+     "rva": 149869771,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150648320,
+     "rva": 150654976,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150649456,
+     "rva": 150656112,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150870873,
+     "rva": 150877529,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150870899,
+     "rva": 150877555,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 151468353,
+     "rva": 151475009,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "LocalTeam": {
+   "count": 2,
+   "occurrences": [
+    {
+     "fileOffset": 139348864,
+     "rva": 139355520,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149318994,
+     "rva": 149325650,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "g_worldViewProjMatrix": {
+   "count": 1,
+   "occurrences": [
+    {
+     "fileOffset": 153685888,
+     "rva": 153692544,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "g_invProjMatrix": {
+   "count": 1,
+   "occurrences": [
+    {
+     "fileOffset": 152951488,
+     "rva": 152958144,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "ViewMatrix": {
+   "count": 5,
+   "occurrences": [
+    {
+     "fileOffset": 149523774,
+     "rva": 149530430,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 152755511,
+     "rva": 152762167,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 152755596,
+     "rva": 152762252,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 152814695,
+     "rva": 152821351,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 152814779,
+     "rva": 152821435,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "ProjectionMatrix": {
+   "count": 5,
+   "occurrences": [
+    {
+     "fileOffset": 150417179,
+     "rva": 150423835,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 152859035,
+     "rva": 152865691,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 153473308,
+     "rva": 153479964,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 153603090,
+     "rva": 153609746,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 153603606,
+     "rva": 153610262,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "EvaluatedCameraTransform": {
+   "count": 1,
+   "occurrences": [
+    {
+     "fileOffset": 150149976,
+     "rva": 150156632,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "CameraTransform": {
+   "count": 2,
+   "occurrences": [
+    {
+     "fileOffset": 149353656,
+     "rva": 149360312,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150149985,
+     "rva": 150156641,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "EcsRimeTransform": {
+   "count": 1,
+   "occurrences": [
+    {
+     "fileOffset": 152986456,
+     "rva": 152993112,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "EcsWorldTransform": {
+   "count": 1,
+   "occurrences": [
+    {
+     "fileOffset": 151319416,
+     "rva": 151326072,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "EcsTransformSpaceComponent": {
+   "count": 1,
+   "occurrences": [
+    {
+     "fileOffset": 153739568,
+     "rva": 153746224,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "LocalPlayerId": {
+   "count": 1,
+   "occurrences": [
+    {
+     "fileOffset": 149326072,
+     "rva": 149332728,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "TeamId": {
+   "count": 19,
+   "occurrences": [
+    {
+     "fileOffset": 148657132,
+     "rva": 148663788,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 148835783,
+     "rva": 148842439,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149162300,
+     "rva": 149168956,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149342759,
+     "rva": 149349415,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149350060,
+     "rva": 149356716,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149355939,
+     "rva": 149362595,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149356015,
+     "rva": 149362671,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149524254,
+     "rva": 149530910,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149543334,
+     "rva": 149549990,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149589385,
+     "rva": 149596041,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149773053,
+     "rva": 149779709,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149773176,
+     "rva": 149779832,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149773607,
+     "rva": 149780263,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149853604,
+     "rva": 149860260,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149953219,
+     "rva": 149959875,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149956119,
+     "rva": 149962775,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 149956851,
+     "rva": 149963507,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150017329,
+     "rva": 150023985,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150039266,
+     "rva": 150045922,
+     "section": ".rdata"
+    }
+   ]
+  },
+  "teamId": {
+   "count": 3,
+   "occurrences": [
+    {
+     "fileOffset": 149951216,
+     "rva": 149957872,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 150027613,
+     "rva": 150034269,
+     "section": ".rdata"
+    },
+    {
+     "fileOffset": 151165185,
+     "rva": 151171841,
+     "section": ".rdata"
+    }
+   ]
+  }
+ },
+ "anchors": [
+  {
+   "name": "Name.ClientSoldierEntity",
+   "pattern": "43 6C 69 65 6E 74 53 6F 6C 64 69 65 72 45 6E 74 69 74 79",
+   "section": ".rdata",
+   "fileMatches": 1,
+   "occurrences": [
+    {
+     "fileOffset": 153165872,
+     "rva": 153172528
+    }
+   ]
+  },
+  {
+   "name": "Name.ClientSoldierHealthComponent",
+   "pattern": "43 6C 69 65 6E 74 53 6F 6C 64 69 65 72 48 65 61 6C 74 68 43 6F 6D 70 6F 6E 65 6E 74",
+   "section": ".rdata",
+   "fileMatches": 2,
+   "occurrences": [
+    {
+     "fileOffset": 149139458,
+     "rva": 149146114
+    },
+    {
+     "fileOffset": 153169728,
+     "rva": 153176384
+    }
+   ]
+  },
+  {
+   "name": "Name.ClientSoldierCameraComponent",
+   "pattern": "43 6C 69 65 6E 74 53 6F 6C 64 69 65 72 43 61 6D 65 72 61 43 6F 6D 70 6F 6E 65 6E 74",
+   "section": ".rdata",
+   "fileMatches": 1,
+   "occurrences": [
+    {
+     "fileOffset": 153169760,
+     "rva": 153176416
+    }
+   ]
+  },
+  {
+   "name": "Name.ClientSoldierEntryComponent",
+   "pattern": "43 6C 69 65 6E 74 53 6F 6C 64 69 65 72 45 6E 74 72 79 43 6F 6D 70 6F 6E 65 6E 74",
+   "section": ".rdata",
+   "fileMatches": 1,
+   "occurrences": [
+    {
+     "fileOffset": 153169944,
+     "rva": 153176600
+    }
+   ]
+  },
+  {
+   "name": "Name.ClientSoldierWeapon",
+   "pattern": "43 6C 69 65 6E 74 53 6F 6C 64 69 65 72 57 65 61 70 6F 6E",
+   "section": ".rdata",
+   "fileMatches": 4,
+   "occurrences": [
+    {
+     "fileOffset": 150684536,
+     "rva": 150691192
+    },
+    {
+     "fileOffset": 153165848,
+     "rva": 153172504
+    },
+    {
+     "fileOffset": 153165928,
+     "rva": 153172584
+    },
+    {
+     "fileOffset": 153170016,
+     "rva": 153176672
+    }
+   ]
+  },
+  {
+   "name": "Name.ClientPlayerManager",
+   "pattern": "43 6C 69 65 6E 74 50 6C 61 79 65 72 4D 61 6E 61 67 65 72",
+   "section": ".rdata",
+   "fileMatches": 2,
+   "occurrences": [
+    {
+     "fileOffset": 148744114,
+     "rva": 148750770
+    },
+    {
+     "fileOffset": 151658696,
+     "rva": 151665352
+    }
+   ]
+  },
+  {
+   "name": "Name.ClientPlayerIteratorEntity",
+   "pattern": "43 6C 69 65 6E 74 50 6C 61 79 65 72 49 74 65 72 61 74 6F 72 45 6E 74 69 74 79",
+   "section": ".rdata",
+   "fileMatches": 1,
+   "occurrences": [
+    {
+     "fileOffset": 151658424,
+     "rva": 151665080
+    }
+   ]
+  },
+  {
+   "name": "Name.ClientConnection",
+   "pattern": "43 6C 69 65 6E 74 43 6F 6E 6E 65 63 74 69 6F 6E",
+   "section": ".rdata",
+   "fileMatches": 10,
+   "occurrences": [
+    {
+     "fileOffset": 151658248,
+     "rva": 151664904
+    },
+    {
+     "fileOffset": 151658280,
+     "rva": 151664936
+    },
+    {
+     "fileOffset": 151658320,
+     "rva": 151664976
+    },
+    {
+     "fileOffset": 151658352,
+     "rva": 151665008
+    },
+    {
+     "fileOffset": 151658384,
+     "rva": 151665040
+    },
+    {
+     "fileOffset": 151658466,
+     "rva": 151665122
+    },
+    {
+     "fileOffset": 151716520,
+     "rva": 151723176
+    },
+    {
+     "fileOffset": 152183123,
+     "rva": 152189779
+    }
+   ]
+  },
+  {
+   "name": "Name.ClientPlayerExtent",
+   "pattern": "43 6C 69 65 6E 74 50 6C 61 79 65 72 45 78 74 65 6E 74",
+   "section": ".rdata",
+   "fileMatches": 8,
+   "occurrences": [
+    {
+     "fileOffset": 148743786,
+     "rva": 148750442
+    },
+    {
+     "fileOffset": 148827550,
+     "rva": 148834206
+    },
+    {
+     "fileOffset": 149214685,
+     "rva": 149221341
+    },
+    {
+     "fileOffset": 149226810,
+     "rva": 149233466
+    },
+    {
+     "fileOffset": 149226924,
+     "rva": 149233580
+    },
+    {
+     "fileOffset": 149834388,
+     "rva": 149841044
+    },
+    {
+     "fileOffset": 150682563,
+     "rva": 150689219
+    },
+    {
+     "fileOffset": 151658672,
+     "rva": 151665328
+    }
+   ]
+  },
+  {
+   "name": "Name.BFClientPlayerExtent",
+   "pattern": "42 46 43 6C 69 65 6E 74 50 6C 61 79 65 72 45 78 74 65 6E 74",
+   "section": ".rdata",
+   "fileMatches": 1,
+   "occurrences": [
+    {
+     "fileOffset": 149226808,
+     "rva": 149233464
+    }
+   ]
+  },
+  {
+   "name": "Name.BFPlayerExtent",
+   "pattern": "42 46 50 6C 61 79 65 72 45 78 74 65 6E 74",
+   "section": ".rdata",
+   "fileMatches": 1,
+   "occurrences": [
+    {
+     "fileOffset": 149069072,
+     "rva": 149075728
+    }
+   ]
+  },
+  {
+   "name": "Name.CurrentHealth",
+   "pattern": "43 75 72 72 65 6E 74 48 65 61 6C 74 68",
+   "section": ".rdata",
+   "fileMatches": 4,
+   "occurrences": [
+    {
+     "fileOffset": 148799812,
+     "rva": 148806468
+    },
+    {
+     "fileOffset": 149074760,
+     "rva": 149081416
+    },
+    {
+     "fileOffset": 149074829,
+     "rva": 149081485
+    },
+    {
+     "fileOffset": 149388584,
+     "rva": 149395240
+    }
+   ]
+  },
+  {
+   "name": "Name.MaxHealth",
+   "pattern": "4D 61 78 48 65 61 6C 74 68",
+   "section": ".rdata",
+   "fileMatches": 8,
+   "occurrences": [
+    {
+     "fileOffset": 148901422,
+     "rva": 148908078
+    },
+    {
+     "fileOffset": 148902987,
+     "rva": 148909643
+    },
+    {
+     "fileOffset": 148903099,
+     "rva": 148909755
+    },
+    {
+     "fileOffset": 149074984,
+     "rva": 149081640
+    },
+    {
+     "fileOffset": 149192501,
+     "rva": 149199157
+    },
+    {
+     "fileOffset": 149294477,
+     "rva": 149301133
+    },
+    {
+     "fileOffset": 150782193,
+     "rva": 150788849
+    },
+    {
+     "fileOffset": 151727584,
+     "rva": 151734240
+    }
+   ]
+  },
+  {
+   "name": "Name.CurrentTeamId",
+   "pattern": "43 75 72 72 65 6E 74 54 65 61 6D 49 64",
+   "section": ".rdata",
+   "fileMatches": 1,
+   "occurrences": [
+    {
+     "fileOffset": 149356008,
+     "rva": 149362664
+    }
+   ]
+  },
+  {
+   "name": "Name.OwningTeam",
+   "pattern": "4F 77 6E 69 6E 67 54 65 61 6D",
+   "section": ".rdata",
+   "fileMatches": 1,
+   "occurrences": [
+    {
+     "fileOffset": 149160736,
+     "rva": 149167392
+    }
+   ]
+  },
+  {
+   "name": "Name.ShooterTeamId",
+   "pattern": "53 68 6F 6F 74 65 72 54 65 61 6D 49 64",
+   "section": ".rdata",
+   "fileMatches": 1,
+   "occurrences": [
+    {
+     "fileOffset": 148835776,
+     "rva": 148842432
+    }
+   ]
+  },
+  {
+   "name": "Name.positionX",
+   "pattern": "70 6F 73 69 74 69 6F 6E 58",
+   "section": ".rdata",
+   "fileMatches": 2,
+   "occurrences": [
+    {
+     "fileOffset": 139849290,
+     "rva": 139855946
+    },
+    {
+     "fileOffset": 152540944,
+     "rva": 152547600
+    }
+   ]
+  },
+  {
+   "name": "Name.positionY",
+   "pattern": "70 6F 73 69 74 69 6F 6E 59",
+   "section": ".rdata",
+   "fileMatches": 2,
+   "occurrences": [
+    {
+     "fileOffset": 139849306,
+     "rva": 139855962
+    },
+    {
+     "fileOffset": 152540928,
+     "rva": 152547584
+    }
+   ]
+  },
+  {
+   "name": "Name.positionZ",
+   "pattern": "70 6F 73 69 74 69 6F 6E 5A",
+   "section": ".rdata",
+   "fileMatches": 1,
+   "occurrences": [
+    {
+     "fileOffset": 139849322,
+     "rva": 139855978
+    }
+   ]
+  },
+  {
+   "name": "Name.HealthPercentage",
+   "pattern": "48 65 61 6C 74 68 50 65 72 63 65 6E 74 61 67 65",
+   "section": ".rdata",
+   "fileMatches": 5,
+   "occurrences": [
+    {
+     "fileOffset": 149074904,
+     "rva": 149081560
+    },
+    {
+     "fileOffset": 149604208,
+     "rva": 149610864
+    },
+    {
+     "fileOffset": 149772981,
+     "rva": 149779637
+    },
+    {
+     "fileOffset": 149774556,
+     "rva": 149781212
+    },
+    {
+     "fileOffset": 150554652,
+     "rva": 150561308
+    }
+   ]
+  },
+  {
+   "name": "Name.Alive",
+   "pattern": "41 6C 69 76 65",
+   "section": ".rdata",
+   "fileMatches": 24,
+   "occurrences": [
+    {
+     "fileOffset": 139345840,
+     "rva": 139352496
+    },
+    {
+     "fileOffset": 139383891,
+     "rva": 139390547
+    },
+    {
+     "fileOffset": 139850710,
+     "rva": 139857366
+    },
+    {
+     "fileOffset": 140196929,
+     "rva": 140203585
+    },
+    {
+     "fileOffset": 148736832,
+     "rva": 148743488
+    },
+    {
+     "fileOffset": 148736976,
+     "rva": 148743632
+    },
+    {
+     "fileOffset": 148991437,
+     "rva": 148998093
+    },
+    {
+     "fileOffset": 149062176,
+     "rva": 149068832
+    }
+   ]
+  },
+  {
+   "name": "Name.Dead",
+   "pattern": "44 65 61 64",
+   "section": ".rdata",
+   "fileMatches": 44,
+   "occurrences": [
+    {
+     "fileOffset": 139445698,
+     "rva": 139452354
+    },
+    {
+     "fileOffset": 148658990,
+     "rva": 148665646
+    },
+    {
+     "fileOffset": 148736912,
+     "rva": 148743568
+    },
+    {
+     "fileOffset": 148737160,
+     "rva": 148743816
+    },
+    {
+     "fileOffset": 149074050,
+     "rva": 149080706
+    },
+    {
+     "fileOffset": 149074089,
+     "rva": 149080745
+    },
+    {
+     "fileOffset": 149074382,
+     "rva": 149081038
+    },
+    {
+     "fileOffset": 149075350,
+     "rva": 149082006
+    }
+   ]
+  },
+  {
+   "name": "Name.playerName",
+   "pattern": "70 6C 61 79 65 72 4E 61 6D 65",
+   "section": ".rdata",
+   "fileMatches": 3,
+   "occurrences": [
+    {
+     "fileOffset": 139847362,
+     "rva": 139854018
+    },
+    {
+     "fileOffset": 149952000,
+     "rva": 149958656
+    },
+    {
+     "fileOffset": 149952016,
+     "rva": 149958672
+    }
+   ]
+  },
+  {
+   "name": "Name.PlayerName",
+   "pattern": "50 6C 61 79 65 72 4E 61 6D 65",
+   "section": ".rdata",
+   "fileMatches": 20,
+   "occurrences": [
+    {
+     "fileOffset": 139335109,
+     "rva": 139341765
+    },
+    {
+     "fileOffset": 139517600,
+     "rva": 139524256
+    },
+    {
+     "fileOffset": 139851002,
+     "rva": 139857658
+    },
+    {
+     "fileOffset": 139851026,
+     "rva": 139857682
+    },
+    {
+     "fileOffset": 139851045,
+     "rva": 139857701
+    },
+    {
+     "fileOffset": 139851179,
+     "rva": 139857835
+    },
+    {
+     "fileOffset": 139851208,
+     "rva": 139857864
+    },
+    {
+     "fileOffset": 139851232,
+     "rva": 139857888
+    }
+   ]
+  },
+  {
+   "name": "Name.LocalPlayer",
+   "pattern": "4C 6F 63 61 6C 50 6C 61 79 65 72",
+   "section": ".rdata",
+   "fileMatches": 85,
+   "occurrences": [
+    {
+     "fileOffset": 139327762,
+     "rva": 139334418
+    },
+    {
+     "fileOffset": 139338509,
+     "rva": 139345165
+    },
+    {
+     "fileOffset": 139345031,
+     "rva": 139351687
+    },
+    {
+     "fileOffset": 139374828,
+     "rva": 139381484
+    },
+    {
+     "fileOffset": 139383163,
+     "rva": 139389819
+    },
+    {
+     "fileOffset": 139435125,
+     "rva": 139441781
+    },
+    {
+     "fileOffset": 139457202,
+     "rva": 139463858
+    },
+    {
+     "fileOffset": 139520257,
+     "rva": 139526913
+    }
+   ]
+  },
+  {
+   "name": "Name.LocalTeam",
+   "pattern": "4C 6F 63 61 6C 54 65 61 6D",
+   "section": ".rdata",
+   "fileMatches": 2,
+   "occurrences": [
+    {
+     "fileOffset": 139348864,
+     "rva": 139355520
+    },
+    {
+     "fileOffset": 149318994,
+     "rva": 149325650
+    }
+   ]
+  },
+  {
+   "name": "Name.g_worldViewProjMatrix",
+   "pattern": "67 5F 77 6F 72 6C 64 56 69 65 77 50 72 6F 6A 4D 61 74 72 69 78",
+   "section": ".rdata",
+   "fileMatches": 1,
+   "occurrences": [
+    {
+     "fileOffset": 153685888,
+     "rva": 153692544
+    }
+   ]
+  },
+  {
+   "name": "Name.g_invProjMatrix",
+   "pattern": "67 5F 69 6E 76 50 72 6F 6A 4D 61 74 72 69 78",
+   "section": ".rdata",
+   "fileMatches": 1,
+   "occurrences": [
+    {
+     "fileOffset": 152951488,
+     "rva": 152958144
+    }
+   ]
+  },
+  {
+   "name": "Name.ViewMatrix",
+   "pattern": "56 69 65 77 4D 61 74 72 69 78",
+   "section": ".rdata",
+   "fileMatches": 5,
+   "occurrences": [
+    {
+     "fileOffset": 149523774,
+     "rva": 149530430
+    },
+    {
+     "fileOffset": 152755511,
+     "rva": 152762167
+    },
+    {
+     "fileOffset": 152755596,
+     "rva": 152762252
+    },
+    {
+     "fileOffset": 152814695,
+     "rva": 152821351
+    },
+    {
+     "fileOffset": 152814779,
+     "rva": 152821435
+    }
+   ]
+  },
+  {
+   "name": "Name.ProjectionMatrix",
+   "pattern": "50 72 6F 6A 65 63 74 69 6F 6E 4D 61 74 72 69 78",
+   "section": ".rdata",
+   "fileMatches": 6,
+   "occurrences": [
+    {
+     "fileOffset": 150417179,
+     "rva": 150423835
+    },
+    {
+     "fileOffset": 152693128,
+     "rva": 152699784
+    },
+    {
+     "fileOffset": 152859035,
+     "rva": 152865691
+    },
+    {
+     "fileOffset": 153473308,
+     "rva": 153479964
+    },
+    {
+     "fileOffset": 153603090,
+     "rva": 153609746
+    },
+    {
+     "fileOffset": 153603606,
+     "rva": 153610262
+    }
+   ]
+  },
+  {
+   "name": "Name.EvaluatedCameraTransform",
+   "pattern": "45 76 61 6C 75 61 74 65 64 43 61 6D 65 72 61 54 72 61 6E 73 66 6F 72 6D",
+   "section": ".rdata",
+   "fileMatches": 2,
+   "occurrences": [
+    {
+     "fileOffset": 150149976,
+     "rva": 150156632
+    },
+    {
+     "fileOffset": 150150008,
+     "rva": 150156664
+    }
+   ]
+  },
+  {
+   "name": "Name.CameraTransform",
+   "pattern": "43 61 6D 65 72 61 54 72 61 6E 73 66 6F 72 6D",
+   "section": ".rdata",
+   "fileMatches": 5,
+   "occurrences": [
+    {
+     "fileOffset": 149353656,
+     "rva": 149360312
+    },
+    {
+     "fileOffset": 150149985,
+     "rva": 150156641
+    },
+    {
+     "fileOffset": 150150017,
+     "rva": 150156673
+    },
+    {
+     "fileOffset": 150191301,
+     "rva": 150197957
+    },
+    {
+     "fileOffset": 151687151,
+     "rva": 151693807
+    }
+   ]
+  },
+  {
+   "name": "Name.EcsRimeTransform",
+   "pattern": "45 63 73 52 69 6D 65 54 72 61 6E 73 66 6F 72 6D",
+   "section": ".rdata",
+   "fileMatches": 2,
+   "occurrences": [
+    {
+     "fileOffset": 152966240,
+     "rva": 152972896
+    },
+    {
+     "fileOffset": 152986456,
+     "rva": 152993112
+    }
+   ]
+  },
+  {
+   "name": "Name.EcsWorldTransform",
+   "pattern": "45 63 73 57 6F 72 6C 64 54 72 61 6E 73 66 6F 72 6D",
+   "section": ".rdata",
+   "fileMatches": 4,
+   "occurrences": [
+    {
+     "fileOffset": 151319416,
+     "rva": 151326072
+    },
+    {
+     "fileOffset": 151319512,
+     "rva": 151326168
+    },
+    {
+     "fileOffset": 151331144,
+     "rva": 151337800
+    },
+    {
+     "fileOffset": 151332256,
+     "rva": 151338912
+    }
+   ]
+  },
+  {
+   "name": "Name.EcsTransformSpaceComponent",
+   "pattern": "45 63 73 54 72 61 6E 73 66 6F 72 6D 53 70 61 63 65 43 6F 6D 70 6F 6E 65 6E 74",
+   "section": ".rdata",
+   "fileMatches": 1,
+   "occurrences": [
+    {
+     "fileOffset": 153739568,
+     "rva": 153746224
+    }
+   ]
+  },
+  {
+   "name": "Name.LocalPlayerId",
+   "pattern": "4C 6F 63 61 6C 50 6C 61 79 65 72 49 64",
+   "section": ".rdata",
+   "fileMatches": 27,
+   "occurrences": [
+    {
+     "fileOffset": 148603797,
+     "rva": 148610453
+    },
+    {
+     "fileOffset": 148603829,
+     "rva": 148610485
+    },
+    {
+     "fileOffset": 148603861,
+     "rva": 148610517
+    },
+    {
+     "fileOffset": 148603893,
+     "rva": 148610549
+    },
+    {
+     "fileOffset": 148603925,
+     "rva": 148610581
+    },
+    {
+     "fileOffset": 148603957,
+     "rva": 148610613
+    },
+    {
+     "fileOffset": 148603989,
+     "rva": 148610645
+    },
+    {
+     "fileOffset": 148604021,
+     "rva": 148610677
+    }
+   ]
+  },
+  {
+   "name": "Name.TeamId",
+   "pattern": "54 65 61 6D 49 64",
+   "section": ".rdata",
+   "fileMatches": 30,
+   "occurrences": [
+    {
+     "fileOffset": 139258163,
+     "rva": 139264819
+    },
+    {
+     "fileOffset": 139348534,
+     "rva": 139355190
+    },
+    {
+     "fileOffset": 139582336,
+     "rva": 139588992
+    },
+    {
+     "fileOffset": 139850481,
+     "rva": 139857137
+    },
+    {
+     "fileOffset": 148657132,
+     "rva": 148663788
+    },
+    {
+     "fileOffset": 148835783,
+     "rva": 148842439
+    },
+    {
+     "fileOffset": 149162300,
+     "rva": 149168956
+    },
+    {
+     "fileOffset": 149163192,
+     "rva": 149169848
+    }
+   ]
+  },
+  {
+   "name": "Name.teamId",
+   "pattern": "74 65 61 6D 49 64",
+   "section": ".rdata",
+   "fileMatches": 5,
+   "occurrences": [
+    {
+     "fileOffset": 139199042,
+     "rva": 139205698
+    },
+    {
+     "fileOffset": 149951216,
+     "rva": 149957872
+    },
+    {
+     "fileOffset": 149953728,
+     "rva": 149960384
+    },
+    {
+     "fileOffset": 150027613,
+     "rva": 150034269
+    },
+    {
+     "fileOffset": 151165185,
+     "rva": 151171841
+    }
+   ]
+  },
+  {
+   "name": "ModuleRegistryMagic",
+   "pattern": "52 49 46 58 52 49 46 46",
+   "section": ".data",
+   "fileMatches": 1,
+   "occurrences": [
+    {
+     "fileOffset": 162473376,
+     "rva": 162482592
+    }
+   ]
+  }
+ ],
+ "typeInfoMarker": {
+  "value": "89 00 00 08",
+  "count": 23701,
+  "sectionRva": 183287808
+ }
+}

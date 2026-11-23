@@ -1,0 +1,265 @@
+{
+  "imageBase": 5368709120,
+  "sections": [
+    {
+      "name": ".text",
+      "vaddr": 4096,
+      "vsize": 120325503,
+      "rawsize": 120325632,
+      "rawoff": 1536
+    },
+    {
+      "name": "ctr",
+      "vaddr": 120332288,
+      "vsize": 17943011,
+      "rawsize": 17943040,
+      "rawoff": 120327168
+    },
+    {
+      "name": ".rdata",
+      "vaddr": 138276864,
+      "vsize": 24044982,
+      "rawsize": 24045056,
+      "rawoff": 138270208
+    },
+    {
+      "name": ".data",
+      "vaddr": 162324480,
+      "vsize": 13390792,
+      "rawsize": 6595072,
+      "rawoff": 162315264
+    },
+    {
+      "name": ".pdata",
+      "vaddr": 175718400,
+      "vsize": 7569264,
+      "rawsize": 7569408,
+      "rawoff": 168910336
+    },
+    {
+      "name": "typeinfo",
+      "vaddr": 183287808,
+      "vsize": 6023728,
+      "rawsize": 6024192,
+      "rawoff": 176479744
+    },
+    {
+      "name": "fieldinf",
+      "vaddr": 189313024,
+      "vsize": 2390976,
+      "rawsize": 2391040,
+      "rawoff": 182503936
+    },
+    {
+      "name": "_RDATA",
+      "vaddr": 191705088,
+      "vsize": 238344,
+      "rawsize": 238592,
+      "rawoff": 184894976
+    },
+    {
+      "name": ".rodata",
+      "vaddr": 191946752,
+      "vsize": 3456,
+      "rawsize": 3584,
+      "rawoff": 185133568
+    },
+    {
+      "name": ".rsrc",
+      "vaddr": 191950848,
+      "vsize": 333888,
+      "rawsize": 334336,
+      "rawoff": 185137152
+    },
+    {
+      "name": ".reloc",
+      "vaddr": 192286720,
+      "vsize": 2439256,
+      "rawsize": 2439680,
+      "rawoff": 185471488
+    },
+    {
+      "name": ".vm_sec",
+      "vaddr": 194727936,
+      "vsize": 49664,
+      "rawsize": 49664,
+      "rawoff": 187911168
+    },
+    {
+      "name": ".vlizer",
+      "vaddr": 194781184,
+      "vsize": 11258880,
+      "rawsize": 11258880,
+      "rawoff": 187960832
+    }
+  ],
+  "anchors": {
+    "Text.HealthStringRef": null,
+    "Text.TeamIdStringRef": null,
+    "Text.LocalPlayerStringRef": null
+  },
+  "names": {
+    "ClientSoldierEntity": {
+      "exactHits": [
+        {
+          "fileOffset": 153165872,
+          "rva": 153172528,
+          "section": ".rdata"
+        }
+      ],
+      "pattern": "43 6C 69 65 6E 74 53 6F 6C 64 69 65 72 45 6E 74 69 74 79",
+      "fileMatches": 1
+    },
+    "ClientSoldierHealthComponent": {
+      "exactHits": [
+        {
+          "fileOffset": 149139458,
+          "rva": 149146114,
+          "section": ".rdata"
+        },
+        {
+          "fileOffset": 153169728,
+          "rva": 153176384,
+          "section": ".rdata"
+        }
+      ],
+      "pattern": "43 6C 69 65 6E 74 53 6F 6C 64 69 65 72 48 65 61 6C 74 68 43 6F 6D 70 6F 6E 65 6E 74",
+      "fileMatches": 2
+    },
+    "CurrentHealth": {
+      "exactHits": [
+        {
+          "fileOffset": 149074829,
+          "rva": 149081485,
+          "section": ".rdata"
+        },
+        {
+          "fileOffset": 149388584,
+          "rva": 149395240,
+          "section": ".rdata"
+        }
+      ],
+      "pattern": "43 75 72 72 65 6E 74 48 65 61 6C 74 68",
+      "fileMatches": 4
+    },
+    "MaxHealth": {
+      "exactHits": [
+        {
+          "fileOffset": 149074984,
+          "rva": 149081640,
+          "section": ".rdata"
+        },
+        {
+          "fileOffset": 150782193,
+          "rva": 150788849,
+          "section": ".rdata"
+        }
+      ],
+      "pattern": "4D 61 78 48 65 61 6C 74 68",
+      "fileMatches": 8
+    },
+    "CurrentTeamId": {
+      "exactHits": [
+        {
+          "fileOffset": 149356008,
+          "rva": 149362664,
+          "section": ".rdata"
+        }
+      ],
+      "pattern": "43 75 72 72 65 6E 74 54 65 61 6D 49 64",
+      "fileMatches": 1
+    },
+    "ClientPlayerManager": {
+      "exactHits": [
+        {
+          "fileOffset": 151658696,
+          "rva": 151665352,
+          "section": ".rdata"
+        }
+      ],
+      "pattern": "43 6C 69 65 6E 74 50 6C 61 79 65 72 4D 61 6E 61 67 65 72",
+      "fileMatches": 2
+    },
+    "ClientPlayerIteratorEntity": {
+      "exactHits": [
+        {
+          "fileOffset": 151658424,
+          "rva": 151665080,
+          "section": ".rdata"
+        }
+      ],
+      "pattern": "43 6C 69 65 6E 74 50 6C 61 79 65 72 49 74 65 72 61 74 6F 72 45 6E 74 69 74 79",
+      "fileMatches": 1
+    },
+    "EcsRimeTransform": {
+      "exactHits": [
+        {
+          "fileOffset": 152986456,
+          "rva": 152993112,
+          "section": ".rdata"
+        }
+      ],
+      "pattern": "45 63 73 52 69 6D 65 54 72 61 6E 73 66 6F 72 6D",
+      "fileMatches": 2
+    },
+    "EcsWorldTransform": {
+      "exactHits": [
+        {
+          "fileOffset": 151319416,
+          "rva": 151326072,
+          "section": ".rdata"
+        }
+      ],
+      "pattern": "45 63 73 57 6F 72 6C 64 54 72 61 6E 73 66 6F 72 6D",
+      "fileMatches": 4
+    }
+  },
+  "ctrCluster": {
+    "rva": 127287445,
+    "count": 10,
+    "entries": [
+      {
+        "rva": 127287445,
+        "bytes": "488d058c236001c3"
+      },
+      {
+        "rva": 127287453,
+        "bytes": "488d053c246001c3"
+      },
+      {
+        "rva": 127287461,
+        "bytes": "488d0544246001c3"
+      },
+      {
+        "rva": 127287469,
+        "bytes": "488d054c246001c3"
+      },
+      {
+        "rva": 127287477,
+        "bytes": "488d0554246001c3"
+      },
+      {
+        "rva": 127287485,
+        "bytes": "488d05cc236001c3"
+      },
+      {
+        "rva": 127287493,
+        "bytes": "488d05d4236001c3"
+      },
+      {
+        "rva": 127287501,
+        "bytes": "488d05dc236001c3"
+      },
+      {
+        "rva": 127287509,
+        "bytes": "488d05e4236001c3"
+      },
+      {
+        "rva": 127287517,
+        "bytes": "488d054c246001c3"
+      }
+    ],
+    "pattern": "48 8D 05 ?? ?? ?? ?? C3",
+    "fileMatches": 33131
+  }
+}

@@ -1,0 +1,3585 @@
+{
+ "section": {
+  "name": "fieldinf",
+  "rva": 189313024,
+  "raw_offset": 182503936,
+  "raw_size": 2391040,
+  "virtual_size": 2390976
+ },
+ "size_bytes": 2391040,
+ "total_u32": 597760,
+ "link_to_typeinfo": {
+  "u32_values_in_typeinfo_u32_11_domain": 305737,
+  "fraction": 0.5115,
+  "u32_values_in_typeinfo_u32_0_domain": 0,
+  "fraction_hash0": 0.0,
+  "CORRECTION_zero_artifact": {
+   "note": "the apparent 51% link was an ARTIFACT: the typeinfo u32[11] domain contains 0, and 305620 of the 597760 fieldinf u32 values are 0.  The match count therefore equals the zero count almost exactly.",
+   "fieldinf_zero_u32": 305620,
+   "matched_values_that_are_zero": 305620,
+   "matched_values_that_are_nonzero": 117,
+   "nonzero_u32_11_domain_size": 18196,
+   "random_expectation_for_nonzero_domain": 2.53,
+   "verdict": "117 nonzero matches vs 2.5 expected at random - the only recurring value is the 0xFFFFFFFF sentinel (117x).  CONCLUSION: there is NO key-based typeinfo<->fieldinf link; the two tables are independent."
+  }
+ },
+ "structure": {
+  "element_size": "0x08 window {u32 payload, u32 tag} - at every tested stride the odd u32 slot has only 8-10 distinct values, i.e. it is a tag/flag set, and the even slot carries the payload",
+  "payload_slot_content": "the payload slot mixes three kinds of data: (a) small integers that are member OFFSETS (multiples of 8 plus bitfield widths 1/2/3/4), (b) low 32 bits of .data VAs (0x49FB5xxx) that address the .data type cells, (c) 32-bit keys. The section is a serialised, variable-length record stream, not a flat array of one fixed record type.",
+  "tag_values": {
+   "0x0": 227783,
+   "0x1": 65068,
+   "0x88": 5601,
+   "0x2000": 158,
+   "0x1000": 136,
+   "0xffffffff": 70,
+   "0xffff0000": 41,
+   "0x10000": 17,
+   "0xffff0088": 5,
+   "0x2088": 1
+  },
+  "zero_only_nonzero_index_deltas": [
+   [
+    1,
+    128720
+   ],
+   [
+    2,
+    127479
+   ],
+   [
+    4,
+    16866
+   ],
+   [
+    7,
+    7116
+   ],
+   [
+    9,
+    5658
+   ],
+   [
+    6,
+    2619
+   ],
+   [
+    10,
+    1525
+   ],
+   [
+    8,
+    1261
+   ]
+  ],
+  "dominant_stride_inside_runs": "0x30 (151 runs in typeinfo / equivalent grouping in fieldinf)"
+ },
+ "member_offset_candidates": {
+  "0x0": {
+   "count_lt_0x1000": 11187,
+   "top": [
+    [
+     32,
+     587
+    ],
+    [
+     2,
+     553
+    ],
+    [
+     4,
+     541
+    ],
+    [
+     48,
+     485
+    ],
+    [
+     40,
+     462
+    ],
+    [
+     8,
+     445
+    ],
+    [
+     56,
+     354
+    ],
+    [
+     16,
+     338
+    ],
+    [
+     64,
+     316
+    ],
+    [
+     24,
+     294
+    ],
+    [
+     80,
+     228
+    ],
+    [
+     12,
+     227
+    ],
+    [
+     72,
+     193
+    ],
+    [
+     96,
+     182
+    ],
+    [
+     36,
+     169
+    ],
+    [
+     112,
+     169
+    ]
+   ],
+   "frac_multiple_of_8": 0.556,
+   "frac_in_1_4": 0.101
+  },
+  "0x8": {
+   "count_lt_0x1000": 14815,
+   "top": [
+    [
+     32,
+     1525
+    ],
+    [
+     1,
+     1188
+    ],
+    [
+     40,
+     926
+    ],
+    [
+     24,
+     779
+    ],
+    [
+     48,
+     688
+    ],
+    [
+     56,
+     467
+    ],
+    [
+     64,
+     418
+    ],
+    [
+     8,
+     374
+    ],
+    [
+     72,
+     313
+    ],
+    [
+     3,
+     309
+    ],
+    [
+     16,
+     286
+    ],
+    [
+     80,
+     275
+    ],
+    [
+     112,
+     248
+    ],
+    [
+     96,
+     242
+    ],
+    [
+     88,
+     227
+    ],
+    [
+     4,
+     188
+    ]
+   ],
+   "frac_multiple_of_8": 0.619,
+   "frac_in_1_4": 0.118
+  },
+  "0x10": {
+   "count_lt_0x1000": 11230,
+   "top": [
+    [
+     32,
+     629
+    ],
+    [
+     48,
+     464
+    ],
+    [
+     2,
+     409
+    ],
+    [
+     4,
+     407
+    ],
+    [
+     40,
+     401
+    ],
+    [
+     8,
+     370
+    ],
+    [
+     56,
+     336
+    ],
+    [
+     64,
+     328
+    ],
+    [
+     24,
+     310
+    ],
+    [
+     16,
+     286
+    ],
+    [
+     80,
+     228
+    ],
+    [
+     6,
+     221
+    ],
+    [
+     96,
+     204
+    ],
+    [
+     12,
+     203
+    ],
+    [
+     112,
+     177
+    ],
+    [
+     72,
+     170
+    ]
+   ],
+   "frac_multiple_of_8": 0.535,
+   "frac_in_1_4": 0.078
+  },
+  "0x18": {
+   "count_lt_0x1000": 13180,
+   "top": [
+    [
+     32,
+     965
+    ],
+    [
+     40,
+     769
+    ],
+    [
+     1,
+     731
+    ],
+    [
+     48,
+     635
+    ],
+    [
+     8,
+     596
+    ],
+    [
+     3,
+     512
+    ],
+    [
+     24,
+     466
+    ],
+    [
+     56,
+     409
+    ],
+    [
+     64,
+     380
+    ],
+    [
+     16,
+     326
+    ],
+    [
+     4,
+     263
+    ],
+    [
+     72,
+     242
+    ],
+    [
+     96,
+     242
+    ],
+    [
+     80,
+     214
+    ],
+    [
+     36,
+     193
+    ],
+    [
+     88,
+     169
+    ]
+   ],
+   "frac_multiple_of_8": 0.592,
+   "frac_in_1_4": 0.116
+  },
+  "0x20": {
+   "count_lt_0x1000": 11214,
+   "top": [
+    [
+     2,
+     1001
+    ],
+    [
+     32,
+     544
+    ],
+    [
+     48,
+     431
+    ],
+    [
+     40,
+     409
+    ],
+    [
+     64,
+     335
+    ],
+    [
+     4,
+     325
+    ],
+    [
+     56,
+     302
+    ],
+    [
+     8,
+     302
+    ],
+    [
+     24,
+     285
+    ],
+    [
+     80,
+     258
+    ],
+    [
+     16,
+     237
+    ],
+    [
+     72,
+     217
+    ],
+    [
+     96,
+     205
+    ],
+    [
+     88,
+     162
+    ],
+    [
+     12,
+     162
+    ],
+    [
+     112,
+     159
+    ]
+   ],
+   "frac_multiple_of_8": 0.538,
+   "frac_in_1_4": 0.126
+  },
+  "0x28": {
+   "count_lt_0x1000": 12574,
+   "top": [
+    [
+     32,
+     608
+    ],
+    [
+     40,
+     585
+    ],
+    [
+     1,
+     584
+    ],
+    [
+     48,
+     533
+    ],
+    [
+     8,
+     407
+    ],
+    [
+     3,
+     392
+    ],
+    [
+     56,
+     377
+    ],
+    [
+     64,
+     367
+    ],
+    [
+     24,
+     362
+    ],
+    [
+     16,
+     294
+    ],
+    [
+     72,
+     277
+    ],
+    [
+     5,
+     270
+    ],
+    [
+     4,
+     220
+    ],
+    [
+     80,
+     218
+    ],
+    [
+     96,
+     197
+    ],
+    [
+     88,
+     169
+    ]
+   ],
+   "frac_multiple_of_8": 0.533,
+   "frac_in_1_4": 0.098
+  }
+ },
+ "slot_statistics_by_stride": {
+  "0x8": {
+   "records": 298880,
+   "slots": [
+    {
+     "u32_index": 0,
+     "offset": 0,
+     "distinct": 60261,
+     "zero_frac": 0.2604,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5292,
+     "top5": [
+      [
+       0,
+       77837
+      ],
+      [
+       1241209736,
+       12642
+      ],
+      [
+       1241209832,
+       11644
+      ],
+      [
+       32,
+       4858
+      ],
+      [
+       1241209896,
+       4638
+      ]
+     ]
+    },
+    {
+     "u32_index": 1,
+     "offset": 4,
+     "distinct": 10,
+     "zero_frac": 0.7621,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9992,
+     "top5": [
+      [
+       0,
+       227783
+      ],
+      [
+       1,
+       65068
+      ],
+      [
+       136,
+       5601
+      ],
+      [
+       8192,
+       158
+      ],
+      [
+       4096,
+       136
+      ]
+     ]
+    }
+   ]
+  },
+  "0x10": {
+   "records": 149440,
+   "slots": [
+    {
+     "u32_index": 0,
+     "offset": 0,
+     "distinct": 36112,
+     "zero_frac": 0.2315,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.4799,
+     "top5": [
+      [
+       0,
+       34588
+      ],
+      [
+       1241209736,
+       6507
+      ],
+      [
+       1241209832,
+       6081
+      ],
+      [
+       1241209896,
+       2537
+      ],
+      [
+       2,
+       1963
+      ]
+     ]
+    },
+    {
+     "u32_index": 1,
+     "offset": 4,
+     "distinct": 10,
+     "zero_frac": 0.7345,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9991,
+     "top5": [
+      [
+       0,
+       109770
+      ],
+      [
+       1,
+       36075
+      ],
+      [
+       136,
+       3345
+      ],
+      [
+       8192,
+       84
+      ],
+      [
+       4096,
+       71
+      ]
+     ]
+    },
+    {
+     "u32_index": 2,
+     "offset": 8,
+     "distinct": 31347,
+     "zero_frac": 0.2894,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5784,
+     "top5": [
+      [
+       0,
+       43249
+      ],
+      [
+       1241209736,
+       6135
+      ],
+      [
+       1241209832,
+       5563
+      ],
+      [
+       32,
+       3098
+      ],
+      [
+       1,
+       2503
+      ]
+     ]
+    },
+    {
+     "u32_index": 3,
+     "offset": 12,
+     "distinct": 9,
+     "zero_frac": 0.7897,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9994,
+     "top5": [
+      [
+       0,
+       118013
+      ],
+      [
+       1,
+       28993
+      ],
+      [
+       136,
+       2256
+      ],
+      [
+       8192,
+       74
+      ],
+      [
+       4096,
+       65
+      ]
+     ]
+    }
+   ]
+  },
+  "0x18": {
+   "records": 99626,
+   "slots": [
+    {
+     "u32_index": 0,
+     "offset": 0,
+     "distinct": 23982,
+     "zero_frac": 0.2682,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5329,
+     "top5": [
+      [
+       0,
+       26720
+      ],
+      [
+       1241209736,
+       4392
+      ],
+      [
+       1241209832,
+       3926
+      ],
+      [
+       32,
+       1552
+      ],
+      [
+       1241209896,
+       1475
+      ]
+     ]
+    },
+    {
+     "u32_index": 1,
+     "offset": 4,
+     "distinct": 10,
+     "zero_frac": 0.7705,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9996,
+     "top5": [
+      [
+       0,
+       76762
+      ],
+      [
+       1,
+       20401
+      ],
+      [
+       136,
+       2373
+      ],
+      [
+       4096,
+       38
+      ],
+      [
+       8192,
+       25
+      ]
+     ]
+    },
+    {
+     "u32_index": 2,
+     "offset": 8,
+     "distinct": 22858,
+     "zero_frac": 0.2642,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5451,
+     "top5": [
+      [
+       0,
+       26326
+      ],
+      [
+       1241209736,
+       4081
+      ],
+      [
+       1241209832,
+       3992
+      ],
+      [
+       32,
+       2069
+      ],
+      [
+       1241209896,
+       1644
+      ]
+     ]
+    },
+    {
+     "u32_index": 3,
+     "offset": 12,
+     "distinct": 9,
+     "zero_frac": 0.7625,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9987,
+     "top5": [
+      [
+       0,
+       75968
+      ],
+      [
+       1,
+       21986
+      ],
+      [
+       136,
+       1479
+      ],
+      [
+       8192,
+       114
+      ],
+      [
+       4096,
+       35
+      ]
+     ]
+    },
+    {
+     "u32_index": 4,
+     "offset": 16,
+     "distinct": 26155,
+     "zero_frac": 0.2488,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5095,
+     "top5": [
+      [
+       0,
+       24789
+      ],
+      [
+       1241209736,
+       4169
+      ],
+      [
+       1241209832,
+       3726
+      ],
+      [
+       1241209896,
+       1519
+      ],
+      [
+       32,
+       1237
+      ]
+     ]
+    },
+    {
+     "u32_index": 5,
+     "offset": 20,
+     "distinct": 9,
+     "zero_frac": 0.7533,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9994,
+     "top5": [
+      [
+       0,
+       75051
+      ],
+      [
+       1,
+       22681
+      ],
+      [
+       136,
+       1749
+      ],
+      [
+       4096,
+       63
+      ],
+      [
+       4294967295,
+       37
+      ]
+     ]
+    }
+   ]
+  },
+  "0x20": {
+   "records": 74720,
+   "slots": [
+    {
+     "u32_index": 0,
+     "offset": 0,
+     "distinct": 20581,
+     "zero_frac": 0.2531,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.4795,
+     "top5": [
+      [
+       0,
+       18915
+      ],
+      [
+       1241209736,
+       3197
+      ],
+      [
+       1241209832,
+       2886
+      ],
+      [
+       1241209896,
+       1278
+      ],
+      [
+       1241209648,
+       857
+      ]
+     ]
+    },
+    {
+     "u32_index": 1,
+     "offset": 4,
+     "distinct": 10,
+     "zero_frac": 0.7339,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9991,
+     "top5": [
+      [
+       0,
+       54839
+      ],
+      [
+       1,
+       18052
+      ],
+      [
+       136,
+       1701
+      ],
+      [
+       8192,
+       41
+      ],
+      [
+       4096,
+       36
+      ]
+     ]
+    },
+    {
+     "u32_index": 2,
+     "offset": 8,
+     "distinct": 18288,
+     "zero_frac": 0.2891,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5741,
+     "top5": [
+      [
+       0,
+       21600
+      ],
+      [
+       1241209736,
+       2907
+      ],
+      [
+       1241209832,
+       2714
+      ],
+      [
+       32,
+       1626
+      ],
+      [
+       40,
+       1113
+      ]
+     ]
+    },
+    {
+     "u32_index": 3,
+     "offset": 12,
+     "distinct": 8,
+     "zero_frac": 0.8024,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9995,
+     "top5": [
+      [
+       0,
+       59954
+      ],
+      [
+       1,
+       13496
+      ],
+      [
+       136,
+       1182
+      ],
+      [
+       4096,
+       36
+      ],
+      [
+       8192,
+       32
+      ]
+     ]
+    },
+    {
+     "u32_index": 4,
+     "offset": 16,
+     "distinct": 19953,
+     "zero_frac": 0.2098,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.4803,
+     "top5": [
+      [
+       0,
+       15673
+      ],
+      [
+       1241209736,
+       3310
+      ],
+      [
+       1241209832,
+       3195
+      ],
+      [
+       2,
+       1580
+      ],
+      [
+       1241209896,
+       1259
+      ]
+     ]
+    },
+    {
+     "u32_index": 5,
+     "offset": 20,
+     "distinct": 9,
+     "zero_frac": 0.7352,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.999,
+     "top5": [
+      [
+       0,
+       54931
+      ],
+      [
+       1,
+       18023
+      ],
+      [
+       136,
+       1644
+      ],
+      [
+       8192,
+       43
+      ],
+      [
+       4096,
+       35
+      ]
+     ]
+    },
+    {
+     "u32_index": 6,
+     "offset": 24,
+     "distinct": 16701,
+     "zero_frac": 0.2897,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5827,
+     "top5": [
+      [
+       0,
+       21649
+      ],
+      [
+       1241209736,
+       3228
+      ],
+      [
+       1241209832,
+       2849
+      ],
+      [
+       1,
+       1857
+      ],
+      [
+       32,
+       1472
+      ]
+     ]
+    },
+    {
+     "u32_index": 7,
+     "offset": 28,
+     "distinct": 8,
+     "zero_frac": 0.777,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9993,
+     "top5": [
+      [
+       0,
+       58059
+      ],
+      [
+       1,
+       15497
+      ],
+      [
+       136,
+       1074
+      ],
+      [
+       8192,
+       42
+      ],
+      [
+       4096,
+       29
+      ]
+     ]
+    }
+   ]
+  },
+  "0x28": {
+   "records": 59776,
+   "slots": [
+    {
+     "u32_index": 0,
+     "offset": 0,
+     "distinct": 17356,
+     "zero_frac": 0.2078,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.4696,
+     "top5": [
+      [
+       0,
+       12421
+      ],
+      [
+       1241209736,
+       2729
+      ],
+      [
+       1241209832,
+       2465
+      ],
+      [
+       1241209896,
+       1067
+      ],
+      [
+       1,
+       949
+      ]
+     ]
+    },
+    {
+     "u32_index": 1,
+     "offset": 4,
+     "distinct": 9,
+     "zero_frac": 0.7315,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9992,
+     "top5": [
+      [
+       0,
+       43724
+      ],
+      [
+       1,
+       14656
+      ],
+      [
+       136,
+       1305
+      ],
+      [
+       4096,
+       32
+      ],
+      [
+       8192,
+       30
+      ]
+     ]
+    },
+    {
+     "u32_index": 2,
+     "offset": 8,
+     "distinct": 14882,
+     "zero_frac": 0.281,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5711,
+     "top5": [
+      [
+       0,
+       16799
+      ],
+      [
+       1241209736,
+       2440
+      ],
+      [
+       1241209832,
+       2194
+      ],
+      [
+       32,
+       1136
+      ],
+      [
+       40,
+       955
+      ]
+     ]
+    },
+    {
+     "u32_index": 3,
+     "offset": 12,
+     "distinct": 10,
+     "zero_frac": 0.7855,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9992,
+     "top5": [
+      [
+       0,
+       46953
+      ],
+      [
+       1,
+       11801
+      ],
+      [
+       136,
+       934
+      ],
+      [
+       8192,
+       36
+      ],
+      [
+       4096,
+       23
+      ]
+     ]
+    },
+    {
+     "u32_index": 4,
+     "offset": 16,
+     "distinct": 15562,
+     "zero_frac": 0.2699,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5213,
+     "top5": [
+      [
+       0,
+       16136
+      ],
+      [
+       1241209736,
+       2622
+      ],
+      [
+       1241209832,
+       2410
+      ],
+      [
+       1241209896,
+       1091
+      ],
+      [
+       32,
+       832
+      ]
+     ]
+    },
+    {
+     "u32_index": 5,
+     "offset": 20,
+     "distinct": 9,
+     "zero_frac": 0.7368,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9992,
+     "top5": [
+      [
+       0,
+       44044
+      ],
+      [
+       1,
+       14660
+      ],
+      [
+       136,
+       994
+      ],
+      [
+       8192,
+       30
+      ],
+      [
+       4096,
+       25
+      ]
+     ]
+    },
+    {
+     "u32_index": 6,
+     "offset": 24,
+     "distinct": 16944,
+     "zero_frac": 0.2591,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5159,
+     "top5": [
+      [
+       0,
+       15490
+      ],
+      [
+       1241209736,
+       2407
+      ],
+      [
+       1241209832,
+       2251
+      ],
+      [
+       1241209896,
+       842
+      ],
+      [
+       32,
+       817
+      ]
+     ]
+    },
+    {
+     "u32_index": 7,
+     "offset": 28,
+     "distinct": 9,
+     "zero_frac": 0.7762,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9993,
+     "top5": [
+      [
+       0,
+       46401
+      ],
+      [
+       1,
+       11884
+      ],
+      [
+       136,
+       1409
+      ],
+      [
+       8192,
+       32
+      ],
+      [
+       4096,
+       29
+      ]
+     ]
+    },
+    {
+     "u32_index": 8,
+     "offset": 32,
+     "distinct": 14880,
+     "zero_frac": 0.2842,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5679,
+     "top5": [
+      [
+       0,
+       16991
+      ],
+      [
+       1241209736,
+       2444
+      ],
+      [
+       1241209832,
+       2324
+      ],
+      [
+       32,
+       1280
+      ],
+      [
+       1241209896,
+       842
+      ]
+     ]
+    },
+    {
+     "u32_index": 9,
+     "offset": 36,
+     "distinct": 8,
+     "zero_frac": 0.7806,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9993,
+     "top5": [
+      [
+       0,
+       46661
+      ],
+      [
+       1,
+       12067
+      ],
+      [
+       136,
+       959
+      ],
+      [
+       8192,
+       30
+      ],
+      [
+       4096,
+       27
+      ]
+     ]
+    }
+   ]
+  },
+  "0x30": {
+   "records": 49813,
+   "slots": [
+    {
+     "u32_index": 0,
+     "offset": 0,
+     "distinct": 14269,
+     "zero_frac": 0.2353,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.4833,
+     "top5": [
+      [
+       0,
+       11719
+      ],
+      [
+       1241209736,
+       2212
+      ],
+      [
+       1241209832,
+       2000
+      ],
+      [
+       1241209896,
+       770
+      ],
+      [
+       32,
+       587
+      ]
+     ]
+    },
+    {
+     "u32_index": 1,
+     "offset": 4,
+     "distinct": 10,
+     "zero_frac": 0.7519,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9995,
+     "top5": [
+      [
+       0,
+       37452
+      ],
+      [
+       1,
+       10718
+      ],
+      [
+       136,
+       1585
+      ],
+      [
+       4096,
+       23
+      ],
+      [
+       8192,
+       14
+      ]
+     ]
+    },
+    {
+     "u32_index": 2,
+     "offset": 8,
+     "distinct": 12067,
+     "zero_frac": 0.2626,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5773,
+     "top5": [
+      [
+       0,
+       13079
+      ],
+      [
+       1241209736,
+       1973
+      ],
+      [
+       1241209832,
+       1888
+      ],
+      [
+       32,
+       1525
+      ],
+      [
+       1,
+       1188
+      ]
+     ]
+    },
+    {
+     "u32_index": 3,
+     "offset": 12,
+     "distinct": 9,
+     "zero_frac": 0.7851,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9988,
+     "top5": [
+      [
+       0,
+       39107
+      ],
+      [
+       1,
+       9928
+      ],
+      [
+       136,
+       695
+      ],
+      [
+       8192,
+       55
+      ],
+      [
+       4096,
+       17
+      ]
+     ]
+    },
+    {
+     "u32_index": 4,
+     "offset": 16,
+     "distinct": 15653,
+     "zero_frac": 0.1931,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.4434,
+     "top5": [
+      [
+       0,
+       9621
+      ],
+      [
+       1241209736,
+       2187
+      ],
+      [
+       1241209832,
+       1977
+      ],
+      [
+       1241209896,
+       883
+      ],
+      [
+       32,
+       629
+      ]
+     ]
+    },
+    {
+     "u32_index": 5,
+     "offset": 20,
+     "distinct": 9,
+     "zero_frac": 0.7118,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9992,
+     "top5": [
+      [
+       0,
+       35456
+      ],
+      [
+       1,
+       13299
+      ],
+      [
+       136,
+       976
+      ],
+      [
+       4294967295,
+       30
+      ],
+      [
+       4096,
+       30
+      ]
+     ]
+    },
+    {
+     "u32_index": 6,
+     "offset": 24,
+     "distinct": 12137,
+     "zero_frac": 0.3011,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5825,
+     "top5": [
+      [
+       0,
+       15001
+      ],
+      [
+       1241209736,
+       2180
+      ],
+      [
+       1241209832,
+       1926
+      ],
+      [
+       32,
+       965
+      ],
+      [
+       40,
+       769
+      ]
+     ]
+    },
+    {
+     "u32_index": 7,
+     "offset": 28,
+     "distinct": 7,
+     "zero_frac": 0.7892,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9997,
+     "top5": [
+      [
+       0,
+       39310
+      ],
+      [
+       1,
+       9683
+      ],
+      [
+       136,
+       788
+      ],
+      [
+       4096,
+       15
+      ],
+      [
+       8192,
+       11
+      ]
+     ]
+    },
+    {
+     "u32_index": 8,
+     "offset": 32,
+     "distinct": 13037,
+     "zero_frac": 0.2659,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.513,
+     "top5": [
+      [
+       0,
+       13247
+      ],
+      [
+       1241209736,
+       2108
+      ],
+      [
+       1241209832,
+       2104
+      ],
+      [
+       2,
+       1001
+      ],
+      [
+       1241209896,
+       884
+      ]
+     ]
+    },
+    {
+     "u32_index": 9,
+     "offset": 36,
+     "distinct": 9,
+     "zero_frac": 0.74,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9985,
+     "top5": [
+      [
+       0,
+       36861
+      ],
+      [
+       1,
+       12058
+      ],
+      [
+       136,
+       784
+      ],
+      [
+       8192,
+       59
+      ],
+      [
+       4096,
+       18
+      ]
+     ]
+    },
+    {
+     "u32_index": 10,
+     "offset": 40,
+     "distinct": 12934,
+     "zero_frac": 0.3045,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5755,
+     "top5": [
+      [
+       0,
+       15168
+      ],
+      [
+       1241209736,
+       1982
+      ],
+      [
+       1241209832,
+       1749
+      ],
+      [
+       1241209896,
+       636
+      ],
+      [
+       32,
+       608
+      ]
+     ]
+    },
+    {
+     "u32_index": 11,
+     "offset": 44,
+     "distinct": 9,
+     "zero_frac": 0.7949,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9997,
+     "top5": [
+      [
+       0,
+       39595
+      ],
+      [
+       1,
+       9382
+      ],
+      [
+       136,
+       773
+      ],
+      [
+       4096,
+       33
+      ],
+      [
+       4294901760,
+       10
+      ]
+     ]
+    }
+   ]
+  },
+  "0x38": {
+   "records": 42697,
+   "slots": [
+    {
+     "u32_index": 0,
+     "offset": 0,
+     "distinct": 11825,
+     "zero_frac": 0.2666,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5337,
+     "top5": [
+      [
+       0,
+       11384
+      ],
+      [
+       1241209736,
+       1788
+      ],
+      [
+       1241209832,
+       1674
+      ],
+      [
+       32,
+       726
+      ],
+      [
+       1241209896,
+       673
+      ]
+     ]
+    },
+    {
+     "u32_index": 1,
+     "offset": 4,
+     "distinct": 9,
+     "zero_frac": 0.7638,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9993,
+     "top5": [
+      [
+       0,
+       32610
+      ],
+      [
+       1,
+       9243
+      ],
+      [
+       136,
+       789
+      ],
+      [
+       8192,
+       22
+      ],
+      [
+       4096,
+       16
+      ]
+     ]
+    },
+    {
+     "u32_index": 2,
+     "offset": 8,
+     "distinct": 12172,
+     "zero_frac": 0.2558,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5217,
+     "top5": [
+      [
+       0,
+       10920
+      ],
+      [
+       1241209736,
+       1807
+      ],
+      [
+       1241209832,
+       1665
+      ],
+      [
+       32,
+       688
+      ],
+      [
+       1241209896,
+       658
+      ]
+     ]
+    },
+    {
+     "u32_index": 3,
+     "offset": 12,
+     "distinct": 9,
+     "zero_frac": 0.7614,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9993,
+     "top5": [
+      [
+       0,
+       32510
+      ],
+      [
+       1,
+       9290
+      ],
+      [
+       136,
+       835
+      ],
+      [
+       8192,
+       21
+      ],
+      [
+       4096,
+       19
+      ]
+     ]
+    },
+    {
+     "u32_index": 4,
+     "offset": 16,
+     "distinct": 12009,
+     "zero_frac": 0.2588,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5341,
+     "top5": [
+      [
+       0,
+       11050
+      ],
+      [
+       1241209736,
+       1791
+      ],
+      [
+       1241209832,
+       1599
+      ],
+      [
+       32,
+       708
+      ],
+      [
+       1241209896,
+       614
+      ]
+     ]
+    },
+    {
+     "u32_index": 5,
+     "offset": 20,
+     "distinct": 9,
+     "zero_frac": 0.7657,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9992,
+     "top5": [
+      [
+       0,
+       32693
+      ],
+      [
+       1,
+       9153
+      ],
+      [
+       136,
+       788
+      ],
+      [
+       8192,
+       25
+      ],
+      [
+       4096,
+       22
+      ]
+     ]
+    },
+    {
+     "u32_index": 6,
+     "offset": 24,
+     "distinct": 11958,
+     "zero_frac": 0.2537,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5235,
+     "top5": [
+      [
+       0,
+       10834
+      ],
+      [
+       1241209736,
+       1802
+      ],
+      [
+       1241209832,
+       1731
+      ],
+      [
+       1241209896,
+       698
+      ],
+      [
+       32,
+       687
+      ]
+     ]
+    },
+    {
+     "u32_index": 7,
+     "offset": 28,
+     "distinct": 9,
+     "zero_frac": 0.7556,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9991,
+     "top5": [
+      [
+       0,
+       32263
+      ],
+      [
+       1,
+       9565
+      ],
+      [
+       136,
+       807
+      ],
+      [
+       8192,
+       27
+      ],
+      [
+       4096,
+       17
+      ]
+     ]
+    },
+    {
+     "u32_index": 8,
+     "offset": 32,
+     "distinct": 11941,
+     "zero_frac": 0.2625,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5299,
+     "top5": [
+      [
+       0,
+       11206
+      ],
+      [
+       1241209736,
+       1831
+      ],
+      [
+       1241209832,
+       1660
+      ],
+      [
+       32,
+       669
+      ],
+      [
+       1241209896,
+       666
+      ]
+     ]
+    },
+    {
+     "u32_index": 9,
+     "offset": 36,
+     "distinct": 9,
+     "zero_frac": 0.7622,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9993,
+     "top5": [
+      [
+       0,
+       32543
+      ],
+      [
+       1,
+       9276
+      ],
+      [
+       136,
+       821
+      ],
+      [
+       8192,
+       21
+      ],
+      [
+       4096,
+       15
+      ]
+     ]
+    },
+    {
+     "u32_index": 10,
+     "offset": 40,
+     "distinct": 12008,
+     "zero_frac": 0.2621,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5302,
+     "top5": [
+      [
+       0,
+       11192
+      ],
+      [
+       1241209736,
+       1831
+      ],
+      [
+       1241209832,
+       1650
+      ],
+      [
+       32,
+       677
+      ],
+      [
+       1241209896,
+       652
+      ]
+     ]
+    },
+    {
+     "u32_index": 11,
+     "offset": 44,
+     "distinct": 7,
+     "zero_frac": 0.7622,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9992,
+     "top5": [
+      [
+       0,
+       32543
+      ],
+      [
+       1,
+       9289
+      ],
+      [
+       136,
+       799
+      ],
+      [
+       4096,
+       25
+      ],
+      [
+       8192,
+       22
+      ]
+     ]
+    },
+    {
+     "u32_index": 12,
+     "offset": 48,
+     "distinct": 11927,
+     "zero_frac": 0.2635,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5309,
+     "top5": [
+      [
+       0,
+       11250
+      ],
+      [
+       1241209736,
+       1792
+      ],
+      [
+       1241209832,
+       1665
+      ],
+      [
+       32,
+       703
+      ],
+      [
+       1241209896,
+       677
+      ]
+     ]
+    },
+    {
+     "u32_index": 13,
+     "offset": 52,
+     "distinct": 8,
+     "zero_frac": 0.764,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9993,
+     "top5": [
+      [
+       0,
+       32620
+      ],
+      [
+       1,
+       9252
+      ],
+      [
+       136,
+       762
+      ],
+      [
+       4096,
+       22
+      ],
+      [
+       8192,
+       20
+      ]
+     ]
+    }
+   ]
+  },
+  "0x40": {
+   "records": 37360,
+   "slots": [
+    {
+     "u32_index": 0,
+     "offset": 0,
+     "distinct": 10826,
+     "zero_frac": 0.2436,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.4884,
+     "top5": [
+      [
+       0,
+       9101
+      ],
+      [
+       1241209736,
+       1603
+      ],
+      [
+       1241209832,
+       1434
+      ],
+      [
+       1241209896,
+       667
+      ],
+      [
+       32,
+       475
+      ]
+     ]
+    },
+    {
+     "u32_index": 1,
+     "offset": 4,
+     "distinct": 10,
+     "zero_frac": 0.7233,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9989,
+     "top5": [
+      [
+       0,
+       27022
+      ],
+      [
+       1,
+       9499
+      ],
+      [
+       136,
+       767
+      ],
+      [
+       8192,
+       22
+      ],
+      [
+       4096,
+       20
+      ]
+     ]
+    },
+    {
+     "u32_index": 2,
+     "offset": 8,
+     "distinct": 10647,
+     "zero_frac": 0.2583,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5358,
+     "top5": [
+      [
+       0,
+       9650
+      ],
+      [
+       1241209736,
+       1598
+      ],
+      [
+       1241209832,
+       1509
+      ],
+      [
+       32,
+       727
+      ],
+      [
+       3,
+       660
+      ]
+     ]
+    },
+    {
+     "u32_index": 3,
+     "offset": 12,
+     "distinct": 8,
+     "zero_frac": 0.7787,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9995,
+     "top5": [
+      [
+       0,
+       29093
+      ],
+      [
+       1,
+       7543
+      ],
+      [
+       136,
+       678
+      ],
+      [
+       4096,
+       18
+      ],
+      [
+       8192,
+       17
+      ]
+     ]
+    },
+    {
+     "u32_index": 4,
+     "offset": 16,
+     "distinct": 10611,
+     "zero_frac": 0.2372,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5146,
+     "top5": [
+      [
+       0,
+       8862
+      ],
+      [
+       1241209736,
+       1561
+      ],
+      [
+       1241209832,
+       1494
+      ],
+      [
+       1241209896,
+       598
+      ],
+      [
+       2,
+       571
+      ]
+     ]
+    },
+    {
+     "u32_index": 5,
+     "offset": 20,
+     "distinct": 9,
+     "zero_frac": 0.7536,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9992,
+     "top5": [
+      [
+       0,
+       28154
+      ],
+      [
+       1,
+       8360
+      ],
+      [
+       136,
+       790
+      ],
+      [
+       8192,
+       18
+      ],
+      [
+       4096,
+       16
+      ]
+     ]
+    },
+    {
+     "u32_index": 6,
+     "offset": 24,
+     "distinct": 8504,
+     "zero_frac": 0.3116,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5964,
+     "top5": [
+      [
+       0,
+       11643
+      ],
+      [
+       1241209736,
+       1657
+      ],
+      [
+       1241209832,
+       1455
+      ],
+      [
+       1,
+       1152
+      ],
+      [
+       32,
+       675
+      ]
+     ]
+    },
+    {
+     "u32_index": 7,
+     "offset": 28,
+     "distinct": 8,
+     "zero_frac": 0.7667,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9993,
+     "top5": [
+      [
+       0,
+       28643
+      ],
+      [
+       1,
+       8223
+      ],
+      [
+       136,
+       447
+      ],
+      [
+       8192,
+       20
+      ],
+      [
+       4096,
+       16
+      ]
+     ]
+    },
+    {
+     "u32_index": 8,
+     "offset": 32,
+     "distinct": 11986,
+     "zero_frac": 0.2627,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.4706,
+     "top5": [
+      [
+       0,
+       9814
+      ],
+      [
+       1241209736,
+       1594
+      ],
+      [
+       1241209832,
+       1452
+      ],
+      [
+       1241209896,
+       611
+      ],
+      [
+       1241209560,
+       385
+      ]
+     ]
+    },
+    {
+     "u32_index": 9,
+     "offset": 36,
+     "distinct": 8,
+     "zero_frac": 0.7446,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9993,
+     "top5": [
+      [
+       0,
+       27817
+      ],
+      [
+       1,
+       8553
+      ],
+      [
+       136,
+       934
+      ],
+      [
+       8192,
+       19
+      ],
+      [
+       4096,
+       16
+      ]
+     ]
+    },
+    {
+     "u32_index": 10,
+     "offset": 40,
+     "distinct": 9508,
+     "zero_frac": 0.3199,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.6125,
+     "top5": [
+      [
+       0,
+       11950
+      ],
+      [
+       1241209736,
+       1309
+      ],
+      [
+       1241209832,
+       1205
+      ],
+      [
+       32,
+       899
+      ],
+      [
+       40,
+       634
+      ]
+     ]
+    },
+    {
+     "u32_index": 11,
+     "offset": 44,
+     "distinct": 8,
+     "zero_frac": 0.826,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9995,
+     "top5": [
+      [
+       0,
+       30861
+      ],
+      [
+       1,
+       5953
+      ],
+      [
+       136,
+       504
+      ],
+      [
+       4096,
+       18
+      ],
+      [
+       8192,
+       15
+      ]
+     ]
+    },
+    {
+     "u32_index": 12,
+     "offset": 48,
+     "distinct": 11596,
+     "zero_frac": 0.1823,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.4461,
+     "top5": [
+      [
+       0,
+       6811
+      ],
+      [
+       1241209736,
+       1749
+      ],
+      [
+       1241209832,
+       1701
+      ],
+      [
+       2,
+       1009
+      ],
+      [
+       1241209896,
+       661
+      ]
+     ]
+    },
+    {
+     "u32_index": 13,
+     "offset": 52,
+     "distinct": 9,
+     "zero_frac": 0.7167,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9989,
+     "top5": [
+      [
+       0,
+       26777
+      ],
+      [
+       1,
+       9663
+      ],
+      [
+       136,
+       854
+      ],
+      [
+       8192,
+       25
+      ],
+      [
+       4096,
+       19
+      ]
+     ]
+    },
+    {
+     "u32_index": 14,
+     "offset": 56,
+     "distinct": 9921,
+     "zero_frac": 0.2678,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.569,
+     "top5": [
+      [
+       0,
+       10006
+      ],
+      [
+       1241209736,
+       1571
+      ],
+      [
+       1241209832,
+       1394
+      ],
+      [
+       32,
+       797
+      ],
+      [
+       1,
+       705
+      ]
+     ]
+    },
+    {
+     "u32_index": 15,
+     "offset": 60,
+     "distinct": 8,
+     "zero_frac": 0.7874,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9993,
+     "top5": [
+      [
+       0,
+       29416
+      ],
+      [
+       1,
+       7274
+      ],
+      [
+       136,
+       627
+      ],
+      [
+       8192,
+       22
+      ],
+      [
+       4096,
+       13
+      ]
+     ]
+    }
+   ]
+  },
+  "0x48": {
+   "records": 33208,
+   "slots": [
+    {
+     "u32_index": 0,
+     "offset": 0,
+     "distinct": 9459,
+     "zero_frac": 0.2852,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.545,
+     "top5": [
+      [
+       0,
+       9472
+      ],
+      [
+       1241209736,
+       1427
+      ],
+      [
+       1241209832,
+       1208
+      ],
+      [
+       32,
+       508
+      ],
+      [
+       1241209896,
+       457
+      ]
+     ]
+    },
+    {
+     "u32_index": 1,
+     "offset": 4,
+     "distinct": 8,
+     "zero_frac": 0.7849,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9995,
+     "top5": [
+      [
+       0,
+       26066
+      ],
+      [
+       1,
+       6303
+      ],
+      [
+       136,
+       804
+      ],
+      [
+       4096,
+       12
+      ],
+      [
+       8192,
+       11
+      ]
+     ]
+    },
+    {
+     "u32_index": 2,
+     "offset": 8,
+     "distinct": 9164,
+     "zero_frac": 0.255,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5355,
+     "top5": [
+      [
+       0,
+       8468
+      ],
+      [
+       1241209736,
+       1376
+      ],
+      [
+       1241209832,
+       1317
+      ],
+      [
+       32,
+       686
+      ],
+      [
+       1241209896,
+       564
+      ]
+     ]
+    },
+    {
+     "u32_index": 3,
+     "offset": 12,
+     "distinct": 9,
+     "zero_frac": 0.7633,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9987,
+     "top5": [
+      [
+       0,
+       25347
+      ],
+      [
+       1,
+       7295
+      ],
+      [
+       136,
+       502
+      ],
+      [
+       8192,
+       34
+      ],
+      [
+       4096,
+       13
+      ]
+     ]
+    },
+    {
+     "u32_index": 4,
+     "offset": 16,
+     "distinct": 10261,
+     "zero_frac": 0.2431,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5072,
+     "top5": [
+      [
+       0,
+       8072
+      ],
+      [
+       1241209736,
+       1375
+      ],
+      [
+       1241209832,
+       1273
+      ],
+      [
+       1241209896,
+       530
+      ],
+      [
+       32,
+       514
+      ]
+     ]
+    },
+    {
+     "u32_index": 5,
+     "offset": 20,
+     "distinct": 9,
+     "zero_frac": 0.752,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9995,
+     "top5": [
+      [
+       0,
+       24974
+      ],
+      [
+       1,
+       7616
+      ],
+      [
+       136,
+       571
+      ],
+      [
+       4096,
+       19
+      ],
+      [
+       4294967295,
+       13
+      ]
+     ]
+    },
+    {
+     "u32_index": 6,
+     "offset": 24,
+     "distinct": 9570,
+     "zero_frac": 0.2601,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5236,
+     "top5": [
+      [
+       0,
+       8639
+      ],
+      [
+       1241209736,
+       1475
+      ],
+      [
+       1241209832,
+       1337
+      ],
+      [
+       32,
+       547
+      ],
+      [
+       1241209896,
+       501
+      ]
+     ]
+    },
+    {
+     "u32_index": 7,
+     "offset": 28,
+     "distinct": 9,
+     "zero_frac": 0.763,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9996,
+     "top5": [
+      [
+       0,
+       25339
+      ],
+      [
+       1,
+       7051
+      ],
+      [
+       136,
+       793
+      ],
+      [
+       4096,
+       10
+      ],
+      [
+       4294967295,
+       6
+      ]
+     ]
+    },
+    {
+     "u32_index": 8,
+     "offset": 32,
+     "distinct": 9254,
+     "zero_frac": 0.2518,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5362,
+     "top5": [
+      [
+       0,
+       8362
+      ],
+      [
+       1241209736,
+       1361
+      ],
+      [
+       1241209832,
+       1312
+      ],
+      [
+       32,
+       699
+      ],
+      [
+       1241209896,
+       544
+      ]
+     ]
+    },
+    {
+     "u32_index": 9,
+     "offset": 36,
+     "distinct": 7,
+     "zero_frac": 0.7612,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9987,
+     "top5": [
+      [
+       0,
+       25279
+      ],
+      [
+       1,
+       7336
+      ],
+      [
+       136,
+       532
+      ],
+      [
+       8192,
+       39
+      ],
+      [
+       4096,
+       10
+      ]
+     ]
+    },
+    {
+     "u32_index": 10,
+     "offset": 40,
+     "distinct": 10264,
+     "zero_frac": 0.2361,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5074,
+     "top5": [
+      [
+       0,
+       7840
+      ],
+      [
+       1241209736,
+       1378
+      ],
+      [
+       1241209832,
+       1253
+      ],
+      [
+       1241209896,
+       507
+      ],
+      [
+       32,
+       382
+      ]
+     ]
+    },
+    {
+     "u32_index": 11,
+     "offset": 44,
+     "distinct": 9,
+     "zero_frac": 0.7515,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9994,
+     "top5": [
+      [
+       0,
+       24955
+      ],
+      [
+       1,
+       7609
+      ],
+      [
+       136,
+       598
+      ],
+      [
+       4096,
+       18
+      ],
+      [
+       4294967295,
+       10
+      ]
+     ]
+    },
+    {
+     "u32_index": 12,
+     "offset": 48,
+     "distinct": 9437,
+     "zero_frac": 0.2592,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.53,
+     "top5": [
+      [
+       0,
+       8607
+      ],
+      [
+       1241209736,
+       1490
+      ],
+      [
+       1241209832,
+       1381
+      ],
+      [
+       1241209896,
+       517
+      ],
+      [
+       32,
+       497
+      ]
+     ]
+    },
+    {
+     "u32_index": 13,
+     "offset": 52,
+     "distinct": 8,
+     "zero_frac": 0.7635,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9997,
+     "top5": [
+      [
+       0,
+       25355
+      ],
+      [
+       1,
+       7047
+      ],
+      [
+       136,
+       776
+      ],
+      [
+       4096,
+       16
+      ],
+      [
+       8192,
+       8
+      ]
+     ]
+    },
+    {
+     "u32_index": 14,
+     "offset": 56,
+     "distinct": 8493,
+     "zero_frac": 0.2859,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5637,
+     "top5": [
+      [
+       0,
+       9494
+      ],
+      [
+       1241209832,
+       1363
+      ],
+      [
+       1241209736,
+       1344
+      ],
+      [
+       32,
+       684
+      ],
+      [
+       1241209896,
+       536
+      ]
+     ]
+    },
+    {
+     "u32_index": 15,
+     "offset": 60,
+     "distinct": 8,
+     "zero_frac": 0.7631,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9986,
+     "top5": [
+      [
+       0,
+       25340
+      ],
+      [
+       1,
+       7355
+      ],
+      [
+       136,
+       445
+      ],
+      [
+       8192,
+       41
+      ],
+      [
+       4096,
+       12
+      ]
+     ]
+    },
+    {
+     "u32_index": 16,
+     "offset": 64,
+     "distinct": 10139,
+     "zero_frac": 0.2673,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.5137,
+     "top5": [
+      [
+       0,
+       8875
+      ],
+      [
+       1241209736,
+       1416
+      ],
+      [
+       1241209832,
+       1200
+      ],
+      [
+       1241209896,
+       482
+      ],
+      [
+       32,
+       341
+      ]
+     ]
+    },
+    {
+     "u32_index": 17,
+     "offset": 68,
+     "distinct": 8,
+     "zero_frac": 0.7564,
+     "values_in_typeinfo_hash2_domain": 2,
+     "values_in_typeinfo_hash0_domain": 0,
+     "u16_lo_max": 65535,
+     "u16_hi_max": 65535,
+     "u16_lo_frac_le_0x1000": 0.9995,
+     "top5": [
+      [
+       0,
+       25120
+      ],
+      [
+       1,
+       7456
+      ],
+      [
+       136,
+       580
+      ],
+      [
+       4096,
+       26
+      ],
+      [
+       4294967295,
+       14
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "payload_cell_format": {
+  "note": "the most frequent fieldinf payload values (0x49FB5B88, 0x49FB5BE8, 0x49FB5C28 ...) are the low 32 bits of VAs into .data; the .data cell they point to is 0x20 bytes: {u64 node-VA into typeinfo section, u16 flags=0xFFFF, u16 type_size, u32 0xFFFFFFFF, zeros}",
+  "example_cell_va": "0x149FB5B88 (rva 0x9FB5B88)",
+  "example_cell": {
+   "va": 5536177032,
+   "rva": 167467912,
+   "q0": 5552216920,
+   "q0_rva": 183507800,
+   "q0_sec": "typeinfo",
+   "flags_u16": 65535,
+   "size_u16": 16,
+   "u32_0c": 4294967295
+  },
+  "second_example_cell": {
+   "va": 5536177128,
+   "rva": 167468008,
+   "q0": 5552217424,
+   "q0_rva": 183508304,
+   "q0_sec": "typeinfo",
+   "flags_u16": 65535,
+   "size_u16": 16,
+   "u32_0c": 4294967295
+  }
+ },
+ "no_strings": "the fieldinf section contains no .rdata string pointers (1 qword total in the whole section)",
+ "member_names": {
+  "string_pointers_in_section": 1,
+  "rdata_va_candidates_in_section": 495,
+  "rdata_va_candidates_resolving_to_a_string": 48,
+  "resolved_strings_are": "false positives (' types' x11, 'AndSizeCombo' x4, 'GameReportFilter' x2, ...)",
+  "verdict": "the fieldinf section carries NO member names; only 32-bit keys"
+ },
+ "type_linkage": {
+  "cell_references_in_section": 64886,
+  "distinct_data_type_cells": 7432,
+  "cells_pointing_at_a_kind_0x00080089_static_record": 2661,
+  "intersection_with_the_2499_anchor_records": 0,
+  "why": "the anchor set only covers the records reached by the 5000 decoded registration stubs; the other ~24000 records are not name-linked on disk",
+  "chain": "fieldinf payload -> .data 0x20 cell (VA low 32 bits) -> cell.q0 -> static typeinfo record -> (name via code, not via the key)",
+  "rva_conversion": "rva = (va_low32 + 0xC0000000) & 0xFFFFFFFF  (image base 0x140000000)"
+ },
+ "offset_availability": {
+  "member_offsets_present": true,
+  "where": "payload slot of the 8-byte {u32 payload, u32 tag} elements",
+  "example_histogram": {
+   "0": 26327,
+   "32": 2069,
+   "40": 1335,
+   "1": 1244,
+   "48": 1119,
+   "24": 1064,
+   "2": 1058,
+   "56": 769,
+   "64": 753,
+   "8": 676,
+   "80": 533,
+   "72": 530,
+   "16": 523,
+   "4": 513,
+   "96": 447
+  },
+  "note": "offsets are recoverable statically per type; the NAMES are not"
+ }
+}

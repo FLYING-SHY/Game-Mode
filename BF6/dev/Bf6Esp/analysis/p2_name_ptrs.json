@@ -1,0 +1,1942 @@
+[
+ {
+  "sec": ".data",
+  "slot_rva": 162328384,
+  "target": "SquadId@0x8dcd4f8"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162328416,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162328448,
+  "target": "LobbySquad@0x84dc088"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162328480,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162328512,
+  "target": "LobbyTeam@0x84dc098"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162328544,
+  "target": "PersonaId@0x8e31668"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162328576,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162328608,
+  "target": "SquadId@0x8dcd4f8"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162328640,
+  "target": "PersonaId@0x8e31668"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162328672,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162328704,
+  "target": "SquadId@0x8dcd4f8"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162328736,
+  "target": "PersonaId@0x8e31668"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162328768,
+  "target": "PersonaId@0x8e31668"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162329056,
+  "target": "PersonaId@0x8e31668"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162329152,
+  "target": "LobbyPlayerId@0x84dc110"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162329216,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162329280,
+  "target": "PersonaId@0x8e31668"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162329376,
+  "target": "PersonaId@0x8e31668"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162329824,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162329856,
+  "target": "SquadId@0x8dcd4f8"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162329888,
+  "target": "SlotIndex@0x84dc168"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162329952,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162330016,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162330048,
+  "target": "SquadId@0x8dcd4f8"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162330400,
+  "target": "PersonaId@0x8e31668"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162330496,
+  "target": "LobbyPlayerId@0x84dc110"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162330560,
+  "target": "PersonaId@0x8e31668"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162331040,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162331072,
+  "target": "SquadId@0x8dcd4f8"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162331296,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162346720,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162354064,
+  "target": "PersonaId@0x8e31668"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162354768,
+  "target": "PersonaId@0x8e31668"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162354864,
+  "target": "PersonaId@0x8e31668"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162355056,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162355248,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162355440,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162355600,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162356304,
+  "target": "PersonaId@0x8e31668"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162356464,
+  "target": "PersonaId@0x8e31668"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162356752,
+  "target": "PersonaId@0x8e31668"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162357552,
+  "target": "PersonaId@0x8e31668"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162357584,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162358192,
+  "target": "SlotIndex@0x84dc168"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162358256,
+  "target": "SlotIndex@0x84dc168"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162358320,
+  "target": "SlotIndex@0x84dc168"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162358416,
+  "target": "SlotIndex@0x84dc168"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162358448,
+  "target": "SlotIndex@0x84dc168"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162358480,
+  "target": "SlotIndex@0x84dc168"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162361008,
+  "target": "PersonaId@0x8e31668"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162361104,
+  "target": "PersonaId@0x8e31668"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162361296,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162361424,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162361520,
+  "target": "SquadId@0x8dcd4f8"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162361616,
+  "target": "SquadId@0x8dcd4f8"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162363696,
+  "target": "SquadId@0x8dcd4f8"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162363824,
+  "target": "SquadId@0x8dcd4f8"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162363920,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162364048,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162364400,
+  "target": "PersonaId@0x8e31668"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162364432,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162364560,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162364752,
+  "target": "SquadId@0x8dcd4f8"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162365680,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162365712,
+  "target": "SquadId@0x8dcd4f8"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162370528,
+  "target": "PersonaId@0x8e31668"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162380688,
+  "target": "SquadId@0x8dcd4f8"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162380816,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162380944,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162383056,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162467360,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162520832,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162521216,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162808392,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162808456,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162808520,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162808592,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162808688,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162808848,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162808912,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162972000,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162972576,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162972704,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162972992,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162973536,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162973720,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162974272,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162985760,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162986128,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162986160,
+  "target": "SquadId@0x8dcd4f8"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 162986480,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163031408,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163059936,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163060064,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163061200,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163066656,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163092176,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163092304,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163118512,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163215616,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163220448,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163220576,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163258784,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163259520,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163259968,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163267344,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163267440,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163269424,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163270928,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163272496,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163272800,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163272960,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163273088,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163273376,
+  "target": "PersonaId@0x8e31668"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163274688,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163274816,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163275280,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163293072,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163293200,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163293328,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163294320,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163294688,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163294880,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163295040,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163295264,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163295856,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163295888,
+  "target": "SquadId@0x8dcd4f8"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163296048,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163296080,
+  "target": "SquadId@0x8dcd4f8"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163296240,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163296272,
+  "target": "SquadId@0x8dcd4f8"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163296464,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163296496,
+  "target": "SquadId@0x8dcd4f8"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163297296,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163297968,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163300480,
+  "target": "SquadId@0x8dcd4f8"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163302880,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163303424,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163303712,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163303872,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163304320,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163306048,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163306144,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163306368,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163306624,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163307088,
+  "target": "PersonaId@0x8e31668"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163307184,
+  "target": "PersonaId@0x8e31668"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163307280,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163307312,
+  "target": "SquadId@0x8dcd4f8"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163351488,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163352368,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163352464,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163395808,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163402880,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163403008,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163403040,
+  "target": "SquadId@0x8dcd4f8"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163403264,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163403296,
+  "target": "SquadId@0x8dcd4f8"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163408208,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163408240,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163408624,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163408784,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163409232,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163416480,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163416576,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163416640,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163416736,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163416800,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163416928,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163417088,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163417312,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163417408,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163417504,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163417600,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163417664,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163417728,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163417824,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163417920,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163418400,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163418528,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163418656,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163418752,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163421904,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163422352,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163422512,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163428848,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163428944,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163429040,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163431344,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163431440,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163431536,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163431632,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163431728,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163431824,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163431984,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163432304,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163432400,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163432496,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163432816,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163432912,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163433040,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163433616,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163436256,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163436416,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163436608,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163436736,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163436864,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163437088,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163440128,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163440480,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163440512,
+  "target": "SquadId@0x8dcd4f8"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163452912,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163456608,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163456640,
+  "target": "SquadId@0x8dcd4f8"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163456704,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163457088,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163457184,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163457280,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163457376,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163457472,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163552120,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163649552,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163649728,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163649968,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163650144,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163650320,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163650352,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163650704,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163650880,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163753616,
+  "target": "PersonaId@0x8e31668"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163755728,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163858384,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163907536,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163907680,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163920576,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163920720,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163958976,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163959104,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163959200,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163959776,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163960128,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163960288,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163961760,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163962048,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163962336,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163962432,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163963232,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163979072,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 163979616,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 164040176,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 164040672,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 164138896,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 164138992,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 165848784,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 165862448,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 165878592,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 165878688,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 165878752,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 165878912,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 165878976,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 165879136,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 165879200,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 165879424,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 165880032,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166128880,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166131120,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166131152,
+  "target": "SquadId@0x8dcd4f8"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166132720,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166132816,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166134448,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166134736,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166134832,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166135024,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166135664,
+  "target": "TeamId@0x8dc53ec"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166135888,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166136816,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166136912,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166137072,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166137296,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166381424,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166388592,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166388688,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166388784,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166388880,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166389008,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166402416,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166414400,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166439584,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166439712,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166439872,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166440000,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166440128,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166440352,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166440480,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166450912,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166451008,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166451136,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166451232,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166452544,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166452640,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166452768,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166452864,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166550960,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166551056,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166551152,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166551568,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166551664,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166551728,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166551824,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166551920,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166553168,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166557088,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166805648,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166806064,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166806352,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166824896,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166825024,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166825152,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166837344,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166902080,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166941760,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166941888,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 166941984,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167025248,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167025472,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167203392,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167203488,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167208752,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167209104,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167427792,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167427888,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167427984,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167428080,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167428176,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167428304,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167428432,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167428560,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167428688,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167428816,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167428944,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167429072,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167439168,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167441824,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167441920,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167442048,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167474400,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167474720,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167474848,
+  "target": "Player@0x8d4241c"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167640592,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167705920,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167745024,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167745152,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167745248,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167745376,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167745504,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167745632,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167745728,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167745824,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167745920,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167746016,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167746112,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167746176,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167746240,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167746400,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167746624,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167746752,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167746880,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167747776,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167747872,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167747968,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167748832,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167748960,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167749120,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167749280,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 167749408,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 168069600,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 168069840,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 168193968,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 168194096,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 168194224,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 168194352,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 168194480,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 168194608,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 168194736,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 168194864,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 168194992,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 168195120,
+  "target": "Entity@0x8db1380"
+ },
+ {
+  "sec": ".data",
+  "slot_rva": 168195248,
+  "target": "Entity@0x8db1380"
+ }
+]

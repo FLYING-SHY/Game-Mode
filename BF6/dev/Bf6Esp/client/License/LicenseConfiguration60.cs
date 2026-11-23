@@ -1,0 +1,21 @@
+using System;
+using System.Configuration;
+
+namespace Bf6Esp;
+
+internal static class LicenseConfiguration60
+{
+	/// <summary>授权产品标识。BF6 工具线固定为 Bf6Esp（服务端另行注册该 ProductId）。</summary>
+	public static string ProductId => string.IsNullOrWhiteSpace(ConfigurationManager.AppSettings["LicensingProductId"]) ? "Bf6Esp" : ConfigurationManager.AppSettings["LicensingProductId"].Trim();
+
+	public static Uri ServerBaseAddress => ParseServerBaseAddress(ConfigurationManager.AppSettings["LicensingServerBaseUrl"] ?? "https://124.220.147.56/");
+
+	internal static Uri ParseServerBaseAddress(string value)
+	{
+		if (!Uri.TryCreate(value, UriKind.Absolute, out var address) || string.IsNullOrEmpty(address.Host) || !string.IsNullOrEmpty(address.UserInfo) || !string.IsNullOrEmpty(address.Query) || !string.IsNullOrEmpty(address.Fragment) || (address.Scheme != Uri.UriSchemeHttps && (address.Scheme != Uri.UriSchemeHttp || address.Host != "127.0.0.1")))
+		{
+			throw new ArgumentException("授权服务器地址必须使用 HTTPS；127.0.0.1 可使用 HTTP。");
+		}
+		return new Uri(address.AbsoluteUri.TrimEnd('/') + "/");
+	}
+}

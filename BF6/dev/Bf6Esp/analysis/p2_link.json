@@ -1,0 +1,196 @@
+{
+ "H1_self_ref": {
+  "objects_checked": 18228,
+  "self_referencing": 0,
+  "examples": []
+ },
+ "H3_flags_at_+0x08": [
+  [
+   65535,
+   18228
+  ]
+ ],
+ "H3_size_at_+0x0A": [
+  [
+   96,
+   7786
+  ],
+  [
+   32,
+   4205
+  ],
+  [
+   16,
+   2651
+  ],
+  [
+   224,
+   2265
+  ],
+  [
+   64,
+   579
+  ],
+  [
+   0,
+   545
+  ],
+  [
+   608,
+   127
+  ],
+  [
+   736,
+   38
+  ],
+  [
+   48,
+   15
+  ],
+  [
+   56,
+   14
+  ],
+  [
+   160,
+   3
+  ]
+ ],
+ "H1_backpointer_is_own_record": {
+  "checked": 0,
+  "identical": 0
+ },
+ "fieldinf_typeinfo_links": {
+  "0x10": [
+   {
+    "slot": 0,
+    "recs_pointing_into_typeinfo": 0,
+    "distinct_target_records": 0,
+    "max_fields_per_record": 0
+   },
+   {
+    "slot": 1,
+    "recs_pointing_into_typeinfo": 0,
+    "distinct_target_records": 0,
+    "max_fields_per_record": 0
+   }
+  ],
+  "0x18": [
+   {
+    "slot": 0,
+    "recs_pointing_into_typeinfo": 0,
+    "distinct_target_records": 0,
+    "max_fields_per_record": 0
+   },
+   {
+    "slot": 1,
+    "recs_pointing_into_typeinfo": 0,
+    "distinct_target_records": 0,
+    "max_fields_per_record": 0
+   },
+   {
+    "slot": 2,
+    "recs_pointing_into_typeinfo": 0,
+    "distinct_target_records": 0,
+    "max_fields_per_record": 0
+   }
+  ],
+  "0x20": [
+   {
+    "slot": 0,
+    "recs_pointing_into_typeinfo": 0,
+    "distinct_target_records": 0,
+    "max_fields_per_record": 0
+   },
+   {
+    "slot": 1,
+    "recs_pointing_into_typeinfo": 0,
+    "distinct_target_records": 0,
+    "max_fields_per_record": 0
+   },
+   {
+    "slot": 2,
+    "recs_pointing_into_typeinfo": 0,
+    "distinct_target_records": 0,
+    "max_fields_per_record": 0
+   },
+   {
+    "slot": 3,
+    "recs_pointing_into_typeinfo": 0,
+    "distinct_target_records": 0,
+    "max_fields_per_record": 0
+   }
+  ],
+  "0x28": [
+   {
+    "slot": 0,
+    "recs_pointing_into_typeinfo": 0,
+    "distinct_target_records": 0,
+    "max_fields_per_record": 0
+   },
+   {
+    "slot": 1,
+    "recs_pointing_into_typeinfo": 0,
+    "distinct_target_records": 0,
+    "max_fields_per_record": 0
+   },
+   {
+    "slot": 2,
+    "recs_pointing_into_typeinfo": 0,
+    "distinct_target_records": 0,
+    "max_fields_per_record": 0
+   },
+   {
+    "slot": 3,
+    "recs_pointing_into_typeinfo": 0,
+    "distinct_target_records": 0,
+    "max_fields_per_record": 0
+   },
+   {
+    "slot": 4,
+    "recs_pointing_into_typeinfo": 0,
+    "distinct_target_records": 0,
+    "max_fields_per_record": 0
+   }
+  ],
+  "0x30": [
+   {
+    "slot": 0,
+    "recs_pointing_into_typeinfo": 0,
+    "distinct_target_records": 0,
+    "max_fields_per_record": 0
+   },
+   {
+    "slot": 1,
+    "recs_pointing_into_typeinfo": 0,
+    "distinct_target_records": 0,
+    "max_fields_per_record": 0
+   },
+   {
+    "slot": 2,
+    "recs_pointing_into_typeinfo": 0,
+    "distinct_target_records": 0,
+    "max_fields_per_record": 0
+   },
+   {
+    "slot": 3,
+    "recs_pointing_into_typeinfo": 0,
+    "distinct_target_records": 0,
+    "max_fields_per_record": 0
+   },
+   {
+    "slot": 4,
+    "recs_pointing_into_typeinfo": 0,
+    "distinct_target_records": 0,
+    "max_fields_per_record": 0
+   },
+   {
+    "slot": 5,
+    "recs_pointing_into_typeinfo": 0,
+    "distinct_target_records": 0,
+    "max_fields_per_record": 0
+   }
+  ]
+ },
+ "H2_fieldcount_agreement": null
+}

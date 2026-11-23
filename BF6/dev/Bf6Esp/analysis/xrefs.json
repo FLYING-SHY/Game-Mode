@@ -1,0 +1,1347 @@
+{
+  "targets": {
+    "0x8ddc1b2": "ClientPlayerManager@0x8dda7b2",
+    "0x90a3ac8": "ClientPlayerManager@0x90a20c8",
+    "0x90a3aa0": "ClPlayer@0x90a20a0",
+    "0x90a3ae0": "ClPlayer@0x90a20e0",
+    "0x90acf20": "ClPlayer@0x90ab520",
+    "0x8ddc06a": "ClientPlayerExtent@0x8dda66a",
+    "0x8df079e": "ClientPlayerExtent@0x8deed9e",
+    "0x8e4efdd": "ClientPlayerExtent@0x8e4d5dd",
+    "0x8e51f3a": "ClientPlayerExtent@0x8e5053a",
+    "0x8e51fac": "ClientPlayerExtent@0x8e505ac",
+    "0x8ee6494": "ClientPlayerExtent@0x8ee4a94",
+    "0x8fb55c3": "ClientPlayerExtent@0x8fb3bc3",
+    "0x90a3ab0": "ClientPlayerExtent@0x90a20b0",
+    "0x90a39b8": "ClientPlayerIteratorEntity@0x90a1fb8",
+    "0x90a39a8": "Player_%d@0x90a1fa8",
+    "0x9213a30": "ClientSoldierEntity@0x9212030",
+    "0x8ddc01f": "HealthComponent@0x8dda61f",
+    "0x8de09d5": "HealthComponent@0x8ddefd5",
+    "0x8de459b": "HealthComponent@0x8de2b9b",
+    "0x8de472b": "HealthComponent@0x8de2d2b",
+    "0x8df3f5b": "HealthComponent@0x8df255b",
+    "0x8df4027": "HealthComponent@0x8df2627",
+    "0x8df8af5": "HealthComponent@0x8df70f5",
+    "0x8dfa753": "HealthComponent@0x8df8d53",
+    "0x8e0f26f": "HealthComponent@0x8e0d86f",
+    "0x8e0f53f": "HealthComponent@0x8e0db3f",
+    "0x8e1de1d": "HealthComponent@0x8e1c41d",
+    "0x8e29b0b": "HealthComponent@0x8e2810b",
+    "0x8e31eba": "HealthComponent@0x8e304ba",
+    "0x8e36017": "HealthComponent@0x8e34617",
+    "0x8e39703": "HealthComponent@0x8e37d03",
+    "0x8e3ca0f": "HealthComponent@0x8e3b00f",
+    "0x8e51eb0": "HealthComponent@0x8e504b0",
+    "0x8e59ba8": "HealthComponent@0x8e581a8",
+    "0x8e65f13": "HealthComponent@0x8e64513",
+    "0x8e65f50": "HealthComponent@0x8e64550",
+    "0x8e660e7": "HealthComponent@0x8e646e7",
+    "0x8e71977": "HealthComponent@0x8e6ff77",
+    "0x8e7ba67": "HealthComponent@0x8e7a067",
+    "0x8e7ba90": "HealthComponent@0x8e7a090",
+    "0x8e7bab3": "HealthComponent@0x8e7a0b3",
+    "0x8eac72b": "HealthComponent@0x8eaad2b",
+    "0x8eac77b": "HealthComponent@0x8eaad7b",
+    "0x8f5bda2": "HealthComponent@0x8f5a3a2",
+    "0x8f5c1b2": "HealthComponent@0x8f5a7b2",
+    "0x8f7a638": "HealthComponent@0x8f78c38",
+    "0x8f7a6a7": "HealthComponent@0x8f78ca7",
+    "0x8f9eed0": "HealthComponent@0x8f9d4d0",
+    "0x8fb562b": "HealthComponent@0x8fb3c2b",
+    "0x8fb56a3": "HealthComponent@0x8fb3ca3",
+    "0x8fbed8b": "HealthComponent@0x8fbd38b",
+    "0x8fbede3": "HealthComponent@0x8fbd3e3",
+    "0x8fbee0b": "HealthComponent@0x8fbd40b",
+    "0x8fbee33": "HealthComponent@0x8fbd433",
+    "0x909c305": "HealthComponent@0x909a905",
+    "0x909c3b6": "HealthComponent@0x909a9b6",
+    "0x909c3d9": "HealthComponent@0x909a9d9",
+    "0x90a4e52": "HealthComponent@0x90a3452",
+    "0x90ab5b5": "HealthComponent@0x90a9bb5",
+    "0x90ab5d9": "HealthComponent@0x90a9bd9",
+    "0x90ab606": "HealthComponent@0x90a9c06",
+    "0x90aceea": "HealthComponent@0x90ab4ea",
+    "0x90b8f14": "HealthComponent@0x90b7514",
+    "0x90b8fc3": "HealthComponent@0x90b75c3",
+    "0x90bcc74": "HealthComponent@0x90bb274",
+    "0x90bf602": "HealthComponent@0x90bdc02",
+    "0x90bf6fc": "HealthComponent@0x90bdcfc",
+    "0x90cd58b": "HealthComponent@0x90cbb8b",
+    "0x90cd5f9": "HealthComponent@0x90cbbf9",
+    "0x920d61d": "HealthComponent@0x920bc1d",
+    "0x920d640": "HealthComponent@0x920bc40",
+    "0x920d6c5": "HealthComponent@0x920bcc5",
+    "0x920da5d": "HealthComponent@0x920c05d",
+    "0x921494d": "HealthComponent@0x9212f4d",
+    "0x9255568": "HealthComponent@0x9253b68",
+    "0x92555b8": "HealthComponent@0x9253bb8",
+    "0x9260c0b": "HealthComponent@0x925f20b",
+    "0x9260e3b": "HealthComponent@0x925f43b",
+    "0x84e1312": "LocalPlayer@0x84df912",
+    "0x84e3d0d": "LocalPlayer@0x84e230d",
+    "0x84e5687": "LocalPlayer@0x84e3c87",
+    "0x84ecaec": "LocalPlayer@0x84eb0ec",
+    "0x84eeb7b": "LocalPlayer@0x84ed17b",
+    "0x84fb675": "LocalPlayer@0x84f9c75",
+    "0x8500cb2": "LocalPlayer@0x84ff2b2",
+    "0x8510301": "LocalPlayer@0x850e901",
+    "0x851c4d8": "LocalPlayer@0x851aad8",
+    "0x851d7cc": "LocalPlayer@0x851bdcc",
+    "0x851daa3": "LocalPlayer@0x851c0a3",
+    "0x8db9d95": "LocalPlayer@0x8db8395",
+    "0x8db9db5": "LocalPlayer@0x8db83b5",
+    "0x8db9dd5": "LocalPlayer@0x8db83d5",
+    "0x8db9df5": "LocalPlayer@0x8db83f5",
+    "0x8db9e15": "LocalPlayer@0x8db8415",
+    "0x8db9e35": "LocalPlayer@0x8db8435",
+    "0x8db9e55": "LocalPlayer@0x8db8455",
+    "0x8db9e75": "LocalPlayer@0x8db8475",
+    "0x8dd2340": "LocalPlayer@0x8dd0940",
+    "0x8dd23aa": "LocalPlayer@0x8dd09aa",
+    "0x8dd4ad6": "LocalPlayer@0x8dd30d6",
+    "0x8de2676": "LocalPlayer@0x8de0c76",
+    "0x8de9926": "LocalPlayer@0x8de7f26",
+    "0x8de9966": "LocalPlayer@0x8de7f66",
+    "0x8de9c7a": "LocalPlayer@0x8de827a",
+    "0x8dfc4de": "LocalPlayer@0x8dfaade",
+    "0x8e51f58": "LocalPlayer@0x8e50558",
+    "0x8e68742": "LocalPlayer@0x8e66d42",
+    "0x8e6a2f8": "LocalPlayer@0x8e688f8",
+    "0x8e85570": "LocalPlayer@0x8e83b70",
+    "0x8e8e63e": "LocalPlayer@0x8e8cc3e",
+    "0x8e9cfb8": "LocalPlayer@0x8e9b5b8",
+    "0x8ecc380": "LocalPlayer@0x8eca980",
+    "0x8ecc3da": "LocalPlayer@0x8eca9da",
+    "0x8ed702d": "LocalPlayer@0x8ed562d",
+    "0x8ed7358": "LocalPlayer@0x8ed5958",
+    "0x8ed756d": "LocalPlayer@0x8ed5b6d",
+    "0x8ed75d5": "LocalPlayer@0x8ed5bd5",
+    "0x8ed76a6": "LocalPlayer@0x8ed5ca6",
+    "0x8ed76f4": "LocalPlayer@0x8ed5cf4",
+    "0x8ed771c": "LocalPlayer@0x8ed5d1c",
+    "0x8eed4cb": "LocalPlayer@0x8eebacb",
+    "0x8f66428": "LocalPlayer@0x8f64a28",
+    "0x8f66490": "LocalPlayer@0x8f64a90",
+    "0x8f664a0": "LocalPlayer@0x8f64aa0",
+    "0x8f664b0": "LocalPlayer@0x8f64ab0",
+    "0x8f664c0": "LocalPlayer@0x8f64ac0",
+    "0x8f664e0": "LocalPlayer@0x8f64ae0",
+    "0x8f664f0": "LocalPlayer@0x8f64af0",
+    "0x8f66500": "LocalPlayer@0x8f64b00",
+    "0x8f66510": "LocalPlayer@0x8f64b10",
+    "0x8f66530": "LocalPlayer@0x8f64b30",
+    "0x8f66548": "LocalPlayer@0x8f64b48",
+    "0x8f66560": "LocalPlayer@0x8f64b60",
+    "0x8f66578": "LocalPlayer@0x8f64b78",
+    "0x8f66ad0": "LocalPlayer@0x8f650d0",
+    "0x8fad000": "LocalPlayer@0x8fab600",
+    "0x8fad470": "LocalPlayer@0x8faba70",
+    "0x8fe3559": "LocalPlayer@0x8fe1b59",
+    "0x8fe3573": "LocalPlayer@0x8fe1b73",
+    "0x8fe35b8": "LocalPlayer@0x8fe1bb8",
+    "0x9075341": "LocalPlayer@0x9073941",
+    "0x9079b0f": "LocalPlayer@0x907810f",
+    "0x9088a08": "LocalPlayer@0x9087008",
+    "0x90a6bf0": "LocalPlayer@0x90a51f0",
+    "0x90acdeb": "LocalPlayer@0x90ab3eb",
+    "0x90b1ac8": "LocalPlayer@0x90b00c8",
+    "0x90b1b18": "LocalPlayer@0x90b0118",
+    "0x90b20d2": "LocalPlayer@0x90b06d2",
+    "0x90b20fd": "LocalPlayer@0x90b06fd",
+    "0x90b2117": "LocalPlayer@0x90b0717",
+    "0x90b7e50": "LocalPlayer@0x90b6450",
+    "0x90fa14a": "LocalPlayer@0x90f874a",
+    "0x91168b6": "LocalPlayer@0x9114eb6",
+    "0x91168f6": "LocalPlayer@0x9114ef6",
+    "0x9198b60": "LocalPlayer@0x9197160",
+    "0x9198b80": "LocalPlayer@0x9197180",
+    "0x9198ba0": "LocalPlayer@0x91971a0",
+    "0x9198cf0": "LocalPlayer@0x91972f0",
+    "0x9198d10": "LocalPlayer@0x9197310",
+    "0x9198d30": "LocalPlayer@0x9197330",
+    "0x9198d50": "LocalPlayer@0x9197350",
+    "0x91fc5a8": "LocalPlayer@0x91faba8",
+    "0x92422ee": "LocalPlayer@0x92408ee",
+    "0x8e02085": "TimeSync@0x8e00685",
+    "0x8e2d1b9": "TimeSync@0x8e2b7b9",
+    "0x8e2d1e9": "TimeSync@0x8e2b7e9",
+    "0x8e2d219": "TimeSync@0x8e2b819",
+    "0x8e2d249": "TimeSync@0x8e2b849",
+    "0x8e2d279": "TimeSync@0x8e2b879",
+    "0x8f5e1c3": "TimeSync@0x8f5c7c3",
+    "0x90a3b00": "TimeSync@0x90a2100",
+    "0x90a6c5d": "TimeSync@0x90a525d",
+    "0x90b1aed": "TimeSync@0x90b00ed",
+    "0x90b1c50": "TimeSync@0x90b0250",
+    "0x90b1c60": "TimeSync@0x90b0260",
+    "0x90a3908": "ClientConnection@0x90a1f08",
+    "0x90a3928": "ClientConnection@0x90a1f28",
+    "0x90a3950": "ClientConnection@0x90a1f50",
+    "0x90a3970": "ClientConnection@0x90a1f70",
+    "0x90a3990": "ClientConnection@0x90a1f90",
+    "0x90a39e2": "ClientConnection@0x90a1fe2",
+    "0x90b1ca8": "ClientConnection@0x90b02a8",
+    "0x9123b53": "ClientConnection@0x9122153",
+    "0x91280a0": "ClientConnection@0x91266a0",
+    "0x9129a85": "ClientConnection@0x9128085",
+    "0x8e1a8e8": "GameContext@0x8e18ee8",
+    "0x84d6228": "ClientGame@0x84d4828",
+    "0x84d77a5": "ClientGame@0x84d5da5",
+    "0x84d7829": "ClientGame@0x84d5e29",
+    "0x84d7848": "ClientGame@0x84d5e48",
+    "0x84d7857": "ClientGame@0x84d5e57",
+    "0x84d7870": "ClientGame@0x84d5e70",
+    "0x84d790b": "ClientGame@0x84d5f0b",
+    "0x84d7930": "ClientGame@0x84d5f30",
+    "0x84d79f3": "ClientGame@0x84d5ff3",
+    "0x84d7a20": "ClientGame@0x84d6020",
+    "0x84d7ae3": "ClientGame@0x84d60e3",
+    "0x84d7b08": "ClientGame@0x84d6108",
+    "0x84d7bcb": "ClientGame@0x84d61cb",
+    "0x84d7bf0": "ClientGame@0x84d61f0",
+    "0x84d7cbb": "ClientGame@0x84d62bb",
+    "0x84d7ce0": "ClientGame@0x84d62e0",
+    "0x84f9f13": "ClientGame@0x84f8513",
+    "0x84f9f43": "ClientGame@0x84f8543",
+    "0x84f9f73": "ClientGame@0x84f8573",
+    "0x84f9fa3": "ClientGame@0x84f85a3",
+    "0x84f9fcc": "ClientGame@0x84f85cc",
+    "0x84f9fec": "ClientGame@0x84f85ec",
+    "0x84fa024": "ClientGame@0x84f8624",
+    "0x8520144": "ClientGame@0x851e744",
+    "0x8520194": "ClientGame@0x851e794",
+    "0x8ddc090": "ClientGame@0x8dda690",
+    "0x8ddc320": "ClientGame@0x8dda920",
+    "0x8de0b38": "ClientGame@0x8ddf138",
+    "0x8de45c8": "ClientGame@0x8de2bc8",
+    "0x8de9a00": "ClientGame@0x8de8000",
+    "0x8e02f28": "ClientGame@0x8e01528",
+    "0x8e02fe8": "ClientGame@0x8e015e8",
+    "0x8ebf2f0": "ClientGame@0x8ebd8f0",
+    "0x8ebf328": "ClientGame@0x8ebd928",
+    "0x8ec3ca8": "ClientGame@0x8ec22a8",
+    "0x8ec3cc0": "ClientGame@0x8ec22c0",
+    "0x8ecc1d8": "ClientGame@0x8eca7d8",
+    "0x8ecc208": "ClientGame@0x8eca808",
+    "0x8ecc238": "ClientGame@0x8eca838",
+    "0x8ecc3e8": "ClientGame@0x8eca9e8",
+    "0x8ecc410": "ClientGame@0x8ecaa10",
+    "0x8ecc438": "ClientGame@0x8ecaa38",
+    "0x8ecc470": "ClientGame@0x8ecaa70",
+    "0x8fadfd4": "ClientGame@0x8fac5d4",
+    "0x8fc6878": "ClientGame@0x8fc4e78",
+    "0x90a1538": "ClientGame@0x909fb38",
+    "0x90a1550": "ClientGame@0x909fb50",
+    "0x90a1570": "ClientGame@0x909fb70",
+    "0x90a1588": "ClientGame@0x909fb88",
+    "0x90a24d0": "ClientGame@0x90a0ad0",
+    "0x90a24e8": "ClientGame@0x90a0ae8",
+    "0x90a38f0": "ClientGame@0x90a1ef0",
+    "0x90acee0": "ClientGame@0x90ab4e0",
+    "0x90bb588": "ClientGame@0x90b9b88",
+    "0x90c4468": "ClientGame@0x90c2a68",
+    "0x90c4488": "ClientGame@0x90c2a88",
+    "0x90c44e2": "ClientGame@0x90c2ae2",
+    "0x90c45a8": "ClientGame@0x90c2ba8",
+    "0x9244690": "ClientGame@0x9242c90",
+    "0x90a3a3a": "OnlineManager@0x90a203a",
+    "0x90a3b60": "OnlineManager@0x90a2160",
+    "0x8fb5d78": "ClientSoldierWeapon@0x8fb4378",
+    "0x9213a18": "ClientSoldierWeapon@0x9212018",
+    "0x9213a68": "ClientSoldierWeapon@0x9212068",
+    "0x9214a60": "ClientSoldierWeapon@0x9213060",
+    "0x90a3a1a": "ClientToServerInfoCl@0x90a201a",
+    "0x90a3b30": "ClientToServerInfoCl@0x90a2130",
+    "0x8ddc1a8": "NativePtr<ClientPlayerManager>@0x8dda7a8",
+    "0x9231e5b": "m_health@0x923045b",
+    "0x84fe2b8": "Health@0x84fc8b8",
+    "0x850df08": "Health@0x850c508",
+    "0x8517980": "Health@0x8515f80",
+    "0x8561295": "Health@0x855f895",
+    "0x8dcae6d": "Health@0x8dc946d",
+    "0x8dcf9c0": "Health@0x8dcdfc0",
+    "0x8dcfa20": "Health@0x8dce020",
+    "0x8dcfa3a": "Health@0x8dce03a",
+    "0x8dd5bf8": "Health@0x8dd41f8",
+    "0x8dd5d58": "Health@0x8dd4358",
+    "0x8dd5e1f": "Health@0x8dd441f",
+    "0x8dd5e2b": "Health@0x8dd442b",
+    "0x8dd64c8": "Health@0x8dd4ac8",
+    "0x8dd6510": "Health@0x8dd4b10",
+    "0x8dd8064": "Health@0x8dd6664",
+    "0x8dd8148": "Health@0x8dd6748",
+    "0x8dd8170": "Health@0x8dd6770",
+    "0x8dd8180": "Health@0x8dd6780",
+    "0x8dd9384": "Health@0x8dd7984",
+    "0x8ddab84": "Health@0x8dd9184",
+    "0x8de9b4b": "Health@0x8de814b",
+    "0x8df3e29": "Health@0x8df2429",
+    "0x8e02831": "Health@0x8e00e31",
+    "0x8e02c53": "Health@0x8e01253",
+    "0x8e02c8b": "Health@0x8e0128b",
+    "0x8e02de3": "Health@0x8e013e3",
+    "0x8e02e4e": "Health@0x8e0144e",
+    "0x8e02e83": "Health@0x8e01483",
+    "0x8e02ebe": "Health@0x8e014be",
+    "0x8e2cab2": "Health@0x8e2b0b2",
+    "0x8e2cd35": "Health@0x8e2b335",
+    "0x8e2cd4f": "Health@0x8e2b34f",
+    "0x8e2cd94": "Health@0x8e2b394",
+    "0x8e2cdd8": "Health@0x8e2b3d8",
+    "0x8e2ce1d": "Health@0x8e2b41d",
+    "0x8e2ce2b": "Health@0x8e2b42b",
+    "0x8e36028": "Health@0x8e34628",
+    "0x8e3c9ba": "Health@0x8e3afba",
+    "0x8e49938": "Health@0x8e47f38",
+    "0x8e499c5": "Health@0x8e47fc5",
+    "0x8e4a56e": "Health@0x8e48b6e",
+    "0x8e5cd3e": "Health@0x8e5b33e",
+    "0x8e62790": "Health@0x8e60d90",
+    "0x8e6284d": "Health@0x8e60e4d",
+    "0x8e7966d": "Health@0x8e77c6d",
+    "0x8e7972f": "Health@0x8e77d2f",
+    "0x8e98981": "Health@0x8e96f81",
+    "0x8e99321": "Health@0x8e97921",
+    "0x8e9e308": "Health@0x8e9c908",
+    "0x8e9e3f8": "Health@0x8e9c9f8",
+    "0x8e9e410": "Health@0x8e9ca10",
+    "0x8e9efeb": "Health@0x8e9d5eb",
+    "0x8e9f00b": "Health@0x8e9d60b",
+    "0x8e9f04b": "Health@0x8e9d64b",
+    "0x8e9f0bb": "Health@0x8e9d6bb",
+    "0x8e9f0db": "Health@0x8e9d6db",
+    "0x8ea6fc8": "Health@0x8ea55c8",
+    "0x8ead17e": "Health@0x8eab77e",
+    "0x8ead5cb": "Health@0x8eabbcb",
+    "0x8eae170": "Health@0x8eac770",
+    "0x8ed74b5": "Health@0x8ed5ab5",
+    "0x8ed7629": "Health@0x8ed5c29",
+    "0x8ed788b": "Health@0x8ed5e8b",
+    "0x8ed7adc": "Health@0x8ed60dc",
+    "0x8ed83fe": "Health@0x8ed69fe",
+    "0x8ed8738": "Health@0x8ed6d38",
+    "0x8ed87b0": "Health@0x8ed6db0",
+    "0x8ed87d8": "Health@0x8ed6dd8",
+    "0x8ed8808": "Health@0x8ed6e08",
+    "0x8ed8838": "Health@0x8ed6e38",
+    "0x8ee259c": "Health@0x8ee0b9c",
+    "0x8ee25cc": "Health@0x8ee0bcc",
+    "0x8f7980a": "Health@0x8f77e0a",
+    "0x8f7a608": "Health@0x8f78c08",
+    "0x8f7baa0": "Health@0x8f7a0a0",
+    "0x8f94857": "Health@0x8f92e57",
+    "0x8f9621c": "Health@0x8f9481c",
+    "0x8f96300": "Health@0x8f94900",
+    "0x8f9ee60": "Health@0x8f9d460",
+    "0x8f9ee90": "Health@0x8f9d490",
+    "0x8f9eeb8": "Health@0x8f9d4b8",
+    "0x8fcdaf4": "Health@0x8fcc0f4",
+    "0x8fcdca9": "Health@0x8fcc2a9",
+    "0x8ffaa69": "Health@0x8ff9069",
+    "0x8ffaa7c": "Health@0x8ff907c",
+    "0x8ffaa84": "Health@0x8ff9084",
+    "0x8ffab10": "Health@0x8ff9110",
+    "0x8ffab48": "Health@0x8ff9148",
+    "0x8ffab58": "Health@0x8ff9158",
+    "0x8ffabb0": "Health@0x8ff91b0",
+    "0x8ffabc0": "Health@0x8ff91c0",
+    "0x8ffb097": "Health@0x8ff9697",
+    "0x90a4ca8": "Health@0x90a32a8",
+    "0x90a4cce": "Health@0x90a32ce",
+    "0x90b442a": "Health@0x90b2a2a",
+    "0x90b4442": "Health@0x90b2a42",
+    "0x90b47c5": "Health@0x90b2dc5",
+    "0x90b47e3": "Health@0x90b2de3",
+    "0x90b47fd": "Health@0x90b2dfd",
+    "0x90b481d": "Health@0x90b2e1d",
+    "0x90b4839": "Health@0x90b2e39",
+    "0x90b499a": "Health@0x90b2f9a",
+    "0x90b8fda": "Health@0x90b75da",
+    "0x90bcc26": "Health@0x90bb226",
+    "0x90bcc54": "Health@0x90bb254",
+    "0x90bf5ce": "Health@0x90bdbce",
+    "0x90cd5c0": "Health@0x90cbbc0",
+    "0x921876e": "Health@0x9216d6e",
+    "0x92991b8": "Health@0x92977b8",
+    "0x92992d8": "Health@0x92978d8",
+    "0x92992f0": "Health@0x92978f0",
+    "0x9299328": "Health@0x9297928",
+    "0x84d0333": "TeamId@0x84ce933",
+    "0x84e6436": "TeamId@0x84e4a36",
+    "0x851f580": "TeamId@0x851db80",
+    "0x8560cf1": "TeamId@0x855f2f1",
+    "0x8dc6dec": "TeamId@0x8dc53ec",
+    "0x8df27c7": "TeamId@0x8df0dc7",
+    "0x8e4233c": "TeamId@0x8e4093c",
+    "0x8e426b8": "TeamId@0x8e40cb8",
+    "0x8e6e427": "TeamId@0x8e6ca27",
+    "0x8e700ac": "TeamId@0x8e6e6ac",
+    "0x8e717a3": "TeamId@0x8e6fda3",
+    "0x8e717ef": "TeamId@0x8e6fdef",
+    "0x8e82d48": "TeamId@0x8e81348",
+    "0x8e9a91e": "TeamId@0x8e98f1e",
+    "0x8e9f3a6": "TeamId@0x8e9d9a6",
+    "0x8eaa789": "TeamId@0x8ea8d89",
+    "0x8ed74fd": "TeamId@0x8ed5afd",
+    "0x8ed7578": "TeamId@0x8ed5b78",
+    "0x8ed7727": "TeamId@0x8ed5d27",
+    "0x8eeafa4": "TeamId@0x8ee95a4",
+    "0x8efedd6": "TeamId@0x8efd3d6",
+    "0x8efedf2": "TeamId@0x8efd3f2",
+    "0x8eff952": "TeamId@0x8efdf52",
+    "0x8eff966": "TeamId@0x8efdf66",
+    "0x8f034c3": "TeamId@0x8f01ac3",
+    "0x8f04017": "TeamId@0x8f02617",
+    "0x8f042f3": "TeamId@0x8f028f3",
+    "0x8f12f31": "TeamId@0x8f11531",
+    "0x8f184e2": "TeamId@0x8f16ae2",
+    "0x90b4658": "TeamId@0x90b2c58",
+    "0xaecc000": "section:typeinfo+0",
+    "0xb48b000": "section:fieldinf+0"
+  },
+  "rip": {
+    ".text": [
+      [
+        "0xa2bb1c",
+        "0x90c4468",
+        "ClientGame@0x90c2a68"
+      ],
+      [
+        "0x1afb308",
+        "0x8ebf328",
+        "ClientGame@0x8ebd928"
+      ],
+      [
+        "0x1b00a5c",
+        "0x8ebf2f0",
+        "ClientGame@0x8ebd8f0"
+      ],
+      [
+        "0x1c3f94c",
+        "0x8ec3cc0",
+        "ClientGame@0x8ec22c0"
+      ],
+      [
+        "0x2ae8be0",
+        "0x8f042f3",
+        "TeamId@0x8f028f3"
+      ],
+      [
+        "0x2f94690",
+        "0x8ffab10",
+        "Health@0x8ff9110"
+      ],
+      [
+        "0x2f94e64",
+        "0x8ffabc0",
+        "Health@0x8ff91c0"
+      ],
+      [
+        "0x3ba182c",
+        "0x90a1550",
+        "ClientGame@0x909fb50"
+      ],
+      [
+        "0x3bde188",
+        "0x90a3908",
+        "ClientConnection@0x90a1f08"
+      ],
+      [
+        "0x3bde3f8",
+        "0x90a3970",
+        "ClientConnection@0x90a1f70"
+      ],
+      [
+        "0x3c1c500",
+        "0x9198d10",
+        "LocalPlayer@0x9197310"
+      ],
+      [
+        "0x3c1c524",
+        "0x9198b80",
+        "LocalPlayer@0x9197180"
+      ],
+      [
+        "0x3dbf744",
+        "0x90cd5c0",
+        "Health@0x90cbbc0"
+      ],
+      [
+        "0x50af518",
+        "0x8ed788b",
+        "Health@0x8ed5e8b"
+      ],
+      [
+        "0x5200d88",
+        "0x90b2117",
+        "LocalPlayer@0x90b0717"
+      ],
+      [
+        "0x67daf28",
+        "0x84d7870",
+        "ClientGame@0x84d5e70"
+      ],
+      [
+        "0x67dcd20",
+        "0x84d7930",
+        "ClientGame@0x84d5f30"
+      ],
+      [
+        "0x67dd580",
+        "0x84d7a20",
+        "ClientGame@0x84d6020"
+      ],
+      [
+        "0x67de700",
+        "0x84d7bf0",
+        "ClientGame@0x84d61f0"
+      ],
+      [
+        "0x67e1440",
+        "0x84d7ce0",
+        "ClientGame@0x84d62e0"
+      ],
+      [
+        "0x67e4b10",
+        "0x84d7b08",
+        "ClientGame@0x84d6108"
+      ],
+      [
+        "0x6e96e50",
+        "0x92992d8",
+        "Health@0x92978d8"
+      ]
+    ],
+    "ctr": [
+      [
+        "0x7404014",
+        "0x8dd5d58",
+        "Health@0x8dd4358"
+      ],
+      [
+        "0x740401c",
+        "0x8dd5bf8",
+        "Health@0x8dd41f8"
+      ],
+      [
+        "0x74f0abc",
+        "0x8e1a8e8",
+        "GameContext@0x8e18ee8"
+      ],
+      [
+        "0x76ac24c",
+        "0x8eae170",
+        "Health@0x8eac770"
+      ],
+      [
+        "0x7964098",
+        "0x8f66428",
+        "LocalPlayer@0x8f64a28"
+      ],
+      [
+        "0x79640a0",
+        "0x8f664e0",
+        "LocalPlayer@0x8f64ae0"
+      ],
+      [
+        "0x79640a8",
+        "0x8f664f0",
+        "LocalPlayer@0x8f64af0"
+      ],
+      [
+        "0x79640b0",
+        "0x8f66500",
+        "LocalPlayer@0x8f64b00"
+      ],
+      [
+        "0x79640b8",
+        "0x8f66510",
+        "LocalPlayer@0x8f64b10"
+      ],
+      [
+        "0x79640c0",
+        "0x8f66490",
+        "LocalPlayer@0x8f64a90"
+      ],
+      [
+        "0x79640c8",
+        "0x8f664a0",
+        "LocalPlayer@0x8f64aa0"
+      ],
+      [
+        "0x79640d0",
+        "0x8f664b0",
+        "LocalPlayer@0x8f64ab0"
+      ],
+      [
+        "0x79640d8",
+        "0x8f664c0",
+        "LocalPlayer@0x8f64ac0"
+      ],
+      [
+        "0x79640e0",
+        "0x8f66530",
+        "LocalPlayer@0x8f64b30"
+      ]
+    ]
+  },
+  "abs_ptrs": [
+    [
+      ".rdata",
+      "0x89efe68",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9acef60",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9acefa0",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9acf000",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9acf060",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9acf280",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9acf4e0",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9acf560",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9acf5a0",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9acf9a0",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9ad36e0",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9ad6fd0",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9ad7050",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9ad71f0",
+      "0x8e426b8",
+      "TeamId@0x8e40cb8"
+    ],
+    [
+      ".data",
+      "0x9ad7750",
+      "0x8e426b8",
+      "TeamId@0x8e40cb8"
+    ],
+    [
+      ".data",
+      "0x9ad7a10",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9ad7a90",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9ad7c10",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9ad7c90",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9ad80f0",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9adbc70",
+      "0x851f580",
+      "TeamId@0x851db80"
+    ],
+    [
+      ".data",
+      "0x9adbc90",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9ae7bc8",
+      "0x8ddc320",
+      "ClientGame@0x8dda920"
+    ],
+    [
+      ".data",
+      "0x9ae7d58",
+      "0x8de45c8",
+      "ClientGame@0x8de2bc8"
+    ],
+    [
+      ".data",
+      "0x9b6c420",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9b6ca40",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9b6f890",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9b6f9f0",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9b77f50",
+      "0x8dd8148",
+      "Health@0x8dd6748"
+    ],
+    [
+      ".data",
+      "0x9b77f70",
+      "0x8dd8180",
+      "Health@0x8dd6780"
+    ],
+    [
+      ".data",
+      "0x9b77f90",
+      "0x8dd8170",
+      "Health@0x8dd6770"
+    ],
+    [
+      ".data",
+      "0x9b8fc38",
+      "0x8e02f28",
+      "ClientGame@0x8e01528"
+    ],
+    [
+      ".data",
+      "0x9baf130",
+      "0x8e2cdd8",
+      "Health@0x8e2b3d8"
+    ],
+    [
+      ".data",
+      "0x9baf1f0",
+      "0x8e2cdd8",
+      "Health@0x8e2b3d8"
+    ],
+    [
+      ".data",
+      "0x9bb5730",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9bb5fc0",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9bb6040",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9bba790",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9bba810",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9bba890",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9bbb270",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9bbb330",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9bbb3f0",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9bbb4d0",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9bbcbe0",
+      "0x8e426b8",
+      "TeamId@0x8e40cb8"
+    ],
+    [
+      ".data",
+      "0x9bbcde0",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9bbd000",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9bbd120",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9bbd1c0",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9bbd380",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9bbdf10",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9bc90f0",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9bd38e0",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9bd5480",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9bd5500",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9bd5600",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9bd8700",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9bd8760",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9bd87e0",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9bd8860",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9bd9ed0",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9bdd6e0",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9bdd780",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9bde760",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9be2660",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9be26c0",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9be2840",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9be28a0",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9be2900",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9be2960",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9be29c0",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9bf24e0",
+      "0x8e9cfb8",
+      "LocalPlayer@0x8e9b5b8"
+    ],
+    [
+      ".data",
+      "0x9c447d0",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9c74e40",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9e0da48",
+      "0x8f66ad0",
+      "LocalPlayer@0x8f650d0"
+    ],
+    [
+      ".data",
+      "0x9e2df88",
+      "0x8f7baa0",
+      "Health@0x8f7a0a0"
+    ],
+    [
+      ".data",
+      "0x9e6f5b0",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9e702b0",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9e70770",
+      "0x8dc6dec",
+      "TeamId@0x8dc53ec"
+    ],
+    [
+      ".data",
+      "0x9f0f470",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f0f550",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f0f650",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f14440",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f144c0",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f202e8",
+      "0x90b1ca8",
+      "ClientConnection@0x90b02a8"
+    ],
+    [
+      ".data",
+      "0x9f20368",
+      "0x90b1c50",
+      "TimeSync@0x90b0250"
+    ],
+    [
+      ".data",
+      "0x9f20388",
+      "0x90b1c60",
+      "TimeSync@0x90b0260"
+    ],
+    [
+      ".data",
+      "0x9f46120",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f461e0",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f46320",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f46480",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f46560",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f46600",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f46660",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f466c0",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f46700",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f46800",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f46900",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f46b20",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f46ba0",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f46c20",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f46ca0",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f46d20",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f46da0",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f46e20",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f46ea0",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f46f20",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f46f80",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f47320",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f473e0",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f47440",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f47480",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f474c0",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f47560",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f475e0",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f47660",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f476e0",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0x9f47740",
+      "0x8e6a2f8",
+      "LocalPlayer@0x8e688f8"
+    ],
+    [
+      ".data",
+      "0xa061890",
+      "0x9299328",
+      "Health@0x9297928"
+    ],
+    [
+      ".data",
+      "0xa0618b0",
+      "0x92992d8",
+      "Health@0x92978d8"
+    ],
+    [
+      ".data",
+      "0xa0618d0",
+      "0x92992f0",
+      "Health@0x92978f0"
+    ],
+    [
+      ".data",
+      "0xa0618f0",
+      "0x92991b8",
+      "Health@0x92977b8"
+    ],
+    [
+      ".data",
+      "0xa061910",
+      "0x8dd8148",
+      "Health@0x8dd6748"
+    ],
+    [
+      ".data",
+      "0xa061930",
+      "0x8dd8180",
+      "Health@0x8dd6780"
+    ],
+    [
+      ".data",
+      "0xa061950",
+      "0x8dd8170",
+      "Health@0x8dd6770"
+    ],
+    [
+      "typeinfo",
+      "0xaecea18",
+      "0xb48b000",
+      "section:fieldinf+0"
+    ]
+  ]
+}

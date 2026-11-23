@@ -1,0 +1,379 @@
+{
+    "product":  "Bf6Esp",
+    "tool":  "Battlefield 6 外部只读 ESP 覆盖层",
+    "buildUtc":  "2026-11-21T17:36:36Z",
+    "configuration":  "Release",
+    "targetFramework":  "net48",
+    "platform":  "x64",
+    "dotnet":  "F:\\WorkSpace\\Game\\LicensingSystem\\.cache\\dotnet-10\\dotnet.exe",
+    "dotnetVersion":  "10.0.404",
+    "gameBuild":  {
+                      "exe":  "G:\\SteamLibrary\\steamapps\\common\\Battlefield 6\\bf6.exe",
+                      "sha256":  "1F385AD9AF30B8BA7F0C87CEEE92182710BB58F98708A2DE7F8D119042BAEFF4",
+                      "moduleSize":  199230312,
+                      "profile":  "bf6-1.0.0.0.json"
+                  },
+    "sourceCount":  72,
+    "sources":  [
+                    {
+                        "path":  "client/Bf6Esp.csproj",
+                        "size":  1858,
+                        "sha256":  "791f0a8fe85612d9ea50192218a85a22c6170f3c002bae64b44480982254679c"
+                    },
+                    {
+                        "path":  "client/overlay-settings.txt",
+                        "size":  583,
+                        "sha256":  "429574b3484e1bcd0151136e5efebf9b0f7a2b522435955f580307da71df9468"
+                    },
+                    {
+                        "path":  "client/App/ActivationForm60.cs",
+                        "size":  3574,
+                        "sha256":  "9a92461c2b8425c8b6c04e3f76ac46ad7950e712a5d93b3581182ff58c6e803f"
+                    },
+                    {
+                        "path":  "client/App/CalibrationRunner60.cs",
+                        "size":  20941,
+                        "sha256":  "8f5e79ed06ce6e8f418a8c067403dfcbd53324d3be024ae211cf28c7218d313f"
+                    },
+                    {
+                        "path":  "client/App/ConsoleBridge60.cs",
+                        "size":  2234,
+                        "sha256":  "f6f76b4720b80c6d006a3df62bc1eeae34446c5c99e68e22cfcde95dfe2c524c"
+                    },
+                    {
+                        "path":  "client/App/EntityProfilerSelfTest60.cs",
+                        "size":  13528,
+                        "sha256":  "25b28fcaf3ab5042173e9152459121e48de1f6b1f4594de2970ba432514cb74c"
+                    },
+                    {
+                        "path":  "client/App/EspHostForm60.cs",
+                        "size":  7809,
+                        "sha256":  "7896ca644721ee2a0d2e1816e5c06bebfbf36ca54e610b7185eeb2c57e2fd07b"
+                    },
+                    {
+                        "path":  "client/App/LicenseStateText60.cs",
+                        "size":  1657,
+                        "sha256":  "60a76e966884e6f70f4ac34b622dfb60876e081b90fb24c18a54c6f5fc752f17"
+                    },
+                    {
+                        "path":  "client/App/LocateSelfTest60.cs",
+                        "size":  2859,
+                        "sha256":  "cdbc5ba80c2b4a51ef2fb3df9b3889f30f499635f5c9cf03a191ff7e91a583b5"
+                    },
+                    {
+                        "path":  "client/App/ProbeRunner60.cs",
+                        "size":  3720,
+                        "sha256":  "3474a0d1ecd25f300f3d704478511c04a3d2f16709adf5487691c62a9602b969"
+                    },
+                    {
+                        "path":  "client/App/Program.cs",
+                        "size":  4592,
+                        "sha256":  "b8c118138450d31e4d8afde9c509fb6b65b88af3e24301ca718c9a65953d7a19"
+                    },
+                    {
+                        "path":  "client/App/ReflectionFixture60.cs",
+                        "size":  7338,
+                        "sha256":  "5e0f9314772c7af995d5d2fa529a56c6417b79904c04f38ca7618d52d39526bd"
+                    },
+                    {
+                        "path":  "client/App/ReflectionSelfTest60.cs",
+                        "size":  3885,
+                        "sha256":  "07672d3dd1d178b6c34fddc6f36321064ad0227b563c9df86c003ef09e39159d"
+                    },
+                    {
+                        "path":  "client/App/SelfTestRunner60.cs",
+                        "size":  3926,
+                        "sha256":  "deafa577a5c605767e0db3309e5673ff2314748d254f48116542efe76a2f7847"
+                    },
+                    {
+                        "path":  "client/Esp/CalibrationEntitySource.cs",
+                        "size":  1942,
+                        "sha256":  "56bc905340c29a041f77aa9078a6493761503a91d1450135b509b5040f08f7c1"
+                    },
+                    {
+                        "path":  "client/Esp/EntityFieldProfiler60.cs",
+                        "size":  30462,
+                        "sha256":  "3c10170e3da0d883c6193e5495336d86b357331e71ce0f892e6b9d90dae1d458"
+                    },
+                    {
+                        "path":  "client/Esp/EntitySnapshot.cs",
+                        "size":  824,
+                        "sha256":  "63fde328bfef679abb7815ee76f3c6773ff0c5647f2f1d803ee43704c89bad88"
+                    },
+                    {
+                        "path":  "client/Esp/EspEngine60.cs",
+                        "size":  3526,
+                        "sha256":  "b69007f910716ce0418fb7dd124c602f37172347320e968408e9cd2d4547f273"
+                    },
+                    {
+                        "path":  "client/Esp/EspRenderer.cs",
+                        "size":  7921,
+                        "sha256":  "5218bfda7070ec6d51ac6f91eaa3ccf5294b344c112aae34b4500529b9a45442"
+                    },
+                    {
+                        "path":  "client/Esp/EspSettings.cs",
+                        "size":  8020,
+                        "sha256":  "9ecb48575b50ee3ebfeb72fcbd3f964d25e0809ef7f1f2f21514225111cd4534"
+                    },
+                    {
+                        "path":  "client/Esp/HotkeyWindow60.cs",
+                        "size":  2714,
+                        "sha256":  "cb10e847b579609ceeb58f14f473647ee3583e535580e50485d804193f74147c"
+                    },
+                    {
+                        "path":  "client/Esp/IEntitySource.cs",
+                        "size":  1653,
+                        "sha256":  "801e50829e6927e96d82af84ccdaea42639735f43d1ceddc4564e83a4bc3af96"
+                    },
+                    {
+                        "path":  "client/Esp/OverlayWindow.cs",
+                        "size":  6747,
+                        "sha256":  "018064a698e7a4dbf60f964897904490eb928d012328dbc2968e4942755c18ed"
+                    },
+                    {
+                        "path":  "client/Esp/PlayerReader.cs",
+                        "size":  3143,
+                        "sha256":  "980a0bdba00a3d198e3f955822a7e1be55267a308764b2f8a95ffffd15c8df22"
+                    },
+                    {
+                        "path":  "client/Esp/ProfileEntitySource.cs",
+                        "size":  6555,
+                        "sha256":  "4ea3f5796bcc5a392426be36ac2c9e1cdbdb42ffd205c41acce958c427286b81"
+                    },
+                    {
+                        "path":  "client/Esp/RuntimeEntitySource.cs",
+                        "size":  9060,
+                        "sha256":  "106ed767d7847238f6518bf9a7ee9a2c2583c83615ca1d89d8f97794a54c4fe2"
+                    },
+                    {
+                        "path":  "client/Esp/RuntimeLayout60.cs",
+                        "size":  3501,
+                        "sha256":  "7e69aa1808f0e4dd7339439388045157c7ece2aef7d1f1c099017887fe57586d"
+                    },
+                    {
+                        "path":  "client/Esp/RuntimeLocator60.cs",
+                        "size":  24356,
+                        "sha256":  "08cf7bd36ace1c8f8ec64acb3a0069fa84bc923d48adb414af2c7829cfc1ca44"
+                    },
+                    {
+                        "path":  "client/Esp/RuntimeReflection60.cs",
+                        "size":  20153,
+                        "sha256":  "0bbb1fc64fce4aa26921b2187aeaede1d17c38ab349064a0e0c7e2169a1b50cf"
+                    },
+                    {
+                        "path":  "client/Esp/SettingsForm.cs",
+                        "size":  11284,
+                        "sha256":  "a185dbbbc7a3219fde672f2813282d95a72f503cb516a69d1e207359324bda30"
+                    },
+                    {
+                        "path":  "client/Esp/WorldToScreen.cs",
+                        "size":  3511,
+                        "sha256":  "e8e7e138452b405522ad394058d5f44ee15b1ecd62d198171daecf16f227e4d8"
+                    },
+                    {
+                        "path":  "client/License/DeviceSerial69.cs",
+                        "size":  2649,
+                        "sha256":  "55df614d7476bdd5c6e11c5614305951080f3c02bddf6dbba8bec8ca940fc203"
+                    },
+                    {
+                        "path":  "client/License/GameIdentity60.cs",
+                        "size":  742,
+                        "sha256":  "ea75660ad67b727e740b952392125a68e09ec20ed70a77c4a0ad7c36fafa1558"
+                    },
+                    {
+                        "path":  "client/License/GameIdentityProvider60.cs",
+                        "size":  1264,
+                        "sha256":  "0bd8ce25fcacf8f5bea7d57a6784b7231ee862adbb232b2502e9e06210b5640a"
+                    },
+                    {
+                        "path":  "client/License/IGameIdentityProvider60.cs",
+                        "size":  218,
+                        "sha256":  "7c18c9b09d84a0bac5c1149c35b456bfe3f91369c63b5a3d0625eecb6f9d9e28"
+                    },
+                    {
+                        "path":  "client/License/ILicenseApi60.cs",
+                        "size":  301,
+                        "sha256":  "0fcc21e862a0149c6825e887b68efd0509c560617953558c353c1a52920244e9"
+                    },
+                    {
+                        "path":  "client/License/LeaseSignature60.cs",
+                        "size":  3695,
+                        "sha256":  "5afaa370fc24f20f31a90a0e57d7d521890d7296914329e7c4fd6559233e7e6d"
+                    },
+                    {
+                        "path":  "client/License/LicenseApi60.cs",
+                        "size":  3198,
+                        "sha256":  "6e895e2e8cd5ea78c8b0e274fa553a44b91b9d64cbee214a3ffcb5789ba31504"
+                    },
+                    {
+                        "path":  "client/License/LicenseApplication60.cs",
+                        "size":  4235,
+                        "sha256":  "6209824f78d27f8e8983774c61f41a05540839c9fdd14719fa2d3e8587cda12a"
+                    },
+                    {
+                        "path":  "client/License/LicenseArray60.cs",
+                        "size":  256,
+                        "sha256":  "383dd93589b0f461bb21028692de4376e46c4c95635eee072a56696d42ba5f63"
+                    },
+                    {
+                        "path":  "client/License/LicenseClock60.cs",
+                        "size":  256,
+                        "sha256":  "a1920c79338133227424e949bbad66c0cd3d3de1507f875020c48a0186d9f39c"
+                    },
+                    {
+                        "path":  "client/License/LicenseConfiguration60.cs",
+                        "size":  1154,
+                        "sha256":  "52685e7da0ab4e91336997b5671a88b443eefbf8859d97399c6366f76120e439"
+                    },
+                    {
+                        "path":  "client/License/LicenseCoordinator60.cs",
+                        "size":  14595,
+                        "sha256":  "65854a6991ac583f4adc05ccbce92115c54d70574cc514b7c6c3f995453a5b5c"
+                    },
+                    {
+                        "path":  "client/License/LicenseCredentials60.cs",
+                        "size":  192,
+                        "sha256":  "cd65d51b3d1aaa6147cc8dc750c9b392ba2b2f7e2f193dae4a6a9fdade738307"
+                    },
+                    {
+                        "path":  "client/License/LicenseDevice60.cs",
+                        "size":  882,
+                        "sha256":  "3635b48e998a3ca44a980256cb9520c920c64ea1ab4aae4dec51c1bbc4b4818c"
+                    },
+                    {
+                        "path":  "client/License/LicenseGate60.cs",
+                        "size":  1670,
+                        "sha256":  "a29746dd9f0709a03212bd754b6749bd5267f83368782f20ba8ee18f7fdbeae4"
+                    },
+                    {
+                        "path":  "client/License/LicenseLease60.cs",
+                        "size":  178,
+                        "sha256":  "f5d5efe35f525b98a628fbca36dd0d83bfe3d33e6054d326493de20702692b03"
+                    },
+                    {
+                        "path":  "client/License/LicenseNotice60.cs",
+                        "size":  1393,
+                        "sha256":  "423dbd63af5f415399c10867cd570e1a3af37cebef29f1cb10f32aff9e932c1a"
+                    },
+                    {
+                        "path":  "client/License/LicenseReply60.cs",
+                        "size":  1243,
+                        "sha256":  "64b011a00b42f712052752f8e7df158219fe7a69b8ee7812a05a6909c910272b"
+                    },
+                    {
+                        "path":  "client/License/LicenseStore60.cs",
+                        "size":  2287,
+                        "sha256":  "8983d1d1415385388317ec25b4d34c76a6baf5176e92f9cfc0da2a2365dd53de"
+                    },
+                    {
+                        "path":  "client/License/LicenseVersion60.cs",
+                        "size":  930,
+                        "sha256":  "27614737902f7595c3f132c898d2db836a58ec28da0c430788deca14b1dce305"
+                    },
+                    {
+                        "path":  "client/License/LicenseView60.cs",
+                        "size":  331,
+                        "sha256":  "4043d405d13937fd877a0fce3f7ba239039e42314489563b2be2281c6dfbb9fc"
+                    },
+                    {
+                        "path":  "client/License/LocalAccountLog59.cs",
+                        "size":  3436,
+                        "sha256":  "8c46488bfbd16f551a1708f19c0f7d4c5193425451a70da144f5a6074e37f71f"
+                    },
+                    {
+                        "path":  "client/License/LocalPlayerAccount59.cs",
+                        "size":  268,
+                        "sha256":  "3c1893e0968350a59f0140f76f974a0d2ea05c913a8f4622eada779805c434f5"
+                    },
+                    {
+                        "path":  "client/License/PinnedLeaseKey60.cs",
+                        "size":  777,
+                        "sha256":  "9c0ff0b9b391c331808fb3df073ca822af764aaabbc810b842f09928c3922e88"
+                    },
+                    {
+                        "path":  "client/License/SteamIdentity60.cs",
+                        "size":  7365,
+                        "sha256":  "b2a986b28529784f5b55c8b88f1fe13f9439c8ad3f2110742a83c748cf9fa67d"
+                    },
+                    {
+                        "path":  "client/Memory/GameProcess.cs",
+                        "size":  5572,
+                        "sha256":  "a4bbad60629fd819ca97e0fc98de344a178171d4c14c35c707d20540e7dfa54b"
+                    },
+                    {
+                        "path":  "client/Memory/MemoryReader.cs",
+                        "size":  4350,
+                        "sha256":  "bdb243c085890329853586adc614c08067639d70a53c9f4f8b2dcb5cdda85518"
+                    },
+                    {
+                        "path":  "client/Memory/NativeMemory.cs",
+                        "size":  3038,
+                        "sha256":  "8cf99efe43624d5d9107ffa30be18bc8a7f92341f1f8f392d0bdfd90615f46a4"
+                    },
+                    {
+                        "path":  "client/Memory/PeImage.cs",
+                        "size":  5174,
+                        "sha256":  "18406371a4391bf47f3b121205899c42c4848d489db0eac172c804480c1b5f75"
+                    },
+                    {
+                        "path":  "client/Memory/ProcessHandle.cs",
+                        "size":  1190,
+                        "sha256":  "388aa2c4541a5b917c32fce9401e33438808fbf94e76234f6c047366fcf7ff81"
+                    },
+                    {
+                        "path":  "client/Memory/ProcessRegions60.cs",
+                        "size":  1972,
+                        "sha256":  "67146dbff651cefd29f14b881877e338a2506cbed6f37918ea372f620d275ff5"
+                    },
+                    {
+                        "path":  "client/Memory/SignatureScanner.cs",
+                        "size":  5187,
+                        "sha256":  "2558d756399b1f3790fa505ea2adedd5c23446ddd7b55d2402316fa923e7f7f5"
+                    },
+                    {
+                        "path":  "client/Profiles/CalibrationReport60.cs",
+                        "size":  5891,
+                        "sha256":  "df2775f3c44f2d86fce1c4bcc9f0db6f0256929777eb6ce1f8499073990d9525"
+                    },
+                    {
+                        "path":  "client/Profiles/JsonText60.cs",
+                        "size":  2582,
+                        "sha256":  "f35c300fdacaaf00e62cc9bd78179ddeff033d92be1b55017123d8cd1b23b295"
+                    },
+                    {
+                        "path":  "client/Profiles/OffsetProfile.cs",
+                        "size":  5802,
+                        "sha256":  "0f9e33c3bf17b06ce6958265ae50dc71d5c7fe548503b52d611aadb23fa88b7d"
+                    },
+                    {
+                        "path":  "client/Profiles/ProfileStore.cs",
+                        "size":  7360,
+                        "sha256":  "94a22429adce427930a43391c6b51fcdf6dd86fde573a57991d62779a55ff7bd"
+                    },
+                    {
+                        "path":  "profiles/bf6-1.0.0.0.json",
+                        "size":  11497,
+                        "sha256":  "f7efb7e978da6b573a512ff8fc0eeebcff66ff563acc55c435d62cb0f62de3a8"
+                    },
+                    {
+                        "path":  "docs/ARCHITECTURE.md",
+                        "size":  20637,
+                        "sha256":  "171449dc39da1260ef8145aa6df5a2776684b4efeb251e5a4e620f91d9b1f76a"
+                    },
+                    {
+                        "path":  "docs/STATUS.md",
+                        "size":  16499,
+                        "sha256":  "8032fb02c3fba021c3d497d8aaad03cad28e9764880840e982fe8cdaebe0db85"
+                    },
+                    {
+                        "path":  "docs/USER-GUIDE.md",
+                        "size":  6458,
+                        "sha256":  "55b98d03122c5a3ac6f019cb9081ecb3232c1edbb0060ac7f78790169d75dba6"
+                    },
+                    {
+                        "path":  "Build.ps1",
+                        "size":  8521,
+                        "sha256":  "bada2c664188f38b3796c3d14f96092a5c51d36753e30dae91cf04693457ea6a"
+                    }
+                ]
+}

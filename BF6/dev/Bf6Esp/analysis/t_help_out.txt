@@ -1,0 +1,14 @@
+Bf6Esp —— Battlefield 6 外部只读 ESP
+
+用法：
+  Bf6Esp.exe                 启动图形界面（激活 + 覆盖层）
+  Bf6Esp.exe --probe         快速状态探测：游戏是否运行、档案是否匹配、签名命中数
+  Bf6Esp.exe --calibrate     只读校准：导出模块信息、签名命中与通用启发式发现
+  Bf6Esp.exe --calibrate --out <file>   指定校准报告输出路径
+  Bf6Esp.exe --selftest     只读通道自检（读自身进程 PE 头 + 已知内容往返，不需要游戏运行）
+  Bf6Esp.exe --selftest-reflect  反射解析器自检（合成夹具，校验字段名->偏移还原）
+  Bf6Esp.exe --selftest-locate   运行时定位器自检（对自身进程跑完整定位流程）
+  Bf6Esp.exe --help          显示本帮助
+
+退出码：0 正常 / 2 参数错误 / 3 校准时游戏未运行 / 4 无法只读打开进程 /
+        5 PE 头解析失败 / 6 报告写入失败。--probe 恒为 0，--selftest / --selftest-reflect / --selftest-locate 失败时为 1。

@@ -1,0 +1,181 @@
+{
+  "file": "G:\\SteamLibrary\\steamapps\\common\\Battlefield 6\\bf6.exe",
+  "crc32_table_file_offsets": [
+    "0x855bb50",
+    "0x85d3bb0",
+    "0x8a29430",
+    "0x8d2bc30",
+    "0x92be240"
+  ],
+  "crc32_table_count": 5,
+  "crc32_table_va": "0x14855d550",
+  "poly_EDB88320_hits": [
+    "0x4c155d",
+    "0x4c1570",
+    "0x4c1582",
+    "0x4c1594",
+    "0x4c15a6",
+    "0x4c15b8",
+    "0x4c15ca",
+    "0x4c15db",
+    "0x855bd50",
+    "0x85d3db0",
+    "0x8a29630",
+    "0x8a2bc44",
+    "0x8d2be30",
+    "0x92be440"
+  ],
+  "poly_EDB88320_count": 14,
+  "fnv64_offset_hits": [
+    "0x50b582",
+    "0x50b5d2",
+    "0x50f4c2",
+    "0x50f512",
+    "0x522422",
+    "0x522472",
+    "0x549284",
+    "0x5492ae"
+  ],
+  "fnv64_prime_hits": [
+    "0x6822a",
+    "0x6827a",
+    "0x73e3a",
+    "0x73e8a",
+    "0x73eda",
+    "0x73f2a",
+    "0x12d74a",
+    "0x12d79a"
+  ],
+  "universe_u32": 322150,
+  "name_probe": {
+    "ClientPlayerManager": {
+      "digests": {
+        "crc32_std": "0x2d019031",
+        "crc32_nul": "0x83f1ee27",
+        "crc32_lower": "0x7746944c",
+        "crc32_upper": "0x56f5574c",
+        "crc32_len_prefix": "0xf23ec26b",
+        "crc32_raw": "0xd2fe6fce",
+        "crc32_init0": "0x2d019031",
+        "adler32": "0x4a550788",
+        "joaat": "0x5844bcd3"
+      },
+      "in_universe": []
+    },
+    "ClientSoldierEntity": {
+      "digests": {
+        "crc32_std": "0x59f40d2",
+        "crc32_nul": "0xbadac335",
+        "crc32_lower": "0x97c97805",
+        "crc32_upper": "0xb67abb05",
+        "crc32_len_prefix": "0xdaa01288",
+        "crc32_raw": "0xfa60bf2d",
+        "crc32_init0": "0x59f40d2",
+        "adler32": "0x4ad507af",
+        "joaat": "0xba09d10c"
+      },
+      "in_universe": []
+    },
+    "HealthComponent": {
+      "digests": {
+        "crc32_std": "0x852f25a4",
+        "crc32_nul": "0x33ca759",
+        "crc32_lower": "0x8f1b9999",
+        "crc32_upper": "0xecf6dd3a",
+        "crc32_len_prefix": "0xcb6b79e2",
+        "crc32_raw": "0x7ad0da5b",
+        "crc32_init0": "0x852f25a4",
+        "adler32": "0x2ea6060a",
+        "joaat": "0x5263a8e"
+      },
+      "in_universe": []
+    },
+    "ClientEntityManager": {
+      "digests": {
+        "crc32_std": "0x76ccb862",
+        "crc32_nul": "0x71c82341",
+        "crc32_lower": "0x2c8bbc1f",
+        "crc32_upper": "0xd387f1f",
+        "crc32_len_prefix": "0xa9f3ea38",
+        "crc32_raw": "0x8933479d",
+        "crc32_init0": "0x76ccb862",
+        "adler32": "0x4ace0798",
+        "joaat": "0x1f8466f8"
+      },
+      "in_universe": []
+    },
+    "m_health": {
+      "digests": {
+        "crc32_std": "0x844971ed",
+        "crc32_nul": "0xc3d3839",
+        "crc32_lower": "0x844971ed",
+        "crc32_upper": "0x8dc7d43d",
+        "crc32_len_prefix": "0x9cb21e15",
+        "crc32_raw": "0x7bb68e12",
+        "crc32_init0": "0x844971ed",
+        "adler32": "0xe8a0343",
+        "joaat": "0x37592ecf"
+      },
+      "in_universe": []
+    },
+    "m_teamId": {
+      "digests": {
+        "crc32_std": "0x92c1ddaf",
+        "crc32_nul": "0x94f99029",
+        "crc32_lower": "0x745f90d",
+        "crc32_upper": "0xecb5cdd",
+        "crc32_len_prefix": "0x8a3ab257",
+        "crc32_raw": "0x6d3e2250",
+        "crc32_init0": "0x92c1ddaf",
+        "adler32": "0xe7b0321",
+        "joaat": "0xce6a65f2"
+      },
+      "in_universe": []
+    },
+    "m_transformation": {
+      "digests": {
+        "crc32_std": "0x25a8c066",
+        "crc32_nul": "0x76f68320",
+        "crc32_lower": "0x25a8c066",
+        "crc32_upper": "0xd9bfc126",
+        "crc32_len_prefix": "0x2600bb9b",
+        "crc32_raw": "0xda573f99",
+        "crc32_init0": "0x25a8c066",
+        "adler32": "0x394d06c4",
+        "joaat": "0x7fbe9dc8"
+      },
+      "in_universe": []
+    }
+  },
+  "universe_u64": 292973,
+  "name_probe64": {
+    "ClientPlayerManager": {
+      "fnv1a64": "0x24d820ba5481adae",
+      "in_u64": false
+    },
+    "ClientSoldierEntity": {
+      "fnv1a64": "0x99ac4f064ee1963b",
+      "in_u64": false
+    },
+    "HealthComponent": {
+      "fnv1a64": "0x6e0f264c7b86c9aa",
+      "in_u64": false
+    },
+    "ClientEntityManager": {
+      "fnv1a64": "0xf636b00b309ca0f4",
+      "in_u64": false
+    },
+    "m_health": {
+      "fnv1a64": "0xd0a16f5615f8778f",
+      "in_u64": false
+    },
+    "m_teamId": {
+      "fnv1a64": "0x2bb4289a04348c41",
+      "in_u64": false
+    },
+    "m_transformation": {
+      "fnv1a64": "0xefb7217a66daa410",
+      "in_u64": false
+    }
+  }
+}

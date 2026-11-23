@@ -1,0 +1,402 @@
+{
+ "HealthComponent": [
+  {
+   "code_rva": 2916171,
+   "form": 0,
+   "target_str_rva": -5218261448,
+   "win_before": "09c605c14ab60901e9c844b3064883ec484c8d051d15cb08",
+   "win_after": "488d15e626cb08488d4c2420e8c48ac2044c8d050515cb08488d15ce26cb08488d4c24300f1000488d051f288209c705"
+  },
+  {
+   "code_rva": 2916172,
+   "form": 2,
+   "target_str_rva": -5218261448,
+   "win_before": "c605c14ab60901e9c844b3064883ec484c8d051d15cb0848",
+   "win_after": "8d15e626cb08488d4c2420e8c48ac2044c8d050515cb08488d15ce26cb08488d4c24300f1000488d051f288209c705b5"
+  },
+  {
+   "code_rva": 2916195,
+   "form": 0,
+   "target_str_rva": -5218261448,
+   "win_before": "488d15e626cb08488d4c2420e8c48ac2044c8d050515cb08",
+   "win_after": "488d15ce26cb08488d4c24300f1000488d051f288209c705b5b4c30a080000004889059eb4c30a488d056f4ab6094889"
+  },
+  {
+   "code_rva": 2916196,
+   "form": 2,
+   "target_str_rva": -5218261448,
+   "win_before": "8d15e626cb08488d4c2420e8c48ac2044c8d050515cb0848",
+   "win_after": "8d15ce26cb08488d4c24300f1000488d051f288209c705b5b4c30a080000004889059eb4c30a488d056f4ab609488905"
+  },
+  {
+   "code_rva": 2916331,
+   "form": 0,
+   "target_str_rva": -5218261448,
+   "win_before": "0570b4c30a4883c448c3cccccc4883ec484c8d057d14cb08",
+   "win_after": "488d154626cb08488d4c2430e8248ac2040f1000660f7ec10f2944242066480f3a16c2013b0d63a5fc09752866480f7e"
+  },
+  {
+   "code_rva": 2916332,
+   "form": 2,
+   "target_str_rva": -5218261448,
+   "win_before": "70b4c30a4883c448c3cccccc4883ec484c8d057d14cb0848",
+   "win_after": "8d154626cb08488d4c2430e8248ac2040f1000660f7ec10f2944242066480f3a16c2013b0d63a5fc09752866480f7ec1"
+  },
+  {
+   "code_rva": 2916463,
+   "form": 0,
+   "target_str_rva": -5218261448,
+   "win_before": "c903d70a08000000488905b203d70a4c8d05fb13cb0833c0",
+   "win_after": "488d15c225cb08488d4c24304889059e03d70a0f11057f03d70ae89289c204488d4c24200f10000f29442420e8208cc2"
+  },
+  {
+   "code_rva": 2916464,
+   "form": 2,
+   "target_str_rva": -5218261448,
+   "win_before": "03d70a08000000488905b203d70a4c8d05fb13cb0833c048",
+   "win_after": "8d15c225cb08488d4c24304889059e03d70a0f11057f03d70ae89289c204488d4c24200f10000f29442420e8208cc204"
+  }
+ ],
+ "ClientPlayerManager": [
+  {
+   "code_rva": 3878379,
+   "form": 0,
+   "target_str_rva": -5217043768,
+   "win_before": "053418060a01000000c3cccccc4883ec484c8d058595ce08",
+   "win_after": "488d15d60ccf08488d4c2430e824dcb3040f1000660f7ec10f2944242066480f3a16c2013b0d63f7ed09752866480f7e"
+  },
+  {
+   "code_rva": 3878380,
+   "form": 2,
+   "target_str_rva": -5217043768,
+   "win_before": "3418060a01000000c3cccccc4883ec484c8d058595ce0848",
+   "win_after": "8d15d60ccf08488d4c2430e824dcb3040f1000660f7ec10f2944242066480f3a16c2013b0d63f7ed09752866480f7ec1"
+  },
+  {
+   "code_rva": 3878651,
+   "form": 0,
+   "target_str_rva": -5217043768,
+   "win_before": "cccccccccccccccccccccccccc4883ec384c8d057594ce08",
+   "win_after": "488d15c60bcf08488d4c2420e814dbb30433c90f1000488d05f8e1730948c7056504f00a000000004889054e04f00a48"
+  },
+  {
+   "code_rva": 3878652,
+   "form": 2,
+   "target_str_rva": -5217043768,
+   "win_before": "cccccccccccccccccccccccc4883ec384c8d057594ce0848",
+   "win_after": "8d15c60bcf08488d4c2420e814dbb30433c90f1000488d05f8e1730948c7056504f00a000000004889054e04f00a488d"
+  }
+ ],
+ "TeamId": [
+  {
+   "code_rva": 129668576,
+   "form": 0,
+   "target_str_rva": -5220045332,
+   "win_before": "cccccccccccccccc488d0591441d01c3cccccccccccccccc",
+   "win_after": "488d0505d82101c3cccccccccccccccc488d05115f2501c3cccccccccccccccc488d0521a04301c3cccccccccccccccc"
+  },
+  {
+   "code_rva": 129668577,
+   "form": 2,
+   "target_str_rva": -5220045332,
+   "win_before": "cccccccccccccc488d0591441d01c3cccccccccccccccc48",
+   "win_after": "8d0505d82101c3cccccccccccccccc488d05115f2501c3cccccccccccccccc488d0521a04301c3cccccccccccccccc48"
+  }
+ ],
+ "Health": [
+  {
+   "code_rva": 129668544,
+   "form": 0,
+   "target_str_rva": -5219590104,
+   "win_before": "05f32c62024885c0740848c7401000000000c3cccccccccc",
+   "win_after": "488d0561ca2801c3cccccccccccccccc488d0591441d01c3cccccccccccccccc488d0505d82101c3cccccccccccccccc"
+  },
+  {
+   "code_rva": 129668545,
+   "form": 2,
+   "target_str_rva": -5219590104,
+   "win_before": "f32c62024885c0740848c7401000000000c3cccccccccc48",
+   "win_after": "8d0561ca2801c3cccccccccccccccc488d0591441d01c3cccccccccccccccc488d0505d82101c3cccccccccccccccc48"
+  }
+ ],
+ "LocalPlayer": [
+  {
+   "code_rva": 114317990,
+   "form": 0,
+   "target_str_rva": -5218053008,
+   "win_before": "e80d61ddfb488bd84885c00f84e30000004533c048894740",
+   "win_after": "488d15c3792a02488bcde8eb60ddfb4885c00f84c40000004533c048894748488d15fca48001488bcde8cc60ddfb4885"
+  },
+  {
+   "code_rva": 114317991,
+   "form": 2,
+   "target_str_rva": -5218053008,
+   "win_before": "0d61ddfb488bd84885c00f84e30000004533c04889474048",
+   "win_after": "8d15c3792a02488bcde8eb60ddfb4885c00f84c40000004533c048894748488d15fca48001488bcde8cc60ddfb4885c0"
+  },
+  {
+   "code_rva": 129493435,
+   "form": 0,
+   "target_str_rva": -5218053008,
+   "win_before": "488d05aeeb4501c3488d05faeb4501c3488d05eaeb4501c3",
+   "win_after": "488d05aeea4201c3488d05ceeb4501c3488d058e171c01c3909be9b707a3e9b707abe9b707b3e9b707bbe9b707c3e9b7"
+  },
+  {
+   "code_rva": 129493436,
+   "form": 2,
+   "target_str_rva": -5218053008,
+   "win_before": "8d05aeeb4501c3488d05faeb4501c3488d05eaeb4501c348",
+   "win_after": "8d05aeea4201c3488d05ceeb4501c3488d058e171c01c3909be9b707a3e9b707abe9b707b3e9b707bbe9b707c3e9b707"
+  }
+ ],
+ "ClientConnection": [
+  {
+   "code_rva": 3874635,
+   "form": 0,
+   "target_str_rva": -5217044080,
+   "win_before": "e9d0a4a406cccccccccccccccc4883ec484c8d0525a4ce08",
+   "win_after": "488d153e1acf08488d4c2430e8c4eab3040f1000660f7ec10f2944242066480f3a16c2013b0d0306ee09752866480f7e"
+  },
+  {
+   "code_rva": 3874636,
+   "form": 2,
+   "target_str_rva": -5217044080,
+   "win_before": "d0a4a406cccccccccccccccc4883ec484c8d0525a4ce0848",
+   "win_after": "8d153e1acf08488d4c2430e8c4eab3040f1000660f7ec10f2944242066480f3a16c2013b0d0306ee09752866480f7ec1"
+  },
+  {
+   "code_rva": 3874907,
+   "form": 0,
+   "target_str_rva": -5217044080,
+   "win_before": "cccccccccccccccccccccccccc4883ec384c8d0515a3ce08",
+   "win_after": "488d152e19cf08488d4c2420e8b4e9b30433c90f1000488d0598f0730948c7057516f00a000000004889055e16f00a48"
+  },
+  {
+   "code_rva": 3874908,
+   "form": 2,
+   "target_str_rva": -5217044080,
+   "win_before": "cccccccccccccccccccccccc4883ec384c8d0515a3ce0848",
+   "win_after": "8d152e19cf08488d4c2420e8b4e9b30433c90f1000488d0598f0730948c7057516f00a000000004889055e16f00a488d"
+  }
+ ],
+ "ClientSoldierEntity": [
+  {
+   "code_rva": 4742811,
+   "form": 0,
+   "target_str_rva": -5215536592,
+   "win_before": "81659706cccccccccccccccccc4883ec484c8d0575d78b08",
+   "win_after": "488d158edbd808488d4c2430e874aba6040f1000660f7ec10f2944242066480f3a16c2013b0db3c6e009752866480f7e"
+  },
+  {
+   "code_rva": 4742812,
+   "form": 2,
+   "target_str_rva": -5215536592,
+   "win_before": "659706cccccccccccccccccc4883ec484c8d0575d78b0848",
+   "win_after": "8d158edbd808488d4c2430e874aba6040f1000660f7ec10f2944242066480f3a16c2013b0db3c6e009752866480f7ec1"
+  },
+  {
+   "code_rva": 4743099,
+   "form": 0,
+   "target_str_rva": -5215536592,
+   "win_before": "cccccccccccccccccccccccccc4883ec384c8d0555d68b08",
+   "win_after": "488d156edad808488d4c2420e854aaa6044533c0488d15324fbf09488d0dd304bf09483bca0f1000488d055ef2660948"
+  },
+  {
+   "code_rva": 4743100,
+   "form": 2,
+   "target_str_rva": -5215536592,
+   "win_before": "cccccccccccccccccccccccc4883ec384c8d0555d68b0848",
+   "win_after": "8d156edad808488d4c2420e854aaa6044533c0488d15324fbf09488d0dd304bf09483bca0f1000488d055ef2660948c7"
+  }
+ ],
+ "PersonaId": [
+  {
+   "code_rva": 30069033,
+   "form": 0,
+   "target_str_rva": -5219602328,
+   "win_before": "8d5507498bc8e844b400ffe81f2697004c8b45074983e0fc",
+   "win_after": "488d15385f1807488bc8e82830970090488d4d07e88edf00ff904c8b45cf488b4dc70f104db7c6450700c645160f4889"
+  },
+  {
+   "code_rva": 30069034,
+   "form": 2,
+   "target_str_rva": -5219602328,
+   "win_before": "5507498bc8e844b400ffe81f2697004c8b45074983e0fc48",
+   "win_after": "8d15385f1807488bc8e82830970090488d4d07e88edf00ff904c8b45cf488b4dc70f104db7c6450700c645160f48894d"
+  },
+  {
+   "code_rva": 54816824,
+   "form": 0,
+   "target_str_rva": -5219602328,
+   "win_before": "4720a801488bcb480f4555e0e89fdb00004c8d0539c09e05",
+   "win_after": "488d1529c09e05488d4de0e8f84554fe0fbe45ef488d55e0c1e8074c8d4728a801488bcb480f4555e0e86adb00004c8d"
+  },
+  {
+   "code_rva": 54816825,
+   "form": 2,
+   "target_str_rva": -5219602328,
+   "win_before": "20a801488bcb480f4555e0e89fdb00004c8d0539c09e0548",
+   "win_after": "8d1529c09e05488d4de0e8f84554fe0fbe45ef488d55e0c1e8074c8d4728a801488bcb480f4555e0e86adb00004c8d05"
+  },
+  {
+   "code_rva": 54820499,
+   "form": 0,
+   "target_str_rva": -5219602328,
+   "win_before": "4718a801488bcb480f4555e0e844cd00004c8d05deb19e05",
+   "win_after": "488d15ceb19e05488d4de0e89d3754fe0fbe45ef488d55e0c1e8074c8d4720a801488bcb480f4555e0e80fcd00004c8d"
+  },
+  {
+   "code_rva": 54820500,
+   "form": 2,
+   "target_str_rva": -5219602328,
+   "win_before": "18a801488bcb480f4555e0e844cd00004c8d05deb19e0548",
+   "win_after": "8d15ceb19e05488d4de0e89d3754fe0fbe45ef488d55e0c1e8074c8d4720a801488bcb480f4555e0e80fcd00004c8d05"
+  },
+  {
+   "code_rva": 54822275,
+   "form": 0,
+   "target_str_rva": -5219602328,
+   "win_before": "c3a801498bce480f45542420e854c600004c8d05eeaa9e05",
+   "win_after": "488d15deaa9e05488d4c2420e8ac3054fe0fbe44242f488d542420c1e8074c8bc7a801498bce480f45542420e81cc600"
+  },
+  {
+   "code_rva": 54822276,
+   "form": 2,
+   "target_str_rva": -5219602328,
+   "win_before": "a801498bce480f45542420e854c600004c8d05eeaa9e0548",
+   "win_after": "8d15deaa9e05488d4c2420e8ac3054fe0fbe44242f488d542420c1e8074c8bc7a801498bce480f45542420e81cc60000"
+  },
+  {
+   "code_rva": 54865929,
+   "form": 0,
+   "target_str_rva": -5219602328,
+   "win_before": "05ba80000000488d4c2440e87fd21d00488b034c8d442440",
+   "win_after": "488d1558009e05488bcbff90a0000000488b034c8d47284c8b88a0000000410fbe400fc1e807a80174034d8b00488d15"
+  },
+  {
+   "code_rva": 54865930,
+   "form": 2,
+   "target_str_rva": -5219602328,
+   "win_before": "ba80000000488d4c2440e87fd21d00488b034c8d44244048",
+   "win_after": "8d1558009e05488bcbff90a0000000488b034c8d47284c8b88a0000000410fbe400fc1e807a80174034d8b00488d15e3"
+  },
+  {
+   "code_rva": 54866609,
+   "form": 0,
+   "target_str_rva": -5219602328,
+   "win_before": "05ba80000000488d4c2420e8d7cf1d00488b034c8d442420",
+   "win_after": "488d15b0fd9d05488bcbff90a0000000488b4d3049beabaaaaaaaaaaaa2a488b7528498bc6482bce33ff48f7e948c1fa"
+  },
+  {
+   "code_rva": 54866610,
+   "form": 2,
+   "target_str_rva": -5219602328,
+   "win_before": "ba80000000488d4c2420e8d7cf1d00488b034c8d44242048",
+   "win_after": "8d15b0fd9d05488bcbff90a0000000488b4d3049beabaaaaaaaaaaaa2a488b7528498bc6482bce33ff48f7e948c1fa04"
+  },
+  {
+   "code_rva": 54866919,
+   "form": 0,
+   "target_str_rva": -5219602328,
+   "win_before": "05ba80000000488d4c2440e8a1ce1d00488b074c8d442440",
+   "win_after": "488d157afc9d05488bcfff90a0000000807d2800488d05d2a98e054c8d0df3a98e05ba200000004c0f45c84c8d05f366"
+  },
+  {
+   "code_rva": 54866920,
+   "form": 2,
+   "target_str_rva": -5219602328,
+   "win_before": "ba80000000488d4c2440e8a1ce1d00488b074c8d44244048",
+   "win_after": "8d157afc9d05488bcfff90a0000000807d2800488d05d2a98e054c8d0df3a98e05ba200000004c0f45c84c8d05f3668f"
+  },
+  {
+   "code_rva": 78554565,
+   "form": 1,
+   "target_str_rva": -5219602328,
+   "win_before": "0000498bc8e8c97d17004c8bc8488d152fbd6704488d4dc7",
+   "win_after": "4c8d059c8a3404e89f95f7ffc60300488bc8c6430f0f488b4010488943108b41188943180f10010f100b0f11030f1109"
+  },
+  {
+   "code_rva": 78554566,
+   "form": 2,
+   "target_str_rva": -5219602328,
+   "win_before": "00498bc8e8c97d17004c8bc8488d152fbd6704488d4dc74c",
+   "win_after": "8d059c8a3404e89f95f7ffc60300488bc8c6430f0f488b4010488943108b41188943180f10010f100b0f11030f1109c6"
+  }
+ ],
+ "ClientPlayer": [
+  {
+   "code_rva": 3876891,
+   "form": 0,
+   "target_str_rva": -5217043600,
+   "win_before": "05001e060a01000000c3cccccc4883ec484c8d05559bce08",
+   "win_after": "488d154e13cf08488d4c2430e8f4e1b3040f1000660f7ec10f2944242066480f3a16c2013b0d33fded09752866480f7e"
+  },
+  {
+   "code_rva": 3876892,
+   "form": 2,
+   "target_str_rva": -5217043600,
+   "win_before": "001e060a01000000c3cccccc4883ec484c8d05559bce0848",
+   "win_after": "8d154e13cf08488d4c2430e8f4e1b3040f1000660f7ec10f2944242066480f3a16c2013b0d33fded09752866480f7ec1"
+  },
+  {
+   "code_rva": 3877163,
+   "form": 0,
+   "target_str_rva": -5217043600,
+   "win_before": "cccccccccccccccccccccccccc4883ec384c8d05459ace08",
+   "win_after": "488d153e12cf08488d4c2420e8e4e0b30433c90f1000488d05c8e7730948c705950bf00a000000004889057e0bf00a48"
+  },
+  {
+   "code_rva": 3877164,
+   "form": 2,
+   "target_str_rva": -5217043600,
+   "win_before": "cccccccccccccccccccccccc4883ec384c8d05459ace0848",
+   "win_after": "8d153e12cf08488d4c2420e8e4e0b30433c90f1000488d05c8e7730948c705950bf00a000000004889057e0bf00a488d"
+  }
+ ],
+ "ClPlayer": [
+  {
+   "code_rva": 62786416,
+   "form": 0,
+   "target_str_rva": -5217043808,
+   "win_before": "498b6b28498b7330498be3415f415e5fe933170b00cccccc",
+   "win_after": "488d05292f4c05c3cccccccccccccccc0fbe811fffffffc1e807a8017408488b8110ffffffc3488d8110ffffffc3cccc"
+  },
+  {
+   "code_rva": 62786417,
+   "form": 2,
+   "target_str_rva": -5217043808,
+   "win_before": "8b6b28498b7330498be3415f415e5fe933170b00cccccc48",
+   "win_after": "8d05292f4c05c3cccccccccccccccc0fbe811fffffffc1e807a8017408488b8110ffffffc3488d8110ffffffc3cccc40"
+  }
+ ],
+ "TimeSync": [
+  {
+   "code_rva": 62775820,
+   "form": 0,
+   "target_str_rva": -5217043712,
+   "win_before": "442440488b0d523b5c0688442420e869d40cfd4885c07419",
+   "win_after": "488d0ded584c054889781048894808488d0d96674c05488908448b0d2c06a006ba1000000048894358448bc20fb64424"
+  },
+  {
+   "code_rva": 62775821,
+   "form": 2,
+   "target_str_rva": -5217043712,
+   "win_before": "2440488b0d523b5c0688442420e869d40cfd4885c0741948",
+   "win_after": "8d0ded584c054889781048894808488d0d96674c05488908448b0d2c06a006ba1000000048894358448bc20fb6442440"
+  },
+  {
+   "code_rva": 62926144,
+   "form": 0,
+   "target_str_rva": -5217043712,
+   "win_before": "ccccccccccccccccb811000000c3cccccccccccccccccccc",
+   "win_after": "488d05b90d4a05c3cccccccccccccccc40534883ec30448b8278bd0000488bd9418bc0c1e802a8010f84d800000041f6"
+  },
+  {
+   "code_rva": 62926145,
+   "form": 2,
+   "target_str_rva": -5217043712,
+   "win_before": "ccccccccccccccb811000000c3cccccccccccccccccccc48",
+   "win_after": "8d05b90d4a05c3cccccccccccccccc40534883ec30448b8278bd0000488bd9418bc0c1e802a8010f84d800000041f6c0"
+  }
+ ]
+}

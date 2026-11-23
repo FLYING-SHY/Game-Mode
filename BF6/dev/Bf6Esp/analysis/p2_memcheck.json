@@ -1,0 +1,4841 @@
+{
+ "generated": "p2_memcheck.py",
+ "refs": 451,
+ "refs_in_type_registration_stubs": 126,
+ "distinct_functions": 83,
+ "per_member": {
+  "HealthComponent": 8,
+  "ClientPlayerManager": 4,
+  "ClPlayer": 6,
+  "ClientPlayerExtent": 4,
+  "ClientSoldierEntity": 4,
+  "ClientSoldierWeapon": 16,
+  "TeamId": 8,
+  "SquadId": 2,
+  "PersonaId": 18,
+  "Health": 72,
+  "LocalPlayer": 103,
+  "ClientPlayer": 180,
+  "ClientConnection": 16,
+  "GameContext": 2,
+  "TimeSync": 4,
+  "OnlineManager": 4
+ },
+ "functions": [
+  {
+   "func_rva": "0x10bea80",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x10bec10",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x10c6c70",
+   "members": [
+    "ClientConnection"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x10c6e60",
+   "members": [
+    "ClientConnection"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x10c6f90",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x10c7420",
+   "members": [
+    "ClPlayer",
+    "ClientPlayer",
+    "ClientPlayerExtent",
+    "ClientPlayerManager"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x10c75e0",
+   "members": [
+    "ClPlayer",
+    "TimeSync"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x10c7770",
+   "members": [
+    "ClientPlayer",
+    "OnlineManager"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 34,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x10dbc4f",
+   "members": [
+    "ClPlayer",
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 54,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x1109060",
+   "members": [
+    "TeamId"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x115acf0",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 61,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x118e600",
+   "members": [
+    "Health"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 2,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x118e750",
+   "members": [
+    "Health"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 2,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x12f0f80",
+   "members": [
+    "ClientConnection"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 16,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x16b0110",
+   "members": [
+    "LocalPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 2,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x16b0190",
+   "members": [
+    "LocalPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x16b02e0",
+   "members": [
+    "LocalPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x16b0350",
+   "members": [
+    "LocalPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x16b03c0",
+   "members": [
+    "LocalPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x17e6e10",
+   "members": [
+    "LocalPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 2,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x17e6fa0",
+   "members": [
+    "LocalPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 12,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x181b400",
+   "members": [
+    "ClientSoldierEntity",
+    "ClientSoldierWeapon"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x316910",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4,
+   "is_type_registration_stub": true
+  },
+  {
+   "func_rva": "0x32d0d0",
+   "members": [
+    "Health"
+   ],
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4,
+   "is_type_registration_stub": true
+  },
+  {
+   "func_rva": "0x33ad90",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4,
+   "is_type_registration_stub": true
+  },
+  {
+   "func_rva": "0x33aeb0",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6,
+   "is_type_registration_stub": true
+  },
+  {
+   "func_rva": "0x48bb60",
+   "members": [
+    "TeamId"
+   ],
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4,
+   "is_type_registration_stub": true
+  },
+  {
+   "func_rva": "0x48d200",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6,
+   "is_type_registration_stub": true
+  },
+  {
+   "func_rva": "0x48d7d0",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6,
+   "is_type_registration_stub": true
+  },
+  {
+   "func_rva": "0x48f4c0",
+   "members": [
+    "Health"
+   ],
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6,
+   "is_type_registration_stub": true
+  },
+  {
+   "func_rva": "0x492500",
+   "members": [
+    "Health"
+   ],
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4,
+   "is_type_registration_stub": true
+  },
+  {
+   "func_rva": "0x492d50",
+   "members": [
+    "Health"
+   ],
+   "stores_into_typeinfo": 2,
+   "rdata_leas": 0,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x492e00",
+   "members": [
+    "Health"
+   ],
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4,
+   "is_type_registration_stub": true
+  },
+  {
+   "func_rva": "0x494ff0",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6,
+   "is_type_registration_stub": true
+  },
+  {
+   "func_rva": "0x497270",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 21,
+   "rdata_leas": 4,
+   "is_type_registration_stub": true
+  },
+  {
+   "func_rva": "0x499de0",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6,
+   "is_type_registration_stub": true
+  },
+  {
+   "func_rva": "0x4a0db0",
+   "members": [
+    "SquadId"
+   ],
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6,
+   "is_type_registration_stub": true
+  },
+  {
+   "func_rva": "0x4ca670",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 2,
+   "rdata_leas": 0,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x4cbe30",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6,
+   "is_type_registration_stub": true
+  },
+  {
+   "func_rva": "0x4d08b0",
+   "members": [
+    "PersonaId"
+   ],
+   "stores_into_typeinfo": 2,
+   "rdata_leas": 0,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x4d0960",
+   "members": [
+    "PersonaId"
+   ],
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4,
+   "is_type_registration_stub": true
+  },
+  {
+   "func_rva": "0x4d1a20",
+   "members": [
+    "Health"
+   ],
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6,
+   "is_type_registration_stub": true
+  },
+  {
+   "func_rva": "0x4dbc10",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6,
+   "is_type_registration_stub": true
+  },
+  {
+   "func_rva": "0x4ec5b0",
+   "members": [
+    "LocalPlayer"
+   ],
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4,
+   "is_type_registration_stub": true
+  },
+  {
+   "func_rva": "0x4f3d10",
+   "members": [
+    "TeamId"
+   ],
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6,
+   "is_type_registration_stub": true
+  },
+  {
+   "func_rva": "0x4f6990",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6,
+   "is_type_registration_stub": true
+  },
+  {
+   "func_rva": "0x4fb320",
+   "members": [
+    "Health"
+   ],
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6,
+   "is_type_registration_stub": true
+  },
+  {
+   "func_rva": "0x4fb460",
+   "members": [
+    "Health"
+   ],
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4,
+   "is_type_registration_stub": true
+  },
+  {
+   "func_rva": "0x502210",
+   "members": [
+    "Health"
+   ],
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4,
+   "is_type_registration_stub": true
+  },
+  {
+   "func_rva": "0x506430",
+   "members": [
+    "PersonaId"
+   ],
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 4,
+   "is_type_registration_stub": true
+  },
+  {
+   "func_rva": "0x51c830",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 4,
+   "is_type_registration_stub": true
+  },
+  {
+   "func_rva": "0x523a20",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 2,
+   "rdata_leas": 0,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x523b70",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4,
+   "is_type_registration_stub": true
+  },
+  {
+   "func_rva": "0x82eb4b",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 1,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x82efc0",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 5,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x82f350",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 3,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x883a02",
+   "members": [
+    "LocalPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 16,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x883b8e",
+   "members": [
+    "LocalPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x883cd0",
+   "members": [
+    "LocalPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 10,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x883dc0",
+   "members": [
+    "LocalPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 12,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x883ef0",
+   "members": [
+    "LocalPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x8effb9",
+   "members": [
+    "Health"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x938ee0",
+   "members": [
+    "Health"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x95ff70",
+   "members": [
+    "Health"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x960050",
+   "members": [
+    "Health"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x9bd970",
+   "members": [
+    "LocalPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x9bdd50",
+   "members": [
+    "LocalPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 1,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x9bddf0",
+   "members": [
+    "LocalPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 3,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x9e8a90",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0x9eac10",
+   "members": [
+    "ClientSoldierWeapon"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0xa0b55e",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0xa0b610",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0xa0b8de",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0xa0ba9e",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0xa181c0",
+   "members": [
+    "ClientPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 2,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0xa86d10",
+   "members": [
+    "LocalPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 2,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0xa86dd0",
+   "members": [
+    "LocalPlayer"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0xc7e9f0",
+   "members": [
+    "Health"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0xc7ea17",
+   "members": [
+    "Health"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0xc7eae6",
+   "members": [
+    "Health"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0xc7f270",
+   "members": [
+    "Health"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0xc7f4a0",
+   "members": [
+    "Health"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0,
+   "is_type_registration_stub": false
+  },
+  {
+   "func_rva": "0xc7f6fd",
+   "members": [
+    "Health"
+   ],
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0,
+   "is_type_registration_stub": false
+  }
+ ],
+ "ref_list": [
+  {
+   "member": "HealthComponent",
+   "name_rva": "0x8f7a638",
+   "code_rva": "0x8f00aa",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "HealthComponent",
+   "name_rva": "0x8f7a638",
+   "code_rva": "0x8f00ab",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "HealthComponent",
+   "name_rva": "0x8f7a638",
+   "code_rva": "0x8f013b",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "HealthComponent",
+   "name_rva": "0x8f7a638",
+   "code_rva": "0x8f013c",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "HealthComponent",
+   "name_rva": "0x8f7a638",
+   "code_rva": "0x8f0146",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "HealthComponent",
+   "name_rva": "0x8f7a638",
+   "code_rva": "0x8f0147",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "HealthComponent",
+   "name_rva": "0x8f7a638",
+   "code_rva": "0x8f015f",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "HealthComponent",
+   "name_rva": "0x8f7a638",
+   "code_rva": "0x8f0160",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayerManager",
+   "name_rva": "0x90a3ac8",
+   "code_rva": "0x10c74f9",
+   "func_rva": "0x10c7420",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientPlayerManager",
+   "name_rva": "0x90a3ac8",
+   "code_rva": "0x10c74fa",
+   "func_rva": "0x10c7420",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientPlayerManager",
+   "name_rva": "0x90a3ac8",
+   "code_rva": "0x10c759b",
+   "func_rva": "0x10c7420",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientPlayerManager",
+   "name_rva": "0x90a3ac8",
+   "code_rva": "0x10c759c",
+   "func_rva": "0x10c7420",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClPlayer",
+   "name_rva": "0x90a3aa0",
+   "code_rva": "0x10c742f",
+   "func_rva": "0x10c7420",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClPlayer",
+   "name_rva": "0x90a3aa0",
+   "code_rva": "0x10c7430",
+   "func_rva": "0x10c7420",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClPlayer",
+   "name_rva": "0x90a3ae0",
+   "code_rva": "0x10c75ef",
+   "func_rva": "0x10c75e0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClPlayer",
+   "name_rva": "0x90a3ae0",
+   "code_rva": "0x10c75f0",
+   "func_rva": "0x10c75e0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClPlayer",
+   "name_rva": "0x90acf20",
+   "code_rva": "0x10dc0fa",
+   "func_rva": "0x10dbc4f",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 54
+  },
+  {
+   "member": "ClPlayer",
+   "name_rva": "0x90acf20",
+   "code_rva": "0x10dc0fb",
+   "func_rva": "0x10dbc4f",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 54
+  },
+  {
+   "member": "ClientPlayerExtent",
+   "name_rva": "0x90a3ab0",
+   "code_rva": "0x10c74bd",
+   "func_rva": "0x10c7420",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientPlayerExtent",
+   "name_rva": "0x90a3ab0",
+   "code_rva": "0x10c74be",
+   "func_rva": "0x10c7420",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientPlayerExtent",
+   "name_rva": "0x90a3ab0",
+   "code_rva": "0x10c74d7",
+   "func_rva": "0x10c7420",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientPlayerExtent",
+   "name_rva": "0x90a3ab0",
+   "code_rva": "0x10c74d8",
+   "func_rva": "0x10c7420",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientSoldierEntity",
+   "name_rva": "0x9213a30",
+   "code_rva": "0x181e882",
+   "func_rva": "0x181b400",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientSoldierEntity",
+   "name_rva": "0x9213a30",
+   "code_rva": "0x181e888",
+   "func_rva": "0x181b400",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientSoldierEntity",
+   "name_rva": "0x9213a30",
+   "code_rva": "0x181e889",
+   "func_rva": "0x181b400",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientSoldierEntity",
+   "name_rva": "0x9213a30",
+   "code_rva": "0x181e891",
+   "func_rva": "0x181b400",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientSoldierWeapon",
+   "name_rva": "0x8fb5d78",
+   "code_rva": "0x9eac4c",
+   "func_rva": "0x9eac10",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientSoldierWeapon",
+   "name_rva": "0x8fb5d78",
+   "code_rva": "0x9eac71",
+   "func_rva": "0x9eac10",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientSoldierWeapon",
+   "name_rva": "0x8fb5d78",
+   "code_rva": "0x9eac72",
+   "func_rva": "0x9eac10",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientSoldierWeapon",
+   "name_rva": "0x8fb5d78",
+   "code_rva": "0x9eac7e",
+   "func_rva": "0x9eac10",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientSoldierWeapon",
+   "name_rva": "0x9213a18",
+   "code_rva": "0x181e86b",
+   "func_rva": "0x181b400",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientSoldierWeapon",
+   "name_rva": "0x9213a18",
+   "code_rva": "0x181e871",
+   "func_rva": "0x181b400",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientSoldierWeapon",
+   "name_rva": "0x9213a18",
+   "code_rva": "0x181e872",
+   "func_rva": "0x181b400",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientSoldierWeapon",
+   "name_rva": "0x9213a18",
+   "code_rva": "0x181e87a",
+   "func_rva": "0x181b400",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientSoldierWeapon",
+   "name_rva": "0x9213a68",
+   "code_rva": "0x181e8a0",
+   "func_rva": "0x181b400",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientSoldierWeapon",
+   "name_rva": "0x9213a68",
+   "code_rva": "0x181e8a8",
+   "func_rva": "0x181b400",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientSoldierWeapon",
+   "name_rva": "0x9213a68",
+   "code_rva": "0x181e8b0",
+   "func_rva": "0x181b400",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientSoldierWeapon",
+   "name_rva": "0x9213a68",
+   "code_rva": "0x181e8b6",
+   "func_rva": "0x181b400",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientSoldierWeapon",
+   "name_rva": "0x9214a60",
+   "code_rva": "0x181eff0",
+   "func_rva": "0x181b400",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientSoldierWeapon",
+   "name_rva": "0x9214a60",
+   "code_rva": "0x181eff1",
+   "func_rva": "0x181b400",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientSoldierWeapon",
+   "name_rva": "0x9214a60",
+   "code_rva": "0x181eff7",
+   "func_rva": "0x181b400",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientSoldierWeapon",
+   "name_rva": "0x9214a60",
+   "code_rva": "0x181efff",
+   "func_rva": "0x181b400",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "TeamId",
+   "name_rva": "0x8dc6dec",
+   "code_rva": "0x48bb6b",
+   "func_rva": "0x48bb60",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "TeamId",
+   "name_rva": "0x8dc6dec",
+   "code_rva": "0x48bb6c",
+   "func_rva": "0x48bb60",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "TeamId",
+   "name_rva": "0x8e82d48",
+   "code_rva": "0x4f3dc2",
+   "func_rva": "0x4f3d10",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "TeamId",
+   "name_rva": "0x8e82d48",
+   "code_rva": "0x4f3dc8",
+   "func_rva": "0x4f3d10",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "TeamId",
+   "name_rva": "0x8e82d48",
+   "code_rva": "0x4f3dc9",
+   "func_rva": "0x4f3d10",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "TeamId",
+   "name_rva": "0x8e82d48",
+   "code_rva": "0x4f3dcf",
+   "func_rva": "0x4f3d10",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "TeamId",
+   "name_rva": "0x90b4658",
+   "code_rva": "0x11090ed",
+   "func_rva": "0x1109060",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6
+  },
+  {
+   "member": "TeamId",
+   "name_rva": "0x90b4658",
+   "code_rva": "0x1109254",
+   "func_rva": "0x1109060",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6
+  },
+  {
+   "member": "SquadId",
+   "name_rva": "0x8dffb40",
+   "code_rva": "0x4a0eae",
+   "func_rva": "0x4a0db0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "SquadId",
+   "name_rva": "0x8dffb40",
+   "code_rva": "0x4a0eaf",
+   "func_rva": "0x4a0db0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "PersonaId",
+   "name_rva": "0x8e33068",
+   "code_rva": "0x4d0926",
+   "func_rva": "0x4d08b0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 2,
+   "rdata_leas": 0
+  },
+  {
+   "member": "PersonaId",
+   "name_rva": "0x8e33068",
+   "code_rva": "0x4d0927",
+   "func_rva": "0x4d08b0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 2,
+   "rdata_leas": 0
+  },
+  {
+   "member": "PersonaId",
+   "name_rva": "0x8e33068",
+   "code_rva": "0x4d093e",
+   "func_rva": "0x4d08b0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 2,
+   "rdata_leas": 0
+  },
+  {
+   "member": "PersonaId",
+   "name_rva": "0x8e33068",
+   "code_rva": "0x4d093f",
+   "func_rva": "0x4d08b0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 2,
+   "rdata_leas": 0
+  },
+  {
+   "member": "PersonaId",
+   "name_rva": "0x8e33068",
+   "code_rva": "0x4d0947",
+   "func_rva": "0x4d08b0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 2,
+   "rdata_leas": 0
+  },
+  {
+   "member": "PersonaId",
+   "name_rva": "0x8e33068",
+   "code_rva": "0x4d0948",
+   "func_rva": "0x4d08b0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 2,
+   "rdata_leas": 0
+  },
+  {
+   "member": "PersonaId",
+   "name_rva": "0x8e33068",
+   "code_rva": "0x4d0964",
+   "func_rva": "0x4d0960",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "PersonaId",
+   "name_rva": "0x8e33068",
+   "code_rva": "0x4d0965",
+   "func_rva": "0x4d0960",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "PersonaId",
+   "name_rva": "0x8e33068",
+   "code_rva": "0x4d096b",
+   "func_rva": "0x4d0960",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "PersonaId",
+   "name_rva": "0x8e33068",
+   "code_rva": "0x4d096c",
+   "func_rva": "0x4d0960",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "PersonaId",
+   "name_rva": "0x8e33068",
+   "code_rva": "0x4d09d0",
+   "func_rva": "0x4d0960",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "PersonaId",
+   "name_rva": "0x8e33068",
+   "code_rva": "0x4d09d1",
+   "func_rva": "0x4d0960",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "PersonaId",
+   "name_rva": "0x8e33068",
+   "code_rva": "0x4d09db",
+   "func_rva": "0x4d0960",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "PersonaId",
+   "name_rva": "0x8e33068",
+   "code_rva": "0x4d09dc",
+   "func_rva": "0x4d0960",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "PersonaId",
+   "name_rva": "0x8e33068",
+   "code_rva": "0x4d09e2",
+   "func_rva": "0x4d0960",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "PersonaId",
+   "name_rva": "0x8e33068",
+   "code_rva": "0x4d09e3",
+   "func_rva": "0x4d0960",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "PersonaId",
+   "name_rva": "0x8eb5658",
+   "code_rva": "0x50647a",
+   "func_rva": "0x506430",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 4
+  },
+  {
+   "member": "PersonaId",
+   "name_rva": "0x8eb5658",
+   "code_rva": "0x50647b",
+   "func_rva": "0x506430",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 4
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x850df08",
+   "code_rva": "0x32d16e",
+   "func_rva": "0x32d0d0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x850df08",
+   "code_rva": "0x32d175",
+   "func_rva": "0x32d0d0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x850df08",
+   "code_rva": "0x32d176",
+   "func_rva": "0x32d0d0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x850df08",
+   "code_rva": "0x32d17c",
+   "func_rva": "0x32d0d0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8dcf9c0",
+   "code_rva": "0x48f483",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8dcf9c0",
+   "code_rva": "0x48f489",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8dcfa20",
+   "code_rva": "0x48f502",
+   "func_rva": "0x48f4c0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8dcfa20",
+   "code_rva": "0x48f508",
+   "func_rva": "0x48f4c0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8dcfa20",
+   "code_rva": "0x48f509",
+   "func_rva": "0x48f4c0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8dcfa20",
+   "code_rva": "0x48f50f",
+   "func_rva": "0x48f4c0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8dd5bf8",
+   "code_rva": "0x49250c",
+   "func_rva": "0x492500",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8dd5bf8",
+   "code_rva": "0x492570",
+   "func_rva": "0x492500",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8dd5d58",
+   "code_rva": "0x4925a5",
+   "func_rva": "0x492500",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8dd5d58",
+   "code_rva": "0x4925a6",
+   "func_rva": "0x492500",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8dd64c8",
+   "code_rva": "0x492dc7",
+   "func_rva": "0x492d50",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 2,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8dd64c8",
+   "code_rva": "0x492dde",
+   "func_rva": "0x492d50",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 2,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8dd64c8",
+   "code_rva": "0x492ddf",
+   "func_rva": "0x492d50",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 2,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8dd64c8",
+   "code_rva": "0x492de7",
+   "func_rva": "0x492d50",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 2,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8dd6510",
+   "code_rva": "0x492e0c",
+   "func_rva": "0x492e00",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8dd6510",
+   "code_rva": "0x492e70",
+   "func_rva": "0x492e00",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8dd6510",
+   "code_rva": "0x492e71",
+   "func_rva": "0x492e00",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8dd6510",
+   "code_rva": "0x492e7b",
+   "func_rva": "0x492e00",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8e36028",
+   "code_rva": "0x4d1a92",
+   "func_rva": "0x4d1a20",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8e36028",
+   "code_rva": "0x4d1a93",
+   "func_rva": "0x4d1a20",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8e9e308",
+   "code_rva": "0x4fb411",
+   "func_rva": "0x4fb320",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8e9e308",
+   "code_rva": "0x4fb417",
+   "func_rva": "0x4fb320",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8e9e3f8",
+   "code_rva": "0x4fb465",
+   "func_rva": "0x4fb460",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8e9e3f8",
+   "code_rva": "0x4fb46b",
+   "func_rva": "0x4fb460",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8e9e410",
+   "code_rva": "0x4fb46c",
+   "func_rva": "0x4fb460",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8e9e410",
+   "code_rva": "0x4fb4ce",
+   "func_rva": "0x4fb460",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8eae170",
+   "code_rva": "0x50224d",
+   "func_rva": "0x502210",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8eae170",
+   "code_rva": "0x50224e",
+   "func_rva": "0x502210",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8f7a608",
+   "code_rva": "0x8effff",
+   "func_rva": "0x8effb9",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8f7a608",
+   "code_rva": "0x8f0000",
+   "func_rva": "0x8effb9",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8f7a608",
+   "code_rva": "0x8f004e",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8f7a608",
+   "code_rva": "0x8f004f",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8f7a638",
+   "code_rva": "0x8f00aa",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8f7a638",
+   "code_rva": "0x8f00ab",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8f7a638",
+   "code_rva": "0x8f013b",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8f7a638",
+   "code_rva": "0x8f013c",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8f7a638",
+   "code_rva": "0x8f0146",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8f7a638",
+   "code_rva": "0x8f0147",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8f7a638",
+   "code_rva": "0x8f015f",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8f7a638",
+   "code_rva": "0x8f0160",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8f96300",
+   "code_rva": "0x938e91",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8f96300",
+   "code_rva": "0x938eef",
+   "func_rva": "0x938ee0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8f9ee60",
+   "code_rva": "0x95ffc1",
+   "func_rva": "0x95ff70",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8f9ee60",
+   "code_rva": "0x95ffc2",
+   "func_rva": "0x95ff70",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8f9ee90",
+   "code_rva": "0x96005a",
+   "func_rva": "0x960050",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8f9ee90",
+   "code_rva": "0x96005b",
+   "func_rva": "0x960050",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8f9eeb8",
+   "code_rva": "0x96017b",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8f9eeb8",
+   "code_rva": "0x96017c",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8ffab10",
+   "code_rva": "0xc7ea09",
+   "func_rva": "0xc7e9f0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8ffab10",
+   "code_rva": "0xc7ea75",
+   "func_rva": "0xc7ea17",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8ffab10",
+   "code_rva": "0xc7ea76",
+   "func_rva": "0xc7ea17",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8ffab10",
+   "code_rva": "0xc7ea7d",
+   "func_rva": "0xc7ea17",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8ffab10",
+   "code_rva": "0xc7ea7e",
+   "func_rva": "0xc7ea17",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8ffab10",
+   "code_rva": "0xc7ea9a",
+   "func_rva": "0xc7ea17",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8ffab10",
+   "code_rva": "0xc7ea9b",
+   "func_rva": "0xc7ea17",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8ffab10",
+   "code_rva": "0xc7eaaa",
+   "func_rva": "0xc7ea17",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8ffab10",
+   "code_rva": "0xc7eaab",
+   "func_rva": "0xc7ea17",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8ffab10",
+   "code_rva": "0xc7eab1",
+   "func_rva": "0xc7ea17",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8ffab10",
+   "code_rva": "0xc7eab2",
+   "func_rva": "0xc7ea17",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8ffab10",
+   "code_rva": "0xc7eb50",
+   "func_rva": "0xc7eae6",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8ffab58",
+   "code_rva": "0xc7f2a5",
+   "func_rva": "0xc7f270",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8ffab58",
+   "code_rva": "0xc7f2c0",
+   "func_rva": "0xc7f270",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8ffabc0",
+   "code_rva": "0xc7f4c2",
+   "func_rva": "0xc7f4a0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x8ffabc0",
+   "code_rva": "0xc7f7c9",
+   "func_rva": "0xc7f6fd",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x90cd5c0",
+   "code_rva": "0x118e625",
+   "func_rva": "0x118e600",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 2
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x90cd5c0",
+   "code_rva": "0x118e70d",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x90cd5c0",
+   "code_rva": "0x118e70e",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "Health",
+   "name_rva": "0x90cd5c0",
+   "code_rva": "0x118e774",
+   "func_rva": "0x118e750",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 2
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8dd2340",
+   "code_rva": "0x490852",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8dd2340",
+   "code_rva": "0x490853",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8dd2340",
+   "code_rva": "0x490859",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8dd2340",
+   "code_rva": "0x49085a",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8e6a2f8",
+   "code_rva": "0x4ec621",
+   "func_rva": "0x4ec5b0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66428",
+   "code_rva": "0x883a74",
+   "func_rva": "0x883a02",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 16
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66428",
+   "code_rva": "0x883b20",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66428",
+   "code_rva": "0x883b21",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66428",
+   "code_rva": "0x883b37",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66490",
+   "code_rva": "0x883baa",
+   "func_rva": "0x883b8e",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66490",
+   "code_rva": "0x883bbc",
+   "func_rva": "0x883b8e",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66490",
+   "code_rva": "0x883bbd",
+   "func_rva": "0x883b8e",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66490",
+   "code_rva": "0x883c80",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f664a0",
+   "code_rva": "0x883c81",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f664a0",
+   "code_rva": "0x883cda",
+   "func_rva": "0x883cd0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 10
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f664a0",
+   "code_rva": "0x883cdb",
+   "func_rva": "0x883cd0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 10
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f664a0",
+   "code_rva": "0x883ce9",
+   "func_rva": "0x883cd0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 10
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f664b0",
+   "code_rva": "0x883cea",
+   "func_rva": "0x883cd0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 10
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f664b0",
+   "code_rva": "0x883cfd",
+   "func_rva": "0x883cd0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 10
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f664b0",
+   "code_rva": "0x883cfe",
+   "func_rva": "0x883cd0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 10
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f664b0",
+   "code_rva": "0x883d0c",
+   "func_rva": "0x883cd0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 10
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f664c0",
+   "code_rva": "0x883d0d",
+   "func_rva": "0x883cd0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 10
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f664c0",
+   "code_rva": "0x883d1b",
+   "func_rva": "0x883cd0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 10
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f664c0",
+   "code_rva": "0x883d1c",
+   "func_rva": "0x883cd0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 10
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f664c0",
+   "code_rva": "0x883d99",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f664e0",
+   "code_rva": "0x883d9a",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f664e0",
+   "code_rva": "0x883da1",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f664e0",
+   "code_rva": "0x883da2",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f664e0",
+   "code_rva": "0x883da9",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f664f0",
+   "code_rva": "0x883daa",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f664f0",
+   "code_rva": "0x883dcf",
+   "func_rva": "0x883dc0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 12
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f664f0",
+   "code_rva": "0x883dd0",
+   "func_rva": "0x883dc0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 12
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f664f0",
+   "code_rva": "0x883dde",
+   "func_rva": "0x883dc0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 12
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66500",
+   "code_rva": "0x883ddf",
+   "func_rva": "0x883dc0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 12
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66500",
+   "code_rva": "0x883ded",
+   "func_rva": "0x883dc0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 12
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66500",
+   "code_rva": "0x883dee",
+   "func_rva": "0x883dc0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 12
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66500",
+   "code_rva": "0x883e50",
+   "func_rva": "0x883dc0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 12
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66510",
+   "code_rva": "0x883e51",
+   "func_rva": "0x883dc0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 12
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66510",
+   "code_rva": "0x883e5f",
+   "func_rva": "0x883dc0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 12
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66510",
+   "code_rva": "0x883e60",
+   "func_rva": "0x883dc0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 12
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66510",
+   "code_rva": "0x883e6e",
+   "func_rva": "0x883dc0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 12
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66530",
+   "code_rva": "0x883e6f",
+   "func_rva": "0x883dc0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 12
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66530",
+   "code_rva": "0x883f02",
+   "func_rva": "0x883ef0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66530",
+   "code_rva": "0x883f03",
+   "func_rva": "0x883ef0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66530",
+   "code_rva": "0x883f36",
+   "func_rva": "0x883ef0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66548",
+   "code_rva": "0x883f37",
+   "func_rva": "0x883ef0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66548",
+   "code_rva": "0x883f45",
+   "func_rva": "0x883ef0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66548",
+   "code_rva": "0x883f46",
+   "func_rva": "0x883ef0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66548",
+   "code_rva": "0x883f4c",
+   "func_rva": "0x883ef0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66560",
+   "code_rva": "0x883f4d",
+   "func_rva": "0x883ef0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66560",
+   "code_rva": "0x88425b",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66560",
+   "code_rva": "0x88425c",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66560",
+   "code_rva": "0x88426b",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66578",
+   "code_rva": "0x88426c",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66578",
+   "code_rva": "0x884275",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66578",
+   "code_rva": "0x884276",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8f66578",
+   "code_rva": "0x884280",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8fad470",
+   "code_rva": "0x9bd98c",
+   "func_rva": "0x9bd970",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8fad470",
+   "code_rva": "0x9bd98d",
+   "func_rva": "0x9bd970",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8fad470",
+   "code_rva": "0x9bddd3",
+   "func_rva": "0x9bdd50",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 1
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8fad470",
+   "code_rva": "0x9bde64",
+   "func_rva": "0x9bddf0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 3
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8fe35b8",
+   "code_rva": "0xa86d21",
+   "func_rva": "0xa86d10",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 2
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x8fe35b8",
+   "code_rva": "0xa86dd7",
+   "func_rva": "0xa86dd0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9088a08",
+   "code_rva": "0x1055613",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9088a08",
+   "code_rva": "0x1055633",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9088a08",
+   "code_rva": "0x1055648",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9088a08",
+   "code_rva": "0x1055649",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x90b7e50",
+   "code_rva": "0x112324e",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x90b7e50",
+   "code_rva": "0x112324f",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x90b7e50",
+   "code_rva": "0x1123309",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x90b7e50",
+   "code_rva": "0x112330a",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198b60",
+   "code_rva": "0x16b007d",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198b60",
+   "code_rva": "0x16b007e",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198b60",
+   "code_rva": "0x16b0088",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198b60",
+   "code_rva": "0x16b0089",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198b80",
+   "code_rva": "0x16b00d9",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198b80",
+   "code_rva": "0x16b00da",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198b80",
+   "code_rva": "0x16b00e8",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198b80",
+   "code_rva": "0x16b00e9",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198ba0",
+   "code_rva": "0x16b0134",
+   "func_rva": "0x16b0110",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 2
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198ba0",
+   "code_rva": "0x16b0135",
+   "func_rva": "0x16b0110",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 2
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198ba0",
+   "code_rva": "0x16b019a",
+   "func_rva": "0x16b0190",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198ba0",
+   "code_rva": "0x16b019b",
+   "func_rva": "0x16b0190",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198cf0",
+   "code_rva": "0x16b0312",
+   "func_rva": "0x16b02e0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198cf0",
+   "code_rva": "0x16b0313",
+   "func_rva": "0x16b02e0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198cf0",
+   "code_rva": "0x16b0325",
+   "func_rva": "0x16b02e0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198cf0",
+   "code_rva": "0x16b0326",
+   "func_rva": "0x16b02e0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198d10",
+   "code_rva": "0x16b035a",
+   "func_rva": "0x16b0350",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198d10",
+   "code_rva": "0x16b035b",
+   "func_rva": "0x16b0350",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198d10",
+   "code_rva": "0x16b0382",
+   "func_rva": "0x16b0350",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198d10",
+   "code_rva": "0x16b0383",
+   "func_rva": "0x16b0350",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198d30",
+   "code_rva": "0x16b0395",
+   "func_rva": "0x16b0350",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198d30",
+   "code_rva": "0x16b0396",
+   "func_rva": "0x16b0350",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198d30",
+   "code_rva": "0x16b03cf",
+   "func_rva": "0x16b03c0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198d30",
+   "code_rva": "0x16b03d0",
+   "func_rva": "0x16b03c0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198d50",
+   "code_rva": "0x16b046f",
+   "func_rva": "0x16b03c0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198d50",
+   "code_rva": "0x16b0470",
+   "func_rva": "0x16b03c0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198d50",
+   "code_rva": "0x16b0482",
+   "func_rva": "0x16b03c0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x9198d50",
+   "code_rva": "0x16b0483",
+   "func_rva": "0x16b03c0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 6
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x91fc5a8",
+   "code_rva": "0x17e6f30",
+   "func_rva": "0x17e6e10",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 2
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x91fc5a8",
+   "code_rva": "0x17e6f31",
+   "func_rva": "0x17e6e10",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 2
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x91fc5a8",
+   "code_rva": "0x17e6fe6",
+   "func_rva": "0x17e6fa0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 12
+  },
+  {
+   "member": "LocalPlayer",
+   "name_rva": "0x91fc5a8",
+   "code_rva": "0x17e6fe7",
+   "func_rva": "0x17e6fa0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 12
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x84d0f40",
+   "code_rva": "0x3168b5",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x84d0f40",
+   "code_rva": "0x3168b6",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x84d0f40",
+   "code_rva": "0x3168d0",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x84d0f40",
+   "code_rva": "0x3168d1",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x84d0f40",
+   "code_rva": "0x3168d7",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x84d0f40",
+   "code_rva": "0x3168d8",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x84d0f40",
+   "code_rva": "0x3168e7",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x84d0f40",
+   "code_rva": "0x3168e8",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x84d0f40",
+   "code_rva": "0x3168ee",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x84d0f40",
+   "code_rva": "0x3168ef",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x84d0f40",
+   "code_rva": "0x3168f5",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x84d0f40",
+   "code_rva": "0x3168f6",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x84d0fe0",
+   "code_rva": "0x31698b",
+   "func_rva": "0x316910",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x84d0fe0",
+   "code_rva": "0x31698c",
+   "func_rva": "0x316910",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x84d10d0",
+   "code_rva": "0x3169ae",
+   "func_rva": "0x316910",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x84d10d0",
+   "code_rva": "0x3169b5",
+   "func_rva": "0x316910",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8565cf8",
+   "code_rva": "0x33ae20",
+   "func_rva": "0x33ad90",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8565cf8",
+   "code_rva": "0x33ae21",
+   "func_rva": "0x33ad90",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8565cf8",
+   "code_rva": "0x33ae27",
+   "func_rva": "0x33ad90",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8565cf8",
+   "code_rva": "0x33ae28",
+   "func_rva": "0x33ad90",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8565cf8",
+   "code_rva": "0x33ae2e",
+   "func_rva": "0x33ad90",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8565cf8",
+   "code_rva": "0x33ae2f",
+   "func_rva": "0x33ad90",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8565cf8",
+   "code_rva": "0x33ae35",
+   "func_rva": "0x33ad90",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8565cf8",
+   "code_rva": "0x33ae36",
+   "func_rva": "0x33ad90",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8565cf8",
+   "code_rva": "0x33ae3c",
+   "func_rva": "0x33ad90",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8565cf8",
+   "code_rva": "0x33ae3d",
+   "func_rva": "0x33ad90",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8565cf8",
+   "code_rva": "0x33ae43",
+   "func_rva": "0x33ad90",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8565cf8",
+   "code_rva": "0x33ae44",
+   "func_rva": "0x33ad90",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8565cf8",
+   "code_rva": "0x33ae4a",
+   "func_rva": "0x33ad90",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8565cf8",
+   "code_rva": "0x33ae60",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8565cf8",
+   "code_rva": "0x33ae72",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8565cf8",
+   "code_rva": "0x33ae73",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8565dd0",
+   "code_rva": "0x33aeb4",
+   "func_rva": "0x33aeb0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8565dd0",
+   "code_rva": "0x33aeb5",
+   "func_rva": "0x33aeb0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8565ec0",
+   "code_rva": "0x33aeea",
+   "func_rva": "0x33aeb0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8565ec0",
+   "code_rva": "0x33aeeb",
+   "func_rva": "0x33aeb0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8565fc0",
+   "code_rva": "0x33af0d",
+   "func_rva": "0x33aeb0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8565fc0",
+   "code_rva": "0x33af0e",
+   "func_rva": "0x33aeb0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8dcb1a8",
+   "code_rva": "0x48d28e",
+   "func_rva": "0x48d200",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8dcb1a8",
+   "code_rva": "0x48d28f",
+   "func_rva": "0x48d200",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8dcb1a8",
+   "code_rva": "0x48d295",
+   "func_rva": "0x48d200",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8dcb1a8",
+   "code_rva": "0x48d296",
+   "func_rva": "0x48d200",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8dcc1a0",
+   "code_rva": "0x48d7f2",
+   "func_rva": "0x48d7d0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8dcc1a0",
+   "code_rva": "0x48d7f8",
+   "func_rva": "0x48d7d0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8dcc1a0",
+   "code_rva": "0x48d7f9",
+   "func_rva": "0x48d7d0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8dcc1a0",
+   "code_rva": "0x48d803",
+   "func_rva": "0x48d7d0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ddc108",
+   "code_rva": "0x4950a8",
+   "func_rva": "0x494ff0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ddc108",
+   "code_rva": "0x4950a9",
+   "func_rva": "0x494ff0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ddc108",
+   "code_rva": "0x4950af",
+   "func_rva": "0x494ff0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ddc108",
+   "code_rva": "0x4950b0",
+   "func_rva": "0x494ff0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8de0b08",
+   "code_rva": "0x4972c3",
+   "func_rva": "0x497270",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 21,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8de0b08",
+   "code_rva": "0x4972c4",
+   "func_rva": "0x497270",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 21,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8de0b08",
+   "code_rva": "0x4972ca",
+   "func_rva": "0x497270",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 21,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8de0b08",
+   "code_rva": "0x4972cb",
+   "func_rva": "0x497270",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 21,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8de4750",
+   "code_rva": "0x49849d",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8de4750",
+   "code_rva": "0x4984a3",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8de4750",
+   "code_rva": "0x4984a4",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8de4750",
+   "code_rva": "0x4984aa",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8de9900",
+   "code_rva": "0x499d90",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8de9900",
+   "code_rva": "0x499da2",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8de9900",
+   "code_rva": "0x499da3",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8de9900",
+   "code_rva": "0x499da9",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8de99a0",
+   "code_rva": "0x499e19",
+   "func_rva": "0x499de0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8de99a0",
+   "code_rva": "0x499e1a",
+   "func_rva": "0x499de0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8de99a0",
+   "code_rva": "0x499e20",
+   "func_rva": "0x499de0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8de99a0",
+   "code_rva": "0x499e21",
+   "func_rva": "0x499de0",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8e1e700",
+   "code_rva": "0x4ca6b6",
+   "func_rva": "0x4ca670",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 2,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8e1e700",
+   "code_rva": "0x4ca6be",
+   "func_rva": "0x4ca670",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 2,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8e1e700",
+   "code_rva": "0x4ca6bf",
+   "func_rva": "0x4ca670",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 2,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8e1e700",
+   "code_rva": "0x4ca6c5",
+   "func_rva": "0x4ca670",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 2,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8e22de8",
+   "code_rva": "0x4cbe51",
+   "func_rva": "0x4cbe30",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8e22de8",
+   "code_rva": "0x4cbe52",
+   "func_rva": "0x4cbe30",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8e22de8",
+   "code_rva": "0x4cbe58",
+   "func_rva": "0x4cbe30",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8e22de8",
+   "code_rva": "0x4cbe59",
+   "func_rva": "0x4cbe30",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8e483e0",
+   "code_rva": "0x4dbc9f",
+   "func_rva": "0x4dbc10",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8e483e0",
+   "code_rva": "0x4dbca5",
+   "func_rva": "0x4dbc10",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8e48400",
+   "code_rva": "0x4dbcad",
+   "func_rva": "0x4dbc10",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8e48400",
+   "code_rva": "0x4dbcb3",
+   "func_rva": "0x4dbc10",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8e48400",
+   "code_rva": "0x4dbcb4",
+   "func_rva": "0x4dbc10",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8e48400",
+   "code_rva": "0x4dbcba",
+   "func_rva": "0x4dbc10",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8e796e0",
+   "code_rva": "0x4f1543",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8e796e0",
+   "code_rva": "0x4f1544",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8e796e0",
+   "code_rva": "0x4f154a",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8e796e0",
+   "code_rva": "0x4f154b",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8e8e578",
+   "code_rva": "0x4f6a1f",
+   "func_rva": "0x4f6990",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8e8e578",
+   "code_rva": "0x4f6a25",
+   "func_rva": "0x4f6990",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8e8e578",
+   "code_rva": "0x4f6a26",
+   "func_rva": "0x4f6990",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8e8e578",
+   "code_rva": "0x4f6a2c",
+   "func_rva": "0x4f6990",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 6
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ebb428",
+   "code_rva": "0x51c8cc",
+   "func_rva": "0x51c830",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ebb428",
+   "code_rva": "0x51c8cd",
+   "func_rva": "0x51c830",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ebb428",
+   "code_rva": "0x51c8d3",
+   "func_rva": "0x51c830",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ebb428",
+   "code_rva": "0x51c8d4",
+   "func_rva": "0x51c830",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ebb460",
+   "code_rva": "0x51c8da",
+   "func_rva": "0x51c830",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ebb460",
+   "code_rva": "0x51c8db",
+   "func_rva": "0x51c830",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ebb490",
+   "code_rva": "0x51c8e1",
+   "func_rva": "0x51c830",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ebb490",
+   "code_rva": "0x51c8e2",
+   "func_rva": "0x51c830",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ebb490",
+   "code_rva": "0x51c8e8",
+   "func_rva": "0x51c830",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ebb490",
+   "code_rva": "0x51c8e9",
+   "func_rva": "0x51c830",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ebb4c0",
+   "code_rva": "0x51c8ef",
+   "func_rva": "0x51c830",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ebb4c0",
+   "code_rva": "0x51c8f0",
+   "func_rva": "0x51c830",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ebb4f8",
+   "code_rva": "0x51c8f6",
+   "func_rva": "0x51c830",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ebb4f8",
+   "code_rva": "0x51c8f7",
+   "func_rva": "0x51c830",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ebb538",
+   "code_rva": "0x51c8fd",
+   "func_rva": "0x51c830",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ebb538",
+   "code_rva": "0x51c8fe",
+   "func_rva": "0x51c830",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ebb570",
+   "code_rva": "0x51c904",
+   "func_rva": "0x51c830",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ebb570",
+   "code_rva": "0x51c905",
+   "func_rva": "0x51c830",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ebb5a0",
+   "code_rva": "0x51c90b",
+   "func_rva": "0x51c830",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ebb5a0",
+   "code_rva": "0x51c90c",
+   "func_rva": "0x51c830",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 39,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ec4740",
+   "code_rva": "0x523a2f",
+   "func_rva": "0x523a20",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 2,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ec4740",
+   "code_rva": "0x523a3a",
+   "func_rva": "0x523a20",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 2,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ec48a0",
+   "code_rva": "0x523b7b",
+   "func_rva": "0x523b70",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8ec48a0",
+   "code_rva": "0x523b7c",
+   "func_rva": "0x523b70",
+   "func_is_type_reg_stub": true,
+   "stores_into_typeinfo": 13,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8f5c1f0",
+   "code_rva": "0x82eba6",
+   "func_rva": "0x82eb4b",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 1
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8f5c1f0",
+   "code_rva": "0x82f042",
+   "func_rva": "0x82efc0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 5
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8f5c1f0",
+   "code_rva": "0x82f171",
+   "func_rva": "0x82efc0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 5
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8f5c1f0",
+   "code_rva": "0x82f27b",
+   "func_rva": "0x82efc0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 5
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8f5c210",
+   "code_rva": "0x82f2a0",
+   "func_rva": "0x82efc0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 5
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8f5c210",
+   "code_rva": "0x82f2eb",
+   "func_rva": "0x82efc0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 5
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8f5c210",
+   "code_rva": "0x82f639",
+   "func_rva": "0x82f350",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 3
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8f5c210",
+   "code_rva": "0x82f63a",
+   "func_rva": "0x82f350",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 3
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fb5500",
+   "code_rva": "0x9e8aff",
+   "func_rva": "0x9e8a90",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fb5500",
+   "code_rva": "0x9e8b00",
+   "func_rva": "0x9e8a90",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fb5500",
+   "code_rva": "0x9e8b0e",
+   "func_rva": "0x9e8a90",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fb5500",
+   "code_rva": "0x9e8b0f",
+   "func_rva": "0x9e8a90",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc4630",
+   "code_rva": "0xa0b516",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc4630",
+   "code_rva": "0xa0b517",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc4630",
+   "code_rva": "0xa0b52e",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc4630",
+   "code_rva": "0xa0b52f",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc4658",
+   "code_rva": "0xa0b572",
+   "func_rva": "0xa0b55e",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc4658",
+   "code_rva": "0xa0b573",
+   "func_rva": "0xa0b55e",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc4658",
+   "code_rva": "0xa0b57c",
+   "func_rva": "0xa0b55e",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc4658",
+   "code_rva": "0xa0b57d",
+   "func_rva": "0xa0b55e",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc4680",
+   "code_rva": "0xa0b5c0",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc4680",
+   "code_rva": "0xa0b5c1",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc4680",
+   "code_rva": "0xa0b61a",
+   "func_rva": "0xa0b610",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc4680",
+   "code_rva": "0xa0b61b",
+   "func_rva": "0xa0b610",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc4770",
+   "code_rva": "0xa0b896",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc4770",
+   "code_rva": "0xa0b897",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc4770",
+   "code_rva": "0xa0b8ae",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc4770",
+   "code_rva": "0xa0b8af",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc4790",
+   "code_rva": "0xa0b8f2",
+   "func_rva": "0xa0b8de",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc4790",
+   "code_rva": "0xa0b8f3",
+   "func_rva": "0xa0b8de",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc4790",
+   "code_rva": "0xa0b8fc",
+   "func_rva": "0xa0b8de",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc4790",
+   "code_rva": "0xa0b8fd",
+   "func_rva": "0xa0b8de",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc4820",
+   "code_rva": "0xa0bab2",
+   "func_rva": "0xa0ba9e",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc4820",
+   "code_rva": "0xa0bab3",
+   "func_rva": "0xa0ba9e",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc4820",
+   "code_rva": "0xa0babc",
+   "func_rva": "0xa0ba9e",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc4820",
+   "code_rva": "0xa0babd",
+   "func_rva": "0xa0ba9e",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc9a28",
+   "code_rva": "0xa186b2",
+   "func_rva": "0xa181c0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 2
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc9a28",
+   "code_rva": "0xa186b3",
+   "func_rva": "0xa181c0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 2
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc9a28",
+   "code_rva": "0xa1883a",
+   "func_rva": "0xa181c0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 2
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x8fc9a28",
+   "code_rva": "0xa1883b",
+   "func_rva": "0xa181c0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 2
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90a0458",
+   "code_rva": "0x10bebcb",
+   "func_rva": "0x10bea80",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90a0458",
+   "code_rva": "0x10bebcc",
+   "func_rva": "0x10bea80",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90a0458",
+   "code_rva": "0x10becc3",
+   "func_rva": "0x10bec10",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90a0458",
+   "code_rva": "0x10becc4",
+   "func_rva": "0x10bec10",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90a39b8",
+   "code_rva": "0x10c6f9f",
+   "func_rva": "0x10c6f90",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90a39b8",
+   "code_rva": "0x10c6fa0",
+   "func_rva": "0x10c6f90",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90a39b8",
+   "code_rva": "0x10c7001",
+   "func_rva": "0x10c6f90",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90a39b8",
+   "code_rva": "0x10c7002",
+   "func_rva": "0x10c6f90",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90a3ab0",
+   "code_rva": "0x10c74bd",
+   "func_rva": "0x10c7420",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90a3ab0",
+   "code_rva": "0x10c74be",
+   "func_rva": "0x10c7420",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90a3ab0",
+   "code_rva": "0x10c74d7",
+   "func_rva": "0x10c7420",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90a3ab0",
+   "code_rva": "0x10c74d8",
+   "func_rva": "0x10c7420",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90a3ac8",
+   "code_rva": "0x10c74f9",
+   "func_rva": "0x10c7420",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90a3ac8",
+   "code_rva": "0x10c74fa",
+   "func_rva": "0x10c7420",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90a3ac8",
+   "code_rva": "0x10c759b",
+   "func_rva": "0x10c7420",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90a3ac8",
+   "code_rva": "0x10c759c",
+   "func_rva": "0x10c7420",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90a3b70",
+   "code_rva": "0x10c7905",
+   "func_rva": "0x10c7770",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 34
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90a3b70",
+   "code_rva": "0x10c7906",
+   "func_rva": "0x10c7770",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 34
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90a3b70",
+   "code_rva": "0x10c791f",
+   "func_rva": "0x10c7770",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 34
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90a3b70",
+   "code_rva": "0x10c7920",
+   "func_rva": "0x10c7770",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 34
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90acf30",
+   "code_rva": "0x10dc114",
+   "func_rva": "0x10dbc4f",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 54
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90acf30",
+   "code_rva": "0x10dc115",
+   "func_rva": "0x10dbc4f",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 54
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90acf30",
+   "code_rva": "0x10dc136",
+   "func_rva": "0x10dbc4f",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 54
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90acf30",
+   "code_rva": "0x10dc137",
+   "func_rva": "0x10dbc4f",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 54
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90c4440",
+   "code_rva": "0x115c8dc",
+   "func_rva": "0x115acf0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 61
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90c4440",
+   "code_rva": "0x115c8dd",
+   "func_rva": "0x115acf0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 61
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90c4440",
+   "code_rva": "0x115c904",
+   "func_rva": "0x115acf0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 61
+  },
+  {
+   "member": "ClientPlayer",
+   "name_rva": "0x90c4440",
+   "code_rva": "0x115c905",
+   "func_rva": "0x115acf0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 61
+  },
+  {
+   "member": "ClientConnection",
+   "name_rva": "0x90a3908",
+   "code_rva": "0x10c6c7f",
+   "func_rva": "0x10c6c70",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientConnection",
+   "name_rva": "0x90a3908",
+   "code_rva": "0x10c6c80",
+   "func_rva": "0x10c6c70",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientConnection",
+   "name_rva": "0x90a3928",
+   "code_rva": "0x10c6d05",
+   "func_rva": "0x10c6c70",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientConnection",
+   "name_rva": "0x90a3928",
+   "code_rva": "0x10c6d06",
+   "func_rva": "0x10c6c70",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientConnection",
+   "name_rva": "0x90a3950",
+   "code_rva": "0x10c6d1f",
+   "func_rva": "0x10c6c70",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientConnection",
+   "name_rva": "0x90a3950",
+   "code_rva": "0x10c6d20",
+   "func_rva": "0x10c6c70",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientConnection",
+   "name_rva": "0x90a3970",
+   "code_rva": "0x10c6d41",
+   "func_rva": "0x10c6c70",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientConnection",
+   "name_rva": "0x90a3970",
+   "code_rva": "0x10c6d42",
+   "func_rva": "0x10c6c70",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientConnection",
+   "name_rva": "0x90a3990",
+   "code_rva": "0x10c6e21",
+   "func_rva": "0x10c6c70",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientConnection",
+   "name_rva": "0x90a3990",
+   "code_rva": "0x10c6e22",
+   "func_rva": "0x10c6c70",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "ClientConnection",
+   "name_rva": "0x90a3990",
+   "code_rva": "0x10c6f13",
+   "func_rva": "0x10c6e60",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientConnection",
+   "name_rva": "0x90a3990",
+   "code_rva": "0x10c6f14",
+   "func_rva": "0x10c6e60",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 4
+  },
+  {
+   "member": "ClientConnection",
+   "name_rva": "0x91280a0",
+   "code_rva": "0x12f1078",
+   "func_rva": "0x12f0f80",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 16
+  },
+  {
+   "member": "ClientConnection",
+   "name_rva": "0x91280a0",
+   "code_rva": "0x12f1079",
+   "func_rva": "0x12f0f80",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 16
+  },
+  {
+   "member": "ClientConnection",
+   "name_rva": "0x91280a0",
+   "code_rva": "0x12f108a",
+   "func_rva": "0x12f0f80",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 16
+  },
+  {
+   "member": "ClientConnection",
+   "name_rva": "0x91280a0",
+   "code_rva": "0x12f108b",
+   "func_rva": "0x12f0f80",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 16
+  },
+  {
+   "member": "GameContext",
+   "name_rva": "0x8e1a8e8",
+   "code_rva": "0x4c8948",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "GameContext",
+   "name_rva": "0x8e1a8e8",
+   "code_rva": "0x4c8949",
+   "func_rva": null,
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 0
+  },
+  {
+   "member": "TimeSync",
+   "name_rva": "0x90a3b00",
+   "code_rva": "0x10c766b",
+   "func_rva": "0x10c75e0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "TimeSync",
+   "name_rva": "0x90a3b00",
+   "code_rva": "0x10c766c",
+   "func_rva": "0x10c75e0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "TimeSync",
+   "name_rva": "0x90a3b00",
+   "code_rva": "0x10c768d",
+   "func_rva": "0x10c75e0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "TimeSync",
+   "name_rva": "0x90a3b00",
+   "code_rva": "0x10c768e",
+   "func_rva": "0x10c75e0",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 8
+  },
+  {
+   "member": "OnlineManager",
+   "name_rva": "0x90a3b60",
+   "code_rva": "0x10c7875",
+   "func_rva": "0x10c7770",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 34
+  },
+  {
+   "member": "OnlineManager",
+   "name_rva": "0x90a3b60",
+   "code_rva": "0x10c7876",
+   "func_rva": "0x10c7770",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 34
+  },
+  {
+   "member": "OnlineManager",
+   "name_rva": "0x90a3b60",
+   "code_rva": "0x10c7897",
+   "func_rva": "0x10c7770",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 34
+  },
+  {
+   "member": "OnlineManager",
+   "name_rva": "0x90a3b60",
+   "code_rva": "0x10c7898",
+   "func_rva": "0x10c7770",
+   "func_is_type_reg_stub": false,
+   "stores_into_typeinfo": 0,
+   "rdata_leas": 34
+  }
+ ]
+}

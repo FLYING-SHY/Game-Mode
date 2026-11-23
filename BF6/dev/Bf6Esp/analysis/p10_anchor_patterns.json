@@ -1,0 +1,199 @@
+{
+  "imageBase": 5368709120,
+  "sections": [
+    {
+      "name": ".text",
+      "vaddr": 4096,
+      "vsize": 120325503,
+      "rawsize": 120325632,
+      "rawoff": 1536
+    },
+    {
+      "name": "ctr",
+      "vaddr": 120332288,
+      "vsize": 17943011,
+      "rawsize": 17943040,
+      "rawoff": 120327168
+    },
+    {
+      "name": ".rdata",
+      "vaddr": 138276864,
+      "vsize": 24044982,
+      "rawsize": 24045056,
+      "rawoff": 138270208
+    },
+    {
+      "name": ".data",
+      "vaddr": 162324480,
+      "vsize": 13390792,
+      "rawsize": 6595072,
+      "rawoff": 162315264
+    },
+    {
+      "name": ".pdata",
+      "vaddr": 175718400,
+      "vsize": 7569264,
+      "rawsize": 7569408,
+      "rawoff": 168910336
+    },
+    {
+      "name": "typeinfo",
+      "vaddr": 183287808,
+      "vsize": 6023728,
+      "rawsize": 6024192,
+      "rawoff": 176479744
+    },
+    {
+      "name": "fieldinf",
+      "vaddr": 189313024,
+      "vsize": 2390976,
+      "rawsize": 2391040,
+      "rawoff": 182503936
+    },
+    {
+      "name": "_RDATA",
+      "vaddr": 191705088,
+      "vsize": 238344,
+      "rawsize": 238592,
+      "rawoff": 184894976
+    },
+    {
+      "name": ".rodata",
+      "vaddr": 191946752,
+      "vsize": 3456,
+      "rawsize": 3584,
+      "rawoff": 185133568
+    },
+    {
+      "name": ".rsrc",
+      "vaddr": 191950848,
+      "vsize": 333888,
+      "rawsize": 334336,
+      "rawoff": 185137152
+    },
+    {
+      "name": ".reloc",
+      "vaddr": 192286720,
+      "vsize": 2439256,
+      "rawsize": 2439680,
+      "rawoff": 185471488
+    },
+    {
+      "name": ".vm_sec",
+      "vaddr": 194727936,
+      "vsize": 49664,
+      "rawsize": 49664,
+      "rawoff": 187911168
+    },
+    {
+      "name": ".vlizer",
+      "vaddr": 194781184,
+      "vsize": 11258880,
+      "rawsize": 11258880,
+      "rawoff": 187960832
+    }
+  ],
+  "names": {
+    "ClientSoldierEntity": {
+      "name": "ClientSoldierEntity",
+      "stringRvas": [
+        "0x9213a30"
+      ],
+      "refs": []
+    },
+    "ClientSoldierHealthComponent": {
+      "name": "ClientSoldierHealthComponent",
+      "stringRvas": [
+        "0x8e3ca02",
+        "0x9214940"
+      ],
+      "refs": []
+    },
+    "CurrentHealth": {
+      "name": "CurrentHealth",
+      "stringRvas": [
+        "0x8e2cd8d",
+        "0x8e79728"
+      ],
+      "refs": []
+    },
+    "MaxHealth": {
+      "name": "MaxHealth",
+      "stringRvas": [
+        "0x8e2ce28",
+        "0x8fcdaf1"
+      ],
+      "refs": []
+    },
+    "CurrentTeamId": {
+      "name": "CurrentTeamId",
+      "stringRvas": [
+        "0x8e717e8"
+      ],
+      "refs": []
+    },
+    "ClientPlayerManager": {
+      "name": "ClientPlayerManager",
+      "stringRvas": [
+        "0x90a3ac8"
+      ],
+      "refs": []
+    },
+    "ClientPlayerIteratorEntity": {
+      "name": "ClientPlayerIteratorEntity",
+      "stringRvas": [
+        "0x90a39b8"
+      ],
+      "refs": []
+    },
+    "ClientConnection": {
+      "name": "ClientConnection",
+      "stringRvas": [
+        "0x90a3990"
+      ],
+      "refs": []
+    },
+    "EcsRimeTransform": {
+      "name": "EcsRimeTransform",
+      "stringRvas": [
+        "0x91e7d58"
+      ],
+      "refs": []
+    },
+    "EcsWorldTransform": {
+      "name": "EcsWorldTransform",
+      "stringRvas": [
+        "0x9050d78"
+      ],
+      "refs": []
+    },
+    "ClientSoldierCameraComponent": {
+      "name": "ClientSoldierCameraComponent",
+      "stringRvas": [
+        "0x9214960"
+      ],
+      "refs": []
+    },
+    "ClientSoldierEntryComponent": {
+      "name": "ClientSoldierEntryComponent",
+      "stringRvas": [
+        "0x9214a18"
+      ],
+      "refs": []
+    },
+    "OwningTeam": {
+      "name": "OwningTeam",
+      "stringRvas": [
+        "0x8e41d20"
+      ],
+      "refs": []
+    },
+    "ShooterTeamId": {
+      "name": "ShooterTeamId",
+      "stringRvas": [
+        "0x8df27c0"
+      ],
+      "refs": []
+    }
+  }
+}

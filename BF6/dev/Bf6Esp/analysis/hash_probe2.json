@@ -1,0 +1,1695 @@
+{
+  "name_count": 85245,
+  "universe32": 322150,
+  "universe64": 292973,
+  "fams32": {
+    "crc32:init=00000000:xo=00000000": {
+      "hits": 8,
+      "samples": [
+        [
+          "ChatSettings",
+          "0x4791f210"
+        ],
+        [
+          "MRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxGTAXBgNVBAsTEHd3dy5kaWdpY2VydC5j",
+          "0xa1131d91"
+        ],
+        [
+          "MeshAssetPart",
+          "0x45040938"
+        ],
+        [
+          "PoseSet",
+          "0x49e57338"
+        ],
+        [
+          "PredictionCorrection",
+          "0x416ab1f0"
+        ]
+      ]
+    },
+    "crc32:init=00000000:xo=ffffffff": {
+      "hits": 4,
+      "samples": [
+        [
+          "ConceptBayonetCharge",
+          "0x198e499d"
+        ],
+        [
+          "fpNr",
+          "0x65b24deb"
+        ],
+        [
+          "icJr",
+          "0x47dd8590"
+        ],
+        [
+          "perhaps",
+          "0x99082519"
+        ]
+      ]
+    },
+    "crc32:init=ffffffff:xo=00000000": {
+      "hits": 7,
+      "samples": [
+        [
+          "AUTH_ERR_NO_SUCH_GROUP",
+          "0x41889610"
+        ],
+        [
+          "COMPRESSION_ERROR",
+          "0xfc04ff6d"
+        ],
+        [
+          "GlassDawn",
+          "0xad535f59"
+        ],
+        [
+          "LocalLightShadowQuality",
+          "0x19a5af74"
+        ],
+        [
+          "SenseAudition",
+          "0x4a062748"
+        ]
+      ]
+    },
+    "crc32:init=ffffffff:xo=ffffffff": {
+      "hits": 6,
+      "samples": [
+        [
+          "CancelSentFriendInviteRequest",
+          "0xccaa5849"
+        ],
+        [
+          "ConceptVault",
+          "0x49c7e828"
+        ],
+        [
+          "FadeWaitingEnable",
+          "0x49c3f938"
+        ],
+        [
+          "androidApiLevel",
+          "0x39972dca"
+        ],
+        [
+          "m_device",
+          "0x43bce470"
+        ]
+      ]
+    },
+    "crc32:init=12345678:xo=00000000": {
+      "hits": 3,
+      "samples": [
+        [
+          "XoYq",
+          "0x8f605429"
+        ],
+        [
+          "XtGY",
+          "0x7ee78f9d"
+        ],
+        [
+          "duplicate",
+          "0x3e4e2ce8"
+        ]
+      ]
+    },
+    "crc32:init=12345678:xo=ffffffff": {
+      "hits": 10,
+      "samples": [
+        [
+          "BFUIHudShakeCategory_CameraShake",
+          "0xb79c496c"
+        ],
+        [
+          "Biome",
+          "0x49b08690"
+        ],
+        [
+          "CenterPosition",
+          "0xfc6c92fc"
+        ],
+        [
+          "CurrencyType_Premium",
+          "0x59bc7a1d"
+        ],
+        [
+          "ESMQueuePriority_Queue_High",
+          "0x47bf9350"
+        ]
+      ]
+    },
+    "crc32:init=deadbeef:xo=00000000": {
+      "hits": 7,
+      "samples": [
+        [
+          "DarkGoldenRod",
+          "0xf6fc022"
+        ],
+        [
+          "DarkMagenta",
+          "0xdbdfd0df"
+        ],
+        [
+          "EcsDestroyComponentFlags_Immediate",
+          "0x49b36468"
+        ],
+        [
+          "GBuffer_LowEnd_Gibs_MotionVectors",
+          "0x9e30afea"
+        ],
+        [
+          "error_message",
+          "0x4b8acfe2"
+        ]
+      ]
+    },
+    "crc32:init=deadbeef:xo=ffffffff": {
+      "hits": 4,
+      "samples": [
+        [
+          "LogitechDrivingForcePro",
+          "0x4b509f10"
+        ],
+        [
+          "UpdateContinuously",
+          "0x578286d1"
+        ],
+        [
+          "abv5e",
+          "0x9c25920c"
+        ],
+        [
+          "jvAT",
+          "0x4562a8d0"
+        ]
+      ]
+    },
+    "crc32n:init=00000000:xo=00000000": {
+      "hits": 85245,
+      "samples": [
+        [
+          "A08B",
+          "0x0"
+        ],
+        [
+          "A08B2",
+          "0x0"
+        ],
+        [
+          "A08B8",
+          "0x0"
+        ],
+        [
+          "A08D",
+          "0x0"
+        ],
+        [
+          "A08D2",
+          "0x0"
+        ]
+      ]
+    },
+    "crc32n:init=00000000:xo=ffffffff": {
+      "hits": 85245,
+      "samples": [
+        [
+          "A08B",
+          "0xffffffff"
+        ],
+        [
+          "A08B2",
+          "0xffffffff"
+        ],
+        [
+          "A08B8",
+          "0xffffffff"
+        ],
+        [
+          "A08D",
+          "0xffffffff"
+        ],
+        [
+          "A08D2",
+          "0xffffffff"
+        ]
+      ]
+    },
+    "crc32n:init=ffffffff:xo=00000000": {
+      "hits": 85245,
+      "samples": [
+        [
+          "A08B",
+          "0x0"
+        ],
+        [
+          "A08B2",
+          "0x0"
+        ],
+        [
+          "A08B8",
+          "0x0"
+        ],
+        [
+          "A08D",
+          "0x0"
+        ],
+        [
+          "A08D2",
+          "0x0"
+        ]
+      ]
+    },
+    "crc32n:init=ffffffff:xo=ffffffff": {
+      "hits": 85245,
+      "samples": [
+        [
+          "A08B",
+          "0xffffffff"
+        ],
+        [
+          "A08B2",
+          "0xffffffff"
+        ],
+        [
+          "A08B8",
+          "0xffffffff"
+        ],
+        [
+          "A08D",
+          "0xffffffff"
+        ],
+        [
+          "A08D2",
+          "0xffffffff"
+        ]
+      ]
+    },
+    "crc32n:init=12345678:xo=00000000": {
+      "hits": 85245,
+      "samples": [
+        [
+          "A08B",
+          "0x0"
+        ],
+        [
+          "A08B2",
+          "0x0"
+        ],
+        [
+          "A08B8",
+          "0x0"
+        ],
+        [
+          "A08D",
+          "0x0"
+        ],
+        [
+          "A08D2",
+          "0x0"
+        ]
+      ]
+    },
+    "crc32n:init=12345678:xo=ffffffff": {
+      "hits": 85245,
+      "samples": [
+        [
+          "A08B",
+          "0xffffffff"
+        ],
+        [
+          "A08B2",
+          "0xffffffff"
+        ],
+        [
+          "A08B8",
+          "0xffffffff"
+        ],
+        [
+          "A08D",
+          "0xffffffff"
+        ],
+        [
+          "A08D2",
+          "0xffffffff"
+        ]
+      ]
+    },
+    "crc32n:init=deadbeef:xo=00000000": {
+      "hits": 85245,
+      "samples": [
+        [
+          "A08B",
+          "0x0"
+        ],
+        [
+          "A08B2",
+          "0x0"
+        ],
+        [
+          "A08B8",
+          "0x0"
+        ],
+        [
+          "A08D",
+          "0x0"
+        ],
+        [
+          "A08D2",
+          "0x0"
+        ]
+      ]
+    },
+    "crc32n:init=deadbeef:xo=ffffffff": {
+      "hits": 85245,
+      "samples": [
+        [
+          "A08B",
+          "0xffffffff"
+        ],
+        [
+          "A08B2",
+          "0xffffffff"
+        ],
+        [
+          "A08B8",
+          "0xffffffff"
+        ],
+        [
+          "A08D",
+          "0xffffffff"
+        ],
+        [
+          "A08D2",
+          "0xffffffff"
+        ]
+      ]
+    },
+    "crc32c:init=00000000:xo=00000000": {
+      "hits": 5,
+      "samples": [
+        [
+          "ClientMenuInterfaceImpl_getStoreMenu",
+          "0x4067fcf8"
+        ],
+        [
+          "c6Xu",
+          "0x475906f0"
+        ],
+        [
+          "removeAllSync",
+          "0xdc1ad907"
+        ],
+        [
+          "seq_dur",
+          "0x49e62840"
+        ],
+        [
+          "slvndx",
+          "0xddafcf7e"
+        ]
+      ]
+    },
+    "crc32c:init=00000000:xo=ffffffff": {
+      "hits": 7,
+      "samples": [
+        [
+          "ActionDataType_Module",
+          "0x40d451c0"
+        ],
+        [
+          "ChannelGroupEntity",
+          "0xfc7b6c6"
+        ],
+        [
+          "CvzP",
+          "0xe5642473"
+        ],
+        [
+          "Interrupted",
+          "0x4b4d9570"
+        ],
+        [
+          "Loot",
+          "0x62583f85"
+        ]
+      ]
+    },
+    "crc32c:init=ffffffff:xo=00000000": {
+      "hits": 7,
+      "samples": [
+        [
+          "CubicIn",
+          "0xeb034e25"
+        ],
+        [
+          "EcsEmitterExtendedPropertyType_SurfaceShaderOverride",
+          "0x8019b4e0"
+        ],
+        [
+          "FadeStartRate",
+          "0xf79ff0c1"
+        ],
+        [
+          "LightCullGeometricDebugMode_Pass3_Bitset",
+          "0x87931aae"
+        ],
+        [
+          "ServerRecordVehicleTrack",
+          "0x49e66054"
+        ]
+      ]
+    },
+    "crc32c:init=ffffffff:xo=ffffffff": {
+      "hits": 3,
+      "samples": [
+        [
+          "ClientAffectorReceiveEntity",
+          "0x49f62340"
+        ],
+        [
+          "GetAllRanksResponse",
+          "0x46ef84d7"
+        ],
+        [
+          "RimeScreenRenderTargetEntity",
+          "0x83b510f2"
+        ]
+      ]
+    },
+    "crc32c:init=12345678:xo=00000000": {
+      "hits": 8,
+      "samples": [
+        [
+          "AssetNetworkIdMap_IdToAsset",
+          "0x4bf1b19"
+        ],
+        [
+          "CreatePsAttachmentTrackerResponse",
+          "0x3f7690e3"
+        ],
+        [
+          "DamageZoneEntityConstants_MaxNetworked",
+          "0xb862064"
+        ],
+        [
+          "ListProgressableRequest",
+          "0x26f95fbe"
+        ],
+        [
+          "PPQG",
+          "0x49b09318"
+        ]
+      ]
+    },
+    "crc32c:init=12345678:xo=ffffffff": {
+      "hits": 7,
+      "samples": [
+        [
+          "BFUIDogtagType_Default",
+          "0x97c90152"
+        ],
+        [
+          "ClientToServerConstants_LocalPlayerViewCount",
+          "0x96bfadc0"
+        ],
+        [
+          "HDR10_Float",
+          "0x495c3033"
+        ],
+        [
+          "ObjectTransform4x3InstanceData4x2Half",
+          "0x17a0c1f5"
+        ],
+        [
+          "ServerLockingWeaponJammingAffector",
+          "0xf80361f6"
+        ]
+      ]
+    },
+    "crc32c:init=deadbeef:xo=00000000": {
+      "hits": 2,
+      "samples": [
+        [
+          "p42zQ",
+          "0x49ba4990"
+        ],
+        [
+          "pTTQ",
+          "0x9871b185"
+        ]
+      ]
+    },
+    "crc32c:init=deadbeef:xo=ffffffff": {
+      "hits": 13,
+      "samples": [
+        [
+          "E7Hf",
+          "0x3bd5b586"
+        ],
+        [
+          "FBApplyAccelerationFromInputControllerAsset",
+          "0x2ab7e7cd"
+        ],
+        [
+          "MapSettings",
+          "0xc1520f94"
+        ],
+        [
+          "MixerValueUIOrientation_Vertical",
+          "0x32e5bfce"
+        ],
+        [
+          "SweepableVirtualPoolMaxDelayedOperations",
+          "0x8d5ad26"
+        ]
+      ]
+    },
+    "crc32cn:init=00000000:xo=00000000": {
+      "hits": 85245,
+      "samples": [
+        [
+          "A08B",
+          "0x0"
+        ],
+        [
+          "A08B2",
+          "0x0"
+        ],
+        [
+          "A08B8",
+          "0x0"
+        ],
+        [
+          "A08D",
+          "0x0"
+        ],
+        [
+          "A08D2",
+          "0x0"
+        ]
+      ]
+    },
+    "crc32cn:init=00000000:xo=ffffffff": {
+      "hits": 85245,
+      "samples": [
+        [
+          "A08B",
+          "0xffffffff"
+        ],
+        [
+          "A08B2",
+          "0xffffffff"
+        ],
+        [
+          "A08B8",
+          "0xffffffff"
+        ],
+        [
+          "A08D",
+          "0xffffffff"
+        ],
+        [
+          "A08D2",
+          "0xffffffff"
+        ]
+      ]
+    },
+    "crc32cn:init=ffffffff:xo=00000000": {
+      "hits": 85245,
+      "samples": [
+        [
+          "A08B",
+          "0x0"
+        ],
+        [
+          "A08B2",
+          "0x0"
+        ],
+        [
+          "A08B8",
+          "0x0"
+        ],
+        [
+          "A08D",
+          "0x0"
+        ],
+        [
+          "A08D2",
+          "0x0"
+        ]
+      ]
+    },
+    "crc32cn:init=ffffffff:xo=ffffffff": {
+      "hits": 85245,
+      "samples": [
+        [
+          "A08B",
+          "0xffffffff"
+        ],
+        [
+          "A08B2",
+          "0xffffffff"
+        ],
+        [
+          "A08B8",
+          "0xffffffff"
+        ],
+        [
+          "A08D",
+          "0xffffffff"
+        ],
+        [
+          "A08D2",
+          "0xffffffff"
+        ]
+      ]
+    },
+    "crc32cn:init=12345678:xo=00000000": {
+      "hits": 85245,
+      "samples": [
+        [
+          "A08B",
+          "0x0"
+        ],
+        [
+          "A08B2",
+          "0x0"
+        ],
+        [
+          "A08B8",
+          "0x0"
+        ],
+        [
+          "A08D",
+          "0x0"
+        ],
+        [
+          "A08D2",
+          "0x0"
+        ]
+      ]
+    },
+    "crc32cn:init=12345678:xo=ffffffff": {
+      "hits": 85245,
+      "samples": [
+        [
+          "A08B",
+          "0xffffffff"
+        ],
+        [
+          "A08B2",
+          "0xffffffff"
+        ],
+        [
+          "A08B8",
+          "0xffffffff"
+        ],
+        [
+          "A08D",
+          "0xffffffff"
+        ],
+        [
+          "A08D2",
+          "0xffffffff"
+        ]
+      ]
+    },
+    "crc32cn:init=deadbeef:xo=00000000": {
+      "hits": 85245,
+      "samples": [
+        [
+          "A08B",
+          "0x0"
+        ],
+        [
+          "A08B2",
+          "0x0"
+        ],
+        [
+          "A08B8",
+          "0x0"
+        ],
+        [
+          "A08D",
+          "0x0"
+        ],
+        [
+          "A08D2",
+          "0x0"
+        ]
+      ]
+    },
+    "crc32cn:init=deadbeef:xo=ffffffff": {
+      "hits": 85245,
+      "samples": [
+        [
+          "A08B",
+          "0xffffffff"
+        ],
+        [
+          "A08B2",
+          "0xffffffff"
+        ],
+        [
+          "A08B8",
+          "0xffffffff"
+        ],
+        [
+          "A08D",
+          "0xffffffff"
+        ],
+        [
+          "A08D2",
+          "0xffffffff"
+        ]
+      ]
+    },
+    "fnv1a:seed=00000000": {
+      "hits": 5,
+      "samples": [
+        [
+          "ArenaId_Server",
+          "0xda911bac"
+        ],
+        [
+          "ZjLE",
+          "0x14e214df"
+        ],
+        [
+          "gameBrowserTeamInfoVector",
+          "0x49ed0928"
+        ],
+        [
+          "reverse_sequence",
+          "0xd55ec8a"
+        ],
+        [
+          "w7lg",
+          "0xa903977b"
+        ]
+      ]
+    },
+    "fnv1:seed=00000000": {
+      "hits": 10,
+      "samples": [
+        [
+          "DrawGpuHistogramHDRMode",
+          "0xf1c98345"
+        ],
+        [
+          "DynamicGameSettingsManagerGhost",
+          "0x407dcb20"
+        ],
+        [
+          "EdgeModelCastShadowsEnable",
+          "0x22ff1123"
+        ],
+        [
+          "EmYa",
+          "0xfffb931c"
+        ],
+        [
+          "HardwareIconResizeAndAlignBehavior_ResizeAndAlignCropped",
+          "0x37943c6d"
+        ]
+      ]
+    },
+    "fnv1a:seed=811c9dc5": {
+      "hits": 8,
+      "samples": [
+        [
+          "JointToEffectorFeatureAsset",
+          "0xfbceabc8"
+        ],
+        [
+          "NotNearlyEqualsFloat2Float",
+          "0xe80be130"
+        ],
+        [
+          "ScreenSpaceGlobalIllumination",
+          "0x65cf3c95"
+        ],
+        [
+          "SubmitDisconnectionReportResponse",
+          "0x9b53a70a"
+        ],
+        [
+          "Voulez",
+          "0x4b539a30"
+        ]
+      ]
+    },
+    "fnv1:seed=811c9dc5": {
+      "hits": 4,
+      "samples": [
+        [
+          "FadeOut",
+          "0x29599b9"
+        ],
+        [
+          "PTMTrajectoryAdjustMethod_None",
+          "0x4623bda0"
+        ],
+        [
+          "__physicsCapsuleQueryNodeHasExcludedEntities",
+          "0x45ae6960"
+        ],
+        [
+          "dashoffset",
+          "0x421fe1e0"
+        ]
+      ]
+    },
+    "fnv1a:seed=00001505": {
+      "hits": 6,
+      "samples": [
+        [
+          "AnalogMatchType_MATCH_SWEEP",
+          "0x2bcc8363"
+        ],
+        [
+          "PGYPP",
+          "0x545516cb"
+        ],
+        [
+          "PlayerHighlightEntity",
+          "0x7b744d6b"
+        ],
+        [
+          "dFyV",
+          "0xd5cae15c"
+        ],
+        [
+          "indirectBufferOffset_asfloat",
+          "0xce0a10e7"
+        ]
+      ]
+    },
+    "fnv1:seed=00001505": {
+      "hits": 8,
+      "samples": [
+        [
+          "AudioChannelIndex_8144_FloorBackRight",
+          "0x49e15310"
+        ],
+        [
+          "DecalPrimitiveCount",
+          "0x4572e200"
+        ],
+        [
+          "HMd8",
+          "0x17ccabdc"
+        ],
+        [
+          "LocalSimulationShared",
+          "0x4b4d99d0"
+        ],
+        [
+          "NetworkCore",
+          "0xfd5367c4"
+        ]
+      ]
+    },
+    "murmur3_32:seed0": {
+      "hits": 5,
+      "samples": [
+        [
+          "HeightTexture",
+          "0x62dc60f5"
+        ],
+        [
+          "ShaderProgram_StrandHairNpTextureCs",
+          "0x4b4ea0f0"
+        ],
+        [
+          "closing",
+          "0x986aba57"
+        ],
+        [
+          "hc2cbdft_8",
+          "0x4a057940"
+        ],
+        [
+          "problemi",
+          "0x3683ff40"
+        ]
+      ]
+    },
+    "murmur3_32:seed1": {
+      "hits": 5,
+      "samples": [
+        [
+          "Empty",
+          "0x49c05d30"
+        ],
+        [
+          "MorphAppearancePart",
+          "0x7100ede5"
+        ],
+        [
+          "RenderFormat_R16G16_UINT",
+          "0xe5b281b8"
+        ],
+        [
+          "c8M9x",
+          "0xa41bab32"
+        ],
+        [
+          "persistedGameId",
+          "0x7c12840a"
+        ]
+      ]
+    },
+    "xxhash32:seed0": {
+      "hits": 3,
+      "samples": [
+        [
+          "RenderRayQueries",
+          "0x329f4b76"
+        ],
+        [
+          "VertexElementFormat_Comp3N_10_10_10",
+          "0x644ceb7c"
+        ],
+        [
+          "mismatched",
+          "0xbf0d16f4"
+        ]
+      ]
+    },
+    "jenkins_oaat": {
+      "hits": 8,
+      "samples": [
+        [
+          "AttachTransformLayer",
+          "0xca3fb26a"
+        ],
+        [
+          "DiceDataBindingProviderExpressionUpdateContext",
+          "0x4b4ae130"
+        ],
+        [
+          "MeshStencilWriteMask",
+          "0x47b05950"
+        ],
+        [
+          "SquadMemberType_Support",
+          "0x4544a530"
+        ],
+        [
+          "hardwareGpuBias",
+          "0x1a2c01da"
+        ]
+      ]
+    },
+    "elf_cksum": {
+      "hits": 5,
+      "samples": [
+        [
+          "OverlayType_Effect",
+          "0x4b4e8e30"
+        ],
+        [
+          "ccE0",
+          "0xf2c3703b"
+        ],
+        [
+          "fftwf_codelet_hc2cf_16",
+          "0x29a77747"
+        ],
+        [
+          "pius",
+          "0x2d5459c1"
+        ],
+        [
+          "srPK",
+          "0x425c0e80"
+        ]
+      ]
+    },
+    "adler32": {
+      "hits": 5,
+      "samples": [
+        [
+          "AllowClientTakeOver",
+          "0x49f80780"
+        ],
+        [
+          "GDI32",
+          "0x3eb013a"
+        ],
+        [
+          "LpqHC",
+          "0x56701b9"
+        ],
+        [
+          "fYYUK",
+          "0x56701b9"
+        ],
+        [
+          "num_axes",
+          "0xf3d0361"
+        ]
+      ]
+    },
+    "crc32_std_zlib": {
+      "hits": 6,
+      "samples": [
+        [
+          "CancelSentFriendInviteRequest",
+          "0xccaa5849"
+        ],
+        [
+          "ConceptVault",
+          "0x49c7e828"
+        ],
+        [
+          "FadeWaitingEnable",
+          "0x49c3f938"
+        ],
+        [
+          "androidApiLevel",
+          "0x39972dca"
+        ],
+        [
+          "m_device",
+          "0x43bce470"
+        ]
+      ]
+    },
+    "md5_le32": {
+      "hits": 5,
+      "samples": [
+        [
+          "MetersToKilometersDouble",
+          "0x43f48110"
+        ],
+        [
+          "ServerStatModule_reportCategoryStats_savelayerStats",
+          "0xc05a02f6"
+        ],
+        [
+          "keyed",
+          "0xadc7d487"
+        ],
+        [
+          "lastReadTimestamp",
+          "0x904a1a88"
+        ],
+        [
+          "pRrF",
+          "0xf5e21d76"
+        ]
+      ]
+    },
+    "md5_be32": {
+      "hits": 6,
+      "samples": [
+        [
+          "KElhd",
+          "0x433ccad3"
+        ],
+        [
+          "TF2V",
+          "0x5c30ed37"
+        ],
+        [
+          "enabled",
+          "0xa1031145"
+        ],
+        [
+          "lGN2",
+          "0x49ad4fe8"
+        ],
+        [
+          "lf_ref_frame_sign_bias",
+          "0x4b53c790"
+        ]
+      ]
+    },
+    "sha1_le32": {
+      "hits": 8,
+      "samples": [
+        [
+          "ClosestPointLineSegment",
+          "0xe9c95bd6"
+        ],
+        [
+          "DiceExpressionSubSystem_GameModeLaunchParameter",
+          "0x4b640860"
+        ],
+        [
+          "MaxCameraFovDegrees",
+          "0xdfc3fb98"
+        ],
+        [
+          "RenderFormat_BC1_SRGB",
+          "0x6bb6e2a0"
+        ],
+        [
+          "ShaderProgram_ProbeReportDebugStatsCs",
+          "0x32964088"
+        ]
+      ]
+    },
+    "sha256_le32": {
+      "hits": 5,
+      "samples": [
+        [
+          "ConceptSpectatorHotkey1",
+          "0x45b71e20"
+        ],
+        [
+          "MaxObjects",
+          "0x2611e5df"
+        ],
+        [
+          "VectorFieldSamplerEntity",
+          "0x34492203"
+        ],
+        [
+          "__concat",
+          "0x59205e9a"
+        ],
+        [
+          "hasClearGlyphCacheLargeTextFix",
+          "0xcea37714"
+        ]
+      ]
+    },
+    "blake2b_le32": {
+      "hits": 11,
+      "samples": [
+        [
+          "HBbB",
+          "0x443e5f70"
+        ],
+        [
+          "IronsightsDofResolutionFactor",
+          "0x70a35e2b"
+        ],
+        [
+          "LocalPlayerEIAddIn",
+          "0x41d58bdc"
+        ],
+        [
+          "PkhH",
+          "0x47780016"
+        ],
+        [
+          "ShaderProgram_SurfelRtDebugRayGen",
+          "0x879d9d9c"
+        ]
+      ]
+    }
+  },
+  "fams64": {
+    "crc64ecma:init=0000000000000000:xo=0000000000000000": {
+      "hits": 85245,
+      "samples": [
+        [
+          "A08B",
+          "0x0"
+        ],
+        [
+          "A08B2",
+          "0x0"
+        ],
+        [
+          "A08B8",
+          "0x0"
+        ],
+        [
+          "A08D",
+          "0x0"
+        ],
+        [
+          "A08D2",
+          "0x0"
+        ]
+      ]
+    },
+    "crc64ecma:init=0000000000000000:xo=ffffffffffffffff": {
+      "hits": 85245,
+      "samples": [
+        [
+          "A08B",
+          "0xffffffffffffffff"
+        ],
+        [
+          "A08B2",
+          "0xffffffffffffffff"
+        ],
+        [
+          "A08B8",
+          "0xffffffffffffffff"
+        ],
+        [
+          "A08D",
+          "0xffffffffffffffff"
+        ],
+        [
+          "A08D2",
+          "0xffffffffffffffff"
+        ]
+      ]
+    },
+    "crc64ecma:init=ffffffffffffffff:xo=0000000000000000": {
+      "hits": 62727,
+      "samples": [
+        [
+          "A0A_cFGA",
+          "0x0"
+        ],
+        [
+          "A0GCSqGSIb3DQEBCwUAA4IBAQCY8jdaQZChGsV2USggNiMOruYou6r4lK5IpDB",
+          "0x0"
+        ],
+        [
+          "A1UEBhMCQkUxGTAXBgNVBAoTEEdsb2JhbFNpZ24gbnYtc2ExEDAOBgNVBAsTB1Jv",
+          "0x0"
+        ],
+        [
+          "A1UEChMGQW1hem9uMRkwFwYDVQQDExBBbWF6b24gUm9vdCBDQSAxMB4XDTE1MDUy",
+          "0x0"
+        ],
+        [
+          "A1UdDgQWBBS",
+          "0x0"
+        ]
+      ]
+    },
+    "crc64ecma:init=ffffffffffffffff:xo=ffffffffffffffff": {
+      "hits": 62727,
+      "samples": [
+        [
+          "A0A_cFGA",
+          "0xffffffffffffffff"
+        ],
+        [
+          "A0GCSqGSIb3DQEBCwUAA4IBAQCY8jdaQZChGsV2USggNiMOruYou6r4lK5IpDB",
+          "0xffffffffffffffff"
+        ],
+        [
+          "A1UEBhMCQkUxGTAXBgNVBAoTEEdsb2JhbFNpZ24gbnYtc2ExEDAOBgNVBAsTB1Jv",
+          "0xffffffffffffffff"
+        ],
+        [
+          "A1UEChMGQW1hem9uMRkwFwYDVQQDExBBbWF6b24gUm9vdCBDQSAxMB4XDTE1MDUy",
+          "0xffffffffffffffff"
+        ],
+        [
+          "A1UdDgQWBBS",
+          "0xffffffffffffffff"
+        ]
+      ]
+    },
+    "crc64iso:init=0000000000000000:xo=0000000000000000": {
+      "hits": 85245,
+      "samples": [
+        [
+          "A08B",
+          "0x0"
+        ],
+        [
+          "A08B2",
+          "0x0"
+        ],
+        [
+          "A08B8",
+          "0x0"
+        ],
+        [
+          "A08D",
+          "0x0"
+        ],
+        [
+          "A08D2",
+          "0x0"
+        ]
+      ]
+    },
+    "crc64iso:init=0000000000000000:xo=ffffffffffffffff": {
+      "hits": 85245,
+      "samples": [
+        [
+          "A08B",
+          "0xffffffffffffffff"
+        ],
+        [
+          "A08B2",
+          "0xffffffffffffffff"
+        ],
+        [
+          "A08B8",
+          "0xffffffffffffffff"
+        ],
+        [
+          "A08D",
+          "0xffffffffffffffff"
+        ],
+        [
+          "A08D2",
+          "0xffffffffffffffff"
+        ]
+      ]
+    },
+    "crc64iso:init=ffffffffffffffff:xo=0000000000000000": {
+      "hits": 62727,
+      "samples": [
+        [
+          "A0A_cFGA",
+          "0x0"
+        ],
+        [
+          "A0GCSqGSIb3DQEBCwUAA4IBAQCY8jdaQZChGsV2USggNiMOruYou6r4lK5IpDB",
+          "0x0"
+        ],
+        [
+          "A1UEBhMCQkUxGTAXBgNVBAoTEEdsb2JhbFNpZ24gbnYtc2ExEDAOBgNVBAsTB1Jv",
+          "0x0"
+        ],
+        [
+          "A1UEChMGQW1hem9uMRkwFwYDVQQDExBBbWF6b24gUm9vdCBDQSAxMB4XDTE1MDUy",
+          "0x0"
+        ],
+        [
+          "A1UdDgQWBBS",
+          "0x0"
+        ]
+      ]
+    },
+    "crc64iso:init=ffffffffffffffff:xo=ffffffffffffffff": {
+      "hits": 62727,
+      "samples": [
+        [
+          "A0A_cFGA",
+          "0xffffffffffffffff"
+        ],
+        [
+          "A0GCSqGSIb3DQEBCwUAA4IBAQCY8jdaQZChGsV2USggNiMOruYou6r4lK5IpDB",
+          "0xffffffffffffffff"
+        ],
+        [
+          "A1UEBhMCQkUxGTAXBgNVBAoTEEdsb2JhbFNpZ24gbnYtc2ExEDAOBgNVBAsTB1Jv",
+          "0xffffffffffffffff"
+        ],
+        [
+          "A1UEChMGQW1hem9uMRkwFwYDVQQDExBBbWF6b24gUm9vdCBDQSAxMB4XDTE1MDUy",
+          "0xffffffffffffffff"
+        ],
+        [
+          "A1UdDgQWBBS",
+          "0xffffffffffffffff"
+        ]
+      ]
+    }
+  },
+  "best32": [
+    [
+      "crc32n:init=00000000:xo=00000000",
+      {
+        "hits": 85245,
+        "samples": [
+          [
+            "A08B",
+            "0x0"
+          ],
+          [
+            "A08B2",
+            "0x0"
+          ],
+          [
+            "A08B8",
+            "0x0"
+          ],
+          [
+            "A08D",
+            "0x0"
+          ],
+          [
+            "A08D2",
+            "0x0"
+          ]
+        ]
+      }
+    ],
+    [
+      "crc32n:init=00000000:xo=ffffffff",
+      {
+        "hits": 85245,
+        "samples": [
+          [
+            "A08B",
+            "0xffffffff"
+          ],
+          [
+            "A08B2",
+            "0xffffffff"
+          ],
+          [
+            "A08B8",
+            "0xffffffff"
+          ],
+          [
+            "A08D",
+            "0xffffffff"
+          ],
+          [
+            "A08D2",
+            "0xffffffff"
+          ]
+        ]
+      }
+    ],
+    [
+      "crc32n:init=ffffffff:xo=00000000",
+      {
+        "hits": 85245,
+        "samples": [
+          [
+            "A08B",
+            "0x0"
+          ],
+          [
+            "A08B2",
+            "0x0"
+          ],
+          [
+            "A08B8",
+            "0x0"
+          ],
+          [
+            "A08D",
+            "0x0"
+          ],
+          [
+            "A08D2",
+            "0x0"
+          ]
+        ]
+      }
+    ],
+    [
+      "crc32n:init=ffffffff:xo=ffffffff",
+      {
+        "hits": 85245,
+        "samples": [
+          [
+            "A08B",
+            "0xffffffff"
+          ],
+          [
+            "A08B2",
+            "0xffffffff"
+          ],
+          [
+            "A08B8",
+            "0xffffffff"
+          ],
+          [
+            "A08D",
+            "0xffffffff"
+          ],
+          [
+            "A08D2",
+            "0xffffffff"
+          ]
+        ]
+      }
+    ],
+    [
+      "crc32n:init=12345678:xo=00000000",
+      {
+        "hits": 85245,
+        "samples": [
+          [
+            "A08B",
+            "0x0"
+          ],
+          [
+            "A08B2",
+            "0x0"
+          ],
+          [
+            "A08B8",
+            "0x0"
+          ],
+          [
+            "A08D",
+            "0x0"
+          ],
+          [
+            "A08D2",
+            "0x0"
+          ]
+        ]
+      }
+    ]
+  ],
+  "best64": [
+    [
+      "crc64ecma:init=0000000000000000:xo=0000000000000000",
+      {
+        "hits": 85245,
+        "samples": [
+          [
+            "A08B",
+            "0x0"
+          ],
+          [
+            "A08B2",
+            "0x0"
+          ],
+          [
+            "A08B8",
+            "0x0"
+          ],
+          [
+            "A08D",
+            "0x0"
+          ],
+          [
+            "A08D2",
+            "0x0"
+          ]
+        ]
+      }
+    ],
+    [
+      "crc64ecma:init=0000000000000000:xo=ffffffffffffffff",
+      {
+        "hits": 85245,
+        "samples": [
+          [
+            "A08B",
+            "0xffffffffffffffff"
+          ],
+          [
+            "A08B2",
+            "0xffffffffffffffff"
+          ],
+          [
+            "A08B8",
+            "0xffffffffffffffff"
+          ],
+          [
+            "A08D",
+            "0xffffffffffffffff"
+          ],
+          [
+            "A08D2",
+            "0xffffffffffffffff"
+          ]
+        ]
+      }
+    ],
+    [
+      "crc64iso:init=0000000000000000:xo=0000000000000000",
+      {
+        "hits": 85245,
+        "samples": [
+          [
+            "A08B",
+            "0x0"
+          ],
+          [
+            "A08B2",
+            "0x0"
+          ],
+          [
+            "A08B8",
+            "0x0"
+          ],
+          [
+            "A08D",
+            "0x0"
+          ],
+          [
+            "A08D2",
+            "0x0"
+          ]
+        ]
+      }
+    ],
+    [
+      "crc64iso:init=0000000000000000:xo=ffffffffffffffff",
+      {
+        "hits": 85245,
+        "samples": [
+          [
+            "A08B",
+            "0xffffffffffffffff"
+          ],
+          [
+            "A08B2",
+            "0xffffffffffffffff"
+          ],
+          [
+            "A08B8",
+            "0xffffffffffffffff"
+          ],
+          [
+            "A08D",
+            "0xffffffffffffffff"
+          ],
+          [
+            "A08D2",
+            "0xffffffffffffffff"
+          ]
+        ]
+      }
+    ],
+    [
+      "crc64ecma:init=ffffffffffffffff:xo=0000000000000000",
+      {
+        "hits": 62727,
+        "samples": [
+          [
+            "A0A_cFGA",
+            "0x0"
+          ],
+          [
+            "A0GCSqGSIb3DQEBCwUAA4IBAQCY8jdaQZChGsV2USggNiMOruYou6r4lK5IpDB",
+            "0x0"
+          ],
+          [
+            "A1UEBhMCQkUxGTAXBgNVBAoTEEdsb2JhbFNpZ24gbnYtc2ExEDAOBgNVBAsTB1Jv",
+            "0x0"
+          ],
+          [
+            "A1UEChMGQW1hem9uMRkwFwYDVQQDExBBbWF6b24gUm9vdCBDQSAxMB4XDTE1MDUy",
+            "0x0"
+          ],
+          [
+            "A1UdDgQWBBS",
+            "0x0"
+          ]
+        ]
+      }
+    ]
+  ]
+}

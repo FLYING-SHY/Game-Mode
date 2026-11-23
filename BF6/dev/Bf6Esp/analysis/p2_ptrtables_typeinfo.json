@@ -1,0 +1,57 @@
+{
+ "distinct": 6,
+ "top": [
+  [
+   "AliceBlue",
+   1
+  ],
+  [
+   "AntiqueWhite",
+   1
+  ],
+  [
+   "Aqua",
+   1
+  ],
+  [
+   "Aquamarine",
+   1
+  ],
+  [
+   "Azure",
+   1
+  ],
+  [
+   "Beige",
+   1
+  ]
+ ],
+ "examples": [
+  {
+   "slot_rva": 183507568,
+   "target_rva": 140070344,
+   "strings": [
+    "AliceBlue",
+    "AntiqueWhite",
+    "Aqua",
+    "Aquamarine",
+    "Azure",
+    "Beige"
+   ],
+   "raw": [
+    "0x0",
+    "0x148d3aa58",
+    "0xf0f8ffff",
+    "0x148d3aa68",
+    "0xfaebd7ff",
+    "0x148d3aa78",
+    "0xffffff",
+    "0x148d3aa80",
+    "0x7fffd4ff",
+    "0x148d3aa8c",
+    "0xf0ffffff",
+    "0x148d3aa94"
+   ]
+  }
+ ]
+}

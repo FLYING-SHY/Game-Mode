@@ -1,0 +1,275 @@
+{
+  "gameExe": "G:\\SteamLibrary\\steamapps\\common\\Battlefield 6\\bf6.exe",
+  "buildSha256": "1F385AD9AF30B8BA7F0C87CEEE92182710BB58F98708A2DE7F8D119042BAEFF4",
+  "moduleSize": 199230312,
+  "updatedUtc": "2026-11-22T00:00:00Z",
+  "notes": "Battlefield 6 (bf6.exe) build 1F385AD9 档案。静态部分（sections / 锚点 / 名字 RVA）来自 analysis/p14_profile_data.py 对真实二进制的实测；动态部分（实体数组、字段偏移、投影矩阵）一律留给运行时定位器 RuntimeLocator60，因为该 build 的 exe 里'有成员偏移、没有成员名'（typeinfo 的 key 是构建期烘焙值、fieldinf 段内没有 .rdata 名指针、.vlizer 是代码不是数据；exe 与 Data\\*.cas 数据包里都没有明文成员名）。offsets 里值为 0 的项表示'未知/待运行时定位'，不是偏移 0。signatures 里的 Name.* 是 .rdata 中的明文字符串锚点（统计全文件匹配数后只保留可用的），ModuleRegistryMagic 是 .data 里唯一的 ASCII 'RIFXRIFF' 模块注册表 magic（文件内唯一命中），可作为 build 指纹。",
+  "offsets": {
+    "EntityList": 0,
+    "EntityCount": 0,
+    "LocalPlayer": 0,
+    "ViewProjectionMatrix": 0,
+    "LocalTeamId": 0,
+    "ViewMatrix": 0,
+    "ProjectionMatrix": 0,
+    "PlayerNameBuffer": 0,
+    "ReflectionName.ClientSoldierEntity": 93284976,
+    "ReflectionName.ClientSoldierHealthComponent": 153176384,
+    "ReflectionName.ClientSoldierCameraComponent": 153176416,
+    "ReflectionName.ClientSoldierEntryComponent": 153176600,
+    "ReflectionName.ClientPlayerIteratorEntity": 151665080,
+    "ReflectionName.ClientConnection": 151665296,
+    "ReflectionName.BFPlayerExtent": 149075728,
+    "ReflectionName.BFClientPlayerExtent": 149233464,
+    "ReflectionName.CurrentTeamId": 149362664,
+    "ReflectionName.OwningTeam": 149167392,
+    "ReflectionName.ShooterTeamId": 148842432,
+    "ReflectionName.g_worldViewProjMatrix": 153692544,
+    "ReflectionName.g_invProjMatrix": 152958144,
+    "ReflectionName.EcsTransformSpaceComponent": 153746224,
+    "TypeInfoRecordMarkerRva": 183287808,
+    "ModuleRegistryMagicRva": 162482592
+  },
+  "structs": [
+    {
+      "name": "Transform",
+      "fields": {
+        "PositionX": "",
+        "PositionY": "",
+        "PositionZ": ""
+      }
+    },
+    {
+      "name": "HealthComponent",
+      "fields": {
+        "CurrentHealth": "",
+        "MaxHealth": ""
+      }
+    },
+    {
+      "name": "Entity",
+      "fields": {
+        "TeamId": "",
+        "NamePointer": "",
+        "HealthComponent": "",
+        "Transform": ""
+      }
+    }
+  ],
+  "signatures": [
+    {
+      "name": "ModuleRegistryMagic",
+      "pattern": "52 49 46 58 52 49 46 46 58",
+      "section": ".data",
+      "resultOffset": 0,
+      "description": "ASCII 'RIFXRIFF'：Frostbite 模块注册表 magic，全文件唯一命中（RVA 0x9AF49A0）。用途：确认当前进程里的模块就是本档案绑定的 build，作为 build 指纹。"
+    },
+    {
+      "name": "TypeInfoRecordMarker",
+      "pattern": "89 00 00 08",
+      "section": "typeinfo",
+      "resultOffset": 0,
+      "description": "typeinfo 段内 23701 条类型记录的标记 u32（记录基址 = 标记位置 - 4，步长 0x50）。命中数应等于 23701，用于确认 typeinfo 段布局没变。"
+    },
+    {
+      "name": "Name.ClientSoldierEntity",
+      "pattern": "43 6C 69 65 6E 74 53 6F 6C 64 69 65 72 45 6E 74 69 74 79",
+      "section": ".rdata",
+      "resultOffset": 0,
+      "description": "类型名明文，全文件唯一命中（RVA 0x9213A30）。运行时定位器用它做定向反射探针的起点。"
+    },
+    {
+      "name": "Name.ClientSoldierHealthComponent",
+      "pattern": "43 6C 69 65 6E 74 53 6F 6C 64 69 65 72 48 65 61 6C 74 68 43 6F 6D 70 6F 6E 65 6E 74",
+      "section": ".rdata",
+      "resultOffset": 0,
+      "description": "类型名明文，2 处命中（RVA 0x8E3CA02 / 0x9214940），后者与其它 ClientSoldier* 类型名同池。"
+    },
+    {
+      "name": "Name.ClientSoldierCameraComponent",
+      "pattern": "43 6C 69 65 6E 74 53 6F 6C 64 69 65 72 43 61 6D 65 72 61 43 6F 6D 70 6F 6E 65 6E 74",
+      "section": ".rdata",
+      "resultOffset": 0,
+      "description": "类型名明文，全文件唯一命中（RVA 0x9214960）。"
+    },
+    {
+      "name": "Name.ClientSoldierEntryComponent",
+      "pattern": "43 6C 69 65 6E 74 53 6F 6C 64 69 65 72 45 6E 74 72 79 43 6F 6D 70 6F 6E 65 6E 74",
+      "section": ".rdata",
+      "resultOffset": 0,
+      "description": "类型名明文，全文件唯一命中（RVA 0x9214A18）。"
+    },
+    {
+      "name": "Name.ClientPlayerIteratorEntity",
+      "pattern": "43 6C 69 65 6E 74 50 6C 61 79 65 72 49 74 65 72 61 74 6F 72 45 6E 74 69 74 79",
+      "section": ".rdata",
+      "resultOffset": 0,
+      "description": "类型名明文，全文件唯一命中（RVA 0x90A39B8）。"
+    },
+    {
+      "name": "Name.ClientConnection",
+      "pattern": "43 6C 69 65 6E 74 43 6F 6E 6E 65 63 74 69 6F 6E",
+      "section": ".rdata",
+      "resultOffset": 0,
+      "description": "类型名明文，全文件唯一命中（RVA 0x90A3990）。"
+    },
+    {
+      "name": "Name.BFPlayerExtent",
+      "pattern": "42 46 50 6C 61 79 65 72 45 78 74 65 6E 74",
+      "section": ".rdata",
+      "resultOffset": 0,
+      "description": "类型名明文，全文件唯一命中（RVA 0x8E2B710）。玩家实体 extent 类型。"
+    },
+    {
+      "name": "Name.BFClientPlayerExtent",
+      "pattern": "42 46 43 6C 69 65 6E 74 50 6C 61 79 65 72 45 78 74 65 6E 74",
+      "section": ".rdata",
+      "resultOffset": 0,
+      "description": "类型名明文，全文件唯一命中（RVA 0x8E51F38）。"
+    },
+    {
+      "name": "Name.CurrentTeamId",
+      "pattern": "43 75 72 72 65 6E 74 54 65 61 6D 49 64",
+      "section": ".rdata",
+      "resultOffset": 0,
+      "description": "属性名明文，全文件唯一命中（RVA 0x8E717E8）。注意：BFUI/liveapi 属性区的名字，不是成员表。"
+    },
+    {
+      "name": "Name.OwningTeam",
+      "pattern": "4F 77 6E 69 6E 67 54 65 61 6D",
+      "section": ".rdata",
+      "resultOffset": 0,
+      "description": "属性名明文，全文件唯一命中（RVA 0x8E41D20）。"
+    },
+    {
+      "name": "Name.ShooterTeamId",
+      "pattern": "53 68 6F 6F 74 65 72 54 65 61 6D 49 64",
+      "section": ".rdata",
+      "resultOffset": 0,
+      "description": "属性名明文，全文件唯一命中（RVA 0x8DF27C0）。"
+    },
+    {
+      "name": "Name.g_worldViewProjMatrix",
+      "pattern": "67 5F 77 6F 72 6C 64 56 69 65 77 50 72 6F 6A 4D 61 74 72 69 78",
+      "section": ".rdata",
+      "resultOffset": 0,
+      "description": "全局矩阵名明文，全文件唯一命中（RVA 0x9292980）。名字指向'世界×视图×投影'矩阵，运行时定位器用它做矩阵候选的交叉验证。"
+    },
+    {
+      "name": "Name.g_invProjMatrix",
+      "pattern": "67 5F 69 6E 76 50 72 6F 6A 4D 61 74 72 69 78",
+      "section": ".rdata",
+      "resultOffset": 0,
+      "description": "全局矩阵名明文，全文件唯一命中（RVA 0x91DF4C0）。"
+    },
+    {
+      "name": "Name.EcsTransformSpaceComponent",
+      "pattern": "45 63 73 54 72 61 6E 73 66 6F 72 6D 53 70 61 63 65 43 6F 6D 70 6F 6E 65 6E 74",
+      "section": ".rdata",
+      "resultOffset": 0,
+      "description": "类型名明文，全文件唯一命中（RVA 0x929FB30）。变换空间组件，位置数据的可能来源。"
+    },
+    {
+      "name": "ScannerSelfTest",
+      "pattern": "48 8B ?? ?? ?? ?? ?? 48 85 C0",
+      "section": "ctr",
+      "resultOffset": 0,
+      "description": "扫描链自检用：通用 x64 取指针 + 测试指令序列，不是游戏目标。只用来确认 AOB 扫描、节区读取与 RVA 记录这条链路本身可用；命中数多属正常。"
+    }
+  ],
+  "enums": {},
+  "resolution": [
+    {
+      "target": "ReflectionName.ClientSoldierEntity",
+      "signature": "Name.ClientSoldierEntity",
+      "mode": "match",
+      "offset": 0,
+      "note": "命中点就是类型名字符串在进程里的地址，用于运行时定向反射探针。"
+    },
+    {
+      "target": "ReflectionName.ClientSoldierHealthComponent",
+      "signature": "Name.ClientSoldierHealthComponent",
+      "mode": "match",
+      "offset": 0,
+      "note": "2 处命中时取第一个；真正的类型记录地址由运行时反射扫描给出。"
+    },
+    {
+      "target": "ReflectionName.CurrentTeamId",
+      "signature": "Name.CurrentTeamId",
+      "mode": "match",
+      "offset": 0,
+      "note": "属性名锚点。"
+    },
+    {
+      "target": "ModuleRegistryMagicRva",
+      "signature": "ModuleRegistryMagic",
+      "mode": "match",
+      "offset": 0,
+      "note": "模块注册表 magic 地址：可用于确认 build 一致性。"
+    },
+    {
+      "target": "TypeInfoRecordMarkerRva",
+      "signature": "TypeInfoRecordMarker",
+      "mode": "match",
+      "offset": 0,
+      "note": "typeinfo 记录标记地址：命中数应为 23701。"
+    },
+    {
+      "target": "EntityList",
+      "signature": "EntityList",
+      "mode": "match+off",
+      "offset": 0,
+      "note": "实体指针数组没有静态模式串（bf6.exe 里没有可复用的固定特征），由运行时定位器的实体容器扫描 + 字段统计推断给出。"
+    },
+    {
+      "target": "EntityCount",
+      "signature": "EntityCount",
+      "mode": "match+off",
+      "offset": 0,
+      "note": "同上，运行时定位器给出。"
+    },
+    {
+      "target": "LocalPlayer",
+      "signature": "LocalPlayer",
+      "mode": "match+off",
+      "offset": 0,
+      "note": "同上，运行时定位器给出。"
+    },
+    {
+      "target": "LocalTeamId",
+      "signature": "LocalTeamId",
+      "mode": "match+off",
+      "offset": 0,
+      "note": "同上，运行时定位器给出。"
+    },
+    {
+      "target": "ViewProjectionMatrix",
+      "signature": "ViewProjectionMatrix",
+      "mode": "match+off",
+      "offset": 0,
+      "note": "同上，运行时定位器按 float[16] 形状 + 视口宽高比 + 实体投影落点率打分给出。"
+    },
+    {
+      "target": "PlayerNameBuffer",
+      "signature": "PlayerNameBuffer",
+      "mode": "match+off",
+      "offset": 0,
+      "note": "同上，运行时定位器给出实体头的姓名指针偏移。"
+    }
+  ],
+  "sections": [
+    { "name": ".text", "rva": 4096, "virtualSize": 120325503, "rawSize": 120325632 },
+    { "name": "ctr", "rva": 120332288, "virtualSize": 17943011, "rawSize": 17943040 },
+    { "name": ".rdata", "rva": 138276864, "virtualSize": 24044982, "rawSize": 24045056 },
+    { "name": ".data", "rva": 162324480, "virtualSize": 13390792, "rawSize": 6595072 },
+    { "name": ".pdata", "rva": 175718400, "virtualSize": 7569264, "rawSize": 7569408 },
+    { "name": "typeinfo", "rva": 183287808, "virtualSize": 6023728, "rawSize": 6024192 },
+    { "name": "fieldinf", "rva": 189313024, "virtualSize": 2390976, "rawSize": 2391040 },
+    { "name": "_RDATA", "rva": 191705088, "virtualSize": 238344, "rawSize": 238592 },
+    { "name": ".rodata", "rva": 191946752, "virtualSize": 3456, "rawSize": 3584 },
+    { "name": ".rsrc", "rva": 191950848, "virtualSize": 333888, "rawSize": 334336 },
+    { "name": ".reloc", "rva": 192286720, "virtualSize": 2439256, "rawSize": 2439680 },
+    { "name": ".vm_sec", "rva": 194727936, "virtualSize": 49664, "rawSize": 49664 },
+    { "name": ".vlizer", "rva": 194781184, "virtualSize": 11258880, "rawSize": 11258880 }
+  ]
+}
